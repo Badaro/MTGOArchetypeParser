@@ -311,12 +311,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck26_Unknown_BRG_Gyruda()
+        public void Deck26_GyrudaStompy_BRG_Gyruda()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16.Deck26_Unknown_BRG_Gyruda(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16.Deck26_GyrudaStompy_BRG_Gyruda(),
                 ArchetypeColor.BRG,
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.GyrudaStompy),
                 null,
                 ArchetypeCompanion.Gyruda
             );
