@@ -503,13 +503,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck42_JeskaiBreach_WURG()
+        public void Deck42_JeskaiAscendancy_JeskaiBreach_WURG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck42_JeskaiBreach_WURG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck42_JeskaiAscendancy_JeskaiBreach_WURG(),
                 ArchetypeColor.WURG,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiAscendancy),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiBreach),
-                null,
                 null
             );
         }
