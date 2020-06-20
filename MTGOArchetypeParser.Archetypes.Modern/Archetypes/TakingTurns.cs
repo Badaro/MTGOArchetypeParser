@@ -11,24 +11,10 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Temporal Mastery" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Time Warp" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Exhaustion", "Walk the Aeons" } }
-            };
-            Variants = new ArchetypeVariant[]
-            {
-                new SnowTurns()
-            };
-        }
-    }
-
-    public class SnowTurns : ArchetypeVariant
-    {
-        public SnowTurns()
-        {
-            Conditions = new ArchetypeCondition[]
-            {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Arcum's Astrolabe" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Ice-Fang Coatl" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Snapcaster Mage" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Cryptic Command" } }
             };
         }
     }

@@ -22,7 +22,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             };
             Variants = new ArchetypeVariant[]
             {
-                new KGCTron()
+                new KGCTron(),
+                new GolosTron()
             };
         }
     }
@@ -34,6 +35,18 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Karn, the Great Creator" } }
+            };
+        }
+    }
+
+    public class GolosTron : ArchetypeVariant
+    {
+        public GolosTron()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Cascading Cataracts" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Golos, Tireless Pilgrim" } }
             };
         }
     }

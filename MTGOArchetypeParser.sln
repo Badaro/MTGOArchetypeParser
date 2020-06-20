@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGOArchetypeParser", "MTGOArchetypeParser\MTGOArchetypeParser.csproj", "{897D7752-728D-4EB3-88CE-AA49AAD0E1F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGOArchetypeParser", "MTGOArchetypeParser\MTGOArchetypeParser.csproj", "{897D7752-728D-4EB3-88CE-AA49AAD0E1F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGOArchetypeParser.Tests", "MTGOArchetypeParser.Tests\MTGOArchetypeParser.Tests.csproj", "{0DFD96A2-8CC3-4343-9364-4B0271CE4348}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGOArchetypeParser.Tests", "MTGOArchetypeParser.Tests\MTGOArchetypeParser.Tests.csproj", "{0DFD96A2-8CC3-4343-9364-4B0271CE4348}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGOArchetypeParser.Tests.SampleData", "MTGOArchetypeParser.Tests.SampleData\MTGOArchetypeParser.Tests.SampleData.csproj", "{36B3745F-62E3-4393-B844-6987EAB8AB82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGOArchetypeParser.Tests.SampleData", "MTGOArchetypeParser.Tests.SampleData\MTGOArchetypeParser.Tests.SampleData.csproj", "{36B3745F-62E3-4393-B844-6987EAB8AB82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGOArchetypeParser.Archetypes.Modern", "MTGOArchetypeParser.Archetypes.Modern\MTGOArchetypeParser.Archetypes.Modern.csproj", "{68E0622C-377F-4948-B45D-34FFBACE99ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGOArchetypeParser.Archetypes.Modern", "MTGOArchetypeParser.Archetypes.Modern\MTGOArchetypeParser.Archetypes.Modern.csproj", "{68E0622C-377F-4948-B45D-34FFBACE99ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGOArchetypeParser.App", "MTGOArchetypeParser.App\MTGOArchetypeParser.App.csproj", "{D66BA97E-BBC0-4AD8-ADB7-3978C45C5484}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGODecklistParser", "..\MTGODecklistParser\MTGODecklistParser\MTGODecklistParser.csproj", "{EB06B318-5BF2-4E1F-9614-9EE4FB8EA974}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGOArchetypeParser.Tests.SampleData.App", "MTGOArchetypeParser.Tests.SampleData.App\MTGOArchetypeParser.Tests.SampleData.App.csproj", "{17E8D761-A8F9-4016-A685-40CF0D1ECC8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{68E0622C-377F-4948-B45D-34FFBACE99ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68E0622C-377F-4948-B45D-34FFBACE99ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68E0622C-377F-4948-B45D-34FFBACE99ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D66BA97E-BBC0-4AD8-ADB7-3978C45C5484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D66BA97E-BBC0-4AD8-ADB7-3978C45C5484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D66BA97E-BBC0-4AD8-ADB7-3978C45C5484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D66BA97E-BBC0-4AD8-ADB7-3978C45C5484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB06B318-5BF2-4E1F-9614-9EE4FB8EA974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB06B318-5BF2-4E1F-9614-9EE4FB8EA974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB06B318-5BF2-4E1F-9614-9EE4FB8EA974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB06B318-5BF2-4E1F-9614-9EE4FB8EA974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E8D761-A8F9-4016-A685-40CF0D1ECC8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E8D761-A8F9-4016-A685-40CF0D1ECC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E8D761-A8F9-4016-A685-40CF0D1ECC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E8D761-A8F9-4016-A685-40CF0D1ECC8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

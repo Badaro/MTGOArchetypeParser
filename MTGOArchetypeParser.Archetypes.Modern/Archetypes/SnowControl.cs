@@ -12,27 +12,62 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Arcum's Astrolabe" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Ice-Fang Coatl" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Cryptic Command" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Path to Exile" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Mystic Sanctuary" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Ice-Fang Coatl" } }
             };
             Variants = new ArchetypeVariant[]
             {
-                new Uroza(),
-                new SnowBlade()
+                new SnowUrza(),
+                new SnowBlade(),
+                new SnowReclamation(),
+                new SnowTurns(),
+                new SnowShift()
             };
         }
     }
 
-    public class Uroza : ArchetypeVariant
+    public class SnowUrza : ArchetypeVariant
     {
-        public Uroza()
+        public SnowUrza()
         {
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Urza, Lord High Artificer" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Metallic Rebuke" } }
+            };
+        }
+    }
+
+    public class SnowShift : ArchetypeVariant
+    {
+        public SnowShift()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Scapeshift" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Valakut, the Molten Pinnacle" } }
+            };
+        }
+    }
+
+    public class SnowTurns : ArchetypeVariant
+    {
+        public SnowTurns()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Time Warp" } },
+            };
+        }
+    }
+
+    public class SnowReclamation : ArchetypeVariant
+    {
+        public SnowReclamation()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                    new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Wilderness Reclamation" } },
+                    new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Nexus of Fate" } }
             };
         }
     }
