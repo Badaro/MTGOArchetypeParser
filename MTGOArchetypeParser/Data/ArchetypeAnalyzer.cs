@@ -22,15 +22,12 @@ namespace MTGOArchetypeParser.Data
             {"Zirda, the Dawnwaker", ArchetypeCompanion.Zirda }
         };
 
-        public static ArchetypeResult[] Detect(string[] mainboardCards, string[] sideboardCards, Archetype[] archetypeData)
+        public static ArchetypeResult Detect(string[] mainboardCards, string[] sideboardCards, Archetype[] archetypeData)
         {
-            ArchetypeCompanion? companion = null;
-            foreach (var possibleCompanion in _companionMap)
-            {
-                if (sideboardCards.Contains(possibleCompanion.Key)) companion = possibleCompanion.Value;
-            }
+            ArchetypeCompanion? companion = GetCompanion(mainboardCards, sideboardCards);
+            ArchetypeColor color = GetColors(mainboardCards, sideboardCards);
 
-            List<ArchetypeResult> results = new List<ArchetypeResult>();
+            List<ArchetypeMatch> results = new List<ArchetypeMatch>();
             foreach (Archetype archetype in archetypeData)
             {
                 if (Test(mainboardCards, sideboardCards, archetype))
@@ -43,15 +40,53 @@ namespace MTGOArchetypeParser.Data
                             if (Test(mainboardCards, sideboardCards, variant))
                             {
                                 isVariant = true;
-                                results.Add(new ArchetypeResult() { Archetype = archetype, Variant = variant, Companion = companion });
+                                results.Add(new ArchetypeMatch() { Archetype = archetype, Variant = variant });
                             }
                         }
                     }
-                    if (!isVariant) results.Add(new ArchetypeResult() { Archetype = archetype, Variant = null, Companion = companion });
+                    if (!isVariant) results.Add(new ArchetypeMatch() { Archetype = archetype, Variant = null, });
                 }
             }
 
-            return results.ToArray();
+            return new ArchetypeResult() { Matches = results.ToArray(), Color = color, Companion = companion };
+        }
+
+        private static ArchetypeCompanion? GetCompanion(string[] mainboardCards, string[] sideboardCards)
+        {
+            ArchetypeCompanion? companion = null;
+            foreach (var possibleCompanion in _companionMap)
+            {
+                if (sideboardCards.Contains(possibleCompanion.Key)) companion = possibleCompanion.Value;
+            }
+            return companion;
+        }
+
+        private static ArchetypeColor GetColors(string[] mainboardCards, string[] sideboardCards)
+        {
+            StringBuilder colorsFound = new StringBuilder();
+            foreach (var card in mainboardCards)
+            {
+                if (ArchetypeLands.Lands.ContainsKey(card))
+                {
+                    colorsFound.Append(ArchetypeLands.Lands[card]);
+                }
+            }
+            foreach (var card in sideboardCards)
+            {
+                if (ArchetypeLands.Lands.ContainsKey(card))
+                {
+                    colorsFound.Append(ArchetypeLands.Lands[card]);
+                }
+            }
+
+            string finalColor = String.Empty;
+            if (colorsFound.ToString().Contains("W")) finalColor += "W";
+            if (colorsFound.ToString().Contains("U")) finalColor += "U";
+            if (colorsFound.ToString().Contains("B")) finalColor += "B";
+            if (colorsFound.ToString().Contains("R")) finalColor += "R";
+            if (colorsFound.ToString().Contains("G")) finalColor += "G";
+
+            return finalColor.Length > 0 ? (ArchetypeColor)Enum.Parse(typeof(ArchetypeColor), finalColor) : ArchetypeColor.C; ;
         }
 
         private static bool Test(string[] mainboardCards, string[] sideboardCards, Archetype archetypeData)

@@ -12,20 +12,28 @@ namespace MTGOArchetypeParser.Tests
     public class LeagueTest
     {
 
-        protected void Test(ISampleDeck deck, Type expectedArchetype, Type expectedVariant = null, ArchetypeCompanion? expectedCompanion = null)
+        protected void Test(ISampleDeck deck, ArchetypeColor? expectedColor = null, Type expectedArchetype = null, Type expectedVariant = null, ArchetypeCompanion? expectedCompanion = null)
         {
             var result = ArchetypeAnalyzer.Detect(deck.Mainboard, deck.Sideboard, MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
 
-            result.Should().HaveCount(1);
+            if (expectedColor != null) result.Color.Should().Be(expectedColor);
+            else result.Color.Should().Be(ArchetypeColor.C);
 
-            if (expectedArchetype != null) result.First().Archetype.Should().BeOfType(expectedArchetype);
-            else result.First().Archetype.Should().BeNull();
+            if (expectedArchetype != null)
+            {
+                result.Matches.Should().HaveCount(1);
+                result.Matches.First().Archetype.Should().BeOfType(expectedArchetype);
 
-            if (expectedVariant != null) result.First().Variant.Should().BeOfType(expectedVariant);
-            else result.First().Variant.Should().BeNull();
+                if (expectedVariant != null) result.Matches.First().Variant.Should().BeOfType(expectedVariant);
+                else result.Matches.First().Variant.Should().BeNull();
+            }
+            else
+            {
+                result.Matches.Should().HaveCount(0);
+            }
 
-            if (expectedCompanion != null) result.First().Companion.Should().Be(expectedCompanion.Value);
-            else result.First().Companion.Should().BeNull();
+            if (expectedCompanion != null) result.Companion.Should().Be(expectedCompanion.Value);
+            else result.Companion.Should().BeNull();
         }
     }
 }

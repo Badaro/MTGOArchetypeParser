@@ -17,7 +17,9 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Variants = new ArchetypeVariant[]
             {
                 new GrixisShadow(),
-                new TraverseShadow()
+                new MarduShadow(),
+                new TraverseShadow(),
+                new SuicideShadow()
             };
         }
     }
@@ -35,6 +37,18 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         }
     }
 
+    public class MarduShadow : ArchetypeVariant
+    {
+        public MarduShadow()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Ranger-Captain of Eos" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Tidehollow Sculler" } }
+            };
+        }
+    }
+
     public class TraverseShadow : ArchetypeVariant
     {
         public TraverseShadow()
@@ -43,6 +57,19 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Tarmogoyf" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Traverse the Ulvenwald" } }
+            };
+        }
+    }
+
+    public class SuicideShadow : ArchetypeVariant
+    {
+        public SuicideShadow()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Tarmogoyf" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Mutagenic Growth" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Monastery Swiftspear" } },
             };
         }
     }

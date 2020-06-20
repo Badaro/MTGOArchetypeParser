@@ -6,8 +6,8 @@ namespace MTGOArchetypeParser.Model
 {
     public class ArchetypeResult
     {
-        public Archetype Archetype { get; set; }
-        public Archetype Variant { get; set; }
+        public ArchetypeMatch[] Matches { get; set; }
+        public ArchetypeColor Color { get; set; }
         public ArchetypeCompanion? Companion { get; set; }
     }
 }

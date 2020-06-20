@@ -31,9 +31,9 @@ namespace MTGOArchetypeParser.Tests
                     archetype
                 });
 
-            result.Should().HaveCount(1);
-            result.First().Archetype.Should().Be(archetype);
-            result.First().Variant.Should().BeNull();
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
         }
 
         [Test]
@@ -55,9 +55,9 @@ namespace MTGOArchetypeParser.Tests
                     archetype
                 });
 
-            result.Should().HaveCount(1);
-            result.First().Archetype.Should().Be(archetype);
-            result.First().Variant.Should().BeNull();
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
         }
 
         [Test]
@@ -79,9 +79,9 @@ namespace MTGOArchetypeParser.Tests
                 archetype
             });
 
-            result.Should().HaveCount(1);
-            result.First().Archetype.Should().Be(archetype);
-            result.First().Variant.Should().BeNull();
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
 
             result = ArchetypeAnalyzer.Detect(
                 new string[] { },
@@ -91,9 +91,9 @@ namespace MTGOArchetypeParser.Tests
                     archetype
                 });
 
-            result.Should().HaveCount(1);
-            result.First().Archetype.Should().Be(archetype);
-            result.First().Variant.Should().BeNull();
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
         }
 
         [Test]
@@ -115,9 +115,9 @@ namespace MTGOArchetypeParser.Tests
                     archetype
                 });
 
-            result.Should().HaveCount(1);
-            result.First().Archetype.Should().Be(archetype);
-            result.First().Variant.Should().BeNull();
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
 
             result = ArchetypeAnalyzer.Detect(
                 new string[] { "Card 2", "Card 3" },
@@ -127,9 +127,9 @@ namespace MTGOArchetypeParser.Tests
                     archetype
                 });
 
-            result.Should().HaveCount(1);
-            result.First().Archetype.Should().Be(archetype);
-            result.First().Variant.Should().BeNull();
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
 
         }
 
@@ -152,9 +152,9 @@ namespace MTGOArchetypeParser.Tests
                     archetype
                 });
 
-            result.Should().HaveCount(1);
-            result.First().Archetype.Should().Be(archetype);
-            result.First().Variant.Should().BeNull();
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
 
             result = ArchetypeAnalyzer.Detect(
                 new string[] { },
@@ -164,9 +164,9 @@ namespace MTGOArchetypeParser.Tests
                     archetype
                 });
 
-            result.Should().HaveCount(1);
-            result.First().Archetype.Should().Be(archetype);
-            result.First().Variant.Should().BeNull();
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
         }
 
         [Test]
@@ -188,9 +188,9 @@ namespace MTGOArchetypeParser.Tests
                             archetype
             });
 
-            result.Should().HaveCount(1);
-            result.First().Archetype.Should().Be(archetype);
-            result.First().Variant.Should().BeNull();
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
 
             result = ArchetypeAnalyzer.Detect(
                 new string[] { "Card 2", "Card 3" },
@@ -200,9 +200,9 @@ namespace MTGOArchetypeParser.Tests
                     archetype
                 });
 
-            result.Should().HaveCount(1);
-            result.First().Archetype.Should().Be(archetype);
-            result.First().Variant.Should().BeNull();
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
 
             result = ArchetypeAnalyzer.Detect(
                 new string[] { },
@@ -212,9 +212,9 @@ namespace MTGOArchetypeParser.Tests
                     archetype
                 });
 
-            result.Should().HaveCount(1);
-            result.First().Archetype.Should().Be(archetype);
-            result.First().Variant.Should().BeNull();
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
 
             result = ArchetypeAnalyzer.Detect(
                 new string[] { },
@@ -224,9 +224,9 @@ namespace MTGOArchetypeParser.Tests
                     archetype
                 });
 
-            result.Should().HaveCount(1);
-            result.First().Archetype.Should().Be(archetype);
-            result.First().Variant.Should().BeNull();
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
         }
 
         [Test]
@@ -248,9 +248,9 @@ namespace MTGOArchetypeParser.Tests
                  archetype
             });
 
-            result.Should().HaveCount(1);
-            result.First().Archetype.Should().Be(archetype);
-            result.First().Variant.Should().BeNull();
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
 
             result = ArchetypeAnalyzer.Detect(
             new string[] { "Card 1", "Card 3" },
@@ -260,7 +260,7 @@ namespace MTGOArchetypeParser.Tests
                  archetype
             });
 
-            result.Should().HaveCount(0);
+            result.Matches.Should().HaveCount(0);
 
             result = ArchetypeAnalyzer.Detect(
             new string[] { },
@@ -270,7 +270,7 @@ namespace MTGOArchetypeParser.Tests
                  archetype
             });
 
-            result.Should().HaveCount(0);
+            result.Matches.Should().HaveCount(0);
         }
     }
 }
