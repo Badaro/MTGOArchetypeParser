@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGOArchetypeParser", "MTGOArchetypeParser\MTGOArchetypeParser.csproj", "{897D7752-728D-4EB3-88CE-AA49AAD0E1F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGOArchetypeParser.Tests", "MTGOArchetypeParser.Tests\MTGOArchetypeParser.Tests.csproj", "{0DFD96A2-8CC3-4343-9364-4B0271CE4348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGOArchetypeParser.Tests.SampleData", "MTGOArchetypeParser.Tests.SampleData\MTGOArchetypeParser.Tests.SampleData.csproj", "{36B3745F-62E3-4393-B844-6987EAB8AB82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGOArchetypeParser.Archetypes.Modern", "MTGOArchetypeParser.Archetypes.Modern\MTGOArchetypeParser.Archetypes.Modern.csproj", "{68E0622C-377F-4948-B45D-34FFBACE99ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{897D7752-728D-4EB3-88CE-AA49AAD0E1F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897D7752-728D-4EB3-88CE-AA49AAD0E1F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897D7752-728D-4EB3-88CE-AA49AAD0E1F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897D7752-728D-4EB3-88CE-AA49AAD0E1F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DFD96A2-8CC3-4343-9364-4B0271CE4348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DFD96A2-8CC3-4343-9364-4B0271CE4348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DFD96A2-8CC3-4343-9364-4B0271CE4348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DFD96A2-8CC3-4343-9364-4B0271CE4348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36B3745F-62E3-4393-B844-6987EAB8AB82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B3745F-62E3-4393-B844-6987EAB8AB82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B3745F-62E3-4393-B844-6987EAB8AB82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36B3745F-62E3-4393-B844-6987EAB8AB82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68E0622C-377F-4948-B45D-34FFBACE99ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68E0622C-377F-4948-B45D-34FFBACE99ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68E0622C-377F-4948-B45D-34FFBACE99ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68E0622C-377F-4948-B45D-34FFBACE99ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {364A2333-AF7C-40B1-AC66-096EFE3C60B2}
+	EndGlobalSection
+EndGlobal
