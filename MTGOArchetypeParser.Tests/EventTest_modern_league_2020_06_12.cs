@@ -251,13 +251,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck21_Miracles_WU()
+        public void Deck21_AzoriusControl_Miracles_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12.Deck21_Miracles_WU(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12.Deck21_AzoriusControl_Miracles_WU(),
                 ArchetypeColor.WU,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Miracles),
-                null,
                 null
             );
         }

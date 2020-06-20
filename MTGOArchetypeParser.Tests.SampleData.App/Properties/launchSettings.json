@@ -2,7 +2,7 @@
   "profiles": {
     "MTGOArchetypeParser.Tests.SampleData.App": {
       "commandName": "Project",
-      "commandLineArgs": "https://magic.wizards.com/en/articles/archive/mtgo-standings/modern-league-2020-06-19"
+      "commandLineArgs": "https://magic.wizards.com/en/articles/archive/mtgo-standings/modern-preliminary-2020-06-06"
     }
   }
 }

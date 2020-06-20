@@ -2,6 +2,7 @@
 using MTGOArchetypeParser.Data;
 using MTGOArchetypeParser.Model;
 using MTGOArchetypeParser.Tests.SampleData;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,8 @@ namespace MTGOArchetypeParser.Tests
         protected void Test(ISampleDeck deck, ArchetypeColor? expectedColor = null, Type expectedArchetype = null, Type expectedVariant = null, ArchetypeCompanion? expectedCompanion = null)
         {
             var result = ArchetypeAnalyzer.Detect(deck.Mainboard, deck.Sideboard, MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
+
+            result.Matches.Length.Should().BeLessOrEqualTo(1);
 
             if (expectedColor != null) result.Color.Should().Be(expectedColor);
             else result.Color.Should().Be(ArchetypeColor.C);

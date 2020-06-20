@@ -107,13 +107,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck09_Miracles_WU_Kaheera()
+        public void Deck09_AzoriusControl_Miracles_WU_Kaheera()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_19.Deck09_Miracles_WU_Kaheera(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_19.Deck09_AzoriusControl_Miracles_WU_Kaheera(),
                 ArchetypeColor.WU,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Miracles),
-                null,
                 ArchetypeCompanion.Kaheera
             );
         }

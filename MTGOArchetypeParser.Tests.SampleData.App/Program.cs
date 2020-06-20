@@ -1,4 +1,5 @@
 ﻿using MTGOArchetypeParser.Data;
+using MTGODecklistParser.Data;
 using System;
 using System.IO;
 using System.Linq;
@@ -10,15 +11,15 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
     {
         static void Main(string[] args)
         {
-            if (args.Length == 0)
+            try
             {
-                Console.WriteLine("Usage: MTGOArchetypeParser.Tests.SampleData.App EVENT_URL");
-            }
-            else
-            {
-                try
+                string[] eventUrls = TournamentLoader.GetTournaments(new DateTime(2020, 06, 05, 00, 00, 00, DateTimeKind.Utc), DateTime.UtcNow).Where(t => t.Name.Contains("Modern")).Select(e => e.Uri.ToString()).ToArray();
+                Console.WriteLine("Downloading tournament list");
+
+                foreach (string eventUrl in eventUrls)
                 {
-                    string eventUrl = args[0];
+                    Console.WriteLine($"Downloading {eventUrl}");
+
                     string leagueID = Path.GetFileName(eventUrl).Replace("-", "_");
                     var decks = MTGODecklistParser.Data.DeckLoader.GetDecks(new Uri(eventUrl));
 
@@ -87,12 +88,11 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
                             .Replace("TEST_DATA", testData.ToString());
 
                     File.WriteAllText(testOutputFile, testFileContents);
-
                 }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Error: {ex.Message}");
-                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
             }
         }
 
