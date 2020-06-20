@@ -38,6 +38,8 @@ namespace MTGOArchetypeParser.App
                             {
                                 status = "Match";
                                 name = result.Matches[0].Archetype.GetType().Name;
+
+                                if (result.Matches[0].Variant != null) name += $"/{result.Matches[0].Variant.GetType().Name}";
                             }
                             else
                             {

@@ -71,12 +71,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck06_Unknown_WUG_Yorion()
+        public void Deck06_Soulherder_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck06_Unknown_WUG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck06_Soulherder_WUG_Yorion(),
                 ArchetypeColor.WUG,
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Soulherder),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -239,13 +239,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck20_SnowControl_WUG_Yorion()
+        public void Deck20_SnowControl_SnowTitan_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck20_SnowControl_WUG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck20_SnowControl_SnowTitan_WUG_Yorion(),
                 ArchetypeColor.WUG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowTitan),
                 ArchetypeCompanion.Yorion
             );
         }
@@ -275,13 +275,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck23_ThopterUrza_UBR()
+        public void Deck23_Urza_ThopterUrza_UBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck23_ThopterUrza_UBR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck23_Urza_ThopterUrza_UBR(),
                 ArchetypeColor.UBR,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ThopterUrza),
-                null,
                 null
             );
         }

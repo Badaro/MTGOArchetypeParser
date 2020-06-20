@@ -119,13 +119,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck10_SnowControl_WUG_Yorion()
+        public void Deck10_SnowControl_SnowTitan_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_05.Deck10_SnowControl_WUG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_05.Deck10_SnowControl_SnowTitan_WUG_Yorion(),
                 ArchetypeColor.WUG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowTitan),
                 ArchetypeCompanion.Yorion
             );
         }
@@ -167,13 +167,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck14_SnowControl_SnowBlade_WURG_Yorion()
+        public void Deck14_JeskaiTempo_WURG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_05.Deck14_SnowControl_SnowBlade_WURG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_05.Deck14_JeskaiTempo_WURG_Yorion(),
                 ArchetypeColor.WURG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowBlade),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiTempo),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
