@@ -647,12 +647,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck54_Unknown_WBG()
+        public void Deck54_AbzanBlade_WBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck54_Unknown_WBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck54_AbzanBlade_WBG(),
                 ArchetypeColor.WBG,
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.AbzanBlade),
                 null,
                 null
             );

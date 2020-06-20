@@ -13,8 +13,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
         {
             try
             {
-                string[] eventUrls = TournamentLoader.GetTournaments(new DateTime(2020, 06, 05, 00, 00, 00, DateTimeKind.Utc), DateTime.UtcNow).Where(t => t.Name.Contains("Modern")).Select(e => e.Uri.ToString()).ToArray();
                 Console.WriteLine("Downloading tournament list");
+                string[] eventUrls = TournamentLoader.GetTournaments(new DateTime(2020, 06, 05, 00, 00, 00, DateTimeKind.Utc), DateTime.UtcNow).Where(t => t.Name.Contains("Modern")).Select(e => e.Uri.ToString()).ToArray();
 
                 foreach (string eventUrl in eventUrls)
                 {

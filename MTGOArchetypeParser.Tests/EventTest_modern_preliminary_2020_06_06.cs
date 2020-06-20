@@ -155,12 +155,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck13_Unknown_WBG()
+        public void Deck13_AbzanBlade_WBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_06.Deck13_Unknown_WBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_06.Deck13_AbzanBlade_WBG(),
                 ArchetypeColor.WBG,
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.AbzanBlade),
                 null,
                 null
             );

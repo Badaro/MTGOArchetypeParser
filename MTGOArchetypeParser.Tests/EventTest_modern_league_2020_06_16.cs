@@ -623,12 +623,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck52_Unknown_WURG_Jegantha()
+        public void Deck52_JeskaiAscendancy_WURG_Jegantha()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16.Deck52_Unknown_WURG_Jegantha(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16.Deck52_JeskaiAscendancy_WURG_Jegantha(),
                 ArchetypeColor.WURG,
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiAscendancy),
                 null,
                 ArchetypeCompanion.Jegantha
             );
