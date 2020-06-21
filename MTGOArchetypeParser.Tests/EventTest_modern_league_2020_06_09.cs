@@ -167,12 +167,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck14_Unknown_W()
+        public void Deck14_ThaliaStoneblade_W()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck14_Unknown_W(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck14_ThaliaStoneblade_W(),
                 ArchetypeColor.W,
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.ThaliaStoneblade),
                 null,
                 null
             );

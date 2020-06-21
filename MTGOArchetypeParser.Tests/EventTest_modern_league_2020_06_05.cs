@@ -239,12 +239,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck20_Unknown_BRG_Lurrus()
+        public void Deck20_JundSmallpox_BRG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_05.Deck20_Unknown_BRG_Lurrus(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_05.Deck20_JundSmallpox_BRG_Lurrus(),
                 ArchetypeColor.BRG,
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.JundSmallpox),
                 null,
                 ArchetypeCompanion.Lurrus
             );

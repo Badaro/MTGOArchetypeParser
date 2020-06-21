@@ -215,12 +215,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck18_Unknown_WUG_Yorion()
+        public void Deck18_BantWalls_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15.Deck18_Unknown_WUG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15.Deck18_BantWalls_WUG_Yorion(),
                 ArchetypeColor.WUG,
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.BantWalls),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -299,12 +299,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck25_Unknown_WUB()
+        public void Deck25_EsperControl_WUB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15.Deck25_Unknown_WUB(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15.Deck25_EsperControl_WUB(),
                 ArchetypeColor.WUB,
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.EsperControl),
                 null,
                 null
             );

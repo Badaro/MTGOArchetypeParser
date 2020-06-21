@@ -371,12 +371,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck31_Unknown_WURG()
+        public void Deck31_GruulCompany_WURG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12.Deck31_Unknown_WURG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12.Deck31_GruulCompany_WURG(),
                 ArchetypeColor.WURG,
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.GruulCompany),
                 null,
                 null
             );

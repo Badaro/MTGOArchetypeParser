@@ -107,12 +107,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck09_Unknown_WRG()
+        public void Deck09_NayaStoneblade_WRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck09_Unknown_WRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck09_NayaStoneblade_WRG(),
                 ArchetypeColor.WRG,
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.NayaStoneblade),
                 null,
                 null
             );
