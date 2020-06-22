@@ -13,6 +13,9 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
         {
             try
             {
+                bool allowUpdate = false;
+                if (args.Length > 0 && args[0].ToString()=="allowupdate") allowUpdate = true;
+
                 Console.WriteLine("Downloading tournament list");
                 string[] eventUrls = TournamentLoader.GetTournaments(new DateTime(2020, 06, 05, 00, 00, 00, DateTimeKind.Utc), DateTime.UtcNow).Where(t => t.Name.Contains("Modern")).Select(e => e.Uri.ToString()).ToArray();
 
@@ -20,13 +23,25 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
                 {
                     Console.WriteLine($"Downloading {eventUrl}");
 
-                    string leagueID = Path.GetFileName(eventUrl).Replace("-", "_");
-                    var decks = MTGODecklistParser.Data.DeckLoader.GetDecks(new Uri(eventUrl));
-
                     // Destination for sample data
+                    string leagueID = Path.GetFileName(eventUrl).Replace("-", "_");
                     string sampleDataOutputFolder = Path.Combine(new DirectoryInfo(@"..\..\..\..\").FullName, "MTGOArchetypeParser.Tests.SampleData", leagueID);
-                    if (Directory.Exists(sampleDataOutputFolder)) Directory.Delete(sampleDataOutputFolder, true);
+                    if (Directory.Exists(sampleDataOutputFolder))
+                    {
+                        if (!allowUpdate)
+                        {
+                            Console.WriteLine("Tournament already exists and allowupdate was not specified, skipping");
+                            continue;
+                        }
+                        else
+                        {
+                            Directory.Delete(sampleDataOutputFolder, true);
+                        }
+                    }
                     Directory.CreateDirectory(sampleDataOutputFolder);
+
+                    // Decklist download
+                    var decks = MTGODecklistParser.Data.DeckLoader.GetDecks(new Uri(eventUrl));
 
                     // Destination for test class
                     string testOutputFile = Path.Combine(new DirectoryInfo(@"..\..\..\..\").FullName, "MTGOArchetypeParser.Tests", $"EventTest_{leagueID}.cs");

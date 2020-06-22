@@ -23,6 +23,7 @@ namespace MTGOArchetypeParser.App
                         var result = ArchetypeAnalyzer.Detect(decks[i].Mainboard.Select(i => i.CardName).ToArray(), decks[i].Sideboard.Select(i => i.CardName).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
 
                         int position = i + 1;
+                        string player = decks[i].Player;
                         string status;
                         string name;
                         string colors = result.Color.ToString();
@@ -39,7 +40,7 @@ namespace MTGOArchetypeParser.App
                                 status = "Match";
                                 name = result.Matches[0].Archetype.GetType().Name;
 
-                                if (result.Matches[0].Variant != null) name += $"/{result.Matches[0].Variant.GetType().Name}";
+                                if (result.Matches[0].Variant != null) name = $"{result.Matches[0].Variant.GetType().Name}";
                             }
                             else
                             {
@@ -48,7 +49,14 @@ namespace MTGOArchetypeParser.App
                             }
                         }
 
-                        Console.WriteLine($"#{position.ToString("D2")} Status={status},Deck={name},Colors={colors},Companion={companion}");
+                        if (companion != "None")
+                        {
+                            Console.WriteLine($"#{position.ToString("D2")} {player}: {name} ({colors}, {companion})");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"#{position.ToString("D2")} {player}: {name} ({colors})");
+                        }
                     }
                 }
                 catch (Exception ex)
