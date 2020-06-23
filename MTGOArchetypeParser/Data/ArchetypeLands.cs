@@ -228,6 +228,7 @@ namespace MTGOArchetypeParser.Data
 
             // 5C
             { "Ancient Ziggurat", ArchetypeColor.WUBRG }, // Usually represents a 5C deck, but not guaranteed
+            { "Sliver Hive", ArchetypeColor.WUBRG }, // Usually represents a 5C deck, but not guaranteed
         };
     }
 }
