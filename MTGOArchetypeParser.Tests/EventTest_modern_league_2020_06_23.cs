@@ -59,13 +59,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck05_SnowControl_URG()
+        public void Deck05_SnowControl_SnowReclamation_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_23.Deck05_SnowControl_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_23.Deck05_SnowControl_SnowReclamation_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowReclamation),
                 null
             );
         }
