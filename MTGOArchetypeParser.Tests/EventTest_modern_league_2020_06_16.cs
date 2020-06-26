@@ -23,12 +23,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck02_Urza_URG_Yorion()
+        public void Deck02_KinnanUrza_URG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16.Deck02_Urza_URG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16.Deck02_KinnanUrza_URG_Yorion(),
                 ArchetypeColor.URG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.KinnanUrza),
                 null,
                 ArchetypeCompanion.Yorion
             );

@@ -59,12 +59,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck05_Urza_URG_Yorion()
+        public void Deck05_KinnanUrza_URG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21.Deck05_Urza_URG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21.Deck05_KinnanUrza_URG_Yorion(),
                 ArchetypeColor.URG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.KinnanUrza),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -383,12 +383,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck32_Urza_URG_Yorion()
+        public void Deck32_KinnanUrza_URG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21.Deck32_Urza_URG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21.Deck32_KinnanUrza_URG_Yorion(),
                 ArchetypeColor.URG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.KinnanUrza),
                 null,
                 ArchetypeCompanion.Yorion
             );
