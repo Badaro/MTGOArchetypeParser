@@ -371,13 +371,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck31_Goblins_BR()
+        public void Deck31_Goblins_SnoopGoblins_BR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_26.Deck31_Goblins_BR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_26.Deck31_Goblins_SnoopGoblins_BR(),
                 ArchetypeColor.BR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Goblins),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SnoopGoblins),
                 null
             );
         }
