@@ -20,11 +20,25 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             };
             Variants = new ArchetypeVariant[]
             {
+                new SultaiSnow(),
                 new SnowBlade(),
                 new SnowReclamation(),
                 new SnowTurns(),
                 new SnowShift(),
                 new SnowTitan()
+            };
+        }
+    }
+
+    public class SultaiSnow : ArchetypeVariant
+    {
+        public SultaiSnow()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Fatal Push" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Abrupt Decay", "Assassin's Trophy", "Maelstrom Pulse" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Thoughtseize", "Inquisition of Kozilek", "Cling to Dust" } }
             };
         }
     }

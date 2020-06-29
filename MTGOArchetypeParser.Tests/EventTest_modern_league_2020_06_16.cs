@@ -1,5 +1,10 @@
+using FluentAssertions;
 using MTGOArchetypeParser.Model;
 using NUnit.Framework;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace MTGOArchetypeParser.Tests
 {
@@ -174,13 +179,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck15_SnowControl_UBG()
+        public void Deck15_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16.Deck15_SnowControl_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16.Deck15_SnowControl_SultaiSnow_UBG(),
                 ArchetypeColor.UBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SultaiSnow),
                 null
             );
         }
@@ -429,7 +434,7 @@ namespace MTGOArchetypeParser.Tests
         public void Deck36_ThopterUrza_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16.Deck36_Urza_ThopterUrza_WU(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16.Deck36_ThopterUrza_WU(),
                 ArchetypeColor.WU,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ThopterUrza),
                 null,

@@ -119,13 +119,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck10_SnowControl_UBG()
+        public void Deck10_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_25.Deck10_SnowControl_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_25.Deck10_SnowControl_SultaiSnow_UBG(),
                 ArchetypeColor.UBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SultaiSnow),
                 null
             );
         }

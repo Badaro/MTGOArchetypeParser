@@ -35,13 +35,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck03_SnowControl_UBG()
+        public void Deck03_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15.Deck03_SnowControl_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15.Deck03_SnowControl_SultaiSnow_UBG(),
                 ArchetypeColor.UBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SultaiSnow),
                 null
             );
         }
@@ -155,13 +155,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck13_SnowControl_UBG()
+        public void Deck13_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15.Deck13_SnowControl_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15.Deck13_SnowControl_SultaiSnow_UBG(),
                 ArchetypeColor.UBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SultaiSnow),
                 null
             );
         }
@@ -227,13 +227,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck19_SnowControl_WUBG()
+        public void Deck19_SnowControl_SultaiSnow_WUBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15.Deck19_SnowControl_WUBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15.Deck19_SnowControl_SultaiSnow_WUBG(),
                 ArchetypeColor.WUBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SultaiSnow),
                 null
             );
         }
@@ -251,10 +251,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck21_Urza_URG()
+        public void Deck21_Uroza_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15.Deck21_Urza_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15.Deck21_Uroza_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
                 null,
@@ -263,13 +263,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck22_SnowControl_UBG()
+        public void Deck22_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15.Deck22_SnowControl_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15.Deck22_SnowControl_SultaiSnow_UBG(),
                 ArchetypeColor.UBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SultaiSnow),
                 null
             );
         }

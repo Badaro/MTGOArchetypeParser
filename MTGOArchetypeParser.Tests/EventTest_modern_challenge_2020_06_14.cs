@@ -11,13 +11,13 @@ namespace MTGOArchetypeParser.Tests
     public class EventTest_modern_challenge_2020_06_14 : EventTest
     {
         [Test]
-        public void Deck01_SnowControl_UBG()
+        public void Deck01_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck01_SnowControl_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck01_SnowControl_SultaiSnow_UBG(),
                 ArchetypeColor.UBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SultaiSnow),
                 null
             );
         }
@@ -71,10 +71,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck06_Urza_URG()
+        public void Deck06_Uroza_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck06_Urza_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck06_Uroza_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
                 null,
@@ -203,10 +203,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck17_ScapeShift_URG()
+        public void Deck17_Scapeshift_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck17_ScapeShift_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck17_Scapeshift_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Scapeshift),
                 null,
@@ -371,10 +371,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck31_Urza_URG()
+        public void Deck31_Uroza_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck31_Urza_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck31_Uroza_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
                 null,

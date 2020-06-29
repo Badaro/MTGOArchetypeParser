@@ -35,10 +35,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck03_Urza_URG()
+        public void Deck03_Uroza_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_showcase_challenge_2020_06_07.Deck03_Urza_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_showcase_challenge_2020_06_07.Deck03_Uroza_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
                 null,

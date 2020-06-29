@@ -335,10 +335,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck28_ScapeShift_URG()
+        public void Deck28_Scapeshift_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_28.Deck28_ScapeShift_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_28.Deck28_Scapeshift_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Scapeshift),
                 null,
