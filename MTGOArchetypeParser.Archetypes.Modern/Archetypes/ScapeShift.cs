@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class ScapeShift : Archetype
+    public class Scapeshift : Archetype
     {
-        public ScapeShift()
+        public Scapeshift()
         {
             Conditions = new ArchetypeCondition[]
             {

@@ -407,13 +407,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck34_JeskaiTempo_WUR()
+        public void Deck34_JeskaiControl_JeskaiFlash_WUR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16.Deck34_JeskaiTempo_WUR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16.Deck34_JeskaiControl_JeskaiFlash_WUR(),
                 ArchetypeColor.WUR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiTempo),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiControl),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiFlash),
                 null
             );
         }

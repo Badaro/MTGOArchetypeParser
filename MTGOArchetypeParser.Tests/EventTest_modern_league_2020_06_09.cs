@@ -88,7 +88,7 @@ namespace MTGOArchetypeParser.Tests
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck07_ScapeShift_URG(),
                 ArchetypeColor.URG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.ScapeShift),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Scapeshift),
                 null,
                 null
             );

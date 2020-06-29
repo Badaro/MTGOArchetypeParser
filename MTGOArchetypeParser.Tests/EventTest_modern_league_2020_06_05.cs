@@ -167,13 +167,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck14_JeskaiTempo_WURG_Yorion()
+        public void Deck14_JeskaiControl_JeskaiStoneblade_WURG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_05.Deck14_JeskaiTempo_WURG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_05.Deck14_JeskaiControl_JeskaiStoneblade_WURG_Yorion(),
                 ArchetypeColor.WURG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiTempo),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiControl),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiStoneblade),
                 ArchetypeCompanion.Yorion
             );
         }

@@ -167,13 +167,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck14_JeskaiStoneblade_WUR()
+        public void Deck14_JeskaiControl_JeskaiStoneblade_WUR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_06.Deck14_JeskaiStoneblade_WUR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_06.Deck14_JeskaiControl_JeskaiStoneblade_WUR(),
                 ArchetypeColor.WUR,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiControl),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiStoneblade),
-                null,
                 null
             );
         }

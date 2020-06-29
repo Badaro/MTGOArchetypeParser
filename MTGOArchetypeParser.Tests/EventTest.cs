@@ -17,7 +17,7 @@ namespace MTGOArchetypeParser.Tests
         {
             var result = ArchetypeAnalyzer.Detect(deck.Mainboard, deck.Sideboard, MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
 
-            result.Matches.Length.Should().BeLessOrEqualTo(1);
+            result.Matches.Length.Should().Be(1);
 
             if (expectedColor != null) result.Color.Should().Be(expectedColor);
             else result.Color.Should().Be(ArchetypeColor.C);

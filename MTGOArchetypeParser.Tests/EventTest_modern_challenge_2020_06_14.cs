@@ -208,7 +208,7 @@ namespace MTGOArchetypeParser.Tests
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck17_ScapeShift_URG(),
                 ArchetypeColor.URG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.ScapeShift),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Scapeshift),
                 null,
                 null
             );
@@ -347,12 +347,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck29_Urza_WURG()
+        public void Deck29_GrindingBreach_WURG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck29_Urza_WURG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck29_GrindingBreach_WURG(),
                 ArchetypeColor.WURG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.GrindingBreach),
                 null,
                 null
             );
