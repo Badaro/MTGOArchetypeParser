@@ -35,13 +35,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck03_Urza_ThopterUrza_UB()
+        public void Deck03_ThopterUrza_UB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_27.Deck03_Urza_ThopterUrza_UB(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_27.Deck03_ThopterUrza_UB(),
                 ArchetypeColor.UB,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ThopterUrza),
+                null,
                 null
             );
         }

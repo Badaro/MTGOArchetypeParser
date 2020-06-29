@@ -275,13 +275,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck23_Urza_ThopterUrza_UBR()
+        public void Deck23_ThopterUrza_UBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck23_Urza_ThopterUrza_UBR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck23_ThopterUrza_UBR(),
                 ArchetypeColor.UBR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ThopterUrza),
+                null,
                 null
             );
         }
@@ -431,13 +431,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck36_SnowControl_SnowUrza_UBG_Yorion()
+        public void Deck36_Uroza_UBG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck36_SnowControl_SnowUrza_UBG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck36_Uroza_UBG_Yorion(),
                 ArchetypeColor.UBG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowUrza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
@@ -743,13 +743,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck62_SnowControl_SnowUrza_WUG_Yorion()
+        public void Deck62_Uroza_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck62_SnowControl_SnowUrza_WUG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Uroza(),
                 ArchetypeColor.WUG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowUrza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }

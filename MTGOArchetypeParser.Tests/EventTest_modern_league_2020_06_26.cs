@@ -95,13 +95,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck08_SnowControl_SnowUrza_UBG_Yorion()
+        public void Deck08_Uroza_UBG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_26.Deck08_SnowControl_SnowUrza_UBG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_26.Deck08_Uroza_UBG_Yorion(),
                 ArchetypeColor.UBG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowUrza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }

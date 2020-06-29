@@ -40,7 +40,7 @@ namespace MTGOArchetypeParser.Tests
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.modern_showcase_challenge_2020_06_07.Deck03_Urza_URG(),
                 ArchetypeColor.URG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
                 null,
                 null
             );
@@ -179,13 +179,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck15_Urza_ThopterUrza_UBR()
+        public void Deck15_ThopterUrza_UBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_showcase_challenge_2020_06_07.Deck15_Urza_ThopterUrza_UBR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_showcase_challenge_2020_06_07.Deck15_ThopterUrza_UBR(),
                 ArchetypeColor.UBR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ThopterUrza),
+                null,
                 null
             );
         }

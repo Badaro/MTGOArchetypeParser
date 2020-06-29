@@ -124,7 +124,7 @@ namespace MTGOArchetypeParser.Tests
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_11.Deck10_Urza_URG(),
                 ArchetypeColor.URG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
                 null,
                 null
             );
@@ -148,7 +148,7 @@ namespace MTGOArchetypeParser.Tests
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_11.Deck12_Urza_URG(),
                 ArchetypeColor.URG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
                 null,
                 null
             );

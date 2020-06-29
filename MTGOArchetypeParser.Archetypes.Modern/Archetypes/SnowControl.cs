@@ -15,28 +15,16 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Ice-Fang Coatl" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Uro, Titan of Nature's Wrath" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Cryptic Command", "Jace, the Mind Sculptor" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Soulherder" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Soulherder" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Metallic Rebuke" } }
             };
             Variants = new ArchetypeVariant[]
             {
-                new SnowUrza(),
                 new SnowBlade(),
                 new SnowReclamation(),
                 new SnowTurns(),
                 new SnowShift(),
                 new SnowTitan()
-            };
-        }
-    }
-
-    public class SnowUrza : ArchetypeVariant
-    {
-        public SnowUrza()
-        {
-            Conditions = new ArchetypeCondition[]
-            {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Urza, Lord High Artificer" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Metallic Rebuke" } }
             };
         }
     }

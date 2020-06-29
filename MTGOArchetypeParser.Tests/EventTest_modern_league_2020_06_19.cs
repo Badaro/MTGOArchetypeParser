@@ -119,13 +119,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck10_SnowControl_SnowUrza_UBG_Yorion()
+        public void Deck10_Uroza_UBG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_19.Deck10_SnowControl_SnowUrza_UBG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_19.Deck10_Uroza_UBG_Yorion(),
                 ArchetypeColor.UBG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowUrza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
@@ -239,13 +239,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck20_Urza_ThopterUrza_WUBR()
+        public void Deck20_ThopterUrza_WUBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_19.Deck20_Urza_ThopterUrza_WUBR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_19.Deck20_ThopterUrza_WUBR(),
                 ArchetypeColor.WUBR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ThopterUrza),
+                null,
                 null
             );
         }
@@ -484,7 +484,7 @@ namespace MTGOArchetypeParser.Tests
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_19.Deck40_Urza_URG(),
                 ArchetypeColor.URG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
                 null,
                 null
             );

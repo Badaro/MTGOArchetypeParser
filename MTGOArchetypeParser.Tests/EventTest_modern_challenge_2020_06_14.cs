@@ -76,7 +76,7 @@ namespace MTGOArchetypeParser.Tests
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck06_Urza_URG(),
                 ArchetypeColor.URG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
                 null,
                 null
             );
@@ -215,13 +215,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck18_Urza_ThopterUrza_UBR()
+        public void Deck18_ThopterUrza_UBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck18_Urza_ThopterUrza_UBR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck18_ThopterUrza_UBR(),
                 ArchetypeColor.UBR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ThopterUrza),
+                null,
                 null
             );
         }
@@ -311,13 +311,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck26_Urza_ThopterUrza_UBR()
+        public void Deck26_ThopterUrza_UBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck26_Urza_ThopterUrza_UBR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck26_ThopterUrza_UBR(),
                 ArchetypeColor.UBR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ThopterUrza),
+                null,
                 null
             );
         }
@@ -376,7 +376,7 @@ namespace MTGOArchetypeParser.Tests
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14.Deck31_Urza_URG(),
                 ArchetypeColor.URG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
                 null,
                 null
             );

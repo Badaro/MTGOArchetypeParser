@@ -35,13 +35,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck03_Urza_ThopterUrza_UBR()
+        public void Deck03_ThopterUrza_UBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21.Deck03_Urza_ThopterUrza_UBR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21.Deck03_ThopterUrza_UBR(),
                 ArchetypeColor.UBR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ThopterUrza),
+                null,
                 null
             );
         }
@@ -215,13 +215,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck18_SnowControl_SnowUrza_UBG_Yorion()
+        public void Deck18_Uroza_UBG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21.Deck18_SnowControl_SnowUrza_UBG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21.Deck18_Uroza_UBG_Yorion(),
                 ArchetypeColor.UBG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowUrza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
@@ -304,7 +304,7 @@ namespace MTGOArchetypeParser.Tests
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21.Deck25_Urza_URG(),
                 ArchetypeColor.URG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Urza),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
                 null,
                 null
             );
