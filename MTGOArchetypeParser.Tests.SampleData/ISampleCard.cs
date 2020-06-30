@@ -13,7 +13,6 @@ namespace MTGOArchetypeParser.Tests.SampleData
     public class SampleCard : ISampleCard
     {
         public int Count { get; private set; }
-
         public string Name { get; private set; }
         public SampleCard(int count, string name)
         {

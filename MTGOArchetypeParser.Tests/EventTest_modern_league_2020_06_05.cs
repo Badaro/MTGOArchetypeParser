@@ -155,12 +155,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck13_SvenSvenSven_BlueMoon_UR()
+        public void Deck13_SvenSvenSven_IzzetControl_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_05.Deck13_SvenSvenSven_BlueMoon_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_05.Deck13_SvenSvenSven_IzzetControl_UR(),
                 ArchetypeColor.UR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.BlueMoon),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetControl),
                 null,
                 null
             );

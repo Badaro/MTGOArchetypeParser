@@ -1,8 +1,8 @@
 using MTGOArchetypeParser.Tests.SampleData;
 
-namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09
+namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_05
 {
-    public class Deck18_thepensword_BlueMoon_UR : ISampleDeck
+    public class Deck13_SvenSvenSven_IzzetControl_UR : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
@@ -30,7 +30,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09
         };
         public ISampleCard[] Sideboard => new ISampleCard[] 
         { 
-            new SampleCard(2, "Abrade"),
+            new SampleCard(1, "Bonecrusher Giant"),
+            new SampleCard(1, "Abrade"),
             new SampleCard(2, "Aether Gust"),
             new SampleCard(1, "Ashiok, Dream Render"),
             new SampleCard(1, "Beacon Bolt"),

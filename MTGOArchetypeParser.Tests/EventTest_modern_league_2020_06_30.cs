@@ -299,12 +299,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck25_thepensword_BlueMoon_UR()
+        public void Deck25_thepensword_IzzetControl_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_30.Deck25_thepensword_BlueMoon_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_30.Deck25_thepensword_IzzetControl_UR(),
                 ArchetypeColor.UR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.BlueMoon),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetControl),
                 null,
                 null
             );

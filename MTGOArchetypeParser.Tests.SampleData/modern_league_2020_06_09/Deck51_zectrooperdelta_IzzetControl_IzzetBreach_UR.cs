@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09
 {
-    public class Deck51_zectrooperdelta_ThroughTheBreach_UR : ISampleDeck
+    public class Deck51_zectrooperdelta_IzzetControl_IzzetBreach_UR : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

@@ -11,12 +11,12 @@ namespace MTGOArchetypeParser.Tests
     public class EventTest_modern_challenge_2020_06_21 : EventTest
     {
         [Test]
-        public void Deck01_Tiemuuu_BlueMoon_UR()
+        public void Deck01_Tiemuuu_IzzetControl_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21.Deck01_Tiemuuu_BlueMoon_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21.Deck01_Tiemuuu_IzzetControl_UR(),
                 ArchetypeColor.UR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.BlueMoon),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetControl),
                 null,
                 null
             );
@@ -95,12 +95,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck08_SvenSveeterSven_BlueMoon_UR()
+        public void Deck08_SvenSveeterSven_IzzetControl_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21.Deck08_SvenSveeterSven_BlueMoon_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21.Deck08_SvenSveeterSven_IzzetControl_UR(),
                 ArchetypeColor.UR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.BlueMoon),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetControl),
                 null,
                 null
             );

@@ -215,12 +215,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck18_thepensword_BlueMoon_UR()
+        public void Deck18_thepensword_IzzetControl_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck18_thepensword_BlueMoon_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck18_thepensword_IzzetControl_UR(),
                 ArchetypeColor.UR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.BlueMoon),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetControl),
                 null,
                 null
             );
@@ -611,13 +611,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck51_zectrooperdelta_ThroughTheBreach_UR()
+        public void Deck51_zectrooperdelta_IzzetControl_IzzetBreach_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck51_zectrooperdelta_ThroughTheBreach_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck51_zectrooperdelta_IzzetControl_IzzetBreach_UR(),
                 ArchetypeColor.UR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.ThroughTheBreach),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetControl),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetBreach),
                 null
             );
         }

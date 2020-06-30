@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12
 {
-    public class Deck34_knightmare21_BlueMoon_UR : ISampleDeck
+    public class Deck34_knightmare21_IzzetControl_UR : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21
 {
-    public class Deck01_Tiemuuu_BlueMoon_UR : ISampleDeck
+    public class Deck01_Tiemuuu_IzzetControl_UR : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

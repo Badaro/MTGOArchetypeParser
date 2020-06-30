@@ -407,12 +407,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck34_knightmare21_BlueMoon_UR()
+        public void Deck34_knightmare21_IzzetControl_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12.Deck34_knightmare21_BlueMoon_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12.Deck34_knightmare21_IzzetControl_UR(),
                 ArchetypeColor.UR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.BlueMoon),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetControl),
                 null,
                 null
             );
