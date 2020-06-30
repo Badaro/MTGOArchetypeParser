@@ -11,10 +11,10 @@ namespace MTGOArchetypeParser.Tests
     public class EventTest_modern_league_2020_06_09 : EventTest
     {
         [Test]
-        public void Deck01_Elementals_WUBRG()
+        public void Deck01_Tarrasque1_Elementals_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck01_Elementals_WUBRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck01_Tarrasque1_Elementals_WUBRG(),
                 ArchetypeColor.WUBRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Elementals),
                 null,
@@ -23,10 +23,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck02_ETron_C()
+        public void Deck02_Mateusf34_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck02_ETron_C(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck02_Mateusf34_ETron_C(),
                 ArchetypeColor.C,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ETron),
                 null,
@@ -35,10 +35,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck03_BringToNiv_WUBRG()
+        public void Deck03_Wuhsa_BringToNiv_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck03_BringToNiv_WUBRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck03_Wuhsa_BringToNiv_WUBRG(),
                 ArchetypeColor.WUBRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.BringToNiv),
                 null,
@@ -47,10 +47,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck04_AzoriusControl_Miracles_WU()
+        public void Deck04_HeyPharaoh_AzoriusControl_Miracles_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck04_AzoriusControl_Miracles_WU(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck04_HeyPharaoh_AzoriusControl_Miracles_WU(),
                 ArchetypeColor.WU,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Miracles),
@@ -59,10 +59,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck05_GiftsStorm_UR_Jegantha()
+        public void Deck05_Teston_GiftsStorm_UR_Jegantha()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck05_GiftsStorm_UR_Jegantha(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck05_Teston_GiftsStorm_UR_Jegantha(),
                 ArchetypeColor.UR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.GiftsStorm),
                 null,
@@ -71,10 +71,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck06_Soulherder_WUG_Yorion()
+        public void Deck06_cftsoc3_Soulherder_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck06_Soulherder_WUG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck06_cftsoc3_Soulherder_WUG_Yorion(),
                 ArchetypeColor.WUG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Soulherder),
                 null,
@@ -83,10 +83,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck07_Scapeshift_URG()
+        public void Deck07_Jakesbaked_Scapeshift_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck07_Scapeshift_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck07_Jakesbaked_Scapeshift_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Scapeshift),
                 null,
@@ -95,10 +95,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck08_AdNauseam_WUB()
+        public void Deck08_PaChA94s_AdNauseam_WUB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck08_AdNauseam_WUB(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck08_PaChA94s_AdNauseam_WUB(),
                 ArchetypeColor.WUB,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AdNauseam),
                 null,
@@ -107,10 +107,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck09_Devoted_HeliodDevoted_WBG()
+        public void Deck09_SonsoJF_Devoted_HeliodDevoted_WBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck09_Devoted_HeliodDevoted_WBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck09_SonsoJF_Devoted_HeliodDevoted_WBG(),
                 ArchetypeColor.WBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Devoted),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.HeliodDevoted),
@@ -119,10 +119,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck10_GTron_GolosTron_G_Jegantha()
+        public void Deck10_cfilly4460_GTron_GolosTron_G_Jegantha()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck10_GTron_GolosTron_G_Jegantha(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck10_cfilly4460_GTron_GolosTron_G_Jegantha(),
                 ArchetypeColor.G,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.GTron),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.GolosTron),
@@ -131,10 +131,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck11_Winota_WRG()
+        public void Deck11_matyo804_Winota_WRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck11_Winota_WRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck11_matyo804_Winota_WRG(),
                 ArchetypeColor.WRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Winota),
                 null,
@@ -143,10 +143,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck12_Bogles_WG()
+        public void Deck12_kaikalbuquerque_Bogles_WG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck12_Bogles_WG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck12_kaikalbuquerque_Bogles_WG(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Bogles),
                 null,
@@ -155,10 +155,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck13_Dredge_BRG()
+        public void Deck13_Matts_Dredge_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck13_Dredge_BRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck13_Matts_Dredge_BRG(),
                 ArchetypeColor.BRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Dredge),
                 null,
@@ -167,10 +167,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck14_ThaliaStoneblade_W()
+        public void Deck14_WotCAndrewB_ThaliaStoneblade_W()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck14_ThaliaStoneblade_W(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck14_WotCAndrewB_ThaliaStoneblade_W(),
                 ArchetypeColor.W,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ThaliaStoneblade),
                 null,
@@ -179,10 +179,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck15_DeathsShadow_SuicideShadow_BRG()
+        public void Deck15_Madwolf87_DeathsShadow_SuicideShadow_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck15_DeathsShadow_SuicideShadow_BRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck15_Madwolf87_DeathsShadow_SuicideShadow_BRG(),
                 ArchetypeColor.BRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.DeathsShadow),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SuicideShadow),
@@ -191,10 +191,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck16_ElectroBalance_URG()
+        public void Deck16_fupalorda_ElectroBalance_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck16_ElectroBalance_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck16_fupalorda_ElectroBalance_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ElectroBalance),
                 null,
@@ -203,10 +203,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck17_DeathAndTaxes_EldraziTaxes_WB()
+        public void Deck17_litianshuo670_DeathAndTaxes_EldraziTaxes_WB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck17_DeathAndTaxes_EldraziTaxes_WB(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck17_litianshuo670_DeathAndTaxes_EldraziTaxes_WB(),
                 ArchetypeColor.WB,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.DeathAndTaxes),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.EldraziTaxes),
@@ -215,10 +215,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck18_BlueMoon_UR()
+        public void Deck18_thepensword_BlueMoon_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck18_BlueMoon_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck18_thepensword_BlueMoon_UR(),
                 ArchetypeColor.UR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.BlueMoon),
                 null,
@@ -227,10 +227,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck19_SnowControl_WUBG_Yorion()
+        public void Deck19_ScreenwriterNY_SnowControl_WUBG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck19_SnowControl_WUBG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck19_ScreenwriterNY_SnowControl_WUBG_Yorion(),
                 ArchetypeColor.WUBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 null,
@@ -239,10 +239,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck20_SnowControl_SnowTitan_WUG_Yorion()
+        public void Deck20_Urzza100_SnowControl_SnowTitan_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck20_SnowControl_SnowTitan_WUG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck20_Urzza100_SnowControl_SnowTitan_WUG_Yorion(),
                 ArchetypeColor.WUG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowTitan),
@@ -251,10 +251,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck21_Smallpox_WB()
+        public void Deck21_Oldbagobones_Smallpox_WB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck21_Smallpox_WB(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck21_Oldbagobones_Smallpox_WB(),
                 ArchetypeColor.WB,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Smallpox),
                 null,
@@ -263,10 +263,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck22_NinjaFaeries_UB()
+        public void Deck22_Kotva_NinjaFaeries_UB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck22_NinjaFaeries_UB(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck22_Kotva_NinjaFaeries_UB(),
                 ArchetypeColor.UB,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.NinjaFaeries),
                 null,
@@ -275,10 +275,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck23_ThopterUrza_UBR()
+        public void Deck23_ContraEgo_ThopterUrza_UBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck23_ThopterUrza_UBR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck23_ContraEgo_ThopterUrza_UBR(),
                 ArchetypeColor.UBR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ThopterUrza),
                 null,
@@ -287,10 +287,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck24_HardenedScales_BG_Lurrus()
+        public void Deck24_Blindside09_HardenedScales_BG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck24_HardenedScales_BG_Lurrus(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck24_Blindside09_HardenedScales_BG_Lurrus(),
                 ArchetypeColor.BG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.HardenedScales),
                 null,
@@ -299,10 +299,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck25_Burn_WR()
+        public void Deck25_ilmatagatto_Burn_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck25_Burn_WR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck25_ilmatagatto_Burn_WR(),
                 ArchetypeColor.WR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Burn),
                 null,
@@ -311,10 +311,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck26_SnowControl_WUBG_Yorion()
+        public void Deck26_DarkKeeper_SnowControl_WUBG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck26_SnowControl_WUBG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck26_DarkKeeper_SnowControl_WUBG_Yorion(),
                 ArchetypeColor.WUBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 null,
@@ -323,10 +323,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck27_EmeriaTitan_WU()
+        public void Deck27_FuryGarruk_EmeriaTitan_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck27_EmeriaTitan_WU(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck27_FuryGarruk_EmeriaTitan_WU(),
                 ArchetypeColor.WU,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.EmeriaTitan),
                 null,
@@ -335,10 +335,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck28_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck28_MarmotaStore_Prowess_RakdosProwess_BR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck28_Prowess_RakdosProwess_BR_Lurrus(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck28_MarmotaStore_Prowess_RakdosProwess_BR_Lurrus(),
                 ArchetypeColor.BR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosProwess),
@@ -347,10 +347,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck29_HammerTime_WR()
+        public void Deck29_Blademaster777_HammerTime_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck29_HammerTime_WR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck29_Blademaster777_HammerTime_WR(),
                 ArchetypeColor.WR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.HammerTime),
                 null,
@@ -359,10 +359,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck30_Rock_Jund_BRG()
+        public void Deck30_NagatoBoran_Rock_Jund_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck30_Rock_Jund_BRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck30_NagatoBoran_Rock_Jund_BRG(),
                 ArchetypeColor.BRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Rock),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Jund),
@@ -371,10 +371,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck31_DeathAndTaxes_W_Yorion()
+        public void Deck31_XOPYC_DeathAndTaxes_W_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck31_DeathAndTaxes_W_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck31_XOPYC_DeathAndTaxes_W_Yorion(),
                 ArchetypeColor.W,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.DeathAndTaxes),
                 null,
@@ -383,10 +383,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck32_Infect_UG()
+        public void Deck32_Traft_Infect_UG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck32_Infect_UG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck32_Traft_Infect_UG(),
                 ArchetypeColor.UG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Infect),
                 null,
@@ -395,10 +395,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck33_Prowess_R_Jegantha()
+        public void Deck33_MHayashi_Prowess_R_Jegantha()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck33_Prowess_R_Jegantha(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck33_MHayashi_Prowess_R_Jegantha(),
                 ArchetypeColor.R,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
                 null,
@@ -407,10 +407,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck34_Delver_UR()
+        public void Deck34_hoveydw_Delver_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck34_Delver_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck34_hoveydw_Delver_UR(),
                 ArchetypeColor.UR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Delver),
                 null,
@@ -419,10 +419,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck35_Goblins_BRG()
+        public void Deck35_MasterA_Goblins_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck35_Goblins_BRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck35_MasterA_Goblins_BRG(),
                 ArchetypeColor.BRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Goblins),
                 null,
@@ -431,10 +431,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck36_Uroza_UBG_Yorion()
+        public void Deck36_MrRaeb_Uroza_UBG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck36_Uroza_UBG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck36_MrRaeb_Uroza_UBG_Yorion(),
                 ArchetypeColor.UBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
                 null,
@@ -443,10 +443,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck37_SnowControl_SnowBlade_WUBG()
+        public void Deck37_C4N7O_SnowControl_SnowBlade_WUBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck37_SnowControl_SnowBlade_WUBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck37_C4N7O_SnowControl_SnowBlade_WUBG(),
                 ArchetypeColor.WUBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowBlade),
@@ -455,10 +455,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck38_Prowess_WR()
+        public void Deck38_NeverDidntHaveIt_Prowess_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck38_Prowess_WR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck38_NeverDidntHaveIt_Prowess_WR(),
                 ArchetypeColor.WR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
                 null,
@@ -467,10 +467,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck39_SnowControl_SnowShift_URG_Yorion()
+        public void Deck39_Justodeangelo_SnowControl_SnowShift_URG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck39_SnowControl_SnowShift_URG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck39_Justodeangelo_SnowControl_SnowShift_URG_Yorion(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowShift),
@@ -479,10 +479,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck40_DeathsShadow_GrixisShadow_UBR()
+        public void Deck40_CordoTwin_DeathsShadow_GrixisShadow_UBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck40_DeathsShadow_GrixisShadow_UBR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck40_CordoTwin_DeathsShadow_GrixisShadow_UBR(),
                 ArchetypeColor.UBR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.DeathsShadow),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.GrixisShadow),
@@ -491,10 +491,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck41_SnowControl_SnowBlade_WUG()
+        public void Deck41_vixyp_SnowControl_SnowBlade_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck41_SnowControl_SnowBlade_WUG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck41_vixyp_SnowControl_SnowBlade_WUG(),
                 ArchetypeColor.WUG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowBlade),
@@ -503,10 +503,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck42_JeskaiAscendancy_JeskaiBreach_WURG()
+        public void Deck42_wambocombo2020_JeskaiAscendancy_JeskaiBreach_WURG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck42_JeskaiAscendancy_JeskaiBreach_WURG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck42_wambocombo2020_JeskaiAscendancy_JeskaiBreach_WURG(),
                 ArchetypeColor.WURG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiAscendancy),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiBreach),
@@ -515,10 +515,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck43_SnowControl_WUG()
+        public void Deck43_Diem4x_SnowControl_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck43_SnowControl_WUG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck43_Diem4x_SnowControl_WUG(),
                 ArchetypeColor.WUG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 null,
@@ -527,10 +527,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck44_PrimevalTitan_BRG()
+        public void Deck44_Dfeanor_PrimevalTitan_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck44_PrimevalTitan_BRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck44_Dfeanor_PrimevalTitan_BRG(),
                 ArchetypeColor.BRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.PrimevalTitan),
                 null,
@@ -539,10 +539,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck45_Inverter_UB()
+        public void Deck45_Lucabireskusku_Inverter_UB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck45_Inverter_UB(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck45_Lucabireskusku_Inverter_UB(),
                 ArchetypeColor.UB,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Inverter),
                 null,
@@ -551,10 +551,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck46_UTron_U()
+        public void Deck46_mrjgiles_UTron_U()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck46_UTron_U(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck46_mrjgiles_UTron_U(),
                 ArchetypeColor.U,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.UTron),
                 null,
@@ -563,10 +563,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck47_PrimevalTitan_TitanShift_RG()
+        public void Deck47_sandoiche_PrimevalTitan_TitanShift_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck47_PrimevalTitan_TitanShift_RG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck47_sandoiche_PrimevalTitan_TitanShift_RG(),
                 ArchetypeColor.RG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.PrimevalTitan),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.TitanShift),
@@ -575,10 +575,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck48_Polymorph_WUBRG_Yorion()
+        public void Deck48_kyon1024_Polymorph_WUBRG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck48_Polymorph_WUBRG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck48_kyon1024_Polymorph_WUBRG_Yorion(),
                 ArchetypeColor.WUBRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Polymorph),
                 null,
@@ -587,10 +587,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck49_Humans_WUBRG()
+        public void Deck49_Girolamo1996_Humans_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck49_Humans_WUBRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck49_Girolamo1996_Humans_WUBRG(),
                 ArchetypeColor.WUBRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Humans),
                 null,
@@ -599,10 +599,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck50_Prowess_R()
+        public void Deck50_Rvng_Prowess_R()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck50_Prowess_R(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck50_Rvng_Prowess_R(),
                 ArchetypeColor.R,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
                 null,
@@ -611,10 +611,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck51_ThroughTheBreach_UR()
+        public void Deck51_zectrooperdelta_ThroughTheBreach_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck51_ThroughTheBreach_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck51_zectrooperdelta_ThroughTheBreach_UR(),
                 ArchetypeColor.UR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ThroughTheBreach),
                 null,
@@ -623,10 +623,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck52_Rock_Sultai_UBG()
+        public void Deck52_TscheggschDePoegg_Rock_Sultai_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck52_Rock_Sultai_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck52_TscheggschDePoegg_Rock_Sultai_UBG(),
                 ArchetypeColor.UBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Rock),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Sultai),
@@ -635,10 +635,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck53_TakingTurns_UR()
+        public void Deck53_PuNk_TakingTurns_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck53_TakingTurns_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck53_PuNk_TakingTurns_UR(),
                 ArchetypeColor.UR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.TakingTurns),
                 null,
@@ -647,10 +647,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck54_AbzanBlade_WBG()
+        public void Deck54_DoomedNecromancer_AbzanBlade_WBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck54_AbzanBlade_WBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck54_DoomedNecromancer_AbzanBlade_WBG(),
                 ArchetypeColor.WBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AbzanBlade),
                 null,
@@ -659,10 +659,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck55_Ponza_RG()
+        public void Deck55_willtheelf1_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck55_Ponza_RG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck55_willtheelf1_Ponza_RG(),
                 ArchetypeColor.RG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Ponza),
                 null,
@@ -671,10 +671,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck56_Neobrand_UG()
+        public void Deck56_Somefellow_Neobrand_UG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck56_Neobrand_UG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck56_Somefellow_Neobrand_UG(),
                 ArchetypeColor.UG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Neobrand),
                 null,
@@ -683,10 +683,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck57_SnowControl_SultaiSnow_UBG()
+        public void Deck57_illwill552_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck57_SnowControl_SultaiSnow_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck57_illwill552_SnowControl_SultaiSnow_UBG(),
                 ArchetypeColor.UBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SultaiSnow),
@@ -695,10 +695,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck58_Devoted_HeliodDevoted_WUG()
+        public void Deck58_MartinezDP_Devoted_HeliodDevoted_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck58_Devoted_HeliodDevoted_WUG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck58_MartinezDP_Devoted_HeliodDevoted_WUG(),
                 ArchetypeColor.WUG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Devoted),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.HeliodDevoted),
@@ -707,10 +707,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck59_KikiChord_WBRG_Yorion()
+        public void Deck59_Kurusu_KikiChord_WBRG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck59_KikiChord_WBRG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck59_Kurusu_KikiChord_WBRG_Yorion(),
                 ArchetypeColor.WBRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.KikiChord),
                 null,
@@ -719,10 +719,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck60_PrimevalTitan_AmuletTitan_URG()
+        public void Deck60_603Leb_PrimevalTitan_AmuletTitan_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck60_PrimevalTitan_AmuletTitan_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck60_603Leb_PrimevalTitan_AmuletTitan_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.PrimevalTitan),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AmuletTitan),
@@ -731,10 +731,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck61_Yawgmoth_BG()
+        public void Deck61_mashmalovsky_Yawgmoth_BG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck61_Yawgmoth_BG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck61_mashmalovsky_Yawgmoth_BG(),
                 ArchetypeColor.BG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Yawgmoth),
                 null,
@@ -743,10 +743,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck62_Uroza_WUG_Yorion()
+        public void Deck62_Termahgerf_Uroza_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck62_Uroza_WUG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck62_Termahgerf_Uroza_WUG_Yorion(),
                 ArchetypeColor.WUG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Uroza),
                 null,
@@ -755,10 +755,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck63_SnowControl_SnowTurns_URG()
+        public void Deck63_marcofabrizi_SnowControl_SnowTurns_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck63_SnowControl_SnowTurns_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck63_marcofabrizi_SnowControl_SnowTurns_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowTurns),
@@ -767,10 +767,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck64_Rock_Jund_BRG_Lurrus()
+        public void Deck64_yriel_Rock_Jund_BRG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck64_Rock_Jund_BRG_Lurrus(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09.Deck64_yriel_Rock_Jund_BRG_Lurrus(),
                 ArchetypeColor.BRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Rock),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Jund),

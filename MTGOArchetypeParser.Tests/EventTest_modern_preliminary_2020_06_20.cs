@@ -11,10 +11,10 @@ namespace MTGOArchetypeParser.Tests
     public class EventTest_modern_preliminary_2020_06_20 : EventTest
     {
         [Test]
-        public void Deck01_Lantern_UBG()
+        public void Deck01_aooaaooa_Lantern_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck01_Lantern_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck01_aooaaooa_Lantern_UBG(),
                 ArchetypeColor.UBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Lantern),
                 null,
@@ -23,10 +23,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck02_Devoted_WG_Lurrus()
+        public void Deck02_NightKnight131_Devoted_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck02_Devoted_WG_Lurrus(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck02_NightKnight131_Devoted_WG_Lurrus(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Devoted),
                 null,
@@ -35,10 +35,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck03_EldraziBlade_WG_Jegantha()
+        public void Deck03_MadCowChicken_EldraziBlade_WG_Jegantha()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck03_EldraziBlade_WG_Jegantha(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck03_MadCowChicken_EldraziBlade_WG_Jegantha(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.EldraziBlade),
                 null,
@@ -47,10 +47,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck04_Ponza_RG()
+        public void Deck04_FrankBonaparte_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck04_Ponza_RG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck04_FrankBonaparte_Ponza_RG(),
                 ArchetypeColor.RG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Ponza),
                 null,
@@ -59,10 +59,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck05_Infect_UG()
+        public void Deck05_Papelucho10_Infect_UG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck05_Infect_UG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck05_Papelucho10_Infect_UG(),
                 ArchetypeColor.UG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Infect),
                 null,
@@ -71,10 +71,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck06_Burn_WR()
+        public void Deck06_Mcleskey_Burn_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck06_Burn_WR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck06_Mcleskey_Burn_WR(),
                 ArchetypeColor.WR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Burn),
                 null,
@@ -83,10 +83,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck07_Dredge_BRG()
+        public void Deck07_Boland_Dredge_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck07_Dredge_BRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck07_Boland_Dredge_BRG(),
                 ArchetypeColor.BRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Dredge),
                 null,
@@ -95,10 +95,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck08_Ponza_RG()
+        public void Deck08_ghostx02_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck08_Ponza_RG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck08_ghostx02_Ponza_RG(),
                 ArchetypeColor.RG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Ponza),
                 null,
@@ -107,10 +107,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck09_NayaStoneblade_WRG()
+        public void Deck09_FrancusAurelius_NayaStoneblade_WRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck09_NayaStoneblade_WRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck09_FrancusAurelius_NayaStoneblade_WRG(),
                 ArchetypeColor.WRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.NayaStoneblade),
                 null,
@@ -119,10 +119,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck10_GTron_KGCTron_G()
+        public void Deck10_otakkun_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck10_GTron_KGCTron_G(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck10_otakkun_GTron_KGCTron_G(),
                 ArchetypeColor.G,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.GTron),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.KGCTron),
@@ -131,10 +131,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck11_DeathsShadow_BR()
+        public void Deck11_Logic_DeathsShadow_BR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck11_DeathsShadow_BR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck11_Logic_DeathsShadow_BR(),
                 ArchetypeColor.BR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.DeathsShadow),
                 null,
@@ -143,10 +143,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck12_Bogles_WG_Lurrus()
+        public void Deck12_2radMTG_Bogles_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck12_Bogles_WG_Lurrus(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck12_2radMTG_Bogles_WG_Lurrus(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Bogles),
                 null,
@@ -155,10 +155,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck13_SnowControl_URG()
+        public void Deck13_lovealienzzz_SnowControl_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck13_SnowControl_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck13_lovealienzzz_SnowControl_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 null,
@@ -167,10 +167,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck14_KinnanUrza_URG_Yorion()
+        public void Deck14_Manacymbal_KinnanUrza_URG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck14_KinnanUrza_URG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck14_Manacymbal_KinnanUrza_URG_Yorion(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.KinnanUrza),
                 null,
@@ -179,10 +179,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck15_Ponza_RG()
+        public void Deck15_signblindman_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck15_Ponza_RG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck15_signblindman_Ponza_RG(),
                 ArchetypeColor.RG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Ponza),
                 null,
@@ -191,10 +191,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck16_Humans_WUBRG()
+        public void Deck16_Nammersquats_Humans_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck16_Humans_WUBRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck16_Nammersquats_Humans_WUBRG(),
                 ArchetypeColor.WUBRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Humans),
                 null,
@@ -203,10 +203,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck17_AdNauseam_WUB()
+        public void Deck17_Micro_AdNauseam_WUB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck17_AdNauseam_WUB(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck17_Micro_AdNauseam_WUB(),
                 ArchetypeColor.WUB,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AdNauseam),
                 null,
@@ -215,10 +215,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck18_BringToNiv_WUBRG()
+        public void Deck18_joetru_BringToNiv_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck18_BringToNiv_WUBRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck18_joetru_BringToNiv_WUBRG(),
                 ArchetypeColor.WUBRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.BringToNiv),
                 null,
@@ -227,10 +227,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck19_Mill_UB()
+        public void Deck19_grahams_Mill_UB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck19_Mill_UB(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20.Deck19_grahams_Mill_UB(),
                 ArchetypeColor.UB,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Mill),
                 null,

@@ -11,10 +11,10 @@ namespace MTGOArchetypeParser.Tests
     public class EventTest_modern_preliminary_2020_06_12 : EventTest
     {
         [Test]
-        public void Deck01_Humans_WUBRG()
+        public void Deck01_ravensfan52720_Humans_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck01_Humans_WUBRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck01_ravensfan52720_Humans_WUBRG(),
                 ArchetypeColor.WUBRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Humans),
                 null,
@@ -23,10 +23,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck02_SnowControl_SnowTitan_WUG_Yorion()
+        public void Deck02_billsive_SnowControl_SnowTitan_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck02_SnowControl_SnowTitan_WUG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck02_billsive_SnowControl_SnowTitan_WUG_Yorion(),
                 ArchetypeColor.WUG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowTitan),
@@ -35,10 +35,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck03_Humans_WUBRG()
+        public void Deck03_WebZone_Humans_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck03_Humans_WUBRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck03_WebZone_Humans_WUBRG(),
                 ArchetypeColor.WUBRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Humans),
                 null,
@@ -47,10 +47,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck04_GiftsStorm_UR()
+        public void Deck04_PeanutBrittle_GiftsStorm_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck04_GiftsStorm_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck04_PeanutBrittle_GiftsStorm_UR(),
                 ArchetypeColor.UR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.GiftsStorm),
                 null,
@@ -59,10 +59,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck05_Ponza_RG()
+        public void Deck05_ecobaronen_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck05_Ponza_RG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck05_ecobaronen_Ponza_RG(),
                 ArchetypeColor.RG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Ponza),
                 null,
@@ -71,10 +71,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck06_Prowess_R()
+        public void Deck06_madechai_Prowess_R()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck06_Prowess_R(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck06_madechai_Prowess_R(),
                 ArchetypeColor.R,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
                 null,
@@ -83,10 +83,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck07_Ponza_RG()
+        public void Deck07_brunocaleb_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck07_Ponza_RG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck07_brunocaleb_Ponza_RG(),
                 ArchetypeColor.RG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Ponza),
                 null,
@@ -95,10 +95,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck08_ETron_C()
+        public void Deck08_TheTunnelingCat_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck08_ETron_C(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck08_TheTunnelingCat_ETron_C(),
                 ArchetypeColor.C,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ETron),
                 null,
@@ -107,10 +107,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck09_Dredge_BRG()
+        public void Deck09_PRGJJAR_Dredge_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck09_Dredge_BRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck09_PRGJJAR_Dredge_BRG(),
                 ArchetypeColor.BRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Dredge),
                 null,
@@ -119,10 +119,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck10_ETron_C()
+        public void Deck10_staples87_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck10_ETron_C(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck10_staples87_ETron_C(),
                 ArchetypeColor.C,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ETron),
                 null,
@@ -131,10 +131,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck11_PrimevalTitan_TitanShift_RG()
+        public void Deck11_benjamin13_PrimevalTitan_TitanShift_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck11_PrimevalTitan_TitanShift_RG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck11_benjamin13_PrimevalTitan_TitanShift_RG(),
                 ArchetypeColor.RG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.PrimevalTitan),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.TitanShift),
@@ -143,10 +143,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck12_SnowControl_SnowBlade_WUG()
+        public void Deck12_SonicSmasher_SnowControl_SnowBlade_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck12_SnowControl_SnowBlade_WUG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck12_SonicSmasher_SnowControl_SnowBlade_WUG(),
                 ArchetypeColor.WUG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowBlade),
@@ -155,10 +155,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck13_Burn_WR()
+        public void Deck13_ilmatagatto_Burn_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck13_Burn_WR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck13_ilmatagatto_Burn_WR(),
                 ArchetypeColor.WR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Burn),
                 null,
@@ -167,10 +167,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck14_SnowControl_WUG()
+        public void Deck14_Misplacedginger_SnowControl_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck14_SnowControl_WUG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck14_Misplacedginger_SnowControl_WUG(),
                 ArchetypeColor.WUG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 null,
@@ -179,10 +179,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck15_Ponza_RG()
+        public void Deck15_BSKhercules_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck15_Ponza_RG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck15_BSKhercules_Ponza_RG(),
                 ArchetypeColor.RG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Ponza),
                 null,
@@ -191,10 +191,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck16_SnowControl_URG()
+        public void Deck16_lovealienzzz_SnowControl_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck16_SnowControl_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck16_lovealienzzz_SnowControl_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 null,
@@ -203,10 +203,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck17_SnowControl_SnowReclamation_URG_Yorion()
+        public void Deck17_yamakiller_SnowControl_SnowReclamation_URG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck17_SnowControl_SnowReclamation_URG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck17_yamakiller_SnowControl_SnowReclamation_URG_Yorion(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowReclamation),
@@ -215,10 +215,10 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck18_Humans_WUBRG()
+        public void Deck18_PieGonti_Humans_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck18_Humans_WUBRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12.Deck18_PieGonti_Humans_WUBRG(),
                 ArchetypeColor.WUBRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Humans),
                 null,

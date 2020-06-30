@@ -4,6 +4,7 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace MTGOArchetypeParser.Tests.SampleData.App
 {
@@ -14,7 +15,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
             try
             {
                 bool allowUpdate = false;
-                if (args.Length > 0 && args[0].ToString()=="allowupdate") allowUpdate = true;
+                if (args.Length > 0 && args[0].ToString() == "allowupdate") allowUpdate = true;
 
                 Console.WriteLine("Downloading tournament list");
                 string[] eventUrls = TournamentLoader.GetTournaments(new DateTime(2020, 06, 05, 00, 00, 00, DateTimeKind.Utc), DateTime.UtcNow).Where(t => t.Name.Contains("Modern")).Select(e => e.Uri.ToString()).ToArray();
@@ -53,6 +54,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
                     {
                         var detectionResult = ArchetypeAnalyzer.Detect(decks[i].Mainboard.Select(i => i.CardName).ToArray(), decks[i].Sideboard.Select(i => i.CardName).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
 
+                        string playerID = decks[i].Player == null ? "" : decks[i].Player;
                         string colorID = detectionResult.Color.ToString();
                         string companionID = detectionResult.Companion == null ? "" : detectionResult.Companion.Value.ToString();
                         string archetypeID = String.Empty;
@@ -69,6 +71,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
                         }
 
                         string deckID = $"Deck{(i + 1).ToString("D2")}";
+                        deckID += playerID.Length > 0 ? $"_{new string(playerID.Where(c => char.IsLetterOrDigit(c)).ToArray())}" : "_Unknown";
                         deckID += archetypeID.Length > 0 ? $"_{archetypeID}" : "_Unknown";
                         deckID += variantID.Length > 0 ? $"_{variantID}" : "";
                         deckID += $"_{colorID}";
@@ -79,8 +82,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
                         string sampleDataContents = _sampleDataTemplate
                             .Replace("LEAGUE_ID", leagueID)
                             .Replace("DECK_ID", deckID)
-                            .Replace("MAINBOARD_CARDS", String.Join(",", decks[i].Mainboard.Select(c => "\"" + c.CardName + "\"")))
-                            .Replace("SIDEBOARD_CARDS", String.Join(",", decks[i].Sideboard.Select(c => "\"" + c.CardName + "\"")));
+                            .Replace("MAINBOARD_CARDS", String.Join(",", decks[i].Mainboard.Select(c => $"({c.Count}, \"{c.CardName}\")")))
+                            .Replace("SIDEBOARD_CARDS", String.Join(",", decks[i].Sideboard.Select(c => $"({c.Count}, \"{c.CardName}\")")));
 
                         File.WriteAllText(sampleDataFile, sampleDataContents);
 
@@ -117,8 +120,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.LEAGUE_ID
 {
     public class DECK_ID : ISampleDeck
     {
-        public string[] Mainboard { get { return new string[] { MAINBOARD_CARDS }; } }
-        public string[] Sideboard { get { return new string[] { SIDEBOARD_CARDS }; } }
+        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { MAINBOARD_CARDS }; } }
+        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { SIDEBOARD_CARDS }; } }
     }
 }";
 

@@ -6,7 +6,7 @@ namespace MTGOArchetypeParser.Tests.SampleData
 {
     public interface ISampleDeck
     {
-        string[] Mainboard { get; }
-        string[] Sideboard { get; }
+        (int Count, string Name)[] Mainboard { get; }
+        (int Count, string Name)[] Sideboard { get; }
     }
 }
