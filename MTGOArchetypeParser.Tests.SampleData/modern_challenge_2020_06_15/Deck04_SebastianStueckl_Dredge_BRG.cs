@@ -4,7 +4,39 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15
 {
     public class Deck04_SebastianStueckl_Dredge_BRG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Bloodghast"),(4, "Merchant of the Vale"),(4, "Narcomoeba"),(2, "Ox of Agonas"),(4, "Prized Amalgam"),(4, "Stinkweed Imp"),(4, "Cathartic Reunion"),(1, "Conflagrate"),(4, "Creeping Chill"),(4, "Life from the Loam"),(1, "Darkblast"),(4, "Shriekhorn"),(2, "Arid Mesa"),(2, "Blood Crypt"),(2, "Bloodstained Mire"),(4, "Copperline Gorge"),(1, "Dakmor Salvage"),(2, "Forgotten Cave"),(2, "Mountain"),(3, "Stomping Ground"),(2, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Darkblast"),(1, "Ancient Grudge"),(1, "Blast Zone"),(2, "Blood Moon"),(3, "Leyline of the Void"),(3, "Lightning Axe"),(4, "Nature's Claim") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Bloodghast"),
+            new SampleCard(4, "Merchant of the Vale"),
+            new SampleCard(4, "Narcomoeba"),
+            new SampleCard(2, "Ox of Agonas"),
+            new SampleCard(4, "Prized Amalgam"),
+            new SampleCard(4, "Stinkweed Imp"),
+            new SampleCard(4, "Cathartic Reunion"),
+            new SampleCard(1, "Conflagrate"),
+            new SampleCard(4, "Creeping Chill"),
+            new SampleCard(4, "Life from the Loam"),
+            new SampleCard(1, "Darkblast"),
+            new SampleCard(4, "Shriekhorn"),
+            new SampleCard(2, "Arid Mesa"),
+            new SampleCard(2, "Blood Crypt"),
+            new SampleCard(2, "Bloodstained Mire"),
+            new SampleCard(4, "Copperline Gorge"),
+            new SampleCard(1, "Dakmor Salvage"),
+            new SampleCard(2, "Forgotten Cave"),
+            new SampleCard(2, "Mountain"),
+            new SampleCard(3, "Stomping Ground"),
+            new SampleCard(2, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Darkblast"),
+            new SampleCard(1, "Ancient Grudge"),
+            new SampleCard(1, "Blast Zone"),
+            new SampleCard(2, "Blood Moon"),
+            new SampleCard(3, "Leyline of the Void"),
+            new SampleCard(3, "Lightning Axe"),
+            new SampleCard(4, "Nature's Claim") 
+        };
     }
 }

@@ -4,7 +4,37 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_18
 {
     public class Deck12_Traft_AdNauseam_WUB : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Simian Spirit Guide"),(3, "Thassa's Oracle"),(4, "Serum Visions"),(3, "Sleight of Hand"),(4, "Ad Nauseam"),(4, "Angel's Grace"),(1, "Lightning Storm"),(2, "Pact of Negation"),(4, "Spoils of the Vault"),(4, "Lotus Bloom"),(4, "Pentad Prism"),(3, "Phyrexian Unlife"),(3, "City of Brass"),(3, "Darkslick Shores"),(4, "Gemstone Mine"),(1, "Island"),(2, "Plains"),(3, "Seachrome Coast"),(4, "Temple of Deceit") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Pact of Negation"),(1, "Phyrexian Unlife"),(4, "Leyline of Sanctity"),(2, "Path to Exile"),(2, "Sphinx of the Final Word"),(2, "Thoughtseize"),(3, "Veil of Summer") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Simian Spirit Guide"),
+            new SampleCard(3, "Thassa's Oracle"),
+            new SampleCard(4, "Serum Visions"),
+            new SampleCard(3, "Sleight of Hand"),
+            new SampleCard(4, "Ad Nauseam"),
+            new SampleCard(4, "Angel's Grace"),
+            new SampleCard(1, "Lightning Storm"),
+            new SampleCard(2, "Pact of Negation"),
+            new SampleCard(4, "Spoils of the Vault"),
+            new SampleCard(4, "Lotus Bloom"),
+            new SampleCard(4, "Pentad Prism"),
+            new SampleCard(3, "Phyrexian Unlife"),
+            new SampleCard(3, "City of Brass"),
+            new SampleCard(3, "Darkslick Shores"),
+            new SampleCard(4, "Gemstone Mine"),
+            new SampleCard(1, "Island"),
+            new SampleCard(2, "Plains"),
+            new SampleCard(3, "Seachrome Coast"),
+            new SampleCard(4, "Temple of Deceit") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Pact of Negation"),
+            new SampleCard(1, "Phyrexian Unlife"),
+            new SampleCard(4, "Leyline of Sanctity"),
+            new SampleCard(2, "Path to Exile"),
+            new SampleCard(2, "Sphinx of the Final Word"),
+            new SampleCard(2, "Thoughtseize"),
+            new SampleCard(3, "Veil of Summer") 
+        };
     }
 }

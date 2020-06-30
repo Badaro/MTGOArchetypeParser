@@ -4,7 +4,35 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12
 {
     public class Deck13_DannyBambino_Crabvine_UBG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (3, "Carrion Feeder"),(1, "Fatestitcher"),(4, "Gravecrawler"),(4, "Hedron Crab"),(4, "Merfolk Secretkeeper"),(4, "Narcomoeba"),(4, "Prized Amalgam"),(4, "Stitcher's Supplier"),(4, "Vengevine"),(4, "Creeping Chill"),(4, "Glimpse the Unthinkable"),(4, "Bloodstained Mire"),(4, "Marsh Flats"),(3, "Overgrown Tomb"),(4, "Polluted Delta"),(2, "Swamp"),(3, "Watery Grave") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Abrupt Decay"),(1, "Assassin's Trophy"),(3, "Damping Sphere"),(3, "Fatal Push"),(3, "Leyline of the Void"),(2, "Nature's Claim"),(2, "Thoughtseize") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Carrion Feeder"),
+            new SampleCard(1, "Fatestitcher"),
+            new SampleCard(4, "Gravecrawler"),
+            new SampleCard(4, "Hedron Crab"),
+            new SampleCard(4, "Merfolk Secretkeeper"),
+            new SampleCard(4, "Narcomoeba"),
+            new SampleCard(4, "Prized Amalgam"),
+            new SampleCard(4, "Stitcher's Supplier"),
+            new SampleCard(4, "Vengevine"),
+            new SampleCard(4, "Creeping Chill"),
+            new SampleCard(4, "Glimpse the Unthinkable"),
+            new SampleCard(4, "Bloodstained Mire"),
+            new SampleCard(4, "Marsh Flats"),
+            new SampleCard(3, "Overgrown Tomb"),
+            new SampleCard(4, "Polluted Delta"),
+            new SampleCard(2, "Swamp"),
+            new SampleCard(3, "Watery Grave") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Abrupt Decay"),
+            new SampleCard(1, "Assassin's Trophy"),
+            new SampleCard(3, "Damping Sphere"),
+            new SampleCard(3, "Fatal Push"),
+            new SampleCard(3, "Leyline of the Void"),
+            new SampleCard(2, "Nature's Claim"),
+            new SampleCard(2, "Thoughtseize") 
+        };
     }
 }

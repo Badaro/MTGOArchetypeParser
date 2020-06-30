@@ -4,7 +4,42 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09
 {
     public class Deck53_PuNk_TakingTurns_UR : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (2, "Jace, the Mind Sculptor"),(2, "Brazen Borrower"),(4, "Snapcaster Mage"),(4, "Ancestral Vision"),(4, "Temporal Mastery"),(4, "Time Warp"),(2, "Archmage's Charm"),(2, "Cryptic Command"),(4, "Lightning Bolt"),(4, "Opt"),(4, "Remand"),(2, "Spell Snare"),(1, "Flooded Strand"),(6, "Island"),(1, "Mikokoro, Center of the Sea"),(1, "Misty Rainforest"),(1, "Mountain"),(3, "Mystic Sanctuary"),(1, "Polluted Delta"),(4, "Scalding Tarn"),(2, "Steam Vents"),(2, "Sulfur Falls") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Aether Gust"),(1, "Bonecrusher Giant"),(1, "Disdainful Stroke"),(1, "Electrolyze"),(2, "Force of Negation"),(4, "Leyline of Sanctity"),(2, "Pyroclasm"),(2, "Soul-Guide Lantern"),(1, "Teferi, Mage of Zhalfir") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Jace, the Mind Sculptor"),
+            new SampleCard(2, "Brazen Borrower"),
+            new SampleCard(4, "Snapcaster Mage"),
+            new SampleCard(4, "Ancestral Vision"),
+            new SampleCard(4, "Temporal Mastery"),
+            new SampleCard(4, "Time Warp"),
+            new SampleCard(2, "Archmage's Charm"),
+            new SampleCard(2, "Cryptic Command"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(4, "Opt"),
+            new SampleCard(4, "Remand"),
+            new SampleCard(2, "Spell Snare"),
+            new SampleCard(1, "Flooded Strand"),
+            new SampleCard(6, "Island"),
+            new SampleCard(1, "Mikokoro, Center of the Sea"),
+            new SampleCard(1, "Misty Rainforest"),
+            new SampleCard(1, "Mountain"),
+            new SampleCard(3, "Mystic Sanctuary"),
+            new SampleCard(1, "Polluted Delta"),
+            new SampleCard(4, "Scalding Tarn"),
+            new SampleCard(2, "Steam Vents"),
+            new SampleCard(2, "Sulfur Falls") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Aether Gust"),
+            new SampleCard(1, "Bonecrusher Giant"),
+            new SampleCard(1, "Disdainful Stroke"),
+            new SampleCard(1, "Electrolyze"),
+            new SampleCard(2, "Force of Negation"),
+            new SampleCard(4, "Leyline of Sanctity"),
+            new SampleCard(2, "Pyroclasm"),
+            new SampleCard(2, "Soul-Guide Lantern"),
+            new SampleCard(1, "Teferi, Mage of Zhalfir") 
+        };
     }
 }

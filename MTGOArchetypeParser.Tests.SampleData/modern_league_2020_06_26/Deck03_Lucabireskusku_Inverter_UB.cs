@@ -4,7 +4,39 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_26
 {
     public class Deck03_Lucabireskusku_Inverter_UB : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (3, "Jace, Wielder of Mysteries"),(4, "Inverter of Truth"),(4, "Thassa's Oracle"),(3, "Inquisition of Kozilek"),(3, "Thoughtseize"),(1, "Cling to Dust"),(4, "Fatal Push"),(1, "Murderous Cut"),(4, "Opt"),(4, "Remand"),(3, "Relic of Progenitus"),(4, "Omen of the Sea"),(4, "Darkslick Shores"),(3, "Drowned Catacomb"),(3, "Eldrazi Temple"),(1, "Island"),(2, "Polluted Delta"),(4, "River of Tears"),(1, "Swamp"),(4, "Watery Grave") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (3, "Aether Gust"),(2, "Ashiok, Dream Render"),(2, "Collective Brutality"),(1, "Damnation"),(1, "Disdainful Stroke"),(2, "Flusterstorm"),(2, "Mystical Dispute"),(2, "Spreading Seas") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Jace, Wielder of Mysteries"),
+            new SampleCard(4, "Inverter of Truth"),
+            new SampleCard(4, "Thassa's Oracle"),
+            new SampleCard(3, "Inquisition of Kozilek"),
+            new SampleCard(3, "Thoughtseize"),
+            new SampleCard(1, "Cling to Dust"),
+            new SampleCard(4, "Fatal Push"),
+            new SampleCard(1, "Murderous Cut"),
+            new SampleCard(4, "Opt"),
+            new SampleCard(4, "Remand"),
+            new SampleCard(3, "Relic of Progenitus"),
+            new SampleCard(4, "Omen of the Sea"),
+            new SampleCard(4, "Darkslick Shores"),
+            new SampleCard(3, "Drowned Catacomb"),
+            new SampleCard(3, "Eldrazi Temple"),
+            new SampleCard(1, "Island"),
+            new SampleCard(2, "Polluted Delta"),
+            new SampleCard(4, "River of Tears"),
+            new SampleCard(1, "Swamp"),
+            new SampleCard(4, "Watery Grave") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Aether Gust"),
+            new SampleCard(2, "Ashiok, Dream Render"),
+            new SampleCard(2, "Collective Brutality"),
+            new SampleCard(1, "Damnation"),
+            new SampleCard(1, "Disdainful Stroke"),
+            new SampleCard(2, "Flusterstorm"),
+            new SampleCard(2, "Mystical Dispute"),
+            new SampleCard(2, "Spreading Seas") 
+        };
     }
 }

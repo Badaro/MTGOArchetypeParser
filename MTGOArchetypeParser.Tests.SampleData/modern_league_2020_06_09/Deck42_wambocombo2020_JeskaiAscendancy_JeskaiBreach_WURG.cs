@@ -4,7 +4,41 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09
 {
     public class Deck42_wambocombo2020_JeskaiAscendancy_JeskaiBreach_WURG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Birds of Paradise"),(3, "Fatestitcher"),(2, "Noble Hierarch"),(4, "Sylvan Caryatid"),(4, "Glittering Wish"),(4, "Serum Visions"),(4, "Sleight of Hand"),(3, "Cerulean Wisps"),(4, "Manamorphose"),(4, "Thought Scour"),(3, "Jeskai Ascendancy"),(4, "Underworld Breach"),(1, "Breeding Pool"),(4, "Flooded Strand"),(3, "Gemstone Mine"),(1, "Hallowed Fountain"),(1, "Island"),(3, "Mana Confluence"),(2, "Misty Rainforest"),(1, "Steam Vents"),(1, "Temple Garden") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Jeskai Ascendancy"),(1, "Abrupt Decay"),(1, "Assassin's Trophy"),(1, "Flesh // Blood"),(4, "Leyline of Sanctity"),(1, "Scarscale Ritual"),(1, "Teferi, Time Raveler"),(4, "Veil of Summer"),(1, "Wear // Tear") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Birds of Paradise"),
+            new SampleCard(3, "Fatestitcher"),
+            new SampleCard(2, "Noble Hierarch"),
+            new SampleCard(4, "Sylvan Caryatid"),
+            new SampleCard(4, "Glittering Wish"),
+            new SampleCard(4, "Serum Visions"),
+            new SampleCard(4, "Sleight of Hand"),
+            new SampleCard(3, "Cerulean Wisps"),
+            new SampleCard(4, "Manamorphose"),
+            new SampleCard(4, "Thought Scour"),
+            new SampleCard(3, "Jeskai Ascendancy"),
+            new SampleCard(4, "Underworld Breach"),
+            new SampleCard(1, "Breeding Pool"),
+            new SampleCard(4, "Flooded Strand"),
+            new SampleCard(3, "Gemstone Mine"),
+            new SampleCard(1, "Hallowed Fountain"),
+            new SampleCard(1, "Island"),
+            new SampleCard(3, "Mana Confluence"),
+            new SampleCard(2, "Misty Rainforest"),
+            new SampleCard(1, "Steam Vents"),
+            new SampleCard(1, "Temple Garden") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Jeskai Ascendancy"),
+            new SampleCard(1, "Abrupt Decay"),
+            new SampleCard(1, "Assassin's Trophy"),
+            new SampleCard(1, "Flesh // Blood"),
+            new SampleCard(4, "Leyline of Sanctity"),
+            new SampleCard(1, "Scarscale Ritual"),
+            new SampleCard(1, "Teferi, Time Raveler"),
+            new SampleCard(4, "Veil of Summer"),
+            new SampleCard(1, "Wear // Tear") 
+        };
     }
 }

@@ -4,7 +4,41 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09
 {
     public class Deck22_Kotva_NinjaFaeries_UB : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (2, "Liliana of the Veil"),(2, "Brazen Borrower"),(2, "Fallen Shinobi"),(2, "Snapcaster Mage"),(4, "Spellstutter Sprite"),(1, "Vendilion Clique"),(2, "Inquisition of Kozilek"),(2, "Thoughtseize"),(3, "Archmage's Charm"),(2, "Cling to Dust"),(3, "Cryptic Command"),(2, "Drown in the Loch"),(4, "Fatal Push"),(2, "Opt"),(3, "Bitterblossom"),(2, "Field of Ruin"),(4, "Flooded Strand"),(6, "Island"),(4, "Mystic Sanctuary"),(4, "Polluted Delta"),(1, "Swamp"),(3, "Watery Grave") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Aether Gust"),(2, "Ashiok, Dream Render"),(2, "Ceremonious Rejection"),(2, "Collective Brutality"),(2, "Damnation"),(1, "Force of Negation"),(2, "Kalitas, Traitor of Ghet"),(2, "Nihil Spellbomb") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Liliana of the Veil"),
+            new SampleCard(2, "Brazen Borrower"),
+            new SampleCard(2, "Fallen Shinobi"),
+            new SampleCard(2, "Snapcaster Mage"),
+            new SampleCard(4, "Spellstutter Sprite"),
+            new SampleCard(1, "Vendilion Clique"),
+            new SampleCard(2, "Inquisition of Kozilek"),
+            new SampleCard(2, "Thoughtseize"),
+            new SampleCard(3, "Archmage's Charm"),
+            new SampleCard(2, "Cling to Dust"),
+            new SampleCard(3, "Cryptic Command"),
+            new SampleCard(2, "Drown in the Loch"),
+            new SampleCard(4, "Fatal Push"),
+            new SampleCard(2, "Opt"),
+            new SampleCard(3, "Bitterblossom"),
+            new SampleCard(2, "Field of Ruin"),
+            new SampleCard(4, "Flooded Strand"),
+            new SampleCard(6, "Island"),
+            new SampleCard(4, "Mystic Sanctuary"),
+            new SampleCard(4, "Polluted Delta"),
+            new SampleCard(1, "Swamp"),
+            new SampleCard(3, "Watery Grave") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Aether Gust"),
+            new SampleCard(2, "Ashiok, Dream Render"),
+            new SampleCard(2, "Ceremonious Rejection"),
+            new SampleCard(2, "Collective Brutality"),
+            new SampleCard(2, "Damnation"),
+            new SampleCard(1, "Force of Negation"),
+            new SampleCard(2, "Kalitas, Traitor of Ghet"),
+            new SampleCard(2, "Nihil Spellbomb") 
+        };
     }
 }

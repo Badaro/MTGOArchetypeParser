@@ -4,7 +4,39 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16
 {
     public class Deck49_qbturtle15_Ponza_RG_Obosh : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Arbor Elf"),(2, "Birds of Paradise"),(4, "Bonecrusher Giant"),(4, "Glorybringer"),(4, "Kitchen Finks"),(3, "Klothys, God of Destiny"),(4, "Seasoned Pyromancer"),(4, "Pillage"),(4, "Lightning Bolt"),(3, "Blood Moon"),(4, "Utopia Sprawl"),(5, "Forest"),(1, "Misty Rainforest"),(2, "Mountain"),(4, "Stomping Ground"),(2, "Verdant Catacombs"),(2, "Windswept Heath"),(4, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Choke"),(2, "Flame Slash"),(2, "Grafdigger's Cage"),(1, "Life Goes On"),(2, "Molten Rain"),(1, "Natural State"),(1, "Obosh, the Preypiercer"),(2, "Thragtusk"),(1, "Vandalblast"),(2, "Veil of Summer") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Arbor Elf"),
+            new SampleCard(2, "Birds of Paradise"),
+            new SampleCard(4, "Bonecrusher Giant"),
+            new SampleCard(4, "Glorybringer"),
+            new SampleCard(4, "Kitchen Finks"),
+            new SampleCard(3, "Klothys, God of Destiny"),
+            new SampleCard(4, "Seasoned Pyromancer"),
+            new SampleCard(4, "Pillage"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(3, "Blood Moon"),
+            new SampleCard(4, "Utopia Sprawl"),
+            new SampleCard(5, "Forest"),
+            new SampleCard(1, "Misty Rainforest"),
+            new SampleCard(2, "Mountain"),
+            new SampleCard(4, "Stomping Ground"),
+            new SampleCard(2, "Verdant Catacombs"),
+            new SampleCard(2, "Windswept Heath"),
+            new SampleCard(4, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Choke"),
+            new SampleCard(2, "Flame Slash"),
+            new SampleCard(2, "Grafdigger's Cage"),
+            new SampleCard(1, "Life Goes On"),
+            new SampleCard(2, "Molten Rain"),
+            new SampleCard(1, "Natural State"),
+            new SampleCard(1, "Obosh, the Preypiercer"),
+            new SampleCard(2, "Thragtusk"),
+            new SampleCard(1, "Vandalblast"),
+            new SampleCard(2, "Veil of Summer") 
+        };
     }
 }

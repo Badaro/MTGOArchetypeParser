@@ -4,7 +4,44 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_showcase_challenge_2020_06
 {
     public class Deck16_Trellon_UTron_U : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (3, "Karn, the Great Creator"),(1, "Ugin, the Spirit Dragon"),(2, "Walking Ballista"),(2, "Wurmcoil Engine"),(4, "Condescend"),(1, "Dismember"),(4, "Remand"),(3, "Repeal"),(4, "Thirst for Knowledge"),(1, "Chalice of the Void"),(4, "Expedition Map"),(1, "Mindslaver"),(4, "Relic of Progenitus"),(2, "Talisman of Dominance"),(1, "Academy Ruins"),(1, "Blast Zone"),(2, "Gemstone Caverns"),(6, "Island"),(1, "Oboro, Palace in the Clouds"),(1, "Tolaria West"),(4, "Urza's Mine"),(4, "Urza's Power Plant"),(4, "Urza's Tower") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Walking Ballista"),(1, "Wurmcoil Engine"),(1, "Chalice of the Void"),(1, "Dismember"),(3, "Aether Gust"),(1, "Ensnaring Bridge"),(1, "Liquimetal Coating"),(4, "Spreading Seas"),(1, "Sundering Titan"),(1, "Trinisphere") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Karn, the Great Creator"),
+            new SampleCard(1, "Ugin, the Spirit Dragon"),
+            new SampleCard(2, "Walking Ballista"),
+            new SampleCard(2, "Wurmcoil Engine"),
+            new SampleCard(4, "Condescend"),
+            new SampleCard(1, "Dismember"),
+            new SampleCard(4, "Remand"),
+            new SampleCard(3, "Repeal"),
+            new SampleCard(4, "Thirst for Knowledge"),
+            new SampleCard(1, "Chalice of the Void"),
+            new SampleCard(4, "Expedition Map"),
+            new SampleCard(1, "Mindslaver"),
+            new SampleCard(4, "Relic of Progenitus"),
+            new SampleCard(2, "Talisman of Dominance"),
+            new SampleCard(1, "Academy Ruins"),
+            new SampleCard(1, "Blast Zone"),
+            new SampleCard(2, "Gemstone Caverns"),
+            new SampleCard(6, "Island"),
+            new SampleCard(1, "Oboro, Palace in the Clouds"),
+            new SampleCard(1, "Tolaria West"),
+            new SampleCard(4, "Urza's Mine"),
+            new SampleCard(4, "Urza's Power Plant"),
+            new SampleCard(4, "Urza's Tower") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Walking Ballista"),
+            new SampleCard(1, "Wurmcoil Engine"),
+            new SampleCard(1, "Chalice of the Void"),
+            new SampleCard(1, "Dismember"),
+            new SampleCard(3, "Aether Gust"),
+            new SampleCard(1, "Ensnaring Bridge"),
+            new SampleCard(1, "Liquimetal Coating"),
+            new SampleCard(4, "Spreading Seas"),
+            new SampleCard(1, "Sundering Titan"),
+            new SampleCard(1, "Trinisphere") 
+        };
     }
 }

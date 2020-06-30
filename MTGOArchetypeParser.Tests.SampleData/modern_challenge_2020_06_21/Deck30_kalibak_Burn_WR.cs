@@ -4,7 +4,33 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21
 {
     public class Deck30_kalibak_Burn_WR : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Eidolon of the Great Revel"),(4, "Goblin Guide"),(4, "Monastery Swiftspear"),(4, "Lava Spike"),(4, "Rift Bolt"),(4, "Skewer the Critics"),(4, "Boros Charm"),(4, "Lightning Bolt"),(4, "Lightning Helix"),(3, "Searing Blaze"),(2, "Skullcrack"),(4, "Arid Mesa"),(4, "Inspiring Vantage"),(3, "Mountain"),(2, "Sacred Foundry"),(4, "Sunbaked Canyon"),(2, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Skullcrack"),(4, "Kor Firewalker"),(2, "Path to Exile"),(3, "Rest in Peace"),(4, "Smash to Smithereens") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Eidolon of the Great Revel"),
+            new SampleCard(4, "Goblin Guide"),
+            new SampleCard(4, "Monastery Swiftspear"),
+            new SampleCard(4, "Lava Spike"),
+            new SampleCard(4, "Rift Bolt"),
+            new SampleCard(4, "Skewer the Critics"),
+            new SampleCard(4, "Boros Charm"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(4, "Lightning Helix"),
+            new SampleCard(3, "Searing Blaze"),
+            new SampleCard(2, "Skullcrack"),
+            new SampleCard(4, "Arid Mesa"),
+            new SampleCard(4, "Inspiring Vantage"),
+            new SampleCard(3, "Mountain"),
+            new SampleCard(2, "Sacred Foundry"),
+            new SampleCard(4, "Sunbaked Canyon"),
+            new SampleCard(2, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Skullcrack"),
+            new SampleCard(4, "Kor Firewalker"),
+            new SampleCard(2, "Path to Exile"),
+            new SampleCard(3, "Rest in Peace"),
+            new SampleCard(4, "Smash to Smithereens") 
+        };
     }
 }

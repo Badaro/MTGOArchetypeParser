@@ -4,7 +4,55 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_19
 {
     public class Deck06_billsive_SnowControl_SnowTitan_WUG_Yorion : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (2, "Jace, the Mind Sculptor"),(1, "Teferi, Hero of Dominaria"),(2, "Teferi, Time Raveler"),(4, "Ice-Fang Coatl"),(2, "Primeval Titan"),(1, "Snapcaster Mage"),(4, "Uro, Titan of Nature's Wrath"),(2, "Supreme Verdict"),(3, "Archmage's Charm"),(3, "Cryptic Command"),(1, "Dovin's Veto"),(3, "Force of Negation"),(4, "Growth Spiral"),(2, "Mana Leak"),(4, "Path to Exile"),(4, "Arcum's Astrolabe"),(3, "Abundant Growth"),(2, "Breeding Pool"),(2, "Field of Ruin"),(3, "Field of the Dead"),(4, "Flooded Strand"),(1, "Forest"),(1, "Hallowed Fountain"),(1, "Hinterland Harbor"),(1, "Island"),(4, "Misty Rainforest"),(3, "Mystic Sanctuary"),(2, "Polluted Delta"),(1, "Prairie Stream"),(2, "Scalding Tarn"),(1, "Snow-Covered Forest"),(5, "Snow-Covered Island"),(1, "Snow-Covered Plains"),(1, "Temple Garden") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Supreme Verdict"),(2, "Aether Gust"),(1, "Ashiok, Dream Render"),(1, "Celestial Purge"),(1, "Damping Sphere"),(1, "Mystical Dispute"),(2, "Timely Reinforcements"),(4, "Veil of Summer"),(1, "Weather the Storm"),(1, "Yorion, Sky Nomad") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Jace, the Mind Sculptor"),
+            new SampleCard(1, "Teferi, Hero of Dominaria"),
+            new SampleCard(2, "Teferi, Time Raveler"),
+            new SampleCard(4, "Ice-Fang Coatl"),
+            new SampleCard(2, "Primeval Titan"),
+            new SampleCard(1, "Snapcaster Mage"),
+            new SampleCard(4, "Uro, Titan of Nature's Wrath"),
+            new SampleCard(2, "Supreme Verdict"),
+            new SampleCard(3, "Archmage's Charm"),
+            new SampleCard(3, "Cryptic Command"),
+            new SampleCard(1, "Dovin's Veto"),
+            new SampleCard(3, "Force of Negation"),
+            new SampleCard(4, "Growth Spiral"),
+            new SampleCard(2, "Mana Leak"),
+            new SampleCard(4, "Path to Exile"),
+            new SampleCard(4, "Arcum's Astrolabe"),
+            new SampleCard(3, "Abundant Growth"),
+            new SampleCard(2, "Breeding Pool"),
+            new SampleCard(2, "Field of Ruin"),
+            new SampleCard(3, "Field of the Dead"),
+            new SampleCard(4, "Flooded Strand"),
+            new SampleCard(1, "Forest"),
+            new SampleCard(1, "Hallowed Fountain"),
+            new SampleCard(1, "Hinterland Harbor"),
+            new SampleCard(1, "Island"),
+            new SampleCard(4, "Misty Rainforest"),
+            new SampleCard(3, "Mystic Sanctuary"),
+            new SampleCard(2, "Polluted Delta"),
+            new SampleCard(1, "Prairie Stream"),
+            new SampleCard(2, "Scalding Tarn"),
+            new SampleCard(1, "Snow-Covered Forest"),
+            new SampleCard(5, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Plains"),
+            new SampleCard(1, "Temple Garden") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Supreme Verdict"),
+            new SampleCard(2, "Aether Gust"),
+            new SampleCard(1, "Ashiok, Dream Render"),
+            new SampleCard(1, "Celestial Purge"),
+            new SampleCard(1, "Damping Sphere"),
+            new SampleCard(1, "Mystical Dispute"),
+            new SampleCard(2, "Timely Reinforcements"),
+            new SampleCard(4, "Veil of Summer"),
+            new SampleCard(1, "Weather the Storm"),
+            new SampleCard(1, "Yorion, Sky Nomad") 
+        };
     }
 }

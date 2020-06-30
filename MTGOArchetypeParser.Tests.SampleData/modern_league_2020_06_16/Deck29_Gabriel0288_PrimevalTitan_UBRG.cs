@@ -4,7 +4,47 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16
 {
     public class Deck29_Gabriel0288_PrimevalTitan_UBRG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Arboreal Grazer"),(4, "Dryad of the Ilysian Grove"),(1, "Hydroid Krasis"),(4, "Primeval Titan"),(4, "Sakura-Tribe Elder"),(3, "Uro, Titan of Nature's Wrath"),(4, "Explore"),(1, "Primal Command"),(4, "Summoner's Pact"),(1, "Blast Zone"),(1, "Bojuka Bog"),(1, "Breeding Pool"),(4, "Castle Garenbrig"),(2, "Cavern of Souls"),(2, "Field of the Dead"),(2, "Forest"),(1, "Ghost Quarter"),(1, "Island"),(4, "Misty Rainforest"),(1, "Radiant Fountain"),(2, "Simic Growth Chamber"),(2, "Snow-Covered Forest"),(1, "Snow-Covered Island"),(1, "Tolaria West"),(2, "Valakut, the Molten Pinnacle"),(1, "Vesuva"),(1, "Waterlogged Grove"),(1, "Zagoth Triome") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Aether Gust"),(2, "Damping Sphere"),(2, "Dismember"),(2, "Grafdigger's Cage"),(3, "Mystical Dispute"),(1, "Obstinate Baloth"),(1, "Reclamation Sage"),(2, "Tireless Tracker") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Arboreal Grazer"),
+            new SampleCard(4, "Dryad of the Ilysian Grove"),
+            new SampleCard(1, "Hydroid Krasis"),
+            new SampleCard(4, "Primeval Titan"),
+            new SampleCard(4, "Sakura-Tribe Elder"),
+            new SampleCard(3, "Uro, Titan of Nature's Wrath"),
+            new SampleCard(4, "Explore"),
+            new SampleCard(1, "Primal Command"),
+            new SampleCard(4, "Summoner's Pact"),
+            new SampleCard(1, "Blast Zone"),
+            new SampleCard(1, "Bojuka Bog"),
+            new SampleCard(1, "Breeding Pool"),
+            new SampleCard(4, "Castle Garenbrig"),
+            new SampleCard(2, "Cavern of Souls"),
+            new SampleCard(2, "Field of the Dead"),
+            new SampleCard(2, "Forest"),
+            new SampleCard(1, "Ghost Quarter"),
+            new SampleCard(1, "Island"),
+            new SampleCard(4, "Misty Rainforest"),
+            new SampleCard(1, "Radiant Fountain"),
+            new SampleCard(2, "Simic Growth Chamber"),
+            new SampleCard(2, "Snow-Covered Forest"),
+            new SampleCard(1, "Snow-Covered Island"),
+            new SampleCard(1, "Tolaria West"),
+            new SampleCard(2, "Valakut, the Molten Pinnacle"),
+            new SampleCard(1, "Vesuva"),
+            new SampleCard(1, "Waterlogged Grove"),
+            new SampleCard(1, "Zagoth Triome") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Aether Gust"),
+            new SampleCard(2, "Damping Sphere"),
+            new SampleCard(2, "Dismember"),
+            new SampleCard(2, "Grafdigger's Cage"),
+            new SampleCard(3, "Mystical Dispute"),
+            new SampleCard(1, "Obstinate Baloth"),
+            new SampleCard(1, "Reclamation Sage"),
+            new SampleCard(2, "Tireless Tracker") 
+        };
     }
 }

@@ -4,7 +4,42 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_23
 {
     public class Deck29_Darthtaneon_EightWhack_AtarkaWhack_RG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (2, "Domri, Anarch of Bolas"),(4, "Burning-Tree Emissary"),(2, "Gallia of the Endless Dance"),(4, "Goblin Bushwhacker"),(4, "Goblin Guide"),(3, "Hidden Herbalists"),(2, "Legion Loyalist"),(3, "Narnam Renegade"),(4, "Robber of the Rich"),(2, "Slaughterhorn"),(2, "Zhur-Taa Goblin"),(4, "Atarka's Command"),(4, "Lightning Bolt"),(4, "Bloodstained Mire"),(4, "Copperline Gorge"),(1, "Mountain"),(1, "Nurturing Peatland"),(1, "Snow-Covered Forest"),(4, "Stomping Ground"),(1, "Waterlogged Grove"),(3, "Windswept Heath"),(1, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Abrade"),(2, "Collector Ouphe"),(1, "Damping Sphere"),(2, "Dragon's Claw"),(2, "Life Goes On"),(2, "Magus of the Moon"),(1, "Mistcutter Hydra"),(1, "Soul-Guide Lantern"),(2, "Tormod's Crypt") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Domri, Anarch of Bolas"),
+            new SampleCard(4, "Burning-Tree Emissary"),
+            new SampleCard(2, "Gallia of the Endless Dance"),
+            new SampleCard(4, "Goblin Bushwhacker"),
+            new SampleCard(4, "Goblin Guide"),
+            new SampleCard(3, "Hidden Herbalists"),
+            new SampleCard(2, "Legion Loyalist"),
+            new SampleCard(3, "Narnam Renegade"),
+            new SampleCard(4, "Robber of the Rich"),
+            new SampleCard(2, "Slaughterhorn"),
+            new SampleCard(2, "Zhur-Taa Goblin"),
+            new SampleCard(4, "Atarka's Command"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(4, "Bloodstained Mire"),
+            new SampleCard(4, "Copperline Gorge"),
+            new SampleCard(1, "Mountain"),
+            new SampleCard(1, "Nurturing Peatland"),
+            new SampleCard(1, "Snow-Covered Forest"),
+            new SampleCard(4, "Stomping Ground"),
+            new SampleCard(1, "Waterlogged Grove"),
+            new SampleCard(3, "Windswept Heath"),
+            new SampleCard(1, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Abrade"),
+            new SampleCard(2, "Collector Ouphe"),
+            new SampleCard(1, "Damping Sphere"),
+            new SampleCard(2, "Dragon's Claw"),
+            new SampleCard(2, "Life Goes On"),
+            new SampleCard(2, "Magus of the Moon"),
+            new SampleCard(1, "Mistcutter Hydra"),
+            new SampleCard(1, "Soul-Guide Lantern"),
+            new SampleCard(2, "Tormod's Crypt") 
+        };
     }
 }

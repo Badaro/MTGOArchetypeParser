@@ -4,7 +4,42 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16
 {
     public class Deck53_maple049_HardenedScales_WG_Lurrus : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Arcbound Ravager"),(4, "Arcbound Worker"),(4, "Hangarback Walker"),(3, "Walking Ballista"),(4, "Ancient Stirrings"),(3, "Path to Exile"),(3, "Animation Module"),(2, "Springleaf Drum"),(4, "The Ozolith"),(2, "Evolutionary Leap"),(4, "Hardened Scales"),(1, "Blinkmoth Nexus"),(3, "Brushland"),(4, "Inkmoth Nexus"),(2, "Llanowar Reborn"),(2, "Phyrexia's Core"),(4, "Razorverge Thicket"),(2, "Snow-Covered Forest"),(1, "Snow-Covered Plains"),(2, "Temple Garden"),(2, "Windswept Heath") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Path to Exile"),(2, "Burrenton Forge-Tender"),(2, "Damping Sphere"),(1, "Grafdigger's Cage"),(1, "Lurrus of the Dream Den"),(2, "Nature's Claim"),(2, "Pithing Needle"),(1, "Throne of Geth"),(2, "Tormod's Crypt"),(1, "Veil of Summer") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Arcbound Ravager"),
+            new SampleCard(4, "Arcbound Worker"),
+            new SampleCard(4, "Hangarback Walker"),
+            new SampleCard(3, "Walking Ballista"),
+            new SampleCard(4, "Ancient Stirrings"),
+            new SampleCard(3, "Path to Exile"),
+            new SampleCard(3, "Animation Module"),
+            new SampleCard(2, "Springleaf Drum"),
+            new SampleCard(4, "The Ozolith"),
+            new SampleCard(2, "Evolutionary Leap"),
+            new SampleCard(4, "Hardened Scales"),
+            new SampleCard(1, "Blinkmoth Nexus"),
+            new SampleCard(3, "Brushland"),
+            new SampleCard(4, "Inkmoth Nexus"),
+            new SampleCard(2, "Llanowar Reborn"),
+            new SampleCard(2, "Phyrexia's Core"),
+            new SampleCard(4, "Razorverge Thicket"),
+            new SampleCard(2, "Snow-Covered Forest"),
+            new SampleCard(1, "Snow-Covered Plains"),
+            new SampleCard(2, "Temple Garden"),
+            new SampleCard(2, "Windswept Heath") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Path to Exile"),
+            new SampleCard(2, "Burrenton Forge-Tender"),
+            new SampleCard(2, "Damping Sphere"),
+            new SampleCard(1, "Grafdigger's Cage"),
+            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(2, "Nature's Claim"),
+            new SampleCard(2, "Pithing Needle"),
+            new SampleCard(1, "Throne of Geth"),
+            new SampleCard(2, "Tormod's Crypt"),
+            new SampleCard(1, "Veil of Summer") 
+        };
     }
 }

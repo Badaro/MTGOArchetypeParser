@@ -4,7 +4,34 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12
 {
     public class Deck10_rouleur_Prowess_R : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (3, "Bedlam Reveler"),(2, "Bonecrusher Giant"),(4, "Monastery Swiftspear"),(3, "Runaway Steam-Kin"),(4, "Soul-Scar Mage"),(4, "Crash Through"),(4, "Lava Spike"),(4, "Light Up the Stage"),(3, "Burst Lightning"),(3, "Lava Dart"),(4, "Lightning Bolt"),(4, "Manamorphose"),(4, "Fiery Islet"),(14, "Mountain") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Abrade"),(1, "Blood Moon"),(1, "Boil"),(2, "Dismember"),(2, "Dragon's Claw"),(2, "Grafdigger's Cage"),(2, "Kozilek's Return"),(1, "Shrine of Burning Rage"),(2, "Tormod's Crypt") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Bedlam Reveler"),
+            new SampleCard(2, "Bonecrusher Giant"),
+            new SampleCard(4, "Monastery Swiftspear"),
+            new SampleCard(3, "Runaway Steam-Kin"),
+            new SampleCard(4, "Soul-Scar Mage"),
+            new SampleCard(4, "Crash Through"),
+            new SampleCard(4, "Lava Spike"),
+            new SampleCard(4, "Light Up the Stage"),
+            new SampleCard(3, "Burst Lightning"),
+            new SampleCard(3, "Lava Dart"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(4, "Manamorphose"),
+            new SampleCard(4, "Fiery Islet"),
+            new SampleCard(14, "Mountain") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Abrade"),
+            new SampleCard(1, "Blood Moon"),
+            new SampleCard(1, "Boil"),
+            new SampleCard(2, "Dismember"),
+            new SampleCard(2, "Dragon's Claw"),
+            new SampleCard(2, "Grafdigger's Cage"),
+            new SampleCard(2, "Kozilek's Return"),
+            new SampleCard(1, "Shrine of Burning Rage"),
+            new SampleCard(2, "Tormod's Crypt") 
+        };
     }
 }

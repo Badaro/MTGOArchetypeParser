@@ -4,7 +4,46 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_06
 {
     public class Deck16_ktmr39_GTron_GolosTron_G_Jegantha : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Karn Liberated"),(4, "Karn, the Great Creator"),(2, "Ugin, the Spirit Dragon"),(1, "Emrakul, the Promised End"),(2, "Golos, Tireless Pilgrim"),(4, "Thought-Knot Seer"),(2, "Ulamog, the Ceaseless Hunger"),(1, "World Breaker"),(4, "Ancient Stirrings"),(4, "Sylvan Scrying"),(4, "Chromatic Sphere"),(4, "Chromatic Star"),(4, "Expedition Map"),(1, "Oblivion Stone"),(1, "Blast Zone"),(1, "Cascading Cataracts"),(1, "Forest"),(1, "Ghost Quarter"),(1, "Sanctum of Ugin"),(2, "Snow-Covered Forest"),(4, "Urza's Mine"),(4, "Urza's Power Plant"),(4, "Urza's Tower") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Chalice of the Void"),(1, "Ensnaring Bridge"),(1, "Grafdigger's Cage"),(1, "Jegantha, the Wellspring"),(1, "Liquimetal Coating"),(3, "Nature's Claim"),(1, "Sorcerous Spyglass"),(1, "Sundering Titan"),(2, "Thragtusk"),(1, "Torpor Orb"),(1, "Trinisphere"),(1, "Wurmcoil Engine") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Karn Liberated"),
+            new SampleCard(4, "Karn, the Great Creator"),
+            new SampleCard(2, "Ugin, the Spirit Dragon"),
+            new SampleCard(1, "Emrakul, the Promised End"),
+            new SampleCard(2, "Golos, Tireless Pilgrim"),
+            new SampleCard(4, "Thought-Knot Seer"),
+            new SampleCard(2, "Ulamog, the Ceaseless Hunger"),
+            new SampleCard(1, "World Breaker"),
+            new SampleCard(4, "Ancient Stirrings"),
+            new SampleCard(4, "Sylvan Scrying"),
+            new SampleCard(4, "Chromatic Sphere"),
+            new SampleCard(4, "Chromatic Star"),
+            new SampleCard(4, "Expedition Map"),
+            new SampleCard(1, "Oblivion Stone"),
+            new SampleCard(1, "Blast Zone"),
+            new SampleCard(1, "Cascading Cataracts"),
+            new SampleCard(1, "Forest"),
+            new SampleCard(1, "Ghost Quarter"),
+            new SampleCard(1, "Sanctum of Ugin"),
+            new SampleCard(2, "Snow-Covered Forest"),
+            new SampleCard(4, "Urza's Mine"),
+            new SampleCard(4, "Urza's Power Plant"),
+            new SampleCard(4, "Urza's Tower") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Chalice of the Void"),
+            new SampleCard(1, "Ensnaring Bridge"),
+            new SampleCard(1, "Grafdigger's Cage"),
+            new SampleCard(1, "Jegantha, the Wellspring"),
+            new SampleCard(1, "Liquimetal Coating"),
+            new SampleCard(3, "Nature's Claim"),
+            new SampleCard(1, "Sorcerous Spyglass"),
+            new SampleCard(1, "Sundering Titan"),
+            new SampleCard(2, "Thragtusk"),
+            new SampleCard(1, "Torpor Orb"),
+            new SampleCard(1, "Trinisphere"),
+            new SampleCard(1, "Wurmcoil Engine") 
+        };
     }
 }

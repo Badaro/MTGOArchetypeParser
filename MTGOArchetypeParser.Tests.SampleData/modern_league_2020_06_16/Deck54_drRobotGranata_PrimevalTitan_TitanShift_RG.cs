@@ -4,7 +4,42 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16
 {
     public class Deck54_drRobotGranata_PrimevalTitan_TitanShift_RG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (3, "Arboreal Grazer"),(4, "Dryad of the Ilysian Grove"),(4, "Primeval Titan"),(4, "Sakura-Tribe Elder"),(2, "Farseek"),(4, "Scapeshift"),(4, "Search for Tomorrow"),(3, "Summoner's Pact"),(4, "Castle Garenbrig"),(1, "Cavern of Souls"),(1, "Cinder Glade"),(2, "Field of the Dead"),(2, "Forest"),(3, "Mountain"),(1, "Sheltered Thicket"),(1, "Snow-Covered Forest"),(3, "Snow-Covered Mountain"),(4, "Stomping Ground"),(4, "Valakut, the Molten Pinnacle"),(1, "Verdant Catacombs"),(1, "Vesuva"),(4, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Abrade"),(2, "Anger of the Gods"),(1, "Courser of Kruphix"),(1, "Engineered Explosives"),(1, "Obstinate Baloth"),(3, "Relic of Progenitus"),(1, "Seal of Primordium"),(2, "Veil of Summer"),(2, "Weather the Storm") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Arboreal Grazer"),
+            new SampleCard(4, "Dryad of the Ilysian Grove"),
+            new SampleCard(4, "Primeval Titan"),
+            new SampleCard(4, "Sakura-Tribe Elder"),
+            new SampleCard(2, "Farseek"),
+            new SampleCard(4, "Scapeshift"),
+            new SampleCard(4, "Search for Tomorrow"),
+            new SampleCard(3, "Summoner's Pact"),
+            new SampleCard(4, "Castle Garenbrig"),
+            new SampleCard(1, "Cavern of Souls"),
+            new SampleCard(1, "Cinder Glade"),
+            new SampleCard(2, "Field of the Dead"),
+            new SampleCard(2, "Forest"),
+            new SampleCard(3, "Mountain"),
+            new SampleCard(1, "Sheltered Thicket"),
+            new SampleCard(1, "Snow-Covered Forest"),
+            new SampleCard(3, "Snow-Covered Mountain"),
+            new SampleCard(4, "Stomping Ground"),
+            new SampleCard(4, "Valakut, the Molten Pinnacle"),
+            new SampleCard(1, "Verdant Catacombs"),
+            new SampleCard(1, "Vesuva"),
+            new SampleCard(4, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Abrade"),
+            new SampleCard(2, "Anger of the Gods"),
+            new SampleCard(1, "Courser of Kruphix"),
+            new SampleCard(1, "Engineered Explosives"),
+            new SampleCard(1, "Obstinate Baloth"),
+            new SampleCard(3, "Relic of Progenitus"),
+            new SampleCard(1, "Seal of Primordium"),
+            new SampleCard(2, "Veil of Summer"),
+            new SampleCard(2, "Weather the Storm") 
+        };
     }
 }

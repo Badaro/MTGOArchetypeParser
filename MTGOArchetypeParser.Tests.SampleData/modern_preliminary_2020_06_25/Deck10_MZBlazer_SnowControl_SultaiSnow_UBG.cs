@@ -4,7 +4,45 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_25
 {
     public class Deck10_MZBlazer_SnowControl_SultaiSnow_UBG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (1, "Ashiok, Nightmare Muse"),(3, "Jace, the Mind Sculptor"),(1, "Liliana, the Last Hope"),(4, "Ice-Fang Coatl"),(2, "Snapcaster Mage"),(3, "Uro, Titan of Nature's Wrath"),(2, "Dead of Winter"),(1, "Abrupt Decay"),(2, "Archmage's Charm"),(1, "Cling to Dust"),(3, "Cryptic Command"),(4, "Fatal Push"),(2, "Force of Negation"),(3, "Mana Leak"),(4, "Arcum's Astrolabe"),(1, "Breeding Pool"),(4, "Field of Ruin"),(4, "Misty Rainforest"),(2, "Mystic Sanctuary"),(1, "Overgrown Tomb"),(4, "Polluted Delta"),(1, "Snow-Covered Forest"),(5, "Snow-Covered Island"),(1, "Snow-Covered Swamp"),(1, "Watery Grave") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Abrupt Decay"),(1, "Dead of Winter"),(4, "Aether Gust"),(2, "Ashiok, Dream Render"),(1, "Assassin's Trophy"),(1, "Negate"),(3, "Shark Typhoon"),(1, "Surgical Extraction"),(1, "Veil of Summer") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Ashiok, Nightmare Muse"),
+            new SampleCard(3, "Jace, the Mind Sculptor"),
+            new SampleCard(1, "Liliana, the Last Hope"),
+            new SampleCard(4, "Ice-Fang Coatl"),
+            new SampleCard(2, "Snapcaster Mage"),
+            new SampleCard(3, "Uro, Titan of Nature's Wrath"),
+            new SampleCard(2, "Dead of Winter"),
+            new SampleCard(1, "Abrupt Decay"),
+            new SampleCard(2, "Archmage's Charm"),
+            new SampleCard(1, "Cling to Dust"),
+            new SampleCard(3, "Cryptic Command"),
+            new SampleCard(4, "Fatal Push"),
+            new SampleCard(2, "Force of Negation"),
+            new SampleCard(3, "Mana Leak"),
+            new SampleCard(4, "Arcum's Astrolabe"),
+            new SampleCard(1, "Breeding Pool"),
+            new SampleCard(4, "Field of Ruin"),
+            new SampleCard(4, "Misty Rainforest"),
+            new SampleCard(2, "Mystic Sanctuary"),
+            new SampleCard(1, "Overgrown Tomb"),
+            new SampleCard(4, "Polluted Delta"),
+            new SampleCard(1, "Snow-Covered Forest"),
+            new SampleCard(5, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Swamp"),
+            new SampleCard(1, "Watery Grave") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Abrupt Decay"),
+            new SampleCard(1, "Dead of Winter"),
+            new SampleCard(4, "Aether Gust"),
+            new SampleCard(2, "Ashiok, Dream Render"),
+            new SampleCard(1, "Assassin's Trophy"),
+            new SampleCard(1, "Negate"),
+            new SampleCard(3, "Shark Typhoon"),
+            new SampleCard(1, "Surgical Extraction"),
+            new SampleCard(1, "Veil of Summer") 
+        };
     }
 }

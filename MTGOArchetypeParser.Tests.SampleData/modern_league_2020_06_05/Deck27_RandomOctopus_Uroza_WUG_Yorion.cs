@@ -4,7 +4,43 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_05
 {
     public class Deck27_RandomOctopus_Uroza_WUG_Yorion : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Emry, Lurker of the Loch"),(4, "Gilded Goose"),(4, "Ice-Fang Coatl"),(4, "Thraben Inspector"),(3, "Uro, Titan of Nature's Wrath"),(4, "Urza, Lord High Artificer"),(3, "Wall of Blossoms"),(4, "Cryptic Command"),(3, "Ephemerate"),(4, "Metallic Rebuke"),(3, "Path to Exile"),(4, "Arcum's Astrolabe"),(2, "Engineered Explosives"),(4, "Mishra's Bauble"),(2, "Soul-Guide Lantern"),(2, "Breeding Pool"),(4, "Flooded Strand"),(1, "Hallowed Fountain"),(4, "Misty Rainforest"),(4, "Mystic Sanctuary"),(4, "Polluted Delta"),(1, "Snow-Covered Forest"),(7, "Snow-Covered Island"),(1, "Snow-Covered Plains") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (3, "Aether Gust"),(2, "Ashiok, Dream Render"),(2, "Celestial Purge"),(2, "Ceremonious Rejection"),(2, "Damping Sphere"),(1, "Supreme Verdict"),(2, "Teferi, Time Raveler"),(1, "Yorion, Sky Nomad") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Emry, Lurker of the Loch"),
+            new SampleCard(4, "Gilded Goose"),
+            new SampleCard(4, "Ice-Fang Coatl"),
+            new SampleCard(4, "Thraben Inspector"),
+            new SampleCard(3, "Uro, Titan of Nature's Wrath"),
+            new SampleCard(4, "Urza, Lord High Artificer"),
+            new SampleCard(3, "Wall of Blossoms"),
+            new SampleCard(4, "Cryptic Command"),
+            new SampleCard(3, "Ephemerate"),
+            new SampleCard(4, "Metallic Rebuke"),
+            new SampleCard(3, "Path to Exile"),
+            new SampleCard(4, "Arcum's Astrolabe"),
+            new SampleCard(2, "Engineered Explosives"),
+            new SampleCard(4, "Mishra's Bauble"),
+            new SampleCard(2, "Soul-Guide Lantern"),
+            new SampleCard(2, "Breeding Pool"),
+            new SampleCard(4, "Flooded Strand"),
+            new SampleCard(1, "Hallowed Fountain"),
+            new SampleCard(4, "Misty Rainforest"),
+            new SampleCard(4, "Mystic Sanctuary"),
+            new SampleCard(4, "Polluted Delta"),
+            new SampleCard(1, "Snow-Covered Forest"),
+            new SampleCard(7, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Plains") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Aether Gust"),
+            new SampleCard(2, "Ashiok, Dream Render"),
+            new SampleCard(2, "Celestial Purge"),
+            new SampleCard(2, "Ceremonious Rejection"),
+            new SampleCard(2, "Damping Sphere"),
+            new SampleCard(1, "Supreme Verdict"),
+            new SampleCard(2, "Teferi, Time Raveler"),
+            new SampleCard(1, "Yorion, Sky Nomad") 
+        };
     }
 }

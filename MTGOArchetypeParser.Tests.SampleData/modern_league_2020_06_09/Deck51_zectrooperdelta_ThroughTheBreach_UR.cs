@@ -4,7 +4,42 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09
 {
     public class Deck51_zectrooperdelta_ThroughTheBreach_UR : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Emrakul, the Aeons Torn"),(2, "Simian Spirit Guide"),(4, "Snapcaster Mage"),(1, "Anger of the Gods"),(4, "Serum Visions"),(1, "Abrade"),(2, "Archmage's Charm"),(3, "Cryptic Command"),(3, "Lightning Bolt"),(3, "Opt"),(4, "Remand"),(2, "Spell Pierce"),(4, "Through the Breach"),(1, "Fiery Islet"),(2, "Island"),(1, "Mystic Sanctuary"),(4, "Scalding Tarn"),(4, "Shivan Reef"),(2, "Snow-Covered Island"),(1, "Snow-Covered Mountain"),(4, "Steam Vents"),(4, "Sulfur Falls") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Simian Spirit Guide"),(1, "Anger of the Gods"),(2, "Ceremonious Rejection"),(3, "Crackling Drake"),(2, "Mystical Dispute"),(2, "Niv-Mizzet, Parun"),(2, "Relic of Progenitus"),(1, "Surgical Extraction"),(1, "Unsubstantiate") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Emrakul, the Aeons Torn"),
+            new SampleCard(2, "Simian Spirit Guide"),
+            new SampleCard(4, "Snapcaster Mage"),
+            new SampleCard(1, "Anger of the Gods"),
+            new SampleCard(4, "Serum Visions"),
+            new SampleCard(1, "Abrade"),
+            new SampleCard(2, "Archmage's Charm"),
+            new SampleCard(3, "Cryptic Command"),
+            new SampleCard(3, "Lightning Bolt"),
+            new SampleCard(3, "Opt"),
+            new SampleCard(4, "Remand"),
+            new SampleCard(2, "Spell Pierce"),
+            new SampleCard(4, "Through the Breach"),
+            new SampleCard(1, "Fiery Islet"),
+            new SampleCard(2, "Island"),
+            new SampleCard(1, "Mystic Sanctuary"),
+            new SampleCard(4, "Scalding Tarn"),
+            new SampleCard(4, "Shivan Reef"),
+            new SampleCard(2, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Mountain"),
+            new SampleCard(4, "Steam Vents"),
+            new SampleCard(4, "Sulfur Falls") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Simian Spirit Guide"),
+            new SampleCard(1, "Anger of the Gods"),
+            new SampleCard(2, "Ceremonious Rejection"),
+            new SampleCard(3, "Crackling Drake"),
+            new SampleCard(2, "Mystical Dispute"),
+            new SampleCard(2, "Niv-Mizzet, Parun"),
+            new SampleCard(2, "Relic of Progenitus"),
+            new SampleCard(1, "Surgical Extraction"),
+            new SampleCard(1, "Unsubstantiate") 
+        };
     }
 }

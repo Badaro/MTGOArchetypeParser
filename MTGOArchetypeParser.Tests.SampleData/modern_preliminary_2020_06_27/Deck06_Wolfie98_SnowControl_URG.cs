@@ -4,7 +4,42 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_27
 {
     public class Deck06_Wolfie98_SnowControl_URG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (3, "Jace, the Mind Sculptor"),(3, "Wrenn and Six"),(4, "Ice-Fang Coatl"),(3, "Snapcaster Mage"),(3, "Uro, Titan of Nature's Wrath"),(2, "Archmage's Charm"),(3, "Cryptic Command"),(1, "Deprive"),(2, "Force of Negation"),(4, "Lightning Bolt"),(3, "Mana Leak"),(1, "Skred"),(4, "Arcum's Astrolabe"),(2, "Breeding Pool"),(1, "Field of Ruin"),(2, "Lonely Sandbar"),(4, "Misty Rainforest"),(2, "Mystic Sanctuary"),(3, "Scalding Tarn"),(1, "Snow-Covered Forest"),(6, "Snow-Covered Island"),(1, "Snow-Covered Mountain"),(2, "Steam Vents") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Aether Gust"),(2, "Anger of the Gods"),(2, "Blood Moon"),(2, "Disdainful Stroke"),(1, "Engineered Explosives"),(2, "Mystical Dispute"),(2, "Veil of Summer"),(2, "Weather the Storm") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Jace, the Mind Sculptor"),
+            new SampleCard(3, "Wrenn and Six"),
+            new SampleCard(4, "Ice-Fang Coatl"),
+            new SampleCard(3, "Snapcaster Mage"),
+            new SampleCard(3, "Uro, Titan of Nature's Wrath"),
+            new SampleCard(2, "Archmage's Charm"),
+            new SampleCard(3, "Cryptic Command"),
+            new SampleCard(1, "Deprive"),
+            new SampleCard(2, "Force of Negation"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(3, "Mana Leak"),
+            new SampleCard(1, "Skred"),
+            new SampleCard(4, "Arcum's Astrolabe"),
+            new SampleCard(2, "Breeding Pool"),
+            new SampleCard(1, "Field of Ruin"),
+            new SampleCard(2, "Lonely Sandbar"),
+            new SampleCard(4, "Misty Rainforest"),
+            new SampleCard(2, "Mystic Sanctuary"),
+            new SampleCard(3, "Scalding Tarn"),
+            new SampleCard(1, "Snow-Covered Forest"),
+            new SampleCard(6, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Mountain"),
+            new SampleCard(2, "Steam Vents") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Aether Gust"),
+            new SampleCard(2, "Anger of the Gods"),
+            new SampleCard(2, "Blood Moon"),
+            new SampleCard(2, "Disdainful Stroke"),
+            new SampleCard(1, "Engineered Explosives"),
+            new SampleCard(2, "Mystical Dispute"),
+            new SampleCard(2, "Veil of Summer"),
+            new SampleCard(2, "Weather the Storm") 
+        };
     }
 }

@@ -4,7 +4,47 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_28
 {
     public class Deck32_DreamsOfAshiok_ETron_C : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Karn, the Great Creator"),(2, "Ugin, the Ineffable"),(1, "Golos, Tireless Pilgrim"),(4, "Matter Reshaper"),(4, "Reality Smasher"),(4, "Thought-Knot Seer"),(3, "Walking Ballista"),(1, "All Is Dust"),(2, "Dismember"),(2, "Warping Wail"),(4, "Chalice of the Void"),(4, "Expedition Map"),(1, "Mind Stone"),(2, "Blast Zone"),(1, "Cascading Cataracts"),(1, "Cavern of Souls"),(4, "Eldrazi Temple"),(1, "Ghost Quarter"),(1, "Scavenger Grounds"),(4, "Urza's Mine"),(4, "Urza's Power Plant"),(4, "Urza's Tower"),(2, "Wastes") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Walking Ballista"),(1, "All Is Dust"),(1, "Ensnaring Bridge"),(1, "Grafdigger's Cage"),(1, "Liquimetal Coating"),(2, "Relic of Progenitus"),(1, "Skysovereign, Consul Flagship"),(1, "Sorcerous Spyglass"),(2, "Spatial Contortion"),(1, "Sundering Titan"),(1, "Tormod's Crypt"),(1, "Torpor Orb"),(1, "Wurmcoil Engine") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Karn, the Great Creator"),
+            new SampleCard(2, "Ugin, the Ineffable"),
+            new SampleCard(1, "Golos, Tireless Pilgrim"),
+            new SampleCard(4, "Matter Reshaper"),
+            new SampleCard(4, "Reality Smasher"),
+            new SampleCard(4, "Thought-Knot Seer"),
+            new SampleCard(3, "Walking Ballista"),
+            new SampleCard(1, "All Is Dust"),
+            new SampleCard(2, "Dismember"),
+            new SampleCard(2, "Warping Wail"),
+            new SampleCard(4, "Chalice of the Void"),
+            new SampleCard(4, "Expedition Map"),
+            new SampleCard(1, "Mind Stone"),
+            new SampleCard(2, "Blast Zone"),
+            new SampleCard(1, "Cascading Cataracts"),
+            new SampleCard(1, "Cavern of Souls"),
+            new SampleCard(4, "Eldrazi Temple"),
+            new SampleCard(1, "Ghost Quarter"),
+            new SampleCard(1, "Scavenger Grounds"),
+            new SampleCard(4, "Urza's Mine"),
+            new SampleCard(4, "Urza's Power Plant"),
+            new SampleCard(4, "Urza's Tower"),
+            new SampleCard(2, "Wastes") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Walking Ballista"),
+            new SampleCard(1, "All Is Dust"),
+            new SampleCard(1, "Ensnaring Bridge"),
+            new SampleCard(1, "Grafdigger's Cage"),
+            new SampleCard(1, "Liquimetal Coating"),
+            new SampleCard(2, "Relic of Progenitus"),
+            new SampleCard(1, "Skysovereign, Consul Flagship"),
+            new SampleCard(1, "Sorcerous Spyglass"),
+            new SampleCard(2, "Spatial Contortion"),
+            new SampleCard(1, "Sundering Titan"),
+            new SampleCard(1, "Tormod's Crypt"),
+            new SampleCard(1, "Torpor Orb"),
+            new SampleCard(1, "Wurmcoil Engine") 
+        };
     }
 }

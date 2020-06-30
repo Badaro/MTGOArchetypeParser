@@ -4,7 +4,40 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_23
 {
     public class Deck03_pbarrrgh_SnowControl_SnowReclamation_UBG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Ice-Fang Coatl"),(3, "Uro, Titan of Nature's Wrath"),(1, "Dead of Winter"),(1, "Abrupt Decay"),(3, "Archmage's Charm"),(3, "Cryptic Command"),(3, "Fact or Fiction"),(3, "Fatal Push"),(3, "Force of Negation"),(1, "Nexus of Fate"),(4, "Remand"),(4, "Arcum's Astrolabe"),(2, "Wilderness Reclamation"),(2, "Breeding Pool"),(4, "Misty Rainforest"),(3, "Mystic Sanctuary"),(4, "Polluted Delta"),(2, "Snow-Covered Forest"),(7, "Snow-Covered Island"),(1, "Snow-Covered Swamp"),(1, "Watery Grave"),(1, "Zagoth Triome") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Dead of Winter"),(4, "Aether Gust"),(1, "Ashiok, Dream Render"),(2, "Ceremonious Rejection"),(2, "Collective Brutality"),(3, "Veil of Summer"),(1, "Weather the Storm") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Ice-Fang Coatl"),
+            new SampleCard(3, "Uro, Titan of Nature's Wrath"),
+            new SampleCard(1, "Dead of Winter"),
+            new SampleCard(1, "Abrupt Decay"),
+            new SampleCard(3, "Archmage's Charm"),
+            new SampleCard(3, "Cryptic Command"),
+            new SampleCard(3, "Fact or Fiction"),
+            new SampleCard(3, "Fatal Push"),
+            new SampleCard(3, "Force of Negation"),
+            new SampleCard(1, "Nexus of Fate"),
+            new SampleCard(4, "Remand"),
+            new SampleCard(4, "Arcum's Astrolabe"),
+            new SampleCard(2, "Wilderness Reclamation"),
+            new SampleCard(2, "Breeding Pool"),
+            new SampleCard(4, "Misty Rainforest"),
+            new SampleCard(3, "Mystic Sanctuary"),
+            new SampleCard(4, "Polluted Delta"),
+            new SampleCard(2, "Snow-Covered Forest"),
+            new SampleCard(7, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Swamp"),
+            new SampleCard(1, "Watery Grave"),
+            new SampleCard(1, "Zagoth Triome") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Dead of Winter"),
+            new SampleCard(4, "Aether Gust"),
+            new SampleCard(1, "Ashiok, Dream Render"),
+            new SampleCard(2, "Ceremonious Rejection"),
+            new SampleCard(2, "Collective Brutality"),
+            new SampleCard(3, "Veil of Summer"),
+            new SampleCard(1, "Weather the Storm") 
+        };
     }
 }

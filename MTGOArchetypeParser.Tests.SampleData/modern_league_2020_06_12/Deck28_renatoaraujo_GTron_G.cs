@@ -4,7 +4,42 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12
 {
     public class Deck28_renatoaraujo_GTron_G : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Karn Liberated"),(1, "Ugin, the Ineffable"),(2, "Ugin, the Spirit Dragon"),(2, "Thragtusk"),(2, "Ulamog, the Ceaseless Hunger"),(1, "Walking Ballista"),(2, "Wurmcoil Engine"),(4, "Ancient Stirrings"),(4, "Sylvan Scrying"),(1, "Dismember"),(4, "Chromatic Sphere"),(4, "Chromatic Star"),(4, "Expedition Map"),(3, "Oblivion Stone"),(3, "Relic of Progenitus"),(1, "Blast Zone"),(4, "Forest"),(1, "Ghost Quarter"),(1, "Sanctum of Ugin"),(4, "Urza's Mine"),(4, "Urza's Power Plant"),(4, "Urza's Tower") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Dismember"),(1, "Choke"),(1, "Grafdigger's Cage"),(3, "Nature's Claim"),(2, "Spatial Contortion"),(1, "Sundering Titan"),(2, "Thought-Knot Seer"),(2, "Veil of Summer"),(2, "Weather the Storm") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Karn Liberated"),
+            new SampleCard(1, "Ugin, the Ineffable"),
+            new SampleCard(2, "Ugin, the Spirit Dragon"),
+            new SampleCard(2, "Thragtusk"),
+            new SampleCard(2, "Ulamog, the Ceaseless Hunger"),
+            new SampleCard(1, "Walking Ballista"),
+            new SampleCard(2, "Wurmcoil Engine"),
+            new SampleCard(4, "Ancient Stirrings"),
+            new SampleCard(4, "Sylvan Scrying"),
+            new SampleCard(1, "Dismember"),
+            new SampleCard(4, "Chromatic Sphere"),
+            new SampleCard(4, "Chromatic Star"),
+            new SampleCard(4, "Expedition Map"),
+            new SampleCard(3, "Oblivion Stone"),
+            new SampleCard(3, "Relic of Progenitus"),
+            new SampleCard(1, "Blast Zone"),
+            new SampleCard(4, "Forest"),
+            new SampleCard(1, "Ghost Quarter"),
+            new SampleCard(1, "Sanctum of Ugin"),
+            new SampleCard(4, "Urza's Mine"),
+            new SampleCard(4, "Urza's Power Plant"),
+            new SampleCard(4, "Urza's Tower") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Dismember"),
+            new SampleCard(1, "Choke"),
+            new SampleCard(1, "Grafdigger's Cage"),
+            new SampleCard(3, "Nature's Claim"),
+            new SampleCard(2, "Spatial Contortion"),
+            new SampleCard(1, "Sundering Titan"),
+            new SampleCard(2, "Thought-Knot Seer"),
+            new SampleCard(2, "Veil of Summer"),
+            new SampleCard(2, "Weather the Storm") 
+        };
     }
 }

@@ -4,7 +4,31 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_23
 {
     public class Deck32_thepensword_Prowess_R : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (3, "Bedlam Reveler"),(3, "Kiln Fiend"),(4, "Monastery Swiftspear"),(4, "Soul-Scar Mage"),(4, "Crash Through"),(4, "Lava Spike"),(4, "Light Up the Stage"),(2, "Burst Lightning"),(4, "Lava Dart"),(4, "Lightning Bolt"),(4, "Manamorphose"),(2, "Mutagenic Growth"),(4, "Fiery Islet"),(14, "Mountain") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (3, "Abrade"),(3, "Blood Moon"),(4, "Dragon's Claw"),(1, "Flame Slash"),(1, "Pyroclasm"),(3, "Soul-Guide Lantern") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Bedlam Reveler"),
+            new SampleCard(3, "Kiln Fiend"),
+            new SampleCard(4, "Monastery Swiftspear"),
+            new SampleCard(4, "Soul-Scar Mage"),
+            new SampleCard(4, "Crash Through"),
+            new SampleCard(4, "Lava Spike"),
+            new SampleCard(4, "Light Up the Stage"),
+            new SampleCard(2, "Burst Lightning"),
+            new SampleCard(4, "Lava Dart"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(4, "Manamorphose"),
+            new SampleCard(2, "Mutagenic Growth"),
+            new SampleCard(4, "Fiery Islet"),
+            new SampleCard(14, "Mountain") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Abrade"),
+            new SampleCard(3, "Blood Moon"),
+            new SampleCard(4, "Dragon's Claw"),
+            new SampleCard(1, "Flame Slash"),
+            new SampleCard(1, "Pyroclasm"),
+            new SampleCard(3, "Soul-Guide Lantern") 
+        };
     }
 }

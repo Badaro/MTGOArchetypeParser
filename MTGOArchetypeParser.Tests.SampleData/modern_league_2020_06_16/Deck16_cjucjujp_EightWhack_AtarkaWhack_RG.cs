@@ -4,7 +4,34 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16
 {
     public class Deck16_cjucjujp_EightWhack_AtarkaWhack_RG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Burning-Tree Emissary"),(3, "Gallia of the Endless Dance"),(4, "Goblin Bushwhacker"),(4, "Goblin Guide"),(2, "Hexdrinker"),(4, "Legion Loyalist"),(4, "Memnite"),(4, "Reckless Bushwhacker"),(4, "Signal Pest"),(4, "Atarka's Command"),(4, "Lightning Bolt"),(3, "Bloodstained Mire"),(3, "Castle Embereth"),(1, "Forest"),(4, "Mountain"),(4, "Stomping Ground"),(4, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Bonecrusher Giant"),(2, "Dismember"),(3, "Leyline of Combustion"),(2, "Life Goes On"),(3, "Smash to Smithereens"),(3, "Tormod's Crypt") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Burning-Tree Emissary"),
+            new SampleCard(3, "Gallia of the Endless Dance"),
+            new SampleCard(4, "Goblin Bushwhacker"),
+            new SampleCard(4, "Goblin Guide"),
+            new SampleCard(2, "Hexdrinker"),
+            new SampleCard(4, "Legion Loyalist"),
+            new SampleCard(4, "Memnite"),
+            new SampleCard(4, "Reckless Bushwhacker"),
+            new SampleCard(4, "Signal Pest"),
+            new SampleCard(4, "Atarka's Command"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(3, "Bloodstained Mire"),
+            new SampleCard(3, "Castle Embereth"),
+            new SampleCard(1, "Forest"),
+            new SampleCard(4, "Mountain"),
+            new SampleCard(4, "Stomping Ground"),
+            new SampleCard(4, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Bonecrusher Giant"),
+            new SampleCard(2, "Dismember"),
+            new SampleCard(3, "Leyline of Combustion"),
+            new SampleCard(2, "Life Goes On"),
+            new SampleCard(3, "Smash to Smithereens"),
+            new SampleCard(3, "Tormod's Crypt") 
+        };
     }
 }

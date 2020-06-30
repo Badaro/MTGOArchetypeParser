@@ -4,7 +4,54 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_08
 {
     public class Deck21_mosskami_PrimevalTitan_KGCAmuletTitan_WUBRG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Karn, the Great Creator"),(1, "Azusa, Lost but Seeking"),(4, "Dryad of the Ilysian Grove"),(4, "Primeval Titan"),(4, "Sakura-Tribe Scout"),(4, "Ancient Stirrings"),(2, "Explore"),(4, "Summoner's Pact"),(4, "Amulet of Vigor"),(1, "Bojuka Bog"),(1, "Boros Garrison"),(1, "Breeding Pool"),(2, "Castle Garenbrig"),(2, "Cavern of Souls"),(1, "Crumbling Vestige"),(1, "Field of the Dead"),(1, "Forest"),(1, "Golgari Rot Farm"),(1, "Gruul Turf"),(1, "Radiant Fountain"),(2, "Selesnya Sanctuary"),(4, "Simic Growth Chamber"),(1, "Slayers' Stronghold"),(2, "Snow-Covered Forest"),(1, "Sunhome, Fortress of the Legion"),(1, "Temple Garden"),(2, "Tolaria West"),(1, "Valakut, the Molten Pinnacle"),(1, "Vesuva"),(1, "Windswept Heath") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Beast Within"),(2, "Engineered Explosives"),(1, "Ensnaring Bridge"),(1, "Ghost Quarter"),(1, "Grafdigger's Cage"),(1, "Liquimetal Coating"),(1, "Obstinate Baloth"),(1, "Pact of Negation"),(1, "Pithing Needle"),(1, "Reclamation Sage"),(1, "Relic of Progenitus"),(1, "Walking Ballista"),(1, "Wurmcoil Engine") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Karn, the Great Creator"),
+            new SampleCard(1, "Azusa, Lost but Seeking"),
+            new SampleCard(4, "Dryad of the Ilysian Grove"),
+            new SampleCard(4, "Primeval Titan"),
+            new SampleCard(4, "Sakura-Tribe Scout"),
+            new SampleCard(4, "Ancient Stirrings"),
+            new SampleCard(2, "Explore"),
+            new SampleCard(4, "Summoner's Pact"),
+            new SampleCard(4, "Amulet of Vigor"),
+            new SampleCard(1, "Bojuka Bog"),
+            new SampleCard(1, "Boros Garrison"),
+            new SampleCard(1, "Breeding Pool"),
+            new SampleCard(2, "Castle Garenbrig"),
+            new SampleCard(2, "Cavern of Souls"),
+            new SampleCard(1, "Crumbling Vestige"),
+            new SampleCard(1, "Field of the Dead"),
+            new SampleCard(1, "Forest"),
+            new SampleCard(1, "Golgari Rot Farm"),
+            new SampleCard(1, "Gruul Turf"),
+            new SampleCard(1, "Radiant Fountain"),
+            new SampleCard(2, "Selesnya Sanctuary"),
+            new SampleCard(4, "Simic Growth Chamber"),
+            new SampleCard(1, "Slayers' Stronghold"),
+            new SampleCard(2, "Snow-Covered Forest"),
+            new SampleCard(1, "Sunhome, Fortress of the Legion"),
+            new SampleCard(1, "Temple Garden"),
+            new SampleCard(2, "Tolaria West"),
+            new SampleCard(1, "Valakut, the Molten Pinnacle"),
+            new SampleCard(1, "Vesuva"),
+            new SampleCard(1, "Windswept Heath") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Beast Within"),
+            new SampleCard(2, "Engineered Explosives"),
+            new SampleCard(1, "Ensnaring Bridge"),
+            new SampleCard(1, "Ghost Quarter"),
+            new SampleCard(1, "Grafdigger's Cage"),
+            new SampleCard(1, "Liquimetal Coating"),
+            new SampleCard(1, "Obstinate Baloth"),
+            new SampleCard(1, "Pact of Negation"),
+            new SampleCard(1, "Pithing Needle"),
+            new SampleCard(1, "Reclamation Sage"),
+            new SampleCard(1, "Relic of Progenitus"),
+            new SampleCard(1, "Walking Ballista"),
+            new SampleCard(1, "Wurmcoil Engine") 
+        };
     }
 }

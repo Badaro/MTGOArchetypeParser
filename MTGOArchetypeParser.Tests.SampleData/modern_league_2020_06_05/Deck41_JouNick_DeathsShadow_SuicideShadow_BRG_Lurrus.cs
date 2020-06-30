@@ -4,7 +4,43 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_05
 {
     public class Deck41_JouNick_DeathsShadow_SuicideShadow_BRG_Lurrus : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Death's Shadow"),(4, "Monastery Swiftspear"),(4, "Tarmogoyf"),(2, "Crash Through"),(1, "Inquisition of Kozilek"),(4, "Thoughtseize"),(1, "Unearth"),(3, "Cling to Dust"),(2, "Dismember"),(1, "Fatal Push"),(4, "Lightning Bolt"),(3, "Mutagenic Growth"),(2, "Temur Battle Rage"),(4, "Mishra's Bauble"),(2, "Seal of Fire"),(2, "Blood Crypt"),(4, "Bloodstained Mire"),(1, "Forest"),(1, "Nurturing Peatland"),(2, "Overgrown Tomb"),(1, "Stomping Ground"),(1, "Swamp"),(4, "Verdant Catacombs"),(3, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Temur Battle Rage"),(1, "Unearth"),(3, "Assassin's Trophy"),(3, "Collective Brutality"),(3, "Kiln Fiend"),(1, "Lurrus of the Dream Den"),(2, "Nihil Spellbomb"),(1, "Veil of Summer") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Death's Shadow"),
+            new SampleCard(4, "Monastery Swiftspear"),
+            new SampleCard(4, "Tarmogoyf"),
+            new SampleCard(2, "Crash Through"),
+            new SampleCard(1, "Inquisition of Kozilek"),
+            new SampleCard(4, "Thoughtseize"),
+            new SampleCard(1, "Unearth"),
+            new SampleCard(3, "Cling to Dust"),
+            new SampleCard(2, "Dismember"),
+            new SampleCard(1, "Fatal Push"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(3, "Mutagenic Growth"),
+            new SampleCard(2, "Temur Battle Rage"),
+            new SampleCard(4, "Mishra's Bauble"),
+            new SampleCard(2, "Seal of Fire"),
+            new SampleCard(2, "Blood Crypt"),
+            new SampleCard(4, "Bloodstained Mire"),
+            new SampleCard(1, "Forest"),
+            new SampleCard(1, "Nurturing Peatland"),
+            new SampleCard(2, "Overgrown Tomb"),
+            new SampleCard(1, "Stomping Ground"),
+            new SampleCard(1, "Swamp"),
+            new SampleCard(4, "Verdant Catacombs"),
+            new SampleCard(3, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Temur Battle Rage"),
+            new SampleCard(1, "Unearth"),
+            new SampleCard(3, "Assassin's Trophy"),
+            new SampleCard(3, "Collective Brutality"),
+            new SampleCard(3, "Kiln Fiend"),
+            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(2, "Nihil Spellbomb"),
+            new SampleCard(1, "Veil of Summer") 
+        };
     }
 }

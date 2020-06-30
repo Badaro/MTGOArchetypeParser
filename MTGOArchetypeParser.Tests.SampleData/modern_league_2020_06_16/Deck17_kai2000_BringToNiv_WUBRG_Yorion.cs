@@ -4,7 +4,58 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16
 {
     public class Deck17_kai2000_BringToNiv_WUBRG_Yorion : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (3, "Teferi, Time Raveler"),(4, "Wrenn and Six"),(2, "Bloodbraid Elf"),(4, "Ice-Fang Coatl"),(3, "Niv-Mizzet Reborn"),(3, "Uro, Titan of Nature's Wrath"),(4, "Bring to Light"),(3, "Glittering Wish"),(1, "Supreme Verdict"),(3, "Assassin's Trophy"),(3, "Kaya's Guile"),(4, "Lightning Helix"),(4, "Arcum's Astrolabe"),(3, "Abundant Growth"),(2, "Oath of Kaya"),(4, "Utopia Sprawl"),(1, "Breeding Pool"),(1, "Overgrown Tomb"),(4, "Pillar of the Paruns"),(4, "Prismatic Vista"),(2, "Snow-Covered Forest"),(1, "Snow-Covered Island"),(1, "Snow-Covered Mountain"),(2, "Snow-Covered Plains"),(1, "Snow-Covered Swamp"),(1, "Steam Vents"),(1, "Stomping Ground"),(1, "Temple Garden"),(2, "Verdant Catacombs"),(4, "Windswept Heath"),(3, "Wooded Foothills"),(1, "Zagoth Triome") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Niv-Mizzet Reborn"),(1, "Supreme Verdict"),(1, "Ashiok, Dream Render"),(1, "Crumble to Dust"),(1, "Deafening Clarion"),(1, "Fulminator Mage"),(1, "Kambal, Consul of Allocation"),(1, "Kaya, Orzhov Usurper"),(1, "Knight of Autumn"),(1, "Kolaghan's Command"),(1, "Kunoros, Hound of Athreos"),(1, "Maelstrom Pulse"),(1, "Meddling Mage"),(1, "Unmoored Ego"),(1, "Yorion, Sky Nomad") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Teferi, Time Raveler"),
+            new SampleCard(4, "Wrenn and Six"),
+            new SampleCard(2, "Bloodbraid Elf"),
+            new SampleCard(4, "Ice-Fang Coatl"),
+            new SampleCard(3, "Niv-Mizzet Reborn"),
+            new SampleCard(3, "Uro, Titan of Nature's Wrath"),
+            new SampleCard(4, "Bring to Light"),
+            new SampleCard(3, "Glittering Wish"),
+            new SampleCard(1, "Supreme Verdict"),
+            new SampleCard(3, "Assassin's Trophy"),
+            new SampleCard(3, "Kaya's Guile"),
+            new SampleCard(4, "Lightning Helix"),
+            new SampleCard(4, "Arcum's Astrolabe"),
+            new SampleCard(3, "Abundant Growth"),
+            new SampleCard(2, "Oath of Kaya"),
+            new SampleCard(4, "Utopia Sprawl"),
+            new SampleCard(1, "Breeding Pool"),
+            new SampleCard(1, "Overgrown Tomb"),
+            new SampleCard(4, "Pillar of the Paruns"),
+            new SampleCard(4, "Prismatic Vista"),
+            new SampleCard(2, "Snow-Covered Forest"),
+            new SampleCard(1, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Mountain"),
+            new SampleCard(2, "Snow-Covered Plains"),
+            new SampleCard(1, "Snow-Covered Swamp"),
+            new SampleCard(1, "Steam Vents"),
+            new SampleCard(1, "Stomping Ground"),
+            new SampleCard(1, "Temple Garden"),
+            new SampleCard(2, "Verdant Catacombs"),
+            new SampleCard(4, "Windswept Heath"),
+            new SampleCard(3, "Wooded Foothills"),
+            new SampleCard(1, "Zagoth Triome") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Niv-Mizzet Reborn"),
+            new SampleCard(1, "Supreme Verdict"),
+            new SampleCard(1, "Ashiok, Dream Render"),
+            new SampleCard(1, "Crumble to Dust"),
+            new SampleCard(1, "Deafening Clarion"),
+            new SampleCard(1, "Fulminator Mage"),
+            new SampleCard(1, "Kambal, Consul of Allocation"),
+            new SampleCard(1, "Kaya, Orzhov Usurper"),
+            new SampleCard(1, "Knight of Autumn"),
+            new SampleCard(1, "Kolaghan's Command"),
+            new SampleCard(1, "Kunoros, Hound of Athreos"),
+            new SampleCard(1, "Maelstrom Pulse"),
+            new SampleCard(1, "Meddling Mage"),
+            new SampleCard(1, "Unmoored Ego"),
+            new SampleCard(1, "Yorion, Sky Nomad") 
+        };
     }
 }

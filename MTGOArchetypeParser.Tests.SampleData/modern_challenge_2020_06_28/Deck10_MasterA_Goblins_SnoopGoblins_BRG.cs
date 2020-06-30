@@ -4,7 +4,40 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_28
 {
     public class Deck10_MasterA_Goblins_SnoopGoblins_BRG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Boggart Harbinger"),(4, "Conspicuous Snoop"),(2, "Goblin Matron"),(1, "Grumgully, the Generous"),(2, "Kiki-Jiki, Mirror Breaker"),(4, "Metallic Mimic"),(4, "Munitions Expert"),(1, "Murderous Redcap"),(4, "Putrid Goblin"),(4, "Skirk Prospector"),(4, "Sling-Gang Lieutenant"),(4, "Aether Vial"),(1, "Arid Mesa"),(4, "Auntie's Hovel"),(2, "Blood Crypt"),(4, "Bloodstained Mire"),(4, "Cavern of Souls"),(1, "Gemstone Caverns"),(2, "Mountain"),(1, "Stomping Ground"),(3, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Ashiok, Dream Render"),(1, "Dismember"),(1, "Goblin Ringleader"),(1, "Goblin Trashmaster"),(1, "Lightning Bolt"),(4, "Relic of Progenitus"),(1, "Tarfire"),(4, "Thoughtseize") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Boggart Harbinger"),
+            new SampleCard(4, "Conspicuous Snoop"),
+            new SampleCard(2, "Goblin Matron"),
+            new SampleCard(1, "Grumgully, the Generous"),
+            new SampleCard(2, "Kiki-Jiki, Mirror Breaker"),
+            new SampleCard(4, "Metallic Mimic"),
+            new SampleCard(4, "Munitions Expert"),
+            new SampleCard(1, "Murderous Redcap"),
+            new SampleCard(4, "Putrid Goblin"),
+            new SampleCard(4, "Skirk Prospector"),
+            new SampleCard(4, "Sling-Gang Lieutenant"),
+            new SampleCard(4, "Aether Vial"),
+            new SampleCard(1, "Arid Mesa"),
+            new SampleCard(4, "Auntie's Hovel"),
+            new SampleCard(2, "Blood Crypt"),
+            new SampleCard(4, "Bloodstained Mire"),
+            new SampleCard(4, "Cavern of Souls"),
+            new SampleCard(1, "Gemstone Caverns"),
+            new SampleCard(2, "Mountain"),
+            new SampleCard(1, "Stomping Ground"),
+            new SampleCard(3, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Ashiok, Dream Render"),
+            new SampleCard(1, "Dismember"),
+            new SampleCard(1, "Goblin Ringleader"),
+            new SampleCard(1, "Goblin Trashmaster"),
+            new SampleCard(1, "Lightning Bolt"),
+            new SampleCard(4, "Relic of Progenitus"),
+            new SampleCard(1, "Tarfire"),
+            new SampleCard(4, "Thoughtseize") 
+        };
     }
 }

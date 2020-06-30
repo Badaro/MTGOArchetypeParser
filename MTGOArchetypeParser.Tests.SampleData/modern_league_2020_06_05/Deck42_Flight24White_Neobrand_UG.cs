@@ -4,7 +4,38 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_05
 {
     public class Deck42_Flight24White_Neobrand_UG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Allosaurus Rider"),(2, "Autochthon Wurm"),(4, "Chancellor of the Tangle"),(2, "Griselbrand"),(1, "Laboratory Maniac"),(4, "Simian Spirit Guide"),(1, "Wild Cantor"),(4, "Eldritch Evolution"),(4, "Neoform"),(4, "Serum Visions"),(3, "Dissenter's Deliverance"),(1, "Life Goes On"),(4, "Manamorphose"),(4, "Nourishing Shoal"),(4, "Summoner's Pact"),(4, "Botanical Sanctum"),(4, "Gemstone Mine"),(1, "Snow-Covered Island"),(4, "Waterlogged Grove"),(1, "Yavimaya Coast") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Dissenter's Deliverance"),(1, "Engineered Explosives"),(4, "Leyline of Sanctity"),(4, "Pact of Negation"),(2, "Spell Pierce"),(2, "Veil of Summer"),(1, "Wilt") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Allosaurus Rider"),
+            new SampleCard(2, "Autochthon Wurm"),
+            new SampleCard(4, "Chancellor of the Tangle"),
+            new SampleCard(2, "Griselbrand"),
+            new SampleCard(1, "Laboratory Maniac"),
+            new SampleCard(4, "Simian Spirit Guide"),
+            new SampleCard(1, "Wild Cantor"),
+            new SampleCard(4, "Eldritch Evolution"),
+            new SampleCard(4, "Neoform"),
+            new SampleCard(4, "Serum Visions"),
+            new SampleCard(3, "Dissenter's Deliverance"),
+            new SampleCard(1, "Life Goes On"),
+            new SampleCard(4, "Manamorphose"),
+            new SampleCard(4, "Nourishing Shoal"),
+            new SampleCard(4, "Summoner's Pact"),
+            new SampleCard(4, "Botanical Sanctum"),
+            new SampleCard(4, "Gemstone Mine"),
+            new SampleCard(1, "Snow-Covered Island"),
+            new SampleCard(4, "Waterlogged Grove"),
+            new SampleCard(1, "Yavimaya Coast") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Dissenter's Deliverance"),
+            new SampleCard(1, "Engineered Explosives"),
+            new SampleCard(4, "Leyline of Sanctity"),
+            new SampleCard(4, "Pact of Negation"),
+            new SampleCard(2, "Spell Pierce"),
+            new SampleCard(2, "Veil of Summer"),
+            new SampleCard(1, "Wilt") 
+        };
     }
 }

@@ -4,7 +4,40 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12
 {
     public class Deck18_PieGonti_Humans_WUBRG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Champion of the Parish"),(1, "Dark Confidant"),(3, "General Kudro of Drannith"),(3, "Kitesail Freebooter"),(4, "Mantis Rider"),(4, "Meddling Mage"),(4, "Noble Hierarch"),(3, "Phantasmal Image"),(4, "Reflector Mage"),(3, "Thalia, Guardian of Thraben"),(4, "Thalia's Lieutenant"),(4, "Aether Vial"),(3, "Ancient Ziggurat"),(1, "Botanical Sanctum"),(4, "Cavern of Souls"),(3, "Horizon Canopy"),(1, "Plains"),(1, "Seachrome Coast"),(1, "Silent Clearing"),(4, "Unclaimed Territory"),(1, "Waterlogged Grove") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Auriok Champion"),(2, "Choke"),(1, "Collector Ouphe"),(2, "Deputy of Detention"),(2, "Dismember"),(2, "Gaddock Teeg"),(2, "Grafdigger's Cage"),(2, "Militia Bugler") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Champion of the Parish"),
+            new SampleCard(1, "Dark Confidant"),
+            new SampleCard(3, "General Kudro of Drannith"),
+            new SampleCard(3, "Kitesail Freebooter"),
+            new SampleCard(4, "Mantis Rider"),
+            new SampleCard(4, "Meddling Mage"),
+            new SampleCard(4, "Noble Hierarch"),
+            new SampleCard(3, "Phantasmal Image"),
+            new SampleCard(4, "Reflector Mage"),
+            new SampleCard(3, "Thalia, Guardian of Thraben"),
+            new SampleCard(4, "Thalia's Lieutenant"),
+            new SampleCard(4, "Aether Vial"),
+            new SampleCard(3, "Ancient Ziggurat"),
+            new SampleCard(1, "Botanical Sanctum"),
+            new SampleCard(4, "Cavern of Souls"),
+            new SampleCard(3, "Horizon Canopy"),
+            new SampleCard(1, "Plains"),
+            new SampleCard(1, "Seachrome Coast"),
+            new SampleCard(1, "Silent Clearing"),
+            new SampleCard(4, "Unclaimed Territory"),
+            new SampleCard(1, "Waterlogged Grove") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Auriok Champion"),
+            new SampleCard(2, "Choke"),
+            new SampleCard(1, "Collector Ouphe"),
+            new SampleCard(2, "Deputy of Detention"),
+            new SampleCard(2, "Dismember"),
+            new SampleCard(2, "Gaddock Teeg"),
+            new SampleCard(2, "Grafdigger's Cage"),
+            new SampleCard(2, "Militia Bugler") 
+        };
     }
 }

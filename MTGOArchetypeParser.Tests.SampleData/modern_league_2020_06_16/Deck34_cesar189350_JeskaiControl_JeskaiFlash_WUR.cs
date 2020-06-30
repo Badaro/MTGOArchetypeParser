@@ -4,7 +4,56 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16
 {
     public class Deck34_cesar189350_JeskaiControl_JeskaiFlash_WUR : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (1, "Narset of the Ancient Way"),(1, "Archangel Avacyn"),(2, "Geist of Saint Traft"),(4, "Snapcaster Mage"),(3, "Spell Queller"),(3, "Cryptic Command"),(1, "Electrolyze"),(4, "Lightning Bolt"),(3, "Lightning Helix"),(2, "Logic Knot"),(2, "Mana Leak"),(4, "Opt"),(4, "Path to Exile"),(1, "Spell Snare"),(1, "Arid Mesa"),(2, "Celestial Colonnade"),(1, "Field of Ruin"),(1, "Fiery Islet"),(4, "Flooded Strand"),(1, "Glacial Fortress"),(2, "Hallowed Fountain"),(2, "Island"),(1, "Mystic Sanctuary"),(1, "Raugrin Triome"),(1, "Sacred Foundry"),(3, "Scalding Tarn"),(1, "Snow-Covered Island"),(1, "Snow-Covered Mountain"),(1, "Snow-Covered Plains"),(2, "Steam Vents") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Anger of the Gods"),(1, "Ashiok, Dream Render"),(1, "Celestial Purge"),(1, "Chandra, Awakened Inferno"),(1, "Damping Sphere"),(1, "Disdainful Stroke"),(1, "Dispel"),(1, "Engineered Explosives"),(1, "Izzet Staticaster"),(1, "Rest in Peace"),(1, "Settle the Wreckage"),(1, "Shattering Spree"),(1, "Stony Silence"),(1, "Supreme Verdict"),(1, "Wear // Tear") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Narset of the Ancient Way"),
+            new SampleCard(1, "Archangel Avacyn"),
+            new SampleCard(2, "Geist of Saint Traft"),
+            new SampleCard(4, "Snapcaster Mage"),
+            new SampleCard(3, "Spell Queller"),
+            new SampleCard(3, "Cryptic Command"),
+            new SampleCard(1, "Electrolyze"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(3, "Lightning Helix"),
+            new SampleCard(2, "Logic Knot"),
+            new SampleCard(2, "Mana Leak"),
+            new SampleCard(4, "Opt"),
+            new SampleCard(4, "Path to Exile"),
+            new SampleCard(1, "Spell Snare"),
+            new SampleCard(1, "Arid Mesa"),
+            new SampleCard(2, "Celestial Colonnade"),
+            new SampleCard(1, "Field of Ruin"),
+            new SampleCard(1, "Fiery Islet"),
+            new SampleCard(4, "Flooded Strand"),
+            new SampleCard(1, "Glacial Fortress"),
+            new SampleCard(2, "Hallowed Fountain"),
+            new SampleCard(2, "Island"),
+            new SampleCard(1, "Mystic Sanctuary"),
+            new SampleCard(1, "Raugrin Triome"),
+            new SampleCard(1, "Sacred Foundry"),
+            new SampleCard(3, "Scalding Tarn"),
+            new SampleCard(1, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Mountain"),
+            new SampleCard(1, "Snow-Covered Plains"),
+            new SampleCard(2, "Steam Vents") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Anger of the Gods"),
+            new SampleCard(1, "Ashiok, Dream Render"),
+            new SampleCard(1, "Celestial Purge"),
+            new SampleCard(1, "Chandra, Awakened Inferno"),
+            new SampleCard(1, "Damping Sphere"),
+            new SampleCard(1, "Disdainful Stroke"),
+            new SampleCard(1, "Dispel"),
+            new SampleCard(1, "Engineered Explosives"),
+            new SampleCard(1, "Izzet Staticaster"),
+            new SampleCard(1, "Rest in Peace"),
+            new SampleCard(1, "Settle the Wreckage"),
+            new SampleCard(1, "Shattering Spree"),
+            new SampleCard(1, "Stony Silence"),
+            new SampleCard(1, "Supreme Verdict"),
+            new SampleCard(1, "Wear // Tear") 
+        };
     }
 }

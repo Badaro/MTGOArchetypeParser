@@ -4,7 +4,43 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_26
 {
     public class Deck36_Piccio36_Winota_WRG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Angrath's Marauders"),(4, "Arbor Elf"),(4, "Birds of Paradise"),(1, "Magus of the Moon"),(1, "Pia and Kiran Nalaar"),(4, "Seasoned Pyromancer"),(4, "Strangleroot Geist"),(3, "Voice of Resurgence"),(4, "Winota, Joiner of Forces"),(4, "Eldritch Evolution"),(4, "Lightning Bolt"),(1, "Smuggler's Copter"),(4, "Copperline Gorge"),(2, "Forest"),(1, "Mountain"),(1, "Plains"),(1, "Sacred Foundry"),(3, "Stomping Ground"),(2, "Temple Garden"),(4, "Windswept Heath"),(4, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Avalanche Riders"),(2, "Caustic Caterpillar"),(1, "Damping Sphere"),(1, "Ethersworn Canonist"),(1, "Gaddock Teeg"),(2, "Knight of Autumn"),(1, "Linvala, Keeper of Silence"),(1, "Obstinate Baloth"),(1, "Path to Exile"),(2, "Relic of Progenitus"),(2, "Thrun, the Last Troll") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Angrath's Marauders"),
+            new SampleCard(4, "Arbor Elf"),
+            new SampleCard(4, "Birds of Paradise"),
+            new SampleCard(1, "Magus of the Moon"),
+            new SampleCard(1, "Pia and Kiran Nalaar"),
+            new SampleCard(4, "Seasoned Pyromancer"),
+            new SampleCard(4, "Strangleroot Geist"),
+            new SampleCard(3, "Voice of Resurgence"),
+            new SampleCard(4, "Winota, Joiner of Forces"),
+            new SampleCard(4, "Eldritch Evolution"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(1, "Smuggler's Copter"),
+            new SampleCard(4, "Copperline Gorge"),
+            new SampleCard(2, "Forest"),
+            new SampleCard(1, "Mountain"),
+            new SampleCard(1, "Plains"),
+            new SampleCard(1, "Sacred Foundry"),
+            new SampleCard(3, "Stomping Ground"),
+            new SampleCard(2, "Temple Garden"),
+            new SampleCard(4, "Windswept Heath"),
+            new SampleCard(4, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Avalanche Riders"),
+            new SampleCard(2, "Caustic Caterpillar"),
+            new SampleCard(1, "Damping Sphere"),
+            new SampleCard(1, "Ethersworn Canonist"),
+            new SampleCard(1, "Gaddock Teeg"),
+            new SampleCard(2, "Knight of Autumn"),
+            new SampleCard(1, "Linvala, Keeper of Silence"),
+            new SampleCard(1, "Obstinate Baloth"),
+            new SampleCard(1, "Path to Exile"),
+            new SampleCard(2, "Relic of Progenitus"),
+            new SampleCard(2, "Thrun, the Last Troll") 
+        };
     }
 }

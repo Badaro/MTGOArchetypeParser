@@ -4,7 +4,33 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09
 {
     public class Deck38_NeverDidntHaveIt_Prowess_WR : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Blistercoil Weird"),(4, "Kiln Fiend"),(4, "Monastery Swiftspear"),(4, "Soul-Scar Mage"),(4, "Crash Through"),(4, "Light Up the Stage"),(4, "Gut Shot"),(4, "Lava Dart"),(4, "Lightning Bolt"),(4, "Manamorphose"),(4, "Mutagenic Growth"),(2, "Temur Battle Rage"),(3, "Bloodstained Mire"),(2, "Inspiring Vantage"),(3, "Mountain"),(3, "Sacred Foundry"),(3, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Alpine Moon"),(4, "Bedlam Reveler"),(4, "Kor Firewalker"),(4, "Path to Exile"),(2, "Reality Hemorrhage") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Blistercoil Weird"),
+            new SampleCard(4, "Kiln Fiend"),
+            new SampleCard(4, "Monastery Swiftspear"),
+            new SampleCard(4, "Soul-Scar Mage"),
+            new SampleCard(4, "Crash Through"),
+            new SampleCard(4, "Light Up the Stage"),
+            new SampleCard(4, "Gut Shot"),
+            new SampleCard(4, "Lava Dart"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(4, "Manamorphose"),
+            new SampleCard(4, "Mutagenic Growth"),
+            new SampleCard(2, "Temur Battle Rage"),
+            new SampleCard(3, "Bloodstained Mire"),
+            new SampleCard(2, "Inspiring Vantage"),
+            new SampleCard(3, "Mountain"),
+            new SampleCard(3, "Sacred Foundry"),
+            new SampleCard(3, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Alpine Moon"),
+            new SampleCard(4, "Bedlam Reveler"),
+            new SampleCard(4, "Kor Firewalker"),
+            new SampleCard(4, "Path to Exile"),
+            new SampleCard(2, "Reality Hemorrhage") 
+        };
     }
 }

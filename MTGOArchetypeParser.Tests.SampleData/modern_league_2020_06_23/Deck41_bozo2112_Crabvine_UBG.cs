@@ -4,7 +4,38 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_23
 {
     public class Deck41_bozo2112_Crabvine_UBG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Gravecrawler"),(4, "Gurmag Angler"),(4, "Hedron Crab"),(4, "Merfolk Secretkeeper"),(4, "Narcomoeba"),(4, "Prized Amalgam"),(1, "Skaab Ruinator"),(4, "Stitcher's Supplier"),(4, "Vengevine"),(4, "Creeping Chill"),(4, "Glimpse the Unthinkable"),(1, "Breeding Pool"),(2, "Darkslick Shores"),(2, "Overgrown Tomb"),(4, "Polluted Delta"),(3, "Prismatic Vista"),(1, "Snow-Covered Forest"),(2, "Snow-Covered Island"),(1, "Snow-Covered Swamp"),(1, "Verdant Catacombs"),(2, "Watery Grave") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Abrupt Decay"),(2, "Assassin's Trophy"),(4, "Fatal Push"),(3, "Nature's Claim"),(2, "Thoughtseize"),(2, "Unmoored Ego") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Gravecrawler"),
+            new SampleCard(4, "Gurmag Angler"),
+            new SampleCard(4, "Hedron Crab"),
+            new SampleCard(4, "Merfolk Secretkeeper"),
+            new SampleCard(4, "Narcomoeba"),
+            new SampleCard(4, "Prized Amalgam"),
+            new SampleCard(1, "Skaab Ruinator"),
+            new SampleCard(4, "Stitcher's Supplier"),
+            new SampleCard(4, "Vengevine"),
+            new SampleCard(4, "Creeping Chill"),
+            new SampleCard(4, "Glimpse the Unthinkable"),
+            new SampleCard(1, "Breeding Pool"),
+            new SampleCard(2, "Darkslick Shores"),
+            new SampleCard(2, "Overgrown Tomb"),
+            new SampleCard(4, "Polluted Delta"),
+            new SampleCard(3, "Prismatic Vista"),
+            new SampleCard(1, "Snow-Covered Forest"),
+            new SampleCard(2, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Swamp"),
+            new SampleCard(1, "Verdant Catacombs"),
+            new SampleCard(2, "Watery Grave") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Abrupt Decay"),
+            new SampleCard(2, "Assassin's Trophy"),
+            new SampleCard(4, "Fatal Push"),
+            new SampleCard(3, "Nature's Claim"),
+            new SampleCard(2, "Thoughtseize"),
+            new SampleCard(2, "Unmoored Ego") 
+        };
     }
 }

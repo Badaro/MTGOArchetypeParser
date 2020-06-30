@@ -4,7 +4,46 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16
 {
     public class Deck36_Jidden_ThopterUrza_WU : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (3, "Teferi, Time Raveler"),(4, "Urza, Lord High Artificer"),(3, "Archmage's Charm"),(2, "Cryptic Command"),(1, "Deprive"),(3, "Path to Exile"),(3, "Whir of Invention"),(4, "Arcum's Astrolabe"),(1, "Ensnaring Bridge"),(4, "Mishra's Bauble"),(1, "Pithing Needle"),(2, "Relic of Progenitus"),(1, "Sword of the Meek"),(3, "Talisman of Progress"),(3, "Thopter Foundry"),(4, "Flooded Strand"),(1, "Hallowed Fountain"),(2, "Lonely Sandbar"),(3, "Mystic Sanctuary"),(3, "Polluted Delta"),(2, "Scalding Tarn"),(6, "Snow-Covered Island"),(1, "Snow-Covered Plains") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Ashiok, Dream Render"),(2, "Ceremonious Rejection"),(1, "Damping Sphere"),(1, "Detention Sphere"),(1, "Disdainful Stroke"),(1, "Dispel"),(1, "Engineered Explosives"),(1, "Grafdigger's Cage"),(1, "Jace, the Mind Sculptor"),(2, "Leyline of Sanctity"),(1, "Supreme Verdict"),(2, "Timely Reinforcements") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Teferi, Time Raveler"),
+            new SampleCard(4, "Urza, Lord High Artificer"),
+            new SampleCard(3, "Archmage's Charm"),
+            new SampleCard(2, "Cryptic Command"),
+            new SampleCard(1, "Deprive"),
+            new SampleCard(3, "Path to Exile"),
+            new SampleCard(3, "Whir of Invention"),
+            new SampleCard(4, "Arcum's Astrolabe"),
+            new SampleCard(1, "Ensnaring Bridge"),
+            new SampleCard(4, "Mishra's Bauble"),
+            new SampleCard(1, "Pithing Needle"),
+            new SampleCard(2, "Relic of Progenitus"),
+            new SampleCard(1, "Sword of the Meek"),
+            new SampleCard(3, "Talisman of Progress"),
+            new SampleCard(3, "Thopter Foundry"),
+            new SampleCard(4, "Flooded Strand"),
+            new SampleCard(1, "Hallowed Fountain"),
+            new SampleCard(2, "Lonely Sandbar"),
+            new SampleCard(3, "Mystic Sanctuary"),
+            new SampleCard(3, "Polluted Delta"),
+            new SampleCard(2, "Scalding Tarn"),
+            new SampleCard(6, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Plains") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Ashiok, Dream Render"),
+            new SampleCard(2, "Ceremonious Rejection"),
+            new SampleCard(1, "Damping Sphere"),
+            new SampleCard(1, "Detention Sphere"),
+            new SampleCard(1, "Disdainful Stroke"),
+            new SampleCard(1, "Dispel"),
+            new SampleCard(1, "Engineered Explosives"),
+            new SampleCard(1, "Grafdigger's Cage"),
+            new SampleCard(1, "Jace, the Mind Sculptor"),
+            new SampleCard(2, "Leyline of Sanctity"),
+            new SampleCard(1, "Supreme Verdict"),
+            new SampleCard(2, "Timely Reinforcements") 
+        };
     }
 }

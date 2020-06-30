@@ -4,7 +4,34 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_29
 {
     public class Deck17_stainerson_Elves_GolgariElves_BG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Dwynen's Elite"),(2, "Elves of Deep Shadow"),(4, "Elvish Archdruid"),(3, "Elvish Clancaller"),(4, "Elvish Mystic"),(2, "Ezuri, Renegade Leader"),(4, "Heritage Druid"),(4, "Llanowar Elves"),(2, "Nettle Sentinel"),(4, "Shaman of the Pack"),(4, "Winding Way"),(4, "Collected Company"),(4, "Blooming Marsh"),(3, "Forest"),(4, "Gilt-Leaf Palace"),(3, "Llanowar Wastes"),(4, "Nurturing Peatland"),(1, "Pendelhaven") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (3, "Assassin's Trophy"),(2, "Choke"),(3, "Collector Ouphe"),(3, "Damping Sphere"),(4, "Yixlid Jailer") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Dwynen's Elite"),
+            new SampleCard(2, "Elves of Deep Shadow"),
+            new SampleCard(4, "Elvish Archdruid"),
+            new SampleCard(3, "Elvish Clancaller"),
+            new SampleCard(4, "Elvish Mystic"),
+            new SampleCard(2, "Ezuri, Renegade Leader"),
+            new SampleCard(4, "Heritage Druid"),
+            new SampleCard(4, "Llanowar Elves"),
+            new SampleCard(2, "Nettle Sentinel"),
+            new SampleCard(4, "Shaman of the Pack"),
+            new SampleCard(4, "Winding Way"),
+            new SampleCard(4, "Collected Company"),
+            new SampleCard(4, "Blooming Marsh"),
+            new SampleCard(3, "Forest"),
+            new SampleCard(4, "Gilt-Leaf Palace"),
+            new SampleCard(3, "Llanowar Wastes"),
+            new SampleCard(4, "Nurturing Peatland"),
+            new SampleCard(1, "Pendelhaven") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Assassin's Trophy"),
+            new SampleCard(2, "Choke"),
+            new SampleCard(3, "Collector Ouphe"),
+            new SampleCard(3, "Damping Sphere"),
+            new SampleCard(4, "Yixlid Jailer") 
+        };
     }
 }

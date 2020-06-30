@@ -4,7 +4,36 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_30
 {
     public class Deck45_meanfannypack_Devoted_WG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (1, "Birds of Paradise"),(4, "Devoted Druid"),(3, "Duskwatch Recruiter"),(4, "Giver of Runes"),(4, "Noble Hierarch"),(3, "Selfless Savior"),(4, "Vizier of Remedies"),(1, "Walking Ballista"),(4, "Finale of Devastation"),(4, "Postmortem Lunge"),(4, "Eladamri's Call"),(4, "Mishra's Bauble"),(2, "Forest"),(3, "Horizon Canopy"),(3, "Misty Rainforest"),(2, "Plains"),(4, "Razorverge Thicket"),(2, "Temple Garden"),(4, "Windswept Heath") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Blossoming Defense"),(4, "Burrenton Forge-Tender"),(1, "Caustic Caterpillar"),(1, "Lurrus of the Dream-Den"),(3, "Path to Exile"),(4, "Veil of Summer") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Birds of Paradise"),
+            new SampleCard(4, "Devoted Druid"),
+            new SampleCard(3, "Duskwatch Recruiter"),
+            new SampleCard(4, "Giver of Runes"),
+            new SampleCard(4, "Noble Hierarch"),
+            new SampleCard(3, "Selfless Savior"),
+            new SampleCard(4, "Vizier of Remedies"),
+            new SampleCard(1, "Walking Ballista"),
+            new SampleCard(4, "Finale of Devastation"),
+            new SampleCard(4, "Postmortem Lunge"),
+            new SampleCard(4, "Eladamri's Call"),
+            new SampleCard(4, "Mishra's Bauble"),
+            new SampleCard(2, "Forest"),
+            new SampleCard(3, "Horizon Canopy"),
+            new SampleCard(3, "Misty Rainforest"),
+            new SampleCard(2, "Plains"),
+            new SampleCard(4, "Razorverge Thicket"),
+            new SampleCard(2, "Temple Garden"),
+            new SampleCard(4, "Windswept Heath") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Blossoming Defense"),
+            new SampleCard(4, "Burrenton Forge-Tender"),
+            new SampleCard(1, "Caustic Caterpillar"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
+            new SampleCard(3, "Path to Exile"),
+            new SampleCard(4, "Veil of Summer") 
+        };
     }
 }

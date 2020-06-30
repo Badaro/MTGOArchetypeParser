@@ -4,7 +4,46 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16
 {
     public class Deck56_erose199423_ThopterUrza_WUR : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Emry, Lurker of the Loch"),(2, "Goblin Engineer"),(4, "Urza, Lord High Artificer"),(1, "Archmage's Charm"),(2, "Cryptic Command"),(2, "Metallic Rebuke"),(2, "Path to Exile"),(1, "Whir of Invention"),(1, "Aether Spellbomb"),(4, "Arcum's Astrolabe"),(2, "Engineered Explosives"),(4, "Mishra's Bauble"),(2, "Mox Amber"),(1, "Pithing Needle"),(1, "Pyrite Spellbomb"),(2, "Sword of the Meek"),(3, "Thopter Foundry"),(4, "Flooded Strand"),(1, "Hallowed Fountain"),(1, "Inventors' Fair"),(1, "Misty Rainforest"),(2, "Mystic Sanctuary"),(4, "Polluted Delta"),(1, "Prairie Stream"),(6, "Snow-Covered Island"),(1, "Snow-Covered Plains"),(1, "Steam Vents") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Aether Gust"),(2, "Ceremonious Rejection"),(1, "Damping Sphere"),(2, "Galvanic Blast"),(1, "Grafdigger's Cage"),(3, "Mystical Dispute"),(1, "Soul-Guide Lantern"),(3, "Timely Reinforcements") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Emry, Lurker of the Loch"),
+            new SampleCard(2, "Goblin Engineer"),
+            new SampleCard(4, "Urza, Lord High Artificer"),
+            new SampleCard(1, "Archmage's Charm"),
+            new SampleCard(2, "Cryptic Command"),
+            new SampleCard(2, "Metallic Rebuke"),
+            new SampleCard(2, "Path to Exile"),
+            new SampleCard(1, "Whir of Invention"),
+            new SampleCard(1, "Aether Spellbomb"),
+            new SampleCard(4, "Arcum's Astrolabe"),
+            new SampleCard(2, "Engineered Explosives"),
+            new SampleCard(4, "Mishra's Bauble"),
+            new SampleCard(2, "Mox Amber"),
+            new SampleCard(1, "Pithing Needle"),
+            new SampleCard(1, "Pyrite Spellbomb"),
+            new SampleCard(2, "Sword of the Meek"),
+            new SampleCard(3, "Thopter Foundry"),
+            new SampleCard(4, "Flooded Strand"),
+            new SampleCard(1, "Hallowed Fountain"),
+            new SampleCard(1, "Inventors' Fair"),
+            new SampleCard(1, "Misty Rainforest"),
+            new SampleCard(2, "Mystic Sanctuary"),
+            new SampleCard(4, "Polluted Delta"),
+            new SampleCard(1, "Prairie Stream"),
+            new SampleCard(6, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Plains"),
+            new SampleCard(1, "Steam Vents") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Aether Gust"),
+            new SampleCard(2, "Ceremonious Rejection"),
+            new SampleCard(1, "Damping Sphere"),
+            new SampleCard(2, "Galvanic Blast"),
+            new SampleCard(1, "Grafdigger's Cage"),
+            new SampleCard(3, "Mystical Dispute"),
+            new SampleCard(1, "Soul-Guide Lantern"),
+            new SampleCard(3, "Timely Reinforcements") 
+        };
     }
 }

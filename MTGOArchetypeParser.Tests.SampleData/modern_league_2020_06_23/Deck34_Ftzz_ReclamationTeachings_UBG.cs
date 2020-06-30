@@ -4,7 +4,51 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_23
 {
     public class Deck34_Ftzz_ReclamationTeachings_UBG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (1, "Ice-Fang Coatl"),(3, "Snapcaster Mage"),(1, "Abrupt Decay"),(1, "Assassin's Trophy"),(1, "Blue Sun's Zenith"),(4, "Cryptic Command"),(3, "Fatal Push"),(4, "Growth Spiral"),(1, "Logic Knot"),(3, "Mystical Teachings"),(1, "Nexus of Fate"),(4, "Opt"),(1, "Pulse of Murasa"),(4, "Remand"),(3, "Wilderness Reclamation"),(2, "Breeding Pool"),(1, "Castle Vantress"),(2, "Creeping Tar Pit"),(1, "Field of Ruin"),(2, "Hinterland Harbor"),(4, "Misty Rainforest"),(1, "Mystic Sanctuary"),(3, "Polluted Delta"),(1, "Snow-Covered Forest"),(4, "Snow-Covered Island"),(1, "Snow-Covered Swamp"),(2, "Watery Grave"),(1, "Zagoth Triome") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Ice-Fang Coatl"),(1, "Fatal Push"),(2, "Aether Gust"),(1, "Ceremonious Rejection"),(1, "Consume the Meek"),(1, "Dispel"),(1, "Echoing Decay"),(1, "Mystical Dispute"),(1, "Ravenous Trap"),(1, "Surgical Extraction"),(1, "Veil of Summer"),(2, "Weather the Storm") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Ice-Fang Coatl"),
+            new SampleCard(3, "Snapcaster Mage"),
+            new SampleCard(1, "Abrupt Decay"),
+            new SampleCard(1, "Assassin's Trophy"),
+            new SampleCard(1, "Blue Sun's Zenith"),
+            new SampleCard(4, "Cryptic Command"),
+            new SampleCard(3, "Fatal Push"),
+            new SampleCard(4, "Growth Spiral"),
+            new SampleCard(1, "Logic Knot"),
+            new SampleCard(3, "Mystical Teachings"),
+            new SampleCard(1, "Nexus of Fate"),
+            new SampleCard(4, "Opt"),
+            new SampleCard(1, "Pulse of Murasa"),
+            new SampleCard(4, "Remand"),
+            new SampleCard(3, "Wilderness Reclamation"),
+            new SampleCard(2, "Breeding Pool"),
+            new SampleCard(1, "Castle Vantress"),
+            new SampleCard(2, "Creeping Tar Pit"),
+            new SampleCard(1, "Field of Ruin"),
+            new SampleCard(2, "Hinterland Harbor"),
+            new SampleCard(4, "Misty Rainforest"),
+            new SampleCard(1, "Mystic Sanctuary"),
+            new SampleCard(3, "Polluted Delta"),
+            new SampleCard(1, "Snow-Covered Forest"),
+            new SampleCard(4, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Swamp"),
+            new SampleCard(2, "Watery Grave"),
+            new SampleCard(1, "Zagoth Triome") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Ice-Fang Coatl"),
+            new SampleCard(1, "Fatal Push"),
+            new SampleCard(2, "Aether Gust"),
+            new SampleCard(1, "Ceremonious Rejection"),
+            new SampleCard(1, "Consume the Meek"),
+            new SampleCard(1, "Dispel"),
+            new SampleCard(1, "Echoing Decay"),
+            new SampleCard(1, "Mystical Dispute"),
+            new SampleCard(1, "Ravenous Trap"),
+            new SampleCard(1, "Surgical Extraction"),
+            new SampleCard(1, "Veil of Summer"),
+            new SampleCard(2, "Weather the Storm") 
+        };
     }
 }

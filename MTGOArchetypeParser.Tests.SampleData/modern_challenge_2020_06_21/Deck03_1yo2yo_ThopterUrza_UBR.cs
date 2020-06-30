@@ -4,7 +4,47 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21
 {
     public class Deck03_1yo2yo_ThopterUrza_UBR : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (2, "Emry, Lurker of the Loch"),(4, "Goblin Engineer"),(4, "Urza, Lord High Artificer"),(3, "Galvanic Blast"),(3, "Whir of Invention"),(1, "Aether Spellbomb"),(4, "Arcum's Astrolabe"),(1, "Damping Sphere"),(1, "Ensnaring Bridge"),(4, "Mishra's Bauble"),(1, "Nihil Spellbomb"),(2, "Pentad Prism"),(1, "Pithing Needle"),(2, "Sword of the Meek"),(1, "Talisman of Dominance"),(4, "Thopter Foundry"),(2, "Flooded Strand"),(1, "Mystic Sanctuary"),(4, "Polluted Delta"),(4, "Scalding Tarn"),(7, "Snow-Covered Island"),(1, "Snow-Covered Mountain"),(1, "Snow-Covered Swamp"),(1, "Steam Vents"),(1, "Watery Grave") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Aether Gust"),(1, "Ashiok, Nightmare Muse"),(1, "Ceremonious Rejection"),(2, "Dead of Winter"),(1, "Disdainful Stroke"),(1, "Dreadbore"),(1, "Fatal Push"),(1, "Grafdigger's Cage"),(2, "Metallic Rebuke"),(1, "Sorcerous Spyglass"),(2, "Tezzeret, Agent of Bolas") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Emry, Lurker of the Loch"),
+            new SampleCard(4, "Goblin Engineer"),
+            new SampleCard(4, "Urza, Lord High Artificer"),
+            new SampleCard(3, "Galvanic Blast"),
+            new SampleCard(3, "Whir of Invention"),
+            new SampleCard(1, "Aether Spellbomb"),
+            new SampleCard(4, "Arcum's Astrolabe"),
+            new SampleCard(1, "Damping Sphere"),
+            new SampleCard(1, "Ensnaring Bridge"),
+            new SampleCard(4, "Mishra's Bauble"),
+            new SampleCard(1, "Nihil Spellbomb"),
+            new SampleCard(2, "Pentad Prism"),
+            new SampleCard(1, "Pithing Needle"),
+            new SampleCard(2, "Sword of the Meek"),
+            new SampleCard(1, "Talisman of Dominance"),
+            new SampleCard(4, "Thopter Foundry"),
+            new SampleCard(2, "Flooded Strand"),
+            new SampleCard(1, "Mystic Sanctuary"),
+            new SampleCard(4, "Polluted Delta"),
+            new SampleCard(4, "Scalding Tarn"),
+            new SampleCard(7, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Mountain"),
+            new SampleCard(1, "Snow-Covered Swamp"),
+            new SampleCard(1, "Steam Vents"),
+            new SampleCard(1, "Watery Grave") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Aether Gust"),
+            new SampleCard(1, "Ashiok, Nightmare Muse"),
+            new SampleCard(1, "Ceremonious Rejection"),
+            new SampleCard(2, "Dead of Winter"),
+            new SampleCard(1, "Disdainful Stroke"),
+            new SampleCard(1, "Dreadbore"),
+            new SampleCard(1, "Fatal Push"),
+            new SampleCard(1, "Grafdigger's Cage"),
+            new SampleCard(2, "Metallic Rebuke"),
+            new SampleCard(1, "Sorcerous Spyglass"),
+            new SampleCard(2, "Tezzeret, Agent of Bolas") 
+        };
     }
 }

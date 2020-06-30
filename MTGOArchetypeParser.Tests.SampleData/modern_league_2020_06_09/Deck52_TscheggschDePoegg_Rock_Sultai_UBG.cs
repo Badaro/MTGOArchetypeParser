@@ -4,7 +4,47 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09
 {
     public class Deck52_TscheggschDePoegg_Rock_Sultai_UBG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (3, "Narnam Renegade"),(4, "Snapcaster Mage"),(3, "Tarmogoyf"),(4, "Uro, Titan of Nature's Wrath"),(2, "Inquisition of Kozilek"),(1, "Serum Visions"),(2, "Abrupt Decay"),(2, "Cling to Dust"),(2, "Deprive"),(3, "Drown in the Loch"),(3, "Fatal Push"),(3, "Force of Negation"),(4, "Thought Scour"),(2, "Mishra's Bauble"),(2, "Breeding Pool"),(1, "Darkslick Shores"),(1, "Flooded Strand"),(4, "Misty Rainforest"),(2, "Mystic Sanctuary"),(1, "Overgrown Tomb"),(4, "Polluted Delta"),(1, "Snow-Covered Forest"),(2, "Snow-Covered Island"),(1, "Snow-Covered Swamp"),(2, "Verdant Catacombs"),(1, "Watery Grave") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Fatal Push"),(2, "Aether Gust"),(2, "Ceremonious Rejection"),(3, "Collective Brutality"),(1, "Deglamer"),(1, "Disdainful Stroke"),(2, "Flusterstorm"),(1, "Liliana, the Last Hope"),(1, "Mystical Dispute"),(1, "Unravel the Aether") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Narnam Renegade"),
+            new SampleCard(4, "Snapcaster Mage"),
+            new SampleCard(3, "Tarmogoyf"),
+            new SampleCard(4, "Uro, Titan of Nature's Wrath"),
+            new SampleCard(2, "Inquisition of Kozilek"),
+            new SampleCard(1, "Serum Visions"),
+            new SampleCard(2, "Abrupt Decay"),
+            new SampleCard(2, "Cling to Dust"),
+            new SampleCard(2, "Deprive"),
+            new SampleCard(3, "Drown in the Loch"),
+            new SampleCard(3, "Fatal Push"),
+            new SampleCard(3, "Force of Negation"),
+            new SampleCard(4, "Thought Scour"),
+            new SampleCard(2, "Mishra's Bauble"),
+            new SampleCard(2, "Breeding Pool"),
+            new SampleCard(1, "Darkslick Shores"),
+            new SampleCard(1, "Flooded Strand"),
+            new SampleCard(4, "Misty Rainforest"),
+            new SampleCard(2, "Mystic Sanctuary"),
+            new SampleCard(1, "Overgrown Tomb"),
+            new SampleCard(4, "Polluted Delta"),
+            new SampleCard(1, "Snow-Covered Forest"),
+            new SampleCard(2, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Swamp"),
+            new SampleCard(2, "Verdant Catacombs"),
+            new SampleCard(1, "Watery Grave") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Fatal Push"),
+            new SampleCard(2, "Aether Gust"),
+            new SampleCard(2, "Ceremonious Rejection"),
+            new SampleCard(3, "Collective Brutality"),
+            new SampleCard(1, "Deglamer"),
+            new SampleCard(1, "Disdainful Stroke"),
+            new SampleCard(2, "Flusterstorm"),
+            new SampleCard(1, "Liliana, the Last Hope"),
+            new SampleCard(1, "Mystical Dispute"),
+            new SampleCard(1, "Unravel the Aether") 
+        };
     }
 }

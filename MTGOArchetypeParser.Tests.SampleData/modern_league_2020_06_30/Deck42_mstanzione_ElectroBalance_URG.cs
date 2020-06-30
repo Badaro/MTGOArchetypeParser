@@ -4,7 +4,38 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_30
 {
     public class Deck42_mstanzione_ElectroBalance_URG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (2, "Greater Gargadon"),(4, "Simian Spirit Guide"),(3, "Ancestral Vision"),(4, "Crashing Footfalls"),(3, "Finale of Promise"),(4, "Restore Balance"),(3, "Serum Visions"),(4, "Electrodominance"),(2, "Force of Negation"),(4, "Izzet Charm"),(3, "Opt"),(2, "Spell Pierce"),(4, "As Foretold"),(1, "Bloodstained Mire"),(4, "Fiery Islet"),(1, "Island"),(1, "Mountain"),(4, "Scalding Tarn"),(4, "Spirebluff Canal"),(2, "Steam Vents"),(1, "Stomping Ground") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Force of Negation"),(3, "Abrade"),(4, "Goblin Rabblemaster"),(3, "Leyline of Sanctity"),(2, "Leyline of the Void"),(2, "Mystical Dispute") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Greater Gargadon"),
+            new SampleCard(4, "Simian Spirit Guide"),
+            new SampleCard(3, "Ancestral Vision"),
+            new SampleCard(4, "Crashing Footfalls"),
+            new SampleCard(3, "Finale of Promise"),
+            new SampleCard(4, "Restore Balance"),
+            new SampleCard(3, "Serum Visions"),
+            new SampleCard(4, "Electrodominance"),
+            new SampleCard(2, "Force of Negation"),
+            new SampleCard(4, "Izzet Charm"),
+            new SampleCard(3, "Opt"),
+            new SampleCard(2, "Spell Pierce"),
+            new SampleCard(4, "As Foretold"),
+            new SampleCard(1, "Bloodstained Mire"),
+            new SampleCard(4, "Fiery Islet"),
+            new SampleCard(1, "Island"),
+            new SampleCard(1, "Mountain"),
+            new SampleCard(4, "Scalding Tarn"),
+            new SampleCard(4, "Spirebluff Canal"),
+            new SampleCard(2, "Steam Vents"),
+            new SampleCard(1, "Stomping Ground") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Force of Negation"),
+            new SampleCard(3, "Abrade"),
+            new SampleCard(4, "Goblin Rabblemaster"),
+            new SampleCard(3, "Leyline of Sanctity"),
+            new SampleCard(2, "Leyline of the Void"),
+            new SampleCard(2, "Mystical Dispute") 
+        };
     }
 }

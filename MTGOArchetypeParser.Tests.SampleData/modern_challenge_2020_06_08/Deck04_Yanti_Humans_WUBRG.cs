@@ -4,7 +4,39 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_08
 {
     public class Deck04_Yanti_Humans_WUBRG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Champion of the Parish"),(2, "General Kudro of Drannith"),(1, "Kessig Malcontents"),(3, "Kitesail Freebooter"),(4, "Mantis Rider"),(4, "Meddling Mage"),(4, "Noble Hierarch"),(4, "Phantasmal Image"),(4, "Reflector Mage"),(3, "Thalia, Guardian of Thraben"),(4, "Thalia's Lieutenant"),(4, "Aether Vial"),(3, "Ancient Ziggurat"),(4, "Cavern of Souls"),(1, "Gemstone Mine"),(4, "Horizon Canopy"),(1, "Snow-Covered Island"),(1, "Snow-Covered Plains"),(4, "Unclaimed Territory"),(1, "Waterlogged Grove") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (3, "Auriok Champion"),(2, "Collector Ouphe"),(2, "Dire Fleet Daredevil"),(1, "Gaddock Teeg"),(2, "Grafdigger's Cage"),(2, "Knight of Autumn"),(2, "Mirran Crusader"),(1, "Sin Collector") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Champion of the Parish"),
+            new SampleCard(2, "General Kudro of Drannith"),
+            new SampleCard(1, "Kessig Malcontents"),
+            new SampleCard(3, "Kitesail Freebooter"),
+            new SampleCard(4, "Mantis Rider"),
+            new SampleCard(4, "Meddling Mage"),
+            new SampleCard(4, "Noble Hierarch"),
+            new SampleCard(4, "Phantasmal Image"),
+            new SampleCard(4, "Reflector Mage"),
+            new SampleCard(3, "Thalia, Guardian of Thraben"),
+            new SampleCard(4, "Thalia's Lieutenant"),
+            new SampleCard(4, "Aether Vial"),
+            new SampleCard(3, "Ancient Ziggurat"),
+            new SampleCard(4, "Cavern of Souls"),
+            new SampleCard(1, "Gemstone Mine"),
+            new SampleCard(4, "Horizon Canopy"),
+            new SampleCard(1, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Plains"),
+            new SampleCard(4, "Unclaimed Territory"),
+            new SampleCard(1, "Waterlogged Grove") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Auriok Champion"),
+            new SampleCard(2, "Collector Ouphe"),
+            new SampleCard(2, "Dire Fleet Daredevil"),
+            new SampleCard(1, "Gaddock Teeg"),
+            new SampleCard(2, "Grafdigger's Cage"),
+            new SampleCard(2, "Knight of Autumn"),
+            new SampleCard(2, "Mirran Crusader"),
+            new SampleCard(1, "Sin Collector") 
+        };
     }
 }

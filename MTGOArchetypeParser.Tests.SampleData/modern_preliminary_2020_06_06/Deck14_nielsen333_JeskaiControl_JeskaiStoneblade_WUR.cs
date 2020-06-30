@@ -4,7 +4,45 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_06
 {
     public class Deck14_nielsen333_JeskaiControl_JeskaiStoneblade_WUR : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Snapcaster Mage"),(3, "Stoneforge Mystic"),(2, "Supreme Verdict"),(2, "Cryptic Command"),(1, "Electrolyze"),(4, "Lightning Bolt"),(4, "Lightning Helix"),(2, "Logic Knot"),(2, "Mana Leak"),(4, "Opt"),(4, "Path to Exile"),(2, "Sphinx's Revelation"),(1, "Batterskull"),(1, "Sword of Fire and Ice"),(4, "Celestial Colonnade"),(4, "Flooded Strand"),(2, "Hallowed Fountain"),(1, "Island"),(1, "Mountain"),(1, "Plains"),(2, "Sacred Foundry"),(4, "Scalding Tarn"),(2, "Seachrome Coast"),(1, "Spirebluff Canal"),(2, "Steam Vents") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Supreme Verdict"),(2, "Aether Gust"),(3, "Anger of the Gods"),(1, "Celestial Purge"),(1, "Disdainful Stroke"),(2, "Force of Negation"),(1, "Negate"),(2, "Relic of Progenitus"),(2, "Rest in Peace") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Snapcaster Mage"),
+            new SampleCard(3, "Stoneforge Mystic"),
+            new SampleCard(2, "Supreme Verdict"),
+            new SampleCard(2, "Cryptic Command"),
+            new SampleCard(1, "Electrolyze"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(4, "Lightning Helix"),
+            new SampleCard(2, "Logic Knot"),
+            new SampleCard(2, "Mana Leak"),
+            new SampleCard(4, "Opt"),
+            new SampleCard(4, "Path to Exile"),
+            new SampleCard(2, "Sphinx's Revelation"),
+            new SampleCard(1, "Batterskull"),
+            new SampleCard(1, "Sword of Fire and Ice"),
+            new SampleCard(4, "Celestial Colonnade"),
+            new SampleCard(4, "Flooded Strand"),
+            new SampleCard(2, "Hallowed Fountain"),
+            new SampleCard(1, "Island"),
+            new SampleCard(1, "Mountain"),
+            new SampleCard(1, "Plains"),
+            new SampleCard(2, "Sacred Foundry"),
+            new SampleCard(4, "Scalding Tarn"),
+            new SampleCard(2, "Seachrome Coast"),
+            new SampleCard(1, "Spirebluff Canal"),
+            new SampleCard(2, "Steam Vents") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Supreme Verdict"),
+            new SampleCard(2, "Aether Gust"),
+            new SampleCard(3, "Anger of the Gods"),
+            new SampleCard(1, "Celestial Purge"),
+            new SampleCard(1, "Disdainful Stroke"),
+            new SampleCard(2, "Force of Negation"),
+            new SampleCard(1, "Negate"),
+            new SampleCard(2, "Relic of Progenitus"),
+            new SampleCard(2, "Rest in Peace") 
+        };
     }
 }

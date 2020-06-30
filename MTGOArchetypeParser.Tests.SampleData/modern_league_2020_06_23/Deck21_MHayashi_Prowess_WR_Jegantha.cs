@@ -4,7 +4,31 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_23
 {
     public class Deck21_MHayashi_Prowess_WR_Jegantha : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Abbot of Keral Keep"),(4, "Bomat Courier"),(4, "Monastery Swiftspear"),(4, "Soul-Scar Mage"),(4, "Firebolt"),(4, "Light Up the Stage"),(4, "Burst Lightning"),(4, "Lava Dart"),(4, "Lightning Bolt"),(4, "Seal of Fire"),(4, "Arid Mesa"),(4, "Bloodstained Mire"),(6, "Mountain"),(2, "Sacred Foundry"),(4, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Blood Moon"),(1, "Jegantha, the Wellspring"),(4, "Path to Exile"),(4, "Relic of Progenitus"),(4, "Wear // Tear") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Abbot of Keral Keep"),
+            new SampleCard(4, "Bomat Courier"),
+            new SampleCard(4, "Monastery Swiftspear"),
+            new SampleCard(4, "Soul-Scar Mage"),
+            new SampleCard(4, "Firebolt"),
+            new SampleCard(4, "Light Up the Stage"),
+            new SampleCard(4, "Burst Lightning"),
+            new SampleCard(4, "Lava Dart"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(4, "Seal of Fire"),
+            new SampleCard(4, "Arid Mesa"),
+            new SampleCard(4, "Bloodstained Mire"),
+            new SampleCard(6, "Mountain"),
+            new SampleCard(2, "Sacred Foundry"),
+            new SampleCard(4, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Blood Moon"),
+            new SampleCard(1, "Jegantha, the Wellspring"),
+            new SampleCard(4, "Path to Exile"),
+            new SampleCard(4, "Relic of Progenitus"),
+            new SampleCard(4, "Wear // Tear") 
+        };
     }
 }

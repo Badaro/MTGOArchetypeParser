@@ -4,7 +4,44 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_20
 {
     public class Deck01_aooaaooa_Lantern_UBG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (3, "Emry, Lurker of the Loch"),(2, "Simian Spirit Guide"),(4, "Inquisition of Kozilek"),(2, "Thoughtseize"),(4, "Whir of Invention"),(4, "Codex Shredder"),(1, "Engineered Explosives"),(2, "Ensnaring Bridge"),(1, "Ghoulcaller's Bell"),(4, "Lantern of Insight"),(4, "Mishra's Bauble"),(1, "Pithing Needle"),(1, "Pyxis of Pandemonium"),(1, "Soul-Guide Lantern"),(3, "Sword of the Meek"),(3, "Thopter Foundry"),(1, "Academy Ruins"),(2, "Botanical Sanctum"),(4, "Darkslick Shores"),(4, "Glimmervoid"),(1, "Inventors' Fair"),(2, "Island"),(2, "River of Tears"),(4, "Spire of Industry") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Pithing Needle"),(2, "Soul-Guide Lantern"),(1, "Bontu's Last Reckoning"),(2, "Choke"),(2, "Collective Brutality"),(2, "Leyline of Sanctity"),(2, "Spell Pierce"),(1, "Tezzeret, Agent of Bolas"),(2, "Welding Jar") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Emry, Lurker of the Loch"),
+            new SampleCard(2, "Simian Spirit Guide"),
+            new SampleCard(4, "Inquisition of Kozilek"),
+            new SampleCard(2, "Thoughtseize"),
+            new SampleCard(4, "Whir of Invention"),
+            new SampleCard(4, "Codex Shredder"),
+            new SampleCard(1, "Engineered Explosives"),
+            new SampleCard(2, "Ensnaring Bridge"),
+            new SampleCard(1, "Ghoulcaller's Bell"),
+            new SampleCard(4, "Lantern of Insight"),
+            new SampleCard(4, "Mishra's Bauble"),
+            new SampleCard(1, "Pithing Needle"),
+            new SampleCard(1, "Pyxis of Pandemonium"),
+            new SampleCard(1, "Soul-Guide Lantern"),
+            new SampleCard(3, "Sword of the Meek"),
+            new SampleCard(3, "Thopter Foundry"),
+            new SampleCard(1, "Academy Ruins"),
+            new SampleCard(2, "Botanical Sanctum"),
+            new SampleCard(4, "Darkslick Shores"),
+            new SampleCard(4, "Glimmervoid"),
+            new SampleCard(1, "Inventors' Fair"),
+            new SampleCard(2, "Island"),
+            new SampleCard(2, "River of Tears"),
+            new SampleCard(4, "Spire of Industry") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Pithing Needle"),
+            new SampleCard(2, "Soul-Guide Lantern"),
+            new SampleCard(1, "Bontu's Last Reckoning"),
+            new SampleCard(2, "Choke"),
+            new SampleCard(2, "Collective Brutality"),
+            new SampleCard(2, "Leyline of Sanctity"),
+            new SampleCard(2, "Spell Pierce"),
+            new SampleCard(1, "Tezzeret, Agent of Bolas"),
+            new SampleCard(2, "Welding Jar") 
+        };
     }
 }

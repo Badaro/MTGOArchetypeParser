@@ -4,7 +4,42 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_showcase_challenge_2020_06
 {
     public class Deck26_bobjackson_GTron_KGCTron_G_Jegantha : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Karn Liberated"),(4, "Karn, the Great Creator"),(2, "Ugin, the Spirit Dragon"),(3, "Thragtusk"),(2, "Ulamog, the Ceaseless Hunger"),(2, "Wurmcoil Engine"),(4, "Ancient Stirrings"),(4, "Sylvan Scrying"),(4, "Chromatic Sphere"),(4, "Chromatic Star"),(4, "Expedition Map"),(4, "Oblivion Stone"),(1, "Blast Zone"),(1, "Nurturing Peatland"),(1, "Sanctum of Ugin"),(4, "Snow-Covered Forest"),(4, "Urza's Mine"),(4, "Urza's Power Plant"),(4, "Urza's Tower") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Thragtusk"),(1, "Wurmcoil Engine"),(1, "Ensnaring Bridge"),(1, "Grafdigger's Cage"),(1, "Jegantha, the Wellspring"),(1, "Liquimetal Coating"),(2, "Nature's Claim"),(1, "Sorcerous Spyglass"),(1, "Spatial Contortion"),(1, "Trinisphere"),(3, "Veil of Summer"),(1, "Walking Ballista") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Karn Liberated"),
+            new SampleCard(4, "Karn, the Great Creator"),
+            new SampleCard(2, "Ugin, the Spirit Dragon"),
+            new SampleCard(3, "Thragtusk"),
+            new SampleCard(2, "Ulamog, the Ceaseless Hunger"),
+            new SampleCard(2, "Wurmcoil Engine"),
+            new SampleCard(4, "Ancient Stirrings"),
+            new SampleCard(4, "Sylvan Scrying"),
+            new SampleCard(4, "Chromatic Sphere"),
+            new SampleCard(4, "Chromatic Star"),
+            new SampleCard(4, "Expedition Map"),
+            new SampleCard(4, "Oblivion Stone"),
+            new SampleCard(1, "Blast Zone"),
+            new SampleCard(1, "Nurturing Peatland"),
+            new SampleCard(1, "Sanctum of Ugin"),
+            new SampleCard(4, "Snow-Covered Forest"),
+            new SampleCard(4, "Urza's Mine"),
+            new SampleCard(4, "Urza's Power Plant"),
+            new SampleCard(4, "Urza's Tower") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Thragtusk"),
+            new SampleCard(1, "Wurmcoil Engine"),
+            new SampleCard(1, "Ensnaring Bridge"),
+            new SampleCard(1, "Grafdigger's Cage"),
+            new SampleCard(1, "Jegantha, the Wellspring"),
+            new SampleCard(1, "Liquimetal Coating"),
+            new SampleCard(2, "Nature's Claim"),
+            new SampleCard(1, "Sorcerous Spyglass"),
+            new SampleCard(1, "Spatial Contortion"),
+            new SampleCard(1, "Trinisphere"),
+            new SampleCard(3, "Veil of Summer"),
+            new SampleCard(1, "Walking Ballista") 
+        };
     }
 }

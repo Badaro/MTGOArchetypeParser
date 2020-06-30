@@ -4,7 +4,46 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09
 {
     public class Deck60_603Leb_PrimevalTitan_AmuletTitan_URG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (2, "Arboreal Grazer"),(1, "Azusa, Lost but Seeking"),(4, "Dryad of the Ilysian Grove"),(4, "Primeval Titan"),(1, "Reclamation Sage"),(3, "Sakura-Tribe Scout"),(1, "Uro, Titan of Nature's Wrath"),(3, "Explore"),(1, "Pact of Negation"),(4, "Summoner's Pact"),(4, "Amulet of Vigor"),(1, "Engineered Explosives"),(1, "Bojuka Bog"),(4, "Breeding Pool"),(3, "Castle Garenbrig"),(1, "Cavern of Souls"),(1, "Field of the Dead"),(2, "Forest"),(1, "Ghost Quarter"),(4, "Gruul Turf"),(1, "Hanweir Battlements"),(1, "Misty Rainforest"),(1, "Radiant Fountain"),(4, "Simic Growth Chamber"),(2, "Snow-Covered Forest"),(2, "Tolaria West"),(2, "Valakut, the Molten Pinnacle"),(1, "Vesuva") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Engineered Explosives"),(3, "Beast Within"),(3, "Dismember"),(1, "Force of Vigor"),(4, "Mystical Dispute"),(2, "Obstinate Baloth"),(1, "Ramunap Excavator") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Arboreal Grazer"),
+            new SampleCard(1, "Azusa, Lost but Seeking"),
+            new SampleCard(4, "Dryad of the Ilysian Grove"),
+            new SampleCard(4, "Primeval Titan"),
+            new SampleCard(1, "Reclamation Sage"),
+            new SampleCard(3, "Sakura-Tribe Scout"),
+            new SampleCard(1, "Uro, Titan of Nature's Wrath"),
+            new SampleCard(3, "Explore"),
+            new SampleCard(1, "Pact of Negation"),
+            new SampleCard(4, "Summoner's Pact"),
+            new SampleCard(4, "Amulet of Vigor"),
+            new SampleCard(1, "Engineered Explosives"),
+            new SampleCard(1, "Bojuka Bog"),
+            new SampleCard(4, "Breeding Pool"),
+            new SampleCard(3, "Castle Garenbrig"),
+            new SampleCard(1, "Cavern of Souls"),
+            new SampleCard(1, "Field of the Dead"),
+            new SampleCard(2, "Forest"),
+            new SampleCard(1, "Ghost Quarter"),
+            new SampleCard(4, "Gruul Turf"),
+            new SampleCard(1, "Hanweir Battlements"),
+            new SampleCard(1, "Misty Rainforest"),
+            new SampleCard(1, "Radiant Fountain"),
+            new SampleCard(4, "Simic Growth Chamber"),
+            new SampleCard(2, "Snow-Covered Forest"),
+            new SampleCard(2, "Tolaria West"),
+            new SampleCard(2, "Valakut, the Molten Pinnacle"),
+            new SampleCard(1, "Vesuva") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Engineered Explosives"),
+            new SampleCard(3, "Beast Within"),
+            new SampleCard(3, "Dismember"),
+            new SampleCard(1, "Force of Vigor"),
+            new SampleCard(4, "Mystical Dispute"),
+            new SampleCard(2, "Obstinate Baloth"),
+            new SampleCard(1, "Ramunap Excavator") 
+        };
     }
 }

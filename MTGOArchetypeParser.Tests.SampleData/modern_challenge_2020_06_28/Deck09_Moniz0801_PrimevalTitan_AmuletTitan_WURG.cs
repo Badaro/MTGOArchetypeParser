@@ -4,7 +4,50 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_28
 {
     public class Deck09_Moniz0801_PrimevalTitan_AmuletTitan_WURG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (2, "Azusa, Lost but Seeking"),(1, "Dragonlord Atarka"),(4, "Dryad of the Ilysian Grove"),(2, "Fierce Empath"),(1, "Klothys, God of Destiny"),(4, "Primeval Titan"),(4, "Sakura-Tribe Scout"),(2, "Explore"),(4, "Summoner's Pact"),(4, "Amulet of Vigor"),(1, "Engineered Explosives"),(1, "Bojuka Bog"),(1, "Boros Garrison"),(1, "Breeding Pool"),(3, "Castle Garenbrig"),(1, "Cavern of Souls"),(1, "Field of the Dead"),(2, "Forest"),(1, "Ghost Quarter"),(3, "Gruul Turf"),(1, "Ketria Triome"),(1, "Misty Rainforest"),(1, "Radiant Fountain"),(1, "Selesnya Sanctuary"),(4, "Simic Growth Chamber"),(1, "Slayers' Stronghold"),(2, "Snow-Covered Forest"),(1, "Sunhome, Fortress of the Legion"),(2, "Tolaria West"),(1, "Valakut, the Molten Pinnacle"),(1, "Vesuva"),(1, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Abrade"),(2, "Aether Gust"),(2, "Dismember"),(2, "Firespout"),(1, "Pact of Negation"),(3, "Pithing Needle"),(3, "Tireless Tracker") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Azusa, Lost but Seeking"),
+            new SampleCard(1, "Dragonlord Atarka"),
+            new SampleCard(4, "Dryad of the Ilysian Grove"),
+            new SampleCard(2, "Fierce Empath"),
+            new SampleCard(1, "Klothys, God of Destiny"),
+            new SampleCard(4, "Primeval Titan"),
+            new SampleCard(4, "Sakura-Tribe Scout"),
+            new SampleCard(2, "Explore"),
+            new SampleCard(4, "Summoner's Pact"),
+            new SampleCard(4, "Amulet of Vigor"),
+            new SampleCard(1, "Engineered Explosives"),
+            new SampleCard(1, "Bojuka Bog"),
+            new SampleCard(1, "Boros Garrison"),
+            new SampleCard(1, "Breeding Pool"),
+            new SampleCard(3, "Castle Garenbrig"),
+            new SampleCard(1, "Cavern of Souls"),
+            new SampleCard(1, "Field of the Dead"),
+            new SampleCard(2, "Forest"),
+            new SampleCard(1, "Ghost Quarter"),
+            new SampleCard(3, "Gruul Turf"),
+            new SampleCard(1, "Ketria Triome"),
+            new SampleCard(1, "Misty Rainforest"),
+            new SampleCard(1, "Radiant Fountain"),
+            new SampleCard(1, "Selesnya Sanctuary"),
+            new SampleCard(4, "Simic Growth Chamber"),
+            new SampleCard(1, "Slayers' Stronghold"),
+            new SampleCard(2, "Snow-Covered Forest"),
+            new SampleCard(1, "Sunhome, Fortress of the Legion"),
+            new SampleCard(2, "Tolaria West"),
+            new SampleCard(1, "Valakut, the Molten Pinnacle"),
+            new SampleCard(1, "Vesuva"),
+            new SampleCard(1, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Abrade"),
+            new SampleCard(2, "Aether Gust"),
+            new SampleCard(2, "Dismember"),
+            new SampleCard(2, "Firespout"),
+            new SampleCard(1, "Pact of Negation"),
+            new SampleCard(3, "Pithing Needle"),
+            new SampleCard(3, "Tireless Tracker") 
+        };
     }
 }

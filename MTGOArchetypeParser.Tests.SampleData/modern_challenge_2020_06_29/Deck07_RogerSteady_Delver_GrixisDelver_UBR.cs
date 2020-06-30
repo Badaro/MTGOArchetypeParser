@@ -4,7 +4,43 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_29
 {
     public class Deck07_RogerSteady_Delver_GrixisDelver_UBR : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (1, "Brazen Borrower"),(4, "Delver of Secrets"),(3, "Snapcaster Mage"),(4, "Thieves' Guild Enforcer"),(3, "Vantress Gargoyle"),(3, "Inquisition of Kozilek"),(4, "Serum Visions"),(1, "Thoughtseize"),(4, "Drown in the Loch"),(1, "Force of Negation"),(1, "Into the Story"),(2, "Kolaghan's Command"),(4, "Lightning Bolt"),(2, "Mana Leak"),(1, "Spell Pierce"),(1, "Spell Snare"),(4, "Thought Scour"),(1, "Blood Crypt"),(1, "Island"),(1, "Mystic Sanctuary"),(4, "Polluted Delta"),(4, "Scalding Tarn"),(2, "Steam Vents"),(1, "Swamp"),(3, "Watery Grave") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Spell Snare"),(2, "Bitterblossom"),(2, "Ceremonious Rejection"),(3, "Collective Brutality"),(2, "Fatal Push"),(2, "Mystical Dispute"),(3, "Surgical Extraction") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Brazen Borrower"),
+            new SampleCard(4, "Delver of Secrets"),
+            new SampleCard(3, "Snapcaster Mage"),
+            new SampleCard(4, "Thieves' Guild Enforcer"),
+            new SampleCard(3, "Vantress Gargoyle"),
+            new SampleCard(3, "Inquisition of Kozilek"),
+            new SampleCard(4, "Serum Visions"),
+            new SampleCard(1, "Thoughtseize"),
+            new SampleCard(4, "Drown in the Loch"),
+            new SampleCard(1, "Force of Negation"),
+            new SampleCard(1, "Into the Story"),
+            new SampleCard(2, "Kolaghan's Command"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(2, "Mana Leak"),
+            new SampleCard(1, "Spell Pierce"),
+            new SampleCard(1, "Spell Snare"),
+            new SampleCard(4, "Thought Scour"),
+            new SampleCard(1, "Blood Crypt"),
+            new SampleCard(1, "Island"),
+            new SampleCard(1, "Mystic Sanctuary"),
+            new SampleCard(4, "Polluted Delta"),
+            new SampleCard(4, "Scalding Tarn"),
+            new SampleCard(2, "Steam Vents"),
+            new SampleCard(1, "Swamp"),
+            new SampleCard(3, "Watery Grave") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Spell Snare"),
+            new SampleCard(2, "Bitterblossom"),
+            new SampleCard(2, "Ceremonious Rejection"),
+            new SampleCard(3, "Collective Brutality"),
+            new SampleCard(2, "Fatal Push"),
+            new SampleCard(2, "Mystical Dispute"),
+            new SampleCard(3, "Surgical Extraction") 
+        };
     }
 }

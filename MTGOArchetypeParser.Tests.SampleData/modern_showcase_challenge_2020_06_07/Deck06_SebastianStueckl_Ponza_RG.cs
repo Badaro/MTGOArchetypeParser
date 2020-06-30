@@ -4,7 +4,38 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_showcase_challenge_2020_06
 {
     public class Deck06_SebastianStueckl_Ponza_RG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (3, "Chandra, Torch of Defiance"),(1, "Domri, Anarch of Bolas"),(4, "Arbor Elf"),(4, "Bloodbraid Elf"),(2, "Bonecrusher Giant"),(2, "Glorybringer"),(2, "Hexdrinker"),(3, "Klothys, God of Destiny"),(4, "Magus of the Moon"),(2, "Scavenging Ooze"),(4, "Seasoned Pyromancer"),(4, "Lightning Bolt"),(4, "Utopia Sprawl"),(2, "Misty Rainforest"),(6, "Snow-Covered Forest"),(1, "Snow-Covered Mountain"),(4, "Stomping Ground"),(4, "Windswept Heath"),(4, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Choke"),(2, "Cindervines"),(2, "Collector Ouphe"),(2, "Grafdigger's Cage"),(1, "Obstinate Baloth"),(2, "Pillage"),(2, "Relic of Progenitus"),(2, "Veil of Summer") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Chandra, Torch of Defiance"),
+            new SampleCard(1, "Domri, Anarch of Bolas"),
+            new SampleCard(4, "Arbor Elf"),
+            new SampleCard(4, "Bloodbraid Elf"),
+            new SampleCard(2, "Bonecrusher Giant"),
+            new SampleCard(2, "Glorybringer"),
+            new SampleCard(2, "Hexdrinker"),
+            new SampleCard(3, "Klothys, God of Destiny"),
+            new SampleCard(4, "Magus of the Moon"),
+            new SampleCard(2, "Scavenging Ooze"),
+            new SampleCard(4, "Seasoned Pyromancer"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(4, "Utopia Sprawl"),
+            new SampleCard(2, "Misty Rainforest"),
+            new SampleCard(6, "Snow-Covered Forest"),
+            new SampleCard(1, "Snow-Covered Mountain"),
+            new SampleCard(4, "Stomping Ground"),
+            new SampleCard(4, "Windswept Heath"),
+            new SampleCard(4, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Choke"),
+            new SampleCard(2, "Cindervines"),
+            new SampleCard(2, "Collector Ouphe"),
+            new SampleCard(2, "Grafdigger's Cage"),
+            new SampleCard(1, "Obstinate Baloth"),
+            new SampleCard(2, "Pillage"),
+            new SampleCard(2, "Relic of Progenitus"),
+            new SampleCard(2, "Veil of Summer") 
+        };
     }
 }

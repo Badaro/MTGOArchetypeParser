@@ -4,7 +4,29 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_30
 {
     public class Deck47_MagicRainbows_Burn_R : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Chandra's Incinerator"),(3, "Eidolon of the Great Revel"),(2, "Grim Lavamancer"),(4, "Monastery Swiftspear"),(4, "Vexing Devil"),(4, "Lava Spike"),(4, "Rift Bolt"),(4, "Skewer the Critics"),(4, "Lightning Bolt"),(3, "Shard Volley"),(4, "Seal of Fire"),(20, "Mountain") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Dragon's Claw"),(3, "Searing Blood"),(2, "Shrine of Burning Rage"),(2, "Skullcrack"),(4, "Smash to Smithereens"),(3, "Soul-Guide Lantern") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Chandra's Incinerator"),
+            new SampleCard(3, "Eidolon of the Great Revel"),
+            new SampleCard(2, "Grim Lavamancer"),
+            new SampleCard(4, "Monastery Swiftspear"),
+            new SampleCard(4, "Vexing Devil"),
+            new SampleCard(4, "Lava Spike"),
+            new SampleCard(4, "Rift Bolt"),
+            new SampleCard(4, "Skewer the Critics"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(3, "Shard Volley"),
+            new SampleCard(4, "Seal of Fire"),
+            new SampleCard(20, "Mountain") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Dragon's Claw"),
+            new SampleCard(3, "Searing Blood"),
+            new SampleCard(2, "Shrine of Burning Rage"),
+            new SampleCard(2, "Skullcrack"),
+            new SampleCard(4, "Smash to Smithereens"),
+            new SampleCard(3, "Soul-Guide Lantern") 
+        };
     }
 }

@@ -4,7 +4,40 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_26
 {
     public class Deck09_esatheking_Prowess_WR : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (1, "Bedlam Reveler"),(1, "Electrostatic Field"),(4, "Kiln Fiend"),(4, "Monastery Swiftspear"),(4, "Soul-Scar Mage"),(4, "Crash Through"),(1, "Finale of Promise"),(2, "Firebolt"),(2, "Forked Bolt"),(4, "Light Up the Stage"),(1, "Burst Lightning"),(3, "Lava Dart"),(4, "Lightning Bolt"),(4, "Manamorphose"),(2, "Mutagenic Growth"),(1, "Mishra's Bauble"),(2, "Arid Mesa"),(4, "Inspiring Vantage"),(4, "Mountain"),(2, "Sacred Foundry"),(2, "Sunbaked Canyon"),(4, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Bedlam Reveler"),(1, "Dragon's Claw"),(2, "Kor Firewalker"),(1, "Lightning Helix"),(4, "Path to Exile"),(2, "Tormod's Crypt"),(4, "Wear // Tear") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Bedlam Reveler"),
+            new SampleCard(1, "Electrostatic Field"),
+            new SampleCard(4, "Kiln Fiend"),
+            new SampleCard(4, "Monastery Swiftspear"),
+            new SampleCard(4, "Soul-Scar Mage"),
+            new SampleCard(4, "Crash Through"),
+            new SampleCard(1, "Finale of Promise"),
+            new SampleCard(2, "Firebolt"),
+            new SampleCard(2, "Forked Bolt"),
+            new SampleCard(4, "Light Up the Stage"),
+            new SampleCard(1, "Burst Lightning"),
+            new SampleCard(3, "Lava Dart"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(4, "Manamorphose"),
+            new SampleCard(2, "Mutagenic Growth"),
+            new SampleCard(1, "Mishra's Bauble"),
+            new SampleCard(2, "Arid Mesa"),
+            new SampleCard(4, "Inspiring Vantage"),
+            new SampleCard(4, "Mountain"),
+            new SampleCard(2, "Sacred Foundry"),
+            new SampleCard(2, "Sunbaked Canyon"),
+            new SampleCard(4, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Bedlam Reveler"),
+            new SampleCard(1, "Dragon's Claw"),
+            new SampleCard(2, "Kor Firewalker"),
+            new SampleCard(1, "Lightning Helix"),
+            new SampleCard(4, "Path to Exile"),
+            new SampleCard(2, "Tormod's Crypt"),
+            new SampleCard(4, "Wear // Tear") 
+        };
     }
 }

@@ -4,7 +4,42 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_19
 {
     public class Deck12_scvslayer_SnowControl_SnowShift_URG_Yorion : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (2, "Wrenn and Six"),(2, "Arboreal Grazer"),(4, "Ice-Fang Coatl"),(4, "Uro, Titan of Nature's Wrath"),(4, "Scapeshift"),(4, "Search for Tomorrow"),(4, "Cryptic Command"),(4, "Growth Spiral"),(4, "Lightning Bolt"),(4, "Remand"),(4, "Arcum's Astrolabe"),(4, "Abundant Growth"),(1, "Breeding Pool"),(4, "Ketria Triome"),(4, "Misty Rainforest"),(3, "Mystic Sanctuary"),(2, "Prismatic Vista"),(4, "Scalding Tarn"),(2, "Snow-Covered Forest"),(5, "Snow-Covered Island"),(1, "Snow-Covered Mountain"),(4, "Steam Vents"),(2, "Stomping Ground"),(2, "Valakut, the Molten Pinnacle"),(2, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (3, "Aether Gust"),(3, "Anger of the Gods"),(2, "Mystical Dispute"),(3, "Veil of Summer"),(3, "Weather the Storm"),(1, "Yorion, Sky Nomad") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Wrenn and Six"),
+            new SampleCard(2, "Arboreal Grazer"),
+            new SampleCard(4, "Ice-Fang Coatl"),
+            new SampleCard(4, "Uro, Titan of Nature's Wrath"),
+            new SampleCard(4, "Scapeshift"),
+            new SampleCard(4, "Search for Tomorrow"),
+            new SampleCard(4, "Cryptic Command"),
+            new SampleCard(4, "Growth Spiral"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(4, "Remand"),
+            new SampleCard(4, "Arcum's Astrolabe"),
+            new SampleCard(4, "Abundant Growth"),
+            new SampleCard(1, "Breeding Pool"),
+            new SampleCard(4, "Ketria Triome"),
+            new SampleCard(4, "Misty Rainforest"),
+            new SampleCard(3, "Mystic Sanctuary"),
+            new SampleCard(2, "Prismatic Vista"),
+            new SampleCard(4, "Scalding Tarn"),
+            new SampleCard(2, "Snow-Covered Forest"),
+            new SampleCard(5, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Mountain"),
+            new SampleCard(4, "Steam Vents"),
+            new SampleCard(2, "Stomping Ground"),
+            new SampleCard(2, "Valakut, the Molten Pinnacle"),
+            new SampleCard(2, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Aether Gust"),
+            new SampleCard(3, "Anger of the Gods"),
+            new SampleCard(2, "Mystical Dispute"),
+            new SampleCard(3, "Veil of Summer"),
+            new SampleCard(3, "Weather the Storm"),
+            new SampleCard(1, "Yorion, Sky Nomad") 
+        };
     }
 }

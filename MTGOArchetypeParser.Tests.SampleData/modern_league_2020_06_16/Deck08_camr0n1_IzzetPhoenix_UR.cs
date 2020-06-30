@@ -4,7 +4,40 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16
 {
     public class Deck08_camr0n1_IzzetPhoenix_UR : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Arclight Phoenix"),(1, "Bedlam Reveler"),(4, "Merchant of the Vale"),(4, "Thing in the Ice"),(2, "Chart a Course"),(2, "Finale of Promise"),(4, "Serum Visions"),(1, "Sleight of Hand"),(2, "Izzet Charm"),(2, "Lightning Axe"),(4, "Lightning Bolt"),(4, "Manamorphose"),(4, "Opt"),(4, "Thought Scour"),(1, "Fiery Islet"),(3, "Island"),(2, "Misty Rainforest"),(2, "Mountain"),(4, "Scalding Tarn"),(4, "Spirebluff Canal"),(2, "Steam Vents") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Abrade"),(2, "Aether Gust"),(2, "Aria of Flame"),(2, "Blood Moon"),(2, "Force of Negation"),(1, "Jace, the Mind Sculptor"),(3, "Mystical Dispute"),(1, "Surgical Extraction") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Arclight Phoenix"),
+            new SampleCard(1, "Bedlam Reveler"),
+            new SampleCard(4, "Merchant of the Vale"),
+            new SampleCard(4, "Thing in the Ice"),
+            new SampleCard(2, "Chart a Course"),
+            new SampleCard(2, "Finale of Promise"),
+            new SampleCard(4, "Serum Visions"),
+            new SampleCard(1, "Sleight of Hand"),
+            new SampleCard(2, "Izzet Charm"),
+            new SampleCard(2, "Lightning Axe"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(4, "Manamorphose"),
+            new SampleCard(4, "Opt"),
+            new SampleCard(4, "Thought Scour"),
+            new SampleCard(1, "Fiery Islet"),
+            new SampleCard(3, "Island"),
+            new SampleCard(2, "Misty Rainforest"),
+            new SampleCard(2, "Mountain"),
+            new SampleCard(4, "Scalding Tarn"),
+            new SampleCard(4, "Spirebluff Canal"),
+            new SampleCard(2, "Steam Vents") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Abrade"),
+            new SampleCard(2, "Aether Gust"),
+            new SampleCard(2, "Aria of Flame"),
+            new SampleCard(2, "Blood Moon"),
+            new SampleCard(2, "Force of Negation"),
+            new SampleCard(1, "Jace, the Mind Sculptor"),
+            new SampleCard(3, "Mystical Dispute"),
+            new SampleCard(1, "Surgical Extraction") 
+        };
     }
 }

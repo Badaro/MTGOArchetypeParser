@@ -4,7 +4,37 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_28
 {
     public class Deck28_kbr3_Scapeshift_URG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Uro, Titan of Nature's Wrath"),(4, "Scapeshift"),(2, "Cryptic Command"),(2, "Force of Negation"),(4, "Growth Spiral"),(2, "Izzet Charm"),(4, "Lightning Bolt"),(4, "Opt"),(3, "Remand"),(2, "Thought Scour"),(2, "Breeding Pool"),(4, "Ketria Triome"),(4, "Misty Rainforest"),(2, "Mystic Sanctuary"),(4, "Scalding Tarn"),(1, "Snow-Covered Forest"),(2, "Snow-Covered Island"),(4, "Steam Vents"),(4, "Stomping Ground"),(2, "Valakut, the Molten Pinnacle") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (4, "Aether Gust"),(3, "Anger of the Gods"),(2, "Engineered Explosives"),(2, "Flame Slash"),(2, "Mystical Dispute"),(2, "Veil of Summer") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Uro, Titan of Nature's Wrath"),
+            new SampleCard(4, "Scapeshift"),
+            new SampleCard(2, "Cryptic Command"),
+            new SampleCard(2, "Force of Negation"),
+            new SampleCard(4, "Growth Spiral"),
+            new SampleCard(2, "Izzet Charm"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(4, "Opt"),
+            new SampleCard(3, "Remand"),
+            new SampleCard(2, "Thought Scour"),
+            new SampleCard(2, "Breeding Pool"),
+            new SampleCard(4, "Ketria Triome"),
+            new SampleCard(4, "Misty Rainforest"),
+            new SampleCard(2, "Mystic Sanctuary"),
+            new SampleCard(4, "Scalding Tarn"),
+            new SampleCard(1, "Snow-Covered Forest"),
+            new SampleCard(2, "Snow-Covered Island"),
+            new SampleCard(4, "Steam Vents"),
+            new SampleCard(4, "Stomping Ground"),
+            new SampleCard(2, "Valakut, the Molten Pinnacle") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Aether Gust"),
+            new SampleCard(3, "Anger of the Gods"),
+            new SampleCard(2, "Engineered Explosives"),
+            new SampleCard(2, "Flame Slash"),
+            new SampleCard(2, "Mystical Dispute"),
+            new SampleCard(2, "Veil of Summer") 
+        };
     }
 }

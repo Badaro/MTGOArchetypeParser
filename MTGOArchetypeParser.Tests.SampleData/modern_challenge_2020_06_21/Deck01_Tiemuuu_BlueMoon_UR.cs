@@ -4,7 +4,45 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21
 {
     public class Deck01_Tiemuuu_BlueMoon_UR : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (2, "Narset, Parter of Veils"),(4, "Snapcaster Mage"),(4, "Thing in the Ice"),(1, "Vendilion Clique"),(1, "Flame Slash"),(3, "Serum Visions"),(1, "Abrade"),(2, "Archmage's Charm"),(2, "Cryptic Command"),(1, "Electrolyze"),(2, "Force of Negation"),(4, "Lightning Bolt"),(1, "Magmatic Sinkhole"),(1, "Mana Leak"),(4, "Opt"),(3, "Remand"),(2, "Spell Snare"),(2, "Cascade Bluffs"),(7, "Island"),(1, "Mountain"),(2, "Mystic Sanctuary"),(4, "Polluted Delta"),(4, "Scalding Tarn"),(2, "Steam Vents") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Flame Slash"),(3, "Aether Gust"),(2, "Anger of the Gods"),(1, "Ashiok, Dream Render"),(2, "Blood Moon"),(1, "Dragon's Claw"),(1, "Engineered Explosives"),(1, "Flusterstorm"),(1, "Mystical Dispute"),(2, "Relic of Progenitus") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Narset, Parter of Veils"),
+            new SampleCard(4, "Snapcaster Mage"),
+            new SampleCard(4, "Thing in the Ice"),
+            new SampleCard(1, "Vendilion Clique"),
+            new SampleCard(1, "Flame Slash"),
+            new SampleCard(3, "Serum Visions"),
+            new SampleCard(1, "Abrade"),
+            new SampleCard(2, "Archmage's Charm"),
+            new SampleCard(2, "Cryptic Command"),
+            new SampleCard(1, "Electrolyze"),
+            new SampleCard(2, "Force of Negation"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(1, "Magmatic Sinkhole"),
+            new SampleCard(1, "Mana Leak"),
+            new SampleCard(4, "Opt"),
+            new SampleCard(3, "Remand"),
+            new SampleCard(2, "Spell Snare"),
+            new SampleCard(2, "Cascade Bluffs"),
+            new SampleCard(7, "Island"),
+            new SampleCard(1, "Mountain"),
+            new SampleCard(2, "Mystic Sanctuary"),
+            new SampleCard(4, "Polluted Delta"),
+            new SampleCard(4, "Scalding Tarn"),
+            new SampleCard(2, "Steam Vents") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Flame Slash"),
+            new SampleCard(3, "Aether Gust"),
+            new SampleCard(2, "Anger of the Gods"),
+            new SampleCard(1, "Ashiok, Dream Render"),
+            new SampleCard(2, "Blood Moon"),
+            new SampleCard(1, "Dragon's Claw"),
+            new SampleCard(1, "Engineered Explosives"),
+            new SampleCard(1, "Flusterstorm"),
+            new SampleCard(1, "Mystical Dispute"),
+            new SampleCard(2, "Relic of Progenitus") 
+        };
     }
 }

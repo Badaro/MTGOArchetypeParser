@@ -4,7 +4,49 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_11
 {
     public class Deck06_Lirek154_AzoriusControl_WU : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (2, "Jace, the Mind Sculptor"),(1, "Narset, Parter of Veils"),(2, "Teferi, Time Raveler"),(3, "Snapcaster Mage"),(3, "Spell Queller"),(4, "Stoneforge Mystic"),(1, "Timely Reinforcements"),(2, "Cryptic Command"),(4, "Force of Negation"),(2, "Mana Leak"),(4, "Opt"),(4, "Path to Exile"),(2, "Spell Snare"),(1, "Batterskull"),(1, "Sword of Feast and Famine"),(2, "Celestial Colonnade"),(4, "Field of Ruin"),(4, "Flooded Strand"),(1, "Glacial Fortress"),(3, "Hallowed Fountain"),(5, "Island"),(1, "Mystic Sanctuary"),(2, "Plains"),(1, "Polluted Delta"),(1, "Seachrome Coast") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Timely Reinforcements"),(1, "Aether Gust"),(2, "Ashiok, Dream Render"),(2, "Celestial Purge"),(1, "Ceremonious Rejection"),(1, "Disdainful Stroke"),(1, "Disenchant"),(1, "Dovin's Veto"),(1, "Grafdigger's Cage"),(1, "Mystical Dispute"),(1, "Rest in Peace"),(1, "Supreme Verdict"),(1, "Sword of Fire and Ice") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Jace, the Mind Sculptor"),
+            new SampleCard(1, "Narset, Parter of Veils"),
+            new SampleCard(2, "Teferi, Time Raveler"),
+            new SampleCard(3, "Snapcaster Mage"),
+            new SampleCard(3, "Spell Queller"),
+            new SampleCard(4, "Stoneforge Mystic"),
+            new SampleCard(1, "Timely Reinforcements"),
+            new SampleCard(2, "Cryptic Command"),
+            new SampleCard(4, "Force of Negation"),
+            new SampleCard(2, "Mana Leak"),
+            new SampleCard(4, "Opt"),
+            new SampleCard(4, "Path to Exile"),
+            new SampleCard(2, "Spell Snare"),
+            new SampleCard(1, "Batterskull"),
+            new SampleCard(1, "Sword of Feast and Famine"),
+            new SampleCard(2, "Celestial Colonnade"),
+            new SampleCard(4, "Field of Ruin"),
+            new SampleCard(4, "Flooded Strand"),
+            new SampleCard(1, "Glacial Fortress"),
+            new SampleCard(3, "Hallowed Fountain"),
+            new SampleCard(5, "Island"),
+            new SampleCard(1, "Mystic Sanctuary"),
+            new SampleCard(2, "Plains"),
+            new SampleCard(1, "Polluted Delta"),
+            new SampleCard(1, "Seachrome Coast") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Timely Reinforcements"),
+            new SampleCard(1, "Aether Gust"),
+            new SampleCard(2, "Ashiok, Dream Render"),
+            new SampleCard(2, "Celestial Purge"),
+            new SampleCard(1, "Ceremonious Rejection"),
+            new SampleCard(1, "Disdainful Stroke"),
+            new SampleCard(1, "Disenchant"),
+            new SampleCard(1, "Dovin's Veto"),
+            new SampleCard(1, "Grafdigger's Cage"),
+            new SampleCard(1, "Mystical Dispute"),
+            new SampleCard(1, "Rest in Peace"),
+            new SampleCard(1, "Supreme Verdict"),
+            new SampleCard(1, "Sword of Fire and Ice") 
+        };
     }
 }

@@ -4,7 +4,38 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_21
 {
     public class Deck25_MadMaxErnst_Uroza_URG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (3, "Wrenn and Six"),(4, "Emry, Lurker of the Loch"),(4, "Gilded Goose"),(3, "Uro, Titan of Nature's Wrath"),(4, "Urza, Lord High Artificer"),(3, "Cryptic Command"),(4, "Galvanic Blast"),(3, "Metallic Rebuke"),(4, "Arcum's Astrolabe"),(3, "Engineered Explosives"),(4, "Mishra's Bauble"),(2, "Breeding Pool"),(4, "Flooded Strand"),(4, "Misty Rainforest"),(2, "Mystic Sanctuary"),(2, "Polluted Delta"),(1, "Snow-Covered Forest"),(5, "Snow-Covered Island"),(1, "Steam Vents") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (3, "Aether Gust"),(2, "Ceremonious Rejection"),(2, "Damping Sphere"),(1, "Disdainful Stroke"),(1, "Flusterstorm"),(2, "Soul-Guide Lantern"),(1, "Tireless Tracker"),(3, "Veil of Summer") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Wrenn and Six"),
+            new SampleCard(4, "Emry, Lurker of the Loch"),
+            new SampleCard(4, "Gilded Goose"),
+            new SampleCard(3, "Uro, Titan of Nature's Wrath"),
+            new SampleCard(4, "Urza, Lord High Artificer"),
+            new SampleCard(3, "Cryptic Command"),
+            new SampleCard(4, "Galvanic Blast"),
+            new SampleCard(3, "Metallic Rebuke"),
+            new SampleCard(4, "Arcum's Astrolabe"),
+            new SampleCard(3, "Engineered Explosives"),
+            new SampleCard(4, "Mishra's Bauble"),
+            new SampleCard(2, "Breeding Pool"),
+            new SampleCard(4, "Flooded Strand"),
+            new SampleCard(4, "Misty Rainforest"),
+            new SampleCard(2, "Mystic Sanctuary"),
+            new SampleCard(2, "Polluted Delta"),
+            new SampleCard(1, "Snow-Covered Forest"),
+            new SampleCard(5, "Snow-Covered Island"),
+            new SampleCard(1, "Steam Vents") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Aether Gust"),
+            new SampleCard(2, "Ceremonious Rejection"),
+            new SampleCard(2, "Damping Sphere"),
+            new SampleCard(1, "Disdainful Stroke"),
+            new SampleCard(1, "Flusterstorm"),
+            new SampleCard(2, "Soul-Guide Lantern"),
+            new SampleCard(1, "Tireless Tracker"),
+            new SampleCard(3, "Veil of Summer") 
+        };
     }
 }

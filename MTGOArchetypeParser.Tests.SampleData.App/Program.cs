@@ -82,8 +82,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
                         string sampleDataContents = _sampleDataTemplate
                             .Replace("LEAGUE_ID", leagueID)
                             .Replace("DECK_ID", deckID)
-                            .Replace("MAINBOARD_CARDS", String.Join(",", decks[i].Mainboard.Select(c => $"({c.Count}, \"{c.CardName}\")")))
-                            .Replace("SIDEBOARD_CARDS", String.Join(",", decks[i].Sideboard.Select(c => $"({c.Count}, \"{c.CardName}\")")));
+                            .Replace("MAINBOARD_CARDS", String.Join($",{Environment.NewLine}{new string(' ', 12)}", decks[i].Mainboard.Select(c => $"new SampleCard({c.Count}, \"{c.CardName}\")")))
+                            .Replace("SIDEBOARD_CARDS", String.Join($",{Environment.NewLine}{new string(' ', 12)}", decks[i].Sideboard.Select(c => $"new SampleCard({c.Count}, \"{c.CardName}\")")));
 
                         File.WriteAllText(sampleDataFile, sampleDataContents);
 
@@ -120,8 +120,14 @@ namespace MTGOArchetypeParser.Tests.SampleData.LEAGUE_ID
 {
     public class DECK_ID : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { MAINBOARD_CARDS }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { SIDEBOARD_CARDS }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            MAINBOARD_CARDS 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            SIDEBOARD_CARDS 
+        };
     }
 }";
 

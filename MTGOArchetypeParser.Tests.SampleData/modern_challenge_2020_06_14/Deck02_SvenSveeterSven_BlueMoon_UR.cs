@@ -4,7 +4,42 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14
 {
     public class Deck02_SvenSveeterSven_BlueMoon_UR : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (2, "The Royal Scions"),(2, "Bonecrusher Giant"),(2, "Brazen Borrower"),(3, "Snapcaster Mage"),(3, "Thing in the Ice"),(4, "Serum Visions"),(4, "Archmage's Charm"),(2, "Force of Negation"),(4, "Lightning Bolt"),(1, "Magmatic Sinkhole"),(4, "Opt"),(4, "Remand"),(2, "Spell Pierce"),(1, "Cascade Bluffs"),(1, "Fiery Islet"),(4, "Misty Rainforest"),(2, "Mystic Sanctuary"),(4, "Scalding Tarn"),(8, "Snow-Covered Island"),(1, "Snow-Covered Mountain"),(2, "Steam Vents") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Bonecrusher Giant"),(1, "Brazen Borrower"),(2, "Aether Gust"),(2, "Blood Moon"),(2, "Ceremonious Rejection"),(2, "Flusterstorm"),(1, "Forked Bolt"),(1, "Improbable Alliance"),(1, "Spell Snare"),(2, "Surgical Extraction") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "The Royal Scions"),
+            new SampleCard(2, "Bonecrusher Giant"),
+            new SampleCard(2, "Brazen Borrower"),
+            new SampleCard(3, "Snapcaster Mage"),
+            new SampleCard(3, "Thing in the Ice"),
+            new SampleCard(4, "Serum Visions"),
+            new SampleCard(4, "Archmage's Charm"),
+            new SampleCard(2, "Force of Negation"),
+            new SampleCard(4, "Lightning Bolt"),
+            new SampleCard(1, "Magmatic Sinkhole"),
+            new SampleCard(4, "Opt"),
+            new SampleCard(4, "Remand"),
+            new SampleCard(2, "Spell Pierce"),
+            new SampleCard(1, "Cascade Bluffs"),
+            new SampleCard(1, "Fiery Islet"),
+            new SampleCard(4, "Misty Rainforest"),
+            new SampleCard(2, "Mystic Sanctuary"),
+            new SampleCard(4, "Scalding Tarn"),
+            new SampleCard(8, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Mountain"),
+            new SampleCard(2, "Steam Vents") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Bonecrusher Giant"),
+            new SampleCard(1, "Brazen Borrower"),
+            new SampleCard(2, "Aether Gust"),
+            new SampleCard(2, "Blood Moon"),
+            new SampleCard(2, "Ceremonious Rejection"),
+            new SampleCard(2, "Flusterstorm"),
+            new SampleCard(1, "Forked Bolt"),
+            new SampleCard(1, "Improbable Alliance"),
+            new SampleCard(1, "Spell Snare"),
+            new SampleCard(2, "Surgical Extraction") 
+        };
     }
 }

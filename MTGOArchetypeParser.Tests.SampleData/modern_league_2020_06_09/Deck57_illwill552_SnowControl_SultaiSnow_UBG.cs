@@ -4,7 +4,39 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09
 {
     public class Deck57_illwill552_SnowControl_SultaiSnow_UBG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (2, "Jace, the Mind Sculptor"),(4, "Ice-Fang Coatl"),(2, "Snapcaster Mage"),(4, "Tarmogoyf"),(3, "Uro, Titan of Nature's Wrath"),(3, "Thoughtseize"),(2, "Assassin's Trophy"),(2, "Cryptic Command"),(2, "Drown in the Loch"),(4, "Fatal Push"),(3, "Force of Negation"),(4, "Thought Scour"),(4, "Arcum's Astrolabe"),(1, "Breeding Pool"),(1, "Creeping Tar Pit"),(4, "Misty Rainforest"),(1, "Overgrown Tomb"),(4, "Polluted Delta"),(1, "Snow-Covered Forest"),(4, "Snow-Covered Island"),(1, "Snow-Covered Swamp"),(2, "Verdant Catacombs"),(2, "Watery Grave") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (3, "Collective Brutality"),(3, "Damping Sphere"),(3, "Mystical Dispute"),(3, "Surgical Extraction"),(3, "Veil of Summer") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Jace, the Mind Sculptor"),
+            new SampleCard(4, "Ice-Fang Coatl"),
+            new SampleCard(2, "Snapcaster Mage"),
+            new SampleCard(4, "Tarmogoyf"),
+            new SampleCard(3, "Uro, Titan of Nature's Wrath"),
+            new SampleCard(3, "Thoughtseize"),
+            new SampleCard(2, "Assassin's Trophy"),
+            new SampleCard(2, "Cryptic Command"),
+            new SampleCard(2, "Drown in the Loch"),
+            new SampleCard(4, "Fatal Push"),
+            new SampleCard(3, "Force of Negation"),
+            new SampleCard(4, "Thought Scour"),
+            new SampleCard(4, "Arcum's Astrolabe"),
+            new SampleCard(1, "Breeding Pool"),
+            new SampleCard(1, "Creeping Tar Pit"),
+            new SampleCard(4, "Misty Rainforest"),
+            new SampleCard(1, "Overgrown Tomb"),
+            new SampleCard(4, "Polluted Delta"),
+            new SampleCard(1, "Snow-Covered Forest"),
+            new SampleCard(4, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Swamp"),
+            new SampleCard(2, "Verdant Catacombs"),
+            new SampleCard(2, "Watery Grave") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Collective Brutality"),
+            new SampleCard(3, "Damping Sphere"),
+            new SampleCard(3, "Mystical Dispute"),
+            new SampleCard(3, "Surgical Extraction"),
+            new SampleCard(3, "Veil of Summer") 
+        };
     }
 }

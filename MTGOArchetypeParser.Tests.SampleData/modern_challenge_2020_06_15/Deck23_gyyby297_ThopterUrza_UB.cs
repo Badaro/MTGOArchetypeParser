@@ -4,7 +4,46 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_15
 {
     public class Deck23_gyyby297_ThopterUrza_UB : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (1, "Jace, the Mind Sculptor"),(4, "Urza, Lord High Artificer"),(2, "Inquisition of Kozilek"),(2, "Thoughtseize"),(3, "Archmage's Charm"),(2, "Cryptic Command"),(3, "Fatal Push"),(2, "Remand"),(3, "Whir of Invention"),(4, "Arcum's Astrolabe"),(4, "Mishra's Bauble"),(1, "Nihil Spellbomb"),(1, "Pithing Needle"),(1, "Sword of the Meek"),(3, "Talisman of Dominance"),(2, "Thopter Foundry"),(1, "Field of Ruin"),(2, "Flooded Strand"),(2, "Misty Rainforest"),(3, "Mystic Sanctuary"),(4, "Polluted Delta"),(2, "Scalding Tarn"),(5, "Snow-Covered Island"),(1, "Snow-Covered Swamp"),(1, "Sunken Hollow"),(1, "Watery Grave") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (1, "Fatal Push"),(2, "Aether Gust"),(2, "Ashiok, Dream Render"),(2, "Battle at the Bridge"),(3, "Ceremonious Rejection"),(1, "Damnation"),(1, "Damping Sphere"),(1, "Grafdigger's Cage"),(2, "Mystical Dispute") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Jace, the Mind Sculptor"),
+            new SampleCard(4, "Urza, Lord High Artificer"),
+            new SampleCard(2, "Inquisition of Kozilek"),
+            new SampleCard(2, "Thoughtseize"),
+            new SampleCard(3, "Archmage's Charm"),
+            new SampleCard(2, "Cryptic Command"),
+            new SampleCard(3, "Fatal Push"),
+            new SampleCard(2, "Remand"),
+            new SampleCard(3, "Whir of Invention"),
+            new SampleCard(4, "Arcum's Astrolabe"),
+            new SampleCard(4, "Mishra's Bauble"),
+            new SampleCard(1, "Nihil Spellbomb"),
+            new SampleCard(1, "Pithing Needle"),
+            new SampleCard(1, "Sword of the Meek"),
+            new SampleCard(3, "Talisman of Dominance"),
+            new SampleCard(2, "Thopter Foundry"),
+            new SampleCard(1, "Field of Ruin"),
+            new SampleCard(2, "Flooded Strand"),
+            new SampleCard(2, "Misty Rainforest"),
+            new SampleCard(3, "Mystic Sanctuary"),
+            new SampleCard(4, "Polluted Delta"),
+            new SampleCard(2, "Scalding Tarn"),
+            new SampleCard(5, "Snow-Covered Island"),
+            new SampleCard(1, "Snow-Covered Swamp"),
+            new SampleCard(1, "Sunken Hollow"),
+            new SampleCard(1, "Watery Grave") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(1, "Fatal Push"),
+            new SampleCard(2, "Aether Gust"),
+            new SampleCard(2, "Ashiok, Dream Render"),
+            new SampleCard(2, "Battle at the Bridge"),
+            new SampleCard(3, "Ceremonious Rejection"),
+            new SampleCard(1, "Damnation"),
+            new SampleCard(1, "Damping Sphere"),
+            new SampleCard(1, "Grafdigger's Cage"),
+            new SampleCard(2, "Mystical Dispute") 
+        };
     }
 }

@@ -4,7 +4,41 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_19
 {
     public class Deck08_BoltTheBirds_GiftsStorm_UR : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Baral, Chief of Compliance"),(4, "Goblin Electromancer"),(1, "Empty the Warrens"),(1, "Grapeshot"),(2, "Past in Flames"),(4, "Serum Visions"),(4, "Desperate Ritual"),(4, "Gifts Ungiven"),(4, "Manamorphose"),(4, "Opt"),(2, "Peer Through Depths"),(4, "Pyretic Ritual"),(3, "Remand"),(1, "Repeal"),(1, "Fiery Islet"),(2, "Island"),(1, "Mountain"),(4, "Shivan Reef"),(2, "Snow-Covered Island"),(4, "Spirebluff Canal"),(4, "Steam Vents") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Empty the Warrens"),(1, "Abrade"),(2, "Aria of Flame"),(1, "Dismember"),(3, "Lightning Bolt"),(2, "Mystical Dispute"),(2, "Pieces of the Puzzle"),(1, "Shenanigans"),(1, "Spell Pierce") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Baral, Chief of Compliance"),
+            new SampleCard(4, "Goblin Electromancer"),
+            new SampleCard(1, "Empty the Warrens"),
+            new SampleCard(1, "Grapeshot"),
+            new SampleCard(2, "Past in Flames"),
+            new SampleCard(4, "Serum Visions"),
+            new SampleCard(4, "Desperate Ritual"),
+            new SampleCard(4, "Gifts Ungiven"),
+            new SampleCard(4, "Manamorphose"),
+            new SampleCard(4, "Opt"),
+            new SampleCard(2, "Peer Through Depths"),
+            new SampleCard(4, "Pyretic Ritual"),
+            new SampleCard(3, "Remand"),
+            new SampleCard(1, "Repeal"),
+            new SampleCard(1, "Fiery Islet"),
+            new SampleCard(2, "Island"),
+            new SampleCard(1, "Mountain"),
+            new SampleCard(4, "Shivan Reef"),
+            new SampleCard(2, "Snow-Covered Island"),
+            new SampleCard(4, "Spirebluff Canal"),
+            new SampleCard(4, "Steam Vents") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Empty the Warrens"),
+            new SampleCard(1, "Abrade"),
+            new SampleCard(2, "Aria of Flame"),
+            new SampleCard(1, "Dismember"),
+            new SampleCard(3, "Lightning Bolt"),
+            new SampleCard(2, "Mystical Dispute"),
+            new SampleCard(2, "Pieces of the Puzzle"),
+            new SampleCard(1, "Shenanigans"),
+            new SampleCard(1, "Spell Pierce") 
+        };
     }
 }

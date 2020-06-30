@@ -4,7 +4,39 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_08
 {
     public class Deck05_Blitzlion27_Mill_UB : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Hedron Crab"),(4, "Manic Scribe"),(1, "Breaking // Entering"),(4, "Glimpse the Unthinkable"),(4, "Archive Trap"),(1, "Crypt Incursion"),(4, "Drown in the Loch"),(4, "Fatal Push"),(4, "Surgical Extraction"),(4, "Visions of Beyond"),(4, "Mesmeric Orb"),(2, "Darkslick Shores"),(4, "Field of Ruin"),(1, "Oboro, Palace in the Clouds"),(4, "Polluted Delta"),(2, "Prismatic Vista"),(1, "Shelldock Isle"),(4, "Snow-Covered Island"),(2, "Snow-Covered Swamp"),(2, "Watery Grave") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Aether Gust"),(2, "Ashiok, Dream Render"),(1, "Ashiok, Nightmare Weaver"),(2, "Collective Brutality"),(2, "Echoing Truth"),(1, "Extirpate"),(2, "Grafdigger's Cage"),(3, "Mystical Dispute") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Hedron Crab"),
+            new SampleCard(4, "Manic Scribe"),
+            new SampleCard(1, "Breaking // Entering"),
+            new SampleCard(4, "Glimpse the Unthinkable"),
+            new SampleCard(4, "Archive Trap"),
+            new SampleCard(1, "Crypt Incursion"),
+            new SampleCard(4, "Drown in the Loch"),
+            new SampleCard(4, "Fatal Push"),
+            new SampleCard(4, "Surgical Extraction"),
+            new SampleCard(4, "Visions of Beyond"),
+            new SampleCard(4, "Mesmeric Orb"),
+            new SampleCard(2, "Darkslick Shores"),
+            new SampleCard(4, "Field of Ruin"),
+            new SampleCard(1, "Oboro, Palace in the Clouds"),
+            new SampleCard(4, "Polluted Delta"),
+            new SampleCard(2, "Prismatic Vista"),
+            new SampleCard(1, "Shelldock Isle"),
+            new SampleCard(4, "Snow-Covered Island"),
+            new SampleCard(2, "Snow-Covered Swamp"),
+            new SampleCard(2, "Watery Grave") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Aether Gust"),
+            new SampleCard(2, "Ashiok, Dream Render"),
+            new SampleCard(1, "Ashiok, Nightmare Weaver"),
+            new SampleCard(2, "Collective Brutality"),
+            new SampleCard(2, "Echoing Truth"),
+            new SampleCard(1, "Extirpate"),
+            new SampleCard(2, "Grafdigger's Cage"),
+            new SampleCard(3, "Mystical Dispute") 
+        };
     }
 }

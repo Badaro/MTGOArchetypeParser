@@ -4,7 +4,43 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12
 {
     public class Deck31_anamika_GruulCompany_WURG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (3, "Ahn-Crop Crasher"),(3, "Birds of Paradise"),(1, "Bonecrusher Giant"),(1, "Gallia of the Endless Dance"),(3, "Goblin Chieftain"),(4, "Goblin Rabblemaster"),(3, "Hexdrinker"),(4, "Legion Warboss"),(4, "Noble Hierarch"),(3, "Scavenging Ooze"),(1, "Seasoned Pyromancer"),(1, "Abrade"),(4, "Collected Company"),(3, "Lightning Bolt"),(1, "Bloodstained Mire"),(1, "Breeding Pool"),(3, "Forest"),(2, "Kessig Wolf Run"),(1, "Mountain"),(1, "Sacred Foundry"),(3, "Stomping Ground"),(2, "Verdant Catacombs"),(4, "Windswept Heath"),(4, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Blood Moon"),(2, "Damping Sphere"),(1, "Engineered Explosives"),(1, "Izzet Staticaster"),(2, "Magus of the Moon"),(2, "Mana Leak"),(3, "Path to Exile"),(2, "Rest in Peace") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(3, "Ahn-Crop Crasher"),
+            new SampleCard(3, "Birds of Paradise"),
+            new SampleCard(1, "Bonecrusher Giant"),
+            new SampleCard(1, "Gallia of the Endless Dance"),
+            new SampleCard(3, "Goblin Chieftain"),
+            new SampleCard(4, "Goblin Rabblemaster"),
+            new SampleCard(3, "Hexdrinker"),
+            new SampleCard(4, "Legion Warboss"),
+            new SampleCard(4, "Noble Hierarch"),
+            new SampleCard(3, "Scavenging Ooze"),
+            new SampleCard(1, "Seasoned Pyromancer"),
+            new SampleCard(1, "Abrade"),
+            new SampleCard(4, "Collected Company"),
+            new SampleCard(3, "Lightning Bolt"),
+            new SampleCard(1, "Bloodstained Mire"),
+            new SampleCard(1, "Breeding Pool"),
+            new SampleCard(3, "Forest"),
+            new SampleCard(2, "Kessig Wolf Run"),
+            new SampleCard(1, "Mountain"),
+            new SampleCard(1, "Sacred Foundry"),
+            new SampleCard(3, "Stomping Ground"),
+            new SampleCard(2, "Verdant Catacombs"),
+            new SampleCard(4, "Windswept Heath"),
+            new SampleCard(4, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Blood Moon"),
+            new SampleCard(2, "Damping Sphere"),
+            new SampleCard(1, "Engineered Explosives"),
+            new SampleCard(1, "Izzet Staticaster"),
+            new SampleCard(2, "Magus of the Moon"),
+            new SampleCard(2, "Mana Leak"),
+            new SampleCard(3, "Path to Exile"),
+            new SampleCard(2, "Rest in Peace") 
+        };
     }
 }

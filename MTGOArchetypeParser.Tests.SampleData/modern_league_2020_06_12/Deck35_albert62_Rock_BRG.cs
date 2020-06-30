@@ -4,7 +4,44 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12
 {
     public class Deck35_albert62_Rock_BRG : ISampleDeck
     {
-        public (int Count, string Name)[] Mainboard { get { return new (int Count, string Name)[] { (4, "Liliana of the Veil"),(3, "Wrenn and Six"),(2, "Grim Flayer"),(3, "Lurrus of the Dream Den"),(2, "Scavenging Ooze"),(4, "Tarmogoyf"),(3, "Inquisition of Kozilek"),(3, "Thoughtseize"),(3, "Assassin's Trophy"),(3, "Fatal Push"),(2, "Kolaghan's Command"),(3, "Mishra's Bauble"),(1, "Nihil Spellbomb"),(2, "Seal of Fire"),(4, "Blackcleave Cliffs"),(1, "Blood Crypt"),(2, "Bloodstained Mire"),(1, "Forest"),(1, "Ghost Quarter"),(2, "Nurturing Peatland"),(2, "Overgrown Tomb"),(1, "Raging Ravine"),(1, "Stomping Ground"),(2, "Swamp"),(4, "Verdant Catacombs"),(1, "Wooded Foothills") }; } }
-        public (int Count, string Name)[] Sideboard { get { return new (int Count, string Name)[] { (2, "Nihil Spellbomb"),(2, "Ashiok, Dream Render"),(2, "Boil"),(3, "Collective Brutality"),(3, "Damping Sphere"),(2, "Engineered Explosives"),(1, "Klothys, God of Destiny") }; } }
+        public ISampleCard[] Mainboard => new ISampleCard[] 
+        { 
+            new SampleCard(4, "Liliana of the Veil"),
+            new SampleCard(3, "Wrenn and Six"),
+            new SampleCard(2, "Grim Flayer"),
+            new SampleCard(3, "Lurrus of the Dream Den"),
+            new SampleCard(2, "Scavenging Ooze"),
+            new SampleCard(4, "Tarmogoyf"),
+            new SampleCard(3, "Inquisition of Kozilek"),
+            new SampleCard(3, "Thoughtseize"),
+            new SampleCard(3, "Assassin's Trophy"),
+            new SampleCard(3, "Fatal Push"),
+            new SampleCard(2, "Kolaghan's Command"),
+            new SampleCard(3, "Mishra's Bauble"),
+            new SampleCard(1, "Nihil Spellbomb"),
+            new SampleCard(2, "Seal of Fire"),
+            new SampleCard(4, "Blackcleave Cliffs"),
+            new SampleCard(1, "Blood Crypt"),
+            new SampleCard(2, "Bloodstained Mire"),
+            new SampleCard(1, "Forest"),
+            new SampleCard(1, "Ghost Quarter"),
+            new SampleCard(2, "Nurturing Peatland"),
+            new SampleCard(2, "Overgrown Tomb"),
+            new SampleCard(1, "Raging Ravine"),
+            new SampleCard(1, "Stomping Ground"),
+            new SampleCard(2, "Swamp"),
+            new SampleCard(4, "Verdant Catacombs"),
+            new SampleCard(1, "Wooded Foothills") 
+        };
+        public ISampleCard[] Sideboard => new ISampleCard[] 
+        { 
+            new SampleCard(2, "Nihil Spellbomb"),
+            new SampleCard(2, "Ashiok, Dream Render"),
+            new SampleCard(2, "Boil"),
+            new SampleCard(3, "Collective Brutality"),
+            new SampleCard(3, "Damping Sphere"),
+            new SampleCard(2, "Engineered Explosives"),
+            new SampleCard(1, "Klothys, God of Destiny") 
+        };
     }
 }
