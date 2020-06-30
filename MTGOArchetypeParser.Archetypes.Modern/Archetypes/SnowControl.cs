@@ -25,7 +25,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new SnowReclamation(),
                 new SnowTurns(),
                 new SnowShift(),
-                new SnowTitan()
+                new SnowTitan(),
+                new SnowBreach()
             };
         }
     }
@@ -96,6 +97,18 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Primeval Titan" } }
+            };
+        }
+    }
+
+    public class SnowBreach : ArchetypeVariant
+    {
+        public SnowBreach()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Emrakul, the Aeons Torn" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Through the Breach" } }
             };
         }
     }

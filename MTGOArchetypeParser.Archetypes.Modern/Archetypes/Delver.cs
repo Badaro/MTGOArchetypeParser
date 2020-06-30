@@ -13,11 +13,12 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Delver of Secrets" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Lightning Bolt" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Remand", "Mana Leak" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Remand", "Mana Leak", "Force of Negation" } }
             };
             Variants = new ArchetypeVariant[]
             {
-                new GrixisDelver()
+                new GrixisDelver(),
+                new TemurDelver()
             };
         }
     }
@@ -33,4 +34,14 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         }
     }
 
+    public class TemurDelver : ArchetypeVariant
+    {
+        public TemurDelver()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Tarmogoyf", "Hooting Mandrills" } }
+            };
+        }
+    }
 }
