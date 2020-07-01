@@ -203,13 +203,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck17_ScreenwriterNY_SnowControl_WUBG_Yorion()
+        public void Deck17_ScreenwriterNY_SnowControl_SultaiSnow_WUBG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_08.Deck17_ScreenwriterNY_SnowControl_WUBG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_08.Deck17_ScreenwriterNY_SnowControl_SultaiSnow_WUBG_Yorion(),
                 ArchetypeColor.WUBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SultaiSnow),
                 ArchetypeCompanion.Yorion
             );
         }

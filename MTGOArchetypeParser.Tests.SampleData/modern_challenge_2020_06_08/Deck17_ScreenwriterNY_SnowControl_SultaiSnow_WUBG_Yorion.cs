@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_08
 {
-    public class Deck17_ScreenwriterNY_SnowControl_WUBG_Yorion : ISampleDeck
+    public class Deck17_ScreenwriterNY_SnowControl_SultaiSnow_WUBG_Yorion : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

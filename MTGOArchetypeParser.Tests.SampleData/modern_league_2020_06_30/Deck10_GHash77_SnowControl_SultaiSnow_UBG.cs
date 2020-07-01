@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_30
 {
-    public class Deck10_GHash77_SnowControl_UBG : ISampleDeck
+    public class Deck10_GHash77_SnowControl_SultaiSnow_UBG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
