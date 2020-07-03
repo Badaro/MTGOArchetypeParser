@@ -83,13 +83,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck07_TubbyBatman_Prowess_UR()
+        public void Deck07_TubbyBatman_Prowess_IzzetProwess_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_07_02.Deck07_TubbyBatman_Prowess_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_07_02.Deck07_TubbyBatman_Prowess_IzzetProwess_UR(),
                 ArchetypeColor.UR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetProwess),
                 null
             );
         }

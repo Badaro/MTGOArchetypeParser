@@ -18,7 +18,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             };
             Variants = new ArchetypeVariant[]
             {
-                new RakdosProwess()
+                new RakdosProwess(),
+                new IzzetProwess()
             };
         }
     }
@@ -31,6 +32,18 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Thoughtseize" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Cling to Dust" } }
+            };
+        }
+    }
+
+    public class IzzetProwess : ArchetypeVariant
+    {
+        public IzzetProwess()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Sprite Dragon" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Stormwing Entity" } }
             };
         }
     }

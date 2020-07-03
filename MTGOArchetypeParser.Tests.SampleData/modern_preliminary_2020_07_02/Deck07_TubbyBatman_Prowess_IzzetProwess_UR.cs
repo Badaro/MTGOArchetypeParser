@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_07_02
 {
-    public class Deck07_TubbyBatman_Prowess_UR : ISampleDeck
+    public class Deck07_TubbyBatman_Prowess_IzzetProwess_UR : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

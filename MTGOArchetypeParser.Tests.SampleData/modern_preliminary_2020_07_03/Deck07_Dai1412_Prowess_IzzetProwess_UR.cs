@@ -1,8 +1,8 @@
 using MTGOArchetypeParser.Tests.SampleData;
 
-namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_30
+namespace MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_07_03
 {
-    public class Deck02_SpiderSpace_Prowess_UR : ISampleDeck
+    public class Deck07_Dai1412_Prowess_IzzetProwess_UR : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
@@ -30,8 +30,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_30
         { 
             new SampleCard(2, "Abrade"),
             new SampleCard(3, "Aether Gust"),
-            new SampleCard(2, "Assault Strobe"),
-            new SampleCard(1, "Blood Moon"),
+            new SampleCard(1, "Assault Strobe"),
+            new SampleCard(2, "Blood Moon"),
             new SampleCard(2, "Dragon's Claw"),
             new SampleCard(3, "Mystical Dispute"),
             new SampleCard(2, "Surgical Extraction") 

@@ -23,13 +23,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck02_SpiderSpace_Prowess_UR()
+        public void Deck02_SpiderSpace_Prowess_IzzetProwess_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_30.Deck02_SpiderSpace_Prowess_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_30.Deck02_SpiderSpace_Prowess_IzzetProwess_UR(),
                 ArchetypeColor.UR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetProwess),
                 null
             );
         }
