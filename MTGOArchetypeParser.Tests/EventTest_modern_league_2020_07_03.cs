@@ -623,12 +623,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck52_Rosie54_DeathAndTaxes_WG()
+        public void Deck52_Rosie54_CatsAndTaxes_WG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_07_03.Deck52_Rosie54_DeathAndTaxes_WG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_07_03.Deck52_Rosie54_CatsAndTaxes_WG(),
                 ArchetypeColor.WG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.DeathAndTaxes),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.CatsAndTaxes),
                 null,
                 null
             );
