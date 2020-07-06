@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_07_03
 {
-    public class Deck52_Rosie54_CatsAndTaxes_WG : ISampleDeck
+    public class Deck52_Rosie54_DeathAndTaxes_CatsAndTaxes_WG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
