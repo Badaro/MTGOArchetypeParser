@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_27
 {
-    public class Deck06_Wolfie98_SnowControl_URG : ISampleDeck
+    public class Deck06_Wolfie98_SnowControl_TemurSnow_URG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

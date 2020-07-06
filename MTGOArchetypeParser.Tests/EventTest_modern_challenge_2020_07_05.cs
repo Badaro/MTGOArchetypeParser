@@ -263,13 +263,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck22_pbarrrgh_SnowControl_URG()
+        public void Deck22_pbarrrgh_SnowControl_TemurSnow_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_07_05.Deck22_pbarrrgh_SnowControl_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_07_05.Deck22_pbarrrgh_SnowControl_TemurSnow_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.TemurSnow),
                 null
             );
         }
@@ -347,13 +347,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck29_tuhoajatane_SnowControl_URG()
+        public void Deck29_tuhoajatane_SnowControl_TemurSnow_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_07_05.Deck29_tuhoajatane_SnowControl_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_07_05.Deck29_tuhoajatane_SnowControl_TemurSnow_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.TemurSnow),
                 null
             );
         }

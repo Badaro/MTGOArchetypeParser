@@ -71,13 +71,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck06_Wolfie98_SnowControl_URG()
+        public void Deck06_Wolfie98_SnowControl_TemurSnow_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_27.Deck06_Wolfie98_SnowControl_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_27.Deck06_Wolfie98_SnowControl_TemurSnow_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.TemurSnow),
                 null
             );
         }

@@ -683,13 +683,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck57_daifuku_SnowControl_URG()
+        public void Deck57_daifuku_SnowControl_TemurSnow_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16.Deck57_daifuku_SnowControl_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_16.Deck57_daifuku_SnowControl_TemurSnow_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.TemurSnow),
                 null
             );
         }

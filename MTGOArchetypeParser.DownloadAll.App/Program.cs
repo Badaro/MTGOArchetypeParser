@@ -19,11 +19,12 @@ namespace MTGOArchetypeParser.DownloadAll.App
 
                 // Destination CSV output
                 StringBuilder csvData = new StringBuilder();
-                csvData.AppendLine($"EVENT,DATE,PLAYER,URL,ARCHETYPE,VARIANT,COLOR,COMPANION");
+                csvData.AppendLine($"EVENT,META,DATE,PLAYER,URL,ARCHETYPE,VARIANT,CONSOLIDATED,COLOR,COMPANION");
 
                 foreach (var tournament in tournaments)
                 {
                     Console.WriteLine($"Downloading {tournament.Uri}");
+                    string metaID = tournament.Date < new DateTime(2020, 06, 26, 00, 00, 00, DateTimeKind.Utc) ? "Post Companion Nerf" : "Post M21";
 
                     var decks = MTGODecklistParser.Data.DeckLoader.GetDecks(tournament.Uri);
 
@@ -46,10 +47,12 @@ namespace MTGOArchetypeParser.DownloadAll.App
                             }
                         }
 
-                        csvData.AppendLine($"{tournament.Name},{tournament.Date.ToString("yyyy-MM-dd")},{decks[i].Player},{decks[i].AnchorUri},{archetypeID},{variantID},{colorID},{companionID}");
+                        string consolidatedID = String.IsNullOrEmpty(variantID) ? archetypeID : variantID;
+
+                        csvData.AppendLine($"{tournament.Name},{metaID},{tournament.Date.ToString("yyyy-MM-dd")},{decks[i].Player},{decks[i].AnchorUri},{archetypeID},{variantID},{consolidatedID},{colorID},{companionID}");
                     }
 
-                    File.WriteAllText("output.csv", csvData.ToString());
+                    File.WriteAllText($"mtgo_data_{tournaments.Max(t => t.Date).ToString("yyyy_MM_dd")}.csv", csvData.ToString());
                 }
             }
             catch (Exception ex)

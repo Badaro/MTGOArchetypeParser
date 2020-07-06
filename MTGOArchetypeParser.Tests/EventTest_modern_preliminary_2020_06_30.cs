@@ -11,13 +11,13 @@ namespace MTGOArchetypeParser.Tests
     public class EventTest_modern_preliminary_2020_06_30 : EventTest
     {
         [Test]
-        public void Deck01_pbarrrgh_SnowControl_URG()
+        public void Deck01_pbarrrgh_SnowControl_TemurSnow_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_30.Deck01_pbarrrgh_SnowControl_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_30.Deck01_pbarrrgh_SnowControl_TemurSnow_URG(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.TemurSnow),
                 null
             );
         }

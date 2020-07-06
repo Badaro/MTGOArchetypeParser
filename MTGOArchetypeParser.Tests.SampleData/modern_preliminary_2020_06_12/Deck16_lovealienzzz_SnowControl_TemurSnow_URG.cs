@@ -1,8 +1,8 @@
 using MTGOArchetypeParser.Tests.SampleData;
 
-namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_14
+namespace MTGOArchetypeParser.Tests.SampleData.modern_preliminary_2020_06_12
 {
-    public class Deck14_lovealienzzz_SnowControl_URG : ISampleDeck
+    public class Deck16_lovealienzzz_SnowControl_TemurSnow_URG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
