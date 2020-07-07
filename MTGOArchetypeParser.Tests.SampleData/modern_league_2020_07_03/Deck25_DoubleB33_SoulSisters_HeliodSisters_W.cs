@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_07_03
 {
-    public class Deck25_DoubleB33_HeliodSisters_W : ISampleDeck
+    public class Deck25_DoubleB33_SoulSisters_HeliodSisters_W : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

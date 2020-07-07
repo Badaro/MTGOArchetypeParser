@@ -299,13 +299,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck25_DoubleB33_HeliodSisters_W()
+        public void Deck25_DoubleB33_SoulSisters_HeliodSisters_W()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_07_03.Deck25_DoubleB33_HeliodSisters_W(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_07_03.Deck25_DoubleB33_SoulSisters_HeliodSisters_W(),
                 ArchetypeColor.W,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SoulSisters),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.HeliodSisters),
-                null,
                 null
             );
         }
