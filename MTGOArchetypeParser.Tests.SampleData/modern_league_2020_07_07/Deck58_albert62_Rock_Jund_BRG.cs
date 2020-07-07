@@ -1,8 +1,8 @@
 using MTGOArchetypeParser.Tests.SampleData;
 
-namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_07_06
+namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_07_07
 {
-    public class Deck20_Jenara19_Rock_BRG : ISampleDeck
+    public class Deck58_albert62_Rock_Jund_BRG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
@@ -21,9 +21,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_07_06
             new SampleCard(2, "Seal of Fire"),
             new SampleCard(4, "Blackcleave Cliffs"),
             new SampleCard(1, "Blood Crypt"),
-            new SampleCard(2, "Bloodstained Mire"),
+            new SampleCard(3, "Bloodstained Mire"),
             new SampleCard(1, "Forest"),
-            new SampleCard(1, "Ghost Quarter"),
             new SampleCard(2, "Nurturing Peatland"),
             new SampleCard(2, "Overgrown Tomb"),
             new SampleCard(1, "Raging Ravine"),
@@ -36,12 +35,11 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_07_06
         public ISampleCard[] Sideboard => new ISampleCard[] 
         { 
             new SampleCard(2, "Nihil Spellbomb"),
-            new SampleCard(2, "Ashiok, Dream Render"),
+            new SampleCard(3, "Ashiok, Dream Render"),
             new SampleCard(2, "Boil"),
             new SampleCard(3, "Collective Brutality"),
             new SampleCard(3, "Damping Sphere"),
-            new SampleCard(2, "Engineered Explosives"),
-            new SampleCard(1, "Plague Engineer") 
+            new SampleCard(2, "Engineered Explosives") 
         };
     }
 }

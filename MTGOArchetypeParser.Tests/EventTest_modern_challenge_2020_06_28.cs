@@ -239,13 +239,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck20_DannyBambino_Rock_BRG()
+        public void Deck20_DannyBambino_Rock_Jund_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_28.Deck20_DannyBambino_Rock_BRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_28.Deck20_DannyBambino_Rock_Jund_BRG(),
                 ArchetypeColor.BRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Rock),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Jund),
                 null
             );
         }

@@ -1,15 +1,14 @@
 using MTGOArchetypeParser.Tests.SampleData;
 
-namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12
+namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_07_06
 {
-    public class Deck35_albert62_Rock_BRG : ISampleDeck
+    public class Deck20_Jenara19_Rock_Jund_BRG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
             new SampleCard(4, "Liliana of the Veil"),
             new SampleCard(3, "Wrenn and Six"),
             new SampleCard(2, "Grim Flayer"),
-            new SampleCard(3, "Lurrus of the Dream Den"),
             new SampleCard(2, "Scavenging Ooze"),
             new SampleCard(4, "Tarmogoyf"),
             new SampleCard(3, "Inquisition of Kozilek"),
@@ -31,7 +30,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12
             new SampleCard(1, "Stomping Ground"),
             new SampleCard(2, "Swamp"),
             new SampleCard(4, "Verdant Catacombs"),
-            new SampleCard(1, "Wooded Foothills") 
+            new SampleCard(1, "Wooded Foothills"),
+            new SampleCard(3, "Lurrus of the Dream-Den") 
         };
         public ISampleCard[] Sideboard => new ISampleCard[] 
         { 
@@ -41,7 +41,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12
             new SampleCard(3, "Collective Brutality"),
             new SampleCard(3, "Damping Sphere"),
             new SampleCard(2, "Engineered Explosives"),
-            new SampleCard(1, "Klothys, God of Destiny") 
+            new SampleCard(1, "Plague Engineer") 
         };
     }
 }

@@ -695,13 +695,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck58_albert62_Rock_BRG()
+        public void Deck58_albert62_Rock_Jund_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_07_07.Deck58_albert62_Rock_BRG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_07_07.Deck58_albert62_Rock_Jund_BRG(),
                 ArchetypeColor.BRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Rock),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.Jund),
                 null
             );
         }

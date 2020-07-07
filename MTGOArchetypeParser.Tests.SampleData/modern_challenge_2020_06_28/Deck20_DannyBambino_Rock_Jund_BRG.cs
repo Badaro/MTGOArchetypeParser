@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_28
 {
-    public class Deck20_DannyBambino_Rock_BRG : ISampleDeck
+    public class Deck20_DannyBambino_Rock_Jund_BRG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
