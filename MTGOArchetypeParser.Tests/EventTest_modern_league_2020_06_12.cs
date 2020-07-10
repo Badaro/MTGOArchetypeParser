@@ -179,12 +179,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck15_Zeranox_Soulherder_WUG_Yorion()
+        public void Deck15_Zeranox_BantBlink_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12.Deck15_Zeranox_Soulherder_WUG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12.Deck15_Zeranox_BantBlink_WUG_Yorion(),
                 ArchetypeColor.WUG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Soulherder),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.BantBlink),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -263,12 +263,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck22_osk4_Soulherder_WURG_Yorion()
+        public void Deck22_osk4_BantBlink_WURG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12.Deck22_osk4_Soulherder_WURG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12.Deck22_osk4_BantBlink_WURG_Yorion(),
                 ArchetypeColor.WURG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Soulherder),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.BantBlink),
                 null,
                 ArchetypeCompanion.Yorion
             );

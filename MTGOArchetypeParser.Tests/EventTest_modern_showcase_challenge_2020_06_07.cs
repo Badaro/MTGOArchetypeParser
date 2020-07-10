@@ -95,12 +95,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck08_cftsoc3_Soulherder_WUG_Yorion()
+        public void Deck08_cftsoc3_BantBlink_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_showcase_challenge_2020_06_07.Deck08_cftsoc3_Soulherder_WUG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_showcase_challenge_2020_06_07.Deck08_cftsoc3_BantBlink_WUG_Yorion(),
                 ArchetypeColor.WUG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Soulherder),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.BantBlink),
                 null,
                 ArchetypeCompanion.Yorion
             );

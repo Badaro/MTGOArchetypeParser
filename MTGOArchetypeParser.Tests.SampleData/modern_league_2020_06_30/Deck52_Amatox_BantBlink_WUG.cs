@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_30
 {
-    public class Deck52_Amatox_Soulherder_WUG : ISampleDeck
+    public class Deck52_Amatox_BantBlink_WUG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_12
 {
-    public class Deck22_osk4_Soulherder_WURG_Yorion : ISampleDeck
+    public class Deck22_osk4_BantBlink_WURG_Yorion : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_08
 {
-    public class Deck03_JB2002_BantWalls_WUG_Yorion : ISampleDeck
+    public class Deck03_JB2002_BantBlink_WUG_Yorion : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

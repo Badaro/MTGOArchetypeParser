@@ -1,8 +1,8 @@
 using MTGOArchetypeParser.Tests.SampleData;
 
-namespace MTGOArchetypeParser.Tests.SampleData.modern_showcase_challenge_2020_06_07
+namespace MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_09
 {
-    public class Deck08_cftsoc3_Soulherder_WUG_Yorion : ISampleDeck
+    public class Deck06_cftsoc3_BantBlink_WUG_Yorion : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

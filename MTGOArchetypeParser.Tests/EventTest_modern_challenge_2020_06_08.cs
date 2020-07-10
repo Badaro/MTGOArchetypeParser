@@ -35,12 +35,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck03_JB2002_BantWalls_WUG_Yorion()
+        public void Deck03_JB2002_BantBlink_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_08.Deck03_JB2002_BantWalls_WUG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_challenge_2020_06_08.Deck03_JB2002_BantBlink_WUG_Yorion(),
                 ArchetypeColor.WUG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.BantWalls),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.BantBlink),
                 null,
                 ArchetypeCompanion.Yorion
             );

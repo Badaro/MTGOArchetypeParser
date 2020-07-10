@@ -623,12 +623,12 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void Deck52_Amatox_Soulherder_WUG()
+        public void Deck52_Amatox_BantBlink_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_30.Deck52_Amatox_Soulherder_WUG(),
+                new MTGOArchetypeParser.Tests.SampleData.modern_league_2020_06_30.Deck52_Amatox_BantBlink_WUG(),
                 ArchetypeColor.WUG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Soulherder),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.BantBlink),
                 null,
                 null
             );
