@@ -25,7 +25,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             {
                 new KGCTron(),
                 new GolosTron(),
-                new GreenEldraziTron()
+                new GreenEldraziTron(),
+                new OrreryTron()
             };
         }
     }
@@ -62,6 +63,18 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Cascading Cataracts" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Golos, Tireless Pilgrim" } }
+            };
+        }
+    }
+
+    public class OrreryTron : ArchetypeVariant
+    {
+        public OrreryTron()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Chromatic Orrery" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Filigree Sages" } }
             };
         }
     }
