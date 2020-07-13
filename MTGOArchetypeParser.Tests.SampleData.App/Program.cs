@@ -1,5 +1,7 @@
 ﻿using MTGOArchetypeParser.Data;
+using MTGOArchetypeParser.Model;
 using MTGODecklistParser.Data;
+using MTGODecklistParser.Model;
 using System;
 using System.IO;
 using System.Linq;
@@ -17,16 +19,21 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
                 bool allowUpdate = false;
                 if (args.Length > 0 && args[0].ToString() == "allowupdate") allowUpdate = true;
 
+                ArchetypeMeta[] metas = Metas.Modern.Loader.GetMetas();
                 Console.WriteLine("Downloading tournament list");
-                string[] eventUrls = TournamentLoader.GetTournaments(new DateTime(2020, 06, 05, 00, 00, 00, DateTimeKind.Utc), DateTime.UtcNow).Where(t => t.Name.Contains("Modern")).Select(e => e.Uri.ToString()).ToArray();
+                Tournament[] tournaments = TournamentLoader.GetTournaments(metas.First().StartDate, DateTime.UtcNow).Where(t => t.Name.Contains("Modern")).ToArray();
 
-                foreach (string eventUrl in eventUrls)
+                foreach (Tournament tournament in tournaments)
                 {
-                    Console.WriteLine($"Downloading {eventUrl}");
+                    ArchetypeMeta tournamentMeta = metas.Last(m => m.StartDate <= tournament.Date);
+                    string metaName = tournamentMeta.GetType().Name;
+                    string metaID = $"meta_{tournamentMeta.StartDate.ToString("yyyy_MM_dd")}_{metaName.ToLower()}";
+
+                    Console.WriteLine($"Downloading {tournament.Uri.ToString()}");
 
                     // Destination for sample data
-                    string leagueID = Path.GetFileName(eventUrl).Replace("-", "_");
-                    string sampleDataOutputFolder = Path.Combine(new DirectoryInfo(@"..\..\..\..\").FullName, "MTGOArchetypeParser.Tests.SampleData", leagueID);
+                    string leagueID = Path.GetFileName(tournament.Uri.ToString()).Replace("-", "_");
+                    string sampleDataOutputFolder = Path.Combine(new DirectoryInfo(@"..\..\..\..\").FullName, "MTGOArchetypeParser.Tests.SampleData", metaID.ToLower(), leagueID);
                     if (Directory.Exists(sampleDataOutputFolder))
                     {
                         if (!allowUpdate)
@@ -42,10 +49,13 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
                     Directory.CreateDirectory(sampleDataOutputFolder);
 
                     // Decklist download
-                    var decks = MTGODecklistParser.Data.DeckLoader.GetDecks(new Uri(eventUrl));
+                    var decks = MTGODecklistParser.Data.DeckLoader.GetDecks(tournament.Uri);
 
                     // Destination for test class
-                    string testOutputFile = Path.Combine(new DirectoryInfo(@"..\..\..\..\").FullName, "MTGOArchetypeParser.Tests", $"EventTest_{leagueID}.cs");
+                    string testOutputFolder = Path.Combine(new DirectoryInfo(@"..\..\..\..\").FullName, "MTGOArchetypeParser.Tests", metaID.ToLower());
+                    if (!Directory.Exists(testOutputFolder)) Directory.CreateDirectory(testOutputFolder);
+
+                    string testOutputFile = Path.Combine(testOutputFolder, $"EventTest_{leagueID}.cs");
                     if (File.Exists(testOutputFile)) File.Delete(testOutputFile);
 
                     StringBuilder testData = new StringBuilder();
@@ -80,6 +90,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
                         string sampleDataFile = Path.Combine(sampleDataOutputFolder, $"{deckID}.cs");
 
                         string sampleDataContents = _sampleDataTemplate
+                            .Replace("META_NAME", metaName)
+                            .Replace("META_ID", metaID)
                             .Replace("LEAGUE_ID", leagueID)
                             .Replace("DECK_ID", deckID)
                             .Replace("MAINBOARD_CARDS", String.Join($",{Environment.NewLine}{new string(' ', 12)}", decks[i].Mainboard.Select(c => $"new SampleCard({c.Count}, \"{c.CardName}\")")))
@@ -88,6 +100,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
                         File.WriteAllText(sampleDataFile, sampleDataContents);
 
                         string testContents = _testTemplate
+                            .Replace("META_NAME", metaName)
+                            .Replace("META_ID", metaID)
                             .Replace("LEAGUE_ID", leagueID)
                             .Replace("DECK_ID", deckID)
                             .Replace("COLOR_ID", colorID)
@@ -102,6 +116,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
 
                     // Generating test class
                     string testFileContents = _testClassTemplate
+                            .Replace("META_NAME", metaName)
+                            .Replace("META_ID", metaID)
                             .Replace("LEAGUE_ID", leagueID)
                             .Replace("TEST_DATA", testData.ToString());
 
@@ -116,7 +132,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
 
         static string _sampleDataTemplate = @"using MTGOArchetypeParser.Tests.SampleData;
 
-namespace MTGOArchetypeParser.Tests.SampleData.LEAGUE_ID
+namespace MTGOArchetypeParser.Tests.SampleData.META_ID.LEAGUE_ID
 {
     public class DECK_ID : ISampleDeck
     {
@@ -135,7 +151,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.LEAGUE_ID
         public void DECK_ID()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.LEAGUE_ID.DECK_ID(),
+                new MTGOArchetypeParser.Tests.SampleData.META_ID.LEAGUE_ID.DECK_ID(),
+                new MTGOArchetypeParser.Metas.Modern.META_NAME(),
                 ArchetypeColor.COLOR_ID,
                 ARCHETYPE_ID,
                 VARIANT_ID,
@@ -151,7 +168,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MTGOArchetypeParser.Tests
+namespace MTGOArchetypeParser.Tests.META_ID
 {
     public class EventTest_LEAGUE_ID : EventTest
     {

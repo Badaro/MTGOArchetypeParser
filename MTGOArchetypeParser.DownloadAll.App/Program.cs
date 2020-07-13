@@ -24,7 +24,8 @@ namespace MTGOArchetypeParser.DownloadAll.App
                 foreach (var tournament in tournaments)
                 {
                     Console.WriteLine($"Downloading {tournament.Uri}");
-                    string metaID = tournament.Date < new DateTime(2020, 06, 26, 00, 00, 00, DateTimeKind.Utc) ? "Post Companion Nerf" : "Post M21";
+
+                    string metaID = Metas.Modern.Loader.GetMetas().Last(m => m.StartDate <= tournament.Date).GetType().Name;
 
                     var decks = MTGODecklistParser.Data.DeckLoader.GetDecks(tournament.Uri);
 

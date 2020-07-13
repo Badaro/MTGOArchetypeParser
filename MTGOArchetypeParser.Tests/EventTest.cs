@@ -13,7 +13,7 @@ namespace MTGOArchetypeParser.Tests
     public class EventTest
     {
 
-        protected void Test(ISampleDeck deck, ArchetypeColor? expectedColor, Type expectedArchetype, Type expectedVariant = null, ArchetypeCompanion? expectedCompanion = null)
+        protected void Test(ISampleDeck deck, ArchetypeMeta meta, ArchetypeColor expectedColor, Type expectedArchetype, Type expectedVariant = null, ArchetypeCompanion? expectedCompanion = null)
         {
             var result = ArchetypeAnalyzer.Detect(deck.Mainboard.Select(c => c.Name).ToArray(), deck.Sideboard.Select(c => c.Name).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
 
