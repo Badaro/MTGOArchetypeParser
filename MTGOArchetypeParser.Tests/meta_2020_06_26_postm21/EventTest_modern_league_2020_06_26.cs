@@ -63,13 +63,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck05_koji1130_Prowess_WR_Jegantha()
+        public void Deck05_koji1130_RedDeckWins_WR_Jegantha()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_26.Deck05_koji1130_Prowess_WR_Jegantha(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_26.Deck05_koji1130_RedDeckWins_WR_Jegantha(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.WR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.RedDeckWins),
                 null,
                 ArchetypeCompanion.Jegantha
             );
@@ -271,14 +271,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck21_RockStar_Prowess_BR()
+        public void Deck21_RockStar_Prowess_RakdosProwess_BR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_26.Deck21_RockStar_Prowess_BR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_26.Deck21_RockStar_Prowess_RakdosProwess_BR(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.BR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosProwess),
                 null
             );
         }

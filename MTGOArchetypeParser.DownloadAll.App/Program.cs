@@ -19,7 +19,7 @@ namespace MTGOArchetypeParser.DownloadAll.App
 
                 // Destination CSV output
                 StringBuilder csvData = new StringBuilder();
-                csvData.AppendLine($"EVENT,META,DATE,PLAYER,URL,ARCHETYPE,VARIANT,CONSOLIDATED,COLOR,COMPANION");
+                csvData.AppendLine($"EVENT,META,DATE,PLAYER,URL,ARCHETYPE,VARIANT,COLOR,COMPANION");
 
                 foreach (var tournament in tournaments)
                 {
@@ -50,7 +50,7 @@ namespace MTGOArchetypeParser.DownloadAll.App
 
                         string consolidatedID = String.IsNullOrEmpty(variantID) ? archetypeID : variantID;
 
-                        csvData.AppendLine($"{tournament.Name},{metaID},{tournament.Date.ToString("yyyy-MM-dd")},{decks[i].Player},{decks[i].AnchorUri},{archetypeID},{variantID},{consolidatedID},{colorID},{companionID}");
+                        csvData.AppendLine($"{tournament.Name},{metaID},{tournament.Date.ToString("yyyy-MM-dd")},{decks[i].Player},{decks[i].AnchorUri},{archetypeID},{consolidatedID},{colorID},{companionID}");
                     }
 
                     File.WriteAllText($"mtgo_data_{tournaments.Max(t => t.Date).ToString("yyyy_MM_dd")}.csv", csvData.ToString());

@@ -20,7 +20,9 @@ namespace MTGOArchetypeParser.Tests
             result.Matches.Should().HaveCount(1);
 
             result.Color.Should().Be(expectedColor);
-            result.Matches.First().Archetype.Should().BeOfType(expectedArchetype);
+
+            if (expectedArchetype != null) result.Matches.First().Archetype.Should().BeOfType(expectedArchetype); 
+            else throw new Exception($"Archetype not specified, detection returned {result.Matches.First().Archetype.GetType().Name}");
 
             if (expectedVariant != null) result.Matches.First().Variant.Should().BeOfType(expectedVariant);
             else result.Matches.First().Variant.Should().BeNull();

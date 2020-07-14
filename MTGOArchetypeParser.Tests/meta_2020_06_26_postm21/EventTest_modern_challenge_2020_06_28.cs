@@ -375,14 +375,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck29_jessysamek_Prowess_BR()
+        public void Deck29_jessysamek_Prowess_RakdosProwess_BR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_challenge_2020_06_28.Deck29_jessysamek_Prowess_BR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_challenge_2020_06_28.Deck29_jessysamek_Prowess_RakdosProwess_BR(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.BR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosProwess),
                 null
             );
         }

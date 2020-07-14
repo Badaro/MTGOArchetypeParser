@@ -154,13 +154,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck12_MHayashi_Prowess_R_Jegantha()
+        public void Deck12_MHayashi_RedDeckWins_R_Jegantha()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_03.Deck12_MHayashi_Prowess_R_Jegantha(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_03.Deck12_MHayashi_RedDeckWins_R_Jegantha(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.R,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.RedDeckWins),
                 null,
                 ArchetypeCompanion.Jegantha
             );
@@ -219,14 +219,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck17_npercario_ElectroBalance_UR()
+        public void Deck17_npercario_IzzetRhinos_ElectroBalance_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_03.Deck17_npercario_ElectroBalance_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_03.Deck17_npercario_IzzetRhinos_ElectroBalance_UR(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.UR,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetRhinos),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ElectroBalance),
-                null,
                 null
             );
         }

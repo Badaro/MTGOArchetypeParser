@@ -154,13 +154,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck12_gazmon48_Prowess_R_Jegantha()
+        public void Deck12_gazmon48_RedDeckWins_R_Jegantha()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_challenge_2020_07_06.Deck12_gazmon48_Prowess_R_Jegantha(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_challenge_2020_07_06.Deck12_gazmon48_RedDeckWins_R_Jegantha(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.R,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.RedDeckWins),
                 null,
                 ArchetypeCompanion.Jegantha
             );

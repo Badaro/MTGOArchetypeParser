@@ -180,13 +180,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck14_DoniDominaria_Prowess_R_Jegantha()
+        public void Deck14_DoniDominaria_RedDeckWins_R_Jegantha()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_11.Deck14_DoniDominaria_Prowess_R_Jegantha(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_11.Deck14_DoniDominaria_RedDeckWins_R_Jegantha(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.R,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.RedDeckWins),
                 null,
                 ArchetypeCompanion.Jegantha
             );

@@ -14,11 +14,11 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Llanowar Elves" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Elvish Archdruid" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Elvish Clancaller" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Ezuri, Renegade Leader" } },
             };
             Variants = new ArchetypeVariant[]
             {
-                new GolgariElves()
+                new GolgariElves(),
+                new ComboElves()
             };
         }
     }
@@ -29,8 +29,20 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Shaman of the Pack" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Shaman of the Pack" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Ezuri, Renegade Leader" } }
             };
+        }
+    }
+
+    public class ComboElves : ArchetypeVariant
+    {
+        public ComboElves()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Beast Whisperer" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Craterhoof Behemoth" } }            };
         }
     }
 }

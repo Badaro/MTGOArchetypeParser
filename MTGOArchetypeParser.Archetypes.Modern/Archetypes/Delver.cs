@@ -40,7 +40,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Tarmogoyf", "Hooting Mandrills" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Tarmogoyf", "Hooting Mandrills", "Jolrael, Mwonvuli Recluse" } }
             };
         }
     }

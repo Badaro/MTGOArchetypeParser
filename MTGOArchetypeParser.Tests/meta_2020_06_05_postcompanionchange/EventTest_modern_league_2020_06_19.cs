@@ -206,14 +206,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck16_ChaoticCamel_Prowess_BR_Lurrus()
+        public void Deck16_ChaoticCamel_Prowess_RakdosProwess_BR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_19.Deck16_ChaoticCamel_Prowess_BR_Lurrus(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_19.Deck16_ChaoticCamel_Prowess_RakdosProwess_BR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.BR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosProwess),
                 ArchetypeCompanion.Lurrus
             );
         }
