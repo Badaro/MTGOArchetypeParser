@@ -173,7 +173,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_06.Deck13_DoomedNecromancer_AbzanBlade_WBG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.WBG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.AbzanBlade),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.AbzanStoneblade),
                 null,
                 null
             );

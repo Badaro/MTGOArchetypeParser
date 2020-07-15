@@ -24,27 +24,23 @@ namespace MTGOArchetypeParser.App
 
                         int position = i + 1;
                         string player = decks[i].Player;
-                        string status;
                         string name;
                         string colors = result.Color.ToString();
                         string companion = result.Companion.HasValue ? result.Companion.ToString() : "None";
                         if (result.Matches.Length == 0)
                         {
-                            status = "NoMatch";
                             name = "Unknown";
                         }
                         else
                         {
                             if (result.Matches.Length == 1)
                             {
-                                status = "Match";
                                 name = result.Matches[0].Archetype.GetType().Name;
 
                                 if (result.Matches[0].Variant != null) name = $"{result.Matches[0].Variant.GetType().Name}";
                             }
                             else
                             {
-                                status = "Conflict";
                                 name = String.Join(",", result.Matches.Select(m => m.Archetype.GetType().Name));
                             }
                         }
