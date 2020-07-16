@@ -15,6 +15,7 @@ namespace MTGOArchetypeParser.Model
         TwoOrMoreInMainboard,
         TwoOrMoreInSideboard,
         TwoOrMoreInMainOrSideboard,
-        DoesNotContain
+        DoesNotContain,
+        DoesNotContainAll,
     }
 }

@@ -188,6 +188,35 @@ namespace MTGOArchetypeParser.Tests
                new string[] { "Card 1", "Card 3" });
         }
 
+        [Test]
+        public void DoesNotContainAll()
+        {
+            DetectionSuccess(ArchetypeConditionType.DoesNotContainAll,
+               new string[] { "Card 1", "Card 2" },
+               new string[] { "Card 1" },
+               new string[] { });
+
+            DetectionSuccess(ArchetypeConditionType.DoesNotContainAll,
+               new string[] { "Card 1", "Card 2" },
+               new string[] { "Card 2" },
+               new string[] { });
+
+            DetectionFailure(ArchetypeConditionType.DoesNotContainAll,
+               new string[] { "Card 1", "Card 2" },
+               new string[] { "Card 1", "Card 2" },
+               new string[] { });
+
+            DetectionFailure(ArchetypeConditionType.DoesNotContainAll,
+               new string[] { "Card 1", "Card 2" },
+               new string[] { },
+               new string[] { "Card 1", "Card 2" });
+
+            DetectionFailure(ArchetypeConditionType.DoesNotContainAll,
+               new string[] { "Card 1", "Card 2" },
+               new string[] { "Card 1" },
+               new string[] { "Card 2" });
+        }
+
         private void DetectionSuccess(ArchetypeConditionType condition, string[] archetypeCards, string[] testMainboard, string[] testSideboard)
         {
             var archetype = new Archetype()

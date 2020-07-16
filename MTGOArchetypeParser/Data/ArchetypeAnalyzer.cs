@@ -116,6 +116,9 @@ namespace MTGOArchetypeParser.Data
                     case ArchetypeConditionType.DoesNotContain:
                         if (mainboardCards.Any(c => c == condition.Cards[0]) || sideboardCards.Any(c => c == condition.Cards[0])) return false;
                         break;
+                    case ArchetypeConditionType.DoesNotContainAll:
+                        if (mainboardCards.Concat(sideboardCards).Distinct().Where(c => condition.Cards.Contains(c)).Count() == condition.Cards.Length) return false;
+                        break;
                     case ArchetypeConditionType.TwoOrMoreInMainboard:
                         if (mainboardCards.Where(c => condition.Cards.Contains(c)).Count() < 2) return false;
                         break;
