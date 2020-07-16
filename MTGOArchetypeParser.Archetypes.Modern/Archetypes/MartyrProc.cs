@@ -14,7 +14,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Proclamation of Rebirth" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Martyr of Sands" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Squadron Hawk" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Wrath of God", "Day of Judgment" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Wrath of God", "Day of Judgment" } }
             };
         }
     }

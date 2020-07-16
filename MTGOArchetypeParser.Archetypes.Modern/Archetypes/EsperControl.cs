@@ -15,7 +15,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Fatal Push" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Inquisition of Kozilek" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Jace, the Mind Sculptor" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Teferi, Time Raveler", "Teferi, Hero of Dominaria" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Teferi, Time Raveler", "Teferi, Hero of Dominaria" } }
             };
         }
     }

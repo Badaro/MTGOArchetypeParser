@@ -1,8 +1,8 @@
 using MTGOArchetypeParser.Tests.SampleData;
 
-namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_06
+namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_09
 {
-    public class Deck13_DoomedNecromancer_AbzanBlade_WBG : ISampleDeck
+    public class Deck54_DoomedNecromancer_AbzanStoneblade_WBG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
@@ -36,13 +36,13 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
         { 
             new SampleCard(2, "Choke"),
             new SampleCard(1, "Damnation"),
-            new SampleCard(1, "Eidolon of Rhetoric"),
-            new SampleCard(2, "Fracturing Gust"),
+            new SampleCard(2, "Eidolon of Rhetoric"),
+            new SampleCard(1, "Elspeth, Sun's Champion"),
+            new SampleCard(1, "Fracturing Gust"),
             new SampleCard(2, "Gaddock Teeg"),
             new SampleCard(2, "Kor Firewalker"),
-            new SampleCard(2, "Plague Engineer"),
             new SampleCard(2, "Rest in Peace"),
-            new SampleCard(1, "Wrath of God") 
+            new SampleCard(2, "Stony Silence") 
         };
     }
 }

@@ -13,7 +13,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Death's Shadow" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Thoughtseize" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Street Wraith", "Dismember", "Mutagenic Growth" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Street Wraith", "Dismember", "Mutagenic Growth" } },
             };
             Variants = new ArchetypeVariant[]
             {

@@ -14,8 +14,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Cryptic Command" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Path to Exile" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Jace, the Mind Sculptor" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Celestial Colonnade", "Entreat the Angels" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Teferi, Time Raveler", "Teferi, Hero of Dominaria" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Celestial Colonnade", "Entreat the Angels" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Teferi, Time Raveler", "Teferi, Hero of Dominaria" } }
             };
             Variants = new ArchetypeVariant[]
             {

@@ -12,7 +12,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Emrakul, the Aeons Torn" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Polymorph", "Indomitable Creativity" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Polymorph", "Indomitable Creativity" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Dwarven Mine" } }
             };
         }

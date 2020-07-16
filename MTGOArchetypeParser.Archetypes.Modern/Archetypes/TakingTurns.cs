@@ -12,7 +12,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Time Warp" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Temporal Mastery", "Savor the Moment", "Exhaustion" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Temporal Mastery", "Savor the Moment", "Exhaustion" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Cryptic Command" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Ice-Fang Coatl" } }
             };

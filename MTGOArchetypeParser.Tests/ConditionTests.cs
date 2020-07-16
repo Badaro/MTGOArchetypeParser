@@ -97,13 +97,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void OneOfInMainboard()
+        public void OneOrMoreInMainboard()
         {
             var archetype = new Archetype()
             {
                 Conditions = new ArchetypeCondition[]
                 {
-                    new ArchetypeCondition() { Type= ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Card 1", "Card 2" } }
+                    new ArchetypeCondition() { Type= ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Card 1", "Card 2" } }
                 }
             };
 
@@ -134,13 +134,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void OneOfInSideboard()
+        public void OneOrMoreInSideboard()
         {
             var archetype = new Archetype()
             {
                 Conditions = new ArchetypeCondition[]
                 {
-                    new ArchetypeCondition() { Type= ArchetypeConditionType.OneOfInSideboard, Cards = new string[] { "Card 1", "Card 2" } }
+                    new ArchetypeCondition() { Type= ArchetypeConditionType.OneOrMoreInSideboard, Cards = new string[] { "Card 1", "Card 2" } }
                 }
             };
 
@@ -170,13 +170,13 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void OneOfInMainOrSideboard()
+        public void OneOrMoreInMainOrSideboard()
         {
             var archetype = new Archetype()
             {
                 Conditions = new ArchetypeCondition[]
                 {
-                    new ArchetypeCondition() { Type= ArchetypeConditionType.OneOfInMainOrSideboard, Cards = new string[] { "Card 1", "Card 2" } }
+                    new ArchetypeCondition() { Type= ArchetypeConditionType.OneOrMoreInMainOrSideboard, Cards = new string[] { "Card 1", "Card 2" } }
                 }
             };
 
@@ -227,6 +227,192 @@ namespace MTGOArchetypeParser.Tests
             result.Matches.Should().HaveCount(1);
             result.Matches.First().Archetype.Should().Be(archetype);
             result.Matches.First().Variant.Should().BeNull();
+        }
+
+
+        [Test]
+        public void TwoOrMoreInMainboard()
+        {
+            var archetype = new Archetype()
+            {
+                Conditions = new ArchetypeCondition[]
+                {
+                    new ArchetypeCondition() { Type= ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Card 1", "Card 2", "Card 3", "Card 4" } }
+                }
+            };
+
+            var result = ArchetypeAnalyzer.Detect(
+                new string[] { "Card 1", "Card 5" },
+                new string[] { },
+                new Archetype[]
+                {
+                    archetype
+                });
+
+            result.Matches.Should().HaveCount(0);
+
+            result = ArchetypeAnalyzer.Detect(
+                new string[] { "Card 1", "Card 3" },
+                new string[] { },
+                new Archetype[]
+                {
+                    archetype
+                });
+
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
+
+            result = ArchetypeAnalyzer.Detect(
+                new string[] { "Card 2", "Card 3" },
+                new string[] { },
+                new Archetype[]
+                {
+                    archetype
+                });
+
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
+
+        }
+
+        [Test]
+        public void TwoOrMoreInSideboard()
+        {
+            var archetype = new Archetype()
+            {
+                Conditions = new ArchetypeCondition[]
+                {
+                    new ArchetypeCondition() { Type= ArchetypeConditionType.TwoOrMoreInSideboard, Cards = new string[] { "Card 1", "Card 2", "Card 4", "Card 3" } }
+                }
+            };
+
+            var result = ArchetypeAnalyzer.Detect(
+            new string[] { },
+            new string[] { "Card 1", "Card 6" },
+            new Archetype[]
+            {
+                archetype
+            });
+
+            result.Matches.Should().HaveCount(0);
+
+            result = ArchetypeAnalyzer.Detect(
+                new string[] { },
+                new string[] { "Card 1", "Card 3" },
+                new Archetype[]
+                {
+                    archetype
+                });
+
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
+
+            result = ArchetypeAnalyzer.Detect(
+                new string[] { },
+                new string[] { "Card 2", "Card 3" },
+                new Archetype[]
+                {
+                    archetype
+                });
+
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
+        }
+
+        [Test]
+        public void TwoOrMoreInMainOrSideboard()
+        {
+            var archetype = new Archetype()
+            {
+                Conditions = new ArchetypeCondition[]
+                {
+                    new ArchetypeCondition() { Type= ArchetypeConditionType.TwoOrMoreInMainOrSideboard, Cards = new string[] { "Card 1", "Card 2", "Card 4", "Card 3" } }
+                }
+            };
+
+            var result = ArchetypeAnalyzer.Detect(
+            new string[] { "Card 1", "Card 6" },
+            new string[] { },
+            new Archetype[]
+            {
+                archetype
+            });
+
+            result.Matches.Should().HaveCount(0);
+
+            result = ArchetypeAnalyzer.Detect(
+            new string[] { "Card 1", "Card 3" },
+            new string[] { },
+            new Archetype[]
+            {
+                            archetype
+            });
+
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
+
+            result = ArchetypeAnalyzer.Detect(
+                new string[] { "Card 2", "Card 3" },
+                new string[] { },
+                new Archetype[]
+                {
+                    archetype
+                });
+
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
+
+            result = ArchetypeAnalyzer.Detect(
+                new string[] { },
+                new string[] { "Card 1", "Card 3" },
+                new Archetype[]
+                {
+                    archetype
+                });
+
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
+
+            result = ArchetypeAnalyzer.Detect(
+                new string[] { },
+                new string[] { "Card 2", "Card 3" },
+                new Archetype[]
+                {
+                    archetype
+                });
+
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
+
+            result = ArchetypeAnalyzer.Detect(
+            new string[] { "Card 1", "Card 8" },
+            new string[] { "Card 2", "Card 6" },
+            new Archetype[]
+            {
+                archetype
+            });
+
+            result.Matches.Should().HaveCount(1);
+            result.Matches.First().Archetype.Should().Be(archetype);
+            result.Matches.First().Variant.Should().BeNull();
+
+            result = ArchetypeAnalyzer.Detect(
+            new string[] { "Card 2", "Card 8" },
+            new string[] { "Card 2", "Card 6" },
+            new Archetype[]
+            {
+                archetype
+            });
+
+            result.Matches.Should().HaveCount(0);
         }
 
         [Test]

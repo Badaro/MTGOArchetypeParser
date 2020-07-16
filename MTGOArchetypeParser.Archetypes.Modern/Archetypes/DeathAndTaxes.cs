@@ -12,7 +12,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Leonin Arbiter" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainOrSideboard, Cards = new string[] { "Thalia, Guardian of Thraben", "Spirit of the Labyrinth" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainOrSideboard, Cards = new string[] { "Thalia, Guardian of Thraben", "Spirit of the Labyrinth" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Path to Exile" } }
             };
             Variants = new ArchetypeVariant[]

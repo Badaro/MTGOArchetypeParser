@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Ensnaring Bridge" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Chandra, Torch of Defiance" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Karn, the Great Creator" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Simian Spirit Guide", "Desperate Ritual", "Pyretic Ritual" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Simian Spirit Guide", "Desperate Ritual", "Pyretic Ritual" } }
             };
         }
     }

@@ -11,10 +11,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Monastery Swiftspear", "Delver of Secrets" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Soul-Scar Mage", "Stormwing Entity" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Manamorphose", "Mishra's Bauble" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Lava Dart", "Gut Shot" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Monastery Swiftspear", "Soul-Scar Mage", "Stormwing Entity", "Delver of Secrets" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Manamorphose", "Mishra's Bauble", "Lava Dart", "Gut Shot" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Lightning Bolt" } },
             };
             Variants = new ArchetypeVariant[]

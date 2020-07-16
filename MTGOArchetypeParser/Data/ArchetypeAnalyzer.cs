@@ -104,17 +104,26 @@ namespace MTGOArchetypeParser.Data
                     case ArchetypeConditionType.InMainOrSideboard:
                         if (!mainboardCards.Any(c => c == condition.Cards[0]) && !sideboardCards.Any(c => c == condition.Cards[0])) return false;
                         break;
-                    case ArchetypeConditionType.OneOfInMainboard:
+                    case ArchetypeConditionType.OneOrMoreInMainboard:
                         if (!mainboardCards.Any(c => condition.Cards.Contains(c))) return false;
                         break;
-                    case ArchetypeConditionType.OneOfInSideboard:
+                    case ArchetypeConditionType.OneOrMoreInSideboard:
                         if (!sideboardCards.Any(c => condition.Cards.Contains(c))) return false;
                         break;
-                    case ArchetypeConditionType.OneOfInMainOrSideboard:
+                    case ArchetypeConditionType.OneOrMoreInMainOrSideboard:
                         if (!mainboardCards.Any(c => condition.Cards.Contains(c)) && !sideboardCards.Any(c => condition.Cards.Contains(c))) return false;
                         break;
                     case ArchetypeConditionType.DoesNotContain:
                         if (mainboardCards.Any(c => c == condition.Cards[0]) || sideboardCards.Any(c => c == condition.Cards[0])) return false;
+                        break;
+                    case ArchetypeConditionType.TwoOrMoreInMainboard:
+                        if (mainboardCards.Where(c => condition.Cards.Contains(c)).Count() < 2) return false;
+                        break;
+                    case ArchetypeConditionType.TwoOrMoreInSideboard:
+                        if (sideboardCards.Where(c => condition.Cards.Contains(c)).Count() < 2) return false;
+                        break;
+                    case ArchetypeConditionType.TwoOrMoreInMainOrSideboard:
+                        if (mainboardCards.Concat(sideboardCards).Distinct().Where(c => condition.Cards.Contains(c)).Count() < 2) return false;
                         break;
                     default:
                         throw new NotImplementedException();

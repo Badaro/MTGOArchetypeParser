@@ -7,11 +7,14 @@ namespace MTGOArchetypeParser.Model
     public enum ArchetypeConditionType
     {
         InMainboard,
-        OneOfInMainboard,
         InSideboard,
-        OneOfInSideboard,
         InMainOrSideboard,
-        OneOfInMainOrSideboard,
+        OneOrMoreInMainboard,
+        OneOrMoreInSideboard,
+        OneOrMoreInMainOrSideboard,
+        TwoOrMoreInMainboard,
+        TwoOrMoreInSideboard,
+        TwoOrMoreInMainOrSideboard,
         DoesNotContain
     }
 }

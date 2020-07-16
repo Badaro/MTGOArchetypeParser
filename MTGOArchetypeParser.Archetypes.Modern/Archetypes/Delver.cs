@@ -13,7 +13,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Delver of Secrets" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Lightning Bolt" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Remand", "Mana Leak", "Force of Negation" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Remand", "Mana Leak", "Force of Negation" } }
             };
             Variants = new ArchetypeVariant[]
             {
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Thoughtseize", "Inquisition of Kozilek" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Thoughtseize", "Inquisition of Kozilek" } }
             };
         }
     }
@@ -40,7 +40,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainboard, Cards = new string[] { "Tarmogoyf", "Hooting Mandrills", "Jolrael, Mwonvuli Recluse" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Tarmogoyf", "Hooting Mandrills", "Jolrael, Mwonvuli Recluse" } }
             };
         }
     }

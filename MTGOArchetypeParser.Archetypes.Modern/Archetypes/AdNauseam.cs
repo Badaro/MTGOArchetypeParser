@@ -11,7 +11,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOfInMainOrSideboard, Cards = new string[] { "Ad Nauseam", "Spoils of the Vault" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainOrSideboard, Cards = new string[] { "Ad Nauseam", "Spoils of the Vault" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Angel's Grace" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Phyrexian Unlife" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Pentad Prism" } }
