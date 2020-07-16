@@ -15,446 +15,219 @@ namespace MTGOArchetypeParser.Tests
         [Test]
         public void InMainboard()
         {
-            var archetype = new Archetype()
-            {
-                Conditions = new ArchetypeCondition[]
-                {
-                    new ArchetypeCondition() { Type= ArchetypeConditionType.InMainboard, Cards = new string[] { "Card 1" } }
-                }
-            };
-
-            var result = ArchetypeAnalyzer.Detect(
+            DetectionSuccess(ArchetypeConditionType.InMainboard,
+                new string[] { "Card 1" },
                 new string[] { "Card 1", "Card 2" },
-                new string[] { },
-                new Archetype[]
-                {
-                    archetype
-                });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
+                new string[] { });
         }
 
         [Test]
         public void InSideboard()
         {
-            var archetype = new Archetype()
-            {
-                Conditions = new ArchetypeCondition[]
-                {
-                    new ArchetypeCondition() { Type= ArchetypeConditionType.InSideboard, Cards = new string[] { "Card 1" } }
-                }
-            };
-
-            var result = ArchetypeAnalyzer.Detect(
+            DetectionSuccess(ArchetypeConditionType.InSideboard,
+                new string[] { "Card 1" },
                 new string[] { },
-                new string[] { "Card 1", "Card 2" },
-                new Archetype[]
-                {
-                    archetype
-                });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
+                new string[] { "Card 1", "Card 2" });
         }
 
         [Test]
         public void InMainOrSideboard()
         {
-            var archetype = new Archetype()
-            {
-                Conditions = new ArchetypeCondition[]
-                {
-                    new ArchetypeCondition() { Type= ArchetypeConditionType.InMainOrSideboard, Cards = new string[] { "Card 1" } }
-                }
-            };
-
-            var result = ArchetypeAnalyzer.Detect(
-            new string[] { "Card 1", "Card 2" },
-            new string[] { },
-            new Archetype[]
-            {
-                archetype
-            });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
-
-            result = ArchetypeAnalyzer.Detect(
-                new string[] { },
+            DetectionSuccess(ArchetypeConditionType.InMainOrSideboard,
+                new string[] { "Card 1" },
                 new string[] { "Card 1", "Card 2" },
-                new Archetype[]
-                {
-                    archetype
-                });
+                new string[] { });
 
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
+            DetectionSuccess(ArchetypeConditionType.InMainOrSideboard,
+                new string[] { "Card 1" },
+                new string[] { },
+                new string[] { "Card 1", "Card 2" });
         }
 
         [Test]
         public void OneOrMoreInMainboard()
         {
-            var archetype = new Archetype()
-            {
-                Conditions = new ArchetypeCondition[]
-                {
-                    new ArchetypeCondition() { Type= ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Card 1", "Card 2" } }
-                }
-            };
-
-            var result = ArchetypeAnalyzer.Detect(
+            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainboard,
+                new string[] { "Card 1", "Card 2" },
                 new string[] { "Card 1", "Card 3" },
-                new string[] { },
-                new Archetype[]
-                {
-                    archetype
-                });
+                new string[] { });
 
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
-
-            result = ArchetypeAnalyzer.Detect(
+            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainboard,
+                new string[] { "Card 1", "Card 2" },
                 new string[] { "Card 2", "Card 3" },
-                new string[] { },
-                new Archetype[]
-                {
-                    archetype
-                });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
-
+                new string[] { });
         }
 
         [Test]
         public void OneOrMoreInSideboard()
         {
-            var archetype = new Archetype()
-            {
-                Conditions = new ArchetypeCondition[]
-                {
-                    new ArchetypeCondition() { Type= ArchetypeConditionType.OneOrMoreInSideboard, Cards = new string[] { "Card 1", "Card 2" } }
-                }
-            };
-
-            var result = ArchetypeAnalyzer.Detect(
+            DetectionSuccess(ArchetypeConditionType.OneOrMoreInSideboard,
+                new string[] { "Card 1", "Card 2" },
                 new string[] { },
-                new string[] { "Card 1", "Card 3" },
-                new Archetype[]
-                {
-                    archetype
-                });
+                new string[] { "Card 1", "Card 3" });
 
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
-
-            result = ArchetypeAnalyzer.Detect(
+            DetectionSuccess(ArchetypeConditionType.OneOrMoreInSideboard,
+                new string[] { "Card 1", "Card 2" },
                 new string[] { },
-                new string[] { "Card 2", "Card 3" },
-                new Archetype[]
-                {
-                    archetype
-                });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
+                new string[] { "Card 2", "Card 3" });
         }
 
         [Test]
         public void OneOrMoreInMainOrSideboard()
         {
-            var archetype = new Archetype()
-            {
-                Conditions = new ArchetypeCondition[]
-                {
-                    new ArchetypeCondition() { Type= ArchetypeConditionType.OneOrMoreInMainOrSideboard, Cards = new string[] { "Card 1", "Card 2" } }
-                }
-            };
+            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainOrSideboard,
+               new string[] { "Card 1", "Card 2" },
+               new string[] { "Card 1", "Card 3" },
+               new string[] { });
 
-            var result = ArchetypeAnalyzer.Detect(
-            new string[] { "Card 1", "Card 3" },
-            new string[] { },
-            new Archetype[]
-            {
-                            archetype
-            });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
-
-            result = ArchetypeAnalyzer.Detect(
+            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainOrSideboard,
+                new string[] { "Card 1", "Card 2" },
                 new string[] { "Card 2", "Card 3" },
+                new string[] { });
+
+            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainOrSideboard,
+                new string[] { "Card 1", "Card 2" },
                 new string[] { },
-                new Archetype[]
-                {
-                    archetype
-                });
+                new string[] { "Card 1", "Card 3" });
 
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
-
-            result = ArchetypeAnalyzer.Detect(
+            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainOrSideboard,
+                new string[] { "Card 1", "Card 2" },
                 new string[] { },
-                new string[] { "Card 1", "Card 3" },
-                new Archetype[]
-                {
-                    archetype
-                });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
-
-            result = ArchetypeAnalyzer.Detect(
-                new string[] { },
-                new string[] { "Card 2", "Card 3" },
-                new Archetype[]
-                {
-                    archetype
-                });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
+                new string[] { "Card 2", "Card 3" });
         }
 
 
         [Test]
         public void TwoOrMoreInMainboard()
         {
-            var archetype = new Archetype()
-            {
-                Conditions = new ArchetypeCondition[]
-                {
-                    new ArchetypeCondition() { Type= ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Card 1", "Card 2", "Card 3", "Card 4" } }
-                }
-            };
+            DetectionFailure(ArchetypeConditionType.TwoOrMoreInMainboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { "Card 1", "Card 5" },
+               new string[] { });
 
-            var result = ArchetypeAnalyzer.Detect(
-                new string[] { "Card 1", "Card 5" },
-                new string[] { },
-                new Archetype[]
-                {
-                    archetype
-                });
+            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { "Card 1", "Card 3" },
+               new string[] { });
 
-            result.Matches.Should().HaveCount(0);
-
-            result = ArchetypeAnalyzer.Detect(
-                new string[] { "Card 1", "Card 3" },
-                new string[] { },
-                new Archetype[]
-                {
-                    archetype
-                });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
-
-            result = ArchetypeAnalyzer.Detect(
-                new string[] { "Card 2", "Card 3" },
-                new string[] { },
-                new Archetype[]
-                {
-                    archetype
-                });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
-
+            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { "Card 2", "Card 3" },
+               new string[] { });
         }
 
         [Test]
         public void TwoOrMoreInSideboard()
         {
-            var archetype = new Archetype()
-            {
-                Conditions = new ArchetypeCondition[]
-                {
-                    new ArchetypeCondition() { Type= ArchetypeConditionType.TwoOrMoreInSideboard, Cards = new string[] { "Card 1", "Card 2", "Card 4", "Card 3" } }
-                }
-            };
+            DetectionFailure(ArchetypeConditionType.TwoOrMoreInSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { },
+               new string[] { "Card 1", "Card 5" });
 
-            var result = ArchetypeAnalyzer.Detect(
-            new string[] { },
-            new string[] { "Card 1", "Card 6" },
-            new Archetype[]
-            {
-                archetype
-            });
+            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { },
+               new string[] { "Card 1", "Card 3" });
 
-            result.Matches.Should().HaveCount(0);
-
-            result = ArchetypeAnalyzer.Detect(
-                new string[] { },
-                new string[] { "Card 1", "Card 3" },
-                new Archetype[]
-                {
-                    archetype
-                });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
-
-            result = ArchetypeAnalyzer.Detect(
-                new string[] { },
-                new string[] { "Card 2", "Card 3" },
-                new Archetype[]
-                {
-                    archetype
-                });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
+            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { },
+               new string[] { "Card 2", "Card 3" });
         }
 
         [Test]
         public void TwoOrMoreInMainOrSideboard()
         {
-            var archetype = new Archetype()
-            {
-                Conditions = new ArchetypeCondition[]
-                {
-                    new ArchetypeCondition() { Type= ArchetypeConditionType.TwoOrMoreInMainOrSideboard, Cards = new string[] { "Card 1", "Card 2", "Card 4", "Card 3" } }
-                }
-            };
+            DetectionFailure(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { "Card 1", "Card 5" },
+               new string[] { });
 
-            var result = ArchetypeAnalyzer.Detect(
-            new string[] { "Card 1", "Card 6" },
-            new string[] { },
-            new Archetype[]
-            {
-                archetype
-            });
+            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { "Card 1", "Card 3" },
+               new string[] { });
 
-            result.Matches.Should().HaveCount(0);
+            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { "Card 2", "Card 3" },
+               new string[] { });
 
-            result = ArchetypeAnalyzer.Detect(
-            new string[] { "Card 1", "Card 3" },
-            new string[] { },
-            new Archetype[]
-            {
-                            archetype
-            });
+            DetectionFailure(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { },
+               new string[] { "Card 1", "Card 5" });
 
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
+            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { },
+               new string[] { "Card 1", "Card 3" });
 
-            result = ArchetypeAnalyzer.Detect(
-                new string[] { "Card 2", "Card 3" },
-                new string[] { },
-                new Archetype[]
-                {
-                    archetype
-                });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
-
-            result = ArchetypeAnalyzer.Detect(
-                new string[] { },
-                new string[] { "Card 1", "Card 3" },
-                new Archetype[]
-                {
-                    archetype
-                });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
-
-            result = ArchetypeAnalyzer.Detect(
-                new string[] { },
-                new string[] { "Card 2", "Card 3" },
-                new Archetype[]
-                {
-                    archetype
-                });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
-
-            result = ArchetypeAnalyzer.Detect(
-            new string[] { "Card 1", "Card 8" },
-            new string[] { "Card 2", "Card 6" },
-            new Archetype[]
-            {
-                archetype
-            });
-
-            result.Matches.Should().HaveCount(1);
-            result.Matches.First().Archetype.Should().Be(archetype);
-            result.Matches.First().Variant.Should().BeNull();
-
-            result = ArchetypeAnalyzer.Detect(
-            new string[] { "Card 2", "Card 8" },
-            new string[] { "Card 2", "Card 6" },
-            new Archetype[]
-            {
-                archetype
-            });
-
-            result.Matches.Should().HaveCount(0);
+            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { },
+               new string[] { "Card 2", "Card 3" });
         }
 
         [Test]
         public void DoesNotContain()
         {
+            DetectionSuccess(ArchetypeConditionType.DoesNotContain,
+               new string[] { "Card 1" },
+               new string[] { "Card 2", "Card 3" },
+               new string[] { });
+
+            DetectionFailure(ArchetypeConditionType.DoesNotContain,
+               new string[] { "Card 1" },
+               new string[] { "Card 1", "Card 3" },
+               new string[] { });
+
+            DetectionFailure(ArchetypeConditionType.DoesNotContain,
+               new string[] { "Card 1" },
+               new string[] { },
+               new string[] { "Card 1", "Card 3" });
+        }
+
+        private void DetectionSuccess(ArchetypeConditionType condition, string[] archetypeCards, string[] testMainboard, string[] testSideboard)
+        {
             var archetype = new Archetype()
             {
                 Conditions = new ArchetypeCondition[]
                 {
-                    new ArchetypeCondition() { Type= ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Card 1" } }
+                    new ArchetypeCondition() { Type= condition, Cards = archetypeCards }
                 }
             };
 
             var result = ArchetypeAnalyzer.Detect(
-            new string[] { "Card 2", "Card 3" },
-            new string[] { },
-            new Archetype[]
-            {
-                 archetype
-            });
+                testMainboard,
+                testSideboard,
+                new Archetype[]
+                {
+                     archetype
+                });
 
             result.Matches.Should().HaveCount(1);
             result.Matches.First().Archetype.Should().Be(archetype);
             result.Matches.First().Variant.Should().BeNull();
+        }
 
-            result = ArchetypeAnalyzer.Detect(
-            new string[] { "Card 1", "Card 3" },
-            new string[] { },
-            new Archetype[]
+        private void DetectionFailure(ArchetypeConditionType condition, string[] archetypeCards, string[] testMainboard, string[] testSideboard)
+        {
+            var archetype = new Archetype()
             {
-                 archetype
-            });
+                Conditions = new ArchetypeCondition[]
+                {
+                    new ArchetypeCondition() { Type= condition, Cards = archetypeCards }
+                }
+            };
 
-            result.Matches.Should().HaveCount(0);
-
-            result = ArchetypeAnalyzer.Detect(
-            new string[] { },
-            new string[] { "Card 1", "Card 3" },
-            new Archetype[]
-            {
-                 archetype
-            });
+            var result = ArchetypeAnalyzer.Detect(
+                testMainboard,
+                testSideboard,
+                new Archetype[]
+                {
+                     archetype
+                });
 
             result.Matches.Should().HaveCount(0);
         }
