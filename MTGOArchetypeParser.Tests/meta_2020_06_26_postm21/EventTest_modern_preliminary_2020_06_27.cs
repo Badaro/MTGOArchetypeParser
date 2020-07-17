@@ -121,8 +121,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_preliminary_2020_06_27.Deck09_cjucjujp_EightWhack_AtarkaWhack_RG(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.RG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.EightWhack),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.AtarkaWhack),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.BushwhackerZoo),
+                null,
                 null
             );
         }

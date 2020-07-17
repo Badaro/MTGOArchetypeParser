@@ -1,8 +1,7 @@
 {
   "profiles": {
     "MTGOArchetypeParser.Tests.SampleData.App": {
-      "commandName": "Project",
-      "commandLineArgs": "allowupdate"
+      "commandName": "Project"
     }
   }
 }

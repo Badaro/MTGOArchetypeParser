@@ -56,8 +56,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23.Deck04_AlexFromTheNorth_Zoo_BushwhackerZoo_WRG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.WRG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Zoo),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.BushwhackerZoo),
+                null,
                 null
             );
         }
@@ -368,8 +368,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23.Deck28_KAKOLOLO_EightWhack_AtarkaWhack_RG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.EightWhack),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.AtarkaWhack),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.BushwhackerZoo),
+                null,
                 null
             );
         }
@@ -381,8 +381,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23.Deck29_Darthtaneon_EightWhack_AtarkaWhack_RG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.EightWhack),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.AtarkaWhack),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.BushwhackerZoo),
+                null,
                 null
             );
         }
