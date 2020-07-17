@@ -115,10 +115,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck09_cjucjujp_EightWhack_AtarkaWhack_RG()
+        public void Deck09_cjucjujp_BushwhackerZoo_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_preliminary_2020_06_27.Deck09_cjucjujp_EightWhack_AtarkaWhack_RG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_preliminary_2020_06_27.Deck09_cjucjujp_BushwhackerZoo_RG(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.RG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.BushwhackerZoo),

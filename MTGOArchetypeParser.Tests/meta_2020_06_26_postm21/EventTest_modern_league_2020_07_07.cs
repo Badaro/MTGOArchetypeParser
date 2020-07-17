@@ -193,14 +193,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck15_equites_Burn_R()
+        public void Deck15_equites_Burn_IncineratorBurn_R()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_07.Deck15_equites_Burn_R(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_07.Deck15_equites_Burn_IncineratorBurn_R(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.R,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Burn),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IncineratorBurn),
                 null
             );
         }
@@ -557,14 +557,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck43_DoniDominaria_Burn_BR()
+        public void Deck43_DoniDominaria_Burn_IncineratorBurn_BR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_07.Deck43_DoniDominaria_Burn_BR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_07.Deck43_DoniDominaria_Burn_IncineratorBurn_BR(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.BR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Burn),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IncineratorBurn),
                 null
             );
         }

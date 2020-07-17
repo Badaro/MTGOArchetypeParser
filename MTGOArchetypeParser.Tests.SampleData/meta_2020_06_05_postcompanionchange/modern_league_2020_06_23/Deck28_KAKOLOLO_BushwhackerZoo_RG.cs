@@ -1,8 +1,8 @@
 using MTGOArchetypeParser.Tests.SampleData;
 
-namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_16
+namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23
 {
-    public class Deck16_cjucjujp_EightWhack_AtarkaWhack_RG : ISampleDeck
+    public class Deck28_KAKOLOLO_BushwhackerZoo_RG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

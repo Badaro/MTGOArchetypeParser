@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_16
 {
-    public class Deck44_ScreenwriterNY_Zoo_BushwhackerZoo_WRG : ISampleDeck
+    public class Deck44_ScreenwriterNY_BushwhackerZoo_WRG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

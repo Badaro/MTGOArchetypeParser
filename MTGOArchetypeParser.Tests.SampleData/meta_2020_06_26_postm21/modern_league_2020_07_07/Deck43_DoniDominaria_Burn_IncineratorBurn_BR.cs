@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_07
 {
-    public class Deck43_DoniDominaria_Burn_BR : ISampleDeck
+    public class Deck43_DoniDominaria_Burn_IncineratorBurn_BR : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

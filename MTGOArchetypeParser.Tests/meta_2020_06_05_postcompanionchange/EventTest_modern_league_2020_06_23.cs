@@ -50,10 +50,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck04_AlexFromTheNorth_Zoo_BushwhackerZoo_WRG()
+        public void Deck04_AlexFromTheNorth_BushwhackerZoo_WRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23.Deck04_AlexFromTheNorth_Zoo_BushwhackerZoo_WRG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23.Deck04_AlexFromTheNorth_BushwhackerZoo_WRG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.WRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.BushwhackerZoo),
@@ -362,10 +362,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck28_KAKOLOLO_EightWhack_AtarkaWhack_RG()
+        public void Deck28_KAKOLOLO_BushwhackerZoo_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23.Deck28_KAKOLOLO_EightWhack_AtarkaWhack_RG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23.Deck28_KAKOLOLO_BushwhackerZoo_RG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.RG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.BushwhackerZoo),
@@ -375,10 +375,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck29_Darthtaneon_EightWhack_AtarkaWhack_RG()
+        public void Deck29_Darthtaneon_BushwhackerZoo_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23.Deck29_Darthtaneon_EightWhack_AtarkaWhack_RG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23.Deck29_Darthtaneon_BushwhackerZoo_RG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.RG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.BushwhackerZoo),

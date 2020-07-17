@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23
 {
-    public class Deck29_Darthtaneon_EightWhack_AtarkaWhack_RG : ISampleDeck
+    public class Deck29_Darthtaneon_BushwhackerZoo_RG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

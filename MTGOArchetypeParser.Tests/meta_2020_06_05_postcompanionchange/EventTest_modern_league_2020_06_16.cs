@@ -206,10 +206,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck16_cjucjujp_EightWhack_AtarkaWhack_RG()
+        public void Deck16_cjucjujp_BushwhackerZoo_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_16.Deck16_cjucjujp_EightWhack_AtarkaWhack_RG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_16.Deck16_cjucjujp_BushwhackerZoo_RG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.RG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.BushwhackerZoo),
@@ -570,10 +570,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck44_ScreenwriterNY_Zoo_BushwhackerZoo_WRG()
+        public void Deck44_ScreenwriterNY_BushwhackerZoo_WRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_16.Deck44_ScreenwriterNY_Zoo_BushwhackerZoo_WRG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_16.Deck44_ScreenwriterNY_BushwhackerZoo_WRG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.WRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.BushwhackerZoo),

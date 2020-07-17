@@ -63,14 +63,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck05_rastaf_Burn_R()
+        public void Deck05_rastaf_Burn_IncineratorBurn_R()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16.Deck05_rastaf_Burn_R(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16.Deck05_rastaf_Burn_IncineratorBurn_R(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.R,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Burn),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IncineratorBurn),
                 null
             );
         }
@@ -180,14 +180,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck14_Shazzam_Burn_WR()
+        public void Deck14_Shazzam_Burn_IncineratorBurn_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16.Deck14_Shazzam_Burn_WR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16.Deck14_Shazzam_Burn_IncineratorBurn_WR(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Burn),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IncineratorBurn),
                 null
             );
         }

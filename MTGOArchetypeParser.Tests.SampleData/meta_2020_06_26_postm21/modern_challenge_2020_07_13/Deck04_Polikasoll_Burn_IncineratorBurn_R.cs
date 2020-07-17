@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_challenge_2020_07_13
 {
-    public class Deck04_Polikasoll_Burn_R : ISampleDeck
+    public class Deck04_Polikasoll_Burn_IncineratorBurn_R : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

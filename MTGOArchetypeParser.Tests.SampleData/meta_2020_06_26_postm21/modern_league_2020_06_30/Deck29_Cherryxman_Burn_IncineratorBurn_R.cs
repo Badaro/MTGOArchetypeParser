@@ -1,8 +1,8 @@
 using MTGOArchetypeParser.Tests.SampleData;
 
-namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_14
+namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_30
 {
-    public class Deck35_Polikasoll_Burn_R : ISampleDeck
+    public class Deck29_Cherryxman_Burn_IncineratorBurn_R : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
@@ -17,15 +17,14 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_le
             new SampleCard(4, "Lightning Bolt"),
             new SampleCard(3, "Shard Volley"),
             new SampleCard(4, "Seal of Fire"),
-            new SampleCard(4, "Fiery Islet"),
-            new SampleCard(14, "Mountain"),
-            new SampleCard(1, "Sunbaked Canyon") 
+            new SampleCard(15, "Snow-Covered Mountain"),
+            new SampleCard(4, "Sunbaked Canyon") 
         };
         public ISampleCard[] Sideboard => new ISampleCard[] 
         { 
-            new SampleCard(2, "Blood Moon"),
+            new SampleCard(3, "Bonecrusher Giant"),
             new SampleCard(2, "Dragon's Claw"),
-            new SampleCard(4, "Skullcrack"),
+            new SampleCard(3, "Skullcrack"),
             new SampleCard(4, "Smash to Smithereens"),
             new SampleCard(3, "Soul-Guide Lantern") 
         };

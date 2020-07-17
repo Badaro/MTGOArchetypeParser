@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_preliminary_2020_06_27
 {
-    public class Deck09_cjucjujp_EightWhack_AtarkaWhack_RG : ISampleDeck
+    public class Deck09_cjucjujp_BushwhackerZoo_RG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

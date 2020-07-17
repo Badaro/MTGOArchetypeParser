@@ -1,8 +1,8 @@
 using MTGOArchetypeParser.Tests.SampleData;
 
-namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_10
+namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16
 {
-    public class Deck08_Rossello_Burn_WR : ISampleDeck
+    public class Deck14_Shazzam_Burn_IncineratorBurn_WR : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
@@ -28,8 +28,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_le
         public ISampleCard[] Sideboard => new ISampleCard[] 
         { 
             new SampleCard(4, "Kor Firewalker"),
-            new SampleCard(2, "Path to Exile"),
-            new SampleCard(2, "Rest in Peace"),
+            new SampleCard(4, "Rest in Peace"),
             new SampleCard(4, "Skullcrack"),
             new SampleCard(3, "Smash to Smithereens") 
         };

@@ -375,14 +375,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck29_Cherryxman_Burn_R()
+        public void Deck29_Cherryxman_Burn_IncineratorBurn_R()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_30.Deck29_Cherryxman_Burn_R(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_30.Deck29_Cherryxman_Burn_IncineratorBurn_R(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.R,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Burn),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IncineratorBurn),
                 null
             );
         }
@@ -609,14 +609,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck47_MagicRainbows_Burn_R()
+        public void Deck47_MagicRainbows_Burn_IncineratorBurn_R()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_30.Deck47_MagicRainbows_Burn_R(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_30.Deck47_MagicRainbows_Burn_IncineratorBurn_R(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.R,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Burn),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IncineratorBurn),
                 null
             );
         }
