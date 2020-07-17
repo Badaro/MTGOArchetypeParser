@@ -316,7 +316,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_10.Deck24_babamm_IzzetRhinos_ElectroBalance_URG(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.URG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetRhinos),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetFreeSpells),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ElectroBalance),
                 null
             );

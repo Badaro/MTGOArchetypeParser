@@ -212,7 +212,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_09.Deck16_fupalorda_IzzetRhinos_ElectroBalance_URG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetRhinos),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetFreeSpells),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ElectroBalance),
                 null
             );
