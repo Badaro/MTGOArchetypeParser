@@ -96,7 +96,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.WB,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Tokens),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.OrzhovTokens),
                 null
             );
         }

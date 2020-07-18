@@ -11,10 +11,23 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Spectral Procession", "Bitterblossom", "Raise the Alarm", "Lingering Souls" } }
+            };
+            Variants = new ArchetypeVariant[]
+            {
+                new OrzhovTokens()
+            };
+        }
+    }
+
+    public class OrzhovTokens : ArchetypeVariant
+    {
+        public OrzhovTokens()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Lingering Souls" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Spectral Procession", "Bitterblossom" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Sorin, Solemn Visitor" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Path to Exile" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Sorin, Solemn Visitor" } }
             };
         }
     }
