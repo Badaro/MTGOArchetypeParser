@@ -89,10 +89,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck07_rojanosa_Tokens_WB()
+        public void Deck07_rojanosa_Tokens_OrzhovTokens_WB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_26.Deck07_rojanosa_Tokens_WB(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_26.Deck07_rojanosa_Tokens_OrzhovTokens_WB(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.WB,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Tokens),

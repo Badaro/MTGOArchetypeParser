@@ -206,10 +206,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck16_fupalorda_IzzetRhinos_ElectroBalance_URG()
+        public void Deck16_fupalorda_IzzetFreeSpells_ElectroBalance_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_09.Deck16_fupalorda_IzzetRhinos_ElectroBalance_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_09.Deck16_fupalorda_IzzetFreeSpells_ElectroBalance_URG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetFreeSpells),

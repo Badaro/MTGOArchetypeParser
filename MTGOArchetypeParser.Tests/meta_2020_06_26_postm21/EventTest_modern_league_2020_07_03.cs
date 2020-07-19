@@ -219,10 +219,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck17_npercario_IzzetRhinos_ElectroBalance_UR()
+        public void Deck17_npercario_IzzetFreeSpells_ElectroBalance_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_03.Deck17_npercario_IzzetRhinos_ElectroBalance_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_03.Deck17_npercario_IzzetFreeSpells_ElectroBalance_UR(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.UR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetFreeSpells),
@@ -401,10 +401,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck31_rojanosa_Tokens_WB()
+        public void Deck31_rojanosa_Tokens_OrzhovTokens_WB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_03.Deck31_rojanosa_Tokens_WB(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_03.Deck31_rojanosa_Tokens_OrzhovTokens_WB(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.WB,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Tokens),

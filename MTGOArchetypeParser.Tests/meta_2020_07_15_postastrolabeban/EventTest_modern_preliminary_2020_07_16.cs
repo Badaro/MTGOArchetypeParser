@@ -310,14 +310,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck24_Ambaro15_ReclamationTeachings_UBG()
+        public void Deck24_Ambaro15_WildernessReclamation_ReclamationTeachings_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16.Deck24_Ambaro15_ReclamationTeachings_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16.Deck24_Ambaro15_WildernessReclamation_ReclamationTeachings_UBG(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.UBG,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.WildernessReclamation),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ReclamationTeachings),
-                null,
                 null
             );
         }

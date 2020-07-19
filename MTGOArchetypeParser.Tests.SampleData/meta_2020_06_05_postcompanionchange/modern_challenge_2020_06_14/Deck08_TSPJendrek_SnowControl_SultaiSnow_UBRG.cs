@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_challenge_2020_06_14
 {
-    public class Deck08_TSPJendrek_SnowControl_UBRG : ISampleDeck
+    public class Deck08_TSPJendrek_SnowControl_SultaiSnow_UBRG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

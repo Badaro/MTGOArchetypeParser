@@ -102,10 +102,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck08_TSPJendrek_SnowControl_UBRG()
+        public void Deck08_TSPJendrek_SnowControl_SultaiSnow_UBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_challenge_2020_06_14.Deck08_TSPJendrek_SnowControl_UBRG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_challenge_2020_06_14.Deck08_TSPJendrek_SnowControl_SultaiSnow_UBRG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.UBRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),

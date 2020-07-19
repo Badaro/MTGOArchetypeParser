@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16
 {
-    public class Deck24_Ambaro15_ReclamationTeachings_UBG : ISampleDeck
+    public class Deck24_Ambaro15_WildernessReclamation_ReclamationTeachings_UBG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

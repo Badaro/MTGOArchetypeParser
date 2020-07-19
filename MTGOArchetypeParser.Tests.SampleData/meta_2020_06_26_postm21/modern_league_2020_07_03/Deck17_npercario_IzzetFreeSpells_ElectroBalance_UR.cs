@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_03
 {
-    public class Deck17_npercario_IzzetRhinos_ElectroBalance_UR : ISampleDeck
+    public class Deck17_npercario_IzzetFreeSpells_ElectroBalance_UR : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

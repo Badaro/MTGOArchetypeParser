@@ -505,10 +505,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck39_MastaHorus_IzzetRhinos_ElectroLivingEnd_UR()
+        public void Deck39_MastaHorus_IzzetFreeSpells_ElectroLivingEnd_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_14.Deck39_MastaHorus_IzzetRhinos_ElectroLivingEnd_UR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_14.Deck39_MastaHorus_IzzetFreeSpells_ElectroLivingEnd_UR(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.UR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetFreeSpells),

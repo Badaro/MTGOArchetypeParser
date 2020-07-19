@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_07
 {
-    public class Deck18_rojanosa_Tokens_WB : ISampleDeck
+    public class Deck18_rojanosa_Tokens_OrzhovTokens_WB : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

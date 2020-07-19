@@ -76,14 +76,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck06_Ftzz_ReclamationTeachings_UBG()
+        public void Deck06_Ftzz_WildernessReclamation_ReclamationTeachings_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_19.Deck06_Ftzz_ReclamationTeachings_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_19.Deck06_Ftzz_WildernessReclamation_ReclamationTeachings_UBG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.UBG,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.WildernessReclamation),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ReclamationTeachings),
-                null,
                 null
             );
         }

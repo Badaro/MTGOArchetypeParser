@@ -414,14 +414,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck32_SkiLwrAp_ReclamationTeachings_UBG()
+        public void Deck32_SkiLwrAp_WildernessReclamation_ReclamationTeachings_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_challenge_2020_06_29.Deck32_SkiLwrAp_ReclamationTeachings_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_challenge_2020_06_29.Deck32_SkiLwrAp_WildernessReclamation_ReclamationTeachings_UBG(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.UBG,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.WildernessReclamation),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ReclamationTeachings),
-                null,
                 null
             );
         }

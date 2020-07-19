@@ -427,10 +427,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck33_vasko19_IzzetRhinos_ElectroBalance_URG()
+        public void Deck33_vasko19_IzzetFreeSpells_ElectroBalance_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23.Deck33_vasko19_IzzetRhinos_ElectroBalance_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23.Deck33_vasko19_IzzetFreeSpells_ElectroBalance_URG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetFreeSpells),
@@ -440,14 +440,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck34_Ftzz_ReclamationTeachings_UBG()
+        public void Deck34_Ftzz_WildernessReclamation_ReclamationTeachings_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23.Deck34_Ftzz_ReclamationTeachings_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23.Deck34_Ftzz_WildernessReclamation_ReclamationTeachings_UBG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.UBG,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.WildernessReclamation),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ReclamationTeachings),
-                null,
                 null
             );
         }
