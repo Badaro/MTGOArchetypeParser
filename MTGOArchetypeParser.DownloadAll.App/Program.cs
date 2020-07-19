@@ -15,7 +15,19 @@ namespace MTGOArchetypeParser.DownloadAll.App
             try
             {
                 Console.WriteLine("Downloading tournament list");
-                Tournament[] tournaments = TournamentLoader.GetTournaments(new DateTime(2020, 06, 05, 00, 00, 00, DateTimeKind.Utc), DateTime.UtcNow).Where(t => t.Name.Contains("Modern")).ToArray();
+
+                bool allMetas = args.Any(a => a.ToLower() == "allmetas");
+                bool includeLeagues = args.Any(a => a.ToLower() == "includeleagues");
+
+                DateTime startDate = allMetas ?
+                    MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().First().StartDate :
+                    MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().Last().StartDate;
+
+                Func<Tournament, bool> excludeLeaguesFilter = t => t.Name.Contains("Modern") && !t.Name.Contains("League");
+                Func<Tournament, bool> includeLeaguesFilter = t => t.Name.Contains("Modern");
+                Func<Tournament, bool> filter = includeLeagues ? includeLeaguesFilter : excludeLeaguesFilter;
+
+                Tournament[] tournaments = TournamentLoader.GetTournaments(startDate, DateTime.UtcNow).Where(t => filter(t)).ToArray();
 
                 // Destination CSV output
                 StringBuilder csvData = new StringBuilder();
