@@ -20,6 +20,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new RakdosProwess(),
                 new IzzetProwess(),
                 new JeskaiProwess(),
+                new GruulProwess()
             };
         }
     }
@@ -58,6 +59,17 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Sprite Dragon" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Stormwing Entity" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Lightning Helix" } }
+            };
+        }
+    }
+
+    public class GruulProwess : ArchetypeVariant
+    {
+        public GruulProwess()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Tarmogoyf" } }
             };
         }
     }
