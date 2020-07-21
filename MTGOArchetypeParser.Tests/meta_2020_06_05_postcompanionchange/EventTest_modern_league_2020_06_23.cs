@@ -134,8 +134,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_23.Deck10_forenmagra_SaheeliToLight_WUBRG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.WUBRG,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SaheeliCombo),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SaheeliToLight),
-                null,
                 null
             );
         }

@@ -589,7 +589,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_17.Deck45_Pirika_JeskaiSaheeli_WURG(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WURG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiSaheeli),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SaheeliCombo),
                 null,
                 null
             );

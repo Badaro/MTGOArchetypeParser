@@ -11,9 +11,10 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Ice-Fang Coatl", "Uro, Titan of Nature's Wrath", "Dead of Winter", "On Thin Ice" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainOrSideboard, Cards = new string[] { "Ice-Fang Coatl", "Uro, Titan of Nature's Wrath", "Dead of Winter", "On Thin Ice" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Cryptic Command", "Jace, the Mind Sculptor" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Soulherder" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Saheeli Rai" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Metallic Rebuke" } }
             };
             Variants = new ArchetypeVariant[]
@@ -25,8 +26,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new SnowTurns(),
                 new SnowShift(),
                 new SnowTitan(),
-                new SnowBreach(),
-                new SnowSaheeli()
+                new SnowBreach()
             };
         }
     }
@@ -37,7 +37,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Fatal Push" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainOrSideboard, Cards = new string[] { "Fatal Push" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainOrSideboard, Cards = new string[] { "Abrupt Decay", "Assassin's Trophy", "Maelstrom Pulse" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainOrSideboard, Cards = new string[] { "Thoughtseize", "Inquisition of Kozilek", "Collective Brutality", "Cling to Dust", "Dead of Winter" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Path to Exile" } },
@@ -131,18 +131,6 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Emrakul, the Aeons Torn" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Through the Breach" } }
-            };
-        }
-    }
-
-    public class SnowSaheeli : ArchetypeVariant
-    {
-        public SnowSaheeli()
-        {
-            Conditions = new ArchetypeCondition[]
-            {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Saheeli Rai" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Felidar Guardian" } }
             };
         }
     }

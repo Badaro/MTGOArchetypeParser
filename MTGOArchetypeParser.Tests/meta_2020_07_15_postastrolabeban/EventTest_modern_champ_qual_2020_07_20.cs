@@ -121,8 +121,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_champ_qual_2020_07_20.Deck09_kogamo_WildernessReclamation_UBG(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.WildernessReclamation),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowReclamation),
                 null
             );
         }

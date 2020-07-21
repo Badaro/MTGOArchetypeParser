@@ -11,8 +11,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainOrSideboard, Cards = new string[] { "Yorion, Sky Nomad", "Soulherder", "Ephemerate", "Restoration Angel" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainOrSideboard, Cards = new string[] { "Knight of Autumn", "Ice-Fang Coatl", "Coiling Oracle", "Wall of Omens", "Wall of Blossoms", "Eternal Witness" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainOrSideboard, Cards = new string[] { "Yorion, Sky Nomad", "Soulherder", "Ephemerate", "Restoration Angel", "Flickerwisp" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainOrSideboard, Cards = new string[] { "Knight of Autumn", "Ice-Fang Coatl", "Coiling Oracle", "Wall of Omens", "Wall of Blossoms", "Eternal Witness", "Watcher for Tomorrow", "Fblthp, the Lost" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Emeria, the Sky Ruin" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Leonin Arbiter" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Metallic Rebuke" } },

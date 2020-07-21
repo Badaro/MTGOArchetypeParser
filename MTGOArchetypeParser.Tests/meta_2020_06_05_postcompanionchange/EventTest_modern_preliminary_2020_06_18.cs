@@ -56,7 +56,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_18.Deck04_Hiru_Skelementals_BR(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.BR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Skelementals),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosMidrange),
                 null,
                 null
             );

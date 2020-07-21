@@ -251,7 +251,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_30.Deck19_Asoen_Skelementals_BR(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.BR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Skelementals),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosMidrange),
                 null,
                 null
             );

@@ -18,7 +18,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Variants = new ArchetypeVariant[]
             {
                 new GrixisDelver(),
-                new TemurDelver()
+                new TemurDelver(),
+                new JeskaiDelver()
             };
         }
     }
@@ -41,6 +42,17 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Tarmogoyf", "Hooting Mandrills", "Jolrael, Mwonvuli Recluse" } }
+            };
+        }
+    }
+
+    public class JeskaiDelver : ArchetypeVariant
+    {
+        public JeskaiDelver()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Lightning Helix" } }
             };
         }
     }

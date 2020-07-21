@@ -14,6 +14,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Mystical Teachings", "Expansion // Explosion", "Fact or Fiction" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Wilderness Reclamation" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Nexus of Fate" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Dead of Winter" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContainAll, Cards = new string[] { "Ice-Fang Coatl", "Uro, Titan of Nature's Wrath" } }
             };
             Variants = new ArchetypeVariant[]

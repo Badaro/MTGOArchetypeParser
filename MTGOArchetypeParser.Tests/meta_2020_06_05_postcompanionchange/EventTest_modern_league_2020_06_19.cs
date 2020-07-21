@@ -303,7 +303,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_19.Deck23_Magric_Skelementals_BR(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.BR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Skelementals),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosMidrange),
                 null,
                 null
             );
