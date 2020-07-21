@@ -329,7 +329,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_17.Deck25_OscarS66_RakdosUnearth_BR(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.BR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosUnearth),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosMidrange),
                 null,
                 null
             );

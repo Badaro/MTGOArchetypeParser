@@ -225,7 +225,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_14.Deck17_osmanozguney_RakdosControl_BR(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.BR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosControl),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosMidrange),
                 null,
                 null
             );
@@ -368,7 +368,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_14.Deck28_toya_RakdosWasteNot_BR(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.BR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosWasteNot),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosMidrange),
                 null,
                 null
             );
