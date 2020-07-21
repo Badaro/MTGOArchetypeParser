@@ -180,10 +180,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck14_WotCAndrewB_ThaliaStoneblade_W()
+        public void Deck14_WotCAndrewB_DeathAndTaxes_ThaliaStoneblade_W()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_09.Deck14_WotCAndrewB_ThaliaStoneblade_W(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_09.Deck14_WotCAndrewB_DeathAndTaxes_ThaliaStoneblade_W(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.W,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.DeathAndTaxes),
@@ -206,10 +206,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck16_fupalorda_IzzetFreeSpells_ElectroBalance_URG()
+        public void Deck16_fupalorda_IzzetFreeSpells_IzzetRestoreBalance_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_09.Deck16_fupalorda_IzzetFreeSpells_ElectroBalance_URG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_09.Deck16_fupalorda_IzzetFreeSpells_IzzetRestoreBalance_URG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetFreeSpells),
@@ -700,10 +700,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck54_DoomedNecromancer_AbzanStoneblade_WBG()
+        public void Deck54_DoomedNecromancer_AbzanMidrange_WBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_09.Deck54_DoomedNecromancer_AbzanStoneblade_WBG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_09.Deck54_DoomedNecromancer_AbzanMidrange_WBG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.WBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AbzanMidrange),

@@ -167,10 +167,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck13_DoomedNecromancer_AbzanStoneblade_WBG()
+        public void Deck13_DoomedNecromancer_AbzanMidrange_WBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_06.Deck13_DoomedNecromancer_AbzanStoneblade_WBG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_06.Deck13_DoomedNecromancer_AbzanMidrange_WBG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.WBG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AbzanMidrange),

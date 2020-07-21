@@ -50,10 +50,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck04_Hiru_Skelementals_BR()
+        public void Deck04_Hiru_RakdosMidrange_BR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_18.Deck04_Hiru_Skelementals_BR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_18.Deck04_Hiru_RakdosMidrange_BR(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.BR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosMidrange),
@@ -115,10 +115,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck09_MadCowChicken_EldraziBlade_WG_Jegantha()
+        public void Deck09_MadCowChicken_SelesnyaEldrazi_WG_Jegantha()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_18.Deck09_MadCowChicken_EldraziBlade_WG_Jegantha(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_18.Deck09_MadCowChicken_SelesnyaEldrazi_WG_Jegantha(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SelesnyaEldrazi),

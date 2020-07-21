@@ -89,10 +89,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck07_SwordHunter_FourColorSaheeli_WURG()
+        public void Deck07_SwordHunter_SaheeliCombo_SnowSaheeli_WURG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_17.Deck07_SwordHunter_FourColorSaheeli_WURG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_17.Deck07_SwordHunter_SaheeliCombo_SnowSaheeli_WURG(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WURG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SaheeliCombo),
