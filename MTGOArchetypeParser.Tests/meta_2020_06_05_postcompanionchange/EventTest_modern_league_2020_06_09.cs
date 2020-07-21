@@ -186,7 +186,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_09.Deck14_WotCAndrewB_ThaliaStoneblade_W(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.W,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.ThaliaStoneblade),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.WhiteMidrange),
                 null,
                 null
             );
@@ -213,7 +213,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetFreeSpells),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.ElectroBalance),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetRestoreBalance),
                 null
             );
         }
@@ -706,7 +706,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_09.Deck54_DoomedNecromancer_AbzanStoneblade_WBG(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.WBG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.AbzanStoneblade),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.AbzanMidrange),
                 null,
                 null
             );

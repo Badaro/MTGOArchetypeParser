@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class ThaliaStoneblade : Archetype
+    public class WhiteMidrange : Archetype
     {
-        public ThaliaStoneblade()
+        public WhiteMidrange()
         {
             Conditions = new ArchetypeCondition[]
             {

@@ -317,7 +317,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetFreeSpells),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.ElectroBalance),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetRestoreBalance),
                 null
             );
         }

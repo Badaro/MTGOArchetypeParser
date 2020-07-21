@@ -17,15 +17,15 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             };
             Variants = new ArchetypeVariant[]
             {
-                new ElectroBalance(),
-                new ElectroLivingEnd(),
+                new IzzetRestoreBalance(),
+                new IzzetLivingEnd(),
             };
         }
     }
 
-    public class ElectroBalance : ArchetypeVariant
+    public class IzzetRestoreBalance : ArchetypeVariant
     {
-        public ElectroBalance()
+        public IzzetRestoreBalance()
         {
             Conditions = new ArchetypeCondition[]
             {
@@ -35,9 +35,9 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         }
     }
 
-    public class ElectroLivingEnd : ArchetypeVariant
+    public class IzzetLivingEnd : ArchetypeVariant
     {
-        public ElectroLivingEnd()
+        public IzzetLivingEnd()
         {
             Conditions = new ArchetypeCondition[]
             {

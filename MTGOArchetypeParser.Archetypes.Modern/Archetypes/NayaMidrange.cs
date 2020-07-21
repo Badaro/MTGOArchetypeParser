@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class NayaStoneblade : Archetype
+    public class NayaMidrange : Archetype
     {
-        public NayaStoneblade()
+        public NayaMidrange()
         {
             Conditions = new ArchetypeCondition[]
             {

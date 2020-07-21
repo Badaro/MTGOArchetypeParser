@@ -512,7 +512,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.UR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetFreeSpells),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.ElectroLivingEnd),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetLivingEnd),
                 null
             );
         }

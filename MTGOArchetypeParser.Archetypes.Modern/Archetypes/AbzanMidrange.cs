@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class AbzanStoneblade : Archetype
+    public class AbzanMidrange : Archetype
     {
-        public AbzanStoneblade()
+        public AbzanMidrange()
         {
             Conditions = new ArchetypeCondition[]
             {

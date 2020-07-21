@@ -95,8 +95,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_17.Deck07_SwordHunter_FourColorSaheeli_WURG(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WURG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.FourColorSaheeli),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowSaheeli),
                 null
             );
         }

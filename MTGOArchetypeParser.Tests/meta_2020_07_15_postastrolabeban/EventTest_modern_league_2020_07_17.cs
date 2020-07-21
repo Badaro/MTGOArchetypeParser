@@ -460,7 +460,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.URG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetFreeSpells),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.ElectroBalance),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetRestoreBalance),
                 null
             );
         }
@@ -485,7 +485,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_17.Deck37_GHash77_KarnBlade_WUG(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.KarnBlade),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.BantMidrange),
                 null,
                 null
             );
@@ -694,7 +694,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.UR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetFreeSpells),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.ElectroLivingEnd),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetLivingEnd),
                 null
             );
         }

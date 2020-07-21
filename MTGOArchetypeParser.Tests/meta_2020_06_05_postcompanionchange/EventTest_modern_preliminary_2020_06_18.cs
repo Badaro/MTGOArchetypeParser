@@ -121,7 +121,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_18.Deck09_MadCowChicken_EldraziBlade_WG_Jegantha(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.WG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.EldraziBlade),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.SelesnyaEldrazi),
                 null,
                 ArchetypeCompanion.Jegantha
             );
