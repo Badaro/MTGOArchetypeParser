@@ -433,8 +433,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_12.Deck33_Mollok_ThaliaStompy_WR(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.WR,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.DeathAndTaxes),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.ThaliaStompy),
-                null,
                 null
             );
         }

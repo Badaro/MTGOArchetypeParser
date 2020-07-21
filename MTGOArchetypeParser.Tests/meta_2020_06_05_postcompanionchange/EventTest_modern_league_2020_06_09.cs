@@ -186,8 +186,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_09.Deck14_WotCAndrewB_ThaliaStoneblade_W(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.W,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.WhiteMidrange),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.DeathAndTaxes),
+                typeof(MTGOArchetypeParser.Archetypes.Modern.ThaliaStoneblade),
                 null
             );
         }
