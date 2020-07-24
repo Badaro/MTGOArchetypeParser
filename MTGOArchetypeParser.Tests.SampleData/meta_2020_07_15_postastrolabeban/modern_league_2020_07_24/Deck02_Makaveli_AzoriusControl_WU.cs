@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24
 {
-    public class Deck02_Makaveli_Unknown_WU : ISampleDeck
+    public class Deck02_Makaveli_AzoriusControl_WU : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

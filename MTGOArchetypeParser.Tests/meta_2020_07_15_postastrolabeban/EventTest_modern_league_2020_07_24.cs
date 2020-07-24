@@ -24,16 +24,16 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck02_Makaveli_Unknown_WU()
+        public void Deck02_Makaveli_AzoriusControl_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24.Deck02_Makaveli_Unknown_WU(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24.Deck02_Makaveli_AzoriusControl_WU(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),
                 null,
                 null
-            );
+            ); ;
         }
 
         [Test]
