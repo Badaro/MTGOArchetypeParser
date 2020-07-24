@@ -1,4 +1,5 @@
 ﻿using MTGOArchetypeParser.Data;
+using MTGOArchetypeParser.Model;
 using MTGODecklistParser.Data;
 using MTGODecklistParser.Model;
 using System;
@@ -31,13 +32,17 @@ namespace MTGOArchetypeParser.DownloadAll.App
 
                 // Destination CSV output
                 StringBuilder csvData = new StringBuilder();
-                csvData.AppendLine($"EVENT,META,DATE,PLAYER,URL,ARCHETYPE,VARIANT,COLOR,COMPANION");
+                csvData.AppendLine($"EVENT,META,WEEK,DATE,PLAYER,URL,ARCHETYPE,VARIANT,COLOR,COMPANION");
 
                 foreach (var tournament in tournaments)
                 {
                     Console.WriteLine($"Downloading {tournament.Uri}");
 
-                    string metaID = Metas.Modern.Loader.GetMetas().Last(m => m.StartDate <= tournament.Date).GetType().Name;
+                    ArchetypeMeta meta = Metas.Modern.Loader.GetMetas().Last(m => m.StartDate <= tournament.Date);
+                    DateTime metaWeekReferenceDate = GetMetaWeekReferenceDate(meta.StartDate);
+
+                    string metaID = meta.GetType().Name;
+                    int weekID = ((int)Math.Floor((tournament.Date - metaWeekReferenceDate).Days / 7.0)) + 1;
 
                     var decks = MTGODecklistParser.Data.DeckLoader.GetDecks(tournament.Uri);
 
@@ -62,7 +67,7 @@ namespace MTGOArchetypeParser.DownloadAll.App
 
                         string consolidatedID = String.IsNullOrEmpty(variantID) ? archetypeID : variantID;
 
-                        csvData.AppendLine($"{tournament.Name},{metaID},{tournament.Date.ToString("yyyy-MM-dd")},{decks[i].Player},{decks[i].AnchorUri},{archetypeID},{consolidatedID},{colorID},{companionID}");
+                        csvData.AppendLine($"{tournament.Name},{metaID},{weekID},{tournament.Date.ToString("yyyy-MM-dd")},{decks[i].Player},{decks[i].AnchorUri},{archetypeID},{consolidatedID},{colorID},{companionID}");
                     }
 
                     File.WriteAllText($"mtgo_data_{tournaments.Max(t => t.Date).ToString("yyyy_MM_dd")}.csv", csvData.ToString());
@@ -71,6 +76,30 @@ namespace MTGOArchetypeParser.DownloadAll.App
             catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
+            }
+        }
+
+        // Note: I'm considering the meta weeks as starting on tuesday, since the weekend events (challenges) are posted monday
+        static DateTime GetMetaWeekReferenceDate(DateTime metaStart)
+        {
+            switch (metaStart.DayOfWeek)
+            {
+                case DayOfWeek.Sunday:
+                    return metaStart.AddDays(-5);
+                case DayOfWeek.Monday:
+                    return metaStart.AddDays(-6);
+                case DayOfWeek.Tuesday:
+                    return metaStart;
+                case DayOfWeek.Wednesday:
+                    return metaStart.AddDays(-1);
+                case DayOfWeek.Thursday:
+                    return metaStart.AddDays(-2);
+                case DayOfWeek.Friday:
+                    return metaStart.AddDays(-3);
+                case DayOfWeek.Saturday:
+                    return metaStart.AddDays(-4);
+                default:
+                    throw new Exception("Invalid DayOfWeek for meta start date");
             }
         }
     }
