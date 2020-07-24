@@ -93,12 +93,13 @@ namespace MTGOArchetypeParser.DownloadAll.App
 
             foreach (var total in consolidatedTotals.Where(t => t.Key != othersKey).OrderByDescending(t => t.Value))
             {
-                csvData.AppendLine($"{total.Key},{total.Value},{Math.Round((100.0 * total.Value) / totals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)}%");
+                csvData.AppendLine($"{total.Key},{total.Value},{Math.Round((100.0 * total.Value) / consolidatedTotals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)}%");
             }
             if (consolidatedTotals[othersKey] > 0)
             {
                 csvData.AppendLine($"{othersKey},{consolidatedTotals[othersKey]},{Math.Round((100.0 * consolidatedTotals[othersKey]) / totals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)}%");
             }
+            csvData.AppendLine($"Total,{consolidatedTotals.Sum(c => c.Value)},100%");
 
             if (!Directory.Exists(_outputFolder)) Directory.CreateDirectory(_outputFolder);
             File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
