@@ -167,14 +167,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck13_PhantasmalBear_AzoriusTempo_AzoriusStoneblade_WU()
+        public void Deck13_PhantasmalBear_AzoriusTempo_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24.Deck13_PhantasmalBear_AzoriusTempo_AzoriusStoneblade_WU(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24.Deck13_PhantasmalBear_AzoriusTempo_WU(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WU,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusTempo),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusStoneblade),
+                null,
                 null
             );
         }
@@ -713,14 +713,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck55_KOKI12_AzoriusTempo_AzoriusStoneblade_WU()
+        public void Deck55_KOKI12_AzoriusTempo_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24.Deck55_KOKI12_AzoriusTempo_AzoriusStoneblade_WU(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24.Deck55_KOKI12_AzoriusTempo_WU(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WU,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusTempo),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusStoneblade),
+                null,
                 null
             );
         }

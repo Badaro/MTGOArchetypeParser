@@ -1,8 +1,7 @@
 {
   "profiles": {
     "MTGOArchetypeParser.DownloadAll.App": {
-      "commandName": "Project",
-      "commandLineArgs": "allmetas"
+      "commandName": "Project"
     }
   }
 }
