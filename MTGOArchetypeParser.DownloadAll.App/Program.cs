@@ -3,6 +3,8 @@ using MTGOArchetypeParser.Model;
 using MTGODecklistParser.Data;
 using MTGODecklistParser.Model;
 using System;
+using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -11,6 +13,9 @@ namespace MTGOArchetypeParser.DownloadAll.App
 {
     class Program
     {
+        static string _outputFolder = "reports";
+        static double _minPercentage = 0.02;
+
         static void Main(string[] args)
         {
             try
@@ -24,53 +29,21 @@ namespace MTGOArchetypeParser.DownloadAll.App
                     MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().First().StartDate :
                     MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().Last().StartDate;
 
-                Func<Tournament, bool> excludeLeaguesFilter = t => t.Name.Contains("Modern") && !t.Name.Contains("League");
-                Func<Tournament, bool> includeLeaguesFilter = t => t.Name.Contains("Modern");
-                Func<Tournament, bool> filter = includeLeagues ? includeLeaguesFilter : excludeLeaguesFilter;
+                DataRecord[] records = Loader.GetRecords(startDate, includeLeagues);
 
-                Tournament[] tournaments = TournamentLoader.GetTournaments(startDate, DateTime.UtcNow).Where(t => filter(t)).ToArray();
+                string date = $"{records.Max(t => t.Date).ToString("yyyy_MM_dd")}";
+                GenerateDump(records, $"mtgo_data_{date}");
 
-                // Destination CSV output
-                StringBuilder csvData = new StringBuilder();
-                csvData.AppendLine($"EVENT,META,WEEK,DATE,PLAYER,URL,ARCHETYPE,VARIANT,COLOR,COMPANION");
-
-                foreach (var tournament in tournaments)
+                foreach (string meta in records.Select(r => r.Meta).Distinct())
                 {
-                    Console.WriteLine($"Downloading {tournament.Uri}");
+                    GenerateMeta(records.Where(r => r.Meta == meta), r => r.Archetype, $"mtgo_meta_archetype_{meta.ToLower()}_full_{date}", _minPercentage);
+                    GenerateMeta(records.Where(r => r.Meta == meta), r => r.Variant, $"mtgo_meta_variant_{meta.ToLower()}_full_{date}", _minPercentage);
 
-                    ArchetypeMeta meta = Metas.Modern.Loader.GetMetas().Last(m => m.StartDate <= tournament.Date);
-                    DateTime metaWeekReferenceDate = GetMetaWeekReferenceDate(meta.StartDate);
-
-                    string metaID = meta.GetType().Name;
-                    int weekID = ((int)Math.Floor((tournament.Date - metaWeekReferenceDate).Days / 7.0)) + 1;
-
-                    var decks = MTGODecklistParser.Data.DeckLoader.GetDecks(tournament.Uri);
-
-                    for (int i = 0; i < decks.Length; i++)
+                    foreach (int week in records.Where(r => r.Meta == meta).Select(r => r.Week).Distinct())
                     {
-                        var detectionResult = ArchetypeAnalyzer.Detect(decks[i].Mainboard.Select(i => i.CardName).ToArray(), decks[i].Sideboard.Select(i => i.CardName).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
-
-                        string colorID = detectionResult.Color.ToString();
-                        string companionID = detectionResult.Companion == null ? "" : detectionResult.Companion.Value.ToString();
-                        string archetypeID = "Unknown";
-                        string variantID = String.Empty;
-
-                        if (detectionResult.Matches.Length == 1)
-                        {
-                            var detected = detectionResult.Matches.First();
-                            archetypeID = detected.Archetype.GetType().Name;
-                            if (detected.Variant != null)
-                            {
-                                variantID = detected.Variant.GetType().Name;
-                            }
-                        }
-
-                        string consolidatedID = String.IsNullOrEmpty(variantID) ? archetypeID : variantID;
-
-                        csvData.AppendLine($"{tournament.Name},{metaID},{weekID},{tournament.Date.ToString("yyyy-MM-dd")},{decks[i].Player},{decks[i].AnchorUri},{archetypeID},{consolidatedID},{colorID},{companionID}");
+                        GenerateMeta(records.Where(r => r.Meta == meta && r.Week == week), r => r.Archetype, $"mtgo_meta_archetype_{meta.ToLower()}_week{week.ToString("D2")}_{date}", _minPercentage);
+                        GenerateMeta(records.Where(r => r.Meta == meta && r.Week == week), r => r.Variant, $"mtgo_meta_variant_{meta.ToLower()}_week{week.ToString("D2")}_{date}", _minPercentage);
                     }
-
-                    File.WriteAllText($"mtgo_data_{tournaments.Max(t => t.Date).ToString("yyyy_MM_dd")}.csv", csvData.ToString());
                 }
             }
             catch (Exception ex)
@@ -79,28 +52,56 @@ namespace MTGOArchetypeParser.DownloadAll.App
             }
         }
 
-        // Note: I'm considering the meta weeks as starting on tuesday, since the weekend events (challenges) are posted monday
-        static DateTime GetMetaWeekReferenceDate(DateTime metaStart)
+        private static void GenerateDump(IEnumerable<DataRecord> records, string reportName)
         {
-            switch (metaStart.DayOfWeek)
+            StringBuilder csvData = new StringBuilder();
+            csvData.AppendLine($"EVENT,META,WEEK,DATE,PLAYER,URL,ARCHETYPE,VARIANT,COLOR,COMPANION");
+
+            foreach (var record in records)
             {
-                case DayOfWeek.Sunday:
-                    return metaStart.AddDays(-5);
-                case DayOfWeek.Monday:
-                    return metaStart.AddDays(-6);
-                case DayOfWeek.Tuesday:
-                    return metaStart;
-                case DayOfWeek.Wednesday:
-                    return metaStart.AddDays(-1);
-                case DayOfWeek.Thursday:
-                    return metaStart.AddDays(-2);
-                case DayOfWeek.Friday:
-                    return metaStart.AddDays(-3);
-                case DayOfWeek.Saturday:
-                    return metaStart.AddDays(-4);
-                default:
-                    throw new Exception("Invalid DayOfWeek for meta start date");
+                csvData.AppendLine($"{record.Tournament},{record.Meta},{record.Week},{record.Date.ToString("yyyy-MM-dd")},{record.Player},{record.AnchorUri},{record.Archetype},{record.Variant},{record.Color},{record.Companion}");
             }
+
+            if (!Directory.Exists(_outputFolder)) Directory.CreateDirectory(_outputFolder);
+            File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
+        }
+
+        private static void GenerateMeta(IEnumerable<DataRecord> records, Func<DataRecord, string> selector, string reportName, double minPercentage)
+        {
+            string othersKey = "Others";
+
+            Dictionary<string, int> totals = new Dictionary<string, int>();
+            foreach (var record in records)
+            {
+                string key = selector(record);
+                if (!totals.ContainsKey(key)) totals.Add(key, 0);
+                totals[key]++;
+            }
+
+            // Consolidates "other" data
+            double minCount = (minPercentage * records.Count());
+            Dictionary<string, int> consolidatedTotals = new Dictionary<string, int>();
+            consolidatedTotals.Add(othersKey, 0);
+            foreach (var total in totals)
+            {
+                if (total.Value > minCount) consolidatedTotals.Add(total.Key, total.Value);
+                else consolidatedTotals[othersKey] += total.Value;
+            }
+
+            StringBuilder csvData = new StringBuilder();
+            csvData.AppendLine($"DECK,COUNT,PERCENT");
+
+            foreach (var total in consolidatedTotals.Where(t => t.Key != othersKey).OrderByDescending(t => t.Value))
+            {
+                csvData.AppendLine($"{total.Key},{total.Value},{Math.Round((100.0 * total.Value) / totals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)}%");
+            }
+            if (consolidatedTotals[othersKey] > 0)
+            {
+                csvData.AppendLine($"{othersKey},{consolidatedTotals[othersKey]},{Math.Round((100.0 * consolidatedTotals[othersKey]) / totals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)}%");
+            }
+
+            if (!Directory.Exists(_outputFolder)) Directory.CreateDirectory(_outputFolder);
+            File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
         }
     }
 }
