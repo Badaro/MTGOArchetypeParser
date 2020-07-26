@@ -6,6 +6,7 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 
 namespace MTGOArchetypeParser.Tests
@@ -21,7 +22,7 @@ namespace MTGOArchetypeParser.Tests
 
             result.Color.Should().Be(expectedColor);
 
-            if (expectedArchetype != null) result.Matches.First().Archetype.Should().BeOfType(expectedArchetype); 
+            if (expectedArchetype != null) result.Matches.First().Archetype.Should().BeOfType(expectedArchetype);
             else throw new Exception($"Archetype not specified, detection returned {result.Matches.First().Archetype.GetType().Name}");
 
             if (expectedVariant != null) result.Matches.First().Variant.Should().BeOfType(expectedVariant);

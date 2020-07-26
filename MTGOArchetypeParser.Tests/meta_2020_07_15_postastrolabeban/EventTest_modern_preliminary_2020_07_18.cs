@@ -1,5 +1,7 @@
 using FluentAssertions;
 using MTGOArchetypeParser.Model;
+using MTGOArchetypeParser.Metas.Modern;
+using MTGOArchetypeParser.Archetypes.Modern;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -15,10 +17,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck01_Rav104_Prowess_IzzetProwess_UR(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.IzzetProwess),
+                typeof(Prowess),
+                typeof(IzzetProwess),
                 null
             );
         }
@@ -28,9 +30,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck02_SouthernSliver_Slivers_WUBRG(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Slivers),
+                typeof(Slivers),
                 null,
                 null
             );
@@ -41,10 +43,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck03_Toastxp_Prowess_RakdosProwess_WBR_Lurrus(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.WBR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosProwess),
+                typeof(Prowess),
+                typeof(RakdosProwess),
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -54,10 +56,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck04_lsmguys_AzoriusControl_AzoriusStoneblade_WU(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusStoneblade),
+                typeof(AzoriusControl),
+                typeof(AzoriusStoneblade),
                 null
             );
         }
@@ -67,9 +69,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck05_Nammersquats_Infect_UG(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.UG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Infect),
+                typeof(Infect),
                 null,
                 null
             );
@@ -80,9 +82,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck06_OscarS66_RakdosMidrange_BR(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.BR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosMidrange),
+                typeof(RakdosMidrange),
                 null,
                 null
             );
@@ -93,9 +95,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck07_LSN_Burn_WR(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.WR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Burn),
+                typeof(Burn),
                 null,
                 null
             );
@@ -106,10 +108,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck08_GedionRavenor_SnowControl_SultaiSnow_UBG(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SultaiSnow),
+                typeof(SnowControl),
+                typeof(SultaiSnow),
                 null
             );
         }
@@ -119,10 +121,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck09_jhollan42_PrimevalTitan_AmuletTitan_WUBRG(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.PrimevalTitan),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.AmuletTitan),
+                typeof(PrimevalTitan),
+                typeof(AmuletTitan),
                 null
             );
         }
@@ -132,9 +134,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck10_NHA37_Burn_WR(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.WR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Burn),
+                typeof(Burn),
                 null,
                 null
             );
@@ -145,10 +147,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck11_Thrall90_Rock_Jund_BRG(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Rock),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Jund),
+                typeof(Rock),
+                typeof(Jund),
                 null
             );
         }
@@ -158,9 +160,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck12_bbq42069dude_Humans_WUBRG(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Humans),
+                typeof(Humans),
                 null,
                 null
             );
@@ -171,9 +173,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck13_DylansHyper_Dredge_BRG(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Dredge),
+                typeof(Dredge),
                 null,
                 null
             );
@@ -184,9 +186,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck14_BoltTheBirds_GiftsStorm_UR(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.GiftsStorm),
+                typeof(GiftsStorm),
                 null,
                 null
             );
@@ -197,9 +199,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck15_gazmon48_ETron_C(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.C,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.ETron),
+                typeof(ETron),
                 null,
                 null
             );
@@ -210,10 +212,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck16_hodortimebaby_GTron_KGCTron_G(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.G,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.GTron),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.KGCTron),
+                typeof(GTron),
+                typeof(KGCTron),
                 null
             );
         }
@@ -223,10 +225,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck17_NightOwl61_Rock_Jund_BRG(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Rock),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Jund),
+                typeof(Rock),
+                typeof(Jund),
                 null
             );
         }

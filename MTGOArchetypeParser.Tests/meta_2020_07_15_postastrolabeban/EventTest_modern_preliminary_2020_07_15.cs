@@ -1,5 +1,7 @@
 using FluentAssertions;
 using MTGOArchetypeParser.Model;
+using MTGOArchetypeParser.Metas.Modern;
+using MTGOArchetypeParser.Archetypes.Modern;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -15,9 +17,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_15.Deck01_ImmanuelKantrolGod_AzoriusControl_WU(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),
+                typeof(AzoriusControl),
                 null,
                 null
             );
@@ -28,9 +30,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_15.Deck02_INF_GiftsStorm_UR(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.GiftsStorm),
+                typeof(GiftsStorm),
                 null,
                 null
             );
@@ -41,9 +43,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_15.Deck03_BSKhercules_Prowess_UR(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
+                typeof(Prowess),
                 null,
                 null
             );
@@ -54,9 +56,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_15.Deck04_johnsmith3373_Humans_WUBRG(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Humans),
+                typeof(Humans),
                 null,
                 null
             );
@@ -67,9 +69,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_15.Deck05_MiamiKidz_Prowess_UR(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
+                typeof(Prowess),
                 null,
                 null
             );
@@ -80,10 +82,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_15.Deck06_Shorak123_SnowControl_SnowReclamation_UBG(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowControl),
-                typeof(MTGOArchetypeParser.Archetypes.Modern.SnowReclamation),
+                typeof(SnowControl),
+                typeof(SnowReclamation),
                 null
             );
         }
@@ -93,9 +95,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_15.Deck07_siomomi_ETron_C(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.C,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.ETron),
+                typeof(ETron),
                 null,
                 null
             );
@@ -106,9 +108,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_15.Deck08_GoonLord_Ponza_RG(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.RG,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.Ponza),
+                typeof(Ponza),
                 null,
                 null
             );
@@ -119,9 +121,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_15.Deck09_ZYURYO_AzoriusControl_WU(),
-                new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
+                new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),
+                typeof(AzoriusControl),
                 null,
                 null
             );

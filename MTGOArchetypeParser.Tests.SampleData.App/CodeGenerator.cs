@@ -29,8 +29,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
                     .Replace("DECK_ID", deckKeys.DeckID)
                     .Replace("COLOR_ID", deckKeys.ColorID)
                     .Replace("COMPANION_ID", deckKeys.CompanionID.Length > 0 ? $"ArchetypeCompanion.{deckKeys.CompanionID}" : "null")
-                    .Replace("ARCHETYPE_ID", deckKeys.ArchetypeID.Length > 0 ? $"typeof(MTGOArchetypeParser.Archetypes.Modern.{deckKeys.ArchetypeID})" : "null")
-                    .Replace("VARIANT_ID", deckKeys.VariantID.Length > 0 ? $"typeof(MTGOArchetypeParser.Archetypes.Modern.{deckKeys.VariantID})" : "null");
+                    .Replace("ARCHETYPE_ID", deckKeys.ArchetypeID.Length > 0 ? $"typeof({deckKeys.ArchetypeID})" : "null")
+                    .Replace("VARIANT_ID", deckKeys.VariantID.Length > 0 ? $"typeof({deckKeys.VariantID})" : "null");
 
             return testContents + Environment.NewLine + Environment.NewLine;
         }
@@ -71,7 +71,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.META_ID.LEAGUE_ID
         {
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.META_ID.LEAGUE_ID.DECK_ID(),
-                new MTGOArchetypeParser.Metas.Modern.META_NAME(),
+                new META_NAME(),
                 ArchetypeColor.COLOR_ID,
                 ARCHETYPE_ID,
                 VARIANT_ID,
@@ -85,6 +85,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.META_ID.LEAGUE_ID
 
         static string _classTemplate = @"using FluentAssertions;
 using MTGOArchetypeParser.Model;
+using MTGOArchetypeParser.Metas.Modern;
+using MTGOArchetypeParser.Archetypes.Modern;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
