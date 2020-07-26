@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
         public ISampleCard[] Sideboard => new ISampleCard[] 
         { 
             new SampleCard(3, "Kor Firewalker"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(3, "Path to Exile"),
             new SampleCard(3, "Searing Blaze"),
             new SampleCard(2, "Searing Blood"),

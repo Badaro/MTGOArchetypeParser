@@ -35,7 +35,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(2, "Burrenton Forge-Tender"),
             new SampleCard(1, "Caustic Caterpillar"),
             new SampleCard(2, "Kor Firewalker"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(2, "Seal of Primordium"),
             new SampleCard(4, "Veil of Summer"),
             new SampleCard(2, "Voice of Resurgence") 

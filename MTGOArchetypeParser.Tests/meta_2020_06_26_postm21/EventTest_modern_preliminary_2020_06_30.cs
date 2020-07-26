@@ -50,15 +50,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck04_Laplasjan_Devoted_WG()
+        public void Deck04_Laplasjan_Devoted_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_preliminary_2020_06_30.Deck04_Laplasjan_Devoted_WG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_preliminary_2020_06_30.Deck04_Laplasjan_Devoted_WG_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Devoted),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 

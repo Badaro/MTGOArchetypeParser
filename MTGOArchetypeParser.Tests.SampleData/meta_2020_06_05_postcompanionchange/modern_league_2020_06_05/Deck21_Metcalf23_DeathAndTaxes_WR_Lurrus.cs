@@ -30,7 +30,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(2, "Boil"),
             new SampleCard(4, "Burrenton Forge-Tender"),
             new SampleCard(2, "Hushbringer"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(2, "Phyrexian Revoker"),
             new SampleCard(2, "Remorseful Cleric"),
             new SampleCard(2, "Wear // Tear") 

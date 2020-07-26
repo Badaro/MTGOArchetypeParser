@@ -11,15 +11,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
     public class EventTest_modern_preliminary_2020_06_26 : EventTest
     {
         [Test]
-        public void Deck01_MindOfAKid_Burn_WR()
+        public void Deck01_MindOfAKid_Burn_WR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_preliminary_2020_06_26.Deck01_MindOfAKid_Burn_WR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_preliminary_2020_06_26.Deck01_MindOfAKid_Burn_WR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.WR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Burn),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 

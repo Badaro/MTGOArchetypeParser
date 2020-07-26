@@ -9,7 +9,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(1, "Teferi, Time Raveler"),
             new SampleCard(4, "Emry, Lurker of the Loch"),
             new SampleCard(3, "Goblin Engineer"),
-            new SampleCard(3, "Lurrus of the Dream Den"),
+            new SampleCard(3, "Lurrus of the Dream-Den"),
             new SampleCard(4, "Urza, Lord High Artificer"),
             new SampleCard(3, "Whir of Invention"),
             new SampleCard(4, "Arcum's Astrolabe"),

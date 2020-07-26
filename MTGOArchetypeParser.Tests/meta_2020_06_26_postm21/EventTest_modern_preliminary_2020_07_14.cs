@@ -76,15 +76,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck06_bubbsei_Devoted_WG()
+        public void Deck06_bubbsei_Devoted_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_preliminary_2020_07_14.Deck06_bubbsei_Devoted_WG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_preliminary_2020_07_14.Deck06_bubbsei_Devoted_WG_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Devoted),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 

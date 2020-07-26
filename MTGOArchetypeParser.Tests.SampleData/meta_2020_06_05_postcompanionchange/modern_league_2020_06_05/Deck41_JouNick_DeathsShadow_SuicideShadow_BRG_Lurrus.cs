@@ -38,7 +38,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(3, "Assassin's Trophy"),
             new SampleCard(3, "Collective Brutality"),
             new SampleCard(3, "Kiln Fiend"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(2, "Nihil Spellbomb"),
             new SampleCard(1, "Veil of Summer") 
         };

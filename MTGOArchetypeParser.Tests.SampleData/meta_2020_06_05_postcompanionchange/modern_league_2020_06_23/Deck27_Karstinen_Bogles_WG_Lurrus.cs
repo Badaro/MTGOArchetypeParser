@@ -32,7 +32,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(2, "Damping Sphere"),
             new SampleCard(2, "Gaddock Teeg"),
             new SampleCard(4, "Kor Firewalker"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(3, "Seal of Primordium"),
             new SampleCard(3, "Soul-Guide Lantern") 
         };

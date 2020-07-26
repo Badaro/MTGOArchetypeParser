@@ -154,15 +154,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck12_alice1986_Prowess_RakdosProwess_BR()
+        public void Deck12_alice1986_Prowess_RakdosProwess_BR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_22.Deck12_alice1986_Prowess_RakdosProwess_BR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_22.Deck12_alice1986_Prowess_RakdosProwess_BR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.BR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosProwess),
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 

@@ -128,15 +128,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck10_maple049_HardenedScales_WG()
+        public void Deck10_maple049_HardenedScales_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_17.Deck10_maple049_HardenedScales_WG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_17.Deck10_maple049_HardenedScales_WG_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.HardenedScales),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
@@ -349,15 +349,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck27_Zebrah_DeathAndTaxes_WR()
+        public void Deck27_Zebrah_DeathAndTaxes_WR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_17.Deck27_Zebrah_DeathAndTaxes_WR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_17.Deck27_Zebrah_DeathAndTaxes_WR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.DeathAndTaxes),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
@@ -492,15 +492,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck38_bubbsei_Devoted_WG()
+        public void Deck38_bubbsei_Devoted_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_17.Deck38_bubbsei_Devoted_WG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_17.Deck38_bubbsei_Devoted_WG_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Devoted),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
@@ -635,15 +635,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck49_BubbleDJ10_Bogles_WG()
+        public void Deck49_BubbleDJ10_Bogles_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_17.Deck49_BubbleDJ10_Bogles_WG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_17.Deck49_BubbleDJ10_Bogles_WG_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Bogles),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 

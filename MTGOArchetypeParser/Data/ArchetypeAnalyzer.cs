@@ -14,7 +14,7 @@ namespace MTGOArchetypeParser.Data
             {"Jegantha, the Wellspring", ArchetypeCompanion.Jegantha },
             {"Kaheera, the Orphanguard", ArchetypeCompanion.Kaheera  },
             {"Keruga, the Macrosage", ArchetypeCompanion.Keruga },
-            {"Lurrus of the Dream Den", ArchetypeCompanion.Lurrus },
+            {"Lurrus of the Dream-Den", ArchetypeCompanion.Lurrus },
             {"Lutri, the Spellchaser", ArchetypeCompanion.Lutri },
             {"Obosh, the Preypiercer", ArchetypeCompanion.Obosh },
             {"Umori, the Collector",  ArchetypeCompanion.Umori},

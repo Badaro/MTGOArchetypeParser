@@ -30,7 +30,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(2, "Collective Brutality"),
             new SampleCard(2, "Fatal Push"),
             new SampleCard(4, "Leonin Relic-Warder"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(3, "Thoughtseize") 
         };
     }

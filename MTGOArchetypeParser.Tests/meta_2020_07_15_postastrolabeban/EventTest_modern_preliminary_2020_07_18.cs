@@ -37,15 +37,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck03_Toastxp_Prowess_RakdosProwess_WBR()
+        public void Deck03_Toastxp_Prowess_RakdosProwess_WBR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck03_Toastxp_Prowess_RakdosProwess_WBR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck03_Toastxp_Prowess_RakdosProwess_WBR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WBR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosProwess),
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 

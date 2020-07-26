@@ -35,7 +35,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(2, "Anger of the Gods"),
             new SampleCard(1, "Blessed Alliance"),
             new SampleCard(1, "Dovin's Veto"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(2, "Mystical Dispute"),
             new SampleCard(2, "Surgical Extraction"),
             new SampleCard(2, "Wear // Tear"),

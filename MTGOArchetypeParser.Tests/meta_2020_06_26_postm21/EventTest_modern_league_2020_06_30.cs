@@ -154,15 +154,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck12_Metcalf23_DeathAndTaxes_WR()
+        public void Deck12_Metcalf23_DeathAndTaxes_WR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_30.Deck12_Metcalf23_DeathAndTaxes_WR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_30.Deck12_Metcalf23_DeathAndTaxes_WR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.WR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.DeathAndTaxes),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
@@ -427,15 +427,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck33_PizzaTurtle_Bogles_WG()
+        public void Deck33_PizzaTurtle_Bogles_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_30.Deck33_PizzaTurtle_Bogles_WG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_30.Deck33_PizzaTurtle_Bogles_WG_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Bogles),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
@@ -583,15 +583,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck45_meanfannypack_Devoted_WG()
+        public void Deck45_meanfannypack_Devoted_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_30.Deck45_meanfannypack_Devoted_WG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_30.Deck45_meanfannypack_Devoted_WG_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Devoted),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
@@ -635,15 +635,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck49_Lcario_Prowess_RakdosProwess_BR()
+        public void Deck49_Lcario_Prowess_RakdosProwess_BR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_30.Deck49_Lcario_Prowess_RakdosProwess_BR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_30.Deck49_Lcario_Prowess_RakdosProwess_BR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.BR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosProwess),
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 

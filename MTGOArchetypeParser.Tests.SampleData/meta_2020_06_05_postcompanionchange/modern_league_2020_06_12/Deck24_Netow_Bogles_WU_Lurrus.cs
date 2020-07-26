@@ -30,7 +30,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
         { 
             new SampleCard(2, "Path to Exile"),
             new SampleCard(4, "Leyline of Sanctity"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(2, "Revoke Existence"),
             new SampleCard(2, "Silence"),
             new SampleCard(2, "Soul-Guide Lantern"),

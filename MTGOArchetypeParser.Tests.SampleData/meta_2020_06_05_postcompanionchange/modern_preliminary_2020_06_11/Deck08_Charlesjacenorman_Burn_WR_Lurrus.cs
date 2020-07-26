@@ -30,7 +30,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
         { 
             new SampleCard(3, "Deafening Silence"),
             new SampleCard(4, "Dragon's Claw"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(3, "Path to Exile"),
             new SampleCard(1, "Relic of Progenitus"),
             new SampleCard(1, "Soul-Guide Lantern"),

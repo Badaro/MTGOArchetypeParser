@@ -38,7 +38,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(2, "Damping Sphere"),
             new SampleCard(2, "Engineered Explosives"),
             new SampleCard(1, "Executioner's Capsule"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(2, "Veil of Summer") 
         };
     }

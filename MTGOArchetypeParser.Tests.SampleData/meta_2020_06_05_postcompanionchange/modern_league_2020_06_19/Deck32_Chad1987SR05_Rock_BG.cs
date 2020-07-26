@@ -10,7 +10,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(1, "Liliana, the Last Hope"),
             new SampleCard(4, "Grim Flayer"),
             new SampleCard(4, "Hexdrinker"),
-            new SampleCard(2, "Lurrus of the Dream Den"),
+            new SampleCard(2, "Lurrus of the Dream-Den"),
             new SampleCard(2, "Scavenging Ooze"),
             new SampleCard(4, "Tarmogoyf"),
             new SampleCard(4, "Inquisition of Kozilek"),

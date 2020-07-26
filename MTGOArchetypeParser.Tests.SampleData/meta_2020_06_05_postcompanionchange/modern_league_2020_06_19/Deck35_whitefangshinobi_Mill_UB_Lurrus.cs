@@ -35,7 +35,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(3, "Crypt Incursion"),
             new SampleCard(2, "Damnation"),
             new SampleCard(2, "Echoing Truth"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(1, "Set Adrift"),
             new SampleCard(1, "Torpor Orb"),
             new SampleCard(1, "Unmoored Ego") 

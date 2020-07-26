@@ -193,15 +193,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck15_Nickburch13_Burn_WR()
+        public void Deck15_Nickburch13_Burn_WR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_25.Deck15_Nickburch13_Burn_WR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_25.Deck15_Nickburch13_Burn_WR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Burn),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
@@ -219,15 +219,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck17_hoveydw_DeathsShadow_SuicideShadow_BRG()
+        public void Deck17_hoveydw_DeathsShadow_SuicideShadow_BRG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_25.Deck17_hoveydw_DeathsShadow_SuicideShadow_BRG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_25.Deck17_hoveydw_DeathsShadow_SuicideShadow_BRG_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.BRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.DeathsShadow),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SuicideShadow),
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 

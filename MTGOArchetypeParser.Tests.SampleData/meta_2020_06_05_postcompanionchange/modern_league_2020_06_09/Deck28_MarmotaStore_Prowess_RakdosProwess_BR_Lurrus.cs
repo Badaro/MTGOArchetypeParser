@@ -34,7 +34,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(1, "Kolaghan's Command"),
             new SampleCard(2, "Thoughtseize"),
             new SampleCard(4, "Collective Brutality"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(2, "Nihil Spellbomb"),
             new SampleCard(2, "Smash to Smithereens"),
             new SampleCard(1, "Unearth") 

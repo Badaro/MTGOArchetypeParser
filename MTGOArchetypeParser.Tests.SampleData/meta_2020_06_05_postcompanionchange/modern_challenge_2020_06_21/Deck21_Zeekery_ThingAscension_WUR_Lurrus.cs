@@ -34,7 +34,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(2, "Aether Gust"),
             new SampleCard(2, "Anger of the Gods"),
             new SampleCard(1, "Blessed Alliance"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(2, "Mystical Dispute"),
             new SampleCard(2, "Pillage"),
             new SampleCard(2, "Sprite Dragon"),

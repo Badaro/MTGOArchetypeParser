@@ -154,15 +154,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck12_1plus1equals3_Devoted_WG()
+        public void Deck12_1plus1equals3_Devoted_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16.Deck12_1plus1equals3_Devoted_WG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16.Deck12_1plus1equals3_Devoted_WG_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Devoted),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
@@ -232,15 +232,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck18_NHA37_Prowess_JeskaiProwess_WUR()
+        public void Deck18_NHA37_Prowess_JeskaiProwess_WUR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16.Deck18_NHA37_Prowess_JeskaiProwess_WUR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16.Deck18_NHA37_Prowess_JeskaiProwess_WUR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WUR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.JeskaiProwess),
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
@@ -297,15 +297,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck23_karatedom_Prowess_RakdosProwess_WBR()
+        public void Deck23_karatedom_Prowess_RakdosProwess_WBR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16.Deck23_karatedom_Prowess_RakdosProwess_WBR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16.Deck23_karatedom_Prowess_RakdosProwess_WBR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WBR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosProwess),
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 

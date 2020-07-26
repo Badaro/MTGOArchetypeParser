@@ -31,7 +31,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
         { 
             new SampleCard(4, "Burrenton Forge-Tender"),
             new SampleCard(1, "Caustic Caterpillar"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(3, "Path to Exile"),
             new SampleCard(1, "Phyrexian Revoker"),
             new SampleCard(1, "Spellskite"),

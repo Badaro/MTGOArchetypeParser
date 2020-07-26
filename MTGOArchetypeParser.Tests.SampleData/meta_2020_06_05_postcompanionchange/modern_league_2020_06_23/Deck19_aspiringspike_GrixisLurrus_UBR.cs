@@ -6,7 +6,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
-            new SampleCard(3, "Lurrus of the Dream Den"),
+            new SampleCard(3, "Lurrus of the Dream-Den"),
             new SampleCard(3, "Snapcaster Mage"),
             new SampleCard(4, "Sprite Dragon"),
             new SampleCard(2, "Unearth"),

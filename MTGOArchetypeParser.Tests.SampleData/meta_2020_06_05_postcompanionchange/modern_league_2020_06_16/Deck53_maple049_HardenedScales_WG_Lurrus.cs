@@ -34,7 +34,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(2, "Burrenton Forge-Tender"),
             new SampleCard(2, "Damping Sphere"),
             new SampleCard(1, "Grafdigger's Cage"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(2, "Nature's Claim"),
             new SampleCard(2, "Pithing Needle"),
             new SampleCard(1, "Throne of Geth"),

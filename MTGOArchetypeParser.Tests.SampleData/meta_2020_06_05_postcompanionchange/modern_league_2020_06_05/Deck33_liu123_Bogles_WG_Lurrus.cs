@@ -33,7 +33,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(2, "Deafening Silence"),
             new SampleCard(3, "Force of Vigor"),
             new SampleCard(3, "Gaddock Teeg"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(2, "Suppression Field"),
             new SampleCard(2, "Tormod's Crypt") 
         };

@@ -34,7 +34,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(2, "Damping Sphere"),
             new SampleCard(2, "Duress"),
             new SampleCard(4, "Fatal Push"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(1, "Nature's Claim"),
             new SampleCard(1, "Seal of Primordium"),
             new SampleCard(1, "Tormod's Crypt"),

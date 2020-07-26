@@ -27,7 +27,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
         };
         public ISampleCard[] Sideboard => new ISampleCard[] 
         { 
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(1, "Phyrexian Revoker"),
             new SampleCard(1, "Spellskite"),
             new SampleCard(2, "Stony Silence"),

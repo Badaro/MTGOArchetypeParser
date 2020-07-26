@@ -531,15 +531,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck41_Zxrogue_DeathAndTaxes_WR()
+        public void Deck41_Zxrogue_DeathAndTaxes_WR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_03.Deck41_Zxrogue_DeathAndTaxes_WR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_07_03.Deck41_Zxrogue_DeathAndTaxes_WR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.WR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.DeathAndTaxes),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 

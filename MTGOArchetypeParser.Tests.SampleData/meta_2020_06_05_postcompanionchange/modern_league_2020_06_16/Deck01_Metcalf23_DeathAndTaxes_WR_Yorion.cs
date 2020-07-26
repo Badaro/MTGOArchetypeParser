@@ -10,7 +10,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
             new SampleCard(4, "Flickerwisp"),
             new SampleCard(4, "Giver of Runes"),
             new SampleCard(4, "Leonin Arbiter"),
-            new SampleCard(2, "Lurrus of the Dream Den"),
+            new SampleCard(2, "Lurrus of the Dream-Den"),
             new SampleCard(4, "Magus of the Moon"),
             new SampleCard(2, "Remorseful Cleric"),
             new SampleCard(4, "Restoration Angel"),

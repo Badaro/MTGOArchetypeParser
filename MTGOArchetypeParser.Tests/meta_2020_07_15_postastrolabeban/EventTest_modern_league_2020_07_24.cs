@@ -362,15 +362,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck28_Zebrah_DeathAndTaxes_WR()
+        public void Deck28_Zebrah_DeathAndTaxes_WR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24.Deck28_Zebrah_DeathAndTaxes_WR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24.Deck28_Zebrah_DeathAndTaxes_WR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.DeathAndTaxes),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
@@ -765,15 +765,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck59_DreamsOfAshiok_Prowess_RakdosProwess_WBR()
+        public void Deck59_DreamsOfAshiok_Prowess_RakdosProwess_WBR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24.Deck59_DreamsOfAshiok_Prowess_RakdosProwess_WBR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24.Deck59_DreamsOfAshiok_Prowess_RakdosProwess_WBR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WBR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosProwess),
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 

@@ -8,7 +8,7 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchan
         { 
             new SampleCard(4, "Death's Shadow"),
             new SampleCard(1, "Ghor-Clan Rampager"),
-            new SampleCard(1, "Lurrus of the Dream Den"),
+            new SampleCard(1, "Lurrus of the Dream-Den"),
             new SampleCard(3, "Snapcaster Mage"),
             new SampleCard(4, "Street Wraith"),
             new SampleCard(4, "Tarmogoyf"),

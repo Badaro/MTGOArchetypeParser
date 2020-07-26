@@ -258,28 +258,28 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck20_FantasticMrFox_Bogles_WG()
+        public void Deck20_FantasticMrFox_Bogles_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_26.Deck20_FantasticMrFox_Bogles_WG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_26.Deck20_FantasticMrFox_Bogles_WG_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Bogles),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
         [Test]
-        public void Deck21_RockStar_Prowess_RakdosProwess_BR()
+        public void Deck21_RockStar_Prowess_RakdosProwess_BR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_26.Deck21_RockStar_Prowess_RakdosProwess_BR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_26.Deck21_RockStar_Prowess_RakdosProwess_BR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.BR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.Prowess),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosProwess),
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
@@ -388,15 +388,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck30_vengevine29_HardenedScales_BG()
+        public void Deck30_vengevine29_HardenedScales_BG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_26.Deck30_vengevine29_HardenedScales_BG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_league_2020_06_26.Deck30_vengevine29_HardenedScales_BG_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.BG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.HardenedScales),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 

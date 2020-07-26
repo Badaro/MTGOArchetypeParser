@@ -128,28 +128,28 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck10_djbmppwns_DeathsShadow_SuicideShadow_BRG()
+        public void Deck10_djbmppwns_DeathsShadow_SuicideShadow_BRG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_21.Deck10_djbmppwns_DeathsShadow_SuicideShadow_BRG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_21.Deck10_djbmppwns_DeathsShadow_SuicideShadow_BRG_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.BRG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.DeathsShadow),
                 typeof(MTGOArchetypeParser.Archetypes.Modern.SuicideShadow),
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
         [Test]
-        public void Deck11_keytolife_RakdosMidrange_BR()
+        public void Deck11_keytolife_RakdosMidrange_BR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_21.Deck11_keytolife_RakdosMidrange_BR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_21.Deck11_keytolife_RakdosMidrange_BR_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.BR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.RakdosMidrange),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
@@ -466,15 +466,15 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck36_sambran414_HardenedScales_WG()
+        public void Deck36_sambran414_HardenedScales_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_21.Deck36_sambran414_HardenedScales_WG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_21.Deck36_sambran414_HardenedScales_WG_Lurrus(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WG,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.HardenedScales),
                 null,
-                null
+                ArchetypeCompanion.Lurrus
             );
         }
 
