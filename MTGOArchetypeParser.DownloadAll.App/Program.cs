@@ -20,6 +20,9 @@ namespace MTGOArchetypeParser.DownloadAll.App
         {
             try
             {
+                if (Directory.Exists(_outputFolder)) Directory.Delete(_outputFolder, true);
+                Directory.CreateDirectory(_outputFolder);
+
                 Console.WriteLine("Downloading tournament list");
 
                 bool allMetas = args.Any(a => a.ToLower() == "allmetas");
@@ -62,7 +65,6 @@ namespace MTGOArchetypeParser.DownloadAll.App
                 csvData.AppendLine($"{record.Tournament},{record.Meta},{record.Week},{record.Date.ToString("yyyy-MM-dd")},{record.Player},{record.AnchorUri},{record.Archetype},{record.Variant},{record.Color},{record.Companion}");
             }
 
-            if (!Directory.Exists(_outputFolder)) Directory.CreateDirectory(_outputFolder);
             File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
         }
 
@@ -101,7 +103,6 @@ namespace MTGOArchetypeParser.DownloadAll.App
             }
             csvData.AppendLine($"Total,{consolidatedTotals.Sum(c => c.Value)},100%");
 
-            if (!Directory.Exists(_outputFolder)) Directory.CreateDirectory(_outputFolder);
             File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
         }
     }
