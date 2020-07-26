@@ -180,14 +180,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
         }
 
         [Test]
-        public void Deck14_mariogomes097_DeathsShadow_UBR()
+        public void Deck14_mariogomes097_DeathsShadow_GrixisShadow_UBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_preliminary_2020_06_30.Deck14_mariogomes097_DeathsShadow_UBR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_preliminary_2020_06_30.Deck14_mariogomes097_DeathsShadow_GrixisShadow_UBR(),
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.UBR,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.DeathsShadow),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.GrixisShadow),
                 null
             );
         }

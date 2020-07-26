@@ -1,8 +1,8 @@
 using MTGOArchetypeParser.Tests.SampleData;
 
-namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_24
+namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_22
 {
-    public class Deck08_Ganksyou_AzoriusControl_WU : ISampleDeck
+    public class Deck07_Ganksyou_AzoriusControl_AzoriusStoneblade_WU : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
@@ -25,10 +25,10 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.
             new SampleCard(1, "Celestial Colonnade"),
             new SampleCard(4, "Field of Ruin"),
             new SampleCard(4, "Flooded Strand"),
-            new SampleCard(3, "Hallowed Fountain"),
+            new SampleCard(4, "Hallowed Fountain"),
             new SampleCard(4, "Misty Rainforest"),
             new SampleCard(2, "Mystic Sanctuary"),
-            new SampleCard(5, "Snow-Covered Island"),
+            new SampleCard(4, "Snow-Covered Island"),
             new SampleCard(1, "Snow-Covered Plains") 
         };
         public ISampleCard[] Sideboard => new ISampleCard[] 

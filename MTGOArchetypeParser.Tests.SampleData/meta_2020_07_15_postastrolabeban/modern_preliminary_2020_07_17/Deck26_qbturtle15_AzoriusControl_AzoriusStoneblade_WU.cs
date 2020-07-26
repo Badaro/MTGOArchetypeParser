@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_17
 {
-    public class Deck26_qbturtle15_AzoriusControl_WU : ISampleDeck
+    public class Deck26_qbturtle15_AzoriusControl_AzoriusStoneblade_WU : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

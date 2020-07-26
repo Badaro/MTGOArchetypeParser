@@ -76,10 +76,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck06_TSPJendrek_AzoriusControl_WU()
+        public void Deck06_TSPJendrek_AzoriusControl_AzoriusStoneblade_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_22.Deck06_TSPJendrek_AzoriusControl_WU(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_22.Deck06_TSPJendrek_AzoriusControl_AzoriusStoneblade_WU(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WU,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),
@@ -89,10 +89,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck07_Ganksyou_AzoriusControl_WU()
+        public void Deck07_Ganksyou_AzoriusControl_AzoriusStoneblade_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_22.Deck07_Ganksyou_AzoriusControl_WU(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_22.Deck07_Ganksyou_AzoriusControl_AzoriusStoneblade_WU(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WU,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),

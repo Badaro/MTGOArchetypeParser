@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_11
 {
-    public class Deck06_Lirek154_AzoriusControl_WU : ISampleDeck
+    public class Deck06_Lirek154_AzoriusControl_AzoriusStoneblade_WU : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

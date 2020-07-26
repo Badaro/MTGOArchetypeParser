@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_preliminary_2020_06_30
 {
-    public class Deck14_mariogomes097_DeathsShadow_UBR : ISampleDeck
+    public class Deck14_mariogomes097_DeathsShadow_GrixisShadow_UBR : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

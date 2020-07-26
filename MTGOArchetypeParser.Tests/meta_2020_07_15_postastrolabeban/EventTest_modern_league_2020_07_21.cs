@@ -453,10 +453,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck35_Mussie99_AzoriusControl_WU()
+        public void Deck35_Mussie99_AzoriusControl_AzoriusStoneblade_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_21.Deck35_Mussie99_AzoriusControl_WU(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_21.Deck35_Mussie99_AzoriusControl_AzoriusStoneblade_WU(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WU,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),

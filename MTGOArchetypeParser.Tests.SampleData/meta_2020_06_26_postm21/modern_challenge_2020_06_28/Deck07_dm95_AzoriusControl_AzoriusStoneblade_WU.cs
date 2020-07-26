@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_challenge_2020_06_28
 {
-    public class Deck07_dm95_AzoriusControl_WU : ISampleDeck
+    public class Deck07_dm95_AzoriusControl_AzoriusStoneblade_WU : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

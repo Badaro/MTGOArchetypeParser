@@ -50,10 +50,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck04_lsmguys_AzoriusControl_WU()
+        public void Deck04_lsmguys_AzoriusControl_AzoriusStoneblade_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck04_lsmguys_AzoriusControl_WU(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_18.Deck04_lsmguys_AzoriusControl_AzoriusStoneblade_WU(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WU,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),

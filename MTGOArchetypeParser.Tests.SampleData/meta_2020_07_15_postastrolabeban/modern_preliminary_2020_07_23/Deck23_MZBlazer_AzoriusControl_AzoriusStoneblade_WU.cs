@@ -1,8 +1,8 @@
 using MTGOArchetypeParser.Tests.SampleData;
 
-namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_24
+namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_23
 {
-    public class Deck10_Lukas261997_AzoriusControl_WU : ISampleDeck
+    public class Deck23_MZBlazer_AzoriusControl_AzoriusStoneblade_WU : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
@@ -34,8 +34,8 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.
         { 
             new SampleCard(2, "Aether Gust"),
             new SampleCard(2, "Ashiok, Dream Render"),
-            new SampleCard(1, "Celestial Purge"),
-            new SampleCard(3, "Ceremonious Rejection"),
+            new SampleCard(2, "Celestial Purge"),
+            new SampleCard(2, "Ceremonious Rejection"),
             new SampleCard(1, "Dovin's Veto"),
             new SampleCard(1, "Flusterstorm"),
             new SampleCard(1, "Soul-Guide Lantern"),

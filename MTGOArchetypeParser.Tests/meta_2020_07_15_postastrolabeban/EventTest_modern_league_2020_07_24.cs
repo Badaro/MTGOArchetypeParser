@@ -33,7 +33,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),
                 null,
                 null
-            ); ;
+            );
         }
 
         [Test]
@@ -648,10 +648,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck50_Mussie99_AzoriusControl_WU()
+        public void Deck50_Mussie99_AzoriusControl_AzoriusStoneblade_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24.Deck50_Mussie99_AzoriusControl_WU(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24.Deck50_Mussie99_AzoriusControl_AzoriusStoneblade_WU(),
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WU,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),

@@ -76,10 +76,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck06_Lirek154_AzoriusControl_WU()
+        public void Deck06_Lirek154_AzoriusControl_AzoriusStoneblade_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_11.Deck06_Lirek154_AzoriusControl_WU(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_preliminary_2020_06_11.Deck06_Lirek154_AzoriusControl_AzoriusStoneblade_WU(),
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.WU,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),
