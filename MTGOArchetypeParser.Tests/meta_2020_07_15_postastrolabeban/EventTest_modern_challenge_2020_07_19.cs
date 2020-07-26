@@ -83,7 +83,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
                 new MTGOArchetypeParser.Metas.Modern.PostAstrolabeBan(),
                 ArchetypeColor.WU,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusStoneblade),
                 null
             );
         }

@@ -96,7 +96,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
                 new MTGOArchetypeParser.Metas.Modern.PostM21(),
                 ArchetypeColor.WU,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusStoneblade),
                 null
             );
         }

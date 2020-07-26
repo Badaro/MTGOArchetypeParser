@@ -20,7 +20,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             };
             Variants = new ArchetypeVariant[]
             {
-                new Miracles()
+                new Miracles(),
+                new AzoriusStoneblade()
             };
         }
     }
@@ -32,6 +33,19 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Terminus" } },
+            };
+        }
+    }
+
+    public class AzoriusStoneblade : ArchetypeVariant
+    {
+        public AzoriusStoneblade()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Stoneforge Mystic" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Batterskull" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Terminus" } },
             };
         }
     }

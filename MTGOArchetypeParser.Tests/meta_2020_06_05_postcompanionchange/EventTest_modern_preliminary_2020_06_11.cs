@@ -83,7 +83,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Metas.Modern.PostCompanionChange(),
                 ArchetypeColor.WU,
                 typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusControl),
-                null,
+                typeof(MTGOArchetypeParser.Archetypes.Modern.AzoriusStoneblade),
                 null
             );
         }
