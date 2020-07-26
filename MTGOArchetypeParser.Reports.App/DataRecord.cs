@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MTGOArchetypeParser.DownloadAll.App
+namespace MTGOArchetypeParser.Reports.App
 {
     public class DataRecord
     {

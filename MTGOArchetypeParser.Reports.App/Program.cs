@@ -9,7 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace MTGOArchetypeParser.DownloadAll.App
+namespace MTGOArchetypeParser.Reports.App
 {
     class Program
     {

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MTGOArchetypeParser.DownloadAll.App
+namespace MTGOArchetypeParser.Reports.App
 {
     public static class Loader
     {
