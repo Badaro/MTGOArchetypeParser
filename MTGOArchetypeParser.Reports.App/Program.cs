@@ -41,11 +41,13 @@ namespace MTGOArchetypeParser.Reports.App
                 {
                     GenerateMeta(records.Where(r => r.Meta == meta), r => r.Archetype, $"mtgo_meta_archetype_{meta.ToLower()}_full_{date}", _minPercentage);
                     GenerateMeta(records.Where(r => r.Meta == meta), r => r.Variant, $"mtgo_meta_variant_{meta.ToLower()}_full_{date}", _minPercentage);
+                    GenerateColors(records.Where(r => r.Meta == meta), $"mtgo_meta_colors_{meta.ToLower()}_full_{date}");
 
                     foreach (int week in records.Where(r => r.Meta == meta).Select(r => r.Week).Distinct())
                     {
                         GenerateMeta(records.Where(r => r.Meta == meta && r.Week == week), r => r.Archetype, $"mtgo_meta_archetype_{meta.ToLower()}_week{week.ToString("D2")}_{date}", _minPercentage);
                         GenerateMeta(records.Where(r => r.Meta == meta && r.Week == week), r => r.Variant, $"mtgo_meta_variant_{meta.ToLower()}_week{week.ToString("D2")}_{date}", _minPercentage);
+                        GenerateColors(records.Where(r => r.Meta == meta && r.Week == week), $"mtgo_meta_colors_{meta.ToLower()}_week{week.ToString("D2")}_{date}");
                     }
                 }
             }
@@ -102,6 +104,34 @@ namespace MTGOArchetypeParser.Reports.App
                 csvData.AppendLine($"{othersKey},{consolidatedTotals[othersKey]},{Math.Round((100.0 * consolidatedTotals[othersKey]) / totals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)}%");
             }
             csvData.AppendLine($"Total,{consolidatedTotals.Sum(c => c.Value)},100%");
+
+            File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
+        }
+
+        private static void GenerateColors(IEnumerable<DataRecord> records, string reportName)
+        {
+            Dictionary<string, int> totals = new Dictionary<string, int>();
+            totals.Add("W", 0);
+            totals.Add("U", 0);
+            totals.Add("B", 0);
+            totals.Add("R", 0);
+            totals.Add("G", 0);
+
+            foreach (var record in records)
+            {
+                foreach(var color in totals.Keys.ToArray())
+                {
+                    if (record.Color.ToString().Contains(color)) totals[color]++;
+               }
+            }
+
+            StringBuilder csvData = new StringBuilder();
+            csvData.AppendLine($"COLOR,COUNT");
+
+            foreach (var total in totals)
+            {
+                csvData.AppendLine($"{total.Key},{total.Value},{Math.Round((100.0 * total.Value) / records.Count(), 1).ToString("F1", CultureInfo.InvariantCulture)}%");
+            }
 
             File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
         }
