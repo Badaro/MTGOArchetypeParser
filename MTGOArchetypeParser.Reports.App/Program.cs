@@ -126,7 +126,7 @@ namespace MTGOArchetypeParser.Reports.App
             }
 
             StringBuilder csvData = new StringBuilder();
-            csvData.AppendLine($"COLOR,COUNT");
+            csvData.AppendLine($"COLOR,COUNT,PERCENT");
 
             foreach (var total in totals)
             {
