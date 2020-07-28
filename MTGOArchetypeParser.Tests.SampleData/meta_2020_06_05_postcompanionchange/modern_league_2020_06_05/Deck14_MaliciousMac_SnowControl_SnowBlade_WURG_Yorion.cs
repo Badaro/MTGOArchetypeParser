@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_05
 {
-    public class Deck14_MaliciousMac_JeskaiControl_JeskaiStoneblade_WURG_Yorion : ISampleDeck
+    public class Deck14_MaliciousMac_SnowControl_SnowBlade_WURG_Yorion : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

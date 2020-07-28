@@ -2,7 +2,7 @@
   "profiles": {
     "MTGOArchetypeParser.App": {
       "commandName": "Project",
-      "commandLineArgs": "https://magic.wizards.com/en/articles/archive/mtgo-standings/modern-champ-qual-2020-07-27?a=20"
+      "commandLineArgs": "https://magic.wizards.com/en/articles/archive/mtgo-standings/modern-league-2020-07-28"
     }
   }
 }

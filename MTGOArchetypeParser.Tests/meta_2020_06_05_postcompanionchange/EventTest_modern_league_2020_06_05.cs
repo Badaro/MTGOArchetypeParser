@@ -182,14 +182,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
         }
 
         [Test]
-        public void Deck14_MaliciousMac_JeskaiControl_JeskaiStoneblade_WURG_Yorion()
+        public void Deck14_MaliciousMac_SnowControl_SnowBlade_WURG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_05.Deck14_MaliciousMac_JeskaiControl_JeskaiStoneblade_WURG_Yorion(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_05.Deck14_MaliciousMac_SnowControl_SnowBlade_WURG_Yorion(),
                 new PostCompanionChange(),
                 ArchetypeColor.WURG,
-                typeof(JeskaiControl),
-                typeof(JeskaiStoneblade),
+                typeof(SnowControl),
+                typeof(SnowBlade),
                 ArchetypeCompanion.Yorion
             );
         }
