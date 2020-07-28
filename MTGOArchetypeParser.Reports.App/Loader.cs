@@ -65,7 +65,8 @@ namespace MTGOArchetypeParser.Reports.App
                         Archetype = archetypeID,
                         Variant = consolidatedID,
                         Color = colorID,
-                        Companion = companionID
+                        Companion = companionID,
+                        Deck = decks[i]
                     });
                 }
             }
