@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_challenge_2020_07_26
 {
-    public class Deck28_CrusherBotBG_PuresteelAggro_W : ISampleDeck
+    public class Deck28_CrusherBotBG_HammerTime_W : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

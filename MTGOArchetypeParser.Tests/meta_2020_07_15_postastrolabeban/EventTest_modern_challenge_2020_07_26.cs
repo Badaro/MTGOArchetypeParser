@@ -364,13 +364,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck28_CrusherBotBG_PuresteelAggro_W()
+        public void Deck28_CrusherBotBG_HammerTime_W()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_challenge_2020_07_26.Deck28_CrusherBotBG_PuresteelAggro_W(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_challenge_2020_07_26.Deck28_CrusherBotBG_HammerTime_W(),
                 new PostAstrolabeBan(),
                 ArchetypeColor.W,
-                typeof(PuresteelAggro),
+                typeof(HammerTime),
                 null,
                 null
             );
