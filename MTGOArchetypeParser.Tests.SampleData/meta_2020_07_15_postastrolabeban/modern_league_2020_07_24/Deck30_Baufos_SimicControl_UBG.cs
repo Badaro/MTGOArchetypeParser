@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24
 {
-    public class Deck30_Baufos_BantField_UBG : ISampleDeck
+    public class Deck30_Baufos_SimicControl_UBG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_31
 {
-    public class Deck07_JRDC14_RakdosMidrange_WBR : ISampleDeck
+    public class Deck07_JRDC14_MarduMidrange_WBR : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

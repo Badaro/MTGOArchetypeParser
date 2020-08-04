@@ -390,13 +390,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck30_Baufos_BantField_UBG()
+        public void Deck30_Baufos_SimicControl_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24.Deck30_Baufos_BantField_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_24.Deck30_Baufos_SimicControl_UBG(),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(BantField),
+                typeof(SimicControl),
                 null,
                 null
             );

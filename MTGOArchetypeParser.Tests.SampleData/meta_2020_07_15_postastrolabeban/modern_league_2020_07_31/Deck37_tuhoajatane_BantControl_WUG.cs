@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_31
 {
-    public class Deck37_tuhoajatane_BantField_WUG : ISampleDeck
+    public class Deck37_tuhoajatane_BantControl_WUG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

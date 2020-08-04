@@ -91,13 +91,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck07_JRDC14_RakdosMidrange_WBR()
+        public void Deck07_JRDC14_MarduMidrange_WBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_31.Deck07_JRDC14_RakdosMidrange_WBR(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_31.Deck07_JRDC14_MarduMidrange_WBR(),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WBR,
-                typeof(RakdosMidrange),
+                typeof(MarduMidrange),
                 null,
                 null
             );
@@ -481,13 +481,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck37_tuhoajatane_BantField_WUG()
+        public void Deck37_tuhoajatane_BantControl_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_31.Deck37_tuhoajatane_BantField_WUG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_31.Deck37_tuhoajatane_BantControl_WUG(),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(BantField),
+                typeof(BantControl),
                 null,
                 null
             );
