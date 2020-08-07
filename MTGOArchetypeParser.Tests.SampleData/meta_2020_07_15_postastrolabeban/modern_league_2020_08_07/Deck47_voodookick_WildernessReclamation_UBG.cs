@@ -1,24 +1,24 @@
 using MTGOArchetypeParser.Tests.SampleData;
 
-namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_08_04
+namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_08_07
 {
-    public class Deck58_bcs8995_PrimevalTitan_UBG : ISampleDeck
+    public class Deck47_voodookick_WildernessReclamation_UBG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 
-            new SampleCard(1, "Jace, the Mind Sculptor"),
-            new SampleCard(2, "Primeval Titan"),
-            new SampleCard(4, "Uro, Titan of Nature's Wrath"),
-            new SampleCard(2, "Hour of Promise"),
-            new SampleCard(2, "Assassin's Trophy"),
-            new SampleCard(2, "Cryptic Command"),
+            new SampleCard(3, "Uro, Titan of Nature's Wrath"),
+            new SampleCard(1, "Hour of Promise"),
+            new SampleCard(3, "Cryptic Command"),
             new SampleCard(3, "Fact or Fiction"),
-            new SampleCard(3, "Fatal Push"),
+            new SampleCard(4, "Fatal Push"),
             new SampleCard(3, "Force of Negation"),
             new SampleCard(4, "Growth Spiral"),
             new SampleCard(1, "Nexus of Fate"),
             new SampleCard(4, "Remand"),
+            new SampleCard(2, "Nihil Spellbomb"),
+            new SampleCard(1, "Search for Azcanta"),
             new SampleCard(2, "Shark Typhoon"),
+            new SampleCard(2, "Wilderness Reclamation"),
             new SampleCard(1, "Bojuka Bog"),
             new SampleCard(1, "Breeding Pool"),
             new SampleCard(2, "Field of Ruin"),
@@ -39,16 +39,14 @@ namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.
         };
         public ISampleCard[] Sideboard => new ISampleCard[] 
         { 
-            new SampleCard(1, "Field of the Dead"),
             new SampleCard(3, "Aether Gust"),
-            new SampleCard(1, "Ashiok, Nightmare Muse"),
-            new SampleCard(1, "Ceremonious Rejection"),
-            new SampleCard(2, "Damping Sphere"),
-            new SampleCard(1, "Elder Gargaroth"),
-            new SampleCard(1, "Engineered Explosives"),
+            new SampleCard(2, "Ashiok, Dream Render"),
+            new SampleCard(2, "Ceremonious Rejection"),
             new SampleCard(1, "Mystical Dispute"),
-            new SampleCard(2, "Nihil Spellbomb"),
-            new SampleCard(2, "Veil of Summer") 
+            new SampleCard(1, "Narset, Parter of Veils"),
+            new SampleCard(2, "Thragtusk"),
+            new SampleCard(2, "Veil of Summer"),
+            new SampleCard(2, "Wilt") 
         };
     }
 }

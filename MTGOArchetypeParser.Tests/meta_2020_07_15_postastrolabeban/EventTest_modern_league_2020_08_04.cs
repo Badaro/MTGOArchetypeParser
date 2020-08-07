@@ -754,13 +754,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck58_bcs8995_PrimevalTitan_UBG()
+        public void Deck58_bcs8995_SultaiControl_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_08_04.Deck58_bcs8995_PrimevalTitan_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_08_04.Deck58_bcs8995_SultaiControl_UBG(),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(PrimevalTitan),
+                typeof(SultaiControl),
                 null,
                 null
             );

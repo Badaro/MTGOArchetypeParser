@@ -7,13 +7,14 @@ namespace MTGOArchetypeParser.Archetypes.Modern
 {
     public class Smallpox : Archetype
     {
-        public Smallpox()
+        public Smallpox() 
         {
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Smallpox" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Lingering Souls" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Flagstones of Trokair" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Liliana of the Veil" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Inquisition of Kozilek", "Thoughtseize", "Raven's Crime" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Lightning Bolt" } }
             };
         }
     }
