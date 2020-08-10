@@ -52,6 +52,20 @@ namespace MTGOArchetypeParser.Reports.App
                         GenerateCards(records.Where(r => r.Meta == meta && r.Week == week), $"mtgo_meta_cards_{meta.ToLower()}_week{week.ToString("D2")}_{date}");
                     }
                 }
+
+                Dictionary<int, int> totals = new Dictionary<int, int>();
+                Dictionary<int, int> reds = new Dictionary<int, int>();
+                foreach (var record in records)
+                {
+                    if (!totals.ContainsKey(record.Week)) totals.Add(record.Week, 0);
+                    if (!reds.ContainsKey(record.Week)) reds.Add(record.Week, 0);
+
+                    if (record.Deck.Mainboard.Any(c => c.CardName == "Monastery Swiftspear"))
+                    {
+                        reds[record.Week]++;
+                    }
+                    totals[record.Week]++;
+                }
             }
             catch (Exception ex)
             {
@@ -188,7 +202,7 @@ namespace MTGOArchetypeParser.Reports.App
 
             foreach (var card in decks.Keys)
             {
-                csvData.AppendLine($"{card.Replace(",","")},{count[card]},{decks[card]},{mainboardCount[card]},{mainboardDecks[card]},{sideboardCount[card]},{sideboardDecks[card]}");
+                csvData.AppendLine($"{card.Replace(",", "")},{count[card]},{decks[card]},{mainboardCount[card]},{mainboardDecks[card]},{sideboardCount[card]},{sideboardDecks[card]}");
             }
 
             File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
