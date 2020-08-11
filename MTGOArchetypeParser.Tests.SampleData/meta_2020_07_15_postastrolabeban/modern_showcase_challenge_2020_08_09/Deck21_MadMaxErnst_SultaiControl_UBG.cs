@@ -2,7 +2,7 @@ using MTGOArchetypeParser.Tests.SampleData;
 
 namespace MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_showcase_challenge_2020_08_09
 {
-    public class Deck21_MadMaxErnst_SimicControl_UBG : ISampleDeck
+    public class Deck21_MadMaxErnst_SultaiControl_UBG : ISampleDeck
     {
         public ISampleCard[] Mainboard => new ISampleCard[] 
         { 

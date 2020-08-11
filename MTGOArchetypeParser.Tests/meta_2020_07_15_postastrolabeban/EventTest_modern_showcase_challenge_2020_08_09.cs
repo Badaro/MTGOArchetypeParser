@@ -273,13 +273,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
         }
 
         [Test]
-        public void Deck21_MadMaxErnst_SimicControl_UBG()
+        public void Deck21_MadMaxErnst_SultaiControl_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_showcase_challenge_2020_08_09.Deck21_MadMaxErnst_SimicControl_UBG(),
+                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_showcase_challenge_2020_08_09.Deck21_MadMaxErnst_SultaiControl_UBG(),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(SimicControl),
+                typeof(SultaiControl),
                 null,
                 null
             );
