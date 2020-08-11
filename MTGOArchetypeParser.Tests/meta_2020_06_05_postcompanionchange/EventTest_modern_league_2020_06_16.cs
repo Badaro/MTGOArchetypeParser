@@ -176,7 +176,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new PostCompanionChange(),
                 ArchetypeColor.WB,
                 typeof(DeathsShadow),
-                typeof(MarduShadow),
+                typeof(OrzhovShadow),
                 null
             );
         }

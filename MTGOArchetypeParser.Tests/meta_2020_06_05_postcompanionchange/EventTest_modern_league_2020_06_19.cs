@@ -84,8 +84,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_05_postcompanionchange
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_05_postcompanionchange.modern_league_2020_06_19.Deck06_Ftzz_WildernessReclamation_ReclamationTeachings_UBG(),
                 new PostCompanionChange(),
                 ArchetypeColor.UBG,
-                typeof(WildernessReclamation),
-                typeof(ReclamationTeachings),
+                typeof(SnowControl),
+                typeof(SnowReclamation),
                 null
             );
         }

@@ -59,7 +59,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
                 new PostM21(),
                 ArchetypeColor.WB,
                 typeof(DeathsShadow),
-                typeof(MarduShadow),
+                typeof(OrzhovShadow),
                 null
             );
         }

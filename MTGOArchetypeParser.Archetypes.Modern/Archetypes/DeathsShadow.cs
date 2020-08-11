@@ -1,6 +1,7 @@
 ﻿using MTGOArchetypeParser.Model;
 using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
@@ -19,6 +20,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             {
                 new GrixisShadow(),
                 new MarduShadow(),
+                new EsperShadow(),
+                new OrzhovShadow(),
                 new TraverseShadow(),
                 new SuicideShadow()
             };
@@ -31,7 +34,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Stubborn Denial" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainOrSideboard, Cards = new string[] { "Stubborn Denial", "Thought Scour" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainOrSideboard, Cards = new string[] { "Kolaghan's Command", "Lightning Bolt" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Traverse the Ulvenwald" } }
             };
         }
@@ -43,10 +47,38 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Ranger-Captain of Eos" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Tidehollow Sculler", "Path to Exile" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Stubborn Denial" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainOrSideboard, Cards = new string[] { "Ranger-Captain of Eos", "Tidehollow Sculler", "Path to Exile" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainOrSideboard, Cards = new string[] { "Kolaghan's Command", "Lightning Bolt" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Traverse the Ulvenwald" } }
+            };
+        }
+    }
 
+    public class OrzhovShadow : ArchetypeVariant
+    {
+        public OrzhovShadow()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainOrSideboard, Cards = new string[] { "Ranger-Captain of Eos", "Tidehollow Sculler", "Path to Exile" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Kolaghan's Command" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Temur Battle Rage" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Lightning Bolt" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Thought Scour" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Traverse the Ulvenwald" } }
+            };
+        }
+    }
+
+    public class EsperShadow : ArchetypeVariant
+    {
+        public EsperShadow()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainOrSideboard, Cards = new string[] { "Stubborn Denial", "Thought Scour" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainOrSideboard, Cards = new string[] { "Ranger-Captain of Eos", "Tidehollow Sculler", "Path to Exile" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Traverse the Ulvenwald" } }
             };
         }
     }

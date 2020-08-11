@@ -357,8 +357,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_preliminary_2020_07_16.Deck27_Sungjin_Scapeshift_WURG(),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WURG,
-                typeof(Scapeshift),
-                null,
+                typeof(SnowControl),
+                typeof(SnowShift),
                 null
             );
         }

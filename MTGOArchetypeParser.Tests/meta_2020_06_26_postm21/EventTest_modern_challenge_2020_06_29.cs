@@ -422,8 +422,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_26_postm21
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_26_postm21.modern_challenge_2020_06_29.Deck32_SkiLwrAp_WildernessReclamation_ReclamationTeachings_UBG(),
                 new PostM21(),
                 ArchetypeColor.UBG,
-                typeof(WildernessReclamation),
-                typeof(ReclamationTeachings),
+                typeof(SnowControl),
+                typeof(SnowReclamation),
                 null
             );
         }

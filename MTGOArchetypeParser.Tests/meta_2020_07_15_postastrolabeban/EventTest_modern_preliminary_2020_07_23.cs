@@ -124,7 +124,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBR,
                 typeof(DeathsShadow),
-                typeof(GrixisShadow),
+                typeof(EsperShadow),
                 null
             );
         }

@@ -14,7 +14,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Leonin Arbiter", "Thalia, Guardian of Thraben", "Chalice of the Void", } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Leonin Arbiter", "Eldrazi Displacer", "Restoration Angel", "Charming Prince" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainOrSideboard, Cards = new string[] { "Path to Exile", "Dismember" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Unclaimed Territory", } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Unclaimed Territory", } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Nykthos, Shrine to Nyx", } }
             };
             Variants = new ArchetypeVariant[]
             {

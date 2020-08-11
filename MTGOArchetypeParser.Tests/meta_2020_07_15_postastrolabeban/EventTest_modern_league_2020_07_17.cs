@@ -579,7 +579,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
                 new PostAstrolabeBan(),
                 ArchetypeColor.WB,
                 typeof(DeathsShadow),
-                typeof(MarduShadow),
+                typeof(OrzhovShadow),
                 null
             );
         }
