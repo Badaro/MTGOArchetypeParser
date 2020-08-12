@@ -2,7 +2,7 @@
   "profiles": {
     "MTGOArchetypeParser.App": {
       "commandName": "Project",
-      "commandLineArgs": "https://magic.wizards.com/en/articles/archive/mtgo-standings/modern-league-2020-08-11"
+      "commandLineArgs": "https://magic.wizards.com/en/articles/archive/mtgo-standings/modern-showcase-last-chance-2020-08-12?a=20"
     }
   }
 }
