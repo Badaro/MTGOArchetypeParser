@@ -9,7 +9,7 @@ namespace MTGOArchetypeParser.Metas.Modern
     {
         public PostM21()
         {
-            this.StartDate = new DateTime(2020, 06, 26, 00, 00, 00, DateTimeKind.Utc);
+            this.StartDate = new DateTime(2020, 06, 25, 00, 00, 00, DateTimeKind.Utc);
         }
     }
 }

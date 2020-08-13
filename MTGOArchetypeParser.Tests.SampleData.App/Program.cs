@@ -26,13 +26,16 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
                 ArchetypeMeta[] metas = Metas.Modern.Loader.GetMetas();
 
                 Console.WriteLine("Downloading tournament list");
-                Tournament[] tournaments = TournamentLoader.GetTournaments(metas.First().StartDate, DateTime.UtcNow).Where(t => t.Name.Contains("Modern")).ToArray();
+                Tournament[] tournaments = TournamentLoader.GetTournaments(metas.First().StartDate.AddDays(1), DateTime.UtcNow).Where(t => t.Name.Contains("Modern")).ToArray();
 
                 foreach (Tournament tournament in tournaments)
                 {
                     Console.WriteLine($"Downloading {tournament.Uri}");
 
-                    ArchetypeMeta tournamentMeta = metas.Last(m => m.StartDate <= tournament.Date);
+                    // Decklist download
+                    var decks = DeckLoader.GetDecks(tournament.Uri);
+
+                    ArchetypeMeta tournamentMeta = metas.Last(m => m.StartDate <= decks.First().Date);
                     TournamentKeys tournamentKeys = KeyGenerator.GenerateTournamentKeys(tournamentMeta, tournament);
 
                     // Destination for sample data
@@ -52,9 +55,6 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
                             if (File.Exists(tournamentTestFile)) File.Delete(tournamentTestFile);
                         }
                     }
-
-                    // Decklist download
-                    var decks = DeckLoader.GetDecks(tournament.Uri);
 
                     StringBuilder tournamentTestData = new StringBuilder();
 

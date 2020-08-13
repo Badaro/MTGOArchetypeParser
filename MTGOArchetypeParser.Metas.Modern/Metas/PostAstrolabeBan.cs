@@ -9,7 +9,7 @@ namespace MTGOArchetypeParser.Metas.Modern
     {
         public PostAstrolabeBan()
         {
-            this.StartDate = new DateTime(2020, 07, 15, 00, 00, 00, DateTimeKind.Utc);
+            this.StartDate = new DateTime(2020, 07, 14, 00, 00, 00, DateTimeKind.Utc);
         }
     }
 }

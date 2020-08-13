@@ -24,14 +24,14 @@ namespace MTGOArchetypeParser.Reports.App
             foreach (var tournament in tournaments)
             {
                 Console.WriteLine($"Downloading {tournament.Uri}");
+                var decks = MTGODecklistParser.Data.DeckLoader.GetDecks(tournament.Uri);
 
-                ArchetypeMeta meta = Metas.Modern.Loader.GetMetas().Last(m => m.StartDate <= tournament.Date);
+                ArchetypeMeta meta = Metas.Modern.Loader.GetMetas().Last(m => m.StartDate <= decks.First().Date);
                 DateTime metaWeekReferenceDate = GetMetaWeekReferenceDate(meta.StartDate);
 
                 string metaID = meta.GetType().Name;
-                int weekID = ((int)Math.Floor((tournament.Date - metaWeekReferenceDate).Days / 7.0)) + 1;
 
-                var decks = MTGODecklistParser.Data.DeckLoader.GetDecks(tournament.Uri);
+                int weekID = ((int)Math.Floor((decks.First().Date - metaWeekReferenceDate).Days / 7.0)) + 1;
 
                 for (int i = 0; i < decks.Length; i++)
                 {
@@ -58,8 +58,8 @@ namespace MTGOArchetypeParser.Reports.App
                     {
                         Tournament = tournament.Name,
                         Meta = metaID,
-                        Week= weekID,
-                        Date = tournament.Date,
+                        Week = weekID,
+                        Date = decks.First().Date,
                         Player = decks[i].Player,
                         AnchorUri = decks[i].AnchorUri,
                         Archetype = archetypeID,
@@ -74,25 +74,25 @@ namespace MTGOArchetypeParser.Reports.App
             return records.ToArray();
         }
 
-        // Note: I'm considering the meta weeks as starting on tuesday, since the weekend events (challenges) are posted monday
+        // Note: I'm considering the meta weeks as starting on monday
         static DateTime GetMetaWeekReferenceDate(DateTime metaStart)
         {
             switch (metaStart.DayOfWeek)
             {
                 case DayOfWeek.Sunday:
-                    return metaStart.AddDays(-5);
-                case DayOfWeek.Monday:
                     return metaStart.AddDays(-6);
-                case DayOfWeek.Tuesday:
+                case DayOfWeek.Monday:
                     return metaStart;
-                case DayOfWeek.Wednesday:
+                case DayOfWeek.Tuesday:
                     return metaStart.AddDays(-1);
-                case DayOfWeek.Thursday:
+                case DayOfWeek.Wednesday:
                     return metaStart.AddDays(-2);
-                case DayOfWeek.Friday:
+                case DayOfWeek.Thursday:
                     return metaStart.AddDays(-3);
-                case DayOfWeek.Saturday:
+                case DayOfWeek.Friday:
                     return metaStart.AddDays(-4);
+                case DayOfWeek.Saturday:
+                    return metaStart.AddDays(-5);
                 default:
                     throw new Exception("Invalid DayOfWeek for meta start date");
             }

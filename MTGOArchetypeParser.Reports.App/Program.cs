@@ -32,7 +32,7 @@ namespace MTGOArchetypeParser.Reports.App
                     MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().First().StartDate :
                     MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().Last().StartDate;
 
-                DataRecord[] records = Loader.GetRecords(startDate, includeLeagues);
+                DataRecord[] records = Loader.GetRecords(startDate.AddDays(1), includeLeagues);
 
                 string date = $"{records.Max(t => t.Date).ToString("yyyy_MM_dd")}";
                 GenerateDump(records, $"mtgo_data_{date}");
