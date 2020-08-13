@@ -955,8 +955,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_15_postastrolabeban
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_15_postastrolabeban.modern_league_2020_07_28.Deck73_eastonmd21_AzoriusTempo_WU(),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(AzoriusTempo),
-                null,
+                typeof(AzoriusControl),
+                typeof(AzoriusStoneblade),
                 null
             );
         }
