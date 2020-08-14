@@ -70,7 +70,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_04.Deck05_bnlunt_UTron_UB(),
                 new PostM21(),
-                ArchetypeColor.UB,
+                ArchetypeColor.U,
                 typeof(UTron),
                 null,
                 null

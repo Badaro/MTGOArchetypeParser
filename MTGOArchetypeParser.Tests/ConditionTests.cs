@@ -217,13 +217,80 @@ namespace MTGOArchetypeParser.Tests
                new string[] { "Card 2" });
         }
 
+        [Test]
+        public void ColorMustInclude()
+        {
+            DetectionSuccess(ArchetypeConditionType.ColorMustInclude,
+               ArchetypeColor.W,
+               new string[] { "Plains" },
+               new string[] { });
+
+            DetectionSuccess(ArchetypeConditionType.ColorMustInclude,
+               ArchetypeColor.W,
+               new string[] { "Plains", "Island" },
+               new string[] { });
+
+            DetectionFailure(ArchetypeConditionType.ColorMustInclude,
+               ArchetypeColor.W,
+               new string[] { "Swamp" },
+               new string[] { });
+        }
+
+        [Test]
+        public void ColorDoesNotInclude()
+        {
+            DetectionFailure(ArchetypeConditionType.ColorDoesNotInclude,
+               ArchetypeColor.W,
+               new string[] { "Plains" },
+               new string[] { });
+
+            DetectionFailure(ArchetypeConditionType.ColorDoesNotInclude,
+               ArchetypeColor.W,
+               new string[] { "Plains", "Island" },
+               new string[] { });
+
+            DetectionSuccess(ArchetypeConditionType.ColorDoesNotInclude,
+               ArchetypeColor.W,
+               new string[] { "Swamp" },
+               new string[] { });
+        }
+
+        [Test]
+        public void ColorIsExactly()
+        {
+            DetectionFailure(ArchetypeConditionType.ColorIsExactly,
+               ArchetypeColor.WU,
+               new string[] { "Plains" },
+               new string[] { });
+
+            DetectionSuccess(ArchetypeConditionType.ColorIsExactly,
+               ArchetypeColor.WU,
+               new string[] { "Plains", "Island" },
+               new string[] { });
+
+            DetectionFailure(ArchetypeConditionType.ColorIsExactly,
+               ArchetypeColor.WU,
+               new string[] { "Swamp" },
+               new string[] { });
+        }
+
         private void DetectionSuccess(ArchetypeConditionType condition, string[] archetypeCards, string[] testMainboard, string[] testSideboard)
+        {
+            DetectionSuccess(condition, archetypeCards, default(ArchetypeColor), testMainboard, testSideboard);
+        }
+
+        private void DetectionSuccess(ArchetypeConditionType condition, ArchetypeColor archetypeColor, string[] testMainboard, string[] testSideboard)
+        {
+            DetectionSuccess(condition, new string[0], archetypeColor, testMainboard, testSideboard);
+        }
+
+        private void DetectionSuccess(ArchetypeConditionType condition, string[] archetypeCards, ArchetypeColor archetypeColor, string[] testMainboard, string[] testSideboard)
         {
             var archetype = new Archetype()
             {
                 Conditions = new ArchetypeCondition[]
                 {
-                    new ArchetypeCondition() { Type= condition, Cards = archetypeCards }
+                    new ArchetypeCondition() { Type= condition, Cards = archetypeCards, Color = archetypeColor }
                 }
             };
 
@@ -242,11 +309,21 @@ namespace MTGOArchetypeParser.Tests
 
         private void DetectionFailure(ArchetypeConditionType condition, string[] archetypeCards, string[] testMainboard, string[] testSideboard)
         {
+            DetectionFailure(condition, archetypeCards, default(ArchetypeColor), testMainboard, testSideboard);
+        }
+
+        private void DetectionFailure(ArchetypeConditionType condition, ArchetypeColor archetypeColor, string[] testMainboard, string[] testSideboard)
+        {
+            DetectionFailure(condition, new string[0], archetypeColor, testMainboard, testSideboard);
+        }
+
+        private void DetectionFailure(ArchetypeConditionType condition, string[] archetypeCards, ArchetypeColor archetypeColor, string[] testMainboard, string[] testSideboard)
+        {
             var archetype = new Archetype()
             {
                 Conditions = new ArchetypeCondition[]
                 {
-                    new ArchetypeCondition() { Type= condition, Cards = archetypeCards }
+                    new ArchetypeCondition() { Type= condition, Cards = archetypeCards, Color = archetypeColor }
                 }
             };
 

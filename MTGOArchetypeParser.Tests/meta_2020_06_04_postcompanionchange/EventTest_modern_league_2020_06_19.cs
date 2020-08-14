@@ -148,7 +148,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_league_2020_06_19.Deck11_alnash_SnowControl_SnowTitan_UBG_Yorion(),
                 new PostCompanionChange(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UG,
                 typeof(SnowControl),
                 typeof(SnowTitan),
                 ArchetypeCompanion.Yorion

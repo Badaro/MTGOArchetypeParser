@@ -551,7 +551,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_league_2020_08_07.Deck42_asihtos_PrimevalTitan_UBRG(),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 null,
                 null
@@ -655,7 +655,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_league_2020_08_07.Deck50_MagicDevil666_UTron_UB(),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UB,
+                ArchetypeColor.U,
                 typeof(UTron),
                 null,
                 null

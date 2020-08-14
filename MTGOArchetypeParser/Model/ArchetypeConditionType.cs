@@ -17,5 +17,8 @@ namespace MTGOArchetypeParser.Model
         TwoOrMoreInMainOrSideboard,
         DoesNotContain,
         DoesNotContainAll,
+        ColorIsExactly,
+        ColorMustInclude,
+        ColorDoesNotInclude,
     }
 }

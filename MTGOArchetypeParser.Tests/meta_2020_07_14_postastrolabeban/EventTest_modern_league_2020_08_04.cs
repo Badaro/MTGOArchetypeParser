@@ -83,7 +83,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_league_2020_08_04.Deck06_Piccio36_GyrudaStompy_UBRG_Gyruda(),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.BRG,
                 typeof(GyrudaStompy),
                 null,
                 ArchetypeCompanion.Gyruda
@@ -512,7 +512,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_league_2020_08_04.Deck39_Callad0_PrimevalTitan_UBRG(),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 null,
                 null

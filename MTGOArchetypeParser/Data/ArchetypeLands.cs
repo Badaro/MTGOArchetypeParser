@@ -82,7 +82,6 @@ namespace MTGOArchetypeParser.Data
             { "Llanowar Reborn", ArchetypeColor.G },
             { "Dryad Arbor", ArchetypeColor.G },
             { "Nimbus Maze", ArchetypeColor.WU },
-            { "River of Tears", ArchetypeColor.UB },
             { "Grove of the Burnwillows", ArchetypeColor.RG },
 
             // Tribal
@@ -201,13 +200,6 @@ namespace MTGOArchetypeParser.Data
             { "Scattered Groves", ArchetypeColor.WG },
             { "Canyon Slough", ArchetypeColor.BR },
             { "Sheltered Thicket", ArchetypeColor.RG },
-
-            // Triome
-            { "Indatha Triome ", ArchetypeColor.WBG },
-            { "Raugrin Triome ", ArchetypeColor.WUR },
-            { "Zagoth Triome", ArchetypeColor.UBG },
-            { "Savai Triome ", ArchetypeColor.WBR },
-            { "Ketria Triome", ArchetypeColor.URG },
 
             // CKamigawa
             { "Eiganjo Castle", ArchetypeColor.W },

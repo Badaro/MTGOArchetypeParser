@@ -30,14 +30,14 @@ namespace MTGOArchetypeParser.Data
             List<ArchetypeMatch> results = new List<ArchetypeMatch>();
             foreach (Archetype archetype in archetypeData)
             {
-                if (Test(mainboardCards, sideboardCards, archetype))
+                if (Test(mainboardCards, sideboardCards, color, archetype))
                 {
                     bool isVariant = false;
                     if (archetype.Variants != null)
                     {
                         foreach (Archetype variant in archetype.Variants)
                         {
-                            if (Test(mainboardCards, sideboardCards, variant))
+                            if (Test(mainboardCards, sideboardCards, color, variant))
                             {
                                 isVariant = true;
                                 results.Add(new ArchetypeMatch() { Archetype = archetype, Variant = variant });
@@ -89,7 +89,7 @@ namespace MTGOArchetypeParser.Data
             return finalColor.Length > 0 ? (ArchetypeColor)Enum.Parse(typeof(ArchetypeColor), finalColor) : ArchetypeColor.C; ;
         }
 
-        private static bool Test(string[] mainboardCards, string[] sideboardCards, Archetype archetypeData)
+        private static bool Test(string[] mainboardCards, string[] sideboardCards, ArchetypeColor color, Archetype archetypeData)
         {
             foreach (var condition in archetypeData.Conditions)
             {
@@ -127,6 +127,15 @@ namespace MTGOArchetypeParser.Data
                         break;
                     case ArchetypeConditionType.TwoOrMoreInMainOrSideboard:
                         if (mainboardCards.Concat(sideboardCards).Distinct().Where(c => condition.Cards.Contains(c)).Count() < 2) return false;
+                        break;
+                    case ArchetypeConditionType.ColorMustInclude:
+                        if (!condition.Color.ToString().ToCharArray().All(c => color.ToString().ToCharArray().Contains(c))) return false;
+                        break;
+                    case ArchetypeConditionType.ColorDoesNotInclude:
+                        if (condition.Color.ToString().ToCharArray().Any(c => color.ToString().ToCharArray().Contains(c))) return false;
+                        break;
+                    case ArchetypeConditionType.ColorIsExactly:
+                        if (condition.Color != color) return false;
                         break;
                     default:
                         throw new NotImplementedException();

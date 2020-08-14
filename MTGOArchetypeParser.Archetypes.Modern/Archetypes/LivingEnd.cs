@@ -28,9 +28,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Curator of Mysteries" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Striped Riverwinder" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Windcaller Aven" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.ColorMustInclude, Color = ArchetypeColor.U },
             };
         }
     }

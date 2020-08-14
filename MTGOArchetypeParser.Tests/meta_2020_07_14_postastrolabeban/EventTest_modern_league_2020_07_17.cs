@@ -267,7 +267,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
                 typeof(Prowess),
-                null,
+                typeof(IzzetProwess),
                 null
             );
         }
@@ -590,7 +590,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_league_2020_07_17.Deck45_Pirika_SaheeliCombo_WURG(),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUR,
                 typeof(SaheeliCombo),
                 null,
                 null

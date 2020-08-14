@@ -395,7 +395,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_league_2020_07_24.Deck30_Baufos_SimicControl_UBG(),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UG,
                 typeof(SimicControl),
                 null,
                 null
@@ -538,7 +538,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_league_2020_07_24.Deck41_Trellon_UTron_UB(),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UB,
+                ArchetypeColor.U,
                 typeof(UTron),
                 null,
                 null

@@ -382,7 +382,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_league_2020_06_16.Deck29_Gabriel0288_PrimevalTitan_UBRG(),
                 new PostCompanionChange(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 null,
                 null

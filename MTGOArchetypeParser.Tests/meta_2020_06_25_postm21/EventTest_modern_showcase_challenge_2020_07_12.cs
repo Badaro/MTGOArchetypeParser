@@ -111,7 +111,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 new PostM21(),
                 ArchetypeColor.UR,
                 typeof(Prowess),
-                null,
+                typeof(IzzetProwess),
                 null
             );
         }

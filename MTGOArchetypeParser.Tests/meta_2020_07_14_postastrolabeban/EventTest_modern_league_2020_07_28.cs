@@ -252,7 +252,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_league_2020_07_28.Deck19_shine0905_GyrudaStompy_UBRG_Gyruda(),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.BRG,
                 typeof(GyrudaStompy),
                 null,
                 ArchetypeCompanion.Gyruda
@@ -306,7 +306,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
                 typeof(LivingEnd),
-                null,
+                typeof(BlueLivingEnd),
                 null
             );
         }
@@ -707,7 +707,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_league_2020_07_28.Deck54_Madvilla1ny_WildernessReclamation_WURG(),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUG,
                 typeof(WildernessReclamation),
                 null,
                 null

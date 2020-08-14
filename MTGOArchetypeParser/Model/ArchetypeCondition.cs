@@ -7,6 +7,7 @@ namespace MTGOArchetypeParser.Model
     public class ArchetypeCondition
     {
         public ArchetypeConditionType Type { get; set; }
+        public ArchetypeColor Color { get; set; }
         public string[] Cards { get; set; }
     }
 }

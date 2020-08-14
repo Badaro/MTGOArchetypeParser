@@ -226,7 +226,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_06.Deck17_aspiringspike_IzzetControl_UBR(),
                 new PostM21(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.UR,
                 typeof(IzzetControl),
                 null,
                 null

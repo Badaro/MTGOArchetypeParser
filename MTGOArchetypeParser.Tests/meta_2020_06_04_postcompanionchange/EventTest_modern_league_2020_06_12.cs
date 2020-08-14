@@ -148,7 +148,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
             Test(
                 new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_league_2020_06_12.Deck11_yamayama_SnowControl_SnowReclamation_UBRG_Yorion(),
                 new PostCompanionChange(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(SnowControl),
                 typeof(SnowReclamation),
                 ArchetypeCompanion.Yorion
