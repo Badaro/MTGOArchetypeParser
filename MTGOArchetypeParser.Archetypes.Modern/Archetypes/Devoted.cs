@@ -17,7 +17,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             };
             Variants = new ArchetypeVariant[]
             {
-                new HeliodDevoted()
+                new HeliodDevoted(),
+                new KinnanDevoted()
             };
         }
     }
@@ -29,6 +30,18 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Heliod, Sun-Crowned" } }
+            };
+        }
+    }
+
+    public class KinnanDevoted : ArchetypeVariant
+    {
+        public KinnanDevoted()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Kinnan, Bonder Prodigy" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Freed from the Real" } }
             };
         }
     }
