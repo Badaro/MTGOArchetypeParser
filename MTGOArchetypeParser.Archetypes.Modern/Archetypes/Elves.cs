@@ -12,12 +12,12 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Llanowar Elves" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Elvish Archdruid" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Elvish Clancaller" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Elvish Archdruid", "Heritage Druid", "Nettle Sentinel", "Elvish Clancaller" } },
             };
             Variants = new ArchetypeVariant[]
             {
                 new GolgariElves(),
+                new DevotedElves(),
                 new ComboElves()
             };
         }
@@ -34,6 +34,18 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         }
     }
 
+    public class DevotedElves : ArchetypeVariant
+    {
+        public DevotedElves()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Devoted Druid" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Vizier of Remedies" } },
+            };
+        }
+    }
+
     public class ComboElves : ArchetypeVariant
     {
         public ComboElves()
@@ -41,7 +53,9 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Beast Whisperer" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Craterhoof Behemoth" } }            };
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Craterhoof Behemoth" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Devoted Druid" } },
+            };
         }
     }
 }
