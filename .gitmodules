@@ -1,3 +1,3 @@
-[submodule "MTGODecklistParser"]
-	path = MTGODecklistParser
-	url = https://github.com/Badaro/MTGODecklistParser.git
+[submodule "MTGODecklistCache"]
+	path = MTGODecklistCache
+	url = https://github.com/Badaro/MTGODecklistCache.git

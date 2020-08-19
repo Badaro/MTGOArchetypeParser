@@ -11,13 +11,13 @@ namespace MTGOArchetypeParser.Reports.App
 {
     public static class Loader
     {
-        public static DataRecord[] GetRecords(DateTime startDate, bool includeLeagues)
+        public static DataRecord[] GetRecords(string cacheFolder, DateTime startDate, bool includeLeagues)
         {
             Func<string, bool> excludeLeaguesFilter = n => n.Contains("Modern") && !n.Contains("League");
             Func<string, bool> includeLeaguesFilter = n => n.Contains("Modern");
             Func<string, bool> filter = includeLeagues ? includeLeaguesFilter : excludeLeaguesFilter;
 
-            Tournament[] tournaments = DataLoader.GetTournaments(startDate, filter).ToArray();
+            CacheItem[] tournaments = DataLoader.GetTournaments(cacheFolder, startDate, filter).ToArray();
 
             List<DataRecord> records = new List<DataRecord>();
 
@@ -53,7 +53,7 @@ namespace MTGOArchetypeParser.Reports.App
 
                     records.Add(new DataRecord()
                     {
-                        Tournament = tournament.Name,
+                        Tournament = tournament.Tournament.Name,
                         Meta = metaID,
                         Week = weekID,
                         Date = tournament.Decks.First().Date,

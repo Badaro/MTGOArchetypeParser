@@ -2,7 +2,7 @@
   "profiles": {
     "MTGOArchetypeParser.App": {
       "commandName": "Project",
-      "commandLineArgs": "https://magic.wizards.com/en/articles/archive/mtgo-standings/modern-preliminary-2020-08-19"
+      "commandLineArgs": "\"$(SolutionDir)MTGODecklistCache\\Tournaments\" modern-preliminary-2020-08-19"
     }
   }
 }

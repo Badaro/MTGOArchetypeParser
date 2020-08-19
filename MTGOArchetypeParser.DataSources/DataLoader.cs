@@ -4,49 +4,53 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using System.IO;
+using Newtonsoft.Json;
+using System.Globalization;
 
 namespace MTGOArchetypeParser.DataSources
 {
     public static class DataLoader
     {
-        public static Tournament[] GetTournaments(DateTime startDate, Func<string, bool> filter = null)
+        public static CacheItem[] GetTournaments(string cacheFolder, DateTime startDate, Func<string, bool> filter = null)
         {
             if (filter == null) filter = n => true;
 
-            List<Tournament> result = new List<Tournament>();
+            List<CacheItem> result = new List<CacheItem>();
 
-            Console.WriteLine("Downloading tournament list");
-            foreach (var tournament in MTGODecklistParser.Data.TournamentLoader.GetTournaments(startDate, DateTime.UtcNow).Where(t => filter(t.Name)))
+            for (DateTime date = startDate; date < DateTime.UtcNow; date = date.AddDays(1))
             {
-                result.Add(new Tournament()
+                string folder = Path.Combine(cacheFolder, date.Year.ToString(), date.Month.ToString("D2"), date.Day.ToString("D2"));
+                if (!Directory.Exists(folder)) continue;
+
+                foreach (string file in Directory.GetFiles(folder, "*.json"))
                 {
-                    Name = tournament.Name,
-                    Uri = tournament.Uri,
-                    Decks = GetDecks(tournament.Uri)
-                });
+                    CacheItem item = JsonConvert.DeserializeObject<CacheItem>(File.ReadAllText(file));
+                    if (filter(item.Tournament.Name)) result.Add(item);
+                }
             }
 
             return result.ToArray();
         }
 
-        public static Deck[] GetDecks(Uri uri)
+        public static CacheItem GetTournament(string cacheFolder, string eventName)
         {
-            List<Deck> result = new List<Deck>();
+            DateTime date = ExtractDateFromName(eventName);
 
-            Console.WriteLine($"Downloading {uri}");
-            foreach (var deck in MTGODecklistParser.Data.DeckLoader.GetDecks(uri))
-            {
-                result.Add(new Deck()
-                {
-                    Player = deck.Player,
-                    AnchorUri = deck.AnchorUri,
-                    Date = deck.Date,
-                    Mainboard = deck.Mainboard.Select(c => new DeckItem() { Count = c.Count, CardName = c.CardName }).ToArray(),
-                    Sideboard = deck.Sideboard.Select(c => new DeckItem() { Count = c.Count, CardName = c.CardName }).ToArray(),
-                });
-            }
+            string folder = Path.Combine(cacheFolder, date.Year.ToString(), date.Month.ToString("D2"), date.Day.ToString("D2"));
+            string file = Path.Combine(folder, $"{eventName}.json");
+            if (!Directory.Exists(folder)) throw new Exception("Event not found");
+            if (!File.Exists(file)) throw new Exception("Event not found");
 
-            return result.ToArray();
+            CacheItem item = JsonConvert.DeserializeObject<CacheItem>(File.ReadAllText(file));
+            return item;
+        }
+
+        private static DateTime ExtractDateFromName(string eventName)
+        {
+            string[] eventNameSegments = eventName.Split("-").Where(e => e.Length > 1).ToArray();
+            string eventDate = String.Join("-", eventNameSegments.Skip(eventNameSegments.Length - 3).ToArray());
+
+            return DateTime.Parse(eventDate, CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal).ToUniversalTime();
         }
     }
 }

@@ -16,19 +16,26 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
         {
             try
             {
+                if(args.Length==0)
+                {
+                    Console.WriteLine("Usage MTGOArchetypeParser.Tests.SampleData.App.exe CACHE_FOLDER");
+                    return;
+                }
+                string cacheFolder = args[0];
+
                 bool allowUpdate = false;
-                if (args.Length > 0 && args[0].ToString() == "allowupdate") allowUpdate = true;
+                if (args.Length > 1 && args[1].ToString() == "allowupdate") allowUpdate = true;
 
                 string solutionFolder = new DirectoryInfo(@"..\..\..\..\").FullName;
                 string deckFolder = Path.Combine(solutionFolder, "MTGOArchetypeParser.Tests.SampleData");
                 string testFolder = Path.Combine(solutionFolder, "MTGOArchetypeParser.Tests");
                 ArchetypeMeta[] metas = Metas.Modern.Loader.GetMetas();
 
-                Tournament[] tournaments = DataLoader.GetTournaments(metas.First().StartDate.AddDays(1), n => n.Contains("Modern"));
+                CacheItem[] tournaments = DataLoader.GetTournaments(cacheFolder, metas.First().StartDate.AddDays(1), n => n.Contains("Modern"));
 
-                foreach (Tournament tournament in tournaments)
+                foreach (CacheItem tournament in tournaments)
                 {
-                    Console.WriteLine($"Generating Sample Data for {tournament.Uri}");
+                    Console.WriteLine($"Generating Sample Data for {tournament.Tournament.Uri}");
 
                     ArchetypeMeta tournamentMeta = metas.Last(m => m.StartDate <= tournament.Decks.First().Date);
                     TournamentKeys tournamentKeys = KeyGenerator.GenerateTournamentKeys(tournamentMeta, tournament);

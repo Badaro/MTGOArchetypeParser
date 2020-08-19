@@ -8,11 +8,5 @@ namespace MTGOArchetypeParser.DataSources.Model
     {
         public string Name { get; set; }
         public Uri Uri { get; set; }
-        public Deck[] Decks { get; set; }
-
-        public override string ToString()
-        {
-            return this.Name;
-        }
     }
 }

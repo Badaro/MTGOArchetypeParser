@@ -9,13 +9,13 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
 {
     public static class KeyGenerator
     {
-        public static TournamentKeys GenerateTournamentKeys(ArchetypeMeta meta, Tournament tournament)
+        public static TournamentKeys GenerateTournamentKeys(ArchetypeMeta meta, CacheItem tournament)
         {
             string metaName = meta.GetType().Name;
             string metaID = $"meta_{meta.StartDate.ToString("yyyy_MM_dd")}_{metaName.ToLower()}";
 
             // Destination for sample data
-            string leagueID = Path.GetFileName(tournament.Uri.ToString()).Replace("-", "_");
+            string leagueID = Path.GetFileName(tournament.Tournament.Uri.ToString()).Replace("-", "_");
 
             return new TournamentKeys()
             {

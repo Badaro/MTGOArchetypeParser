@@ -9,15 +9,15 @@ namespace MTGOArchetypeParser.App
     {
         static void Main(string[] args)
         {
-            if (args.Length == 0)
+            if (args.Length < 2)
             {
-                Console.WriteLine("Usage: MTGOArchetypeParser.App.exe EVENT_URL");
+                Console.WriteLine("Usage: MTGOArchetypeParser.App.exe CACHE_FOLDER EVENT_NAME");
             }
             else
             {
                 try
                 {
-                    var decks = DataLoader.GetDecks(new Uri(args[0]));
+                    var decks = DataLoader.GetTournament(args[0], args[1]).Decks;
 
                     for (int i = 0; i < decks.Length; i++)
                     {
