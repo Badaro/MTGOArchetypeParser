@@ -1,7 +1,4 @@
-﻿using MTGOArchetypeParser.Data;
-using MTGOArchetypeParser.Model;
-using MTGODecklistParser.Data;
-using MTGODecklistParser.Model;
+﻿using MTGOArchetypeParser.DataSources.Model;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -22,8 +19,6 @@ namespace MTGOArchetypeParser.Reports.App
             {
                 if (Directory.Exists(_outputFolder)) Directory.Delete(_outputFolder, true);
                 Directory.CreateDirectory(_outputFolder);
-
-                Console.WriteLine("Downloading tournament list");
 
                 bool allMetas = args.Any(a => a.ToLower() == "allmetas");
                 bool includeLeagues = args.Any(a => a.ToLower() == "includeleagues");

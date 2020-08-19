@@ -1,4 +1,5 @@
 ﻿using MTGOArchetypeParser.Data;
+using MTGOArchetypeParser.DataSources;
 using System;
 using System.Linq;
 
@@ -16,7 +17,7 @@ namespace MTGOArchetypeParser.App
             {
                 try
                 {
-                    var decks = MTGODecklistParser.Data.DeckLoader.GetDecks(new Uri(args[0]));
+                    var decks = DataLoader.GetDecks(new Uri(args[0]));
 
                     for (int i = 0; i < decks.Length; i++)
                     {

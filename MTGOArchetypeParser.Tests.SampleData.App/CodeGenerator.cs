@@ -1,9 +1,7 @@
-﻿using MTGOArchetypeParser.Tests.SampleData.App.Model;
-using MTGODecklistParser.Model;
+﻿using MTGOArchetypeParser.DataSources.Model;
+using MTGOArchetypeParser.Tests.SampleData.App.Model;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace MTGOArchetypeParser.Tests.SampleData.App
 {

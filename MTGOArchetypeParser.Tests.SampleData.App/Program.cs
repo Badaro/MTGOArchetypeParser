@@ -1,13 +1,12 @@
 ﻿using MTGOArchetypeParser.Data;
+using MTGOArchetypeParser.DataSources;
+using MTGOArchetypeParser.DataSources.Model;
 using MTGOArchetypeParser.Model;
 using MTGOArchetypeParser.Tests.SampleData.App.Model;
-using MTGODecklistParser.Data;
-using MTGODecklistParser.Model;
 using System;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 
 namespace MTGOArchetypeParser.Tests.SampleData.App
 {
@@ -25,17 +24,13 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
                 string testFolder = Path.Combine(solutionFolder, "MTGOArchetypeParser.Tests");
                 ArchetypeMeta[] metas = Metas.Modern.Loader.GetMetas();
 
-                Console.WriteLine("Downloading tournament list");
-                Tournament[] tournaments = TournamentLoader.GetTournaments(metas.First().StartDate.AddDays(1), DateTime.UtcNow).Where(t => t.Name.Contains("Modern")).ToArray();
+                Tournament[] tournaments = DataLoader.GetTournaments(metas.First().StartDate.AddDays(1), n => n.Contains("Modern"));
 
                 foreach (Tournament tournament in tournaments)
                 {
-                    Console.WriteLine($"Downloading {tournament.Uri}");
+                    Console.WriteLine($"Generating Sample Data for {tournament.Uri}");
 
-                    // Decklist download
-                    var decks = DeckLoader.GetDecks(tournament.Uri);
-
-                    ArchetypeMeta tournamentMeta = metas.Last(m => m.StartDate <= decks.First().Date);
+                    ArchetypeMeta tournamentMeta = metas.Last(m => m.StartDate <= tournament.Decks.First().Date);
                     TournamentKeys tournamentKeys = KeyGenerator.GenerateTournamentKeys(tournamentMeta, tournament);
 
                     // Destination for sample data
@@ -58,13 +53,13 @@ namespace MTGOArchetypeParser.Tests.SampleData.App
 
                     StringBuilder tournamentTestData = new StringBuilder();
 
-                    for (int i = 0; i < decks.Length; i++)
+                    for (int i = 0; i < tournament.Decks.Length; i++)
                     {
-                        var detectionResult = ArchetypeAnalyzer.Detect(decks[i].Mainboard.Select(i => i.CardName).ToArray(), decks[i].Sideboard.Select(i => i.CardName).ToArray(), Archetypes.Modern.Loader.GetArchetypes());
-                        DeckKeys deckKeys = KeyGenerator.GenerateDeckKeys(i + 1, decks[i], detectionResult);
+                        var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => i.CardName).ToArray(), tournament.Decks[i].Sideboard.Select(i => i.CardName).ToArray(), Archetypes.Modern.Loader.GetArchetypes());
+                        DeckKeys deckKeys = KeyGenerator.GenerateDeckKeys(i + 1, tournament.Decks[i], detectionResult);
 
                         string tournamentDeckFile = Path.Combine(tournamentDecksFolder, $"{deckKeys.DeckID}.cs");
-                        string tournamentDeckFileContents = CodeGenerator.GenerateDeck(tournamentKeys, deckKeys, decks[i]);
+                        string tournamentDeckFileContents = CodeGenerator.GenerateDeck(tournamentKeys, deckKeys, tournament.Decks[i]);
                         FileWriter.Write(tournamentDeckFile, tournamentDeckFileContents);
 
                         string tournamentDeckTestContents = CodeGenerator.GenerateTest(tournamentKeys, deckKeys);

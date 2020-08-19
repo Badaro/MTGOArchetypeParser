@@ -1,4 +1,4 @@
-﻿using MTGODecklistParser.Model;
+﻿using MTGOArchetypeParser.DataSources.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
