@@ -17,6 +17,6 @@ namespace MTGOArchetypeParser.Reports.App
         public string Variant { get; set; }
         public string Color { get; set; }
         public string Companion { get; set; }
-        public Deck Deck { get; set; }
+        public MTGODeck Deck { get; set; }
     }
 }

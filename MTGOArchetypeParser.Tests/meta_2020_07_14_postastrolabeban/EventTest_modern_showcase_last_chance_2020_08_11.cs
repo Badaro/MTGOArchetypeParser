@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck01_mindcandy_WildernessReclamation_TemurReclamation_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck01_mindcandy_WildernessReclamation_TemurReclamation_URG(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
                 typeof(WildernessReclamation),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck02_eXavie_Prowess_RakdosProwess_BR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck02_eXavie_Prowess_RakdosProwess_BR_Lurrus(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BR,
                 typeof(Prowess),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck03_Snusnumrick_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck03_Snusnumrick_ETron_C(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck04_matsugan_Neobrand_UG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck04_matsugan_Neobrand_UG(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UG,
                 typeof(Neobrand),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck05_cntrlfreak_DeathsShadow_TraverseShadow_UBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck05_cntrlfreak_DeathsShadow_TraverseShadow_UBRG(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",4),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBRG,
                 typeof(DeathsShadow),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck06_tibaltofredsub_Mill_UB_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck06_tibaltofredsub_Mill_UB_Lurrus(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UB,
                 typeof(Mill),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck07_cnofafva_PrimevalTitan_KGCAmuletTitan_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck07_cnofafva_PrimevalTitan_KGCAmuletTitan_WUBRG(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
                 typeof(PrimevalTitan),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck08_Toastxp_Prowess_RakdosProwess_BR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck08_Toastxp_Prowess_RakdosProwess_BR_Lurrus(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",7),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BR,
                 typeof(Prowess),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck09_cws_GiftsStorm_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck09_cws_GiftsStorm_UR(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",8),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
                 typeof(GiftsStorm),
@@ -133,7 +133,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck10_TSPJendrek_SultaiControl_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck10_TSPJendrek_SultaiControl_UBG(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",9),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
                 typeof(SultaiControl),
@@ -146,7 +146,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck11_mikev1919_Prowess_R()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck11_mikev1919_Prowess_R(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",10),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
                 typeof(Prowess),
@@ -159,7 +159,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck12_Wuhsa_BringToNiv_WUBRG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck12_Wuhsa_BringToNiv_WUBRG_Yorion(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
                 typeof(BringToNiv),
@@ -172,7 +172,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck13_shub89_Prowess_IzzetProwess_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck13_shub89_Prowess_IzzetProwess_UR(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",12),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
                 typeof(Prowess),
@@ -185,7 +185,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck14_Rhianne_Dredge_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck14_Rhianne_Dredge_BRG(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",13),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
                 typeof(Dredge),
@@ -198,7 +198,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck15_2jjm_Prowess_IzzetProwess_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck15_2jjm_Prowess_IzzetProwess_UR(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",14),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
                 typeof(Prowess),
@@ -211,7 +211,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck16_discoverN_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_11.Deck16_discoverN_GTron_KGCTron_G(),
+                GetDeck("modern-showcase-last-chance-2020-08-11",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(GTron),

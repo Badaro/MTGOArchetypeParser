@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck01_ZYURYO_Rock_Jund_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck01_ZYURYO_Rock_Jund_BRG(),
+                GetDeck("modern-challenge-2020-07-05",0),
                 new PostM21(),
                 ArchetypeColor.BRG,
                 typeof(Rock),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck02_Darkiundsa_SnowControl_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck02_Darkiundsa_SnowControl_WUG_Yorion(),
+                GetDeck("modern-challenge-2020-07-05",1),
                 new PostM21(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck03_TSPJendrek_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck03_TSPJendrek_SnowControl_SultaiSnow_UBG(),
+                GetDeck("modern-challenge-2020-07-05",2),
                 new PostM21(),
                 ArchetypeColor.UBG,
                 typeof(SnowControl),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck04_LORiWWA_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck04_LORiWWA_ETron_C(),
+                GetDeck("modern-challenge-2020-07-05",3),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck05_A22en_AzoriusControl_Miracles_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck05_A22en_AzoriusControl_Miracles_WU(),
+                GetDeck("modern-challenge-2020-07-05",4),
                 new PostM21(),
                 ArchetypeColor.WU,
                 typeof(AzoriusControl),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck06_Busterbrown52_Elementals_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck06_Busterbrown52_Elementals_WUBRG(),
+                GetDeck("modern-challenge-2020-07-05",5),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
                 typeof(Elementals),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck07_Shorak123_SnowControl_SnowReclamation_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck07_Shorak123_SnowControl_SnowReclamation_UBG(),
+                GetDeck("modern-challenge-2020-07-05",6),
                 new PostM21(),
                 ArchetypeColor.UBG,
                 typeof(SnowControl),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck08_1yo2yo_ThopterUrza_UBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck08_1yo2yo_ThopterUrza_UBR(),
+                GetDeck("modern-challenge-2020-07-05",7),
                 new PostM21(),
                 ArchetypeColor.UBR,
                 typeof(ThopterUrza),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck09_TheTunnelingCat_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck09_TheTunnelingCat_ETron_C(),
+                GetDeck("modern-challenge-2020-07-05",8),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -133,7 +133,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck10_Zxrogue_DeathsShadow_TraverseShadow_UBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck10_Zxrogue_DeathsShadow_TraverseShadow_UBRG(),
+                GetDeck("modern-challenge-2020-07-05",9),
                 new PostM21(),
                 ArchetypeColor.UBRG,
                 typeof(DeathsShadow),
@@ -146,7 +146,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck11_bobthedog_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck11_bobthedog_SnowControl_SultaiSnow_UBG(),
+                GetDeck("modern-challenge-2020-07-05",10),
                 new PostM21(),
                 ArchetypeColor.UBG,
                 typeof(SnowControl),
@@ -159,7 +159,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck12_PvtEnormous_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck12_PvtEnormous_SnowControl_SultaiSnow_UBG(),
+                GetDeck("modern-challenge-2020-07-05",11),
                 new PostM21(),
                 ArchetypeColor.UBG,
                 typeof(SnowControl),
@@ -172,7 +172,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck13_TerminalJustice_GiftsStorm_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck13_TerminalJustice_GiftsStorm_UR(),
+                GetDeck("modern-challenge-2020-07-05",12),
                 new PostM21(),
                 ArchetypeColor.UR,
                 typeof(GiftsStorm),
@@ -185,7 +185,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck14_katoriarch123_SnowControl_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck14_katoriarch123_SnowControl_WUG(),
+                GetDeck("modern-challenge-2020-07-05",13),
                 new PostM21(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -198,7 +198,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck15_hdyer_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck15_hdyer_ETron_C(),
+                GetDeck("modern-challenge-2020-07-05",14),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -211,7 +211,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck16_yamakiller_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck16_yamakiller_ETron_C(),
+                GetDeck("modern-challenge-2020-07-05",15),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -224,7 +224,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck17_renatoaraujo_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck17_renatoaraujo_ETron_C(),
+                GetDeck("modern-challenge-2020-07-05",16),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -237,7 +237,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck18_HouseOfManaMTG_PrimevalTitan_AmuletTitan_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck18_HouseOfManaMTG_PrimevalTitan_AmuletTitan_WUBRG(),
+                GetDeck("modern-challenge-2020-07-05",17),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
                 typeof(PrimevalTitan),
@@ -250,7 +250,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck19_indianpancake_Devoted_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck19_indianpancake_Devoted_WG_Lurrus(),
+                GetDeck("modern-challenge-2020-07-05",18),
                 new PostM21(),
                 ArchetypeColor.WG,
                 typeof(Devoted),
@@ -263,7 +263,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck20_Sodeq_AdNauseam_WUB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck20_Sodeq_AdNauseam_WUB(),
+                GetDeck("modern-challenge-2020-07-05",19),
                 new PostM21(),
                 ArchetypeColor.WUB,
                 typeof(AdNauseam),
@@ -276,7 +276,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck21_ManuelJacob_SnowControl_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck21_ManuelJacob_SnowControl_WUG(),
+                GetDeck("modern-challenge-2020-07-05",20),
                 new PostM21(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -289,7 +289,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck22_pbarrrgh_SnowControl_TemurSnow_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck22_pbarrrgh_SnowControl_TemurSnow_URG(),
+                GetDeck("modern-challenge-2020-07-05",21),
                 new PostM21(),
                 ArchetypeColor.URG,
                 typeof(SnowControl),
@@ -302,7 +302,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck23_MasterA_Goblins_SnoopGoblins_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck23_MasterA_Goblins_SnoopGoblins_BRG(),
+                GetDeck("modern-challenge-2020-07-05",22),
                 new PostM21(),
                 ArchetypeColor.BRG,
                 typeof(Goblins),
@@ -315,7 +315,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck24_Graciasportanto_Dredge_WBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck24_Graciasportanto_Dredge_WBRG(),
+                GetDeck("modern-challenge-2020-07-05",23),
                 new PostM21(),
                 ArchetypeColor.WBRG,
                 typeof(Dredge),
@@ -328,7 +328,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck25_LordBeerus_Burn_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck25_LordBeerus_Burn_WR(),
+                GetDeck("modern-challenge-2020-07-05",24),
                 new PostM21(),
                 ArchetypeColor.WR,
                 typeof(Burn),
@@ -341,7 +341,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck26_Mzfroste_Goblins_SnoopGoblins_BR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck26_Mzfroste_Goblins_SnoopGoblins_BR(),
+                GetDeck("modern-challenge-2020-07-05",25),
                 new PostM21(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
@@ -354,7 +354,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck27_Kuhb_GrindingBreach_WURG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck27_Kuhb_GrindingBreach_WURG(),
+                GetDeck("modern-challenge-2020-07-05",26),
                 new PostM21(),
                 ArchetypeColor.WURG,
                 typeof(GrindingBreach),
@@ -364,10 +364,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck28_D00mwake_Prowess_UR()
+        public void Deck28_D00mwake_Prowess_IzzetProwess_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck28_D00mwake_Prowess_UR(),
+                GetDeck("modern-challenge-2020-07-05",27),
                 new PostM21(),
                 ArchetypeColor.UR,
                 typeof(Prowess),
@@ -380,7 +380,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck29_tuhoajatane_SnowControl_TemurSnow_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck29_tuhoajatane_SnowControl_TemurSnow_URG(),
+                GetDeck("modern-challenge-2020-07-05",28),
                 new PostM21(),
                 ArchetypeColor.URG,
                 typeof(SnowControl),
@@ -393,7 +393,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck30_MadMaxErnst_SnowControl_SultaiSnow_UBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck30_MadMaxErnst_SnowControl_SultaiSnow_UBRG(),
+                GetDeck("modern-challenge-2020-07-05",29),
                 new PostM21(),
                 ArchetypeColor.UBRG,
                 typeof(SnowControl),
@@ -406,7 +406,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck31_SungilWang_Devoted_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck31_SungilWang_Devoted_WG_Lurrus(),
+                GetDeck("modern-challenge-2020-07-05",30),
                 new PostM21(),
                 ArchetypeColor.WG,
                 typeof(Devoted),
@@ -419,7 +419,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck32_CapitanoCL_Dredge_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_challenge_2020_07_05.Deck32_CapitanoCL_Dredge_BRG(),
+                GetDeck("modern-challenge-2020-07-05",31),
                 new PostM21(),
                 ArchetypeColor.BRG,
                 typeof(Dredge),

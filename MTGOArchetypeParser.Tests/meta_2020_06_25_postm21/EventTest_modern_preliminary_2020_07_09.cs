@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck01_Graciasportanto_Rock_Jund_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_09.Deck01_Graciasportanto_Rock_Jund_BRG(),
+                GetDeck("modern-preliminary-2020-07-09",0),
                 new PostM21(),
                 ArchetypeColor.BRG,
                 typeof(Rock),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck02_Icteridae_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_09.Deck02_Icteridae_ETron_C(),
+                GetDeck("modern-preliminary-2020-07-09",1),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck03_PRGJJAR_Dredge_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_09.Deck03_PRGJJAR_Dredge_BRG(),
+                GetDeck("modern-preliminary-2020-07-09",2),
                 new PostM21(),
                 ArchetypeColor.BRG,
                 typeof(Dredge),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck04_wordy333_Merfolk_UG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_09.Deck04_wordy333_Merfolk_UG(),
+                GetDeck("modern-preliminary-2020-07-09",3),
                 new PostM21(),
                 ArchetypeColor.UG,
                 typeof(Merfolk),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck05_samslam_Burn_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_09.Deck05_samslam_Burn_WR(),
+                GetDeck("modern-preliminary-2020-07-09",4),
                 new PostM21(),
                 ArchetypeColor.WR,
                 typeof(Burn),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck06_andrw1232_Dredge_WBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_09.Deck06_andrw1232_Dredge_WBRG(),
+                GetDeck("modern-preliminary-2020-07-09",5),
                 new PostM21(),
                 ArchetypeColor.WBRG,
                 typeof(Dredge),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck07_SamcasterMage_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_09.Deck07_SamcasterMage_ETron_C(),
+                GetDeck("modern-preliminary-2020-07-09",6),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck08_starfall_Merfolk_UG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_09.Deck08_starfall_Merfolk_UG(),
+                GetDeck("modern-preliminary-2020-07-09",7),
                 new PostM21(),
                 ArchetypeColor.UG,
                 typeof(Merfolk),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck09_Mcleskey_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_09.Deck09_Mcleskey_Ponza_RG(),
+                GetDeck("modern-preliminary-2020-07-09",8),
                 new PostM21(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -133,7 +133,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck10_WareHouseGames_AdNauseam_WUB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_09.Deck10_WareHouseGames_AdNauseam_WUB(),
+                GetDeck("modern-preliminary-2020-07-09",9),
                 new PostM21(),
                 ArchetypeColor.WUB,
                 typeof(AdNauseam),
@@ -146,7 +146,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck11_Toastxp_SnowControl_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_09.Deck11_Toastxp_SnowControl_WUG(),
+                GetDeck("modern-preliminary-2020-07-09",10),
                 new PostM21(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -159,7 +159,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck12_nedyahiske_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_09.Deck12_nedyahiske_ETron_C(),
+                GetDeck("modern-preliminary-2020-07-09",11),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -172,7 +172,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck13_atm8162_PrimevalTitan_TitanShift_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_09.Deck13_atm8162_PrimevalTitan_TitanShift_RG(),
+                GetDeck("modern-preliminary-2020-07-09",12),
                 new PostM21(),
                 ArchetypeColor.RG,
                 typeof(PrimevalTitan),

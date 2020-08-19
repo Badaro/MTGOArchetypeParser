@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck01_Janh_SnowControl_SnowShift_URG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_08.Deck01_Janh_SnowControl_SnowShift_URG_Yorion(),
+                GetDeck("modern-preliminary-2020-07-08",0),
                 new PostM21(),
                 ArchetypeColor.URG,
                 typeof(SnowControl),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck02_medvedev_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_08.Deck02_medvedev_ETron_C(),
+                GetDeck("modern-preliminary-2020-07-08",1),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck03_otakkun_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_08.Deck03_otakkun_GTron_KGCTron_G(),
+                GetDeck("modern-preliminary-2020-07-08",2),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(GTron),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck04_fistfullofmetal_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_08.Deck04_fistfullofmetal_ETron_C(),
+                GetDeck("modern-preliminary-2020-07-08",3),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck05_sffmtg_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_08.Deck05_sffmtg_GTron_KGCTron_G(),
+                GetDeck("modern-preliminary-2020-07-08",4),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(GTron),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck06_PRGJJAR_Dredge_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_08.Deck06_PRGJJAR_Dredge_BRG(),
+                GetDeck("modern-preliminary-2020-07-08",5),
                 new PostM21(),
                 ArchetypeColor.BRG,
                 typeof(Dredge),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck07_ZYURYO_SnowControl_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_08.Deck07_ZYURYO_SnowControl_WUG(),
+                GetDeck("modern-preliminary-2020-07-08",6),
                 new PostM21(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -104,10 +104,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck08_spellvine_Prowess_UR()
+        public void Deck08_spellvine_Prowess_IzzetProwess_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_08.Deck08_spellvine_Prowess_UR(),
+                GetDeck("modern-preliminary-2020-07-08",7),
                 new PostM21(),
                 ArchetypeColor.UR,
                 typeof(Prowess),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck09_WanderingOnes_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_08.Deck09_WanderingOnes_GTron_KGCTron_G(),
+                GetDeck("modern-preliminary-2020-07-08",8),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(GTron),

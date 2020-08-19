@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck01_pepeteam_PrimevalTitan_AmuletTitan_UBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_14.Deck01_pepeteam_PrimevalTitan_AmuletTitan_UBRG(),
+                GetDeck("modern-preliminary-2020-07-14",0),
                 new PostM21(),
                 ArchetypeColor.UBRG,
                 typeof(PrimevalTitan),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck02_osmanozguney_RakdosMidrange_BR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_14.Deck02_osmanozguney_RakdosMidrange_BR(),
+                GetDeck("modern-preliminary-2020-07-14",1),
                 new PostM21(),
                 ArchetypeColor.BR,
                 typeof(RakdosMidrange),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck03_azatoyellow_Prowess_R()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_14.Deck03_azatoyellow_Prowess_R(),
+                GetDeck("modern-preliminary-2020-07-14",2),
                 new PostM21(),
                 ArchetypeColor.R,
                 typeof(Prowess),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck04_ACG88_Crabvine_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_14.Deck04_ACG88_Crabvine_UBG(),
+                GetDeck("modern-preliminary-2020-07-14",3),
                 new PostM21(),
                 ArchetypeColor.UBG,
                 typeof(Crabvine),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck05_WingedHussar_Neobrand_UG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_14.Deck05_WingedHussar_Neobrand_UG(),
+                GetDeck("modern-preliminary-2020-07-14",4),
                 new PostM21(),
                 ArchetypeColor.UG,
                 typeof(Neobrand),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck06_bubbsei_Devoted_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_14.Deck06_bubbsei_Devoted_WG_Lurrus(),
+                GetDeck("modern-preliminary-2020-07-14",5),
                 new PostM21(),
                 ArchetypeColor.WG,
                 typeof(Devoted),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck07_LickNsticK_Rock_Jund_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_14.Deck07_LickNsticK_Rock_Jund_BRG(),
+                GetDeck("modern-preliminary-2020-07-14",6),
                 new PostM21(),
                 ArchetypeColor.BRG,
                 typeof(Rock),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck08_RicardoMSLan_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_14.Deck08_RicardoMSLan_ETron_C(),
+                GetDeck("modern-preliminary-2020-07-14",7),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck09_PizzaRolls_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_14.Deck09_PizzaRolls_ETron_C(),
+                GetDeck("modern-preliminary-2020-07-14",8),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(ETron),

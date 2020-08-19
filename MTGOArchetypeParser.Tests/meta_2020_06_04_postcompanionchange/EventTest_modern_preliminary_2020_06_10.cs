@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck01_signblindman_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_10.Deck01_signblindman_Ponza_RG(),
+                GetDeck("modern-preliminary-2020-06-10",0),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck02_GedionRavenor_SnowControl_SnowBlade_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_10.Deck02_GedionRavenor_SnowControl_SnowBlade_WUG(),
+                GetDeck("modern-preliminary-2020-06-10",1),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck03_Shatun_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_10.Deck03_Shatun_Ponza_RG(),
+                GetDeck("modern-preliminary-2020-06-10",2),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck04_TSPJendrek_SnowControl_SnowBlade_WUBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_10.Deck04_TSPJendrek_SnowControl_SnowBlade_WUBG(),
+                GetDeck("modern-preliminary-2020-06-10",3),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBG,
                 typeof(SnowControl),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck05_Janh_SnowControl_TemurSnow_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_10.Deck05_Janh_SnowControl_TemurSnow_URG(),
+                GetDeck("modern-preliminary-2020-06-10",4),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
                 typeof(SnowControl),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck06_INF_GiftsStorm_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_10.Deck06_INF_GiftsStorm_UR(),
+                GetDeck("modern-preliminary-2020-06-10",5),
                 new PostCompanionChange(),
                 ArchetypeColor.UR,
                 typeof(GiftsStorm),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck07_alemilan19_SnowControl_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_10.Deck07_alemilan19_SnowControl_WUG(),
+                GetDeck("modern-preliminary-2020-06-10",6),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck08_FabriceK_NinjaFaeries_UB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_10.Deck08_FabriceK_NinjaFaeries_UB(),
+                GetDeck("modern-preliminary-2020-06-10",7),
                 new PostCompanionChange(),
                 ArchetypeColor.UB,
                 typeof(NinjaFaeries),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck09_DylanGregory_Humans_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_10.Deck09_DylanGregory_Humans_WUBRG(),
+                GetDeck("modern-preliminary-2020-06-10",8),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
                 typeof(Humans),
@@ -133,7 +133,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck10_Mcleskey_Burn_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_10.Deck10_Mcleskey_Burn_WR(),
+                GetDeck("modern-preliminary-2020-06-10",9),
                 new PostCompanionChange(),
                 ArchetypeColor.WR,
                 typeof(Burn),
@@ -146,7 +146,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck11_DavidDPanda_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_10.Deck11_DavidDPanda_ETron_C(),
+                GetDeck("modern-preliminary-2020-06-10",10),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -159,7 +159,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck12_ZYURYO_SnowControl_WUBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_10.Deck12_ZYURYO_SnowControl_WUBG(),
+                GetDeck("modern-preliminary-2020-06-10",11),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBG,
                 typeof(SnowControl),

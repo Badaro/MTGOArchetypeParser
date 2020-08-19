@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck01_Kofurea_PrimevalTitan_KGCAmuletTitan_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_06_27.Deck01_Kofurea_PrimevalTitan_KGCAmuletTitan_WUBRG(),
+                GetDeck("modern-preliminary-2020-06-27",0),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
                 typeof(PrimevalTitan),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck02_otakkun_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_06_27.Deck02_otakkun_GTron_KGCTron_G(),
+                GetDeck("modern-preliminary-2020-06-27",1),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(GTron),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck03_gyyby297_ThopterUrza_UB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_06_27.Deck03_gyyby297_ThopterUrza_UB(),
+                GetDeck("modern-preliminary-2020-06-27",2),
                 new PostM21(),
                 ArchetypeColor.UB,
                 typeof(ThopterUrza),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck04_siomomi_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_06_27.Deck04_siomomi_GTron_KGCTron_G(),
+                GetDeck("modern-preliminary-2020-06-27",3),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(GTron),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck05_INF_GiftsStorm_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_06_27.Deck05_INF_GiftsStorm_UR(),
+                GetDeck("modern-preliminary-2020-06-27",4),
                 new PostM21(),
                 ArchetypeColor.UR,
                 typeof(GiftsStorm),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck06_Wolfie98_SnowControl_TemurSnow_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_06_27.Deck06_Wolfie98_SnowControl_TemurSnow_URG(),
+                GetDeck("modern-preliminary-2020-06-27",5),
                 new PostM21(),
                 ArchetypeColor.URG,
                 typeof(SnowControl),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck07_JV7777_Humans_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_06_27.Deck07_JV7777_Humans_WUBRG(),
+                GetDeck("modern-preliminary-2020-06-27",6),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
                 typeof(Humans),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck08_Archgaze_Winota_WRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_06_27.Deck08_Archgaze_Winota_WRG(),
+                GetDeck("modern-preliminary-2020-06-27",7),
                 new PostM21(),
                 ArchetypeColor.WRG,
                 typeof(Winota),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck09_cjucjujp_BushwhackerZoo_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_06_27.Deck09_cjucjujp_BushwhackerZoo_RG(),
+                GetDeck("modern-preliminary-2020-06-27",8),
                 new PostM21(),
                 ArchetypeColor.RG,
                 typeof(BushwhackerZoo),

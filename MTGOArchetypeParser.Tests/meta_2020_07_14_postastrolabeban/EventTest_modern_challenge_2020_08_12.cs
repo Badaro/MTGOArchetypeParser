@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck01_Gerschi_Prowess_RakdosProwess_WBR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck01_Gerschi_Prowess_RakdosProwess_WBR_Lurrus(),
+                GetDeck("modern-challenge-2020-08-12",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WBR,
                 typeof(Prowess),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck02_TSPJendrek_SultaiControl_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck02_TSPJendrek_SultaiControl_UBG(),
+                GetDeck("modern-challenge-2020-08-12",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
                 typeof(SultaiControl),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck03_Yooisa_Infect_UG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck03_Yooisa_Infect_UG(),
+                GetDeck("modern-challenge-2020-08-12",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UG,
                 typeof(Infect),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck04_HouseOfManaMTG_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck04_HouseOfManaMTG_GTron_KGCTron_G(),
+                GetDeck("modern-challenge-2020-08-12",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(GTron),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck05_dsissowin_Prowess_IzzetProwess_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck05_dsissowin_Prowess_IzzetProwess_UR(),
+                GetDeck("modern-challenge-2020-08-12",4),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
                 typeof(Prowess),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck06_matsugan_Neobrand_UG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck06_matsugan_Neobrand_UG(),
+                GetDeck("modern-challenge-2020-08-12",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UG,
                 typeof(Neobrand),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck07_sakuragi21722749_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck07_sakuragi21722749_ETron_C(),
+                GetDeck("modern-challenge-2020-08-12",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck08_MrRaeb_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck08_MrRaeb_Ponza_RG(),
+                GetDeck("modern-challenge-2020-08-12",7),
                 new PostAstrolabeBan(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck09_Predicted_Yawgmoth_WBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck09_Predicted_Yawgmoth_WBG(),
+                GetDeck("modern-challenge-2020-08-12",8),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WBG,
                 typeof(Yawgmoth),
@@ -133,7 +133,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck10_gazmon48_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck10_gazmon48_GTron_KGCTron_G(),
+                GetDeck("modern-challenge-2020-08-12",9),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(GTron),
@@ -146,7 +146,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck11_Mateusf34_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck11_Mateusf34_ETron_C(),
+                GetDeck("modern-challenge-2020-08-12",10),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -159,7 +159,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck12_Maox_Prowess_IzzetProwess_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck12_Maox_Prowess_IzzetProwess_UR(),
+                GetDeck("modern-challenge-2020-08-12",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
                 typeof(Prowess),
@@ -172,7 +172,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck13_FabriceK_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck13_FabriceK_ETron_C(),
+                GetDeck("modern-challenge-2020-08-12",12),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -185,7 +185,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck14_kefka27_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck14_kefka27_ETron_C(),
+                GetDeck("modern-challenge-2020-08-12",13),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -198,7 +198,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck15_albert62_Rock_Jund_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck15_albert62_Rock_Jund_BRG(),
+                GetDeck("modern-challenge-2020-08-12",14),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
                 typeof(Rock),
@@ -211,7 +211,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck16_MissTrigger_Burn_IncineratorBurn_R()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck16_MissTrigger_Burn_IncineratorBurn_R(),
+                GetDeck("modern-challenge-2020-08-12",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
                 typeof(Burn),
@@ -224,7 +224,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck17_jvidarte_Burn_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck17_jvidarte_Burn_WR(),
+                GetDeck("modern-challenge-2020-08-12",16),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WR,
                 typeof(Burn),
@@ -237,7 +237,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck18_nahuel10_SnowControl_SnowBlade_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck18_nahuel10_SnowControl_SnowBlade_WUG(),
+                GetDeck("modern-challenge-2020-08-12",17),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -250,7 +250,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck19_Tiemuuu_IzzetControl_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck19_Tiemuuu_IzzetControl_UR(),
+                GetDeck("modern-challenge-2020-08-12",18),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
                 typeof(IzzetControl),
@@ -263,7 +263,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck20_harukispecial_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck20_harukispecial_SnowControl_SultaiSnow_UBG(),
+                GetDeck("modern-challenge-2020-08-12",19),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
                 typeof(SnowControl),
@@ -276,7 +276,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck21_Falcon_Prowess_IzzetProwess_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck21_Falcon_Prowess_IzzetProwess_UR(),
+                GetDeck("modern-challenge-2020-08-12",20),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
                 typeof(Prowess),
@@ -289,7 +289,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck22_Gabriele2020_Humans_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck22_Gabriele2020_Humans_WUBRG(),
+                GetDeck("modern-challenge-2020-08-12",21),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
                 typeof(Humans),
@@ -302,7 +302,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck23_Ryan100495_Dredge_WBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck23_Ryan100495_Dredge_WBRG(),
+                GetDeck("modern-challenge-2020-08-12",22),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WBRG,
                 typeof(Dredge),
@@ -315,7 +315,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck24_kthanakit26_Prowess_IzzetProwess_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck24_kthanakit26_Prowess_IzzetProwess_UR(),
+                GetDeck("modern-challenge-2020-08-12",23),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
                 typeof(Prowess),
@@ -328,7 +328,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck25_thekingofnone_Scapeshift_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck25_thekingofnone_Scapeshift_URG(),
+                GetDeck("modern-challenge-2020-08-12",24),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
                 typeof(Scapeshift),
@@ -341,7 +341,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck26_belanna999_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck26_belanna999_ETron_C(),
+                GetDeck("modern-challenge-2020-08-12",25),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -354,7 +354,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck27_TheSouthDakota_DeathsShadow_TraverseShadow_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck27_TheSouthDakota_DeathsShadow_TraverseShadow_BRG(),
+                GetDeck("modern-challenge-2020-08-12",26),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
                 typeof(DeathsShadow),
@@ -367,7 +367,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck28_HIziri88_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck28_HIziri88_Ponza_RG(),
+                GetDeck("modern-challenge-2020-08-12",27),
                 new PostAstrolabeBan(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -380,7 +380,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck29_mariogomes097_DeathsShadow_GrixisShadow_UBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck29_mariogomes097_DeathsShadow_GrixisShadow_UBR(),
+                GetDeck("modern-challenge-2020-08-12",28),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBR,
                 typeof(DeathsShadow),
@@ -393,7 +393,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck30_kaikalbuquerque_Rock_Jund_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck30_kaikalbuquerque_Rock_Jund_BRG(),
+                GetDeck("modern-challenge-2020-08-12",29),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
                 typeof(Rock),
@@ -406,7 +406,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck31_unicornparadise_Prowess_RakdosProwess_BR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck31_unicornparadise_Prowess_RakdosProwess_BR_Lurrus(),
+                GetDeck("modern-challenge-2020-08-12",30),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BR,
                 typeof(Prowess),
@@ -419,7 +419,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck32_RaptorNachos_Prowess_R()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_challenge_2020_08_12.Deck32_RaptorNachos_Prowess_R(),
+                GetDeck("modern-challenge-2020-08-12",31),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
                 typeof(Prowess),

@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck01_hugo87_GiftsStorm_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck01_hugo87_GiftsStorm_UR(),
+                GetDeck("modern-challenge-2020-06-15",0),
                 new PostCompanionChange(),
                 ArchetypeColor.UR,
                 typeof(GiftsStorm),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck02_toondoslav_Dredge_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck02_toondoslav_Dredge_BRG(),
+                GetDeck("modern-challenge-2020-06-15",1),
                 new PostCompanionChange(),
                 ArchetypeColor.BRG,
                 typeof(Dredge),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck03_Janh_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck03_Janh_SnowControl_SultaiSnow_UBG(),
+                GetDeck("modern-challenge-2020-06-15",2),
                 new PostCompanionChange(),
                 ArchetypeColor.UBG,
                 typeof(SnowControl),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck04_SebastianStueckl_Dredge_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck04_SebastianStueckl_Dredge_BRG(),
+                GetDeck("modern-challenge-2020-06-15",3),
                 new PostCompanionChange(),
                 ArchetypeColor.BRG,
                 typeof(Dredge),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck05_PRGJJAR_Dredge_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck05_PRGJJAR_Dredge_BRG(),
+                GetDeck("modern-challenge-2020-06-15",4),
                 new PostCompanionChange(),
                 ArchetypeColor.BRG,
                 typeof(Dredge),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck06_ecobaronen_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck06_ecobaronen_Ponza_RG(),
+                GetDeck("modern-challenge-2020-06-15",5),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck07_TheSouthDakota_Dredge_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck07_TheSouthDakota_Dredge_BRG(),
+                GetDeck("modern-challenge-2020-06-15",6),
                 new PostCompanionChange(),
                 ArchetypeColor.BRG,
                 typeof(Dredge),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck08_LordBeerus_Burn_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck08_LordBeerus_Burn_WR(),
+                GetDeck("modern-challenge-2020-06-15",7),
                 new PostCompanionChange(),
                 ArchetypeColor.WR,
                 typeof(Burn),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck09_NorrathDecay_Burn_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck09_NorrathDecay_Burn_WR(),
+                GetDeck("modern-challenge-2020-06-15",8),
                 new PostCompanionChange(),
                 ArchetypeColor.WR,
                 typeof(Burn),
@@ -133,7 +133,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck10_Xenowan_Inverter_UB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck10_Xenowan_Inverter_UB(),
+                GetDeck("modern-challenge-2020-06-15",9),
                 new PostCompanionChange(),
                 ArchetypeColor.UB,
                 typeof(Inverter),
@@ -146,7 +146,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck11_signblindman_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck11_signblindman_Ponza_RG(),
+                GetDeck("modern-challenge-2020-06-15",10),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -159,7 +159,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck12_Walka_SnowControl_SnowBlade_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck12_Walka_SnowControl_SnowBlade_WUG(),
+                GetDeck("modern-challenge-2020-06-15",11),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -172,7 +172,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck13_Diatomic_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck13_Diatomic_SnowControl_SultaiSnow_UBG(),
+                GetDeck("modern-challenge-2020-06-15",12),
                 new PostCompanionChange(),
                 ArchetypeColor.UBG,
                 typeof(SnowControl),
@@ -185,7 +185,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck14_litianshuo670_DeathAndTaxes_EldraziTaxes_WB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck14_litianshuo670_DeathAndTaxes_EldraziTaxes_WB(),
+                GetDeck("modern-challenge-2020-06-15",13),
                 new PostCompanionChange(),
                 ArchetypeColor.WB,
                 typeof(DeathAndTaxes),
@@ -198,7 +198,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck15_SkiLwrAp_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck15_SkiLwrAp_ETron_C(),
+                GetDeck("modern-challenge-2020-06-15",14),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -211,7 +211,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck16_ZYURYO_SnowControl_WUBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck16_ZYURYO_SnowControl_WUBG(),
+                GetDeck("modern-challenge-2020-06-15",15),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBG,
                 typeof(SnowControl),
@@ -224,7 +224,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck17_Xwhale_SnowControl_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck17_Xwhale_SnowControl_WUG(),
+                GetDeck("modern-challenge-2020-06-15",16),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -237,7 +237,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck18_JB2002_BantBlink_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck18_JB2002_BantBlink_WUG_Yorion(),
+                GetDeck("modern-challenge-2020-06-15",17),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
                 typeof(BantBlink),
@@ -250,7 +250,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck19_swff_SnowControl_SultaiSnow_WUBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck19_swff_SnowControl_SultaiSnow_WUBG(),
+                GetDeck("modern-challenge-2020-06-15",18),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBG,
                 typeof(SnowControl),
@@ -263,7 +263,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck20_Granham_Rock_Jund_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck20_Granham_Rock_Jund_BRG(),
+                GetDeck("modern-challenge-2020-06-15",19),
                 new PostCompanionChange(),
                 ArchetypeColor.BRG,
                 typeof(Rock),
@@ -276,7 +276,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck21_MadMaxErnst_Uroza_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck21_MadMaxErnst_Uroza_URG(),
+                GetDeck("modern-challenge-2020-06-15",20),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
                 typeof(Uroza),
@@ -289,7 +289,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck22_bobthedog_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck22_bobthedog_SnowControl_SultaiSnow_UBG(),
+                GetDeck("modern-challenge-2020-06-15",21),
                 new PostCompanionChange(),
                 ArchetypeColor.UBG,
                 typeof(SnowControl),
@@ -302,7 +302,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck23_gyyby297_ThopterUrza_UB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck23_gyyby297_ThopterUrza_UB(),
+                GetDeck("modern-challenge-2020-06-15",22),
                 new PostCompanionChange(),
                 ArchetypeColor.UB,
                 typeof(ThopterUrza),
@@ -315,7 +315,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck24_coert_GTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck24_coert_GTron_G(),
+                GetDeck("modern-challenge-2020-06-15",23),
                 new PostCompanionChange(),
                 ArchetypeColor.G,
                 typeof(GTron),
@@ -328,7 +328,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck25_Magicofplayer1_EsperControl_WUB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck25_Magicofplayer1_EsperControl_WUB(),
+                GetDeck("modern-challenge-2020-06-15",24),
                 new PostCompanionChange(),
                 ArchetypeColor.WUB,
                 typeof(EsperControl),
@@ -341,7 +341,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck26_sffmtg_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck26_sffmtg_Ponza_RG(),
+                GetDeck("modern-challenge-2020-06-15",25),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -354,7 +354,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck27_musasabi_Humans_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck27_musasabi_Humans_WUBRG(),
+                GetDeck("modern-challenge-2020-06-15",26),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
                 typeof(Humans),
@@ -367,7 +367,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck28_Batutinha_SnowControl_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck28_Batutinha_SnowControl_WUG(),
+                GetDeck("modern-challenge-2020-06-15",27),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -380,7 +380,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck29_Damgar_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck29_Damgar_ETron_C(),
+                GetDeck("modern-challenge-2020-06-15",28),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -393,7 +393,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck30_jmoney10_SnowControl_SnowBlade_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck30_jmoney10_SnowControl_SnowBlade_WUG(),
+                GetDeck("modern-challenge-2020-06-15",29),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -406,7 +406,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck31_ilsecco14_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck31_ilsecco14_Ponza_RG(),
+                GetDeck("modern-challenge-2020-06-15",30),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -419,7 +419,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck32_Mallik7D_GiftsStorm_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_challenge_2020_06_15.Deck32_Mallik7D_GiftsStorm_UR(),
+                GetDeck("modern-challenge-2020-06-15",31),
                 new PostCompanionChange(),
                 ArchetypeColor.UR,
                 typeof(GiftsStorm),

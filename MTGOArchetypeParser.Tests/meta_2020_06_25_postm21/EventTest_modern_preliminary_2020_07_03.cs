@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck01_Thrall90_Rock_Jund_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_03.Deck01_Thrall90_Rock_Jund_BRG(),
+                GetDeck("modern-preliminary-2020-07-03",0),
                 new PostM21(),
                 ArchetypeColor.BRG,
                 typeof(Rock),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck02_titoWii96_SnowControl_WURG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_03.Deck02_titoWii96_SnowControl_WURG_Yorion(),
+                GetDeck("modern-preliminary-2020-07-03",1),
                 new PostM21(),
                 ArchetypeColor.WURG,
                 typeof(SnowControl),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck03_Boin_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_03.Deck03_Boin_ETron_C(),
+                GetDeck("modern-preliminary-2020-07-03",2),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck04_jdez_DeathsShadow_OrzhovShadow_WB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_03.Deck04_jdez_DeathsShadow_OrzhovShadow_WB(),
+                GetDeck("modern-preliminary-2020-07-03",3),
                 new PostM21(),
                 ArchetypeColor.WB,
                 typeof(DeathsShadow),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck05_triosk_HardenedScales_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_03.Deck05_triosk_HardenedScales_G(),
+                GetDeck("modern-preliminary-2020-07-03",4),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(HardenedScales),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck06_Laplasjan_Devoted_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_03.Deck06_Laplasjan_Devoted_WG_Lurrus(),
+                GetDeck("modern-preliminary-2020-07-03",5),
                 new PostM21(),
                 ArchetypeColor.WG,
                 typeof(Devoted),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck07_Dai1412_Prowess_IzzetProwess_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_03.Deck07_Dai1412_Prowess_IzzetProwess_UR(),
+                GetDeck("modern-preliminary-2020-07-03",6),
                 new PostM21(),
                 ArchetypeColor.UR,
                 typeof(Prowess),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck08_ecobaronen_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_03.Deck08_ecobaronen_SnowControl_SultaiSnow_UBG(),
+                GetDeck("modern-preliminary-2020-07-03",7),
                 new PostM21(),
                 ArchetypeColor.UBG,
                 typeof(SnowControl),

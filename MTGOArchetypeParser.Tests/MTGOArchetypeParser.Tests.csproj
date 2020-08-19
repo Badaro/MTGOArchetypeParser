@@ -15,8 +15,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MTGOArchetypeParser.Archetypes.Modern\MTGOArchetypeParser.Archetypes.Modern.csproj" />
+    <ProjectReference Include="..\MTGOArchetypeParser.DataSources\MTGOArchetypeParser.DataSources.csproj" />
     <ProjectReference Include="..\MTGOArchetypeParser.Metas.Modern\MTGOArchetypeParser.Metas.Modern.csproj" />
-    <ProjectReference Include="..\MTGOArchetypeParser.Tests.SampleData\MTGOArchetypeParser.Tests.SampleData.csproj" />
     <ProjectReference Include="..\MTGOArchetypeParser\MTGOArchetypeParser.csproj" />
   </ItemGroup>
 

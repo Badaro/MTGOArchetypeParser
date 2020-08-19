@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck01_lilianaofthevess_SongStorm_URG_Jegantha()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_04.Deck01_lilianaofthevess_SongStorm_URG_Jegantha(),
+                GetDeck("modern-preliminary-2020-07-04",0),
                 new PostM21(),
                 ArchetypeColor.URG,
                 typeof(SongStorm),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck02_ZYURYO_SnowControl_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_04.Deck02_ZYURYO_SnowControl_WUG(),
+                GetDeck("modern-preliminary-2020-07-04",1),
                 new PostM21(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck03_ManuelJacob_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_04.Deck03_ManuelJacob_SnowControl_SultaiSnow_UBG(),
+                GetDeck("modern-preliminary-2020-07-04",2),
                 new PostM21(),
                 ArchetypeColor.UBG,
                 typeof(SnowControl),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck04_INF_GiftsStorm_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_04.Deck04_INF_GiftsStorm_UR(),
+                GetDeck("modern-preliminary-2020-07-04",3),
                 new PostM21(),
                 ArchetypeColor.UR,
                 typeof(GiftsStorm),
@@ -65,10 +65,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck05_bnlunt_UTron_UB()
+        public void Deck05_bnlunt_UTron_U()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_04.Deck05_bnlunt_UTron_UB(),
+                GetDeck("modern-preliminary-2020-07-04",4),
                 new PostM21(),
                 ArchetypeColor.U,
                 typeof(UTron),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck06_nielsen333_PrimevalTitan_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_04.Deck06_nielsen333_PrimevalTitan_BRG(),
+                GetDeck("modern-preliminary-2020-07-04",5),
                 new PostM21(),
                 ArchetypeColor.BRG,
                 typeof(PrimevalTitan),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck07_Laessoe_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_04.Deck07_Laessoe_Ponza_RG(),
+                GetDeck("modern-preliminary-2020-07-04",6),
                 new PostM21(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck08_siomomi_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_04.Deck08_siomomi_GTron_KGCTron_G(),
+                GetDeck("modern-preliminary-2020-07-04",7),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(GTron),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck09_triosk_Goblins_SnoopGoblins_BR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_04.Deck09_triosk_Goblins_SnoopGoblins_BR(),
+                GetDeck("modern-preliminary-2020-07-04",8),
                 new PostM21(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
@@ -133,7 +133,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck10_cjucjujp_BushwhackerZoo_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_04.Deck10_cjucjujp_BushwhackerZoo_RG(),
+                GetDeck("modern-preliminary-2020-07-04",9),
                 new PostM21(),
                 ArchetypeColor.RG,
                 typeof(BushwhackerZoo),

@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck01_nahuel10_SnowControl_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck01_nahuel10_SnowControl_WUG(),
+                GetDeck("modern-league-2020-06-26",0),
                 new PostM21(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck02_Ennuixd_Prowess_R()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck02_Ennuixd_Prowess_R(),
+                GetDeck("modern-league-2020-06-26",1),
                 new PostM21(),
                 ArchetypeColor.R,
                 typeof(Prowess),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck03_Lucabireskusku_Inverter_UB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck03_Lucabireskusku_Inverter_UB(),
+                GetDeck("modern-league-2020-06-26",2),
                 new PostM21(),
                 ArchetypeColor.UB,
                 typeof(Inverter),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck04_Audemin_Humans_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck04_Audemin_Humans_WUBRG(),
+                GetDeck("modern-league-2020-06-26",3),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
                 typeof(Humans),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck05_koji1130_RedDeckWins_WR_Jegantha()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck05_koji1130_RedDeckWins_WR_Jegantha(),
+                GetDeck("modern-league-2020-06-26",4),
                 new PostM21(),
                 ArchetypeColor.WR,
                 typeof(RedDeckWins),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck06_StreexIT_Spirits_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck06_StreexIT_Spirits_WU(),
+                GetDeck("modern-league-2020-06-26",5),
                 new PostM21(),
                 ArchetypeColor.WU,
                 typeof(Spirits),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck07_rojanosa_Tokens_OrzhovTokens_WB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck07_rojanosa_Tokens_OrzhovTokens_WB(),
+                GetDeck("modern-league-2020-06-26",6),
                 new PostM21(),
                 ArchetypeColor.WB,
                 typeof(Tokens),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck08_haubidtran_Uroza_UBG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck08_haubidtran_Uroza_UBG_Yorion(),
+                GetDeck("modern-league-2020-06-26",7),
                 new PostM21(),
                 ArchetypeColor.UBG,
                 typeof(Uroza),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck09_esatheking_Prowess_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck09_esatheking_Prowess_WR(),
+                GetDeck("modern-league-2020-06-26",8),
                 new PostM21(),
                 ArchetypeColor.WR,
                 typeof(Prowess),
@@ -133,7 +133,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck10_yPrincipe_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck10_yPrincipe_ETron_C(),
+                GetDeck("modern-league-2020-06-26",9),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -146,7 +146,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck11_magicjpg_BantBlink_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck11_magicjpg_BantBlink_WUG_Yorion(),
+                GetDeck("modern-league-2020-06-26",10),
                 new PostM21(),
                 ArchetypeColor.WUG,
                 typeof(BantBlink),
@@ -159,7 +159,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck12_Psychophobic_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck12_Psychophobic_Ponza_RG(),
+                GetDeck("modern-league-2020-06-26",11),
                 new PostM21(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -172,7 +172,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck13_Borjillamtg10_AdNauseam_WUB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck13_Borjillamtg10_AdNauseam_WUB(),
+                GetDeck("modern-league-2020-06-26",12),
                 new PostM21(),
                 ArchetypeColor.WUB,
                 typeof(AdNauseam),
@@ -185,7 +185,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck14_603Leb_PrimevalTitan_AmuletTitan_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck14_603Leb_PrimevalTitan_AmuletTitan_WUBRG(),
+                GetDeck("modern-league-2020-06-26",13),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
                 typeof(PrimevalTitan),
@@ -198,7 +198,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck15_MadRamon_SnowControl_SnowReclamation_URG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck15_MadRamon_SnowControl_SnowReclamation_URG_Yorion(),
+                GetDeck("modern-league-2020-06-26",14),
                 new PostM21(),
                 ArchetypeColor.URG,
                 typeof(SnowControl),
@@ -211,7 +211,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck16_Mordeka1ser_BringToNiv_WUBRG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck16_Mordeka1ser_BringToNiv_WUBRG_Yorion(),
+                GetDeck("modern-league-2020-06-26",15),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
                 typeof(BringToNiv),
@@ -224,7 +224,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck17_Zebrah_PrimevalTitan_AmuletTitan_WUBRG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck17_Zebrah_PrimevalTitan_AmuletTitan_WUBRG_Yorion(),
+                GetDeck("modern-league-2020-06-26",16),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
                 typeof(PrimevalTitan),
@@ -237,7 +237,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck18_Shorak123_SnowControl_SnowReclamation_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck18_Shorak123_SnowControl_SnowReclamation_UBG(),
+                GetDeck("modern-league-2020-06-26",17),
                 new PostM21(),
                 ArchetypeColor.UBG,
                 typeof(SnowControl),
@@ -250,7 +250,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck19_Beicodegeia_GiftsStorm_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck19_Beicodegeia_GiftsStorm_UR(),
+                GetDeck("modern-league-2020-06-26",18),
                 new PostM21(),
                 ArchetypeColor.UR,
                 typeof(GiftsStorm),
@@ -263,7 +263,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck20_FantasticMrFox_Bogles_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck20_FantasticMrFox_Bogles_WG_Lurrus(),
+                GetDeck("modern-league-2020-06-26",19),
                 new PostM21(),
                 ArchetypeColor.WG,
                 typeof(Bogles),
@@ -276,7 +276,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck21_RockStar_Prowess_RakdosProwess_BR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck21_RockStar_Prowess_RakdosProwess_BR_Lurrus(),
+                GetDeck("modern-league-2020-06-26",20),
                 new PostM21(),
                 ArchetypeColor.BR,
                 typeof(Prowess),
@@ -289,7 +289,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck22_Bunnykept_Rock_Jund_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck22_Bunnykept_Rock_Jund_BRG(),
+                GetDeck("modern-league-2020-06-26",21),
                 new PostM21(),
                 ArchetypeColor.BRG,
                 typeof(Rock),
@@ -302,7 +302,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck23_Lcario_DeathsShadow_GrixisShadow_UBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck23_Lcario_DeathsShadow_GrixisShadow_UBR(),
+                GetDeck("modern-league-2020-06-26",22),
                 new PostM21(),
                 ArchetypeColor.UBR,
                 typeof(DeathsShadow),
@@ -315,7 +315,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck24_Gaffiere1903_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck24_Gaffiere1903_Ponza_RG(),
+                GetDeck("modern-league-2020-06-26",23),
                 new PostM21(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -328,7 +328,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck25_Nogamblenofutur_Burn_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck25_Nogamblenofutur_Burn_WR(),
+                GetDeck("modern-league-2020-06-26",24),
                 new PostM21(),
                 ArchetypeColor.WR,
                 typeof(Burn),
@@ -341,7 +341,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck26_Justodeangelo_SnowControl_SnowReclamation_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck26_Justodeangelo_SnowControl_SnowReclamation_URG(),
+                GetDeck("modern-league-2020-06-26",25),
                 new PostM21(),
                 ArchetypeColor.URG,
                 typeof(SnowControl),
@@ -354,7 +354,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck27_SightWinner_HollowOne_BR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck27_SightWinner_HollowOne_BR(),
+                GetDeck("modern-league-2020-06-26",26),
                 new PostM21(),
                 ArchetypeColor.BR,
                 typeof(HollowOne),
@@ -367,7 +367,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck28_Pirika_MarduPyromancer_WBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck28_Pirika_MarduPyromancer_WBR(),
+                GetDeck("modern-league-2020-06-26",27),
                 new PostM21(),
                 ArchetypeColor.WBR,
                 typeof(MarduPyromancer),
@@ -380,7 +380,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck29_Xorn9_Goblins_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck29_Xorn9_Goblins_WUBRG(),
+                GetDeck("modern-league-2020-06-26",28),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
                 typeof(Goblins),
@@ -393,7 +393,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck30_vengevine29_HardenedScales_BG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck30_vengevine29_HardenedScales_BG_Lurrus(),
+                GetDeck("modern-league-2020-06-26",29),
                 new PostM21(),
                 ArchetypeColor.BG,
                 typeof(HardenedScales),
@@ -406,7 +406,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck31_SebastianStueckl_Goblins_SnoopGoblins_BR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck31_SebastianStueckl_Goblins_SnoopGoblins_BR(),
+                GetDeck("modern-league-2020-06-26",30),
                 new PostM21(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
@@ -416,10 +416,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck32_Trellon_UTron_UB()
+        public void Deck32_Trellon_UTron_U()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck32_Trellon_UTron_UB(),
+                GetDeck("modern-league-2020-06-26",31),
                 new PostM21(),
                 ArchetypeColor.U,
                 typeof(UTron),
@@ -432,7 +432,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck33_Netow_Dredge_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck33_Netow_Dredge_BRG(),
+                GetDeck("modern-league-2020-06-26",32),
                 new PostM21(),
                 ArchetypeColor.BRG,
                 typeof(Dredge),
@@ -445,7 +445,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck34_Sonkerz_IzzetControl_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck34_Sonkerz_IzzetControl_UR(),
+                GetDeck("modern-league-2020-06-26",33),
                 new PostM21(),
                 ArchetypeColor.UR,
                 typeof(IzzetControl),
@@ -458,7 +458,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck35_PieGonti_KinnanUrza_URG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck35_PieGonti_KinnanUrza_URG_Yorion(),
+                GetDeck("modern-league-2020-06-26",34),
                 new PostM21(),
                 ArchetypeColor.URG,
                 typeof(KinnanUrza),
@@ -471,7 +471,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck36_Piccio36_Winota_WRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_league_2020_06_26.Deck36_Piccio36_Winota_WRG(),
+                GetDeck("modern-league-2020-06-26",35),
                 new PostM21(),
                 ArchetypeColor.WRG,
                 typeof(Winota),

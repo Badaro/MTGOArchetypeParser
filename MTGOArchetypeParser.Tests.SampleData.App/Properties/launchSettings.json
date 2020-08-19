@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "MTGOArchetypeParser.Tests.SampleData.App": {
-      "commandName": "Project",
-      "commandLineArgs": "\"$(SolutionDir)MTGODecklistCache\\Tournaments\""
-    }
-  }
-}

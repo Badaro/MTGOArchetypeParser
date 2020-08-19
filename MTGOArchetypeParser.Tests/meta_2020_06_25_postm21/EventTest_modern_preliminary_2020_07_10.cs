@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck01_Gigy_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_10.Deck01_Gigy_Ponza_RG(),
+                GetDeck("modern-preliminary-2020-07-10",0),
                 new PostM21(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck02_sffmtg_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_10.Deck02_sffmtg_GTron_KGCTron_G(),
+                GetDeck("modern-preliminary-2020-07-10",1),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(GTron),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck03_J000111_Dredge_WBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_10.Deck03_J000111_Dredge_WBRG(),
+                GetDeck("modern-preliminary-2020-07-10",2),
                 new PostM21(),
                 ArchetypeColor.WBRG,
                 typeof(Dredge),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck04_WanderingOnes_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_10.Deck04_WanderingOnes_GTron_KGCTron_G(),
+                GetDeck("modern-preliminary-2020-07-10",3),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(GTron),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck05_Janh_SnowControl_SnowShift_URG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_10.Deck05_Janh_SnowControl_SnowShift_URG_Yorion(),
+                GetDeck("modern-preliminary-2020-07-10",4),
                 new PostM21(),
                 ArchetypeColor.URG,
                 typeof(SnowControl),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck06_HouseOfManaMTG_PrimevalTitan_AmuletTitan_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_10.Deck06_HouseOfManaMTG_PrimevalTitan_AmuletTitan_WUBRG(),
+                GetDeck("modern-preliminary-2020-07-10",5),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
                 typeof(PrimevalTitan),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck07_katoriarch123_SnowControl_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_10.Deck07_katoriarch123_SnowControl_WUG(),
+                GetDeck("modern-preliminary-2020-07-10",6),
                 new PostM21(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck08_Engelsdorfer_DeathsShadow_GrixisShadow_UBR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_10.Deck08_Engelsdorfer_DeathsShadow_GrixisShadow_UBR(),
+                GetDeck("modern-preliminary-2020-07-10",7),
                 new PostM21(),
                 ArchetypeColor.UBR,
                 typeof(DeathsShadow),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         public void Deck09_zumekun19850204_SnowControl_SultaiSnow_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_25_postm21.modern_preliminary_2020_07_10.Deck09_zumekun19850204_SnowControl_SultaiSnow_UBG(),
+                GetDeck("modern-preliminary-2020-07-10",8),
                 new PostM21(),
                 ArchetypeColor.UBG,
                 typeof(SnowControl),

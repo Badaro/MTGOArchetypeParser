@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck01_ViolentOutburst_SnowControl_SnowReclamation_URG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_05.Deck01_ViolentOutburst_SnowControl_SnowReclamation_URG_Yorion(),
+                GetDeck("modern-preliminary-2020-06-05",0),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
                 typeof(SnowControl),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck02_gazmon48_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_05.Deck02_gazmon48_Ponza_RG(),
+                GetDeck("modern-preliminary-2020-06-05",1),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck03_LORiWWA_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_05.Deck03_LORiWWA_ETron_C(),
+                GetDeck("modern-preliminary-2020-06-05",2),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck04_matsugan_Neobrand_UG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_05.Deck04_matsugan_Neobrand_UG(),
+                GetDeck("modern-preliminary-2020-06-05",3),
                 new PostCompanionChange(),
                 ArchetypeColor.UG,
                 typeof(Neobrand),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck05_PRGJJAR_Dredge_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_05.Deck05_PRGJJAR_Dredge_BRG(),
+                GetDeck("modern-preliminary-2020-06-05",4),
                 new PostCompanionChange(),
                 ArchetypeColor.BRG,
                 typeof(Dredge),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck06_fradev1988_SnowControl_WUG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_05.Deck06_fradev1988_SnowControl_WUG(),
+                GetDeck("modern-preliminary-2020-06-05",5),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
                 typeof(SnowControl),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck07_Cherryxman_Uroza_WUG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_05.Deck07_Cherryxman_Uroza_WUG_Yorion(),
+                GetDeck("modern-preliminary-2020-06-05",6),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
                 typeof(Uroza),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck08_sffmtg_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_05.Deck08_sffmtg_GTron_KGCTron_G(),
+                GetDeck("modern-preliminary-2020-06-05",7),
                 new PostCompanionChange(),
                 ArchetypeColor.G,
                 typeof(GTron),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck09_Shatun_PrimevalTitan_TitanShift_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_05.Deck09_Shatun_PrimevalTitan_TitanShift_RG(),
+                GetDeck("modern-preliminary-2020-06-05",8),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
                 typeof(PrimevalTitan),

@@ -187,7 +187,7 @@ namespace MTGOArchetypeParser.Reports.App
                     mainboardCount[card.CardName] += card.Count;
                     mainboardDecks[card.CardName] += 1;
                 }
-                foreach (DeckItem card in record.Deck.Sideboard)
+                foreach (MTGODeckItem card in record.Deck.Sideboard)
                 {
                     count[card.CardName] += card.Count;
                     sideboardCount[card.CardName] += card.Count;

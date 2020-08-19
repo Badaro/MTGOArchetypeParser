@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck01_ArchaeusDota_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_12.Deck01_ArchaeusDota_GTron_KGCTron_G(),
+                GetDeck("modern-showcase-last-chance-2020-08-12",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(GTron),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck02_CrusherBotBG_HammerTime_W()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_12.Deck02_CrusherBotBG_HammerTime_W(),
+                GetDeck("modern-showcase-last-chance-2020-08-12",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.W,
                 typeof(HammerTime),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck03_DreamsOfAshiok_ETron_C()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_12.Deck03_DreamsOfAshiok_ETron_C(),
+                GetDeck("modern-showcase-last-chance-2020-08-12",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(ETron),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck04_brandonlogan_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_12.Deck04_brandonlogan_Ponza_RG(),
+                GetDeck("modern-showcase-last-chance-2020-08-12",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck05_tpc2000_GiftsStorm_UR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_12.Deck05_tpc2000_GiftsStorm_UR(),
+                GetDeck("modern-showcase-last-chance-2020-08-12",4),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
                 typeof(GiftsStorm),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck06_Ganksyou_AzoriusControl_AzoriusStoneblade_WU()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_12.Deck06_Ganksyou_AzoriusControl_AzoriusStoneblade_WU(),
+                GetDeck("modern-showcase-last-chance-2020-08-12",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
                 typeof(AzoriusControl),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck07_JustBurn420_Slivers_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_12.Deck07_JustBurn420_Slivers_WUBRG(),
+                GetDeck("modern-showcase-last-chance-2020-08-12",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
                 typeof(Slivers),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck08_osmanozguney_Faeries_UB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_12.Deck08_osmanozguney_Faeries_UB(),
+                GetDeck("modern-showcase-last-chance-2020-08-12",7),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UB,
                 typeof(Faeries),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         public void Deck09_henryys_Burn_WR_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_07_14_postastrolabeban.modern_showcase_last_chance_2020_08_12.Deck09_henryys_Burn_WR_Lurrus(),
+                GetDeck("modern-showcase-last-chance-2020-08-12",8),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WR,
                 typeof(Burn),

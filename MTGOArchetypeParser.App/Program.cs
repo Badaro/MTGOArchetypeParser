@@ -17,7 +17,7 @@ namespace MTGOArchetypeParser.App
             {
                 try
                 {
-                    var decks = DataLoader.GetTournament(args[0], args[1]).Decks;
+                    var decks = DataLoader.GetTournamentByName(args[0], args[1]).Decks;
 
                     for (int i = 0; i < decks.Length; i++)
                     {

@@ -1,7 +1,6 @@
 ﻿using FluentAssertions;
 using MTGOArchetypeParser.Data;
 using MTGOArchetypeParser.Model;
-using MTGOArchetypeParser.Tests.SampleData;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;

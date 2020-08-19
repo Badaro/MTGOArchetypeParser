@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck01_aooaaooa_Lantern_UBG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck01_aooaaooa_Lantern_UBG(),
+                GetDeck("modern-preliminary-2020-06-20",0),
                 new PostCompanionChange(),
                 ArchetypeColor.UBG,
                 typeof(Lantern),
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck02_NightKnight131_Devoted_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck02_NightKnight131_Devoted_WG_Lurrus(),
+                GetDeck("modern-preliminary-2020-06-20",1),
                 new PostCompanionChange(),
                 ArchetypeColor.WG,
                 typeof(Devoted),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck03_MadCowChicken_SelesnyaEldrazi_WG_Jegantha()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck03_MadCowChicken_SelesnyaEldrazi_WG_Jegantha(),
+                GetDeck("modern-preliminary-2020-06-20",2),
                 new PostCompanionChange(),
                 ArchetypeColor.WG,
                 typeof(SelesnyaEldrazi),
@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck04_FrankBonaparte_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck04_FrankBonaparte_Ponza_RG(),
+                GetDeck("modern-preliminary-2020-06-20",3),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck05_Papelucho10_Infect_UG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck05_Papelucho10_Infect_UG(),
+                GetDeck("modern-preliminary-2020-06-20",4),
                 new PostCompanionChange(),
                 ArchetypeColor.UG,
                 typeof(Infect),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck06_Mcleskey_Burn_WR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck06_Mcleskey_Burn_WR(),
+                GetDeck("modern-preliminary-2020-06-20",5),
                 new PostCompanionChange(),
                 ArchetypeColor.WR,
                 typeof(Burn),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck07_Boland_Dredge_BRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck07_Boland_Dredge_BRG(),
+                GetDeck("modern-preliminary-2020-06-20",6),
                 new PostCompanionChange(),
                 ArchetypeColor.BRG,
                 typeof(Dredge),
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck08_ghostx02_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck08_ghostx02_Ponza_RG(),
+                GetDeck("modern-preliminary-2020-06-20",7),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -120,7 +120,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck09_FrancusAurelius_NayaMidrange_WRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck09_FrancusAurelius_NayaMidrange_WRG(),
+                GetDeck("modern-preliminary-2020-06-20",8),
                 new PostCompanionChange(),
                 ArchetypeColor.WRG,
                 typeof(NayaMidrange),
@@ -133,7 +133,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck10_otakkun_GTron_KGCTron_G()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck10_otakkun_GTron_KGCTron_G(),
+                GetDeck("modern-preliminary-2020-06-20",9),
                 new PostCompanionChange(),
                 ArchetypeColor.G,
                 typeof(GTron),
@@ -146,7 +146,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck11_Logic_DeathsShadow_BR()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck11_Logic_DeathsShadow_BR(),
+                GetDeck("modern-preliminary-2020-06-20",10),
                 new PostCompanionChange(),
                 ArchetypeColor.BR,
                 typeof(DeathsShadow),
@@ -159,7 +159,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck12_2radMTG_Bogles_WG_Lurrus()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck12_2radMTG_Bogles_WG_Lurrus(),
+                GetDeck("modern-preliminary-2020-06-20",11),
                 new PostCompanionChange(),
                 ArchetypeColor.WG,
                 typeof(Bogles),
@@ -172,7 +172,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck13_lovealienzzz_SnowControl_URG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck13_lovealienzzz_SnowControl_URG(),
+                GetDeck("modern-preliminary-2020-06-20",12),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
                 typeof(SnowControl),
@@ -185,7 +185,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck14_Manacymbal_KinnanUrza_URG_Yorion()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck14_Manacymbal_KinnanUrza_URG_Yorion(),
+                GetDeck("modern-preliminary-2020-06-20",13),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
                 typeof(KinnanUrza),
@@ -198,7 +198,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck15_signblindman_Ponza_RG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck15_signblindman_Ponza_RG(),
+                GetDeck("modern-preliminary-2020-06-20",14),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
                 typeof(Ponza),
@@ -211,7 +211,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck16_Nammersquats_Humans_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck16_Nammersquats_Humans_WUBRG(),
+                GetDeck("modern-preliminary-2020-06-20",15),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
                 typeof(Humans),
@@ -224,7 +224,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck17_Micro_AdNauseam_WUB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck17_Micro_AdNauseam_WUB(),
+                GetDeck("modern-preliminary-2020-06-20",16),
                 new PostCompanionChange(),
                 ArchetypeColor.WUB,
                 typeof(AdNauseam),
@@ -237,7 +237,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck18_joetru_BringToNiv_WUBRG()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck18_joetru_BringToNiv_WUBRG(),
+                GetDeck("modern-preliminary-2020-06-20",17),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
                 typeof(BringToNiv),
@@ -250,7 +250,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         public void Deck19_grahams_Mill_UB()
         {
             Test(
-                new MTGOArchetypeParser.Tests.SampleData.meta_2020_06_04_postcompanionchange.modern_preliminary_2020_06_20.Deck19_grahams_Mill_UB(),
+                GetDeck("modern-preliminary-2020-06-20",18),
                 new PostCompanionChange(),
                 ArchetypeColor.UB,
                 typeof(Mill),

@@ -1,10 +1,12 @@
 ﻿using FluentAssertions;
 using MTGOArchetypeParser.Data;
+using MTGOArchetypeParser.DataSources;
+using MTGOArchetypeParser.DataSources.Model;
 using MTGOArchetypeParser.Model;
-using MTGOArchetypeParser.Tests.SampleData;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -13,10 +15,21 @@ namespace MTGOArchetypeParser.Tests
 {
     public class EventTest
     {
+        string cacheFolder = new DirectoryInfo(@"..\..\..\..\MTGODecklistCache\Tournaments").FullName;
+        static Dictionary<string, MTGOTournament> tournamentCache = new Dictionary<string, MTGOTournament>();
 
-        protected void Test(ISampleDeck deck, ArchetypeMeta meta, ArchetypeColor expectedColor, Type expectedArchetype, Type expectedVariant = null, ArchetypeCompanion? expectedCompanion = null)
+        protected MTGODeck GetDeck(string tournamentName, int deckIndex)
         {
-            var result = ArchetypeAnalyzer.Detect(deck.Mainboard.Select(c => c.Name).ToArray(), deck.Sideboard.Select(c => c.Name).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
+            if (!tournamentCache.ContainsKey(tournamentName))
+            {
+                tournamentCache.Add(tournamentName, DataLoader.GetTournamentByName(cacheFolder, tournamentName));
+            }
+            return tournamentCache[tournamentName].Decks[deckIndex];
+        }
+
+        protected void Test(MTGODeck deck, ArchetypeMeta meta, ArchetypeColor expectedColor, Type expectedArchetype, Type expectedVariant = null, ArchetypeCompanion? expectedCompanion = null)
+        {
+            var result = ArchetypeAnalyzer.Detect(deck.Mainboard.Select(c => c.CardName).ToArray(), deck.Sideboard.Select(c => c.CardName).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
 
             result.Matches.Should().HaveCount(1);
 

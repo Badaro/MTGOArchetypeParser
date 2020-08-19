@@ -11,28 +11,7 @@ namespace MTGOArchetypeParser.DataSources
 {
     public static class DataLoader
     {
-        public static CacheItem[] GetTournaments(string cacheFolder, DateTime startDate, Func<string, bool> filter = null)
-        {
-            if (filter == null) filter = n => true;
-
-            List<CacheItem> result = new List<CacheItem>();
-
-            for (DateTime date = startDate; date < DateTime.UtcNow; date = date.AddDays(1))
-            {
-                string folder = Path.Combine(cacheFolder, date.Year.ToString(), date.Month.ToString("D2"), date.Day.ToString("D2"));
-                if (!Directory.Exists(folder)) continue;
-
-                foreach (string file in Directory.GetFiles(folder, "*.json"))
-                {
-                    CacheItem item = JsonConvert.DeserializeObject<CacheItem>(File.ReadAllText(file));
-                    if (filter(item.Tournament.Name)) result.Add(item);
-                }
-            }
-
-            return result.ToArray();
-        }
-
-        public static CacheItem GetTournament(string cacheFolder, string eventName)
+        public static MTGOTournament GetTournamentByName(string cacheFolder, string eventName)
         {
             DateTime date = ExtractDateFromName(eventName);
 
@@ -41,8 +20,31 @@ namespace MTGOArchetypeParser.DataSources
             if (!Directory.Exists(folder)) throw new Exception("Event not found");
             if (!File.Exists(file)) throw new Exception("Event not found");
 
-            CacheItem item = JsonConvert.DeserializeObject<CacheItem>(File.ReadAllText(file));
+            MTGOTournament item = JsonConvert.DeserializeObject<MTGOTournament>(File.ReadAllText(file));
+            item.File = Path.GetFileName(file);
             return item;
+        }
+
+        public static MTGOTournament[] GetTournamentsByDate(string cacheFolder, DateTime startDate, Func<string, bool> filter = null)
+        {
+            if (filter == null) filter = n => true;
+
+            List<MTGOTournament> result = new List<MTGOTournament>();
+
+            for (DateTime date = startDate; date < DateTime.UtcNow; date = date.AddDays(1))
+            {
+                string folder = Path.Combine(cacheFolder, date.Year.ToString(), date.Month.ToString("D2"), date.Day.ToString("D2"));
+                if (!Directory.Exists(folder)) continue;
+
+                foreach (string file in Directory.GetFiles(folder, "*.json"))
+                {
+                    MTGOTournament item = JsonConvert.DeserializeObject<MTGOTournament>(File.ReadAllText(file));
+                    item.File = Path.GetFileName(file);
+                    if (filter(item.Tournament.Name)) result.Add(item);
+                }
+            }
+
+            return result.ToArray();
         }
 
         private static DateTime ExtractDateFromName(string eventName)

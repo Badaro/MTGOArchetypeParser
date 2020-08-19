@@ -17,7 +17,7 @@ namespace MTGOArchetypeParser.Reports.App
             Func<string, bool> includeLeaguesFilter = n => n.Contains("Modern");
             Func<string, bool> filter = includeLeagues ? includeLeaguesFilter : excludeLeaguesFilter;
 
-            CacheItem[] tournaments = DataLoader.GetTournaments(cacheFolder, startDate, filter).ToArray();
+            MTGOTournament[] tournaments = DataLoader.GetTournamentsByDate(cacheFolder, startDate, filter).ToArray();
 
             List<DataRecord> records = new List<DataRecord>();
 
