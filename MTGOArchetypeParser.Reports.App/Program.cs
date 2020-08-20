@@ -202,7 +202,7 @@ namespace MTGOArchetypeParser.Reports.App
             StringBuilder csvData = new StringBuilder();
             csvData.AppendLine($"NAME,COUNT,DECKS,MAINBOARD_COUNT,MAINBOARD_DECKS,SIDEBOARD_COUNT,SIDEBOARD_DECKS");
 
-            foreach (var card in decks.Keys)
+            foreach (var card in decks.Keys.OrderByDescending(k => count[k]))
             {
                 csvData.AppendLine($"{card.Replace(",", "")},{count[card]},{decks[card]},{mainboardCount[card]},{mainboardDecks[card]},{sideboardCount[card]},{sideboardDecks[card]}");
             }
