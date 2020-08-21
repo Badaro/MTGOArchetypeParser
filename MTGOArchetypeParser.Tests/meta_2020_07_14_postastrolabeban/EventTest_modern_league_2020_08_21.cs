@@ -32,7 +32,7 @@ using System.Text;
 #21 AndersPovirk: Dredge (WBRG)
 #22 lordavery: BantMidrange (WUG)
 #23 psych4tog: Elementals (WUBRG)
-#24 Juaspas: Rock (WBG)
+#24 Juaspas: Abzan (WBG)
 #25 SickWorld: Bogles (WG)
 #26 t1griselbrand: Neobrand (UG)
 #27 flyingspaghetti: GiftsStorm (UR)
@@ -366,7 +366,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck24_Juaspas_Rock_WBG()
+        public void Deck24_Juaspas_Rock_Abzan_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",23),
