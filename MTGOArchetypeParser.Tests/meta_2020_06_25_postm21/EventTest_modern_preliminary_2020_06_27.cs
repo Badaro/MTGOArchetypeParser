@@ -8,6 +8,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Kofurea: KGCAmuletTitan (WUBRG)
+#02 otakkun: KGCTron (G)
+#03 gyyby297: ThopterUrza (UB)
+#04 siomomi: KGCTron (G)
+#05 _INF_: GiftsStorm (UR)
+#06 Wolfie98: TemurSnow (URG)
+#07 JV_7777: Humans (WUBRG)
+#08 Archgaze: Winota (WRG)
+#09 cjucjujp: BushwhackerZoo (RG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_preliminary_2020_06_27 : EventTest

@@ -8,6 +8,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Lavaridge: TemurReclamation (URG)
+#02 Magicofplayer1: Dredge (WBRG)
+#03 _Falcon_: IzzetProwess (UR)
+#04 E_Kaminuma: ETron (C)
+#05 ScreenwriterNY: DeathAndTaxes (WU)
+#06 ArchaeusDota: KGCTron (G)
+#07 Zar0s: Scapeshift (URG)
+#08 komattaman: Ponza (RG)
+#09 Lukas261997: AzoriusStoneblade (WU)
+#10 moyashi0904: TemurReclamation (URG)
+#11 johnsmith3373: IzzetProwess (UR)
+#12 CrusherBotBG: HammerTime (W)
+#13 ktmr-39: SnowReclamation (UBG)
+#14 siomomi: ETron (C)
+#15 Wuhsa: BringToNiv (WUBRG)
+#16 _Shatun_: Prowess (R)
+#17 Littlemastercz: GruulEldrazi (RG)
+#18 Goteo: Dredge (BRG)
+#19 duofanel: Jund (BRG)
+#20 nk0913: IzzetProwess (UR)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_07_29 : EventTest

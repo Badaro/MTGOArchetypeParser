@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 gazmon48: KGCTron (G)
+#02 Do0mSwitch: BantControl (WUG)
+#03 aplapp: RakdosProwess (BR, Lurrus)
+#04 Pennywisse: GrixisShadow (UBR)
+#05 exoticherman: RakdosProwess (BR, Lurrus)
+#06 flatnose: Merfolk (UG)
+#07 Rav104: RakdosProwess (BR, Lurrus)
+#08 edward40hands: Rock (BG)
+#09 sinforlife54: EldraziTaxes (W)
+#10 otakkun: KGCTron (G)
+#11 uaedoliB: Humans (WUBRG)
+#12 nick4567: TemurReclamation (URG)
+#13 Laplasjan: Devoted (WG, Lurrus)
+#14 Sodeq: AdNauseam (WUB)
+#15 asnook: Jund (BRG)
+#16 cws: GiftsStorm (UR)
+#17 kanister: BantControl (WUG)
+#18 Delthar: Mill (UB)
+#19 Toastxp: BantControl (WUG)
+#20 Gigy: Ponza (RG)
+#21 Luzur: SultaiSnow (UBG)
+#22 spellvine: IzzetProwess (UR)
+#23 HouseOfManaMTG: TitanVial (WRG)
+#24 Yanti: Jund (BRG)
+#25 Storytime: KinnanDevoted (WUG)
+#26 Xuxa: Dredge (BRG)
+#27 NorrathDecay: Burn (WR)
+#28 ConnorM426: TemurReclamation (URG)
+#29 musasabi: KGCAmuletTitan (UBRG)
+#30 NHA37: ETron (C)
+#31 BSK_hercules: TemurReclamation (URG)
+#32 kthanakit26: Burn (WR)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_challenge_2020_08_16 : EventTest

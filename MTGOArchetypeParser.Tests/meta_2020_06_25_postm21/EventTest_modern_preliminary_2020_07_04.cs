@@ -8,6 +8,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 lilianaofthevess: SongStorm (URG, Jegantha)
+#02 ZYURYO: SnowControl (WUG)
+#03 ManuelJacob: SultaiSnow (UBG)
+#04 _INF_: GiftsStorm (UR)
+#05 bnlunt: UTron (U)
+#06 nielsen333: PrimevalTitan (BRG)
+#07 Laessoe: Ponza (RG)
+#08 siomomi: KGCTron (G)
+#09 triosk: SnoopGoblins (BR)
+#10 cjucjujp: BushwhackerZoo (RG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_preliminary_2020_07_04 : EventTest

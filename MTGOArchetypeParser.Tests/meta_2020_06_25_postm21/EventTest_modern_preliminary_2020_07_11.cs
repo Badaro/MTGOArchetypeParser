@@ -8,6 +8,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Shorak123: SnowReclamation (UBG)
+#02 Kazuga: SultaiSnow (UBG)
+#03 yuurari_yuko: SnowTurns (WUG, Yorion)
+#04 sff_mtg: KGCTron (G)
+#05 mariogomes097: GrixisShadow (UBR)
+#06 ZYURYO: SnowControl (WUBG)
+#07 gyyby297: ThopterUrza (WU)
+#08 NickPuiKia: IzzetProwess (UR)
+#09 medvedev: ETron (C)
+#10 Antarctica: Ponza (RG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_preliminary_2020_07_11 : EventTest

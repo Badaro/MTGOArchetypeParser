@@ -8,6 +8,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Thrall90: Jund (BRG)
+#02 _titoWii_96: SnowControl (WURG, Yorion)
+#03 Boin: ETron (C)
+#04 jdez: OrzhovShadow (WB)
+#05 triosk: HardenedScales (G)
+#06 Laplasjan: Devoted (WG, Lurrus)
+#07 Dai1412: IzzetProwess (UR)
+#08 ecobaronen: SultaiSnow (UBG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_preliminary_2020_07_03 : EventTest

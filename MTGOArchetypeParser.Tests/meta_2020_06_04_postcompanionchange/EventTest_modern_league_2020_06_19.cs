@@ -8,6 +8,49 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 SparTaNxX: Neobrand (UG)
+#02 nielsen333: Burn (WR, Lurrus)
+#03 Cherryxman: Inverter (UB)
+#04 meanfannypack: Devoted (WG, Lurrus)
+#05 Magicofplayer1: AdNauseam (WUB)
+#06 Ftzz: SnowReclamation (UBG)
+#07 Zebrah: AmuletTitan (WURG)
+#08 no_lyfe: Prowess (R)
+#09 xl_snapcaster: Miracles (WU, Kaheera)
+#10 Nextep: Uroza (UBG, Yorion)
+#11 alnash: SnowTitan (UG, Yorion)
+#12 scvslayer: SnowShift (URG, Yorion)
+#13 Tempano: Humans (WUBRG)
+#14 Kurusu: KikiChord (WBRG, Yorion)
+#15 IsKeiP529: KGCTron (G)
+#16 ChaoticCamel: RakdosProwess (BR, Lurrus)
+#17 hyriuu: Ponza (RG)
+#18 Heibing: PrimevalTitan (BRG)
+#19 yutya: SnowTitan (WUG, Yorion)
+#20 TheNobodys: ThopterUrza (WUBR)
+#21 FranPi: GiftsStorm (UR)
+#22 BSK_hercules: SultaiSnow (UBG)
+#23 Magric: RakdosMidrange (BR)
+#24 lovealienzzz: SnowControl (URG)
+#25 Drakanar: Merfolk (U)
+#26 Walkers: SnowReclamation (UBG)
+#27 Darkiundsa: SnowControl (WURG, Yorion)
+#28 Jiggywiggy: KinnanUrza (URG, Yorion)
+#29 Netow: Dredge (BRG)
+#30 Zanman: GyrudaStompy (BRG, Gyruda)
+#31 Madwolf87: TraverseShadow (BRG)
+#32 Chad1987SR05: Rock (BG)
+#33 Wuhsa: BringToNiv (WUBRG)
+#34 thelegitpony666: Goblins (BR)
+#35 whitefangshinobi: Mill (UB, Lurrus)
+#36 salvamala: Jund (BRG)
+#37 RodolfoSFD0: TitanShift (RG)
+#38 Lcario: ETron (C)
+#39 AutumnLily: SnowReclamation (UBG, Yorion)
+#40 Jackson1031: Uroza (URG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
 {
     public class EventTest_modern_league_2020_06_19 : EventTest

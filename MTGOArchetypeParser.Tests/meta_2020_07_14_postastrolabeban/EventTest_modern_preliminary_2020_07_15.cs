@@ -8,6 +8,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 ImmanuelKantrolGod: AzoriusControl (WU)
+#02 _INF_: GiftsStorm (UR)
+#03 BSK_hercules: IzzetProwess (UR)
+#04 johnsmith3373: Humans (WUBRG)
+#05 MiamiKidz: IzzetProwess (UR)
+#06 Shorak123: SnowReclamation (UBG)
+#07 siomomi: ETron (C)
+#08 GoonLord: Ponza (RG)
+#09 ZYURYO: AzoriusControl (WU)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_07_15 : EventTest

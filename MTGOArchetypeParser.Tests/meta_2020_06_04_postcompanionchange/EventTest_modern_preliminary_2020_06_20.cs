@@ -8,6 +8,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 aooaaooa: Lantern (UBG)
+#02 NightKnight131: Devoted (WG, Lurrus)
+#03 MadCowChicken: SelesnyaEldrazi (WG, Jegantha)
+#04 Frank_Bonaparte: Ponza (RG)
+#05 Papelucho10: Infect (UG)
+#06 Mcleskey: Burn (WR)
+#07 Boland: Dredge (BRG)
+#08 ghostx02: Ponza (RG)
+#09 FrancusAurelius: NayaMidrange (WRG)
+#10 otakkun: KGCTron (G)
+#11 _Logic_: DeathsShadow (BR)
+#12 2radMTG: Bogles (WG, Lurrus)
+#13 lovealienzzz: SnowControl (URG)
+#14 Manacymbal: KinnanUrza (URG, Yorion)
+#15 signblindman: Ponza (RG)
+#16 Nammersquats: Humans (WUBRG)
+#17 Micro: AdNauseam (WUB)
+#18 joetru: BringToNiv (WUBRG)
+#19 grahams: Mill (UB)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
 {
     public class EventTest_modern_preliminary_2020_06_20 : EventTest

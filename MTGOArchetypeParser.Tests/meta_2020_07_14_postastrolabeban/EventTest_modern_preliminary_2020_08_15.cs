@@ -8,6 +8,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Rooney56: AzoriusStoneblade (WU)
+#02 CavalloGoloso: IzzetControl (UR)
+#03 Costola91: GrixisShadow (UBR)
+#04 BasedCloy: ETron (C)
+#05 Wuhsa: BringToNiv (WUBRG, Yorion)
+#06 lilianaofthevess: IzzetProwess (UR)
+#07 CReactor: KGCTron (G)
+#08 Imaeda: IzzetProwess (UR)
+#09 Hampuse1: DiceFactoryTron (C)
+#10 BSK_hercules: TemurReclamation (URG)
+#11 Zar0s: KGCAmuletTitan (WUBRG)
+#12 otakkun: KGCTron (G)
+#13 ht991122: TemurReclamation (URG)
+#14 kbzx: IzzetProwess (UR)
+#15 komattaman: Ponza (RG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_08_15 : EventTest

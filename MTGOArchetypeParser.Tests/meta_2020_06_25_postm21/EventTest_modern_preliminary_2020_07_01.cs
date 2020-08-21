@@ -8,6 +8,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Paeng_Paeng: Merfolk (U)
+#02 JV_7777: Dredge (BRG)
+#03 Whitecell: ETron (C)
+#04 nathanb1992: Infect (UG)
+#05 _INF_: GiftsStorm (UR)
+#06 bladede: ETron (C)
+#07 otakkun: KGCTron (G)
+#08 Aluren85: Dredge (UBRG)
+#09 MlckyB: Bogles (WG)
+#10 Eaglov: TitanShift (RG)
+#11 fradev1988: SnowControl (WUG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_preliminary_2020_07_01 : EventTest

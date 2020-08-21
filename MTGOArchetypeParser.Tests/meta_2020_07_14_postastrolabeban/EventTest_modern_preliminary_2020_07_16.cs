@@ -8,6 +8,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 DreamsOfAshiok: ETron (C)
+#02 no_lyfe: Prowess (R)
+#03 GR_DONKIN: AdNauseam (WUB)
+#04 Theo_Jung: Jund (BRG)
+#05 rastaf: IncineratorBurn (R)
+#06 Gigy: Ponza (RG)
+#07 Icteridae: ETron (C)
+#08 wambocombo2020: Ponza (RG)
+#09 ThekingFor1000years: Infect (WUG)
+#10 BnR: GrixisShadow (UBR)
+#11 MATTHEWFOULKES: SnoopGoblins (BR)
+#12 1plus1equals3: Devoted (WG, Lurrus)
+#13 MlckyB: Bogles (WG)
+#14 Shazzam: IncineratorBurn (WR)
+#15 Finalnub: Neobrand (UG)
+#16 pokerswizard: KGCTron (G)
+#17 dsnavely13: GiftsStorm (UR)
+#18 NHA37: JeskaiProwess (WUR, Lurrus)
+#19 BananOlaf: Ponza (RG)
+#20 helvetti: Dredge (BRG)
+#21 Edel: Jund (BRG)
+#22 benjamin13: Ponza (RG)
+#23 karatedom: RakdosProwess (WBR, Lurrus)
+#24 Ambaro15: ReclamationTeachings (UBG)
+#25 PeanutBrittle: IzzetProwess (UR)
+#26 qbturtle15: Ponza (RG, Obosh)
+#27 Sungjin: SnowShift (WURG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_07_16 : EventTest

@@ -8,6 +8,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 JRDC14: Sultai (UBG)
+#02 Snusnumrick: ETron (C)
+#03 iwanteatebi: IzzetProwess (UR)
+#04 komattaman: Ponza (RG)
+#05 Delthar: Infect (BG)
+#06 Beenew: Burn (WR)
+#07 katoriarch123: BantControl (WUG)
+#08 v3sp_tv: Elementals (WUBRG)
+#09 kthanakit26: IzzetProwess (UR)
+#10 ACG88: BantMidrange (WUG)
+#11 Kazuga: Dredge (WBRG)
+#12 SebastianStueckl: Ponza (RG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_08_07 : EventTest

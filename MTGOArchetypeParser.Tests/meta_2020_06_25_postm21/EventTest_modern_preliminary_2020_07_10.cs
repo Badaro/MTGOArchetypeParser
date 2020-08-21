@@ -8,6 +8,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Gigy: Ponza (RG)
+#02 sff_mtg: KGCTron (G)
+#03 J000111: Dredge (WBRG)
+#04 WanderingOnes: KGCTron (G)
+#05 Janh: SnowShift (URG, Yorion)
+#06 HouseOfManaMTG: AmuletTitan (WUBRG)
+#07 katoriarch123: SnowControl (WUG)
+#08 Engelsdorfer: GrixisShadow (UBR)
+#09 zumekun19850204: SultaiSnow (UBG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_preliminary_2020_07_10 : EventTest

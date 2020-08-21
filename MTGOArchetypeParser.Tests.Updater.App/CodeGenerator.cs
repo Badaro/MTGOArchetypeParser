@@ -1,13 +1,59 @@
-﻿using MTGOArchetypeParser.DataSources.Model;
+﻿using MTGOArchetypeParser.Data;
+using MTGOArchetypeParser.DataSources.Model;
 using MTGOArchetypeParser.Tests.Updater.Model;
 using System;
 using System.IO;
 using System.Linq;
+using System.Text;
 
 namespace MTGOArchetypeParser.Tests.Updater
 {
     public static class CodeGenerator
     {
+        public static string GenerateSummary(MTGOTournament tournament)
+        {
+            StringBuilder summary = new StringBuilder();
+
+            for (int i = 0; i < tournament.Decks.Length; i++)
+            {
+                var result = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => i.CardName).ToArray(), tournament.Decks[i].Sideboard.Select(i => i.CardName).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
+
+                int position = i + 1;
+                string player = tournament.Decks[i].Player;
+                string name;
+                string colors = result.Color.ToString();
+                string companion = result.Companion.HasValue ? result.Companion.ToString() : "None";
+                if (result.Matches.Length == 0)
+                {
+                    name = "Unknown";
+                }
+                else
+                {
+                    if (result.Matches.Length == 1)
+                    {
+                        name = result.Matches[0].Archetype.GetType().Name;
+
+                        if (result.Matches[0].Variant != null) name = $"{result.Matches[0].Variant.GetType().Name}";
+                    }
+                    else
+                    {
+                        name = String.Join(",", result.Matches.Select(m => m.Archetype.GetType().Name));
+                    }
+                }
+
+                if (companion != "None")
+                {
+                    summary.AppendLine($"#{position.ToString("D2")} {player}: {name} ({colors}, {companion})");
+                }
+                else
+                {
+                    summary.AppendLine($"#{position.ToString("D2")} {player}: {name} ({colors})");
+                }
+            }
+
+            return _summarySnippet.Replace("{SUMMARY}",summary.ToString());
+        }
+
         public static string GenerateTest(TournamentKeys tournamentKeys, DeckKeys deckKeys)
         {
             var testContents = _testTemplate
@@ -25,13 +71,21 @@ namespace MTGOArchetypeParser.Tests.Updater
             return testContents + Environment.NewLine + Environment.NewLine;
         }
 
-        public static string GenerateClasss(TournamentKeys tournamentKeys, string testData)
+        public static string GenerateClasss(TournamentKeys tournamentKeys, string testData, string summary)
         {
             return _classTemplate
+                    .Replace("SUMMARY", summary)
                     .Replace("META_ID", tournamentKeys.MetaID)
                     .Replace("EVENT_ID", tournamentKeys.EventID)
                     .Replace("TEST_DATA", testData.ToString());
         }
+
+        #region Summary Snippet
+
+        static string _summarySnippet = @"/*
+{SUMMARY}*/";
+
+        #endregion
 
         #region Test Snippet
 
@@ -61,6 +115,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+
+SUMMARY
 
 namespace MTGOArchetypeParser.Tests.META_ID
 {

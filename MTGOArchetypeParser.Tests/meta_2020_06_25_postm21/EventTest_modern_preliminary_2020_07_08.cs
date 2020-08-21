@@ -8,6 +8,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Janh: SnowShift (URG, Yorion)
+#02 medvedev: ETron (C)
+#03 otakkun: KGCTron (G)
+#04 fistfullofmetal: ETron (C)
+#05 sff_mtg: KGCTron (G)
+#06 PRGJJAR: Dredge (BRG)
+#07 ZYURYO: SnowControl (WUG)
+#08 spellvine: IzzetProwess (UR)
+#09 WanderingOnes: KGCTron (G)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_preliminary_2020_07_08 : EventTest

@@ -8,6 +8,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 MindOfAKid: Burn (WR, Lurrus)
+#02 Trisky: Ponza (RG)
+#03 staples87: ETron (C)
+#04 Misplacedginger: SnowControl (WUG)
+#05 samslam: Burn (WR)
+#06 yamakiller: Neobrand (UG)
+#07 qbturtle15: Ponza (RG, Obosh)
+#08 no_lyfe: Prowess (R)
+#09 tyty123: Ponza (RG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_preliminary_2020_06_26 : EventTest

@@ -8,6 +8,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Drakanar: Merfolk (UG)
+#02 Toastxp: SultaiSnow (UBG)
+#03 pbarrrgh: TemurSnow (URG)
+#04 qbturtle15: Ponza (RG, Obosh)
+#05 Samcaster-Mage: ETron (C)
+#06 Daniel_Garcia: OrzhovShadow (WB)
+#07 RpAngriff: SnoopGoblins (BR)
+#08 Binolino: AmuletTitan (URG)
+#09 WadeB: ETron (C)
+#10 McWinSauce: SnowControl (WUG)
+#11 GideonRavensword: AdNauseam (WUB)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_preliminary_2020_07_07 : EventTest

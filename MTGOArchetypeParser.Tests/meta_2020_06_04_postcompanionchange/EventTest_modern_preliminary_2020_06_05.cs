@@ -8,6 +8,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Violent_Outburst: SnowReclamation (URG, Yorion)
+#02 gazmon48: Ponza (RG)
+#03 LORiWWA: ETron (C)
+#04 __matsugan: Neobrand (UG)
+#05 PRGJJAR: Dredge (BRG)
+#06 fradev1988: SnowControl (WUG)
+#07 Cherryxman: Uroza (WUG, Yorion)
+#08 sff_mtg: KGCTron (G)
+#09 _Shatun_: TitanShift (RG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
 {
     public class EventTest_modern_preliminary_2020_06_05 : EventTest

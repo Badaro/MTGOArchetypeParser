@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 ZYURYO: Jund (BRG)
+#02 Darkiundsa: SnowControl (WUG, Yorion)
+#03 TSPJendrek: SultaiSnow (UBG)
+#04 LORiWWA: ETron (C)
+#05 A22en: Miracles (WU)
+#06 Busterbrown52: Elementals (WUBRG)
+#07 Shorak123: SnowReclamation (UBG)
+#08 1yo2yo: ThopterUrza (UBR)
+#09 TheTunnelingCat: ETron (C)
+#10 Zxrogue: TraverseShadow (UBRG)
+#11 bobthedog: SultaiSnow (UBG)
+#12 PvtEnormous: SultaiSnow (UBG)
+#13 TerminalJustice: GiftsStorm (UR)
+#14 katoriarch123: SnowControl (WUG)
+#15 hdyer: ETron (C)
+#16 yamakiller: ETron (C)
+#17 renatoaraujo: ETron (C)
+#18 HouseOfManaMTG: AmuletTitan (WUBRG)
+#19 indianpancake: Devoted (WG, Lurrus)
+#20 Sodeq: AdNauseam (WUB)
+#21 ManuelJacob: SnowControl (WUG)
+#22 pbarrrgh: TemurSnow (URG)
+#23 MasterA: SnoopGoblins (BRG)
+#24 Graciasportanto: Dredge (WBRG)
+#25 Lord_Beerus: Burn (WR)
+#26 Mzfroste: SnoopGoblins (BR)
+#27 Kuhb: GrindingBreach (WURG)
+#28 D00mwake: IzzetProwess (UR)
+#29 tuhoajatane: TemurSnow (URG)
+#30 MadMaxErnst: SultaiSnow (UBRG)
+#31 SungilWang: Devoted (WG, Lurrus)
+#32 Capitano_CL: Dredge (BRG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_challenge_2020_07_05 : EventTest

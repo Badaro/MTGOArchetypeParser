@@ -8,6 +8,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 ArchaeusDota: KGCTron (G)
+#02 CrusherBotBG: HammerTime (W)
+#03 DreamsOfAshiok: ETron (C)
+#04 brandon__logan: Ponza (RG)
+#05 tpc2000: GiftsStorm (UR)
+#06 Ganksyou: AzoriusStoneblade (WU)
+#07 JustBurn420: Slivers (WUBRG)
+#08 osmanozguney: Faeries (UB)
+#09 henryys: Burn (WR, Lurrus)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_showcase_last_chance_2020_08_12 : EventTest

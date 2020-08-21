@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Bullz0Eye: ETron (C)
+#02 PTarts2win: Ponza (RG)
+#03 tuhoajatane: TemurSnow (URG)
+#04 matiaskm: Devoted (WG, Lurrus)
+#05 ZYURYO: SnowControl (WUG)
+#06 Sodeq: AdNauseam (WUB)
+#07 Lavaridge: SultaiSnow (UBG)
+#08 Ouranos139: SnoopGoblins (BR)
+#09 Skrown: Dredge (BRG)
+#10 iL_Tedesco: TraverseShadow (BRG)
+#11 Diatomic: SnowControl (WUG)
+#12 gazmon48: RedDeckWins (R, Jegantha)
+#13 zecarlonxo: Prowess (R)
+#14 Ryan100495: Dredge (BRG)
+#15 WeareVenom: SnowControl (WUG)
+#16 TscheggschDePoegg: TemurSnow (URG)
+#17 aspiringspike: IzzetControl (UR)
+#18 sff_mtg: Prowess (R)
+#19 ArchaeusDota: SnowBlade (WUG, Yorion)
+#20 Jenara19: Jund (BRG)
+#21 bobthedog: SultaiSnow (UBG)
+#22 DreamsOfAshiok: ETron (C)
+#23 JB2002: SnowControl (WUG)
+#24 renatoaraujo: ETron (C)
+#25 Blitzlion27: Mill (UB)
+#26 PvtEnormous: SnowControl (WUG)
+#27 HouseOfManaMTG: AmuletTitan (WUBRG)
+#28 nuikt: GrindingBreach (WUBR)
+#29 Laplasjan: Devoted (WG, Lurrus)
+#30 Venom1: SultaiSnow (UBG)
+#31 Phil_Ivey: SnowControl (WURG, Yorion)
+#32 SknerusMcKwacz: SnoopGoblins (BR)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_challenge_2020_07_06 : EventTest

@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Lavaridge: TemurReclamation (URG)
+#02 NuBlkAu: IzzetProwess (UR)
+#03 _LSN_: Burn (WR)
+#04 A22en: SnoopGoblins (BR)
+#05 ArchaeusDota: KGCTron (G)
+#06 JUJUBEAN__2004: Scapeshift (URG)
+#07 Maratiam: ETron (C)
+#08 AstralPlane: IzzetProwess (UR)
+#09 mechrataal: AzoriusControl (WU)
+#10 SpiderSpace: DeathAndTaxes (W)
+#11 Lukas261997: AzoriusStoneblade (WU)
+#12 Thrall90: Jund (BRG)
+#13 Mateusf34: ETron (C)
+#14 Bullz0Eye: Dredge (BRG)
+#15 andrw1232: RakdosProwess (BR, Lurrus)
+#16 chasedaddydizzle: GTron (G)
+#17 Beenew: KGCTron (G)
+#18 TheJigIsAlwaysup: Ponza (RG)
+#19 123Pwned: IzzetProwess (UR)
+#20 Voltzwagon: Ponza (RG)
+#21 ponchonater55: IncineratorBurn (WR)
+#22 staples87: ETron (C)
+#23 Mad-Ramon: TemurReclamation (URG)
+#24 wambocombo2020: RakdosProwess (WBR, Lurrus)
+#25 timewalkinonsunshine: TakingTurns (URG)
+#26 Alzik: Ponza (RG)
+#27 ATXroy: IzzetProwess (UR)
+#28 HannoLee: KGCTron (G)
+#29 eclipse4343: Miracles (WU)
+#30 aqualog: IzzetProwess (UR)
+#31 juzam_gin: Dredge (WBRG)
+#32 no_lyfe: Prowess (R)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_champ_qual_2020_07_27 : EventTest

@@ -66,7 +66,7 @@ namespace MTGOArchetypeParser.Tests.Updater
                     }
 
                     // Generating test class
-                    string testFileContents = CodeGenerator.GenerateClasss(tournamentKeys, tournamentTestData.ToString());
+                    string testFileContents = CodeGenerator.GenerateClasss(tournamentKeys, tournamentTestData.ToString(), CodeGenerator.GenerateSummary(tournament));
                     FileWriter.Write(tournamentTestFile, testFileContents);
                 }
             }

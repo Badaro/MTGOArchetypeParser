@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 MissTrigger: Merfolk (WU, Lurrus)
+#02 kthanakit26: Burn (WR)
+#03 StrawberryPi: IncineratorBurn (WR)
+#04 yuseimax: Soulflayer (BRG)
+#05 Kurusu: KikiChord (WRG, Yorion)
+#06 Laplasjan: Devoted (WG, Lurrus)
+#07 _Batutinha_: TraverseShadow (BRG)
+#08 SSkarm: Scapeshift (URG)
+#09 Asmodean1990: Jund (BRG)
+#10 Mogged: IzzetProwess (UR)
+#11 Auron12: IzzetProwess (UR)
+#12 didoguidotti1: TemurReclamation (URG)
+#13 Vashezzo: TemurReclamation (URG)
+#14 MicAncona: Ponza (RG)
+#15 Granham: KGCTron (G)
+#16 siomomi: ETron (C)
+#17 Lord_Beerus: Ponza (RG)
+#18 Gerschi: RakdosProwess (WBR, Lurrus)
+#19 Oscar_Franco: Jund (BRG)
+#20 ht991122: IzzetProwess (UR)
+#21 CrusherBotBG: HammerTime (W)
+#22 SebastianStueckl: Ponza (RG)
+#23 Venom1: ETron (C)
+#24 alexthegreat38: IzzetProwess (UR)
+#25 Mcleskey: Burn (WR)
+#26 BERNASTORRES: IzzetProwess (UR)
+#27 drVendigo: Ponza (RG)
+#28 MrRaeb: Ponza (RG)
+#29 Bullz0Eye: BantControl (WUG)
+#30 Filyoni: Devoted (WG, Lurrus)
+#31 ejcos531: AzoriusStoneblade (WU)
+#32 NuclearRabbit: KGCTron (G)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_challenge_2020_08_10 : EventTest

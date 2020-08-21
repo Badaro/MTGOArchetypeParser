@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 blastoids: AzoriusStoneblade (WU)
+#02 GedionRavenor: WildernessReclamation (WUG)
+#03 LyaApocalypse: KGCTron (G)
+#04 qbturtle15: Jund (BRG)
+#05 indianpancake: SuicideShadow (BRG, Lurrus)
+#06 Samcaster-Mage: ETron (C)
+#07 andrw1232: RakdosProwess (BR, Lurrus)
+#08 _Falcon_: IzzetProwess (UR)
+#09 cftsoc3: BantBlink (WUG)
+#10 D00mwake: RakdosProwess (BR, Lurrus)
+#11 exoticherman: RakdosProwess (BR, Lurrus)
+#12 tanisong1221: SultaiSnow (UBG)
+#13 CHILLEDADED: Ponza (RG)
+#14 RCMerriam: TraverseShadow (UBRG)
+#15 Oscar_Franco: Jund (BRG)
+#16 sultai4lyfe: DimirControl (UB)
+#17 MissTrigger: IncineratorBurn (R)
+#18 patheus_84: AdNauseam (WUB)
+#19 JV_7777: ETron (C)
+#20 CanadianNinja: BringToNiv (WUBRG, Yorion)
+#21 yu-ki: ETron (C)
+#22 didoguidotti1: SnowBlade (WUG)
+#23 Xwhale: IzzetProwess (UR)
+#24 Maox: IzzetProwess (UR)
+#25 NorrathDecay: KGCTron (G)
+#26 anamika: Elementals (WUBRG)
+#27 lilianaofthevess: TraverseShadow (BRG)
+#28 bigjc00: AmuletTitan (URG)
+#29 cws: GiftsStorm (UR)
+#30 aspiringspike: AzoriusStoneblade (WU)
+#31 kthanakit26: IzzetProwess (UR)
+#32 Xenowan: HardenedScales (G)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_challenge_2020_08_12_0 : EventTest

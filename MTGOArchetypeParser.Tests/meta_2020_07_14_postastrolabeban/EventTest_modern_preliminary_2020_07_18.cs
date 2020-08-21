@@ -8,6 +8,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Rav104: IzzetProwess (UR)
+#02 SouthernSliver: Slivers (WUBRG)
+#03 Toastxp: RakdosProwess (WBR, Lurrus)
+#04 lsmguys: AzoriusStoneblade (WU)
+#05 Nammersquats: Infect (UG)
+#06 OscarS66: RakdosMidrange (BR)
+#07 _LSN_: Burn (WR)
+#08 GedionRavenor: SultaiSnow (UBG)
+#09 jhollan42: AmuletTitan (WUBRG)
+#10 NHA37: Burn (WR)
+#11 Thrall90: Jund (BRG)
+#12 bbq42069dude: Humans (WUBRG)
+#13 DylansHyper: Dredge (BRG)
+#14 BoltTheBirds: GiftsStorm (UR)
+#15 gazmon48: ETron (C)
+#16 hodortimebaby: KGCTron (G)
+#17 Night_Owl_61: Jund (BRG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_07_18 : EventTest

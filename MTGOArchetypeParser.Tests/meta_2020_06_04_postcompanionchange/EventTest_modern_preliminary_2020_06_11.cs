@@ -8,6 +8,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Mistakenn: KGCAmuletTitan (WUBRG)
+#02 Lord_Beerus: Burn (WR)
+#03 il_matagatto: Burn (WR)
+#04 _Shatun_: Ponza (RG)
+#05 Sonic_Smasher: SnowBlade (WUG)
+#06 Lirek154: AzoriusStoneblade (WU)
+#07 DreamsOfAshiok: ETron (C)
+#08 Charlesjacenorman: Burn (WR, Lurrus)
+#09 flatnose: Merfolk (UG)
+#10 Theo_Jung: Uroza (URG)
+#11 PRGJJAR: Dredge (BRG)
+#12 Toastxp: Uroza (URG)
+#13 EdB: AmuletTitan (UBRG)
+#14 Doni_Dominaria: RedDeckWins (R, Jegantha)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
 {
     public class EventTest_modern_preliminary_2020_06_11 : EventTest

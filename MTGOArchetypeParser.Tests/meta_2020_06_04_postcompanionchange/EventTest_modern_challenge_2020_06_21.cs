@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Tiemuuu: IzzetControl (UR)
+#02 xakx47x: Devoted (WG, Lurrus)
+#03 1yo2yo: ThopterUrza (UBR)
+#04 tuhoajatane: AmuletTitan (UBRG)
+#05 Jiggywiggy: KinnanUrza (URG, Yorion)
+#06 PaChA94s: AdNauseam (WUB)
+#07 Misplacedginger: SnowControl (WUG)
+#08 SvenSveeterSven: IzzetControl (UR)
+#09 kbr3: HardenedScales (G)
+#10 MikeEgan: BringToNiv (WUBRG)
+#11 Yooisa: Infect (WUG)
+#12 bntrusty14: Humans (WUBRG)
+#13 kanister: Humans (WUBRG)
+#14 GoblinK1ng: Goblins (WUBRG)
+#15 haruhilmi24: ETron (C)
+#16 Archgaze: Winota (WRG)
+#17 FranPi: GiftsStorm (UR)
+#18 MrRaeb: Uroza (UBG, Yorion)
+#19 Erik157751: ETron (C)
+#20 bladede: ETron (C)
+#21 Zeekery: ThingAscension (WUR, Lurrus)
+#22 antonio13901390: ETron (C)
+#23 katoriarch123: SnowControl (WUG)
+#24 Anicet0: ETron (C)
+#25 MadMaxErnst: Uroza (URG)
+#26 Jenara19: SultaiSnow (UBG)
+#27 Larry11: Ponza (RG)
+#28 ubercrisis: SultaiSnow (UBG)
+#29 remf: BantSpirits (WUG)
+#30 kalibak: Burn (WR)
+#31 NewHJ: Burn (WRG)
+#32 Manacymbal: KinnanUrza (URG, Yorion)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
 {
     public class EventTest_modern_challenge_2020_06_21 : EventTest

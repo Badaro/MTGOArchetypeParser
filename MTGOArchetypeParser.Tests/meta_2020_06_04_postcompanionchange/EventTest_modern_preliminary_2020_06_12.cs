@@ -8,6 +8,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 ravensfan52720: Humans (WUBRG)
+#02 billsive: SnowTitan (WUG, Yorion)
+#03 WebZone: Humans (WUBRG)
+#04 PeanutBrittle: GiftsStorm (UR)
+#05 ecobaronen: Ponza (RG)
+#06 madechai: Prowess (R)
+#07 brunocaleb: Ponza (RG)
+#08 TheTunnelingCat: ETron (C)
+#09 PRGJJAR: Dredge (BRG)
+#10 staples87: ETron (C)
+#11 benjamin13: TitanShift (RG)
+#12 Sonic_Smasher: SnowBlade (WUG)
+#13 il_matagatto: Burn (WR)
+#14 Misplacedginger: SnowControl (WUG)
+#15 BSK_hercules: Ponza (RG)
+#16 lovealienzzz: TemurSnow (URG)
+#17 yamakiller: SnowReclamation (URG, Yorion)
+#18 PieGonti: Humans (WUBRG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
 {
     public class EventTest_modern_preliminary_2020_06_12 : EventTest

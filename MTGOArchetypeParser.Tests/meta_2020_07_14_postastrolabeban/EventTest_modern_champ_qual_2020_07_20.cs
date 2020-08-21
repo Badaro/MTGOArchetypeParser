@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 TheTunnelingCat: ETron (C)
+#02 HeyPharaoh: AzoriusStoneblade (WU)
+#03 iuriper: SnowBlade (WUG)
+#04 __BMJ__: TraverseShadow (UBRG)
+#05 rastaf: IzzetProwess (UR)
+#06 AnneLivleysD3ath: KGCAmuletTitan (WUBRG)
+#07 LalauWBA: GruulProwess (RG, Jegantha)
+#08 Lavaridge: TemurReclamation (URG)
+#09 kogamo: SnowReclamation (UBG)
+#10 dani_chad: Jund (BRG)
+#11 MinCash: AdNauseam (WUB)
+#12 BERNASTORRES: SnoopGoblins (BR)
+#13 Ryan_39: Ponza (RG)
+#14 jmeyer2030: IzzetRestoreBalance (URG)
+#15 3HaLeX1: ETron (C)
+#16 LeoFa: Scapeshift (URG)
+#17 musasabi: Jund (BRG)
+#18 ack_s: Ponza (RG)
+#19 alicoco: AdNauseam (WUB)
+#20 zachattack23: SnowControl (WUG)
+#21 quinniac: Ponza (RG)
+#22 _Tia93_: IzzetProwess (UR)
+#23 alnash: GrixisShadow (UBR)
+#24 HannoLee: KGCTron (G)
+#25 dormitian: Humans (WUBRG)
+#26 Magicofplayer1: Dredge (WBRG)
+#27 _Batutinha_: IzzetProwess (UR)
+#28 Naisirc: HardenedScales (G)
+#29 Marxelo: Tokens (W)
+#30 Patxi: AzoriusControl (WU)
+#31 Leviathan102: KGCAmuletTitan (URG)
+#32 Boland: GrixisShadow (UBR)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_champ_qual_2020_07_20 : EventTest

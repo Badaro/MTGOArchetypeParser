@@ -8,6 +8,51 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 psych4tog: Elementals (WUBRG)
+#02 tcgshin: TitanShift (RG)
+#03 PanCement_JP: BantSpirits (WUG)
+#04 saccij92: Humans (WUBRG)
+#05 yPrincipe: BringToNiv (WUBRG, Yorion)
+#06 ArchaeusDota: KGCTron (G)
+#07 Big_And_Easy: Prowess (R)
+#08 Rossello: IncineratorBurn (WR)
+#09 meanfannypack: OrzhovShadow (WB)
+#10 Doni_Dominaria: RakdosProwess (BR, Lurrus)
+#11 AndersPovirk: Dredge (BRG)
+#12 Polikasoll: IncineratorBurn (R)
+#13 Parrit: HardenedScales (G)
+#14 kogamo: ETron (C)
+#15 Phyziks42: Ponza (WRG)
+#16 musasabi: SnoopGoblins (BR)
+#17 Silence9428: Infect (UG)
+#18 Do0mSwitch: SultaiSnow (UBG)
+#19 mauricio998: Mill (UB)
+#20 _Shatun_: Ponza (RG)
+#21 Panic_Daddy: AdNauseam (WUB)
+#22 MrRaeb: Uroza (UBG, Yorion)
+#23 Pendragon15038: Merfolk (U)
+#24 babamm: IzzetRestoreBalance (URG)
+#25 Hiro_Hsiang: IzzetProwess (UR)
+#26 Curveiganhei: RedDeckWins (R, Jegantha)
+#27 KieranT: Jund (BRG)
+#28 yPrincipe: SnowTitan (WUG, Yorion)
+#29 SvenSveeterSven: IzzetControl (UR)
+#30 wefald: Inverter (UB)
+#31 scvslayer: SnowShift (URG, Yorion)
+#32 MartinezDP: BantBlink (WUG, Yorion)
+#33 maear: IzzetControl (UR)
+#34 Loreington: GiftsStorm (UR)
+#35 Evaros: DeathAndTaxes (W)
+#36 yumad3988: HollowOne (BR)
+#37 gobboboy: EldraziTaxes (WB)
+#38 osmanozguney: DimirControl (UB)
+#39 AnneLivleysD3ath: KGCAmuletTitan (WUBRG)
+#40 SiDa1991: UTron (U)
+#41 Dylan_MTG: Neobrand (UG)
+#42 BossBr: DeathAndTaxes (WU)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_league_2020_07_10 : EventTest

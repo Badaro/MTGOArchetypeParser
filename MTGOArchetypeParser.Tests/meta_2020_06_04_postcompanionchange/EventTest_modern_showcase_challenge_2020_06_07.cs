@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Do0mSwitch: SnowControl (WUG)
+#02 hugofreitas1: GiftsStorm (UR)
+#03 nathansteuer: Uroza (URG)
+#04 McWinSauce: SnowBlade (WUG)
+#05 Finalnub: Neobrand (UG)
+#06 SebastianStueckl: Ponza (RG)
+#07 MatheusPonciano: Dredge (UBRG)
+#08 cftsoc3: BantBlink (WUG, Yorion)
+#09 PietroSas: Devoted (WG, Lurrus)
+#10 TheTunnelingCat: ETron (C)
+#11 Sonso JF: HeliodDevoted (WBG)
+#12 Moniz0801: KGCAmuletTitan (WUBRG)
+#13 SpiderSpace: HardenedScales (G)
+#14 patrick50: Devoted (WG, Lurrus)
+#15 rn17: ThopterUrza (UBR)
+#16 Trellon: UTron (U)
+#17 _Batutinha_: SnowControl (WUG)
+#18 TSPJendrek: SnowControl (WUBG)
+#19 solace: Ponza (RG)
+#20 Zebrah: AmuletTitan (WUBRG)
+#21 DavidDPanda: ETron (C)
+#22 FreedMania: AmuletTitan (WUBRG)
+#23 BaronOfBacon: Humans (WUBRG)
+#24 GiovaniMF: Burn (WR)
+#25 Icteridae: HeliodDevoted (WUG)
+#26 bobjackson: KGCTron (G, Jegantha)
+#27 Ennuixd: AmuletTitan (WURG)
+#28 pbarrrgh: SnowReclamation (UBG)
+#29 Shorak123: SnowReclamation (UBG)
+#30 JMoney8771: Infect (UG)
+#31 stainerson: SnowControl (WUG)
+#32 sora1248: Winota (WRG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
 {
     public class EventTest_modern_showcase_challenge_2020_06_07 : EventTest

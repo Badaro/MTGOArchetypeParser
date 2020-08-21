@@ -8,6 +8,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Graciasportanto: Jund (BRG)
+#02 Icteridae: ETron (C)
+#03 PRGJJAR: Dredge (BRG)
+#04 wordy333: Merfolk (UG)
+#05 samslam: Burn (WR)
+#06 andrw1232: Dredge (WBRG)
+#07 Samcaster-Mage: ETron (C)
+#08 starfall: Merfolk (UG)
+#09 Mcleskey: Ponza (RG)
+#10 WareHouseGames: AdNauseam (WUB)
+#11 Toastxp: SnowControl (WUG)
+#12 nedyahiske: ETron (C)
+#13 atm8162: TitanShift (RG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_preliminary_2020_07_09 : EventTest

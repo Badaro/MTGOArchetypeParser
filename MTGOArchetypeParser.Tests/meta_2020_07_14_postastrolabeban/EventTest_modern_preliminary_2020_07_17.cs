@@ -8,6 +8,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 wambocombo2020: Ponza (RG)
+#02 karatedom: RakdosProwess (WBR, Lurrus)
+#03 _goblinlackey: KGCTron (G)
+#04 staples87: ETron (C)
+#05 _Batutinha_: IzzetProwess (UR)
+#06 billsive: AzoriusControl (WU)
+#07 SwordHunter: SnowSaheeli (WURG)
+#08 l337erhosen: Elementals (WUBRG)
+#09 mac121711: SnoopGoblins (BR)
+#10 Gerschi: GrixisShadow (UBR)
+#11 unicornparadise: AzoriusStoneblade (WU)
+#12 EskimoJoe: KGCTron (G)
+#13 BnR: GrixisShadow (UBR)
+#14 mariogomes097: GrixisShadow (UBR)
+#15 MZBlazer: Jund (BRG)
+#16 Phill_Hellmuth: Jund (BRG)
+#17 cariollins: IzzetProwess (UR)
+#18 Daking3603: SnoopGoblins (BR)
+#19 PeanutBrittle: IzzetProwess (UR)
+#20 Edel: Jund (BRG)
+#21 sandydogmtg: SnoopGoblins (BR)
+#22 Ennuixd: GiftsStorm (UR)
+#23 Nammersquats: Infect (UG)
+#24 SebastianStueckl: SultaiSnow (UBG)
+#25 Searzist: Prowess (R)
+#26 qbturtle15: AzoriusStoneblade (WU)
+#27 GombleWhop: ETron (C)
+#28 _LSN_: Burn (WR)
+#29 MrRaeb: SultaiSnow (UBG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_07_17 : EventTest

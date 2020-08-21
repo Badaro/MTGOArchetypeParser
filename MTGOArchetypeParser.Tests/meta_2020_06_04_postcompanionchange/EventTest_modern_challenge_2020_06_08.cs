@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 TSPJendrek: SnowBlade (WUBG)
+#02 ZYURYO: SnowControl (WUBG)
+#03 JB2002: BantBlink (WUG, Yorion)
+#04 Yanti: Humans (WUBRG)
+#05 Blitzlion27: Mill (UB)
+#06 AstralPlane: Burn (WR)
+#07 SvenSvenSven: IzzetControl (UR)
+#08 signblindman: Ponza (RG)
+#09 hugo87: GiftsStorm (UR)
+#10 Tw33Ty: ETron (C)
+#11 Cherryxman: SnowControl (WUG)
+#12 Trid0n: Humans (WUBRG)
+#13 Laplasjan: Devoted (WG, Lurrus)
+#14 Ryan100495: Dredge (BRG)
+#15 Lord_Beerus: Burn (WR, Lurrus)
+#16 _Batutinha_: SnowControl (WUG)
+#17 ScreenwriterNY: SultaiSnow (WUBG, Yorion)
+#18 Erik157751: ETron (C)
+#19 sff_mtg: KGCTron (G)
+#20 Scacco Malto: Prowess (R)
+#21 mosskami: KGCAmuletTitan (WUBRG)
+#22 indianpancake: Devoted (WG)
+#23 Koso: ETron (C)
+#24 WeareVenom: SnowControl (WUG)
+#25 robb93: ETron (C)
+#26 leclairandy: SnowControl (WUG)
+#27 Math_God: GiftsStorm (UR)
+#28 Wartico1: Devoted (WG, Lurrus)
+#29 Nightblue: Burn (WR)
+#30 ilsecco14: Neobrand (UG)
+#31 Moniz0801: KGCAmuletTitan (WUBRG)
+#32 Oscar_Franco: ETron (C)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
 {
     public class EventTest_modern_challenge_2020_06_08 : EventTest

@@ -8,6 +8,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 J000111: Dredge (WBRG)
+#02 aarongulevich: IzzetProwess (UR)
+#03 ManavonRX: AzoriusControl (WU)
+#04 Icteridae: ETron (C)
+#05 yamakiller: Scapeshift (URG)
+#06 SubwayEatFlesh: ETron (C)
+#07 alemilan19: ETron (C)
+#08 ReturnToDust: ETron (C)
+#09 Xwhale: ETron (C)
+#10 karatedom: RakdosProwess (WBR, Lurrus)
+#11 chupon2: Jund (BRG)
+#12 Wizard_2002: Humans (WUBRG)
+#13 Snusnumrick: ETron (C)
+#14 RicardoMSLan: GTron (WG)
+#15 Phill_Hellmuth: Dredge (WBRG)
+#16 eclipse4343: Miracles (WU)
+#17 hcook725: RakdosProwess (WBR, Lurrus)
+#18 Thrall90: Jund (BRG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_07_21 : EventTest

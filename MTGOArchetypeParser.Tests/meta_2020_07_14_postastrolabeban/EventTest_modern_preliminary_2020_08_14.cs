@@ -8,6 +8,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Cherryxman: KGCTron (G)
+#02 audio336: AzoriusControl (WU)
+#03 tibalt_of_red_sub: Mill (UB, Lurrus)
+#04 Do0mSwitch: BantControl (WUG)
+#05 sff_mtg: KGCTron (G)
+#06 Boin: SnoopGoblins (BR)
+#07 ht991122: WildernessReclamation (UBG)
+#08 Je3vEs: ETron (C)
+#09 tribalmaster: IzzetProwess (UR)
+#10 Niedzwiedz: SnoopGoblins (BR)
+#11 trader08111: ETron (C)
+#12 theBMeister: GreenStompy (G)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_08_14 : EventTest

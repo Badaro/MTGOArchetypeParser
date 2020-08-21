@@ -8,6 +8,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Icteridae: ETron (C)
+#02 DreamsOfAshiok: ETron (C)
+#03 yamakiller: Humans (WUBRG)
+#04 Hiru: RakdosMidrange (BR)
+#05 PTarts2win: Dredge (BRG)
+#06 flatnose: Merfolk (UG)
+#07 ilsecco14: Prowess (R)
+#08 wambocombo2020: Uroza (UBG, Yorion)
+#09 MadCowChicken: SelesnyaEldrazi (WG, Jegantha)
+#10 Stompy45: Ponza (RG)
+#11 _LSN_: Burn (WR)
+#12 Traft: AdNauseam (WUB)
+#13 WebZone: Humans (WUBRG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
 {
     public class EventTest_modern_preliminary_2020_06_18 : EventTest

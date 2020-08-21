@@ -8,6 +8,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Mordeka1ser: BringToNiv (WUBRG, Yorion)
+#02 kthanakit26: Burn (WR)
+#03 SebastianStueckl: Ponza (RG)
+#04 azatoyellow: GruulProwess (RG, Jegantha)
+#05 Niedzwiedz: SnoopGoblins (BR)
+#06 gyyby297: ThopterUrza (WU)
+#07 tia05: TitanShift (RG)
+#08 Ganksyou: AzoriusStoneblade (WU)
+#09 Cherryxman: Scapeshift (URG)
+#10 Lukas261997: AzoriusStoneblade (WU)
+#11 JustBurn420: Slivers (WUBRG)
+#12 Healer: IncineratorBurn (R)
+#13 Toastxp: TraverseShadow (UBRG)
+#14 Hyeri0418: Dredge (WBRG)
+#15 sff_mtg: KGCTron (G)
+#16 siomomi: ETron (C)
+#17 otakkun: KGCTron (G)
+#18 _INF_: GiftsStorm (UR)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_07_24 : EventTest

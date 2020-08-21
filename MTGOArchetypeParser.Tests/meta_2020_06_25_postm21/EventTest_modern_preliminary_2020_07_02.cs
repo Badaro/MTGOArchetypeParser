@@ -8,6 +8,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Ouranos139: AmuletTitan (WUBRG)
+#02 Toastxp: SultaiSnow (UBG)
+#03 fingers1991: SnowControl (WUG)
+#04 Theo_Jung: SultaiSnow (UBG)
+#05 Samcaster-Mage: ETron (C)
+#06 Icteridae: ETron (C)
+#07 TubbyBatman: IzzetProwess (UR)
+#08 no_lyfe: Prowess (R)
+#09 karatedom: SnoopGoblins (BR)
+#10 Mr_Sheep: Burn (WR)
+#11 Motown123: Merfolk (U)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_preliminary_2020_07_02 : EventTest

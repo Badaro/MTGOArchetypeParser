@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 katoriarch123: SnowControl (WUG)
+#02 bobthedog: SultaiSnow (UBG)
+#03 gazmon48: Prowess (R)
+#04 kbr3: Scapeshift (URG)
+#05 Lavaridge: SultaiSnow (UBG)
+#06 OYU: Infect (UG)
+#07 RogerSteady: GrixisDelver (UBR)
+#08 E-GirlUWU: AmuletTitan (WURG)
+#09 v3sp_tv: Elementals (WUBRG)
+#10 distanthamster: SnoopGoblins (BR)
+#11 mariogomes097: GrixisShadow (UBR)
+#12 Mr_Sheep: Ponza (RG)
+#13 WuYuHsien: SnowControl (WUG)
+#14 Voltzwagon: Ponza (RG)
+#15 McWinSauce: SnowBlade (WUBG)
+#16 Janh: SultaiSnow (UBG)
+#17 stainerson: GolgariElves (BG)
+#18 ncowden: SnowReclamation (UBG)
+#19 2radMTG: SnowReclamation (URG)
+#20 indianpancake: Ponza (RG)
+#21 TwistedWombat: AmuletTitan (URG)
+#22 Blitzlion27: Mill (UB)
+#23 roter_Erzengel: Infect (WUG)
+#24 FranPi: GiftsStorm (UR)
+#25 D00mwake: AmuletTitan (WURG)
+#26 unicornparadise: Infect (WUG)
+#27 bladede: KGCTron (G)
+#28 medvedev: SultaiSnow (UBG)
+#29 _Shatun_: Ponza (RG)
+#30 sora1248: SnoopGoblins (BR)
+#31 ArchaeusDota: GTron (G, Jegantha)
+#32 SkiLwrAp: SnowReclamation (UBG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_challenge_2020_06_29 : EventTest

@@ -8,6 +8,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Oderus Urungus: Ponza (RG)
+#02 PRGJJAR: Dredge (BRG)
+#03 MZBlazer: RakdosProwess (BR, Lurrus)
+#04 exoticherman: RakdosProwess (BR, Lurrus)
+#05 McWinSauce: BantControl (WUG)
+#06 karatedom: Infect (UG)
+#07 Costola91: TraverseShadow (UBRG)
+#08 sicsmoo: GTron (G)
+#09 Nammersquats: IzzetProwess (UR)
+#10 staffmat1992: Ponza (RG)
+#11 pootisgodsamongus: Crabvine (UBG)
+#12 Ryan100495: Dredge (WBRG)
+#13 komattaman: Ponza (RG)
+#14 ConnorM426: WildernessReclamation (UG)
+#15 1plus1equals3: KGCTron (G)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_08_13 : EventTest

@@ -22,7 +22,7 @@ namespace MTGOArchetypeParser.Tests
         {
             if (!tournamentCache.ContainsKey(tournamentName))
             {
-                tournamentCache.Add(tournamentName, DataLoader.GetTournamentByName(cacheFolder, tournamentName));
+                tournamentCache.Add(tournamentName, TournamentLoader.GetTournamentByName(cacheFolder, tournamentName));
             }
             return tournamentCache[tournamentName].Decks[deckIndex];
         }

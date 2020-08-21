@@ -8,6 +8,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Gigy: Ponza (RG)
+#02 PRGJJAR: Dredge (BRG)
+#03 McWinSauce: BantControl (WUG)
+#04 karatedom: RakdosProwess (BR, Lurrus)
+#05 Icteridae: BantMidrange (WUG)
+#06 sandydogmtg: IzzetProwess (UR)
+#07 BigBaranoia: BringToNiv (WUBRG)
+#08 Xuxa: Dredge (BRG)
+#09 qbturtle15: Ponza (RG)
+#10 tuckbear: Jund (BRG)
+#11 hodortimebaby: KGCTron (G)
+#12 ConnorM426: RakdosProwess (BR, Lurrus)
+#13 CHILLEDADED: Burn (WR)
+#14 PeanutBrittle: RedDeckWins (R, Jegantha)
+#15 ht991122: TemurReclamation (URG)
+#16 Xwhale: BantControl (WUG)
+#17 A22en: SnoopGoblins (BR)
+#18 MrZarukai: Ponza (RG)
+#19 bmac668: IzzetProwess (UR)
+#20 JUJUBEAN__2004: Devoted (WG, Lurrus)
+#21 joetru: BringToNiv (WUBRG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_08_20 : EventTest

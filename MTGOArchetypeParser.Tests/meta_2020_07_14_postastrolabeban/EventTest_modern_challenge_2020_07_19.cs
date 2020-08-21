@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Toastxp: SuicideShadow (BRG, Lurrus)
+#02 cws: GiftsStorm (UR)
+#03 _goblinlackey: KGCTron (G)
+#04 Edel: Jund (BRG)
+#05 Traft: AdNauseam (WUB)
+#06 Danker: AzoriusStoneblade (WU)
+#07 nahuel10: SnowReclamation (WUG)
+#08 pokerswizard: Jund (BRG)
+#09 kanister: TemurReclamation (URG)
+#10 skuttlespike: Ponza (RG)
+#11 no_lyfe: Prowess (R)
+#12 Shorak123: SnowReclamation (UBG)
+#13 Chefen: SnoopGoblins (BR)
+#14 echecetmat35: TitanShift (URG)
+#15 bntrusty14: Devoted (WG, Lurrus)
+#16 Gigy: Ponza (RG)
+#17 Redgy819: ETron (C)
+#18 Misplacedginger: Jund (BRG)
+#19 Skrown: ETron (C)
+#20 Jokersrwild: SnoopGoblins (BR)
+#21 soultaker06: SnoopGoblins (BR)
+#22 MZBlazer: IzzetProwess (UR)
+#23 MrRaeb: SultaiSnow (UBG)
+#24 kthanakit26: Burn (WR)
+#25 crazybaloth: EldraziTaxes (W)
+#26 MasterA: SnoopGoblins (BRG)
+#27 Vonducky: Prowess (WR)
+#28 azatoyellow: RedDeckWins (R, Jegantha)
+#29 bobjackson: KGCTron (G)
+#30 EricSlashGreg: AdNauseam (WUB)
+#31 Mikebrav: Humans (WUBRG, Yorion)
+#32 Zar0s: Ponza (RG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_challenge_2020_07_19 : EventTest

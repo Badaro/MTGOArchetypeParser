@@ -8,6 +8,53 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Never_DidntHaveIt: Prowess (WR)
+#02 Musagete: Devoted (WG, Lurrus)
+#03 carlosalmeida: Ponza (RG)
+#04 Lucabireskusku: Inverter (UB)
+#05 K4rl1991: HardenedScales (G)
+#06 asmitchler: TraverseShadow (UBRG)
+#07 crazeyr15: BringToNiv (WUBRG, Jegantha)
+#08 hugofreitas1: GiftsStorm (URG)
+#09 retiredcapivara: Dredge (BRG)
+#10 Urzza100: SnowTitan (WUG, Yorion)
+#11 didoguidotti1: GrixisShadow (UBR, Lurrus)
+#12 Papelucho10: Infect (UG)
+#13 SvenSvenSven: IzzetControl (UR)
+#14 MaliciousMac: SnowBlade (WURG, Yorion)
+#15 Mussie99: Miracles (WU)
+#16 il_matagatto: Humans (WUBRG)
+#17 Nightblue: Burn (WR)
+#18 lSoLlAKirA: HeliodDevoted (WBG, Yorion)
+#19 Lcario: MarduShadow (WBR)
+#20 wambocombo2020: JundSmallpox (BRG, Lurrus)
+#21 Metcalf23: DeathAndTaxes (WR, Lurrus)
+#22 DreamsOfAshiok: RakdosMidrange (BR)
+#23 Celldweller: SnowReclamation (UBG, Yorion)
+#24 llabmonkey: SnowShift (URG, Yorion)
+#25 mashmalovsky: EldraziTaxes (WB)
+#26 timewalkinonsunshine: SnowTurns (URG, Yorion)
+#27 RandomOctopus: Uroza (WUG, Yorion)
+#28 iuriper: SnowReclamation (UBG)
+#29 Aristocrats: Aristocrats (WB, Lurrus)
+#30 pbarrrgh: SnowBlade (WUG, Yorion)
+#31 DavidDPanda: ETron (C)
+#32 HypnoticaL: RakdosProwess (BR, Lurrus)
+#33 liu123: Bogles (WG, Lurrus)
+#34 Boin: Rock (BG, Lurrus)
+#35 _qfortier: SnowTurns (URG)
+#36 nahuel10: SnowControl (WUBG, Yorion)
+#37 DeeBoFour20: GTron (G, Jegantha)
+#38 fpawlusz: KGCAmuletTitan (WUBRG)
+#39 WeareVenom: SnowControl (WUG)
+#40 ary31415: Jund (BRG)
+#41 JouNick: SuicideShadow (BRG, Lurrus)
+#42 Flight24White: Neobrand (UG)
+#43 Wuhsa: BringToNiv (WUBRG, Jegantha)
+#44 stefanocanclini: AdNauseam (WUB)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
 {
     public class EventTest_modern_league_2020_06_05 : EventTest

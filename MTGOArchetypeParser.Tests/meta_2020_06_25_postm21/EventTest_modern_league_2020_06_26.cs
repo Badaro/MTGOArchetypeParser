@@ -8,6 +8,45 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 nahuel10: SnowControl (WUG)
+#02 Ennuixd: Prowess (R)
+#03 Lucabireskusku: Inverter (UB)
+#04 Audemin: Humans (WUBRG)
+#05 koji1130: RedDeckWins (WR, Jegantha)
+#06 StreexIT: Spirits (WU)
+#07 rojanosa: OrzhovTokens (WB)
+#08 haubidtran: Uroza (UBG, Yorion)
+#09 esatheking: Prowess (WR)
+#10 yPrincipe: ETron (C)
+#11 magicjpg: BantBlink (WUG, Yorion)
+#12 Psychophobic: Ponza (RG)
+#13 Borjillamtg10: AdNauseam (WUB)
+#14 603Leb: AmuletTitan (WUBRG)
+#15 Mad-Ramon: SnowReclamation (URG, Yorion)
+#16 Mordeka1ser: BringToNiv (WUBRG, Yorion)
+#17 Zebrah: AmuletTitan (WUBRG, Yorion)
+#18 Shorak123: SnowReclamation (UBG)
+#19 Beicodegeia: GiftsStorm (UR)
+#20 FantasticMrFox: Bogles (WG, Lurrus)
+#21 Rock_Star: RakdosProwess (BR, Lurrus)
+#22 Bunnykept: Jund (BRG)
+#23 Lcario: GrixisShadow (UBR)
+#24 Gaffiere1903: Ponza (RG)
+#25 Nogamblenofutur: Burn (WR)
+#26 Justodeangelo: SnowReclamation (URG)
+#27 SightWinner: HollowOne (BR)
+#28 Pirika: MarduPyromancer (WBR)
+#29 Xorn9: Goblins (WUBRG)
+#30 vengevine29: HardenedScales (BG, Lurrus)
+#31 SebastianStueckl: SnoopGoblins (BR)
+#32 Trellon: UTron (U)
+#33 Netow: Dredge (BRG)
+#34 Sonkerz: IzzetControl (UR)
+#35 PieGonti: KinnanUrza (URG, Yorion)
+#36 Piccio36: Winota (WRG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_league_2020_06_26 : EventTest

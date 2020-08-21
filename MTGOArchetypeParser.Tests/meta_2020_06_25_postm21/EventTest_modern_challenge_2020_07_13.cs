@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Lavaridge: SultaiSnow (UBG)
+#02 sfitz: ThopterUrza (UBR)
+#03 Larry11: Ponza (RG)
+#04 Polikasoll: IncineratorBurn (R)
+#05 ZYURYO: Jund (BRG)
+#06 Lord_Beerus: Burn (WR)
+#07 sff_mtg: KGCTron (G)
+#08 Gigy: Ponza (RG)
+#09 kiko: DeathAndTaxes (WR)
+#10 TennTyou: BringToNiv (WUBRG)
+#11 Smosh: ETron (C)
+#12 WeareVenom: SnowControl (WUG)
+#13 Nekonii: GolgariElves (BG)
+#14 Mogged: Prowess (R)
+#15 PizzaTurtle: Bogles (WG, Lurrus)
+#16 unicornparadise: ETron (C)
+#17 Fabrice_K: SnowReclamation (UBG, Yorion)
+#18 MrRaeb: Uroza (UBG, Yorion)
+#19 tuckbear: Burn (WR)
+#20 Lopik6: AmuletTitan (URG)
+#21 MikeEgan: Ponza (RG)
+#22 PvtEnormous: Prowess (R)
+#23 eXavie: SultaiSnow (UBG)
+#24 Ryan100495: Dredge (WBRG)
+#25 destinction: Jund (BRG)
+#26 JUJUBEAN__2004: SnowControl (WUG)
+#27 Tiemuuu: IzzetControl (UR)
+#28 Venom1: ETron (C)
+#29 otakkun: KGCTron (G)
+#30 Jack_Kashtan: GiftsStorm (UR)
+#31 Skrown: Dredge (WBRG)
+#32 Erik157751: Jund (BRG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_challenge_2020_07_13 : EventTest

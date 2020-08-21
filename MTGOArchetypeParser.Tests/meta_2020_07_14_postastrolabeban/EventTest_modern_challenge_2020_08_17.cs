@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 kbzx: IzzetProwess (UR)
+#02 Phill_Hellmuth: GrixisShadow (UBR)
+#03 TSPJendrek: SultaiControl (UBG)
+#04 TwistedWombat: TemurReclamation (URG)
+#05 Fluorspar: Humans (WUBRG)
+#06 Snusnumrick: ETron (C)
+#07 Trellon: UTron (U)
+#08 CHILLEDADED: Burn (WR)
+#09 Predicted: Yawgmoth (WBG)
+#10 TennTyou: BringToNiv (WUBRG)
+#11 Cy_4nhur: SnoopGoblins (BR)
+#12 buddha715: Burn (WR, Lurrus)
+#13 staffmat1992: Ponza (RG)
+#14 Costola91: GrixisShadow (UBR)
+#15 nahuel10: Ponza (RG)
+#16 jvidarte: Burn (WR, Lurrus)
+#17 fried-liver-attack: ETron (C)
+#18 Gigy: Ponza (RG)
+#19 musasabi: KGCAmuletTitan (UBRG)
+#20 _Logic_: JeskaiBreach (WURG)
+#21 __matsugan: Neobrand (UG)
+#22 PhantasmalBear: AzoriusTempo (WU)
+#23 drVendigo: Ponza (RG)
+#24 junghans: HeliodCombo (WG)
+#25 kaikalbuquerque: Bogles (WG)
+#26 Bullz0Eye: KGCTron (G)
+#27 calheiros: Burn (WR)
+#28 Xemnon1: RakdosProwess (BR, Lurrus)
+#29 Filyoni: Devoted (WG, Lurrus)
+#30 asnook: Jund (BRG)
+#31 bigjc00: AmuletTitan (URG)
+#32 MCScards: RakdosProwess (BR, Lurrus)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_challenge_2020_08_17 : EventTest

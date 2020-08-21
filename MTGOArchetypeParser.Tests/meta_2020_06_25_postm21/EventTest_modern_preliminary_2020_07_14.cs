@@ -8,6 +8,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 pepeteam: AmuletTitan (UBRG)
+#02 osmanozguney: RakdosMidrange (BR)
+#03 azatoyellow: Prowess (R)
+#04 ACG88: Crabvine (UBG)
+#05 WingedHussar: Neobrand (UG)
+#06 bubbsei: Devoted (WG, Lurrus)
+#07 LickNsticK: Jund (BRG)
+#08 RicardoMSLan: ETron (C)
+#09 PizzaRolls: ETron (C)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_preliminary_2020_07_14 : EventTest

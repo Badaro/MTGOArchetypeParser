@@ -8,6 +8,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 mariogomes097: GrixisShadow (UBR)
+#02 WhiTe TsaR: SultaiSnow (UBG)
+#03 _INF_: GiftsStorm (UR)
+#04 Janh: SnowReclamation (URG)
+#05 bubbsei: Dredge (BRG)
+#06 ZYURYO: Jund (BRG)
+#07 2k4mmorton: Prowess (R)
+#08 skeptimist: SnowControl (WUG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
 {
     public class EventTest_modern_preliminary_2020_06_24 : EventTest

@@ -8,6 +8,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 mac121711: JeskaiStoneblade (WUR)
+#02 AstralPlane: IzzetProwess (UR)
+#03 chengyiw: Dredge (WBRG)
+#04 JV_7777: ETron (C)
+#05 SakeIzumo: IzzetProwess (UR)
+#06 TheLousyZoot: SnoopGoblins (WBR)
+#07 tyaburi: Prowess (R)
+#08 Zonast: AdNauseam (WUB)
+#09 nekonekoneko: Dredge (WBRG)
+#10 updraftelemental: SuicideShadow (BRG)
+#11 Toastxp: GruulProwess (RG, Jegantha)
+#12 Granham: AzoriusControl (WU)
+#13 Lexmart: BantControl (WUG)
+#14 kanister: TemurControl (URG)
+#15 Nickburch13: Burn (WR, Lurrus)
+#16 _INF_: GiftsStorm (UR)
+#17 hoveydw: SuicideShadow (BRG, Lurrus)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_07_25 : EventTest

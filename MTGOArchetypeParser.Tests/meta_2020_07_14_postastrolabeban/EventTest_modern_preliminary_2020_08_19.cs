@@ -8,6 +8,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Laplasjan: Devoted (WG, Lurrus)
+#02 coert: Burn (WR)
+#03 Rooney56: BantControl (WUG)
+#04 trader08111: RakdosProwess (WBR, Lurrus)
+#05 aManatease: IzzetProwess (UR)
+#06 Lavaridge: TemurReclamation (URG)
+#07 JV_7777: ETron (C)
+#08 ZYX_Jerry: Burn (WR, Lurrus)
+#09 ImmanuelKantrolGod: BantControl (WUG)
+#10 McWinSauce: BantControl (WUG)
+#11 Zar0s: TitanVial (WRG)
+#12 otakkun: KGCTron (G)
+#13 kbzx: IzzetProwess (UR)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_08_19 : EventTest

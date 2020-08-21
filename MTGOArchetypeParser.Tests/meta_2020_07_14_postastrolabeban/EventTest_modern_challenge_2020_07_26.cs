@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Mateusf34: ETron (C)
+#02 Shazzam: SnowBlade (WUG)
+#03 Shorak123: SnowReclamation (UBG)
+#04 mariogomes097: GrixisShadow (UBR)
+#05 SebastianStueckl: Dredge (BRG)
+#06 hoveydw: TraverseShadow (BRG)
+#07 gazmon48: Ponza (RG)
+#08 Magicofplayer1: Dredge (WBRG)
+#09 CarlSwaggin: Ponza (RG)
+#10 Numena_Lowallyn: Scapeshift (URG)
+#11 Lord_of_Puntlantis: IzzetRestoreBalance (URG)
+#12 Kuhb: GiftsStorm (UR)
+#13 Edel: Jund (BRG)
+#14 lsv: AzoriusControl (WU)
+#15 andrw1232: RakdosProwess (BR, Lurrus)
+#16 TombSimon: Crabvine (UBG)
+#17 exoticherman: RakdosProwess (BR, Lurrus)
+#18 belanna999: ETron (C)
+#19 Jokersrwild: SnoopGoblins (BR)
+#20 crazybaloth: Humans (WUBRG)
+#21 MaxMagicer: Humans (WUBRG)
+#22 Janh: SaheeliCombo (WUR)
+#23 Moniz0801: AmuletTitan (WURG)
+#24 chococookie: Miracles (WU)
+#25 Oscar_Franco: Jund (BRG)
+#26 TheAfterman: Humans (WUBRG)
+#27 bbq42069dude: IzzetProwess (UR)
+#28 CrusherBotBG: HammerTime (W)
+#29 Jok87: IzzetBreach (UR)
+#30 toondoslav: Dredge (WBRG)
+#31 indianpancake: AzoriusStoneblade (WU)
+#32 sultai4lyfe: DimirControl (UB)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_challenge_2020_07_26 : EventTest

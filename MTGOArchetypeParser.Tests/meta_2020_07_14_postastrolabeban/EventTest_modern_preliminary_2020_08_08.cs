@@ -8,6 +8,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 kanister: TemurReclamation (URG)
+#02 updraftelemental: TraverseShadow (UBG)
+#03 Gigglesworth: BantMidrange (WUG)
+#04 VampireGodric: Infect (UG)
+#05 ImAFireHydrant: AdNauseam (WUB)
+#06 DreamsOfAshiok: ETron (C)
+#07 AlabasterWolfie: SnoopGoblins (BR)
+#08 ScreenwriterNY: DeathAndTaxes (WU)
+#09 BERNASTORRES: IzzetProwess (UR)
+#10 Moniz0801: AmuletTitan (WURG)
+#11 ZYX_Jerry: AdNauseam (WUB)
+#12 komattaman: Ponza (RG)
+#13 Snusnumrick: ETron (C)
+#14 bobthedog: WhiteDevotion (W)
+#15 buddha715: AdNauseam (WUB)
+#16 aManatease: ETron (C)
+#17 IntegralHDK: SnoopGoblins (BRG)
+#18 Delthar: Infect (BG)
+#19 SebastianStueckl: SnowControl (UG)
+#20 Lord_of_Puntlantis: IzzetRestoreBalance (URG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_08_08 : EventTest

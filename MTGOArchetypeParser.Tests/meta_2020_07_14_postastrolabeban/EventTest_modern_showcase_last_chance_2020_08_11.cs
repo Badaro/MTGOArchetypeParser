@@ -8,6 +8,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 mindcandy: TemurReclamation (URG)
+#02 eXavie: RakdosProwess (BR, Lurrus)
+#03 Snusnumrick: ETron (C)
+#04 __matsugan: Neobrand (UG)
+#05 cntrlfreak: TraverseShadow (UBRG)
+#06 tibalt_of_red_sub: Mill (UB, Lurrus)
+#07 cnofafva: KGCAmuletTitan (WUBRG)
+#08 Toastxp: RakdosProwess (BR, Lurrus)
+#09 cws: GiftsStorm (UR)
+#10 TSPJendrek: SultaiControl (UBG)
+#11 mikev1919: Prowess (R)
+#12 Wuhsa: BringToNiv (WUBRG, Yorion)
+#13 shub89: IzzetProwess (UR)
+#14 Rhianne: Dredge (BRG)
+#15 2jjm: IzzetProwess (UR)
+#16 discoverN: KGCTron (G)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_showcase_last_chance_2020_08_11 : EventTest

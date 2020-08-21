@@ -8,6 +8,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Redgy819: ETron (C)
+#02 1plus1equals3: RedPrison (R)
+#03 Redgy: Burn (WR)
+#04 mylast: Prowess (WR, Lurrus)
+#05 buddha715: Burn (WR, Lurrus)
+#06 Gerschi: RakdosProwess (WBR, Lurrus)
+#07 kanister: BantControl (WUG)
+#08 CReactor: KGCTron (G)
+#09 VampireGodric: BantControl (WUG)
+#10 BERNASTORRES: BantControl (WUG)
+#11 Beekeeper: Humans (WUBRG)
+#12 trader08111: ETron (C)
+#13 BasedCloy: ETron (C)
+#14 Snusnumrick: ETron (C)
+#15 Curryvore: JeskaiBlink (WUR, Yorion)
+#16 predje: Ponza (RG)
+#17 SIMONEFIERRO: Burn (WR)
+#18 mac121711: Dredge (WBRG)
+#19 MagicDevil666: UTron (U)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_08_18 : EventTest

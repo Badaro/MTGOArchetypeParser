@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 hugo87: GiftsStorm (UR)
+#02 toondoslav: Dredge (BRG)
+#03 Janh: SultaiSnow (UBG)
+#04 SebastianStueckl: Dredge (BRG)
+#05 PRGJJAR: Dredge (BRG)
+#06 ecobaronen: Ponza (RG)
+#07 TheSouthDakota: Dredge (BRG)
+#08 Lord_Beerus: Burn (WR)
+#09 NorrathDecay: Burn (WR)
+#10 Xenowan: Inverter (UB)
+#11 signblindman: Ponza (RG)
+#12 Walka: SnowBlade (WUG)
+#13 Diatomic: SultaiSnow (UBG)
+#14 litianshuo670: EldraziTaxes (WB)
+#15 SkiLwrAp: ETron (C)
+#16 ZYURYO: SnowControl (WUBG)
+#17 Xwhale: SnowControl (WUG)
+#18 JB2002: BantBlink (WUG, Yorion)
+#19 swff: SultaiSnow (WUBG)
+#20 Granham: Jund (BRG)
+#21 MadMaxErnst: Uroza (URG)
+#22 bobthedog: SultaiSnow (UBG)
+#23 gyyby297: ThopterUrza (UB)
+#24 coert: GTron (G)
+#25 Magicofplayer1: EsperControl (WUB)
+#26 sff_mtg: Ponza (RG)
+#27 musasabi: Humans (WUBRG)
+#28 _Batutinha_: SnowControl (WUG)
+#29 Damgar: ETron (C)
+#30 j_money10: SnowBlade (WUG)
+#31 ilsecco14: Ponza (RG)
+#32 Mallik7D: GiftsStorm (UR)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
 {
     public class EventTest_modern_challenge_2020_06_15 : EventTest

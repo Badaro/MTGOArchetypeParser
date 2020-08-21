@@ -8,6 +8,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 pbarrrgh: TemurSnow (URG)
+#02 npercario: SnowControl (WUG)
+#03 staples87: ETron (C)
+#04 Laplasjan: Devoted (WG, Lurrus)
+#05 ecobaronen: SnowControl (WUG)
+#06 Larry11: Ponza (RG)
+#07 billsive: SnowReclamation (UBG)
+#08 EdB: SnoopGoblins (BR)
+#09 Voidpaw: Jund (BRG)
+#10 RicardoMSLan: ETron (C)
+#11 Niallghas: SnoopGoblins (BR)
+#12 Boland: Dredge (BRG)
+#13 Haunter_Hunter: SnoopGoblins (BR)
+#14 mariogomes097: GrixisShadow (UBR)
+#15 FEARnLOATHing: IzzetProwess (UR)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_preliminary_2020_06_30 : EventTest

@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Gerschi: RakdosProwess (WBR, Lurrus)
+#02 TSPJendrek: SultaiControl (UBG)
+#03 Yooisa: Infect (UG)
+#04 HouseOfManaMTG: KGCTron (G)
+#05 dsissowin: IzzetProwess (UR)
+#06 __matsugan: Neobrand (UG)
+#07 sakuragi21722749: ETron (C)
+#08 MrRaeb: Ponza (RG)
+#09 Predicted: Yawgmoth (WBG)
+#10 gazmon48: KGCTron (G)
+#11 Mateusf34: ETron (C)
+#12 Maox: IzzetProwess (UR)
+#13 Fabrice_K: ETron (C)
+#14 kefka27: ETron (C)
+#15 albert62: Jund (BRG)
+#16 MissTrigger: IncineratorBurn (R)
+#17 jvidarte: Burn (WR)
+#18 nahuel10: SnowBlade (WUG)
+#19 Tiemuuu: IzzetControl (UR)
+#20 harukispecial: SultaiSnow (UBG)
+#21 _Falcon_: IzzetProwess (UR)
+#22 Gabriele2020: Humans (WUBRG)
+#23 Ryan100495: Dredge (WBRG)
+#24 kthanakit26: IzzetProwess (UR)
+#25 thekingofnone: Scapeshift (URG)
+#26 belanna999: ETron (C)
+#27 TheSouthDakota: TraverseShadow (BRG)
+#28 HIziri88: Ponza (RG)
+#29 mariogomes097: GrixisShadow (UBR)
+#30 kaikalbuquerque: Jund (BRG)
+#31 unicornparadise: RakdosProwess (BR, Lurrus)
+#32 Raptor_Nachos: Prowess (R)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_challenge_2020_08_12 : EventTest

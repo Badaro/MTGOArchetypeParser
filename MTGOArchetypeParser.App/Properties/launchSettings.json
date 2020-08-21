@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "MTGOArchetypeParser.App": {
-      "commandName": "Project",
-      "commandLineArgs": "\"$(SolutionDir)MTGODecklistCache\\Tournaments\" modern-preliminary-2020-08-20"
-    }
-  }
-}

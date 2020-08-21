@@ -8,6 +8,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 eclipse4343: Miracles (WU)
+#02 fling5133: Jund (BRG)
+#03 eggybenny: Neobrand (UG)
+#04 RNGspecialist: Scapeshift (URG)
+#05 gazmon48: ETron (C)
+#06 alemilan19: Scapeshift (URG)
+#07 sandydogmtg: IzzetProwess (UR)
+#08 Ouranos139: KGCAmuletTitan (UBRG)
+#09 yashimoro: EsperShadow (WUBR)
+#10 DreamsOfAshiok: ETron (C)
+#11 Icteridae: ETron (C)
+#12 _INF_: GiftsStorm (UR)
+#13 Nammersquats: Infect (UG)
+#14 StormQrow: Jund (BRG)
+#15 RogerSteady: GrixisEnforcer (UBR)
+#16 Xwhale: ETron (C)
+#17 Toastxp: RakdosProwess (WBR, Lurrus)
+#18 juzam_gin: Dredge (WBRG)
+#19 grahams: Crabvine (UBRG)
+#20 Lexmart: BantControl (WUG)
+#21 Graciasportanto: KGCTron (G)
+#22 StoreShop275: ETron (C)
+#23 MZBlazer: AzoriusStoneblade (WU)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_07_23 : EventTest

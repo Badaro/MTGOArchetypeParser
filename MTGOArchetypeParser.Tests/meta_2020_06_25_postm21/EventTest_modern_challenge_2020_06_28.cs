@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 SebastianStueckl: SnoopGoblins (BR)
+#02 Mateusf34: ETron (C)
+#03 Sodeq: Dredge (BRG)
+#04 FestiFan: SnowControl (WUG)
+#05 shoktroopa: UTron (U)
+#06 Thrall90: Jund (BRG)
+#07 dm95: AzoriusStoneblade (WU)
+#08 djbmppwns: Ponza (RG)
+#09 Moniz0801: AmuletTitan (WURG)
+#10 MasterA: SnoopGoblins (BRG)
+#11 Trisky: TraverseShadow (BRG)
+#12 mariogomes097: GrixisShadow (UBR)
+#13 indianpancake: Ponza (RG)
+#14 NorrathDecay: Burn (WR)
+#15 Sanchez5272: KGCTron (G)
+#16 Diatomic: SnowControl (WUG)
+#17 qbturtle15: Ponza (RG, Obosh)
+#18 wambocombo2020: Burn (WR)
+#19 FranPi: GiftsStorm (UR)
+#20 Danny_Bambino: Jund (BRG)
+#21 Mercenario: Dredge (UBRG)
+#22 toondoslav: Dredge (BRG)
+#23 Curtisaxel: BantSpirits (WUG)
+#24 CNewman: SnoopGoblins (BR)
+#25 no_lyfe: Prowess (R)
+#26 fingers1991: Burn (WR, Lurrus)
+#27 sheastrausman: SnowReclamation (URG)
+#28 kbr3: Scapeshift (URG)
+#29 jessy_samek: RakdosProwess (BR, Lurrus)
+#30 yamakiller: Ponza (RG, Obosh)
+#31 ivan229: Ponza (RG)
+#32 DreamsOfAshiok: ETron (C)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
 {
     public class EventTest_modern_challenge_2020_06_28 : EventTest

@@ -8,6 +8,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Lavaridge: TemurReclamation (URG)
+#02 romanmy: RakdosProwess (WBR, Lurrus)
+#03 Selfeisek: Burn (WR, Lurrus)
+#04 SparTaNxX: AdNauseam (WUB)
+#05 Sodeq: Dredge (BRG)
+#06 XxquestionablyawesomexX: Bogles (WG)
+#07 Nosferatu: BantControl (WUG)
+#08 Smdster: RakdosProwess (BR, Lurrus)
+#09 Oderus Urungus: Ponza (RG)
+#10 _Batutinha_: TraverseShadow (BRG)
+#11 ReturnToDust: TitanVial (WRG)
+#12 Soulerino: Burn (WR)
+#13 chengyiw: IzzetProwess (UR)
+#14 NorrathDecay: Burn (WR)
+#15 iwanteatebi: IzzetProwess (UR)
+#16 dani_chad: Jund (BRG)
+#17 jschloss: KGCTron (G)
+#18 Mcleskey: Burn (WR)
+#19 NAP_DARKMAGE_MJM: IzzetProwess (UR)
+#20 Metcalf23: EldraziTaxes (WB)
+#21 MadMaxErnst: SultaiControl (UBG)
+#22 banskk: IzzetProwess (UR)
+#23 DreamsOfAshiok: ETron (C)
+#24 Mateusf34: ETron (C)
+#25 aqualog: Prowess (WR, Lurrus)
+#26 TuggaNaxos: Crabvine (UBG)
+#27 Danielstallone: Burn (WR)
+#28 Novaphantom: ETron (C)
+#29 GoblinK1ng: Goblins (BRG)
+#30 Capitano_CL: Dredge (WBRG)
+#31 AlabasterWolfie: SnoopGoblins (BR)
+#32 Kuhb: IzzetProwess (UR)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_showcase_challenge_2020_08_09 : EventTest

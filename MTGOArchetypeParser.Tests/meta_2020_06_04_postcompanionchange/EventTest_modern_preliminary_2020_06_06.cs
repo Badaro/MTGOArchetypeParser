@@ -8,6 +8,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Diatomic: SnowBlade (WUG)
+#02 _Shatun_: Ponza (RG)
+#03 _INF_: GiftsStorm (UR)
+#04 ZYURYO: SnowControl (WUBG)
+#05 slsh: Ponza (RG)
+#06 Do0mSwitch: SnowControl (WUG)
+#07 ilsecco14: Rock (BG)
+#08 kanister: Humans (WUBRG)
+#09 audio336: Dredge (BRG)
+#10 12Days: Ponza (BRG, Obosh)
+#11 sff_mtg: KGCTron (G)
+#12 elad3127: Ponza (RG)
+#13 Doomed_Necromancer: AbzanMidrange (WBG)
+#14 nielsen333: JeskaiStoneblade (WUR)
+#15 matyo804: Humans (WUBRG)
+#16 ktmr-39: GolosTron (G, Jegantha)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
 {
     public class EventTest_modern_preliminary_2020_06_06 : EventTest

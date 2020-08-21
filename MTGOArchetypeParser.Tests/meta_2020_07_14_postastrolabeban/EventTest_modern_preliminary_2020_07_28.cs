@@ -8,6 +8,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 Ganksyou: AzoriusStoneblade (WU)
+#02 Rhianne: Dredge (WBRG)
+#03 tylerjjobrien: BringToNiv (WUBRG, Yorion)
+#04 Zar0s: Scapeshift (URG)
+#05 RodeoJones: SnowSaheeli (WURG)
+#06 Thrall90: Jund (BRG)
+#07 Redgy819: ETron (C)
+#08 katuo079595: Scapeshift (URG)
+#09 ArchaeusDota: KGCTron (G)
+#10 mylast: IzzetProwess (UR)
+#11 rastaf: IzzetProwess (UR)
+#12 Znapcaster: SnowBlade (WUG)
+#13 spellvine: IzzetProwess (UR)
+#14 Xwhale: SnoopGoblins (BR)
+#15 Wizard_2002: Humans (WUBRG)
+#16 komattaman: Ponza (RG)
+#17 McWinSauce: TemurReclamation (URG)
+#18 jhollan42: SnowBlade (WUG)
+#19 SakeIzumo: IzzetProwess (UR)
+#20 tanisong1221: AzoriusStoneblade (WU)
+#21 Lavaridge: Ponza (RG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
 {
     public class EventTest_modern_preliminary_2020_07_28 : EventTest

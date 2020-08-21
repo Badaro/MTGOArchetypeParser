@@ -8,6 +8,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+#01 signblindman: Ponza (RG)
+#02 GedionRavenor: SnowBlade (WUG)
+#03 _Shatun_: Ponza (RG)
+#04 TSPJendrek: SnowBlade (WUBG)
+#05 Janh: TemurSnow (URG)
+#06 _INF_: GiftsStorm (UR)
+#07 alemilan19: SnowControl (WUG)
+#08 Fabrice_K: NinjaFaeries (UB)
+#09 DylanGregory: Humans (WUBRG)
+#10 Mcleskey: Burn (WR)
+#11 DavidDPanda: ETron (C)
+#12 ZYURYO: SnowControl (WUBG)
+*/
+
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
 {
     public class EventTest_modern_preliminary_2020_06_10 : EventTest
