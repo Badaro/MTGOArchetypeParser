@@ -28,7 +28,7 @@ using System.Text;
 #17 Cantergiani: EldraziTaxes (WG)
 #18 Parrit: HardenedScales (G)
 #19 tylerjjobrien: BringToNiv (WUBRG, Yorion)
-#20 armstrong36: Rock (WBG)
+#20 armstrong36: Abzan (WBG)
 #21 osmanozguney: Smallpox (B)
 #22 bigjc00: AmuletTitan (URG)
 #23 dani_chad: Jund (BRG)
@@ -325,14 +325,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_armstrong36_Rock_WBG()
+        public void Deck20_armstrong36_Rock_Abzan_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-07",19),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WBG,
                 typeof(Rock),
-                null,
+                typeof(Abzan),
                 null
             );
         }

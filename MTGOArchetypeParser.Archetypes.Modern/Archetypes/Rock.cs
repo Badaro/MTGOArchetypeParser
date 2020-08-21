@@ -21,7 +21,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Variants = new ArchetypeVariant[]
             {
                 new Jund(),
-                new Sultai()
+                new Sultai(),
+                new Abzan()
             };
         }
     }
@@ -44,6 +45,17 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.ColorIsExactly, Color = ArchetypeColor.UBG },
+            };
+        }
+    }
+
+    public class Abzan : ArchetypeVariant
+    {
+        public Abzan()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.ColorIsExactly, Color = ArchetypeColor.WBG },
             };
         }
     }

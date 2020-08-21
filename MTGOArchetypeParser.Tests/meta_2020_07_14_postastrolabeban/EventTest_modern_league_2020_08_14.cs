@@ -20,7 +20,7 @@ using System.Text;
 #09 MrQ4: AdNauseam (WUB)
 #10 TheDuinoElegies: Prowess (WR, Lurrus)
 #11 IzzetSignetIsTheBest: AmuletTitan (WUBRG)
-#12 Sprouts: Rock (WBG)
+#12 Sprouts: Abzan (WBG)
 #13 BigDadChad: GreenDevotion (UG)
 #14 olea: HeliodCombo (WG)
 #15 Menoti: ETron (C)
@@ -211,14 +211,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_Sprouts_Rock_WBG()
+        public void Deck12_Sprouts_Rock_Abzan_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-14",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WBG,
                 typeof(Rock),
-                null,
+                typeof(Abzan),
                 null
             );
         }

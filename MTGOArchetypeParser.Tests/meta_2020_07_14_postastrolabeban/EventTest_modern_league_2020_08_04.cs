@@ -49,7 +49,7 @@ using System.Text;
 #38 AngledLuffa: BantMidrange (WUG)
 #39 Callad0: PrimevalTitan (URG)
 #40 timewalkinonsunshine: TakingTurns (URG)
-#41 crussedull: Rock (WBG)
+#41 crussedull: Abzan (WBG)
 #42 StripMineBen: Ponza (RG)
 #43 SvenSveeterSven: IzzetControl (UR)
 #44 paucr5: DeathAndTaxes (WU)
@@ -76,7 +76,7 @@ using System.Text;
 #65 brainstorm39: JeskaiControl (WUR, Yorion)
 #66 JimmySetzer: SnoopGoblins (BR)
 #67 basebuilder: AdNauseam (WUB)
-#68 Valyan: Rock (WBG)
+#68 Valyan: Abzan (WBG)
 #69 TuggaNaxos: ToothAndNail (G)
 #70 kokoko098: HeliodDevoted (WUG, Lurrus)
 #71 monkeyang: IzzetPhoenix (UR)
@@ -612,14 +612,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck41_crussedull_Rock_WBG()
+        public void Deck41_crussedull_Rock_Abzan_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-04",40),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WBG,
                 typeof(Rock),
-                null,
+                typeof(Abzan),
                 null
             );
         }
@@ -963,14 +963,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck68_Valyan_Rock_WBG()
+        public void Deck68_Valyan_Rock_Abzan_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-04",67),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WBG,
                 typeof(Rock),
-                null,
+                typeof(Abzan),
                 null
             );
         }
