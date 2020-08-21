@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MTGOArchetypeParser.Archetypes.Modern\MTGOArchetypeParser.Archetypes.Modern.csproj" />
-    <ProjectReference Include="..\MTGOArchetypeParser.DataSources\MTGOArchetypeParser.Data.csproj" />
     <ProjectReference Include="..\MTGOArchetypeParser.Data\MTGOArchetypeParser.Data.csproj" />
     <ProjectReference Include="..\MTGOArchetypeParser.Metas.Modern\MTGOArchetypeParser.Metas.Modern.csproj" />
     <ProjectReference Include="..\MTGOArchetypeParser\MTGOArchetypeParser.csproj" />
