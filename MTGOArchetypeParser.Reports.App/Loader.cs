@@ -1,6 +1,5 @@
 ﻿using MTGOArchetypeParser.Data;
-using MTGOArchetypeParser.DataSources;
-using MTGOArchetypeParser.DataSources.Model;
+using MTGOArchetypeParser.Data.Model;
 using MTGOArchetypeParser.Model;
 using System;
 using System.Collections.Generic;
@@ -17,7 +16,7 @@ namespace MTGOArchetypeParser.Reports.App
             Func<string, bool> includeLeaguesFilter = n => n.Contains("Modern");
             Func<string, bool> filter = includeLeagues ? includeLeaguesFilter : excludeLeaguesFilter;
 
-            MTGOTournament[] tournaments = DataLoader.GetTournamentsByDate(cacheFolder, startDate, filter).ToArray();
+            MTGOTournament[] tournaments = TournamentLoader.GetTournamentsByDate(cacheFolder, startDate, filter).ToArray();
 
             List<DataRecord> records = new List<DataRecord>();
 

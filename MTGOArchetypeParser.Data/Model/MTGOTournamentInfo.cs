@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MTGOArchetypeParser.DataSources.Model
+namespace MTGOArchetypeParser.Data.Model
 {
     public class MTGOTournamentInfo
     {

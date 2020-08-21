@@ -1,4 +1,4 @@
-﻿using MTGOArchetypeParser.DataSources.Model;
+﻿using MTGOArchetypeParser.Data.Model;
 using System;
 using System.Collections.Generic;
 using System.Globalization;

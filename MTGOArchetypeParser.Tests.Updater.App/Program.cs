@@ -1,6 +1,5 @@
 ﻿using MTGOArchetypeParser.Data;
-using MTGOArchetypeParser.DataSources;
-using MTGOArchetypeParser.DataSources.Model;
+using MTGOArchetypeParser.Data.Model;
 using MTGOArchetypeParser.Model;
 using MTGOArchetypeParser.Tests.Updater.Model;
 using System;
@@ -29,7 +28,7 @@ namespace MTGOArchetypeParser.Tests.Updater
 
                 ArchetypeMeta[] metas = Metas.Modern.Loader.GetMetas();
 
-                MTGOTournament[] tournaments = DataLoader.GetTournamentsByDate(cacheFolder, metas.First().StartDate.AddDays(1), n => n.Contains("Modern"));
+                MTGOTournament[] tournaments = TournamentLoader.GetTournamentsByDate(cacheFolder, metas.First().StartDate.AddDays(1), n => n.Contains("Modern"));
 
                 foreach (MTGOTournament tournament in tournaments)
                 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace MTGOArchetypeParser.DataSources.Model
+namespace MTGOArchetypeParser.Data.Model
 {
     public class MTGODeck
     {

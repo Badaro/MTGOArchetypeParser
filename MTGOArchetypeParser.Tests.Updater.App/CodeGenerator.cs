@@ -1,5 +1,5 @@
 ﻿using MTGOArchetypeParser.Data;
-using MTGOArchetypeParser.DataSources.Model;
+using MTGOArchetypeParser.Data.Model;
 using MTGOArchetypeParser.Tests.Updater.Model;
 using System;
 using System.IO;

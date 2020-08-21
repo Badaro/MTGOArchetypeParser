@@ -1,5 +1,5 @@
 ﻿using System;
-using MTGOArchetypeParser.DataSources.Model;
+using MTGOArchetypeParser.Data.Model;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
@@ -7,9 +7,9 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Globalization;
 
-namespace MTGOArchetypeParser.DataSources
+namespace MTGOArchetypeParser.Data
 {
-    public static class DataLoader
+    public static class TournamentLoader
     {
         public static MTGOTournament GetTournamentByName(string cacheFolder, string eventName)
         {
