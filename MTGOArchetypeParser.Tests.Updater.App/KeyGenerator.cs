@@ -9,13 +9,13 @@ namespace MTGOArchetypeParser.Tests.Updater
 {
     public static class KeyGenerator
     {
-        public static TournamentKeys GenerateTournamentKeys(ArchetypeMeta meta, MTGOTournament tournament)
+        public static TournamentKeys GenerateTournamentKeys(ArchetypeMeta meta, Tournament tournament)
         {
             string metaName = meta.GetType().Name;
             string metaID = $"meta_{meta.StartDate.ToString("yyyy_MM_dd")}_{metaName.ToLower()}";
 
             // Destination for sample data
-            string leagueID = Path.GetFileName(tournament.Tournament.Uri.ToString()).Replace("-", "_");
+            string leagueID = Path.GetFileName(tournament.Information.Uri.ToString()).Replace("-", "_");
 
             return new TournamentKeys()
             {
@@ -26,7 +26,7 @@ namespace MTGOArchetypeParser.Tests.Updater
             };
         }
 
-        public static DeckKeys GenerateDeckKeys(int deckIndex, MTGODeck deck, ArchetypeResult detectionResult)
+        public static DeckKeys GenerateDeckKeys(int deckIndex, Deck deck, ArchetypeResult detectionResult)
         {
             string playerID = deck.Player == null ? "" : deck.Player;
             string colorID = detectionResult.Color.ToString();

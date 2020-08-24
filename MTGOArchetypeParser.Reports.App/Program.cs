@@ -62,7 +62,7 @@ namespace MTGOArchetypeParser.Reports.App
                     if (!totals.ContainsKey(record.Week)) totals.Add(record.Week, 0);
                     if (!reds.ContainsKey(record.Week)) reds.Add(record.Week, 0);
 
-                    if (record.Deck.Mainboard.Any(c => c.CardName == "Monastery Swiftspear"))
+                    if (record.Deck.Mainboard.Any(c => c.Card == "Monastery Swiftspear"))
                     {
                         reds[record.Week]++;
                     }
@@ -167,14 +167,14 @@ namespace MTGOArchetypeParser.Reports.App
             {
                 foreach (var card in record.Deck.Mainboard.Concat(record.Deck.Sideboard))
                 {
-                    if (!mainboardCount.ContainsKey(card.CardName))
+                    if (!mainboardCount.ContainsKey(card.Card))
                     {
-                        count.Add(card.CardName, 0);
-                        decks.Add(card.CardName, 0);
-                        mainboardCount.Add(card.CardName, 0);
-                        sideboardCount.Add(card.CardName, 0);
-                        mainboardDecks.Add(card.CardName, 0);
-                        sideboardDecks.Add(card.CardName, 0);
+                        count.Add(card.Card, 0);
+                        decks.Add(card.Card, 0);
+                        mainboardCount.Add(card.Card, 0);
+                        sideboardCount.Add(card.Card, 0);
+                        mainboardDecks.Add(card.Card, 0);
+                        sideboardDecks.Add(card.Card, 0);
                     }
                 }
             }
@@ -183,17 +183,17 @@ namespace MTGOArchetypeParser.Reports.App
             {
                 foreach (var card in record.Deck.Mainboard)
                 {
-                    count[card.CardName] += card.Count;
-                    mainboardCount[card.CardName] += card.Count;
-                    mainboardDecks[card.CardName] += 1;
+                    count[card.Card] += card.Count;
+                    mainboardCount[card.Card] += card.Count;
+                    mainboardDecks[card.Card] += 1;
                 }
-                foreach (MTGODeckItem card in record.Deck.Sideboard)
+                foreach (DeckItem card in record.Deck.Sideboard)
                 {
-                    count[card.CardName] += card.Count;
-                    sideboardCount[card.CardName] += card.Count;
-                    sideboardDecks[card.CardName] += 1;
+                    count[card.Card] += card.Count;
+                    sideboardCount[card.Card] += card.Count;
+                    sideboardDecks[card.Card] += 1;
                 }
-                foreach (var card in record.Deck.Mainboard.Concat(record.Deck.Sideboard).Select(c => c.CardName).Distinct())
+                foreach (var card in record.Deck.Mainboard.Concat(record.Deck.Sideboard).Select(c => c.Card).Distinct())
                 {
                     decks[card] += 1;
                 }

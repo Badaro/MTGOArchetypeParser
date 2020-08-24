@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.Reports.App
             Func<string, bool> includeLeaguesFilter = n => n.Contains("Modern");
             Func<string, bool> filter = includeLeagues ? includeLeaguesFilter : excludeLeaguesFilter;
 
-            MTGOTournament[] tournaments = TournamentLoader.GetTournamentsByDate(cacheFolder, startDate, filter).ToArray();
+            Tournament[] tournaments = TournamentLoader.GetTournamentsByDate(cacheFolder, startDate, filter).ToArray();
 
             List<DataRecord> records = new List<DataRecord>();
 
@@ -27,11 +27,11 @@ namespace MTGOArchetypeParser.Reports.App
 
                 string metaID = meta.GetType().Name;
 
-                int weekID = ((int)Math.Floor((tournament.Decks.First().Date - metaWeekReferenceDate).Days / 7.0)) + 1;
+                int weekID = ((int)Math.Floor((tournament.Decks.First().Date.Value - metaWeekReferenceDate).Days / 7.0)) + 1;
 
                 for (int i = 0; i < tournament.Decks.Length; i++)
                 {
-                    var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => i.CardName).ToArray(), tournament.Decks[i].Sideboard.Select(i => i.CardName).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
+                    var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => i.Card).ToArray(), tournament.Decks[i].Sideboard.Select(i => i.Card).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
 
                     string colorID = detectionResult.Color.ToString();
                     string companionID = detectionResult.Companion == null ? "" : detectionResult.Companion.Value.ToString();
@@ -52,10 +52,10 @@ namespace MTGOArchetypeParser.Reports.App
 
                     records.Add(new DataRecord()
                     {
-                        Tournament = tournament.Tournament.Name,
+                        Tournament = tournament.Information.Name,
                         Meta = metaID,
                         Week = weekID,
-                        Date = tournament.Decks.First().Date,
+                        Date = tournament.Decks.First().Date.Value,
                         Player = tournament.Decks[i].Player,
                         AnchorUri = tournament.Decks[i].AnchorUri,
                         Archetype = archetypeID,
@@ -67,7 +67,7 @@ namespace MTGOArchetypeParser.Reports.App
                 }
             }
 
-            return records.ToArray();
+            return records.OrderBy(r => r.Date).ToArray();
         }
 
         // Note: I'm considering the meta weeks as starting on monday

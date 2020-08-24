@@ -11,7 +11,7 @@ namespace MTGOArchetypeParser.Data
 {
     public static class TournamentLoader
     {
-        public static MTGOTournament GetTournamentByName(string cacheFolder, string eventName)
+        public static Tournament GetTournamentByName(string cacheFolder, string eventName)
         {
             DateTime date = ExtractDateFromName(eventName);
 
@@ -20,16 +20,14 @@ namespace MTGOArchetypeParser.Data
             if (!Directory.Exists(folder)) throw new Exception("Event not found");
             if (!File.Exists(file)) throw new Exception("Event not found");
 
-            MTGOTournament item = JsonConvert.DeserializeObject<MTGOTournament>(File.ReadAllText(file));
-            item.File = Path.GetFileName(file);
-            return item;
+            return GetTournamentFromFile(file);
         }
 
-        public static MTGOTournament[] GetTournamentsByDate(string cacheFolder, DateTime startDate, Func<string, bool> filter = null)
+        public static Tournament[] GetTournamentsByDate(string cacheFolder, DateTime startDate, Func<string, bool> filter = null)
         {
             if (filter == null) filter = n => true;
 
-            List<MTGOTournament> result = new List<MTGOTournament>();
+            List<Tournament> result = new List<Tournament>();
 
             for (DateTime date = startDate; date < DateTime.UtcNow; date = date.AddDays(1))
             {
@@ -38,14 +36,26 @@ namespace MTGOArchetypeParser.Data
 
                 foreach (string file in Directory.GetFiles(folder, "*.json"))
                 {
-                    MTGOTournament item = JsonConvert.DeserializeObject<MTGOTournament>(File.ReadAllText(file));
-                    item.File = Path.GetFileName(file);
-                    if (filter(item.Tournament.Name)) result.Add(item);
+                    Tournament item = GetTournamentFromFile(file);
+                    if (filter(item.Information.Name)) result.Add(item);
                 }
             }
 
             return result.ToArray();
         }
+        private static Tournament GetTournamentFromFile(string file)
+        {
+            Tournament item = JsonConvert.DeserializeObject<Tournament>(File.ReadAllText(file));
+            item.File = Path.GetFileName(file);
+
+            foreach(Deck deck in item.Decks)
+            {
+                if (deck.Date == null) deck.Date = item.Information.Date;
+            }
+
+            return item;
+        }
+
 
         private static DateTime ExtractDateFromName(string eventName)
         {
@@ -54,5 +64,6 @@ namespace MTGOArchetypeParser.Data
 
             return DateTime.Parse(eventDate, CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal).ToUniversalTime();
         }
+
     }
 }

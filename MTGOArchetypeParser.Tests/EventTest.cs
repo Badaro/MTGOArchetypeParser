@@ -15,9 +15,9 @@ namespace MTGOArchetypeParser.Tests
     public class EventTest
     {
         string cacheFolder = new DirectoryInfo(@"..\..\..\..\MTGODecklistCache\Tournaments").FullName;
-        static Dictionary<string, MTGOTournament> tournamentCache = new Dictionary<string, MTGOTournament>();
+        static Dictionary<string, Tournament> tournamentCache = new Dictionary<string, Tournament>();
 
-        protected MTGODeck GetDeck(string tournamentName, int deckIndex)
+        protected Deck GetDeck(string tournamentName, int deckIndex)
         {
             if (!tournamentCache.ContainsKey(tournamentName))
             {
@@ -26,9 +26,9 @@ namespace MTGOArchetypeParser.Tests
             return tournamentCache[tournamentName].Decks[deckIndex];
         }
 
-        protected void Test(MTGODeck deck, ArchetypeMeta meta, ArchetypeColor expectedColor, Type expectedArchetype, Type expectedVariant = null, ArchetypeCompanion? expectedCompanion = null)
+        protected void Test(Deck deck, ArchetypeMeta meta, ArchetypeColor expectedColor, Type expectedArchetype, Type expectedVariant = null, ArchetypeCompanion? expectedCompanion = null)
         {
-            var result = ArchetypeAnalyzer.Detect(deck.Mainboard.Select(c => c.CardName).ToArray(), deck.Sideboard.Select(c => c.CardName).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
+            var result = ArchetypeAnalyzer.Detect(deck.Mainboard.Select(c => c.Card).ToArray(), deck.Sideboard.Select(c => c.Card).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
 
             result.Matches.Should().HaveCount(1);
 

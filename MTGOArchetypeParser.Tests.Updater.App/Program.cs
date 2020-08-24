@@ -28,11 +28,11 @@ namespace MTGOArchetypeParser.Tests.Updater
 
                 ArchetypeMeta[] metas = Metas.Modern.Loader.GetMetas();
 
-                MTGOTournament[] tournaments = TournamentLoader.GetTournamentsByDate(cacheFolder, metas.First().StartDate.AddDays(1), n => n.Contains("Modern"));
+                Tournament[] tournaments = TournamentLoader.GetTournamentsByDate(cacheFolder, metas.First().StartDate.AddDays(1), n => n.Contains("Modern"));
 
-                foreach (MTGOTournament tournament in tournaments)
+                foreach (Tournament tournament in tournaments)
                 {
-                    Console.WriteLine($"Generating Sample Data for {tournament.Tournament.Uri}");
+                    Console.WriteLine($"Generating Sample Data for {tournament.Information.Uri}");
 
                     ArchetypeMeta tournamentMeta = metas.Last(m => m.StartDate <= tournament.Decks.First().Date);
                     TournamentKeys tournamentKeys = KeyGenerator.GenerateTournamentKeys(tournamentMeta, tournament);
@@ -57,7 +57,7 @@ namespace MTGOArchetypeParser.Tests.Updater
 
                     for (int i = 0; i < tournament.Decks.Length; i++)
                     {
-                        var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => i.CardName).ToArray(), tournament.Decks[i].Sideboard.Select(i => i.CardName).ToArray(), Archetypes.Modern.Loader.GetArchetypes());
+                        var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => i.Card).ToArray(), tournament.Decks[i].Sideboard.Select(i => i.Card).ToArray(), Archetypes.Modern.Loader.GetArchetypes());
                         DeckKeys deckKeys = KeyGenerator.GenerateDeckKeys(i, tournament.Decks[i], detectionResult);
 
                         string tournamentDeckTestContents = CodeGenerator.GenerateTest(tournamentKeys, deckKeys);

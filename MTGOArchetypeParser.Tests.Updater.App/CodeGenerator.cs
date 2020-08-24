@@ -10,13 +10,13 @@ namespace MTGOArchetypeParser.Tests.Updater
 {
     public static class CodeGenerator
     {
-        public static string GenerateSummary(MTGOTournament tournament)
+        public static string GenerateSummary(Tournament tournament)
         {
             StringBuilder summary = new StringBuilder();
 
             for (int i = 0; i < tournament.Decks.Length; i++)
             {
-                var result = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => i.CardName).ToArray(), tournament.Decks[i].Sideboard.Select(i => i.CardName).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
+                var result = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => i.Card).ToArray(), tournament.Decks[i].Sideboard.Select(i => i.Card).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
 
                 int position = i + 1;
                 string player = tournament.Decks[i].Player;
