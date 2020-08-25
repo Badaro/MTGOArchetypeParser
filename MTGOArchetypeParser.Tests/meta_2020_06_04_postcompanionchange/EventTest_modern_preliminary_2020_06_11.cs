@@ -22,7 +22,7 @@ using System.Text;
 #11 PRGJJAR: Dredge (BRG)
 #12 Toastxp: Uroza (URG)
 #13 EdB: AmuletTitan (UBRG)
-#14 Doni_Dominaria: RedDeckWins (R, Jegantha)
+#14 Doni_Dominaria: MonoRedProwess (R, Jegantha)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
@@ -199,7 +199,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck14_DoniDominaria_RedDeckWins_R_Jegantha()
+        public void Deck14_DoniDominaria_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-11",13),

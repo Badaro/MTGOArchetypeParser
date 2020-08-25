@@ -58,7 +58,7 @@ using System.Text;
 #47 hugofreitas1: GiftsStorm (UR)
 #48 KYUNphago: MonoRedProwess (R)
 #49 BubbleDJ10: Bogles (WG, Lurrus)
-#50 MHayashi: RedDeckWins (R, Jegantha)
+#50 MHayashi: MonoRedProwess (R, Jegantha)
 #51 CNewman: JundMidrange (BRG)
 #52 Pendragon15038: Merfolk (U)
 #53 Pirika: IzzetLivingEnd (UR)
@@ -706,7 +706,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck50_MHayashi_RedDeckWins_R_Jegantha()
+        public void Deck50_MHayashi_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-07-17",49),

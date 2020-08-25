@@ -20,7 +20,7 @@ using System.Text;
 #09 Skrown: Dredge (BRG)
 #10 iL_Tedesco: JundShadow (BRG)
 #11 Diatomic: BantControl (WUG)
-#12 gazmon48: RedDeckWins (R, Jegantha)
+#12 gazmon48: MonoRedProwess (R, Jegantha)
 #13 zecarlonxo: MonoRedProwess (R)
 #14 Ryan100495: Dredge (BRG)
 #15 WeareVenom: BantControl (WUG)
@@ -191,7 +191,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck12_gazmon48_RedDeckWins_R_Jegantha()
+        public void Deck12_gazmon48_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-06",11),

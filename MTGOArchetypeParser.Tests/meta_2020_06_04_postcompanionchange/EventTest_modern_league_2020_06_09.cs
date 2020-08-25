@@ -41,7 +41,7 @@ using System.Text;
 #30 Nagato_Boran: JundMidrange (BRG)
 #31 XOPYC: MonoWhiteTaxes (W, Yorion)
 #32 Traft: Infect (UG)
-#33 MHayashi: RedDeckWins (R, Jegantha)
+#33 MHayashi: MonoRedProwess (R, Jegantha)
 #34 hoveydw: Delver (UR)
 #35 MasterA: Goblins (BRG)
 #36 MrRaeb: Uroza (UBG, Yorion)
@@ -496,7 +496,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck33_MHayashi_RedDeckWins_R_Jegantha()
+        public void Deck33_MHayashi_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-06-09",32),

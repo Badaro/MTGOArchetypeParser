@@ -36,7 +36,7 @@ using System.Text;
 #25 crazybaloth: MonoWhiteEldraziTaxes (W)
 #26 MasterA: SnoopGoblins (BRG)
 #27 Vonducky: BorosProwess (WR)
-#28 azatoyellow: RedDeckWins (R, Jegantha)
+#28 azatoyellow: MonoRedProwess (R, Jegantha)
 #29 bobjackson: KGCTron (G)
 #30 EricSlashGreg: AdNauseam (WUB)
 #31 Mikebrav: Humans (WUBRG, Yorion)
@@ -399,7 +399,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck28_azatoyellow_RedDeckWins_R_Jegantha()
+        public void Deck28_azatoyellow_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-19",27),

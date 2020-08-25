@@ -63,7 +63,7 @@ using System.Text;
 #52 122pablo: JeskaiAscendancy (WURG, Jegantha)
 #53 maple049: HardenedScales (WG, Lurrus)
 #54 drRobotGranata: TitanShift (RG)
-#55 MHayashi: RedDeckWins (R, Jegantha)
+#55 MHayashi: MonoRedProwess (R, Jegantha)
 #56 erose199423: ThopterUrza (WUR)
 #57 daifuku: TemurMidrange (URG)
 #58 abijhavs: MonoRedProwess (R)
@@ -777,7 +777,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck55_MHayashi_RedDeckWins_R_Jegantha()
+        public void Deck55_MHayashi_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-06-16",54),

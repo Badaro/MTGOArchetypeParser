@@ -67,7 +67,7 @@ using System.Text;
 #56 TBagTom: UBRGControl (UBRG)
 #57 RealJoy: JundShadow (BRG)
 #58 albert62: JundMidrange (BRG)
-#59 Joao_Andrade: RedDeckWins (R, Jegantha)
+#59 Joao_Andrade: MonoRedProwess (R, Jegantha)
 #60 SeventhProphet: Uroza (URG)
 #61 TuggaNaxos: TakingTurns (URG)
 #62 victgobra10: Burn (WR)
@@ -837,7 +837,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck59_JoaoAndrade_RedDeckWins_R_Jegantha()
+        public void Deck59_JoaoAndrade_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-07-07",58),

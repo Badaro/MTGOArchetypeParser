@@ -18,7 +18,7 @@ using System.Text;
 #07 Theo_Jung: RakdosProwess (BR, Lurrus)
 #08 MTG-Maestro: GruulMidrange (RG)
 #09 trader08111: MarduProwess (WBR, Lurrus)
-#10 PeanutBrittle: RedDeckWins (R, Jegantha)
+#10 PeanutBrittle: MonoRedProwess (R, Jegantha)
 #11 CHILLEDADED: KGCTron (G)
 #12 TombSimon: TitanShift (RG)
 #13 ImmanuelKantrolGod: BantControl (WUG)
@@ -152,7 +152,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_PeanutBrittle_RedDeckWins_R_Jegantha()
+        public void Deck10_PeanutBrittle_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-21",9),

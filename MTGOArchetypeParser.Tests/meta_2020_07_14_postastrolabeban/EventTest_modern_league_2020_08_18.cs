@@ -75,7 +75,7 @@ using System.Text;
 #64 SunnyOsRego: RakdosMidrange (BR)
 #65 musasabi: KGCAmuletTitan (UBRG)
 #66 Widok: AdNauseam (WUB)
-#67 MHayashi: RedDeckWins (R, Jegantha)
+#67 MHayashi: MonoRedProwess (R, Jegantha)
 #68 Purple_Rain: Scapeshift (URG)
 #69 Jidden: ThopterUrza (WU)
 #70 tcgshin: TitanShift (RG)
@@ -947,7 +947,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck67_MHayashi_RedDeckWins_R_Jegantha()
+        public void Deck67_MHayashi_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-08-18",66),

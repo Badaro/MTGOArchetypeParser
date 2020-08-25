@@ -22,7 +22,7 @@ using System.Text;
 #11 hodortimebaby: KGCTron (G)
 #12 ConnorM426: RakdosProwess (BR, Lurrus)
 #13 CHILLEDADED: Burn (WR)
-#14 PeanutBrittle: RedDeckWins (R, Jegantha)
+#14 PeanutBrittle: MonoRedProwess (R, Jegantha)
 #15 ht991122: TemurReclamation (URG)
 #16 Xwhale: BantControl (WUG)
 #17 A22en: SnoopGoblins (BR)
@@ -206,7 +206,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_PeanutBrittle_RedDeckWins_R_Jegantha()
+        public void Deck14_PeanutBrittle_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",13),

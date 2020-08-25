@@ -15,7 +15,7 @@ using System.Text;
 #04 scipios: Crabvine (UBG)
 #05 AlphaBlade: ETron (C)
 #06 Jaberwocki: JundMidrange (BRG)
-#07 shiven djinn: RedDeckWins (R, Obosh)
+#07 shiven djinn: MonoRedProwess (R, Obosh)
 #08 Hetteshkane: Burn (WR)
 #09 ltbeast: Scapeshift (URG)
 #10 Nextep: SultaiControl (UBG)
@@ -163,7 +163,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_shivendjinn_RedDeckWins_R_Obosh()
+        public void Deck07_shivendjinn_MonoRedProwess_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-08-11",6),

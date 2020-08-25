@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 WingedHussar: Neobrand (UG, Yorion)
-#02 MHayashi: RedDeckWins (R, Jegantha)
+#02 MHayashi: MonoRedProwess (R, Jegantha)
 #03 cypriankrzysztof: Slivers (WUBRG)
 #04 Cherryxman: Scapeshift (URG)
 #05 MrRaeb: IzzetProwess (UR)
@@ -97,7 +97,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_MHayashi_RedDeckWins_R_Jegantha()
+        public void Deck02_MHayashi_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-07-21",1),

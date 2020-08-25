@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 ary31415: OrzhovEldraziTaxes (WB)
 #02 TheCodyHope: Elementals (WUBRG)
-#03 MHayashi: RedDeckWins (R, Jegantha)
+#03 MHayashi: MonoRedProwess (R, Jegantha)
 #04 Czechito: IzzetControl (UR)
 #05 ljex: IzzetProwess (UR)
 #06 Trellon: OrreryTron (UG)
@@ -99,7 +99,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_MHayashi_RedDeckWins_R_Jegantha()
+        public void Deck03_MHayashi_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",2),

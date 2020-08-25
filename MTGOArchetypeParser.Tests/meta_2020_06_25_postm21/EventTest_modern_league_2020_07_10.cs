@@ -34,7 +34,7 @@ using System.Text;
 #23 Pendragon15038: Merfolk (U)
 #24 babamm: IzzetRestoreBalance (URG)
 #25 Hiro_Hsiang: IzzetProwess (UR)
-#26 Curveiganhei: RedDeckWins (R, Jegantha)
+#26 Curveiganhei: MonoRedProwess (R, Jegantha)
 #27 KieranT: JundMidrange (BRG)
 #28 yPrincipe: BantControl (WUG, Yorion)
 #29 SvenSveeterSven: IzzetControl (UR)
@@ -383,7 +383,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck26_Curveiganhei_RedDeckWins_R_Jegantha()
+        public void Deck26_Curveiganhei_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-07-10",25),

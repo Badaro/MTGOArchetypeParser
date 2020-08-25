@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 EddDeedoo: OrzhovMidrange (WB)
 #02 nahuel10: GruulMidrange (RG)
-#03 ZYX_Jerry: RedDeckWins (R, Obosh)
+#03 ZYX_Jerry: MonoRedProwess (R, Obosh)
 #04 SpoonDonkey: IzzetControl (UR)
 #05 DoctorQueller: Spirits (WU)
 #06 PhantasmalBear: AzoriusMidrange (WU)
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_ZYXJerry_RedDeckWins_R_Obosh()
+        public void Deck03_ZYXJerry_MonoRedProwess_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-08-14",2),

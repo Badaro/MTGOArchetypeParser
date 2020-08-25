@@ -16,7 +16,7 @@ using System.Text;
 #05 JMoney8771: Infect (UG)
 #06 TennTyou: BringToNiv (WUBRG)
 #07 affen_burn23: TemurControl (URG)
-#08 MHayashi: RedDeckWins (R, Jegantha)
+#08 MHayashi: MonoRedProwess (R, Jegantha)
 #09 TheAznYoshi: GruulMidrange (RG)
 #10 GHash77: SultaiControl (UBG)
 #11 yutya: TakingTurns (WUG, Yorion)
@@ -159,7 +159,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck08_MHayashi_RedDeckWins_R_Jegantha()
+        public void Deck08_MHayashi_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-06-30",7),

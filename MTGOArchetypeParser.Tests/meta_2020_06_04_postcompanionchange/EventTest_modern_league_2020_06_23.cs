@@ -29,7 +29,7 @@ using System.Text;
 #18 YBLime: ThopterUrza (WUBR)
 #19 aspiringspike: GrixisLurrus (UBR)
 #20 shine0905: GyrudaStompy (BRG, Gyruda)
-#21 MHayashi: RedDeckWins (WR, Jegantha)
+#21 MHayashi: BorosProwess (WR, Jegantha)
 #22 Granham: JundMidrange (BRG)
 #23 abombdiggity: Slivers (WUBRG)
 #24 milikin: GruulMidrange (RG)
@@ -329,7 +329,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck21_MHayashi_RedDeckWins_WR_Jegantha()
+        public void Deck21_MHayashi_BorosProwess_WR_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",20),

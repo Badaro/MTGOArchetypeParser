@@ -20,7 +20,7 @@ using System.Text;
 #09 Tarrasque1: Elementals (WUBRG)
 #10 didoguidotti1: Scapeshift (URG, Yorion)
 #11 daniventrue: GrixisShadow (UBR)
-#12 MHayashi: RedDeckWins (R, Jegantha)
+#12 MHayashi: MonoRedProwess (R, Jegantha)
 #13 kogamo: SnoopGoblins (BR)
 #14 ScreenwriterNY: AmuletTitan (WUBRG)
 #15 Maratiam: ETron (C)
@@ -211,7 +211,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck12_MHayashi_RedDeckWins_R_Jegantha()
+        public void Deck12_MHayashi_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-07-03",11),

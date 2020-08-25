@@ -62,7 +62,7 @@ using System.Text;
 #51 MrJayngles: RedPrison (RG)
 #52 Nis2a: MonoWhiteEldraziTaxes (W)
 #53 TheDogFish: Merfolk (WU, Lurrus)
-#54 shiven djinn: RedDeckWins (R, Obosh)
+#54 shiven djinn: MonoRedProwess (R, Obosh)
 #55 AngledLuffa: Lantern (UBG)
 #56 AbelMolto: Burn (WRG)
 #57 cntrlfreak: UBRGShadow (UBRG)
@@ -767,7 +767,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck54_shivendjinn_RedDeckWins_R_Obosh()
+        public void Deck54_shivendjinn_MonoRedProwess_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-08-07",53),

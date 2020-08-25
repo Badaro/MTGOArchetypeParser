@@ -16,7 +16,7 @@ using System.Text;
 #05 carlosalmeida: Humans (WUBRG)
 #06 GHash77: BantMidrange (WUG)
 #07 Ladon: SnowSaheeli (WURG)
-#08 Beicodegeia: RedDeckWins (R, Jegantha)
+#08 Beicodegeia: MonoRedProwess (R, Jegantha)
 #09 aspiringspike: JundMidrange (BRG)
 #10 TurmolL: IzzetControl (UR)
 #11 Dylan_MTG: IzzetRestoreBalance (URG)
@@ -169,7 +169,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_Beicodegeia_RedDeckWins_R_Jegantha()
+        public void Deck08_Beicodegeia_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-07-24",7),

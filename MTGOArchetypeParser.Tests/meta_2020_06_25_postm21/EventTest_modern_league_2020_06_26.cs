@@ -13,7 +13,7 @@ using System.Text;
 #02 Ennuixd: MonoRedProwess (R)
 #03 Lucabireskusku: Inverter (UB)
 #04 Audemin: Humans (WUBRG)
-#05 koji1130: RedDeckWins (WR, Jegantha)
+#05 koji1130: BorosProwess (WR, Jegantha)
 #06 StreexIT: Spirits (WU)
 #07 rojanosa: OrzhovTokens (WB)
 #08 haubidtran: Uroza (UBG, Yorion)
@@ -104,7 +104,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck05_koji1130_RedDeckWins_WR_Jegantha()
+        public void Deck05_koji1130_BorosProwess_WR_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",4),
