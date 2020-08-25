@@ -636,7 +636,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-league-2020-07-21",42),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(AzoriousBlink),
+                typeof(GenericBlink),
                 null,
                 null
             );
@@ -649,7 +649,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-league-2020-07-21",43),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(BantBlink),
+                typeof(GenericBlink),
                 null,
                 null
             );

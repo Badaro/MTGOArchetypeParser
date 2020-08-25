@@ -620,7 +620,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-league-2020-08-14",42),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBG,
-                typeof(BantBlink),
+                typeof(GenericBlink),
                 null,
                 null
             );

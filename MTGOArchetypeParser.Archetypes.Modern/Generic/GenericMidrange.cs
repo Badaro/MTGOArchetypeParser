@@ -25,7 +25,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 "Dark Confidant",
                 "Liliana of the Veil",
                 "Stoneforge Mystic",
-                "Restoration Angel",
+                "Brazen Borrower",
                 "Spell Queller"
             };
         }

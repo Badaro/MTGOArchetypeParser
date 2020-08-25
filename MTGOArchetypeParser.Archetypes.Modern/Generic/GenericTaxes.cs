@@ -13,7 +13,6 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             {
                 "Giver of Runes",
                 "Brimaz, King of Oreskos",
-                "Restoration Angel",
                 "Thalia, Guardian of Thraben",
                 "Aether Vial",
                 "Leonin Arbiter",

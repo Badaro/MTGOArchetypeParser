@@ -515,8 +515,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-league-2020-08-21",34),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUR,
-                typeof(AzoriousBlink),
-                typeof(JeskaiBlink),
+                typeof(GenericControl),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
