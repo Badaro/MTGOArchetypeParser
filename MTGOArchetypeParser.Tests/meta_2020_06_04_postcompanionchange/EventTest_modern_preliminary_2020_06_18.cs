@@ -15,10 +15,10 @@ using System.Text;
 #04 Hiru: RakdosMidrange (BR)
 #05 PTarts2win: Dredge (BRG)
 #06 flatnose: Merfolk (UG)
-#07 ilsecco14: Prowess (R)
+#07 ilsecco14: MonoRedProwess (R)
 #08 wambocombo2020: Uroza (UBG, Yorion)
 #09 MadCowChicken: SelesnyaEldrazi (WG, Jegantha)
-#10 Stompy45: Ponza (RG)
+#10 Stompy45: GruulMidrange (RG)
 #11 _LSN_: Burn (WR)
 #12 Traft: AdNauseam (WUB)
 #13 WebZone: Humans (WUBRG)
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck07_ilsecco14_Prowess_R()
+        public void Deck07_ilsecco14_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-18",6),
@@ -146,7 +146,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck10_Stompy45_Ponza_RG()
+        public void Deck10_Stompy45_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-18",9),

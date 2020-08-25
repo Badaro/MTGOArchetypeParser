@@ -10,18 +10,18 @@ using System.Text;
 
 /*
 #01 Mateusf34: ETron (C)
-#02 Shazzam: SnowBlade (WUG)
-#03 Shorak123: SnowReclamation (UBG)
+#02 Shazzam: BantControl (WUG)
+#03 Shorak123: SultaiReclamation (UBG)
 #04 mariogomes097: GrixisShadow (UBR)
 #05 SebastianStueckl: Dredge (BRG)
-#06 hoveydw: TraverseShadow (BRG)
-#07 gazmon48: Ponza (RG)
+#06 hoveydw: JundShadow (BRG)
+#07 gazmon48: GruulMidrange (RG)
 #08 Magicofplayer1: Dredge (WBRG)
-#09 CarlSwaggin: Ponza (RG)
+#09 CarlSwaggin: GruulMidrange (RG)
 #10 Numena_Lowallyn: Scapeshift (URG)
 #11 Lord_of_Puntlantis: IzzetRestoreBalance (URG)
 #12 Kuhb: GiftsStorm (UR)
-#13 Edel: Jund (BRG)
+#13 Edel: JundMidrange (BRG)
 #14 lsv: AzoriusControl (WU)
 #15 andrw1232: RakdosProwess (BR, Lurrus)
 #16 TombSimon: Crabvine (UBG)
@@ -32,14 +32,14 @@ using System.Text;
 #21 MaxMagicer: Humans (WUBRG)
 #22 Janh: SaheeliCombo (WUR)
 #23 Moniz0801: AmuletTitan (WURG)
-#24 chococookie: Miracles (WU)
-#25 Oscar_Franco: Jund (BRG)
+#24 chococookie: AzoriusControl (WU)
+#25 Oscar_Franco: JundMidrange (BRG)
 #26 TheAfterman: Humans (WUBRG)
 #27 bbq42069dude: IzzetProwess (UR)
 #28 CrusherBotBG: HammerTime (W)
-#29 Jok87: IzzetBreach (UR)
+#29 Jok87: IzzetControl (UR)
 #30 toondoslav: Dredge (WBRG)
-#31 indianpancake: AzoriusStoneblade (WU)
+#31 indianpancake: AzoriusControl (WU)
 #32 sultai4lyfe: DimirControl (UB)
 */
 
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_Shazzam_SnowControl_SnowBlade_WUG()
+        public void Deck02_Shazzam_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",1),
@@ -74,7 +74,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_Shorak123_SnowControl_SnowReclamation_UBG()
+        public void Deck03_Shorak123_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",2),
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_mariogomes097_DeathsShadow_GrixisShadow_UBR()
+        public void Deck04_mariogomes097_GrixisShadow_UBR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",3),
@@ -113,7 +113,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_hoveydw_DeathsShadow_TraverseShadow_BRG()
+        public void Deck06_hoveydw_JundShadow_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",5),
@@ -126,7 +126,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_gazmon48_Ponza_RG()
+        public void Deck07_gazmon48_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",6),
@@ -152,7 +152,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_CarlSwaggin_Ponza_RG()
+        public void Deck09_CarlSwaggin_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",8),
@@ -178,7 +178,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_LordofPuntlantis_IzzetFreeSpells_IzzetRestoreBalance_URG()
+        public void Deck11_LordofPuntlantis_IzzetRestoreBalance_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",10),
@@ -204,7 +204,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_Edel_Rock_Jund_BRG()
+        public void Deck13_Edel_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",12),
@@ -230,7 +230,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_andrw1232_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck15_andrw1232_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",14),
@@ -256,7 +256,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_exoticherman_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck17_exoticherman_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",16),
@@ -282,7 +282,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck19_Jokersrwild_Goblins_SnoopGoblins_BR()
+        public void Deck19_Jokersrwild_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",18),
@@ -334,7 +334,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck23_Moniz0801_PrimevalTitan_AmuletTitan_WURG()
+        public void Deck23_Moniz0801_AmuletTitan_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",22),
@@ -347,7 +347,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck24_chococookie_AzoriusControl_Miracles_WU()
+        public void Deck24_chococookie_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",23),
@@ -360,7 +360,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck25_OscarFranco_Rock_Jund_BRG()
+        public void Deck25_OscarFranco_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",24),
@@ -386,7 +386,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck27_bbq42069dude_Prowess_IzzetProwess_UR()
+        public void Deck27_bbq42069dude_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",26),
@@ -412,7 +412,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck29_Jok87_IzzetControl_IzzetBreach_UR()
+        public void Deck29_Jok87_IzzetControl_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",28),
@@ -438,7 +438,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck31_indianpancake_AzoriusControl_AzoriusStoneblade_WU()
+        public void Deck31_indianpancake_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",30),

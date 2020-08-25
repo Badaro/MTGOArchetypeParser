@@ -10,12 +10,12 @@ using System.Text;
 
 /*
 #01 lilianaofthevess: SongStorm (URG, Jegantha)
-#02 ZYURYO: SnowControl (WUG)
-#03 ManuelJacob: SultaiSnow (UBG)
+#02 ZYURYO: BantControl (WUG)
+#03 ManuelJacob: SultaiControl (UBG)
 #04 _INF_: GiftsStorm (UR)
 #05 bnlunt: UTron (U)
 #06 nielsen333: PrimevalTitan (BRG)
-#07 Laessoe: Ponza (RG)
+#07 Laessoe: GruulMidrange (RG)
 #08 siomomi: KGCTron (G)
 #09 triosk: SnoopGoblins (BR)
 #10 cjucjujp: BushwhackerZoo (RG)
@@ -39,7 +39,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck02_ZYURYO_SnowControl_WUG()
+        public void Deck02_ZYURYO_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-04",1),
@@ -52,7 +52,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck03_ManuelJacob_SnowControl_SultaiSnow_UBG()
+        public void Deck03_ManuelJacob_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-04",2),
@@ -104,7 +104,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_Laessoe_Ponza_RG()
+        public void Deck07_Laessoe_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-04",6),
@@ -117,7 +117,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck08_siomomi_GTron_KGCTron_G()
+        public void Deck08_siomomi_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-04",7),
@@ -130,7 +130,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck09_triosk_Goblins_SnoopGoblins_BR()
+        public void Deck09_triosk_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-04",8),

@@ -10,13 +10,13 @@ using System.Text;
 
 /*
 #01 mariogomes097: GrixisShadow (UBR)
-#02 WhiTe TsaR: SultaiSnow (UBG)
+#02 WhiTe TsaR: SultaiControl (UBG)
 #03 _INF_: GiftsStorm (UR)
-#04 Janh: SnowReclamation (URG)
+#04 Janh: TemurReclamation (URG)
 #05 bubbsei: Dredge (BRG)
-#06 ZYURYO: Jund (BRG)
-#07 2k4mmorton: Prowess (R)
-#08 skeptimist: SnowControl (WUG)
+#06 ZYURYO: JundMidrange (BRG)
+#07 2k4mmorton: MonoRedProwess (R)
+#08 skeptimist: BantControl (WUG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
@@ -24,7 +24,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
     public class EventTest_modern_preliminary_2020_06_24 : EventTest
     {
         [Test]
-        public void Deck01_mariogomes097_DeathsShadow_GrixisShadow_UBR()
+        public void Deck01_mariogomes097_GrixisShadow_UBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-24",0),
@@ -37,7 +37,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck02_WhiTeTsaR_SnowControl_SultaiSnow_UBG()
+        public void Deck02_WhiTeTsaR_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-24",1),
@@ -63,7 +63,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck04_Janh_SnowControl_SnowReclamation_URG()
+        public void Deck04_Janh_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-24",3),
@@ -89,7 +89,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck06_ZYURYO_Rock_Jund_BRG()
+        public void Deck06_ZYURYO_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-24",5),
@@ -102,7 +102,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck07_2k4mmorton_Prowess_R()
+        public void Deck07_2k4mmorton_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-24",6),
@@ -115,7 +115,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck08_skeptimist_SnowControl_WUG()
+        public void Deck08_skeptimist_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-24",7),

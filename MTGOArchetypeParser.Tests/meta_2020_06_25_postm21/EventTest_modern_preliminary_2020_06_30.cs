@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 pbarrrgh: TemurSnow (URG)
-#02 npercario: SnowControl (WUG)
+#01 pbarrrgh: TemurControl (URG)
+#02 npercario: BantControl (WUG)
 #03 staples87: ETron (C)
 #04 Laplasjan: Devoted (WG, Lurrus)
-#05 ecobaronen: SnowControl (WUG)
-#06 Larry11: Ponza (RG)
-#07 billsive: SnowReclamation (UBG)
+#05 ecobaronen: BantControl (WUG)
+#06 Larry11: GruulMidrange (RG)
+#07 billsive: SultaiReclamation (UBG)
 #08 EdB: SnoopGoblins (BR)
-#09 Voidpaw: Jund (BRG)
+#09 Voidpaw: JundMidrange (BRG)
 #10 RicardoMSLan: ETron (C)
 #11 Niallghas: SnoopGoblins (BR)
 #12 Boland: Dredge (BRG)
@@ -31,7 +31,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_preliminary_2020_06_30 : EventTest
     {
         [Test]
-        public void Deck01_pbarrrgh_SnowControl_TemurSnow_URG()
+        public void Deck01_pbarrrgh_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",0),
@@ -44,7 +44,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck02_npercario_SnowControl_WUG()
+        public void Deck02_npercario_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",1),
@@ -83,7 +83,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck05_ecobaronen_SnowControl_WUG()
+        public void Deck05_ecobaronen_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",4),
@@ -96,7 +96,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck06_Larry11_Ponza_RG()
+        public void Deck06_Larry11_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",5),
@@ -109,7 +109,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_billsive_SnowControl_SnowReclamation_UBG()
+        public void Deck07_billsive_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",6),
@@ -122,7 +122,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck08_EdB_Goblins_SnoopGoblins_BR()
+        public void Deck08_EdB_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",7),
@@ -135,7 +135,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck09_Voidpaw_Rock_Jund_BRG()
+        public void Deck09_Voidpaw_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",8),
@@ -161,7 +161,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck11_Niallghas_Goblins_SnoopGoblins_BR()
+        public void Deck11_Niallghas_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",10),
@@ -187,7 +187,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck13_HaunterHunter_Goblins_SnoopGoblins_BR()
+        public void Deck13_HaunterHunter_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",12),
@@ -200,7 +200,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck14_mariogomes097_DeathsShadow_GrixisShadow_UBR()
+        public void Deck14_mariogomes097_GrixisShadow_UBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",13),
@@ -213,7 +213,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck15_FEARnLOATHing_Prowess_IzzetProwess_UR()
+        public void Deck15_FEARnLOATHing_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",14),

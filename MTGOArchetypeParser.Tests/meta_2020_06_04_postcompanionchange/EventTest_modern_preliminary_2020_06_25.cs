@@ -14,14 +14,14 @@ using System.Text;
 #03 FrankEG_MTG: Humans (WUBRG)
 #04 fpawlusz: AmuletTitan (WUBRG)
 #05 Laplasjan: Devoted (WG, Lurrus)
-#06 BSK_hercules: Ponza (RG)
+#06 BSK_hercules: GruulMidrange (RG)
 #07 mariogomes097: GrixisShadow (UBR)
 #08 TubbyBatman: NarsetsUndoing (UB)
 #09 Boland: Dredge (BRG)
-#10 MZBlazer: SultaiSnow (UBG)
+#10 MZBlazer: SultaiControl (UBG)
 #11 DreamsOfAshiok: ETron (C)
 #12 Mcleskey: Burn (WR)
-#13 killersuv: SnowReclamation (UBG)
+#13 killersuv: SultaiReclamation (UBG)
 #14 Papelucho10: Infect (UG)
 #15 tkphi: Burn (WR)
 #16 eggybenny: ETron (C)
@@ -32,7 +32,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
     public class EventTest_modern_preliminary_2020_06_25 : EventTest
     {
         [Test]
-        public void Deck01_Icteridae_Devoted_HeliodDevoted_WUG()
+        public void Deck01_Icteridae_HeliodDevoted_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-25",0),
@@ -45,7 +45,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck02_rastaf_GTron_KGCTron_G()
+        public void Deck02_rastaf_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-25",1),
@@ -71,7 +71,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck04_fpawlusz_PrimevalTitan_AmuletTitan_WUBRG()
+        public void Deck04_fpawlusz_AmuletTitan_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-25",3),
@@ -97,7 +97,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck06_BSKhercules_Ponza_RG()
+        public void Deck06_BSKhercules_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-25",5),
@@ -110,7 +110,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck07_mariogomes097_DeathsShadow_GrixisShadow_UBR()
+        public void Deck07_mariogomes097_GrixisShadow_UBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-25",6),
@@ -149,7 +149,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck10_MZBlazer_SnowControl_SultaiSnow_UBG()
+        public void Deck10_MZBlazer_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-25",9),
@@ -188,7 +188,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck13_killersuv_SnowControl_SnowReclamation_UBG()
+        public void Deck13_killersuv_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-25",12),

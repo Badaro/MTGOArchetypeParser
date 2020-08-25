@@ -9,20 +9,20 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Oderus Urungus: Ponza (RG)
+#01 Oderus Urungus: GruulMidrange (RG)
 #02 PRGJJAR: Dredge (BRG)
 #03 MZBlazer: RakdosProwess (BR, Lurrus)
 #04 exoticherman: RakdosProwess (BR, Lurrus)
 #05 McWinSauce: BantControl (WUG)
 #06 karatedom: Infect (UG)
-#07 Costola91: TraverseShadow (UBRG)
+#07 Costola91: UBRGShadow (UBRG)
 #08 sicsmoo: GTron (G)
 #09 Nammersquats: IzzetProwess (UR)
-#10 staffmat1992: Ponza (RG)
+#10 staffmat1992: GruulMidrange (RG)
 #11 pootisgodsamongus: Crabvine (UBG)
 #12 Ryan100495: Dredge (WBRG)
-#13 komattaman: Ponza (RG)
-#14 ConnorM426: WildernessReclamation (UG)
+#13 komattaman: GruulMidrange (RG)
+#14 ConnorM426: SimicReclamation (UG)
 #15 1plus1equals3: KGCTron (G)
 */
 
@@ -31,7 +31,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_08_13 : EventTest
     {
         [Test]
-        public void Deck01_OderusUrungus_Ponza_RG()
+        public void Deck01_OderusUrungus_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-13",0),
@@ -57,7 +57,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_MZBlazer_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck03_MZBlazer_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-13",2),
@@ -70,7 +70,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_exoticherman_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck04_exoticherman_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-13",3),
@@ -109,7 +109,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_Costola91_DeathsShadow_TraverseShadow_UBRG()
+        public void Deck07_Costola91_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-13",6),
@@ -135,7 +135,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_Nammersquats_Prowess_IzzetProwess_UR()
+        public void Deck09_Nammersquats_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-13",8),
@@ -148,7 +148,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_staffmat1992_Ponza_RG()
+        public void Deck10_staffmat1992_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-13",9),
@@ -187,7 +187,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_komattaman_Ponza_RG()
+        public void Deck13_komattaman_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-13",12),
@@ -200,7 +200,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_ConnorM426_WildernessReclamation_UG()
+        public void Deck14_ConnorM426_SimicReclamation_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-13",13),
@@ -213,7 +213,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_1plus1equals3_GTron_KGCTron_G()
+        public void Deck15_1plus1equals3_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-13",14),

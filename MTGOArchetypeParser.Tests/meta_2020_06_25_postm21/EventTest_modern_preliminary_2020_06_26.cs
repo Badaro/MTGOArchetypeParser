@@ -10,14 +10,14 @@ using System.Text;
 
 /*
 #01 MindOfAKid: Burn (WR, Lurrus)
-#02 Trisky: Ponza (RG)
+#02 Trisky: GruulMidrange (RG)
 #03 staples87: ETron (C)
-#04 Misplacedginger: SnowControl (WUG)
+#04 Misplacedginger: BantControl (WUG)
 #05 samslam: Burn (WR)
 #06 yamakiller: Neobrand (UG)
-#07 qbturtle15: Ponza (RG, Obosh)
-#08 no_lyfe: Prowess (R)
-#09 tyty123: Ponza (RG)
+#07 qbturtle15: GruulMidrange (RG, Obosh)
+#08 no_lyfe: MonoRedProwess (R)
+#09 tyty123: GruulMidrange (RG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
@@ -38,7 +38,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck02_Trisky_Ponza_RG()
+        public void Deck02_Trisky_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-26",1),
@@ -64,7 +64,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck04_Misplacedginger_SnowControl_WUG()
+        public void Deck04_Misplacedginger_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-26",3),
@@ -103,7 +103,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_qbturtle15_Ponza_RG_Obosh()
+        public void Deck07_qbturtle15_GruulMidrange_RG_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-26",6),
@@ -116,7 +116,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck08_nolyfe_Prowess_R()
+        public void Deck08_nolyfe_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-26",7),
@@ -129,7 +129,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck09_tyty123_Ponza_RG()
+        public void Deck09_tyty123_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-26",8),

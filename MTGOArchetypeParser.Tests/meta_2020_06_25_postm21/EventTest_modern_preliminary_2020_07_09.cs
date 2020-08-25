@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Graciasportanto: Jund (BRG)
+#01 Graciasportanto: JundMidrange (BRG)
 #02 Icteridae: ETron (C)
 #03 PRGJJAR: Dredge (BRG)
 #04 wordy333: Merfolk (UG)
@@ -17,9 +17,9 @@ using System.Text;
 #06 andrw1232: Dredge (WBRG)
 #07 Samcaster-Mage: ETron (C)
 #08 starfall: Merfolk (UG)
-#09 Mcleskey: Ponza (RG)
+#09 Mcleskey: GruulMidrange (RG)
 #10 WareHouseGames: AdNauseam (WUB)
-#11 Toastxp: SnowControl (WUG)
+#11 Toastxp: BantControl (WUG)
 #12 nedyahiske: ETron (C)
 #13 atm8162: TitanShift (RG)
 */
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_preliminary_2020_07_09 : EventTest
     {
         [Test]
-        public void Deck01_Graciasportanto_Rock_Jund_BRG()
+        public void Deck01_Graciasportanto_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-09",0),
@@ -133,7 +133,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck09_Mcleskey_Ponza_RG()
+        public void Deck09_Mcleskey_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-09",8),
@@ -159,7 +159,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck11_Toastxp_SnowControl_WUG()
+        public void Deck11_Toastxp_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-09",10),
@@ -185,7 +185,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck13_atm8162_PrimevalTitan_TitanShift_RG()
+        public void Deck13_atm8162_TitanShift_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-09",12),

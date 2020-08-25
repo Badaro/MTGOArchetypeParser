@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Gigy: Ponza (RG)
+#01 Gigy: GruulMidrange (RG)
 #02 PRGJJAR: Dredge (BRG)
 #03 McWinSauce: BantControl (WUG)
 #04 karatedom: RakdosProwess (BR, Lurrus)
@@ -17,8 +17,8 @@ using System.Text;
 #06 sandydogmtg: IzzetProwess (UR)
 #07 BigBaranoia: BringToNiv (WUBRG)
 #08 Xuxa: Dredge (BRG)
-#09 qbturtle15: Ponza (RG)
-#10 tuckbear: Jund (BRG)
+#09 qbturtle15: GruulMidrange (RG)
+#10 tuckbear: JundMidrange (BRG)
 #11 hodortimebaby: KGCTron (G)
 #12 ConnorM426: RakdosProwess (BR, Lurrus)
 #13 CHILLEDADED: Burn (WR)
@@ -26,7 +26,7 @@ using System.Text;
 #15 ht991122: TemurReclamation (URG)
 #16 Xwhale: BantControl (WUG)
 #17 A22en: SnoopGoblins (BR)
-#18 MrZarukai: Ponza (RG)
+#18 MrZarukai: GruulMidrange (RG)
 #19 bmac668: IzzetProwess (UR)
 #20 JUJUBEAN__2004: Devoted (WG, Lurrus)
 #21 joetru: BringToNiv (WUBRG)
@@ -37,7 +37,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_08_20 : EventTest
     {
         [Test]
-        public void Deck01_Gigy_Ponza_RG()
+        public void Deck01_Gigy_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",0),
@@ -76,7 +76,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_karatedom_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck04_karatedom_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",3),
@@ -102,7 +102,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_sandydogmtg_Prowess_IzzetProwess_UR()
+        public void Deck06_sandydogmtg_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",5),
@@ -141,7 +141,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_qbturtle15_Ponza_RG()
+        public void Deck09_qbturtle15_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",8),
@@ -154,7 +154,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_tuckbear_Rock_Jund_BRG()
+        public void Deck10_tuckbear_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",9),
@@ -167,7 +167,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_hodortimebaby_GTron_KGCTron_G()
+        public void Deck11_hodortimebaby_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",10),
@@ -180,7 +180,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_ConnorM426_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck12_ConnorM426_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",11),
@@ -219,7 +219,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_ht991122_WildernessReclamation_TemurReclamation_URG()
+        public void Deck15_ht991122_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",14),
@@ -245,7 +245,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_A22en_Goblins_SnoopGoblins_BR()
+        public void Deck17_A22en_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",16),
@@ -258,7 +258,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck18_MrZarukai_Ponza_RG()
+        public void Deck18_MrZarukai_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",17),
@@ -271,7 +271,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck19_bmac668_Prowess_IzzetProwess_UR()
+        public void Deck19_bmac668_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",18),

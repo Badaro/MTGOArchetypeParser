@@ -9,32 +9,32 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 nahuel10: SnowControl (WUG)
-#02 Ennuixd: Prowess (R)
+#01 nahuel10: BantControl (WUG)
+#02 Ennuixd: MonoRedProwess (R)
 #03 Lucabireskusku: Inverter (UB)
 #04 Audemin: Humans (WUBRG)
 #05 koji1130: RedDeckWins (WR, Jegantha)
 #06 StreexIT: Spirits (WU)
 #07 rojanosa: OrzhovTokens (WB)
 #08 haubidtran: Uroza (UBG, Yorion)
-#09 esatheking: Prowess (WR)
+#09 esatheking: BorosProwess (WR)
 #10 yPrincipe: ETron (C)
 #11 magicjpg: BantBlink (WUG, Yorion)
-#12 Psychophobic: Ponza (RG)
+#12 Psychophobic: GruulMidrange (RG)
 #13 Borjillamtg10: AdNauseam (WUB)
 #14 603Leb: AmuletTitan (WUBRG)
-#15 Mad-Ramon: SnowReclamation (URG, Yorion)
+#15 Mad-Ramon: TemurReclamation (URG, Yorion)
 #16 Mordeka1ser: BringToNiv (WUBRG, Yorion)
 #17 Zebrah: AmuletTitan (WUBRG, Yorion)
-#18 Shorak123: SnowReclamation (UBG)
+#18 Shorak123: SultaiReclamation (UBG)
 #19 Beicodegeia: GiftsStorm (UR)
 #20 FantasticMrFox: Bogles (WG, Lurrus)
 #21 Rock_Star: RakdosProwess (BR, Lurrus)
-#22 Bunnykept: Jund (BRG)
+#22 Bunnykept: JundMidrange (BRG)
 #23 Lcario: GrixisShadow (UBR)
-#24 Gaffiere1903: Ponza (RG)
+#24 Gaffiere1903: GruulMidrange (RG)
 #25 Nogamblenofutur: Burn (WR)
-#26 Justodeangelo: SnowReclamation (URG)
+#26 Justodeangelo: TemurReclamation (URG)
 #27 SightWinner: HollowOne (BR)
 #28 Pirika: MarduPyromancer (WBR)
 #29 Xorn9: Goblins (WUBRG)
@@ -52,7 +52,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_league_2020_06_26 : EventTest
     {
         [Test]
-        public void Deck01_nahuel10_SnowControl_WUG()
+        public void Deck01_nahuel10_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",0),
@@ -65,7 +65,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck02_Ennuixd_Prowess_R()
+        public void Deck02_Ennuixd_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",1),
@@ -130,7 +130,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_rojanosa_Tokens_OrzhovTokens_WB()
+        public void Deck07_rojanosa_OrzhovTokens_WB()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",6),
@@ -156,7 +156,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck09_esatheking_Prowess_WR()
+        public void Deck09_esatheking_BorosProwess_WR()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",8),
@@ -195,7 +195,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck12_Psychophobic_Ponza_RG()
+        public void Deck12_Psychophobic_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",11),
@@ -221,7 +221,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck14_603Leb_PrimevalTitan_AmuletTitan_WUBRG()
+        public void Deck14_603Leb_AmuletTitan_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",13),
@@ -234,7 +234,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck15_MadRamon_SnowControl_SnowReclamation_URG_Yorion()
+        public void Deck15_MadRamon_TemurReclamation_URG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",14),
@@ -260,7 +260,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck17_Zebrah_PrimevalTitan_AmuletTitan_WUBRG_Yorion()
+        public void Deck17_Zebrah_AmuletTitan_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",16),
@@ -273,7 +273,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck18_Shorak123_SnowControl_SnowReclamation_UBG()
+        public void Deck18_Shorak123_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",17),
@@ -312,7 +312,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck21_RockStar_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck21_RockStar_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",20),
@@ -325,7 +325,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck22_Bunnykept_Rock_Jund_BRG()
+        public void Deck22_Bunnykept_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",21),
@@ -338,7 +338,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck23_Lcario_DeathsShadow_GrixisShadow_UBR()
+        public void Deck23_Lcario_GrixisShadow_UBR()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",22),
@@ -351,7 +351,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck24_Gaffiere1903_Ponza_RG()
+        public void Deck24_Gaffiere1903_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",23),
@@ -377,7 +377,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck26_Justodeangelo_SnowControl_SnowReclamation_URG()
+        public void Deck26_Justodeangelo_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",25),
@@ -442,7 +442,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck31_SebastianStueckl_Goblins_SnoopGoblins_BR()
+        public void Deck31_SebastianStueckl_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",30),

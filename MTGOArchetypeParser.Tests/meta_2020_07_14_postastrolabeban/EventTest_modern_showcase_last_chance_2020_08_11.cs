@@ -13,13 +13,13 @@ using System.Text;
 #02 eXavie: RakdosProwess (BR, Lurrus)
 #03 Snusnumrick: ETron (C)
 #04 __matsugan: Neobrand (UG)
-#05 cntrlfreak: TraverseShadow (UBRG)
+#05 cntrlfreak: UBRGShadow (UBRG)
 #06 tibalt_of_red_sub: Mill (UB, Lurrus)
 #07 cnofafva: KGCAmuletTitan (WUBRG)
 #08 Toastxp: RakdosProwess (BR, Lurrus)
 #09 cws: GiftsStorm (UR)
 #10 TSPJendrek: SultaiControl (UBG)
-#11 mikev1919: Prowess (R)
+#11 mikev1919: MonoRedProwess (R)
 #12 Wuhsa: BringToNiv (WUBRG, Yorion)
 #13 shub89: IzzetProwess (UR)
 #14 Rhianne: Dredge (BRG)
@@ -32,7 +32,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_showcase_last_chance_2020_08_11 : EventTest
     {
         [Test]
-        public void Deck01_mindcandy_WildernessReclamation_TemurReclamation_URG()
+        public void Deck01_mindcandy_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-11",0),
@@ -45,7 +45,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_eXavie_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck02_eXavie_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-11",1),
@@ -84,7 +84,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_cntrlfreak_DeathsShadow_TraverseShadow_UBRG()
+        public void Deck05_cntrlfreak_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-11",4),
@@ -110,7 +110,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_cnofafva_PrimevalTitan_KGCAmuletTitan_WUBRG()
+        public void Deck07_cnofafva_KGCAmuletTitan_WUBRG()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-11",6),
@@ -123,7 +123,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_Toastxp_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck08_Toastxp_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-11",7),
@@ -162,7 +162,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_mikev1919_Prowess_R()
+        public void Deck11_mikev1919_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-11",10),
@@ -188,7 +188,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_shub89_Prowess_IzzetProwess_UR()
+        public void Deck13_shub89_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-11",12),
@@ -214,7 +214,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_2jjm_Prowess_IzzetProwess_UR()
+        public void Deck15_2jjm_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-11",14),
@@ -227,7 +227,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck16_discoverN_GTron_KGCTron_G()
+        public void Deck16_discoverN_KGCTron_G()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-11",15),

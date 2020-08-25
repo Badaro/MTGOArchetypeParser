@@ -32,13 +32,13 @@ namespace MTGOArchetypeParser.Tests.Updater
                 {
                     if (result.Matches.Length == 1)
                     {
-                        name = result.Matches[0].Archetype.GetType().Name;
+                        name = result.Matches[0].Archetype.GetName(result.Color);
 
-                        if (result.Matches[0].Variant != null) name = $"{result.Matches[0].Variant.GetType().Name}";
+                        if (result.Matches[0].Variant != null) name = $"{result.Matches[0].Variant.GetName(result.Color)}";
                     }
                     else
                     {
-                        name = String.Join(",", result.Matches.Select(m => m.Archetype.GetType().Name));
+                        name = String.Join(",", result.Matches.Select(m => m.Archetype.GetName(result.Color)));
                     }
                 }
 
@@ -52,7 +52,7 @@ namespace MTGOArchetypeParser.Tests.Updater
                 }
             }
 
-            return _summarySnippet.Replace("{SUMMARY}",summary.ToString());
+            return _summarySnippet.Replace("{SUMMARY}", summary.ToString());
         }
 
         public static string GenerateTest(TournamentKeys tournamentKeys, DeckKeys deckKeys)

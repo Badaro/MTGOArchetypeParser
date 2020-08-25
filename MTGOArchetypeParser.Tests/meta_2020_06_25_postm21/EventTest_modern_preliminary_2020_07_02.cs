@@ -10,13 +10,13 @@ using System.Text;
 
 /*
 #01 Ouranos139: AmuletTitan (WUBRG)
-#02 Toastxp: SultaiSnow (UBG)
-#03 fingers1991: SnowControl (WUG)
-#04 Theo_Jung: SultaiSnow (UBG)
+#02 Toastxp: SultaiControl (UBG)
+#03 fingers1991: BantControl (WUG)
+#04 Theo_Jung: SultaiControl (UBG)
 #05 Samcaster-Mage: ETron (C)
 #06 Icteridae: ETron (C)
 #07 TubbyBatman: IzzetProwess (UR)
-#08 no_lyfe: Prowess (R)
+#08 no_lyfe: MonoRedProwess (R)
 #09 karatedom: SnoopGoblins (BR)
 #10 Mr_Sheep: Burn (WR)
 #11 Motown123: Merfolk (U)
@@ -27,7 +27,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_preliminary_2020_07_02 : EventTest
     {
         [Test]
-        public void Deck01_Ouranos139_PrimevalTitan_AmuletTitan_WUBRG()
+        public void Deck01_Ouranos139_AmuletTitan_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-02",0),
@@ -40,7 +40,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck02_Toastxp_SnowControl_SultaiSnow_UBG()
+        public void Deck02_Toastxp_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-02",1),
@@ -53,7 +53,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck03_fingers1991_SnowControl_WUG()
+        public void Deck03_fingers1991_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-02",2),
@@ -66,7 +66,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck04_TheoJung_SnowControl_SultaiSnow_UBG()
+        public void Deck04_TheoJung_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-02",3),
@@ -105,7 +105,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_TubbyBatman_Prowess_IzzetProwess_UR()
+        public void Deck07_TubbyBatman_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-02",6),
@@ -118,7 +118,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck08_nolyfe_Prowess_R()
+        public void Deck08_nolyfe_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-02",7),
@@ -131,7 +131,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck09_karatedom_Goblins_SnoopGoblins_BR()
+        public void Deck09_karatedom_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-02",8),

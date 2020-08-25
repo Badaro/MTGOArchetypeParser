@@ -14,40 +14,40 @@ using System.Text;
 #03 Cherryxman: Inverter (UB)
 #04 meanfannypack: Devoted (WG, Lurrus)
 #05 Magicofplayer1: AdNauseam (WUB)
-#06 Ftzz: SnowReclamation (UBG)
+#06 Ftzz: SultaiReclamation (UBG)
 #07 Zebrah: AmuletTitan (WURG)
-#08 no_lyfe: Prowess (R)
-#09 xl_snapcaster: Miracles (WU, Kaheera)
+#08 no_lyfe: MonoRedProwess (R)
+#09 xl_snapcaster: AzoriusControl (WU, Kaheera)
 #10 Nextep: Uroza (UBG, Yorion)
-#11 alnash: SnowTitan (UG, Yorion)
-#12 scvslayer: SnowShift (URG, Yorion)
+#11 alnash: SimicControl (UG, Yorion)
+#12 scvslayer: Scapeshift (URG, Yorion)
 #13 Tempano: Humans (WUBRG)
 #14 Kurusu: KikiChord (WBRG, Yorion)
 #15 IsKeiP529: KGCTron (G)
 #16 ChaoticCamel: RakdosProwess (BR, Lurrus)
-#17 hyriuu: Ponza (RG)
+#17 hyriuu: GruulMidrange (RG)
 #18 Heibing: PrimevalTitan (BRG)
-#19 yutya: SnowTitan (WUG, Yorion)
+#19 yutya: BantControl (WUG, Yorion)
 #20 TheNobodys: ThopterUrza (WUBR)
 #21 FranPi: GiftsStorm (UR)
-#22 BSK_hercules: SultaiSnow (UBG)
+#22 BSK_hercules: SultaiControl (UBG)
 #23 Magric: RakdosMidrange (BR)
-#24 lovealienzzz: SnowControl (URG)
+#24 lovealienzzz: TemurControl (URG)
 #25 Drakanar: Merfolk (U)
-#26 Walkers: SnowReclamation (UBG)
-#27 Darkiundsa: SnowControl (WURG, Yorion)
+#26 Walkers: SultaiReclamation (UBG)
+#27 Darkiundsa: WURGControl (WURG, Yorion)
 #28 Jiggywiggy: KinnanUrza (URG, Yorion)
 #29 Netow: Dredge (BRG)
 #30 Zanman: GyrudaStompy (BRG, Gyruda)
-#31 Madwolf87: TraverseShadow (BRG)
-#32 Chad1987SR05: Rock (BG)
+#31 Madwolf87: JundShadow (BRG)
+#32 Chad1987SR05: GolgariMidrange (BG)
 #33 Wuhsa: BringToNiv (WUBRG)
 #34 thelegitpony666: Goblins (BR)
 #35 whitefangshinobi: Mill (UB, Lurrus)
-#36 salvamala: Jund (BRG)
+#36 salvamala: JundMidrange (BRG)
 #37 RodolfoSFD0: TitanShift (RG)
 #38 Lcario: ETron (C)
-#39 AutumnLily: SnowReclamation (UBG, Yorion)
+#39 AutumnLily: SultaiReclamation (UBG, Yorion)
 #40 Jackson1031: Uroza (URG)
 */
 
@@ -121,7 +121,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck06_Ftzz_SnowControl_SnowReclamation_UBG()
+        public void Deck06_Ftzz_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",5),
@@ -134,7 +134,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck07_Zebrah_PrimevalTitan_AmuletTitan_WURG()
+        public void Deck07_Zebrah_AmuletTitan_WURG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",6),
@@ -147,7 +147,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck08_nolyfe_Prowess_R()
+        public void Deck08_nolyfe_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",7),
@@ -160,7 +160,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck09_xlsnapcaster_AzoriusControl_Miracles_WU_Kaheera()
+        public void Deck09_xlsnapcaster_AzoriusControl_WU_Kaheera()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",8),
@@ -186,7 +186,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck11_alnash_SnowControl_SnowTitan_UG_Yorion()
+        public void Deck11_alnash_SimicControl_UG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",10),
@@ -199,7 +199,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck12_scvslayer_SnowControl_SnowShift_URG_Yorion()
+        public void Deck12_scvslayer_Scapeshift_URG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",11),
@@ -238,7 +238,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck15_IsKeiP529_GTron_KGCTron_G()
+        public void Deck15_IsKeiP529_KGCTron_G()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",14),
@@ -251,7 +251,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck16_ChaoticCamel_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck16_ChaoticCamel_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",15),
@@ -264,7 +264,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck17_hyriuu_Ponza_RG()
+        public void Deck17_hyriuu_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",16),
@@ -290,7 +290,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck19_yutya_SnowControl_SnowTitan_WUG_Yorion()
+        public void Deck19_yutya_BantControl_WUG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",18),
@@ -329,7 +329,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck22_BSKhercules_SnowControl_SultaiSnow_UBG()
+        public void Deck22_BSKhercules_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",21),
@@ -355,7 +355,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck24_lovealienzzz_SnowControl_URG()
+        public void Deck24_lovealienzzz_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",23),
@@ -381,7 +381,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck26_Walkers_SnowControl_SnowReclamation_UBG()
+        public void Deck26_Walkers_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",25),
@@ -394,7 +394,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck27_Darkiundsa_SnowControl_WURG_Yorion()
+        public void Deck27_Darkiundsa_WURGControl_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",26),
@@ -446,7 +446,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck31_Madwolf87_DeathsShadow_TraverseShadow_BRG()
+        public void Deck31_Madwolf87_JundShadow_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",30),
@@ -459,7 +459,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck32_Chad1987SR05_Rock_BG()
+        public void Deck32_Chad1987SR05_GolgariMidrange_BG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",31),
@@ -511,7 +511,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck36_salvamala_Rock_Jund_BRG()
+        public void Deck36_salvamala_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",35),
@@ -524,7 +524,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck37_RodolfoSFD0_PrimevalTitan_TitanShift_RG()
+        public void Deck37_RodolfoSFD0_TitanShift_RG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",36),
@@ -550,7 +550,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck39_AutumnLily_SnowControl_SnowReclamation_UBG_Yorion()
+        public void Deck39_AutumnLily_SultaiReclamation_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",38),

@@ -9,30 +9,30 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Janh: AzoriusStoneblade (WU)
+#01 Janh: AzoriusControl (WU)
 #02 remf: Merfolk (WU, Lurrus)
 #03 bbotonline: BantMidrange (WUG)
 #04 excel0679: IzzetProwess (UR)
-#05 TheWonderLord: Jund (BRG)
+#05 TheWonderLord: JundMidrange (BRG)
 #06 Bosseidon: Burn (WR, Lurrus)
 #07 Seeker__of_the_Wei: Slivers (WUBRG)
 #08 chicers: Humans (WUBRG)
-#09 HypnoticaL: Prowess (R)
-#10 Tedpanic: Miracles (WU)
-#11 TheGaul: Rock (BG)
+#09 HypnoticaL: MonoRedProwess (R)
+#10 Tedpanic: AzoriusControl (WU)
+#11 TheGaul: GolgariMidrange (BG)
 #12 Trellon: UTron (U)
 #13 D00mwake: RakdosProwess (BR, Lurrus)
 #14 moralmar: HardenedScales (G)
 #15 Vilaboy: KikiChord (WURG, Yorion)
 #16 BananOlaf: AdNauseam (WUB)
-#17 aqualog: Prowess (WR, Lurrus)
-#18 benchsummer: TraverseShadow (UBRG)
+#17 aqualog: BorosProwess (WR, Lurrus)
+#18 benchsummer: UBRGShadow (UBRG)
 #19 FreedMania: KGCAmuletTitan (UBRG)
-#20 Ivan_Catanduva_Br: Ponza (RG)
+#20 Ivan_Catanduva_Br: GruulMidrange (RG)
 #21 AndersPovirk: Dredge (WBRG)
 #22 lordavery: BantMidrange (WUG)
 #23 psych4tog: Elementals (WUBRG)
-#24 Juaspas: Abzan (WBG)
+#24 Juaspas: AbzanMidrange (WBG)
 #25 SickWorld: Bogles (WG)
 #26 t1griselbrand: Neobrand (UG)
 #27 flyingspaghetti: GiftsStorm (UR)
@@ -40,25 +40,25 @@ using System.Text;
 #29 Delthar: Mill (UB)
 #30 Leviathan102: TitanVial (WRG)
 #31 Firewalker89: GrixisShadow (UBR)
-#32 Rebus8: EldraziTaxes (WB)
+#32 Rebus8: OrzhovEldraziTaxes (WB)
 #33 benchsummer: HeliodSisters (W)
 #34 DylansHyper: Devoted (WG, Lurrus)
-#35 Curryvore: JeskaiBlink (WUR, Yorion)
+#35 Curryvore: JeskaiControl (WUR, Yorion)
 #36 flankattack27: Uroza (WUG)
 #37 kogamo: PrimevalTitan (WRG)
 #38 nick4567: TemurReclamation (URG)
 #39 DoctorQueller: BantSpirits (WUG)
 #40 Unlife: ETron (C)
 #41 TuggaNaxos: SultaiControl (UBG)
-#42 llabmonkey: SnowBlade (WUG)
-#43 harukispecial: SultaiSnow (UBG)
+#42 llabmonkey: BantControl (WUG)
+#43 harukispecial: SultaiControl (UBG)
 #44 MartinezDP: BringToNiv (WUBRG, Yorion)
-#45 Weasley: WildernessReclamation (UBG)
+#45 Weasley: SultaiReclamation (UBG)
 #46 JUJUBEAN__2004: Devoted (WUG)
 #47 Game_Night: GolosTron (G, Jegantha)
 #48 DarkKeeper: BantControl (WUG)
-#49 SpicyLeche: SuicideShadow (BRG, Lurrus)
-#50 Ticky13: DeathAndTaxes (WU)
+#49 SpicyLeche: JundShadow (BRG, Lurrus)
+#50 Ticky13: AzoriusTaxes (WU)
 #51 jaredseely: MartyrProc (W)
 */
 
@@ -67,7 +67,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_league_2020_08_21 : EventTest
     {
         [Test]
-        public void Deck01_Janh_AzoriusControl_AzoriusStoneblade_WU()
+        public void Deck01_Janh_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",0),
@@ -106,7 +106,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_excel0679_Prowess_IzzetProwess_UR()
+        public void Deck04_excel0679_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",3),
@@ -119,7 +119,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_TheWonderLord_Rock_Jund_BRG()
+        public void Deck05_TheWonderLord_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",4),
@@ -171,7 +171,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_HypnoticaL_Prowess_R()
+        public void Deck09_HypnoticaL_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",8),
@@ -184,7 +184,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_Tedpanic_AzoriusControl_Miracles_WU()
+        public void Deck10_Tedpanic_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",9),
@@ -197,7 +197,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_TheGaul_Rock_BG()
+        public void Deck11_TheGaul_GolgariMidrange_BG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",10),
@@ -223,7 +223,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_D00mwake_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck13_D00mwake_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",12),
@@ -275,7 +275,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_aqualog_Prowess_WR_Lurrus()
+        public void Deck17_aqualog_BorosProwess_WR_Lurrus()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",16),
@@ -288,7 +288,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck18_benchsummer_DeathsShadow_TraverseShadow_UBRG()
+        public void Deck18_benchsummer_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",17),
@@ -301,7 +301,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck19_FreedMania_PrimevalTitan_KGCAmuletTitan_UBRG()
+        public void Deck19_FreedMania_KGCAmuletTitan_UBRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",18),
@@ -314,7 +314,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_IvanCatanduvaBr_Ponza_RG()
+        public void Deck20_IvanCatanduvaBr_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",19),
@@ -366,7 +366,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck24_Juaspas_Rock_Abzan_WBG()
+        public void Deck24_Juaspas_AbzanMidrange_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",23),
@@ -457,7 +457,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck31_Firewalker89_DeathsShadow_GrixisShadow_UBR()
+        public void Deck31_Firewalker89_GrixisShadow_UBR()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",30),
@@ -470,7 +470,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck32_Rebus8_DeathAndTaxes_EldraziTaxes_WB()
+        public void Deck32_Rebus8_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",31),
@@ -483,7 +483,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck33_benchsummer_SoulSisters_HeliodSisters_W()
+        public void Deck33_benchsummer_HeliodSisters_W()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",32),
@@ -509,7 +509,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck35_Curryvore_AzoriousBlink_JeskaiBlink_WUR_Yorion()
+        public void Deck35_Curryvore_JeskaiControl_WUR_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",34),
@@ -548,7 +548,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck38_nick4567_WildernessReclamation_TemurReclamation_URG()
+        public void Deck38_nick4567_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",37),
@@ -561,7 +561,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck39_DoctorQueller_Spirits_BantSpirits_WUG()
+        public void Deck39_DoctorQueller_BantSpirits_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",38),
@@ -600,7 +600,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck42_llabmonkey_SnowControl_SnowBlade_WUG()
+        public void Deck42_llabmonkey_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",41),
@@ -613,7 +613,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck43_harukispecial_SnowControl_SultaiSnow_UBG()
+        public void Deck43_harukispecial_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",42),
@@ -639,7 +639,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck45_Weasley_WildernessReclamation_UBG()
+        public void Deck45_Weasley_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",44),
@@ -665,7 +665,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck47_GameNight_GTron_GolosTron_G_Jegantha()
+        public void Deck47_GameNight_GolosTron_G_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",46),
@@ -691,7 +691,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck49_SpicyLeche_DeathsShadow_SuicideShadow_BRG_Lurrus()
+        public void Deck49_SpicyLeche_JundShadow_BRG_Lurrus()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",48),
@@ -704,7 +704,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck50_Ticky13_DeathAndTaxes_WU()
+        public void Deck50_Ticky13_AzoriusTaxes_WU()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",49),

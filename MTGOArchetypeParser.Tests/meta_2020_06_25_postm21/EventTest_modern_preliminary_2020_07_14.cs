@@ -11,11 +11,11 @@ using System.Text;
 /*
 #01 pepeteam: AmuletTitan (UBRG)
 #02 osmanozguney: RakdosMidrange (BR)
-#03 azatoyellow: Prowess (R)
+#03 azatoyellow: MonoRedProwess (R)
 #04 ACG88: Crabvine (UBG)
 #05 WingedHussar: Neobrand (UG)
 #06 bubbsei: Devoted (WG, Lurrus)
-#07 LickNsticK: Jund (BRG)
+#07 LickNsticK: JundMidrange (BRG)
 #08 RicardoMSLan: ETron (C)
 #09 PizzaRolls: ETron (C)
 */
@@ -25,7 +25,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_preliminary_2020_07_14 : EventTest
     {
         [Test]
-        public void Deck01_pepeteam_PrimevalTitan_AmuletTitan_UBRG()
+        public void Deck01_pepeteam_AmuletTitan_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-14",0),
@@ -51,7 +51,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck03_azatoyellow_Prowess_R()
+        public void Deck03_azatoyellow_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-14",2),
@@ -103,7 +103,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_LickNsticK_Rock_Jund_BRG()
+        public void Deck07_LickNsticK_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-14",6),

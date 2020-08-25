@@ -9,38 +9,38 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Lavaridge: SultaiSnow (UBG)
+#01 Lavaridge: SultaiControl (UBG)
 #02 sfitz: ThopterUrza (UBR)
-#03 Larry11: Ponza (RG)
+#03 Larry11: GruulMidrange (RG)
 #04 Polikasoll: IncineratorBurn (R)
-#05 ZYURYO: Jund (BRG)
+#05 ZYURYO: JundMidrange (BRG)
 #06 Lord_Beerus: Burn (WR)
 #07 sff_mtg: KGCTron (G)
-#08 Gigy: Ponza (RG)
-#09 kiko: DeathAndTaxes (WR)
+#08 Gigy: GruulMidrange (RG)
+#09 kiko: BorosTaxes (WR)
 #10 TennTyou: BringToNiv (WUBRG)
 #11 Smosh: ETron (C)
-#12 WeareVenom: SnowControl (WUG)
+#12 WeareVenom: BantControl (WUG)
 #13 Nekonii: GolgariElves (BG)
-#14 Mogged: Prowess (R)
+#14 Mogged: MonoRedProwess (R)
 #15 PizzaTurtle: Bogles (WG, Lurrus)
 #16 unicornparadise: ETron (C)
-#17 Fabrice_K: SnowReclamation (UBG, Yorion)
+#17 Fabrice_K: SultaiReclamation (UBG, Yorion)
 #18 MrRaeb: Uroza (UBG, Yorion)
 #19 tuckbear: Burn (WR)
 #20 Lopik6: AmuletTitan (URG)
-#21 MikeEgan: Ponza (RG)
-#22 PvtEnormous: Prowess (R)
-#23 eXavie: SultaiSnow (UBG)
+#21 MikeEgan: GruulMidrange (RG)
+#22 PvtEnormous: MonoRedProwess (R)
+#23 eXavie: SultaiControl (UBG)
 #24 Ryan100495: Dredge (WBRG)
-#25 destinction: Jund (BRG)
-#26 JUJUBEAN__2004: SnowControl (WUG)
+#25 destinction: JundMidrange (BRG)
+#26 JUJUBEAN__2004: BantControl (WUG)
 #27 Tiemuuu: IzzetControl (UR)
 #28 Venom1: ETron (C)
 #29 otakkun: KGCTron (G)
 #30 Jack_Kashtan: GiftsStorm (UR)
 #31 Skrown: Dredge (WBRG)
-#32 Erik157751: Jund (BRG)
+#32 Erik157751: JundMidrange (BRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_challenge_2020_07_13 : EventTest
     {
         [Test]
-        public void Deck01_Lavaridge_SnowControl_SultaiSnow_UBG()
+        public void Deck01_Lavaridge_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",0),
@@ -74,7 +74,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck03_Larry11_Ponza_RG()
+        public void Deck03_Larry11_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",2),
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck04_Polikasoll_Burn_IncineratorBurn_R()
+        public void Deck04_Polikasoll_IncineratorBurn_R()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",3),
@@ -100,7 +100,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck05_ZYURYO_Rock_Jund_BRG()
+        public void Deck05_ZYURYO_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",4),
@@ -126,7 +126,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_sffmtg_GTron_KGCTron_G()
+        public void Deck07_sffmtg_KGCTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",6),
@@ -139,7 +139,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck08_Gigy_Ponza_RG()
+        public void Deck08_Gigy_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",7),
@@ -152,7 +152,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck09_kiko_DeathAndTaxes_WR()
+        public void Deck09_kiko_BorosTaxes_WR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",8),
@@ -191,7 +191,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck12_WeareVenom_SnowControl_WUG()
+        public void Deck12_WeareVenom_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",11),
@@ -204,7 +204,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck13_Nekonii_Elves_GolgariElves_BG()
+        public void Deck13_Nekonii_GolgariElves_BG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",12),
@@ -217,7 +217,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck14_Mogged_Prowess_R()
+        public void Deck14_Mogged_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",13),
@@ -256,7 +256,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck17_FabriceK_SnowControl_SnowReclamation_UBG_Yorion()
+        public void Deck17_FabriceK_SultaiReclamation_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",16),
@@ -295,7 +295,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck20_Lopik6_PrimevalTitan_AmuletTitan_URG()
+        public void Deck20_Lopik6_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",19),
@@ -308,7 +308,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck21_MikeEgan_Ponza_RG()
+        public void Deck21_MikeEgan_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",20),
@@ -321,7 +321,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck22_PvtEnormous_Prowess_R()
+        public void Deck22_PvtEnormous_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",21),
@@ -334,7 +334,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck23_eXavie_SnowControl_SultaiSnow_UBG()
+        public void Deck23_eXavie_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",22),
@@ -360,7 +360,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck25_destinction_Rock_Jund_BRG()
+        public void Deck25_destinction_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",24),
@@ -373,7 +373,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck26_JUJUBEAN2004_SnowControl_WUG()
+        public void Deck26_JUJUBEAN2004_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",25),
@@ -412,7 +412,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck29_otakkun_GTron_KGCTron_G()
+        public void Deck29_otakkun_KGCTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",28),
@@ -451,7 +451,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck32_Erik157751_Rock_Jund_BRG()
+        public void Deck32_Erik157751_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",31),

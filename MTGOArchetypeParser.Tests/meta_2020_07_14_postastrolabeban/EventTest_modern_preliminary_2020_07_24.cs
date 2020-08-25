@@ -11,17 +11,17 @@ using System.Text;
 /*
 #01 Mordeka1ser: BringToNiv (WUBRG, Yorion)
 #02 kthanakit26: Burn (WR)
-#03 SebastianStueckl: Ponza (RG)
+#03 SebastianStueckl: GruulMidrange (RG)
 #04 azatoyellow: GruulProwess (RG, Jegantha)
 #05 Niedzwiedz: SnoopGoblins (BR)
 #06 gyyby297: ThopterUrza (WU)
 #07 tia05: TitanShift (RG)
-#08 Ganksyou: AzoriusStoneblade (WU)
+#08 Ganksyou: AzoriusControl (WU)
 #09 Cherryxman: Scapeshift (URG)
-#10 Lukas261997: AzoriusStoneblade (WU)
+#10 Lukas261997: AzoriusControl (WU)
 #11 JustBurn420: Slivers (WUBRG)
 #12 Healer: IncineratorBurn (R)
-#13 Toastxp: TraverseShadow (UBRG)
+#13 Toastxp: UBRGShadow (UBRG)
 #14 Hyeri0418: Dredge (WBRG)
 #15 sff_mtg: KGCTron (G)
 #16 siomomi: ETron (C)
@@ -60,7 +60,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_SebastianStueckl_Ponza_RG()
+        public void Deck03_SebastianStueckl_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",2),
@@ -73,7 +73,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_azatoyellow_Prowess_GruulProwess_RG_Jegantha()
+        public void Deck04_azatoyellow_GruulProwess_RG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",3),
@@ -86,7 +86,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_Niedzwiedz_Goblins_SnoopGoblins_BR()
+        public void Deck05_Niedzwiedz_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",4),
@@ -112,7 +112,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_tia05_PrimevalTitan_TitanShift_RG()
+        public void Deck07_tia05_TitanShift_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",6),
@@ -125,7 +125,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_Ganksyou_AzoriusControl_AzoriusStoneblade_WU()
+        public void Deck08_Ganksyou_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",7),
@@ -151,7 +151,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_Lukas261997_AzoriusControl_AzoriusStoneblade_WU()
+        public void Deck10_Lukas261997_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",9),
@@ -177,7 +177,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_Healer_Burn_IncineratorBurn_R()
+        public void Deck12_Healer_IncineratorBurn_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",11),
@@ -190,7 +190,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_Toastxp_DeathsShadow_TraverseShadow_UBRG()
+        public void Deck13_Toastxp_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",12),
@@ -216,7 +216,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_sffmtg_GTron_KGCTron_G()
+        public void Deck15_sffmtg_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",14),
@@ -242,7 +242,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_otakkun_GTron_KGCTron_G()
+        public void Deck17_otakkun_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",16),

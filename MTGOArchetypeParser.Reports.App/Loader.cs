@@ -3,9 +3,7 @@ using MTGOArchetypeParser.Data.Model;
 using MTGOArchetypeParser.Model;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
-using System.Text;
 
 namespace MTGOArchetypeParser.Reports.App
 {

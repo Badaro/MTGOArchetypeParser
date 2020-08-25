@@ -9,32 +9,32 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 TSPJendrek: SnowBlade (WUBG)
-#02 ZYURYO: SnowControl (WUBG)
+#01 TSPJendrek: WUBGControl (WUBG)
+#02 ZYURYO: WUBGControl (WUBG)
 #03 JB2002: BantBlink (WUG, Yorion)
 #04 Yanti: Humans (WUBRG)
 #05 Blitzlion27: Mill (UB)
 #06 AstralPlane: Burn (WR)
 #07 SvenSvenSven: IzzetControl (UR)
-#08 signblindman: Ponza (RG)
+#08 signblindman: GruulMidrange (RG)
 #09 hugo87: GiftsStorm (UR)
 #10 Tw33Ty: ETron (C)
-#11 Cherryxman: SnowControl (WUG)
+#11 Cherryxman: BantControl (WUG)
 #12 Trid0n: Humans (WUBRG)
 #13 Laplasjan: Devoted (WG, Lurrus)
 #14 Ryan100495: Dredge (BRG)
 #15 Lord_Beerus: Burn (WR, Lurrus)
-#16 _Batutinha_: SnowControl (WUG)
-#17 ScreenwriterNY: SultaiSnow (WUBG, Yorion)
+#16 _Batutinha_: BantControl (WUG)
+#17 ScreenwriterNY: WUBGControl (WUBG, Yorion)
 #18 Erik157751: ETron (C)
 #19 sff_mtg: KGCTron (G)
-#20 Scacco Malto: Prowess (R)
+#20 Scacco Malto: MonoRedProwess (R)
 #21 mosskami: KGCAmuletTitan (WUBRG)
 #22 indianpancake: Devoted (WG)
 #23 Koso: ETron (C)
-#24 WeareVenom: SnowControl (WUG)
+#24 WeareVenom: BantControl (WUG)
 #25 robb93: ETron (C)
-#26 leclairandy: SnowControl (WUG)
+#26 leclairandy: BantControl (WUG)
 #27 Math_God: GiftsStorm (UR)
 #28 Wartico1: Devoted (WG, Lurrus)
 #29 Nightblue: Burn (WR)
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
     public class EventTest_modern_challenge_2020_06_08 : EventTest
     {
         [Test]
-        public void Deck01_TSPJendrek_SnowControl_SnowBlade_WUBG()
+        public void Deck01_TSPJendrek_WUBGControl_WUBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",0),
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck02_ZYURYO_SnowControl_WUBG()
+        public void Deck02_ZYURYO_WUBGControl_WUBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",1),
@@ -139,7 +139,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck08_signblindman_Ponza_RG()
+        public void Deck08_signblindman_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",7),
@@ -178,7 +178,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck11_Cherryxman_SnowControl_WUG()
+        public void Deck11_Cherryxman_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",10),
@@ -243,7 +243,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck16_Batutinha_SnowControl_WUG()
+        public void Deck16_Batutinha_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",15),
@@ -256,7 +256,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck17_ScreenwriterNY_SnowControl_SultaiSnow_WUBG_Yorion()
+        public void Deck17_ScreenwriterNY_WUBGControl_WUBG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",16),
@@ -282,7 +282,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck19_sffmtg_GTron_KGCTron_G()
+        public void Deck19_sffmtg_KGCTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",18),
@@ -295,7 +295,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck20_ScaccoMalto_Prowess_R()
+        public void Deck20_ScaccoMalto_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",19),
@@ -308,7 +308,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck21_mosskami_PrimevalTitan_KGCAmuletTitan_WUBRG()
+        public void Deck21_mosskami_KGCAmuletTitan_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",20),
@@ -347,7 +347,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck24_WeareVenom_SnowControl_WUG()
+        public void Deck24_WeareVenom_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",23),
@@ -373,7 +373,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck26_leclairandy_SnowControl_WUG()
+        public void Deck26_leclairandy_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",25),
@@ -438,7 +438,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck31_Moniz0801_PrimevalTitan_KGCAmuletTitan_WUBRG()
+        public void Deck31_Moniz0801_KGCAmuletTitan_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",30),

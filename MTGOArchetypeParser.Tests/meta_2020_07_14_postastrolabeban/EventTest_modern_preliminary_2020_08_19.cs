@@ -12,7 +12,7 @@ using System.Text;
 #01 Laplasjan: Devoted (WG, Lurrus)
 #02 coert: Burn (WR)
 #03 Rooney56: BantControl (WUG)
-#04 trader08111: RakdosProwess (WBR, Lurrus)
+#04 trader08111: MarduProwess (WBR, Lurrus)
 #05 aManatease: IzzetProwess (UR)
 #06 Lavaridge: TemurReclamation (URG)
 #07 JV_7777: ETron (C)
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_trader08111_Prowess_RakdosProwess_WBR_Lurrus()
+        public void Deck04_trader08111_MarduProwess_WBR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-19",3),
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_aManatease_Prowess_IzzetProwess_UR()
+        public void Deck05_aManatease_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-19",4),
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_Lavaridge_WildernessReclamation_TemurReclamation_URG()
+        public void Deck06_Lavaridge_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-19",5),
@@ -172,7 +172,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_otakkun_GTron_KGCTron_G()
+        public void Deck12_otakkun_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-19",11),
@@ -185,7 +185,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_kbzx_Prowess_IzzetProwess_UR()
+        public void Deck13_kbzx_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-19",12),

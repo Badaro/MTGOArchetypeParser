@@ -18,29 +18,29 @@ using System.Text;
 #07 Maratiam: ETron (C)
 #08 AstralPlane: IzzetProwess (UR)
 #09 mechrataal: AzoriusControl (WU)
-#10 SpiderSpace: DeathAndTaxes (W)
-#11 Lukas261997: AzoriusStoneblade (WU)
-#12 Thrall90: Jund (BRG)
+#10 SpiderSpace: MonoWhiteTaxes (W)
+#11 Lukas261997: AzoriusControl (WU)
+#12 Thrall90: JundMidrange (BRG)
 #13 Mateusf34: ETron (C)
 #14 Bullz0Eye: Dredge (BRG)
 #15 andrw1232: RakdosProwess (BR, Lurrus)
 #16 chasedaddydizzle: GTron (G)
 #17 Beenew: KGCTron (G)
-#18 TheJigIsAlwaysup: Ponza (RG)
+#18 TheJigIsAlwaysup: GruulMidrange (RG)
 #19 123Pwned: IzzetProwess (UR)
-#20 Voltzwagon: Ponza (RG)
+#20 Voltzwagon: GruulMidrange (RG)
 #21 ponchonater55: IncineratorBurn (WR)
 #22 staples87: ETron (C)
 #23 Mad-Ramon: TemurReclamation (URG)
-#24 wambocombo2020: RakdosProwess (WBR, Lurrus)
+#24 wambocombo2020: MarduProwess (WBR, Lurrus)
 #25 timewalkinonsunshine: TakingTurns (URG)
-#26 Alzik: Ponza (RG)
+#26 Alzik: GruulMidrange (RG)
 #27 ATXroy: IzzetProwess (UR)
 #28 HannoLee: KGCTron (G)
-#29 eclipse4343: Miracles (WU)
+#29 eclipse4343: AzoriusControl (WU)
 #30 aqualog: IzzetProwess (UR)
 #31 juzam_gin: Dredge (WBRG)
-#32 no_lyfe: Prowess (R)
+#32 no_lyfe: MonoRedProwess (R)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_champ_qual_2020_07_27 : EventTest
     {
         [Test]
-        public void Deck01_Lavaridge_WildernessReclamation_TemurReclamation_URG()
+        public void Deck01_Lavaridge_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",0),
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_NuBlkAu_Prowess_IzzetProwess_UR()
+        public void Deck02_NuBlkAu_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",1),
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_A22en_Goblins_SnoopGoblins_BR()
+        public void Deck04_A22en_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",3),
@@ -100,7 +100,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_ArchaeusDota_GTron_KGCTron_G()
+        public void Deck05_ArchaeusDota_KGCTron_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",4),
@@ -139,7 +139,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_AstralPlane_Prowess_IzzetProwess_UR()
+        public void Deck08_AstralPlane_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",7),
@@ -165,7 +165,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_SpiderSpace_DeathAndTaxes_W()
+        public void Deck10_SpiderSpace_MonoWhiteTaxes_W()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",9),
@@ -178,7 +178,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_Lukas261997_AzoriusControl_AzoriusStoneblade_WU()
+        public void Deck11_Lukas261997_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",10),
@@ -191,7 +191,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_Thrall90_Rock_Jund_BRG()
+        public void Deck12_Thrall90_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",11),
@@ -230,7 +230,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_andrw1232_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck15_andrw1232_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",14),
@@ -256,7 +256,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_Beenew_GTron_KGCTron_G()
+        public void Deck17_Beenew_KGCTron_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",16),
@@ -269,7 +269,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck18_TheJigIsAlwaysup_Ponza_RG()
+        public void Deck18_TheJigIsAlwaysup_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",17),
@@ -282,7 +282,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck19_123Pwned_Prowess_IzzetProwess_UR()
+        public void Deck19_123Pwned_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",18),
@@ -295,7 +295,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_Voltzwagon_Ponza_RG()
+        public void Deck20_Voltzwagon_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",19),
@@ -308,7 +308,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck21_ponchonater55_Burn_IncineratorBurn_WR()
+        public void Deck21_ponchonater55_IncineratorBurn_WR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",20),
@@ -334,7 +334,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck23_MadRamon_WildernessReclamation_TemurReclamation_URG()
+        public void Deck23_MadRamon_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",22),
@@ -347,7 +347,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck24_wambocombo2020_Prowess_RakdosProwess_WBR_Lurrus()
+        public void Deck24_wambocombo2020_MarduProwess_WBR_Lurrus()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",23),
@@ -373,7 +373,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck26_Alzik_Ponza_RG()
+        public void Deck26_Alzik_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",25),
@@ -386,7 +386,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck27_ATXroy_Prowess_IzzetProwess_UR()
+        public void Deck27_ATXroy_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",26),
@@ -399,7 +399,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck28_HannoLee_GTron_KGCTron_G()
+        public void Deck28_HannoLee_KGCTron_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",27),
@@ -412,7 +412,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck29_eclipse4343_AzoriusControl_Miracles_WU()
+        public void Deck29_eclipse4343_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",28),
@@ -425,7 +425,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_aqualog_Prowess_IzzetProwess_UR()
+        public void Deck30_aqualog_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",29),
@@ -451,7 +451,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck32_nolyfe_Prowess_R()
+        public void Deck32_nolyfe_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",31),

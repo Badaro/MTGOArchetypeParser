@@ -9,12 +9,12 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Violent_Outburst: SnowReclamation (URG, Yorion)
-#02 gazmon48: Ponza (RG)
+#01 Violent_Outburst: TemurReclamation (URG, Yorion)
+#02 gazmon48: GruulMidrange (RG)
 #03 LORiWWA: ETron (C)
 #04 __matsugan: Neobrand (UG)
 #05 PRGJJAR: Dredge (BRG)
-#06 fradev1988: SnowControl (WUG)
+#06 fradev1988: BantControl (WUG)
 #07 Cherryxman: Uroza (WUG, Yorion)
 #08 sff_mtg: KGCTron (G)
 #09 _Shatun_: TitanShift (RG)
@@ -25,7 +25,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
     public class EventTest_modern_preliminary_2020_06_05 : EventTest
     {
         [Test]
-        public void Deck01_ViolentOutburst_SnowControl_SnowReclamation_URG_Yorion()
+        public void Deck01_ViolentOutburst_TemurReclamation_URG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",0),
@@ -38,7 +38,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck02_gazmon48_Ponza_RG()
+        public void Deck02_gazmon48_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",1),
@@ -90,7 +90,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck06_fradev1988_SnowControl_WUG()
+        public void Deck06_fradev1988_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",5),
@@ -116,7 +116,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck08_sffmtg_GTron_KGCTron_G()
+        public void Deck08_sffmtg_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",7),
@@ -129,7 +129,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck09_Shatun_PrimevalTitan_TitanShift_RG()
+        public void Deck09_Shatun_TitanShift_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",8),

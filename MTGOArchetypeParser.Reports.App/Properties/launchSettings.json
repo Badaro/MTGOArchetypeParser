@@ -2,7 +2,7 @@
   "profiles": {
     "MTGOArchetypeParser.Reports.App": {
       "commandName": "Project",
-      "commandLineArgs": "\"$(SolutionDir)MTGODecklistCache\\Tournaments\" allmetas includeleagues"
+      "commandLineArgs": "\"$(SolutionDir)MTGODecklistCache\\Tournaments\""
     }
   }
 }

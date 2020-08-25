@@ -10,39 +10,39 @@ using System.Text;
 
 /*
 #01 Erik157751: ETron (C)
-#02 Metcalf23: DeathAndTaxes (WG, Yorion)
-#03 pbarrrgh: SnowReclamation (UBG)
+#02 Metcalf23: SelenyaTaxes (WG, Yorion)
+#03 pbarrrgh: SultaiReclamation (UBG)
 #04 AlexFromTheNorth: BushwhackerZoo (WRG)
-#05 zachattack23: SnowReclamation (URG)
+#05 zachattack23: TemurReclamation (URG)
 #06 Avixy: Devoted (WG, Lurrus)
 #07 vagner_mtg: GrixisShadow (UBR)
 #08 PietroSas: Merfolk (U)
-#09 Somniloquist_: SuicideShadow (BRG)
+#09 Somniloquist_: JundShadow (BRG)
 #10 forenmagra: SaheeliToLight (WUBRG)
 #11 Snipers_are_bums: BringToNiv (WUBRG)
 #12 Ingalsarm: Uroza (URG)
-#13 LordoftheLobsters: SnowControl (WURG, Yorion)
-#14 mtgmonte: TraverseShadow (UBRG)
-#15 didoguidotti1: SnowControl (WUG)
+#13 LordoftheLobsters: WURGControl (WURG, Yorion)
+#14 mtgmonte: UBRGShadow (UBRG)
+#15 didoguidotti1: BantControl (WUG)
 #16 robb93: AdNauseam (WUB)
 #17 fenix4444: KGCTron (G)
 #18 YBLime: ThopterUrza (WUBR)
 #19 aspiringspike: GrixisLurrus (UBR)
 #20 shine0905: GyrudaStompy (BRG, Gyruda)
 #21 MHayashi: RedDeckWins (WR, Jegantha)
-#22 Granham: Jund (BRG)
+#22 Granham: JundMidrange (BRG)
 #23 abombdiggity: Slivers (WUBRG)
-#24 milikin: Ponza (RG)
+#24 milikin: GruulMidrange (RG)
 #25 Jidden: ThopterUrza (WU)
 #26 saccij92: Humans (WUBRG)
 #27 Karstinen: Bogles (WG, Lurrus)
 #28 KAKOLOLO: BushwhackerZoo (RG)
 #29 Darthtaneon: BushwhackerZoo (RG)
-#30 edward40hands: Rock (BG)
+#30 edward40hands: GolgariMidrange (BG)
 #31 Gods_Shadow: GrixisControl (UBR)
-#32 thepensword: Prowess (R)
+#32 thepensword: MonoRedProwess (R)
 #33 vasko19: IzzetRestoreBalance (URG)
-#34 Ftzz: SnowReclamation (UBG)
+#34 Ftzz: SultaiReclamation (UBG)
 #35 Juaspas: PrimevalTitan (BRG)
 #36 MrRaeb: Uroza (UBG, Yorion)
 #37 jessy_samek: Dredge (BRG)
@@ -50,12 +50,12 @@ using System.Text;
 #39 Rock_Star: RakdosProwess (BR, Lurrus)
 #40 NorrathDecay: Burn (WR)
 #41 bozo2112: Crabvine (UBG)
-#42 yutya: SnowTitan (WUG, Yorion)
+#42 yutya: BantControl (WUG, Yorion)
 #43 _kg: Yawgmoth (BG)
-#44 Metcalf23: DeathAndTaxes (WR)
+#44 Metcalf23: BorosTaxes (WR)
 #45 derramedefogo: GiftsStorm (UR)
 #46 Zeekery: ThingAscension (WUR, Lurrus)
-#47 in5ano: SnowShift (URG, Yorion)
+#47 in5ano: Scapeshift (URG, Yorion)
 #48 cjucjujp: HardenedScales (BG, Lurrus)
 #49 Pollu: AdNauseam (WUB)
 #50 Gleiciano: TitanShift (RG)
@@ -82,7 +82,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck02_Metcalf23_DeathAndTaxes_WG_Yorion()
+        public void Deck02_Metcalf23_SelenyaTaxes_WG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",1),
@@ -95,7 +95,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck03_pbarrrgh_SnowControl_SnowReclamation_UBG()
+        public void Deck03_pbarrrgh_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",2),
@@ -121,7 +121,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck05_zachattack23_SnowControl_SnowReclamation_URG()
+        public void Deck05_zachattack23_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",4),
@@ -147,7 +147,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck07_vagnermtg_DeathsShadow_GrixisShadow_UBR()
+        public void Deck07_vagnermtg_GrixisShadow_UBR()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",6),
@@ -173,7 +173,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck09_Somniloquist_DeathsShadow_SuicideShadow_BRG()
+        public void Deck09_Somniloquist_JundShadow_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",8),
@@ -186,7 +186,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck10_forenmagra_SaheeliCombo_SaheeliToLight_WUBRG()
+        public void Deck10_forenmagra_SaheeliToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",9),
@@ -225,7 +225,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck13_LordoftheLobsters_SnowControl_WURG_Yorion()
+        public void Deck13_LordoftheLobsters_WURGControl_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",12),
@@ -238,7 +238,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck14_mtgmonte_DeathsShadow_TraverseShadow_UBRG()
+        public void Deck14_mtgmonte_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",13),
@@ -251,7 +251,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck15_didoguidotti1_SnowControl_WUG()
+        public void Deck15_didoguidotti1_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",14),
@@ -277,7 +277,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck17_fenix4444_GTron_KGCTron_G()
+        public void Deck17_fenix4444_KGCTron_G()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",16),
@@ -342,7 +342,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck22_Granham_Rock_Jund_BRG()
+        public void Deck22_Granham_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",21),
@@ -368,7 +368,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck24_milikin_Ponza_RG()
+        public void Deck24_milikin_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",23),
@@ -446,7 +446,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck30_edward40hands_Rock_BG()
+        public void Deck30_edward40hands_GolgariMidrange_BG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",29),
@@ -472,7 +472,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck32_thepensword_Prowess_R()
+        public void Deck32_thepensword_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",31),
@@ -485,7 +485,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck33_vasko19_IzzetFreeSpells_IzzetRestoreBalance_URG()
+        public void Deck33_vasko19_IzzetRestoreBalance_URG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",32),
@@ -498,7 +498,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck34_Ftzz_SnowControl_SnowReclamation_UBG()
+        public void Deck34_Ftzz_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",33),
@@ -550,7 +550,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck38_Yumas2_PrimevalTitan_AmuletTitan_WURG()
+        public void Deck38_Yumas2_AmuletTitan_WURG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",37),
@@ -563,7 +563,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck39_RockStar_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck39_RockStar_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",38),
@@ -602,7 +602,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck42_yutya_SnowControl_SnowTitan_WUG_Yorion()
+        public void Deck42_yutya_BantControl_WUG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",41),
@@ -628,7 +628,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck44_Metcalf23_DeathAndTaxes_WR()
+        public void Deck44_Metcalf23_BorosTaxes_WR()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",43),
@@ -667,7 +667,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck47_in5ano_SnowControl_SnowShift_URG_Yorion()
+        public void Deck47_in5ano_Scapeshift_URG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",46),
@@ -706,7 +706,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck50_Gleiciano_PrimevalTitan_TitanShift_RG()
+        public void Deck50_Gleiciano_TitanShift_RG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",49),

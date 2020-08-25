@@ -18,7 +18,7 @@ using System.Text;
 #07 JakeHelms: RakdosProwess (BR, Lurrus)
 #08 __matsugan: Dredge (BRG)
 #09 kanister: BantControl (WUG)
-#10 iL_Tedesco: Jund (BRG)
+#10 iL_Tedesco: JundMidrange (BRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -52,7 +52,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_otakkun_GTron_KGCTron_G()
+        public void Deck03_otakkun_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-22",2),
@@ -65,7 +65,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_aManatease_Prowess_IzzetProwess_UR()
+        public void Deck04_aManatease_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-22",3),
@@ -104,7 +104,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_JakeHelms_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck07_JakeHelms_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-22",6),
@@ -143,7 +143,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_iLTedesco_Rock_Jund_BRG()
+        public void Deck10_iLTedesco_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-22",9),

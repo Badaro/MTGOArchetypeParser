@@ -13,21 +13,21 @@ using System.Text;
 #02 Magicofplayer1: Dredge (WBRG)
 #03 _Falcon_: IzzetProwess (UR)
 #04 E_Kaminuma: ETron (C)
-#05 ScreenwriterNY: DeathAndTaxes (WU)
+#05 ScreenwriterNY: AzoriusTaxes (WU)
 #06 ArchaeusDota: KGCTron (G)
 #07 Zar0s: Scapeshift (URG)
-#08 komattaman: Ponza (RG)
-#09 Lukas261997: AzoriusStoneblade (WU)
+#08 komattaman: GruulMidrange (RG)
+#09 Lukas261997: AzoriusControl (WU)
 #10 moyashi0904: TemurReclamation (URG)
 #11 johnsmith3373: IzzetProwess (UR)
 #12 CrusherBotBG: HammerTime (W)
-#13 ktmr-39: SnowReclamation (UBG)
+#13 ktmr-39: SultaiReclamation (UBG)
 #14 siomomi: ETron (C)
 #15 Wuhsa: BringToNiv (WUBRG)
-#16 _Shatun_: Prowess (R)
+#16 _Shatun_: MonoRedProwess (R)
 #17 Littlemastercz: GruulEldrazi (RG)
 #18 Goteo: Dredge (BRG)
-#19 duofanel: Jund (BRG)
+#19 duofanel: JundMidrange (BRG)
 #20 nk0913: IzzetProwess (UR)
 */
 
@@ -36,7 +36,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_07_29 : EventTest
     {
         [Test]
-        public void Deck01_Lavaridge_WildernessReclamation_TemurReclamation_URG()
+        public void Deck01_Lavaridge_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",0),
@@ -62,7 +62,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_Falcon_Prowess_IzzetProwess_UR()
+        public void Deck03_Falcon_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",2),
@@ -88,7 +88,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_ScreenwriterNY_DeathAndTaxes_WU()
+        public void Deck05_ScreenwriterNY_AzoriusTaxes_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",4),
@@ -101,7 +101,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_ArchaeusDota_GTron_KGCTron_G()
+        public void Deck06_ArchaeusDota_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",5),
@@ -127,7 +127,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_komattaman_Ponza_RG()
+        public void Deck08_komattaman_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",7),
@@ -140,7 +140,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_Lukas261997_AzoriusControl_AzoriusStoneblade_WU()
+        public void Deck09_Lukas261997_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",8),
@@ -153,7 +153,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_moyashi0904_WildernessReclamation_TemurReclamation_URG()
+        public void Deck10_moyashi0904_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",9),
@@ -166,7 +166,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_johnsmith3373_Prowess_IzzetProwess_UR()
+        public void Deck11_johnsmith3373_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",10),
@@ -192,7 +192,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_ktmr39_SnowControl_SnowReclamation_UBG()
+        public void Deck13_ktmr39_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",12),
@@ -231,7 +231,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck16_Shatun_Prowess_R()
+        public void Deck16_Shatun_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",15),
@@ -270,7 +270,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck19_duofanel_Rock_Jund_BRG()
+        public void Deck19_duofanel_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",18),
@@ -283,7 +283,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_nk0913_Prowess_IzzetProwess_UR()
+        public void Deck20_nk0913_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",19),

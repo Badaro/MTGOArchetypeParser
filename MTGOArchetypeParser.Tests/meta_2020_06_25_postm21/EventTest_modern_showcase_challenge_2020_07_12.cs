@@ -10,32 +10,32 @@ using System.Text;
 
 /*
 #01 musasabi: KGCAmuletTitan (UBRG)
-#02 jmeyer2030: SnowShift (URG, Yorion)
-#03 DaniMRebel: DeathAndTaxes (WG)
-#04 Thrall90: Jund (BRG)
-#05 SunofNothing: SnowControl (WUG)
+#02 jmeyer2030: Scapeshift (URG, Yorion)
+#03 DaniMRebel: SelenyaTaxes (WG)
+#04 Thrall90: JundMidrange (BRG)
+#05 SunofNothing: BantControl (WUG)
 #06 MrRaeb: Uroza (UBG, Yorion)
-#07 wambocombo2020: SnowShift (URG, Yorion)
+#07 wambocombo2020: Scapeshift (URG, Yorion)
 #08 BSK_hercules: IzzetProwess (UR)
 #09 kbr3: HardenedScales (G)
-#10 Shamwowfella: SultaiSnow (UBG)
+#10 Shamwowfella: SultaiControl (UBG)
 #11 siomomi: ETron (C)
-#12 nahuel10: SnowReclamation (UBG)
+#12 nahuel10: SultaiReclamation (UBG)
 #13 mariogomes097: GrixisShadow (UBR)
 #14 EnlargedToShowTexture: SnoopGoblins (BR)
-#15 Justodeangelo: SnowControl (WUG)
-#16 karn_90: TemurSnow (URG)
-#17 zachattack23: SnowControl (WUG)
+#15 Justodeangelo: BantControl (WUG)
+#16 karn_90: TemurControl (URG)
+#17 zachattack23: BantControl (WUG)
 #18 ArchaeusDota: KGCTron (G)
-#19 MCScards: Jund (BRG)
+#19 MCScards: JundMidrange (BRG)
 #20 MrSeri: HardenedScales (G)
-#21 qbturtle15: Jund (BRG)
+#21 qbturtle15: JundMidrange (BRG)
 #22 hugofreitas1: GiftsStorm (UR)
 #23 cws: GiftsStorm (UR)
 #24 otakkun: KGCTron (G)
 #25 FreedMania: KGCAmuletTitan (WUBRG)
 #26 yamakiller: Dredge (BRG)
-#27 Juaspas: Ponza (RG)
+#27 Juaspas: GruulMidrange (RG)
 #28 Fenrir18: SnoopGoblins (BR)
 #29 LORiWWA: ETron (C)
 #30 Mateusf34: ETron (C)
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_showcase_challenge_2020_07_12 : EventTest
     {
         [Test]
-        public void Deck01_musasabi_PrimevalTitan_KGCAmuletTitan_UBRG()
+        public void Deck01_musasabi_KGCAmuletTitan_UBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",0),
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck02_jmeyer2030_SnowControl_SnowShift_URG_Yorion()
+        public void Deck02_jmeyer2030_Scapeshift_URG_Yorion()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",1),
@@ -74,7 +74,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck03_DaniMRebel_DeathAndTaxes_WG()
+        public void Deck03_DaniMRebel_SelenyaTaxes_WG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",2),
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck04_Thrall90_Rock_Jund_BRG()
+        public void Deck04_Thrall90_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",3),
@@ -100,7 +100,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck05_SunofNothing_SnowControl_WUG()
+        public void Deck05_SunofNothing_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",4),
@@ -126,7 +126,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_wambocombo2020_SnowControl_SnowShift_URG_Yorion()
+        public void Deck07_wambocombo2020_Scapeshift_URG_Yorion()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",6),
@@ -139,7 +139,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck08_BSKhercules_Prowess_IzzetProwess_UR()
+        public void Deck08_BSKhercules_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",7),
@@ -165,7 +165,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck10_Shamwowfella_SnowControl_SultaiSnow_UBG()
+        public void Deck10_Shamwowfella_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",9),
@@ -191,7 +191,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck12_nahuel10_SnowControl_SnowReclamation_UBG()
+        public void Deck12_nahuel10_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",11),
@@ -204,7 +204,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck13_mariogomes097_DeathsShadow_GrixisShadow_UBR()
+        public void Deck13_mariogomes097_GrixisShadow_UBR()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",12),
@@ -217,7 +217,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck14_EnlargedToShowTexture_Goblins_SnoopGoblins_BR()
+        public void Deck14_EnlargedToShowTexture_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",13),
@@ -230,7 +230,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck15_Justodeangelo_SnowControl_WUG()
+        public void Deck15_Justodeangelo_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",14),
@@ -243,7 +243,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck16_karn90_SnowControl_TemurSnow_URG()
+        public void Deck16_karn90_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",15),
@@ -256,7 +256,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck17_zachattack23_SnowControl_WUG()
+        public void Deck17_zachattack23_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",16),
@@ -269,7 +269,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck18_ArchaeusDota_GTron_KGCTron_G()
+        public void Deck18_ArchaeusDota_KGCTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",17),
@@ -282,7 +282,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck19_MCScards_Rock_Jund_BRG()
+        public void Deck19_MCScards_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",18),
@@ -308,7 +308,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck21_qbturtle15_Rock_Jund_BRG()
+        public void Deck21_qbturtle15_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",20),
@@ -347,7 +347,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck24_otakkun_GTron_KGCTron_G()
+        public void Deck24_otakkun_KGCTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",23),
@@ -360,7 +360,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck25_FreedMania_PrimevalTitan_KGCAmuletTitan_WUBRG()
+        public void Deck25_FreedMania_KGCAmuletTitan_WUBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",24),
@@ -386,7 +386,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck27_Juaspas_Ponza_RG()
+        public void Deck27_Juaspas_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",26),
@@ -399,7 +399,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck28_Fenrir18_Goblins_SnoopGoblins_BR()
+        public void Deck28_Fenrir18_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",27),
