@@ -122,9 +122,6 @@ namespace MTGOArchetypeParser.Data
                     case ArchetypeConditionType.TwoOrMoreInMainboard:
                         if (mainboardCards.Where(c => condition.Cards.Contains(c.Name)).Count() < 2) return false;
                         break;
-                    case ArchetypeConditionType.ColorMustInclude:
-                        if (!condition.Color.ToString().ToCharArray().All(c => color.ToString().ToCharArray().Contains(c))) return false;
-                        break;
                     case ArchetypeConditionType.ColorIsExactly:
                         if (condition.Color != color) return false;
                         break;

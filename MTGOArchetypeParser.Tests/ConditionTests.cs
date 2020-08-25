@@ -96,25 +96,6 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void ColorMustInclude()
-        {
-            DetectionSuccess(ArchetypeConditionType.ColorMustInclude,
-               ArchetypeColor.W,
-               new string[] { "Plains" },
-               new string[] { });
-
-            DetectionSuccess(ArchetypeConditionType.ColorMustInclude,
-               ArchetypeColor.W,
-               new string[] { "Plains", "Island" },
-               new string[] { });
-
-            DetectionFailure(ArchetypeConditionType.ColorMustInclude,
-               ArchetypeColor.W,
-               new string[] { "Swamp" },
-               new string[] { });
-        }
-
-        [Test]
         public void ColorIsExactly()
         {
             DetectionFailure(ArchetypeConditionType.ColorIsExactly,
