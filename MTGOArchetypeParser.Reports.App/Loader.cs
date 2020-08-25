@@ -3,6 +3,7 @@ using MTGOArchetypeParser.Data.Model;
 using MTGOArchetypeParser.Model;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 
@@ -31,7 +32,7 @@ namespace MTGOArchetypeParser.Reports.App
 
                 for (int i = 0; i < tournament.Decks.Length; i++)
                 {
-                    var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => i.Card).ToArray(), tournament.Decks[i].Sideboard.Select(i => i.Card).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
+                    var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
 
                     string colorID = detectionResult.Color.ToString();
                     string companionID = detectionResult.Companion == null ? "" : detectionResult.Companion.Value.ToString();
@@ -41,10 +42,19 @@ namespace MTGOArchetypeParser.Reports.App
                     if (detectionResult.Matches.Length == 1)
                     {
                         var detected = detectionResult.Matches.First();
+
                         archetypeID = detected.Archetype.GetType().Name;
-                        if (detected.Variant != null)
+                        if (detected.Archetype is ArchetypeGeneric)
                         {
-                            variantID = detected.Variant.GetType().Name;
+                            string colorName = GetColorName(detectionResult.Color);
+                            archetypeID = archetypeID.Replace("Generic", colorName);
+                        }
+                        else
+                        {
+                            if (detected.Variant != null)
+                            {
+                                variantID = detected.Variant.GetType().Name;
+                            }
                         }
                     }
 
@@ -91,6 +101,75 @@ namespace MTGOArchetypeParser.Reports.App
                     return metaStart.AddDays(-5);
                 default:
                     throw new Exception("Invalid DayOfWeek for meta start date");
+            }
+        }
+
+        static string GetColorName(ArchetypeColor color)
+        {
+            switch (color)
+            {
+                case ArchetypeColor.W:
+                    return $"MonoWhite";
+                case ArchetypeColor.U:
+                    return $"MonoBlue";
+                case ArchetypeColor.B:
+                    return $"MonoBlack";
+                case ArchetypeColor.R:
+                    return $"MonoRed";
+                case ArchetypeColor.G:
+                    return $"MonoGreen";
+                case ArchetypeColor.WU:   // Azorius
+                    return $"Azorius";
+                case ArchetypeColor.WB:   // Orzhov
+                    return $"Orzhov";
+                case ArchetypeColor.WR:   // Boros
+                    return $"Boros";
+                case ArchetypeColor.WG:   // Selesnya
+                    return $"Selenya";
+                case ArchetypeColor.UB:   // Dimir
+                    return $"Dimir";
+                case ArchetypeColor.UR:   // Izzet
+                    return $"Izzet";
+                case ArchetypeColor.UG:   // Simic
+                    return $"Simic";
+                case ArchetypeColor.BR:   // Rakdos
+                    return $"Rakdos";
+                case ArchetypeColor.BG:   // Golgari
+                    return $"Golgari";
+                case ArchetypeColor.RG:   // Gruul
+                    return $"Gruul";
+                case ArchetypeColor.WUB:  // Esper
+                    return $"Esper";
+                case ArchetypeColor.WUR:  // Jeskai
+                    return $"Jeskai";
+                case ArchetypeColor.WUG:  // Bant
+                    return $"Bant";
+                case ArchetypeColor.WBR:  // Mardu
+                    return $"Mardu";
+                case ArchetypeColor.WBG:  // Abzan
+                    return $"Abzan";
+                case ArchetypeColor.WRG:  // Naya
+                    return $"Naya";
+                case ArchetypeColor.UBR:  // Grixis
+                    return $"Grixis";
+                case ArchetypeColor.UBG:  // Sultai
+                    return $"Sultai";
+                case ArchetypeColor.URG:  // Temur
+                    return $"Temur";
+                case ArchetypeColor.BRG:  // Jund
+                    return $"Jund";
+                case ArchetypeColor.WUBR: // Not-G
+                    return $"4ColorNonGreen";
+                case ArchetypeColor.WUBG: // Not-R
+                    return $"4ColorNonRed";
+                case ArchetypeColor.WURG: // Not-B
+                    return $"4ColorNonBlack";
+                case ArchetypeColor.UBRG: // Not-W
+                    return $"4ColorNonWhite";
+                case ArchetypeColor.WUBRG:
+                    return $"5Color";
+                default:
+                    return "";
             }
         }
     }

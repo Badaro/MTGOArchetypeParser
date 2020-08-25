@@ -57,7 +57,7 @@ namespace MTGOArchetypeParser.Tests.Updater
 
                     for (int i = 0; i < tournament.Decks.Length; i++)
                     {
-                        var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => i.Card).ToArray(), tournament.Decks[i].Sideboard.Select(i => i.Card).ToArray(), Archetypes.Modern.Loader.GetArchetypes());
+                        var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), Archetypes.Modern.Loader.GetArchetypes());
                         DeckKeys deckKeys = KeyGenerator.GenerateDeckKeys(i, tournament.Decks[i], detectionResult);
 
                         string tournamentDeckTestContents = CodeGenerator.GenerateTest(tournamentKeys, deckKeys);

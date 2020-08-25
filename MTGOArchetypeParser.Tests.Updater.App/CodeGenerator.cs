@@ -1,5 +1,6 @@
 ﻿using MTGOArchetypeParser.Data;
 using MTGOArchetypeParser.Data.Model;
+using MTGOArchetypeParser.Model;
 using MTGOArchetypeParser.Tests.Updater.Model;
 using System;
 using System.IO;
@@ -16,7 +17,7 @@ namespace MTGOArchetypeParser.Tests.Updater
 
             for (int i = 0; i < tournament.Decks.Length; i++)
             {
-                var result = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => i.Card).ToArray(), tournament.Decks[i].Sideboard.Select(i => i.Card).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
+                var result = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
 
                 int position = i + 1;
                 string player = tournament.Decks[i].Player;

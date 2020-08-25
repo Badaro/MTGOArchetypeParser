@@ -285,7 +285,7 @@ namespace MTGOArchetypeParser.Tests
 
         private void DetectionSuccess(ArchetypeConditionType condition, string[] archetypeCards, ArchetypeColor archetypeColor, string[] testMainboard, string[] testSideboard)
         {
-            var archetype = new Archetype()
+            var archetype = new ArchetypeSpecific()
             {
                 Conditions = new ArchetypeCondition[]
                 {
@@ -294,9 +294,9 @@ namespace MTGOArchetypeParser.Tests
             };
 
             var result = ArchetypeAnalyzer.Detect(
-                testMainboard,
-                testSideboard,
-                new Archetype[]
+                testMainboard.Select(c => new Card() { Count = 1, Name = c }).ToArray(),
+                testSideboard.Select(c => new Card() { Count = 1, Name = c }).ToArray(),
+                new ArchetypeSpecific[]
                 {
                      archetype
                 });
@@ -318,7 +318,7 @@ namespace MTGOArchetypeParser.Tests
 
         private void DetectionFailure(ArchetypeConditionType condition, string[] archetypeCards, ArchetypeColor archetypeColor, string[] testMainboard, string[] testSideboard)
         {
-            var archetype = new Archetype()
+            var archetype = new ArchetypeSpecific()
             {
                 Conditions = new ArchetypeCondition[]
                 {
@@ -327,9 +327,9 @@ namespace MTGOArchetypeParser.Tests
             };
 
             var result = ArchetypeAnalyzer.Detect(
-                testMainboard,
-                testSideboard,
-                new Archetype[]
+                testMainboard.Select(c => new Card() { Count = 1, Name = c }).ToArray(),
+                testSideboard.Select(c => new Card() { Count = 1, Name = c }).ToArray(),
+                new ArchetypeSpecific[]
                 {
                      archetype
                 });

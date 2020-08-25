@@ -22,20 +22,23 @@ namespace MTGOArchetypeParser.Data
             {"Zirda, the Dawnwaker", ArchetypeCompanion.Zirda }
         };
 
-        public static ArchetypeResult Detect(string[] mainboardCards, string[] sideboardCards, Archetype[] archetypeData)
+        public static ArchetypeResult Detect(Card[] mainboardCards, Card[] sideboardCards, Archetype[] archetypeData)
         {
+            ArchetypeSpecific[] specificArchetypes = archetypeData.Where(a => a is ArchetypeSpecific && !(a is ArchetypeVariant)).Select(a => a as ArchetypeSpecific).ToArray();
+            ArchetypeGeneric[] genericArchetypes = archetypeData.Where(a => a is ArchetypeGeneric).Select(a => a as ArchetypeGeneric).ToArray();
+
             ArchetypeCompanion? companion = GetCompanion(mainboardCards, sideboardCards);
             ArchetypeColor color = GetColors(mainboardCards, sideboardCards);
 
             List<ArchetypeMatch> results = new List<ArchetypeMatch>();
-            foreach (Archetype archetype in archetypeData)
+            foreach (ArchetypeSpecific archetype in specificArchetypes)
             {
                 if (Test(mainboardCards, sideboardCards, color, archetype))
                 {
                     bool isVariant = false;
                     if (archetype.Variants != null)
                     {
-                        foreach (Archetype variant in archetype.Variants)
+                        foreach (ArchetypeSpecific variant in archetype.Variants)
                         {
                             if (Test(mainboardCards, sideboardCards, color, variant))
                             {
@@ -48,34 +51,40 @@ namespace MTGOArchetypeParser.Data
                 }
             }
 
+            if (results.Count == 0)
+            {
+                Archetype genericArchetype = GetBestGenericArchetype(mainboardCards, sideboardCards, color, genericArchetypes);
+                if (genericArchetype != null) results.Add(new ArchetypeMatch() { Archetype = genericArchetype, Variant = null, });
+            }
+
             return new ArchetypeResult() { Matches = results.ToArray(), Color = color, Companion = companion };
         }
 
-        private static ArchetypeCompanion? GetCompanion(string[] mainboardCards, string[] sideboardCards)
+        private static ArchetypeCompanion? GetCompanion(Card[] mainboardCards, Card[] sideboardCards)
         {
             ArchetypeCompanion? companion = null;
             foreach (var possibleCompanion in _companionMap)
             {
-                if (sideboardCards.Contains(possibleCompanion.Key)) companion = possibleCompanion.Value;
+                if (sideboardCards.Any(c => c.Name == possibleCompanion.Key)) companion = possibleCompanion.Value;
             }
             return companion;
         }
 
-        private static ArchetypeColor GetColors(string[] mainboardCards, string[] sideboardCards)
+        private static ArchetypeColor GetColors(Card[] mainboardCards, Card[] sideboardCards)
         {
             StringBuilder colorsFound = new StringBuilder();
             foreach (var card in mainboardCards)
             {
-                if (ArchetypeLands.Lands.ContainsKey(card))
+                if (ArchetypeLands.Lands.ContainsKey(card.Name))
                 {
-                    colorsFound.Append(ArchetypeLands.Lands[card]);
+                    colorsFound.Append(ArchetypeLands.Lands[card.Name]);
                 }
             }
             foreach (var card in sideboardCards)
             {
-                if (ArchetypeLands.Lands.ContainsKey(card))
+                if (ArchetypeLands.Lands.ContainsKey(card.Name))
                 {
-                    colorsFound.Append(ArchetypeLands.Lands[card]);
+                    colorsFound.Append(ArchetypeLands.Lands[card.Name]);
                 }
             }
 
@@ -89,44 +98,44 @@ namespace MTGOArchetypeParser.Data
             return finalColor.Length > 0 ? (ArchetypeColor)Enum.Parse(typeof(ArchetypeColor), finalColor) : ArchetypeColor.C; ;
         }
 
-        private static bool Test(string[] mainboardCards, string[] sideboardCards, ArchetypeColor color, Archetype archetypeData)
+        private static bool Test(Card[] mainboardCards, Card[] sideboardCards, ArchetypeColor color, ArchetypeSpecific archetypeData)
         {
             foreach (var condition in archetypeData.Conditions)
             {
                 switch (condition.Type)
                 {
                     case ArchetypeConditionType.InMainboard:
-                        if (!mainboardCards.Any(c => c == condition.Cards[0])) return false;
+                        if (!mainboardCards.Any(c => c.Name == condition.Cards[0])) return false;
                         break;
                     case ArchetypeConditionType.InSideboard:
-                        if (!sideboardCards.Any(c => c == condition.Cards[0])) return false;
+                        if (!sideboardCards.Any(c => c.Name == condition.Cards[0])) return false;
                         break;
                     case ArchetypeConditionType.InMainOrSideboard:
-                        if (!mainboardCards.Any(c => c == condition.Cards[0]) && !sideboardCards.Any(c => c == condition.Cards[0])) return false;
+                        if (!mainboardCards.Any(c => c.Name == condition.Cards[0]) && !sideboardCards.Any(c => c.Name == condition.Cards[0])) return false;
                         break;
                     case ArchetypeConditionType.OneOrMoreInMainboard:
-                        if (!mainboardCards.Any(c => condition.Cards.Contains(c))) return false;
+                        if (!mainboardCards.Any(c => condition.Cards.Contains(c.Name))) return false;
                         break;
                     case ArchetypeConditionType.OneOrMoreInSideboard:
-                        if (!sideboardCards.Any(c => condition.Cards.Contains(c))) return false;
+                        if (!sideboardCards.Any(c => condition.Cards.Contains(c.Name))) return false;
                         break;
                     case ArchetypeConditionType.OneOrMoreInMainOrSideboard:
-                        if (!mainboardCards.Any(c => condition.Cards.Contains(c)) && !sideboardCards.Any(c => condition.Cards.Contains(c))) return false;
+                        if (!mainboardCards.Any(c => condition.Cards.Contains(c.Name)) && !sideboardCards.Any(c => condition.Cards.Contains(c.Name))) return false;
                         break;
                     case ArchetypeConditionType.DoesNotContain:
-                        if (mainboardCards.Any(c => c == condition.Cards[0]) || sideboardCards.Any(c => c == condition.Cards[0])) return false;
+                        if (mainboardCards.Any(c => c.Name == condition.Cards[0]) || sideboardCards.Any(c => c.Name == condition.Cards[0])) return false;
                         break;
                     case ArchetypeConditionType.DoesNotContainAll:
-                        if (mainboardCards.Concat(sideboardCards).Distinct().Where(c => condition.Cards.Contains(c)).Count() == condition.Cards.Length) return false;
+                        if (mainboardCards.Concat(sideboardCards).Distinct().Where(c => condition.Cards.Contains(c.Name)).Count() == condition.Cards.Length) return false;
                         break;
                     case ArchetypeConditionType.TwoOrMoreInMainboard:
-                        if (mainboardCards.Where(c => condition.Cards.Contains(c)).Count() < 2) return false;
+                        if (mainboardCards.Where(c => condition.Cards.Contains(c.Name)).Count() < 2) return false;
                         break;
                     case ArchetypeConditionType.TwoOrMoreInSideboard:
-                        if (sideboardCards.Where(c => condition.Cards.Contains(c)).Count() < 2) return false;
+                        if (sideboardCards.Where(c => condition.Cards.Contains(c.Name)).Count() < 2) return false;
                         break;
                     case ArchetypeConditionType.TwoOrMoreInMainOrSideboard:
-                        if (mainboardCards.Concat(sideboardCards).Distinct().Where(c => condition.Cards.Contains(c)).Count() < 2) return false;
+                        if (mainboardCards.Concat(sideboardCards).Distinct().Where(c => condition.Cards.Contains(c.Name)).Count() < 2) return false;
                         break;
                     case ArchetypeConditionType.ColorMustInclude:
                         if (!condition.Color.ToString().ToCharArray().All(c => color.ToString().ToCharArray().Contains(c))) return false;
@@ -143,6 +152,34 @@ namespace MTGOArchetypeParser.Data
             }
 
             return true;
+        }
+
+        private static Archetype GetBestGenericArchetype(Card[] mainboardCards, Card[] sideboardCards, ArchetypeColor color, ArchetypeGeneric[] genericArchetypes)
+        {
+            Dictionary<ArchetypeGeneric, int> weights = new Dictionary<ArchetypeGeneric, int>();
+
+            foreach (ArchetypeGeneric genericArchetype in genericArchetypes)
+            {
+                weights.Add(genericArchetype, 0);
+                foreach (var card in mainboardCards.Concat(sideboardCards).Distinct())
+                {
+
+                    if (genericArchetype.CommonCards.Contains(card.Name))
+                    {
+                        weights[genericArchetype] += card.Count;
+                    }
+                }
+            }
+
+            if (weights.All(k => k.Value == 0))
+            {
+                return null;
+            }
+            else
+            {
+                int max = weights.Max(k => k.Value);
+                return weights.Where(k => k.Value == max).ToArray().OrderBy(k => k.Key.CommonCards.Length).First().Key;
+            }
         }
     }
 }
