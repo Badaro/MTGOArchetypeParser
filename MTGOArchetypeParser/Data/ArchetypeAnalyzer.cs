@@ -116,32 +116,14 @@ namespace MTGOArchetypeParser.Data
                     case ArchetypeConditionType.OneOrMoreInMainboard:
                         if (!mainboardCards.Any(c => condition.Cards.Contains(c.Name))) return false;
                         break;
-                    case ArchetypeConditionType.OneOrMoreInSideboard:
-                        if (!sideboardCards.Any(c => condition.Cards.Contains(c.Name))) return false;
-                        break;
-                    case ArchetypeConditionType.OneOrMoreInMainOrSideboard:
-                        if (!mainboardCards.Any(c => condition.Cards.Contains(c.Name)) && !sideboardCards.Any(c => condition.Cards.Contains(c.Name))) return false;
-                        break;
                     case ArchetypeConditionType.DoesNotContain:
                         if (mainboardCards.Any(c => c.Name == condition.Cards[0]) || sideboardCards.Any(c => c.Name == condition.Cards[0])) return false;
-                        break;
-                    case ArchetypeConditionType.DoesNotContainAll:
-                        if (mainboardCards.Concat(sideboardCards).Distinct().Where(c => condition.Cards.Contains(c.Name)).Count() == condition.Cards.Length) return false;
                         break;
                     case ArchetypeConditionType.TwoOrMoreInMainboard:
                         if (mainboardCards.Where(c => condition.Cards.Contains(c.Name)).Count() < 2) return false;
                         break;
-                    case ArchetypeConditionType.TwoOrMoreInSideboard:
-                        if (sideboardCards.Where(c => condition.Cards.Contains(c.Name)).Count() < 2) return false;
-                        break;
-                    case ArchetypeConditionType.TwoOrMoreInMainOrSideboard:
-                        if (mainboardCards.Concat(sideboardCards).Distinct().Where(c => condition.Cards.Contains(c.Name)).Count() < 2) return false;
-                        break;
                     case ArchetypeConditionType.ColorMustInclude:
                         if (!condition.Color.ToString().ToCharArray().All(c => color.ToString().ToCharArray().Contains(c))) return false;
-                        break;
-                    case ArchetypeConditionType.ColorDoesNotInclude:
-                        if (condition.Color.ToString().ToCharArray().Any(c => color.ToString().ToCharArray().Contains(c))) return false;
                         break;
                     case ArchetypeConditionType.ColorIsExactly:
                         if (condition.Color != color) return false;
