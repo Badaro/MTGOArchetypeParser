@@ -37,10 +37,10 @@ namespace MTGOArchetypeParser.Tests.Updater
             if (detectionResult.Matches.Length == 1)
             {
                 var detected = detectionResult.Matches.First();
-                archetypeID = detected.Archetype.GetType().Name;
+                archetypeID = detected.Archetype.GetName(detectionResult.Color);
                 if (detected.Variant != null)
                 {
-                    variantID = detected.Variant.GetType().Name;
+                    variantID = detected.Variant.GetName(detectionResult.Color);
                 }
             }
 

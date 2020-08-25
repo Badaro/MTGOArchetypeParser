@@ -43,22 +43,12 @@ namespace MTGOArchetypeParser.Reports.App
                     {
                         var detected = detectionResult.Matches.First();
 
-                        archetypeID = detected.Archetype.GetType().Name;
-                        if (detected.Archetype is ArchetypeGeneric)
+                        archetypeID = detected.Archetype.GetName(detectionResult.Color);
+                        if (detected.Variant != null)
                         {
-                            string colorName = GetColorName(detectionResult.Color);
-                            archetypeID = archetypeID.Replace("Generic", colorName);
-                        }
-                        else
-                        {
-                            if (detected.Variant != null)
-                            {
-                                variantID = detected.Variant.GetType().Name;
-                            }
+                            archetypeID = detected.Variant.GetName(detectionResult.Color);
                         }
                     }
-
-                    string consolidatedID = String.IsNullOrEmpty(variantID) ? archetypeID : variantID;
 
                     records.Add(new DataRecord()
                     {
@@ -69,7 +59,6 @@ namespace MTGOArchetypeParser.Reports.App
                         Player = tournament.Decks[i].Player,
                         AnchorUri = tournament.Decks[i].AnchorUri,
                         Archetype = archetypeID,
-                        Variant = consolidatedID,
                         Color = colorID,
                         Companion = companionID,
                         Deck = tournament.Decks[i]
@@ -101,75 +90,6 @@ namespace MTGOArchetypeParser.Reports.App
                     return metaStart.AddDays(-5);
                 default:
                     throw new Exception("Invalid DayOfWeek for meta start date");
-            }
-        }
-
-        static string GetColorName(ArchetypeColor color)
-        {
-            switch (color)
-            {
-                case ArchetypeColor.W:
-                    return $"MonoWhite";
-                case ArchetypeColor.U:
-                    return $"MonoBlue";
-                case ArchetypeColor.B:
-                    return $"MonoBlack";
-                case ArchetypeColor.R:
-                    return $"MonoRed";
-                case ArchetypeColor.G:
-                    return $"MonoGreen";
-                case ArchetypeColor.WU:   // Azorius
-                    return $"Azorius";
-                case ArchetypeColor.WB:   // Orzhov
-                    return $"Orzhov";
-                case ArchetypeColor.WR:   // Boros
-                    return $"Boros";
-                case ArchetypeColor.WG:   // Selesnya
-                    return $"Selenya";
-                case ArchetypeColor.UB:   // Dimir
-                    return $"Dimir";
-                case ArchetypeColor.UR:   // Izzet
-                    return $"Izzet";
-                case ArchetypeColor.UG:   // Simic
-                    return $"Simic";
-                case ArchetypeColor.BR:   // Rakdos
-                    return $"Rakdos";
-                case ArchetypeColor.BG:   // Golgari
-                    return $"Golgari";
-                case ArchetypeColor.RG:   // Gruul
-                    return $"Gruul";
-                case ArchetypeColor.WUB:  // Esper
-                    return $"Esper";
-                case ArchetypeColor.WUR:  // Jeskai
-                    return $"Jeskai";
-                case ArchetypeColor.WUG:  // Bant
-                    return $"Bant";
-                case ArchetypeColor.WBR:  // Mardu
-                    return $"Mardu";
-                case ArchetypeColor.WBG:  // Abzan
-                    return $"Abzan";
-                case ArchetypeColor.WRG:  // Naya
-                    return $"Naya";
-                case ArchetypeColor.UBR:  // Grixis
-                    return $"Grixis";
-                case ArchetypeColor.UBG:  // Sultai
-                    return $"Sultai";
-                case ArchetypeColor.URG:  // Temur
-                    return $"Temur";
-                case ArchetypeColor.BRG:  // Jund
-                    return $"Jund";
-                case ArchetypeColor.WUBR: // Not-G
-                    return $"4ColorNonGreen";
-                case ArchetypeColor.WUBG: // Not-R
-                    return $"4ColorNonRed";
-                case ArchetypeColor.WURG: // Not-B
-                    return $"4ColorNonBlack";
-                case ArchetypeColor.UBRG: // Not-W
-                    return $"4ColorNonWhite";
-                case ArchetypeColor.WUBRG:
-                    return $"5Color";
-                default:
-                    return "";
             }
         }
     }
