@@ -14,6 +14,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 "Bloodbraid Elf",
                 "Scavenging Ooze",
                 "Noble Hierarch",
+                "Birds of Paradise",
                 "Arbor Elf",
                 "Thoughtseize",
                 "Inquisition of Kozilek",

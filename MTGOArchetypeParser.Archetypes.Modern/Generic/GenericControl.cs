@@ -20,12 +20,13 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 "Celestial Colonnade",
                 "Supreme Verdict",
                 "Terminus",
+                "Dead of Winter",
                 "Teferi, Hero of Dominaria",
                 "Teferi, Time Raveler",
                 "Jace, the Mind Sculptor",
                 "Ral, Izzet Viceroy",
                 "Snapcaster Mage",
-                "Shark Typhoon",
+                "Shark Typhoon"
             };
         }
     }

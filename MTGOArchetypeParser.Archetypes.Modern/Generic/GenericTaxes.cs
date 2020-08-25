@@ -12,6 +12,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             CommonCards = new string[]
             {
                 "Giver of Runes",
+                "Brimaz, King of Oreskos",
                 "Restoration Angel",
                 "Thalia, Guardian of Thraben",
                 "Aether Vial",
