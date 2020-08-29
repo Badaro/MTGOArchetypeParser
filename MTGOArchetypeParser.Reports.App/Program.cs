@@ -42,12 +42,14 @@ namespace MTGOArchetypeParser.Reports.App
                 foreach (string meta in records.Select(r => r.Meta).Distinct())
                 {
                     GenerateMeta(records.Where(r => r.Meta == meta), r => r.Archetype, $"mtgo_meta_archetype_{meta.ToLower()}_full_{date}", _minPercentage);
+                    GenerateMeta(records.Where(r => r.Meta == meta), r => r.Archetype, $"mtgo_meta_all_archetype_{meta.ToLower()}_full_{date}", 0);
                     GenerateColors(records.Where(r => r.Meta == meta), $"mtgo_meta_colors_{meta.ToLower()}_full_{date}");
                     GenerateCards(records.Where(r => r.Meta == meta), $"mtgo_meta_cards_{meta.ToLower()}_full_{date}");
 
                     foreach (int week in records.Where(r => r.Meta == meta).Select(r => r.Week).Distinct())
                     {
                         GenerateMeta(records.Where(r => r.Meta == meta && r.Week == week), r => r.Archetype, $"mtgo_meta_archetype_{meta.ToLower()}_week{week.ToString("D2")}_{date}", _minPercentage);
+                        GenerateMeta(records.Where(r => r.Meta == meta && r.Week == week), r => r.Archetype, $"mtgo_meta_all_archetype_{meta.ToLower()}_week{week.ToString("D2")}_{date}", 0);
                         GenerateColors(records.Where(r => r.Meta == meta && r.Week == week), $"mtgo_meta_colors_{meta.ToLower()}_week{week.ToString("D2")}_{date}");
                         GenerateCards(records.Where(r => r.Meta == meta && r.Week == week), $"mtgo_meta_cards_{meta.ToLower()}_week{week.ToString("D2")}_{date}");
                     }
