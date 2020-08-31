@@ -38,6 +38,7 @@ namespace MTGOArchetypeParser.Reports.App
 
                 string date = $"{records.Max(t => t.Date).ToString("yyyy_MM_dd")}";
                 GenerateDump(records, $"mtgo_data_{date}");
+                GenerateTrend(records, $"mtgo_trend_{date}");
 
                 foreach (string meta in records.Select(r => r.Meta).Distinct())
                 {
@@ -83,6 +84,48 @@ namespace MTGOArchetypeParser.Reports.App
             foreach (var record in records)
             {
                 csvData.AppendLine($"{record.Tournament},{record.Meta},{record.Week},{record.Date.ToString("yyyy-MM-dd")},{record.Player},{record.AnchorUri},{record.Archetype},{record.Color},{record.Companion}");
+            }
+
+            File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
+        }
+
+        private static void GenerateTrend(IEnumerable<DataRecord> records, string reportName)
+        {
+            int maxWeeks = records.Max(r => r.Week);
+
+            int[] totalPerWeek = new int[maxWeeks];
+            Dictionary<string, int[]> consolidatedResults = new Dictionary<string, int[]>();
+            foreach (var record in records)
+            {
+                totalPerWeek[record.Week - 1]++;
+                if (!consolidatedResults.ContainsKey(record.Archetype)) consolidatedResults.Add(record.Archetype, new int[maxWeeks]);
+                consolidatedResults[record.Archetype][record.Week - 1]++;
+            }
+
+            string header = "ARCHETYPE";
+            for (int i = 0; i < maxWeeks; i++) header += $",WEEK {i + 1}";
+
+            StringBuilder csvData = new StringBuilder();
+            csvData.AppendLine(header);
+
+            foreach (var archetype in consolidatedResults)
+            {
+                string line = $"{archetype.Key}";
+
+                for (int i = 0; i < maxWeeks; i++)
+                {
+                    if (archetype.Value[i] > 0)
+                    {
+                        double percentage = 100d * ((double)archetype.Value[i]) / ((double)totalPerWeek[i]);
+                        line += $",{percentage.ToString("F1", CultureInfo.InvariantCulture)}%";
+                    }
+                    else
+                    {
+                        line += ",";
+                    }
+
+                }
+                csvData.AppendLine(line);
             }
 
             File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
