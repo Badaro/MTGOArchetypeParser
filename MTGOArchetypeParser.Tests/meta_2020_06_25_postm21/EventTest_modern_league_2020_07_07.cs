@@ -71,7 +71,7 @@ using System.Text;
 #60 SeventhProphet: Uroza (URG)
 #61 TuggaNaxos: TakingTurns (URG)
 #62 victgobra10: Burn (WR)
-#63 yutya: TakingTurns (WUG, Yorion)
+#63 yutya: BantControl (WUG, Yorion)
 #64 Simpleliquid: Humans (WUBRG)
 #65 sten626: Devoted (WG, Lurrus)
 #66 Traft: WURGControl (WURG)
@@ -889,13 +889,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck63_yutya_TakingTurns_WUG_Yorion()
+        public void Deck63_yutya_BantControl_WUG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-07",62),
                 new PostM21(),
                 ArchetypeColor.WUG,
-                typeof(TakingTurns),
+                typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion
             );

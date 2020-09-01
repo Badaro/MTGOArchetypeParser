@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Shorak123: SultaiReclamation (UBG)
 #02 Kazuga: SultaiControl (UBG)
-#03 yuurari_yuko: TakingTurns (WUG, Yorion)
+#03 yuurari_yuko: BantControl (WUG, Yorion)
 #04 sff_mtg: KGCTron (G)
 #05 mariogomes097: GrixisShadow (UBR)
 #06 ZYURYO: WUBGControl (WUBG)
@@ -52,13 +52,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck03_yuurariyuko_TakingTurns_WUG_Yorion()
+        public void Deck03_yuurariyuko_BantControl_WUG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-11",2),
                 new PostM21(),
                 ArchetypeColor.WUG,
-                typeof(TakingTurns),
+                typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion
             );

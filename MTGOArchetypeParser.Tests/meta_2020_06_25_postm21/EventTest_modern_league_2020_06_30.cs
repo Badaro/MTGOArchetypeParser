@@ -19,7 +19,7 @@ using System.Text;
 #08 MHayashi: MonoRedProwess (R, Jegantha)
 #09 TheAznYoshi: GruulMidrange (RG)
 #10 GHash77: SultaiControl (UBG)
-#11 yutya: TakingTurns (WUG, Yorion)
+#11 yutya: BantControl (WUG, Yorion)
 #12 Metcalf23: BorosTaxes (WR, Lurrus)
 #13 Busterbrown52: Elementals (WUBRG)
 #14 Planet-Blade: UBRGShadow (UBRG)
@@ -198,13 +198,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck11_yutya_TakingTurns_WUG_Yorion()
+        public void Deck11_yutya_BantControl_WUG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-30",10),
                 new PostM21(),
                 ArchetypeColor.WUG,
-                typeof(TakingTurns),
+                typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion
             );
