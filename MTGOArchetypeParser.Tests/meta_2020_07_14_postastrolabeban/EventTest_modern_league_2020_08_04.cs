@@ -14,7 +14,7 @@ using System.Text;
 #03 harukispecial: SultaiControl (UBG)
 #04 Wite1: BorosProwess (WR)
 #05 SIMONEFIERRO: Dredge (UBRG)
-#06 Piccio36: GyrudaStompy (BRG, Gyruda)
+#06 Piccio36: TitanStompy (BRG, Gyruda)
 #07 Andreas_Mueller: RakdosProwess (BR, Lurrus)
 #08 ThekingFor1000years: Infect (UG)
 #09 RodolfoSFD0: TitanShift (RG)
@@ -157,13 +157,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_Piccio36_GyrudaStompy_BRG_Gyruda()
+        public void Deck06_Piccio36_TitanStompy_BRG_Gyruda()
         {
             Test(
                 GetDeck("modern-league-2020-08-04",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(GyrudaStompy),
+                typeof(TitanStompy),
                 null,
                 ArchetypeCompanion.Gyruda
             );

@@ -22,6 +22,10 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 "Traverse the Ulvenwald",
                 "Stubborn Denial"
             };
+            RequiredCards = new string[]
+            {
+                "Death's Shadow"
+            };
         }
     }
 }

@@ -28,7 +28,7 @@ using System.Text;
 #17 fenix4444: KGCTron (G)
 #18 YBLime: ThopterUrza (WUBR)
 #19 aspiringspike: GrixisLurrus (UBR)
-#20 shine0905: GyrudaStompy (BRG, Gyruda)
+#20 shine0905: TitanStompy (BRG, Gyruda)
 #21 MHayashi: BorosProwess (WR, Jegantha)
 #22 Granham: JundMidrange (BRG)
 #23 abombdiggity: Slivers (WUBRG)
@@ -316,13 +316,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck20_shine0905_GyrudaStompy_BRG_Gyruda()
+        public void Deck20_shine0905_TitanStompy_BRG_Gyruda()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",19),
                 new PostCompanionChange(),
                 ArchetypeColor.BRG,
-                typeof(GyrudaStompy),
+                typeof(TitanStompy),
                 null,
                 ArchetypeCompanion.Gyruda
             );

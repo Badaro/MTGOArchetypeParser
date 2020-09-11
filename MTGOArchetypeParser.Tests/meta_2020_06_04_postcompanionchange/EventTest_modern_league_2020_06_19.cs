@@ -38,7 +38,7 @@ using System.Text;
 #27 Darkiundsa: WURGControl (WURG, Yorion)
 #28 Jiggywiggy: KinnanUrza (URG, Yorion)
 #29 Netow: Dredge (BRG)
-#30 Zanman: GyrudaStompy (BRG, Gyruda)
+#30 Zanman: TitanStompy (BRG, Gyruda)
 #31 Madwolf87: JundShadow (BRG)
 #32 Chad1987SR05: GolgariMidrange (BG)
 #33 Wuhsa: BringToNiv (WUBRG)
@@ -433,13 +433,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck30_Zanman_GyrudaStompy_BRG_Gyruda()
+        public void Deck30_Zanman_TitanStompy_BRG_Gyruda()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",29),
                 new PostCompanionChange(),
                 ArchetypeColor.BRG,
-                typeof(GyrudaStompy),
+                typeof(TitanStompy),
                 null,
                 ArchetypeCompanion.Gyruda
             );

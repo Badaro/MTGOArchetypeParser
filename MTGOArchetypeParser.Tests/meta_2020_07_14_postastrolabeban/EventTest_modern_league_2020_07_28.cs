@@ -27,7 +27,7 @@ using System.Text;
 #16 sceen: MonoRedProwess (R)
 #17 fgfonseca182: GruulMidrange (RG)
 #18 r0cknati0n: SultaiControl (UBG)
-#19 shine0905: GyrudaStompy (BRG, Gyruda)
+#19 shine0905: TitanStompy (BRG, Gyruda)
 #20 mell0n: BantControl (WUG)
 #21 MHayashi: MonoRedProwess (R, Obosh)
 #22 RodolfoSFD0: TitanShift (RG)
@@ -324,13 +324,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck19_shine0905_GyrudaStompy_BRG_Gyruda()
+        public void Deck19_shine0905_TitanStompy_BRG_Gyruda()
         {
             Test(
                 GetDeck("modern-league-2020-07-28",18),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(GyrudaStompy),
+                typeof(TitanStompy),
                 null,
                 ArchetypeCompanion.Gyruda
             );

@@ -34,7 +34,7 @@ using System.Text;
 #23 iuriper: Merfolk (UB)
 #24 DemianDesposito10: MonoRedProwess (R)
 #25 Kurusu: KikiChord (WBRG, Yorion)
-#26 shine0905: GyrudaStompy (BRG, Gyruda)
+#26 shine0905: TitanStompy (BRG, Gyruda)
 #27 w_aru: Merfolk (WU, Lurrus)
 #28 Game_Night: Winota (WRG)
 #29 Gabriel0288: PrimevalTitan (URG)
@@ -400,13 +400,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck26_shine0905_GyrudaStompy_BRG_Gyruda()
+        public void Deck26_shine0905_TitanStompy_BRG_Gyruda()
         {
             Test(
                 GetDeck("modern-league-2020-06-16",25),
                 new PostCompanionChange(),
                 ArchetypeColor.BRG,
-                typeof(GyrudaStompy),
+                typeof(TitanStompy),
                 null,
                 ArchetypeCompanion.Gyruda
             );

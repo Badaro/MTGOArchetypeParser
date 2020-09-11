@@ -106,6 +106,7 @@ namespace MTGOArchetypeParser.Model
     public class ArchetypeGeneric : Archetype
     {
         public string[] CommonCards { get; set; }
+        public string[] RequiredCards { get; set; }
     }
 
 }
