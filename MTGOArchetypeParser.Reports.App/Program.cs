@@ -32,7 +32,7 @@ namespace MTGOArchetypeParser.Reports.App
 
                 DateTime startDate = allMetas ?
                     MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().First().StartDate :
-                    MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().Last().StartDate;
+                    MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().Last(m => m.StartDate < DateTime.UtcNow).StartDate;
 
                 DataRecord[] records = Loader.GetRecords(cacheFolder, startDate.AddDays(1), includeLeagues);
 
