@@ -9,22 +9,22 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 _Shatun_: Ponza (RG)
+#01 _Shatun_: GruulMidrange (RG)
 #02 MrJACEone: Crabvine (UBG)
-#03 qbturtle15: Ponza (RG, Obosh)
+#03 qbturtle15: GruulMidrange (RG, Obosh)
 #04 staples87: ETron (C)
 #05 PeanutBrittle: ThopterUrza (UBR)
-#06 billsive: SnowTitan (WUG, Yorion)
-#07 no_lyfe: Prowess (R)
+#06 billsive: BantControl (WUG, Yorion)
+#07 no_lyfe: MonoRedProwess (R)
 #08 BoltTheBirds: GiftsStorm (UR)
 #09 BaronOfBacon: Humans (WUBRG)
 #10 joetru: BringToNiv (WUBRG)
 #11 ManavonRX: RakdosMidrange (BR)
-#12 lovealienzzz: SnowControl (URG)
+#12 lovealienzzz: TemurControl (URG)
 #13 eggybenny: Neobrand (UG)
 #14 erose199423: ThopterUrza (WUR)
 #15 rn17: ThopterUrza (UBR)
-#16 Boin: Ponza (RG)
+#16 Boin: GruulMidrange (RG)
 #17 Jositoshekel: Bogles (WG)
 */
 
@@ -33,13 +33,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
     public class EventTest_modern_preliminary_2020_06_19 : EventTest
     {
         [Test]
-        public void Deck01_Shatun_Ponza_RG()
+        public void Deck01_Shatun_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-19",0),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -59,13 +59,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck03_qbturtle15_Ponza_RG_Obosh()
+        public void Deck03_qbturtle15_GruulMidrange_RG_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-19",2),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 ArchetypeCompanion.Obosh
             );
@@ -98,26 +98,26 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck06_billsive_SnowControl_SnowTitan_WUG_Yorion()
+        public void Deck06_billsive_BantControl_WUG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-19",5),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
-                typeof(SnowTitan),
+                typeof(GenericControl),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
 
         [Test]
-        public void Deck07_nolyfe_Prowess_R()
+        public void Deck07_nolyfe_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-19",6),
                 new PostCompanionChange(),
                 ArchetypeColor.R,
-                typeof(Prowess),
+                typeof(GenericProwess),
                 null,
                 null
             );
@@ -169,20 +169,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-19",10),
                 new PostCompanionChange(),
                 ArchetypeColor.BR,
-                typeof(RakdosMidrange),
+                typeof(GenericMidrange),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck12_lovealienzzz_SnowControl_URG()
+        public void Deck12_lovealienzzz_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-19",11),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -228,13 +228,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck16_Boin_Ponza_RG()
+        public void Deck16_Boin_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-19",15),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );

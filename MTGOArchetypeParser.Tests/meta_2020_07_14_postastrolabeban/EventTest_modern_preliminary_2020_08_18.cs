@@ -12,9 +12,9 @@ using System.Text;
 #01 Redgy819: ETron (C)
 #02 1plus1equals3: RedPrison (R)
 #03 Redgy: Burn (WR)
-#04 mylast: Prowess (WR, Lurrus)
+#04 mylast: BorosProwess (WR, Lurrus)
 #05 buddha715: Burn (WR, Lurrus)
-#06 Gerschi: RakdosProwess (WBR, Lurrus)
+#06 Gerschi: MarduProwess (WBR, Lurrus)
 #07 kanister: BantControl (WUG)
 #08 CReactor: KGCTron (G)
 #09 VampireGodric: BantControl (WUG)
@@ -24,7 +24,7 @@ using System.Text;
 #13 BasedCloy: ETron (C)
 #14 Snusnumrick: ETron (C)
 #15 Curryvore: JeskaiBlink (WUR, Yorion)
-#16 predje: Ponza (RG)
+#16 predje: GruulMidrange (RG)
 #17 SIMONEFIERRO: Burn (WR)
 #18 mac121711: Dredge (WBRG)
 #19 MagicDevil666: UTron (U)
@@ -74,13 +74,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_mylast_Prowess_WR_Lurrus()
+        public void Deck04_mylast_BorosProwess_WR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-18",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WR,
-                typeof(Prowess),
+                typeof(GenericProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -100,14 +100,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_Gerschi_Prowess_RakdosProwess_WBR_Lurrus()
+        public void Deck06_Gerschi_MarduProwess_WBR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-18",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WBR,
-                typeof(Prowess),
-                typeof(RakdosProwess),
+                typeof(GenericProwess),
+                null,
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -119,14 +119,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-08-18",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(BantControl),
+                typeof(GenericControl),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck08_CReactor_GTron_KGCTron_G()
+        public void Deck08_CReactor_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-18",7),
@@ -145,7 +145,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-08-18",8),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(BantControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -158,7 +158,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-08-18",9),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(BantControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -217,26 +217,26 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_Curryvore_AzoriousBlink_JeskaiBlink_WUR_Yorion()
+        public void Deck15_Curryvore_JeskaiBlink_WUR_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-18",14),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUR,
-                typeof(AzoriousBlink),
-                typeof(JeskaiBlink),
+                typeof(GenericBlink),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
 
         [Test]
-        public void Deck16_predje_Ponza_RG()
+        public void Deck16_predje_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-18",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );

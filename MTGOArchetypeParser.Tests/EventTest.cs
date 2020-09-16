@@ -28,7 +28,7 @@ namespace MTGOArchetypeParser.Tests
 
         protected void Test(Deck deck, ArchetypeMeta meta, ArchetypeColor expectedColor, Type expectedArchetype, Type expectedVariant = null, ArchetypeCompanion? expectedCompanion = null)
         {
-            var result = ArchetypeAnalyzer.Detect(deck.Mainboard.Select(c => c.Card).ToArray(), deck.Sideboard.Select(c => c.Card).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
+            var result = ArchetypeAnalyzer.Detect(deck.Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), deck.Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
 
             result.Matches.Should().HaveCount(1);
 

@@ -15,7 +15,7 @@ using System.Text;
 #04 tuhoajatane: AmuletTitan (UBRG)
 #05 Jiggywiggy: KinnanUrza (URG, Yorion)
 #06 PaChA94s: AdNauseam (WUB)
-#07 Misplacedginger: SnowControl (WUG)
+#07 Misplacedginger: BantControl (WUG)
 #08 SvenSveeterSven: IzzetControl (UR)
 #09 kbr3: HardenedScales (G)
 #10 MikeEgan: BringToNiv (WUBRG)
@@ -31,12 +31,12 @@ using System.Text;
 #20 bladede: ETron (C)
 #21 Zeekery: ThingAscension (WUR, Lurrus)
 #22 antonio13901390: ETron (C)
-#23 katoriarch123: SnowControl (WUG)
+#23 katoriarch123: BantControl (WUG)
 #24 Anicet0: ETron (C)
 #25 MadMaxErnst: Uroza (URG)
-#26 Jenara19: SultaiSnow (UBG)
-#27 Larry11: Ponza (RG)
-#28 ubercrisis: SultaiSnow (UBG)
+#26 Jenara19: SultaiControl (UBG)
+#27 Larry11: GruulMidrange (RG)
+#28 ubercrisis: SultaiControl (UBG)
 #29 remf: BantSpirits (WUG)
 #30 kalibak: Burn (WR)
 #31 NewHJ: Burn (WRG)
@@ -54,7 +54,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-challenge-2020-06-21",0),
                 new PostCompanionChange(),
                 ArchetypeColor.UR,
-                typeof(IzzetControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck04_tuhoajatane_PrimevalTitan_AmuletTitan_UBRG()
+        public void Deck04_tuhoajatane_AmuletTitan_UBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",3),
@@ -126,13 +126,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck07_Misplacedginger_SnowControl_WUG()
+        public void Deck07_Misplacedginger_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",6),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -145,7 +145,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-challenge-2020-06-21",7),
                 new PostCompanionChange(),
                 ArchetypeColor.UR,
-                typeof(IzzetControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -334,13 +334,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck23_katoriarch123_SnowControl_WUG()
+        public void Deck23_katoriarch123_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",22),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -373,46 +373,46 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck26_Jenara19_SnowControl_SultaiSnow_UBG()
+        public void Deck26_Jenara19_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",25),
                 new PostCompanionChange(),
                 ArchetypeColor.UBG,
-                typeof(SnowControl),
-                typeof(SultaiSnow),
-                null
-            );
-        }
-
-        [Test]
-        public void Deck27_Larry11_Ponza_RG()
-        {
-            Test(
-                GetDeck("modern-challenge-2020-06-21",26),
-                new PostCompanionChange(),
-                ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericControl),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck28_ubercrisis_SnowControl_SultaiSnow_UBG()
+        public void Deck27_Larry11_GruulMidrange_RG()
         {
             Test(
-                GetDeck("modern-challenge-2020-06-21",27),
+                GetDeck("modern-challenge-2020-06-21",26),
                 new PostCompanionChange(),
-                ArchetypeColor.UBG,
-                typeof(SnowControl),
-                typeof(SultaiSnow),
+                ArchetypeColor.RG,
+                typeof(GenericMidrange),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck29_remf_Spirits_BantSpirits_WUG()
+        public void Deck28_ubercrisis_SultaiControl_UBG()
+        {
+            Test(
+                GetDeck("modern-challenge-2020-06-21",27),
+                new PostCompanionChange(),
+                ArchetypeColor.UBG,
+                typeof(GenericControl),
+                null,
+                null
+            );
+        }
+
+        [Test]
+        public void Deck29_remf_BantSpirits_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",28),

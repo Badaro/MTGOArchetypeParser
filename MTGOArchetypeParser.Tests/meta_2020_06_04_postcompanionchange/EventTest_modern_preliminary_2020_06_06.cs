@@ -9,20 +9,20 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Diatomic: SnowBlade (WUG)
-#02 _Shatun_: Ponza (RG)
+#01 Diatomic: BantControl (WUG)
+#02 _Shatun_: GruulMidrange (RG)
 #03 _INF_: GiftsStorm (UR)
-#04 ZYURYO: SnowControl (WUBG)
-#05 slsh: Ponza (RG)
-#06 Do0mSwitch: SnowControl (WUG)
-#07 ilsecco14: Rock (BG)
+#04 ZYURYO: WUBGControl (WUBG)
+#05 slsh: GruulMidrange (RG)
+#06 Do0mSwitch: BantControl (WUG)
+#07 ilsecco14: GolgariMidrange (BG)
 #08 kanister: Humans (WUBRG)
 #09 audio336: Dredge (BRG)
-#10 12Days: Ponza (BRG, Obosh)
+#10 12Days: JundMidrange (BRG, Obosh)
 #11 sff_mtg: KGCTron (G)
-#12 elad3127: Ponza (RG)
+#12 elad3127: GruulMidrange (RG)
 #13 Doomed_Necromancer: AbzanMidrange (WBG)
-#14 nielsen333: JeskaiStoneblade (WUR)
+#14 nielsen333: JeskaiControl (WUR)
 #15 matyo804: Humans (WUBRG)
 #16 ktmr-39: GolosTron (G, Jegantha)
 */
@@ -32,26 +32,26 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
     public class EventTest_modern_preliminary_2020_06_06 : EventTest
     {
         [Test]
-        public void Deck01_Diatomic_SnowControl_SnowBlade_WUG()
+        public void Deck01_Diatomic_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-06",0),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
-                typeof(SnowBlade),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck02_Shatun_Ponza_RG()
+        public void Deck02_Shatun_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-06",1),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -71,52 +71,52 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck04_ZYURYO_SnowControl_WUBG()
+        public void Deck04_ZYURYO_WUBGControl_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-06",3),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck05_slsh_Ponza_RG()
+        public void Deck05_slsh_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-06",4),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck06_Do0mSwitch_SnowControl_WUG()
+        public void Deck06_Do0mSwitch_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-06",5),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck07_ilsecco14_Rock_BG()
+        public void Deck07_ilsecco14_GolgariMidrange_BG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-06",6),
                 new PostCompanionChange(),
                 ArchetypeColor.BG,
-                typeof(Rock),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -149,20 +149,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck10_12Days_Ponza_BRG_Obosh()
+        public void Deck10_12Days_JundMidrange_BRG_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-06",9),
                 new PostCompanionChange(),
                 ArchetypeColor.BRG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 ArchetypeCompanion.Obosh
             );
         }
 
         [Test]
-        public void Deck11_sffmtg_GTron_KGCTron_G()
+        public void Deck11_sffmtg_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-06",10),
@@ -175,13 +175,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck12_elad3127_Ponza_RG()
+        public void Deck12_elad3127_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-06",11),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -194,21 +194,21 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-06",12),
                 new PostCompanionChange(),
                 ArchetypeColor.WBG,
-                typeof(AbzanMidrange),
+                typeof(GenericMidrange),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck14_nielsen333_JeskaiControl_JeskaiStoneblade_WUR()
+        public void Deck14_nielsen333_JeskaiControl_WUR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-06",13),
                 new PostCompanionChange(),
                 ArchetypeColor.WUR,
-                typeof(JeskaiControl),
-                typeof(JeskaiStoneblade),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
@@ -227,7 +227,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck16_ktmr39_GTron_GolosTron_G_Jegantha()
+        public void Deck16_ktmr39_GolosTron_G_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-06",15),

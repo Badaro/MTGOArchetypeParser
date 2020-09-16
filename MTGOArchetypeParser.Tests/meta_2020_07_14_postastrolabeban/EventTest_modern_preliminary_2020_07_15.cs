@@ -14,9 +14,9 @@ using System.Text;
 #03 BSK_hercules: IzzetProwess (UR)
 #04 johnsmith3373: Humans (WUBRG)
 #05 MiamiKidz: IzzetProwess (UR)
-#06 Shorak123: SnowReclamation (UBG)
+#06 Shorak123: SultaiReclamation (UBG)
 #07 siomomi: ETron (C)
-#08 GoonLord: Ponza (RG)
+#08 GoonLord: GruulMidrange (RG)
 #09 ZYURYO: AzoriusControl (WU)
 */
 
@@ -31,7 +31,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-07-15",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(AzoriusControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -51,14 +51,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_BSKhercules_Prowess_IzzetProwess_UR()
+        public void Deck03_BSKhercules_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-15",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }
@@ -77,27 +77,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_MiamiKidz_Prowess_IzzetProwess_UR()
+        public void Deck05_MiamiKidz_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-15",4),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck06_Shorak123_SnowControl_SnowReclamation_UBG()
+        public void Deck06_Shorak123_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-15",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(SnowControl),
-                typeof(SnowReclamation),
+                typeof(GenericReclamation),
+                null,
                 null
             );
         }
@@ -116,13 +116,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_GoonLord_Ponza_RG()
+        public void Deck08_GoonLord_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-15",7),
                 new PostAstrolabeBan(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -135,7 +135,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-07-15",8),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(AzoriusControl),
+                typeof(GenericControl),
                 null,
                 null
             );

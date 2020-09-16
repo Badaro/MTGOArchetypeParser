@@ -33,21 +33,23 @@ namespace MTGOArchetypeParser.Tests.Updater
             string companionID = detectionResult.Companion == null ? "" : detectionResult.Companion.Value.ToString();
             string archetypeID = String.Empty;
             string variantID = String.Empty;
+            string archetypeName = String.Empty;
 
             if (detectionResult.Matches.Length == 1)
             {
                 var detected = detectionResult.Matches.First();
                 archetypeID = detected.Archetype.GetType().Name;
+                archetypeName = detected.Archetype.GetName(detectionResult.Color);
                 if (detected.Variant != null)
                 {
                     variantID = detected.Variant.GetType().Name;
+                    archetypeName = detected.Variant.GetName(detectionResult.Color);
                 }
             }
 
             string deckID = $"Deck{(deckIndex + 1).ToString("D2")}";
             deckID += playerID.Length > 0 ? $"_{new string(playerID.Where(c => char.IsLetterOrDigit(c)).ToArray())}" : "_Unknown";
-            deckID += archetypeID.Length > 0 ? $"_{archetypeID}" : "_Unknown";
-            deckID += variantID.Length > 0 ? $"_{variantID}" : "";
+            deckID += archetypeName.Length > 0 ? $"_{archetypeName}" : "_Unknown";
             deckID += $"_{colorID}";
             deckID += companionID.Length > 0 ? $"_{companionID}" : "";
 

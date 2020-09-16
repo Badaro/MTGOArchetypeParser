@@ -9,58 +9,58 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 ary31415: EldraziTaxes (WB)
+#01 ary31415: OrzhovEldraziTaxes (WB)
 #02 TheCodyHope: Elementals (WUBRG)
-#03 MHayashi: RedDeckWins (R, Jegantha)
-#04 Czechito: IzzetBreach (UR)
+#03 MHayashi: MonoRedProwess (R, Jegantha)
+#04 Czechito: IzzetControl (UR)
 #05 ljex: IzzetProwess (UR)
 #06 Trellon: OrreryTron (UG)
 #07 ack93: AzoriusControl (WU)
 #08 Hampuse1: DiceFactoryTron (C)
 #09 Novaphantom: KGCTron (G)
-#10 cftsoc3: Prowess (R)
+#10 cftsoc3: MonoRedProwess (R)
 #11 JewishLeprechaun: HardenedScales (G)
 #12 Aeolus1295: AmuletTitan (WUBRG)
-#13 JtoJ: TemurSnow (UBRG)
+#13 JtoJ: UBRGControl (UBRG)
 #14 katobu: Merfolk (UB)
 #15 hugofreitas1: GiftsStorm (UR)
 #16 Azuregun: ETron (C)
 #17 osmanozguney: RakdosMidrange (BR)
 #18 saccij92: Humans (WUBRG)
 #19 MlckyB: Bogles (WG)
-#20 Shorak123: SnowReclamation (UBG)
+#20 Shorak123: SultaiReclamation (UBG)
 #21 Kurusu: KikiChord (WURG, Yorion)
 #22 jvidarte: Burn (WR)
 #23 wefald: Inverter (UB)
 #24 Wall_of_Bromens: BlueLivingEnd (WU)
 #25 Xenowan: JeskaiAscendancy (WURG, Jegantha)
 #26 PlaneswalkerYami: JeskaiProwess (WUR, Lurrus)
-#27 Metcalf23: DeathAndTaxes (WR, Lurrus)
+#27 Metcalf23: BorosTaxes (WR, Lurrus)
 #28 toya: RakdosMidrange (BR, Lurrus)
 #29 Skrown: Dredge (WBRG)
-#30 Urzza100: SnowTitan (WUG, Yorion)
+#30 Urzza100: BantControl (WUG, Yorion)
 #31 Borjillamtg10: SnoopGoblins (BR)
-#32 Juaspas: SnowShift (URG, Yorion)
+#32 Juaspas: Scapeshift (URG, Yorion)
 #33 doughhater: ThaliaStompy (WR)
-#34 RealJoy: TraverseShadow (UBRG)
+#34 RealJoy: UBRGShadow (UBRG)
 #35 Polikasoll: IncineratorBurn (R)
 #36 mashmalovsky: AdNauseam (WUB)
 #37 TheNobodys: ThopterUrza (WUB)
-#38 ScreenwriterNY: SultaiSnow (WUBG, Yorion)
+#38 ScreenwriterNY: WUBGControl (WUBG, Yorion)
 #39 MastaHorus: IzzetLivingEnd (UR)
 #40 tarmociccio89: IzzetPhoenix (UR)
-#41 Fabrice_K: SnowReclamation (WUG, Yorion)
+#41 Fabrice_K: BantReclamation (WUG, Yorion)
 #42 LordoftheLobsters: UTron (U)
 #43 leuhohms: Infect (UG)
 #44 Sonkerz: TemurDelver (URG)
 #45 Wuhsa: BringToNiv (WUBRG, Yorion)
-#46 albert62: Jund (BRG)
-#47 Bruno_Mineiro: DeathAndTaxes (W)
+#46 albert62: JundMidrange (BRG)
+#47 Bruno_Mineiro: MonoWhiteTaxes (W)
 #48 azax: Neobrand (UG)
 #49 digitaldrummer: ComboElves (G)
 #50 imperatorek: Devoted (WG, Lurrus)
-#51 KoDiamonds: Ponza (RG)
-#52 DaniMRebel: DeathAndTaxes (WG)
+#51 KoDiamonds: GruulMidrange (RG)
+#52 DaniMRebel: SelenyaTaxes (WG)
 #53 UrbanPope: RakdosProwess (BR, Lurrus)
 #54 Brosterman: GrixisShadow (UBR)
 #55 December18: TitanShift (RG)
@@ -73,14 +73,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_league_2020_07_14 : EventTest
     {
         [Test]
-        public void Deck01_ary31415_DeathAndTaxes_EldraziTaxes_WB()
+        public void Deck01_ary31415_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WB,
-                typeof(DeathAndTaxes),
-                typeof(EldraziTaxes),
+                typeof(GenericEldraziTaxes),
+                null,
                 null
             );
         }
@@ -99,46 +99,46 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_MHayashi_RedDeckWins_R_Jegantha()
+        public void Deck03_MHayashi_MonoRedProwess_R_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(RedDeckWins),
+                typeof(GenericProwess),
                 null,
                 ArchetypeCompanion.Jegantha
             );
         }
 
         [Test]
-        public void Deck04_Czechito_IzzetControl_IzzetBreach_UR()
+        public void Deck04_Czechito_IzzetControl_UR()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(IzzetControl),
-                typeof(IzzetBreach),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck05_ljex_Prowess_IzzetProwess_UR()
+        public void Deck05_ljex_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",4),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck06_Trellon_GTron_OrreryTron_UG()
+        public void Deck06_Trellon_OrreryTron_UG()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",5),
@@ -157,7 +157,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-league-2020-07-14",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(AzoriusControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -177,7 +177,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_Novaphantom_GTron_KGCTron_G()
+        public void Deck09_Novaphantom_KGCTron_G()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",8),
@@ -190,13 +190,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_cftsoc3_Prowess_R()
+        public void Deck10_cftsoc3_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",9),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(Prowess),
+                typeof(GenericProwess),
                 null,
                 null
             );
@@ -216,7 +216,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_Aeolus1295_PrimevalTitan_AmuletTitan_WUBRG()
+        public void Deck12_Aeolus1295_AmuletTitan_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",11),
@@ -229,14 +229,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_JtoJ_SnowControl_TemurSnow_UBRG()
+        public void Deck13_JtoJ_UBRGControl_UBRG()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",12),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBRG,
-                typeof(SnowControl),
-                typeof(TemurSnow),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
@@ -287,7 +287,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-league-2020-07-14",16),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BR,
-                typeof(RakdosMidrange),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -320,14 +320,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_Shorak123_SnowControl_SnowReclamation_UBG()
+        public void Deck20_Shorak123_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",19),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(SnowControl),
-                typeof(SnowReclamation),
+                typeof(GenericReclamation),
+                null,
                 null
             );
         }
@@ -372,7 +372,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck24_WallofBromens_LivingEnd_BlueLivingEnd_WU()
+        public void Deck24_WallofBromens_BlueLivingEnd_WU()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",23),
@@ -398,26 +398,26 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck26_PlaneswalkerYami_Prowess_JeskaiProwess_WUR_Lurrus()
+        public void Deck26_PlaneswalkerYami_JeskaiProwess_WUR_Lurrus()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",25),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUR,
-                typeof(Prowess),
-                typeof(JeskaiProwess),
+                typeof(GenericProwess),
+                null,
                 ArchetypeCompanion.Lurrus
             );
         }
 
         [Test]
-        public void Deck27_Metcalf23_DeathAndTaxes_WR_Lurrus()
+        public void Deck27_Metcalf23_BorosTaxes_WR_Lurrus()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",26),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WR,
-                typeof(DeathAndTaxes),
+                typeof(GenericTaxes),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -430,7 +430,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-league-2020-07-14",27),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BR,
-                typeof(RakdosMidrange),
+                typeof(GenericMidrange),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -450,20 +450,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_Urzza100_SnowControl_SnowTitan_WUG_Yorion()
+        public void Deck30_Urzza100_BantControl_WUG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",29),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
-                typeof(SnowTitan),
+                typeof(GenericControl),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
 
         [Test]
-        public void Deck31_Borjillamtg10_Goblins_SnoopGoblins_BR()
+        public void Deck31_Borjillamtg10_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",30),
@@ -476,46 +476,46 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck32_Juaspas_SnowControl_SnowShift_URG_Yorion()
+        public void Deck32_Juaspas_Scapeshift_URG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",31),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(SnowControl),
-                typeof(SnowShift),
+                typeof(Scapeshift),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
 
         [Test]
-        public void Deck33_doughhater_DeathAndTaxes_ThaliaStompy_WR()
+        public void Deck33_doughhater_ThaliaStompy_WR()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",32),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WR,
-                typeof(DeathAndTaxes),
                 typeof(ThaliaStompy),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck34_RealJoy_DeathsShadow_TraverseShadow_UBRG()
+        public void Deck34_RealJoy_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",33),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBRG,
-                typeof(DeathsShadow),
-                typeof(TraverseShadow),
+                typeof(GenericShadow),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck35_Polikasoll_Burn_IncineratorBurn_R()
+        public void Deck35_Polikasoll_IncineratorBurn_R()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",34),
@@ -554,20 +554,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck38_ScreenwriterNY_SnowControl_SultaiSnow_WUBG_Yorion()
+        public void Deck38_ScreenwriterNY_WUBGControl_WUBG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",37),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBG,
-                typeof(SnowControl),
-                typeof(SultaiSnow),
+                typeof(GenericControl),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
 
         [Test]
-        public void Deck39_MastaHorus_IzzetFreeSpells_IzzetLivingEnd_UR()
+        public void Deck39_MastaHorus_IzzetLivingEnd_UR()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",38),
@@ -593,14 +593,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck41_FabriceK_SnowControl_SnowReclamation_WUG_Yorion()
+        public void Deck41_FabriceK_BantReclamation_WUG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",40),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
-                typeof(SnowReclamation),
+                typeof(GenericReclamation),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
@@ -632,7 +632,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck44_Sonkerz_Delver_TemurDelver_URG()
+        public void Deck44_Sonkerz_TemurDelver_URG()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",43),
@@ -658,26 +658,26 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck46_albert62_Rock_Jund_BRG()
+        public void Deck46_albert62_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",45),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(Rock),
-                typeof(Jund),
+                typeof(GenericMidrange),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck47_BrunoMineiro_DeathAndTaxes_W()
+        public void Deck47_BrunoMineiro_MonoWhiteTaxes_W()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",46),
                 new PostAstrolabeBan(),
                 ArchetypeColor.W,
-                typeof(DeathAndTaxes),
+                typeof(GenericTaxes),
                 null,
                 null
             );
@@ -697,7 +697,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck49_digitaldrummer_Elves_ComboElves_G()
+        public void Deck49_digitaldrummer_ComboElves_G()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",48),
@@ -723,59 +723,59 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck51_KoDiamonds_Ponza_RG()
+        public void Deck51_KoDiamonds_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",50),
                 new PostAstrolabeBan(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck52_DaniMRebel_DeathAndTaxes_WG()
+        public void Deck52_DaniMRebel_SelenyaTaxes_WG()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",51),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WG,
-                typeof(DeathAndTaxes),
+                typeof(GenericTaxes),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck53_UrbanPope_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck53_UrbanPope_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",52),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BR,
-                typeof(Prowess),
-                typeof(RakdosProwess),
+                typeof(GenericProwess),
+                null,
                 ArchetypeCompanion.Lurrus
             );
         }
 
         [Test]
-        public void Deck54_Brosterman_DeathsShadow_GrixisShadow_UBR()
+        public void Deck54_Brosterman_GrixisShadow_UBR()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",53),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBR,
-                typeof(DeathsShadow),
-                typeof(GrixisShadow),
+                typeof(GenericShadow),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck55_December18_PrimevalTitan_TitanShift_RG()
+        public void Deck55_December18_TitanShift_RG()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",54),
@@ -801,14 +801,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck57_kogamo_Prowess_IzzetProwess_UR()
+        public void Deck57_kogamo_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",56),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }

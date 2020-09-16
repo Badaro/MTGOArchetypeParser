@@ -9,23 +9,23 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 mac121711: JeskaiStoneblade (WUR)
+#01 mac121711: JeskaiControl (WUR)
 #02 AstralPlane: IzzetProwess (UR)
 #03 chengyiw: Dredge (WBRG)
 #04 JV_7777: ETron (C)
 #05 SakeIzumo: IzzetProwess (UR)
 #06 TheLousyZoot: SnoopGoblins (WBR)
-#07 tyaburi: Prowess (R)
+#07 tyaburi: MonoRedProwess (R)
 #08 Zonast: AdNauseam (WUB)
 #09 nekonekoneko: Dredge (WBRG)
-#10 updraftelemental: SuicideShadow (BRG)
+#10 updraftelemental: JundShadow (BRG)
 #11 Toastxp: GruulProwess (RG, Jegantha)
 #12 Granham: AzoriusControl (WU)
 #13 Lexmart: BantControl (WUG)
 #14 kanister: TemurControl (URG)
 #15 Nickburch13: Burn (WR, Lurrus)
 #16 _INF_: GiftsStorm (UR)
-#17 hoveydw: SuicideShadow (BRG, Lurrus)
+#17 hoveydw: JundShadow (BRG, Lurrus)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -33,27 +33,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_07_25 : EventTest
     {
         [Test]
-        public void Deck01_mac121711_JeskaiControl_JeskaiStoneblade_WUR()
+        public void Deck01_mac121711_JeskaiControl_WUR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUR,
-                typeof(JeskaiControl),
-                typeof(JeskaiStoneblade),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck02_AstralPlane_Prowess_IzzetProwess_UR()
+        public void Deck02_AstralPlane_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }
@@ -85,20 +85,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_SakeIzumo_Prowess_IzzetProwess_UR()
+        public void Deck05_SakeIzumo_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",4),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck06_TheLousyZoot_Goblins_SnoopGoblins_WBR()
+        public void Deck06_TheLousyZoot_SnoopGoblins_WBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",5),
@@ -111,13 +111,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_tyaburi_Prowess_R()
+        public void Deck07_tyaburi_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(Prowess),
+                typeof(GenericProwess),
                 null,
                 null
             );
@@ -150,27 +150,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_updraftelemental_DeathsShadow_SuicideShadow_BRG()
+        public void Deck10_updraftelemental_JundShadow_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",9),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(DeathsShadow),
-                typeof(SuicideShadow),
+                typeof(GenericShadow),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck11_Toastxp_Prowess_GruulProwess_RG_Jegantha()
+        public void Deck11_Toastxp_GruulProwess_RG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",10),
                 new PostAstrolabeBan(),
                 ArchetypeColor.RG,
-                typeof(Prowess),
-                typeof(GruulProwess),
+                typeof(GenericProwess),
+                null,
                 ArchetypeCompanion.Jegantha
             );
         }
@@ -182,7 +182,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-07-25",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(AzoriusControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -195,7 +195,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-07-25",12),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(BantControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -208,7 +208,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-07-25",13),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(TemurControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -241,14 +241,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_hoveydw_DeathsShadow_SuicideShadow_BRG_Lurrus()
+        public void Deck17_hoveydw_JundShadow_BRG_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",16),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(DeathsShadow),
-                typeof(SuicideShadow),
+                typeof(GenericShadow),
+                null,
                 ArchetypeCompanion.Lurrus
             );
         }

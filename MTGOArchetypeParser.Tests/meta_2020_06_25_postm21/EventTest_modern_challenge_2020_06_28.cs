@@ -12,34 +12,34 @@ using System.Text;
 #01 SebastianStueckl: SnoopGoblins (BR)
 #02 Mateusf34: ETron (C)
 #03 Sodeq: Dredge (BRG)
-#04 FestiFan: SnowControl (WUG)
+#04 FestiFan: BantControl (WUG)
 #05 shoktroopa: UTron (U)
-#06 Thrall90: Jund (BRG)
-#07 dm95: AzoriusStoneblade (WU)
-#08 djbmppwns: Ponza (RG)
+#06 Thrall90: JundMidrange (BRG)
+#07 dm95: AzoriusControl (WU)
+#08 djbmppwns: GruulMidrange (RG)
 #09 Moniz0801: AmuletTitan (WURG)
 #10 MasterA: SnoopGoblins (BRG)
-#11 Trisky: TraverseShadow (BRG)
+#11 Trisky: JundShadow (BRG)
 #12 mariogomes097: GrixisShadow (UBR)
-#13 indianpancake: Ponza (RG)
+#13 indianpancake: GruulMidrange (RG)
 #14 NorrathDecay: Burn (WR)
 #15 Sanchez5272: KGCTron (G)
-#16 Diatomic: SnowControl (WUG)
-#17 qbturtle15: Ponza (RG, Obosh)
+#16 Diatomic: BantControl (WUG)
+#17 qbturtle15: GruulMidrange (RG, Obosh)
 #18 wambocombo2020: Burn (WR)
 #19 FranPi: GiftsStorm (UR)
-#20 Danny_Bambino: Jund (BRG)
+#20 Danny_Bambino: JundMidrange (BRG)
 #21 Mercenario: Dredge (UBRG)
 #22 toondoslav: Dredge (BRG)
 #23 Curtisaxel: BantSpirits (WUG)
 #24 CNewman: SnoopGoblins (BR)
-#25 no_lyfe: Prowess (R)
+#25 no_lyfe: MonoRedProwess (R)
 #26 fingers1991: Burn (WR, Lurrus)
-#27 sheastrausman: SnowReclamation (URG)
+#27 sheastrausman: TemurReclamation (URG)
 #28 kbr3: Scapeshift (URG)
 #29 jessy_samek: RakdosProwess (BR, Lurrus)
-#30 yamakiller: Ponza (RG, Obosh)
-#31 ivan229: Ponza (RG)
+#30 yamakiller: GruulMidrange (RG, Obosh)
+#31 ivan229: GruulMidrange (RG)
 #32 DreamsOfAshiok: ETron (C)
 */
 
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_challenge_2020_06_28 : EventTest
     {
         [Test]
-        public void Deck01_SebastianStueckl_Goblins_SnoopGoblins_BR()
+        public void Deck01_SebastianStueckl_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",0),
@@ -87,13 +87,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck04_FestiFan_SnowControl_WUG()
+        public void Deck04_FestiFan_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",3),
                 new PostM21(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -113,46 +113,46 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck06_Thrall90_Rock_Jund_BRG()
+        public void Deck06_Thrall90_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",5),
                 new PostM21(),
                 ArchetypeColor.BRG,
-                typeof(Rock),
-                typeof(Jund),
-                null
-            );
-        }
-
-        [Test]
-        public void Deck07_dm95_AzoriusControl_AzoriusStoneblade_WU()
-        {
-            Test(
-                GetDeck("modern-challenge-2020-06-28",6),
-                new PostM21(),
-                ArchetypeColor.WU,
-                typeof(AzoriusControl),
-                typeof(AzoriusStoneblade),
-                null
-            );
-        }
-
-        [Test]
-        public void Deck08_djbmppwns_Ponza_RG()
-        {
-            Test(
-                GetDeck("modern-challenge-2020-06-28",7),
-                new PostM21(),
-                ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck09_Moniz0801_PrimevalTitan_AmuletTitan_WURG()
+        public void Deck07_dm95_AzoriusControl_WU()
+        {
+            Test(
+                GetDeck("modern-challenge-2020-06-28",6),
+                new PostM21(),
+                ArchetypeColor.WU,
+                typeof(GenericControl),
+                null,
+                null
+            );
+        }
+
+        [Test]
+        public void Deck08_djbmppwns_GruulMidrange_RG()
+        {
+            Test(
+                GetDeck("modern-challenge-2020-06-28",7),
+                new PostM21(),
+                ArchetypeColor.RG,
+                typeof(GenericMidrange),
+                null,
+                null
+            );
+        }
+
+        [Test]
+        public void Deck09_Moniz0801_AmuletTitan_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",8),
@@ -165,7 +165,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck10_MasterA_Goblins_SnoopGoblins_BRG()
+        public void Deck10_MasterA_SnoopGoblins_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",9),
@@ -178,39 +178,39 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck11_Trisky_DeathsShadow_TraverseShadow_BRG()
+        public void Deck11_Trisky_JundShadow_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",10),
                 new PostM21(),
                 ArchetypeColor.BRG,
-                typeof(DeathsShadow),
-                typeof(TraverseShadow),
+                typeof(GenericShadow),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck12_mariogomes097_DeathsShadow_GrixisShadow_UBR()
+        public void Deck12_mariogomes097_GrixisShadow_UBR()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",11),
                 new PostM21(),
                 ArchetypeColor.UBR,
-                typeof(DeathsShadow),
-                typeof(GrixisShadow),
+                typeof(GenericShadow),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck13_indianpancake_Ponza_RG()
+        public void Deck13_indianpancake_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",12),
                 new PostM21(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -230,7 +230,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck15_Sanchez5272_GTron_KGCTron_G()
+        public void Deck15_Sanchez5272_KGCTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",14),
@@ -243,26 +243,26 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck16_Diatomic_SnowControl_WUG()
+        public void Deck16_Diatomic_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",15),
                 new PostM21(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck17_qbturtle15_Ponza_RG_Obosh()
+        public void Deck17_qbturtle15_GruulMidrange_RG_Obosh()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",16),
                 new PostM21(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 ArchetypeCompanion.Obosh
             );
@@ -295,14 +295,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck20_DannyBambino_Rock_Jund_BRG()
+        public void Deck20_DannyBambino_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",19),
                 new PostM21(),
                 ArchetypeColor.BRG,
-                typeof(Rock),
-                typeof(Jund),
+                typeof(GenericMidrange),
+                null,
                 null
             );
         }
@@ -334,7 +334,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck23_Curtisaxel_Spirits_BantSpirits_WUG()
+        public void Deck23_Curtisaxel_BantSpirits_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",22),
@@ -347,7 +347,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck24_CNewman_Goblins_SnoopGoblins_BR()
+        public void Deck24_CNewman_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",23),
@@ -360,13 +360,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck25_nolyfe_Prowess_R()
+        public void Deck25_nolyfe_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",24),
                 new PostM21(),
                 ArchetypeColor.R,
-                typeof(Prowess),
+                typeof(GenericProwess),
                 null,
                 null
             );
@@ -386,14 +386,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck27_sheastrausman_SnowControl_SnowReclamation_URG()
+        public void Deck27_sheastrausman_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",26),
                 new PostM21(),
                 ArchetypeColor.URG,
-                typeof(SnowControl),
-                typeof(SnowReclamation),
+                typeof(GenericReclamation),
+                null,
                 null
             );
         }
@@ -412,39 +412,39 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck29_jessysamek_Prowess_RakdosProwess_BR_Lurrus()
+        public void Deck29_jessysamek_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",28),
                 new PostM21(),
                 ArchetypeColor.BR,
-                typeof(Prowess),
-                typeof(RakdosProwess),
+                typeof(GenericProwess),
+                null,
                 ArchetypeCompanion.Lurrus
             );
         }
 
         [Test]
-        public void Deck30_yamakiller_Ponza_RG_Obosh()
+        public void Deck30_yamakiller_GruulMidrange_RG_Obosh()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",29),
                 new PostM21(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 ArchetypeCompanion.Obosh
             );
         }
 
         [Test]
-        public void Deck31_ivan229_Ponza_RG()
+        public void Deck31_ivan229_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",30),
                 new PostM21(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );

@@ -9,10 +9,10 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 JRDC14: Sultai (UBG)
+#01 JRDC14: SultaiMidrange (UBG)
 #02 Snusnumrick: ETron (C)
 #03 iwanteatebi: IzzetProwess (UR)
-#04 komattaman: Ponza (RG)
+#04 komattaman: GruulMidrange (RG)
 #05 Delthar: Infect (BG)
 #06 Beenew: Burn (WR)
 #07 katoriarch123: BantControl (WUG)
@@ -20,7 +20,7 @@ using System.Text;
 #09 kthanakit26: IzzetProwess (UR)
 #10 ACG88: BantMidrange (WUG)
 #11 Kazuga: Dredge (WBRG)
-#12 SebastianStueckl: Ponza (RG)
+#12 SebastianStueckl: GruulMidrange (RG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -28,14 +28,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_08_12 : EventTest
     {
         [Test]
-        public void Deck01_JRDC14_Rock_Sultai_UBG()
+        public void Deck01_JRDC14_SultaiMidrange_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-12",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(Rock),
-                typeof(Sultai),
+                typeof(GenericMidrange),
+                null,
                 null
             );
         }
@@ -54,26 +54,26 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_iwanteatebi_Prowess_IzzetProwess_UR()
+        public void Deck03_iwanteatebi_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-12",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck04_komattaman_Ponza_RG()
+        public void Deck04_komattaman_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-12",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -112,7 +112,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-08-12",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(BantControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -132,14 +132,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_kthanakit26_Prowess_IzzetProwess_UR()
+        public void Deck09_kthanakit26_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-12",8),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }
@@ -151,7 +151,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-08-12",9),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(BantMidrange),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -171,13 +171,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_SebastianStueckl_Ponza_RG()
+        public void Deck12_SebastianStueckl_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-12",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );

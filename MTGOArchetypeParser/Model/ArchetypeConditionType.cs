@@ -10,15 +10,8 @@ namespace MTGOArchetypeParser.Model
         InSideboard,
         InMainOrSideboard,
         OneOrMoreInMainboard,
-        OneOrMoreInSideboard,
-        OneOrMoreInMainOrSideboard,
         TwoOrMoreInMainboard,
-        TwoOrMoreInSideboard,
-        TwoOrMoreInMainOrSideboard,
         DoesNotContain,
-        DoesNotContainAll,
-        ColorIsExactly,
-        ColorMustInclude,
-        ColorDoesNotInclude,
+        ColorIsExactly
     }
 }

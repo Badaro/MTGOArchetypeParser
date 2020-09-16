@@ -12,9 +12,9 @@ using System.Text;
 #01 ArchaeusDota: KGCTron (G)
 #02 CrusherBotBG: HammerTime (W)
 #03 DreamsOfAshiok: ETron (C)
-#04 brandon__logan: Ponza (RG)
+#04 brandon__logan: GruulMidrange (RG)
 #05 tpc2000: GiftsStorm (UR)
-#06 Ganksyou: AzoriusStoneblade (WU)
+#06 Ganksyou: AzoriusControl (WU)
 #07 JustBurn420: Slivers (WUBRG)
 #08 osmanozguney: Faeries (UB)
 #09 henryys: Burn (WR, Lurrus)
@@ -25,7 +25,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_showcase_last_chance_2020_08_12 : EventTest
     {
         [Test]
-        public void Deck01_ArchaeusDota_GTron_KGCTron_G()
+        public void Deck01_ArchaeusDota_KGCTron_G()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-12",0),
@@ -64,13 +64,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_brandonlogan_Ponza_RG()
+        public void Deck04_brandonlogan_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-12",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -90,14 +90,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_Ganksyou_AzoriusControl_AzoriusStoneblade_WU()
+        public void Deck06_Ganksyou_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-12",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(AzoriusControl),
-                typeof(AzoriusStoneblade),
+                typeof(GenericControl),
+                null,
                 null
             );
         }

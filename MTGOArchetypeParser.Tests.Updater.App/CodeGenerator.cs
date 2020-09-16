@@ -1,5 +1,6 @@
 ﻿using MTGOArchetypeParser.Data;
 using MTGOArchetypeParser.Data.Model;
+using MTGOArchetypeParser.Model;
 using MTGOArchetypeParser.Tests.Updater.Model;
 using System;
 using System.IO;
@@ -16,7 +17,7 @@ namespace MTGOArchetypeParser.Tests.Updater
 
             for (int i = 0; i < tournament.Decks.Length; i++)
             {
-                var result = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => i.Card).ToArray(), tournament.Decks[i].Sideboard.Select(i => i.Card).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
+                var result = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
 
                 int position = i + 1;
                 string player = tournament.Decks[i].Player;
@@ -31,13 +32,13 @@ namespace MTGOArchetypeParser.Tests.Updater
                 {
                     if (result.Matches.Length == 1)
                     {
-                        name = result.Matches[0].Archetype.GetType().Name;
+                        name = result.Matches[0].Archetype.GetName(result.Color);
 
-                        if (result.Matches[0].Variant != null) name = $"{result.Matches[0].Variant.GetType().Name}";
+                        if (result.Matches[0].Variant != null) name = $"{result.Matches[0].Variant.GetName(result.Color)}";
                     }
                     else
                     {
-                        name = String.Join(",", result.Matches.Select(m => m.Archetype.GetType().Name));
+                        name = String.Join(",", result.Matches.Select(m => m.Archetype.GetName(result.Color)));
                     }
                 }
 
@@ -51,7 +52,7 @@ namespace MTGOArchetypeParser.Tests.Updater
                 }
             }
 
-            return _summarySnippet.Replace("{SUMMARY}",summary.ToString());
+            return _summarySnippet.Replace("{SUMMARY}", summary.ToString());
         }
 
         public static string GenerateTest(TournamentKeys tournamentKeys, DeckKeys deckKeys)

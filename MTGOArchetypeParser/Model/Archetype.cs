@@ -1,12 +1,112 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace MTGOArchetypeParser.Model
 {
-    public class Archetype
+    public abstract class Archetype
+    {
+        public string GetName(ArchetypeColor color)
+        {
+            string name = this.GetType().Name;
+            if (typeof(ArchetypeGeneric).IsAssignableFrom(this.GetType()))
+            {
+                string colorName = GetColorName(color);
+                name = name.Replace("Generic", colorName);
+            }
+            return name;
+        }
+
+        public override string ToString()
+        {
+            return this.GetType().Name;
+        }
+
+        private string GetColorName(ArchetypeColor color)
+        {
+            switch (color)
+            {
+                case ArchetypeColor.W:
+                    return $"MonoWhite";
+                case ArchetypeColor.U:
+                    return $"MonoBlue";
+                case ArchetypeColor.B:
+                    return $"MonoBlack";
+                case ArchetypeColor.R:
+                    return $"MonoRed";
+                case ArchetypeColor.G:
+                    return $"MonoGreen";
+                case ArchetypeColor.WU:   // Azorius
+                    return $"Azorius";
+                case ArchetypeColor.WB:   // Orzhov
+                    return $"Orzhov";
+                case ArchetypeColor.WR:   // Boros
+                    return $"Boros";
+                case ArchetypeColor.WG:   // Selesnya
+                    return $"Selenya";
+                case ArchetypeColor.UB:   // Dimir
+                    return $"Dimir";
+                case ArchetypeColor.UR:   // Izzet
+                    return $"Izzet";
+                case ArchetypeColor.UG:   // Simic
+                    return $"Simic";
+                case ArchetypeColor.BR:   // Rakdos
+                    return $"Rakdos";
+                case ArchetypeColor.BG:   // Golgari
+                    return $"Golgari";
+                case ArchetypeColor.RG:   // Gruul
+                    return $"Gruul";
+                case ArchetypeColor.WUB:  // Esper
+                    return $"Esper";
+                case ArchetypeColor.WUR:  // Jeskai
+                    return $"Jeskai";
+                case ArchetypeColor.WUG:  // Bant
+                    return $"Bant";
+                case ArchetypeColor.WBR:  // Mardu
+                    return $"Mardu";
+                case ArchetypeColor.WBG:  // Abzan
+                    return $"Abzan";
+                case ArchetypeColor.WRG:  // Naya
+                    return $"Naya";
+                case ArchetypeColor.UBR:  // Grixis
+                    return $"Grixis";
+                case ArchetypeColor.UBG:  // Sultai
+                    return $"Sultai";
+                case ArchetypeColor.URG:  // Temur
+                    return $"Temur";
+                case ArchetypeColor.BRG:  // Jund
+                    return $"Jund";
+                case ArchetypeColor.WUBR: // Not-G
+                    return $"WUBR";
+                case ArchetypeColor.WUBG: // Not-R
+                    return $"WUBG";
+                case ArchetypeColor.WURG: // Not-B
+                    return $"WURG";
+                case ArchetypeColor.UBRG: // Not-W
+                    return $"UBRG";
+                case ArchetypeColor.WUBRG:
+                    return $"5C";
+                default:
+                    return "";
+            }
+        }
+    }
+
+    public class ArchetypeSpecific : Archetype
     {
         public ArchetypeCondition[] Conditions { get; set; }
         public ArchetypeVariant[] Variants { get; set; }
     }
+
+    public class ArchetypeVariant : ArchetypeSpecific
+    {
+    }
+
+    public class ArchetypeGeneric : Archetype
+    {
+        public string[] CommonCards { get; set; }
+        public string[] RequiredCards { get; set; }
+    }
+
 }

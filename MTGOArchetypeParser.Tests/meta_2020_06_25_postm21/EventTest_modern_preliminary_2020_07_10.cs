@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Gigy: Ponza (RG)
+#01 Gigy: GruulMidrange (RG)
 #02 sff_mtg: KGCTron (G)
 #03 J000111: Dredge (WBRG)
 #04 WanderingOnes: KGCTron (G)
-#05 Janh: SnowShift (URG, Yorion)
+#05 Janh: Scapeshift (URG, Yorion)
 #06 HouseOfManaMTG: AmuletTitan (WUBRG)
-#07 katoriarch123: SnowControl (WUG)
+#07 katoriarch123: BantControl (WUG)
 #08 Engelsdorfer: GrixisShadow (UBR)
-#09 zumekun19850204: SultaiSnow (UBG)
+#09 zumekun19850204: SultaiControl (UBG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
@@ -25,20 +25,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_preliminary_2020_07_10 : EventTest
     {
         [Test]
-        public void Deck01_Gigy_Ponza_RG()
+        public void Deck01_Gigy_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",0),
                 new PostM21(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck02_sffmtg_GTron_KGCTron_G()
+        public void Deck02_sffmtg_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",1),
@@ -64,7 +64,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck04_WanderingOnes_GTron_KGCTron_G()
+        public void Deck04_WanderingOnes_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",3),
@@ -77,20 +77,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck05_Janh_SnowControl_SnowShift_URG_Yorion()
+        public void Deck05_Janh_Scapeshift_URG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",4),
                 new PostM21(),
                 ArchetypeColor.URG,
-                typeof(SnowControl),
-                typeof(SnowShift),
+                typeof(Scapeshift),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
 
         [Test]
-        public void Deck06_HouseOfManaMTG_PrimevalTitan_AmuletTitan_WUBRG()
+        public void Deck06_HouseOfManaMTG_AmuletTitan_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",5),
@@ -103,40 +103,40 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_katoriarch123_SnowControl_WUG()
+        public void Deck07_katoriarch123_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",6),
                 new PostM21(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck08_Engelsdorfer_DeathsShadow_GrixisShadow_UBR()
+        public void Deck08_Engelsdorfer_GrixisShadow_UBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",7),
                 new PostM21(),
                 ArchetypeColor.UBR,
-                typeof(DeathsShadow),
-                typeof(GrixisShadow),
+                typeof(GenericShadow),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck09_zumekun19850204_SnowControl_SultaiSnow_UBG()
+        public void Deck09_zumekun19850204_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",8),
                 new PostM21(),
                 ArchetypeColor.UBG,
-                typeof(SnowControl),
-                typeof(SultaiSnow),
+                typeof(GenericControl),
+                null,
                 null
             );
         }

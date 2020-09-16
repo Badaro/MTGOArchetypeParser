@@ -18,15 +18,15 @@ using System.Text;
 #07 alemilan19: ETron (C)
 #08 ReturnToDust: ETron (C)
 #09 Xwhale: ETron (C)
-#10 karatedom: RakdosProwess (WBR, Lurrus)
-#11 chupon2: Jund (BRG)
+#10 karatedom: MarduProwess (WBR, Lurrus)
+#11 chupon2: JundMidrange (BRG)
 #12 Wizard_2002: Humans (WUBRG)
 #13 Snusnumrick: ETron (C)
 #14 RicardoMSLan: GTron (WG)
 #15 Phill_Hellmuth: Dredge (WBRG)
-#16 eclipse4343: Miracles (WU)
-#17 hcook725: RakdosProwess (WBR, Lurrus)
-#18 Thrall90: Jund (BRG)
+#16 eclipse4343: AzoriusControl (WU)
+#17 hcook725: MarduProwess (WBR, Lurrus)
+#18 Thrall90: JundMidrange (BRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -47,14 +47,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_aarongulevich_Prowess_IzzetProwess_UR()
+        public void Deck02_aarongulevich_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }
@@ -66,7 +66,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-07-21",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(AzoriusControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -151,27 +151,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_karatedom_Prowess_RakdosProwess_WBR_Lurrus()
+        public void Deck10_karatedom_MarduProwess_WBR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",9),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WBR,
-                typeof(Prowess),
-                typeof(RakdosProwess),
+                typeof(GenericProwess),
+                null,
                 ArchetypeCompanion.Lurrus
             );
         }
 
         [Test]
-        public void Deck11_chupon2_Rock_Jund_BRG()
+        public void Deck11_chupon2_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",10),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(Rock),
-                typeof(Jund),
+                typeof(GenericMidrange),
+                null,
                 null
             );
         }
@@ -229,40 +229,40 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck16_eclipse4343_AzoriusControl_Miracles_WU()
+        public void Deck16_eclipse4343_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(AzoriusControl),
-                typeof(Miracles),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck17_hcook725_Prowess_RakdosProwess_WBR_Lurrus()
+        public void Deck17_hcook725_MarduProwess_WBR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",16),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WBR,
-                typeof(Prowess),
-                typeof(RakdosProwess),
+                typeof(GenericProwess),
+                null,
                 ArchetypeCompanion.Lurrus
             );
         }
 
         [Test]
-        public void Deck18_Thrall90_Rock_Jund_BRG()
+        public void Deck18_Thrall90_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",17),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(Rock),
-                typeof(Jund),
+                typeof(GenericMidrange),
+                null,
                 null
             );
         }

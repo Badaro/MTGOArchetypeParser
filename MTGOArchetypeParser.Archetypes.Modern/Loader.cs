@@ -12,7 +12,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             var types = typeof(Loader).Assembly
                 .GetTypes()
-                .Where(t => typeof(Archetype).IsAssignableFrom(t) && !typeof(ArchetypeVariant).IsAssignableFrom(t))
+                .Where(t => typeof(Archetype).IsAssignableFrom(t))
                 .ToArray();
 
             return types.Select(t => (Archetype)t.GetConstructor(new Type[0]).Invoke(new object[0])).ToArray();

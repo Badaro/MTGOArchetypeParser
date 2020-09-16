@@ -9,33 +9,33 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 bobthedog: SultaiSnow (UBG)
+#01 bobthedog: SultaiControl (UBG)
 #02 SvenSveeterSven: IzzetControl (UR)
 #03 Mcleskey: Burn (WR)
 #04 Laplasjan: Devoted (WG, Lurrus)
-#05 indianpancake: Ponza (RG)
+#05 indianpancake: GruulMidrange (RG)
 #06 MadMaxErnst: Uroza (URG)
 #07 tendercloud: HardenedScales (BG, Lurrus)
-#08 TSPJendrek: SultaiSnow (UBRG)
+#08 TSPJendrek: UBRGControl (UBRG)
 #09 TheTunnelingCat: ETron (C)
 #10 GoblinK1ng: Goblins (WUBRG)
-#11 bcs8995: SnowTitan (WUG, Yorion)
+#11 bcs8995: BantControl (WUG, Yorion)
 #12 SchulzCubed: FiresTurns (UR)
 #13 Lord_Beerus: Burn (WR, Lurrus)
-#14 lovealienzzz: TemurSnow (URG)
+#14 lovealienzzz: TemurControl (URG)
 #15 sakuragi21722749: ETron (C)
 #16 staples87: ETron (C)
 #17 AndyAWKWARD: Scapeshift (URG)
 #18 Sonso JF: ThopterUrza (UBR)
-#19 ConnorM426: SnowReclamation (UBG, Yorion)
-#20 headshotcatcher: Ponza (RG)
+#19 ConnorM426: SultaiReclamation (UBG, Yorion)
+#20 headshotcatcher: GruulMidrange (RG)
 #21 Chris_Concarnage: ETron (C)
-#22 GedionRavenor: SnowBlade (WUG)
+#22 GedionRavenor: BantControl (WUG)
 #23 Nyph: AmuletTitan (UBRG)
 #24 eminemberry: Burn (WR)
-#25 d_peliser: SnowControl (WUG)
+#25 d_peliser: BantControl (WUG)
 #26 ContraEgo: ThopterUrza (UBR)
-#27 SebastianStueckl: Ponza (RG)
+#27 SebastianStueckl: GruulMidrange (RG)
 #28 PeanutBrittle: GiftsStorm (UR)
 #29 Kuhb: GrindingBreach (WURG)
 #30 Math_God: GiftsStorm (UR)
@@ -48,14 +48,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
     public class EventTest_modern_challenge_2020_06_14 : EventTest
     {
         [Test]
-        public void Deck01_bobthedog_SnowControl_SultaiSnow_UBG()
+        public void Deck01_bobthedog_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",0),
                 new PostCompanionChange(),
                 ArchetypeColor.UBG,
-                typeof(SnowControl),
-                typeof(SultaiSnow),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
@@ -67,7 +67,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-challenge-2020-06-14",1),
                 new PostCompanionChange(),
                 ArchetypeColor.UR,
-                typeof(IzzetControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -100,13 +100,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck05_indianpancake_Ponza_RG()
+        public void Deck05_indianpancake_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",4),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -139,14 +139,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck08_TSPJendrek_SnowControl_SultaiSnow_UBRG()
+        public void Deck08_TSPJendrek_UBRGControl_UBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",7),
                 new PostCompanionChange(),
                 ArchetypeColor.UBRG,
-                typeof(SnowControl),
-                typeof(SultaiSnow),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
@@ -178,20 +178,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck11_bcs8995_SnowControl_SnowTitan_WUG_Yorion()
+        public void Deck11_bcs8995_BantControl_WUG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",10),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
-                typeof(SnowTitan),
+                typeof(GenericControl),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
 
         [Test]
-        public void Deck12_SchulzCubed_TakingTurns_FiresTurns_UR()
+        public void Deck12_SchulzCubed_FiresTurns_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",11),
@@ -217,14 +217,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck14_lovealienzzz_SnowControl_TemurSnow_URG()
+        public void Deck14_lovealienzzz_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",13),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(SnowControl),
-                typeof(TemurSnow),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
@@ -282,26 +282,26 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck19_ConnorM426_SnowControl_SnowReclamation_UBG_Yorion()
+        public void Deck19_ConnorM426_SultaiReclamation_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",18),
                 new PostCompanionChange(),
                 ArchetypeColor.UBG,
-                typeof(SnowControl),
-                typeof(SnowReclamation),
+                typeof(GenericReclamation),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
 
         [Test]
-        public void Deck20_headshotcatcher_Ponza_RG()
+        public void Deck20_headshotcatcher_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",19),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -321,20 +321,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck22_GedionRavenor_SnowControl_SnowBlade_WUG()
+        public void Deck22_GedionRavenor_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",21),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
-                typeof(SnowBlade),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck23_Nyph_PrimevalTitan_AmuletTitan_UBRG()
+        public void Deck23_Nyph_AmuletTitan_UBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",22),
@@ -360,13 +360,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck25_dpeliser_SnowControl_WUG()
+        public void Deck25_dpeliser_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",24),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -386,13 +386,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck27_SebastianStueckl_Ponza_RG()
+        public void Deck27_SebastianStueckl_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",26),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );

@@ -32,24 +32,25 @@ namespace MTGOArchetypeParser.Reports.App
 
                 DateTime startDate = allMetas ?
                     MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().First().StartDate :
-                    MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().Last().StartDate;
+                    MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().Last(m => m.StartDate < DateTime.UtcNow).StartDate;
 
                 DataRecord[] records = Loader.GetRecords(cacheFolder, startDate.AddDays(1), includeLeagues);
 
                 string date = $"{records.Max(t => t.Date).ToString("yyyy_MM_dd")}";
                 GenerateDump(records, $"mtgo_data_{date}");
+                GenerateTrend(records, $"mtgo_trend_{date}");
 
                 foreach (string meta in records.Select(r => r.Meta).Distinct())
                 {
                     GenerateMeta(records.Where(r => r.Meta == meta), r => r.Archetype, $"mtgo_meta_archetype_{meta.ToLower()}_full_{date}", _minPercentage);
-                    GenerateMeta(records.Where(r => r.Meta == meta), r => r.Variant, $"mtgo_meta_variant_{meta.ToLower()}_full_{date}", _minPercentage);
+                    GenerateMeta(records.Where(r => r.Meta == meta), r => r.Archetype, $"mtgo_meta_all_archetype_{meta.ToLower()}_full_{date}", 0);
                     GenerateColors(records.Where(r => r.Meta == meta), $"mtgo_meta_colors_{meta.ToLower()}_full_{date}");
                     GenerateCards(records.Where(r => r.Meta == meta), $"mtgo_meta_cards_{meta.ToLower()}_full_{date}");
 
                     foreach (int week in records.Where(r => r.Meta == meta).Select(r => r.Week).Distinct())
                     {
                         GenerateMeta(records.Where(r => r.Meta == meta && r.Week == week), r => r.Archetype, $"mtgo_meta_archetype_{meta.ToLower()}_week{week.ToString("D2")}_{date}", _minPercentage);
-                        GenerateMeta(records.Where(r => r.Meta == meta && r.Week == week), r => r.Variant, $"mtgo_meta_variant_{meta.ToLower()}_week{week.ToString("D2")}_{date}", _minPercentage);
+                        GenerateMeta(records.Where(r => r.Meta == meta && r.Week == week), r => r.Archetype, $"mtgo_meta_all_archetype_{meta.ToLower()}_week{week.ToString("D2")}_{date}", 0);
                         GenerateColors(records.Where(r => r.Meta == meta && r.Week == week), $"mtgo_meta_colors_{meta.ToLower()}_week{week.ToString("D2")}_{date}");
                         GenerateCards(records.Where(r => r.Meta == meta && r.Week == week), $"mtgo_meta_cards_{meta.ToLower()}_week{week.ToString("D2")}_{date}");
                     }
@@ -78,11 +79,53 @@ namespace MTGOArchetypeParser.Reports.App
         private static void GenerateDump(IEnumerable<DataRecord> records, string reportName)
         {
             StringBuilder csvData = new StringBuilder();
-            csvData.AppendLine($"EVENT,META,WEEK,DATE,PLAYER,URL,ARCHETYPE,VARIANT,COLOR,COMPANION");
+            csvData.AppendLine($"EVENT,META,WEEK,DATE,PLAYER,URL,ARCHETYPE,COLOR,COMPANION");
 
             foreach (var record in records)
             {
-                csvData.AppendLine($"{record.Tournament},{record.Meta},{record.Week},{record.Date.ToString("yyyy-MM-dd")},{record.Player},{record.AnchorUri},{record.Archetype},{record.Variant},{record.Color},{record.Companion}");
+                csvData.AppendLine($"{record.Tournament},{record.Meta},{record.Week},{record.Date.ToString("yyyy-MM-dd")},{record.Player},{record.AnchorUri},{record.Archetype},{record.Color},{record.Companion}");
+            }
+
+            File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
+        }
+
+        private static void GenerateTrend(IEnumerable<DataRecord> records, string reportName)
+        {
+            int maxWeeks = records.Max(r => r.Week);
+
+            int[] totalPerWeek = new int[maxWeeks];
+            Dictionary<string, int[]> consolidatedResults = new Dictionary<string, int[]>();
+            foreach (var record in records)
+            {
+                totalPerWeek[record.Week - 1]++;
+                if (!consolidatedResults.ContainsKey(record.Archetype)) consolidatedResults.Add(record.Archetype, new int[maxWeeks]);
+                consolidatedResults[record.Archetype][record.Week - 1]++;
+            }
+
+            string header = "ARCHETYPE";
+            for (int i = 0; i < maxWeeks; i++) header += $",WEEK {i + 1}";
+
+            StringBuilder csvData = new StringBuilder();
+            csvData.AppendLine(header);
+
+            foreach (var archetype in consolidatedResults)
+            {
+                string line = $"{archetype.Key}";
+
+                for (int i = 0; i < maxWeeks; i++)
+                {
+                    if (archetype.Value[i] > 0)
+                    {
+                        double percentage = 100d * ((double)archetype.Value[i]) / ((double)totalPerWeek[i]);
+                        line += $",{percentage.ToString("F1", CultureInfo.InvariantCulture)}%";
+                    }
+                    else
+                    {
+                        line += ",";
+                    }
+
+                }
+                csvData.AppendLine(line);
             }
 
             File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());

@@ -10,15 +10,15 @@ using System.Text;
 
 /*
 #01 Drakanar: Merfolk (UG)
-#02 Toastxp: SultaiSnow (UBG)
-#03 pbarrrgh: TemurSnow (URG)
-#04 qbturtle15: Ponza (RG, Obosh)
+#02 Toastxp: SultaiControl (UBG)
+#03 pbarrrgh: TemurControl (URG)
+#04 qbturtle15: GruulMidrange (RG, Obosh)
 #05 Samcaster-Mage: ETron (C)
 #06 Daniel_Garcia: OrzhovShadow (WB)
 #07 RpAngriff: SnoopGoblins (BR)
 #08 Binolino: AmuletTitan (URG)
 #09 WadeB: ETron (C)
-#10 McWinSauce: SnowControl (WUG)
+#10 McWinSauce: BantControl (WUG)
 #11 GideonRavensword: AdNauseam (WUB)
 */
 
@@ -40,39 +40,39 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck02_Toastxp_SnowControl_SultaiSnow_UBG()
+        public void Deck02_Toastxp_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-07",1),
                 new PostM21(),
                 ArchetypeColor.UBG,
-                typeof(SnowControl),
-                typeof(SultaiSnow),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck03_pbarrrgh_SnowControl_TemurSnow_URG()
+        public void Deck03_pbarrrgh_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-07",2),
                 new PostM21(),
                 ArchetypeColor.URG,
-                typeof(SnowControl),
-                typeof(TemurSnow),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck04_qbturtle15_Ponza_RG_Obosh()
+        public void Deck04_qbturtle15_GruulMidrange_RG_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-07",3),
                 new PostM21(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 ArchetypeCompanion.Obosh
             );
@@ -92,20 +92,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck06_DanielGarcia_DeathsShadow_OrzhovShadow_WB()
+        public void Deck06_DanielGarcia_OrzhovShadow_WB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-07",5),
                 new PostM21(),
                 ArchetypeColor.WB,
-                typeof(DeathsShadow),
-                typeof(OrzhovShadow),
+                typeof(GenericShadow),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck07_RpAngriff_Goblins_SnoopGoblins_BR()
+        public void Deck07_RpAngriff_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-07",6),
@@ -118,7 +118,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck08_Binolino_PrimevalTitan_AmuletTitan_URG()
+        public void Deck08_Binolino_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-07",7),
@@ -144,13 +144,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck10_McWinSauce_SnowControl_WUG()
+        public void Deck10_McWinSauce_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-07",9),
                 new PostM21(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 null
             );

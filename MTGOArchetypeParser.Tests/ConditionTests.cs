@@ -58,45 +58,6 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void OneOrMoreInSideboard()
-        {
-            DetectionSuccess(ArchetypeConditionType.OneOrMoreInSideboard,
-                new string[] { "Card 1", "Card 2" },
-                new string[] { },
-                new string[] { "Card 1", "Card 3" });
-
-            DetectionSuccess(ArchetypeConditionType.OneOrMoreInSideboard,
-                new string[] { "Card 1", "Card 2" },
-                new string[] { },
-                new string[] { "Card 2", "Card 3" });
-        }
-
-        [Test]
-        public void OneOrMoreInMainOrSideboard()
-        {
-            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainOrSideboard,
-               new string[] { "Card 1", "Card 2" },
-               new string[] { "Card 1", "Card 3" },
-               new string[] { });
-
-            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainOrSideboard,
-                new string[] { "Card 1", "Card 2" },
-                new string[] { "Card 2", "Card 3" },
-                new string[] { });
-
-            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainOrSideboard,
-                new string[] { "Card 1", "Card 2" },
-                new string[] { },
-                new string[] { "Card 1", "Card 3" });
-
-            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainOrSideboard,
-                new string[] { "Card 1", "Card 2" },
-                new string[] { },
-                new string[] { "Card 2", "Card 3" });
-        }
-
-
-        [Test]
         public void TwoOrMoreInMainboard()
         {
             DetectionFailure(ArchetypeConditionType.TwoOrMoreInMainboard,
@@ -116,59 +77,6 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
-        public void TwoOrMoreInSideboard()
-        {
-            DetectionFailure(ArchetypeConditionType.TwoOrMoreInSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { },
-               new string[] { "Card 1", "Card 5" });
-
-            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { },
-               new string[] { "Card 1", "Card 3" });
-
-            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { },
-               new string[] { "Card 2", "Card 3" });
-        }
-
-        [Test]
-        public void TwoOrMoreInMainOrSideboard()
-        {
-            DetectionFailure(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { "Card 1", "Card 5" },
-               new string[] { });
-
-            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { "Card 1", "Card 3" },
-               new string[] { });
-
-            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { "Card 2", "Card 3" },
-               new string[] { });
-
-            DetectionFailure(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { },
-               new string[] { "Card 1", "Card 5" });
-
-            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { },
-               new string[] { "Card 1", "Card 3" });
-
-            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { },
-               new string[] { "Card 2", "Card 3" });
-        }
-
-        [Test]
         public void DoesNotContain()
         {
             DetectionSuccess(ArchetypeConditionType.DoesNotContain,
@@ -185,73 +93,6 @@ namespace MTGOArchetypeParser.Tests
                new string[] { "Card 1" },
                new string[] { },
                new string[] { "Card 1", "Card 3" });
-        }
-
-        [Test]
-        public void DoesNotContainAll()
-        {
-            DetectionSuccess(ArchetypeConditionType.DoesNotContainAll,
-               new string[] { "Card 1", "Card 2" },
-               new string[] { "Card 1" },
-               new string[] { });
-
-            DetectionSuccess(ArchetypeConditionType.DoesNotContainAll,
-               new string[] { "Card 1", "Card 2" },
-               new string[] { "Card 2" },
-               new string[] { });
-
-            DetectionFailure(ArchetypeConditionType.DoesNotContainAll,
-               new string[] { "Card 1", "Card 2" },
-               new string[] { "Card 1", "Card 2" },
-               new string[] { });
-
-            DetectionFailure(ArchetypeConditionType.DoesNotContainAll,
-               new string[] { "Card 1", "Card 2" },
-               new string[] { },
-               new string[] { "Card 1", "Card 2" });
-
-            DetectionFailure(ArchetypeConditionType.DoesNotContainAll,
-               new string[] { "Card 1", "Card 2" },
-               new string[] { "Card 1" },
-               new string[] { "Card 2" });
-        }
-
-        [Test]
-        public void ColorMustInclude()
-        {
-            DetectionSuccess(ArchetypeConditionType.ColorMustInclude,
-               ArchetypeColor.W,
-               new string[] { "Plains" },
-               new string[] { });
-
-            DetectionSuccess(ArchetypeConditionType.ColorMustInclude,
-               ArchetypeColor.W,
-               new string[] { "Plains", "Island" },
-               new string[] { });
-
-            DetectionFailure(ArchetypeConditionType.ColorMustInclude,
-               ArchetypeColor.W,
-               new string[] { "Swamp" },
-               new string[] { });
-        }
-
-        [Test]
-        public void ColorDoesNotInclude()
-        {
-            DetectionFailure(ArchetypeConditionType.ColorDoesNotInclude,
-               ArchetypeColor.W,
-               new string[] { "Plains" },
-               new string[] { });
-
-            DetectionFailure(ArchetypeConditionType.ColorDoesNotInclude,
-               ArchetypeColor.W,
-               new string[] { "Plains", "Island" },
-               new string[] { });
-
-            DetectionSuccess(ArchetypeConditionType.ColorDoesNotInclude,
-               ArchetypeColor.W,
-               new string[] { "Swamp" },
-               new string[] { });
         }
 
         [Test]
@@ -285,7 +126,7 @@ namespace MTGOArchetypeParser.Tests
 
         private void DetectionSuccess(ArchetypeConditionType condition, string[] archetypeCards, ArchetypeColor archetypeColor, string[] testMainboard, string[] testSideboard)
         {
-            var archetype = new Archetype()
+            var archetype = new ArchetypeSpecific()
             {
                 Conditions = new ArchetypeCondition[]
                 {
@@ -294,9 +135,9 @@ namespace MTGOArchetypeParser.Tests
             };
 
             var result = ArchetypeAnalyzer.Detect(
-                testMainboard,
-                testSideboard,
-                new Archetype[]
+                testMainboard.Select(c => new Card() { Count = 1, Name = c }).ToArray(),
+                testSideboard.Select(c => new Card() { Count = 1, Name = c }).ToArray(),
+                new ArchetypeSpecific[]
                 {
                      archetype
                 });
@@ -318,7 +159,7 @@ namespace MTGOArchetypeParser.Tests
 
         private void DetectionFailure(ArchetypeConditionType condition, string[] archetypeCards, ArchetypeColor archetypeColor, string[] testMainboard, string[] testSideboard)
         {
-            var archetype = new Archetype()
+            var archetype = new ArchetypeSpecific()
             {
                 Conditions = new ArchetypeCondition[]
                 {
@@ -327,9 +168,9 @@ namespace MTGOArchetypeParser.Tests
             };
 
             var result = ArchetypeAnalyzer.Detect(
-                testMainboard,
-                testSideboard,
-                new Archetype[]
+                testMainboard.Select(c => new Card() { Count = 1, Name = c }).ToArray(),
+                testSideboard.Select(c => new Card() { Count = 1, Name = c }).ToArray(),
+                new ArchetypeSpecific[]
                 {
                      archetype
                 });

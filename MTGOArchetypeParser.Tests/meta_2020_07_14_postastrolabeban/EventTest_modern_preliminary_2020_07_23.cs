@@ -9,29 +9,29 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 eclipse4343: Miracles (WU)
-#02 fling5133: Jund (BRG)
+#01 eclipse4343: AzoriusControl (WU)
+#02 fling5133: JundMidrange (BRG)
 #03 eggybenny: Neobrand (UG)
 #04 RNGspecialist: Scapeshift (URG)
 #05 gazmon48: ETron (C)
 #06 alemilan19: Scapeshift (URG)
 #07 sandydogmtg: IzzetProwess (UR)
 #08 Ouranos139: KGCAmuletTitan (UBRG)
-#09 yashimoro: EsperShadow (WUBR)
+#09 yashimoro: WUBRShadow (WUBR)
 #10 DreamsOfAshiok: ETron (C)
 #11 Icteridae: ETron (C)
 #12 _INF_: GiftsStorm (UR)
 #13 Nammersquats: Infect (UG)
-#14 StormQrow: Jund (BRG)
+#14 StormQrow: JundMidrange (BRG)
 #15 RogerSteady: GrixisEnforcer (UBR)
 #16 Xwhale: ETron (C)
-#17 Toastxp: RakdosProwess (WBR, Lurrus)
+#17 Toastxp: MarduProwess (WBR, Lurrus)
 #18 juzam_gin: Dredge (WBRG)
 #19 grahams: Crabvine (UBRG)
 #20 Lexmart: BantControl (WUG)
 #21 Graciasportanto: KGCTron (G)
 #22 StoreShop275: ETron (C)
-#23 MZBlazer: AzoriusStoneblade (WU)
+#23 MZBlazer: AzoriusControl (WU)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -39,27 +39,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_07_23 : EventTest
     {
         [Test]
-        public void Deck01_eclipse4343_AzoriusControl_Miracles_WU()
+        public void Deck01_eclipse4343_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(AzoriusControl),
-                typeof(Miracles),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck02_fling5133_Rock_Jund_BRG()
+        public void Deck02_fling5133_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(Rock),
-                typeof(Jund),
+                typeof(GenericMidrange),
+                null,
                 null
             );
         }
@@ -117,20 +117,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_sandydogmtg_Prowess_IzzetProwess_UR()
+        public void Deck07_sandydogmtg_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck08_Ouranos139_PrimevalTitan_KGCAmuletTitan_UBRG()
+        public void Deck08_Ouranos139_KGCAmuletTitan_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",7),
@@ -143,14 +143,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_yashimoro_DeathsShadow_EsperShadow_WUBR()
+        public void Deck09_yashimoro_WUBRShadow_WUBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",8),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBR,
-                typeof(DeathsShadow),
-                typeof(EsperShadow),
+                typeof(GenericShadow),
+                null,
                 null
             );
         }
@@ -208,14 +208,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_StormQrow_Rock_Jund_BRG()
+        public void Deck14_StormQrow_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",13),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(Rock),
-                typeof(Jund),
+                typeof(GenericMidrange),
+                null,
                 null
             );
         }
@@ -247,14 +247,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_Toastxp_Prowess_RakdosProwess_WBR_Lurrus()
+        public void Deck17_Toastxp_MarduProwess_WBR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",16),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WBR,
-                typeof(Prowess),
-                typeof(RakdosProwess),
+                typeof(GenericProwess),
+                null,
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -292,14 +292,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-07-23",19),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(BantControl),
+                typeof(GenericControl),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck21_Graciasportanto_GTron_KGCTron_G()
+        public void Deck21_Graciasportanto_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",20),
@@ -325,14 +325,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck23_MZBlazer_AzoriusControl_AzoriusStoneblade_WU()
+        public void Deck23_MZBlazer_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",22),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(AzoriusControl),
-                typeof(AzoriusStoneblade),
+                typeof(GenericControl),
+                null,
                 null
             );
         }

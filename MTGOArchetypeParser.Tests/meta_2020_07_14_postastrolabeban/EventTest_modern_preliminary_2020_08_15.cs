@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Rooney56: AzoriusStoneblade (WU)
+#01 Rooney56: AzoriusControl (WU)
 #02 CavalloGoloso: IzzetControl (UR)
 #03 Costola91: GrixisShadow (UBR)
 #04 BasedCloy: ETron (C)
@@ -23,7 +23,7 @@ using System.Text;
 #12 otakkun: KGCTron (G)
 #13 ht991122: TemurReclamation (URG)
 #14 kbzx: IzzetProwess (UR)
-#15 komattaman: Ponza (RG)
+#15 komattaman: GruulMidrange (RG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -31,14 +31,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_08_15 : EventTest
     {
         [Test]
-        public void Deck01_Rooney56_AzoriusControl_AzoriusStoneblade_WU()
+        public void Deck01_Rooney56_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(AzoriusControl),
-                typeof(AzoriusStoneblade),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
@@ -50,21 +50,21 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-08-15",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(IzzetControl),
+                typeof(GenericControl),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck03_Costola91_DeathsShadow_GrixisShadow_UBR()
+        public void Deck03_Costola91_GrixisShadow_UBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBR,
-                typeof(DeathsShadow),
-                typeof(GrixisShadow),
+                typeof(GenericShadow),
+                null,
                 null
             );
         }
@@ -96,20 +96,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_lilianaofthevess_Prowess_IzzetProwess_UR()
+        public void Deck06_lilianaofthevess_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck07_CReactor_GTron_KGCTron_G()
+        public void Deck07_CReactor_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",6),
@@ -122,14 +122,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_Imaeda_Prowess_IzzetProwess_UR()
+        public void Deck08_Imaeda_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",7),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }
@@ -148,20 +148,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_BSKhercules_WildernessReclamation_TemurReclamation_URG()
+        public void Deck10_BSKhercules_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",9),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(WildernessReclamation),
-                typeof(TemurReclamation),
+                typeof(GenericReclamation),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck11_Zar0s_PrimevalTitan_KGCAmuletTitan_WUBRG()
+        public void Deck11_Zar0s_KGCAmuletTitan_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",10),
@@ -174,7 +174,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_otakkun_GTron_KGCTron_G()
+        public void Deck12_otakkun_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",11),
@@ -187,39 +187,39 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_ht991122_WildernessReclamation_TemurReclamation_URG()
+        public void Deck13_ht991122_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",12),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(WildernessReclamation),
-                typeof(TemurReclamation),
+                typeof(GenericReclamation),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck14_kbzx_Prowess_IzzetProwess_UR()
+        public void Deck14_kbzx_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",13),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck15_komattaman_Ponza_RG()
+        public void Deck15_komattaman_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",14),
                 new PostAstrolabeBan(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );

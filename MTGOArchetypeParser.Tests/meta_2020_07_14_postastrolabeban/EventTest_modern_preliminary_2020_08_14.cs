@@ -15,7 +15,7 @@ using System.Text;
 #04 Do0mSwitch: BantControl (WUG)
 #05 sff_mtg: KGCTron (G)
 #06 Boin: SnoopGoblins (BR)
-#07 ht991122: WildernessReclamation (UBG)
+#07 ht991122: SultaiReclamation (UBG)
 #08 Je3vEs: ETron (C)
 #09 tribalmaster: IzzetProwess (UR)
 #10 Niedzwiedz: SnoopGoblins (BR)
@@ -28,7 +28,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_08_14 : EventTest
     {
         [Test]
-        public void Deck01_Cherryxman_GTron_KGCTron_G()
+        public void Deck01_Cherryxman_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-14",0),
@@ -47,7 +47,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-08-14",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(AzoriusControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -73,14 +73,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-08-14",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(BantControl),
+                typeof(GenericControl),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck05_sffmtg_GTron_KGCTron_G()
+        public void Deck05_sffmtg_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-14",4),
@@ -93,7 +93,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_Boin_Goblins_SnoopGoblins_BR()
+        public void Deck06_Boin_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-14",5),
@@ -106,13 +106,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_ht991122_WildernessReclamation_UBG()
+        public void Deck07_ht991122_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-14",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(WildernessReclamation),
+                typeof(GenericReclamation),
                 null,
                 null
             );
@@ -132,20 +132,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_tribalmaster_Prowess_IzzetProwess_UR()
+        public void Deck09_tribalmaster_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-14",8),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck10_Niedzwiedz_Goblins_SnoopGoblins_BR()
+        public void Deck10_Niedzwiedz_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-14",9),

@@ -12,18 +12,18 @@ using System.Text;
 #01 aooaaooa: Lantern (UBG)
 #02 NightKnight131: Devoted (WG, Lurrus)
 #03 MadCowChicken: SelesnyaEldrazi (WG, Jegantha)
-#04 Frank_Bonaparte: Ponza (RG)
+#04 Frank_Bonaparte: GruulMidrange (RG)
 #05 Papelucho10: Infect (UG)
 #06 Mcleskey: Burn (WR)
 #07 Boland: Dredge (BRG)
-#08 ghostx02: Ponza (RG)
+#08 ghostx02: GruulMidrange (RG)
 #09 FrancusAurelius: NayaMidrange (WRG)
 #10 otakkun: KGCTron (G)
-#11 _Logic_: DeathsShadow (BR)
+#11 _Logic_: RakdosShadow (BR)
 #12 2radMTG: Bogles (WG, Lurrus)
-#13 lovealienzzz: SnowControl (URG)
+#13 lovealienzzz: TemurControl (URG)
 #14 Manacymbal: KinnanUrza (URG, Yorion)
-#15 signblindman: Ponza (RG)
+#15 signblindman: GruulMidrange (RG)
 #16 Nammersquats: Humans (WUBRG)
 #17 Micro: AdNauseam (WUB)
 #18 joetru: BringToNiv (WUBRG)
@@ -74,13 +74,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck04_FrankBonaparte_Ponza_RG()
+        public void Deck04_FrankBonaparte_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-20",3),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -126,13 +126,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck08_ghostx02_Ponza_RG()
+        public void Deck08_ghostx02_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-20",7),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -145,14 +145,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-20",8),
                 new PostCompanionChange(),
                 ArchetypeColor.WRG,
-                typeof(NayaMidrange),
+                typeof(GenericMidrange),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck10_otakkun_GTron_KGCTron_G()
+        public void Deck10_otakkun_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-20",9),
@@ -165,13 +165,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck11_Logic_DeathsShadow_BR()
+        public void Deck11_Logic_RakdosShadow_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-20",10),
                 new PostCompanionChange(),
                 ArchetypeColor.BR,
-                typeof(DeathsShadow),
+                typeof(GenericShadow),
                 null,
                 null
             );
@@ -191,13 +191,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck13_lovealienzzz_SnowControl_URG()
+        public void Deck13_lovealienzzz_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-20",12),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -217,13 +217,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck15_signblindman_Ponza_RG()
+        public void Deck15_signblindman_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-20",14),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );

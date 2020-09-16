@@ -9,50 +9,50 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 in5ano: SnowShift (URG, Yorion)
+#01 in5ano: Scapeshift (URG, Yorion)
 #02 katobu: Merfolk (WU, Lurrus)
 #03 Blindside09: HardenedScales (BG, Lurrus)
 #04 CharlieStyle: Burn (WR, Lurrus)
 #05 Kurusu: KikiChord (WBRG, Yorion)
 #06 fald_on: GiftsStorm (UR)
-#07 Urzza100: SnowTitan (WUG, Yorion)
-#08 603Leb: Ponza (RG)
-#09 sydneydude: Prowess (WR)
-#10 rouleur: Prowess (R)
-#11 yamayama: SnowReclamation (UBG, Yorion)
+#07 Urzza100: BantControl (WUG, Yorion)
+#08 603Leb: GruulMidrange (RG)
+#09 sydneydude: BorosProwess (WR)
+#10 rouleur: MonoRedProwess (R)
+#11 yamayama: SultaiReclamation (UBG, Yorion)
 #12 jimdownside: Aristocrats (WB, Lurrus)
 #13 Danny_Bambino: Crabvine (UBG)
-#14 pbarrrgh: SnowReclamation (UBG)
+#14 pbarrrgh: SultaiReclamation (UBG)
 #15 Zeranox: BantBlink (WUG, Yorion)
-#16 FlxEx: TraverseShadow (BRG)
+#16 FlxEx: JundShadow (BRG)
 #17 soba178: Humans (WUBRG)
 #18 MrRaeb: Uroza (UBG, Yorion)
 #19 jessy_samek: Uroza (URG)
 #20 B1gDan: MarduShadow (WBR)
-#21 floatius: Miracles (WU)
-#22 osk4: BantBlink (WURG, Yorion)
+#21 floatius: AzoriusControl (WU)
+#22 osk4: WURGBlink (WURG, Yorion)
 #23 Lucabireskusku: Inverter (UB)
 #24 Netow: Bogles (WU, Lurrus)
 #25 lancetman2: Dredge (BRG)
-#26 j_money10: SnowBlade (WUBG)
-#27 lovealienzzz: TemurSnow (URG)
+#26 j_money10: WUBGControl (WUBG)
+#27 lovealienzzz: TemurControl (URG)
 #28 renatoaraujo: GTron (G)
 #29 Traft: Goblins (BRG)
 #30 Mordeka1ser: BringToNiv (WUBRG, Yorion)
-#31 anamika: GruulCompany (WURG)
+#31 anamika: WURGMidrange (WURG)
 #32 Dr_D1ck_Forest: AdNauseam (WUB)
 #33 Mollok: ThaliaStompy (WR)
 #34 knightmare21: IzzetControl (UR)
-#35 albert62: Jund (BRG)
+#35 albert62: JundMidrange (BRG)
 #36 kuromatu: ETron (C)
-#37 Nideon: EldraziTaxes (WB)
-#38 nahuel10: SnowControl (WUBG, Yorion)
+#37 Nideon: OrzhovEldraziTaxes (WB)
+#38 nahuel10: WUBGControl (WUBG, Yorion)
 #39 Zebrah: AmuletTitan (WURG)
 #40 SawphtBoi: Winota (WRG)
 #41 Boland: GrixisShadow (UBR)
-#42 marcofabrizi: SnowBlade (WUG)
+#42 marcofabrizi: BantMidrange (WUG)
 #43 robb93: UTron (U)
-#44 Misplacedginger: SnowControl (WUG)
+#44 Misplacedginger: BantControl (WUG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
@@ -60,14 +60,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
     public class EventTest_modern_league_2020_06_12 : EventTest
     {
         [Test]
-        public void Deck01_in5ano_SnowControl_SnowShift_URG_Yorion()
+        public void Deck01_in5ano_Scapeshift_URG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",0),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(SnowControl),
-                typeof(SnowShift),
+                typeof(Scapeshift),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
@@ -138,66 +138,66 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck07_Urzza100_SnowControl_SnowTitan_WUG_Yorion()
+        public void Deck07_Urzza100_BantControl_WUG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",6),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
-                typeof(SnowTitan),
+                typeof(GenericControl),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
 
         [Test]
-        public void Deck08_603Leb_Ponza_RG()
+        public void Deck08_603Leb_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",7),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck09_sydneydude_Prowess_WR()
+        public void Deck09_sydneydude_BorosProwess_WR()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",8),
                 new PostCompanionChange(),
                 ArchetypeColor.WR,
-                typeof(Prowess),
+                typeof(GenericProwess),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck10_rouleur_Prowess_R()
+        public void Deck10_rouleur_MonoRedProwess_R()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",9),
                 new PostCompanionChange(),
                 ArchetypeColor.R,
-                typeof(Prowess),
+                typeof(GenericProwess),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck11_yamayama_SnowControl_SnowReclamation_UBG_Yorion()
+        public void Deck11_yamayama_SultaiReclamation_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",10),
                 new PostCompanionChange(),
                 ArchetypeColor.UBG,
-                typeof(SnowControl),
-                typeof(SnowReclamation),
+                typeof(GenericReclamation),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
@@ -229,14 +229,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck14_pbarrrgh_SnowControl_SnowReclamation_UBG()
+        public void Deck14_pbarrrgh_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",13),
                 new PostCompanionChange(),
                 ArchetypeColor.UBG,
-                typeof(SnowControl),
-                typeof(SnowReclamation),
+                typeof(GenericReclamation),
+                null,
                 null
             );
         }
@@ -248,21 +248,21 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-league-2020-06-12",14),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
-                typeof(BantBlink),
+                typeof(GenericBlink),
                 null,
                 ArchetypeCompanion.Yorion
             );
         }
 
         [Test]
-        public void Deck16_FlxEx_DeathsShadow_TraverseShadow_BRG()
+        public void Deck16_FlxEx_JundShadow_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",15),
                 new PostCompanionChange(),
                 ArchetypeColor.BRG,
-                typeof(DeathsShadow),
-                typeof(TraverseShadow),
+                typeof(GenericShadow),
+                null,
                 null
             );
         }
@@ -307,39 +307,39 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck20_B1gDan_DeathsShadow_MarduShadow_WBR()
+        public void Deck20_B1gDan_MarduShadow_WBR()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",19),
                 new PostCompanionChange(),
                 ArchetypeColor.WBR,
-                typeof(DeathsShadow),
-                typeof(MarduShadow),
+                typeof(GenericShadow),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck21_floatius_AzoriusControl_Miracles_WU()
+        public void Deck21_floatius_AzoriusControl_WU()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",20),
                 new PostCompanionChange(),
                 ArchetypeColor.WU,
-                typeof(AzoriusControl),
-                typeof(Miracles),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck22_osk4_BantBlink_WURG_Yorion()
+        public void Deck22_osk4_WURGBlink_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",21),
                 new PostCompanionChange(),
                 ArchetypeColor.WURG,
-                typeof(BantBlink),
+                typeof(GenericBlink),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -385,27 +385,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck26_jmoney10_SnowControl_SnowBlade_WUBG()
+        public void Deck26_jmoney10_WUBGControl_WUBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",25),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBG,
-                typeof(SnowControl),
-                typeof(SnowBlade),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck27_lovealienzzz_SnowControl_TemurSnow_URG()
+        public void Deck27_lovealienzzz_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",26),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(SnowControl),
-                typeof(TemurSnow),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
@@ -450,13 +450,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck31_anamika_GruulCompany_WURG()
+        public void Deck31_anamika_WURGMidrange_WURG()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",30),
                 new PostCompanionChange(),
                 ArchetypeColor.WURG,
-                typeof(GruulCompany),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -476,14 +476,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck33_Mollok_DeathAndTaxes_ThaliaStompy_WR()
+        public void Deck33_Mollok_ThaliaStompy_WR()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",32),
                 new PostCompanionChange(),
                 ArchetypeColor.WR,
-                typeof(DeathAndTaxes),
                 typeof(ThaliaStompy),
+                null,
                 null
             );
         }
@@ -495,21 +495,21 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-league-2020-06-12",33),
                 new PostCompanionChange(),
                 ArchetypeColor.UR,
-                typeof(IzzetControl),
+                typeof(GenericControl),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck35_albert62_Rock_Jund_BRG()
+        public void Deck35_albert62_JundMidrange_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",34),
                 new PostCompanionChange(),
                 ArchetypeColor.BRG,
-                typeof(Rock),
-                typeof(Jund),
+                typeof(GenericMidrange),
+                null,
                 null
             );
         }
@@ -528,33 +528,33 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck37_Nideon_DeathAndTaxes_EldraziTaxes_WB()
+        public void Deck37_Nideon_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",36),
                 new PostCompanionChange(),
                 ArchetypeColor.WB,
-                typeof(DeathAndTaxes),
-                typeof(EldraziTaxes),
+                typeof(GenericEldraziTaxes),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck38_nahuel10_SnowControl_WUBG_Yorion()
+        public void Deck38_nahuel10_WUBGControl_WUBG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",37),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion
             );
         }
 
         [Test]
-        public void Deck39_Zebrah_PrimevalTitan_AmuletTitan_WURG()
+        public void Deck39_Zebrah_AmuletTitan_WURG()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",38),
@@ -580,27 +580,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck41_Boland_DeathsShadow_GrixisShadow_UBR()
+        public void Deck41_Boland_GrixisShadow_UBR()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",40),
                 new PostCompanionChange(),
                 ArchetypeColor.UBR,
-                typeof(DeathsShadow),
-                typeof(GrixisShadow),
+                typeof(GenericShadow),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck42_marcofabrizi_SnowControl_SnowBlade_WUG()
+        public void Deck42_marcofabrizi_BantMidrange_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",41),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
-                typeof(SnowBlade),
+                typeof(GenericMidrange),
+                null,
                 null
             );
         }
@@ -619,13 +619,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck44_Misplacedginger_SnowControl_WUG()
+        public void Deck44_Misplacedginger_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",43),
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 null
             );

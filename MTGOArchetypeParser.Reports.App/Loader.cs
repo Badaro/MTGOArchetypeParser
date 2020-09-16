@@ -4,7 +4,6 @@ using MTGOArchetypeParser.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace MTGOArchetypeParser.Reports.App
 {
@@ -31,7 +30,7 @@ namespace MTGOArchetypeParser.Reports.App
 
                 for (int i = 0; i < tournament.Decks.Length; i++)
                 {
-                    var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => i.Card).ToArray(), tournament.Decks[i].Sideboard.Select(i => i.Card).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
+                    var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
 
                     string colorID = detectionResult.Color.ToString();
                     string companionID = detectionResult.Companion == null ? "" : detectionResult.Companion.Value.ToString();
@@ -41,14 +40,13 @@ namespace MTGOArchetypeParser.Reports.App
                     if (detectionResult.Matches.Length == 1)
                     {
                         var detected = detectionResult.Matches.First();
-                        archetypeID = detected.Archetype.GetType().Name;
+
+                        archetypeID = detected.Archetype.GetName(detectionResult.Color);
                         if (detected.Variant != null)
                         {
-                            variantID = detected.Variant.GetType().Name;
+                            archetypeID = detected.Variant.GetName(detectionResult.Color);
                         }
                     }
-
-                    string consolidatedID = String.IsNullOrEmpty(variantID) ? archetypeID : variantID;
 
                     records.Add(new DataRecord()
                     {
@@ -59,7 +57,6 @@ namespace MTGOArchetypeParser.Reports.App
                         Player = tournament.Decks[i].Player,
                         AnchorUri = tournament.Decks[i].AnchorUri,
                         Archetype = archetypeID,
-                        Variant = consolidatedID,
                         Color = colorID,
                         Companion = companionID,
                         Deck = tournament.Decks[i]

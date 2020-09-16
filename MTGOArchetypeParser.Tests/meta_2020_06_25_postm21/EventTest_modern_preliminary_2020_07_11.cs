@@ -9,16 +9,16 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Shorak123: SnowReclamation (UBG)
-#02 Kazuga: SultaiSnow (UBG)
-#03 yuurari_yuko: SnowTurns (WUG, Yorion)
+#01 Shorak123: SultaiReclamation (UBG)
+#02 Kazuga: SultaiControl (UBG)
+#03 yuurari_yuko: BantControl (WUG, Yorion)
 #04 sff_mtg: KGCTron (G)
 #05 mariogomes097: GrixisShadow (UBR)
-#06 ZYURYO: SnowControl (WUBG)
+#06 ZYURYO: WUBGControl (WUBG)
 #07 gyyby297: ThopterUrza (WU)
 #08 NickPuiKia: IzzetProwess (UR)
 #09 medvedev: ETron (C)
-#10 Antarctica: Ponza (RG)
+#10 Antarctica: GruulMidrange (RG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
@@ -26,46 +26,46 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_preliminary_2020_07_11 : EventTest
     {
         [Test]
-        public void Deck01_Shorak123_SnowControl_SnowReclamation_UBG()
+        public void Deck01_Shorak123_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-11",0),
                 new PostM21(),
                 ArchetypeColor.UBG,
-                typeof(SnowControl),
-                typeof(SnowReclamation),
+                typeof(GenericReclamation),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck02_Kazuga_SnowControl_SultaiSnow_UBG()
+        public void Deck02_Kazuga_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-11",1),
                 new PostM21(),
                 ArchetypeColor.UBG,
-                typeof(SnowControl),
-                typeof(SultaiSnow),
+                typeof(GenericControl),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck03_yuurariyuko_SnowControl_SnowTurns_WUG_Yorion()
+        public void Deck03_yuurariyuko_BantControl_WUG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-11",2),
                 new PostM21(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
-                typeof(SnowTurns),
+                typeof(GenericControl),
+                null,
                 ArchetypeCompanion.Yorion
             );
         }
 
         [Test]
-        public void Deck04_sffmtg_GTron_KGCTron_G()
+        public void Deck04_sffmtg_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-11",3),
@@ -78,26 +78,26 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck05_mariogomes097_DeathsShadow_GrixisShadow_UBR()
+        public void Deck05_mariogomes097_GrixisShadow_UBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-11",4),
                 new PostM21(),
                 ArchetypeColor.UBR,
-                typeof(DeathsShadow),
-                typeof(GrixisShadow),
+                typeof(GenericShadow),
+                null,
                 null
             );
         }
 
         [Test]
-        public void Deck06_ZYURYO_SnowControl_WUBG()
+        public void Deck06_ZYURYO_WUBGControl_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-11",5),
                 new PostM21(),
                 ArchetypeColor.WUBG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -117,14 +117,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck08_NickPuiKia_Prowess_IzzetProwess_UR()
+        public void Deck08_NickPuiKia_IzzetProwess_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-11",7),
                 new PostM21(),
                 ArchetypeColor.UR,
-                typeof(Prowess),
-                typeof(IzzetProwess),
+                typeof(GenericProwess),
+                null,
                 null
             );
         }
@@ -143,13 +143,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck10_Antarctica_Ponza_RG()
+        public void Deck10_Antarctica_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-11",9),
                 new PostM21(),
                 ArchetypeColor.RG,
-                typeof(Ponza),
+                typeof(GenericMidrange),
                 null,
                 null
             );

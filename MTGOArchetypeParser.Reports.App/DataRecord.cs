@@ -1,7 +1,5 @@
 ﻿using MTGOArchetypeParser.Data.Model;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MTGOArchetypeParser.Reports.App
 {
@@ -14,7 +12,6 @@ namespace MTGOArchetypeParser.Reports.App
         public string Player { get; set; }
         public Uri AnchorUri { get; set; }
         public string Archetype { get; set; }
-        public string Variant { get; set; }
         public string Color { get; set; }
         public string Companion { get; set; }
         public Deck Deck { get; set; }

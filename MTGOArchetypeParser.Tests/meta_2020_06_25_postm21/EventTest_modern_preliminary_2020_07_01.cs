@@ -19,7 +19,7 @@ using System.Text;
 #08 Aluren85: Dredge (UBRG)
 #09 MlckyB: Bogles (WG)
 #10 Eaglov: TitanShift (RG)
-#11 fradev1988: SnowControl (WUG)
+#11 fradev1988: BantControl (WUG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
@@ -105,7 +105,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_otakkun_GTron_KGCTron_G()
+        public void Deck07_otakkun_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-01",6),
@@ -144,7 +144,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck10_Eaglov_PrimevalTitan_TitanShift_RG()
+        public void Deck10_Eaglov_TitanShift_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-01",9),
@@ -157,13 +157,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck11_fradev1988_SnowControl_WUG()
+        public void Deck11_fradev1988_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-01",10),
                 new PostM21(),
                 ArchetypeColor.WUG,
-                typeof(SnowControl),
+                typeof(GenericControl),
                 null,
                 null
             );
