@@ -7,13 +7,12 @@ namespace MTGOArchetypeParser.Archetypes.Modern
 {
     public class Belcher : ArchetypeSpecific
     {
-        public Belcher() 
+        public Belcher()
         {
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Goblin Charbelcher" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Simian Spirit Guide" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Chancellor of the Tangle" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Simian Spirit Guide", "Irencrag Feat", "Chancellor of the Tangle", "Desperate Ritual", "Pyretic Ritual" } },
             };
         }
     }
