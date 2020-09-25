@@ -215,6 +215,50 @@ namespace MTGOArchetypeParser.Data
             { "Kher Keep", ArchetypeColor.R },
             { "Pendelhaven", ArchetypeColor.G },
 
+            // Pathway
+            { "Branchloft Pathway", ArchetypeColor.WG },
+            { "Brightclimb Pathway", ArchetypeColor.WB },
+            { "Clearwater Pathway", ArchetypeColor.UB },
+            { "Cragcrown Pathway", ArchetypeColor.RG },
+            { "Needleverge Pathway", ArchetypeColor.WR },
+            { "Riverglide Pathway", ArchetypeColor.UR },
+
+            // Zendikar Rising Uncommon MDFC
+            { "Kabira Takedown", ArchetypeColor.W },
+            { "Makindi Stampede", ArchetypeColor.W },
+            { "Sejiri Shelter", ArchetypeColor.W },
+            { "Skyclave Cleric", ArchetypeColor.W },
+            { "Jwari Disruption", ArchetypeColor.U },
+            { "Beyeen Veil", ArchetypeColor.U },
+            { "Umara Wizard", ArchetypeColor.U },
+            { "Silundi Vision", ArchetypeColor.U },
+            { "Blackbloom Rogue", ArchetypeColor.B },
+            { "Malakir Rebirth", ArchetypeColor.B },
+            { "Pelakka Predation", ArchetypeColor.B },
+            { "Zof Consumption", ArchetypeColor.B },
+            { "Song-Mad Treachery", ArchetypeColor.R },
+            { "Spikefield Hazard", ArchetypeColor.R },
+            { "Kazuul's Fury", ArchetypeColor.R },
+            { "Akoum Warrior", ArchetypeColor.R },
+            { "Tangled Florahedron", ArchetypeColor.G },
+            { "Vastwood Fortification", ArchetypeColor.G },
+            { "Khalni Ambush", ArchetypeColor.G },
+            { "Bala Ged Recovery", ArchetypeColor.G },
+
+            // Zendikar Rising Rare MDFC
+            { "Ondu Inversion", ArchetypeColor.W },
+            { "Glasspool Mimic", ArchetypeColor.U },
+            { "Hagra Mauling", ArchetypeColor.B },
+            { "Valakut Awakening", ArchetypeColor.R },
+            { "Kazandu Mammoth", ArchetypeColor.G },
+
+            // Zendikar Rising Mythic MDFC
+            { "Emeria's Call", ArchetypeColor.W },
+            { "Sea Gate Restoration", ArchetypeColor.U },
+            { "Agadeem's Awakening", ArchetypeColor.B },
+            { "Shatterskull Smashing", ArchetypeColor.R },
+            { "Turntimber Symbiosis", ArchetypeColor.G },
+
             // Misc
             { "Oboro, Palace in the Clouds", ArchetypeColor.U },
 

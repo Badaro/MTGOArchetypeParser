@@ -32,7 +32,7 @@ using System.Text;
 #21 midnuzzles: MarduMidrange (WBR)
 #22 BenMishania: GruulMidrange (RG)
 #23 LuckyOnline: BushwhackerZoo (WRG)
-#24 GanYanCHN: Belcher (C)
+#24 GanYanCHN: Belcher (RG)
 #25 antonio00: GruulMidrange (RG)
 #26 Mordeka1ser: BringToNiv (WUBRG, Yorion)
 #27 jsmall: GoryoReanimator (UBR)
@@ -378,12 +378,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck24_GanYanCHN_Belcher_C()
+        public void Deck24_GanYanCHN_Belcher_RG()
         {
             Test(
                 GetDeck("modern-league-2020-09-22",23),
                 new PostZendikarRising(),
-                ArchetypeColor.C,
+                ArchetypeColor.RG,
                 typeof(Belcher),
                 null,
                 null

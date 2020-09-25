@@ -32,7 +32,7 @@ using System.Text;
 #21 RAINkratos: Humans (WUBRG)
 #22 Nikachu: Merfolk (UG)
 #23 Granham: KGCTron (G)
-#24 SebastianStueckl: Belcher (R)
+#24 SebastianStueckl: Belcher (WRG)
 #25 AstralPlane: RakdosProwess (BR, Lurrus)
 #26 Selami: AdNauseam (WUB)
 #27 Trid0n: Bogles (WG, Lurrus)
@@ -347,12 +347,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck24_SebastianStueckl_Belcher_R()
+        public void Deck24_SebastianStueckl_Belcher_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-21",23),
                 new PostZendikarRising(),
-                ArchetypeColor.R,
+                ArchetypeColor.WRG,
                 typeof(Belcher),
                 null,
                 null

@@ -17,7 +17,7 @@ using System.Text;
 #06 mathguy31415: KGCTron (G)
 #07 Chuckles1248: AdNauseam (WUB)
 #08 slow_brz: MarduShadow (WBR)
-#09 SKK: Belcher (C)
+#09 SKK: Belcher (RG)
 #10 D00mwake: Mill (UB, Lurrus)
 #11 oshea: Humans (WUBRG)
 #12 bmwracer0: KGCTron (G)
@@ -152,12 +152,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_SKK_Belcher_C()
+        public void Deck09_SKK_Belcher_RG()
         {
             Test(
                 GetDeck("modern-champs-2020-09-21",8),
                 new PostZendikarRising(),
-                ArchetypeColor.C,
+                ArchetypeColor.RG,
                 typeof(Belcher),
                 null,
                 null

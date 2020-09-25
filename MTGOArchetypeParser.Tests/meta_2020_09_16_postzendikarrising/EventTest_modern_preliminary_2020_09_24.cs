@@ -13,7 +13,7 @@ using System.Text;
 #02 wambocombo2020: Humans (WUBRG)
 #03 Bullwinkkle6705: TemurControl (URG)
 #04 SCJ: WURGControl (WURG)
-#05 SKK: Belcher (R)
+#05 SKK: Belcher (RG)
 #06 Bedell: RakdosShadow (BR, Lurrus)
 #07 pokerswizard: GruulMidrange (RG)
 #08 SpikeYou: SultaiReclamation (UBG)
@@ -80,12 +80,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_SKK_Belcher_R()
+        public void Deck05_SKK_Belcher_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-24",4),
                 new PostZendikarRising(),
-                ArchetypeColor.R,
+                ArchetypeColor.RG,
                 typeof(Belcher),
                 null,
                 null

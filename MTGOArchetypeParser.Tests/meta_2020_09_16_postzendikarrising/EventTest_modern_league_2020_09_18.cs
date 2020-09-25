@@ -32,7 +32,7 @@ using System.Text;
 #21 akjets6: GrixisShadow (UBR, Lurrus)
 #22 Zar0s: TemurControl (URG)
 #23 Phill_Hellmuth: GruulMidrange (RG)
-#24 Rulleboren: Belcher (C)
+#24 Rulleboren: Belcher (RG)
 #25 otakkun: KGCTron (G)
 */
 
@@ -340,12 +340,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck24_Rulleboren_Belcher_C()
+        public void Deck24_Rulleboren_Belcher_RG()
         {
             Test(
                 GetDeck("modern-league-2020-09-18",23),
                 new PostZendikarRising(),
-                ArchetypeColor.C,
+                ArchetypeColor.RG,
                 typeof(Belcher),
                 null,
                 null
