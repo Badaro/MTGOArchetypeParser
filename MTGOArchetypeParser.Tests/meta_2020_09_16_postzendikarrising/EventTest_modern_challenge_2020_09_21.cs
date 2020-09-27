@@ -38,7 +38,7 @@ using System.Text;
 #27 Trid0n: Bogles (WG, Lurrus)
 #28 katoriarch123: BantControl (WUG)
 #29 Kurusu: KikiChord (WRG, Yorion)
-#30 Gerschi: RakdosShadow (BR, Lurrus)
+#30 Gerschi: ShadowProwess (BR, Lurrus)
 #31 2jjm: Burn (WR)
 #32 Lukas261997: GrixisShadow (UBR)
 */
@@ -425,13 +425,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck30_Gerschi_RakdosShadow_BR_Lurrus()
+        public void Deck30_Gerschi_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-21",29),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );

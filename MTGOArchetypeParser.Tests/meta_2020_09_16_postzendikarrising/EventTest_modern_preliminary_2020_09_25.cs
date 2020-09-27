@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 yamakiller: RakdosShadow (BR, Lurrus)
+#01 yamakiller: ShadowProwess (BR, Lurrus)
 #02 qbturtle15: MonoWhiteTaxes (W)
 #03 NHA37: RakdosShadow (BR, Lurrus)
 #04 GGBud1717: IzzetProwess (UR)
@@ -21,13 +21,13 @@ using System.Text;
 #10 MindOfAKid: UBRGMidrange (UBRG)
 #11 McWinSauce: WURGControl (WURG)
 #12 Sanchez5272: ETron (C)
-#13 KelMasterP: RakdosShadow (BR, Lurrus)
+#13 KelMasterP: ShadowProwess (BR, Lurrus)
 #14 medvedev: MonoWhiteTaxes (W)
 #15 pokerswizard: GruulMidrange (RG)
 #16 _Shatun_: GruulMidrange (RG)
 #17 Snusnumrick: ETron (C)
 #18 wambocombo2020: Humans (WUBRG)
-#19 nedyahiske: RakdosShadow (BR, Lurrus)
+#19 nedyahiske: ShadowProwess (BR, Lurrus)
 #20 ConnorM426: OopsAllSpells (WUBRG)
 */
 
@@ -36,13 +36,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_09_25 : EventTest
     {
         [Test]
-        public void Deck01_yamakiller_RakdosShadow_BR_Lurrus()
+        public void Deck01_yamakiller_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-25",0),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -192,13 +192,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_KelMasterP_RakdosShadow_BR_Lurrus()
+        public void Deck13_KelMasterP_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-25",12),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -270,13 +270,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck19_nedyahiske_RakdosShadow_BR_Lurrus()
+        public void Deck19_nedyahiske_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-25",18),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );

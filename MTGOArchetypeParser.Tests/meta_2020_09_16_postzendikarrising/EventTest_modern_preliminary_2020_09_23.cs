@@ -11,10 +11,10 @@ using System.Text;
 /*
 #01 ZYURYO: WURGControl (WURG)
 #02 Rinko: EnduringIdeal (WR)
-#03 kanister: RakdosShadow (BR, Lurrus)
+#03 kanister: ShadowProwess (BR, Lurrus)
 #04 Kurusu: KikiChord (WRG, Yorion)
 #05 Bohnz: GruulMidrange (RG)
-#06 Humpaa: RakdosShadow (BR, Lurrus)
+#06 Humpaa: ShadowProwess (BR, Lurrus)
 #07 ImmanuelKantrolGod: JeskaiControl (WUR)
 #08 spellvine: IzzetProwess (UR)
 #09 HouseOfManaMTG: AmuletTitan (UBRG)
@@ -54,13 +54,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_kanister_RakdosShadow_BR_Lurrus()
+        public void Deck03_kanister_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-23",2),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -93,13 +93,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_Humpaa_RakdosShadow_BR_Lurrus()
+        public void Deck06_Humpaa_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-23",5),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );

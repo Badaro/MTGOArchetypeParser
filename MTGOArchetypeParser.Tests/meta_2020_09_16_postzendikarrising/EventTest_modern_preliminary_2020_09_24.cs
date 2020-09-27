@@ -14,12 +14,12 @@ using System.Text;
 #03 Bullwinkkle6705: TemurControl (URG)
 #04 SCJ: WURGControl (WURG)
 #05 SKK: Belcher (RG)
-#06 Bedell: RakdosShadow (BR, Lurrus)
+#06 Bedell: ShadowProwess (BR, Lurrus)
 #07 pokerswizard: GruulMidrange (RG)
 #08 SpikeYou: SultaiReclamation (UBG)
 #09 swana422: Spirits (WU)
 #10 Fatcaster_Mage: TemurControl (URG)
-#11 MZBlazer: RakdosShadow (BR, Lurrus)
+#11 MZBlazer: ShadowProwess (BR, Lurrus)
 #12 qbturtle15: MonoWhiteTaxes (W)
 */
 
@@ -93,13 +93,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_Bedell_RakdosShadow_BR_Lurrus()
+        public void Deck06_Bedell_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-24",5),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -158,13 +158,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_MZBlazer_RakdosShadow_BR_Lurrus()
+        public void Deck11_MZBlazer_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-24",10),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );

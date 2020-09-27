@@ -21,21 +21,21 @@ using System.Text;
 #10 ZYURYO: WURGControl (WURG)
 #11 qbturtle15: MonoWhiteTaxes (W)
 #12 122pablo: JeskaiAscendancy (WURG, Jegantha)
-#13 SoulStrong: RakdosShadow (BR, Lurrus)
+#13 SoulStrong: ShadowProwess (BR, Lurrus)
 #14 Sodeq: AdNauseam (WUB)
 #15 Antarctica: MarduProwess (WBR, Lurrus)
 #16 eggybenny: Devoted (WG, Lurrus)
 #17 kiko: MonoWhiteTaxes (W)
 #18 matiaskm: Devoted (WG, Lurrus)
 #19 Lacansa: Humans (WUBRG)
-#20 Bayesta_93: RakdosShadow (BR, Lurrus)
+#20 Bayesta_93: ShadowProwess (BR, Lurrus)
 #21 kanister: OopsAllSpells (WUBRG)
 #22 trader08111: GruulMidrange (RG)
 #23 dough_shack: AmuletTitan (WUBRG)
 #24 TSPJendrek: SultaiControl (UBG)
 #25 Smdster: TemurControl (URG)
 #26 helpfulsheep: RakdosProwess (BR, Lurrus)
-#27 Disgruntled_Elk: RakdosShadow (BR, Lurrus)
+#27 Disgruntled_Elk: ShadowProwess (BR, Lurrus)
 #28 Side_Arms: Scapeshift (URG)
 #29 Flshtoph: BringToNiv (WUBRG, Yorion)
 #30 littledarwin: HammerTime (W)
@@ -204,13 +204,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_SoulStrong_RakdosShadow_BR_Lurrus()
+        public void Deck13_SoulStrong_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-27",12),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -295,13 +295,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_Bayesta93_RakdosShadow_BR_Lurrus()
+        public void Deck20_Bayesta93_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-27",19),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -386,13 +386,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck27_DisgruntledElk_RakdosShadow_BR_Lurrus()
+        public void Deck27_DisgruntledElk_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-27",26),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );

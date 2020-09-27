@@ -14,7 +14,7 @@ using System.Text;
 #03 SgtMcMuffins: PrimevalTitan (WRG)
 #04 Redgy819: UBRGShadow (UBRG)
 #05 benchsummer: UBRGShadow (UBRG)
-#06 Humpaa: RakdosShadow (BR, Lurrus)
+#06 Humpaa: ShadowProwess (BR, Lurrus)
 #07 solaec0501: Humans (WUBRG)
 #08 TheSouthDakota: Dredge (BRG)
 #09 Lukas261997: GrixisShadow (UBR)
@@ -97,13 +97,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_Humpaa_RakdosShadow_BR_Lurrus()
+        public void Deck06_Humpaa_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-22",5),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );

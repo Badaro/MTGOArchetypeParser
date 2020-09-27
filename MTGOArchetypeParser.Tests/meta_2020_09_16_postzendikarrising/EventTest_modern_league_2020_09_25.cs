@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 coliobeware: RakdosShadow (BR, Lurrus)
+#01 coliobeware: ShadowProwess (BR, Lurrus)
 #02 Ivc: AzoriusControl (WU)
 #03 GanYanCHN: SultaiControl (UBG)
 #04 Metcalf23: MonoWhiteTaxes (W)
@@ -76,13 +76,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_league_2020_09_25 : EventTest
     {
         [Test]
-        public void Deck01_coliobeware_RakdosShadow_BR_Lurrus()
+        public void Deck01_coliobeware_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",0),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );

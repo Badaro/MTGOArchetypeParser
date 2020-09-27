@@ -21,7 +21,7 @@ using System.Text;
 #10 il_matagatto: Humans (WUBRG)
 #11 Delpoctrol: Dredge (BRG)
 #12 Rebus8: Humans (WUBRG)
-#13 Gerschi: RakdosShadow (BR, Lurrus)
+#13 Gerschi: ShadowProwess (BR, Lurrus)
 #14 Antoine57437: AbzanCompany (WBRG)
 #15 An_Actual_Potato: TemurControl (URG)
 #16 wambocombo2020: Humans (WUBRG)
@@ -204,13 +204,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_Gerschi_RakdosShadow_BR_Lurrus()
+        public void Deck13_Gerschi_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-20",12),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );
