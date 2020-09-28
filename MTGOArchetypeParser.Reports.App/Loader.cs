@@ -11,8 +11,8 @@ namespace MTGOArchetypeParser.Reports.App
     {
         public static DataRecord[] GetRecords(string cacheFolder, DateTime startDate, bool includeLeagues)
         {
-            Func<string, bool> excludeLeaguesFilter = n => n.Contains("Standard");
-            Func<string, bool> includeLeaguesFilter = n => n.Contains("Standard");
+            Func<string, bool> excludeLeaguesFilter = n => n.Contains("Modern") && !n.Contains("League");
+            Func<string, bool> includeLeaguesFilter = n => n.Contains("Modern");
             Func<string, bool> filter = includeLeagues ? includeLeaguesFilter : excludeLeaguesFilter;
 
             Tournament[] tournaments = TournamentLoader.GetTournamentsByDate(cacheFolder, startDate, filter).ToArray();
