@@ -36,7 +36,7 @@ using System.Text;
 #25 Gautcho: OopsAllSpells (WUBRG)
 #26 TheWonderLord: GolgariMidrange (BG)
 #27 yumad3988: OrzhovShadow (WB)
-#28 dabiggestb: Tokens (WUB)
+#28 dabiggestb: NinjaFaeries (WUB)
 #29 willpulliam: AmuletTitan (UBRG)
 #30 MaybeLotuses: JundMidrange (BRG)
 #31 MaLiam: Humans (WUBRG)
@@ -423,13 +423,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck28_dabiggestb_Tokens_WUB()
+        public void Deck28_dabiggestb_NinjaFaeries_WUB()
         {
             Test(
                 GetDeck("modern-league-2020-10-02",27),
                 new PostZendikarRising(),
                 ArchetypeColor.WUB,
-                typeof(Tokens),
+                typeof(NinjaFaeries),
                 null,
                 null
             );
