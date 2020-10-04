@@ -13,7 +13,7 @@ using System.Text;
 #02 DaniMRebel: Spirits (WU)
 #03 Giocatore_Medio_92: Humans (WUBRG)
 #04 Xwhale: Humans (WUBRG)
-#05 maximusdee: JundShadow (BRG, Lurrus)
+#05 maximusdee: ShadowProwess (BRG, Lurrus)
 #06 McWinSauce: WURGControl (WURG)
 #07 trader08111: GruulMidrange (RG)
 #08 benchsummer: UBRGShadow (UBRG)

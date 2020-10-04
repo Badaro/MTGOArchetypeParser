@@ -31,7 +31,7 @@ using System.Text;
 #20 Bobthebuilder24: HeliodSisters (W)
 #21 balltap: JeskaiBreach (WURG, Jegantha)
 #22 SknerusMcKwacz: OopsAllSpells (WUBRG)
-#23 audio336: JundShadow (BRG, Lurrus)
+#23 audio336: ShadowProwess (BRG, Lurrus)
 #24 Czechito: Elementals (WR)
 #25 ST0NEHE4RT: MonoRedProwess (R, Obosh)
 #26 LordOfDarkness25: Bogles (WG)

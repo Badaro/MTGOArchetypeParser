@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 yamakiller: ShadowProwess (BR, Lurrus)
 #02 qbturtle15: MonoWhiteTaxes (W)
-#03 NHA37: RakdosShadow (BR, Lurrus)
+#03 NHA37: ShadowProwess (BR, Lurrus)
 #04 GGBud1717: IzzetProwess (UR)
 #05 Usama96: WURGControl (WURG)
 #06 Jositoshekel: Bogles (WUG, Lurrus)

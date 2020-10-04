@@ -67,7 +67,7 @@ using System.Text;
 #56 TheTunnelingCat: ETron (C)
 #57 MagicDevil666: UTron (U)
 #58 Borjillamtg10: RakdosProwess (BR, Lurrus)
-#59 Kuhb: JundShadow (BRG)
+#59 Kuhb: ShadowProwess (BRG)
 #60 TuggaNaxos: Mill (WU, Lurrus)
 #61 manu_chao: SultaiControl (UBG)
 #62 wutang08: JundShadow (BRG)
@@ -833,7 +833,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck59_Kuhb_JundShadow_BRG()
+        public void Deck59_Kuhb_ShadowProwess_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-09-22",58),

@@ -39,7 +39,7 @@ using System.Text;
 #28 Planet-Blade: GrixisShadow (UBR)
 #29 ColoradoRalphy: Humans (WUBRG)
 #30 TheBigMoke: SultaiReclamation (UBG)
-#31 TheOneCoff: TemurControl (URG)
+#31 TheOneCoff: ValakutField (URG)
 #32 nietzreznor: MonoRedProwess (R, Obosh)
 #33 Bangood: ThopterUrza (UBR)
 #34 pumpkinwavy: PrimevalTitan (WRG)
@@ -641,7 +641,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck45_ProfGOak_IzzetProwess_UR()
+        public void Deck45_ProfGOak_ThingAscension_UR()
         {
             Test(
                 GetDeck("modern-league-2020-09-04",44),
