@@ -62,13 +62,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_NHA37_RakdosShadow_BR_Lurrus()
+        public void Deck03_NHA37_ShadowProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-25",2),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );

@@ -362,13 +362,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck23_audio336_JundShadow_BRG_Lurrus()
+        public void Deck23_audio336_ShadowProwess_BRG_Lurrus()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",22),
                 new PostZendikarRising(),
                 ArchetypeColor.BRG,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );

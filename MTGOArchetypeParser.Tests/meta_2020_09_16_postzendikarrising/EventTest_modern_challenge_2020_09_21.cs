@@ -100,13 +100,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_maximusdee_JundShadow_BRG_Lurrus()
+        public void Deck05_maximusdee_ShadowProwess_BRG_Lurrus()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-21",4),
                 new PostZendikarRising(),
                 ArchetypeColor.BRG,
-                typeof(GenericShadow),
+                typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
             );
