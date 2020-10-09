@@ -104,6 +104,7 @@ namespace MTGOArchetypeParser.Reports.App
 
             string header = "ARCHETYPE";
             for (int i = 0; i < maxWeeks; i++) header += $",WEEK {i + 1}";
+            for (int i = 1; i < maxWeeks; i++) header += $",TREND WEEK {i + 1}";
 
             StringBuilder csvData = new StringBuilder();
             csvData.AppendLine(header);
@@ -123,8 +124,21 @@ namespace MTGOArchetypeParser.Reports.App
                     {
                         line += ",";
                     }
-
                 }
+
+                for (int i = 1; i < maxWeeks; i++)
+                {
+                    double percentageLast = 100d * ((double)archetype.Value[i - 1]) / ((double)totalPerWeek[i - 1]);
+                    double percentageCurrent = 100d * ((double)archetype.Value[i]) / ((double)totalPerWeek[i]);
+                    double diff = (percentageCurrent - percentageLast);
+
+                    if (diff > 5) line += $",↑↑";
+                    else if (diff > 2) line += $",↑";
+                    else if (diff < -5) line += $",↓↓";
+                    else if (diff < -2) line += $",↓";
+                    else line += $",-";
+                }
+
                 csvData.AppendLine(line);
             }
 
