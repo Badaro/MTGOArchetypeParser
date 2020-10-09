@@ -52,7 +52,7 @@ using System.Text;
 #41 mac121711: SultaiControl (UBG)
 #42 DFrank: ThopterUrza (WUB)
 #43 Doni_Dominaria: IncineratorBurn (BR)
-#44 Jiggywiggy: KinnanUrza (WURG, Yorion)
+#44 Jiggywiggy: KinnanLegends (WURG, Yorion)
 #45 Trellon: UTron (U)
 #46 kensportsfan: MonoRedProwess (R)
 #47 Taracogenius: TitanShift (RG)
@@ -642,13 +642,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck44_Jiggywiggy_KinnanUrza_WURG_Yorion()
+        public void Deck44_Jiggywiggy_KinnanLegends_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-07",43),
                 new PostM21(),
                 ArchetypeColor.WURG,
-                typeof(KinnanUrza),
+                typeof(KinnanLegends),
                 null,
                 ArchetypeCompanion.Yorion
             );

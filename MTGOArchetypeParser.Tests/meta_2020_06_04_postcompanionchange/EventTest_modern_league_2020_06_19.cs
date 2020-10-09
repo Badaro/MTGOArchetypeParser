@@ -36,7 +36,7 @@ using System.Text;
 #25 Drakanar: Merfolk (U)
 #26 Walkers: SultaiReclamation (UBG)
 #27 Darkiundsa: WURGControl (WURG, Yorion)
-#28 Jiggywiggy: KinnanUrza (URG, Yorion)
+#28 Jiggywiggy: KinnanLegends (URG, Yorion)
 #29 Netow: Dredge (BRG)
 #30 Zanman: TitanStompy (BRG, Gyruda)
 #31 Madwolf87: JundShadow (BRG)
@@ -407,13 +407,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck28_Jiggywiggy_KinnanUrza_URG_Yorion()
+        public void Deck28_Jiggywiggy_KinnanLegends_URG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",27),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(KinnanUrza),
+                typeof(KinnanLegends),
                 null,
                 ArchetypeCompanion.Yorion
             );

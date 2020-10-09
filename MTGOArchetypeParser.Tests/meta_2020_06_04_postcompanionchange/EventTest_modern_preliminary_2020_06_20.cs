@@ -22,7 +22,7 @@ using System.Text;
 #11 _Logic_: RakdosShadow (BR)
 #12 2radMTG: Bogles (WG, Lurrus)
 #13 lovealienzzz: TemurControl (URG)
-#14 Manacymbal: KinnanUrza (URG, Yorion)
+#14 Manacymbal: KinnanLegends (URG, Yorion)
 #15 signblindman: GruulMidrange (RG)
 #16 Nammersquats: Humans (WUBRG)
 #17 Micro: AdNauseam (WUB)
@@ -204,13 +204,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck14_Manacymbal_KinnanUrza_URG_Yorion()
+        public void Deck14_Manacymbal_KinnanLegends_URG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-20",13),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(KinnanUrza),
+                typeof(KinnanLegends),
                 null,
                 ArchetypeCompanion.Yorion
             );

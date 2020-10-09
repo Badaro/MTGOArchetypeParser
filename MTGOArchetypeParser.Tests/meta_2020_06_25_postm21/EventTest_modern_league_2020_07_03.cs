@@ -40,7 +40,7 @@ using System.Text;
 #29 HNSDMPF: HardenedScales (G)
 #30 thepensword: IzzetControl (UR)
 #31 rojanosa: OrzhovTokens (WB)
-#32 Jiggywiggy: KinnanUrza (URG, Yorion)
+#32 Jiggywiggy: KinnanLegends (URG, Yorion)
 #33 aspiringspike: IzzetControl (UR)
 #34 penips: MonoWhiteEldraziTaxes (W)
 #35 Bruno_Mineiro: UBRGShadow (UBRG)
@@ -471,13 +471,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck32_Jiggywiggy_KinnanUrza_URG_Yorion()
+        public void Deck32_Jiggywiggy_KinnanLegends_URG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-03",31),
                 new PostM21(),
                 ArchetypeColor.URG,
-                typeof(KinnanUrza),
+                typeof(KinnanLegends),
                 null,
                 ArchetypeCompanion.Yorion
             );

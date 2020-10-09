@@ -13,7 +13,7 @@ using System.Text;
 #02 xakx47x: Devoted (WG, Lurrus)
 #03 1yo2yo: ThopterUrza (UBR)
 #04 tuhoajatane: AmuletTitan (UBRG)
-#05 Jiggywiggy: KinnanUrza (URG, Yorion)
+#05 Jiggywiggy: KinnanLegends (URG, Yorion)
 #06 PaChA94s: AdNauseam (WUB)
 #07 Misplacedginger: BantControl (WUG)
 #08 SvenSveeterSven: IzzetControl (UR)
@@ -40,7 +40,7 @@ using System.Text;
 #29 remf: BantSpirits (WUG)
 #30 kalibak: Burn (WR)
 #31 NewHJ: Burn (WRG)
-#32 Manacymbal: KinnanUrza (URG, Yorion)
+#32 Manacymbal: KinnanLegends (URG, Yorion)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
@@ -100,13 +100,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck05_Jiggywiggy_KinnanUrza_URG_Yorion()
+        public void Deck05_Jiggywiggy_KinnanLegends_URG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",4),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(KinnanUrza),
+                typeof(KinnanLegends),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -451,13 +451,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck32_Manacymbal_KinnanUrza_URG_Yorion()
+        public void Deck32_Manacymbal_KinnanLegends_URG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",31),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(KinnanUrza),
+                typeof(KinnanLegends),
                 null,
                 ArchetypeCompanion.Yorion
             );

@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 Metcalf23: BorosTaxes (WR, Yorion)
-#02 Manacymbal: KinnanUrza (URG, Yorion)
+#02 Manacymbal: KinnanLegends (URG, Yorion)
 #03 jessy_samek: Dredge (BRG)
 #04 Heisenberg666: Burn (WRG)
 #05 dch97e: BantSpirits (WUG)
@@ -88,13 +88,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck02_Manacymbal_KinnanUrza_URG_Yorion()
+        public void Deck02_Manacymbal_KinnanLegends_URG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-16",1),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(KinnanUrza),
+                typeof(KinnanLegends),
                 null,
                 ArchetypeCompanion.Yorion
             );

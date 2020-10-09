@@ -43,7 +43,7 @@ using System.Text;
 #32 Trellon: UTron (U)
 #33 Netow: Dredge (BRG)
 #34 Sonkerz: IzzetControl (UR)
-#35 PieGonti: KinnanUrza (URG, Yorion)
+#35 PieGonti: KinnanLegends (URG, Yorion)
 #36 Piccio36: Winota (WRG)
 */
 
@@ -494,13 +494,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck35_PieGonti_KinnanUrza_URG_Yorion()
+        public void Deck35_PieGonti_KinnanLegends_URG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",34),
                 new PostM21(),
                 ArchetypeColor.URG,
-                typeof(KinnanUrza),
+                typeof(KinnanLegends),
                 null,
                 ArchetypeCompanion.Yorion
             );
