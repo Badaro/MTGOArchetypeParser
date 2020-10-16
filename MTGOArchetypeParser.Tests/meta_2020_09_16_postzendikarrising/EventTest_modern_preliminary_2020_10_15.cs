@@ -23,7 +23,7 @@ using System.Text;
 #12 Mcleskey: Burn (WR)
 #13 GideonRavensword: Dredge (BRG)
 #14 Icteridae: GruulMidrange (RG)
-#15 Sam_Lewin: BorosNahiri (WBR)
+#15 Sam_Lewin: BorosLandDestruction (WBR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -213,13 +213,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_SamLewin_BorosNahiri_WBR()
+        public void Deck15_SamLewin_BorosLandDestruction_WBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-15",14),
                 new PostZendikarRising(),
                 ArchetypeColor.WBR,
-                typeof(BorosNahiri),
+                typeof(BorosLandDestruction),
                 null,
                 null
             );

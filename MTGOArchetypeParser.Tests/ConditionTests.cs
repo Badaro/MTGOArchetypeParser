@@ -96,6 +96,44 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
+        public void DoesNotContainMainboard()
+        {
+            DetectionSuccess(ArchetypeConditionType.DoesNotContainMainboard,
+               new string[] { "Card 1" },
+               new string[] { "Card 2", "Card 3" },
+               new string[] { });
+
+            DetectionFailure(ArchetypeConditionType.DoesNotContainMainboard,
+               new string[] { "Card 1" },
+               new string[] { "Card 1", "Card 3" },
+               new string[] { });
+
+            DetectionSuccess(ArchetypeConditionType.DoesNotContainMainboard,
+               new string[] { "Card 1" },
+               new string[] { },
+               new string[] { "Card 1", "Card 3" });
+        }
+
+        [Test]
+        public void DoesNotContainSideboard()
+        {
+            DetectionSuccess(ArchetypeConditionType.DoesNotContainSideboard,
+               new string[] { "Card 1" },
+               new string[] { "Card 2", "Card 3" },
+               new string[] { });
+
+            DetectionSuccess(ArchetypeConditionType.DoesNotContainSideboard,
+               new string[] { "Card 1" },
+               new string[] { "Card 1", "Card 3" },
+               new string[] { });
+
+            DetectionFailure(ArchetypeConditionType.DoesNotContainSideboard,
+               new string[] { "Card 1" },
+               new string[] { },
+               new string[] { "Card 1", "Card 3" });
+        }
+
+        [Test]
         public void ColorIsExactly()
         {
             DetectionFailure(ArchetypeConditionType.ColorIsExactly,

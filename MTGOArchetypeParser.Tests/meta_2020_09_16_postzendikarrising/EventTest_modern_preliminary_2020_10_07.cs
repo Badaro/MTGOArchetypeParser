@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 otakkun: WURGControl (WURG)
-#02 Sam_Lewin: BorosNahiri (WR)
+#02 Sam_Lewin: BorosLandDestruction (WR)
 #03 tkcheungab: KGCTron (BG)
 #04 coert: HeliodCombo (WG)
 #05 AstralPlane: ShadowProwess (BR, Lurrus)
@@ -40,13 +40,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_SamLewin_JeskaiNahiri_WR()
+        public void Deck02_SamLewin_BorosLandDestruction_WR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-07",1),
                 new PostZendikarRising(),
                 ArchetypeColor.WR,
-                typeof(BorosNahiri),
+                typeof(BorosLandDestruction),
                 null,
                 null
             );
