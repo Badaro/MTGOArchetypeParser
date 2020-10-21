@@ -38,7 +38,7 @@ using System.Text;
 #27 Marisa_Margatroid: GrixisShadow (UBR)
 #28 Parrit: MonoWhiteTaxes (W)
 #29 Sharkcaster_Mage: PrimevalTitan (WRG)
-#30 TuggaNaxos: MonoRedProwess (R, Obosh)
+#30 TuggaNaxos: OboshAggro (R, Obosh)
 #31 __BMJ__: KinnanLegends (WURG, Jegantha)
 #32 Loco78: JundMidrange (BRG)
 #33 calexa: KGCTron (G)
@@ -447,13 +447,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck30_TuggaNaxos_MonoRedProwess_R_Obosh()
+        public void Deck30_TuggaNaxos_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-10-09",29),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

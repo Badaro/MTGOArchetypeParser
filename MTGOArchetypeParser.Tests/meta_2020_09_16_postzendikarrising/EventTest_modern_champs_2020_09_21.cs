@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 pootisgodsamongus: MonoRedProwess (R, Obosh)
+#01 pootisgodsamongus: OboshAggro (R, Obosh)
 #02 Reynad: JundMidrange (BRG)
 #03 RearrangedAS: Spirits (WU)
 #04 Phill_Hellmuth: GruulMidrange (RG)
@@ -48,13 +48,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_champs_2020_09_21 : EventTest
     {
         [Test]
-        public void Deck01_pootisgodsamongus_MonoRedProwess_R_Obosh()
+        public void Deck01_pootisgodsamongus_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-champs-2020-09-21",0),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

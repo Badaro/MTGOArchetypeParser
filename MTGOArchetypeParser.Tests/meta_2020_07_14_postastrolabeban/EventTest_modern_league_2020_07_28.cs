@@ -29,7 +29,7 @@ using System.Text;
 #18 r0cknati0n: SultaiControl (UBG)
 #19 shine0905: TitanStompy (BRG, Gyruda)
 #20 mell0n: BantControl (WUG)
-#21 MHayashi: MonoRedProwess (R, Obosh)
+#21 MHayashi: OboshAggro (R, Obosh)
 #22 RodolfoSFD0: TitanShift (RG)
 #23 77dolltoll: BlueLivingEnd (URG)
 #24 Hampuse1: DiceFactoryTron (C)
@@ -350,13 +350,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck21_MHayashi_MonoRedProwess_R_Obosh()
+        public void Deck21_MHayashi_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-07-28",20),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

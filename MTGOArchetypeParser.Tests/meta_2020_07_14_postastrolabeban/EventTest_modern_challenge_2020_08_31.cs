@@ -32,7 +32,7 @@ using System.Text;
 #21 albert62: JundMidrange (BRG)
 #22 Vallejo97: IzzetProwess (UR)
 #23 CReactor: RakdosProwess (BR, Lurrus)
-#24 runn3runn3r: MonoRedProwess (R, Obosh)
+#24 runn3runn3r: OboshAggro (R, Obosh)
 #25 AstralPlane: IzzetProwess (UR)
 #26 Tatsumaki_: KGCTron (G)
 #27 Kurusu: KikiChord (WRG, Yorion)
@@ -347,13 +347,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck24_runn3runn3r_MonoRedProwess_R_Obosh()
+        public void Deck24_runn3runn3r_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-31",23),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

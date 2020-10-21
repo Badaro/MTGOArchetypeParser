@@ -14,7 +14,7 @@ using System.Text;
 #03 qbturtle15: GruulMidrange (RG)
 #04 Secretaznman: GruulMidrange (RG)
 #05 McWinSauce: BantControl (WUG)
-#06 yamakiller: MonoRedProwess (R, Obosh)
+#06 yamakiller: OboshAggro (R, Obosh)
 #07 PvtEnormous: BantControl (WUG)
 #08 coert: Burn (WR)
 #09 karatedom: RakdosProwess (BR, Lurrus)
@@ -23,7 +23,7 @@ using System.Text;
 #12 juzam_gin: Dredge (WBRG)
 #13 Slatorade: Bogles (WG, Lurrus)
 #14 SpikeYou: JundShadow (BRG)
-#15 Nammersquats: MonoRedProwess (R, Obosh)
+#15 Nammersquats: OboshAggro (R, Obosh)
 #16 tuckbear: SultaiControl (UBG)
 #17 cftsoc3: BantControl (WUG)
 #18 DragonFodder: Skelementals (BR)
@@ -100,13 +100,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_yamakiller_MonoRedProwess_R_Obosh()
+        public void Deck06_yamakiller_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-27",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );
@@ -217,13 +217,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_Nammersquats_MonoRedProwess_R_Obosh()
+        public void Deck15_Nammersquats_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-27",14),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

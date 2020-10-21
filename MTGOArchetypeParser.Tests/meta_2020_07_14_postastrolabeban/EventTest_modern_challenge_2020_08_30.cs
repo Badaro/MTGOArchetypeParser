@@ -13,7 +13,7 @@ using System.Text;
 #02 DreamsOfAshiok: RakdosProwess (BR, Lurrus)
 #03 bigjc00: AmuletTitan (URG)
 #04 _goblinlackey: MarduProwess (WBR, Lurrus)
-#05 yamakiller: MonoRedProwess (R, Obosh)
+#05 yamakiller: OboshAggro (R, Obosh)
 #06 SpiderSpace: Humans (WUBRG)
 #07 qbturtle15: GruulMidrange (RG)
 #08 Jack_Kashtan: AdNauseam (WUB)
@@ -100,13 +100,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_yamakiller_MonoRedProwess_R_Obosh()
+        public void Deck05_yamakiller_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",4),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

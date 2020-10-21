@@ -40,7 +40,7 @@ using System.Text;
 #29 khangmtg: Belcher (WURG)
 #30 mashmalovsky: TitanStompy (BRG, Gyruda)
 #31 Teston: ShadowProwess (WBR, Lurrus)
-#32 PlebSwagger: MonoRedProwess (R, Obosh)
+#32 PlebSwagger: OboshAggro (R, Obosh)
 #33 wynn1006: IzzetControl (UR)
 #34 oskiyaa: Devoted (WG)
 #35 Gabriel_Sylar: JundMidrange (BRG)
@@ -475,13 +475,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck32_PlebSwagger_MonoRedProwess_R_Obosh()
+        public void Deck32_PlebSwagger_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-10-16",31),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

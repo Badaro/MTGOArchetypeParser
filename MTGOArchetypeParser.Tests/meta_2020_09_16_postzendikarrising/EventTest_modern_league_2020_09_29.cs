@@ -38,7 +38,7 @@ using System.Text;
 #27 Gafiiis: Spirits (WU)
 #28 CyricCanela: GruulMidrange (RG)
 #29 DoctorQueller: BantSpirits (WUG)
-#30 oskiyaa: MonoRedProwess (R, Obosh)
+#30 oskiyaa: OboshAggro (R, Obosh)
 #31 UrbanPope: RakdosProwess (BR, Lurrus)
 #32 Gods_Shadow: AzoriusControl (WU)
 #33 Jokersrwild: GolgariMidrange (BG)
@@ -452,13 +452,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck30_oskiyaa_MonoRedProwess_R_Obosh()
+        public void Deck30_oskiyaa_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-09-29",29),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

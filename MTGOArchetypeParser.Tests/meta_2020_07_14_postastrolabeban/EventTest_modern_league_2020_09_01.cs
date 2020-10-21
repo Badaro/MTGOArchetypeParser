@@ -54,7 +54,7 @@ using System.Text;
 #43 Nevetmage: Tokens (WB)
 #44 Artem_Kuhtin: WhiteDevotion (W)
 #45 Sarv: BantControl (WUG)
-#46 kasa: MonoRedProwess (R, Obosh)
+#46 kasa: OboshAggro (R, Obosh)
 #47 gentleman_m_: GiftsStorm (URG)
 #48 PanJ: GolgariMidrange (BG)
 #49 DoctorQueller: Spirits (WU)
@@ -662,13 +662,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck46_kasa_MonoRedProwess_R_Obosh()
+        public void Deck46_kasa_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-09-01",45),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

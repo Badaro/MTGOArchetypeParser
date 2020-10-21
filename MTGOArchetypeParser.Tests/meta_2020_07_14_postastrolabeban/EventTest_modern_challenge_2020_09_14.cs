@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 kanister: Humans (WUBRG)
 #02 MrRaeb: Uroza (UG)
-#03 pootisgodsamongus: MonoRedProwess (R, Obosh)
+#03 pootisgodsamongus: OboshAggro (R, Obosh)
 #04 Nikachu: Merfolk (UG)
 #05 Skrown: GrixisShadow (UBR)
 #06 Artem_Kuhtin: WhiteDevotion (W)
@@ -23,7 +23,7 @@ using System.Text;
 #12 nahuel10: IzzetProwess (UR)
 #13 TuggaNaxos: RakdosProwess (BR, Lurrus)
 #14 Rooney56: GrixisShadow (UBR)
-#15 SebastianStueckl: MonoRedProwess (R, Obosh)
+#15 SebastianStueckl: OboshAggro (R, Obosh)
 #16 Rinko: EnduringIdeal (W)
 #17 _Batutinha_: BantControl (WUG)
 #18 Raptor_Nachos: Burn (WR, Lurrus)
@@ -74,13 +74,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_pootisgodsamongus_MonoRedProwess_R_Obosh()
+        public void Deck03_pootisgodsamongus_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-14",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );
@@ -230,13 +230,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_SebastianStueckl_MonoRedProwess_R_Obosh()
+        public void Deck15_SebastianStueckl_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-14",14),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

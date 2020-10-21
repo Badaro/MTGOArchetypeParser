@@ -29,7 +29,7 @@ using System.Text;
 #18 benjamin13: BushwhackerZoo (WRG)
 #19 nathanb1992: OrzhovMidrange (WB)
 #20 ilsecco14: ShadowProwess (BR, Lurrus)
-#21 NewHJ: MonoRedProwess (R, Obosh)
+#21 NewHJ: OboshAggro (R, Obosh)
 #22 coert: Merfolk (U)
 #23 trader08111: GruulMidrange (RG)
 #24 qbturtle15: MonoWhiteTaxes (W)
@@ -302,13 +302,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck21_NewHJ_MonoRedProwess_R_Obosh()
+        public void Deck21_NewHJ_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-02",20),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

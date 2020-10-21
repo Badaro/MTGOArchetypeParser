@@ -23,7 +23,7 @@ using System.Text;
 #12 Ajani89: KGCAmuletTitan (WURG)
 #13 JustJack: Humans (WUBRG)
 #14 drVendigo: JundMidrange (BRG)
-#15 excel0679: MonoRedProwess (R, Obosh)
+#15 excel0679: OboshAggro (R, Obosh)
 #16 nedyahiske: WURGControl (WURG)
 #17 Rav104: ShadowProwess (BR, Lurrus)
 #18 WeareVenom: WURGControl (WURG)
@@ -230,13 +230,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_excel0679_MonoRedProwess_R_Obosh()
+        public void Deck15_excel0679_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-12",14),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

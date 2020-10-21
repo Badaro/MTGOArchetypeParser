@@ -9,12 +9,12 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 yamakiller: MonoRedProwess (R, Obosh)
+#01 yamakiller: OboshAggro (R, Obosh)
 #02 azax: GrixisShadow (UBR)
 #03 JacobofAmber: AdNauseam (WUB)
 #04 qbturtle15: GruulMidrange (RG)
 #05 bigjc00: AmuletTitan (URG)
-#06 The_nayr: MonoRedProwess (R, Obosh)
+#06 The_nayr: OboshAggro (R, Obosh)
 #07 DeepFryer: RakdosProwess (BR, Lurrus)
 #08 Bedell: AmuletTitan (UBRG)
 #09 bozo2112: PrimevalTitan (WRG)
@@ -35,13 +35,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_09_08 : EventTest
     {
         [Test]
-        public void Deck01_yamakiller_MonoRedProwess_R_Obosh()
+        public void Deck01_yamakiller_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-08",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );
@@ -100,13 +100,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_Thenayr_MonoRedProwess_R_Obosh()
+        public void Deck06_Thenayr_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-08",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

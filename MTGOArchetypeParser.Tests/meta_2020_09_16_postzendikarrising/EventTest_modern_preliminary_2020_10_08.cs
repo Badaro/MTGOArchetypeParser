@@ -13,7 +13,7 @@ using System.Text;
 #02 Chris_Concarnage: GruulMidrange (RG)
 #03 JUJUBEAN__2004: UBRGControl (UBRG)
 #04 HardcoreHenry: ShadowProwess (WBR, Lurrus)
-#05 Mcleskey: MonoRedProwess (R, Obosh)
+#05 Mcleskey: OboshAggro (R, Obosh)
 #06 Icteridae: GruulMidrange (RG)
 #07 pokerswizard: Humans (WUBRG)
 #08 Lordzedane: GruulMidrange (RG)
@@ -81,13 +81,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_Mcleskey_MonoRedProwess_R_Obosh()
+        public void Deck05_Mcleskey_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-08",4),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

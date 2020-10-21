@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 The_nayr: MonoRedProwess (R, Obosh)
+#01 The_nayr: OboshAggro (R, Obosh)
 #02 TSPJendrek: SultaiControl (UBG)
 #03 D00mwake: AmuletTitan (URG)
 #04 AceTrainerBlue: Yawgmoth (BG)
@@ -48,13 +48,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_challenge_2020_09_06 : EventTest
     {
         [Test]
-        public void Deck01_Thenayr_MonoRedProwess_R_Obosh()
+        public void Deck01_Thenayr_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

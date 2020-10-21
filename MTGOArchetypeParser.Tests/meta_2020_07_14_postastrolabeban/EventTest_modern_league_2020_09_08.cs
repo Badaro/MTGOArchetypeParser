@@ -50,7 +50,7 @@ using System.Text;
 #39 FakiVll: AzoriusControl (WU)
 #40 MrRaeb: Uroza (UG)
 #41 ScarletStorms: BantControl (WUG)
-#42 Sharkcaster_Mage: MonoRedProwess (R, Obosh)
+#42 Sharkcaster_Mage: OboshAggro (R, Obosh)
 #43 Toastxp: AmuletTitan (URG)
 #44 Magric: JundMidrange (BRG)
 #45 balltap: JeskaiBreach (WURG, Jegantha)
@@ -611,13 +611,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck42_SharkcasterMage_MonoRedProwess_R_Obosh()
+        public void Deck42_SharkcasterMage_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-09-08",41),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

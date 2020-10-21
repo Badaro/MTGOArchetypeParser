@@ -51,7 +51,7 @@ using System.Text;
 #40 MatheusTetu: IzzetProwess (UR)
 #41 Sonkerz: Scapeshift (UBRG)
 #42 Predicted: Yawgmoth (WBG)
-#43 Masontj: MonoRedProwess (R, Obosh)
+#43 Masontj: OboshAggro (R, Obosh)
 #44 chaba_lol: HammerTime (W)
 #45 Messssenger: IzzetRestoreBalance (URG)
 #46 WingedHussar: Neobrand (UG)
@@ -626,13 +626,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck43_Masontj_MonoRedProwess_R_Obosh()
+        public void Deck43_Masontj_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-09-11",42),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

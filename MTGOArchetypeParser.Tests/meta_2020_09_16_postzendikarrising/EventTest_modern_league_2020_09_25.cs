@@ -33,7 +33,7 @@ using System.Text;
 #22 SknerusMcKwacz: OopsAllSpells (WUBRG)
 #23 audio336: ShadowProwess (BRG, Lurrus)
 #24 Czechito: Elementals (WR)
-#25 ST0NEHE4RT: MonoRedProwess (R, Obosh)
+#25 ST0NEHE4RT: OboshAggro (R, Obosh)
 #26 LordOfDarkness25: Bogles (WG)
 #27 _LSN_: Burn (WR)
 #28 MagicalHack99: KGCAmuletTitan (WUBRG)
@@ -388,13 +388,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck25_ST0NEHE4RT_MonoRedProwess_R_Obosh()
+        public void Deck25_ST0NEHE4RT_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",24),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

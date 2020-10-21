@@ -16,7 +16,7 @@ using System.Text;
 #05 killersuv: TemurControl (URG)
 #06 fatkiddestroyers: BantMidrange (WUG)
 #07 stonepeanut: KGCTron (G)
-#08 Kazuga: MonoRedProwess (R, Obosh)
+#08 Kazuga: OboshAggro (R, Obosh)
 #09 122pablo: JeskaiAscendancy (WURG, Jegantha)
 #10 Usama96: JundMidrange (BRG)
 #11 gove1931: BantControl (WUG)
@@ -121,13 +121,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_Kazuga_MonoRedProwess_R_Obosh()
+        public void Deck08_Kazuga_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-15",7),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

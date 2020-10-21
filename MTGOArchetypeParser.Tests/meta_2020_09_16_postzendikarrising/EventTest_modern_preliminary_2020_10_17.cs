@@ -24,7 +24,7 @@ using System.Text;
 #13 yPrincipe: ETron (R)
 #14 Lordzedane: Humans (WUBRG)
 #15 2radMTG: Humans (WUBRG)
-#16 hauterho: MonoRedProwess (R, Obosh)
+#16 hauterho: OboshAggro (R, Obosh)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -227,13 +227,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_hauterho_MonoRedProwess_R_Obosh()
+        public void Deck16_hauterho_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-17",15),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

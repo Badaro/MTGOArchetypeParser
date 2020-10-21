@@ -21,7 +21,7 @@ using System.Text;
 #10 Trellon: UTron (U)
 #11 hermanomlg: BantMidrange (WUG)
 #12 Strubb: AdNauseam (WUB)
-#13 MHayashi: MonoRedProwess (R, Obosh)
+#13 MHayashi: OboshAggro (R, Obosh)
 #14 asmitchler: UBRGShadow (UBRG)
 #15 heyakita: SnowSaheeli (WURG, Yorion)
 #16 yatoyatoya: MonoWhiteEldraziTaxes (W)
@@ -243,13 +243,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_MHayashi_MonoRedProwess_R_Obosh()
+        public void Deck13_MHayashi_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-10-13",12),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

@@ -16,7 +16,7 @@ using System.Text;
 #05 Sanchez5272: ETron (C)
 #06 ArchivalRain: GiftsStorm (UR)
 #07 Biednarccio: MonoWhiteTaxes (W)
-#08 _Shatun_: MonoRedProwess (R, Obosh)
+#08 _Shatun_: OboshAggro (R, Obosh)
 #09 medvedev: SaheeliCombo (WURG, Jegantha)
 #10 Redgy819: SaheeliCombo (WURG, Jegantha)
 #11 Danker: AzoriusControl (WU)
@@ -120,13 +120,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_Shatun_MonoRedProwess_R_Obosh()
+        public void Deck08_Shatun_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-20",7),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

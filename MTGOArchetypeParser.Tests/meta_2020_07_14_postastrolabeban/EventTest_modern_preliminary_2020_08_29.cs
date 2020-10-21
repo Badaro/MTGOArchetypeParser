@@ -13,7 +13,7 @@ using System.Text;
 #02 ZYX_Jerry: BorosProwess (WR, Lurrus)
 #03 fradelrock: KGCTron (G)
 #04 kthanakit26: IzzetProwess (UR)
-#05 Toastxp: MonoRedProwess (R, Obosh)
+#05 Toastxp: OboshAggro (R, Obosh)
 #06 cftsoc3: BantBlink (WUG)
 #07 zMunkeyXz: Mill (UBG)
 #08 Zar0s: PrimevalTitan (WRG)
@@ -79,13 +79,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_Toastxp_MonoRedProwess_R_Obosh()
+        public void Deck05_Toastxp_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-29",4),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

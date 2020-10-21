@@ -29,7 +29,7 @@ using System.Text;
 #18 mashmalovsky: ETron (C)
 #19 SamuelGraebner: WURGControl (WURG)
 #20 seasonofmists: SelenyaEldraziTaxes (WG)
-#21 MHayashi: MonoRedProwess (R, Obosh)
+#21 MHayashi: OboshAggro (R, Obosh)
 #22 Goerajaponica: IzzetControl (UR)
 #23 hermanomlg: BantMidrange (WUG)
 #24 facematt: GruulMidrange (RG, Obosh)
@@ -349,13 +349,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck21_MHayashi_MonoRedProwess_R_Obosh()
+        public void Deck21_MHayashi_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-10-06",20),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

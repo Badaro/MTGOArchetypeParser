@@ -26,7 +26,7 @@ using System.Text;
 #15 Gigy: NayaMidrange (WRG)
 #16 Toastxp: Uroza (URG)
 #17 kthanakit26: IzzetProwess (UR)
-#18 yamakiller: MonoRedProwess (R, Obosh)
+#18 yamakiller: OboshAggro (R, Obosh)
 #19 SpikeYou: SultaiReclamation (UBG)
 */
 
@@ -256,13 +256,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck18_yamakiller_MonoRedProwess_R_Obosh()
+        public void Deck18_yamakiller_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-03",17),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

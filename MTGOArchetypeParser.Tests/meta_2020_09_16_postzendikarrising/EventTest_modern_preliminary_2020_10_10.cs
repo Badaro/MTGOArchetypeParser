@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 Gobern: BringToNiv (WUBRG, Yorion)
-#02 azatoyellow: MonoRedProwess (R, Obosh)
+#02 azatoyellow: OboshAggro (R, Obosh)
 #03 im2g00t4ubarn: WURGControl (WURG)
 #04 MyNameTidus: HeliodCombo (WG)
 #05 cjucjujp: KuldothaRed (R)
@@ -37,13 +37,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_azatoyellow_MonoRedProwess_R_Obosh()
+        public void Deck02_azatoyellow_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-10",1),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

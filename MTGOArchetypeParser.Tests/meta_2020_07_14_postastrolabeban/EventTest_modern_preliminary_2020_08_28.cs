@@ -24,7 +24,7 @@ using System.Text;
 #13 amdean: GruulMidrange (RG)
 #14 Xwhale: RakdosProwess (BR, Lurrus)
 #15 andrw1232: RakdosProwess (BR, Lurrus)
-#16 BananOlaf: MonoRedProwess (R, Obosh)
+#16 BananOlaf: OboshAggro (R, Obosh)
 #17 Snusnumrick: ETron (C)
 #18 hodortimebaby: GolgariMidrange (BG)
 */
@@ -229,13 +229,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck16_BananOlaf_MonoRedProwess_R_Obosh()
+        public void Deck16_BananOlaf_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-28",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

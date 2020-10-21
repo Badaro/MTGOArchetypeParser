@@ -19,7 +19,7 @@ using System.Text;
 #08 musasabi: PrimevalTitan (WRG)
 #09 WhiTe TsaR: SaheeliCombo (WURG)
 #10 MiamiKidz: PrimevalTitan (WRG)
-#11 MHayashi: MonoRedProwess (R, Obosh)
+#11 MHayashi: OboshAggro (R, Obosh)
 #12 toondoslav: MonoWhiteTaxes (W)
 #13 PhantasmalBear: SultaiMidrange (UBG)
 #14 McWinSauce: WURGControl (WURG)
@@ -178,13 +178,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_MHayashi_MonoRedProwess_R_Obosh()
+        public void Deck11_MHayashi_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-19",10),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

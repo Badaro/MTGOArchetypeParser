@@ -24,7 +24,7 @@ using System.Text;
 #13 yPrincipe: PrimevalTitan (WRG)
 #14 ocelot823: RakdosMidrange (BR)
 #15 wefald: Inverter (UB)
-#16 ThiGuyAgain365164: MonoRedProwess (R, Obosh)
+#16 ThiGuyAgain365164: OboshAggro (R, Obosh)
 #17 istillhaveeczema: GrixisShadow (UBR)
 #18 Leviathan102: KGCAmuletTitan (URG)
 #19 Gandalf_the_Grey: JeskaiControl (WUR)
@@ -274,13 +274,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_ThiGuyAgain365164_MonoRedProwess_R_Obosh()
+        public void Deck16_ThiGuyAgain365164_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-09-22",15),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

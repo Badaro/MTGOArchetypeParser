@@ -23,7 +23,7 @@ using System.Text;
 #12 MIkepick7: ETron (C)
 #13 pootisgodsamongus: GruulMidrange (RG)
 #14 genmatsu: Uroza (UBG)
-#15 SebastianStueckl: MonoRedProwess (R, Obosh)
+#15 SebastianStueckl: OboshAggro (R, Obosh)
 #16 Sodeq: AdNauseam (WUB)
 #17 tribalmaster: Humans (WUBRG)
 #18 calheiros: KGCAmuletTitan (UBRG)
@@ -31,7 +31,7 @@ using System.Text;
 #20 Tsubasa_Cat: IzzetProwess (UR)
 #21 eggybenny: GrixisShadow (UBR)
 #22 Saviall: KGCTron (G)
-#23 bcs8995: MonoRedProwess (R, Obosh)
+#23 bcs8995: OboshAggro (R, Obosh)
 #24 Fluorspar: Humans (WUBRG)
 #25 nahuel10: IzzetProwess (UR)
 #26 iggkrajc: KGCTron (G)
@@ -230,13 +230,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_SebastianStueckl_MonoRedProwess_R_Obosh()
+        public void Deck15_SebastianStueckl_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",14),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );
@@ -334,13 +334,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck23_bcs8995_MonoRedProwess_R_Obosh()
+        public void Deck23_bcs8995_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",22),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

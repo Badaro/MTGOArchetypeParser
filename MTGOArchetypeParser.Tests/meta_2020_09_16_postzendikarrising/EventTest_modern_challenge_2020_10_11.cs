@@ -37,7 +37,7 @@ using System.Text;
 #26 Gobern: BringToNiv (WUBRG, Yorion)
 #27 Andreas_Mueller: Dredge (BRG)
 #28 Elnitzo: Mill (UB, Lurrus)
-#29 MHayashi: MonoRedProwess (R, Obosh)
+#29 MHayashi: OboshAggro (R, Obosh)
 #30 staffmat1992: BantSpirits (WUG)
 #31 Johnny_Hobbs: WURGControl (WURG)
 #32 thephatz: MonoWhiteEldraziTaxes (W)
@@ -412,13 +412,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck29_MHayashi_MonoRedProwess_R_Obosh()
+        public void Deck29_MHayashi_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-11",28),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

@@ -29,7 +29,7 @@ using System.Text;
 #18 wingsfan24: TemurReclamation (URG)
 #19 Vagabond87: ETron (C)
 #20 _kg: Yawgmoth (BG)
-#21 Capitano_CL: MonoRedProwess (R, Obosh)
+#21 Capitano_CL: OboshAggro (R, Obosh)
 #22 deathandcatmix: MonoWhiteTaxes (W)
 #23 Mr_Sheep: RakdosMidrange (BR)
 #24 NJGB1: UBRGShadow (UBRG)
@@ -327,13 +327,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck21_CapitanoCL_MonoRedProwess_R_Obosh()
+        public void Deck21_CapitanoCL_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-07-31",20),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

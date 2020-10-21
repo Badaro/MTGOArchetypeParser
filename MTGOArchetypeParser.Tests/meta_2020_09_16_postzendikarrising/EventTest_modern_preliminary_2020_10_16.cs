@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 GombleWhop: Humans (WUBRG)
 #02 Soondubu: MonoWhiteTaxes (W)
-#03 yamakiller: MonoRedProwess (R, Obosh)
+#03 yamakiller: OboshAggro (R, Obosh)
 #04 McWinSauce: WURGControl (WURG)
 #05 cicciogire: WURGControl (WURG)
 #06 TheMelkMan: KGCTron (G)
@@ -58,13 +58,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_yamakiller_MonoRedProwess_R_Obosh()
+        public void Deck03_yamakiller_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-16",2),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

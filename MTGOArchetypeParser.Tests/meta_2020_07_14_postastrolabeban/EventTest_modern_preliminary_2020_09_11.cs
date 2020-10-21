@@ -19,8 +19,8 @@ using System.Text;
 #08 JONABSF: MonoRedProwess (R)
 #09 Chumba0202: IzzetProwess (UR)
 #10 SebastianStueckl: GruulMidrange (RG)
-#11 GombleWhop: MonoRedProwess (R, Obosh)
-#12 yamakiller: MonoRedProwess (R, Obosh)
+#11 GombleWhop: OboshAggro (R, Obosh)
+#12 yamakiller: OboshAggro (R, Obosh)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -158,26 +158,26 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_GombleWhop_MonoRedProwess_R_Obosh()
+        public void Deck11_GombleWhop_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-11",10),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );
         }
 
         [Test]
-        public void Deck12_yamakiller_MonoRedProwess_R_Obosh()
+        public void Deck12_yamakiller_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-11",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

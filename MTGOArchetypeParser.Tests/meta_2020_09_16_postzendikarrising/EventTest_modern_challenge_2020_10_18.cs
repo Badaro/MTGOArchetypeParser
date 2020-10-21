@@ -35,12 +35,12 @@ using System.Text;
 #24 pbarrrgh: SultaiReclamation (UBG)
 #25 eclipse4343: AzoriusControl (WU)
 #26 Moniz0801: AmuletTitan (UBRG)
-#27 yamakiller: MonoRedProwess (R, Obosh)
+#27 yamakiller: OboshAggro (R, Obosh)
 #28 Metcalf23: MonoWhiteTaxes (W)
 #29 staffmat1992: Dredge (BRG)
 #30 Oderus Urungus: Humans (WUBRG)
 #31 fabee1: MonoWhiteTaxes (W)
-#32 quinniac: MonoRedProwess (R, Obosh)
+#32 quinniac: OboshAggro (R, Obosh)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -386,13 +386,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck27_yamakiller_MonoRedProwess_R_Obosh()
+        public void Deck27_yamakiller_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",26),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );
@@ -451,13 +451,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck32_quinniac_MonoRedProwess_R_Obosh()
+        public void Deck32_quinniac_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",31),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

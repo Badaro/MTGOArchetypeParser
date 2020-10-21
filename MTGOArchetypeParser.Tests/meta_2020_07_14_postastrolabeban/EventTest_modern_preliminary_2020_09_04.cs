@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 albert62: JundMidrange (BRG)
-#02 The_nayr: MonoRedProwess (R, Obosh)
+#02 The_nayr: OboshAggro (R, Obosh)
 #03 liuyuchen: JundMidrange (BRG)
 #04 ImmanuelKantrolGod: BantControl (WUG)
 #05 BERNASTORRES: Bogles (WG, Lurrus)
@@ -37,13 +37,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_Thenayr_MonoRedProwess_R_Obosh()
+        public void Deck02_Thenayr_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-04",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

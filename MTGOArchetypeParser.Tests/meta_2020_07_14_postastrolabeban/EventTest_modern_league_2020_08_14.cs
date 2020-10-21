@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 EddDeedoo: OrzhovMidrange (WB)
 #02 nahuel10: GruulMidrange (RG)
-#03 ZYX_Jerry: MonoRedProwess (R, Obosh)
+#03 ZYX_Jerry: OboshAggro (R, Obosh)
 #04 SpoonDonkey: IzzetControl (UR)
 #05 DoctorQueller: Spirits (WU)
 #06 PhantasmalBear: AzoriusMidrange (WU)
@@ -94,13 +94,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_ZYXJerry_MonoRedProwess_R_Obosh()
+        public void Deck03_ZYXJerry_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-08-14",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

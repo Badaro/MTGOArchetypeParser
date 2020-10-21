@@ -40,7 +40,7 @@ using System.Text;
 #29 ColoradoRalphy: Humans (WUBRG)
 #30 TheBigMoke: SultaiReclamation (UBG)
 #31 TheOneCoff: ValakutField (URG)
-#32 nietzreznor: MonoRedProwess (R, Obosh)
+#32 nietzreznor: OboshAggro (R, Obosh)
 #33 Bangood: ThopterUrza (UBR)
 #34 pumpkinwavy: PrimevalTitan (WRG)
 #35 603Leb: GolgariElves (BG)
@@ -472,13 +472,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck32_nietzreznor_MonoRedProwess_R_Obosh()
+        public void Deck32_nietzreznor_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-09-04",31),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

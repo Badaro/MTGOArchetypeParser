@@ -13,7 +13,7 @@ using System.Text;
 #02 Draccon136: Bogles (WG, Lurrus)
 #03 Jaberwocki: JundMidrange (BRG)
 #04 lordavery: BantMidrange (WUG)
-#05 Mcleskey: MonoRedProwess (R, Obosh)
+#05 Mcleskey: OboshAggro (R, Obosh)
 #06 TheMelkMan: ETron (C)
 #07 Bohnz: WURGControl (WURG)
 #08 Rav104: OopsAllSpells (WUBRG)
@@ -86,13 +86,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_Mcleskey_MonoRedProwess_R_Obosh()
+        public void Deck05_Mcleskey_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-09",4),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

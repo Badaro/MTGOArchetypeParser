@@ -28,7 +28,7 @@ using System.Text;
 #17 HamburgerJung: GolosTron (G, Jegantha)
 #18 HotBread: IzzetProwess (UR)
 #19 AJOCHUM: TemurControl (URG)
-#20 oskiyaa: MonoRedProwess (R, Obosh)
+#20 oskiyaa: OboshAggro (R, Obosh)
 #21 Colossum: KGCTron (G)
 #22 patheus_84: AdNauseam (WUB)
 #23 canepis16: RakdosProwess (BR, Lurrus)
@@ -295,13 +295,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_oskiyaa_MonoRedProwess_R_Obosh()
+        public void Deck20_oskiyaa_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-09-14",19),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

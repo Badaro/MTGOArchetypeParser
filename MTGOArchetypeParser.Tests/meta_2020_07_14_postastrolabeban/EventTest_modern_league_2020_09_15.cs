@@ -21,7 +21,7 @@ using System.Text;
 #10 LewisCBR: Scapeshift (URG)
 #11 TomKr: Dredge (BRG)
 #12 kokoko098: HeliodDevoted (WBG)
-#13 kulszewe: MonoRedProwess (R, Obosh)
+#13 kulszewe: OboshAggro (R, Obosh)
 #14 apple_Neosky: Merfolk (WU, Lurrus)
 #15 Predicted: Yawgmoth (WBG)
 #16 timewalkinonsunshine: TakingTurns (URG)
@@ -234,13 +234,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_kulszewe_MonoRedProwess_R_Obosh()
+        public void Deck13_kulszewe_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-09-15",12),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

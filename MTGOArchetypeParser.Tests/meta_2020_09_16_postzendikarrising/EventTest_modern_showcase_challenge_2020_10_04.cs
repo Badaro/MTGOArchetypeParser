@@ -14,7 +14,7 @@ using System.Text;
 #03 moyashi0904: WURGControl (WURG)
 #04 __BMJ__: ShadowProwess (BR, Lurrus)
 #05 audio336: ShadowProwess (BR, Lurrus)
-#06 starfall: MonoRedProwess (R, Obosh)
+#06 starfall: OboshAggro (R, Obosh)
 #07 TrueHero: UBRGControl (UBRG)
 #08 Parrit: MonoWhiteTaxes (W)
 #09 bigjc00: AmuletTitan (UBRG)
@@ -30,7 +30,7 @@ using System.Text;
 #19 fuma-mtgcampinas: ETron (C)
 #20 Nammersquats: Humans (WUBRG)
 #21 cntrlfreak: GrixisShadow (UBR)
-#22 pootisgodsamongus: MonoRedProwess (R, Obosh)
+#22 pootisgodsamongus: OboshAggro (R, Obosh)
 #23 NosonosaN: WURGControl (WURG)
 #24 bamzing: PrimevalTitan (WRG)
 #25 fradelrock: IzzetProwess (UR)
@@ -113,13 +113,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_starfall_MonoRedProwess_R_Obosh()
+        public void Deck06_starfall_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-10-04",5),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );
@@ -321,13 +321,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck22_pootisgodsamongus_MonoRedProwess_R_Obosh()
+        public void Deck22_pootisgodsamongus_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-10-04",21),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );

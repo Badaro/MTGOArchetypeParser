@@ -40,7 +40,7 @@ using System.Text;
 #29 MagicEd: JundShadow (BRG)
 #30 Moments_Peace: OrzhovEldraziTaxes (WB)
 #31 Lenneth: MarduMidrange (WBR)
-#32 shiven djinn: MonoRedProwess (R, Obosh)
+#32 shiven djinn: OboshAggro (R, Obosh)
 #33 fatkiddestroyers: BantMidrange (WUG)
 #34 Metcalf23: BorosTaxes (WR, Yorion)
 #35 SKAIANET: EsperMidrange (WUB)
@@ -495,13 +495,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck32_shivendjinn_MonoRedProwess_R_Obosh()
+        public void Deck32_shivendjinn_OboshAggro_R_Obosh()
         {
             Test(
                 GetDeck("modern-league-2020-08-04",31),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
+                typeof(OboshAggro),
                 null,
                 ArchetypeCompanion.Obosh
             );
