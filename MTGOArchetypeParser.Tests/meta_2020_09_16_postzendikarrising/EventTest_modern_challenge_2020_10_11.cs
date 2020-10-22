@@ -24,7 +24,7 @@ using System.Text;
 #13 Parrit: MonoWhiteTaxes (W)
 #14 Edel: RakdosMidrange (BR)
 #15 Mlgb92: OrzhovMidrange (WB)
-#16 ice_nine_: BorosPrison (WR)
+#16 ice_nine_: BorosLandDestruction (WR)
 #17 Rav104: IzzetProwess (UR)
 #18 fingers1991: ShadowProwess (BR, Lurrus)
 #19 MiguelCaster: MonoWhiteEldraziTaxes (W)
@@ -243,13 +243,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_icenine_BorosPrison_WR()
+        public void Deck16_icenine_BorosLandDestruction_WR()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-11",15),
                 new PostZendikarRising(),
                 ArchetypeColor.WR,
-                typeof(BorosPrison),
+                typeof(BorosLandDestruction),
                 null,
                 null
             );

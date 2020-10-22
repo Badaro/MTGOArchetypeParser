@@ -38,7 +38,7 @@ using System.Text;
 #27 t1griselbrand: Neobrand (UG)
 #28 Patapon20: Dredge (BRG)
 #29 Trellon: UTron (U)
-#30 ice_nine_: BorosPrison (WR)
+#30 ice_nine_: BorosLandDestruction (WR)
 #31 BigPanda_559: Burn (WR)
 #32 Predicted: Yawgmoth (WBG)
 */
@@ -425,13 +425,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_icenine_BorosPrison_WR()
+        public void Deck30_icenine_BorosLandDestruction_WR()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",29),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WR,
-                typeof(BorosPrison),
+                typeof(BorosLandDestruction),
                 null,
                 null
             );

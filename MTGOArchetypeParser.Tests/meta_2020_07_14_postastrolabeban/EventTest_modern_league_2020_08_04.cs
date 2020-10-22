@@ -71,7 +71,7 @@ using System.Text;
 #60 junghans: Devoted (WRG)
 #61 Pmizz: IzzetProwess (UR)
 #62 DoctorQueller: BantSpirits (WUG)
-#63 ice_nine_: BorosPrison (WR)
+#63 ice_nine_: BorosLandDestruction (WR)
 #64 anamika: Elementals (WUBRG)
 #65 brainstorm39: JeskaiControl (WUR, Yorion)
 #66 JimmySetzer: SnoopGoblins (BR)
@@ -898,13 +898,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck63_icenine_BorosPrison_WR()
+        public void Deck63_icenine_BorosLandDestruction_WR()
         {
             Test(
                 GetDeck("modern-league-2020-08-04",62),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WR,
-                typeof(BorosPrison),
+                typeof(BorosLandDestruction),
                 null,
                 null
             );

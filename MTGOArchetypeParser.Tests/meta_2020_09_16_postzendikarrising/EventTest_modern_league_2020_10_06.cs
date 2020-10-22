@@ -70,7 +70,7 @@ using System.Text;
 #59 Ibaitor: GolgariMidrange (BG)
 #60 zfgao66: KGCTron (G)
 #61 CrusherBotBG: HammerTime (W, Lurrus)
-#62 ice_nine_: BorosPrison (WR)
+#62 ice_nine_: BorosLandDestruction (WR)
 #63 TscheggschDePoegg: BantBlink (WUG)
 #64 Trebz: SultaiControl (UBG)
 #65 nahuel10: IzzetProwess (UR)
@@ -882,13 +882,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck62_icenine_BorosPrison_WR()
+        public void Deck62_icenine_BorosLandDestruction_WR()
         {
             Test(
                 GetDeck("modern-league-2020-10-06",61),
                 new PostZendikarRising(),
                 ArchetypeColor.WR,
-                typeof(BorosPrison),
+                typeof(BorosLandDestruction),
                 null,
                 null
             );
