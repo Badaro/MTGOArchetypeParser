@@ -15,7 +15,7 @@ using System.Text;
 #04 Nallemon: EightRack (B)
 #05 Proliferate: Bogles (WG)
 #06 Parrit: SelenyaEldraziTaxes (WG)
-#07 Jiggywiggy: KinnanMentor (WUG)
+#07 Jiggywiggy: KinnanLegends (WUG)
 #08 TuggaNaxos: Infect (BG)
 #09 kensportsfan: MonoRedProwess (R)
 #10 sakuragi21722749: HeliodCombo (WG)
@@ -167,13 +167,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_Jiggywiggy_KinnanMentor_WUG()
+        public void Deck07_Jiggywiggy_KinnanLegends_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-08-18",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(KinnanMentor),
+                typeof(KinnanLegends),
                 null,
                 null
             );
