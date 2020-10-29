@@ -19,7 +19,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Variants = new ArchetypeVariant[]
             {
                 new SaheeliToLight(),
-                new SnowSaheeli()
+                new SnowSaheeli(),
+                new OmnathSaheeli()
             };
         }
     }
@@ -42,9 +43,20 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Ice-Fang Coatl" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Ice-Fang Coatl" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Omnath, Locus of Creation" } }
             };
         }
     }
 
+    public class OmnathSaheeli : ArchetypeVariant
+    {
+        public OmnathSaheeli()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Omnath, Locus of Creation" } }
+            };
+        }
+    }
 }

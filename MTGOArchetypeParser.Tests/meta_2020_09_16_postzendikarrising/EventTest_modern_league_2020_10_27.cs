@@ -597,7 +597,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 new PostZendikarRising(),
                 ArchetypeColor.WURG,
                 typeof(SaheeliCombo),
-                null,
+                typeof(OmnathSaheeli),
                 ArchetypeCompanion.Jegantha
             );
         }
