@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 new PostZendikarRising(),
                 ArchetypeColor.WURG,
                 typeof(PrimevalTitan),
-                null,
+                typeof(ReclaimerTitan),
                 null
             );
         }
@@ -146,7 +146,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 new PostZendikarRising(),
                 ArchetypeColor.WRG,
                 typeof(PrimevalTitan),
-                null,
+                typeof(ReclaimerTitan),
                 null
             );
         }
@@ -172,7 +172,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 new PostZendikarRising(),
                 ArchetypeColor.WRG,
                 typeof(PrimevalTitan),
-                null,
+                typeof(ReclaimerTitan),
                 null
             );
         }

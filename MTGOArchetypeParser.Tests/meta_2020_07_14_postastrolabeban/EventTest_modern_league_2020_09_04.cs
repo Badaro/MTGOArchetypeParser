@@ -505,7 +505,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 new PostAstrolabeBan(),
                 ArchetypeColor.WRG,
                 typeof(PrimevalTitan),
-                null,
+                typeof(ReclaimerTitan),
                 null
             );
         }
@@ -556,8 +556,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-league-2020-09-04",37),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WRG,
-                typeof(TitanVial),
-                null,
+                typeof(PrimevalTitan),
+                typeof(ReclaimerTitan),
                 null
             );
         }

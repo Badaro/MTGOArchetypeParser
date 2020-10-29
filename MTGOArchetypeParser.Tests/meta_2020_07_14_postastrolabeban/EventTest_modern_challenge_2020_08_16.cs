@@ -340,8 +340,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-16",22),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WRG,
-                typeof(TitanVial),
-                null,
+                typeof(PrimevalTitan),
+                typeof(ReclaimerTitan),
                 null
             );
         }
