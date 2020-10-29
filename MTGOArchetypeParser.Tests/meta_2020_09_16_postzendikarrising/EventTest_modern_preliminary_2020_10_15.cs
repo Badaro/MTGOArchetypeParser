@@ -11,11 +11,11 @@ using System.Text;
 /*
 #01 Kazuga: Humans (WUBRG)
 #02 RandomDrooler: Belcher (URG)
-#03 MZBlazer: SaheeliCombo (WURG, Jegantha)
+#03 MZBlazer: OmnathSaheeli (WURG, Jegantha)
 #04 Xen0neb: HardenedScales (G)
-#05 abethemage: SaheeliCombo (WURG, Jegantha)
+#05 abethemage: OmnathSaheeli (WURG, Jegantha)
 #06 maximusdee: HeliodCombo (WG)
-#07 Xwhale: PrimevalTitan (WRG)
+#07 Xwhale: ReclaimerTitan (WRG)
 #08 SKK: ShadowProwess (BR, Lurrus)
 #09 kbzx: ShadowProwess (BR, Lurrus)
 #10 Redgy: JeskaiControl (WUR)
@@ -57,7 +57,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_MZBlazer_SaheeliCombo_WURG_Jegantha()
+        public void Deck03_MZBlazer_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-15",2),
@@ -83,7 +83,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_abethemage_SaheeliCombo_WURG_Jegantha()
+        public void Deck05_abethemage_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-15",4),
@@ -109,7 +109,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_Xwhale_PrimevalTitan_WRG()
+        public void Deck07_Xwhale_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-15",6),

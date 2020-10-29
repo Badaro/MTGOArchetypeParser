@@ -12,13 +12,13 @@ using System.Text;
 #01 bomberboss: Humans (WUBRG)
 #02 billsive: TemurControl (URG)
 #03 Ivc: AzoriusControl (WU)
-#04 Sharkcaster_Mage: PrimevalTitan (WRG)
+#04 Sharkcaster_Mage: ReclaimerTitan (WRG)
 #05 3HaLeX1: ETron (C)
 #06 Gerschi: SultaiControl (UBG)
-#07 Daking3603: PrimevalTitan (WRG)
+#07 Daking3603: ReclaimerTitan (WRG)
 #08 Violent_Outburst: Scapeshift (URG)
 #09 Venom1: AdNauseam (WUB)
-#10 Zar0s: PrimevalTitan (WRG)
+#10 Zar0s: ReclaimerTitan (WRG)
 #11 otakkun: KGCTron (G)
 #12 Janh: SultaiControl (UBG)
 #13 johnsmith3373: IzzetProwess (UR)
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_SharkcasterMage_PrimevalTitan_WRG()
+        public void Deck04_SharkcasterMage_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-09-14",3),
@@ -126,7 +126,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_Daking3603_PrimevalTitan_WRG()
+        public void Deck07_Daking3603_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-09-14",6),
@@ -165,7 +165,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_Zar0s_PrimevalTitan_WRG()
+        public void Deck10_Zar0s_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-09-14",9),

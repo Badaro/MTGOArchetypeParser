@@ -17,7 +17,7 @@ using System.Text;
 #06 Nammersquats: BorosProwess (WR, Lurrus)
 #07 PvtEnormous: BantControl (WUG)
 #08 A22en: SnoopGoblins (BR)
-#09 Xwhale: PrimevalTitan (WRG)
+#09 Xwhale: ReclaimerTitan (WRG)
 #10 darklingseven: ThopterUrza (UB)
 #11 coert: Burn (WR)
 #12 SIMONEFIERRO: Burn (WR)
@@ -139,7 +139,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_Xwhale_PrimevalTitan_WRG()
+        public void Deck09_Xwhale_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-03",8),

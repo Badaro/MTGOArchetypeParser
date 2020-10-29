@@ -9,8 +9,8 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 PTarts2win: PrimevalTitan (WRG)
-#02 Theo_Jung: PrimevalTitan (WRG)
+#01 PTarts2win: ReclaimerTitan (WRG)
+#02 Theo_Jung: ReclaimerTitan (WRG)
 #03 cftsoc3: BantBlink (WUG)
 #04 Jaberwocki: JundMidrange (BRG)
 #05 Bruno_Mineiro: JundMidrange (BRG, Lurrus)
@@ -21,7 +21,7 @@ using System.Text;
 #10 waffl3haos: MonoWhiteTaxes (W)
 #11 Redgy819: AmuletTitan (UBRG)
 #12 EskimoJoe: MonoWhiteTaxes (W)
-#13 Xwhale: PrimevalTitan (WRG)
+#13 Xwhale: ReclaimerTitan (WRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -29,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_10_29 : EventTest
     {
         [Test]
-        public void Deck01_PTarts2win_PrimevalTitan_WRG()
+        public void Deck01_PTarts2win_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-29",0),
@@ -42,7 +42,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_TheoJung_PrimevalTitan_WRG()
+        public void Deck02_TheoJung_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-29",1),
@@ -185,7 +185,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_Xwhale_PrimevalTitan_WRG()
+        public void Deck13_Xwhale_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-29",12),

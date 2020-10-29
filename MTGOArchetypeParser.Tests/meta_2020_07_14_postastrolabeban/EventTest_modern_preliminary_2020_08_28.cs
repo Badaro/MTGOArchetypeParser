@@ -13,7 +13,7 @@ using System.Text;
 #02 __matsugan: AdNauseam (WUB)
 #03 BERNASTORRES: KGCTron (G)
 #04 trader08111: JundMidrange (BRG)
-#05 Capriccioso: PrimevalTitan (WRG)
+#05 Capriccioso: ReclaimerTitan (WRG)
 #06 Milled_: Dredge (WBRG)
 #07 McWinSauce: BantControl (WUG)
 #08 cftsoc3: BantBlink (WUG)
@@ -86,7 +86,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_Capriccioso_PrimevalTitan_WRG()
+        public void Deck05_Capriccioso_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-28",4),

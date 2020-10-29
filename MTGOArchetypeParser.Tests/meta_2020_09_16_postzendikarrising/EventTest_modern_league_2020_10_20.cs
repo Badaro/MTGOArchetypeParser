@@ -64,11 +64,11 @@ using System.Text;
 #53 N3to: GiftsStorm (UR)
 #54 Alakhai: ShadowProwess (BR, Lurrus)
 #55 Pilototo: JundShadow (BRG)
-#56 bant_is_love: PrimevalTitan (WURG)
+#56 bant_is_love: ReclaimerTitan (WURG)
 #57 HNmagician: Mill (UB)
 #58 kensportsfan: MonoRedProwess (R)
 #59 bomberboss: OrzhovMidrange (WB)
-#60 TheKG: SaheeliCombo (WURG, Jegantha)
+#60 TheKG: OmnathSaheeli (WURG, Jegantha)
 #61 Antoine57437: AbzanCompany (WBRG)
 #62 StreexIT: Spirits (WUBRG)
 #63 qbturtle15: JundMidrange (BRG)
@@ -800,7 +800,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck56_bantislove_PrimevalTitan_WURG()
+        public void Deck56_bantislove_ReclaimerTitan_WURG()
         {
             Test(
                 GetDeck("modern-league-2020-10-20",55),
@@ -852,7 +852,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck60_TheKG_SaheeliCombo_WURG_Jegantha()
+        public void Deck60_TheKG_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-10-20",59),

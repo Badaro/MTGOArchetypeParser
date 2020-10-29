@@ -42,11 +42,11 @@ using System.Text;
 #31 TheOneCoff: ValakutField (URG)
 #32 nietzreznor: OboshAggro (R, Obosh)
 #33 Bangood: ThopterUrza (UBR)
-#34 pumpkinwavy: PrimevalTitan (WRG)
+#34 pumpkinwavy: ReclaimerTitan (WRG)
 #35 603Leb: GolgariElves (BG)
 #36 MTGBullent: HeliodCombo (WG)
 #37 rojanosa: BushwhackerZoo (WRG)
-#38 Frejat: TitanVial (WRG)
+#38 Frejat: ReclaimerTitan (WRG)
 #39 Daryl_Ayers: AmuletTitan (UBRG)
 #40 chancery: Polymorph (RG)
 #41 sicsmoo: ValakutField (BRG)
@@ -498,7 +498,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck34_pumpkinwavy_PrimevalTitan_WRG()
+        public void Deck34_pumpkinwavy_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-09-04",33),
@@ -550,7 +550,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck38_Frejat_TitanVial_WRG()
+        public void Deck38_Frejat_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-09-04",37),

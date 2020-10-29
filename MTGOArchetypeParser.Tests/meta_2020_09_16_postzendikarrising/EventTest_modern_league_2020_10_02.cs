@@ -49,7 +49,7 @@ using System.Text;
 #38 vebbing12: Infect (WUG)
 #39 nahuel10: IzzetProwess (UR)
 #40 AlphaBlade: ETron (C)
-#41 FestiFan: SnowSaheeli (WURG, Yorion)
+#41 FestiFan: OmnathSaheeli (WURG, Yorion)
 #42 Beenew: ShadowProwess (BR, Lurrus)
 #43 Imfranlv: Burn (WR)
 #44 Gods_Shadow: GrixisControl (UBR)
@@ -61,7 +61,7 @@ using System.Text;
 #50 ivanguille: GrixisShadow (UBR, Lurrus)
 #51 Parrit: MonoWhiteTaxes (W)
 #52 Pepi94: Dredge (BRG)
-#53 Leviathan102: PrimevalTitan (WRG)
+#53 Leviathan102: ReclaimerTitan (WRG)
 #54 Dwarshadow: BantSpirits (WUG)
 #55 Magicofplayer1: AzoriusControl (WU)
 #56 Aphiladon: HardenedScales (G)
@@ -592,7 +592,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck41_FestiFan_SnowSaheeli_WURG_Yorion()
+        public void Deck41_FestiFan_OmnathSaheeli_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-10-02",40),
@@ -748,7 +748,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck53_Leviathan102_PrimevalTitan_WRG()
+        public void Deck53_Leviathan102_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-10-02",52),

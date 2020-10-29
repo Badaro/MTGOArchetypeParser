@@ -13,7 +13,7 @@ using System.Text;
 #02 Ihavethefire: MarduMidrange (WBR)
 #03 Nammersquats: Infect (UG)
 #04 reswax: WURGControl (WURG)
-#05 Xwhale: PrimevalTitan (WRG)
+#05 Xwhale: ReclaimerTitan (WRG)
 #06 rameison: KGCTron (G)
 #07 Bordas99: Dredge (BRG)
 #08 PTarts2win: WURGControl (WURG)
@@ -82,7 +82,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_Xwhale_PrimevalTitan_WRG()
+        public void Deck05_Xwhale_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-23",4),

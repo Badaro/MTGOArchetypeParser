@@ -44,7 +44,7 @@ using System.Text;
 #33 SpicyLeche: Crabvine (UBG)
 #34 hkavery: WURGControl (WURG)
 #35 Delthar: Infect (BG)
-#36 fpawlusz: TitanVial (WRG)
+#36 fpawlusz: ReclaimerTitan (WRG)
 #37 toya: RakdosMidrange (BR, Lurrus)
 #38 brancusi: GrixisShadow (UBR)
 #39 HannoLee: TemurSuperfriends (URG)
@@ -533,7 +533,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck36_fpawlusz_TitanVial_WRG()
+        public void Deck36_fpawlusz_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-07",35),

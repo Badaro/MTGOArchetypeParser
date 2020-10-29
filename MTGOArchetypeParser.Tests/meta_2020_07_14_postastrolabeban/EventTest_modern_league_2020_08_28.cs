@@ -50,7 +50,7 @@ using System.Text;
 #39 lewisyo: AdNauseam (WUB)
 #40 GHash77: Neobrand (UG)
 #41 Antoine57437: AbzanCompany (WBG)
-#42 GrilledCheese: TitanVial (WRG)
+#42 GrilledCheese: ReclaimerTitan (WRG)
 #43 abijhavs: MonoRedProwess (R)
 #44 Parrit: MonoWhiteTaxes (W)
 #45 mechrataal: JundShadow (BRG)
@@ -600,7 +600,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck42_GrilledCheese_TitanVial_WRG()
+        public void Deck42_GrilledCheese_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-28",41),

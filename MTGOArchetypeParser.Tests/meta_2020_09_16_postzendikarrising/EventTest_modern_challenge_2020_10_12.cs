@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 kanister: SaheeliCombo (WURG, Jegantha)
+#01 kanister: OmnathSaheeli (WURG, Jegantha)
 #02 taruto1212: WURGControl (WURG)
 #03 NosonosaN: WURGControl (WURG)
 #04 coert: HeliodCombo (WG)
@@ -37,7 +37,7 @@ using System.Text;
 #26 ZYURYO: WURGControl (WURG)
 #27 SebastianStueckl: MonoWhiteTaxes (W)
 #28 Rinko: EnduringIdeal (WR)
-#29 josetorr87: PrimevalTitan (WRG)
+#29 josetorr87: ReclaimerTitan (WRG)
 #30 Delthar: Infect (BG)
 #31 Selami: AdNauseam (WUB)
 #32 LORiWWA: ETron (C)
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_challenge_2020_10_12 : EventTest
     {
         [Test]
-        public void Deck01_kanister_SaheeliCombo_WURG_Jegantha()
+        public void Deck01_kanister_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-12",0),
@@ -412,7 +412,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck29_josetorr87_PrimevalTitan_WRG()
+        public void Deck29_josetorr87_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-12",28),

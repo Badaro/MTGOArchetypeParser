@@ -14,7 +14,7 @@ using System.Text;
 #03 rcazcueta: IzzetProwess (UR)
 #04 Tarrasque1: GolgariElves (BG)
 #05 greenboy011: AzoriusControl (WU)
-#06 Zar0s: PrimevalTitan (WRG)
+#06 Zar0s: ReclaimerTitan (WRG)
 #07 jacenty_b: Burn (WR)
 #08 Capin_ahab: MonoRedProwess (R)
 #09 Munich_Casual: JundMidrange (BRG)
@@ -142,7 +142,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_Zar0s_PrimevalTitan_WRG()
+        public void Deck06_Zar0s_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-09-01",5),

@@ -16,7 +16,7 @@ using System.Text;
 #05 Costola91: HeliodCombo (WG)
 #06 StarFonta: ShadowProwess (BR, Lurrus)
 #07 devtin: AbzanMidrange (WBG)
-#08 llabmonkey: SaheeliCombo (WURG, Jegantha)
+#08 llabmonkey: OmnathSaheeli (WURG, Jegantha)
 #09 GutsMTG: Scapeshift (URG)
 #10 Trellon: UTron (U)
 #11 hermanomlg: BantMidrange (WUG)
@@ -35,7 +35,7 @@ using System.Text;
 #24 ittoku1: BantBlink (WUG)
 #25 matiaskm: Devoted (WG, Lurrus)
 #26 zyuraru: UBRGControl (UBRG)
-#27 IzzetSignetIsTheBest: PrimevalTitan (WRG)
+#27 IzzetSignetIsTheBest: ReclaimerTitan (WRG)
 #28 Metcalf23: MonoWhiteTaxes (W)
 #29 N3to: GiftsStorm (UR)
 #30 Leviathan102: KGCAmuletTitan (WURG)
@@ -178,7 +178,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_llabmonkey_SaheeliCombo_WURG_Jegantha()
+        public void Deck08_llabmonkey_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-10-13",7),
@@ -425,7 +425,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck27_IzzetSignetIsTheBest_PrimevalTitan_WRG()
+        public void Deck27_IzzetSignetIsTheBest_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-10-13",26),
@@ -685,7 +685,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck47_GuardianShield_BorosTaxes_WR()
+        public void Deck47_GuardianShield_KorEquipments_WR()
         {
             Test(
                 GetDeck("modern-league-2020-10-13",46),

@@ -68,7 +68,7 @@ using System.Text;
 #57 kogamo: PrimevalTitan (URG)
 #58 Taragon: Devoted (WG, Lurrus)
 #59 marcos_rocha: Infect (UG)
-#60 tuhoajatane: TitanVial (WRG)
+#60 tuhoajatane: ReclaimerTitan (WRG)
 #61 Alzik: RakdosProwess (BR, Lurrus)
 #62 MartinezDP: BringToNiv (WUBRG, Yorion)
 #63 scipios: Crabvine (UBG)
@@ -856,7 +856,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck60_tuhoajatane_TitanVial_WRG()
+        public void Deck60_tuhoajatane_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-18",59),

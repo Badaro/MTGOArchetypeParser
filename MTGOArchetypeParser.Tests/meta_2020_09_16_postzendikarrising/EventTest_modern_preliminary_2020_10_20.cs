@@ -12,13 +12,13 @@ using System.Text;
 #01 Patxi: WURGControl (WURG)
 #02 Kiwairay: OopsAllSpells (WUBRG)
 #03 McWinSauce: WURGControl (WURG)
-#04 TwistedWombat: SaheeliCombo (WURG, Jegantha)
+#04 TwistedWombat: OmnathSaheeli (WURG, Jegantha)
 #05 Sanchez5272: ETron (C)
 #06 ArchivalRain: GiftsStorm (UR)
 #07 Biednarccio: MonoWhiteTaxes (W)
 #08 _Shatun_: OboshAggro (R, Obosh)
-#09 medvedev: SaheeliCombo (WURG, Jegantha)
-#10 Redgy819: SaheeliCombo (WURG, Jegantha)
+#09 medvedev: OmnathSaheeli (WURG, Jegantha)
+#10 Redgy819: OmnathSaheeli (WURG, Jegantha)
 #11 Danker: AzoriusControl (WU)
 #12 RitterAG: IzzetProwess (UR)
 #13 bwheezy: JeskaiControl (WUR)
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_TwistedWombat_SaheeliCombo_WURG_Jegantha()
+        public void Deck04_TwistedWombat_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-20",3),
@@ -133,7 +133,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_medvedev_SaheeliCombo_WURG_Jegantha()
+        public void Deck09_medvedev_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-20",8),
@@ -146,7 +146,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_Redgy819_SaheeliCombo_WURG_Jegantha()
+        public void Deck10_Redgy819_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-20",9),

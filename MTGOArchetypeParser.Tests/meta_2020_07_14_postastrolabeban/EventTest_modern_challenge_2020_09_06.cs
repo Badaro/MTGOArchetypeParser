@@ -38,7 +38,7 @@ using System.Text;
 #27 KIMCHIMAN: SnoopGoblins (BR)
 #28 WareHouseGames: KGCTron (G)
 #29 aspiringspike: SultaiControl (UBG)
-#30 Toastxp: PrimevalTitan (WRG)
+#30 Toastxp: ReclaimerTitan (WRG)
 #31 mot88: ThaliaStompy (WR)
 #32 SebastianStueckl: Bogles (WG, Lurrus)
 */
@@ -425,7 +425,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_Toastxp_PrimevalTitan_WRG()
+        public void Deck30_Toastxp_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",29),

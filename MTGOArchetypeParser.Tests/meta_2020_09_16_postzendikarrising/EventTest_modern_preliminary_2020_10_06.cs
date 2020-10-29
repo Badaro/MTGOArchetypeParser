@@ -20,12 +20,12 @@ using System.Text;
 #09 Turn1Vial: ShadowProwess (WBR, Lurrus)
 #10 kokoko098: HeliodCombo (WBG)
 #11 Sodeq: AdNauseam (WUB)
-#12 ACG88: PrimevalTitan (WRG)
+#12 ACG88: ReclaimerTitan (WRG)
 #13 Kazuga: ShadowProwess (WBR, Lurrus)
 #14 Draccon136: MonoWhiteTaxes (W)
 #15 ilsecco14: ShadowProwess (BR, Lurrus)
 #16 medvedev: ShadowProwess (WBR, Lurrus)
-#17 Oderus Urungus: PrimevalTitan (WRG)
+#17 Oderus Urungus: ReclaimerTitan (WRG)
 #18 xElBonk: Humans (WUBRG)
 #19 _Falcon_: IzzetProwess (UR)
 */
@@ -178,7 +178,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_ACG88_PrimevalTitan_WRG()
+        public void Deck12_ACG88_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-06",11),
@@ -243,7 +243,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck17_OderusUrungus_PrimevalTitan_WRG()
+        public void Deck17_OderusUrungus_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-06",16),

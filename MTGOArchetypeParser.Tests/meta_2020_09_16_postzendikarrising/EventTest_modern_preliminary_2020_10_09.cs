@@ -20,7 +20,7 @@ using System.Text;
 #09 timewalkinonsunshine: TakingTurns (URG)
 #10 wambocombo2020: ShadowProwess (WBR, Lurrus)
 #11 Clockwork Dean: MonoWhiteTaxes (W)
-#12 yamakiller: PrimevalTitan (WRG)
+#12 yamakiller: ReclaimerTitan (WRG)
 #13 ziofrancone: Elementals (WURG)
 #14 maikage: Belcher (RG)
 #15 karatedom: Crabvine (UBG)
@@ -177,7 +177,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_yamakiller_PrimevalTitan_WRG()
+        public void Deck12_yamakiller_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-09",11),

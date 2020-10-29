@@ -27,11 +27,11 @@ using System.Text;
 #16 TheTunnelingCat: ETron (C)
 #17 lucajak: IzzetControl (UR)
 #18 CooperTheRed: Yawgmoth (BG)
-#19 BSK_hercules: PrimevalTitan (WURG)
+#19 BSK_hercules: ReclaimerTitan (WURG)
 #20 Schiapponetor: HeliodCombo (WG)
 #21 Nagato_Boran: OopsAllSpells (WUBRG)
 #22 Amplumnox: ShadowProwess (BR, Lurrus)
-#23 Stabbington: PrimevalTitan (WRG)
+#23 Stabbington: ReclaimerTitan (WRG)
 #24 meanfannypack: OrzhovEldraziTaxes (WB)
 #25 yintao: IncineratorBurn (R)
 #26 rofelos: WURGControl (WURG)
@@ -48,7 +48,7 @@ using System.Text;
 #37 POC: Infect (BG, Lurrus)
 #38 spiritmonger17: GruulMidrange (RG)
 #39 DoctorQueller: BantSpirits (WUG)
-#40 stayrospet: SaheeliCombo (WURG, Jegantha)
+#40 stayrospet: OmnathSaheeli (WURG, Jegantha)
 #41 Somefellow: EsperControl (WUB)
 #42 SvenSveeterSven: IzzetControl (UR)
 #43 Ryan_39: Scapeshift (WURG)
@@ -317,7 +317,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck19_BSKhercules_PrimevalTitan_WURG()
+        public void Deck19_BSKhercules_ReclaimerTitan_WURG()
         {
             Test(
                 GetDeck("modern-league-2020-10-27",18),
@@ -369,7 +369,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck23_Stabbington_PrimevalTitan_WRG()
+        public void Deck23_Stabbington_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-10-27",22),
@@ -590,7 +590,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck40_stayrospet_SaheeliCombo_WURG_Jegantha()
+        public void Deck40_stayrospet_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-10-27",39),

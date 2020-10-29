@@ -16,7 +16,7 @@ using System.Text;
 #05 TSPJendrek: IzzetControl (UR)
 #06 FeeltheRush: BantMidrange (WUG)
 #07 DenebLyrae: HeliodCombo (WG)
-#08 musasabi: PrimevalTitan (WRG)
+#08 musasabi: ReclaimerTitan (WRG)
 #09 _Shatun_: MonoRedProwess (R)
 #10 mw_94gA: BantSpirits (WUG)
 #11 joetru: BringToNiv (WUBRG, Jegantha)
@@ -24,7 +24,7 @@ using System.Text;
 #13 patheus_84: AdNauseam (WUB)
 #14 Binolino: AmuletTitan (UBRG)
 #15 Smiteon: AmuletTitan (UBRG)
-#16 _Batutinha_: PrimevalTitan (WRG)
+#16 _Batutinha_: ReclaimerTitan (WRG)
 #17 Karnesis93: AmuletTitan (WUBRG)
 #18 Kurusu: KikiChord (WRG, Yorion)
 #19 ecobaronen: WURGControl (WURG)
@@ -139,7 +139,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_musasabi_PrimevalTitan_WRG()
+        public void Deck08_musasabi_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",7),
@@ -243,7 +243,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_Batutinha_PrimevalTitan_WRG()
+        public void Deck16_Batutinha_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",15),

@@ -15,7 +15,7 @@ using System.Text;
 #04 Nikachu: Merfolk (UG)
 #05 Skrown: GrixisShadow (UBR)
 #06 Artem_Kuhtin: WhiteDevotion (W)
-#07 musasabi: PrimevalTitan (WRG)
+#07 musasabi: ReclaimerTitan (WRG)
 #08 Laplasjan: Devoted (WG, Lurrus)
 #09 RoadmanEvans: IzzetProwess (UR)
 #10 alemilan19: SultaiControl (UBG)
@@ -126,7 +126,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_musasabi_PrimevalTitan_WRG()
+        public void Deck07_musasabi_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-14",6),

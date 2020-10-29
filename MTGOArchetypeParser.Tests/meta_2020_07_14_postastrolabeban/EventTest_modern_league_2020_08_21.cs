@@ -38,14 +38,14 @@ using System.Text;
 #27 flyingspaghetti: GiftsStorm (UR)
 #28 Mordeka1ser: BringToNiv (WUBRG, Yorion)
 #29 Delthar: Mill (UB)
-#30 Leviathan102: TitanVial (WRG)
+#30 Leviathan102: ReclaimerTitan (WRG)
 #31 Firewalker89: GrixisShadow (UBR)
 #32 Rebus8: OrzhovEldraziTaxes (WB)
 #33 benchsummer: HeliodSisters (W)
 #34 DylansHyper: Devoted (WG, Lurrus)
 #35 Curryvore: JeskaiControl (WUR, Yorion)
 #36 flankattack27: Uroza (WUG)
-#37 kogamo: PrimevalTitan (WRG)
+#37 kogamo: ReclaimerTitan (WRG)
 #38 nick4567: TemurReclamation (URG)
 #39 DoctorQueller: BantSpirits (WUG)
 #40 Unlife: ETron (C)
@@ -444,7 +444,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_Leviathan102_TitanVial_WRG()
+        public void Deck30_Leviathan102_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",29),
@@ -535,7 +535,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck37_kogamo_PrimevalTitan_WRG()
+        public void Deck37_kogamo_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",36),

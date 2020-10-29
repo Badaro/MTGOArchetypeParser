@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 TheEnzym: Mill (UB)
-#02 IzzetSignetIsTheBest: PrimevalTitan (WRG)
+#02 IzzetSignetIsTheBest: ReclaimerTitan (WRG)
 #03 DrRobertSpaghetti: GruulMidrange (RG)
 #04 Metcalf23: MonoWhiteTaxes (W)
 #05 staffmat1992: GruulMidrange (RG)
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_IzzetSignetIsTheBest_PrimevalTitan_WRG()
+        public void Deck02_IzzetSignetIsTheBest_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-20",1),

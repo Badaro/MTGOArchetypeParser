@@ -15,7 +15,7 @@ using System.Text;
 #04 Paeng_Paeng: GiftsStorm (UR)
 #05 mansak: ShadowProwess (BR, Lurrus)
 #06 ecobaronen: SultaiControl (UBG)
-#07 abethemage: SaheeliCombo (WURG, Jegantha)
+#07 abethemage: OmnathSaheeli (WURG, Jegantha)
 #08 junghans: HeliodCombo (WG)
 #09 ZYURYO: WURGControl (WURG)
 */
@@ -103,7 +103,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_abethemage_SaheeliCombo_WURG_Jegantha()
+        public void Deck07_abethemage_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-14",6),

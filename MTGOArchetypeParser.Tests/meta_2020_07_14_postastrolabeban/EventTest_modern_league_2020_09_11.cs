@@ -68,7 +68,7 @@ using System.Text;
 #57 bwheezy: JeskaiControl (WUR)
 #58 LeonardoBeghine: GolgariElves (BG)
 #59 Iwouldliketorespond: TakingTurns (UR)
-#60 scenekiid: TitanVial (WRG)
+#60 scenekiid: ReclaimerTitan (WRG)
 #61 mikel88888888: TemurControl (URG)
 #62 LORiWWA: GiftsStorm (UR)
 #63 Jrcitizen: IzzetPhoenix (UR)
@@ -847,7 +847,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck60_scenekiid_TitanVial_WRG()
+        public void Deck60_scenekiid_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-09-11",59),

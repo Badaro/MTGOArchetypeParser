@@ -40,7 +40,7 @@ using System.Text;
 #29 benchsummer: UBRGShadow (UBRG)
 #30 HouseOfManaMTG: Dredge (WBRG)
 #31 patheus_84: AdNauseam (WUB)
-#32 ReturnToDust: TitanVial (WRG)
+#32 ReturnToDust: ReclaimerTitan (WRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -451,7 +451,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck32_ReturnToDust_TitanVial_WRG()
+        public void Deck32_ReturnToDust_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",31),

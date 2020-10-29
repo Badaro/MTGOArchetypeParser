@@ -76,7 +76,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_cjucjujp_EightWhack_R()
+        public void Deck05_cjucjujp_KuldothaRed_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-10",4),

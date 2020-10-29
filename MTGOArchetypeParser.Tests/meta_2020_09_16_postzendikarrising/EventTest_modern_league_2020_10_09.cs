@@ -21,7 +21,7 @@ using System.Text;
 #10 FunkiMunki: JeskaiControl (WUR)
 #11 doughhater: WURGControl (WURG)
 #12 FreakNightmare: OopsAllSpells (WUBRG)
-#13 Evaros: SaheeliCombo (WURG, Yorion)
+#13 Evaros: OmnathSaheeli (WURG, Yorion)
 #14 SCJ: SultaiControl (UBG)
 #15 Boland: Dredge (BRG)
 #16 Chrhey: IzzetProwess (UR)
@@ -37,7 +37,7 @@ using System.Text;
 #26 Yozis: Mill (UB, Lurrus)
 #27 Marisa_Margatroid: GrixisShadow (UBR)
 #28 Parrit: MonoWhiteTaxes (W)
-#29 Sharkcaster_Mage: PrimevalTitan (WRG)
+#29 Sharkcaster_Mage: ReclaimerTitan (WRG)
 #30 TuggaNaxos: OboshAggro (R, Obosh)
 #31 __BMJ__: KinnanLegends (WURG, Jegantha)
 #32 Loco78: JundMidrange (BRG)
@@ -226,7 +226,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_Evaros_SaheeliCombo_WURG_Yorion()
+        public void Deck13_Evaros_OmnathSaheeli_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-10-09",12),
@@ -434,7 +434,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck29_SharkcasterMage_PrimevalTitan_WRG()
+        public void Deck29_SharkcasterMage_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-10-09",28),

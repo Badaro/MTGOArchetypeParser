@@ -43,7 +43,7 @@ using System.Text;
 #32 FloorFlower: GrixisShadow (UBR)
 #33 grinderA: BantControl (WUG)
 #34 BenMishania: GolgariMidrange (BG)
-#35 rage_hs: PrimevalTitan (WRG)
+#35 rage_hs: ReclaimerTitan (WRG)
 #36 Belenus: JundMidrange (BRG)
 #37 K4rl1991: HardenedScales (BG, Lurrus)
 #38 Tarrasque1: MonoWhiteTaxes (W)
@@ -520,7 +520,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck35_ragehs_PrimevalTitan_WRG()
+        public void Deck35_ragehs_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-09-15",34),

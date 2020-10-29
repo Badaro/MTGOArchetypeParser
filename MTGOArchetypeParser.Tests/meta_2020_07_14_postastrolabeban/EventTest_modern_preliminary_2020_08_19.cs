@@ -19,7 +19,7 @@ using System.Text;
 #08 ZYX_Jerry: Burn (WR, Lurrus)
 #09 ImmanuelKantrolGod: BantControl (WUG)
 #10 McWinSauce: BantControl (WUG)
-#11 Zar0s: TitanVial (WRG)
+#11 Zar0s: ReclaimerTitan (WRG)
 #12 otakkun: KGCTron (G)
 #13 kbzx: IzzetProwess (UR)
 */
@@ -159,7 +159,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_Zar0s_TitanVial_WRG()
+        public void Deck11_Zar0s_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-19",10),

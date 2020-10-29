@@ -66,7 +66,7 @@ using System.Text;
 #55 salvamala: JundMidrange (BRG)
 #56 Fix_hem_all: BorosSunforger (WRG)
 #57 Pepi94: Dredge (BRG)
-#58 IzzetSignetIsTheBest: PrimevalTitan (WRG)
+#58 IzzetSignetIsTheBest: ReclaimerTitan (WRG)
 #59 The_GingerBrute: HammerTime (WR, Lurrus)
 */
 
@@ -816,7 +816,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck58_IzzetSignetIsTheBest_PrimevalTitan_WRG()
+        public void Deck58_IzzetSignetIsTheBest_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-09-29",57),

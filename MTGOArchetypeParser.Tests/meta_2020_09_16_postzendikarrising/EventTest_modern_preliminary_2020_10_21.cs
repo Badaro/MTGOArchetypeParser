@@ -10,10 +10,10 @@ using System.Text;
 
 /*
 #01 Kiwairay: OopsAllSpells (WUBRG)
-#02 stayrospet: SaheeliCombo (WURG, Jegantha)
+#02 stayrospet: OmnathSaheeli (WURG, Jegantha)
 #03 HouseOfManaMTG: AmuletTitan (UBRG)
 #04 tkcheungab: KGCTron (G)
-#05 Moniz0801: PrimevalTitan (WRG)
+#05 Moniz0801: ReclaimerTitan (WRG)
 #06 iL_Tedesco: AbzanMidrange (WBG)
 #07 yoshiwata: MonoWhiteTaxes (W)
 #08 taruto1212: WURGControl (WURG)
@@ -39,7 +39,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_stayrospet_SaheeliCombo_WURG_Jegantha()
+        public void Deck02_stayrospet_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-21",1),
@@ -78,7 +78,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_Moniz0801_PrimevalTitan_WRG()
+        public void Deck05_Moniz0801_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-21",4),

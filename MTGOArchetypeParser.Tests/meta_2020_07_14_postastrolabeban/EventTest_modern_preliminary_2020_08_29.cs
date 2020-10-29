@@ -16,7 +16,7 @@ using System.Text;
 #05 Toastxp: OboshAggro (R, Obosh)
 #06 cftsoc3: BantBlink (WUG)
 #07 zMunkeyXz: Mill (UBG)
-#08 Zar0s: PrimevalTitan (WRG)
+#08 Zar0s: ReclaimerTitan (WRG)
 #09 greenboy011: AzoriusControl (WU)
 #10 Kazuga: Dredge (BRG)
 #11 McWinSauce: BantControl (WUG)
@@ -118,7 +118,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_Zar0s_PrimevalTitan_WRG()
+        public void Deck08_Zar0s_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-29",7),

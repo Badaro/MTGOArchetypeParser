@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 Mcleskey: Humans (WUBRG)
-#02 Xwhale: PrimevalTitan (WRG)
+#02 Xwhale: ReclaimerTitan (WRG)
 #03 exoticherman: JundShadow (BRG)
 #04 OptimusBro: Humans (WUBRG)
 #05 DrDree: ShadowProwess (BR, Lurrus)
@@ -45,7 +45,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_Xwhale_PrimevalTitan_WRG()
+        public void Deck02_Xwhale_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-17",1),

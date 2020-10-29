@@ -11,14 +11,14 @@ using System.Text;
 /*
 #01 Capiplaf95: Burn (WR)
 #02 _Falcon_: MonoWhiteTaxes (W)
-#03 Zar0s: SaheeliCombo (WURG, Jegantha)
-#04 JakeHelms: SaheeliCombo (WURG, Jegantha)
+#03 Zar0s: OmnathSaheeli (WURG, Jegantha)
+#04 JakeHelms: OmnathSaheeli (WURG, Jegantha)
 #05 im2g00t4ubarn: WURGControl (WURG)
 #06 Matti: MonoWhiteTaxes (W)
 #07 Do0mSwitch: WURGControl (WURG)
 #08 matiaskm: Devoted (WG, Lurrus)
 #09 Lordzedane: Bogles (WG, Lurrus)
-#10 McWinSauce: SaheeliCombo (WURG, Jegantha)
+#10 McWinSauce: OmnathSaheeli (WURG, Jegantha)
 #11 junghans: HeliodCombo (WG)
 #12 Lukas261997: ShadowProwess (UBR, Lurrus)
 #13 Biednarccio: MonoWhiteTaxes (W, Lurrus)
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_Zar0s_SaheeliCombo_WURG_Jegantha()
+        public void Deck03_Zar0s_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-13",2),
@@ -74,7 +74,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_JakeHelms_SaheeliCombo_WURG_Jegantha()
+        public void Deck04_JakeHelms_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-13",3),
@@ -152,7 +152,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_McWinSauce_SaheeliCombo_WURG_Jegantha()
+        public void Deck10_McWinSauce_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-13",9),

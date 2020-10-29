@@ -22,7 +22,7 @@ using System.Text;
 #11 MissTrigger: Merfolk (WU, Lurrus)
 #12 Hyeri0418: GolgariMidrange (BG)
 #13 TheBlazingKFC_mtg: Neobrand (UG)
-#14 katuo079595: TitanVial (WRG)
+#14 katuo079595: ReclaimerTitan (WRG)
 #15 Lillia: KGCAmuletTitan (WURG)
 */
 
@@ -200,7 +200,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_katuo079595_TitanVial_WRG()
+        public void Deck14_katuo079595_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-02",13),

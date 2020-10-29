@@ -12,7 +12,7 @@ using System.Text;
 #01 BERNASTORRES: Bogles (WG, Lurrus)
 #02 CReactor: BorosProwess (WR, Lurrus)
 #03 Yooisa: Infect (UG)
-#04 Toastxp: PrimevalTitan (WRG, Yorion)
+#04 Toastxp: ReclaimerTitan (WRG, Yorion)
 #05 JustBurn420: Slivers (WUBRG)
 #06 Beltan3: AdNauseam (WUB)
 #07 Trid0n: KGCAmuletTitan (WUBRG)
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_Toastxp_PrimevalTitan_WRG_Yorion()
+        public void Deck04_Toastxp_ReclaimerTitan_WRG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-05",3),

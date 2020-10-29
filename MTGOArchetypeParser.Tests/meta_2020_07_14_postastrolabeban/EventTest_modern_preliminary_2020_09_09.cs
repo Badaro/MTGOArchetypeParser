@@ -13,7 +13,7 @@ using System.Text;
 #02 zumekun19850204: WURGControl (WURG)
 #03 liuyuchen: JundMidrange (BRG)
 #04 toondoslav: Infect (WUG)
-#05 SourceOdin: PrimevalTitan (WRG)
+#05 SourceOdin: ReclaimerTitan (WRG)
 #06 asnook: RakdosProwess (BR, Lurrus)
 #07 RAINkratos: HammerTime (W)
 #08 skinnyvin: GTron (G)
@@ -79,7 +79,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_SourceOdin_PrimevalTitan_WRG()
+        public void Deck05_SourceOdin_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-09",4),

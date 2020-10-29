@@ -14,7 +14,7 @@ using System.Text;
 #03 cntrlfreak: UBRGShadow (UBRG)
 #04 Oscar_Franco: GrixisShadow (UBR)
 #05 nick4567: SultaiControl (UBG)
-#06 AsturianDreams: PrimevalTitan (WRG)
+#06 AsturianDreams: ReclaimerTitan (WRG)
 #07 WhiTe TsaR: Humans (WUBRG)
 #08 JRDC14: RakdosMidrange (BR)
 #09 zMunkeyXz: Mill (UBG)
@@ -106,7 +106,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_AsturianDreams_PrimevalTitan_WRG()
+        public void Deck06_AsturianDreams_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-09-18",5),

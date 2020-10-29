@@ -50,12 +50,12 @@ using System.Text;
 #39 abisbocci: GrixisShadow (UBR, Lurrus)
 #40 DoctorQueller: Spirits (WUG)
 #41 bawhsome: Dredge (UBRG)
-#42 stefanocanclini: PrimevalTitan (WRG)
+#42 stefanocanclini: ReclaimerTitan (WRG)
 #43 maear: KikiChord (WRG, Yorion)
 #44 GodOfSlaughter: BringToNiv (WUBRG, Yorion)
 #45 Jenara19: OopsAllSpells (WUBRG)
 #46 Gods_Shadow: MonoWhiteTaxes (W)
-#47 1yo2yo: SaheeliCombo (WURG)
+#47 1yo2yo: OmnathSaheeli (WURG)
 #48 tuckbear: SultaiMidrange (UBG)
 #49 Tarrasque1: GolgariElves (BG)
 #50 johnyvolta: KikiChord (WRG, Yorion)
@@ -622,7 +622,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck42_stefanocanclini_PrimevalTitan_WRG()
+        public void Deck42_stefanocanclini_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-10-06",41),
@@ -687,7 +687,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck47_1yo2yo_SaheeliCombo_WURG()
+        public void Deck47_1yo2yo_OmnathSaheeli_WURG()
         {
             Test(
                 GetDeck("modern-league-2020-10-06",46),

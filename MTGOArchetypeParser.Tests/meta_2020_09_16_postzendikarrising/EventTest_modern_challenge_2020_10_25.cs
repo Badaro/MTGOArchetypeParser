@@ -26,7 +26,7 @@ using System.Text;
 #15 albert62: WURGControl (WURG)
 #16 xstaytrue1102: JundMidrange (BRG)
 #17 Irra0770: KGCTron (G)
-#18 TheKG: SaheeliCombo (WURG, Jegantha)
+#18 TheKG: OmnathSaheeli (WURG, Jegantha)
 #19 oracle888: ShadowProwess (BR, Lurrus)
 #20 PietroSas: Devoted (WG, Lurrus)
 #21 Larry11: IzzetProwess (UR)
@@ -37,7 +37,7 @@ using System.Text;
 #26 slow_brz: Infect (BG)
 #27 Gobern: SultaiReclamation (UBG)
 #28 rofelos: WURGControl (WURG)
-#29 AstralPlane: SaheeliCombo (WURG, Jegantha)
+#29 AstralPlane: OmnathSaheeli (WURG, Jegantha)
 #30 QuaCk QuaCk: Humans (WUBRG)
 #31 Soondubu: HeliodCombo (WG)
 #32 stayrospet: OopsAllSpells (WUBRG)
@@ -269,7 +269,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck18_TheKG_SaheeliCombo_WURG_Jegantha()
+        public void Deck18_TheKG_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-25",17),
@@ -412,7 +412,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck29_AstralPlane_SaheeliCombo_WURG_Jegantha()
+        public void Deck29_AstralPlane_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-25",28),

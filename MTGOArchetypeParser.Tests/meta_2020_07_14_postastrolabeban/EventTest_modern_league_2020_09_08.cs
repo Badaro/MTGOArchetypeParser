@@ -37,7 +37,7 @@ using System.Text;
 #26 Danielstallone: Burn (WR, Lurrus)
 #27 Muldrotha7912: GrixisShadow (UBR)
 #28 kingoftheelves: AbzanMidrange (WBG)
-#29 FedeG: PrimevalTitan (WRG)
+#29 FedeG: ReclaimerTitan (WRG)
 #30 BlazingShoryuken: IzzetControl (UR)
 #31 rojanosa: Faeries (UB)
 #32 fradev1988: IzzetRestoreBalance (URG)
@@ -442,7 +442,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck29_FedeG_PrimevalTitan_WRG()
+        public void Deck29_FedeG_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-09-08",28),

@@ -10,15 +10,15 @@ using System.Text;
 
 /*
 #01 Darkiundsa: Humans (WUBRG)
-#02 stayrospet: SaheeliCombo (WURG, Jegantha)
+#02 stayrospet: OmnathSaheeli (WURG, Jegantha)
 #03 Nekonii: GolgariElves (BG)
-#04 azax: PrimevalTitan (WURG)
+#04 azax: ReclaimerTitan (WURG)
 #05 Jositoshekel: HeliodCombo (WG)
 #06 JustJack: Humans (WUBRG)
 #07 Mcleskey: Humans (WUBRG)
-#08 musasabi: PrimevalTitan (WRG)
-#09 WhiTe TsaR: SaheeliCombo (WURG)
-#10 MiamiKidz: PrimevalTitan (WRG)
+#08 musasabi: ReclaimerTitan (WRG)
+#09 WhiTe TsaR: OmnathSaheeli (WURG)
+#10 MiamiKidz: ReclaimerTitan (WRG)
 #11 MHayashi: OboshAggro (R, Obosh)
 #12 toondoslav: MonoWhiteTaxes (W)
 #13 PhantasmalBear: SultaiMidrange (UBG)
@@ -29,13 +29,13 @@ using System.Text;
 #18 DaniMRebel: Spirits (WU)
 #19 Malpyrocky: ShadowProwess (BR, Lurrus)
 #20 KoKonuts: GTron (G, Jegantha)
-#21 Jenara19: SaheeliCombo (WURG, Jegantha)
+#21 Jenara19: OmnathSaheeli (WURG, Jegantha)
 #22 mechint: WURGControl (WURG)
 #23 Blitzlion27: Mill (WU)
 #24 fedjkeee: JundShadow (BRG)
 #25 An_Actual_Potato: Humans (WUBRG)
 #26 Ibaitor: GolgariMidrange (BG)
-#27 AstralPlane: SaheeliCombo (WURG, Jegantha)
+#27 AstralPlane: OmnathSaheeli (WURG, Jegantha)
 #28 asics112: Humans (WUBRG)
 #29 TheSouthDakota: Dredge (BRG)
 #30 daibloXSC: IzzetControl (UR)
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_stayrospet_SaheeliCombo_WURG_Jegantha()
+        public void Deck02_stayrospet_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-19",1),
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_azax_PrimevalTitan_WURG()
+        public void Deck04_azax_ReclaimerTitan_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-19",3),
@@ -139,7 +139,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_musasabi_PrimevalTitan_WRG()
+        public void Deck08_musasabi_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-19",7),
@@ -152,7 +152,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_WhiTeTsaR_SaheeliCombo_WURG()
+        public void Deck09_WhiTeTsaR_OmnathSaheeli_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-19",8),
@@ -165,7 +165,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_MiamiKidz_PrimevalTitan_WRG()
+        public void Deck10_MiamiKidz_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-19",9),
@@ -308,7 +308,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck21_Jenara19_SaheeliCombo_WURG_Jegantha()
+        public void Deck21_Jenara19_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-19",20),
@@ -386,7 +386,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck27_AstralPlane_SaheeliCombo_WURG_Jegantha()
+        public void Deck27_AstralPlane_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-19",26),

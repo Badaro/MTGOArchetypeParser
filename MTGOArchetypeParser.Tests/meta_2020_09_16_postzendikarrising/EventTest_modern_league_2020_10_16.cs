@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Patxi: SaheeliCombo (WURG, Jegantha)
+#01 Patxi: OmnathSaheeli (WURG, Jegantha)
 #02 DavidSnake: Dredge (BRG)
 #03 MTGnextlevel: RakdosProwess (BR, Lurrus)
 #04 pbarrrgh: SimicReclamation (UG)
@@ -17,7 +17,7 @@ using System.Text;
 #06 seasonofmists: AbzanEldraziTaxes (WBG)
 #07 FalseMufn: UTron (U)
 #08 Capiplaf95: Burn (WR)
-#09 apriolo1: PrimevalTitan (WRG)
+#09 apriolo1: ReclaimerTitan (WRG)
 #10 Zonast: GrixisDelver (UBR, Lurrus)
 #11 NHA37: HeliodCombo (W)
 #12 KoKonuts: GTron (G, Jegantha)
@@ -54,7 +54,7 @@ using System.Text;
 #43 122pablo: HeliodCombo (WG)
 #44 SaborDeSoledad: BorosLandDestruction (WR, Zirda)
 #45 BSK_hercules: TitanShift (RG)
-#46 YugiMoto: PrimevalTitan (WRG)
+#46 YugiMoto: ReclaimerTitan (WRG)
 #47 deathandcatmix: MonoWhiteTaxes (W)
 #48 coliobeware: JundMidrange (BRG, Lurrus)
 #49 MrSeri: HeliodCombo (WG)
@@ -72,7 +72,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_league_2020_10_16 : EventTest
     {
         [Test]
-        public void Deck01_Patxi_SaheeliCombo_WURG_Jegantha()
+        public void Deck01_Patxi_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-10-16",0),
@@ -176,7 +176,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_apriolo1_PrimevalTitan_WRG()
+        public void Deck09_apriolo1_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-10-16",8),
@@ -657,7 +657,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck46_YugiMoto_PrimevalTitan_WRG()
+        public void Deck46_YugiMoto_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-10-16",45),

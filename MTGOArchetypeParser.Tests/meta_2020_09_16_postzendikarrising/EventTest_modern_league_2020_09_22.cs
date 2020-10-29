@@ -21,7 +21,7 @@ using System.Text;
 #10 yamakiller: Neobrand (UG)
 #11 sinforlife54: MonoWhiteTaxes (W)
 #12 gurig: Devoted (WG)
-#13 yPrincipe: PrimevalTitan (WRG)
+#13 yPrincipe: ReclaimerTitan (WRG)
 #14 ocelot823: RakdosMidrange (BR)
 #15 wefald: Inverter (UB)
 #16 ThiGuyAgain365164: OboshAggro (R, Obosh)
@@ -235,7 +235,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_yPrincipe_PrimevalTitan_WRG()
+        public void Deck13_yPrincipe_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-09-22",12),

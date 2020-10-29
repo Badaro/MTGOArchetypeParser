@@ -67,7 +67,7 @@ using System.Text;
 #56 HLG42: Mill (UB, Lurrus)
 #57 BrokenPots_CB: KikiChord (WRG, Yorion)
 #58 Quikeglez99: Dredge (BRG)
-#59 Daking3603: PrimevalTitan (WRG)
+#59 Daking3603: ReclaimerTitan (WRG)
 #60 MTGBullent: HeliodCombo (WG)
 */
 
@@ -830,7 +830,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck59_Daking3603_PrimevalTitan_WRG()
+        public void Deck59_Daking3603_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",58),

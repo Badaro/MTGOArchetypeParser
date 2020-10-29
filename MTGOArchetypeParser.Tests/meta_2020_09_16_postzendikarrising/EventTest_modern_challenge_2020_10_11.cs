@@ -19,7 +19,7 @@ using System.Text;
 #08 Munich_Casual: BantSpirits (WUG)
 #09 Jositoshekel: HeliodCombo (WG)
 #10 NHA37: HeliodCombo (W)
-#11 yamakiller: PrimevalTitan (WRG)
+#11 yamakiller: ReclaimerTitan (WRG)
 #12 SknerusMcKwacz: OopsAllSpells (WUBG)
 #13 Parrit: MonoWhiteTaxes (W)
 #14 Edel: RakdosMidrange (BR)
@@ -178,7 +178,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_yamakiller_PrimevalTitan_WRG()
+        public void Deck11_yamakiller_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-11",10),

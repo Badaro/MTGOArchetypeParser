@@ -15,7 +15,7 @@ using System.Text;
 #04 kanister: SultaiControl (UBG)
 #05 komattaman: GruulMidrange (RG)
 #06 ImmanuelKantrolGod: BantControl (WUG)
-#07 musasabi: PrimevalTitan (WRG)
+#07 musasabi: ReclaimerTitan (WRG)
 #08 scipios: Crabvine (UBG)
 #09 mstuff63: RakdosProwess (BR, Lurrus)
 #10 Moniz0801: AmuletTitan (URG)
@@ -126,7 +126,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_musasabi_PrimevalTitan_WRG()
+        public void Deck07_musasabi_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-07",6),

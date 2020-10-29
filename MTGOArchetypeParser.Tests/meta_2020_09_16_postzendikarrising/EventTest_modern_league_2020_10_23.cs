@@ -18,7 +18,7 @@ using System.Text;
 #07 bobthedog: AzoriusControl (WU)
 #08 flatnose: Merfolk (WU)
 #09 remf: IzzetRestoreBalance (URG)
-#10 bant_is_love: PrimevalTitan (WURG)
+#10 bant_is_love: ReclaimerTitan (WURG)
 #11 DukeVitro: SultaiShadow (UBG)
 #12 DoctorQueller: Spirits (WU)
 #13 MrSeri: HeliodCombo (W)
@@ -43,7 +43,7 @@ using System.Text;
 #32 ElectricBob: MonoWhiteTaxes (W)
 #33 Iburakema: BorosLandDestruction (WR)
 #34 maple049: HardenedScales (WG)
-#35 AlpInco: SaheeliCombo (WURG, Jegantha)
+#35 AlpInco: OmnathSaheeli (WURG, Jegantha)
 #36 calexa: KGCTron (G)
 #37 DDMeelow: Uroza (UBG)
 #38 MlckyB: Bogles (WG)
@@ -194,7 +194,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_bantislove_PrimevalTitan_WURG()
+        public void Deck10_bantislove_ReclaimerTitan_WURG()
         {
             Test(
                 GetDeck("modern-league-2020-10-23",9),
@@ -519,7 +519,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck35_AlpInco_SaheeliCombo_WURG_Jegantha()
+        public void Deck35_AlpInco_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-10-23",34),

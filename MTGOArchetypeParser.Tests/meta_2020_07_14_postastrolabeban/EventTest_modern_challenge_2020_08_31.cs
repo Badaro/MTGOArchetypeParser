@@ -27,7 +27,7 @@ using System.Text;
 #16 GodOfSlaughter: BringToNiv (WUBRG, Yorion)
 #17 Turn1Vial: Slivers (WUBRG)
 #18 cws: GiftsStorm (UR)
-#19 SourceOdin: PrimevalTitan (WRG)
+#19 SourceOdin: ReclaimerTitan (WRG)
 #20 Zxion631: BorosSunforger (WBR)
 #21 albert62: JundMidrange (BRG)
 #22 Vallejo97: IzzetProwess (UR)
@@ -282,7 +282,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck19_SourceOdin_PrimevalTitan_WRG()
+        public void Deck19_SourceOdin_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-31",18),

@@ -12,7 +12,7 @@ using System.Text;
 #01 NHA37: HeliodCombo (W)
 #02 FreakNightmare: OopsAllSpells (WUBRG)
 #03 The_nayr: MonoRedProwess (R, Jegantha)
-#04 TwistedWombat: SaheeliCombo (WURG, Jegantha)
+#04 TwistedWombat: OmnathSaheeli (WURG, Jegantha)
 #05 Sodeq: Dredge (BRG)
 #06 MoxSquirrel: Mill (UB, Lurrus)
 #07 cicciogire: WURGControl (WURG)
@@ -23,10 +23,10 @@ using System.Text;
 #12 DarkestMage: MonoWhiteTaxes (W)
 #13 last7stand: KGCTron (G)
 #14 PTarts2win: WURGControl (WURG)
-#15 Gobern: SaheeliCombo (WURG, Jegantha)
-#16 AstralPlane: SaheeliCombo (WURG, Jegantha)
+#15 Gobern: OmnathSaheeli (WURG, Jegantha)
+#16 AstralPlane: OmnathSaheeli (WURG, Jegantha)
 #17 DaniMRebel: Spirits (WU)
-#18 Xwhale: PrimevalTitan (WRG)
+#18 Xwhale: ReclaimerTitan (WRG)
 #19 MIkepick7: ETron (C)
 #20 Humpaa: HeliodCombo (WG)
 #21 POOBMASTER: ShadowProwess (BR, Lurrus)
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_TwistedWombat_SaheeliCombo_WURG_Jegantha()
+        public void Deck04_TwistedWombat_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",3),
@@ -230,7 +230,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_Gobern_SaheeliCombo_WURG_Jegantha()
+        public void Deck15_Gobern_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",14),
@@ -243,7 +243,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_AstralPlane_SaheeliCombo_WURG_Jegantha()
+        public void Deck16_AstralPlane_OmnathSaheeli_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",15),
@@ -269,7 +269,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck18_Xwhale_PrimevalTitan_WRG()
+        public void Deck18_Xwhale_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",17),

@@ -19,7 +19,7 @@ using System.Text;
 #08 Smdster: RakdosProwess (BR, Lurrus)
 #09 Oderus Urungus: GruulMidrange (RG)
 #10 _Batutinha_: JundShadow (BRG)
-#11 ReturnToDust: TitanVial (WRG)
+#11 ReturnToDust: ReclaimerTitan (WRG)
 #12 Soulerino: Burn (WR)
 #13 chengyiw: IzzetProwess (UR)
 #14 NorrathDecay: Burn (WR)
@@ -178,7 +178,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_ReturnToDust_TitanVial_WRG()
+        public void Deck11_ReturnToDust_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-08-09",10),

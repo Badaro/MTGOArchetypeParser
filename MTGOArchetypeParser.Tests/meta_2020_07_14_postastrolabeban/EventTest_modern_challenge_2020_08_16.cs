@@ -31,7 +31,7 @@ using System.Text;
 #20 Gigy: GruulMidrange (RG)
 #21 Luzur: SultaiControl (UBG)
 #22 spellvine: IzzetProwess (UR)
-#23 HouseOfManaMTG: TitanVial (WRG)
+#23 HouseOfManaMTG: ReclaimerTitan (WRG)
 #24 Yanti: JundMidrange (BRG)
 #25 Storytime: KinnanDevoted (WUG)
 #26 Xuxa: Dredge (BRG)
@@ -334,7 +334,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck23_HouseOfManaMTG_TitanVial_WRG()
+        public void Deck23_HouseOfManaMTG_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",22),

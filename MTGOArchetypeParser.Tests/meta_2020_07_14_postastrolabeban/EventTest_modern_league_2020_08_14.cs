@@ -35,7 +35,7 @@ using System.Text;
 #24 touto_Isle: Dredge (BRG)
 #25 JRDC14: BringToNiv (WUBRG, Yorion)
 #26 Rebus8: OrzhovEldraziTaxes (WB)
-#27 tbrantl99: TitanVial (WRG)
+#27 tbrantl99: ReclaimerTitan (WRG)
 #28 Do0mSwitch: BantControl (WUG)
 #29 BaDzIo: MonoRedProwess (R)
 #30 Elibaechan: SnoopGoblins (BRG)
@@ -406,7 +406,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck27_tbrantl99_TitanVial_WRG()
+        public void Deck27_tbrantl99_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-14",26),

@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 D00mwake: ShadowProwess (WBR, Lurrus)
-#02 Frejat: PrimevalTitan (WRG)
+#02 Frejat: ReclaimerTitan (WRG)
 #03 moyashi0904: WURGControl (WURG)
 #04 __BMJ__: ShadowProwess (BR, Lurrus)
 #05 audio336: ShadowProwess (BR, Lurrus)
@@ -32,7 +32,7 @@ using System.Text;
 #21 cntrlfreak: GrixisShadow (UBR)
 #22 pootisgodsamongus: OboshAggro (R, Obosh)
 #23 NosonosaN: WURGControl (WURG)
-#24 bamzing: PrimevalTitan (WRG)
+#24 bamzing: ReclaimerTitan (WRG)
 #25 fradelrock: IzzetProwess (UR)
 #26 Rav104: OopsAllSpells (WUBRG)
 #27 Icteridae: GruulMidrange (RG)
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_Frejat_PrimevalTitan_WRG()
+        public void Deck02_Frejat_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-10-04",1),
@@ -347,7 +347,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck24_bamzing_PrimevalTitan_WRG()
+        public void Deck24_bamzing_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-10-04",23),

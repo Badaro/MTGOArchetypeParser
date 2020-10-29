@@ -17,8 +17,8 @@ using System.Text;
 #06 The_nayr: OboshAggro (R, Obosh)
 #07 DeepFryer: RakdosProwess (BR, Lurrus)
 #08 Bedell: AmuletTitan (UBRG)
-#09 bozo2112: PrimevalTitan (WRG)
-#10 Xwhale: PrimevalTitan (WRG)
+#09 bozo2112: ReclaimerTitan (WRG)
+#10 Xwhale: ReclaimerTitan (WRG)
 #11 raven0904: GTron (G)
 #12 wilson5434: HardenedScales (G)
 #13 TheMelkMan: GolosTron (G)
@@ -139,7 +139,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_bozo2112_PrimevalTitan_WRG()
+        public void Deck09_bozo2112_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-08",8),
@@ -152,7 +152,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_Xwhale_PrimevalTitan_WRG()
+        public void Deck10_Xwhale_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-08",9),

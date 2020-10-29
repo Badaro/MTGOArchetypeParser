@@ -36,7 +36,7 @@ using System.Text;
 #25 coert: HeliodCombo (WG)
 #26 JustJack: Humans (WUBRG)
 #27 Kurusu: KikiChord (WRG, Yorion)
-#28 josetorr87: PrimevalTitan (WRG)
+#28 josetorr87: ReclaimerTitan (WRG)
 #29 McWinSauce: WURGControl (WURG)
 #30 Erik157751: ShadowProwess (BR, Lurrus)
 #31 MissTrigger: Humans (WUBRG)
@@ -399,7 +399,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck28_josetorr87_PrimevalTitan_WRG()
+        public void Deck28_josetorr87_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-05",27),

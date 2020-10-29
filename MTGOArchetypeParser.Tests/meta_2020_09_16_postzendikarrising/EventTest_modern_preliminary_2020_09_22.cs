@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Zar0s: GruulMidrange (RG)
 #02 McWinSauce: WURGControl (WURG)
-#03 SgtMcMuffins: PrimevalTitan (WRG)
+#03 SgtMcMuffins: ReclaimerTitan (WRG)
 #04 Redgy819: UBRGShadow (UBRG)
 #05 benchsummer: UBRGShadow (UBRG)
 #06 Humpaa: ShadowProwess (BR, Lurrus)
@@ -58,7 +58,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_SgtMcMuffins_PrimevalTitan_WRG()
+        public void Deck03_SgtMcMuffins_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-22",2),
