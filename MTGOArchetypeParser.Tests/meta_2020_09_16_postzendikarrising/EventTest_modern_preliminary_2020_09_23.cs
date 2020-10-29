@@ -9,18 +9,18 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 ZYURYO: WURGControl (WURG)
-#02 Rinko: EnduringIdeal (WR)
-#03 kanister: ShadowProwess (BR, Lurrus)
-#04 Kurusu: KikiChord (WRG, Yorion)
-#05 Bohnz: GruulMidrange (RG)
-#06 Humpaa: ShadowProwess (BR, Lurrus)
-#07 ImmanuelKantrolGod: JeskaiControl (WUR)
-#08 spellvine: IzzetProwess (UR)
-#09 HouseOfManaMTG: AmuletTitan (UBRG)
+#01 ZYURYO: WURG Control (WURG)
+#02 Rinko: Enduring Ideal (WR)
+#03 kanister: Shadow Prowess (BR, Lurrus)
+#04 Kurusu: Kiki Chord (WRG, Yorion)
+#05 Bohnz: Gruul Midrange (RG)
+#06 Humpaa: Shadow Prowess (BR, Lurrus)
+#07 ImmanuelKantrolGod: Jeskai Control (WUR)
+#08 spellvine: Izzet Prowess (UR)
+#09 HouseOfManaMTG: Amulet Titan (UBRG)
 #10 tagosaku: Burn (WR)
-#11 coert: HeliodCombo (WG)
-#12 medvedev: MonoWhiteTaxes (W)
+#11 coert: Heliod Combo (WG)
+#12 medvedev: Mono White Taxes (W)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

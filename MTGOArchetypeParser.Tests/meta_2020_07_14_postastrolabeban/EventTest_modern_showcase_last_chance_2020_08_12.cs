@@ -9,12 +9,12 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 ArchaeusDota: KGCTron (G)
-#02 CrusherBotBG: HammerTime (W)
-#03 DreamsOfAshiok: ETron (C)
-#04 brandon__logan: GruulMidrange (RG)
-#05 tpc2000: GiftsStorm (UR)
-#06 Ganksyou: AzoriusControl (WU)
+#01 ArchaeusDota: KGC Tron (G)
+#02 CrusherBotBG: Hammer Time (W)
+#03 DreamsOfAshiok: E Tron (C)
+#04 brandon__logan: Gruul Midrange (RG)
+#05 tpc2000: Gifts Storm (UR)
+#06 Ganksyou: Azorius Control (WU)
 #07 JustBurn420: Slivers (WUBRG)
 #08 osmanozguney: Faeries (UB)
 #09 henryys: Burn (WR, Lurrus)

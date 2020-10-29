@@ -9,18 +9,18 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Cherryxman: KGCTron (G)
-#02 audio336: AzoriusControl (WU)
+#01 Cherryxman: KGC Tron (G)
+#02 audio336: Azorius Control (WU)
 #03 tibalt_of_red_sub: Mill (UB, Lurrus)
-#04 Do0mSwitch: BantControl (WUG)
-#05 sff_mtg: KGCTron (G)
-#06 Boin: SnoopGoblins (BR)
-#07 ht991122: SultaiReclamation (UBG)
-#08 Je3vEs: ETron (C)
-#09 tribalmaster: IzzetProwess (UR)
-#10 Niedzwiedz: SnoopGoblins (BR)
-#11 trader08111: ETron (C)
-#12 theBMeister: GreenStompy (G)
+#04 Do0mSwitch: Bant Control (WUG)
+#05 sff_mtg: KGC Tron (G)
+#06 Boin: Snoop Goblins (BR)
+#07 ht991122: Sultai Reclamation (UBG)
+#08 Je3vEs: E Tron (C)
+#09 tribalmaster: Izzet Prowess (UR)
+#10 Niedzwiedz: Snoop Goblins (BR)
+#11 trader08111: E Tron (C)
+#12 theBMeister: Green Stompy (G)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

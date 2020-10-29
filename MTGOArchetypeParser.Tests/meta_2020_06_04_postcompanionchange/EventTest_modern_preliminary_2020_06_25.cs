@@ -9,22 +9,22 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Icteridae: HeliodDevoted (WUG)
-#02 rastaf: KGCTron (G)
+#01 Icteridae: Heliod Devoted (WUG)
+#02 rastaf: KGC Tron (G)
 #03 FrankEG_MTG: Humans (WUBRG)
-#04 fpawlusz: AmuletTitan (WUBRG)
+#04 fpawlusz: Amulet Titan (WUBRG)
 #05 Laplasjan: Devoted (WG, Lurrus)
-#06 BSK_hercules: GruulMidrange (RG)
-#07 mariogomes097: GrixisShadow (UBR)
-#08 TubbyBatman: NarsetsUndoing (UB)
+#06 BSK_hercules: Gruul Midrange (RG)
+#07 mariogomes097: Grixis Shadow (UBR)
+#08 TubbyBatman: Narsets Undoing (UB)
 #09 Boland: Dredge (BRG)
-#10 MZBlazer: SultaiControl (UBG)
-#11 DreamsOfAshiok: ETron (C)
+#10 MZBlazer: Sultai Control (UBG)
+#11 DreamsOfAshiok: E Tron (C)
 #12 Mcleskey: Burn (WR)
-#13 killersuv: SultaiReclamation (UBG)
+#13 killersuv: Sultai Reclamation (UBG)
 #14 Papelucho10: Infect (UG)
 #15 tkphi: Burn (WR)
-#16 eggybenny: ETron (C)
+#16 eggybenny: E Tron (C)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange

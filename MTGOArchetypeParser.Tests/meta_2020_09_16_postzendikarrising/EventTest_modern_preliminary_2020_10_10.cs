@@ -9,14 +9,14 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Gobern: BringToNiv (WUBRG, Yorion)
-#02 azatoyellow: OboshAggro (R, Obosh)
-#03 im2g00t4ubarn: WURGControl (WURG)
-#04 MyNameTidus: HeliodCombo (WG)
-#05 cjucjujp: KuldothaRed (R)
-#06 Erik157751: ShadowProwess (BR, Lurrus)
+#01 Gobern: Bring To Niv (WUBRG, Yorion)
+#02 azatoyellow: Obosh Aggro (R, Obosh)
+#03 im2g00t4ubarn: WURG Control (WURG)
+#04 MyNameTidus: Heliod Combo (WG)
+#05 cjucjujp: Kuldotha Red (R)
+#06 Erik157751: Shadow Prowess (BR, Lurrus)
 #07 medvedev: Bogles (WG, Lurrus)
-#08 AstralPlane: ShadowProwess (BR, Lurrus)
+#08 AstralPlane: Shadow Prowess (BR, Lurrus)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

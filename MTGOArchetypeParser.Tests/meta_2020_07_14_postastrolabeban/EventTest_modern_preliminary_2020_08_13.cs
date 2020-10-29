@@ -9,21 +9,21 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Oderus Urungus: GruulMidrange (RG)
+#01 Oderus Urungus: Gruul Midrange (RG)
 #02 PRGJJAR: Dredge (BRG)
-#03 MZBlazer: RakdosProwess (BR, Lurrus)
-#04 exoticherman: RakdosProwess (BR, Lurrus)
-#05 McWinSauce: BantControl (WUG)
+#03 MZBlazer: Rakdos Prowess (BR, Lurrus)
+#04 exoticherman: Rakdos Prowess (BR, Lurrus)
+#05 McWinSauce: Bant Control (WUG)
 #06 karatedom: Infect (UG)
-#07 Costola91: UBRGShadow (UBRG)
-#08 sicsmoo: GTron (G)
-#09 Nammersquats: IzzetProwess (UR)
-#10 staffmat1992: GruulMidrange (RG)
+#07 Costola91: UBRG Shadow (UBRG)
+#08 sicsmoo: G Tron (G)
+#09 Nammersquats: Izzet Prowess (UR)
+#10 staffmat1992: Gruul Midrange (RG)
 #11 pootisgodsamongus: Crabvine (UBG)
 #12 Ryan100495: Dredge (WBRG)
-#13 komattaman: GruulMidrange (RG)
-#14 ConnorM426: SimicReclamation (UG)
-#15 1plus1equals3: KGCTron (G)
+#13 komattaman: Gruul Midrange (RG)
+#14 ConnorM426: Simic Reclamation (UG)
+#15 1plus1equals3: KGC Tron (G)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

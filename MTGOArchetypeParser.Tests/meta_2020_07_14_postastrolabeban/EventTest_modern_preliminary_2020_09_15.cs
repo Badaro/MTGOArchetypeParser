@@ -9,20 +9,20 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Lukas261997: GrixisShadow (UBR)
+#01 Lukas261997: Grixis Shadow (UBR)
 #02 Rhianne: Dredge (BRG)
-#03 Thrall90: JundMidrange (BRG)
-#04 _Ingles_: AdNauseam (WUB)
-#05 killersuv: TemurControl (URG)
-#06 fatkiddestroyers: BantMidrange (WUG)
-#07 stonepeanut: KGCTron (G)
-#08 Kazuga: OboshAggro (R, Obosh)
-#09 122pablo: JeskaiAscendancy (WURG, Jegantha)
-#10 Usama96: JundMidrange (BRG)
-#11 gove1931: BantControl (WUG)
+#03 Thrall90: Jund Midrange (BRG)
+#04 _Ingles_: Ad Nauseam (WUB)
+#05 killersuv: Temur Control (URG)
+#06 fatkiddestroyers: Bant Midrange (WUG)
+#07 stonepeanut: KGC Tron (G)
+#08 Kazuga: Obosh Aggro (R, Obosh)
+#09 122pablo: Jeskai Ascendancy (WURG, Jegantha)
+#10 Usama96: Jund Midrange (BRG)
+#11 gove1931: Bant Control (WUG)
 #12 Zar0s: Humans (WUBRG)
-#13 hcook725: MarduShadow (WBR)
-#14 RicardoMSLan: ETron (C)
+#13 hcook725: Mardu Shadow (WBR)
+#14 RicardoMSLan: E Tron (C)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

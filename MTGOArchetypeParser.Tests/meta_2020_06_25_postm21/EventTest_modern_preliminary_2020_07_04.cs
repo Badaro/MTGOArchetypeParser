@@ -9,16 +9,16 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 lilianaofthevess: SongStorm (URG, Jegantha)
-#02 ZYURYO: BantControl (WUG)
-#03 ManuelJacob: SultaiControl (UBG)
-#04 _INF_: GiftsStorm (UR)
-#05 bnlunt: UTron (U)
-#06 nielsen333: PrimevalTitan (BRG)
-#07 Laessoe: GruulMidrange (RG)
-#08 siomomi: KGCTron (G)
-#09 triosk: SnoopGoblins (BR)
-#10 cjucjujp: BushwhackerZoo (RG)
+#01 lilianaofthevess: Song Storm (URG, Jegantha)
+#02 ZYURYO: Bant Control (WUG)
+#03 ManuelJacob: Sultai Control (UBG)
+#04 _INF_: Gifts Storm (UR)
+#05 bnlunt: U Tron (U)
+#06 nielsen333: Primeval Titan (BRG)
+#07 Laessoe: Gruul Midrange (RG)
+#08 siomomi: KGC Tron (G)
+#09 triosk: Snoop Goblins (BR)
+#10 cjucjujp: Bushwhacker Zoo (RG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21

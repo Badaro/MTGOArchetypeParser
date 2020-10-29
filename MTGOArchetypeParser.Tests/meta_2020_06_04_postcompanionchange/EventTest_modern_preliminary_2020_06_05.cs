@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Violent_Outburst: TemurReclamation (URG, Yorion)
-#02 gazmon48: GruulMidrange (RG)
-#03 LORiWWA: ETron (C)
+#01 Violent_Outburst: Temur Reclamation (URG, Yorion)
+#02 gazmon48: Gruul Midrange (RG)
+#03 LORiWWA: E Tron (C)
 #04 __matsugan: Neobrand (UG)
 #05 PRGJJAR: Dredge (BRG)
-#06 fradev1988: BantControl (WUG)
+#06 fradev1988: Bant Control (WUG)
 #07 Cherryxman: Uroza (WUG, Yorion)
-#08 sff_mtg: KGCTron (G)
-#09 _Shatun_: TitanShift (RG)
+#08 sff_mtg: KGC Tron (G)
+#09 _Shatun_: Titan Shift (RG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange

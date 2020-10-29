@@ -47,6 +47,8 @@ namespace MTGOArchetypeParser.Tests.Updater
                 }
             }
 
+            archetypeName = archetypeName.Replace(" ", "");
+
             string deckID = $"Deck{(deckIndex + 1).ToString("D2")}";
             deckID += playerID.Length > 0 ? $"_{new string(playerID.Where(c => char.IsLetterOrDigit(c)).ToArray())}" : "_Unknown";
             deckID += archetypeName.Length > 0 ? $"_{archetypeName}" : "_Unknown";

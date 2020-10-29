@@ -11,16 +11,16 @@ using System.Text;
 /*
 #01 Nammersquats: Devoted (WG, Lurrus)
 #02 wambocombo2020: Humans (WUBRG)
-#03 Bullwinkkle6705: TemurControl (URG)
-#04 SCJ: WURGControl (WURG)
+#03 Bullwinkkle6705: Temur Control (URG)
+#04 SCJ: WURG Control (WURG)
 #05 SKK: Belcher (RG)
-#06 Bedell: ShadowProwess (BR, Lurrus)
-#07 pokerswizard: GruulMidrange (RG)
-#08 SpikeYou: SultaiReclamation (UBG)
+#06 Bedell: Shadow Prowess (BR, Lurrus)
+#07 pokerswizard: Gruul Midrange (RG)
+#08 SpikeYou: Sultai Reclamation (UBG)
 #09 swana422: Spirits (WU)
-#10 Fatcaster_Mage: TemurControl (URG)
-#11 MZBlazer: ShadowProwess (BR, Lurrus)
-#12 qbturtle15: MonoWhiteTaxes (W)
+#10 Fatcaster_Mage: Temur Control (URG)
+#11 MZBlazer: Shadow Prowess (BR, Lurrus)
+#12 qbturtle15: Mono White Taxes (W)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

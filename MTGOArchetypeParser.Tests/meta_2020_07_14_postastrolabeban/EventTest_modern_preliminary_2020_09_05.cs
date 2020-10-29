@@ -10,18 +10,18 @@ using System.Text;
 
 /*
 #01 BERNASTORRES: Bogles (WG, Lurrus)
-#02 CReactor: BorosProwess (WR, Lurrus)
+#02 CReactor: Boros Prowess (WR, Lurrus)
 #03 Yooisa: Infect (UG)
-#04 Toastxp: ReclaimerTitan (WRG, Yorion)
+#04 Toastxp: Reclaimer Titan (WRG, Yorion)
 #05 JustBurn420: Slivers (WUBRG)
-#06 Beltan3: AdNauseam (WUB)
-#07 Trid0n: KGCAmuletTitan (WUBRG)
+#06 Beltan3: Ad Nauseam (WUB)
+#07 Trid0n: KGC Amulet Titan (WUBRG)
 #08 niftylegos: Burn (WR)
-#09 IntegralHDK: BorosProwess (WR, Lurrus)
-#10 Do0mSwitch: BantControl (WUG)
-#11 SebastianStueckl: KGCAmuletTitan (WUBRG)
+#09 IntegralHDK: Boros Prowess (WR, Lurrus)
+#10 Do0mSwitch: Bant Control (WUG)
+#11 SebastianStueckl: KGC Amulet Titan (WUBRG)
 #12 ilsecco14: Neobrand (UG)
-#13 Zar0s: AmuletTitan (URG)
+#13 Zar0s: Amulet Titan (URG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

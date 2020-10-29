@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Nytrox: HeliodCombo (WG)
-#02 moyashi0904: WURGControl (WURG)
-#03 Iziter: TakingTurns (WURG)
-#04 joker10289: JundMidrange (BRG)
-#05 Mazzu93: UBRGShadow (UBRG)
+#01 Nytrox: Heliod Combo (WG)
+#02 moyashi0904: WURG Control (WURG)
+#03 Iziter: Taking Turns (WURG)
+#04 joker10289: Jund Midrange (BRG)
+#05 Mazzu93: UBRG Shadow (UBRG)
 #06 kthanakit26: Humans (WUBRG)
-#07 DrDree: ShadowProwess (BR, Lurrus)
-#08 Phill_Hellmuth: TakingTurns (WURG)
-#09 FreakNightmare: OopsAllSpells (WUBRG)
+#07 DrDree: Shadow Prowess (BR, Lurrus)
+#08 Phill_Hellmuth: Taking Turns (WURG)
+#09 FreakNightmare: Oops All Spells (WUBRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

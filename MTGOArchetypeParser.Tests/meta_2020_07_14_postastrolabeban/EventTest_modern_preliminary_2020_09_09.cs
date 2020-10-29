@@ -9,16 +9,16 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 __matsugan: AdNauseam (WUB)
-#02 zumekun19850204: WURGControl (WURG)
-#03 liuyuchen: JundMidrange (BRG)
+#01 __matsugan: Ad Nauseam (WUB)
+#02 zumekun19850204: WURG Control (WURG)
+#03 liuyuchen: Jund Midrange (BRG)
 #04 toondoslav: Infect (WUG)
-#05 SourceOdin: ReclaimerTitan (WRG)
-#06 asnook: RakdosProwess (BR, Lurrus)
-#07 RAINkratos: HammerTime (W)
-#08 skinnyvin: GTron (G)
+#05 SourceOdin: Reclaimer Titan (WRG)
+#06 asnook: Rakdos Prowess (BR, Lurrus)
+#07 RAINkratos: Hammer Time (W)
+#08 skinnyvin: G Tron (G)
 #09 Trid0n: Humans (WUBRG)
-#10 moyashi0904: SultaiReclamation (UBG)
+#10 moyashi0904: Sultai Reclamation (UBG)
 #11 BERNASTORRES: Bogles (WG, Lurrus)
 */
 

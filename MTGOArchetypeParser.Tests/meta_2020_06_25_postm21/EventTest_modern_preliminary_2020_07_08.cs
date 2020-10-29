@@ -10,14 +10,14 @@ using System.Text;
 
 /*
 #01 Janh: Scapeshift (URG, Yorion)
-#02 medvedev: ETron (C)
-#03 otakkun: KGCTron (G)
-#04 fistfullofmetal: ETron (C)
-#05 sff_mtg: KGCTron (G)
+#02 medvedev: E Tron (C)
+#03 otakkun: KGC Tron (G)
+#04 fistfullofmetal: E Tron (C)
+#05 sff_mtg: KGC Tron (G)
 #06 PRGJJAR: Dredge (BRG)
-#07 ZYURYO: BantControl (WUG)
-#08 spellvine: IzzetProwess (UR)
-#09 WanderingOnes: KGCTron (G)
+#07 ZYURYO: Bant Control (WUG)
+#08 spellvine: Izzet Prowess (UR)
+#09 WanderingOnes: KGC Tron (G)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21

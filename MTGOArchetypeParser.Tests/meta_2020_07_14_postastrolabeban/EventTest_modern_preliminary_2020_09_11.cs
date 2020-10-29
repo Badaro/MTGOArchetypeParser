@@ -9,18 +9,18 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 JacobofAmber: EnduringIdeal (W)
-#02 PvtEnormous: BantControl (WUG)
-#03 fistfullofmetal: GruulMidrange (RG)
-#04 Ravul: KGCTron (G)
-#05 andycsoto: ETron (C)
-#06 qbturtle15: GruulMidrange (RG)
-#07 ilsecco14: SultaiControl (UBG)
-#08 JONABSF: MonoRedProwess (R)
-#09 Chumba0202: IzzetProwess (UR)
-#10 SebastianStueckl: GruulMidrange (RG)
-#11 GombleWhop: OboshAggro (R, Obosh)
-#12 yamakiller: OboshAggro (R, Obosh)
+#01 JacobofAmber: Enduring Ideal (W)
+#02 PvtEnormous: Bant Control (WUG)
+#03 fistfullofmetal: Gruul Midrange (RG)
+#04 Ravul: KGC Tron (G)
+#05 andycsoto: E Tron (C)
+#06 qbturtle15: Gruul Midrange (RG)
+#07 ilsecco14: Sultai Control (UBG)
+#08 JONABSF: Mono Red Prowess (R)
+#09 Chumba0202: Izzet Prowess (UR)
+#10 SebastianStueckl: Gruul Midrange (RG)
+#11 GombleWhop: Obosh Aggro (R, Obosh)
+#12 yamakiller: Obosh Aggro (R, Obosh)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

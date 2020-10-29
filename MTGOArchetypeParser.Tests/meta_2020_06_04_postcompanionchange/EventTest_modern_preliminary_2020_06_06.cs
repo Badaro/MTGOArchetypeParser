@@ -9,22 +9,22 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Diatomic: BantControl (WUG)
-#02 _Shatun_: GruulMidrange (RG)
-#03 _INF_: GiftsStorm (UR)
-#04 ZYURYO: WUBGControl (WUBG)
-#05 slsh: GruulMidrange (RG)
-#06 Do0mSwitch: BantControl (WUG)
-#07 ilsecco14: GolgariMidrange (BG)
+#01 Diatomic: Bant Control (WUG)
+#02 _Shatun_: Gruul Midrange (RG)
+#03 _INF_: Gifts Storm (UR)
+#04 ZYURYO: WUBG Control (WUBG)
+#05 slsh: Gruul Midrange (RG)
+#06 Do0mSwitch: Bant Control (WUG)
+#07 ilsecco14: Golgari Midrange (BG)
 #08 kanister: Humans (WUBRG)
 #09 audio336: Dredge (BRG)
-#10 12Days: JundMidrange (BRG, Obosh)
-#11 sff_mtg: KGCTron (G)
-#12 elad3127: GruulMidrange (RG)
-#13 Doomed_Necromancer: AbzanMidrange (WBG)
-#14 nielsen333: JeskaiControl (WUR)
+#10 12Days: Jund Midrange (BRG, Obosh)
+#11 sff_mtg: KGC Tron (G)
+#12 elad3127: Gruul Midrange (RG)
+#13 Doomed_Necromancer: Abzan Midrange (WBG)
+#14 nielsen333: Jeskai Control (WUR)
 #15 matyo804: Humans (WUBRG)
-#16 ktmr-39: GolosTron (G, Jegantha)
+#16 ktmr-39: Golos Tron (G, Jegantha)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange

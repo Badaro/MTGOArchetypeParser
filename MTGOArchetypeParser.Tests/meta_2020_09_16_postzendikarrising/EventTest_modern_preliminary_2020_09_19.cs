@@ -10,16 +10,16 @@ using System.Text;
 
 /*
 #01 Phill_Hellmuth: Devoted (WG, Lurrus)
-#02 stonepeanut: KGCTron (G)
-#03 andrw1232: WURGControl (WURG)
+#02 stonepeanut: KGC Tron (G)
+#03 andrw1232: WURG Control (WURG)
 #04 Hennaruji1: Humans (WUBRG)
 #05 Xwhale: Humans (WUBRG)
-#06 Wizard_2002: JundMidrange (BRG)
-#07 Bullwinkkle6705: WURGControl (WURG)
+#06 Wizard_2002: Jund Midrange (BRG)
+#07 Bullwinkkle6705: WURG Control (WURG)
 #08 RearrangedAS: Spirits (WU)
 #09 Hoey07: Humans (WUBRG)
-#10 Smdster: TemurControl (URG)
-#11 Joey_Wheeler: ETron (C)
+#10 Smdster: Temur Control (URG)
+#11 Joey_Wheeler: E Tron (C)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

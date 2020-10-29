@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Gigy: GruulMidrange (RG)
-#02 sff_mtg: KGCTron (G)
+#01 Gigy: Gruul Midrange (RG)
+#02 sff_mtg: KGC Tron (G)
 #03 J000111: Dredge (WBRG)
-#04 WanderingOnes: KGCTron (G)
+#04 WanderingOnes: KGC Tron (G)
 #05 Janh: Scapeshift (URG, Yorion)
-#06 HouseOfManaMTG: AmuletTitan (WUBRG)
-#07 katoriarch123: BantControl (WUG)
-#08 Engelsdorfer: GrixisShadow (UBR)
-#09 zumekun19850204: SultaiControl (UBG)
+#06 HouseOfManaMTG: Amulet Titan (WUBRG)
+#07 katoriarch123: Bant Control (WUG)
+#08 Engelsdorfer: Grixis Shadow (UBR)
+#09 zumekun19850204: Sultai Control (UBG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21

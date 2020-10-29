@@ -9,18 +9,18 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 signblindman: GruulMidrange (RG)
-#02 GedionRavenor: BantControl (WUG)
-#03 _Shatun_: GruulMidrange (RG)
-#04 TSPJendrek: WUBGControl (WUBG)
-#05 Janh: TemurControl (URG)
-#06 _INF_: GiftsStorm (UR)
-#07 alemilan19: BantControl (WUG)
-#08 Fabrice_K: NinjaFaeries (UB)
+#01 signblindman: Gruul Midrange (RG)
+#02 GedionRavenor: Bant Control (WUG)
+#03 _Shatun_: Gruul Midrange (RG)
+#04 TSPJendrek: WUBG Control (WUBG)
+#05 Janh: Temur Control (URG)
+#06 _INF_: Gifts Storm (UR)
+#07 alemilan19: Bant Control (WUG)
+#08 Fabrice_K: Ninja Faeries (UB)
 #09 DylanGregory: Humans (WUBRG)
 #10 Mcleskey: Burn (WR)
-#11 DavidDPanda: ETron (C)
-#12 ZYURYO: WUBGControl (WUBG)
+#11 DavidDPanda: E Tron (C)
+#12 ZYURYO: WUBG Control (WUBG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange

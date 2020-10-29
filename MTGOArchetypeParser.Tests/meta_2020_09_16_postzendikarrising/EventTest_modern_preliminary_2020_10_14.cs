@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 toondoslav: MonoWhiteTaxes (W)
-#02 im2g00t4ubarn: WURGControl (WURG)
+#01 toondoslav: Mono White Taxes (W)
+#02 im2g00t4ubarn: WURG Control (WURG)
 #03 Kazuga: Humans (WUBRG)
-#04 Paeng_Paeng: GiftsStorm (UR)
-#05 mansak: ShadowProwess (BR, Lurrus)
-#06 ecobaronen: SultaiControl (UBG)
-#07 abethemage: OmnathSaheeli (WURG, Jegantha)
-#08 junghans: HeliodCombo (WG)
-#09 ZYURYO: WURGControl (WURG)
+#04 Paeng_Paeng: Gifts Storm (UR)
+#05 mansak: Shadow Prowess (BR, Lurrus)
+#06 ecobaronen: Sultai Control (UBG)
+#07 abethemage: Omnath Saheeli (WURG, Jegantha)
+#08 junghans: Heliod Combo (WG)
+#09 ZYURYO: WURG Control (WURG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

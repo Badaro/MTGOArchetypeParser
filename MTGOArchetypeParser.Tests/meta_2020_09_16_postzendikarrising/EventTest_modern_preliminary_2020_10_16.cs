@@ -10,21 +10,21 @@ using System.Text;
 
 /*
 #01 GombleWhop: Humans (WUBRG)
-#02 Soondubu: MonoWhiteTaxes (W)
-#03 yamakiller: OboshAggro (R, Obosh)
-#04 McWinSauce: WURGControl (WURG)
-#05 cicciogire: WURGControl (WURG)
-#06 TheMelkMan: KGCTron (G)
+#02 Soondubu: Mono White Taxes (W)
+#03 yamakiller: Obosh Aggro (R, Obosh)
+#04 McWinSauce: WURG Control (WURG)
+#05 cicciogire: WURG Control (WURG)
+#06 TheMelkMan: KGC Tron (G)
 #07 karatedom: Infect (UG)
-#08 lordavery: BantMidrange (WUG)
+#08 lordavery: Bant Midrange (WUG)
 #09 MIkepick7: Dredge (BRG)
 #10 coert: Merfolk (U)
 #11 pokerswizard: Humans (WUBRG)
-#12 andrw1232: WURGControl (WURG)
-#13 benchsummer: UBRGShadow (UBRG)
-#14 Gobern: BringToNiv (WUBRG, Yorion)
-#15 MartinezDP: SnowSaheeli (WURG, Yorion)
-#16 sandydogmtg: ShadowProwess (WBR, Lurrus)
+#12 andrw1232: WURG Control (WURG)
+#13 benchsummer: UBRG Shadow (UBRG)
+#14 Gobern: Bring To Niv (WUBRG, Yorion)
+#15 MartinezDP: Snow Saheeli (WURG, Yorion)
+#16 sandydogmtg: Shadow Prowess (WBR, Lurrus)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

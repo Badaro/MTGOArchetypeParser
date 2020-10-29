@@ -9,16 +9,16 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 ImmanuelKantrolGod: BantControl (WUG)
-#02 McWinSauce: BantControl (WUG)
-#03 otakkun: KGCTron (G)
-#04 aManatease: IzzetProwess (UR)
-#05 CrusherBotBG: HammerTime (W)
-#06 kingsmudge: ETron (C)
-#07 JakeHelms: RakdosProwess (BR, Lurrus)
+#01 ImmanuelKantrolGod: Bant Control (WUG)
+#02 McWinSauce: Bant Control (WUG)
+#03 otakkun: KGC Tron (G)
+#04 aManatease: Izzet Prowess (UR)
+#05 CrusherBotBG: Hammer Time (W)
+#06 kingsmudge: E Tron (C)
+#07 JakeHelms: Rakdos Prowess (BR, Lurrus)
 #08 __matsugan: Dredge (BRG)
-#09 kanister: BantControl (WUG)
-#10 iL_Tedesco: JundMidrange (BRG)
+#09 kanister: Bant Control (WUG)
+#10 iL_Tedesco: Jund Midrange (BRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

@@ -9,16 +9,16 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Shorak123: SultaiReclamation (UBG)
-#02 Kazuga: SultaiControl (UBG)
-#03 yuurari_yuko: BantControl (WUG, Yorion)
-#04 sff_mtg: KGCTron (G)
-#05 mariogomes097: GrixisShadow (UBR)
-#06 ZYURYO: WUBGControl (WUBG)
-#07 gyyby297: ThopterUrza (WU)
-#08 NickPuiKia: IzzetProwess (UR)
-#09 medvedev: ETron (C)
-#10 Antarctica: GruulMidrange (RG)
+#01 Shorak123: Sultai Reclamation (UBG)
+#02 Kazuga: Sultai Control (UBG)
+#03 yuurari_yuko: Bant Control (WUG, Yorion)
+#04 sff_mtg: KGC Tron (G)
+#05 mariogomes097: Grixis Shadow (UBR)
+#06 ZYURYO: WUBG Control (WUBG)
+#07 gyyby297: Thopter Urza (WU)
+#08 NickPuiKia: Izzet Prowess (UR)
+#09 medvedev: E Tron (C)
+#10 Antarctica: Gruul Midrange (RG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21

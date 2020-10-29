@@ -9,14 +9,14 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Thrall90: JundMidrange (BRG)
-#02 _titoWii_96: WURGControl (WURG, Yorion)
-#03 Boin: ETron (C)
-#04 jdez: OrzhovShadow (WB)
-#05 triosk: HardenedScales (G)
+#01 Thrall90: Jund Midrange (BRG)
+#02 _titoWii_96: WURG Control (WURG, Yorion)
+#03 Boin: E Tron (C)
+#04 jdez: Orzhov Shadow (WB)
+#05 triosk: Hardened Scales (G)
 #06 Laplasjan: Devoted (WG, Lurrus)
-#07 Dai1412: IzzetProwess (UR)
-#08 ecobaronen: SultaiControl (UBG)
+#07 Dai1412: Izzet Prowess (UR)
+#08 ecobaronen: Sultai Control (UBG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21

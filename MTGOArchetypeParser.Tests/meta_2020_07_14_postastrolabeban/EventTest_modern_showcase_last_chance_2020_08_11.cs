@@ -9,22 +9,22 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 mindcandy: TemurReclamation (URG)
-#02 eXavie: RakdosProwess (BR, Lurrus)
-#03 Snusnumrick: ETron (C)
+#01 mindcandy: Temur Reclamation (URG)
+#02 eXavie: Rakdos Prowess (BR, Lurrus)
+#03 Snusnumrick: E Tron (C)
 #04 __matsugan: Neobrand (UG)
-#05 cntrlfreak: UBRGShadow (UBRG)
+#05 cntrlfreak: UBRG Shadow (UBRG)
 #06 tibalt_of_red_sub: Mill (UB, Lurrus)
-#07 cnofafva: KGCAmuletTitan (WUBRG)
-#08 Toastxp: RakdosProwess (BR, Lurrus)
-#09 cws: GiftsStorm (UR)
-#10 TSPJendrek: SultaiControl (UBG)
-#11 mikev1919: MonoRedProwess (R)
-#12 Wuhsa: BringToNiv (WUBRG, Yorion)
-#13 shub89: IzzetProwess (UR)
+#07 cnofafva: KGC Amulet Titan (WUBRG)
+#08 Toastxp: Rakdos Prowess (BR, Lurrus)
+#09 cws: Gifts Storm (UR)
+#10 TSPJendrek: Sultai Control (UBG)
+#11 mikev1919: Mono Red Prowess (R)
+#12 Wuhsa: Bring To Niv (WUBRG, Yorion)
+#13 shub89: Izzet Prowess (UR)
 #14 Rhianne: Dredge (BRG)
-#15 2jjm: IzzetProwess (UR)
-#16 discoverN: KGCTron (G)
+#15 2jjm: Izzet Prowess (UR)
+#16 discoverN: KGC Tron (G)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

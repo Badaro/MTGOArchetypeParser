@@ -10,21 +10,21 @@ using System.Text;
 
 /*
 #01 Mcleskey: Humans (WUBRG)
-#02 Xwhale: ReclaimerTitan (WRG)
-#03 exoticherman: JundShadow (BRG)
+#02 Xwhale: Reclaimer Titan (WRG)
+#03 exoticherman: Jund Shadow (BRG)
 #04 OptimusBro: Humans (WUBRG)
-#05 DrDree: ShadowProwess (BR, Lurrus)
-#06 fingers1991: ShadowProwess (BR, Lurrus)
+#05 DrDree: Shadow Prowess (BR, Lurrus)
+#06 fingers1991: Shadow Prowess (BR, Lurrus)
 #07 creepypasta: Mill (UB)
-#08 SKK: ShadowProwess (BR, Lurrus)
-#09 BigPanda_559: GruulMidrange (RG)
-#10 JUJUBEAN__2004: UBRGControl (UBRG)
+#08 SKK: Shadow Prowess (BR, Lurrus)
+#09 BigPanda_559: Gruul Midrange (RG)
+#10 JUJUBEAN__2004: UBRG Control (UBRG)
 #11 rodeo: Burn (WR)
-#12 waffl3haos: MonoWhiteTaxes (W)
-#13 yPrincipe: ETron (R)
+#12 waffl3haos: Mono White Taxes (W)
+#13 yPrincipe: E Tron (R)
 #14 Lordzedane: Humans (WUBRG)
 #15 2radMTG: Humans (WUBRG)
-#16 hauterho: OboshAggro (R, Obosh)
+#16 hauterho: Obosh Aggro (R, Obosh)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

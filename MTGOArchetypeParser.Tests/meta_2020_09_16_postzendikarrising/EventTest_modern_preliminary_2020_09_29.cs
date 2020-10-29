@@ -9,16 +9,16 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 ZYURYO: WURGControl (WURG)
-#02 Oderus Urungus: BringToNiv (WUBRG)
+#01 ZYURYO: WURG Control (WURG)
+#02 Oderus Urungus: Bring To Niv (WUBRG)
 #03 RearrangedAS: Spirits (WU)
-#04 TeeCGGaming: OopsAllSpells (WUBRG)
-#05 Redgy819: RakdosMidrange (BR)
-#06 McWinSauce: BringToNiv (WUBRG, Jegantha)
+#04 TeeCGGaming: Oops All Spells (WUBRG)
+#05 Redgy819: Rakdos Midrange (BR)
+#06 McWinSauce: Bring To Niv (WUBRG, Jegantha)
 #07 Shazzam: Mill (UB, Lurrus)
-#08 Lord_of_Puntlantis: OopsAllSpells (WUBRG)
-#09 benchsummer: JundShadow (BRG)
-#10 Erik157751: ShadowProwess (BR, Lurrus)
+#08 Lord_of_Puntlantis: Oops All Spells (WUBRG)
+#09 benchsummer: Jund Shadow (BRG)
+#10 Erik157751: Shadow Prowess (BR, Lurrus)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

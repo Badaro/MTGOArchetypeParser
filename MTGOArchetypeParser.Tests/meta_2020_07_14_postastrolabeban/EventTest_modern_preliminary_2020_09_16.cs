@@ -9,14 +9,14 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 __matsugan: AdNauseam (WUB)
+#01 __matsugan: Ad Nauseam (WUB)
 #02 m-boy: Merfolk (UG)
 #03 Violent_Outburst: Scapeshift (URG)
 #04 kbzx: Dredge (WBRG)
-#05 Mikhathara1994: IzzetProwess (UR)
-#06 moyashi0904: TemurReclamation (URG)
-#07 felider: ETron (C)
-#08 otakkun: KGCTron (G)
+#05 Mikhathara1994: Izzet Prowess (UR)
+#06 moyashi0904: Temur Reclamation (URG)
+#07 felider: E Tron (C)
+#08 otakkun: KGC Tron (G)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

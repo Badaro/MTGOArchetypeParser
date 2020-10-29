@@ -11,17 +11,17 @@ using System.Text;
 /*
 #01 Laplasjan: Devoted (WG, Lurrus)
 #02 coert: Burn (WR)
-#03 Rooney56: BantControl (WUG)
-#04 trader08111: MarduProwess (WBR, Lurrus)
-#05 aManatease: IzzetProwess (UR)
-#06 Lavaridge: TemurReclamation (URG)
-#07 JV_7777: ETron (C)
+#03 Rooney56: Bant Control (WUG)
+#04 trader08111: Mardu Prowess (WBR, Lurrus)
+#05 aManatease: Izzet Prowess (UR)
+#06 Lavaridge: Temur Reclamation (URG)
+#07 JV_7777: E Tron (C)
 #08 ZYX_Jerry: Burn (WR, Lurrus)
-#09 ImmanuelKantrolGod: BantControl (WUG)
-#10 McWinSauce: BantControl (WUG)
-#11 Zar0s: ReclaimerTitan (WRG)
-#12 otakkun: KGCTron (G)
-#13 kbzx: IzzetProwess (UR)
+#09 ImmanuelKantrolGod: Bant Control (WUG)
+#10 McWinSauce: Bant Control (WUG)
+#11 Zar0s: Reclaimer Titan (WRG)
+#12 otakkun: KGC Tron (G)
+#13 kbzx: Izzet Prowess (UR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

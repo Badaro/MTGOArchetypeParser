@@ -9,14 +9,14 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 ilsecco14: GruulMidrange (RG)
+#01 ilsecco14: Gruul Midrange (RG)
 #02 Mcleskey: Bogles (WG)
-#03 TheMelkMan: ETron (C)
-#04 Gernardi: GrixisShadow (UBR)
-#05 dani_chad: JundMidrange (BRG)
-#06 GodOfSlaughter: GruulMidrange (RG)
-#07 Redgy819: JundMidrange (BRG)
-#08 Draccon136: MonoWhiteTaxes (W)
+#03 TheMelkMan: E Tron (C)
+#04 Gernardi: Grixis Shadow (UBR)
+#05 dani_chad: Jund Midrange (BRG)
+#06 GodOfSlaughter: Gruul Midrange (RG)
+#07 Redgy819: Jund Midrange (BRG)
+#08 Draccon136: Mono White Taxes (W)
 #09 AbelMolto: Burn (WRG)
 #10 Matti: Dredge (BRG)
 #11 TheEnzym: Mill (UB)

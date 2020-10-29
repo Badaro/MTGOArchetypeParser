@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 trader08111: GruulMidrange (RG)
+#01 trader08111: Gruul Midrange (RG)
 #02 Violent_Outburst: Scapeshift (URG)
-#03 mogis67: SultaiReclamation (UBG)
-#04 Gerschi: MarduProwess (WBR, Lurrus)
-#05 Samlg01: KGCAmuletTitan (WURG)
-#06 _Stream: IzzetProwess (UR)
-#07 IntegralHDK: JundMidrange (BRG)
-#08 aarongulevich: IzzetProwess (UR)
-#09 ilsecco14: SultaiControl (UBG)
+#03 mogis67: Sultai Reclamation (UBG)
+#04 Gerschi: Mardu Prowess (WBR, Lurrus)
+#05 Samlg01: KGC Amulet Titan (WURG)
+#06 _Stream: Izzet Prowess (UR)
+#07 IntegralHDK: Jund Midrange (BRG)
+#08 aarongulevich: Izzet Prowess (UR)
+#09 ilsecco14: Sultai Control (UBG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

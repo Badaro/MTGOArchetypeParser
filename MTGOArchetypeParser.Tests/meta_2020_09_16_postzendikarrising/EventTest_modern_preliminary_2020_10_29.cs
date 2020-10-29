@@ -9,19 +9,19 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 PTarts2win: ReclaimerTitan (WRG)
-#02 Theo_Jung: ReclaimerTitan (WRG)
-#03 cftsoc3: BantBlink (WUG)
-#04 Jaberwocki: JundMidrange (BRG)
-#05 Bruno_Mineiro: JundMidrange (BRG, Lurrus)
-#06 _a.c.a.i_2007_: HeliodCombo (WG)
-#07 Mulldrifter: ShadowProwess (WBR, Lurrus)
-#08 Redgy: JeskaiControl (WUR)
-#09 _Shatun_: MonoRedProwess (R)
-#10 waffl3haos: MonoWhiteTaxes (W)
-#11 Redgy819: AmuletTitan (UBRG)
-#12 EskimoJoe: MonoWhiteTaxes (W)
-#13 Xwhale: ReclaimerTitan (WRG)
+#01 PTarts2win: Reclaimer Titan (WRG)
+#02 Theo_Jung: Reclaimer Titan (WRG)
+#03 cftsoc3: Bant Blink (WUG)
+#04 Jaberwocki: Jund Midrange (BRG)
+#05 Bruno_Mineiro: Jund Midrange (BRG, Lurrus)
+#06 _a.c.a.i_2007_: Heliod Combo (WG)
+#07 Mulldrifter: Shadow Prowess (WBR, Lurrus)
+#08 Redgy: Jeskai Control (WUR)
+#09 _Shatun_: Mono Red Prowess (R)
+#10 waffl3haos: Mono White Taxes (W)
+#11 Redgy819: Amulet Titan (UBRG)
+#12 EskimoJoe: Mono White Taxes (W)
+#13 Xwhale: Reclaimer Titan (WRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

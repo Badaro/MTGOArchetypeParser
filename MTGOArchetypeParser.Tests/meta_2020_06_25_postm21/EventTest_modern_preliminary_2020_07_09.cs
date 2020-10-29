@@ -9,19 +9,19 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Graciasportanto: JundMidrange (BRG)
-#02 Icteridae: ETron (C)
+#01 Graciasportanto: Jund Midrange (BRG)
+#02 Icteridae: E Tron (C)
 #03 PRGJJAR: Dredge (BRG)
 #04 wordy333: Merfolk (UG)
 #05 samslam: Burn (WR)
 #06 andrw1232: Dredge (WBRG)
-#07 Samcaster-Mage: ETron (C)
+#07 Samcaster-Mage: E Tron (C)
 #08 starfall: Merfolk (UG)
-#09 Mcleskey: GruulMidrange (RG)
-#10 WareHouseGames: AdNauseam (WUB)
-#11 Toastxp: BantControl (WUG)
-#12 nedyahiske: ETron (C)
-#13 atm8162: TitanShift (RG)
+#09 Mcleskey: Gruul Midrange (RG)
+#10 WareHouseGames: Ad Nauseam (WUB)
+#11 Toastxp: Bant Control (WUG)
+#12 nedyahiske: E Tron (C)
+#13 atm8162: Titan Shift (RG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21

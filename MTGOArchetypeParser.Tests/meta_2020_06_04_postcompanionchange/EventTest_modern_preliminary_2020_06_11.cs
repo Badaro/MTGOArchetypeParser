@@ -9,20 +9,20 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Mistakenn: KGCAmuletTitan (WUBRG)
+#01 Mistakenn: KGC Amulet Titan (WUBRG)
 #02 Lord_Beerus: Burn (WR)
 #03 il_matagatto: Burn (WR)
-#04 _Shatun_: GruulMidrange (RG)
-#05 Sonic_Smasher: BantControl (WUG)
-#06 Lirek154: AzoriusControl (WU)
-#07 DreamsOfAshiok: ETron (C)
+#04 _Shatun_: Gruul Midrange (RG)
+#05 Sonic_Smasher: Bant Control (WUG)
+#06 Lirek154: Azorius Control (WU)
+#07 DreamsOfAshiok: E Tron (C)
 #08 Charlesjacenorman: Burn (WR, Lurrus)
 #09 flatnose: Merfolk (UG)
 #10 Theo_Jung: Uroza (URG)
 #11 PRGJJAR: Dredge (BRG)
 #12 Toastxp: Uroza (URG)
-#13 EdB: AmuletTitan (UBRG)
-#14 Doni_Dominaria: MonoRedProwess (R, Jegantha)
+#13 EdB: Amulet Titan (UBRG)
+#14 Doni_Dominaria: Mono Red Prowess (R, Jegantha)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange

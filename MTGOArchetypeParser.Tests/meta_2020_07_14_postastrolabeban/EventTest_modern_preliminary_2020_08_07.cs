@@ -9,18 +9,18 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 JRDC14: SultaiMidrange (UBG)
-#02 Snusnumrick: ETron (C)
-#03 iwanteatebi: IzzetProwess (UR)
-#04 komattaman: GruulMidrange (RG)
+#01 JRDC14: Sultai Midrange (UBG)
+#02 Snusnumrick: E Tron (C)
+#03 iwanteatebi: Izzet Prowess (UR)
+#04 komattaman: Gruul Midrange (RG)
 #05 Delthar: Infect (BG)
 #06 Beenew: Burn (WR)
-#07 katoriarch123: BantControl (WUG)
+#07 katoriarch123: Bant Control (WUG)
 #08 v3sp_tv: Elementals (WUBRG)
-#09 kthanakit26: IzzetProwess (UR)
-#10 ACG88: BantMidrange (WUG)
+#09 kthanakit26: Izzet Prowess (UR)
+#10 ACG88: Bant Midrange (WUG)
 #11 Kazuga: Dredge (WBRG)
-#12 SebastianStueckl: GruulMidrange (RG)
+#12 SebastianStueckl: Gruul Midrange (RG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

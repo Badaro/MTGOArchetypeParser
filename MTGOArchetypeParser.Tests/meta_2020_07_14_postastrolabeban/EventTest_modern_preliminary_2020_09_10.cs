@@ -9,20 +9,20 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 billsive: TemurControl (URG)
+#01 billsive: Temur Control (URG)
 #02 NightKnight131: Devoted (WG, Lurrus)
-#03 SpikeYou: SultaiReclamation (UBG)
+#03 SpikeYou: Sultai Reclamation (UBG)
 #04 Icteridae: Bogles (WG, Lurrus)
-#05 azax: GrixisShadow (UBR)
-#06 SunofNothing: SultaiControl (UBG)
-#07 xstaytrue1102: JundMidrange (BRG)
-#08 karatedom: SultaiControl (UBG)
-#09 pokerswizard: BorosProwess (WR, Lurrus)
-#10 _Stream: IzzetProwess (UR)
+#05 azax: Grixis Shadow (UBR)
+#06 SunofNothing: Sultai Control (UBG)
+#07 xstaytrue1102: Jund Midrange (BRG)
+#08 karatedom: Sultai Control (UBG)
+#09 pokerswizard: Boros Prowess (WR, Lurrus)
+#10 _Stream: Izzet Prowess (UR)
 #11 _LSN_: Burn (WR, Lurrus)
-#12 qbturtle15: GruulMidrange (RG)
-#13 penips: OrzhovEldraziTaxes (WB)
-#14 Kricha13: BorosProwess (WR, Lurrus)
+#12 qbturtle15: Gruul Midrange (RG)
+#13 penips: Orzhov Eldrazi Taxes (WB)
+#14 Kricha13: Boros Prowess (WR, Lurrus)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

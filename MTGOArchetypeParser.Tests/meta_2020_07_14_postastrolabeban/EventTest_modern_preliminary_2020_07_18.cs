@@ -9,23 +9,23 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Rav104: IzzetProwess (UR)
+#01 Rav104: Izzet Prowess (UR)
 #02 SouthernSliver: Slivers (WUBRG)
-#03 Toastxp: MarduProwess (WBR, Lurrus)
-#04 lsmguys: AzoriusControl (WU)
+#03 Toastxp: Mardu Prowess (WBR, Lurrus)
+#04 lsmguys: Azorius Control (WU)
 #05 Nammersquats: Infect (UG)
-#06 OscarS66: RakdosMidrange (BR)
+#06 OscarS66: Rakdos Midrange (BR)
 #07 _LSN_: Burn (WR)
-#08 GedionRavenor: SultaiControl (UBG)
-#09 jhollan42: AmuletTitan (WUBRG)
+#08 GedionRavenor: Sultai Control (UBG)
+#09 jhollan42: Amulet Titan (WUBRG)
 #10 NHA37: Burn (WR)
-#11 Thrall90: JundMidrange (BRG)
+#11 Thrall90: Jund Midrange (BRG)
 #12 bbq42069dude: Humans (WUBRG)
 #13 DylansHyper: Dredge (BRG)
-#14 BoltTheBirds: GiftsStorm (UR)
-#15 gazmon48: ETron (C)
-#16 hodortimebaby: KGCTron (G)
-#17 Night_Owl_61: JundMidrange (BRG)
+#14 BoltTheBirds: Gifts Storm (UR)
+#15 gazmon48: E Tron (C)
+#16 hodortimebaby: KGC Tron (G)
+#17 Night_Owl_61: Jund Midrange (BRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

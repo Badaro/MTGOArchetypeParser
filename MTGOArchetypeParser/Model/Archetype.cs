@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace MTGOArchetypeParser.Model
 {
@@ -15,6 +16,10 @@ namespace MTGOArchetypeParser.Model
                 string colorName = GetColorName(color);
                 name = name.Replace("Generic", colorName);
             }
+
+            // Source: https://stackoverflow.com/questions/3216085/split-a-pascalcase-string-into-separate-words
+            name = new Regex(@"(?<=[A-Z])(?=[A-Z][a-z])|(?<=[^A-Z])(?=[A-Z])|(?<=[A-Za-z])(?=[^A-Za-z])").Replace(name, " ");
+
             return name;
         }
 

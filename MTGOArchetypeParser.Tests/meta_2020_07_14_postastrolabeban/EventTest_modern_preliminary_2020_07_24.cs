@@ -9,24 +9,24 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Mordeka1ser: BringToNiv (WUBRG, Yorion)
+#01 Mordeka1ser: Bring To Niv (WUBRG, Yorion)
 #02 kthanakit26: Burn (WR)
-#03 SebastianStueckl: GruulMidrange (RG)
-#04 azatoyellow: GruulProwess (RG, Jegantha)
-#05 Niedzwiedz: SnoopGoblins (BR)
-#06 gyyby297: ThopterUrza (WU)
-#07 tia05: TitanShift (RG)
-#08 Ganksyou: AzoriusControl (WU)
+#03 SebastianStueckl: Gruul Midrange (RG)
+#04 azatoyellow: Gruul Prowess (RG, Jegantha)
+#05 Niedzwiedz: Snoop Goblins (BR)
+#06 gyyby297: Thopter Urza (WU)
+#07 tia05: Titan Shift (RG)
+#08 Ganksyou: Azorius Control (WU)
 #09 Cherryxman: Scapeshift (URG)
-#10 Lukas261997: AzoriusControl (WU)
+#10 Lukas261997: Azorius Control (WU)
 #11 JustBurn420: Slivers (WUBRG)
-#12 Healer: IncineratorBurn (R)
-#13 Toastxp: UBRGShadow (UBRG)
+#12 Healer: Incinerator Burn (R)
+#13 Toastxp: UBRG Shadow (UBRG)
 #14 Hyeri0418: Dredge (WBRG)
-#15 sff_mtg: KGCTron (G)
-#16 siomomi: ETron (C)
-#17 otakkun: KGCTron (G)
-#18 _INF_: GiftsStorm (UR)
+#15 sff_mtg: KGC Tron (G)
+#16 siomomi: E Tron (C)
+#17 otakkun: KGC Tron (G)
+#18 _INF_: Gifts Storm (UR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

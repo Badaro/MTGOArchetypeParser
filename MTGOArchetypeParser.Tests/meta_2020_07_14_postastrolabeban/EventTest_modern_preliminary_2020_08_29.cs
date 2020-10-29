@@ -9,17 +9,17 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 karn_90: RakdosProwess (BR, Lurrus)
-#02 ZYX_Jerry: BorosProwess (WR, Lurrus)
-#03 fradelrock: KGCTron (G)
-#04 kthanakit26: IzzetProwess (UR)
-#05 Toastxp: OboshAggro (R, Obosh)
-#06 cftsoc3: BantBlink (WUG)
+#01 karn_90: Rakdos Prowess (BR, Lurrus)
+#02 ZYX_Jerry: Boros Prowess (WR, Lurrus)
+#03 fradelrock: KGC Tron (G)
+#04 kthanakit26: Izzet Prowess (UR)
+#05 Toastxp: Obosh Aggro (R, Obosh)
+#06 cftsoc3: Bant Blink (WUG)
 #07 zMunkeyXz: Mill (UBG)
-#08 Zar0s: ReclaimerTitan (WRG)
-#09 greenboy011: AzoriusControl (WU)
+#08 Zar0s: Reclaimer Titan (WRG)
+#09 greenboy011: Azorius Control (WU)
 #10 Kazuga: Dredge (BRG)
-#11 McWinSauce: BantControl (WUG)
+#11 McWinSauce: Bant Control (WUG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

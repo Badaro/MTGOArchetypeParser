@@ -9,17 +9,17 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 TSPJendrek: SultaiControl (UBG)
+#01 TSPJendrek: Sultai Control (UBG)
 #02 Sommertroll: Humans (WUBRG)
-#03 Capriccioso: BringToNiv (WUBRG)
+#03 Capriccioso: Bring To Niv (WUBRG)
 #04 paucr5: Devoted (WG, Lurrus)
-#05 ContraEgo: ThopterUrza (UBR)
-#06 TheJigIsAlwaysup: ShadowProwess (BR, Lurrus)
-#07 j_money10: ShadowProwess (BR, Lurrus)
-#08 SKK: OopsAllSpells (WUBRG)
-#09 Rinko: EnduringIdeal (WR)
-#10 mansak: JundMidrange (BRG)
-#11 Janh: SultaiControl (UBG)
+#05 ContraEgo: Thopter Urza (UBR)
+#06 TheJigIsAlwaysup: Shadow Prowess (BR, Lurrus)
+#07 j_money10: Shadow Prowess (BR, Lurrus)
+#08 SKK: Oops All Spells (WUBRG)
+#09 Rinko: Enduring Ideal (WR)
+#10 mansak: Jund Midrange (BRG)
+#11 Janh: Sultai Control (UBG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

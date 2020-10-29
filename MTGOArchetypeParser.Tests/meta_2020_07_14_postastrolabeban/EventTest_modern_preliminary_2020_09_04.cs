@@ -9,14 +9,14 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 albert62: JundMidrange (BRG)
-#02 The_nayr: OboshAggro (R, Obosh)
-#03 liuyuchen: JundMidrange (BRG)
-#04 ImmanuelKantrolGod: BantControl (WUG)
+#01 albert62: Jund Midrange (BRG)
+#02 The_nayr: Obosh Aggro (R, Obosh)
+#03 liuyuchen: Jund Midrange (BRG)
+#04 ImmanuelKantrolGod: Bant Control (WUG)
 #05 BERNASTORRES: Bogles (WG, Lurrus)
-#06 Trid0n: KGCAmuletTitan (WUBRG)
-#07 Somefellow: AmuletTitan (URG)
-#08 Cherryxman: NayaMidrange (WRG)
+#06 Trid0n: KGC Amulet Titan (WUBRG)
+#07 Somefellow: Amulet Titan (URG)
+#08 Cherryxman: Naya Midrange (WRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

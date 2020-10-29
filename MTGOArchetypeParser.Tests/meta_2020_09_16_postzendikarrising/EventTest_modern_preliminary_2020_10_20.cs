@@ -9,19 +9,19 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Patxi: WURGControl (WURG)
-#02 Kiwairay: OopsAllSpells (WUBRG)
-#03 McWinSauce: WURGControl (WURG)
-#04 TwistedWombat: OmnathSaheeli (WURG, Jegantha)
-#05 Sanchez5272: ETron (C)
-#06 ArchivalRain: GiftsStorm (UR)
-#07 Biednarccio: MonoWhiteTaxes (W)
-#08 _Shatun_: OboshAggro (R, Obosh)
-#09 medvedev: OmnathSaheeli (WURG, Jegantha)
-#10 Redgy819: OmnathSaheeli (WURG, Jegantha)
-#11 Danker: AzoriusControl (WU)
-#12 RitterAG: IzzetProwess (UR)
-#13 bwheezy: JeskaiControl (WUR)
+#01 Patxi: WURG Control (WURG)
+#02 Kiwairay: Oops All Spells (WUBRG)
+#03 McWinSauce: WURG Control (WURG)
+#04 TwistedWombat: Omnath Saheeli (WURG, Jegantha)
+#05 Sanchez5272: E Tron (C)
+#06 ArchivalRain: Gifts Storm (UR)
+#07 Biednarccio: Mono White Taxes (W)
+#08 _Shatun_: Obosh Aggro (R, Obosh)
+#09 medvedev: Omnath Saheeli (WURG, Jegantha)
+#10 Redgy819: Omnath Saheeli (WURG, Jegantha)
+#11 Danker: Azorius Control (WU)
+#12 RitterAG: Izzet Prowess (UR)
+#13 bwheezy: Jeskai Control (WUR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

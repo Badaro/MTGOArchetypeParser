@@ -9,14 +9,14 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 mariogomes097: GrixisShadow (UBR)
-#02 WhiTe TsaR: SultaiControl (UBG)
-#03 _INF_: GiftsStorm (UR)
-#04 Janh: TemurReclamation (URG)
+#01 mariogomes097: Grixis Shadow (UBR)
+#02 WhiTe TsaR: Sultai Control (UBG)
+#03 _INF_: Gifts Storm (UR)
+#04 Janh: Temur Reclamation (URG)
 #05 bubbsei: Dredge (BRG)
-#06 ZYURYO: JundMidrange (BRG)
-#07 2k4mmorton: MonoRedProwess (R)
-#08 skeptimist: BantControl (WUG)
+#06 ZYURYO: Jund Midrange (BRG)
+#07 2k4mmorton: Mono Red Prowess (R)
+#08 skeptimist: Bant Control (WUG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange

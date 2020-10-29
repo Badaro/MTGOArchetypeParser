@@ -9,14 +9,14 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Paeng_Paeng: GiftsStorm (UR)
-#02 HouseOfManaMTG: AmuletTitan (UBRG)
-#03 Zar0s: WURGControl (WURG)
+#01 Paeng_Paeng: Gifts Storm (UR)
+#02 HouseOfManaMTG: Amulet Titan (UBRG)
+#03 Zar0s: WURG Control (WURG)
 #04 Laplasjan: Devoted (WG, Lurrus)
-#05 otakkun: KGCTron (G)
-#06 JakeHelms: WURGControl (WURG)
-#07 Violent_Outburst: UBRGControl (UBRG)
-#08 crazyklicker: HeliodCombo (WG)
+#05 otakkun: KGC Tron (G)
+#06 JakeHelms: WURG Control (WURG)
+#07 Violent_Outburst: UBRG Control (UBRG)
+#08 crazyklicker: Heliod Combo (WG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

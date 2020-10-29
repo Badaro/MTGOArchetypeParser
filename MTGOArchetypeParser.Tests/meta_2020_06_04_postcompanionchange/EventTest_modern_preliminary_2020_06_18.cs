@@ -9,18 +9,18 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Icteridae: ETron (C)
-#02 DreamsOfAshiok: ETron (C)
+#01 Icteridae: E Tron (C)
+#02 DreamsOfAshiok: E Tron (C)
 #03 yamakiller: Humans (WUBRG)
-#04 Hiru: RakdosMidrange (BR)
+#04 Hiru: Rakdos Midrange (BR)
 #05 PTarts2win: Dredge (BRG)
 #06 flatnose: Merfolk (UG)
-#07 ilsecco14: MonoRedProwess (R)
+#07 ilsecco14: Mono Red Prowess (R)
 #08 wambocombo2020: Uroza (UBG, Yorion)
-#09 MadCowChicken: SelesnyaEldrazi (WG, Jegantha)
-#10 Stompy45: GruulMidrange (RG)
+#09 MadCowChicken: Selesnya Eldrazi (WG, Jegantha)
+#10 Stompy45: Gruul Midrange (RG)
 #11 _LSN_: Burn (WR)
-#12 Traft: AdNauseam (WUB)
+#12 Traft: Ad Nauseam (WUB)
 #13 WebZone: Humans (WUBRG)
 */
 

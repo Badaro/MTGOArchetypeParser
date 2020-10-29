@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Soondubu: HeliodCombo (WG)
-#02 eclipse4343: AzoriusControl (WU)
-#03 Smdster: WURGControl (WURG)
-#04 hauterho: OboshAggro (R, Obosh)
-#05 ZYURYO: SultaiControl (UBG)
+#01 Soondubu: Heliod Combo (WG)
+#02 eclipse4343: Azorius Control (WU)
+#03 Smdster: WURG Control (WURG)
+#04 hauterho: Obosh Aggro (R, Obosh)
+#05 ZYURYO: Sultai Control (UBG)
 #06 Wizard_2002: Humans (WUBRG)
 #07 _LSN_: Burn (WR)
 #08 mario7389: Burn (WRG)
-#09 Larry11: IzzetProwess (UR)
+#09 Larry11: Izzet Prowess (UR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

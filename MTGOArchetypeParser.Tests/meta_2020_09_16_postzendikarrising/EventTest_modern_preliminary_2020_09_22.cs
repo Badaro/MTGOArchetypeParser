@@ -9,22 +9,22 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Zar0s: GruulMidrange (RG)
-#02 McWinSauce: WURGControl (WURG)
-#03 SgtMcMuffins: ReclaimerTitan (WRG)
-#04 Redgy819: UBRGShadow (UBRG)
-#05 benchsummer: UBRGShadow (UBRG)
-#06 Humpaa: ShadowProwess (BR, Lurrus)
+#01 Zar0s: Gruul Midrange (RG)
+#02 McWinSauce: WURG Control (WURG)
+#03 SgtMcMuffins: Reclaimer Titan (WRG)
+#04 Redgy819: UBRG Shadow (UBRG)
+#05 benchsummer: UBRG Shadow (UBRG)
+#06 Humpaa: Shadow Prowess (BR, Lurrus)
 #07 solaec0501: Humans (WUBRG)
 #08 TheSouthDakota: Dredge (BRG)
-#09 Lukas261997: GrixisShadow (UBR)
+#09 Lukas261997: Grixis Shadow (UBR)
 #10 Oderus Urungus: Humans (WUBRG)
-#11 andrw1232: WURGControl (WURG)
+#11 andrw1232: WURG Control (WURG)
 #12 wiltay0494: Neobrand (UG)
-#13 kanister: WURGControl (WURG)
-#14 ZYURYO: WURGControl (WURG)
+#13 kanister: WURG Control (WURG)
+#14 ZYURYO: WURG Control (WURG)
 #15 WhiTe TsaR: Humans (WUBRG)
-#16 indianpancake: WURGControl (WURG)
+#16 indianpancake: WURG Control (WURG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

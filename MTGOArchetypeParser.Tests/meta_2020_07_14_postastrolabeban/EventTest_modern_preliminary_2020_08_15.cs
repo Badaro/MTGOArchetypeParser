@@ -9,21 +9,21 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Rooney56: AzoriusControl (WU)
-#02 CavalloGoloso: IzzetControl (UR)
-#03 Costola91: GrixisShadow (UBR)
-#04 BasedCloy: ETron (C)
-#05 Wuhsa: BringToNiv (WUBRG, Yorion)
-#06 lilianaofthevess: IzzetProwess (UR)
-#07 CReactor: KGCTron (G)
-#08 Imaeda: IzzetProwess (UR)
-#09 Hampuse1: DiceFactoryTron (C)
-#10 BSK_hercules: TemurReclamation (URG)
-#11 Zar0s: KGCAmuletTitan (WUBRG)
-#12 otakkun: KGCTron (G)
-#13 ht991122: TemurReclamation (URG)
-#14 kbzx: IzzetProwess (UR)
-#15 komattaman: GruulMidrange (RG)
+#01 Rooney56: Azorius Control (WU)
+#02 CavalloGoloso: Izzet Control (UR)
+#03 Costola91: Grixis Shadow (UBR)
+#04 BasedCloy: E Tron (C)
+#05 Wuhsa: Bring To Niv (WUBRG, Yorion)
+#06 lilianaofthevess: Izzet Prowess (UR)
+#07 CReactor: KGC Tron (G)
+#08 Imaeda: Izzet Prowess (UR)
+#09 Hampuse1: Dice Factory Tron (C)
+#10 BSK_hercules: Temur Reclamation (URG)
+#11 Zar0s: KGC Amulet Titan (WUBRG)
+#12 otakkun: KGC Tron (G)
+#13 ht991122: Temur Reclamation (URG)
+#14 kbzx: Izzet Prowess (UR)
+#15 komattaman: Gruul Midrange (RG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

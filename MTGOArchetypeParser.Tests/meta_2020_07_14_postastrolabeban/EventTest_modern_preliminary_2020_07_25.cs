@@ -9,23 +9,23 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 mac121711: JeskaiControl (WUR)
-#02 AstralPlane: IzzetProwess (UR)
+#01 mac121711: Jeskai Control (WUR)
+#02 AstralPlane: Izzet Prowess (UR)
 #03 chengyiw: Dredge (WBRG)
-#04 JV_7777: ETron (C)
-#05 SakeIzumo: IzzetProwess (UR)
-#06 TheLousyZoot: SnoopGoblins (WBR)
-#07 tyaburi: MonoRedProwess (R)
-#08 Zonast: AdNauseam (WUB)
+#04 JV_7777: E Tron (C)
+#05 SakeIzumo: Izzet Prowess (UR)
+#06 TheLousyZoot: Snoop Goblins (WBR)
+#07 tyaburi: Mono Red Prowess (R)
+#08 Zonast: Ad Nauseam (WUB)
 #09 nekonekoneko: Dredge (WBRG)
-#10 updraftelemental: JundShadow (BRG)
-#11 Toastxp: GruulProwess (RG, Jegantha)
-#12 Granham: AzoriusControl (WU)
-#13 Lexmart: BantControl (WUG)
-#14 kanister: TemurControl (URG)
+#10 updraftelemental: Jund Shadow (BRG)
+#11 Toastxp: Gruul Prowess (RG, Jegantha)
+#12 Granham: Azorius Control (WU)
+#13 Lexmart: Bant Control (WUG)
+#14 kanister: Temur Control (URG)
 #15 Nickburch13: Burn (WR, Lurrus)
-#16 _INF_: GiftsStorm (UR)
-#17 hoveydw: JundShadow (BRG, Lurrus)
+#16 _INF_: Gifts Storm (UR)
+#17 hoveydw: Jund Shadow (BRG, Lurrus)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 ImmanuelKantrolGod: AzoriusControl (WU)
-#02 _INF_: GiftsStorm (UR)
-#03 BSK_hercules: IzzetProwess (UR)
+#01 ImmanuelKantrolGod: Azorius Control (WU)
+#02 _INF_: Gifts Storm (UR)
+#03 BSK_hercules: Izzet Prowess (UR)
 #04 johnsmith3373: Humans (WUBRG)
-#05 MiamiKidz: IzzetProwess (UR)
-#06 Shorak123: SultaiReclamation (UBG)
-#07 siomomi: ETron (C)
-#08 GoonLord: GruulMidrange (RG)
-#09 ZYURYO: AzoriusControl (WU)
+#05 MiamiKidz: Izzet Prowess (UR)
+#06 Shorak123: Sultai Reclamation (UBG)
+#07 siomomi: E Tron (C)
+#08 GoonLord: Gruul Midrange (RG)
+#09 ZYURYO: Azorius Control (WU)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

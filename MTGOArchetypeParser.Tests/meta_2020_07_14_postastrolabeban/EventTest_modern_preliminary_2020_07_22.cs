@@ -9,21 +9,21 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 sff_mtg: KGCTron (G)
-#02 bnlunt: UTron (U)
-#03 alemilan19: ETron (C)
-#04 Toastxp: JundProwess (BRG)
-#05 jhollan42: GiftsStorm (UR)
-#06 TSPJendrek: AzoriusControl (WU)
-#07 Ganksyou: AzoriusControl (WU)
-#08 _Falcon_: ETron (C)
+#01 sff_mtg: KGC Tron (G)
+#02 bnlunt: U Tron (U)
+#03 alemilan19: E Tron (C)
+#04 Toastxp: Jund Prowess (BRG)
+#05 jhollan42: Gifts Storm (UR)
+#06 TSPJendrek: Azorius Control (WU)
+#07 Ganksyou: Azorius Control (WU)
+#08 _Falcon_: E Tron (C)
 #09 DarthMalak: Smallpox (WB)
-#10 komattaman: GruulMidrange (RG)
-#11 siomomi: ETron (C)
-#12 _alice1986_: RakdosProwess (BR, Lurrus)
+#10 komattaman: Gruul Midrange (RG)
+#11 siomomi: E Tron (C)
+#12 _alice1986_: Rakdos Prowess (BR, Lurrus)
 #13 Delthar: Infect (UG)
-#14 JV_7777: ETron (C)
-#15 MATTHEWFOULKES: IzzetProwess (UR)
+#14 JV_7777: E Tron (C)
+#15 MATTHEWFOULKES: Izzet Prowess (UR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

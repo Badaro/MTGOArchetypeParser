@@ -9,22 +9,22 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 ilsecco14: ShadowProwess (BR, Lurrus)
-#02 Redgy: JeskaiControl (WUR)
-#03 Erik157751: ShadowProwess (BR, Lurrus)
-#04 _Falcon_: IzzetProwess (UR)
-#05 AlexanderRosdahl: SultaiControl (UBG)
-#06 Sodeq: AdNauseam (WUB)
-#07 Tyerube1618: GiftsStorm (URG)
-#08 timewalkinonsunshine: TakingTurns (URG)
-#09 ZYURYO: WURGControl (WURG)
-#10 audio336: ShadowProwess (BR, Lurrus)
+#01 ilsecco14: Shadow Prowess (BR, Lurrus)
+#02 Redgy: Jeskai Control (WUR)
+#03 Erik157751: Shadow Prowess (BR, Lurrus)
+#04 _Falcon_: Izzet Prowess (UR)
+#05 AlexanderRosdahl: Sultai Control (UBG)
+#06 Sodeq: Ad Nauseam (WUB)
+#07 Tyerube1618: Gifts Storm (URG)
+#08 timewalkinonsunshine: Taking Turns (URG)
+#09 ZYURYO: WURG Control (WURG)
+#10 audio336: Shadow Prowess (BR, Lurrus)
 #11 Sanchez5272: Humans (WUBRG)
 #12 MissTrigger: Humans (WUBRG)
-#13 kiko: MonoWhiteTaxes (W)
-#14 NosonosaN: WURGControl (WURG)
-#15 CavalloGoloso: IzzetControl (UR)
-#16 Gerschi: OopsAllSpells (WUBRG)
+#13 kiko: Mono White Taxes (W)
+#14 NosonosaN: WURG Control (WURG)
+#15 CavalloGoloso: Izzet Control (UR)
+#16 Gerschi: Oops All Spells (WUBRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

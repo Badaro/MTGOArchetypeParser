@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Ouranos139: AmuletTitan (WUBRG)
-#02 Toastxp: SultaiControl (UBG)
-#03 fingers1991: BantControl (WUG)
-#04 Theo_Jung: SultaiControl (UBG)
-#05 Samcaster-Mage: ETron (C)
-#06 Icteridae: ETron (C)
-#07 TubbyBatman: IzzetProwess (UR)
-#08 no_lyfe: MonoRedProwess (R)
-#09 karatedom: SnoopGoblins (BR)
+#01 Ouranos139: Amulet Titan (WUBRG)
+#02 Toastxp: Sultai Control (UBG)
+#03 fingers1991: Bant Control (WUG)
+#04 Theo_Jung: Sultai Control (UBG)
+#05 Samcaster-Mage: E Tron (C)
+#06 Icteridae: E Tron (C)
+#07 TubbyBatman: Izzet Prowess (UR)
+#08 no_lyfe: Mono Red Prowess (R)
+#09 karatedom: Snoop Goblins (BR)
 #10 Mr_Sheep: Burn (WR)
 #11 Motown123: Merfolk (U)
 */

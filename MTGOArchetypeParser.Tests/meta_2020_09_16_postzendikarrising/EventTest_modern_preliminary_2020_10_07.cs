@@ -9,17 +9,17 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 otakkun: WURGControl (WURG)
-#02 Sam_Lewin: BorosLandDestruction (WR)
-#03 tkcheungab: KGCTron (BG)
-#04 coert: HeliodCombo (WG)
-#05 AstralPlane: ShadowProwess (BR, Lurrus)
-#06 stayrospet: ShadowProwess (BR, Lurrus)
-#07 Artem_Kuhtin: WhiteDevotion (W)
-#08 im2g00t4ubarn: WURGControl (WURG)
+#01 otakkun: WURG Control (WURG)
+#02 Sam_Lewin: Boros Land Destruction (WR)
+#03 tkcheungab: KGC Tron (BG)
+#04 coert: Heliod Combo (WG)
+#05 AstralPlane: Shadow Prowess (BR, Lurrus)
+#06 stayrospet: Shadow Prowess (BR, Lurrus)
+#07 Artem_Kuhtin: White Devotion (W)
+#08 im2g00t4ubarn: WURG Control (WURG)
 #09 sokos13: Humans (WUBRG)
-#10 JakeHelms: ShadowProwess (WBR, Lurrus)
-#11 Johnny_Hobbs: WURGControl (WURG)
+#10 JakeHelms: Shadow Prowess (WBR, Lurrus)
+#11 Johnny_Hobbs: WURG Control (WURG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

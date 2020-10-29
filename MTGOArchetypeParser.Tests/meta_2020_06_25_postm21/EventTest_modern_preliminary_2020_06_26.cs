@@ -10,14 +10,14 @@ using System.Text;
 
 /*
 #01 MindOfAKid: Burn (WR, Lurrus)
-#02 Trisky: GruulMidrange (RG)
-#03 staples87: ETron (C)
-#04 Misplacedginger: BantControl (WUG)
+#02 Trisky: Gruul Midrange (RG)
+#03 staples87: E Tron (C)
+#04 Misplacedginger: Bant Control (WUG)
 #05 samslam: Burn (WR)
 #06 yamakiller: Neobrand (UG)
-#07 qbturtle15: GruulMidrange (RG, Obosh)
-#08 no_lyfe: MonoRedProwess (R)
-#09 tyty123: GruulMidrange (RG)
+#07 qbturtle15: Gruul Midrange (RG, Obosh)
+#08 no_lyfe: Mono Red Prowess (R)
+#09 tyty123: Gruul Midrange (RG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21

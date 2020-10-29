@@ -10,18 +10,18 @@ using System.Text;
 
 /*
 #01 juzam_gin: Dredge (WBRG)
-#02 NosonosaN: JundProwess (BRG, Lurrus)
-#03 McWinSauce: BantControl (WUG)
-#04 iL_Tedesco: JundMidrange (BRG)
-#05 Lavaridge: TemurReclamation (URG)
+#02 NosonosaN: Jund Prowess (BRG, Lurrus)
+#03 McWinSauce: Bant Control (WUG)
+#04 iL_Tedesco: Jund Midrange (BRG)
+#05 Lavaridge: Temur Reclamation (URG)
 #06 Tsubasa_Cat: Burn (WR)
-#07 MrSeri: HeliodCombo (WG)
+#07 MrSeri: Heliod Combo (WG)
 #08 AuDollarydoo: Crabvine (UBG)
-#09 HouseOfManaMTG: RakdosProwess (BR, Lurrus)
-#10 therock988: RakdosProwess (BR, Lurrus)
-#11 ZYURYO: GruulMidrange (RG)
-#12 DamonXWind: IzzetProwess (UR)
-#13 kthanakit26: IzzetProwess (UR)
+#09 HouseOfManaMTG: Rakdos Prowess (BR, Lurrus)
+#10 therock988: Rakdos Prowess (BR, Lurrus)
+#11 ZYURYO: Gruul Midrange (RG)
+#12 DamonXWind: Izzet Prowess (UR)
+#13 kthanakit26: Izzet Prowess (UR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

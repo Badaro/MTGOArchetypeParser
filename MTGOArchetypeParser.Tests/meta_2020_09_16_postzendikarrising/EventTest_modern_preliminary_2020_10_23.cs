@@ -9,19 +9,19 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 bigjc00: AmuletTitan (UBRG)
-#02 Ihavethefire: MarduMidrange (WBR)
+#01 bigjc00: Amulet Titan (UBRG)
+#02 Ihavethefire: Mardu Midrange (WBR)
 #03 Nammersquats: Infect (UG)
-#04 reswax: WURGControl (WURG)
-#05 Xwhale: ReclaimerTitan (WRG)
-#06 rameison: KGCTron (G)
+#04 reswax: WURG Control (WURG)
+#05 Xwhale: Reclaimer Titan (WRG)
+#06 rameison: KGC Tron (G)
 #07 Bordas99: Dredge (BRG)
-#08 PTarts2win: WURGControl (WURG)
-#09 lordavery: BantMidrange (WUG)
-#10 ecobaronen: WURGControl (WURG)
+#08 PTarts2win: WURG Control (WURG)
+#09 lordavery: Bant Midrange (WUG)
+#10 ecobaronen: WURG Control (WURG)
 #11 GombleWhop: Humans (WUBRG)
 #12 QuaCk QuaCk: Humans (WUBRG)
-#13 NosonosaN: WURGControl (WURG)
+#13 NosonosaN: WURG Control (WURG)
 #14 mario7389: Burn (WRG)
 */
 

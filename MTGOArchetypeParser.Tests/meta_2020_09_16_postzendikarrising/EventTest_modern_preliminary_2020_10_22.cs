@@ -9,22 +9,22 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Samlg01: AmuletTitan (WUBRG)
-#02 HardcoreHenry: AbzanMidrange (WBG)
-#03 Gobern: SultaiReclamation (UBG)
+#01 Samlg01: Amulet Titan (WUBRG)
+#02 HardcoreHenry: Abzan Midrange (WBG)
+#03 Gobern: Sultai Reclamation (UBG)
 #04 _LSN_: Burn (WR)
 #05 PRGJJAR: Dredge (BRG)
-#06 SKK: ShadowProwess (BR, Lurrus)
-#07 JUJUBEAN__2004: UBRGControl (UBRG)
-#08 pokerswizard: ShadowProwess (BR, Lurrus)
-#09 Soondubu: HeliodCombo (WG)
-#10 TerminalJustice: GiftsStorm (UR)
-#11 Lordzedane: OopsAllSpells (WUBRG)
+#06 SKK: Shadow Prowess (BR, Lurrus)
+#07 JUJUBEAN__2004: UBRG Control (UBRG)
+#08 pokerswizard: Shadow Prowess (BR, Lurrus)
+#09 Soondubu: Heliod Combo (WG)
+#10 TerminalJustice: Gifts Storm (UR)
+#11 Lordzedane: Oops All Spells (WUBRG)
 #12 CitrusD: Yawgmoth (BG)
-#13 MikeSoles: RakdosProwess (BR, Lurrus)
-#14 Icteridae: GruulMidrange (RG)
-#15 yumad3988: EsperShadow (WUB)
-#16 ZYURYO: WURGControl (WURG)
+#13 MikeSoles: Rakdos Prowess (BR, Lurrus)
+#14 Icteridae: Gruul Midrange (RG)
+#15 yumad3988: Esper Shadow (WUB)
+#16 ZYURYO: WURG Control (WURG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

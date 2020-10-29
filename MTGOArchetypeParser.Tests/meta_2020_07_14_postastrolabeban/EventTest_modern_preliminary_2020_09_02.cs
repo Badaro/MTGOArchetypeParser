@@ -9,21 +9,21 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 komattaman: GruulMidrange (RG)
-#02 Simarisu: IzzetProwess (UR)
+#01 komattaman: Gruul Midrange (RG)
+#02 Simarisu: Izzet Prowess (UR)
 #03 BERNASTORRES: Bogles (WG, Lurrus)
-#04 ImmanuelKantrolGod: BantControl (WUG)
-#05 Somefellow: AmuletTitan (URG)
-#06 Nickburch13: MarduProwess (WBR, Lurrus)
-#07 fling5133: SultaiReclamation (UBG)
+#04 ImmanuelKantrolGod: Bant Control (WUG)
+#05 Somefellow: Amulet Titan (URG)
+#06 Nickburch13: Mardu Prowess (WBR, Lurrus)
+#07 fling5133: Sultai Reclamation (UBG)
 #08 JustBurn420: Slivers (WUBRG)
-#09 lSoLlAKirA: BantControl (WUG)
-#10 Rinko: EnduringIdeal (W)
+#09 lSoLlAKirA: Bant Control (WUG)
+#10 Rinko: Enduring Ideal (W)
 #11 MissTrigger: Merfolk (WU, Lurrus)
-#12 Hyeri0418: GolgariMidrange (BG)
+#12 Hyeri0418: Golgari Midrange (BG)
 #13 TheBlazingKFC_mtg: Neobrand (UG)
-#14 katuo079595: ReclaimerTitan (WRG)
-#15 Lillia: KGCAmuletTitan (WURG)
+#14 katuo079595: Reclaimer Titan (WRG)
+#15 Lillia: KGC Amulet Titan (WURG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban

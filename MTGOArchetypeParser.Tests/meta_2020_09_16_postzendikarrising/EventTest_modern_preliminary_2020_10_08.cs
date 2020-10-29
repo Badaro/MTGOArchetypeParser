@@ -9,18 +9,18 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 qbturtle15: MonoWhiteTaxes (W)
-#02 Chris_Concarnage: GruulMidrange (RG)
-#03 JUJUBEAN__2004: UBRGControl (UBRG)
-#04 HardcoreHenry: ShadowProwess (WBR, Lurrus)
-#05 Mcleskey: OboshAggro (R, Obosh)
-#06 Icteridae: GruulMidrange (RG)
+#01 qbturtle15: Mono White Taxes (W)
+#02 Chris_Concarnage: Gruul Midrange (RG)
+#03 JUJUBEAN__2004: UBRG Control (UBRG)
+#04 HardcoreHenry: Shadow Prowess (WBR, Lurrus)
+#05 Mcleskey: Obosh Aggro (R, Obosh)
+#06 Icteridae: Gruul Midrange (RG)
 #07 pokerswizard: Humans (WUBRG)
-#08 Lordzedane: GruulMidrange (RG)
-#09 PTarts2win: WURGControl (WURG)
-#10 Gobern: BringToNiv (WUBRG, Yorion)
-#11 timewalkinonsunshine: TakingTurns (URG)
-#12 karatedom: MonoWhiteTaxes (W)
+#08 Lordzedane: Gruul Midrange (RG)
+#09 PTarts2win: WURG Control (WURG)
+#10 Gobern: Bring To Niv (WUBRG, Yorion)
+#11 timewalkinonsunshine: Taking Turns (URG)
+#12 karatedom: Mono White Taxes (W)
 #13 ThekingFor1000years: Infect (UG)
 */
 

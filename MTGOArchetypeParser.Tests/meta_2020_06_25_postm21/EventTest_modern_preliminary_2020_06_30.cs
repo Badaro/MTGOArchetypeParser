@@ -9,21 +9,21 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 pbarrrgh: TemurControl (URG)
-#02 npercario: BantControl (WUG)
-#03 staples87: ETron (C)
+#01 pbarrrgh: Temur Control (URG)
+#02 npercario: Bant Control (WUG)
+#03 staples87: E Tron (C)
 #04 Laplasjan: Devoted (WG, Lurrus)
-#05 ecobaronen: BantControl (WUG)
-#06 Larry11: GruulMidrange (RG)
-#07 billsive: SultaiReclamation (UBG)
-#08 EdB: SnoopGoblins (BR)
-#09 Voidpaw: JundMidrange (BRG)
-#10 RicardoMSLan: ETron (C)
-#11 Niallghas: SnoopGoblins (BR)
+#05 ecobaronen: Bant Control (WUG)
+#06 Larry11: Gruul Midrange (RG)
+#07 billsive: Sultai Reclamation (UBG)
+#08 EdB: Snoop Goblins (BR)
+#09 Voidpaw: Jund Midrange (BRG)
+#10 RicardoMSLan: E Tron (C)
+#11 Niallghas: Snoop Goblins (BR)
 #12 Boland: Dredge (BRG)
-#13 Haunter_Hunter: SnoopGoblins (BR)
-#14 mariogomes097: GrixisShadow (UBR)
-#15 FEARnLOATHing: IzzetProwess (UR)
+#13 Haunter_Hunter: Snoop Goblins (BR)
+#14 mariogomes097: Grixis Shadow (UBR)
+#15 FEARnLOATHing: Izzet Prowess (UR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21

@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 PTarts2win: WURGControl (WURG)
-#02 IntegralHDK: JundMidrange (BRG)
-#03 Zar0s: JundMidrange (BRG)
-#04 trunks132: ShadowProwess (BR, Lurrus)
+#01 PTarts2win: WURG Control (WURG)
+#02 IntegralHDK: Jund Midrange (BRG)
+#03 Zar0s: Jund Midrange (BRG)
+#04 trunks132: Shadow Prowess (BR, Lurrus)
 #05 koudai_iwatou: Tokens (WB, Lurrus)
-#06 otakkun: ETron (C)
+#06 otakkun: E Tron (C)
 #07 SIMONEFIERRO: Burn (WR, Lurrus)
-#08 mansak: JundMidrange (BRG)
-#09 _Shatun_: GruulMidrange (RG)
+#08 mansak: Jund Midrange (BRG)
+#09 _Shatun_: Gruul Midrange (RG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

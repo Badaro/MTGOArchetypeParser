@@ -9,16 +9,16 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Kiwairay: OopsAllSpells (WUBRG)
-#02 stayrospet: OmnathSaheeli (WURG, Jegantha)
-#03 HouseOfManaMTG: AmuletTitan (UBRG)
-#04 tkcheungab: KGCTron (G)
-#05 Moniz0801: ReclaimerTitan (WRG)
-#06 iL_Tedesco: AbzanMidrange (WBG)
-#07 yoshiwata: MonoWhiteTaxes (W)
-#08 taruto1212: WURGControl (WURG)
-#09 mxlzxk: ShadowProwess (WBR, Lurrus)
-#10 Snugglie: JundMidrange (BRG)
+#01 Kiwairay: Oops All Spells (WUBRG)
+#02 stayrospet: Omnath Saheeli (WURG, Jegantha)
+#03 HouseOfManaMTG: Amulet Titan (UBRG)
+#04 tkcheungab: KGC Tron (G)
+#05 Moniz0801: Reclaimer Titan (WRG)
+#06 iL_Tedesco: Abzan Midrange (WBG)
+#07 yoshiwata: Mono White Taxes (W)
+#08 taruto1212: WURG Control (WURG)
+#09 mxlzxk: Shadow Prowess (WBR, Lurrus)
+#10 Snugglie: Jund Midrange (BRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising

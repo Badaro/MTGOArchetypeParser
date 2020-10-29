@@ -10,16 +10,16 @@ using System.Text;
 
 /*
 #01 Drakanar: Merfolk (UG)
-#02 Toastxp: SultaiControl (UBG)
-#03 pbarrrgh: TemurControl (URG)
-#04 qbturtle15: GruulMidrange (RG, Obosh)
-#05 Samcaster-Mage: ETron (C)
-#06 Daniel_Garcia: OrzhovShadow (WB)
-#07 RpAngriff: SnoopGoblins (BR)
-#08 Binolino: AmuletTitan (URG)
-#09 WadeB: ETron (C)
-#10 McWinSauce: BantControl (WUG)
-#11 GideonRavensword: AdNauseam (WUB)
+#02 Toastxp: Sultai Control (UBG)
+#03 pbarrrgh: Temur Control (URG)
+#04 qbturtle15: Gruul Midrange (RG, Obosh)
+#05 Samcaster-Mage: E Tron (C)
+#06 Daniel_Garcia: Orzhov Shadow (WB)
+#07 RpAngriff: Snoop Goblins (BR)
+#08 Binolino: Amulet Titan (URG)
+#09 WadeB: E Tron (C)
+#10 McWinSauce: Bant Control (WUG)
+#11 GideonRavensword: Ad Nauseam (WUB)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
