@@ -22,7 +22,7 @@ using System.Text;
 #11 pokerswizard: Humans (WUBRG)
 #12 andrw1232: WURG Control (WURG)
 #13 benchsummer: UBRG Shadow (UBRG)
-#14 Gobern: Bring To Niv (WUBRG, Yorion)
+#14 Gobern: Niv To Light (WUBRG, Yorion)
 #15 MartinezDP: Snow Saheeli (WURG, Yorion)
 #16 sandydogmtg: Shadow Prowess (WBR, Lurrus)
 */
@@ -201,13 +201,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_Gobern_BringToNiv_WUBRG_Yorion()
+        public void Deck14_Gobern_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-16",13),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

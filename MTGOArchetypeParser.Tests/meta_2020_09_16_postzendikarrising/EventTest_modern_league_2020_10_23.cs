@@ -27,7 +27,7 @@ using System.Text;
 #16 thel0stb0y: Gruul Midrange (RG)
 #17 seasonofmists: Abzan Eldrazi Taxes (WBG)
 #18 phokmeup: Heliod Combo (WG)
-#19 BrianAMarx: Bring To Niv (WUBRG)
+#19 BrianAMarx: Niv To Light (WUBRG)
 #20 ContraEgo: Thopter Urza (UBR)
 #21 jvidarte: Burn (WR, Lurrus)
 #22 Simarisu: Selective Oracle (WU)
@@ -311,13 +311,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck19_BrianAMarx_BringToNiv_WUBRG()
+        public void Deck19_BrianAMarx_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-10-23",18),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

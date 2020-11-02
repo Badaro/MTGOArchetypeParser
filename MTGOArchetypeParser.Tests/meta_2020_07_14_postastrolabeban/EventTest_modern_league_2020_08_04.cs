@@ -25,7 +25,7 @@ using System.Text;
 #14 DeepFrdKirby: Slivers (WUBRG)
 #15 Sideshowsc: Scapeshift (WURG)
 #16 crackerpack: Solemnity Combo (WB)
-#17 Mordeka1ser: Bring To Niv (WUBRG, Yorion)
+#17 Mordeka1ser: Niv To Light (WUBRG, Yorion)
 #18 Predicted: Yawgmoth (WBG)
 #19 SquidNips: Izzet Living End (UR)
 #20 FakeFrog: Humans (WUBRG)
@@ -300,13 +300,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_Mordeka1ser_BringToNiv_WUBRG_Yorion()
+        public void Deck17_Mordeka1ser_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-08-04",16),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

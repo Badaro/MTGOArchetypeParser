@@ -23,7 +23,7 @@ using System.Text;
 #12 CrusherBotBG: Hammer Time (W)
 #13 ktmr-39: Sultai Reclamation (UBG)
 #14 siomomi: E Tron (C)
-#15 Wuhsa: Bring To Niv (WUBRG)
+#15 Wuhsa: Niv To Light (WUBRG)
 #16 _Shatun_: Mono Red Prowess (R)
 #17 Littlemastercz: Gruul Eldrazi (RG)
 #18 Goteo: Dredge (BRG)
@@ -218,13 +218,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_Wuhsa_BringToNiv_WUBRG()
+        public void Deck15_Wuhsa_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",14),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

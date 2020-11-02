@@ -22,7 +22,7 @@ using System.Text;
 #11 shoiwao: Heliod Devoted (WBG)
 #12 Azerate218: UBRG Shadow (UBRG)
 #13 SvenSveeterSven: Izzet Control (UR)
-#14 Albyz: Bring To Niv (WUBRG)
+#14 Albyz: Niv To Light (WUBRG)
 #15 Carton: Esper Shadow (WUB)
 #16 Bobthebuilder24: Heliod Sisters (W)
 #17 waffl3haos: Orzhov Eldrazi Taxes (WB)
@@ -31,7 +31,7 @@ using System.Text;
 #20 ben1234: Temur Reclamation (URG)
 #21 CodeProvider: Grishoalbrand (BR)
 #22 sfitz: Thopter Urza (UBR)
-#23 Wuhsa: Bring To Niv (WUBRG, Yorion)
+#23 Wuhsa: Niv To Light (WUBRG, Yorion)
 #24 __Ghost__: Burn (WRG)
 #25 Tedpanic: Azorius Control (WU)
 #26 Irra0770: Jund Midrange (BRG)
@@ -70,7 +70,7 @@ using System.Text;
 #59 marcos_rocha: Infect (UG)
 #60 tuhoajatane: Reclaimer Titan (WRG)
 #61 Alzik: Rakdos Prowess (BR, Lurrus)
-#62 MartinezDP: Bring To Niv (WUBRG, Yorion)
+#62 MartinezDP: Niv To Light (WUBRG, Yorion)
 #63 scipios: Crabvine (UBG)
 #64 SunnyOsRego: Rakdos Midrange (BR)
 #65 musasabi: KGC Amulet Titan (UBRG)
@@ -258,13 +258,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_Albyz_BringToNiv_WUBRG()
+        public void Deck14_Albyz_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-18",13),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );
@@ -375,13 +375,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck23_Wuhsa_BringToNiv_WUBRG_Yorion()
+        public void Deck23_Wuhsa_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-08-18",22),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -882,13 +882,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck62_MartinezDP_BringToNiv_WUBRG_Yorion()
+        public void Deck62_MartinezDP_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-08-18",61),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

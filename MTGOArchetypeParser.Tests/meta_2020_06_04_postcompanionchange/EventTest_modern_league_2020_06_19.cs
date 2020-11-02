@@ -41,7 +41,7 @@ using System.Text;
 #30 Zanman: Titan Stompy (BRG, Gyruda)
 #31 Madwolf87: Jund Shadow (BRG)
 #32 Chad1987SR05: Golgari Midrange (BG)
-#33 Wuhsa: Bring To Niv (WUBRG)
+#33 Wuhsa: Niv To Light (WUBRG)
 #34 thelegitpony666: Goblins (BR)
 #35 whitefangshinobi: Mill (UB, Lurrus)
 #36 salvamala: Jund Midrange (BRG)
@@ -472,13 +472,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck33_Wuhsa_BringToNiv_WUBRG()
+        public void Deck33_Wuhsa_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",32),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

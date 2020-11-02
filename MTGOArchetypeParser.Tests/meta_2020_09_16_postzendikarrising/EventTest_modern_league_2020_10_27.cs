@@ -58,7 +58,7 @@ using System.Text;
 #47 TuggaNaxos: Izzet Control (UR)
 #48 hugofreitas1: Gifts Storm (UR)
 #49 FluffyWolf2: Esper Reanimator (WUB)
-#50 katoriarch123: Bring To Niv (WUBRG, Jegantha)
+#50 katoriarch123: Niv To Light (WUBRG, Jegantha)
 #51 Theo_Jung: Mono White Taxes (W)
 #52 ADSkinner: Mill (UB)
 #53 kensportsfan: Mono Red Prowess (R)
@@ -720,13 +720,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck50_katoriarch123_BringToNiv_WUBRG_Jegantha()
+        public void Deck50_katoriarch123_NivToLight_WUBRG_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-10-27",49),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Jegantha
             );

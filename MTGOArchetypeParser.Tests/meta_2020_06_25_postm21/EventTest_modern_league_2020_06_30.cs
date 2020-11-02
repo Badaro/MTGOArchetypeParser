@@ -14,7 +14,7 @@ using System.Text;
 #03 derramedefogo: Gifts Storm (UR)
 #04 sublimeloudog: Hardened Scales (G)
 #05 JMoney8771: Infect (UG)
-#06 TennTyou: Bring To Niv (WUBRG)
+#06 TennTyou: Niv To Light (WUBRG)
 #07 affen_burn23: Temur Control (URG)
 #08 MHayashi: Mono Red Prowess (R, Jegantha)
 #09 TheAznYoshi: Gruul Midrange (RG)
@@ -43,7 +43,7 @@ using System.Text;
 #32 Jidden: Thopter Urza (WU)
 #33 PizzaTurtle: Bogles (WG, Lurrus)
 #34 Curtisaxel: Bant Spirits (WUG)
-#35 Mordeka1ser: Bring To Niv (WUBRG, Yorion)
+#35 Mordeka1ser: Niv To Light (WUBRG, Yorion)
 #36 sicsmoo: G Tron (G)
 #37 ACG88: Crabvine (UBG)
 #38 Night_Owl_61: Jund Midrange (BRG)
@@ -133,13 +133,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck06_TennTyou_BringToNiv_WUBRG()
+        public void Deck06_TennTyou_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-30",5),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );
@@ -510,13 +510,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck35_Mordeka1ser_BringToNiv_WUBRG_Yorion()
+        public void Deck35_Mordeka1ser_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-30",34),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

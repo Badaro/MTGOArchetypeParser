@@ -34,7 +34,7 @@ using System.Text;
 #23 bigjc00: Amulet Titan (UBRG)
 #24 fabee1: Bant Midrange (WUG)
 #25 Doomenstein: Mono White Taxes (W)
-#26 Gobern: Bring To Niv (WUBRG, Yorion)
+#26 Gobern: Niv To Light (WUBRG, Yorion)
 #27 Andreas_Mueller: Dredge (BRG)
 #28 Elnitzo: Mill (UB, Lurrus)
 #29 MHayashi: Obosh Aggro (R, Obosh)
@@ -373,13 +373,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck26_Gobern_BringToNiv_WUBRG_Yorion()
+        public void Deck26_Gobern_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-11",25),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

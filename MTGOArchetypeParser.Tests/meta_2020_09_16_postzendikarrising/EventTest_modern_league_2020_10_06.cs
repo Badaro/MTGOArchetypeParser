@@ -52,7 +52,7 @@ using System.Text;
 #41 bawhsome: Dredge (UBRG)
 #42 stefanocanclini: Reclaimer Titan (WRG)
 #43 maear: Kiki Chord (WRG, Yorion)
-#44 GodOfSlaughter: Bring To Niv (WUBRG, Yorion)
+#44 GodOfSlaughter: Niv To Light (WUBRG, Yorion)
 #45 Jenara19: Oops All Spells (WUBRG)
 #46 Gods_Shadow: Mono White Taxes (W)
 #47 1yo2yo: Omnath Saheeli (WURG)
@@ -75,7 +75,7 @@ using System.Text;
 #64 Trebz: Sultai Control (UBG)
 #65 nahuel10: Izzet Prowess (UR)
 #66 Motown123: Merfolk (UB)
-#67 AFX: Bring To Niv (WUBRG, Jegantha)
+#67 AFX: Niv To Light (WUBRG, Jegantha)
 #68 balltap: Jeskai Breach (WURG, Jegantha)
 #69 N3to: Gifts Storm (UR)
 #70 Jaschalomaeus: Mono Red Prowess (R)
@@ -648,13 +648,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck44_GodOfSlaughter_BringToNiv_WUBRG_Yorion()
+        public void Deck44_GodOfSlaughter_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-10-06",43),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -947,13 +947,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck67_AFX_BringToNiv_WUBRG_Jegantha()
+        public void Deck67_AFX_NivToLight_WUBRG_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-10-06",66),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Jegantha
             );

@@ -24,7 +24,7 @@ using System.Text;
 #13 drVendigo: Gruul Midrange (RG)
 #14 doughhater: Valakut Field (URG)
 #15 evange_: Rakdos Prowess (BR, Lurrus)
-#16 GodOfSlaughter: Bring To Niv (WUBRG, Yorion)
+#16 GodOfSlaughter: Niv To Light (WUBRG, Yorion)
 #17 Turn1Vial: Slivers (WUBRG)
 #18 cws: Gifts Storm (UR)
 #19 SourceOdin: Reclaimer Titan (WRG)
@@ -243,13 +243,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck16_GodOfSlaughter_BringToNiv_WUBRG_Yorion()
+        public void Deck16_GodOfSlaughter_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-31",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

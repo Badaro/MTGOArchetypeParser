@@ -50,7 +50,7 @@ using System.Text;
 #39 bkorbsquare07: Mono Red Prowess (R)
 #40 RuudMaarten: Green Stompy (G)
 #41 PvtEnormous: Scapeshift (URG)
-#42 Wuhsa: Bring To Niv (WUBRG, Yorion)
+#42 Wuhsa: Niv To Light (WUBRG, Yorion)
 #43 _Joseph_: Titan Shift (RG)
 #44 Rinbo: Mono White Taxes (W)
 #45 DrDub: Merfolk (U)
@@ -600,13 +600,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck42_Wuhsa_BringToNiv_WUBRG_Yorion()
+        public void Deck42_Wuhsa_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-31",41),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

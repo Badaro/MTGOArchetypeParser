@@ -10,11 +10,11 @@ using System.Text;
 
 /*
 #01 ZYURYO: WURG Control (WURG)
-#02 Oderus Urungus: Bring To Niv (WUBRG)
+#02 Oderus Urungus: Niv To Light (WUBRG)
 #03 RearrangedAS: Spirits (WU)
 #04 TeeCGGaming: Oops All Spells (WUBRG)
 #05 Redgy819: Rakdos Midrange (BR)
-#06 McWinSauce: Bring To Niv (WUBRG, Jegantha)
+#06 McWinSauce: Niv To Light (WUBRG, Jegantha)
 #07 Shazzam: Mill (UB, Lurrus)
 #08 Lord_of_Puntlantis: Oops All Spells (WUBRG)
 #09 benchsummer: Jund Shadow (BRG)
@@ -39,13 +39,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_OderusUrungus_BringToNiv_WUBRG()
+        public void Deck02_OderusUrungus_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-29",1),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );
@@ -91,13 +91,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_McWinSauce_BringToNiv_WUBRG_Jegantha()
+        public void Deck06_McWinSauce_NivToLight_WUBRG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-29",5),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Jegantha
             );

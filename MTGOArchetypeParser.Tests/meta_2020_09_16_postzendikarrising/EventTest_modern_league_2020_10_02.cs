@@ -23,7 +23,7 @@ using System.Text;
 #12 Kr0k39: Snoop Goblins (BR)
 #13 sfitz: Thopter Urza (UBR)
 #14 woetert: Mill (UB)
-#15 Mordeka1ser: Bring To Niv (WUBRG, Yorion)
+#15 Mordeka1ser: Niv To Light (WUBRG, Yorion)
 #16 Red_Beam: Selenya Midrange (WG)
 #17 Stoonian: Ad Nauseam (WUB)
 #18 merliche: Bant Blink (WUG, Yorion)
@@ -53,7 +53,7 @@ using System.Text;
 #42 Beenew: Shadow Prowess (BR, Lurrus)
 #43 Imfranlv: Burn (WR)
 #44 Gods_Shadow: Grixis Control (UBR)
-#45 egadd2894: Bring To Niv (WUBRG, Jegantha)
+#45 egadd2894: Niv To Light (WUBRG, Jegantha)
 #46 joohyun: Jeskai Control (WUR)
 #47 AstralPlane: Mono Red Prowess (R, Jegantha)
 #48 Rebus8: Boros Taxes (WR)
@@ -254,13 +254,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_Mordeka1ser_BringToNiv_WUBRG_Yorion()
+        public void Deck15_Mordeka1ser_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-10-02",14),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -644,13 +644,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck45_egadd2894_BringToNiv_WUBRG_Jegantha()
+        public void Deck45_egadd2894_NivToLight_WUBRG_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-10-02",44),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Jegantha
             );

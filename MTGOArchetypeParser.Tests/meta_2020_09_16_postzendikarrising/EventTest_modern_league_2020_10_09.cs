@@ -53,7 +53,7 @@ using System.Text;
 #42 aronfreyr1212: Hardened Scales (G)
 #43 bresett123: Humans (WUBRG)
 #44 SeeFour: Hammer Time (W)
-#45 Gobern: Bring To Niv (WUBRG, Yorion)
+#45 Gobern: Niv To Light (WUBRG, Yorion)
 #46 DarkKeeper: WURG Control (WURG)
 #47 moralmar: Heliod Devoted (WBG)
 #48 MtGilligan: Temur Control (URG)
@@ -62,7 +62,7 @@ using System.Text;
 #51 GideonRavensword: Ad Nauseam (WUB)
 #52 Kenzaburo: Azorius Control (WU)
 #53 fishstza: Boros Midrange (WR)
-#54 MartinezDP: Bring To Niv (WUBRG, Yorion)
+#54 MartinezDP: Niv To Light (WUBRG, Yorion)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -642,13 +642,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck45_Gobern_BringToNiv_WUBRG_Yorion()
+        public void Deck45_Gobern_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-10-09",44),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -759,13 +759,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck54_MartinezDP_BringToNiv_WUBRG_Yorion()
+        public void Deck54_MartinezDP_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-10-09",53),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

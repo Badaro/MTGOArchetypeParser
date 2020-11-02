@@ -50,7 +50,7 @@ using System.Text;
 #39 SebastianStueckl: Snoop Goblins (WBR)
 #40 Archgaze: Cremator Evolution (WRG)
 #41 Trellon: U Tron (U)
-#42 Wuhsa: Bring To Niv (WUBRG)
+#42 Wuhsa: Niv To Light (WUBRG)
 #43 Marxelo: Tokens (WB)
 #44 esatheking: Boros Prowess (WR)
 #45 Denmark_Dan: Titan Shift (RG)
@@ -611,13 +611,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck42_Wuhsa_BringToNiv_WUBRG()
+        public void Deck42_Wuhsa_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-07-24",41),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

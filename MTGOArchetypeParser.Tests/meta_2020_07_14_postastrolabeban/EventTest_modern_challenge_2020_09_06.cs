@@ -29,7 +29,7 @@ using System.Text;
 #18 zecriah: KGC Tron (G)
 #19 1yo2yo: Bant Control (WUG)
 #20 scipios: Crabvine (UBG)
-#21 tylerjjobrien: Bring To Niv (WUBRG, Yorion)
+#21 tylerjjobrien: Niv To Light (WUBRG, Yorion)
 #22 DamonXWind: Izzet Prowess (UR)
 #23 Gigy: Naya Midrange (WRG)
 #24 NobodyKnowsImADog: KGC Tron (G)
@@ -308,13 +308,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck21_tylerjjobrien_BringToNiv_WUBRG_Yorion()
+        public void Deck21_tylerjjobrien_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",20),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

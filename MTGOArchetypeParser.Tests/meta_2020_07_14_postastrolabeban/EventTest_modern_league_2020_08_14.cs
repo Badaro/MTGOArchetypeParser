@@ -33,7 +33,7 @@ using System.Text;
 #22 Bugsy69: Izzet Prowess (UR)
 #23 Predicted: Yawgmoth (WBG)
 #24 touto_Isle: Dredge (BRG)
-#25 JRDC14: Bring To Niv (WUBRG, Yorion)
+#25 JRDC14: Niv To Light (WUBRG, Yorion)
 #26 Rebus8: Orzhov Eldrazi Taxes (WB)
 #27 tbrantl99: Reclaimer Titan (WRG)
 #28 Do0mSwitch: Bant Control (WUG)
@@ -380,13 +380,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck25_JRDC14_BringToNiv_WUBRG_Yorion()
+        public void Deck25_JRDC14_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-08-14",24),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

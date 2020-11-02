@@ -13,7 +13,7 @@ using System.Text;
 #02 CavalloGoloso: Izzet Control (UR)
 #03 Costola91: Grixis Shadow (UBR)
 #04 BasedCloy: E Tron (C)
-#05 Wuhsa: Bring To Niv (WUBRG, Yorion)
+#05 Wuhsa: Niv To Light (WUBRG, Yorion)
 #06 lilianaofthevess: Izzet Prowess (UR)
 #07 CReactor: KGC Tron (G)
 #08 Imaeda: Izzet Prowess (UR)
@@ -83,13 +83,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_Wuhsa_BringToNiv_WUBRG_Yorion()
+        public void Deck05_Wuhsa_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",4),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

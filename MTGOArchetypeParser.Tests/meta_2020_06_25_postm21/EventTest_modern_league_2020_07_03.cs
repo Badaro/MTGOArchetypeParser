@@ -51,11 +51,11 @@ using System.Text;
 #40 Morrys: Snoop Goblins (BR)
 #41 Zxrogue: Boros Taxes (WR, Lurrus)
 #42 Draken44: Uroza (UBG, Yorion)
-#43 Wuhsa: Bring To Niv (WUBRG, Yorion)
+#43 Wuhsa: Niv To Light (WUBRG, Yorion)
 #44 RadioactiveTortoise: Dredge (BRG)
 #45 lopi: Heliod Combo (WG)
 #46 TubbyBatman: Izzet Prowess (UR)
-#47 TrueHero: Taking Turns (URG)
+#47 TrueHero: Temur Midrange (URG)
 #48 MadMaxErnst: UBRG Control (UBRG)
 #49 Trellon: U Tron (U)
 #50 Ryan_39: Izzet Prowess (UR)
@@ -614,13 +614,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck43_Wuhsa_BringToNiv_WUBRG_Yorion()
+        public void Deck43_Wuhsa_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-03",42),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -666,13 +666,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck47_TrueHero_TakingTurns_URG()
+        public void Deck47_TrueHero_TemurMidrange_URG()
         {
             Test(
                 GetDeck("modern-league-2020-07-03",46),
                 new PostM21(),
                 ArchetypeColor.URG,
-                typeof(TakingTurns),
+                typeof(GenericMidrange),
                 null,
                 null
             );

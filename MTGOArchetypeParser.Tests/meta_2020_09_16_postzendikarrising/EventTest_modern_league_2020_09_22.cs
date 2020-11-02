@@ -34,7 +34,7 @@ using System.Text;
 #23 LuckyOnline: Bushwhacker Zoo (WRG)
 #24 GanYanCHN: Belcher (RG)
 #25 antonio00: Gruul Midrange (RG)
-#26 Mordeka1ser: Bring To Niv (WUBRG, Yorion)
+#26 Mordeka1ser: Niv To Light (WUBRG, Yorion)
 #27 jsmall: Goryo Reanimator (UBR)
 #28 Capiplaf95: Burn (WR)
 #29 chaba_lol: Hammer Time (W)
@@ -404,13 +404,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck26_Mordeka1ser_BringToNiv_WUBRG_Yorion()
+        public void Deck26_Mordeka1ser_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-09-22",25),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

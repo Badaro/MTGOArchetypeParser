@@ -13,7 +13,7 @@ using System.Text;
 #02 tcgshin: Titan Shift (RG)
 #03 PanCement_JP: Bant Spirits (WUG)
 #04 saccij92: Humans (WUBRG)
-#05 yPrincipe: Bring To Niv (WUBRG, Yorion)
+#05 yPrincipe: Niv To Light (WUBRG, Yorion)
 #06 ArchaeusDota: KGC Tron (G)
 #07 Big_And_Easy: Mono Red Prowess (R)
 #08 Rossello: Incinerator Burn (WR)
@@ -110,13 +110,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck05_yPrincipe_BringToNiv_WUBRG_Yorion()
+        public void Deck05_yPrincipe_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-10",4),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

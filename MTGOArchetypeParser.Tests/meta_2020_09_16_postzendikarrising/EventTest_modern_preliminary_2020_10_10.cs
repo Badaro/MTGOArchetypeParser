@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Gobern: Bring To Niv (WUBRG, Yorion)
+#01 Gobern: Niv To Light (WUBRG, Yorion)
 #02 azatoyellow: Obosh Aggro (R, Obosh)
 #03 im2g00t4ubarn: WURG Control (WURG)
 #04 MyNameTidus: Heliod Combo (WG)
@@ -24,13 +24,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_10_10 : EventTest
     {
         [Test]
-        public void Deck01_Gobern_BringToNiv_WUBRG_Yorion()
+        public void Deck01_Gobern_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-10",0),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

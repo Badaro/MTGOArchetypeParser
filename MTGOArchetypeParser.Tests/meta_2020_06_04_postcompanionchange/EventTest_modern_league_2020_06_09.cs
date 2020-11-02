@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Tarrasque1: Elementals (WUBRG)
 #02 Mateusf34: E Tron (C)
-#03 Wuhsa: Bring To Niv (WUBRG)
+#03 Wuhsa: Niv To Light (WUBRG)
 #04 HeyPharaoh: Azorius Control (WU)
 #05 Teston: Gifts Storm (UR, Jegantha)
 #06 cftsoc3: Bant Blink (WUG, Yorion)
@@ -71,7 +71,7 @@ using System.Text;
 #60 603Leb: Amulet Titan (URG)
 #61 mashmalovsky: Yawgmoth (BG)
 #62 Termahgerf: Uroza (WUG, Yorion)
-#63 marcofabrizi: Taking Turns (URG)
+#63 marcofabrizi: Temur Midrange (URG)
 #64 yriel: Jund Midrange (BRG, Lurrus)
 */
 
@@ -106,13 +106,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck03_Wuhsa_BringToNiv_WUBRG()
+        public void Deck03_Wuhsa_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-09",2),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );
@@ -886,13 +886,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck63_marcofabrizi_TakingTurns_URG()
+        public void Deck63_marcofabrizi_TemurMidrange_URG()
         {
             Test(
                 GetDeck("modern-league-2020-06-09",62),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(TakingTurns),
+                typeof(GenericMidrange),
                 null,
                 null
             );

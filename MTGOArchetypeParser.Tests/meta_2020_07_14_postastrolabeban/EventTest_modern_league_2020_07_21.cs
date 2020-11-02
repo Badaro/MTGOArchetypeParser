@@ -20,7 +20,7 @@ using System.Text;
 #09 polinasgiuleppe: Gruul Midrange (RG)
 #10 djbmppwns: Jund Shadow (BRG, Lurrus)
 #11 keytolife: Rakdos Midrange (BR, Lurrus)
-#12 ArchaeusDota: Bring To Niv (WUBRG, Yorion)
+#12 ArchaeusDota: Niv To Light (WUBRG, Yorion)
 #13 imposterbatman: Burn (WR)
 #14 fabee1: Selenya Taxes (WG)
 #15 Ladon: Snow Saheeli (WURG)
@@ -227,13 +227,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_ArchaeusDota_BringToNiv_WUBRG_Yorion()
+        public void Deck12_ArchaeusDota_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-21",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

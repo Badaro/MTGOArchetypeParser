@@ -15,7 +15,7 @@ using System.Text;
 #04 Lucabireskusku: Inverter (UB)
 #05 K4rl1991: Hardened Scales (G)
 #06 asmitchler: UBRG Shadow (UBRG)
-#07 crazeyr15: Bring To Niv (WUBRG, Jegantha)
+#07 crazeyr15: Niv To Light (WUBRG, Jegantha)
 #08 hugofreitas1: Gifts Storm (URG)
 #09 retiredcapivara: Dredge (BRG)
 #10 Urzza100: Bant Control (WUG, Yorion)
@@ -43,7 +43,7 @@ using System.Text;
 #32 HypnoticaL: Rakdos Prowess (BR, Lurrus)
 #33 liu123: Bogles (WG, Lurrus)
 #34 Boin: Golgari Midrange (BG, Lurrus)
-#35 _qfortier: Taking Turns (URG)
+#35 _qfortier: Temur Midrange (URG)
 #36 nahuel10: WUBG Control (WUBG, Yorion)
 #37 DeeBoFour20: G Tron (G, Jegantha)
 #38 fpawlusz: KGC Amulet Titan (WUBRG)
@@ -51,7 +51,7 @@ using System.Text;
 #40 ary31415: Jund Midrange (BRG)
 #41 JouNick: Jund Shadow (BRG, Lurrus)
 #42 Flight24White: Neobrand (UG)
-#43 Wuhsa: Bring To Niv (WUBRG, Jegantha)
+#43 Wuhsa: Niv To Light (WUBRG, Jegantha)
 #44 stefanocanclini: Ad Nauseam (WUB)
 */
 
@@ -138,13 +138,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck07_crazeyr15_BringToNiv_WUBRG_Jegantha()
+        public void Deck07_crazeyr15_NivToLight_WUBRG_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-06-05",6),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Jegantha
             );
@@ -502,13 +502,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck35_qfortier_TakingTurns_URG()
+        public void Deck35_qfortier_TemurMidrange_URG()
         {
             Test(
                 GetDeck("modern-league-2020-06-05",34),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(TakingTurns),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -606,13 +606,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck43_Wuhsa_BringToNiv_WUBRG_Jegantha()
+        public void Deck43_Wuhsa_NivToLight_WUBRG_Jegantha()
         {
             Test(
                 GetDeck("modern-league-2020-06-05",42),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Jegantha
             );

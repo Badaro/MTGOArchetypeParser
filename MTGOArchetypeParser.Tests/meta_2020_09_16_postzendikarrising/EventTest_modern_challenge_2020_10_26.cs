@@ -19,7 +19,7 @@ using System.Text;
 #08 musasabi: Reclaimer Titan (WRG)
 #09 _Shatun_: Mono Red Prowess (R)
 #10 mw_94gA: Bant Spirits (WUG)
-#11 joetru: Bring To Niv (WUBRG, Jegantha)
+#11 joetru: Niv To Light (WUBRG, Jegantha)
 #12 HouseOfManaMTG: Amulet Titan (UBRG)
 #13 patheus_84: Ad Nauseam (WUB)
 #14 Binolino: Amulet Titan (UBRG)
@@ -178,13 +178,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_joetru_BringToNiv_WUBRG_Jegantha()
+        public void Deck11_joetru_NivToLight_WUBRG_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",10),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Jegantha
             );

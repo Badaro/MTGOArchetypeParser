@@ -24,7 +24,7 @@ using System.Text;
 #13 Borjillamtg10: Ad Nauseam (WUB)
 #14 603Leb: Amulet Titan (WUBRG)
 #15 Mad-Ramon: Temur Reclamation (URG, Yorion)
-#16 Mordeka1ser: Bring To Niv (WUBRG, Yorion)
+#16 Mordeka1ser: Niv To Light (WUBRG, Yorion)
 #17 Zebrah: Amulet Titan (WUBRG, Yorion)
 #18 Shorak123: Sultai Reclamation (UBG)
 #19 Beicodegeia: Gifts Storm (UR)
@@ -247,13 +247,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck16_Mordeka1ser_BringToNiv_WUBRG_Yorion()
+        public void Deck16_Mordeka1ser_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",15),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Wuhsa: Bring To Niv (WUBRG, Yorion)
+#01 Wuhsa: Niv To Light (WUBRG, Yorion)
 #02 CedricChatel: Izzet Control (UR)
 #03 Cherryxman: Crabvine (UBG)
 #04 rodeo: Incinerator Burn (R)
@@ -69,13 +69,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_league_2020_07_17 : EventTest
     {
         [Test]
-        public void Deck01_Wuhsa_BringToNiv_WUBRG_Yorion()
+        public void Deck01_Wuhsa_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-17",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

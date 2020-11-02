@@ -26,7 +26,7 @@ using System.Text;
 #15 signblindman: Gruul Midrange (RG)
 #16 Nammersquats: Humans (WUBRG)
 #17 Micro: Ad Nauseam (WUB)
-#18 joetru: Bring To Niv (WUBRG)
+#18 joetru: Niv To Light (WUBRG)
 #19 grahams: Mill (UB)
 */
 
@@ -256,13 +256,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck18_joetru_BringToNiv_WUBRG()
+        public void Deck18_joetru_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-20",17),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

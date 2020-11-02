@@ -15,7 +15,7 @@ using System.Text;
 #04 karatedom: Rakdos Prowess (BR, Lurrus)
 #05 Icteridae: Bant Midrange (WUG)
 #06 sandydogmtg: Izzet Prowess (UR)
-#07 BigBaranoia: Bring To Niv (WUBRG)
+#07 BigBaranoia: Niv To Light (WUBRG)
 #08 Xuxa: Dredge (BRG)
 #09 qbturtle15: Gruul Midrange (RG)
 #10 tuckbear: Jund Midrange (BRG)
@@ -29,7 +29,7 @@ using System.Text;
 #18 MrZarukai: Gruul Midrange (RG)
 #19 bmac668: Izzet Prowess (UR)
 #20 JUJUBEAN__2004: Devoted (WG, Lurrus)
-#21 joetru: Bring To Niv (WUBRG)
+#21 joetru: Niv To Light (WUBRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -115,13 +115,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_BigBaranoia_BringToNiv_WUBRG()
+        public void Deck07_BigBaranoia_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );
@@ -297,13 +297,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck21_joetru_BringToNiv_WUBRG()
+        public void Deck21_joetru_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",20),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

@@ -20,17 +20,17 @@ using System.Text;
 #09 KowV2: Uroza (UBG, Yorion)
 #10 gyyby297: Thopter Urza (UB)
 #11 sneaky robot: Infect (WG)
-#12 TuggaNaxos: Taking Turns (URG)
+#12 TuggaNaxos: Temur Midrange (URG)
 #13 Simarisu: Orzhov Shadow (WB)
 #14 Rossello: Ad Nauseam (WUB)
 #15 osmanozguney: Sultai Control (UBG)
 #16 cjucjujp: Bushwhacker Zoo (RG)
-#17 kai2000: Bring To Niv (WUBRG, Yorion)
+#17 kai2000: Niv To Light (WUBRG, Yorion)
 #18 Praxifi: Winota (WRG)
 #19 miki665: Humans (WUBRG)
 #20 Nideon: Orzhov Eldrazi Taxes (WB)
 #21 tucker_de: Amulet Titan (WUBRG)
-#22 Wuhsa: Bring To Niv (WUBRG)
+#22 Wuhsa: Niv To Light (WUBRG)
 #23 iuriper: Merfolk (UB)
 #24 DemianDesposito10: Mono Red Prowess (R)
 #25 Kurusu: Kiki Chord (WBRG, Yorion)
@@ -218,13 +218,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck12_TuggaNaxos_TakingTurns_URG()
+        public void Deck12_TuggaNaxos_TemurMidrange_URG()
         {
             Test(
                 GetDeck("modern-league-2020-06-16",11),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(TakingTurns),
+                typeof(GenericMidrange),
                 null,
                 null
             );
@@ -283,13 +283,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck17_kai2000_BringToNiv_WUBRG_Yorion()
+        public void Deck17_kai2000_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-16",16),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -348,13 +348,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck22_Wuhsa_BringToNiv_WUBRG()
+        public void Deck22_Wuhsa_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-16",21),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

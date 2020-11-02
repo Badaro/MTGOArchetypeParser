@@ -38,7 +38,7 @@ using System.Text;
 #27 lovealienzzz: Temur Control (URG)
 #28 renatoaraujo: G Tron (G)
 #29 Traft: Goblins (BRG)
-#30 Mordeka1ser: Bring To Niv (WUBRG, Yorion)
+#30 Mordeka1ser: Niv To Light (WUBRG, Yorion)
 #31 anamika: WURG Midrange (WURG)
 #32 Dr_D1ck_Forest: Ad Nauseam (WUB)
 #33 Mollok: Thalia Stompy (WR)
@@ -437,13 +437,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck30_Mordeka1ser_BringToNiv_WUBRG_Yorion()
+        public void Deck30_Mordeka1ser_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",29),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

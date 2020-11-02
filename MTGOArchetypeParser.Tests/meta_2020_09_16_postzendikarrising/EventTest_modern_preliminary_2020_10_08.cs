@@ -18,7 +18,7 @@ using System.Text;
 #07 pokerswizard: Humans (WUBRG)
 #08 Lordzedane: Gruul Midrange (RG)
 #09 PTarts2win: WURG Control (WURG)
-#10 Gobern: Bring To Niv (WUBRG, Yorion)
+#10 Gobern: Niv To Light (WUBRG, Yorion)
 #11 timewalkinonsunshine: Taking Turns (URG)
 #12 karatedom: Mono White Taxes (W)
 #13 ThekingFor1000years: Infect (UG)
@@ -146,13 +146,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_Gobern_BringToNiv_WUBRG_Yorion()
+        public void Deck10_Gobern_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-08",9),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

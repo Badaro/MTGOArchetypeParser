@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Ganksyou: Azorius Control (WU)
 #02 Rhianne: Dredge (WBRG)
-#03 tylerjjobrien: Bring To Niv (WUBRG, Yorion)
+#03 tylerjjobrien: Niv To Light (WUBRG, Yorion)
 #04 Zar0s: Scapeshift (URG)
 #05 RodeoJones: Snow Saheeli (WURG)
 #06 Thrall90: Jund Midrange (BRG)
@@ -63,13 +63,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_tylerjjobrien_BringToNiv_WUBRG_Yorion()
+        public void Deck03_tylerjjobrien_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-28",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

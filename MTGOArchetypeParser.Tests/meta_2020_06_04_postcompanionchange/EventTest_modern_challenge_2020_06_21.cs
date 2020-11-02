@@ -18,7 +18,7 @@ using System.Text;
 #07 Misplacedginger: Bant Control (WUG)
 #08 SvenSveeterSven: Izzet Control (UR)
 #09 kbr3: Hardened Scales (G)
-#10 MikeEgan: Bring To Niv (WUBRG)
+#10 MikeEgan: Niv To Light (WUBRG)
 #11 Yooisa: Infect (WUG)
 #12 bntrusty14: Humans (WUBRG)
 #13 kanister: Humans (WUBRG)
@@ -165,13 +165,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck10_MikeEgan_BringToNiv_WUBRG()
+        public void Deck10_MikeEgan_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",9),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

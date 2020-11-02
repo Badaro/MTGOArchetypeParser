@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Mordeka1ser: Bring To Niv (WUBRG, Yorion)
+#01 Mordeka1ser: Niv To Light (WUBRG, Yorion)
 #02 kthanakit26: Burn (WR)
 #03 SebastianStueckl: Gruul Midrange (RG)
 #04 azatoyellow: Gruul Prowess (RG, Jegantha)
@@ -34,13 +34,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_07_24 : EventTest
     {
         [Test]
-        public void Deck01_Mordeka1ser_BringToNiv_WUBRG_Yorion()
+        public void Deck01_Mordeka1ser_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

@@ -33,7 +33,7 @@ using System.Text;
 #22 Yanley: Selenya Taxes (WG)
 #23 penach010: Smallpox (WBR)
 #24 deathandcatmix: Mono White Taxes (W, Lurrus)
-#25 kurohiren: Bring To Niv (WUBRG, Yorion)
+#25 kurohiren: Niv To Light (WUBRG, Yorion)
 #26 BoltTheBirds: Gifts Storm (UR)
 #27 Gafiiis: Spirits (WU)
 #28 CyricCanela: Gruul Midrange (RG)
@@ -387,13 +387,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck25_kurohiren_BringToNiv_WUBRG_Yorion()
+        public void Deck25_kurohiren_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-09-29",24),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

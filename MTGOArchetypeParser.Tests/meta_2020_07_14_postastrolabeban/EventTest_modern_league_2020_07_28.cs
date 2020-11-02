@@ -80,7 +80,7 @@ using System.Text;
 #69 ragingpikey: Spirits (WU)
 #70 Mistakenn: Amulet Titan (URG)
 #71 Metcalf23: Boros Taxes (WR, Yorion)
-#72 CanadianNinja: Bring To Niv (WUBRG, Yorion)
+#72 CanadianNinja: Niv To Light (WUBRG, Yorion)
 #73 eastonmd21: Azorius Control (WU)
 #74 Fat_Chocobo: Jund Midrange (BRG)
 */
@@ -1013,13 +1013,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck72_CanadianNinja_BringToNiv_WUBRG_Yorion()
+        public void Deck72_CanadianNinja_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-28",71),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

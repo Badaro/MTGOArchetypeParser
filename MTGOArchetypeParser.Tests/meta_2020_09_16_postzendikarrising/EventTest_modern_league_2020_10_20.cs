@@ -76,7 +76,7 @@ using System.Text;
 #65 Sam_Lewin: Boros Land Destruction (WBR)
 #66 pacoelflaco: Burn (WR)
 #67 Hitokiri1984: Rakdos Midrange (BR)
-#68 Zanman: Taking Turns (UBG)
+#68 Zanman: Sultai Control (UBG)
 #69 Mateusf34: E Tron (C)
 */
 
@@ -956,13 +956,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck68_Zanman_TakingTurns_UBG()
+        public void Deck68_Zanman_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-10-20",67),
                 new PostZendikarRising(),
                 ArchetypeColor.UBG,
-                typeof(TakingTurns),
+                typeof(GenericControl),
                 null,
                 null
             );

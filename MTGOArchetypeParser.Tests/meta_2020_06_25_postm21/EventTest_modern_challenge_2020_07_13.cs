@@ -18,7 +18,7 @@ using System.Text;
 #07 sff_mtg: KGC Tron (G)
 #08 Gigy: Gruul Midrange (RG)
 #09 kiko: Boros Taxes (WR)
-#10 TennTyou: Bring To Niv (WUBRG)
+#10 TennTyou: Niv To Light (WUBRG)
 #11 Smosh: E Tron (C)
 #12 WeareVenom: Bant Control (WUG)
 #13 Nekonii: Golgari Elves (BG)
@@ -165,13 +165,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck10_TennTyou_BringToNiv_WUBRG()
+        public void Deck10_TennTyou_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",9),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

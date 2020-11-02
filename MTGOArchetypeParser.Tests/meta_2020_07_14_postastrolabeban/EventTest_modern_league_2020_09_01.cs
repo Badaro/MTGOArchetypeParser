@@ -63,7 +63,7 @@ using System.Text;
 #52 kojirohyuga1: Dredge (WBRG)
 #53 bobinchese: Bant Control (WUG)
 #54 Bajka85: Dice Factory Tron (C)
-#55 Mordeka1ser: Bring To Niv (WUBRG, Yorion)
+#55 Mordeka1ser: Niv To Light (WUBRG, Yorion)
 #56 Darkwonyx: Rakdos Prowess (BR, Lurrus)
 #57 MonsterCC: Merfolk (U)
 #58 DoubleB_33: Heliod Sisters (W)
@@ -779,13 +779,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck55_Mordeka1ser_BringToNiv_WUBRG_Yorion()
+        public void Deck55_Mordeka1ser_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-09-01",54),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

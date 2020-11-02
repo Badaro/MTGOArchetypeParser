@@ -13,7 +13,7 @@ using System.Text;
 #02 __matsugan: Oops All Spells (WUBRG)
 #03 Bedell: KGC Amulet Titan (URG)
 #04 Bullwinkkle6705: UBRG Control (UBRG)
-#05 GodOfSlaughter: Bring To Niv (WUBRG, Yorion)
+#05 GodOfSlaughter: Niv To Light (WUBRG, Yorion)
 #06 rob85tx: Izzet Prowess (UR)
 #07 TuggaNaxos: Burn (WBR, Lurrus)
 #08 Laplasjan: Devoted (WG, Lurrus)
@@ -37,7 +37,7 @@ using System.Text;
 #26 helpfulsheep: Rakdos Prowess (BR, Lurrus)
 #27 Disgruntled_Elk: Shadow Prowess (BR, Lurrus)
 #28 Side_Arms: Scapeshift (URG)
-#29 Flshtoph: Bring To Niv (WUBRG, Yorion)
+#29 Flshtoph: Niv To Light (WUBRG, Yorion)
 #30 littledarwin: Hammer Time (W)
 #31 Metcalf23: Mono White Taxes (W)
 #32 HotBread: Gruul Midrange (RG)
@@ -100,13 +100,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_GodOfSlaughter_BringToNiv_WUBRG_Yorion()
+        public void Deck05_GodOfSlaughter_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-27",4),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -412,13 +412,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck29_Flshtoph_BringToNiv_WUBRG_Yorion()
+        public void Deck29_Flshtoph_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-27",28),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

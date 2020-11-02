@@ -19,7 +19,7 @@ using System.Text;
 #08 PietroSas: Merfolk (U)
 #09 Somniloquist_: Jund Shadow (BRG)
 #10 forenmagra: Saheeli To Light (WUBRG)
-#11 Snipers_are_bums: Bring To Niv (WUBRG)
+#11 Snipers_are_bums: Niv To Light (WUBRG)
 #12 Ingalsarm: Uroza (URG)
 #13 LordoftheLobsters: WURG Control (WURG, Yorion)
 #14 mtgmonte: UBRG Shadow (UBRG)
@@ -199,13 +199,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck11_Snipersarebums_BringToNiv_WUBRG()
+        public void Deck11_Snipersarebums_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",10),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

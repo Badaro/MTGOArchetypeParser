@@ -18,7 +18,7 @@ using System.Text;
 #07 Bruno_Mineiro: Jund Midrange (BRG)
 #08 Esqpoe: Eight Rack (B)
 #09 Srobmin: Mono Red Prowess (R, Jegantha)
-#10 Mordeka1ser: Bring To Niv (WUBRG, Yorion)
+#10 Mordeka1ser: Niv To Light (WUBRG, Yorion)
 #11 AngledLuffa: Bant Midrange (WUG)
 #12 DrSpectacles: Humans (WUBRG)
 #13 Butakov: Yawgmoth (BG)
@@ -184,13 +184,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_Mordeka1ser_BringToNiv_WUBRG_Yorion()
+        public void Deck10_Mordeka1ser_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-08-28",9),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

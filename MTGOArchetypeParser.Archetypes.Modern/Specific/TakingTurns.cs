@@ -11,11 +11,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Time Warp", "Temporal Mastery", "Savor the Moment", "Exhaustion", "Walk the Aeons",  } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Time Warp", "Temporal Mastery", "Savor the Moment", "Exhaustion", "Walk the Aeons",  } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Cryptic Command" , "Remand"} },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Hour of Promise" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Coiling Oracle" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Valakut, the Molten Pinnacle" } },
             };
             Variants = new ArchetypeVariant[]
             {

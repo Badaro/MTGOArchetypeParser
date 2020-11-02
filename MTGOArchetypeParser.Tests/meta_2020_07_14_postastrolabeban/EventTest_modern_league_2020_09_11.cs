@@ -55,7 +55,7 @@ using System.Text;
 #44 chaba_lol: Hammer Time (W)
 #45 Messssenger: Izzet Restore Balance (URG)
 #46 WingedHussar: Neobrand (UG)
-#47 Wuhsa: Bring To Niv (WUBRG, Yorion)
+#47 Wuhsa: Niv To Light (WUBRG, Yorion)
 #48 Trebz: Azorius Control (WU)
 #49 abijhavs: Mono Red Prowess (R)
 #50 davito: Merfolk (UG)
@@ -69,7 +69,7 @@ using System.Text;
 #58 LeonardoBeghine: Golgari Elves (BG)
 #59 Iwouldliketorespond: Taking Turns (UR)
 #60 scenekiid: Reclaimer Titan (WRG)
-#61 mikel88888888: Temur Control (URG)
+#61 mikel88888888: Taking Turns (URG)
 #62 LORiWWA: Gifts Storm (UR)
 #63 Jrcitizen: Izzet Phoenix (UR)
 #64 Curtisaxel: U Tron (U)
@@ -678,13 +678,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck47_Wuhsa_BringToNiv_WUBRG_Yorion()
+        public void Deck47_Wuhsa_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-09-11",46),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -860,13 +860,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck61_mikel88888888_TemurControl_URG()
+        public void Deck61_mikel88888888_TakingTurns_URG()
         {
             Test(
                 GetDeck("modern-league-2020-09-11",60),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(TakingTurns),
                 null,
                 null
             );

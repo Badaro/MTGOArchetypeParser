@@ -31,7 +31,7 @@ using System.Text;
 #20 GideonRavensword: Dredge (BRG)
 #21 Beltan3: Ad Nauseam (WUB)
 #22 Rinko: Enduring Ideal (WR)
-#23 joetru: Bring To Niv (WUBRG)
+#23 joetru: Niv To Light (WUBRG)
 #24 futureshok: Jund Midrange (BRG)
 #25 Erik157751: Shadow Prowess (BR, Lurrus)
 #26 PhantasmalBear: Scapeshift (URG)
@@ -334,13 +334,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck23_joetru_BringToNiv_WUBRG()
+        public void Deck23_joetru_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-28",22),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

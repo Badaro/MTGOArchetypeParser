@@ -11,10 +11,10 @@ using System.Text;
 /*
 #01 coliobeware: Jund Midrange (BRG, Lurrus)
 #02 Erik157751: Crabvine (UBG)
-#03 Ma7x: Bring To Niv (WUBRG, Jegantha)
+#03 Ma7x: Niv To Light (WUBRG, Jegantha)
 #04 MiguelCaster: Orzhov Eldrazi Taxes (WB)
 #05 guiyote: Izzet Prowess (UR)
-#06 Exoline: Taking Turns (WURG)
+#06 Exoline: WURG Control (WURG)
 #07 fingers1991: WURG Control (WURG)
 #08 Rav104: Oops All Spells (WUBRG)
 #09 GombleWhop: Humans (WUBRG)
@@ -74,13 +74,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_Ma7x_BringToNiv_WUBRG_Jegantha()
+        public void Deck03_Ma7x_NivToLight_WUBRG_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-25",2),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Jegantha
             );
@@ -113,13 +113,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_Exoline_TakingTurns_WURG()
+        public void Deck06_Exoline_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-25",5),
                 new PostZendikarRising(),
                 ArchetypeColor.WURG,
-                typeof(TakingTurns),
+                typeof(GenericControl),
                 null,
                 null
             );

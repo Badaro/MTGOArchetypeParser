@@ -28,7 +28,7 @@ using System.Text;
 #17 MissTrigger: Incinerator Burn (R)
 #18 patheus_84: Ad Nauseam (WUB)
 #19 JV_7777: E Tron (C)
-#20 CanadianNinja: Bring To Niv (WUBRG, Yorion)
+#20 CanadianNinja: Niv To Light (WUBRG, Yorion)
 #21 yu-ki: E Tron (C)
 #22 didoguidotti1: Bant Control (WUG)
 #23 Xwhale: Izzet Prowess (UR)
@@ -295,13 +295,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_CanadianNinja_BringToNiv_WUBRG_Yorion()
+        public void Deck20_CanadianNinja_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-12-0",19),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

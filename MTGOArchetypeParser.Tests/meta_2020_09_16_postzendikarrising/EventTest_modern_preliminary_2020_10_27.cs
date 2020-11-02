@@ -11,12 +11,12 @@ using System.Text;
 /*
 #01 Nytrox: Heliod Combo (WG)
 #02 moyashi0904: WURG Control (WURG)
-#03 Iziter: Taking Turns (WURG)
+#03 Iziter: WURG Control (WURG)
 #04 joker10289: Jund Midrange (BRG)
 #05 Mazzu93: UBRG Shadow (UBRG)
 #06 kthanakit26: Humans (WUBRG)
 #07 DrDree: Shadow Prowess (BR, Lurrus)
-#08 Phill_Hellmuth: Taking Turns (WURG)
+#08 Phill_Hellmuth: WURG Control (WURG)
 #09 FreakNightmare: Oops All Spells (WUBRG)
 */
 
@@ -51,13 +51,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_Iziter_TakingTurns_WURG()
+        public void Deck03_Iziter_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-27",2),
                 new PostZendikarRising(),
                 ArchetypeColor.WURG,
-                typeof(TakingTurns),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -116,13 +116,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_PhillHellmuth_TakingTurns_WURG()
+        public void Deck08_PhillHellmuth_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-27",7),
                 new PostZendikarRising(),
                 ArchetypeColor.WURG,
-                typeof(TakingTurns),
+                typeof(GenericControl),
                 null,
                 null
             );

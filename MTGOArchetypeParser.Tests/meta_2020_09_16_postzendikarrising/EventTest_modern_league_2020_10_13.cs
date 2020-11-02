@@ -53,7 +53,7 @@ using System.Text;
 #42 fabee1: Bant Midrange (WUG)
 #43 SgtMcMuffins: Sultai Reclamation (UBG)
 #44 Heir_of_Elendil15: Grixis Shadow (UBR)
-#45 Wuhsa: Bring To Niv (WUBRG)
+#45 Wuhsa: Niv To Light (WUBRG)
 #46 jacobricher: Humans (WUBRG)
 #47 GuardianShield: Kor Equipments (WR)
 #48 romanmy: Gruul Eldrazi (RG)
@@ -659,13 +659,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck45_Wuhsa_BringToNiv_WUBRG()
+        public void Deck45_Wuhsa_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-10-13",44),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

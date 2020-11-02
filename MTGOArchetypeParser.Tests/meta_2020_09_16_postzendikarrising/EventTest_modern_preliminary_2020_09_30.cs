@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 TSPJendrek: Sultai Control (UBG)
 #02 Sommertroll: Humans (WUBRG)
-#03 Capriccioso: Bring To Niv (WUBRG)
+#03 Capriccioso: Niv To Light (WUBRG)
 #04 paucr5: Devoted (WG, Lurrus)
 #05 ContraEgo: Thopter Urza (UBR)
 #06 TheJigIsAlwaysup: Shadow Prowess (BR, Lurrus)
@@ -53,13 +53,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_Capriccioso_BringToNiv_WUBRG()
+        public void Deck03_Capriccioso_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-30",2),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

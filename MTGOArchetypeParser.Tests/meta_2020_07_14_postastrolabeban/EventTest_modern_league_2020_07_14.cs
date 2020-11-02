@@ -53,7 +53,7 @@ using System.Text;
 #42 LordoftheLobsters: U Tron (U)
 #43 leuhohms: Infect (UG)
 #44 Sonkerz: Temur Delver (URG)
-#45 Wuhsa: Bring To Niv (WUBRG, Yorion)
+#45 Wuhsa: Niv To Light (WUBRG, Yorion)
 #46 albert62: Jund Midrange (BRG)
 #47 Bruno_Mineiro: Mono White Taxes (W)
 #48 azax: Neobrand (UG)
@@ -645,13 +645,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck45_Wuhsa_BringToNiv_WUBRG_Yorion()
+        public void Deck45_Wuhsa_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",44),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

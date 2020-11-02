@@ -18,7 +18,7 @@ using System.Text;
 #07 Trellon: U Tron (U)
 #08 CHILLEDADED: Burn (WR)
 #09 Predicted: Yawgmoth (WBG)
-#10 TennTyou: Bring To Niv (WUBRG)
+#10 TennTyou: Niv To Light (WUBRG)
 #11 Cy_4nhur: Snoop Goblins (BR)
 #12 buddha715: Burn (WR, Lurrus)
 #13 staffmat1992: Gruul Midrange (RG)
@@ -165,13 +165,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_TennTyou_BringToNiv_WUBRG()
+        public void Deck10_TennTyou_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",9),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

@@ -13,7 +13,7 @@ using System.Text;
 #02 Ivc: Azorius Control (WU)
 #03 GanYanCHN: Sultai Control (UBG)
 #04 Metcalf23: Mono White Taxes (W)
-#05 egadd2894: Bring To Niv (WUBRG)
+#05 egadd2894: Niv To Light (WUBRG)
 #06 blavantasian: Ad Nauseam (WUB)
 #07 Borjillamtg10: Rakdos Prowess (BR, Lurrus)
 #08 PieGonti: Humans (WUBRG)
@@ -54,7 +54,7 @@ using System.Text;
 #43 cws: Gifts Storm (UR)
 #44 CobaltOak: Azorius Control (WU)
 #45 Bangood: Mill (UB, Lurrus)
-#46 kurohiren: Bring To Niv (WUBRG, Yorion)
+#46 kurohiren: Niv To Light (WUBRG, Yorion)
 #47 Asoen: Rakdos Midrange (BR)
 #48 TheRealStormCrow: Kiki Chord (WURG, Yorion)
 #49 Leyline_of_the_Cat: Bant Spirits (WUG)
@@ -128,13 +128,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_egadd2894_BringToNiv_WUBRG()
+        public void Deck05_egadd2894_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",4),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );
@@ -661,13 +661,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck46_kurohiren_BringToNiv_WUBRG_Yorion()
+        public void Deck46_kurohiren_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",45),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

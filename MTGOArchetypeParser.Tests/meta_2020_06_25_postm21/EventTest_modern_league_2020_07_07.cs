@@ -61,7 +61,7 @@ using System.Text;
 #50 musasabi: Jund Smallpox (BRG)
 #51 Brunister: Dredge (WBR)
 #52 Mad-Ramon: Temur Reclamation (URG, Yorion)
-#53 osk4: Bring To Niv (WUBRG, Yorion)
+#53 osk4: Niv To Light (WUBRG, Yorion)
 #54 BanjoCaveman: Polymorph (RG)
 #55 kumuhl00: Elementals (WUBRG)
 #56 TBagTom: UBRG Control (UBRG)
@@ -69,7 +69,7 @@ using System.Text;
 #58 albert62: Jund Midrange (BRG)
 #59 Joao_Andrade: Mono Red Prowess (R, Jegantha)
 #60 SeventhProphet: Uroza (URG)
-#61 TuggaNaxos: Taking Turns (URG)
+#61 TuggaNaxos: Temur Midrange (URG)
 #62 victgobra10: Burn (WR)
 #63 yutya: Bant Control (WUG, Yorion)
 #64 Simpleliquid: Humans (WUBRG)
@@ -759,13 +759,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck53_osk4_BringToNiv_WUBRG_Yorion()
+        public void Deck53_osk4_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-07",52),
                 new PostM21(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -863,13 +863,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck61_TuggaNaxos_TakingTurns_URG()
+        public void Deck61_TuggaNaxos_TemurMidrange_URG()
         {
             Test(
                 GetDeck("modern-league-2020-07-07",60),
                 new PostM21(),
                 ArchetypeColor.URG,
-                typeof(TakingTurns),
+                typeof(GenericMidrange),
                 null,
                 null
             );

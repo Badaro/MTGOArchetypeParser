@@ -22,7 +22,7 @@ using System.Text;
 #11 _IlNano_: Shadow Prowess (BR, Lurrus)
 #12 Nammersquats: Humans (WUBRG)
 #13 Mcleskey: Izzet Prowess (UR)
-#14 joetru: Bring To Niv (WUBRG)
+#14 joetru: Niv To Light (WUBRG)
 #15 yamakiller: Shadow Prowess (BR, Lurrus)
 #16 dani_chad: Jund Midrange (BRG)
 #17 DreamsOfAshiok: E Tron (C)
@@ -211,13 +211,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_joetru_BringToNiv_WUBRG()
+        public void Deck14_joetru_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-02",13),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

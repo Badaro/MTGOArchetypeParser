@@ -44,7 +44,7 @@ using System.Text;
 #33 Stdlr: Mono Red Prowess (R, Jegantha)
 #34 meanfannypack: Orzhov Eldrazi Taxes (WB)
 #35 DoctorQueller: Bant Spirits (WUG)
-#36 Wuhsa: Bring To Niv (WUBRG)
+#36 Wuhsa: Niv To Light (WUBRG)
 #37 Curtisaxel: Heliod Combo (WG)
 #38 FedeG: Humans (WUBRG)
 #39 _EzMud1: Izzet Restore Balance (URG)
@@ -526,13 +526,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck36_Wuhsa_BringToNiv_WUBRG()
+        public void Deck36_Wuhsa_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-10-30",35),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

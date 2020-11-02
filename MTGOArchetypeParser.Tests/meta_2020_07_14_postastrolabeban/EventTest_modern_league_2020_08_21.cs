@@ -36,7 +36,7 @@ using System.Text;
 #25 SickWorld: Bogles (WG)
 #26 t1griselbrand: Neobrand (UG)
 #27 flyingspaghetti: Gifts Storm (UR)
-#28 Mordeka1ser: Bring To Niv (WUBRG, Yorion)
+#28 Mordeka1ser: Niv To Light (WUBRG, Yorion)
 #29 Delthar: Mill (UB)
 #30 Leviathan102: Reclaimer Titan (WRG)
 #31 Firewalker89: Grixis Shadow (UBR)
@@ -52,7 +52,7 @@ using System.Text;
 #41 TuggaNaxos: Sultai Control (UBG)
 #42 llabmonkey: Bant Control (WUG)
 #43 harukispecial: Sultai Control (UBG)
-#44 MartinezDP: Bring To Niv (WUBRG, Yorion)
+#44 MartinezDP: Niv To Light (WUBRG, Yorion)
 #45 Weasley: Sultai Reclamation (UBG)
 #46 JUJUBEAN__2004: Devoted (WUG)
 #47 Game_Night: Golos Tron (G, Jegantha)
@@ -418,13 +418,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck28_Mordeka1ser_BringToNiv_WUBRG_Yorion()
+        public void Deck28_Mordeka1ser_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",27),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -626,13 +626,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck44_MartinezDP_BringToNiv_WUBRG_Yorion()
+        public void Deck44_MartinezDP_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",43),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

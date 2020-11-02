@@ -20,7 +20,7 @@ using System.Text;
 #09 bigjc00: Amulet Titan (UBRG)
 #10 AstralPlane: Shadow Prowess (BR, Lurrus)
 #11 AlexanderRosdahl: Sultai Control (UBG)
-#12 Zar0s: Bring To Niv (WUBRG, Jegantha)
+#12 Zar0s: Niv To Light (WUBRG, Jegantha)
 #13 SpiderSpace: Mono White Taxes (W)
 #14 _Stream: Izzet Prowess (UR)
 #15 juzam_gin: Dredge (BRG)
@@ -191,13 +191,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_Zar0s_BringToNiv_WUBRG_Jegantha()
+        public void Deck12_Zar0s_NivToLight_WUBRG_Jegantha()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-10-04",11),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Jegantha
             );

@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 Gods_Shadow: Infect (UG)
-#02 Lannynyny: Bring To Niv (WUBRG)
+#02 Lannynyny: Niv To Light (WUBRG)
 #03 cccaspar: White Devotion (W)
 #04 scipios: Crabvine (UBG)
 #05 AlphaBlade: E Tron (C)
@@ -98,13 +98,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_Lannynyny_BringToNiv_WUBRG()
+        public void Deck02_Lannynyny_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-11",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

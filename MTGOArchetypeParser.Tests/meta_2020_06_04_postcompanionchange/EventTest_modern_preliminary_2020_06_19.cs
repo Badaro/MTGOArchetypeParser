@@ -18,7 +18,7 @@ using System.Text;
 #07 no_lyfe: Mono Red Prowess (R)
 #08 BoltTheBirds: Gifts Storm (UR)
 #09 BaronOfBacon: Humans (WUBRG)
-#10 joetru: Bring To Niv (WUBRG)
+#10 joetru: Niv To Light (WUBRG)
 #11 ManavonRX: Rakdos Midrange (BR)
 #12 lovealienzzz: Temur Control (URG)
 #13 eggybenny: Neobrand (UG)
@@ -150,13 +150,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck10_joetru_BringToNiv_WUBRG()
+        public void Deck10_joetru_NivToLight_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-19",9),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 null
             );

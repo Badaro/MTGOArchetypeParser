@@ -27,7 +27,7 @@ using System.Text;
 #16 Karhusaatana: Bogles (WG)
 #17 Cantergiani: Selenya Eldrazi Taxes (WG)
 #18 Parrit: Hardened Scales (G)
-#19 tylerjjobrien: Bring To Niv (WUBRG, Yorion)
+#19 tylerjjobrien: Niv To Light (WUBRG, Yorion)
 #20 armstrong36: Abzan Midrange (WBG)
 #21 osmanozguney: Smallpox (B)
 #22 bigjc00: Amulet Titan (URG)
@@ -312,13 +312,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck19_tylerjjobrien_BringToNiv_WUBRG_Yorion()
+        public void Deck19_tylerjjobrien_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-08-07",18),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );

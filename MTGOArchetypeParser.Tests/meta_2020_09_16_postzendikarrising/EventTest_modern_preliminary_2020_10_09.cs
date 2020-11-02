@@ -25,7 +25,7 @@ using System.Text;
 #14 maikage: Belcher (RG)
 #15 karatedom: Crabvine (UBG)
 #16 AbelMolto: Burn (WRG)
-#17 Gobern: Bring To Niv (WUBRG, Yorion)
+#17 Gobern: Niv To Light (WUBRG, Yorion)
 #18 tibalt_of_red_sub: Mill (UB, Lurrus)
 */
 
@@ -242,13 +242,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck17_Gobern_BringToNiv_WUBRG_Yorion()
+        public void Deck17_Gobern_NivToLight_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-09",16),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBRG,
-                typeof(BringToNiv),
+                typeof(NivToLight),
                 null,
                 ArchetypeCompanion.Yorion
             );
