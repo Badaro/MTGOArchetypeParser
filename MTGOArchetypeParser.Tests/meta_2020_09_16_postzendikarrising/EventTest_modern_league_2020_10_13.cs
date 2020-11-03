@@ -42,7 +42,7 @@ using System.Text;
 #31 __BMJ__: Kinnan Legends (WURG, Jegantha)
 #32 Borjillamtg10: Rakdos Midrange (BR)
 #33 Yozis: Mill (UB, Lurrus)
-#34 yPrincipe: Gruul Breach (RG)
+#34 yPrincipe: Titan Stompy (RG)
 #35 calexa: KGC Tron (G)
 #36 AkiraKryne: Mill (UBG)
 #37 nekomap: Naya Landfall (WRG)
@@ -516,13 +516,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck34_yPrincipe_GruulBreach_RG()
+        public void Deck34_yPrincipe_TitanStompy_RG()
         {
             Test(
                 GetDeck("modern-league-2020-10-13",33),
                 new PostZendikarRising(),
                 ArchetypeColor.RG,
-                typeof(GruulBreach),
+                typeof(TitanStompy),
                 null,
                 null
             );
