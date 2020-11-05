@@ -23,10 +23,10 @@ using System.Text;
 #12 Psychophobic: Gruul Midrange (RG)
 #13 Borjillamtg10: Ad Nauseam (WUB)
 #14 603Leb: Amulet Titan (WUBRG)
-#15 Mad-Ramon: Temur Reclamation (URG, Yorion)
+#15 Mad-Ramon: Temur Control (URG, Yorion)
 #16 Mordeka1ser: Niv To Light (WUBRG, Yorion)
 #17 Zebrah: Amulet Titan (WUBRG, Yorion)
-#18 Shorak123: Sultai Reclamation (UBG)
+#18 Shorak123: Sultai Control (UBG)
 #19 Beicodegeia: Gifts Storm (UR)
 #20 FantasticMrFox: Bogles (WG, Lurrus)
 #21 Rock_Star: Rakdos Prowess (BR, Lurrus)
@@ -34,7 +34,7 @@ using System.Text;
 #23 Lcario: Grixis Shadow (UBR)
 #24 Gaffiere1903: Gruul Midrange (RG)
 #25 Nogamblenofutur: Burn (WR)
-#26 Justodeangelo: Temur Reclamation (URG)
+#26 Justodeangelo: Temur Control (URG)
 #27 SightWinner: Hollow One (BR)
 #28 Pirika: Mardu Pyromancer (WBR)
 #29 Xorn9: Goblins (WUBRG)
@@ -234,7 +234,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck15_MadRamon_TemurReclamation_URG_Yorion()
+        public void Deck15_MadRamon_TemurControl_URG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",14),
@@ -273,7 +273,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck18_Shorak123_SultaiReclamation_UBG()
+        public void Deck18_Shorak123_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",17),
@@ -377,7 +377,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck26_Justodeangelo_TemurReclamation_URG()
+        public void Deck26_Justodeangelo_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",25),

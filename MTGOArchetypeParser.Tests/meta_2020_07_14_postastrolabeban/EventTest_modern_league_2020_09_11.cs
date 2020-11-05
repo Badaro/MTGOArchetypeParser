@@ -25,7 +25,7 @@ using System.Text;
 #14 harukispecial: Jeskai Control (WUR)
 #15 kokoko098: Heliod Devoted (WBG)
 #16 Granham: KGC Tron (G)
-#17 Middeterminist: Simic Reclamation (UG)
+#17 Middeterminist: Simic Control (UG)
 #18 MagikarpTheDeity: Infect (UG)
 #19 Janh: Sultai Control (UBG)
 #20 lawrencer12: Jund Midrange (BRG)
@@ -288,7 +288,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_Middeterminist_SimicReclamation_UG()
+        public void Deck17_Middeterminist_SimicControl_UG()
         {
             Test(
                 GetDeck("modern-league-2020-09-11",16),

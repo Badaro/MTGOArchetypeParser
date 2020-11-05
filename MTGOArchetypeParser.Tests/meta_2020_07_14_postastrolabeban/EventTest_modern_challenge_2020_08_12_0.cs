@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 blastoids: Azorius Control (WU)
-#02 GedionRavenor: Bant Reclamation (WUG)
+#02 GedionRavenor: Bant Control (WUG)
 #03 LyaApocalypse: KGC Tron (G)
 #04 qbturtle15: Jund Midrange (BRG)
 #05 indianpancake: Jund Shadow (BRG, Lurrus)
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_GedionRavenor_BantReclamation_WUG()
+        public void Deck02_GedionRavenor_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-12-0",1),

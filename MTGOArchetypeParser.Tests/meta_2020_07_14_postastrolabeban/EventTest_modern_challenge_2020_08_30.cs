@@ -27,13 +27,13 @@ using System.Text;
 #16 Trellon: U Tron (U)
 #17 blastoids: Bant Control (WUG)
 #18 PvtEnormous: Bant Control (WUG)
-#19 Day_man: Temur Reclamation (URG)
+#19 Day_man: Temur Control (URG)
 #20 Midguy: KGC Tron (G)
 #21 Lord_of_Puntlantis: Izzet Restore Balance (URG)
 #22 FloorFlower: Gruul Midrange (RG)
 #23 raven0904: G Tron (G)
 #24 Corrado: Rakdos Prowess (BR, Lurrus)
-#25 FestiFan: Temur Reclamation (URG)
+#25 FestiFan: Temur Control (URG)
 #26 scipios: Crabvine (UBG)
 #27 cws: Gifts Storm (UR)
 #28 hoveydw: Jund Shadow (BRG)
@@ -282,7 +282,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck19_Dayman_TemurReclamation_URG()
+        public void Deck19_Dayman_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",18),
@@ -360,7 +360,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck25_FestiFan_TemurReclamation_URG()
+        public void Deck25_FestiFan_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",24),

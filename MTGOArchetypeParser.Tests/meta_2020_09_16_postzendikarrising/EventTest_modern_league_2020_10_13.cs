@@ -24,7 +24,7 @@ using System.Text;
 #13 MHayashi: Obosh Aggro (R, Obosh)
 #14 asmitchler: UBRG Shadow (UBRG)
 #15 heyakita: Snow Saheeli (WURG, Yorion)
-#16 yatoyatoya: Mono White Eldrazi Taxes (W)
+#16 yatoyatoya: Mono White Taxes (W)
 #17 Dudleythedog: Mono Red Prowess (R)
 #18 daibloXSC: Azorius Control (WU)
 #19 radmc: Jeskai Control (WUR)
@@ -51,7 +51,7 @@ using System.Text;
 #40 Krukgar: Rakdos Midrange (BR)
 #41 magicplayer103472: Jund Midrange (BRG)
 #42 fabee1: Bant Midrange (WUG)
-#43 SgtMcMuffins: Sultai Reclamation (UBG)
+#43 SgtMcMuffins: Sultai Control (UBG)
 #44 Heir_of_Elendil15: Grixis Shadow (UBR)
 #45 Wuhsa: Niv To Light (WUBRG)
 #46 jacobricher: Humans (WUBRG)
@@ -282,7 +282,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_yatoyatoya_MonoWhiteEldraziTaxes_W()
+        public void Deck16_yatoyatoya_MonoWhiteTaxes_W()
         {
             Test(
                 GetDeck("modern-league-2020-10-13",15),
@@ -633,7 +633,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck43_SgtMcMuffins_SultaiReclamation_UBG()
+        public void Deck43_SgtMcMuffins_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-10-13",42),

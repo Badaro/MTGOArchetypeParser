@@ -67,7 +67,7 @@ using System.Text;
 #56 DLCabelo: Yawgmoth (BG)
 #57 hugofreitas1: Gifts Storm (UR)
 #58 fpawlusz: Bant Control (WUG)
-#59 ranspach17: Selenya Eldrazi Taxes (WG)
+#59 ranspach17: Selenya Taxes (WG)
 #60 Albyz: Izzet Restore Balance (URG)
 #61 MartinezDP: Naya Midrange (WRG)
 #62 TwistedWombat: Golgari Midrange (BG)
@@ -76,7 +76,7 @@ using System.Text;
 #65 DoctorQueller: Spirits (WU)
 #66 tcgshin: Titan Shift (RG)
 #67 ArchonBlue: Blue Living End (WURG)
-#68 kogamo: Sultai Reclamation (UBG)
+#68 kogamo: Sultai Control (UBG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -838,7 +838,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck59_ranspach17_SelenyaEldraziTaxes_WG()
+        public void Deck59_ranspach17_SelenyaTaxes_WG()
         {
             Test(
                 GetDeck("modern-league-2020-07-21",58),
@@ -955,7 +955,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck68_kogamo_SultaiReclamation_UBG()
+        public void Deck68_kogamo_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-07-21",67),

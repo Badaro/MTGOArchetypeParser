@@ -25,7 +25,7 @@ using System.Text;
 #14 moralmar: Heliod Devoted (WG)
 #15 Chipsoss: Shadow Prowess (BR, Lurrus)
 #16 thel0stb0y: Gruul Midrange (RG)
-#17 seasonofmists: Abzan Eldrazi Taxes (WBG)
+#17 seasonofmists: Abzan Taxes (WBG)
 #18 phokmeup: Heliod Combo (WG)
 #19 BrianAMarx: Niv To Light (WUBRG)
 #20 ContraEgo: Thopter Urza (UBR)
@@ -285,7 +285,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck17_seasonofmists_AbzanEldraziTaxes_WBG()
+        public void Deck17_seasonofmists_AbzanTaxes_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-10-23",16),

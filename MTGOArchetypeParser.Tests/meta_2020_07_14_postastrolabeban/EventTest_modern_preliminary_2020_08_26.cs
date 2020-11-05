@@ -13,7 +13,7 @@ using System.Text;
 #02 NosonosaN: Jund Prowess (BRG, Lurrus)
 #03 McWinSauce: Bant Control (WUG)
 #04 iL_Tedesco: Jund Midrange (BRG)
-#05 Lavaridge: Temur Reclamation (URG)
+#05 Lavaridge: Temur Control (URG)
 #06 Tsubasa_Cat: Burn (WR)
 #07 MrSeri: Heliod Combo (WG)
 #08 AuDollarydoo: Crabvine (UBG)
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_Lavaridge_TemurReclamation_URG()
+        public void Deck05_Lavaridge_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-26",4),

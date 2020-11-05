@@ -17,7 +17,7 @@ using System.Text;
 #06 stefanocanclini: Saheeli Combo (WUR)
 #07 Azuregun: KGC Amulet Titan (WUBRG)
 #08 muckymuck_dc5: Mono White Taxes (W)
-#09 AJRubenstein: Mono White Eldrazi Taxes (W)
+#09 AJRubenstein: Mono White Taxes (W)
 #10 Surpriz3: Grixis Control (UBR)
 #11 Fabrioteo: Gruul Midrange (RG)
 #12 Kr0k39: Snoop Goblins (BR)
@@ -32,7 +32,7 @@ using System.Text;
 #21 Eotoi: Orzhov Midrange (WB)
 #22 llabmonkey: Bant Midrange (WUG)
 #23 Borjillamtg10: Rakdos Prowess (BR, Lurrus)
-#24 Musagete: Orzhov Eldrazi Taxes (WB)
+#24 Musagete: Orzhov Taxes (WB)
 #25 Gautcho: Oops All Spells (WUBRG)
 #26 TheWonderLord: Golgari Midrange (BG)
 #27 yumad3988: Orzhov Shadow (WB)
@@ -176,7 +176,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_AJRubenstein_MonoWhiteEldraziTaxes_W()
+        public void Deck09_AJRubenstein_MonoWhiteTaxes_W()
         {
             Test(
                 GetDeck("modern-league-2020-10-02",8),
@@ -371,7 +371,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck24_Musagete_OrzhovEldraziTaxes_WB()
+        public void Deck24_Musagete_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-10-02",23),

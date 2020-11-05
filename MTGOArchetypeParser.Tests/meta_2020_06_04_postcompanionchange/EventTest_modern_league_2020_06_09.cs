@@ -25,7 +25,7 @@ using System.Text;
 #14 WotC_AndrewB: Mono White Taxes (W)
 #15 Madwolf87: Jund Shadow (BRG)
 #16 fupalorda: Izzet Restore Balance (URG)
-#17 litianshuo670: Orzhov Eldrazi Taxes (WB)
+#17 litianshuo670: Orzhov Taxes (WB)
 #18 thepensword: Izzet Control (UR)
 #19 ScreenwriterNY: WUBG Control (WUBG, Yorion)
 #20 Urzza100: Bant Control (WUG, Yorion)
@@ -288,7 +288,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck17_litianshuo670_OrzhovEldraziTaxes_WB()
+        public void Deck17_litianshuo670_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-06-09",16),

@@ -26,7 +26,7 @@ using System.Text;
 #15 wynn1006: Izzet Prowess (UR)
 #16 Coutinho13: Titan Shift (RG)
 #17 Parrit: Mono White Taxes (W)
-#18 Ryan_39: Simic Reclamation (UG)
+#18 Ryan_39: Simic Control (UG)
 #19 tousey: Slivers (WUBRG)
 #20 TheAznYoshi: Gruul Midrange (RG)
 #21 Teston: Gifts Storm (UR)
@@ -38,7 +38,7 @@ using System.Text;
 #27 DarkKeeper: Bant Control (WUG)
 #28 Planet-Blade: Grixis Shadow (UBR)
 #29 ColoradoRalphy: Humans (WUBRG)
-#30 TheBigMoke: Sultai Reclamation (UBG)
+#30 TheBigMoke: Sultai Control (UBG)
 #31 TheOneCoff: Valakut Field (URG)
 #32 nietzreznor: Obosh Aggro (R, Obosh)
 #33 Bangood: Thopter Urza (UBR)
@@ -290,7 +290,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck18_Ryan39_SimicReclamation_UG()
+        public void Deck18_Ryan39_SimicControl_UG()
         {
             Test(
                 GetDeck("modern-league-2020-09-04",17),
@@ -446,7 +446,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_TheBigMoke_SultaiReclamation_UBG()
+        public void Deck30_TheBigMoke_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-09-04",29),

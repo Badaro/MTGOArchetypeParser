@@ -15,7 +15,7 @@ using System.Text;
 #04 ImmanuelKantrolGod: Bant Control (WUG)
 #05 Somefellow: Amulet Titan (URG)
 #06 Nickburch13: Mardu Prowess (WBR, Lurrus)
-#07 fling5133: Sultai Reclamation (UBG)
+#07 fling5133: Sultai Control (UBG)
 #08 JustBurn420: Slivers (WUBRG)
 #09 lSoLlAKirA: Bant Control (WUG)
 #10 Rinko: Enduring Ideal (W)
@@ -109,7 +109,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_fling5133_SultaiReclamation_UBG()
+        public void Deck07_fling5133_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-02",6),

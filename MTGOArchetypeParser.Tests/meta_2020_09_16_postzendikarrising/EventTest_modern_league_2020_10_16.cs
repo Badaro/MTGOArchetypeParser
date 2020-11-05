@@ -12,9 +12,9 @@ using System.Text;
 #01 Patxi: Omnath Saheeli (WURG, Jegantha)
 #02 DavidSnake: Dredge (BRG)
 #03 MTGnextlevel: Rakdos Prowess (BR, Lurrus)
-#04 pbarrrgh: Simic Reclamation (UG)
-#05 Weasley: Sultai Reclamation (UBG, Yorion)
-#06 seasonofmists: Abzan Eldrazi Taxes (WBG)
+#04 pbarrrgh: Simic Control (UG)
+#05 Weasley: Sultai Control (UBG, Yorion)
+#06 seasonofmists: Abzan Taxes (WBG)
 #07 FalseMufn: U Tron (U)
 #08 Capiplaf95: Burn (WR)
 #09 apriolo1: Reclaimer Titan (WRG)
@@ -111,7 +111,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_pbarrrgh_SimicReclamation_UG()
+        public void Deck04_pbarrrgh_SimicControl_UG()
         {
             Test(
                 GetDeck("modern-league-2020-10-16",3),
@@ -124,7 +124,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_Weasley_SultaiReclamation_UBG_Yorion()
+        public void Deck05_Weasley_SultaiControl_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-10-16",4),
@@ -137,7 +137,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_seasonofmists_AbzanEldraziTaxes_WBG()
+        public void Deck06_seasonofmists_AbzanTaxes_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-10-16",5),

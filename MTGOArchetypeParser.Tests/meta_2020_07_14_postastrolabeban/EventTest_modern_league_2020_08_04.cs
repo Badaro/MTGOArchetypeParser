@@ -33,12 +33,12 @@ using System.Text;
 #22 Hiyori9: Jund Midrange (BRG)
 #23 ImmanuelKantrolGod: Azorius Control (WU)
 #24 Doni_Dominaria: Bogles (WG)
-#25 Shorak123: Sultai Reclamation (UBG)
+#25 Shorak123: Sultai Control (UBG)
 #26 Fluffypingo: KGC Tron (G)
 #27 TheStapler: Orzhov Tokens (WB)
 #28 Xenowan: Hardened Scales (G)
 #29 MagicEd: Jund Shadow (BRG)
-#30 Moments_Peace: Orzhov Eldrazi Taxes (WB)
+#30 Moments_Peace: Orzhov Taxes (WB)
 #31 Lenneth: Mardu Midrange (WBR)
 #32 shiven djinn: Obosh Aggro (R, Obosh)
 #33 fatkiddestroyers: Bant Midrange (WUG)
@@ -404,7 +404,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck25_Shorak123_SultaiReclamation_UBG()
+        public void Deck25_Shorak123_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-04",24),
@@ -469,7 +469,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_MomentsPeace_OrzhovEldraziTaxes_WB()
+        public void Deck30_MomentsPeace_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-08-04",29),

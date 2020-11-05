@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 Tarmofir3: Jund Midrange (BRG)
-#02 MadMaxErnst: Sultai Reclamation (UBG)
+#02 MadMaxErnst: Sultai Control (UBG)
 #03 Nickburch13: Burn (WR, Lurrus)
 #04 MrJayngles: Red Prison (R)
 #05 babamm: Izzet Restore Balance (URG)
@@ -49,7 +49,7 @@ using System.Text;
 #38 andresambiaze: Hardened Scales (G)
 #39 Bangood: Thopter Urza (UBR)
 #40 GoblinK1ng: Goblins (BRG)
-#41 Keggers: Sultai Reclamation (UBG)
+#41 Keggers: Sultai Control (UBG)
 #42 ForThoseWhoHaveHeart: Jund Shadow (BRG, Lurrus)
 #43 ScreenwriterNY: Azorius Taxes (WU)
 #44 E-GirlUWU: Snoop Goblins (BR)
@@ -62,7 +62,7 @@ using System.Text;
 #51 DarkKeeper: Scapeshift (URG)
 #52 zbishop: Mono White Taxes (W)
 #53 Busterbrown52: Elementals (WUBRG)
-#54 Madvilla1ny: Bant Reclamation (WUG)
+#54 Madvilla1ny: Bant Control (WUG)
 #55 takutin09007: Bushwhacker Zoo (WRG)
 #56 Metcalf23: Boros Taxes (WR)
 #57 konoyubitomare15: Heliod Combo (WG)
@@ -103,7 +103,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_MadMaxErnst_SultaiReclamation_UBG()
+        public void Deck02_MadMaxErnst_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-07-28",1),
@@ -610,7 +610,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck41_Keggers_SultaiReclamation_UBG()
+        public void Deck41_Keggers_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-07-28",40),
@@ -779,7 +779,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck54_Madvilla1ny_BantReclamation_WUG()
+        public void Deck54_Madvilla1ny_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-07-28",53),

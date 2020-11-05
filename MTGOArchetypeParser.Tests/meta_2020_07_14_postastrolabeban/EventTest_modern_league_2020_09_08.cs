@@ -66,8 +66,8 @@ using System.Text;
 #55 piie: Scapeshift (URG)
 #56 GoodDay: Bant Midrange (WUG)
 #57 wilson5434: Naya Midrange (WRG)
-#58 AJOCHUM: Temur Reclamation (URG)
-#59 Musagete: Orzhov Eldrazi Taxes (WB)
+#58 AJOCHUM: Temur Control (URG)
+#59 Musagete: Orzhov Taxes (WB)
 #60 Usama96: Sultai Control (UBG)
 #61 exoticherman: Rakdos Prowess (BR, Lurrus)
 #62 Kotva: Angels (WR)
@@ -819,7 +819,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck58_AJOCHUM_TemurReclamation_URG()
+        public void Deck58_AJOCHUM_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-league-2020-09-08",57),
@@ -832,7 +832,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck59_Musagete_OrzhovEldraziTaxes_WB()
+        public void Deck59_Musagete_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-09-08",58),

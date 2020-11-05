@@ -23,7 +23,7 @@ using System.Text;
 #12 LHaxLover: Scapeshift (URG)
 #13 PhantasmalBear: Azorius Midrange (WU)
 #14 ContraEgo: Thopter Urza (UBR)
-#15 Nilsfit: Sultai Reclamation (UBG)
+#15 Nilsfit: Sultai Control (UBG)
 #16 DeadEyeEneMy: Bogles (WG)
 #17 Sharkcaster_Mage: Ad Nauseam (WUB)
 #18 cnofafva: KGC Amulet Titan (WUBRG)
@@ -65,8 +65,8 @@ using System.Text;
 #54 BlueLips: Bant Control (WUG)
 #55 KOKI12: Azorius Control (WU)
 #56 SpiderSpace: Mono White Taxes (W)
-#57 Mad-Ramon: Temur Reclamation (URG)
-#58 Fabrice_K: Simic Reclamation (UG, Yorion)
+#57 Mad-Ramon: Temur Control (URG)
+#58 Fabrice_K: Simic Control (UG, Yorion)
 #59 DreamsOfAshiok: Mardu Prowess (WBR, Lurrus)
 #60 Gul_Dukat: Gruul Prowess (RG, Jegantha)
 #61 penach010: Heliod Devoted (WRG, Yorion)
@@ -260,7 +260,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_Nilsfit_SultaiReclamation_UBG()
+        public void Deck15_Nilsfit_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-07-24",14),
@@ -806,7 +806,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck57_MadRamon_TemurReclamation_URG()
+        public void Deck57_MadRamon_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-league-2020-07-24",56),
@@ -819,7 +819,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck58_FabriceK_SimicReclamation_UG_Yorion()
+        public void Deck58_FabriceK_SimicControl_UG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-24",57),

@@ -15,12 +15,12 @@ using System.Text;
 #04 Edel: Jund Midrange (BRG)
 #05 Traft: Ad Nauseam (WUB)
 #06 Danker: Azorius Control (WU)
-#07 nahuel10: Bant Reclamation (WUG)
+#07 nahuel10: Bant Control (WUG)
 #08 pokerswizard: Jund Midrange (BRG)
-#09 kanister: Temur Reclamation (URG)
+#09 kanister: Temur Control (URG)
 #10 skuttlespike: Gruul Midrange (RG)
 #11 no_lyfe: Mono Red Prowess (R)
-#12 Shorak123: Sultai Reclamation (UBG)
+#12 Shorak123: Sultai Control (UBG)
 #13 Chefen: Snoop Goblins (BR)
 #14 echecetmat35: Titan Shift (URG)
 #15 bntrusty14: Devoted (WG, Lurrus)
@@ -33,7 +33,7 @@ using System.Text;
 #22 MZBlazer: Izzet Prowess (UR)
 #23 MrRaeb: Sultai Control (UBG)
 #24 kthanakit26: Burn (WR)
-#25 crazybaloth: Mono White Eldrazi Taxes (W)
+#25 crazybaloth: Mono White Taxes (W)
 #26 MasterA: Snoop Goblins (BRG)
 #27 Vonducky: Boros Prowess (WR)
 #28 azatoyellow: Mono Red Prowess (R, Jegantha)
@@ -126,7 +126,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_nahuel10_BantReclamation_WUG()
+        public void Deck07_nahuel10_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-19",6),
@@ -152,7 +152,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_kanister_TemurReclamation_URG()
+        public void Deck09_kanister_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-19",8),
@@ -191,7 +191,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_Shorak123_SultaiReclamation_UBG()
+        public void Deck12_Shorak123_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-19",11),
@@ -360,7 +360,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck25_crazybaloth_MonoWhiteEldraziTaxes_W()
+        public void Deck25_crazybaloth_MonoWhiteTaxes_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-19",24),

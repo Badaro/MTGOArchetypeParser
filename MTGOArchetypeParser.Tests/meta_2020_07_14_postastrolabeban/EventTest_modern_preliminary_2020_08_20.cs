@@ -23,7 +23,7 @@ using System.Text;
 #12 ConnorM426: Rakdos Prowess (BR, Lurrus)
 #13 CHILLEDADED: Burn (WR)
 #14 PeanutBrittle: Mono Red Prowess (R, Jegantha)
-#15 ht991122: Temur Reclamation (URG)
+#15 ht991122: Temur Control (URG)
 #16 Xwhale: Bant Control (WUG)
 #17 A22en: Snoop Goblins (BR)
 #18 MrZarukai: Gruul Midrange (RG)
@@ -219,7 +219,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_ht991122_TemurReclamation_URG()
+        public void Deck15_ht991122_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",14),

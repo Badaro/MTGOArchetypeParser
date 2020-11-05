@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Lavaridge: Temur Reclamation (URG)
+#01 Lavaridge: Temur Control (URG)
 #02 Magicofplayer1: Dredge (WBRG)
 #03 _Falcon_: Izzet Prowess (UR)
 #04 E_Kaminuma: E Tron (C)
@@ -18,10 +18,10 @@ using System.Text;
 #07 Zar0s: Scapeshift (URG)
 #08 komattaman: Gruul Midrange (RG)
 #09 Lukas261997: Azorius Control (WU)
-#10 moyashi0904: Temur Reclamation (URG)
+#10 moyashi0904: Temur Control (URG)
 #11 johnsmith3373: Izzet Prowess (UR)
 #12 CrusherBotBG: Hammer Time (W)
-#13 ktmr-39: Sultai Reclamation (UBG)
+#13 ktmr-39: Sultai Control (UBG)
 #14 siomomi: E Tron (C)
 #15 Wuhsa: Niv To Light (WUBRG)
 #16 _Shatun_: Mono Red Prowess (R)
@@ -36,7 +36,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_07_29 : EventTest
     {
         [Test]
-        public void Deck01_Lavaridge_TemurReclamation_URG()
+        public void Deck01_Lavaridge_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",0),
@@ -153,7 +153,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_moyashi0904_TemurReclamation_URG()
+        public void Deck10_moyashi0904_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",9),
@@ -192,7 +192,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_ktmr39_SultaiReclamation_UBG()
+        public void Deck13_ktmr39_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",12),

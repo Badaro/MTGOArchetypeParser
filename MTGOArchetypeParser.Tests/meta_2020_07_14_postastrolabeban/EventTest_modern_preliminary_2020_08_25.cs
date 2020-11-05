@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Lavaridge: Temur Reclamation (URG)
+#01 Lavaridge: Temur Control (URG)
 #02 SunofNothing: Dimir Shadow (UB)
 #03 A22en: Snoop Goblins (BRG)
 #04 kanister: Bant Control (WUG)
@@ -35,7 +35,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_08_25 : EventTest
     {
         [Test]
-        public void Deck01_Lavaridge_TemurReclamation_URG()
+        public void Deck01_Lavaridge_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-25",0),

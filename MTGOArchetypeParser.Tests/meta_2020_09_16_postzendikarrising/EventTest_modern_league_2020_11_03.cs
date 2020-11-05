@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 polishdynamit3: Shadow Prowess (WBR, Lurrus)
 #02 fake-news: Primeval Titan (WURG)
-#03 meanfannypack: Orzhov Eldrazi Taxes (WB, Yorion)
+#03 meanfannypack: Orzhov Taxes (WB, Yorion)
 #04 Tarrasque1: Zombies (WB)
 #05 tortillathehun: Rakdos Midrange (BR)
 #06 MaxMagicer: Scapeshift (URG, Yorion)
@@ -70,7 +70,7 @@ using System.Text;
 #59 Rauptro: Izzet Control (UR)
 #60 hoek47: Mono Red Prowess (R)
 #61 vdboule: Scapeshift (WURG)
-#62 Vasoi2323: Sultai Reclamation (UBG)
+#62 Vasoi2323: Sultai Control (UBG)
 #63 daibloXSC: Azorius Control (WU)
 #64 Shou-T: E Tron (C)
 #65 CCM777: Hollow One (URG)
@@ -109,7 +109,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_meanfannypack_OrzhovEldraziTaxes_WB_Yorion()
+        public void Deck03_meanfannypack_OrzhovTaxes_WB_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-11-03",2),
@@ -876,7 +876,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck62_Vasoi2323_SultaiReclamation_UBG()
+        public void Deck62_Vasoi2323_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-11-03",61),

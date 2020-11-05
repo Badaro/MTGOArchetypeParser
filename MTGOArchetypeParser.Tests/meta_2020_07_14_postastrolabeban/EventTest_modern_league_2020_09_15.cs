@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 SpikeYou: Sultai Reclamation (UBG)
+#01 SpikeYou: Sultai Control (UBG)
 #02 Supercazzola: Azorius Control (WU)
 #03 DFrank: Temur Control (URG)
 #04 katobu: Heliod Combo (WG)
@@ -63,7 +63,7 @@ using System.Text;
 #52 NEWBIN: Infect (UG)
 #53 Killabee: Neobrand (UG)
 #54 A22en: Snoop Goblins (BR)
-#55 Kk-: Orzhov Eldrazi Taxes (WB)
+#55 Kk-: Orzhov Taxes (WB)
 #56 mxlzxk: Sultai Control (UBG)
 #57 milikin: Jund Shadow (BRG)
 #58 Kuhb: Devoted (WG, Lurrus)
@@ -78,7 +78,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_league_2020_09_15 : EventTest
     {
         [Test]
-        public void Deck01_SpikeYou_SultaiReclamation_UBG()
+        public void Deck01_SpikeYou_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-09-15",0),
@@ -780,7 +780,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck55_Kk_OrzhovEldraziTaxes_WB()
+        public void Deck55_Kk_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-09-15",54),

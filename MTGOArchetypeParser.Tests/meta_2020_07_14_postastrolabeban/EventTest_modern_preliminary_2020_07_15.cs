@@ -14,7 +14,7 @@ using System.Text;
 #03 BSK_hercules: Izzet Prowess (UR)
 #04 johnsmith3373: Humans (WUBRG)
 #05 MiamiKidz: Izzet Prowess (UR)
-#06 Shorak123: Sultai Reclamation (UBG)
+#06 Shorak123: Sultai Control (UBG)
 #07 siomomi: E Tron (C)
 #08 GoonLord: Gruul Midrange (RG)
 #09 ZYURYO: Azorius Control (WU)
@@ -90,7 +90,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_Shorak123_SultaiReclamation_UBG()
+        public void Deck06_Shorak123_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-15",5),

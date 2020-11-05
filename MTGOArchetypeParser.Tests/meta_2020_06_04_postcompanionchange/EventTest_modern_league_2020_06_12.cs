@@ -19,10 +19,10 @@ using System.Text;
 #08 603Leb: Gruul Midrange (RG)
 #09 sydneydude: Boros Prowess (WR)
 #10 rouleur: Mono Red Prowess (R)
-#11 yamayama: Sultai Reclamation (UBG, Yorion)
+#11 yamayama: Sultai Control (UBG, Yorion)
 #12 jimdownside: Aristocrats (WB, Lurrus)
 #13 Danny_Bambino: Crabvine (UBG)
-#14 pbarrrgh: Sultai Reclamation (UBG)
+#14 pbarrrgh: Sultai Control (UBG)
 #15 Zeranox: Bant Blink (WUG, Yorion)
 #16 FlxEx: Jund Shadow (BRG)
 #17 soba178: Humans (WUBRG)
@@ -45,7 +45,7 @@ using System.Text;
 #34 knightmare21: Izzet Control (UR)
 #35 albert62: Jund Midrange (BRG)
 #36 kuromatu: E Tron (C)
-#37 Nideon: Orzhov Eldrazi Taxes (WB)
+#37 Nideon: Orzhov Taxes (WB)
 #38 nahuel10: WUBG Control (WUBG, Yorion)
 #39 Zebrah: Amulet Titan (WURG)
 #40 SawphtBoi: Winota (WRG)
@@ -190,7 +190,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck11_yamayama_SultaiReclamation_UBG_Yorion()
+        public void Deck11_yamayama_SultaiControl_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",10),
@@ -229,7 +229,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck14_pbarrrgh_SultaiReclamation_UBG()
+        public void Deck14_pbarrrgh_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",13),
@@ -528,7 +528,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck37_Nideon_OrzhovEldraziTaxes_WB()
+        public void Deck37_Nideon_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",36),

@@ -19,12 +19,12 @@ using System.Text;
 #08 Hetteshkane: Burn (WR)
 #09 ltbeast: Scapeshift (URG)
 #10 Nextep: Sultai Control (UBG)
-#11 didoguidotti1: Temur Reclamation (URG)
+#11 didoguidotti1: Temur Control (URG)
 #12 junghans: Heliod Combo (WG)
 #13 imperatorek: Devoted (WG, Lurrus)
-#14 Sharkcaster_Mage: Sultai Reclamation (UBG)
+#14 Sharkcaster_Mage: Sultai Control (UBG)
 #15 zildjian88: Dredge (BRG)
-#16 mrounds1216: Orzhov Eldrazi Taxes (WB)
+#16 mrounds1216: Orzhov Taxes (WB)
 #17 _VFS_: Sultai Control (UBG)
 #18 _MRZ_: Sultai Midrange (UBG)
 #19 Thekkar: Ad Nauseam (WUB)
@@ -66,7 +66,7 @@ using System.Text;
 #55 Asoen: Rakdos Midrange (BR)
 #56 Iceman76: Snoop Goblins (BR)
 #57 kaktusowysmok: Merfolk (U)
-#58 Middeterminist: Simic Reclamation (UG)
+#58 Middeterminist: Simic Control (UG)
 #59 CrusherBotBG: Hammer Time (W)
 #60 DieSense84: Golgari Midrange (BG)
 #61 ivan229: Izzet Control (UR)
@@ -215,7 +215,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_didoguidotti1_TemurReclamation_URG()
+        public void Deck11_didoguidotti1_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-league-2020-08-11",10),
@@ -254,7 +254,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_SharkcasterMage_SultaiReclamation_UBG()
+        public void Deck14_SharkcasterMage_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-11",13),
@@ -280,7 +280,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck16_mrounds1216_OrzhovEldraziTaxes_WB()
+        public void Deck16_mrounds1216_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-08-11",15),
@@ -826,7 +826,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck58_Middeterminist_SimicReclamation_UG()
+        public void Deck58_Middeterminist_SimicControl_UG()
         {
             Test(
                 GetDeck("modern-league-2020-08-11",57),

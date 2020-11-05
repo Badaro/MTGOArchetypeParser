@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 trader08111: Gruul Midrange (RG)
 #02 Violent_Outburst: Scapeshift (URG)
-#03 mogis67: Sultai Reclamation (UBG)
+#03 mogis67: Sultai Control (UBG)
 #04 Gerschi: Mardu Prowess (WBR, Lurrus)
 #05 Samlg01: KGC Amulet Titan (WURG)
 #06 _Stream: Izzet Prowess (UR)
@@ -51,7 +51,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_mogis67_SultaiReclamation_UBG()
+        public void Deck03_mogis67_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-12",2),

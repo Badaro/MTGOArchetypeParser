@@ -39,7 +39,7 @@ using System.Text;
 #28 haubidtran: Uroza (WUG, Yorion)
 #29 Cherryxman: Incinerator Burn (R)
 #30 in5ano: Scapeshift (URG, Yorion)
-#31 Fabrice_K: Sultai Reclamation (UBG, Yorion)
+#31 Fabrice_K: Sultai Control (UBG, Yorion)
 #32 Jidden: Thopter Urza (WU)
 #33 PizzaTurtle: Bogles (WG, Lurrus)
 #34 Curtisaxel: Bant Spirits (WUG)
@@ -458,7 +458,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck31_FabriceK_SultaiReclamation_UBG_Yorion()
+        public void Deck31_FabriceK_SultaiControl_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-30",30),

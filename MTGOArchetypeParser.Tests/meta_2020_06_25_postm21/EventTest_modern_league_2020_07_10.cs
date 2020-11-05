@@ -45,7 +45,7 @@ using System.Text;
 #34 Loreington: Gifts Storm (UR)
 #35 Evaros: Mono White Taxes (W)
 #36 yumad3988: Hollow One (BR)
-#37 gobboboy: Orzhov Eldrazi Taxes (WB)
+#37 gobboboy: Orzhov Taxes (WB)
 #38 osmanozguney: Dimir Control (UB)
 #39 AnneLivleysD3ath: KGC Amulet Titan (WUBRG)
 #40 SiDa1991: U Tron (U)
@@ -526,7 +526,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck37_gobboboy_OrzhovEldraziTaxes_WB()
+        public void Deck37_gobboboy_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-07-10",36),

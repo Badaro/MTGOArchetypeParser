@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 kanister: Temur Reclamation (URG)
+#01 kanister: Temur Control (URG)
 #02 updraftelemental: Sultai Shadow (UBG)
 #03 Gigglesworth: Bant Midrange (WUG)
 #04 VampireGodric: Infect (UG)
@@ -36,7 +36,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_08_08 : EventTest
     {
         [Test]
-        public void Deck01_kanister_TemurReclamation_URG()
+        public void Deck01_kanister_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-08",0),

@@ -12,12 +12,12 @@ using System.Text;
 #01 Bruno_Mineiro: Jund Midrange (BRG)
 #02 darklingseven: Humans (WUBRG)
 #03 Tarrasque1: Elementals (WUBRG)
-#04 DokeshiCS: Simic Reclamation (UG)
+#04 DokeshiCS: Simic Control (UG)
 #05 polinasgiuleppe: Jeskai Control (WUR)
 #06 thedoc96: Dredge (WBRG)
 #07 JRDC14: Mardu Midrange (WBR)
 #08 nahuel10: Gruul Midrange (RG)
-#09 Kk-: Orzhov Eldrazi Taxes (WB)
+#09 Kk-: Orzhov Taxes (WB)
 #10 didoguidotti1: Bant Control (WUG)
 #11 Vektor27: Izzet Prowess (UR)
 #12 Yugornot: Burn (WR)
@@ -26,7 +26,7 @@ using System.Text;
 #15 Janh: Azorius Control (WU)
 #16 Simbal: Grixis Shadow (UBR)
 #17 Beicodegeia: Gifts Storm (UR)
-#18 wingsfan24: Temur Reclamation (URG)
+#18 wingsfan24: Temur Control (URG)
 #19 Vagabond87: E Tron (C)
 #20 _kg: Yawgmoth (BG)
 #21 Capitano_CL: Obosh Aggro (R, Obosh)
@@ -54,7 +54,7 @@ using System.Text;
 #43 _Joseph_: Titan Shift (RG)
 #44 Rinbo: Mono White Taxes (W)
 #45 DrDub: Merfolk (U)
-#46 TISH: Mono White Eldrazi Taxes (W)
+#46 TISH: Mono White Taxes (W)
 #47 XxShuicunexX: Infect (UG)
 #48 KIMCHIMAN: Snoop Goblins (BRG)
 #49 osmanozguney: Snoop Goblins (BR)
@@ -106,7 +106,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_DokeshiCS_SimicReclamation_UG()
+        public void Deck04_DokeshiCS_SimicControl_UG()
         {
             Test(
                 GetDeck("modern-league-2020-07-31",3),
@@ -171,7 +171,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_Kk_OrzhovEldraziTaxes_WB()
+        public void Deck09_Kk_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-07-31",8),
@@ -288,7 +288,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck18_wingsfan24_TemurReclamation_URG()
+        public void Deck18_wingsfan24_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-league-2020-07-31",17),
@@ -652,7 +652,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck46_TISH_MonoWhiteEldraziTaxes_W()
+        public void Deck46_TISH_MonoWhiteTaxes_W()
         {
             Test(
                 GetDeck("modern-league-2020-07-31",45),

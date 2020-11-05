@@ -40,7 +40,7 @@ using System.Text;
 #29 BSK_hercules: WURG Control (WURG)
 #30 zbishop: Selenya Taxes (WG)
 #31 Munich_Casual: Spirits (WU)
-#32 haubidtran: Temur Reclamation (URG)
+#32 haubidtran: Temur Control (URG)
 #33 Ptery: Jeskai Control (WUR)
 #34 Bugsy69: Thopter Urza (WUR)
 #35 kensportsfan: Mono Red Prowess (R)
@@ -479,7 +479,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck32_haubidtran_TemurReclamation_URG()
+        public void Deck32_haubidtran_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",31),

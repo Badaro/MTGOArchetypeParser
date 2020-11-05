@@ -32,7 +32,7 @@ using System.Text;
 #21 Nagato_Boran: Oops All Spells (WUBRG)
 #22 Amplumnox: Shadow Prowess (BR, Lurrus)
 #23 Stabbington: Reclaimer Titan (WRG)
-#24 meanfannypack: Orzhov Eldrazi Taxes (WB)
+#24 meanfannypack: Orzhov Taxes (WB)
 #25 yintao: Incinerator Burn (R)
 #26 rofelos: WURG Control (WURG)
 #27 PhantasmalBear: Sultai Midrange (UBG)
@@ -382,7 +382,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck24_meanfannypack_OrzhovEldraziTaxes_WB()
+        public void Deck24_meanfannypack_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-10-27",23),

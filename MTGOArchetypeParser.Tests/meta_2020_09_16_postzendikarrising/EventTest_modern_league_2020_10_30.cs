@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 SlitherBlade: Temur Control (URG, Yorion)
 #02 yamakiller: Crabvine (UBG)
-#03 Cherryxman: Abzan Eldrazi Taxes (WBG)
+#03 Cherryxman: Abzan Taxes (WBG)
 #04 Voltzwagon: Gruul Midrange (RG)
 #05 IrishSoda: Naya Landfall (WRG, Jegantha)
 #06 POC: Infect (BG)
@@ -42,7 +42,7 @@ using System.Text;
 #31 ruthl3ss: Boros Midrange (WR)
 #32 Misplacedginger: WURG Control (WURG)
 #33 Stdlr: Mono Red Prowess (R, Jegantha)
-#34 meanfannypack: Orzhov Eldrazi Taxes (WB)
+#34 meanfannypack: Orzhov Taxes (WB)
 #35 DoctorQueller: Bant Spirits (WUG)
 #36 Wuhsa: Niv To Light (WUBRG)
 #37 Curtisaxel: Heliod Combo (WG)
@@ -97,7 +97,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_Cherryxman_AbzanEldraziTaxes_WBG()
+        public void Deck03_Cherryxman_AbzanTaxes_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-10-30",2),
@@ -500,7 +500,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck34_meanfannypack_OrzhovEldraziTaxes_WB()
+        public void Deck34_meanfannypack_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-10-30",33),

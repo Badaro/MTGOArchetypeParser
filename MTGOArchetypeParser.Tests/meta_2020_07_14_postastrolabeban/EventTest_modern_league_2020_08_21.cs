@@ -40,20 +40,20 @@ using System.Text;
 #29 Delthar: Mill (UB)
 #30 Leviathan102: Reclaimer Titan (WRG)
 #31 Firewalker89: Grixis Shadow (UBR)
-#32 Rebus8: Orzhov Eldrazi Taxes (WB)
+#32 Rebus8: Orzhov Taxes (WB)
 #33 benchsummer: Heliod Sisters (W)
 #34 DylansHyper: Devoted (WG, Lurrus)
 #35 Curryvore: Jeskai Control (WUR, Yorion)
 #36 flankattack27: Uroza (WUG)
 #37 kogamo: Reclaimer Titan (WRG)
-#38 nick4567: Temur Reclamation (URG)
+#38 nick4567: Temur Control (URG)
 #39 DoctorQueller: Bant Spirits (WUG)
 #40 Unlife: E Tron (C)
 #41 TuggaNaxos: Sultai Control (UBG)
 #42 llabmonkey: Bant Control (WUG)
 #43 harukispecial: Sultai Control (UBG)
 #44 MartinezDP: Niv To Light (WUBRG, Yorion)
-#45 Weasley: Sultai Reclamation (UBG)
+#45 Weasley: Sultai Control (UBG)
 #46 JUJUBEAN__2004: Devoted (WUG)
 #47 Game_Night: Golos Tron (G, Jegantha)
 #48 DarkKeeper: Bant Control (WUG)
@@ -470,7 +470,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck32_Rebus8_OrzhovEldraziTaxes_WB()
+        public void Deck32_Rebus8_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",31),
@@ -548,7 +548,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck38_nick4567_TemurReclamation_URG()
+        public void Deck38_nick4567_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",37),
@@ -639,7 +639,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck45_Weasley_SultaiReclamation_UBG()
+        public void Deck45_Weasley_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-21",44),

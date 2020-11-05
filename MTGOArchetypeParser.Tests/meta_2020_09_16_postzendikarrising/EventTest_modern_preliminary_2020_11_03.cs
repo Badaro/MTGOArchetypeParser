@@ -19,7 +19,7 @@ using System.Text;
 #08 Tractorage: Omnath Saheeli (WURG, Jegantha)
 #09 mtgjens: Crabvine (UBG)
 #10 Matteso: Gifts Storm (UR)
-#11 pokerswizard: Sultai Reclamation (UBG)
+#11 pokerswizard: Sultai Control (UBG)
 #12 exoticherman: Rakdos Prowess (BR, Lurrus)
 #13 SoulStrong: Reclaimer Titan (WRG)
 #14 Ivc: Azorius Control (WU)
@@ -164,7 +164,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_pokerswizard_SultaiReclamation_UBG()
+        public void Deck11_pokerswizard_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-03",10),

@@ -22,10 +22,10 @@ using System.Text;
 #11 Kurusu: Kiki Chord (WRG, Yorion)
 #12 markchalice: Mono Red Prowess (R)
 #13 azax: Neobrand (UG)
-#14 Kk-: Orzhov Eldrazi Taxes (WB)
+#14 Kk-: Orzhov Taxes (WB)
 #15 GoblinK1ng: Goblins (BRG)
 #16 Karhusaatana: Bogles (WG)
-#17 Cantergiani: Selenya Eldrazi Taxes (WG)
+#17 Cantergiani: Selenya Taxes (WG)
 #18 Parrit: Hardened Scales (G)
 #19 tylerjjobrien: Niv To Light (WUBRG, Yorion)
 #20 armstrong36: Abzan Midrange (WBG)
@@ -55,12 +55,12 @@ using System.Text;
 #44 sepomon: Smallpox (WB)
 #45 Drakanar: Merfolk (UG)
 #46 ocelot823: Azorius Midrange (WU)
-#47 voodookick: Sultai Reclamation (UBG)
+#47 voodookick: Sultai Control (UBG)
 #48 Galanator: Dimir Control (UB)
 #49 jmeyer2030: Izzet Control (UR)
 #50 MagicDevil666: U Tron (U)
 #51 MrJayngles: Red Prison (RG)
-#52 Nis2a: Mono White Eldrazi Taxes (W)
+#52 Nis2a: Mono White Taxes (W)
 #53 TheDogFish: Merfolk (WU, Lurrus)
 #54 shiven djinn: Obosh Aggro (R, Obosh)
 #55 AngledLuffa: Lantern (UBG)
@@ -247,7 +247,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_Kk_OrzhovEldraziTaxes_WB()
+        public void Deck14_Kk_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-08-07",13),
@@ -286,7 +286,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_Cantergiani_SelenyaEldraziTaxes_WG()
+        public void Deck17_Cantergiani_SelenyaTaxes_WG()
         {
             Test(
                 GetDeck("modern-league-2020-08-07",16),
@@ -676,7 +676,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck47_voodookick_SultaiReclamation_UBG()
+        public void Deck47_voodookick_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-07",46),
@@ -741,7 +741,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck52_Nis2a_MonoWhiteEldraziTaxes_W()
+        public void Deck52_Nis2a_MonoWhiteTaxes_W()
         {
             Test(
                 GetDeck("modern-league-2020-08-07",51),

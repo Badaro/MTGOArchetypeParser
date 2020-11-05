@@ -14,7 +14,7 @@ using System.Text;
 #03 Cherryxman: Inverter (UB)
 #04 meanfannypack: Devoted (WG, Lurrus)
 #05 Magicofplayer1: Ad Nauseam (WUB)
-#06 Ftzz: Sultai Reclamation (UBG)
+#06 Ftzz: Sultai Control (UBG)
 #07 Zebrah: Amulet Titan (WURG)
 #08 no_lyfe: Mono Red Prowess (R)
 #09 xl_snapcaster: Azorius Control (WU, Kaheera)
@@ -34,7 +34,7 @@ using System.Text;
 #23 Magric: Rakdos Midrange (BR)
 #24 lovealienzzz: Temur Control (URG)
 #25 Drakanar: Merfolk (U)
-#26 Walkers: Sultai Reclamation (UBG)
+#26 Walkers: Sultai Control (UBG)
 #27 Darkiundsa: WURG Control (WURG, Yorion)
 #28 Jiggywiggy: Kinnan Legends (URG, Yorion)
 #29 Netow: Dredge (BRG)
@@ -47,7 +47,7 @@ using System.Text;
 #36 salvamala: Jund Midrange (BRG)
 #37 RodolfoSFD0: Titan Shift (RG)
 #38 Lcario: E Tron (C)
-#39 AutumnLily: Sultai Reclamation (UBG, Yorion)
+#39 AutumnLily: Sultai Control (UBG, Yorion)
 #40 Jackson1031: Uroza (URG)
 */
 
@@ -121,7 +121,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck06_Ftzz_SultaiReclamation_UBG()
+        public void Deck06_Ftzz_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",5),
@@ -381,7 +381,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck26_Walkers_SultaiReclamation_UBG()
+        public void Deck26_Walkers_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",25),
@@ -550,7 +550,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck39_AutumnLily_SultaiReclamation_UBG_Yorion()
+        public void Deck39_AutumnLily_SultaiControl_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",38),

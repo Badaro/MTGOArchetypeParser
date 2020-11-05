@@ -31,12 +31,12 @@ using System.Text;
 #20 wambocombo2020: Jund Smallpox (BRG, Lurrus)
 #21 Metcalf23: Boros Taxes (WR, Lurrus)
 #22 DreamsOfAshiok: Rakdos Midrange (BR)
-#23 Celldweller: Sultai Reclamation (UBG, Yorion)
+#23 Celldweller: Sultai Control (UBG, Yorion)
 #24 llabmonkey: Scapeshift (URG, Yorion)
-#25 mashmalovsky: Orzhov Eldrazi Taxes (WB)
+#25 mashmalovsky: Orzhov Taxes (WB)
 #26 timewalkinonsunshine: Taking Turns (URG, Yorion)
 #27 RandomOctopus: Uroza (WUG, Yorion)
-#28 iuriper: Sultai Reclamation (UBG)
+#28 iuriper: Sultai Control (UBG)
 #29 Aristocrats: Aristocrats (WB, Lurrus)
 #30 pbarrrgh: Bant Control (WUG, Yorion)
 #31 DavidDPanda: E Tron (C)
@@ -346,7 +346,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck23_Celldweller_SultaiReclamation_UBG_Yorion()
+        public void Deck23_Celldweller_SultaiControl_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-05",22),
@@ -372,7 +372,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck25_mashmalovsky_OrzhovEldraziTaxes_WB()
+        public void Deck25_mashmalovsky_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-06-05",24),
@@ -411,7 +411,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck28_iuriper_SultaiReclamation_UBG()
+        public void Deck28_iuriper_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-05",27),

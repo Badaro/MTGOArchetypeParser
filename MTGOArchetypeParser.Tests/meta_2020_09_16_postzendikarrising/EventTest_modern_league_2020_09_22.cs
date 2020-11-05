@@ -48,7 +48,7 @@ using System.Text;
 #37 OptimusBro: Ad Nauseam (WUB)
 #38 DFrank: Temur Control (URG)
 #39 Mlgb92: Dubious Challenge (WRG)
-#40 Kk-: Orzhov Eldrazi Taxes (WB)
+#40 Kk-: Orzhov Taxes (WB)
 #41 B1gDan: Delver (UR)
 #42 phillydrew215: Bant Midrange (WUG)
 #43 ballestin93: Mill (UB)
@@ -586,7 +586,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck40_Kk_OrzhovEldraziTaxes_WB()
+        public void Deck40_Kk_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-09-22",39),

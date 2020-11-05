@@ -23,7 +23,7 @@ using System.Text;
 #12 SpiderSpace: Thalia Stompy (WR)
 #13 fuma-mtgcampinas: E Tron (C)
 #14 PuntThenWhine: KGC Amulet Titan (WUBRG)
-#15 fabee1: Mono White Eldrazi Taxes (W)
+#15 fabee1: Mono White Taxes (W)
 #16 buddha715: Neobrand (UG)
 #17 Trid0n: Bogles (WG, Lurrus)
 #18 GideonRavensword: Dredge (BRG)
@@ -223,7 +223,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_fabee1_MonoWhiteEldraziTaxes_W()
+        public void Deck15_fabee1_MonoWhiteTaxes_W()
         {
             Test(
                 GetDeck("modern-league-2020-09-18",14),

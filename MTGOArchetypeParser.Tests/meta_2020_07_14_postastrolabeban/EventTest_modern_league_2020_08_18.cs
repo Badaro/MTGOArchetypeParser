@@ -14,7 +14,7 @@ using System.Text;
 #03 Albyz: Mardu Pyromancer (WBR)
 #04 Nallemon: Eight Rack (B)
 #05 Proliferate: Bogles (WG)
-#06 Parrit: Selenya Eldrazi Taxes (WG)
+#06 Parrit: Selenya Taxes (WG)
 #07 Jiggywiggy: Kinnan Legends (WUG)
 #08 TuggaNaxos: Infect (BG)
 #09 kensportsfan: Mono Red Prowess (R)
@@ -25,10 +25,10 @@ using System.Text;
 #14 Albyz: Niv To Light (WUBRG)
 #15 Carton: Esper Shadow (WUB)
 #16 Bobthebuilder24: Heliod Sisters (W)
-#17 waffl3haos: Orzhov Eldrazi Taxes (WB)
+#17 waffl3haos: Orzhov Taxes (WB)
 #18 harukispecial: Sultai Control (UBG)
 #19 RyanWu: Orzhov Midrange (WB)
-#20 ben1234: Temur Reclamation (URG)
+#20 ben1234: Temur Control (URG)
 #21 CodeProvider: Grishoalbrand (BR)
 #22 sfitz: Thopter Urza (UBR)
 #23 Wuhsa: Niv To Light (WUBRG, Yorion)
@@ -45,7 +45,7 @@ using System.Text;
 #34 DarkKeeper: Bant Control (WUG)
 #35 rodebo: U Tron (U)
 #36 kogamo: Grixis Shadow (UBR)
-#37 Cheerios: Simic Reclamation (UG)
+#37 Cheerios: Simic Control (UG)
 #38 paynechips: KGC Tron (G)
 #39 kogamo: Azorius Control (WU)
 #40 brainstorm39: Jeskai Control (WUR, Yorion)
@@ -154,7 +154,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_Parrit_SelenyaEldraziTaxes_WG()
+        public void Deck06_Parrit_SelenyaTaxes_WG()
         {
             Test(
                 GetDeck("modern-league-2020-08-18",5),
@@ -297,7 +297,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_waffl3haos_OrzhovEldraziTaxes_WB()
+        public void Deck17_waffl3haos_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-08-18",16),
@@ -336,7 +336,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_ben1234_TemurReclamation_URG()
+        public void Deck20_ben1234_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-league-2020-08-18",19),
@@ -557,7 +557,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck37_Cheerios_SimicReclamation_UG()
+        public void Deck37_Cheerios_SimicControl_UG()
         {
             Test(
                 GetDeck("modern-league-2020-08-18",36),

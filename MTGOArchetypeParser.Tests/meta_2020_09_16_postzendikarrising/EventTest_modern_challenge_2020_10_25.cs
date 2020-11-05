@@ -12,7 +12,7 @@ using System.Text;
 #01 coliobeware: Jund Midrange (BRG, Lurrus)
 #02 Erik157751: Crabvine (UBG)
 #03 Ma7x: Niv To Light (WUBRG, Jegantha)
-#04 MiguelCaster: Orzhov Eldrazi Taxes (WB)
+#04 MiguelCaster: Orzhov Taxes (WB)
 #05 guiyote: Izzet Prowess (UR)
 #06 Exoline: WURG Control (WURG)
 #07 fingers1991: WURG Control (WURG)
@@ -35,7 +35,7 @@ using System.Text;
 #24 SweetIto: Heliod Combo (WG)
 #25 MastaHorus: Izzet Living End (UR)
 #26 slow_brz: Infect (BG)
-#27 Gobern: Sultai Reclamation (UBG)
+#27 Gobern: Sultai Control (UBG)
 #28 rofelos: WURG Control (WURG)
 #29 AstralPlane: Omnath Saheeli (WURG, Jegantha)
 #30 QuaCk QuaCk: Humans (WUBRG)
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_MiguelCaster_OrzhovEldraziTaxes_WB()
+        public void Deck04_MiguelCaster_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-25",3),
@@ -386,7 +386,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck27_Gobern_SultaiReclamation_UBG()
+        public void Deck27_Gobern_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-25",26),

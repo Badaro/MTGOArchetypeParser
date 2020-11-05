@@ -28,7 +28,7 @@ using System.Text;
 #17 Eyedea90: Mill (UB)
 #18 mashmalovsky: E Tron (C)
 #19 SamuelGraebner: WURG Control (WURG)
-#20 seasonofmists: Selenya Eldrazi Taxes (WG)
+#20 seasonofmists: Selenya Taxes (WG)
 #21 MHayashi: Obosh Aggro (R, Obosh)
 #22 Goerajaponica: Izzet Control (UR)
 #23 hermanomlg: Bant Midrange (WUG)
@@ -336,7 +336,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_seasonofmists_SelenyaEldraziTaxes_WG()
+        public void Deck20_seasonofmists_SelenyaTaxes_WG()
         {
             Test(
                 GetDeck("modern-league-2020-10-06",19),

@@ -25,7 +25,7 @@ using System.Text;
 #14 Mogged: Mono Red Prowess (R)
 #15 PizzaTurtle: Bogles (WG, Lurrus)
 #16 unicornparadise: E Tron (C)
-#17 Fabrice_K: Sultai Reclamation (UBG, Yorion)
+#17 Fabrice_K: Sultai Control (UBG, Yorion)
 #18 MrRaeb: Uroza (UBG, Yorion)
 #19 tuckbear: Burn (WR)
 #20 Lopik6: Amulet Titan (URG)
@@ -256,7 +256,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck17_FabriceK_SultaiReclamation_UBG_Yorion()
+        public void Deck17_FabriceK_SultaiControl_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",16),

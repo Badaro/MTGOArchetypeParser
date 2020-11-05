@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Lavaridge: Temur Reclamation (URG)
+#01 Lavaridge: Temur Control (URG)
 #02 romanmy: Mardu Prowess (WBR, Lurrus)
 #03 Selfeisek: Burn (WR, Lurrus)
 #04 SparTaNxX: Ad Nauseam (WUB)
@@ -28,7 +28,7 @@ using System.Text;
 #17 jschloss: KGC Tron (G)
 #18 Mcleskey: Burn (WR)
 #19 NAP_DARKMAGE_MJM: Izzet Prowess (UR)
-#20 Metcalf23: Orzhov Eldrazi Taxes (WB)
+#20 Metcalf23: Orzhov Taxes (WB)
 #21 MadMaxErnst: Sultai Control (UBG)
 #22 banskk: Izzet Prowess (UR)
 #23 DreamsOfAshiok: E Tron (C)
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_showcase_challenge_2020_08_09 : EventTest
     {
         [Test]
-        public void Deck01_Lavaridge_TemurReclamation_URG()
+        public void Deck01_Lavaridge_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-08-09",0),
@@ -295,7 +295,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_Metcalf23_OrzhovEldraziTaxes_WB()
+        public void Deck20_Metcalf23_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-08-09",19),

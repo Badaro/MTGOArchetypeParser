@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 ary31415: Orzhov Eldrazi Taxes (WB)
+#01 ary31415: Orzhov Taxes (WB)
 #02 TheCodyHope: Elementals (WUBRG)
 #03 MHayashi: Mono Red Prowess (R, Jegantha)
 #04 Czechito: Izzet Control (UR)
@@ -28,7 +28,7 @@ using System.Text;
 #17 osmanozguney: Rakdos Midrange (BR)
 #18 saccij92: Humans (WUBRG)
 #19 MlckyB: Bogles (WG)
-#20 Shorak123: Sultai Reclamation (UBG)
+#20 Shorak123: Sultai Control (UBG)
 #21 Kurusu: Kiki Chord (WURG, Yorion)
 #22 jvidarte: Burn (WR)
 #23 wefald: Inverter (UB)
@@ -49,7 +49,7 @@ using System.Text;
 #38 ScreenwriterNY: WUBG Control (WUBG, Yorion)
 #39 MastaHorus: Izzet Living End (UR)
 #40 tarmociccio89: Izzet Phoenix (UR)
-#41 Fabrice_K: Bant Reclamation (WUG, Yorion)
+#41 Fabrice_K: Bant Control (WUG, Yorion)
 #42 LordoftheLobsters: U Tron (U)
 #43 leuhohms: Infect (UG)
 #44 Sonkerz: Temur Delver (URG)
@@ -73,7 +73,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_league_2020_07_14 : EventTest
     {
         [Test]
-        public void Deck01_ary31415_OrzhovEldraziTaxes_WB()
+        public void Deck01_ary31415_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",0),
@@ -320,7 +320,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_Shorak123_SultaiReclamation_UBG()
+        public void Deck20_Shorak123_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",19),
@@ -593,7 +593,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck41_FabriceK_BantReclamation_WUG_Yorion()
+        public void Deck41_FabriceK_BantControl_WUG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",40),

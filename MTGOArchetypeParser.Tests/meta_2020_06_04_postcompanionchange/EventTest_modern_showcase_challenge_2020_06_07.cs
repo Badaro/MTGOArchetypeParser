@@ -36,8 +36,8 @@ using System.Text;
 #25 Icteridae: Heliod Devoted (WUG)
 #26 bobjackson: KGC Tron (G, Jegantha)
 #27 Ennuixd: Amulet Titan (WURG)
-#28 pbarrrgh: Sultai Reclamation (UBG)
-#29 Shorak123: Sultai Reclamation (UBG)
+#28 pbarrrgh: Sultai Control (UBG)
+#29 Shorak123: Sultai Control (UBG)
 #30 JMoney8771: Infect (UG)
 #31 stainerson: Bant Control (WUG)
 #32 sora1248: Winota (WRG)
@@ -399,7 +399,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck28_pbarrrgh_SultaiReclamation_UBG()
+        public void Deck28_pbarrrgh_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",27),
@@ -412,7 +412,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck29_Shorak123_SultaiReclamation_UBG()
+        public void Deck29_Shorak123_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",28),

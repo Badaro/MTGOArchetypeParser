@@ -28,7 +28,7 @@ using System.Text;
 #17 kai2000: Niv To Light (WUBRG, Yorion)
 #18 Praxifi: Winota (WRG)
 #19 miki665: Humans (WUBRG)
-#20 Nideon: Orzhov Eldrazi Taxes (WB)
+#20 Nideon: Orzhov Taxes (WB)
 #21 tucker_de: Amulet Titan (WUBRG)
 #22 Wuhsa: Niv To Light (WUBRG)
 #23 iuriper: Merfolk (UB)
@@ -41,7 +41,7 @@ using System.Text;
 #30 Kaipa: Burn (WR, Lurrus)
 #31 Fat_Chocobo: Goblins (BRG)
 #32 crexalbo: Twiddle Storm (URG)
-#33 pbarrrgh: Temur Reclamation (URG, Yorion)
+#33 pbarrrgh: Temur Control (URG, Yorion)
 #34 cesar189350: Jeskai Control (WUR)
 #35 Miqa: E Tron (C)
 #36 Jidden: Thopter Urza (WU)
@@ -322,7 +322,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck20_Nideon_OrzhovEldraziTaxes_WB()
+        public void Deck20_Nideon_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-06-16",19),
@@ -491,7 +491,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck33_pbarrrgh_TemurReclamation_URG_Yorion()
+        public void Deck33_pbarrrgh_TemurControl_URG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-16",32),

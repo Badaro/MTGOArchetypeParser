@@ -25,7 +25,7 @@ using System.Text;
 #14 Misplacedginger: Bant Control (WUG)
 #15 BSK_hercules: Gruul Midrange (RG)
 #16 lovealienzzz: Temur Control (URG)
-#17 yamakiller: Temur Reclamation (URG, Yorion)
+#17 yamakiller: Temur Control (URG, Yorion)
 #18 PieGonti: Humans (WUBRG)
 */
 
@@ -242,7 +242,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck17_yamakiller_TemurReclamation_URG_Yorion()
+        public void Deck17_yamakiller_TemurControl_URG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-12",16),

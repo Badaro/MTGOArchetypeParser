@@ -34,7 +34,7 @@ using System.Text;
 #23 Predicted: Yawgmoth (WBG)
 #24 touto_Isle: Dredge (BRG)
 #25 JRDC14: Niv To Light (WUBRG, Yorion)
-#26 Rebus8: Orzhov Eldrazi Taxes (WB)
+#26 Rebus8: Orzhov Taxes (WB)
 #27 tbrantl99: Reclaimer Titan (WRG)
 #28 Do0mSwitch: Bant Control (WUG)
 #29 BaDzIo: Mono Red Prowess (R)
@@ -42,17 +42,17 @@ using System.Text;
 #31 heyakita: Snow Saheeli (WURG, Yorion)
 #32 Galanator: Azorius Control (WU)
 #33 MioCid: Scapeshift (URG)
-#34 Middeterminist: Simic Reclamation (UG)
+#34 Middeterminist: Simic Control (UG)
 #35 The french goblin: Azorius Control (WU)
 #36 ferrum0728: Mardu Shadow (WBR)
 #37 Kurusu: Kiki Chord (WRG, Yorion)
-#38 Parrit: Selenya Eldrazi Taxes (WG)
-#39 Ennuixd: Temur Reclamation (URG)
+#38 Parrit: Selenya Taxes (WG)
+#39 Ennuixd: Temur Control (URG)
 #40 kokoko098: Heliod Devoted (WBG)
 #41 Maxtick: Bant Midrange (WUG)
 #42 gazmon48: KGC Tron (G)
 #43 m_joe: WUBG Blink (WUBG)
-#44 TuggaNaxos: Sultai Reclamation (UBG)
+#44 TuggaNaxos: Sultai Control (UBG)
 #45 vasko19: Izzet Restore Balance (URG)
 #46 Flaxh: Dimir Control (UB)
 #47 Beicodegeia: Gifts Storm (UR)
@@ -393,7 +393,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck26_Rebus8_OrzhovEldraziTaxes_WB()
+        public void Deck26_Rebus8_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-08-14",25),
@@ -497,7 +497,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck34_Middeterminist_SimicReclamation_UG()
+        public void Deck34_Middeterminist_SimicControl_UG()
         {
             Test(
                 GetDeck("modern-league-2020-08-14",33),
@@ -549,7 +549,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck38_Parrit_SelenyaEldraziTaxes_WG()
+        public void Deck38_Parrit_SelenyaTaxes_WG()
         {
             Test(
                 GetDeck("modern-league-2020-08-14",37),
@@ -562,7 +562,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck39_Ennuixd_TemurReclamation_URG()
+        public void Deck39_Ennuixd_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-league-2020-08-14",38),
@@ -627,7 +627,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck44_TuggaNaxos_SultaiReclamation_UBG()
+        public void Deck44_TuggaNaxos_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-14",43),

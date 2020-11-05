@@ -11,9 +11,9 @@ using System.Text;
 /*
 #01 Erik157751: E Tron (C)
 #02 Metcalf23: Selenya Taxes (WG, Yorion)
-#03 pbarrrgh: Sultai Reclamation (UBG)
+#03 pbarrrgh: Sultai Control (UBG)
 #04 AlexFromTheNorth: Bushwhacker Zoo (WRG)
-#05 zachattack23: Temur Reclamation (URG)
+#05 zachattack23: Temur Control (URG)
 #06 Avixy: Devoted (WG, Lurrus)
 #07 vagner_mtg: Grixis Shadow (UBR)
 #08 PietroSas: Merfolk (U)
@@ -42,7 +42,7 @@ using System.Text;
 #31 Gods_Shadow: Grixis Control (UBR)
 #32 thepensword: Mono Red Prowess (R)
 #33 vasko19: Izzet Restore Balance (URG)
-#34 Ftzz: Sultai Reclamation (UBG)
+#34 Ftzz: Sultai Control (UBG)
 #35 Juaspas: Primeval Titan (BRG)
 #36 MrRaeb: Uroza (UBG, Yorion)
 #37 jessy_samek: Dredge (BRG)
@@ -95,7 +95,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck03_pbarrrgh_SultaiReclamation_UBG()
+        public void Deck03_pbarrrgh_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",2),
@@ -121,7 +121,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck05_zachattack23_TemurReclamation_URG()
+        public void Deck05_zachattack23_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",4),
@@ -498,7 +498,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck34_Ftzz_SultaiReclamation_UBG()
+        public void Deck34_Ftzz_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",33),

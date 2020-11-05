@@ -12,7 +12,7 @@ using System.Text;
 #01 mariogomes097: Grixis Shadow (UBR)
 #02 WhiTe TsaR: Sultai Control (UBG)
 #03 _INF_: Gifts Storm (UR)
-#04 Janh: Temur Reclamation (URG)
+#04 Janh: Temur Control (URG)
 #05 bubbsei: Dredge (BRG)
 #06 ZYURYO: Jund Midrange (BRG)
 #07 2k4mmorton: Mono Red Prowess (R)
@@ -63,7 +63,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck04_Janh_TemurReclamation_URG()
+        public void Deck04_Janh_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-24",3),

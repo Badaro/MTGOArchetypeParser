@@ -46,7 +46,7 @@ using System.Text;
 #35 Frozon: Hardened Scales (G)
 #36 603Leb: Valakut Field (URG)
 #37 Kumpanen: Grixis Shadow (UBR)
-#38 Diotima: Mono White Eldrazi Taxes (W)
+#38 Diotima: Mono White Taxes (W)
 #39 lewisyo: Ad Nauseam (WUB)
 #40 GHash77: Neobrand (UG)
 #41 Antoine57437: Abzan Company (WBG)
@@ -59,7 +59,7 @@ using System.Text;
 #48 MrSeri: Heliod Combo (WG)
 #49 ferrum0728: Mardu Shadow (WBR)
 #50 yPrincipe: E Tron (C)
-#51 Ingalsarm: Temur Reclamation (URG)
+#51 Ingalsarm: Temur Control (URG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -548,7 +548,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck38_Diotima_MonoWhiteEldraziTaxes_W()
+        public void Deck38_Diotima_MonoWhiteTaxes_W()
         {
             Test(
                 GetDeck("modern-league-2020-08-28",37),
@@ -717,7 +717,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck51_Ingalsarm_TemurReclamation_URG()
+        public void Deck51_Ingalsarm_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-league-2020-08-28",50),

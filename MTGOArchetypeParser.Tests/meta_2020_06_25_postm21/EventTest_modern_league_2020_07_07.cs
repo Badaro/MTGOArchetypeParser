@@ -48,7 +48,7 @@ using System.Text;
 #37 Janh: Scapeshift (URG, Yorion)
 #38 freneticefreet: Gruul Midrange (RG)
 #39 CloakedAlvis: G Tron (G)
-#40 Musagete: Orzhov Eldrazi Taxes (WB)
+#40 Musagete: Orzhov Taxes (WB)
 #41 mac121711: Sultai Control (UBG)
 #42 DFrank: Thopter Urza (WUB)
 #43 Doni_Dominaria: Incinerator Burn (BR)
@@ -60,7 +60,7 @@ using System.Text;
 #49 Ivan1227: Azorius Control (WU)
 #50 musasabi: Jund Smallpox (BRG)
 #51 Brunister: Dredge (WBR)
-#52 Mad-Ramon: Temur Reclamation (URG, Yorion)
+#52 Mad-Ramon: Temur Control (URG, Yorion)
 #53 osk4: Niv To Light (WUBRG, Yorion)
 #54 BanjoCaveman: Polymorph (RG)
 #55 kumuhl00: Elementals (WUBRG)
@@ -590,7 +590,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck40_Musagete_OrzhovEldraziTaxes_WB()
+        public void Deck40_Musagete_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-league-2020-07-07",39),
@@ -746,7 +746,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck52_MadRamon_TemurReclamation_URG_Yorion()
+        public void Deck52_MadRamon_TemurControl_URG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-07",51),

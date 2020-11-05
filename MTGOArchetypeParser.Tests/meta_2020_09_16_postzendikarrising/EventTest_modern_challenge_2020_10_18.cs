@@ -18,7 +18,7 @@ using System.Text;
 #07 cicciogire: WURG Control (WURG)
 #08 exoticherman: Jund Shadow (BRG)
 #09 stayrospet: Shadow Prowess (BR, Lurrus)
-#10 seasonofmists: Abzan Eldrazi Taxes (WBG)
+#10 seasonofmists: Abzan Taxes (WBG)
 #11 HouseOfManaMTG: Amulet Titan (UBRG)
 #12 DarkestMage: Mono White Taxes (W)
 #13 last7stand: KGC Tron (G)
@@ -32,7 +32,7 @@ using System.Text;
 #21 POOBMASTER: Shadow Prowess (BR, Lurrus)
 #22 daibloXSC: Izzet Control (UR)
 #23 NuBlkAu: Rakdos Shadow (BR)
-#24 pbarrrgh: Sultai Reclamation (UBG)
+#24 pbarrrgh: Sultai Control (UBG)
 #25 eclipse4343: Azorius Control (WU)
 #26 Moniz0801: Amulet Titan (UBRG)
 #27 yamakiller: Obosh Aggro (R, Obosh)
@@ -165,7 +165,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_seasonofmists_AbzanEldraziTaxes_WBG()
+        public void Deck10_seasonofmists_AbzanTaxes_WBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",9),
@@ -347,7 +347,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck24_pbarrrgh_SultaiReclamation_UBG()
+        public void Deck24_pbarrrgh_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",23),

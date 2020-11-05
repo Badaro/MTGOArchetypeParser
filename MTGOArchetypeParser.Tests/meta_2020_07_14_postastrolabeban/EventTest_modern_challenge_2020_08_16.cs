@@ -17,10 +17,10 @@ using System.Text;
 #06 flatnose: Merfolk (UG)
 #07 Rav104: Rakdos Prowess (BR, Lurrus)
 #08 edward40hands: Golgari Midrange (BG)
-#09 sinforlife54: Mono White Eldrazi Taxes (W)
+#09 sinforlife54: Mono White Taxes (W)
 #10 otakkun: KGC Tron (G)
 #11 uaedoliB: Humans (WUBRG)
-#12 nick4567: Temur Reclamation (URG)
+#12 nick4567: Temur Control (URG)
 #13 Laplasjan: Devoted (WG, Lurrus)
 #14 Sodeq: Ad Nauseam (WUB)
 #15 asnook: Jund Midrange (BRG)
@@ -36,10 +36,10 @@ using System.Text;
 #25 Storytime: Kinnan Devoted (WUG)
 #26 Xuxa: Dredge (BRG)
 #27 NorrathDecay: Burn (WR)
-#28 ConnorM426: Temur Reclamation (URG)
+#28 ConnorM426: Temur Control (URG)
 #29 musasabi: KGC Amulet Titan (UBRG)
 #30 NHA37: E Tron (C)
-#31 BSK_hercules: Temur Reclamation (URG)
+#31 BSK_hercules: Temur Control (URG)
 #32 kthanakit26: Burn (WR)
 */
 
@@ -152,7 +152,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_sinforlife54_MonoWhiteEldraziTaxes_W()
+        public void Deck09_sinforlife54_MonoWhiteTaxes_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",8),
@@ -191,7 +191,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_nick4567_TemurReclamation_URG()
+        public void Deck12_nick4567_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",11),
@@ -399,7 +399,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck28_ConnorM426_TemurReclamation_URG()
+        public void Deck28_ConnorM426_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",27),
@@ -438,7 +438,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck31_BSKhercules_TemurReclamation_URG()
+        public void Deck31_BSKhercules_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",30),

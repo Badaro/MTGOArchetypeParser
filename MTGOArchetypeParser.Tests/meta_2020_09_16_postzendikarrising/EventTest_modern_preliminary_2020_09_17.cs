@@ -23,7 +23,7 @@ using System.Text;
 #12 Lord_of_Puntlantis: Izzet Restore Balance (URG)
 #13 Mcleskey: Humans (WUBRG)
 #14 MZBlazer: Grixis Shadow (UBR)
-#15 Icteridae: Orzhov Eldrazi Taxes (WB)
+#15 Icteridae: Orzhov Taxes (WB)
 #16 _IlNano_: Humans (WUBRG)
 */
 
@@ -214,7 +214,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_Icteridae_OrzhovEldraziTaxes_WB()
+        public void Deck15_Icteridae_OrzhovTaxes_WB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-17",14),

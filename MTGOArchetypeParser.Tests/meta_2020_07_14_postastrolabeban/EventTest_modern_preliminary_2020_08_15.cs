@@ -18,10 +18,10 @@ using System.Text;
 #07 CReactor: KGC Tron (G)
 #08 Imaeda: Izzet Prowess (UR)
 #09 Hampuse1: Dice Factory Tron (C)
-#10 BSK_hercules: Temur Reclamation (URG)
+#10 BSK_hercules: Temur Control (URG)
 #11 Zar0s: KGC Amulet Titan (WUBRG)
 #12 otakkun: KGC Tron (G)
-#13 ht991122: Temur Reclamation (URG)
+#13 ht991122: Temur Control (URG)
 #14 kbzx: Izzet Prowess (UR)
 #15 komattaman: Gruul Midrange (RG)
 */
@@ -148,7 +148,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_BSKhercules_TemurReclamation_URG()
+        public void Deck10_BSKhercules_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",9),
@@ -187,7 +187,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_ht991122_TemurReclamation_URG()
+        public void Deck13_ht991122_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",12),

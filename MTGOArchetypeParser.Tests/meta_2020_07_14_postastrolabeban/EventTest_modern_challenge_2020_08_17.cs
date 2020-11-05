@@ -12,7 +12,7 @@ using System.Text;
 #01 kbzx: Izzet Prowess (UR)
 #02 Phill_Hellmuth: Grixis Shadow (UBR)
 #03 TSPJendrek: Sultai Control (UBG)
-#04 TwistedWombat: Temur Reclamation (URG)
+#04 TwistedWombat: Temur Control (URG)
 #05 Fluorspar: Humans (WUBRG)
 #06 Snusnumrick: E Tron (C)
 #07 Trellon: U Tron (U)
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_TwistedWombat_TemurReclamation_URG()
+        public void Deck04_TwistedWombat_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",3),

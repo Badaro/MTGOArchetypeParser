@@ -14,7 +14,7 @@ using System.Text;
 #03 Violent_Outburst: Scapeshift (URG)
 #04 kbzx: Dredge (WBRG)
 #05 Mikhathara1994: Izzet Prowess (UR)
-#06 moyashi0904: Temur Reclamation (URG)
+#06 moyashi0904: Temur Control (URG)
 #07 felider: E Tron (C)
 #08 otakkun: KGC Tron (G)
 */
@@ -89,7 +89,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_moyashi0904_TemurReclamation_URG()
+        public void Deck06_moyashi0904_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-16",5),

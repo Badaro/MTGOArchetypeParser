@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 _Batutinha_: Sultai Reclamation (UBG)
+#01 _Batutinha_: Sultai Control (UBG)
 #02 mechint: Dimir Control (UB)
 #03 _Nevar_More: Mono Red Prowess (R)
 #04 Drakanar: Merfolk (UG)
@@ -26,7 +26,7 @@ using System.Text;
 #15 Maratiam: E Tron (C)
 #16 mrounds1216: Golgari Elves (BG)
 #17 npercario: Izzet Restore Balance (UR)
-#18 Weasley: Sultai Reclamation (UBG, Yorion)
+#18 Weasley: Sultai Control (UBG, Yorion)
 #19 CHILLEDADED: Titan Shift (RG)
 #20 GR_DONKIN: Ad Nauseam (WUB)
 #21 sicsmoo: G Tron (G)
@@ -42,7 +42,7 @@ using System.Text;
 #31 rojanosa: Orzhov Tokens (WB)
 #32 Jiggywiggy: Kinnan Legends (URG, Yorion)
 #33 aspiringspike: Izzet Control (UR)
-#34 penips: Mono White Eldrazi Taxes (W)
+#34 penips: Mono White Taxes (W)
 #35 Bruno_Mineiro: UBRG Shadow (UBRG)
 #36 122pablo: Jeskai Ascendancy (WURG)
 #37 B4nn3D22: Snoop Goblins (BR)
@@ -68,7 +68,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_league_2020_07_03 : EventTest
     {
         [Test]
-        public void Deck01_Batutinha_SultaiReclamation_UBG()
+        public void Deck01_Batutinha_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-07-03",0),
@@ -289,7 +289,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck18_Weasley_SultaiReclamation_UBG_Yorion()
+        public void Deck18_Weasley_SultaiControl_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-03",17),
@@ -497,7 +497,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck34_penips_MonoWhiteEldraziTaxes_W()
+        public void Deck34_penips_MonoWhiteTaxes_W()
         {
             Test(
                 GetDeck("modern-league-2020-07-03",33),

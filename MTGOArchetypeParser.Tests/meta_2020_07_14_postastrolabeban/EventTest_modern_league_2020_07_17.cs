@@ -36,7 +36,7 @@ using System.Text;
 #25 OscarS66: Rakdos Midrange (BR)
 #26 Zxrogue: Kiki Chord (WURG, Yorion)
 #27 Zebrah: Boros Taxes (WR, Lurrus)
-#28 nahuel10: Bant Reclamation (WUG)
+#28 nahuel10: Bant Control (WUG)
 #29 NHA37: Burn (WR)
 #30 TubbyBatman: Temur Delver (URG)
 #31 jundecide: Golgari Midrange (BG)
@@ -51,7 +51,7 @@ using System.Text;
 #40 pbarrrgh: Azorius Control (WU)
 #41 Bruno_Mineiro: Mono White Taxes (W)
 #42 jimdownside: Dredge (WBRG)
-#43 teagantime: Sultai Reclamation (UBG)
+#43 teagantime: Sultai Control (UBG)
 #44 tanisong1221: Orzhov Shadow (WB)
 #45 Pirika: Saheeli Combo (WUR)
 #46 llabmonkey: Jund Midrange (BRG)
@@ -420,7 +420,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck28_nahuel10_BantReclamation_WUG()
+        public void Deck28_nahuel10_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-07-17",27),
@@ -615,7 +615,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck43_teagantime_SultaiReclamation_UBG()
+        public void Deck43_teagantime_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-07-17",42),

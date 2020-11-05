@@ -35,7 +35,7 @@ using System.Text;
 #24 Satelitbg123: Izzet Control (UR)
 #25 _Makaveli: Azorius Control (WU)
 #26 Gubsly: Eight Rack (B)
-#27 seasonofmists: Abzan Eldrazi Taxes (WBG)
+#27 seasonofmists: Abzan Taxes (WBG)
 #28 __Ghost__: Zombies (UB)
 #29 AJOCHUM: WURG Control (WURG)
 #30 CavalloGoloso: Azorius Control (WU)
@@ -423,7 +423,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck27_seasonofmists_AbzanEldraziTaxes_WBG()
+        public void Deck27_seasonofmists_AbzanTaxes_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-10-20",26),

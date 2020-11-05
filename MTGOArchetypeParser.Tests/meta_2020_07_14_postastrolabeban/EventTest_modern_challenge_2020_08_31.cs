@@ -10,9 +10,9 @@ using System.Text;
 
 /*
 #01 _Stream: Izzet Prowess (UR)
-#02 Fayrawks: Sultai Reclamation (UBG)
+#02 Fayrawks: Sultai Control (UBG)
 #03 HotBread: Izzet Prowess (UR)
-#04 billsive: Bant Reclamation (WUG)
+#04 billsive: Bant Control (WUG)
 #05 BERNASTORRES: KGC Tron (G)
 #06 vixyp: Bant Midrange (WUG)
 #07 Oscar_Franco: Jund Midrange (BRG)
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_Fayrawks_SultaiReclamation_UBG()
+        public void Deck02_Fayrawks_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-31",1),
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_billsive_BantReclamation_WUG()
+        public void Deck04_billsive_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-31",3),
