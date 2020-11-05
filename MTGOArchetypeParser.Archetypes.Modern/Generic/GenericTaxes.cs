@@ -9,6 +9,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
     {
         public GenericTaxes()
         {
+            IncludeColorInName = true;
             CommonCards = new string[]
             {
                 "Giver of Runes",

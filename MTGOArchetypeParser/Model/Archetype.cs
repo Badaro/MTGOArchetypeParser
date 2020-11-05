@@ -8,13 +8,16 @@ namespace MTGOArchetypeParser.Model
 {
     public abstract class Archetype
     {
+        protected bool IncludeColorInName { get; set; }
+
         public string GetName(ArchetypeColor color)
         {
-            string name = this.GetType().Name;
-            if (typeof(ArchetypeGeneric).IsAssignableFrom(this.GetType()))
+            string name = this.GetType().Name.Replace("Generic", "");
+
+            if (IncludeColorInName)
             {
                 string colorName = GetColorName(color);
-                name = name.Replace("Generic", colorName);
+                name = colorName + name;
             }
 
             // Source: https://stackoverflow.com/questions/3216085/split-a-pascalcase-string-into-separate-words

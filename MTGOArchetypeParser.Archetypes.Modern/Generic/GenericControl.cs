@@ -9,6 +9,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
     {
         public GenericControl()
         {
+            IncludeColorInName = true;
             CommonCards = new string[]
             {
                 "Cryptic Command",

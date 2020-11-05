@@ -9,6 +9,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
     {
         public GenericMidrange()
         {
+            IncludeColorInName = true;
             CommonCards = new string[]
             {
                 "Bloodbraid Elf",

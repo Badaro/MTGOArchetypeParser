@@ -9,6 +9,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
     {
         public GenericProwess()
         {
+            IncludeColorInName = true;
             CommonCards = new string[]
             {
                 "Monastery Swiftspear",

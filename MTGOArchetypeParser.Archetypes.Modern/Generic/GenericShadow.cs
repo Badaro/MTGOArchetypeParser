@@ -9,6 +9,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
     {
         public GenericShadow()
         {
+            IncludeColorInName = true;
             CommonCards = new string[]
             {
                 "Death's Shadow",
