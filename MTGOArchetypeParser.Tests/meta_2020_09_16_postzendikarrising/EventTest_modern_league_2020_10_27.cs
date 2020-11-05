@@ -388,7 +388,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-league-2020-10-27",23),
                 new PostZendikarRising(),
                 ArchetypeColor.WB,
-                typeof(GenericEldraziTaxes),
+                typeof(GenericTaxes),
                 null,
                 null
             );

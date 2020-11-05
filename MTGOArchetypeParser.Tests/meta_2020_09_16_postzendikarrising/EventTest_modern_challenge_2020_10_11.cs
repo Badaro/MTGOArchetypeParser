@@ -288,7 +288,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-10-11",18),
                 new PostZendikarRising(),
                 ArchetypeColor.W,
-                typeof(GenericEldraziTaxes),
+                typeof(GenericTaxes),
                 null,
                 null
             );
@@ -457,7 +457,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-10-11",31),
                 new PostZendikarRising(),
                 ArchetypeColor.W,
-                typeof(GenericEldraziTaxes),
+                typeof(GenericTaxes),
                 null,
                 null
             );

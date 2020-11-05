@@ -101,7 +101,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-league-2020-06-23",2),
                 new PostCompanionChange(),
                 ArchetypeColor.UBG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -127,7 +127,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-league-2020-06-23",4),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -504,7 +504,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-league-2020-06-23",33),
                 new PostCompanionChange(),
                 ArchetypeColor.UBG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 null
             );

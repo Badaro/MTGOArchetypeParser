@@ -328,7 +328,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-league-2020-06-16",19),
                 new PostCompanionChange(),
                 ArchetypeColor.WB,
-                typeof(GenericEldraziTaxes),
+                typeof(GenericTaxes),
                 null,
                 null
             );
@@ -497,7 +497,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-league-2020-06-16",32),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion
             );

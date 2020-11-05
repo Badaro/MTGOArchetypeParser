@@ -266,7 +266,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-league-2020-07-24",14),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -812,7 +812,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-league-2020-07-24",56),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -825,7 +825,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-league-2020-07-24",57),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion
             );

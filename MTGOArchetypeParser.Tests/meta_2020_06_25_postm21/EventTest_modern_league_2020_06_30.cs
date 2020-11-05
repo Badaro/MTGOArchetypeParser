@@ -464,7 +464,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-league-2020-06-30",30),
                 new PostM21(),
                 ArchetypeColor.UBG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion
             );

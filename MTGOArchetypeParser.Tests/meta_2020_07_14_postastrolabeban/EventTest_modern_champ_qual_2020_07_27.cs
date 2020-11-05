@@ -54,7 +54,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-champ-qual-2020-07-27",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -340,7 +340,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-champ-qual-2020-07-27",22),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 null
             );

@@ -194,7 +194,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-25",12),
                 new PostCompanionChange(),
                 ArchetypeColor.UBG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 null
             );

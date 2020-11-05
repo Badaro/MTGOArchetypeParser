@@ -240,7 +240,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-league-2020-06-26",14),
                 new PostM21(),
                 ArchetypeColor.URG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -279,7 +279,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-league-2020-06-26",17),
                 new PostM21(),
                 ArchetypeColor.UBG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 null
             );
@@ -383,7 +383,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-league-2020-06-26",25),
                 new PostM21(),
                 ArchetypeColor.URG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 null
             );

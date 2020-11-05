@@ -249,7 +249,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-champ-qual-2020-11-02",15),
                 new PostZendikarRising(),
                 ArchetypeColor.UBRG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 null
             );

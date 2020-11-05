@@ -294,7 +294,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-league-2020-09-11",16),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 null
             );

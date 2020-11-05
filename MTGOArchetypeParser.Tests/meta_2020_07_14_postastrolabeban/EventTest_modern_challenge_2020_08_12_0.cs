@@ -67,7 +67,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-12-0",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(GenericReclamation),
+                typeof(GenericControl),
                 null,
                 null
             );
