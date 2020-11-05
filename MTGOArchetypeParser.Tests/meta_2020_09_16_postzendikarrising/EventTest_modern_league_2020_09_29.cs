@@ -17,7 +17,7 @@ using System.Text;
 #06 j_money10: Shadow Prowess (BR, Lurrus)
 #07 Tarrasque1: Elementals (WUBRG, Kaheera)
 #08 Schnabulant: Oops All Spells (WUBRG)
-#09 RRozanski: Primeval Titan (WURG)
+#09 RRozanski: Reclaimer Titan (WURG)
 #10 hsandi9: Grixis Shadow (UBR, Lurrus)
 #11 saccij92: Jund Midrange (BRG)
 #12 yuurari_yuko: Heliod Combo (WG)
@@ -179,14 +179,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_RRozanski_PrimevalTitan_WURG()
+        public void Deck09_RRozanski_ReclaimerTitan_WURG()
         {
             Test(
                 GetDeck("modern-league-2020-09-29",8),
                 new PostZendikarRising(),
                 ArchetypeColor.WURG,
                 typeof(PrimevalTitan),
-                null,
+                typeof(ReclaimerTitan),
                 null
             );
         }

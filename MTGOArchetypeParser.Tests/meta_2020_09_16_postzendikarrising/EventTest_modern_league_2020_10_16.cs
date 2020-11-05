@@ -17,7 +17,7 @@ using System.Text;
 #06 seasonofmists: Abzan Taxes (WBG)
 #07 FalseMufn: U Tron (U)
 #08 Capiplaf95: Burn (WR)
-#09 apriolo1: Reclaimer Titan (WRG)
+#09 apriolo1: Amulet Titan (WRG)
 #10 Zonast: Grixis Delver (UBR, Lurrus)
 #11 NHA37: Heliod Combo (W)
 #12 KoKonuts: G Tron (G, Jegantha)
@@ -176,14 +176,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_apriolo1_ReclaimerTitan_WRG()
+        public void Deck09_apriolo1_AmuletTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-10-16",8),
                 new PostZendikarRising(),
                 ArchetypeColor.WRG,
                 typeof(PrimevalTitan),
-                typeof(ReclaimerTitan),
+                typeof(AmuletTitan),
                 null
             );
         }
