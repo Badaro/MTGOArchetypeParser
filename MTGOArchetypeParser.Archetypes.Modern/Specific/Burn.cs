@@ -14,7 +14,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Goblin Guide", "Monastery Swiftspear", "Vexing Devil", "Eidolon of the Great Revel" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Lightning Bolt" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Lava Spike" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Rift Bolt", "Skewer the Critics", "Lightning Helix", "Boros Charm", "Skullcrack", "Searing Blaze" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Rift Bolt", "Skewer the Critics", "Lightning Helix", "Boros Charm", "Skullcrack", "Searing Blaze", "Thunderous Wrath" } }
             };
             Variants = new ArchetypeVariant[]
             {

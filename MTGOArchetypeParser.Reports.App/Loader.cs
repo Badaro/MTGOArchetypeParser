@@ -54,6 +54,7 @@ namespace MTGOArchetypeParser.Reports.App
                         Meta = metaID,
                         Week = weekID,
                         Date = tournament.Decks.First().Date.Value,
+                        Result = tournament.Decks[i].Result,
                         Player = tournament.Decks[i].Player,
                         AnchorUri = tournament.Decks[i].AnchorUri,
                         Archetype = archetypeID,

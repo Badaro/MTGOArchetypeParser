@@ -11,6 +11,8 @@ namespace MTGOArchetypeParser.Data.Model
     {
         [JsonProperty("Date")]
         public DateTime? Date { get; set; }
+        [JsonProperty("Result")]
+        public string Result { get; set; }
         [JsonProperty("Player")]
         public string Player { get; set; }
         [JsonProperty("AnchorUri")]
