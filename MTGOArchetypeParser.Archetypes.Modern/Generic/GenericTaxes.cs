@@ -21,7 +21,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 "Flickerwisp",
                 "Eldrazi Displacer",
                 "Thought-Knot Seer",
-                "Serra Avenger"
+                "Serra Avenger",
+                "Wasteland Strangler"
             };
         }
     }
