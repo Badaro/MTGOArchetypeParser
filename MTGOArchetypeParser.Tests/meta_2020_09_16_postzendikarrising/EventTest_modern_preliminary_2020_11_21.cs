@@ -9,10 +9,10 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Gung: Sultai Control (UBG)
+#01 Gung: UBRG Control (UBRG)
 #02 mashmalovsky: Ad Nauseam (WUB)
 #03 Tiemuuu: Izzet Control (UR)
-#04 gyyby297: Izzet Restore Balance (UR)
+#04 gyyby297: Izzet Restore Balance (URG)
 #05 VitBuk: Izzet Prowess (UR)
 #06 UmekawaneikU: Shadow Prowess (BRG, Lurrus)
 #07 Lavaridge: Dimir Control (UB)
@@ -25,12 +25,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_11_21 : EventTest
     {
         [Test]
-        public void Deck01_Gung_SultaiControl_UBG()
+        public void Deck01_Gung_UBRGControl_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-21",0),
                 new PostZendikarRising(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericControl),
                 null,
                 null
@@ -64,12 +64,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_gyyby297_IzzetRestoreBalance_UR()
+        public void Deck04_gyyby297_IzzetRestoreBalance_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-21",3),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null

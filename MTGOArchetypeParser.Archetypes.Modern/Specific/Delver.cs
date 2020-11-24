@@ -12,14 +12,15 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Delver of Secrets" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Lightning Bolt" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Lightning Bolt", "Psionic Blast" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Vapor Snag", "Remand", "Mana Leak", "Force of Negation", "Archmage's Charm", "Stubborn Denial" } }
             };
             Variants = new ArchetypeVariant[]
             {
                 new GrixisDelver(),
                 new TemurDelver(),
-                new JeskaiDelver()
+                new JeskaiDelver(),
+                new MonoBlueDelver()
             };
         }
     }
@@ -53,6 +54,17 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.ColorIsExactly, Color = ArchetypeColor.WUR },
+            };
+        }
+    }
+
+    public class MonoBlueDelver : ArchetypeVariant
+    {
+        public MonoBlueDelver()
+        {
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.ColorIsExactly, Color = ArchetypeColor.U },
             };
         }
     }
