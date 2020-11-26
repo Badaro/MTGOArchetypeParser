@@ -48,6 +48,9 @@ namespace MTGOArchetypeParser.Reports.App
                         }
                     }
 
+                    string points = "-";
+                    if (tournament.Standings != null) points = tournament.Standings.FirstOrDefault(s => s.Player == tournament.Decks[i].Player).Points.ToString();
+
                     records.Add(new DataRecord()
                     {
                         Tournament = tournament.Information.Name,
@@ -55,6 +58,7 @@ namespace MTGOArchetypeParser.Reports.App
                         Week = weekID,
                         Date = tournament.Decks.First().Date.Value,
                         Result = tournament.Decks[i].Result,
+                        Points = points,
                         Player = tournament.Decks[i].Player,
                         AnchorUri = tournament.Decks[i].AnchorUri,
                         Archetype = archetypeID,

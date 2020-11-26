@@ -79,11 +79,11 @@ namespace MTGOArchetypeParser.Reports.App
         private static void GenerateDump(IEnumerable<DataRecord> records, string reportName)
         {
             StringBuilder csvData = new StringBuilder();
-            csvData.AppendLine($"EVENT,META,WEEK,DATE,RESULT,PLAYER,URL,ARCHETYPE,COLOR,COMPANION");
+            csvData.AppendLine($"EVENT,META,WEEK,DATE,RESULT,POINTS,PLAYER,URL,ARCHETYPE,COLOR,COMPANION");
 
             foreach (var record in records)
             {
-                csvData.AppendLine($"{record.Tournament},{record.Meta},{record.Week},{record.Date.ToString("yyyy-MM-dd")},{record.Result},{record.Player},{record.AnchorUri},{record.Archetype},{record.Color},{record.Companion}");
+                csvData.AppendLine($"{record.Tournament},{record.Meta},{record.Week},{record.Date.ToString("yyyy-MM-dd")},{record.Result},{record.Points},{record.Player},{record.AnchorUri},{record.Archetype},{record.Color},{record.Companion}");
             }
 
             File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());

@@ -13,6 +13,8 @@ namespace MTGOArchetypeParser.Data.Model
         public TournamentInfo Information { get; set; }
         [JsonProperty("Decks")]
         public Deck[] Decks { get; set; }
+        [JsonProperty("Standings")]
+        public Standing[] Standings { get; set; }
 
         public override string ToString()
         {

@@ -10,6 +10,7 @@ namespace MTGOArchetypeParser.Reports.App
         public int Week { get; set; }
         public DateTime Date { get; set; }
         public string Result { get; set; }
+        public string Points { get; set; }
         public string Player { get; set; }
         public Uri AnchorUri { get; set; }
         public string Archetype { get; set; }
