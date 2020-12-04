@@ -17,11 +17,11 @@ using System.Text;
 #06 DoctorQueller: Spirits (WUG)
 #07 fabee1: Saheeli Combo (WUR)
 #08 calmdownbronco: Heliod Combo (WG)
-#09 MagicDevil666: U Tron (UB)
+#09 MagicDevil666: U Tron (U)
 #10 SYMO991: Shadow Prowess (BRG, Lurrus)
 #11 touto_Isle: Dredge (BRG)
 #12 Magic_Dan: Rakdos Prowess (BR, Lurrus)
-#13 apriolo1: Amulet Titan (WURG)
+#13 apriolo1: Amulet Titan (WRG)
 #14 coffee_tomato: Boros Taxes (WR)
 #15 oskiyaa: Scapeshift (URG)
 #16 GGBud1717: Obosh Aggro (R, Obosh)
@@ -40,8 +40,8 @@ using System.Text;
 #29 oosunq: Omnath Saheeli (WURG, Jegantha)
 #30 Ryuuji89: Gruul Midrange (RG)
 #31 tcgshin: Titan Shift (RG)
-#32 Ely_Silva: Burn (WRG)
-#33 utilitybelt: Reclaimer Titan (WRG)
+#32 Ely_Silva: Burn (WR)
+#33 utilitybelt: Reclaimer Titan (WG)
 #34 Parrit: Mono White Taxes (W)
 #35 russell_wilson: Humans (WUBRG)
 #36 Wuhsa: Niv To Light (WUBRG, Yorion)
@@ -60,9 +60,9 @@ using System.Text;
 #49 ragingpikey: Spirits (WU)
 #50 George_Clooners: Dice Factory Tron (C)
 #51 Acores88: Shadow Prowess (BR, Lurrus)
-#52 ander_lizarrakoa: Oops All Spells (WUBRG)
-#53 Aigis: Oops All Spells (BRG)
-#54 rameison: Izzet Restore Balance (URG)
+#52 ander_lizarrakoa: Oops All Spells (WUBG)
+#53 Aigis: Oops All Spells (BR)
+#54 rameison: Izzet Restore Balance (UR)
 #55 Cabrita: E Tron (C)
 #56 Captainschwiggles: Azorius Control (WU)
 #57 pegleg: UBRG Control (UBRG, Yorion)
@@ -71,7 +71,7 @@ using System.Text;
 #60 TheRaf: KGC Tron (G)
 #61 coert: Heliod Combo (WG, Yorion)
 #62 SpiderSpace: Mono White Taxes (W, Yorion)
-#63 Moniz0801: Amulet Titan (URG)
+#63 Moniz0801: Amulet Titan (RG)
 #64 Borjillamtg10: Rakdos Midrange (BR)
 */
 
@@ -184,12 +184,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_MagicDevil666_UTron_UB()
+        public void Deck09_MagicDevil666_UTron_U()
         {
             Test(
                 GetDeck("modern-league-2020-11-17",8),
                 new PostZendikarRising(),
-                ArchetypeColor.UB,
+                ArchetypeColor.U,
                 typeof(UTron),
                 null,
                 null
@@ -236,12 +236,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_apriolo1_AmuletTitan_WURG()
+        public void Deck13_apriolo1_AmuletTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-11-17",12),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WRG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -483,12 +483,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck32_ElySilva_Burn_WRG()
+        public void Deck32_ElySilva_Burn_WR()
         {
             Test(
                 GetDeck("modern-league-2020-11-17",31),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WR,
                 typeof(Burn),
                 null,
                 null
@@ -496,12 +496,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck33_utilitybelt_ReclaimerTitan_WRG()
+        public void Deck33_utilitybelt_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-league-2020-11-17",32),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -743,12 +743,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck52_anderlizarrakoa_OopsAllSpells_WUBRG()
+        public void Deck52_anderlizarrakoa_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-league-2020-11-17",51),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -756,12 +756,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck53_Aigis_OopsAllSpells_BRG()
+        public void Deck53_Aigis_OopsAllSpells_BR()
         {
             Test(
                 GetDeck("modern-league-2020-11-17",52),
                 new PostZendikarRising(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.BR,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -769,12 +769,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck54_rameison_IzzetRestoreBalance_URG()
+        public void Deck54_rameison_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-11-17",53),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -886,12 +886,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck63_Moniz0801_AmuletTitan_URG()
+        public void Deck63_Moniz0801_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-league-2020-11-17",62),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

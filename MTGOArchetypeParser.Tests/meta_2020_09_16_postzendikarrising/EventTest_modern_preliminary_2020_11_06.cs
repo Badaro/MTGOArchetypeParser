@@ -19,17 +19,17 @@ using System.Text;
 #08 Gerardo94: WURG Control (WURG)
 #09 yamakiller: Obosh Aggro (R, Obosh)
 #10 _IlNano_: Shadow Prowess (BRG, Lurrus)
-#11 pokerswizard: KGC Tron (RG)
-#12 Ramp: Reclaimer Titan (WRG)
+#11 pokerswizard: KGC Tron (G)
+#12 Ramp: Reclaimer Titan (WG)
 #13 Jaberwocki: Jund Midrange (BRG)
 #14 McWinSauce: WURG Control (WURG)
-#15 Ikashy: Oops All Spells (WUBRG)
-#16 SpiderSpace: Izzet Restore Balance (URG)
+#15 Ikashy: Oops All Spells (WUBG)
+#16 SpiderSpace: Izzet Restore Balance (UR)
 #17 QuaCk QuaCk: Scapeshift (URG)
 #18 _Falcon_: Izzet Prowess (UR)
 #19 __BMJ__: Shadow Prowess (BR, Lurrus)
 #20 mmapson125: WURG Control (WURG)
-#21 Tiemuuu: Grixis Control (UBR)
+#21 Tiemuuu: Izzet Control (UR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -167,12 +167,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_pokerswizard_KGCTron_RG()
+        public void Deck11_pokerswizard_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-06",10),
                 new PostZendikarRising(),
-                ArchetypeColor.RG,
+                ArchetypeColor.G,
                 typeof(GTron),
                 typeof(KGCTron),
                 null
@@ -180,12 +180,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_Ramp_ReclaimerTitan_WRG()
+        public void Deck12_Ramp_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-06",11),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -219,12 +219,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_Ikashy_OopsAllSpells_WUBRG()
+        public void Deck15_Ikashy_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-06",14),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -232,12 +232,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_SpiderSpace_IzzetRestoreBalance_URG()
+        public void Deck16_SpiderSpace_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-06",15),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -297,12 +297,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck21_Tiemuuu_GrixisControl_UBR()
+        public void Deck21_Tiemuuu_IzzetControl_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-06",20),
                 new PostZendikarRising(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.UR,
                 typeof(GenericControl),
                 null,
                 null

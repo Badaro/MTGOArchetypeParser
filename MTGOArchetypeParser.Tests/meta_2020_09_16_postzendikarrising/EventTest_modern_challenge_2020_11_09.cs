@@ -12,22 +12,22 @@ using System.Text;
 #01 Samcaster-Mage: E Tron (C)
 #02 Tiemuuu: Izzet Control (UR)
 #03 CordoTwin: Shadow Prowess (BR, Lurrus)
-#04 Jenara19: Amulet Titan (UBRG)
+#04 Jenara19: Amulet Titan (RG)
 #05 Mordeka1ser: Niv To Light (WUBRG, Yorion)
 #06 paucr5: Devoted (WG, Lurrus)
-#07 Moniz0801: KGC Amulet Titan (UBRG)
+#07 Moniz0801: KGC Amulet Titan (G)
 #08 Kurusu: Kiki Chord (WRG, Yorion)
 #09 Laplasjan: Devoted (WG, Lurrus)
 #10 Mateusf34: E Tron (C)
 #11 DenebLyrae: Heliod Combo (WG)
-#12 Sodeq: Oops All Spells (WUBRG)
+#12 Sodeq: Oops All Spells (WUBG)
 #13 Nytrox: Heliod Combo (WG)
 #14 Mlgb92: Izzet Prowess (UR)
 #15 _Batutinha_: Reclaimer Titan (WRG)
 #16 mmapson125: Heliod Combo (WG)
 #17 oosunq: Omnath Saheeli (WURG, Jegantha)
 #18 GodOfSlaughter: WURG Control (WURG)
-#19 Better_than_Average: Oops All Spells (WUBRG)
+#19 Better_than_Average: Oops All Spells (WUBG)
 #20 Mogged: Mono Red Prowess (R)
 #21 tibalt_of_red_sub: Mill (UB, Lurrus)
 #22 PRGJJAR: Dredge (BRG)
@@ -87,12 +87,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_Jenara19_AmuletTitan_UBRG()
+        public void Deck04_Jenara19_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-09",3),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_Moniz0801_KGCAmuletTitan_UBRG()
+        public void Deck07_Moniz0801_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-09",6),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -191,12 +191,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_Sodeq_OopsAllSpells_WUBRG()
+        public void Deck12_Sodeq_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-09",11),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -282,12 +282,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck19_BetterthanAverage_OopsAllSpells_WUBRG()
+        public void Deck19_BetterthanAverage_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-09",18),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null

@@ -10,10 +10,10 @@ using System.Text;
 
 /*
 #01 Ganksyou: Azorius Control (WU)
-#02 Rhianne: Dredge (WBRG)
+#02 Rhianne: Dredge (BRG)
 #03 tylerjjobrien: Niv To Light (WUBRG, Yorion)
 #04 Zar0s: Scapeshift (URG)
-#05 RodeoJones: Snow Saheeli (WURG)
+#05 RodeoJones: Snow Saheeli (WUG)
 #06 Thrall90: Jund Midrange (BRG)
 #07 Redgy819: E Tron (C)
 #08 katuo079595: Scapeshift (URG)
@@ -50,12 +50,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_Rhianne_Dredge_WBRG()
+        public void Deck02_Rhianne_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-28",1),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -89,12 +89,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_RodeoJones_SnowSaheeli_WURG()
+        public void Deck05_RodeoJones_SnowSaheeli_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-28",4),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUG,
                 typeof(SaheeliCombo),
                 typeof(SnowSaheeli),
                 null

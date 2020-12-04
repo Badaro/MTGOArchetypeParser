@@ -19,9 +19,9 @@ using System.Text;
 #08 ArchaeusDota: Bant Control (WUG, Yorion)
 #09 lSoLlAKirA: Heliod Combo (WG)
 #10 yamakiller: Obosh Aggro (R, Obosh)
-#11 ContraEgo: Thopter Urza (UBR)
+#11 ContraEgo: Thopter Urza (WUBR)
 #12 Darkiundsa: Bant Control (WUG, Yorion)
-#13 RandomOctopus: Oops All Spells (WUBRG)
+#13 RandomOctopus: Oops All Spells (WUBG)
 #14 Patxi: WURG Control (WURG)
 #15 lucajak: Mono Red Prowess (R)
 #16 Lucabireskusku: Izzet Control (UR)
@@ -30,7 +30,7 @@ using System.Text;
 #19 GombleWhop: Obosh Aggro (R, Obosh)
 #20 Gobern: Niv To Light (WUBRG, Yorion)
 #21 s1m0n: Shadow Prowess (BRG, Lurrus)
-#22 sandydogmtg: Oops All Spells (WUBRG)
+#22 sandydogmtg: Oops All Spells (WUBG)
 #23 MindOfAKid: Bogles (WG, Lurrus)
 #24 tzio: Orzhov Midrange (WB)
 #25 EskimoJoe: Mono White Taxes (W)
@@ -172,12 +172,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_ContraEgo_ThopterUrza_UBR()
+        public void Deck11_ContraEgo_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-13",10),
                 new PostZendikarRising(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null
@@ -198,12 +198,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_RandomOctopus_OopsAllSpells_WUBRG()
+        public void Deck13_RandomOctopus_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-13",12),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -315,12 +315,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck22_sandydogmtg_OopsAllSpells_WUBRG()
+        public void Deck22_sandydogmtg_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-13",21),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null

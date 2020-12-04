@@ -18,7 +18,7 @@ using System.Text;
 #07 Daking3603: Reclaimer Titan (WRG)
 #08 Violent_Outburst: Scapeshift (URG)
 #09 Venom1: Ad Nauseam (WUB)
-#10 Zar0s: Reclaimer Titan (WRG)
+#10 Zar0s: Reclaimer Titan (WG)
 #11 otakkun: KGC Tron (G)
 #12 Janh: Sultai Control (UBG)
 #13 johnsmith3373: Izzet Prowess (UR)
@@ -33,7 +33,7 @@ using System.Text;
 #22 patheus_84: Ad Nauseam (WUB)
 #23 canepis16: Rakdos Prowess (BR, Lurrus)
 #24 ShowTime_: Burn (WR, Lurrus)
-#25 junghans: Devoted (WRG)
+#25 junghans: Devoted (WG)
 #26 Mateusf34: E Tron (C)
 #27 Kuhb: Devoted (WG, Lurrus)
 #28 MoxSquirrel: Rakdos Prowess (BR, Lurrus)
@@ -165,12 +165,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_Zar0s_ReclaimerTitan_WRG()
+        public void Deck10_Zar0s_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-09-14",9),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -360,12 +360,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck25_junghans_Devoted_WRG()
+        public void Deck25_junghans_Devoted_WG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-09-14",24),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(Devoted),
                 null,
                 null

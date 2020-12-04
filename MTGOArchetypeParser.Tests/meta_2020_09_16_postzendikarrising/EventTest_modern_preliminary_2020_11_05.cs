@@ -13,18 +13,18 @@ using System.Text;
 #02 Ravul: E Tron (C)
 #03 Mcleskey: Izzet Prowess (UR)
 #04 Phill_Hellmuth: Shadow Prowess (WBR, Lurrus)
-#05 pokerswizard: KGC Tron (RG)
+#05 pokerswizard: KGC Tron (G)
 #06 xfile: Mono White Taxes (W)
 #07 QuaCk QuaCk: Scapeshift (URG)
 #08 DrDree: Gruul Midrange (RG)
 #09 Alrawn: Shadow Prowess (BR, Lurrus)
 #10 _Stream: Jund Prowess (BRG, Lurrus)
 #11 bgv1989: Ad Nauseam (WUB)
-#12 SpiderSpace: Izzet Restore Balance (URG)
+#12 SpiderSpace: Izzet Restore Balance (UR)
 #13 tzio: Orzhov Midrange (WB)
 #14 ice_nine_: Boros Land Destruction (WR)
 #15 mmapson125: WURG Control (WURG)
-#16 Ramp: Reclaimer Titan (WRG) 
+#16 Ramp: Reclaimer Titan (WG)
 #17 Matteso: Gifts Storm (UR)
 #18 fingers1991: Shadow Prowess (BR, Lurrus)
 */
@@ -86,12 +86,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_pokerswizard_KGCTron_RG()
+        public void Deck05_pokerswizard_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-05",4),
                 new PostZendikarRising(),
-                ArchetypeColor.RG,
+                ArchetypeColor.G,
                 typeof(GTron),
                 typeof(KGCTron),
                 null
@@ -177,12 +177,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_SpiderSpace_IzzetRestoreBalance_URG()
+        public void Deck12_SpiderSpace_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-05",11),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -229,12 +229,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_Ramp_ReclaimerTitan_WRG()
+        public void Deck16_Ramp_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-05",15),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null

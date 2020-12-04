@@ -19,7 +19,7 @@ using System.Text;
 #08 Imaeda: Izzet Prowess (UR)
 #09 Hampuse1: Dice Factory Tron (C)
 #10 BSK_hercules: Temur Control (URG)
-#11 Zar0s: KGC Amulet Titan (WUBRG)
+#11 Zar0s: KGC Amulet Titan (G)
 #12 otakkun: KGC Tron (G)
 #13 ht991122: Temur Control (URG)
 #14 kbzx: Izzet Prowess (UR)
@@ -161,12 +161,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_Zar0s_KGCAmuletTitan_WUBRG()
+        public void Deck11_Zar0s_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",10),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

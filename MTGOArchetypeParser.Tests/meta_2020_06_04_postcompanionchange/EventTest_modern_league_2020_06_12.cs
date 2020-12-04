@@ -27,7 +27,7 @@ using System.Text;
 #16 FlxEx: Jund Shadow (BRG)
 #17 soba178: Humans (WUBRG)
 #18 MrRaeb: Uroza (UBG, Yorion)
-#19 jessy_samek: Uroza (URG)
+#19 jessy_samek: Uroza (UG)
 #20 B1gDan: Mardu Shadow (WBR)
 #21 floatius: Azorius Control (WU)
 #22 osk4: WURG Blink (WURG, Yorion)
@@ -39,7 +39,7 @@ using System.Text;
 #28 renatoaraujo: G Tron (G)
 #29 Traft: Goblins (BRG)
 #30 Mordeka1ser: Niv To Light (WUBRG, Yorion)
-#31 anamika: WURG Midrange (WURG)
+#31 anamika: Gruul Midrange (RG)
 #32 Dr_D1ck_Forest: Ad Nauseam (WUB)
 #33 Mollok: Thalia Stompy (WR)
 #34 knightmare21: Izzet Control (UR)
@@ -47,7 +47,7 @@ using System.Text;
 #36 kuromatu: E Tron (C)
 #37 Nideon: Orzhov Taxes (WB)
 #38 nahuel10: WUBG Control (WUBG, Yorion)
-#39 Zebrah: Amulet Titan (WURG)
+#39 Zebrah: Amulet Titan (URG)
 #40 SawphtBoi: Winota (WRG)
 #41 Boland: Grixis Shadow (UBR)
 #42 marcofabrizi: Bant Midrange (WUG)
@@ -294,12 +294,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck19_jessysamek_Uroza_URG()
+        public void Deck19_jessysamek_Uroza_UG()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",18),
                 new PostCompanionChange(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(Uroza),
                 null,
                 null
@@ -450,12 +450,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck31_anamika_WURGMidrange_WURG()
+        public void Deck31_anamika_GruulMidrange_RG()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",30),
                 new PostCompanionChange(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.RG,
                 typeof(GenericMidrange),
                 null,
                 null
@@ -554,12 +554,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck39_Zebrah_AmuletTitan_WURG()
+        public void Deck39_Zebrah_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-league-2020-06-12",38),
                 new PostCompanionChange(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

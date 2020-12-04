@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 musasabi: Orzhov Midrange (WB)
-#02 __matsugan: Oops All Spells (WUBRG)
+#02 __matsugan: Oops All Spells (WUBG)
 #03 Bedell: KGC Amulet Titan (URG)
 #04 Bullwinkkle6705: UBRG Control (UBRG)
 #05 GodOfSlaughter: Niv To Light (WUBRG, Yorion)
@@ -31,7 +31,7 @@ using System.Text;
 #20 Bayesta_93: Shadow Prowess (BR, Lurrus)
 #21 kanister: Oops All Spells (WUBRG)
 #22 trader08111: Gruul Midrange (RG)
-#23 dough_shack: Amulet Titan (WUBRG)
+#23 dough_shack: Amulet Titan (UG)
 #24 TSPJendrek: Sultai Control (UBG)
 #25 Smdster: Temur Control (URG)
 #26 helpfulsheep: Rakdos Prowess (BR, Lurrus)
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_matsugan_OopsAllSpells_WUBRG()
+        public void Deck02_matsugan_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-27",1),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -334,12 +334,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck23_doughshack_AmuletTitan_WUBRG()
+        public void Deck23_doughshack_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-27",22),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

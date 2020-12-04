@@ -14,7 +14,7 @@ using System.Text;
 #03 BERNASTORRES: WURG Control (WURG)
 #04 stayrospet: Omnath Saheeli (WURG, Jegantha)
 #05 yPrincipe: Reclaimer Titan (WRG)
-#06 ArchaeusDota: KGC Tron (RG)
+#06 ArchaeusDota: KGC Tron (G)
 #07 Phill_Hellmuth: Bant Spirits (WUG)
 #08 Tractorage: Omnath Saheeli (WURG, Jegantha)
 #09 mtgjens: Crabvine (UBG)
@@ -99,12 +99,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_ArchaeusDota_KGCTron_RG()
+        public void Deck06_ArchaeusDota_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-03",5),
                 new PostZendikarRising(),
-                ArchetypeColor.RG,
+                ArchetypeColor.G,
                 typeof(GTron),
                 typeof(KGCTron),
                 null

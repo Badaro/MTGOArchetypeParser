@@ -10,13 +10,13 @@ using System.Text;
 
 /*
 #01 Tweedel: Obosh Aggro (R, Obosh)
-#02 Xwhale: Reclaimer Titan (WRG)
+#02 Xwhale: Reclaimer Titan (WG)
 #03 otakkun: E Tron (C)
 #04 HNSDMPF: Hardened Scales (G)
 #05 JUJUBEAN__2004: Heliod Combo (WG)
 #06 eclipse4343: Azorius Control (WU)
 #07 Selami: Ad Nauseam (WUB)
-#08 AlpInco: Oops All Spells (WUBRG)
+#08 AlpInco: Oops All Spells (WUBG)
 #09 Oderus Urungus: Obosh Aggro (R, Obosh)
 #10 Amplumnox: Hammer Time (W, Lurrus)
 #11 Piproberts: Shadow Prowess (BRG, Lurrus)
@@ -28,7 +28,7 @@ using System.Text;
 #17 Gifted: Shadow Prowess (BRG, Lurrus)
 #18 Nikachu: Merfolk (UG)
 #19 PieGonti: Heliod Combo (WG)
-#20 silencsong: Izzet Restore Balance (URG)
+#20 silencsong: Izzet Restore Balance (UR)
 #21 Binolino: Reclaimer Titan (WRG)
 #22 Jositoshekel: Heliod Combo (WG)
 #23 Aerostar: Merfolk (UG)
@@ -37,7 +37,7 @@ using System.Text;
 #26 MHayashi: Obosh Aggro (R, Obosh)
 #27 guiyote: Izzet Prowess (UR)
 #28 Do0mSwitch: Azorius Control (WU)
-#29 GombleWhop: Amulet Titan (WUBRG)
+#29 GombleWhop: Amulet Titan (RG)
 #30 joetru: Niv To Light (WUBRG)
 #31 SvenSveeterSven: Mardu Midrange (WBR)
 #32 Better_than_Average: Obosh Aggro (R, Obosh)
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_Xwhale_ReclaimerTitan_WRG()
+        public void Deck02_Xwhale_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-29",1),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -139,12 +139,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_AlpInco_OopsAllSpells_WUBRG()
+        public void Deck08_AlpInco_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-29",7),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -295,12 +295,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_silencsong_IzzetRestoreBalance_URG()
+        public void Deck20_silencsong_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-29",19),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -412,12 +412,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck29_GombleWhop_AmuletTitan_WUBRG()
+        public void Deck29_GombleWhop_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-29",28),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

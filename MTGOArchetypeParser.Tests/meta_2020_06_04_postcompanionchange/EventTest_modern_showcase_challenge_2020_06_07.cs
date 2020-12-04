@@ -11,31 +11,31 @@ using System.Text;
 /*
 #01 Do0mSwitch: Bant Control (WUG)
 #02 hugofreitas1: Gifts Storm (UR)
-#03 nathansteuer: Uroza (URG)
+#03 nathansteuer: Uroza (UG)
 #04 McWinSauce: Bant Control (WUG)
 #05 Finalnub: Neobrand (UG)
 #06 SebastianStueckl: Gruul Midrange (RG)
-#07 MatheusPonciano: Dredge (UBRG)
+#07 MatheusPonciano: Dredge (BRG)
 #08 cftsoc3: Bant Blink (WUG, Yorion)
 #09 PietroSas: Devoted (WG, Lurrus)
 #10 TheTunnelingCat: E Tron (C)
 #11 Sonso JF: Heliod Devoted (WBG)
-#12 Moniz0801: KGC Amulet Titan (WUBRG)
+#12 Moniz0801: KGC Amulet Titan (G)
 #13 SpiderSpace: Hardened Scales (G)
 #14 patrick50: Devoted (WG, Lurrus)
-#15 rn17: Thopter Urza (UBR)
+#15 rn17: Thopter Urza (UB)
 #16 Trellon: U Tron (U)
 #17 _Batutinha_: Bant Control (WUG)
 #18 TSPJendrek: WUBG Control (WUBG)
 #19 solace: Gruul Midrange (RG)
-#20 Zebrah: Amulet Titan (WUBRG)
+#20 Zebrah: Amulet Titan (UG)
 #21 DavidDPanda: E Tron (C)
-#22 FreedMania: Amulet Titan (WUBRG)
+#22 FreedMania: Amulet Titan (UG)
 #23 BaronOfBacon: Humans (WUBRG)
 #24 GiovaniMF: Burn (WR)
 #25 Icteridae: Heliod Devoted (WUG)
 #26 bobjackson: KGC Tron (G, Jegantha)
-#27 Ennuixd: Amulet Titan (WURG)
+#27 Ennuixd: Amulet Titan (WUG)
 #28 pbarrrgh: Sultai Control (UBG)
 #29 Shorak123: Sultai Control (UBG)
 #30 JMoney8771: Infect (UG)
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck03_nathansteuer_Uroza_URG()
+        public void Deck03_nathansteuer_Uroza_UG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",2),
                 new PostCompanionChange(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(Uroza),
                 null,
                 null
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck07_MatheusPonciano_Dredge_UBRG()
+        public void Deck07_MatheusPonciano_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",6),
                 new PostCompanionChange(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -191,12 +191,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck12_Moniz0801_KGCAmuletTitan_WUBRG()
+        public void Deck12_Moniz0801_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",11),
                 new PostCompanionChange(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -230,12 +230,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck15_rn17_ThopterUrza_UBR()
+        public void Deck15_rn17_ThopterUrza_UB()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",14),
                 new PostCompanionChange(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.UB,
                 typeof(ThopterUrza),
                 null,
                 null
@@ -295,12 +295,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck20_Zebrah_AmuletTitan_WUBRG()
+        public void Deck20_Zebrah_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",19),
                 new PostCompanionChange(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -321,12 +321,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck22_FreedMania_AmuletTitan_WUBRG()
+        public void Deck22_FreedMania_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",21),
                 new PostCompanionChange(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -386,12 +386,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck27_Ennuixd_AmuletTitan_WURG()
+        public void Deck27_Ennuixd_AmuletTitan_WUG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",26),
                 new PostCompanionChange(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

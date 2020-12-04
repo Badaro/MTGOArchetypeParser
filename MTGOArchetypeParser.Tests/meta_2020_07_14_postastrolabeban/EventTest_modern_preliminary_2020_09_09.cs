@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 __matsugan: Ad Nauseam (WUB)
-#02 zumekun19850204: WURG Control (WURG)
+#02 zumekun19850204: Bant Control (WUG)
 #03 liuyuchen: Jund Midrange (BRG)
 #04 toondoslav: Infect (WUG)
 #05 SourceOdin: Reclaimer Titan (WRG)
@@ -40,12 +40,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_zumekun19850204_WURGControl_WURG()
+        public void Deck02_zumekun19850204_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-09",1),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUG,
                 typeof(GenericControl),
                 null,
                 null

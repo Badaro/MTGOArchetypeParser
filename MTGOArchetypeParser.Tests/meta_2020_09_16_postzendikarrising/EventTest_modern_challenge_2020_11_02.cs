@@ -11,10 +11,10 @@ using System.Text;
 /*
 #01 patheus_84: Ad Nauseam (WUB)
 #02 ZYURYO: WURG Control (WURG)
-#03 HouseOfManaMTG: Amulet Titan (UBRG)
+#03 HouseOfManaMTG: Amulet Titan (RG)
 #04 Mogged: Mono Red Prowess (R)
 #05 _Batutinha_: Shadow Prowess (BR, Lurrus)
-#06 shoktroopa: U Tron (UB)
+#06 shoktroopa: U Tron (U)
 #07 Chefen: Gruul Midrange (RG)
 #08 maxbv: Mono White Taxes (W)
 #09 Blitzlion27: Mill (UB)
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_HouseOfManaMTG_AmuletTitan_UBRG()
+        public void Deck03_HouseOfManaMTG_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-02",2),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -113,12 +113,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_shoktroopa_UTron_UB()
+        public void Deck06_shoktroopa_UTron_U()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-02",5),
                 new PostZendikarRising(),
-                ArchetypeColor.UB,
+                ArchetypeColor.U,
                 typeof(UTron),
                 null,
                 null

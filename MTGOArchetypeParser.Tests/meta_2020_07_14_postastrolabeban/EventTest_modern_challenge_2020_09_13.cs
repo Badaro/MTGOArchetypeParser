@@ -15,18 +15,18 @@ using System.Text;
 #04 azax: Grixis Shadow (UBR)
 #05 yume-mana: Bant Midrange (WUG)
 #06 mRichi: Gruul Midrange (RG)
-#07 CitrusD: Yawgmoth (WBG)
+#07 CitrusD: Yawgmoth (BG)
 #08 mariogomes097: Grixis Shadow (UBR)
 #09 TSPJendrek: Sultai Control (UBG)
 #10 NuBlkAu: Grixis Shadow (UBR)
-#11 Mzfroste: Amulet Titan (UBRG)
+#11 Mzfroste: Amulet Titan (RG)
 #12 MIkepick7: E Tron (C)
 #13 pootisgodsamongus: Gruul Midrange (RG)
 #14 genmatsu: Uroza (UBG)
 #15 SebastianStueckl: Obosh Aggro (R, Obosh)
 #16 Sodeq: Ad Nauseam (WUB)
-#17 tribalmaster: Humans (WUBRG)
-#18 calheiros: KGC Amulet Titan (UBRG)
+#17 tribalmaster: Humans (WUR)
+#18 calheiros: KGC Amulet Titan (G)
 #19 DaniMRebel: Spirits (WU)
 #20 Tsubasa_Cat: Izzet Prowess (UR)
 #21 eggybenny: Grixis Shadow (UBR)
@@ -40,7 +40,7 @@ using System.Text;
 #29 Trellon: U Tron (U)
 #30 ice_nine_: Boros Land Destruction (WR)
 #31 BigPanda_559: Burn (WR)
-#32 Predicted: Yawgmoth (WBG)
+#32 Predicted: Yawgmoth (BG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_CitrusD_Yawgmoth_WBG()
+        public void Deck07_CitrusD_Yawgmoth_BG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",6),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBG,
+                ArchetypeColor.BG,
                 typeof(Yawgmoth),
                 null,
                 null
@@ -178,12 +178,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_Mzfroste_AmuletTitan_UBRG()
+        public void Deck11_Mzfroste_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",10),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_tribalmaster_Humans_WUBRG()
+        public void Deck17_tribalmaster_Humans_WUR()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",16),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUR,
                 typeof(Humans),
                 null,
                 null
@@ -269,12 +269,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck18_calheiros_KGCAmuletTitan_UBRG()
+        public void Deck18_calheiros_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",17),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -451,12 +451,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck32_Predicted_Yawgmoth_WBG()
+        public void Deck32_Predicted_Yawgmoth_BG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",31),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBG,
+                ArchetypeColor.BG,
                 typeof(Yawgmoth),
                 null,
                 null

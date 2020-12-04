@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Kofurea: KGC Amulet Titan (WUBRG)
+#01 Kofurea: KGC Amulet Titan (UG)
 #02 otakkun: KGC Tron (G)
 #03 gyyby297: Thopter Urza (UB)
 #04 siomomi: KGC Tron (G)
@@ -25,12 +25,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_preliminary_2020_06_27 : EventTest
     {
         [Test]
-        public void Deck01_Kofurea_KGCAmuletTitan_WUBRG()
+        public void Deck01_Kofurea_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-27",0),
                 new PostM21(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

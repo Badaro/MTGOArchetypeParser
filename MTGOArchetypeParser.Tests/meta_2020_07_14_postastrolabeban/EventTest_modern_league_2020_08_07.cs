@@ -16,7 +16,7 @@ using System.Text;
 #05 bozo2112: Snoop Goblins (BR)
 #06 derramedefogo: Gifts Storm (UR)
 #07 manu_chao: Temur Control (URG)
-#08 Tsius: Dredge (WBRG)
+#08 Tsius: Dredge (BRG)
 #09 CrusherBotBG: Hammer Time (W)
 #10 Zebrah: Humans (WUBRG)
 #11 Kurusu: Kiki Chord (WRG, Yorion)
@@ -44,13 +44,13 @@ using System.Text;
 #33 SpicyLeche: Crabvine (UBG)
 #34 hkavery: WURG Control (WURG)
 #35 Delthar: Infect (BG)
-#36 fpawlusz: Reclaimer Titan (WRG)
+#36 fpawlusz: Reclaimer Titan (WG)
 #37 toya: Rakdos Midrange (BR, Lurrus)
 #38 brancusi: Grixis Shadow (UBR)
 #39 HannoLee: Temur Superfriends (URG)
 #40 Elad_Win: Jeskai Control (WUR)
 #41 Darzyn: Bant Midrange (WUG)
-#42 asihtos: Primeval Titan (URG)
+#42 asihtos: Primeval Titan (UG)
 #43 bobthyllama2: Rakdos Prowess (BR, Lurrus)
 #44 sepomon: Smallpox (WB)
 #45 Drakanar: Merfolk (UG)
@@ -63,9 +63,9 @@ using System.Text;
 #52 Nis2a: Mono White Taxes (W)
 #53 TheDogFish: Merfolk (WU, Lurrus)
 #54 shiven djinn: Obosh Aggro (R, Obosh)
-#55 AngledLuffa: Lantern (UBG)
+#55 AngledLuffa: Lantern (WUBG)
 #56 AbelMolto: Burn (WRG)
-#57 cntrlfreak: UBRG Shadow (UBRG)
+#57 cntrlfreak: Sultai Shadow (UBG)
 #58 Grisel_Dad: E Tron (C)
 #59 JMAK2000: KGC Tron (G)
 #60 Luzur: Sultai Control (UBG)
@@ -169,12 +169,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_Tsius_Dredge_WBRG()
+        public void Deck08_Tsius_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-07",7),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -533,12 +533,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck36_fpawlusz_ReclaimerTitan_WRG()
+        public void Deck36_fpawlusz_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-league-2020-08-07",35),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -611,12 +611,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck42_asihtos_PrimevalTitan_URG()
+        public void Deck42_asihtos_PrimevalTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-08-07",41),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 null,
                 null
@@ -780,12 +780,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck55_AngledLuffa_Lantern_UBG()
+        public void Deck55_AngledLuffa_Lantern_WUBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-07",54),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.WUBG,
                 typeof(Lantern),
                 null,
                 null
@@ -806,12 +806,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck57_cntrlfreak_UBRGShadow_UBRG()
+        public void Deck57_cntrlfreak_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-07",56),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null

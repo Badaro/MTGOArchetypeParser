@@ -3,6 +3,7 @@ using MTGOArchetypeParser.Data.Model;
 using MTGOArchetypeParser.Model;
 using MTGOArchetypeParser.Tests.Updater.Model;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -11,13 +12,17 @@ namespace MTGOArchetypeParser.Tests.Updater
 {
     public static class CodeGenerator
     {
+        static Dictionary<string, ArchetypeColor> _lands = MTGOArchetypeParser.Cards.Modern.Loader.GetLands();
+        static Dictionary<string, ArchetypeColor> _nonlands = MTGOArchetypeParser.Cards.Modern.Loader.GetNonLands();
+        static Archetype[] _archetypes = MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes();
+
         public static string GenerateSummary(Tournament tournament)
         {
             StringBuilder summary = new StringBuilder();
 
             for (int i = 0; i < tournament.Decks.Length; i++)
             {
-                var result = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
+                var result = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), _archetypes, _lands, _nonlands);
 
                 int position = i + 1;
                 string player = tournament.Decks[i].Player;

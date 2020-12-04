@@ -22,8 +22,8 @@ using System.Text;
 #11 ManavonRX: Rakdos Midrange (BR)
 #12 lovealienzzz: Temur Control (URG)
 #13 eggybenny: Neobrand (UG)
-#14 erose199423: Thopter Urza (WUR)
-#15 rn17: Thopter Urza (UBR)
+#14 erose199423: Thopter Urza (WU)
+#15 rn17: Thopter Urza (UB)
 #16 Boin: Gruul Midrange (RG)
 #17 Jositoshekel: Bogles (WG)
 */
@@ -202,12 +202,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck14_erose199423_ThopterUrza_WUR()
+        public void Deck14_erose199423_ThopterUrza_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-19",13),
                 new PostCompanionChange(),
-                ArchetypeColor.WUR,
+                ArchetypeColor.WU,
                 typeof(ThopterUrza),
                 null,
                 null
@@ -215,12 +215,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck15_rn17_ThopterUrza_UBR()
+        public void Deck15_rn17_ThopterUrza_UB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-19",14),
                 new PostCompanionChange(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.UB,
                 typeof(ThopterUrza),
                 null,
                 null

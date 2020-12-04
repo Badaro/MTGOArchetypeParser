@@ -12,7 +12,7 @@ using System.Text;
 #01 Nextep: Izzet Control (UR)
 #02 pandanaconda: Hardened Scales (RG)
 #03 Parole: Selenya Midrange (WG)
-#04 gyyby297: Oops All Spells (WUBRG)
+#04 gyyby297: Oops All Spells (WUBG)
 #05 TheDogFish: Merfolk (U)
 #06 Alcander: Shadow Prowess (BRG, Lurrus)
 #07 Jadacant: Dice Factory Tron (C)
@@ -21,7 +21,7 @@ using System.Text;
 #10 bresett123: Jeskai Control (WUR)
 #11 Qoiet: U Tron (U)
 #12 Vertyx_: Izzet Prowess (UR)
-#13 SpiderSpace: Izzet Restore Balance (URG)
+#13 SpiderSpace: Izzet Restore Balance (UR)
 #14 TscheggschDePoegg: Selenya Taxes (WG)
 #15 Wuhsa: Niv To Light (WUBRG)
 #16 Binolino: Reclaimer Titan (WRG)
@@ -33,7 +33,7 @@ using System.Text;
 #22 heyakita: Omnath Saheeli (WURG, Yorion)
 #23 603Leb: Jund Midrange (BRG)
 #24 JustBurn420: Slivers (WUBRG)
-#25 flatnose: Merfolk (WUG)
+#25 flatnose: Merfolk (UG)
 #26 AlexFromTheNorth: Bushwhacker Zoo (WRG)
 #27 VonCireot: Mill (UB)
 #28 Foxantes: E Tron (C)
@@ -49,14 +49,14 @@ using System.Text;
 #38 qbturtle15: Azorius Control (WU)
 #39 ThatAsianGuy8: Gruul Midrange (RG)
 #40 CRYPTIC_C4SSIE: Sultai Control (UBG)
-#41 Leviathan102: Amulet Titan (WUBRG)
+#41 Leviathan102: Amulet Titan (UG)
 #42 CitrusD: Yawgmoth (BG)
 #43 iuriper: Belcher (URG)
 #44 129th: Spirits (WUG)
 #45 MrRaeb: UBRG Control (UBRG, Yorion)
 #46 yuseimax: Soulflayer (BRG)
 #47 WaToO: Esper Control (WUB)
-#48 keyan926: Heliod Combo (WRG)
+#48 keyan926: Heliod Combo (WG)
 #49 NickPensy: Humans (WUBRG)
 #50 Lucabireskusku: Izzet Control (UR)
 #51 Furtch: Rakdos Midrange (BR)
@@ -64,7 +64,7 @@ using System.Text;
 #53 btr_be_lucky_thn_gud: Izzet Control (UR)
 #54 Amplumnox: Shadow Prowess (WBR, Lurrus)
 #55 daibloXSC: Azorius Control (WU)
-#56 apriolo1: Amulet Titan (WURG)
+#56 apriolo1: Amulet Titan (WRG)
 #57 MHayashi: Obosh Aggro (R, Obosh)
 #58 FlxEx: Battle Of Wits (WUBRG, Yorion)
 #59 adbnau: Dredge (BRG)
@@ -123,12 +123,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_gyyby297_OopsAllSpells_WUBRG()
+        public void Deck04_gyyby297_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-league-2020-11-10",3),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -240,12 +240,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_SpiderSpace_IzzetRestoreBalance_URG()
+        public void Deck13_SpiderSpace_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-11-10",12),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -396,12 +396,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck25_flatnose_Merfolk_WUG()
+        public void Deck25_flatnose_Merfolk_UG()
         {
             Test(
                 GetDeck("modern-league-2020-11-10",24),
                 new PostZendikarRising(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.UG,
                 typeof(Merfolk),
                 null,
                 null
@@ -604,12 +604,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck41_Leviathan102_AmuletTitan_WUBRG()
+        public void Deck41_Leviathan102_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-11-10",40),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -695,12 +695,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck48_keyan926_HeliodCombo_WRG()
+        public void Deck48_keyan926_HeliodCombo_WG()
         {
             Test(
                 GetDeck("modern-league-2020-11-10",47),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(HeliodCombo),
                 null,
                 null
@@ -799,12 +799,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck56_apriolo1_AmuletTitan_WURG()
+        public void Deck56_apriolo1_AmuletTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-11-10",55),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WRG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

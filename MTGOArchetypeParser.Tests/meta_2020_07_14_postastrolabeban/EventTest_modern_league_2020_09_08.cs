@@ -17,9 +17,9 @@ using System.Text;
 #06 AceTrainerBlue: Yawgmoth (BG)
 #07 eneges: Jund Shadow (BRG)
 #08 victorseiya: Orzhov Midrange (WB)
-#09 crackerpack: Dredge (WBRG)
+#09 crackerpack: Dredge (BRG)
 #10 Gods_Shadow: Mono White Taxes (W)
-#11 ajifly: Devoted (WRG)
+#11 ajifly: Devoted (WG)
 #12 Tarrasque1: Selenya Taxes (WG)
 #13 v3sp_tv: Boros Prowess (WR, Lurrus)
 #14 plampkin: Izzet Prowess (UR)
@@ -40,10 +40,10 @@ using System.Text;
 #29 FedeG: Reclaimer Titan (WRG)
 #30 BlazingShoryuken: Izzet Control (UR)
 #31 rojanosa: Faeries (UB)
-#32 fradev1988: Izzet Restore Balance (URG)
+#32 fradev1988: Izzet Restore Balance (UR)
 #33 junior97: Rakdos Midrange (BR)
 #34 eggybenny: Temur Delver (URG)
-#35 Bangood: Thopter Urza (UBR)
+#35 Bangood: Thopter Urza (WUBR)
 #36 BigDadChad: Heliod Combo (WG)
 #37 Rinko: Enduring Ideal (W)
 #38 Selami: Ad Nauseam (WUB)
@@ -51,12 +51,12 @@ using System.Text;
 #40 MrRaeb: Uroza (UG)
 #41 ScarletStorms: Bant Control (WUG)
 #42 Sharkcaster_Mage: Obosh Aggro (R, Obosh)
-#43 Toastxp: Amulet Titan (URG)
+#43 Toastxp: Amulet Titan (RG)
 #44 Magric: Jund Midrange (BRG)
 #45 balltap: Jeskai Breach (WURG, Jegantha)
 #46 TheWonderLord: Golgari Midrange (BG)
 #47 toondoslav: Infect (WUG)
-#48 gamemaker: Belcher (BG)
+#48 gamemaker: Belcher (G)
 #49 N3to: Gifts Storm (UR)
 #50 rastaf: Bogles (WG, Lurrus)
 #51 LordMajicus: Merfolk (WU, Lurrus)
@@ -182,12 +182,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_crackerpack_Dredge_WBRG()
+        public void Deck09_crackerpack_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-09-08",8),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -208,12 +208,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_ajifly_Devoted_WRG()
+        public void Deck11_ajifly_Devoted_WG()
         {
             Test(
                 GetDeck("modern-league-2020-09-08",10),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(Devoted),
                 null,
                 null
@@ -481,12 +481,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck32_fradev1988_IzzetRestoreBalance_URG()
+        public void Deck32_fradev1988_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-09-08",31),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -520,12 +520,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck35_Bangood_ThopterUrza_UBR()
+        public void Deck35_Bangood_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-league-2020-09-08",34),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null
@@ -624,12 +624,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck43_Toastxp_AmuletTitan_URG()
+        public void Deck43_Toastxp_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-league-2020-09-08",42),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -689,12 +689,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck48_gamemaker_Belcher_BG()
+        public void Deck48_gamemaker_Belcher_G()
         {
             Test(
                 GetDeck("modern-league-2020-09-08",47),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BG,
+                ArchetypeColor.G,
                 typeof(Belcher),
                 null,
                 null

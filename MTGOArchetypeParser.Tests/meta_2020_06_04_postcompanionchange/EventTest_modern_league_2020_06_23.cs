@@ -20,7 +20,7 @@ using System.Text;
 #09 Somniloquist_: Jund Shadow (BRG)
 #10 forenmagra: Saheeli To Light (WUBRG)
 #11 Snipers_are_bums: Niv To Light (WUBRG)
-#12 Ingalsarm: Uroza (URG)
+#12 Ingalsarm: Uroza (UG)
 #13 LordoftheLobsters: WURG Control (WURG, Yorion)
 #14 mtgmonte: UBRG Shadow (UBRG)
 #15 didoguidotti1: Bant Control (WUG)
@@ -41,12 +41,12 @@ using System.Text;
 #30 edward40hands: Golgari Midrange (BG)
 #31 Gods_Shadow: Grixis Control (UBR)
 #32 thepensword: Mono Red Prowess (R)
-#33 vasko19: Izzet Restore Balance (URG)
+#33 vasko19: Izzet Restore Balance (UR)
 #34 Ftzz: Sultai Control (UBG)
-#35 Juaspas: Primeval Titan (BRG)
+#35 Juaspas: Primeval Titan (BG)
 #36 MrRaeb: Uroza (UBG, Yorion)
 #37 jessy_samek: Dredge (BRG)
-#38 Yumas2: Amulet Titan (WURG)
+#38 Yumas2: Amulet Titan (URG)
 #39 Rock_Star: Rakdos Prowess (BR, Lurrus)
 #40 NorrathDecay: Burn (WR)
 #41 bozo2112: Crabvine (UBG)
@@ -212,12 +212,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck12_Ingalsarm_Uroza_URG()
+        public void Deck12_Ingalsarm_Uroza_UG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",11),
                 new PostCompanionChange(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(Uroza),
                 null,
                 null
@@ -485,12 +485,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck33_vasko19_IzzetRestoreBalance_URG()
+        public void Deck33_vasko19_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",32),
                 new PostCompanionChange(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -511,12 +511,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck35_Juaspas_PrimevalTitan_BRG()
+        public void Deck35_Juaspas_PrimevalTitan_BG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",34),
                 new PostCompanionChange(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.BG,
                 typeof(PrimevalTitan),
                 null,
                 null
@@ -550,12 +550,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck38_Yumas2_AmuletTitan_WURG()
+        public void Deck38_Yumas2_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-league-2020-06-23",37),
                 new PostCompanionChange(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

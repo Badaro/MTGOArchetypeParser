@@ -13,7 +13,7 @@ using System.Text;
 #02 Sommertroll: Humans (WUBRG)
 #03 Capriccioso: Niv To Light (WUBRG)
 #04 paucr5: Devoted (WG, Lurrus)
-#05 ContraEgo: Thopter Urza (UBR)
+#05 ContraEgo: Thopter Urza (WUBR)
 #06 TheJigIsAlwaysup: Shadow Prowess (BR, Lurrus)
 #07 j_money10: Shadow Prowess (BR, Lurrus)
 #08 SKK: Oops All Spells (WUBRG)
@@ -79,12 +79,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_ContraEgo_ThopterUrza_UBR()
+        public void Deck05_ContraEgo_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-30",4),
                 new PostZendikarRising(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null

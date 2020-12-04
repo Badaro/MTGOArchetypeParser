@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 bigjc00: Amulet Titan (UBRG)
+#01 bigjc00: Amulet Titan (RG)
 #02 MoxSquirrel: Heliod Combo (WR)
 #03 Gerardo94: WURG Control (WURG)
 #04 nekonekoneko: Shadow Prowess (WBR, Lurrus)
@@ -21,17 +21,17 @@ using System.Text;
 #10 Borjillamtg10: Rakdos Midrange (BR)
 #11 Amplumnox: Heliod Combo (WG)
 #12 Poyo_del_Mal: Belcher (URG)
-#13 ColdPier: Thopter Urza (UBR)
-#14 azax: Reclaimer Titan (WRG)
+#13 ColdPier: Thopter Urza (WUBR)
+#14 azax: Reclaimer Titan (WG)
 #15 Damgar: KGC Tron (G)
 #16 jvidarte: Burn (WR, Lurrus)
 #17 katuo079595: Shadow Prowess (BR, Lurrus)
-#18 FreedMania: Amulet Titan (UBRG)
+#18 FreedMania: Amulet Titan (RG)
 #19 sendoh007: Jund Midrange (BRG)
 #20 BradPitKeeper: WURG Control (WURG)
 #21 billsive: Sultai Control (UBG)
 #22 Violent_Outburst: Scapeshift (URG)
-#23 Moniz0801: Amulet Titan (UBRG)
+#23 Moniz0801: Amulet Titan (G)
 #24 Mateusf34: E Tron (C)
 #25 yamakiller: Obosh Aggro (R, Obosh)
 #26 BReal2: Shadow Prowess (BR, Lurrus)
@@ -48,12 +48,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_champ_qual_2020_11_16 : EventTest
     {
         [Test]
-        public void Deck01_bigjc00_AmuletTitan_UBRG()
+        public void Deck01_bigjc00_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-11-16",0),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -204,12 +204,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_ColdPier_ThopterUrza_UBR()
+        public void Deck13_ColdPier_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-11-16",12),
                 new PostZendikarRising(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_azax_ReclaimerTitan_WRG()
+        public void Deck14_azax_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-11-16",13),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -269,12 +269,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck18_FreedMania_AmuletTitan_UBRG()
+        public void Deck18_FreedMania_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-11-16",17),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -334,12 +334,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck23_Moniz0801_AmuletTitan_UBRG()
+        public void Deck23_Moniz0801_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-11-16",22),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

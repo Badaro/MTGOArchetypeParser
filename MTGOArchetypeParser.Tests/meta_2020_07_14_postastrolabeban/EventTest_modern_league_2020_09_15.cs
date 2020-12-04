@@ -23,7 +23,7 @@ using System.Text;
 #12 kokoko098: Heliod Devoted (WBG)
 #13 kulszewe: Obosh Aggro (R, Obosh)
 #14 apple_Neosky: Merfolk (WU, Lurrus)
-#15 Predicted: Yawgmoth (WBG)
+#15 Predicted: Yawgmoth (BG)
 #16 timewalkinonsunshine: Taking Turns (URG)
 #17 Nilsfit: Esper Control (WUB)
 #18 slow_brz: Mardu Prowess (WBR, Lurrus)
@@ -36,14 +36,14 @@ using System.Text;
 #25 atonofbutts: Grixis Delver (UBR)
 #26 KAKOLOLO: Bogles (WG)
 #27 Tieig: Red Prison (R)
-#28 Daryl_Ayers: Amulet Titan (UBRG)
+#28 Daryl_Ayers: Amulet Titan (RG)
 #29 chaba_lol: Hammer Time (W)
 #30 kotka: Hollow One (BR, Obosh)
 #31 GrandpaBiceps: Rakdos Midrange (BR)
 #32 FloorFlower: Grixis Shadow (UBR)
 #33 grinderA: Bant Control (WUG)
 #34 BenMishania: Golgari Midrange (BG)
-#35 rage_hs: Reclaimer Titan (WRG)
+#35 rage_hs: Reclaimer Titan (WG)
 #36 Belenus: Jund Midrange (BRG)
 #37 K4rl1991: Hardened Scales (BG, Lurrus)
 #38 Tarrasque1: Mono White Taxes (W)
@@ -56,7 +56,7 @@ using System.Text;
 #45 j_money10: Enduring Ideal (W)
 #46 Evasive_Ebu: Eight Rack (B)
 #47 TomTenderloin: Ad Nauseam (WUB)
-#48 SeeFour: Lantern (UBR)
+#48 SeeFour: Lantern (WUBR)
 #49 eminemberry: Burn (WR)
 #50 Math_God: Jund Shadow (BRG, Lurrus)
 #51 Kurusu: Kiki Chord (WRG, Yorion)
@@ -70,7 +70,7 @@ using System.Text;
 #59 Kingslowking19: E Tron (C)
 #60 Borjillamtg10: Azorius Control (WU)
 #61 llabmonkey: Azorius Control (WU)
-#62 ContraEgo: Thopter Urza (UBR)
+#62 ContraEgo: Thopter Urza (WUBR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -260,12 +260,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_Predicted_Yawgmoth_WBG()
+        public void Deck15_Predicted_Yawgmoth_BG()
         {
             Test(
                 GetDeck("modern-league-2020-09-15",14),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBG,
+                ArchetypeColor.BG,
                 typeof(Yawgmoth),
                 null,
                 null
@@ -429,12 +429,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck28_DarylAyers_AmuletTitan_UBRG()
+        public void Deck28_DarylAyers_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-league-2020-09-15",27),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -520,12 +520,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck35_ragehs_ReclaimerTitan_WRG()
+        public void Deck35_ragehs_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-league-2020-09-15",34),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -689,12 +689,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck48_SeeFour_Lantern_UBR()
+        public void Deck48_SeeFour_Lantern_WUBR()
         {
             Test(
                 GetDeck("modern-league-2020-09-15",47),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(Lantern),
                 null,
                 null
@@ -871,12 +871,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck62_ContraEgo_ThopterUrza_UBR()
+        public void Deck62_ContraEgo_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-league-2020-09-15",61),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null

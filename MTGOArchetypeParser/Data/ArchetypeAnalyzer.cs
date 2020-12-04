@@ -22,13 +22,13 @@ namespace MTGOArchetypeParser.Data
             {"Zirda, the Dawnwaker", ArchetypeCompanion.Zirda }
         };
 
-        public static ArchetypeResult Detect(Card[] mainboardCards, Card[] sideboardCards, Archetype[] archetypeData)
+        public static ArchetypeResult Detect(Card[] mainboardCards, Card[] sideboardCards, Archetype[] archetypeData, Dictionary<string, ArchetypeColor> landColors, Dictionary<string, ArchetypeColor> cardColors)
         {
             ArchetypeSpecific[] specificArchetypes = archetypeData.Where(a => a is ArchetypeSpecific && !(a is ArchetypeVariant)).Select(a => a as ArchetypeSpecific).ToArray();
             ArchetypeGeneric[] genericArchetypes = archetypeData.Where(a => a is ArchetypeGeneric).Select(a => a as ArchetypeGeneric).ToArray();
 
             ArchetypeCompanion? companion = GetCompanion(mainboardCards, sideboardCards);
-            ArchetypeColor color = GetColors(mainboardCards, sideboardCards);
+            ArchetypeColor color = GetColors(mainboardCards, sideboardCards, landColors, cardColors);
 
             List<ArchetypeMatch> results = new List<ArchetypeMatch>();
             foreach (ArchetypeSpecific archetype in specificArchetypes)
@@ -70,30 +70,47 @@ namespace MTGOArchetypeParser.Data
             return companion;
         }
 
-        private static ArchetypeColor GetColors(Card[] mainboardCards, Card[] sideboardCards)
+        private static ArchetypeColor GetColors(Card[] mainboardCards, Card[] sideboardCards, Dictionary<string, ArchetypeColor> landColors, Dictionary<string, ArchetypeColor> cardColors)
         {
+            Dictionary<char, int> colorsInLands = new Dictionary<char, int>();
+            colorsInLands.Add('W', 0);
+            colorsInLands.Add('U', 0);
+            colorsInLands.Add('B', 0);
+            colorsInLands.Add('R', 0);
+            colorsInLands.Add('G', 0);
+
+            Dictionary<char, int> colorsInNonLands = new Dictionary<char, int>();
+            colorsInNonLands.Add('W', 0);
+            colorsInNonLands.Add('U', 0);
+            colorsInNonLands.Add('B', 0);
+            colorsInNonLands.Add('R', 0);
+            colorsInNonLands.Add('G', 0);
+
             StringBuilder colorsFound = new StringBuilder();
-            foreach (var card in mainboardCards)
+            foreach (var card in mainboardCards.Concat(sideboardCards))
             {
-                if (ArchetypeLands.Lands.ContainsKey(card.Name))
+                if (landColors.ContainsKey(card.Name))
                 {
-                    colorsFound.Append(ArchetypeLands.Lands[card.Name]);
+                    foreach (var color in landColors[card.Name].ToString())
+                    {
+                        colorsInLands[color] += card.Count;
+                    }
                 }
-            }
-            foreach (var card in sideboardCards)
-            {
-                if (ArchetypeLands.Lands.ContainsKey(card.Name))
+                if (cardColors.ContainsKey(card.Name))
                 {
-                    colorsFound.Append(ArchetypeLands.Lands[card.Name]);
+                    foreach (var color in cardColors[card.Name].ToString())
+                    {
+                        colorsInNonLands[color] += card.Count;
+                    }
                 }
             }
 
             string finalColor = String.Empty;
-            if (colorsFound.ToString().Contains("W")) finalColor += "W";
-            if (colorsFound.ToString().Contains("U")) finalColor += "U";
-            if (colorsFound.ToString().Contains("B")) finalColor += "B";
-            if (colorsFound.ToString().Contains("R")) finalColor += "R";
-            if (colorsFound.ToString().Contains("G")) finalColor += "G";
+            if (colorsInLands['W'] > 1 && colorsInNonLands['W'] > 1) finalColor += "W";
+            if (colorsInLands['U'] > 1 && colorsInNonLands['U'] > 1) finalColor += "U";
+            if (colorsInLands['B'] > 1 && colorsInNonLands['B'] > 1) finalColor += "B";
+            if (colorsInLands['R'] > 1 && colorsInNonLands['R'] > 1) finalColor += "R";
+            if (colorsInLands['G'] > 1 && colorsInNonLands['G'] > 1) finalColor += "G";
 
             return finalColor.Length > 0 ? (ArchetypeColor)Enum.Parse(typeof(ArchetypeColor), finalColor) : ArchetypeColor.C; ;
         }

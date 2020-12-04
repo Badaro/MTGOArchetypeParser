@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Mistakenn: KGC Amulet Titan (WUBRG)
+#01 Mistakenn: KGC Amulet Titan (G)
 #02 Lord_Beerus: Burn (WR)
 #03 il_matagatto: Burn (WR)
 #04 _Shatun_: Gruul Midrange (RG)
@@ -18,10 +18,10 @@ using System.Text;
 #07 DreamsOfAshiok: E Tron (C)
 #08 Charlesjacenorman: Burn (WR, Lurrus)
 #09 flatnose: Merfolk (UG)
-#10 Theo_Jung: Uroza (URG)
+#10 Theo_Jung: Uroza (UG)
 #11 PRGJJAR: Dredge (BRG)
-#12 Toastxp: Uroza (URG)
-#13 EdB: Amulet Titan (UBRG)
+#12 Toastxp: Uroza (UG)
+#13 EdB: Amulet Titan (G)
 #14 Doni_Dominaria: Mono Red Prowess (R, Jegantha)
 */
 
@@ -30,12 +30,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
     public class EventTest_modern_preliminary_2020_06_11 : EventTest
     {
         [Test]
-        public void Deck01_Mistakenn_KGCAmuletTitan_WUBRG()
+        public void Deck01_Mistakenn_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-11",0),
                 new PostCompanionChange(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -147,12 +147,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck10_TheoJung_Uroza_URG()
+        public void Deck10_TheoJung_Uroza_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-11",9),
                 new PostCompanionChange(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(Uroza),
                 null,
                 null
@@ -173,12 +173,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck12_Toastxp_Uroza_URG()
+        public void Deck12_Toastxp_Uroza_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-11",11),
                 new PostCompanionChange(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(Uroza),
                 null,
                 null
@@ -186,12 +186,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck13_EdB_AmuletTitan_UBRG()
+        public void Deck13_EdB_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-11",12),
                 new PostCompanionChange(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

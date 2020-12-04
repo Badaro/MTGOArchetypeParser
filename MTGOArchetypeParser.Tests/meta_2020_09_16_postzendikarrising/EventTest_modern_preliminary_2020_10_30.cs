@@ -24,10 +24,10 @@ using System.Text;
 #13 ExclusiveB: Oops All Spells (WUBRG)
 #14 Gerardo94: WURG Control (WURG)
 #15 ArchaeusDota: Selesnya Eldrazi (WG)
-#16 Rav104: Oops All Spells (WUBRG)
+#16 Rav104: Oops All Spells (WUBG)
 #17 TwistedWombat: Omnath Saheeli (WURG, Jegantha)
 #18 AlpInco: Burn (WR)
-#19 Capitano_CL: Reclaimer Titan (WRG)
+#19 Capitano_CL: Reclaimer Titan (WG)
 #20 _Stream: Shadow Prowess (BRG, Lurrus)
 #21 pokerswizard: Gifts Storm (UR)
 #22 wambocombo2020: Reclaimer Titan (WRG)
@@ -234,12 +234,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_Rav104_OopsAllSpells_WUBRG()
+        public void Deck16_Rav104_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-30",15),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -273,12 +273,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck19_CapitanoCL_ReclaimerTitan_WRG()
+        public void Deck19_CapitanoCL_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-30",18),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null

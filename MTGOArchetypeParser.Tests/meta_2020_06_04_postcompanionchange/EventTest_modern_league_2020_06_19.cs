@@ -15,7 +15,7 @@ using System.Text;
 #04 meanfannypack: Devoted (WG, Lurrus)
 #05 Magicofplayer1: Ad Nauseam (WUB)
 #06 Ftzz: Sultai Control (UBG)
-#07 Zebrah: Amulet Titan (WURG)
+#07 Zebrah: Amulet Titan (URG)
 #08 no_lyfe: Mono Red Prowess (R)
 #09 xl_snapcaster: Azorius Control (WU, Kaheera)
 #10 Nextep: Uroza (UBG, Yorion)
@@ -26,7 +26,7 @@ using System.Text;
 #15 IsKeiP529: KGC Tron (G)
 #16 ChaoticCamel: Rakdos Prowess (BR, Lurrus)
 #17 hyriuu: Gruul Midrange (RG)
-#18 Heibing: Primeval Titan (BRG)
+#18 Heibing: Primeval Titan (BG)
 #19 yutya: Bant Control (WUG, Yorion)
 #20 TheNobodys: Thopter Urza (WUBR)
 #21 FranPi: Gifts Storm (UR)
@@ -48,7 +48,7 @@ using System.Text;
 #37 RodolfoSFD0: Titan Shift (RG)
 #38 Lcario: E Tron (C)
 #39 AutumnLily: Sultai Control (UBG, Yorion)
-#40 Jackson1031: Uroza (URG)
+#40 Jackson1031: Uroza (UG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
@@ -134,12 +134,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck07_Zebrah_AmuletTitan_WURG()
+        public void Deck07_Zebrah_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",6),
                 new PostCompanionChange(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -277,12 +277,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck18_Heibing_PrimevalTitan_BRG()
+        public void Deck18_Heibing_PrimevalTitan_BG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",17),
                 new PostCompanionChange(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.BG,
                 typeof(PrimevalTitan),
                 null,
                 null
@@ -563,12 +563,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck40_Jackson1031_Uroza_URG()
+        public void Deck40_Jackson1031_Uroza_UG()
         {
             Test(
                 GetDeck("modern-league-2020-06-19",39),
                 new PostCompanionChange(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(Uroza),
                 null,
                 null

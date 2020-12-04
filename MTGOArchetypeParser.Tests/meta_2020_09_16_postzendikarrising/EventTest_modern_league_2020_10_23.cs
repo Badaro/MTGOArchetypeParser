@@ -17,8 +17,8 @@ using System.Text;
 #06 yPrincipe: WURG Control (WURG)
 #07 bobthedog: Azorius Control (WU)
 #08 flatnose: Merfolk (WU)
-#09 remf: Izzet Restore Balance (URG)
-#10 bant_is_love: Reclaimer Titan (WURG)
+#09 remf: Izzet Restore Balance (UR)
+#10 bant_is_love: Reclaimer Titan (WUG)
 #11 DukeVitro: Sultai Shadow (UBG)
 #12 DoctorQueller: Spirits (WU)
 #13 MrSeri: Heliod Combo (W)
@@ -28,7 +28,7 @@ using System.Text;
 #17 seasonofmists: Abzan Taxes (WBG)
 #18 phokmeup: Heliod Combo (WG)
 #19 BrianAMarx: Niv To Light (WUBRG)
-#20 ContraEgo: Thopter Urza (UBR)
+#20 ContraEgo: Thopter Urza (WUBR)
 #21 jvidarte: Burn (WR, Lurrus)
 #22 Simarisu: Selective Oracle (WU)
 #23 futureshok: Abzan Midrange (WBG)
@@ -36,7 +36,7 @@ using System.Text;
 #25 osmanozguney: Rakdos Midrange (BR)
 #26 AnxiousHippo: Obosh Aggro (R, Obosh)
 #27 Jedermann: Snoop Goblins (BR)
-#28 HouseOfManaMTG: Amulet Titan (UBRG)
+#28 HouseOfManaMTG: Amulet Titan (RG)
 #29 giftshop: Serum Powder Eldrazi (R)
 #30 mw_94gA: Bant Spirits (WUG)
 #31 monkie: Grixis Shadow (UBR)
@@ -49,7 +49,7 @@ using System.Text;
 #38 MlckyB: Bogles (WG)
 #39 jonazo: Izzet Control (UR)
 #40 moosedroppings: Heliod Combo (WG)
-#41 yumad3988: Jund Shadow (BRG)
+#41 yumad3988: Golgari Shadow (BG)
 #42 gamemaker: Oops All Spells (WUBG)
 #43 Xenowan: Neobrand (UG)
 #44 Curryvore: Azorius Control (WU, Yorion)
@@ -181,12 +181,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_remf_IzzetRestoreBalance_URG()
+        public void Deck09_remf_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-10-23",8),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -194,12 +194,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_bantislove_ReclaimerTitan_WURG()
+        public void Deck10_bantislove_ReclaimerTitan_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-10-23",9),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -324,12 +324,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_ContraEgo_ThopterUrza_UBR()
+        public void Deck20_ContraEgo_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-league-2020-10-23",19),
                 new PostZendikarRising(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null
@@ -428,12 +428,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck28_HouseOfManaMTG_AmuletTitan_UBRG()
+        public void Deck28_HouseOfManaMTG_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-league-2020-10-23",27),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -597,12 +597,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck41_yumad3988_JundShadow_BRG()
+        public void Deck41_yumad3988_GolgariShadow_BG()
         {
             Test(
                 GetDeck("modern-league-2020-10-23",40),
                 new PostZendikarRising(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.BG,
                 typeof(GenericShadow),
                 null,
                 null

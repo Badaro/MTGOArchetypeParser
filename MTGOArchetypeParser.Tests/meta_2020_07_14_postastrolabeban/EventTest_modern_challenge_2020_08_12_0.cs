@@ -22,7 +22,7 @@ using System.Text;
 #11 exoticherman: Rakdos Prowess (BR, Lurrus)
 #12 tanisong1221: Sultai Control (UBG)
 #13 CHILLEDADED: Gruul Midrange (RG)
-#14 RCMerriam: UBRG Shadow (UBRG)
+#14 RCMerriam: Sultai Shadow (UBG)
 #15 Oscar_Franco: Jund Midrange (BRG)
 #16 sultai4lyfe: Dimir Control (UB)
 #17 MissTrigger: Incinerator Burn (R)
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_RCMerriam_UBRGShadow_UBRG()
+        public void Deck14_RCMerriam_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-12-0",13),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null

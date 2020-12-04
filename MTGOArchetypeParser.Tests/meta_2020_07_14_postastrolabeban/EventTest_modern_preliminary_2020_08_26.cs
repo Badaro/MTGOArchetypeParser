@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 juzam_gin: Dredge (WBRG)
+#01 juzam_gin: Dredge (BRG)
 #02 NosonosaN: Jund Prowess (BRG, Lurrus)
 #03 McWinSauce: Bant Control (WUG)
 #04 iL_Tedesco: Jund Midrange (BRG)
@@ -29,12 +29,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_08_26 : EventTest
     {
         [Test]
-        public void Deck01_juzamgin_Dredge_WBRG()
+        public void Deck01_juzamgin_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-26",0),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

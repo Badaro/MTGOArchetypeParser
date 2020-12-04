@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 bigjc00: Amulet Titan (UBRG)
+#01 bigjc00: Amulet Titan (RG)
 #02 Ihavethefire: Mardu Midrange (WBR)
 #03 Nammersquats: Infect (UG)
 #04 reswax: WURG Control (WURG)
@@ -30,12 +30,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_10_23 : EventTest
     {
         [Test]
-        public void Deck01_bigjc00_AmuletTitan_UBRG()
+        public void Deck01_bigjc00_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-23",0),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

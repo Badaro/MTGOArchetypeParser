@@ -11,29 +11,29 @@ using System.Text;
 /*
 #01 SoulStrong: Reclaimer Titan (WRG)
 #02 aspiringspike: Bant Blink (WUG)
-#03 Xwhale: Reclaimer Titan (WRG)
+#03 Xwhale: Reclaimer Titan (WG)
 #04 Kazuga: Heliod Combo (WG)
 #05 CordoTwin: Shadow Prowess (BR, Lurrus)
 #06 Nikachu: Merfolk (UG)
-#07 Kr0k39: Oops All Spells (WUBRG)
+#07 Kr0k39: Oops All Spells (WUBG)
 #08 DcNo: Humans (WUBRG)
 #09 Baku_91: Elementals (WUBRG, Kaheera)
 #10 McWinSauce: WURG Control (WURG)
 #11 Magicofplayer1: Ad Nauseam (WUB)
 #12 Ekeross: Shadow Prowess (BR, Lurrus)
-#13 Laplasjan: Amulet Titan (UBRG)
+#13 Laplasjan: Amulet Titan (RG)
 #14 tibalt_of_red_sub: Mill (UB, Lurrus)
 #15 ArchaeusDota: E Tron (C)
 #16 Dylan_Fay: Bant Control (WUG)
 #17 LewisCBR: Scapeshift (URG)
 #18 Tarrasque1: Mono White Taxes (W)
 #19 Ma7x: Niv To Light (WUBRG, Jegantha)
-#20 Samlg01: Amulet Titan (WUBRG)
+#20 Samlg01: Amulet Titan (RG)
 #21 Jenara19: WURG Control (WURG)
 #22 mariogomes097: Grixis Shadow (UBR)
 #23 TuggaNaxos: Obosh Aggro (R, Obosh)
 #24 Sodeq: Belcher (URG)
-#25 Trailovsky: Amulet Titan (URG)
+#25 Trailovsky: Amulet Titan (RG)
 #26 djbmppwns: WURG Control (WURG)
 #27 NinoMtg: Izzet Control (UR)
 #28 Jedgi: WURG Control (WURG)
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_Xwhale_ReclaimerTitan_WRG()
+        public void Deck03_Xwhale_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-22",2),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_Kr0k39_OopsAllSpells_WUBRG()
+        public void Deck07_Kr0k39_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-22",6),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -204,12 +204,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_Laplasjan_AmuletTitan_UBRG()
+        public void Deck13_Laplasjan_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-22",12),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -295,12 +295,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_Samlg01_AmuletTitan_WUBRG()
+        public void Deck20_Samlg01_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-22",19),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -360,12 +360,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck25_Trailovsky_AmuletTitan_URG()
+        public void Deck25_Trailovsky_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-22",24),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

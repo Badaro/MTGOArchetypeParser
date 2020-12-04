@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 The_nayr: Obosh Aggro (R, Obosh)
 #02 TSPJendrek: Sultai Control (UBG)
-#03 D00mwake: Amulet Titan (URG)
+#03 D00mwake: Amulet Titan (RG)
 #04 AceTrainerBlue: Yawgmoth (BG)
 #05 fingers1991: Boros Prowess (WR, Lurrus)
 #06 maxxattack: Ad Nauseam (WUB)
@@ -25,7 +25,7 @@ using System.Text;
 #14 frozenian: Izzet Prowess (UR)
 #15 klien7: Burn (WR)
 #16 TwistedWombat: Rakdos Prowess (BR, Lurrus)
-#17 calheiros: KGC Amulet Titan (UBRG)
+#17 calheiros: KGC Amulet Titan (G)
 #18 zecriah: KGC Tron (G)
 #19 1yo2yo: Bant Control (WUG)
 #20 scipios: Crabvine (UBG)
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_D00mwake_AmuletTitan_URG()
+        public void Deck03_D00mwake_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",2),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_calheiros_KGCAmuletTitan_UBRG()
+        public void Deck17_calheiros_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",16),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

@@ -35,8 +35,8 @@ using System.Text;
 #24 renatoaraujo: E Tron (C)
 #25 Blitzlion27: Mill (UB)
 #26 PvtEnormous: Bant Control (WUG)
-#27 HouseOfManaMTG: Amulet Titan (WUBRG)
-#28 nuikt: Grinding Breach (WUBR)
+#27 HouseOfManaMTG: Amulet Titan (UG)
+#28 nuikt: Grinding Breach (UBR)
 #29 Laplasjan: Devoted (WG, Lurrus)
 #30 Venom1: Sultai Control (UBG)
 #31 Phil_Ivey: WURG Control (WURG, Yorion)
@@ -386,12 +386,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck27_HouseOfManaMTG_AmuletTitan_WUBRG()
+        public void Deck27_HouseOfManaMTG_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-06",26),
                 new PostM21(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -399,12 +399,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck28_nuikt_GrindingBreach_WUBR()
+        public void Deck28_nuikt_GrindingBreach_UBR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-06",27),
                 new PostM21(),
-                ArchetypeColor.WUBR,
+                ArchetypeColor.UBR,
                 typeof(GrindingBreach),
                 null,
                 null

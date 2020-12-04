@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 pepeteam: Amulet Titan (UBRG)
+#01 pepeteam: Amulet Titan (UG)
 #02 osmanozguney: Rakdos Midrange (BR)
 #03 azatoyellow: Mono Red Prowess (R)
 #04 ACG88: Crabvine (UBG)
@@ -25,12 +25,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_preliminary_2020_07_14 : EventTest
     {
         [Test]
-        public void Deck01_pepeteam_AmuletTitan_UBRG()
+        public void Deck01_pepeteam_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-14",0),
                 new PostM21(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

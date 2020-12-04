@@ -14,7 +14,7 @@ using System.Text;
 #03 Tarrasque1: Elementals (WUBRG)
 #04 DokeshiCS: Simic Control (UG)
 #05 polinasgiuleppe: Jeskai Control (WUR)
-#06 thedoc96: Dredge (WBRG)
+#06 thedoc96: Dredge (BRG)
 #07 JRDC14: Mardu Midrange (WBR)
 #08 nahuel10: Gruul Midrange (RG)
 #09 Kk-: Orzhov Taxes (WB)
@@ -32,17 +32,17 @@ using System.Text;
 #21 Capitano_CL: Obosh Aggro (R, Obosh)
 #22 deathandcatmix: Mono White Taxes (W)
 #23 Mr_Sheep: Rakdos Midrange (BR)
-#24 NJGB1: UBRG Shadow (UBRG)
+#24 NJGB1: Sultai Shadow (UBG)
 #25 psychoemotion: Bogles (WG)
 #26 PeanutBrittle: Hardened Scales (G)
 #27 MatiCheto: KGC Tron (G)
-#28 willpulliam: Amulet Titan (URG)
+#28 willpulliam: Amulet Titan (UG)
 #29 Jenara19: Naya Midrange (WRG)
 #30 ShowTime_: Red Prison (R)
 #31 GoblinK1ng: Goblins (BRG)
 #32 MercSavage: Azorius Control (WU)
 #33 Trellon: U Tron (U)
-#34 Albyz: Izzet Restore Balance (URG)
+#34 Albyz: Izzet Restore Balance (UR)
 #35 Qernavak: U Tron (U)
 #36 Galanator: Izzet Control (UR)
 #37 tuhoajatane: Bant Control (WUG)
@@ -132,12 +132,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_thedoc96_Dredge_WBRG()
+        public void Deck06_thedoc96_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-07-31",5),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -366,12 +366,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck24_NJGB1_UBRGShadow_UBRG()
+        public void Deck24_NJGB1_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-07-31",23),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -418,12 +418,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck28_willpulliam_AmuletTitan_URG()
+        public void Deck28_willpulliam_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-07-31",27),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -496,12 +496,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck34_Albyz_IzzetRestoreBalance_URG()
+        public void Deck34_Albyz_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-07-31",33),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null

@@ -17,8 +17,8 @@ using System.Text;
 #06 POC: Infect (BG)
 #07 Gionax: Boros Land Destruction (WR)
 #08 matiaskm: Devoted (WG, Lurrus)
-#09 Lillia: Amulet Titan (URG)
-#10 shoktroopa: U Tron (UB)
+#09 Lillia: Amulet Titan (UG)
+#10 shoktroopa: U Tron (U)
 #11 yeaux: Heliod Combo (W)
 #12 Martin_Dominguez: Heliod Devoted (WG)
 #13 anamika: Naya Midrange (WRG)
@@ -47,7 +47,7 @@ using System.Text;
 #36 Wuhsa: Niv To Light (WUBRG)
 #37 Curtisaxel: Heliod Combo (WG)
 #38 FedeG: Humans (WUBRG)
-#39 _EzMud1: Izzet Restore Balance (URG)
+#39 _EzMud1: Izzet Restore Balance (UR)
 #40 Hybrid7: Gifts Storm (UR, Jegantha)
 #41 Sonkerz: Temur Control (URG)
 #42 pepeteam: Scapeshift (URG)
@@ -55,9 +55,9 @@ using System.Text;
 #44 Chandrian: Grixis Control (UBR, Lurrus)
 #45 blitzkrieg1986: Hammer Time (W)
 #46 rubenelvas: Ad Nauseam (WUB)
-#47 Kaziku: Oops All Spells (WUBRG)
+#47 Kaziku: Oops All Spells (WUBG)
 #48 Eyedea90: Izzet Restore Balance (UR)
-#49 amane0201: Valakut Field (UBRG)
+#49 amane0201: Valakut Field (UBG)
 #50 603Leb: Omnath Saheeli (WURG, Jegantha)
 #51 Qoiet: Rakdos Midrange (BR)
 #52 OnDutyMedic: Snoop Goblins (BR)
@@ -175,12 +175,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_Lillia_AmuletTitan_URG()
+        public void Deck09_Lillia_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-10-30",8),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -188,12 +188,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_shoktroopa_UTron_UB()
+        public void Deck10_shoktroopa_UTron_U()
         {
             Test(
                 GetDeck("modern-league-2020-10-30",9),
                 new PostZendikarRising(),
-                ArchetypeColor.UB,
+                ArchetypeColor.U,
                 typeof(UTron),
                 null,
                 null
@@ -565,12 +565,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck39_EzMud1_IzzetRestoreBalance_URG()
+        public void Deck39_EzMud1_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-10-30",38),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -669,12 +669,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck47_Kaziku_OopsAllSpells_WUBRG()
+        public void Deck47_Kaziku_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-league-2020-10-30",46),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -695,12 +695,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck49_amane0201_ValakutField_UBRG()
+        public void Deck49_amane0201_ValakutField_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-10-30",48),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(ValakutField),
                 null,
                 null

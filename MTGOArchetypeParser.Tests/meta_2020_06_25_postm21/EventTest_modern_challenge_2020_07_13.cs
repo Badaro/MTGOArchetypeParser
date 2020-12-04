@@ -32,14 +32,14 @@ using System.Text;
 #21 MikeEgan: Gruul Midrange (RG)
 #22 PvtEnormous: Mono Red Prowess (R)
 #23 eXavie: Sultai Control (UBG)
-#24 Ryan100495: Dredge (WBRG)
+#24 Ryan100495: Dredge (BRG)
 #25 destinction: Jund Midrange (BRG)
 #26 JUJUBEAN__2004: Bant Control (WUG)
 #27 Tiemuuu: Izzet Control (UR)
 #28 Venom1: E Tron (C)
 #29 otakkun: KGC Tron (G)
 #30 Jack_Kashtan: Gifts Storm (UR)
-#31 Skrown: Dredge (WBRG)
+#31 Skrown: Dredge (BRG)
 #32 Erik157751: Jund Midrange (BRG)
 */
 
@@ -347,12 +347,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck24_Ryan100495_Dredge_WBRG()
+        public void Deck24_Ryan100495_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",23),
                 new PostM21(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -438,12 +438,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck31_Skrown_Dredge_WBRG()
+        public void Deck31_Skrown_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",30),
                 new PostM21(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

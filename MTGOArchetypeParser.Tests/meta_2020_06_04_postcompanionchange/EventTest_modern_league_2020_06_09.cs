@@ -24,10 +24,10 @@ using System.Text;
 #13 Matts: Dredge (BRG)
 #14 WotC_AndrewB: Mono White Taxes (W)
 #15 Madwolf87: Jund Shadow (BRG)
-#16 fupalorda: Izzet Restore Balance (URG)
+#16 fupalorda: Izzet Restore Balance (UR)
 #17 litianshuo670: Orzhov Taxes (WB)
 #18 thepensword: Izzet Control (UR)
-#19 ScreenwriterNY: WUBG Control (WUBG, Yorion)
+#19 ScreenwriterNY: Sultai Control (UBG, Yorion)
 #20 Urzza100: Bant Control (WUG, Yorion)
 #21 Old-bag-o-bones: Smallpox (WB)
 #22 Kotva: Ninja Faeries (UB)
@@ -43,20 +43,20 @@ using System.Text;
 #32 Traft: Infect (UG)
 #33 MHayashi: Mono Red Prowess (R, Jegantha)
 #34 hoveydw: Delver (UR)
-#35 MasterA: Goblins (BRG)
+#35 MasterA: Goblins (BR)
 #36 MrRaeb: Uroza (UBG, Yorion)
 #37 C4N7O: WUBG Control (WUBG)
 #38 Never_DidntHaveIt: Boros Prowess (WR)
 #39 Justodeangelo: Scapeshift (URG, Yorion)
 #40 CordoTwin: Grixis Shadow (UBR)
 #41 vixyp: Bant Midrange (WUG)
-#42 wambocombo2020: Jeskai Breach (WURG)
+#42 wambocombo2020: Jeskai Breach (WUG)
 #43 Diem4x: Bant Control (WUG)
-#44 Dfeanor: Primeval Titan (BRG)
+#44 Dfeanor: Primeval Titan (BG)
 #45 Lucabireskusku: Inverter (UB)
 #46 mrjgiles: U Tron (U)
 #47 sandoiche: Titan Shift (RG)
-#48 kyon1024: Polymorph (WUBRG, Yorion)
+#48 kyon1024: Polymorph (WURG, Yorion)
 #49 Girolamo1996: Humans (WUBRG)
 #50 Rvng: Mono Red Prowess (R)
 #51 zectrooperdelta: Izzet Control (UR)
@@ -68,7 +68,7 @@ using System.Text;
 #57 illwill552: Sultai Control (UBG)
 #58 MartinezDP: Heliod Devoted (WUG)
 #59 Kurusu: Kiki Chord (WBRG, Yorion)
-#60 603Leb: Amulet Titan (URG)
+#60 603Leb: Amulet Titan (UG)
 #61 mashmalovsky: Yawgmoth (BG)
 #62 Termahgerf: Uroza (WUG, Yorion)
 #63 marcofabrizi: Temur Midrange (URG)
@@ -275,12 +275,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck16_fupalorda_IzzetRestoreBalance_URG()
+        public void Deck16_fupalorda_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-06-09",15),
                 new PostCompanionChange(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -314,12 +314,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck19_ScreenwriterNY_WUBGControl_WUBG_Yorion()
+        public void Deck19_ScreenwriterNY_SultaiControl_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-09",18),
                 new PostCompanionChange(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.UBG,
                 typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion
@@ -522,12 +522,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck35_MasterA_Goblins_BRG()
+        public void Deck35_MasterA_Goblins_BR()
         {
             Test(
                 GetDeck("modern-league-2020-06-09",34),
                 new PostCompanionChange(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.BR,
                 typeof(Goblins),
                 null,
                 null
@@ -613,12 +613,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck42_wambocombo2020_JeskaiBreach_WURG()
+        public void Deck42_wambocombo2020_JeskaiBreach_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-06-09",41),
                 new PostCompanionChange(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUG,
                 typeof(JeskaiAscendancy),
                 typeof(JeskaiBreach),
                 null
@@ -639,12 +639,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck44_Dfeanor_PrimevalTitan_BRG()
+        public void Deck44_Dfeanor_PrimevalTitan_BG()
         {
             Test(
                 GetDeck("modern-league-2020-06-09",43),
                 new PostCompanionChange(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.BG,
                 typeof(PrimevalTitan),
                 null,
                 null
@@ -691,12 +691,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck48_kyon1024_Polymorph_WUBRG_Yorion()
+        public void Deck48_kyon1024_Polymorph_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-09",47),
                 new PostCompanionChange(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WURG,
                 typeof(Polymorph),
                 null,
                 ArchetypeCompanion.Yorion
@@ -847,12 +847,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck60_603Leb_AmuletTitan_URG()
+        public void Deck60_603Leb_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-06-09",59),
                 new PostCompanionChange(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

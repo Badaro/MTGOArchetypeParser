@@ -13,7 +13,7 @@ using System.Text;
 #02 ThePurpleMage: Heliod Devoted (WBG)
 #03 harukispecial: Sultai Control (UBG)
 #04 Wite1: Boros Prowess (WR)
-#05 SIMONEFIERRO: Dredge (UBRG)
+#05 SIMONEFIERRO: Dredge (BRG)
 #06 Piccio36: Titan Stompy (BRG, Gyruda)
 #07 Andreas_Mueller: Rakdos Prowess (BR, Lurrus)
 #08 ThekingFor1000years: Infect (UG)
@@ -26,7 +26,7 @@ using System.Text;
 #15 Sideshowsc: Scapeshift (WURG)
 #16 crackerpack: Solemnity Combo (WB)
 #17 Mordeka1ser: Niv To Light (WUBRG, Yorion)
-#18 Predicted: Yawgmoth (WBG)
+#18 Predicted: Yawgmoth (BG)
 #19 SquidNips: Izzet Living End (UR)
 #20 FakeFrog: Humans (WUBRG)
 #21 Killabee: Azorius Control (WU)
@@ -47,7 +47,7 @@ using System.Text;
 #36 kengaigen: Living End (BRG)
 #37 katoriarch123: Bant Control (WUG)
 #38 AngledLuffa: Bant Midrange (WUG)
-#39 Callad0: Primeval Titan (URG)
+#39 Callad0: Primeval Titan (UG)
 #40 timewalkinonsunshine: Taking Turns (URG)
 #41 crussedull: Abzan Midrange (WBG)
 #42 StripMineBen: Gruul Midrange (RG)
@@ -68,7 +68,7 @@ using System.Text;
 #57 cypriankrzysztof: Scapeshift (URG)
 #58 bcs8995: Sultai Control (UBG)
 #59 Matte8pt: Gifts Storm (UR)
-#60 junghans: Devoted (WRG)
+#60 junghans: Devoted (WG)
 #61 Pmizz: Izzet Prowess (UR)
 #62 DoctorQueller: Bant Spirits (WUG)
 #63 ice_nine_: Boros Land Destruction (WR)
@@ -80,9 +80,9 @@ using System.Text;
 #69 TuggaNaxos: Tooth And Nail (G)
 #70 kokoko098: Heliod Devoted (WUG, Lurrus)
 #71 monkeyang: Izzet Phoenix (UR)
-#72 m_joe: WUBG Blink (WUBG)
+#72 m_joe: Bant Blink (WUG)
 #73 ilton: Dimir Control (UB)
-#74 Curveiganhei: Thopter Urza (UBR)
+#74 Curveiganhei: Thopter Urza (WUBR)
 #75 Nikachu: Merfolk (UG)
 #76 hizakura: Polymorph (RG)
 */
@@ -144,12 +144,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_SIMONEFIERRO_Dredge_UBRG()
+        public void Deck05_SIMONEFIERRO_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-04",4),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -313,12 +313,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck18_Predicted_Yawgmoth_WBG()
+        public void Deck18_Predicted_Yawgmoth_BG()
         {
             Test(
                 GetDeck("modern-league-2020-08-04",17),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBG,
+                ArchetypeColor.BG,
                 typeof(Yawgmoth),
                 null,
                 null
@@ -586,12 +586,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck39_Callad0_PrimevalTitan_URG()
+        public void Deck39_Callad0_PrimevalTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-08-04",38),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 null,
                 null
@@ -859,12 +859,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck60_junghans_Devoted_WRG()
+        public void Deck60_junghans_Devoted_WG()
         {
             Test(
                 GetDeck("modern-league-2020-08-04",59),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(Devoted),
                 null,
                 null
@@ -1015,12 +1015,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck72_mjoe_WUBGBlink_WUBG()
+        public void Deck72_mjoe_BantBlink_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-08-04",71),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUG,
                 typeof(GenericBlink),
                 null,
                 null
@@ -1041,12 +1041,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck74_Curveiganhei_ThopterUrza_UBR()
+        public void Deck74_Curveiganhei_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-league-2020-08-04",73),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null

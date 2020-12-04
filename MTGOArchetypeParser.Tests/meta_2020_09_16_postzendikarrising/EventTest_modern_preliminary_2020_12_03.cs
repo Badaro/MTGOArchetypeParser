@@ -23,14 +23,14 @@ using System.Text;
 #12 MZBlazer: Heliod Combo (WG)
 #13 Gerardo94: WURG Control (WURG)
 #14 McWinSauce: WURG Control (WURG)
-#15 MdvWin: Burn (WRG)
+#15 MdvWin: Burn (WR)
 #16 rodeo: Oops All Spells (WUBRG)
 #17 alemilan19: Heliod Combo (WG)
 #18 Zar0s: Sultai Control (UBG)
 #19 eresopacaso: Heliod Combo (WG, Yorion)
 #20 Martin_Dominguez: Heliod Combo (WG)
 #21 mahzinha_linda: Ad Nauseam (WUB)
-#22 HeyyQT: Reclaimer Titan (WRG)
+#22 HeyyQT: Reclaimer Titan (WG)
 #23 WhiteOleander: WURG Control (WURG)
 #24 Ramp: WURG Control (WURG)
 #25 lordavery: Bant Midrange (WUG)
@@ -224,12 +224,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_MdvWin_Burn_WRG()
+        public void Deck15_MdvWin_Burn_WR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-03",14),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WR,
                 typeof(Burn),
                 null,
                 null
@@ -315,12 +315,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck22_HeyyQT_ReclaimerTitan_WRG()
+        public void Deck22_HeyyQT_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-03",21),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null

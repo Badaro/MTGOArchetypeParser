@@ -20,7 +20,7 @@ using System.Text;
 #09 Jack_Kashtan: Ad Nauseam (WUB)
 #10 Mateusf34: E Tron (C)
 #11 axk2: Neobrand (UG)
-#12 Ajani89: KGC Amulet Titan (WURG)
+#12 Ajani89: KGC Amulet Titan (RG)
 #13 JustJack: Humans (WUBRG)
 #14 drVendigo: Jund Midrange (BRG)
 #15 excel0679: Obosh Aggro (R, Obosh)
@@ -30,7 +30,7 @@ using System.Text;
 #19 Kurusu: Kiki Chord (WRG, Yorion)
 #20 FriskiFraska: Mono White Taxes (W)
 #21 Tiemuuu: Izzet Control (UR)
-#22 Karnesis93: Amulet Titan (WUBRG)
+#22 Karnesis93: Amulet Titan (UG)
 #23 hawnkable: Gifts Storm (UR)
 #24 NorrathDecay: E Tron (C)
 #25 staffmat1992: Bant Spirits (WUG)
@@ -191,12 +191,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_Ajani89_KGCAmuletTitan_WURG()
+        public void Deck12_Ajani89_KGCAmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-12",11),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -321,12 +321,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck22_Karnesis93_AmuletTitan_WUBRG()
+        public void Deck22_Karnesis93_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-12",21),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

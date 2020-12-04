@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 tibalt_of_red_sub: Mill (UB, Lurrus)
 #02 rurlref: Ad Nauseam (WUB)
-#03 cntrlfreak: UBRG Shadow (UBRG)
+#03 cntrlfreak: Sultai Shadow (UBG)
 #04 Oscar_Franco: Grixis Shadow (UBR)
 #05 nick4567: Sultai Control (UBG)
 #06 AsturianDreams: Reclaimer Titan (WRG)
@@ -22,7 +22,7 @@ using System.Text;
 #11 bobthedog: Bant Blink (WUG)
 #12 SpiderSpace: Thalia Stompy (WR)
 #13 fuma-mtgcampinas: E Tron (C)
-#14 PuntThenWhine: KGC Amulet Titan (WUBRG)
+#14 PuntThenWhine: KGC Amulet Titan (G)
 #15 fabee1: Mono White Taxes (W)
 #16 buddha715: Neobrand (UG)
 #17 Trid0n: Bogles (WG, Lurrus)
@@ -67,12 +67,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_cntrlfreak_UBRGShadow_UBRG()
+        public void Deck03_cntrlfreak_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-09-18",2),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -210,12 +210,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_PuntThenWhine_KGCAmuletTitan_WUBRG()
+        public void Deck14_PuntThenWhine_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-league-2020-09-18",13),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

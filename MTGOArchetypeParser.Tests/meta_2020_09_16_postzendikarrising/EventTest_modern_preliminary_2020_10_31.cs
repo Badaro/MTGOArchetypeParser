@@ -17,7 +17,7 @@ using System.Text;
 #06 polishdynamit3: Shadow Prowess (WBR, Lurrus)
 #07 Bunnykept: Heliod Combo (WG)
 #08 eclipse4343: Azorius Control (WU)
-#09 Leviathan102: KGC Amulet Titan (URG)
+#09 Leviathan102: KGC Amulet Titan (RG)
 #10 random_deck: Selenya Midrange (WG)
 #11 ice_nine_: Boros Land Destruction (WR)
 */
@@ -131,12 +131,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_Leviathan102_KGCAmuletTitan_URG()
+        public void Deck09_Leviathan102_KGCAmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-31",8),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

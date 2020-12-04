@@ -16,17 +16,17 @@ using System.Text;
 #05 jwaves: Mardu Shadow (WBR)
 #06 AbelMolto: Burn (WRG)
 #07 Dlihchtarw: Rakdos Midrange (BR)
-#08 danidpf: Thopter Urza (UBR)
+#08 danidpf: Thopter Urza (WUBR)
 #09 Haricot-Rouge: Mill (UB, Lurrus)
 #10 yamakiller: Neobrand (UG)
 #11 sinforlife54: Mono White Taxes (W)
 #12 gurig: Devoted (WG)
-#13 yPrincipe: Reclaimer Titan (WRG)
+#13 yPrincipe: Reclaimer Titan (WG)
 #14 ocelot823: Rakdos Midrange (BR)
 #15 wefald: Inverter (UB)
 #16 ThiGuyAgain365164: Obosh Aggro (R, Obosh)
 #17 istillhaveeczema: Grixis Shadow (UBR)
-#18 Leviathan102: KGC Amulet Titan (URG)
+#18 Leviathan102: KGC Amulet Titan (RG)
 #19 Gandalf_the_Grey: Jeskai Control (WUR)
 #20 DoctorQueller: Spirits (WU)
 #21 midnuzzles: Mardu Midrange (WBR)
@@ -170,12 +170,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_danidpf_ThopterUrza_UBR()
+        public void Deck08_danidpf_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-league-2020-09-22",7),
                 new PostZendikarRising(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null
@@ -235,12 +235,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_yPrincipe_ReclaimerTitan_WRG()
+        public void Deck13_yPrincipe_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-league-2020-09-22",12),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -300,12 +300,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck18_Leviathan102_KGCAmuletTitan_URG()
+        public void Deck18_Leviathan102_KGCAmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-league-2020-09-22",17),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

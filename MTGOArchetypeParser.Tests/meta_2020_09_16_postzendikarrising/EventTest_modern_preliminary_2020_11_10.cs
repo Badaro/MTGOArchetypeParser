@@ -17,12 +17,12 @@ using System.Text;
 #06 Bedell: Mill (UB, Lurrus)
 #07 mmapson125: Heliod Combo (WG)
 #08 Gerardo94: WURG Control (WURG)
-#09 Splogy: Red Prison (RG)
-#10 SanPop: Oops All Spells (WUBRG)
+#09 Splogy: Red Prison (R)
+#10 SanPop: Oops All Spells (WUBG)
 #11 MastaHorus: Izzet Living End (UR)
 #12 Lukas261997: Shadow Prowess (UBR, Lurrus)
 #13 braingoat: Shadow Prowess (BRG, Lurrus)
-#14 Redgy819: Oops All Spells (WUBRG)
+#14 Redgy819: Oops All Spells (WUBG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -134,12 +134,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_Splogy_RedPrison_RG()
+        public void Deck09_Splogy_RedPrison_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-10",8),
                 new PostZendikarRising(),
-                ArchetypeColor.RG,
+                ArchetypeColor.R,
                 typeof(RedPrison),
                 null,
                 null
@@ -147,12 +147,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_SanPop_OopsAllSpells_WUBRG()
+        public void Deck10_SanPop_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-10",9),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -199,12 +199,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_Redgy819_OopsAllSpells_WUBRG()
+        public void Deck14_Redgy819_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-10",13),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null

@@ -12,7 +12,7 @@ using System.Text;
 #01 TimbersFC: Yawgmoth (BG)
 #02 buddha715: Belcher (WRG)
 #03 Kurusu: Kiki Chord (WRG, Yorion)
-#04 alantur94: Oops All Spells (WUBRG)
+#04 alantur94: Oops All Spells (WUBG)
 #05 MrRaeb: UBRG Control (UBRG)
 #06 Denmark_Dan: Titan Shift (RG)
 #07 Patxi: Erayo Prison (WUB)
@@ -31,13 +31,13 @@ using System.Text;
 #20 penips: Mono White Taxes (W)
 #21 Rebus8: Orzhov Taxes (WB)
 #22 SoulStrong: Bant Blink (WUG)
-#23 silencsong: Izzet Restore Balance (URG)
+#23 silencsong: Izzet Restore Balance (UR)
 #24 Smdster: Heliod Combo (WR)
 #25 Kzrds: Obosh Aggro (R, Obosh)
 #26 zman2340: Snoop Goblins (BR)
 #27 Athanasios0708: Jund Midrange (BRG)
 #28 MagicalHack99: Sultai Control (UBG)
-#29 Foam: Amulet Titan (UBRG)
+#29 Foam: Amulet Titan (G)
 #30 BigTomTom79: Bogles (WG, Lurrus)
 #31 6argamel: Boros Taxes (WR, Yorion)
 #32 GoblinK1ng: Goblins (BRG)
@@ -54,10 +54,10 @@ using System.Text;
 #43 MrSeri: Hardened Scales (G)
 #44 mariogomes097: Devoted (WG, Lurrus)
 #45 hermanomlg: Ad Nauseam (WUB)
-#46 jaximus5: Burn (WRG)
+#46 jaximus5: Burn (WR)
 #47 Amplumnox: Hammer Time (W, Lurrus)
 #48 Gigy: Gruul Midrange (RG)
-#49 iL_Tedesco: Shadow Prowess (UBRG, Lurrus)
+#49 iL_Tedesco: Shadow Prowess (BRG, Lurrus)
 #50 bant_is_love: Reclaimer Titan (WRG)
 #51 TBxGreenguy: Neobrand (UG)
 #52 moralmar: Gifts Storm (UR)
@@ -111,12 +111,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_alantur94_OopsAllSpells_WUBRG()
+        public void Deck04_alantur94_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-league-2020-12-04",3),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -358,12 +358,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck23_silencsong_IzzetRestoreBalance_URG()
+        public void Deck23_silencsong_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-12-04",22),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -436,12 +436,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck29_Foam_AmuletTitan_UBRG()
+        public void Deck29_Foam_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-league-2020-12-04",28),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -657,12 +657,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck46_jaximus5_Burn_WRG()
+        public void Deck46_jaximus5_Burn_WR()
         {
             Test(
                 GetDeck("modern-league-2020-12-04",45),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WR,
                 typeof(Burn),
                 null,
                 null
@@ -696,12 +696,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck49_iLTedesco_ShadowProwess_UBRG_Lurrus()
+        public void Deck49_iLTedesco_ShadowProwess_BRG_Lurrus()
         {
             Test(
                 GetDeck("modern-league-2020-12-04",48),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.BRG,
                 typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus

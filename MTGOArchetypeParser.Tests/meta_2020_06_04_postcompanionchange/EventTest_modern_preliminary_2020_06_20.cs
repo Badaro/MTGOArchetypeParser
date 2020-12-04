@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 aooaaooa: Lantern (UBG)
+#01 aooaaooa: Lantern (WUBRG)
 #02 NightKnight131: Devoted (WG, Lurrus)
 #03 MadCowChicken: Selesnya Eldrazi (WG, Jegantha)
 #04 Frank_Bonaparte: Gruul Midrange (RG)
@@ -35,12 +35,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
     public class EventTest_modern_preliminary_2020_06_20 : EventTest
     {
         [Test]
-        public void Deck01_aooaaooa_Lantern_UBG()
+        public void Deck01_aooaaooa_Lantern_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-20",0),
                 new PostCompanionChange(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.WUBRG,
                 typeof(Lantern),
                 null,
                 null

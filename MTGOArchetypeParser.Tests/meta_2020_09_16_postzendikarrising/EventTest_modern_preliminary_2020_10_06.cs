@@ -18,7 +18,7 @@ using System.Text;
 #07 NosonosaN: WURG Control (WURG)
 #08 Bohnz: WURG Control (WURG)
 #09 Turn1Vial: Shadow Prowess (WBR, Lurrus)
-#10 kokoko098: Heliod Combo (WBG)
+#10 kokoko098: Heliod Combo (WG)
 #11 Sodeq: Ad Nauseam (WUB)
 #12 ACG88: Reclaimer Titan (WRG)
 #13 Kazuga: Shadow Prowess (WBR, Lurrus)
@@ -152,12 +152,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_kokoko098_HeliodCombo_WBG()
+        public void Deck10_kokoko098_HeliodCombo_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-06",9),
                 new PostZendikarRising(),
-                ArchetypeColor.WBG,
+                ArchetypeColor.WG,
                 typeof(HeliodCombo),
                 null,
                 null

@@ -19,7 +19,7 @@ using System.Text;
 #08 Smdster: Rakdos Prowess (BR, Lurrus)
 #09 Oderus Urungus: Gruul Midrange (RG)
 #10 _Batutinha_: Jund Shadow (BRG)
-#11 ReturnToDust: Reclaimer Titan (WRG)
+#11 ReturnToDust: Reclaimer Titan (WG)
 #12 Soulerino: Burn (WR)
 #13 chengyiw: Izzet Prowess (UR)
 #14 NorrathDecay: Burn (WR)
@@ -38,7 +38,7 @@ using System.Text;
 #27 Danielstallone: Burn (WR)
 #28 Novaphantom: E Tron (C)
 #29 GoblinK1ng: Goblins (BRG)
-#30 Capitano_CL: Dredge (WBRG)
+#30 Capitano_CL: Dredge (BRG)
 #31 AlabasterWolfie: Snoop Goblins (BR)
 #32 Kuhb: Izzet Prowess (UR)
 */
@@ -178,12 +178,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_ReturnToDust_ReclaimerTitan_WRG()
+        public void Deck11_ReturnToDust_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-08-09",10),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -425,12 +425,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_CapitanoCL_Dredge_WBRG()
+        public void Deck30_CapitanoCL_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-08-09",29),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

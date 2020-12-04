@@ -19,7 +19,7 @@ using System.Text;
 #08 ZYX_Jerry: Burn (WR, Lurrus)
 #09 ImmanuelKantrolGod: Bant Control (WUG)
 #10 McWinSauce: Bant Control (WUG)
-#11 Zar0s: Reclaimer Titan (WRG)
+#11 Zar0s: Reclaimer Titan (WG)
 #12 otakkun: KGC Tron (G)
 #13 kbzx: Izzet Prowess (UR)
 */
@@ -159,12 +159,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_Zar0s_ReclaimerTitan_WRG()
+        public void Deck11_Zar0s_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-19",10),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null

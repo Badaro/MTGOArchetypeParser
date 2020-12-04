@@ -24,7 +24,7 @@ using System.Text;
 #13 _Falcon_: Izzet Prowess (UR)
 #14 __BMJ__: Shadow Prowess (WBR, Lurrus)
 #15 Chefen: Gruul Midrange (RG)
-#16 Eaglov: Amulet Titan (URG)
+#16 Eaglov: Amulet Titan (UG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -227,12 +227,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_Eaglov_AmuletTitan_URG()
+        public void Deck16_Eaglov_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-07",15),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

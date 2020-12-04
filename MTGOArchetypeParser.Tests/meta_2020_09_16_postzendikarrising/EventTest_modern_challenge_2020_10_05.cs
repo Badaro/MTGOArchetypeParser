@@ -32,7 +32,7 @@ using System.Text;
 #21 BERNASTORRES: Shadow Prowess (WBR, Lurrus)
 #22 MrRaeb: Sultai Control (UBG)
 #23 Wizard_2002: Humans (WUBRG)
-#24 Ouranos139: Amulet Titan (UBRG)
+#24 Ouranos139: Amulet Titan (UG)
 #25 coert: Heliod Combo (WG)
 #26 JustJack: Humans (WUBRG)
 #27 Kurusu: Kiki Chord (WRG, Yorion)
@@ -347,12 +347,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck24_Ouranos139_AmuletTitan_UBRG()
+        public void Deck24_Ouranos139_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-05",23),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

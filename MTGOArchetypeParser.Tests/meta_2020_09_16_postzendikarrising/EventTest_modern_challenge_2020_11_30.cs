@@ -11,12 +11,12 @@ using System.Text;
 /*
 #01 Tweedel: Obosh Aggro (R, Obosh)
 #02 Rulleboren: Mill (UB, Lurrus)
-#03 daibloXSC: Erayo Prison (WUB) 
+#03 daibloXSC: Erayo Prison (WUB)
 #04 LordAbyss: E Tron (C)
 #05 RespectTheCat: Rakdos Midrange (BR)
 #06 Tiemuuu: Izzet Control (UR)
 #07 rodeo: Oops All Spells (WUBG)
-#08 mechint: Amulet Titan (UBRG)
+#08 mechint: Amulet Titan (G)
 #09 starfall: Shadow Prowess (BR, Lurrus)
 #10 SoulStrong: Bant Blink (WUG)
 #11 _Batutinha_: Reclaimer Titan (WRG)
@@ -139,12 +139,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_mechint_AmuletTitan_UBRG()
+        public void Deck08_mechint_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-30",7),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

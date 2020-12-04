@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Mikhathara1994: Grixis Shadow (UBR)
 #02 MiguelCaster: Mono White Taxes (W, Yorion)
-#03 Phill_Hellmuth: Oops All Spells (WUBRG)
+#03 Phill_Hellmuth: Oops All Spells (WUBG)
 #04 xfile: Azorius Taxes (WU, Yorion)
 #05 Violent_Outburst: Scapeshift (UBRG)
 #06 Artem_Kuhtin: Azorius Taxes (WU, Yorion)
@@ -57,12 +57,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_PhillHellmuth_OopsAllSpells_WUBRG()
+        public void Deck03_PhillHellmuth_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-25",2),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null

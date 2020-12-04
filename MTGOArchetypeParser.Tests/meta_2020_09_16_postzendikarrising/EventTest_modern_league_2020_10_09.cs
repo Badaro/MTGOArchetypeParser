@@ -31,7 +31,7 @@ using System.Text;
 #20 The_Demon_Inside07: Belcher (RG)
 #21 Beicodegeia: Gifts Storm (UR)
 #22 thefuryone987: Shadow Prowess (WBR, Lurrus)
-#23 fradev1988: Izzet Restore Balance (URG)
+#23 fradev1988: Izzet Restore Balance (UR)
 #24 aspiringspike: Azorius Control (WU)
 #25 jvidarte: Burn (WR, Lurrus)
 #26 Yozis: Mill (UB, Lurrus)
@@ -43,8 +43,8 @@ using System.Text;
 #32 Loco78: Jund Midrange (BRG)
 #33 calexa: KGC Tron (G)
 #34 RearrangedAS: Bant Spirits (WUG)
-#35 chihoi: Amulet Titan (WUBRG)
-#36 Antoine57437: Abzan Company (WBRG)
+#35 chihoi: Amulet Titan (G)
+#36 Antoine57437: Abzan Company (WBG)
 #37 balltap: Jeskai Breach (WURG, Jegantha)
 #38 Beicodegeia: Grixis Control (UBR)
 #39 Wtnof: Saheeli Combo (WUR)
@@ -55,7 +55,7 @@ using System.Text;
 #44 SeeFour: Hammer Time (W)
 #45 Gobern: Niv To Light (WUBRG, Yorion)
 #46 DarkKeeper: WURG Control (WURG)
-#47 moralmar: Heliod Devoted (WBG)
+#47 moralmar: Heliod Devoted (WG)
 #48 MtGilligan: Temur Control (URG)
 #49 TERROl2: Jund Shadow (BRG)
 #50 PartyJaceBeleren04: Titan Shift (RG)
@@ -356,12 +356,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck23_fradev1988_IzzetRestoreBalance_URG()
+        public void Deck23_fradev1988_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-10-09",22),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -512,12 +512,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck35_chihoi_AmuletTitan_WUBRG()
+        public void Deck35_chihoi_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-league-2020-10-09",34),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -525,12 +525,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck36_Antoine57437_AbzanCompany_WBRG()
+        public void Deck36_Antoine57437_AbzanCompany_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-10-09",35),
                 new PostZendikarRising(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.WBG,
                 typeof(AbzanCompany),
                 null,
                 null
@@ -668,12 +668,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck47_moralmar_HeliodDevoted_WBG()
+        public void Deck47_moralmar_HeliodDevoted_WG()
         {
             Test(
                 GetDeck("modern-league-2020-10-09",46),
                 new PostZendikarRising(),
-                ArchetypeColor.WBG,
+                ArchetypeColor.WG,
                 typeof(Devoted),
                 typeof(HeliodDevoted),
                 null

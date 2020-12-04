@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 azax: Reclaimer Titan (WRG)
+#01 azax: Reclaimer Titan (WG)
 #02 zajad: Dredge (BRG)
-#03 benchsummer: Shadow Prowess (UBRG, Lurrus)
+#03 benchsummer: Shadow Prowess (BRG, Lurrus)
 #04 Gerardo94: WURG Control (WURG)
 #05 PTarts2win: Obosh Aggro (R, Obosh)
 #06 Lucabireskusku: Jeskai Control (WUR)
 #07 Mcleskey: Bogles (WG, Lurrus)
 #08 pokerswizard: Shadow Prowess (WBR, Lurrus)
-#09 Lordzedane: Izzet Restore Balance (URG)
+#09 Lordzedane: Izzet Restore Balance (UR)
 #10 RagingTiltMonster: Devoted (WG, Lurrus)
 */
 
@@ -26,12 +26,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_11_19 : EventTest
     {
         [Test]
-        public void Deck01_azax_ReclaimerTitan_WRG()
+        public void Deck01_azax_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-19",0),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -52,12 +52,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_benchsummer_ShadowProwess_UBRG_Lurrus()
+        public void Deck03_benchsummer_ShadowProwess_BRG_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-19",2),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.BRG,
                 typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
@@ -130,12 +130,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_Lordzedane_IzzetRestoreBalance_URG()
+        public void Deck09_Lordzedane_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-19",8),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null

@@ -16,14 +16,14 @@ using System.Text;
 #05 Lavaridge: Sultai Control (UBG)
 #06 OYU: Infect (UG)
 #07 RogerSteady: Grixis Delver (UBR)
-#08 E-GirlUWU: Amulet Titan (WURG)
+#08 E-GirlUWU: Amulet Titan (URG)
 #09 v3sp_tv: Elementals (WUBRG)
 #10 distanthamster: Snoop Goblins (BR)
 #11 mariogomes097: Grixis Shadow (UBR)
 #12 Mr_Sheep: Gruul Midrange (RG)
 #13 WuYuHsien: Bant Control (WUG)
 #14 Voltzwagon: Gruul Midrange (RG)
-#15 McWinSauce: WUBG Control (WUBG)
+#15 McWinSauce: Bant Control (WUG)
 #16 Janh: Sultai Control (UBG)
 #17 stainerson: Golgari Elves (BG)
 #18 ncowden: Sultai Control (UBG)
@@ -33,7 +33,7 @@ using System.Text;
 #22 Blitzlion27: Mill (UB)
 #23 roter_Erzengel: Infect (WUG)
 #24 FranPi: Gifts Storm (UR)
-#25 D00mwake: Amulet Titan (WURG)
+#25 D00mwake: Amulet Titan (URG)
 #26 unicornparadise: Infect (WUG)
 #27 bladede: KGC Tron (G)
 #28 medvedev: Sultai Control (UBG)
@@ -139,12 +139,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck08_EGirlUWU_AmuletTitan_WURG()
+        public void Deck08_EGirlUWU_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-29",7),
                 new PostM21(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -230,12 +230,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck15_McWinSauce_WUBGControl_WUBG()
+        public void Deck15_McWinSauce_BantControl_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-29",14),
                 new PostM21(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUG,
                 typeof(GenericControl),
                 null,
                 null
@@ -360,12 +360,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck25_D00mwake_AmuletTitan_WURG()
+        public void Deck25_D00mwake_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-29",24),
                 new PostM21(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

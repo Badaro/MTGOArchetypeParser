@@ -14,7 +14,7 @@ using System.Text;
 #03 BERNASTORRES: KGC Tron (G)
 #04 trader08111: Jund Midrange (BRG)
 #05 Capriccioso: Reclaimer Titan (WRG)
-#06 Milled_: Dredge (WBRG)
+#06 Milled_: Dredge (BRG)
 #07 McWinSauce: Bant Control (WUG)
 #08 cftsoc3: Bant Blink (WUG)
 #09 frakom: Boros Prowess (WR, Lurrus)
@@ -99,12 +99,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_Milled_Dredge_WBRG()
+        public void Deck06_Milled_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-28",5),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

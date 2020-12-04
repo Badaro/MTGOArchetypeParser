@@ -17,7 +17,7 @@ using System.Text;
 #06 Littlemastercz: KGC Tron (G)
 #07 andrewsingleton80: Heliod Combo (WG)
 #08 Ouranos139: Heliod Combo (WG)
-#09 Eaglov: Amulet Titan (WUBRG)
+#09 Eaglov: Amulet Titan (G)
 #10 Matty_Mumbles: Shadow Prowess (BR, Lurrus)
 #11 ht991122: WURG Control (WURG)
 #12 Lukas261997: Jund Midrange (BRG)
@@ -132,12 +132,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_Eaglov_AmuletTitan_WUBRG()
+        public void Deck09_Eaglov_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-04",8),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

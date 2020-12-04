@@ -22,7 +22,7 @@ using System.Text;
 #11 daniventrue: Grixis Shadow (UBR)
 #12 MHayashi: Mono Red Prowess (R, Jegantha)
 #13 kogamo: Snoop Goblins (BR)
-#14 ScreenwriterNY: Amulet Titan (WUBRG)
+#14 ScreenwriterNY: Amulet Titan (UBG)
 #15 Maratiam: E Tron (C)
 #16 mrounds1216: Golgari Elves (BG)
 #17 npercario: Izzet Restore Balance (UR)
@@ -237,12 +237,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck14_ScreenwriterNY_AmuletTitan_WUBRG()
+        public void Deck14_ScreenwriterNY_AmuletTitan_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-07-03",13),
                 new PostM21(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UBG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

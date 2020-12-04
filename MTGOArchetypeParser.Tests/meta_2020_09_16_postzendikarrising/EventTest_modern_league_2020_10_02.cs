@@ -9,13 +9,13 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 benchsummer: UBRG Shadow (UBRG)
+#01 benchsummer: Jund Shadow (BRG)
 #02 PvtEnormous: UBRG Control (UBRG)
 #03 crazyklicker: Devoted (WG, Lurrus)
 #04 D00mwake: Belcher (URG)
 #05 Ozymandias17: Jund Prowess (BRG, Lurrus)
 #06 stefanocanclini: Saheeli Combo (WUR)
-#07 Azuregun: KGC Amulet Titan (WUBRG)
+#07 Azuregun: KGC Amulet Titan (G)
 #08 muckymuck_dc5: Mono White Taxes (W)
 #09 AJRubenstein: Mono White Taxes (W)
 #10 Surpriz3: Grixis Control (UBR)
@@ -37,7 +37,7 @@ using System.Text;
 #26 TheWonderLord: Golgari Midrange (BG)
 #27 yumad3988: Orzhov Shadow (WB)
 #28 dabiggestb: Ninja Faeries (WUB)
-#29 willpulliam: Amulet Titan (UBRG)
+#29 willpulliam: Amulet Titan (G)
 #30 MaybeLotuses: Jund Midrange (BRG)
 #31 MaLiam: Humans (WUBRG)
 #32 balltap: Jeskai Breach (WURG, Jegantha)
@@ -72,12 +72,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_league_2020_10_02 : EventTest
     {
         [Test]
-        public void Deck01_benchsummer_UBRGShadow_UBRG()
+        public void Deck01_benchsummer_JundShadow_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-10-02",0),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.BRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -150,12 +150,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_Azuregun_KGCAmuletTitan_WUBRG()
+        public void Deck07_Azuregun_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-league-2020-10-02",6),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -436,12 +436,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck29_willpulliam_AmuletTitan_UBRG()
+        public void Deck29_willpulliam_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-league-2020-10-02",28),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

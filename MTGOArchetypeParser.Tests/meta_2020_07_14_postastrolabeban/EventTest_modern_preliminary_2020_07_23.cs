@@ -16,8 +16,8 @@ using System.Text;
 #05 gazmon48: E Tron (C)
 #06 alemilan19: Scapeshift (URG)
 #07 sandydogmtg: Izzet Prowess (UR)
-#08 Ouranos139: KGC Amulet Titan (UBRG)
-#09 yashimoro: WUBR Shadow (WUBR)
+#08 Ouranos139: KGC Amulet Titan (UG)
+#09 yashimoro: Esper Shadow (WUB)
 #10 DreamsOfAshiok: E Tron (C)
 #11 Icteridae: E Tron (C)
 #12 _INF_: Gifts Storm (UR)
@@ -26,7 +26,7 @@ using System.Text;
 #15 RogerSteady: Grixis Enforcer (UBR)
 #16 Xwhale: E Tron (C)
 #17 Toastxp: Mardu Prowess (WBR, Lurrus)
-#18 juzam_gin: Dredge (WBRG)
+#18 juzam_gin: Dredge (BRG)
 #19 grahams: Crabvine (UBRG)
 #20 Lexmart: Bant Control (WUG)
 #21 Graciasportanto: KGC Tron (G)
@@ -130,12 +130,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_Ouranos139_KGCAmuletTitan_UBRG()
+        public void Deck08_Ouranos139_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",7),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -143,12 +143,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_yashimoro_WUBRShadow_WUBR()
+        public void Deck09_yashimoro_EsperShadow_WUB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",8),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WUBR,
+                ArchetypeColor.WUB,
                 typeof(GenericShadow),
                 null,
                 null
@@ -260,12 +260,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck18_juzamgin_Dredge_WBRG()
+        public void Deck18_juzamgin_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",17),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

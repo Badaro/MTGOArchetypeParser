@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 otakkun: WURG Control (WURG)
 #02 Sam_Lewin: Boros Land Destruction (WR)
-#03 tkcheungab: KGC Tron (BG)
+#03 tkcheungab: KGC Tron (G)
 #04 coert: Heliod Combo (WG)
 #05 AstralPlane: Shadow Prowess (BR, Lurrus)
 #06 stayrospet: Shadow Prowess (BR, Lurrus)
@@ -53,12 +53,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_tkcheungab_KGCTron_BG()
+        public void Deck03_tkcheungab_KGCTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-07",2),
                 new PostZendikarRising(),
-                ArchetypeColor.BG,
+                ArchetypeColor.G,
                 typeof(GTron),
                 typeof(KGCTron),
                 null

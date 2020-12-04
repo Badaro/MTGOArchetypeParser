@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 J000111: Dredge (WBRG)
+#01 J000111: Dredge (BRG)
 #02 aarongulevich: Izzet Prowess (UR)
 #03 ManavonRX: Azorius Control (WU)
 #04 Icteridae: E Tron (C)
@@ -18,12 +18,12 @@ using System.Text;
 #07 alemilan19: E Tron (C)
 #08 ReturnToDust: E Tron (C)
 #09 Xwhale: E Tron (C)
-#10 karatedom: Mardu Prowess (WBR, Lurrus)
+#10 karatedom: Rakdos Prowess (BR, Lurrus)
 #11 chupon2: Jund Midrange (BRG)
 #12 Wizard_2002: Humans (WUBRG)
 #13 Snusnumrick: E Tron (C)
-#14 RicardoMSLan: G Tron (WG)
-#15 Phill_Hellmuth: Dredge (WBRG)
+#14 RicardoMSLan: G Tron (G)
+#15 Phill_Hellmuth: Dredge (BRG)
 #16 eclipse4343: Azorius Control (WU)
 #17 hcook725: Mardu Prowess (WBR, Lurrus)
 #18 Thrall90: Jund Midrange (BRG)
@@ -34,12 +34,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_07_21 : EventTest
     {
         [Test]
-        public void Deck01_J000111_Dredge_WBRG()
+        public void Deck01_J000111_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",0),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -151,12 +151,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_karatedom_MarduProwess_WBR_Lurrus()
+        public void Deck10_karatedom_RakdosProwess_BR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",9),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBR,
+                ArchetypeColor.BR,
                 typeof(GenericProwess),
                 null,
                 ArchetypeCompanion.Lurrus
@@ -203,12 +203,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_RicardoMSLan_GTron_WG()
+        public void Deck14_RicardoMSLan_GTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",13),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WG,
+                ArchetypeColor.G,
                 typeof(GTron),
                 null,
                 null
@@ -216,12 +216,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_PhillHellmuth_Dredge_WBRG()
+        public void Deck15_PhillHellmuth_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",14),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

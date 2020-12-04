@@ -16,7 +16,7 @@ using System.Text;
 #05 ZYURYO: Sultai Control (UBG)
 #06 Wizard_2002: Humans (WUBRG)
 #07 _LSN_: Burn (WR)
-#08 mario7389: Burn (WRG)
+#08 mario7389: Burn (WR)
 #09 Larry11: Izzet Prowess (UR)
 */
 
@@ -116,12 +116,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_mario7389_Burn_WRG()
+        public void Deck08_mario7389_Burn_WR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-24",7),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WR,
                 typeof(Burn),
                 null,
                 null

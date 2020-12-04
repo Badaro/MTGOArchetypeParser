@@ -16,7 +16,7 @@ using System.Text;
 #05 Loganinc: Scapeshift (UBRG)
 #06 j_money10: Shadow Prowess (BR, Lurrus)
 #07 Tarrasque1: Elementals (WUBRG, Kaheera)
-#08 Schnabulant: Oops All Spells (WUBRG)
+#08 Schnabulant: Oops All Spells (WUBG)
 #09 RRozanski: Reclaimer Titan (WURG)
 #10 hsandi9: Grixis Shadow (UBR, Lurrus)
 #11 saccij92: Jund Midrange (BRG)
@@ -25,7 +25,7 @@ using System.Text;
 #14 Manuel_Danninger: Mardu Midrange (WBR)
 #15 JouNick: Humans (WUBRG)
 #16 basebuilder: Ad Nauseam (WUB)
-#17 MagicalHack99: KGC Amulet Titan (WUBRG)
+#17 MagicalHack99: KGC Amulet Titan (G)
 #18 RyanWu: Orzhov Midrange (WB)
 #19 GideonRavensword: Crabvine (UBG)
 #20 Capiplaf95: Burn (WR)
@@ -43,7 +43,7 @@ using System.Text;
 #32 Gods_Shadow: Azorius Control (WU)
 #33 Jokersrwild: Golgari Midrange (BG)
 #34 The_nayr: Devoted (WG, Lurrus)
-#35 cntrlfreak: UBRG Shadow (UBRG)
+#35 cntrlfreak: Sultai Shadow (UBG)
 #36 StormGuyisme: Oops All Spells (BRG)
 #37 Sonkerz: Rogues (UB)
 #38 TheDogFish: Merfolk (UG)
@@ -166,12 +166,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_Schnabulant_OopsAllSpells_WUBRG()
+        public void Deck08_Schnabulant_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-league-2020-09-29",7),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -283,12 +283,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck17_MagicalHack99_KGCAmuletTitan_WUBRG()
+        public void Deck17_MagicalHack99_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-league-2020-09-29",16),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -517,12 +517,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck35_cntrlfreak_UBRGShadow_UBRG()
+        public void Deck35_cntrlfreak_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-09-29",34),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null

@@ -11,13 +11,13 @@ using System.Text;
 /*
 #01 hcook725: Uroza (WUG)
 #02 DreamsOfAshiok: Rakdos Prowess (BR, Lurrus)
-#03 bigjc00: Amulet Titan (URG)
+#03 bigjc00: Amulet Titan (RG)
 #04 _goblinlackey: Mardu Prowess (WBR, Lurrus)
 #05 yamakiller: Obosh Aggro (R, Obosh)
 #06 SpiderSpace: Humans (WUBRG)
 #07 qbturtle15: Gruul Midrange (RG)
 #08 Jack_Kashtan: Ad Nauseam (WUB)
-#09 FreedMania: KGC Amulet Titan (UBRG)
+#09 FreedMania: KGC Amulet Titan (UG)
 #10 BigPanda_559: Burn (WR)
 #11 SpicyLeche: Jund Shadow (BRG, Lurrus)
 #12 exoticherman: Mardu Prowess (WBR, Lurrus)
@@ -29,7 +29,7 @@ using System.Text;
 #18 PvtEnormous: Bant Control (WUG)
 #19 Day_man: Temur Control (URG)
 #20 Midguy: KGC Tron (G)
-#21 Lord_of_Puntlantis: Izzet Restore Balance (URG)
+#21 Lord_of_Puntlantis: Izzet Restore Balance (UR)
 #22 FloorFlower: Gruul Midrange (RG)
 #23 raven0904: G Tron (G)
 #24 Corrado: Rakdos Prowess (BR, Lurrus)
@@ -38,9 +38,9 @@ using System.Text;
 #27 cws: Gifts Storm (UR)
 #28 hoveydw: Jund Shadow (BRG)
 #29 benchsummer: UBRG Shadow (UBRG)
-#30 HouseOfManaMTG: Dredge (WBRG)
+#30 HouseOfManaMTG: Dredge (BRG)
 #31 patheus_84: Ad Nauseam (WUB)
-#32 ReturnToDust: Reclaimer Titan (WRG)
+#32 ReturnToDust: Reclaimer Titan (WG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_bigjc00_AmuletTitan_URG()
+        public void Deck03_bigjc00_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",2),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -152,12 +152,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_FreedMania_KGCAmuletTitan_UBRG()
+        public void Deck09_FreedMania_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",8),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck21_LordofPuntlantis_IzzetRestoreBalance_URG()
+        public void Deck21_LordofPuntlantis_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",20),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -425,12 +425,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_HouseOfManaMTG_Dredge_WBRG()
+        public void Deck30_HouseOfManaMTG_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",29),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -451,12 +451,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck32_ReturnToDust_ReclaimerTitan_WRG()
+        public void Deck32_ReturnToDust_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",31),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null

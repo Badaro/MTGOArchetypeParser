@@ -14,7 +14,7 @@ using System.Text;
 #03 PRGJJAR: Dredge (BRG)
 #04 wordy333: Merfolk (UG)
 #05 samslam: Burn (WR)
-#06 andrw1232: Dredge (WBRG)
+#06 andrw1232: Dredge (WRG)
 #07 Samcaster-Mage: E Tron (C)
 #08 starfall: Merfolk (UG)
 #09 Mcleskey: Gruul Midrange (RG)
@@ -94,12 +94,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck06_andrw1232_Dredge_WBRG()
+        public void Deck06_andrw1232_Dredge_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-09",5),
                 new PostM21(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.WRG,
                 typeof(Dredge),
                 null,
                 null

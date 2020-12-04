@@ -15,7 +15,7 @@ using System.Text;
 #04 Nikachu: Merfolk (UG)
 #05 Skrown: Grixis Shadow (UBR)
 #06 Artem_Kuhtin: White Devotion (W)
-#07 musasabi: Reclaimer Titan (WRG)
+#07 musasabi: Reclaimer Titan (WG)
 #08 Laplasjan: Devoted (WG, Lurrus)
 #09 RoadmanEvans: Izzet Prowess (UR)
 #10 alemilan19: Sultai Control (UBG)
@@ -38,7 +38,7 @@ using System.Text;
 #27 Vallejo97: Gruul Midrange (RG)
 #28 ejcos531: Izzet Prowess (UR)
 #29 Wtnof: Gruul Midrange (RG)
-#30 ThekingFor1000years: Infect (WUG)
+#30 ThekingFor1000years: Infect (UG)
 #31 _LSN_: Burn (WR, Lurrus)
 #32 WeareVenom: Bant Control (WUG)
 */
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_musasabi_ReclaimerTitan_WRG()
+        public void Deck07_musasabi_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-14",6),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -425,12 +425,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_ThekingFor1000years_Infect_WUG()
+        public void Deck30_ThekingFor1000years_Infect_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-14",29),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.UG,
                 typeof(Infect),
                 null,
                 null

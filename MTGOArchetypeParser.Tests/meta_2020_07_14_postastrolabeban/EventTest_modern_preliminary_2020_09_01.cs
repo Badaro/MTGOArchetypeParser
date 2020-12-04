@@ -16,7 +16,7 @@ using System.Text;
 #05 Beenew: KGC Tron (G)
 #06 McWinSauce: Bant Control (WUG)
 #07 kaikalbuquerque: Gruul Midrange (RG)
-#08 Lukas261997: KGC Amulet Titan (UBRG)
+#08 Lukas261997: KGC Amulet Titan (UG)
 #09 1yo2yo: Bant Control (WUG)
 #10 paucr5: Bant Control (WUG)
 #11 ht991122: Temur Control (URG)
@@ -125,12 +125,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_Lukas261997_KGCAmuletTitan_UBRG()
+        public void Deck08_Lukas261997_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-01",7),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

@@ -33,7 +33,7 @@ using System.Text;
 #22 ZYX_Jerry: Selective Oracle (WU)
 #23 JustinAkinori: Orzhov Taxes (WB)
 #24 Moyashi01: Shadow Prowess (BRG, Lurrus)
-#25 bigjc00: Amulet Titan (UBRG)
+#25 bigjc00: Amulet Titan (RG)
 #26 Voltzwagon: Gruul Midrange (RG)
 #27 MartinezDP: Omnath Saheeli (WURG, Yorion)
 #28 Monochrome09: Temur Control (URG)
@@ -60,7 +60,7 @@ using System.Text;
 #49 Rulleboren: Gifts Storm (UR)
 #50 Gods_Shadow: Jeskai Control (WUR)
 #51 daibloXSC: Sultai Control (UBG)
-#52 Zxrogue: Izzet Restore Balance (URG)
+#52 Zxrogue: Izzet Restore Balance (UR)
 #53 CBotella: Spirits (WU)
 #54 sesben1111: Bant Blink (WUG)
 #55 SoulStrong: Bant Blink (WUG)
@@ -383,12 +383,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck25_bigjc00_AmuletTitan_UBRG()
+        public void Deck25_bigjc00_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-league-2020-11-27",24),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -734,12 +734,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck52_Zxrogue_IzzetRestoreBalance_URG()
+        public void Deck52_Zxrogue_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-11-27",51),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null

@@ -36,7 +36,7 @@ using System.Text;
 #25 Rexplosion: Bant Blink (WUG)
 #26 brunocaffaro: Oops All Spells (WUBG)
 #27 Troll3nNTheDeep: Kiki Chord (WRG, Yorion)
-#28 LyaApocalypse: Thopter Urza (UBR)
+#28 LyaApocalypse: Thopter Urza (WUBR)
 #29 Aphiladon: Hardened Scales (G)
 #30 RagingTiltMonster: Temur Delver (URG)
 #31 hmmyespanda: Esper Shadow (WUB)
@@ -48,14 +48,14 @@ using System.Text;
 #37 Sodeq: Dredge (BRG)
 #38 Pastratta: Mono Blue Delver (U)
 #39 Vertyx_: Izzet Prowess (UR)
-#40 drew3141: Amulet Titan (WURG)
+#40 drew3141: Amulet Titan (WUG)
 #41 MartinezDP: Omnath Saheeli (WURG, Yorion)
 #42 shoktroopa: U Tron (UR)
 #43 Muldrotha7912: Izzet Control (UR)
 #44 Wuhsa: Niv To Light (WUBRG, Yorion)
 #45 NicDamian: Bant Midrange (WUG)
 #46 mariogomes097: Grixis Shadow (UBR)
-#47 603Leb: Amulet Titan (UBRG)
+#47 603Leb: Amulet Titan (G)
 #48 MlckyB: Bogles (WUG)
 #49 pbarrrgh: Azorius Control (WU)
 #50 Pando89: Incinerator Burn (WR)
@@ -428,12 +428,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck28_LyaApocalypse_ThopterUrza_UBR()
+        public void Deck28_LyaApocalypse_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-league-2020-11-24",27),
                 new PostZendikarRising(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null
@@ -584,12 +584,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck40_drew3141_AmuletTitan_WURG()
+        public void Deck40_drew3141_AmuletTitan_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-11-24",39),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -675,12 +675,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck47_603Leb_AmuletTitan_UBRG()
+        public void Deck47_603Leb_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-league-2020-11-24",46),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

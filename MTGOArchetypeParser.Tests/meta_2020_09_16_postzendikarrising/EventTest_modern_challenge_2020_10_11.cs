@@ -31,7 +31,7 @@ using System.Text;
 #20 shir kahn: Jeskai Control (WUR)
 #21 ChironTheMage: WURG Control (WURG)
 #22 GideonRavensword: Dredge (BRG)
-#23 bigjc00: Amulet Titan (UBRG)
+#23 bigjc00: Amulet Titan (RG)
 #24 fabee1: Bant Midrange (WUG)
 #25 Doomenstein: Mono White Taxes (W)
 #26 Gobern: Niv To Light (WUBRG, Yorion)
@@ -334,12 +334,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck23_bigjc00_AmuletTitan_UBRG()
+        public void Deck23_bigjc00_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-11",22),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

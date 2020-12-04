@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Samlg01: Amulet Titan (WUBRG)
+#01 Samlg01: Amulet Titan (G)
 #02 HardcoreHenry: Abzan Midrange (WBG)
 #03 Gobern: Sultai Control (UBG)
 #04 _LSN_: Burn (WR)
@@ -32,12 +32,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_10_22 : EventTest
     {
         [Test]
-        public void Deck01_Samlg01_AmuletTitan_WUBRG()
+        public void Deck01_Samlg01_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-22",0),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 NHA37: Heliod Combo (W)
-#02 FreakNightmare: Oops All Spells (WUBRG)
+#02 FreakNightmare: Oops All Spells (WUBG)
 #03 The_nayr: Mono Red Prowess (R, Jegantha)
 #04 TwistedWombat: Omnath Saheeli (WURG, Jegantha)
 #05 Sodeq: Dredge (BRG)
@@ -19,7 +19,7 @@ using System.Text;
 #08 exoticherman: Jund Shadow (BRG)
 #09 stayrospet: Shadow Prowess (BR, Lurrus)
 #10 seasonofmists: Abzan Taxes (WBG)
-#11 HouseOfManaMTG: Amulet Titan (UBRG)
+#11 HouseOfManaMTG: Amulet Titan (RG)
 #12 DarkestMage: Mono White Taxes (W)
 #13 last7stand: KGC Tron (G)
 #14 PTarts2win: WURG Control (WURG)
@@ -34,7 +34,7 @@ using System.Text;
 #23 NuBlkAu: Rakdos Shadow (BR)
 #24 pbarrrgh: Sultai Control (UBG)
 #25 eclipse4343: Azorius Control (WU)
-#26 Moniz0801: Amulet Titan (UBRG)
+#26 Moniz0801: Amulet Titan (RG)
 #27 yamakiller: Obosh Aggro (R, Obosh)
 #28 Metcalf23: Mono White Taxes (W)
 #29 staffmat1992: Dredge (BRG)
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_FreakNightmare_OopsAllSpells_WUBRG()
+        public void Deck02_FreakNightmare_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",1),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -178,12 +178,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_HouseOfManaMTG_AmuletTitan_UBRG()
+        public void Deck11_HouseOfManaMTG_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",10),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -373,12 +373,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck26_Moniz0801_AmuletTitan_UBRG()
+        public void Deck26_Moniz0801_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",25),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

@@ -22,7 +22,7 @@ using System.Text;
 #11 Delpoctrol: Dredge (BRG)
 #12 Rebus8: Humans (WUBRG)
 #13 Gerschi: Shadow Prowess (BR, Lurrus)
-#14 Antoine57437: Abzan Company (WBRG)
+#14 Antoine57437: Abzan Company (WBG)
 #15 An_Actual_Potato: Temur Control (URG)
 #16 wambocombo2020: Humans (WUBRG)
 #17 Magister_1993: Azorius Control (WU)
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_Antoine57437_AbzanCompany_WBRG()
+        public void Deck14_Antoine57437_AbzanCompany_WBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-20",13),
                 new PostZendikarRising(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.WBG,
                 typeof(AbzanCompany),
                 null,
                 null

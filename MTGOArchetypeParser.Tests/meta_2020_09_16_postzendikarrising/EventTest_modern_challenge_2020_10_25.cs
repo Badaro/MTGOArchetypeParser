@@ -16,7 +16,7 @@ using System.Text;
 #05 guiyote: Izzet Prowess (UR)
 #06 Exoline: WURG Control (WURG)
 #07 fingers1991: WURG Control (WURG)
-#08 Rav104: Oops All Spells (WUBRG)
+#08 Rav104: Oops All Spells (WUBG)
 #09 GombleWhop: Humans (WUBRG)
 #10 DarkestMage: Jund Midrange (BRG)
 #11 An_Actual_Potato: Humans (WUBRG)
@@ -31,7 +31,7 @@ using System.Text;
 #20 PietroSas: Devoted (WG, Lurrus)
 #21 Larry11: Izzet Prowess (UR)
 #22 SpiderSpace: Inverter (UB)
-#23 mario7389: Burn (WRG)
+#23 mario7389: Burn (WR)
 #24 SweetIto: Heliod Combo (WG)
 #25 MastaHorus: Izzet Living End (UR)
 #26 slow_brz: Infect (BG)
@@ -139,12 +139,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_Rav104_OopsAllSpells_WUBRG()
+        public void Deck08_Rav104_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-25",7),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -334,12 +334,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck23_mario7389_Burn_WRG()
+        public void Deck23_mario7389_Burn_WR()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-25",22),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WR,
                 typeof(Burn),
                 null,
                 null

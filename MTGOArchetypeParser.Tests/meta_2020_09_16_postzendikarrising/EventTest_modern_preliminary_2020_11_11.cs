@@ -18,10 +18,10 @@ using System.Text;
 #07 TuralyonMap: Spirits (WU)
 #08 Violent_Outburst: WURG Control (WURG)
 #09 otakkun: WURG Control (WURG)
-#10 gyyby297: Oops All Spells (WUBRG)
+#10 gyyby297: Oops All Spells (WUBG)
 #11 Lucabireskusku: Izzet Control (UR)
-#12 AlpInco: Oops All Spells (WUBRG)
-#13 SanPop: Oops All Spells (WUBRG)
+#12 AlpInco: Oops All Spells (WUBG)
+#13 SanPop: Oops All Spells (WUBG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -146,12 +146,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_gyyby297_OopsAllSpells_WUBRG()
+        public void Deck10_gyyby297_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-11",9),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -172,12 +172,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_AlpInco_OopsAllSpells_WUBRG()
+        public void Deck12_AlpInco_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-11",11),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -185,12 +185,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_SanPop_OopsAllSpells_WUBRG()
+        public void Deck13_SanPop_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-11",12),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null

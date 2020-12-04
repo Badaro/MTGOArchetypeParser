@@ -15,10 +15,10 @@ using System.Text;
 #04 kanister: Sultai Control (UBG)
 #05 komattaman: Gruul Midrange (RG)
 #06 ImmanuelKantrolGod: Bant Control (WUG)
-#07 musasabi: Reclaimer Titan (WRG)
+#07 musasabi: Reclaimer Titan (WG)
 #08 scipios: Crabvine (UBG)
 #09 mstuff63: Rakdos Prowess (BR, Lurrus)
-#10 Moniz0801: Amulet Titan (URG)
+#10 Moniz0801: Amulet Titan (RG)
 #11 __matsugan: Ad Nauseam (WUB)
 #12 Rav104: Izzet Prowess (UR)
 #13 Yanti: Gruul Midrange (RG)
@@ -26,9 +26,9 @@ using System.Text;
 #15 Nekonii: Golgari Elves (BG)
 #16 Delthar: Mill (UB)
 #17 Nikachu: Merfolk (UG)
-#18 Erik157751: Dredge (UBRG)
-#19 medvedev: Amulet Titan (UBRG)
-#20 calheiros: KGC Amulet Titan (UBRG)
+#18 Erik157751: Dredge (BRG)
+#19 medvedev: Amulet Titan (RG)
+#20 calheiros: KGC Amulet Titan (G)
 #21 Filyoni: Dredge (BRG)
 #22 McWinSauce: Bant Control (WUG)
 #23 Baku_91: Rakdos Prowess (BR, Lurrus)
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_musasabi_ReclaimerTitan_WRG()
+        public void Deck07_musasabi_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-07",6),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -165,12 +165,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_Moniz0801_AmuletTitan_URG()
+        public void Deck10_Moniz0801_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-07",9),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -269,12 +269,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck18_Erik157751_Dredge_UBRG()
+        public void Deck18_Erik157751_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-07",17),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -282,12 +282,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck19_medvedev_AmuletTitan_UBRG()
+        public void Deck19_medvedev_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-07",18),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -295,12 +295,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_calheiros_KGCAmuletTitan_UBRG()
+        public void Deck20_calheiros_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-07",19),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

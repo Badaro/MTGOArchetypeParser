@@ -31,8 +31,8 @@ using System.Text;
 #20 _Shatun_: Gruul Midrange (RG)
 #21 Panic_Daddy: Ad Nauseam (WUB)
 #22 MrRaeb: Uroza (UBG, Yorion)
-#23 Pendragon15038: Merfolk (U)
-#24 babamm: Izzet Restore Balance (URG)
+#23 Pendragon15038: Merfolk (WUG)
+#24 babamm: Izzet Restore Balance (UR)
 #25 Hiro_Hsiang: Izzet Prowess (UR)
 #26 Curveiganhei: Mono Red Prowess (R, Jegantha)
 #27 KieranT: Jund Midrange (BRG)
@@ -47,7 +47,7 @@ using System.Text;
 #36 yumad3988: Hollow One (BR)
 #37 gobboboy: Orzhov Taxes (WB)
 #38 osmanozguney: Dimir Control (UB)
-#39 AnneLivleysD3ath: KGC Amulet Titan (WUBRG)
+#39 AnneLivleysD3ath: KGC Amulet Titan (UG)
 #40 SiDa1991: U Tron (U)
 #41 Dylan_MTG: Neobrand (UG)
 #42 BossBr: Azorius Taxes (WU)
@@ -344,12 +344,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck23_Pendragon15038_Merfolk_U()
+        public void Deck23_Pendragon15038_Merfolk_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-07-10",22),
                 new PostM21(),
-                ArchetypeColor.U,
+                ArchetypeColor.WUG,
                 typeof(Merfolk),
                 null,
                 null
@@ -357,12 +357,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck24_babamm_IzzetRestoreBalance_URG()
+        public void Deck24_babamm_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-07-10",23),
                 new PostM21(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -552,12 +552,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck39_AnneLivleysD3ath_KGCAmuletTitan_WUBRG()
+        public void Deck39_AnneLivleysD3ath_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-07-10",38),
                 new PostM21(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

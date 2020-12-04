@@ -11,13 +11,13 @@ using System.Text;
 /*
 #01 mac121711: Jeskai Control (WUR)
 #02 AstralPlane: Izzet Prowess (UR)
-#03 chengyiw: Dredge (WBRG)
+#03 chengyiw: Dredge (BRG)
 #04 JV_7777: E Tron (C)
 #05 SakeIzumo: Izzet Prowess (UR)
 #06 TheLousyZoot: Snoop Goblins (WBR)
 #07 tyaburi: Mono Red Prowess (R)
 #08 Zonast: Ad Nauseam (WUB)
-#09 nekonekoneko: Dredge (WBRG)
+#09 nekonekoneko: Dredge (BRG)
 #10 updraftelemental: Jund Shadow (BRG)
 #11 Toastxp: Gruul Prowess (RG, Jegantha)
 #12 Granham: Azorius Control (WU)
@@ -59,12 +59,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_chengyiw_Dredge_WBRG()
+        public void Deck03_chengyiw_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",2),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -137,12 +137,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_nekonekoneko_Dredge_WBRG()
+        public void Deck09_nekonekoneko_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",8),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

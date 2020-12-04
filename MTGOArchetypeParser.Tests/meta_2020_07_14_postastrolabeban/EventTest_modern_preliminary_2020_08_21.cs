@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Volollo: Rakdos Prowess (BR, Lurrus)
 #02 RRozanski: Gruul Midrange (RG)
-#03 juzam_gin: Dredge (WBRG)
+#03 juzam_gin: Dredge (BRG)
 #04 Toastxp: Azorius Control (WU)
 #05 Gigglesworth: Bant Midrange (WUG)
 #06 Jositoshekel: Incinerator Burn (WR)
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_juzamgin_Dredge_WBRG()
+        public void Deck03_juzamgin_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-21",2),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

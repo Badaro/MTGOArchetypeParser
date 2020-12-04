@@ -18,7 +18,7 @@ using System.Text;
 #07 Shorak123: Sultai Control (UBG)
 #08 1yo2yo: Thopter Urza (UBR)
 #09 TheTunnelingCat: E Tron (C)
-#10 Zxrogue: UBRG Shadow (UBRG)
+#10 Zxrogue: Sultai Shadow (UBG)
 #11 bobthedog: Sultai Control (UBG)
 #12 PvtEnormous: Sultai Control (UBG)
 #13 TerminalJustice: Gifts Storm (UR)
@@ -26,16 +26,16 @@ using System.Text;
 #15 hdyer: E Tron (C)
 #16 yamakiller: E Tron (C)
 #17 renatoaraujo: E Tron (C)
-#18 HouseOfManaMTG: Amulet Titan (WUBRG)
+#18 HouseOfManaMTG: Amulet Titan (UG)
 #19 indianpancake: Devoted (WG, Lurrus)
 #20 Sodeq: Ad Nauseam (WUB)
 #21 ManuelJacob: Bant Control (WUG)
 #22 pbarrrgh: Temur Control (URG)
-#23 MasterA: Snoop Goblins (BRG)
-#24 Graciasportanto: Dredge (WBRG)
+#23 MasterA: Snoop Goblins (BR)
+#24 Graciasportanto: Dredge (WRG)
 #25 Lord_Beerus: Burn (WR)
 #26 Mzfroste: Snoop Goblins (BR)
-#27 Kuhb: Grinding Breach (WURG)
+#27 Kuhb: Grinding Breach (WUR)
 #28 D00mwake: Izzet Prowess (UR)
 #29 tuhoajatane: Temur Control (URG)
 #30 MadMaxErnst: UBRG Control (UBRG)
@@ -165,12 +165,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck10_Zxrogue_UBRGShadow_UBRG()
+        public void Deck10_Zxrogue_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-05",9),
                 new PostM21(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -269,12 +269,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck18_HouseOfManaMTG_AmuletTitan_WUBRG()
+        public void Deck18_HouseOfManaMTG_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-05",17),
                 new PostM21(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -334,12 +334,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck23_MasterA_SnoopGoblins_BRG()
+        public void Deck23_MasterA_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-05",22),
                 new PostM21(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.BR,
                 typeof(Goblins),
                 typeof(SnoopGoblins),
                 null
@@ -347,12 +347,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck24_Graciasportanto_Dredge_WBRG()
+        public void Deck24_Graciasportanto_Dredge_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-05",23),
                 new PostM21(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.WRG,
                 typeof(Dredge),
                 null,
                 null
@@ -386,12 +386,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck27_Kuhb_GrindingBreach_WURG()
+        public void Deck27_Kuhb_GrindingBreach_WUR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-05",26),
                 new PostM21(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUR,
                 typeof(GrindingBreach),
                 null,
                 null

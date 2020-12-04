@@ -12,7 +12,7 @@ using System.Text;
 #01 ArchaeusDota: Dredge (BRG)
 #02 swiftwarkite2: Hammer Time (W, Lurrus)
 #03 naddyeffintabs: Shadow Prowess (BR, Lurrus)
-#04 1yo2yo: Thopter Urza (UBR)
+#04 1yo2yo: Thopter Urza (WUBR)
 #05 Mcleskey: Shadow Prowess (BR, Lurrus)
 #06 SoulStrong: Bant Blink (WUG)
 #07 Jaberwocki: Rogues (UB, Lurrus)
@@ -20,8 +20,8 @@ using System.Text;
 #09 CaptainFarbosa: Ad Nauseam (WUB)
 #10 pokerswizard: Obosh Aggro (R, Obosh)
 #11 karatedom: Heliod Combo (WG)
-#12 Theo_Jung: Reclaimer Titan (WRG)
-#13 azax: Reclaimer Titan (WRG)
+#12 Theo_Jung: Reclaimer Titan (WG)
+#13 azax: Reclaimer Titan (WG)
 #14 bolov0: Reclaimer Titan (WRG)
 #15 MZBlazer: Shadow Prowess (BR, Lurrus)
 */
@@ -70,12 +70,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_1yo2yo_ThopterUrza_UBR()
+        public void Deck04_1yo2yo_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-26",3),
                 new PostZendikarRising(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null
@@ -174,12 +174,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_TheoJung_ReclaimerTitan_WRG()
+        public void Deck12_TheoJung_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-26",11),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -187,12 +187,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_azax_ReclaimerTitan_WRG()
+        public void Deck13_azax_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-26",12),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null

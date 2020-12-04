@@ -21,7 +21,7 @@ using System.Text;
 #10 wambocombo2020: Shadow Prowess (WBR, Lurrus)
 #11 Clockwork Dean: Mono White Taxes (W)
 #12 yamakiller: Reclaimer Titan (WRG)
-#13 ziofrancone: Elementals (WURG)
+#13 ziofrancone: Elementals (WUBRG)
 #14 maikage: Belcher (RG)
 #15 karatedom: Crabvine (UBG)
 #16 AbelMolto: Burn (WRG)
@@ -190,12 +190,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_ziofrancone_Elementals_WURG()
+        public void Deck13_ziofrancone_Elementals_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-09",12),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUBRG,
                 typeof(Elementals),
                 null,
                 null

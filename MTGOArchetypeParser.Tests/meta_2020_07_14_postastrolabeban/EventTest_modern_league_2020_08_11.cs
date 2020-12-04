@@ -40,7 +40,7 @@ using System.Text;
 #29 bobthedog: Heliod Sisters (W)
 #30 drVendigo: Gruul Midrange (RG)
 #31 I_DEEED_IT: Mono Red Prowess (R)
-#32 musasabi: KGC Amulet Titan (UBRG)
+#32 musasabi: KGC Amulet Titan (UG)
 #33 kid: Azorius Control (WU)
 #34 Storytime: Kinnan Devoted (WUG)
 #35 lokarionn: Hardened Scales (WG, Lurrus)
@@ -70,7 +70,7 @@ using System.Text;
 #59 CrusherBotBG: Hammer Time (W)
 #60 DieSense84: Golgari Midrange (BG)
 #61 ivan229: Izzet Control (UR)
-#62 danidpf: Thopter Urza (UBR)
+#62 danidpf: Thopter Urza (WUBR)
 #63 Parrit: Hardened Scales (G)
 #64 Qernavak: Dice Factory Tron (C)
 #65 _Makaveli: Azorius Control (WU)
@@ -488,12 +488,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck32_musasabi_KGCAmuletTitan_UBRG()
+        public void Deck32_musasabi_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-08-11",31),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -878,12 +878,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck62_danidpf_ThopterUrza_UBR()
+        public void Deck62_danidpf_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-league-2020-08-11",61),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null

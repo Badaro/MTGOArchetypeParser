@@ -13,11 +13,11 @@ using System.Text;
 #02 _INF_: Gifts Storm (UR)
 #03 Gerschi: WURG Control (WURG)
 #04 UmekawaneikU: Shadow Prowess (BRG, Lurrus)
-#05 Eaglov: Amulet Titan (UBRG)
-#06 Lukas261997: Amulet Titan (URG)
+#05 Eaglov: Amulet Titan (UG)
+#06 Lukas261997: Amulet Titan (G)
 #07 ZYURYO: WURG Control (WURG)
 #08 Matteso: Gifts Storm (UR)
-#09 MaxCapone: Oops All Spells (WUBRG)
+#09 MaxCapone: Oops All Spells (WUBG)
 #10 GrandDrou: Shadow Prowess (WBR, Lurrus)
 #11 SoulStrong: Reclaimer Titan (WRG)
 #12 JustBurn420: Burn (RG)
@@ -83,12 +83,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_Eaglov_AmuletTitan_UBRG()
+        public void Deck05_Eaglov_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-14",4),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -96,12 +96,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_Lukas261997_AmuletTitan_URG()
+        public void Deck06_Lukas261997_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-14",5),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -135,12 +135,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_MaxCapone_OopsAllSpells_WUBRG()
+        public void Deck09_MaxCapone_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-14",8),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null

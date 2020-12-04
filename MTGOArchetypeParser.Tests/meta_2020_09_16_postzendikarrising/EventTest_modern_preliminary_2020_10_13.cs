@@ -25,7 +25,7 @@ using System.Text;
 #14 gyyby297: Oops All Spells (WUBRG)
 #15 Sodeq: Oops All Spells (WUBRG)
 #16 Wolfie98: Shadow Prowess (BRG)
-#17 pepeteam: Amulet Titan (URG)
+#17 pepeteam: Amulet Titan (UG)
 #18 Toastxp: Uroza (WURG, Yorion)
 #19 Boland: Dredge (BRG)
 */
@@ -243,12 +243,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck17_pepeteam_AmuletTitan_URG()
+        public void Deck17_pepeteam_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-13",16),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

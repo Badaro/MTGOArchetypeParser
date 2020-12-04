@@ -19,7 +19,7 @@ using System.Text;
 #08 Redgy: Jeskai Control (WUR)
 #09 _Shatun_: Mono Red Prowess (R)
 #10 waffl3haos: Mono White Taxes (W)
-#11 Redgy819: Amulet Titan (UBRG)
+#11 Redgy819: Amulet Titan (G)
 #12 EskimoJoe: Mono White Taxes (W)
 #13 Xwhale: Reclaimer Titan (WRG)
 */
@@ -159,12 +159,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_Redgy819_AmuletTitan_UBRG()
+        public void Deck11_Redgy819_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-29",10),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

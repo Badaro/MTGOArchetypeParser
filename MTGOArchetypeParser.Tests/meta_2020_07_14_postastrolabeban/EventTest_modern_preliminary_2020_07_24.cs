@@ -21,8 +21,8 @@ using System.Text;
 #10 Lukas261997: Azorius Control (WU)
 #11 JustBurn420: Slivers (WUBRG)
 #12 Healer: Incinerator Burn (R)
-#13 Toastxp: UBRG Shadow (UBRG)
-#14 Hyeri0418: Dredge (WBRG)
+#13 Toastxp: Sultai Shadow (UBG)
+#14 Hyeri0418: Dredge (BRG)
 #15 sff_mtg: KGC Tron (G)
 #16 siomomi: E Tron (C)
 #17 otakkun: KGC Tron (G)
@@ -190,12 +190,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_Toastxp_UBRGShadow_UBRG()
+        public void Deck13_Toastxp_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",12),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -203,12 +203,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_Hyeri0418_Dredge_WBRG()
+        public void Deck14_Hyeri0418_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",13),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

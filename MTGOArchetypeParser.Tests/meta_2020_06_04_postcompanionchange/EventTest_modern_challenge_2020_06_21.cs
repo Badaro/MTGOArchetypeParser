@@ -12,7 +12,7 @@ using System.Text;
 #01 Tiemuuu: Izzet Control (UR)
 #02 xakx47x: Devoted (WG, Lurrus)
 #03 1yo2yo: Thopter Urza (UBR)
-#04 tuhoajatane: Amulet Titan (UBRG)
+#04 tuhoajatane: Amulet Titan (UG)
 #05 Jiggywiggy: Kinnan Legends (URG, Yorion)
 #06 PaChA94s: Ad Nauseam (WUB)
 #07 Misplacedginger: Bant Control (WUG)
@@ -22,7 +22,7 @@ using System.Text;
 #11 Yooisa: Infect (WUG)
 #12 bntrusty14: Humans (WUBRG)
 #13 kanister: Humans (WUBRG)
-#14 GoblinK1ng: Goblins (WUBRG)
+#14 GoblinK1ng: Goblins (BRG)
 #15 haruhilmi24: E Tron (C)
 #16 Archgaze: Winota (WRG)
 #17 FranPi: Gifts Storm (UR)
@@ -33,13 +33,13 @@ using System.Text;
 #22 antonio13901390: E Tron (C)
 #23 katoriarch123: Bant Control (WUG)
 #24 Anicet0: E Tron (C)
-#25 MadMaxErnst: Uroza (URG)
+#25 MadMaxErnst: Uroza (UG)
 #26 Jenara19: Sultai Control (UBG)
 #27 Larry11: Gruul Midrange (RG)
 #28 ubercrisis: Sultai Control (UBG)
 #29 remf: Bant Spirits (WUG)
 #30 kalibak: Burn (WR)
-#31 NewHJ: Burn (WRG)
+#31 NewHJ: Burn (WR)
 #32 Manacymbal: Kinnan Legends (URG, Yorion)
 */
 
@@ -87,12 +87,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck04_tuhoajatane_AmuletTitan_UBRG()
+        public void Deck04_tuhoajatane_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",3),
                 new PostCompanionChange(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck14_GoblinK1ng_Goblins_WUBRG()
+        public void Deck14_GoblinK1ng_Goblins_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",13),
                 new PostCompanionChange(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.BRG,
                 typeof(Goblins),
                 null,
                 null
@@ -360,12 +360,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck25_MadMaxErnst_Uroza_URG()
+        public void Deck25_MadMaxErnst_Uroza_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",24),
                 new PostCompanionChange(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(Uroza),
                 null,
                 null
@@ -438,12 +438,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck31_NewHJ_Burn_WRG()
+        public void Deck31_NewHJ_Burn_WR()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",30),
                 new PostCompanionChange(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WR,
                 typeof(Burn),
                 null,
                 null

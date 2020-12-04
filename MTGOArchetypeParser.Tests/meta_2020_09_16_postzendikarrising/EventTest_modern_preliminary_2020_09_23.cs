@@ -17,7 +17,7 @@ using System.Text;
 #06 Humpaa: Shadow Prowess (BR, Lurrus)
 #07 ImmanuelKantrolGod: Jeskai Control (WUR)
 #08 spellvine: Izzet Prowess (UR)
-#09 HouseOfManaMTG: Amulet Titan (UBRG)
+#09 HouseOfManaMTG: Amulet Titan (G)
 #10 tagosaku: Burn (WR)
 #11 coert: Heliod Combo (WG)
 #12 medvedev: Mono White Taxes (W)
@@ -132,12 +132,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_HouseOfManaMTG_AmuletTitan_UBRG()
+        public void Deck09_HouseOfManaMTG_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-23",8),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

@@ -16,7 +16,7 @@ using System.Text;
 #05 _INF_: Gifts Storm (UR)
 #06 bladede: E Tron (C)
 #07 otakkun: KGC Tron (G)
-#08 Aluren85: Dredge (UBRG)
+#08 Aluren85: Dredge (BRG)
 #09 MlckyB: Bogles (WG)
 #10 Eaglov: Titan Shift (RG)
 #11 fradev1988: Bant Control (WUG)
@@ -118,12 +118,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck08_Aluren85_Dredge_UBRG()
+        public void Deck08_Aluren85_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-01",7),
                 new PostM21(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

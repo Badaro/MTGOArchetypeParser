@@ -17,7 +17,7 @@ using System.Text;
 #06 starfall: Obosh Aggro (R, Obosh)
 #07 TrueHero: UBRG Control (UBRG)
 #08 Parrit: Mono White Taxes (W)
-#09 bigjc00: Amulet Titan (UBRG)
+#09 bigjc00: Amulet Titan (UG)
 #10 AstralPlane: Shadow Prowess (BR, Lurrus)
 #11 AlexanderRosdahl: Sultai Control (UBG)
 #12 Zar0s: Niv To Light (WUBRG, Jegantha)
@@ -152,12 +152,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_bigjc00_AmuletTitan_UBRG()
+        public void Deck09_bigjc00_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-10-04",8),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

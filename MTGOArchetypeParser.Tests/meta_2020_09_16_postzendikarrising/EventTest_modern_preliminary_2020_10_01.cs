@@ -20,7 +20,7 @@ using System.Text;
 #09 Bullwinkkle6705: UBRG Control (UBRG)
 #10 Edel: Rakdos Midrange (BR)
 #11 sandydogmtg: Shadow Prowess (BR, Lurrus)
-#12 Draconic1: Amulet Titan (UBRG)
+#12 Draconic1: Amulet Titan (G)
 #13 Icteridae: Gruul Midrange (RG)
 #14 im2g00t4ubarn: WURG Control (WURG)
 #15 hcook725: Shadow Prowess (BR, Lurrus)
@@ -176,12 +176,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_Draconic1_AmuletTitan_UBRG()
+        public void Deck12_Draconic1_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-01",11),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

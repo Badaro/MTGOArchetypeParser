@@ -14,7 +14,7 @@ using System.Text;
 #03 carlosalmeida: Gruul Midrange (RG)
 #04 Lucabireskusku: Inverter (UB)
 #05 K4rl1991: Hardened Scales (G)
-#06 asmitchler: UBRG Shadow (UBRG)
+#06 asmitchler: Sultai Shadow (UBG)
 #07 crazeyr15: Niv To Light (WUBRG, Jegantha)
 #08 hugofreitas1: Gifts Storm (URG)
 #09 retiredcapivara: Dredge (BRG)
@@ -46,7 +46,7 @@ using System.Text;
 #35 _qfortier: Temur Midrange (URG)
 #36 nahuel10: WUBG Control (WUBG, Yorion)
 #37 DeeBoFour20: G Tron (G, Jegantha)
-#38 fpawlusz: KGC Amulet Titan (WUBRG)
+#38 fpawlusz: KGC Amulet Titan (G)
 #39 WeareVenom: Bant Control (WUG)
 #40 ary31415: Jund Midrange (BRG)
 #41 JouNick: Jund Shadow (BRG, Lurrus)
@@ -125,12 +125,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck06_asmitchler_UBRGShadow_UBRG()
+        public void Deck06_asmitchler_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-05",5),
                 new PostCompanionChange(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -541,12 +541,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck38_fpawlusz_KGCAmuletTitan_WUBRG()
+        public void Deck38_fpawlusz_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-league-2020-06-05",37),
                 new PostCompanionChange(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

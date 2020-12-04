@@ -11,21 +11,21 @@ using System.Text;
 /*
 #01 PietroSas: Devoted (WG, Lurrus)
 #02 RespectTheCat: Azorius Taxes (WU, Yorion)
-#03 fradev1988: Izzet Restore Balance (URG)
+#03 fradev1988: Izzet Restore Balance (UR)
 #04 coomback: Mill (UB)
 #05 TSPJendrek: Izzet Control (UR)
 #06 FeeltheRush: Bant Midrange (WUG)
 #07 DenebLyrae: Heliod Combo (WG)
-#08 musasabi: Reclaimer Titan (WRG)
+#08 musasabi: Reclaimer Titan (WG)
 #09 _Shatun_: Mono Red Prowess (R)
 #10 mw_94gA: Bant Spirits (WUG)
 #11 joetru: Niv To Light (WUBRG, Jegantha)
-#12 HouseOfManaMTG: Amulet Titan (UBRG)
+#12 HouseOfManaMTG: Amulet Titan (RG)
 #13 patheus_84: Ad Nauseam (WUB)
-#14 Binolino: Amulet Titan (UBRG)
-#15 Smiteon: Amulet Titan (UBRG)
+#14 Binolino: Amulet Titan (UG)
+#15 Smiteon: Amulet Titan (BG)
 #16 _Batutinha_: Reclaimer Titan (WRG)
-#17 Karnesis93: Amulet Titan (WUBRG)
+#17 Karnesis93: Amulet Titan (UG)
 #18 Kurusu: Kiki Chord (WRG, Yorion)
 #19 ecobaronen: WURG Control (WURG)
 #20 DaniMRebel: Spirits (WU)
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_fradev1988_IzzetRestoreBalance_URG()
+        public void Deck03_fradev1988_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",2),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -139,12 +139,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_musasabi_ReclaimerTitan_WRG()
+        public void Deck08_musasabi_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",7),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -191,12 +191,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_HouseOfManaMTG_AmuletTitan_UBRG()
+        public void Deck12_HouseOfManaMTG_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",11),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_Binolino_AmuletTitan_UBRG()
+        public void Deck14_Binolino_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",13),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -230,12 +230,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_Smiteon_AmuletTitan_UBRG()
+        public void Deck15_Smiteon_AmuletTitan_BG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",14),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.BG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck17_Karnesis93_AmuletTitan_WUBRG()
+        public void Deck17_Karnesis93_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",16),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

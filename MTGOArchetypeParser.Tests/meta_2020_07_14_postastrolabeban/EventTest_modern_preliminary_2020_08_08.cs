@@ -18,7 +18,7 @@ using System.Text;
 #07 AlabasterWolfie: Snoop Goblins (BR)
 #08 ScreenwriterNY: Azorius Taxes (WU)
 #09 BERNASTORRES: Izzet Prowess (UR)
-#10 Moniz0801: Amulet Titan (WURG)
+#10 Moniz0801: Amulet Titan (WG)
 #11 ZYX_Jerry: Ad Nauseam (WUB)
 #12 komattaman: Gruul Midrange (RG)
 #13 Snusnumrick: E Tron (C)
@@ -28,7 +28,7 @@ using System.Text;
 #17 IntegralHDK: Snoop Goblins (BRG)
 #18 Delthar: Infect (BG)
 #19 SebastianStueckl: Simic Control (UG)
-#20 Lord_of_Puntlantis: Izzet Restore Balance (URG)
+#20 Lord_of_Puntlantis: Izzet Restore Balance (UR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -153,12 +153,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_Moniz0801_AmuletTitan_WURG()
+        public void Deck10_Moniz0801_AmuletTitan_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-08",9),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -283,12 +283,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_LordofPuntlantis_IzzetRestoreBalance_URG()
+        public void Deck20_LordofPuntlantis_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-08",19),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null

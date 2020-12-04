@@ -12,9 +12,9 @@ using System.Text;
 #01 TheTunnelingCat: E Tron (C)
 #02 HeyPharaoh: Azorius Control (WU)
 #03 iuriper: Bant Control (WUG)
-#04 __BMJ__: UBRG Shadow (UBRG)
+#04 __BMJ__: Sultai Shadow (UBG)
 #05 rastaf: Izzet Prowess (UR)
-#06 AnneLivleysD3ath: KGC Amulet Titan (WUBRG)
+#06 AnneLivleysD3ath: KGC Amulet Titan (UG)
 #07 LalauWBA: Gruul Prowess (RG, Jegantha)
 #08 Lavaridge: Temur Control (URG)
 #09 kogamo: Sultai Control (UBG)
@@ -22,7 +22,7 @@ using System.Text;
 #11 MinCash: Ad Nauseam (WUB)
 #12 BERNASTORRES: Snoop Goblins (BR)
 #13 Ryan_39: Gruul Midrange (RG)
-#14 jmeyer2030: Izzet Restore Balance (URG)
+#14 jmeyer2030: Izzet Restore Balance (UR)
 #15 3HaLeX1: E Tron (C)
 #16 LeoFa: Scapeshift (URG)
 #17 musasabi: Jund Midrange (BRG)
@@ -34,12 +34,12 @@ using System.Text;
 #23 alnash: Grixis Shadow (UBR)
 #24 HannoLee: KGC Tron (G)
 #25 dormitian: Humans (WUBRG)
-#26 Magicofplayer1: Dredge (WBRG)
+#26 Magicofplayer1: Dredge (BRG)
 #27 _Batutinha_: Izzet Prowess (UR)
 #28 Naisirc: Hardened Scales (G)
 #29 Marxelo: Tokens (W)
 #30 Patxi: Azorius Control (WU)
-#31 Leviathan102: KGC Amulet Titan (URG)
+#31 Leviathan102: KGC Amulet Titan (UG)
 #32 Boland: Grixis Shadow (UBR)
 */
 
@@ -87,12 +87,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_BMJ_UBRGShadow_UBRG()
+        public void Deck04_BMJ_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",3),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -113,12 +113,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_AnneLivleysD3ath_KGCAmuletTitan_WUBRG()
+        public void Deck06_AnneLivleysD3ath_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",5),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_jmeyer2030_IzzetRestoreBalance_URG()
+        public void Deck14_jmeyer2030_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",13),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -373,12 +373,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck26_Magicofplayer1_Dredge_WBRG()
+        public void Deck26_Magicofplayer1_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",25),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -438,12 +438,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck31_Leviathan102_KGCAmuletTitan_URG()
+        public void Deck31_Leviathan102_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",30),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 musasabi: KGC Amulet Titan (UBRG)
+#01 musasabi: KGC Amulet Titan (UG)
 #02 jmeyer2030: Scapeshift (URG, Yorion)
 #03 DaniMRebel: Selenya Taxes (WG)
 #04 Thrall90: Jund Midrange (BRG)
@@ -33,7 +33,7 @@ using System.Text;
 #22 hugofreitas1: Gifts Storm (UR)
 #23 cws: Gifts Storm (UR)
 #24 otakkun: KGC Tron (G)
-#25 FreedMania: KGC Amulet Titan (WUBRG)
+#25 FreedMania: KGC Amulet Titan (UG)
 #26 yamakiller: Dredge (BRG)
 #27 Juaspas: Gruul Midrange (RG)
 #28 Fenrir18: Snoop Goblins (BR)
@@ -48,12 +48,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_showcase_challenge_2020_07_12 : EventTest
     {
         [Test]
-        public void Deck01_musasabi_KGCAmuletTitan_UBRG()
+        public void Deck01_musasabi_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",0),
                 new PostM21(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -360,12 +360,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck25_FreedMania_KGCAmuletTitan_WUBRG()
+        public void Deck25_FreedMania_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",24),
                 new PostM21(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

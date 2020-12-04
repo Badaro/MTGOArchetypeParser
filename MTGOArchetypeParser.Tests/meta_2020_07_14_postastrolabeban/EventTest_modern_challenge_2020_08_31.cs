@@ -22,7 +22,7 @@ using System.Text;
 #11 Asoen: Rakdos Midrange (BR)
 #12 Bullz0Eye: E Tron (C)
 #13 drVendigo: Gruul Midrange (RG)
-#14 doughhater: Valakut Field (URG)
+#14 doughhater: Valakut Field (UG)
 #15 evange_: Rakdos Prowess (BR, Lurrus)
 #16 GodOfSlaughter: Niv To Light (WUBRG, Yorion)
 #17 Turn1Vial: Slivers (WUBRG)
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_doughhater_ValakutField_URG()
+        public void Deck14_doughhater_ValakutField_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-31",13),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(ValakutField),
                 null,
                 null

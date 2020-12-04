@@ -14,7 +14,7 @@ using System.Text;
 #03 ManuelJacob: Sultai Control (UBG)
 #04 _INF_: Gifts Storm (UR)
 #05 bnlunt: U Tron (U)
-#06 nielsen333: Primeval Titan (BRG)
+#06 nielsen333: Primeval Titan (BG)
 #07 Laessoe: Gruul Midrange (RG)
 #08 siomomi: KGC Tron (G)
 #09 triosk: Snoop Goblins (BR)
@@ -91,12 +91,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck06_nielsen333_PrimevalTitan_BRG()
+        public void Deck06_nielsen333_PrimevalTitan_BG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-04",5),
                 new PostM21(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.BG,
                 typeof(PrimevalTitan),
                 null,
                 null

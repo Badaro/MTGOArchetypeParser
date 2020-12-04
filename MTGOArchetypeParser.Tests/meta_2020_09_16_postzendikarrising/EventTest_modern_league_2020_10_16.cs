@@ -17,11 +17,11 @@ using System.Text;
 #06 seasonofmists: Abzan Taxes (WBG)
 #07 FalseMufn: U Tron (U)
 #08 Capiplaf95: Burn (WR)
-#09 apriolo1: Amulet Titan (WRG)
+#09 apriolo1: Amulet Titan (WG)
 #10 Zonast: Grixis Delver (UBR, Lurrus)
 #11 NHA37: Heliod Combo (W)
 #12 KoKonuts: G Tron (G, Jegantha)
-#13 HouseOfManaMTG: Amulet Titan (UBRG)
+#13 HouseOfManaMTG: Amulet Titan (RG)
 #14 nahuel10: Izzet Prowess (UR)
 #15 Kurusu: Kiki Chord (WRG, Yorion)
 #16 2jjm: Humans (WUBRG)
@@ -37,7 +37,7 @@ using System.Text;
 #26 SpicyLeche: Jund Shadow (BRG)
 #27 trollasceticftw: Urza Prison (UR)
 #28 TooManyCookes: Jeskai Control (WUR)
-#29 khangmtg: Belcher (WURG)
+#29 khangmtg: Belcher (WRG)
 #30 mashmalovsky: Titan Stompy (BRG, Gyruda)
 #31 Teston: Shadow Prowess (WBR, Lurrus)
 #32 PlebSwagger: Obosh Aggro (R, Obosh)
@@ -176,12 +176,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_apriolo1_AmuletTitan_WRG()
+        public void Deck09_apriolo1_AmuletTitan_WG()
         {
             Test(
                 GetDeck("modern-league-2020-10-16",8),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -228,12 +228,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_HouseOfManaMTG_AmuletTitan_UBRG()
+        public void Deck13_HouseOfManaMTG_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-league-2020-10-16",12),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -436,12 +436,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck29_khangmtg_Belcher_WURG()
+        public void Deck29_khangmtg_Belcher_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-10-16",28),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WRG,
                 typeof(Belcher),
                 null,
                 null

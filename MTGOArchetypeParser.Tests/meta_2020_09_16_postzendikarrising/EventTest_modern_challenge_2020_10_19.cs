@@ -12,11 +12,11 @@ using System.Text;
 #01 Darkiundsa: Humans (WUBRG)
 #02 stayrospet: Omnath Saheeli (WURG, Jegantha)
 #03 Nekonii: Golgari Elves (BG)
-#04 azax: Reclaimer Titan (WURG)
+#04 azax: Reclaimer Titan (WG)
 #05 Jositoshekel: Heliod Combo (WG)
 #06 JustJack: Humans (WUBRG)
 #07 Mcleskey: Humans (WUBRG)
-#08 musasabi: Reclaimer Titan (WRG)
+#08 musasabi: Reclaimer Titan (WG)
 #09 WhiTe TsaR: Omnath Saheeli (WURG)
 #10 MiamiKidz: Reclaimer Titan (WRG)
 #11 MHayashi: Obosh Aggro (R, Obosh)
@@ -87,12 +87,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_azax_ReclaimerTitan_WURG()
+        public void Deck04_azax_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-19",3),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -139,12 +139,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_musasabi_ReclaimerTitan_WRG()
+        public void Deck08_musasabi_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-19",7),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null

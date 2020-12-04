@@ -14,7 +14,7 @@ using System.Text;
 #03 kiko: Azorius Taxes (WU, Yorion)
 #04 Sodeq: Belcher (URG)
 #05 mariogomes097: Grixis Shadow (UBR)
-#06 Samlg01: Amulet Titan (WUBRG)
+#06 Samlg01: Amulet Titan (RG)
 #07 pokerswizard: Shadow Prowess (BR, Lurrus)
 #08 SvenSveeterSven: Mardu Midrange (WBR)
 #09 ZYURYO: Temur Control (URG)
@@ -30,10 +30,10 @@ using System.Text;
 #19 nazart: Heliod Combo (WRG)
 #20 ACG88: KGC Tron (G)
 #21 musasabi: Shadow Prowess (BR, Lurrus)
-#22 Filyoni: Heliod Combo (WRG)
+#22 Filyoni: Heliod Combo (WG)
 #23 MrRaeb: UBRG Control (UBRG)
 #24 FriskiFraska: Reclaimer Titan (WRG)
-#25 _Batutinha_: Reclaimer Titan (WURG)
+#25 _Batutinha_: Reclaimer Titan (WUG)
 #26 Parrit: Mono White Taxes (W)
 #27 jmeyer2030: Obosh Aggro (R, Obosh)
 #28 Rinko: Enduring Ideal (WR)
@@ -113,12 +113,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_Samlg01_AmuletTitan_WUBRG()
+        public void Deck06_Samlg01_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-23",5),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -321,12 +321,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck22_Filyoni_HeliodCombo_WRG()
+        public void Deck22_Filyoni_HeliodCombo_WG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-23",21),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(HeliodCombo),
                 null,
                 null
@@ -360,12 +360,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck25_Batutinha_ReclaimerTitan_WURG()
+        public void Deck25_Batutinha_ReclaimerTitan_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-23",24),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null

@@ -20,10 +20,10 @@ using System.Text;
 #09 leclairandy: Temur Control (URG)
 #10 Waumpus: Heliod Combo (WUG)
 #11 jsteed: Gruul Midrange (RG)
-#12 Lord_of_Puntlantis: Izzet Restore Balance (URG)
+#12 Lord_of_Puntlantis: Izzet Restore Balance (UR)
 #13 Mcleskey: Humans (WUBRG)
 #14 MZBlazer: Grixis Shadow (UBR)
-#15 Icteridae: Orzhov Taxes (WB)
+#15 Icteridae: Mono White Taxes (W)
 #16 _IlNano_: Humans (WUBRG)
 */
 
@@ -175,12 +175,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_LordofPuntlantis_IzzetRestoreBalance_URG()
+        public void Deck12_LordofPuntlantis_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-17",11),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -214,12 +214,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_Icteridae_OrzhovTaxes_WB()
+        public void Deck15_Icteridae_MonoWhiteTaxes_W()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-17",14),
                 new PostZendikarRising(),
-                ArchetypeColor.WB,
+                ArchetypeColor.W,
                 typeof(GenericTaxes),
                 null,
                 null

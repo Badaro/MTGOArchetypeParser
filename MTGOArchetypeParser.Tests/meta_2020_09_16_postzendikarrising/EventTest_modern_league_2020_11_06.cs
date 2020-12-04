@@ -11,14 +11,14 @@ using System.Text;
 /*
 #01 Brunister: Azorius Taxes (WU, Yorion)
 #02 iuriper: Belcher (URG)
-#03 lovepsy: Heliod Combo (WRG)
+#03 lovepsy: Heliod Combo (WG)
 #04 Aczino: Obosh Aggro (R, Obosh)
 #05 Amplumnox: Shadow Prowess (BR, Lurrus)
-#06 cntrlfreak: UBRG Shadow (UBRG)
+#06 cntrlfreak: Sultai Shadow (UBG)
 #07 BoromirofGondor: Bant Midrange (WUG)
 #08 BSK_hercules: Sultai Control (UBG)
 #09 Noxae: Humans (WUBRG)
-#10 TCMindsculptor: Amulet Titan (URG)
+#10 TCMindsculptor: Amulet Titan (G)
 #11 jacenty_b: Burn (WR)
 #12 pegleg: WURG Control (WURG)
 #13 RandomDrooler: Primeval Titan (URG)
@@ -37,8 +37,8 @@ using System.Text;
 #26 Vandervecken: Izzet Prowess (UR)
 #27 FriskiFraska: Titan Stompy (BRG, Gyruda)
 #28 TuggaNaxos: Primeval Titan (WURG)
-#29 Silence9428: Dredge (WBRG)
-#30 JensLund: Oops All Spells (WUBRG)
+#29 Silence9428: Dredge (BRG)
+#30 JensLund: Oops All Spells (WUBG)
 #31 Jiggywiggy: Kinnan Legends (UG, Jegantha)
 #32 Rakdos91: Hardened Scales (G)
 #33 aspiringspike: Azorius Control (WU)
@@ -99,12 +99,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_lovepsy_HeliodCombo_WRG()
+        public void Deck03_lovepsy_HeliodCombo_WG()
         {
             Test(
                 GetDeck("modern-league-2020-11-06",2),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(HeliodCombo),
                 null,
                 null
@@ -138,12 +138,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_cntrlfreak_UBRGShadow_UBRG()
+        public void Deck06_cntrlfreak_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-11-06",5),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -190,12 +190,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_TCMindsculptor_AmuletTitan_URG()
+        public void Deck10_TCMindsculptor_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-league-2020-11-06",9),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -437,12 +437,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck29_Silence9428_Dredge_WBRG()
+        public void Deck29_Silence9428_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-11-06",28),
                 new PostZendikarRising(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -450,12 +450,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck30_JensLund_OopsAllSpells_WUBRG()
+        public void Deck30_JensLund_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-league-2020-11-06",29),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null

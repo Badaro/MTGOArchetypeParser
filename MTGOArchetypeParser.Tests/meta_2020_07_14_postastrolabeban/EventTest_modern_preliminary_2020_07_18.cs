@@ -17,7 +17,7 @@ using System.Text;
 #06 OscarS66: Rakdos Midrange (BR)
 #07 _LSN_: Burn (WR)
 #08 GedionRavenor: Sultai Control (UBG)
-#09 jhollan42: Amulet Titan (WUBRG)
+#09 jhollan42: Amulet Titan (UG)
 #10 NHA37: Burn (WR)
 #11 Thrall90: Jund Midrange (BRG)
 #12 bbq42069dude: Humans (WUBRG)
@@ -137,12 +137,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_jhollan42_AmuletTitan_WUBRG()
+        public void Deck09_jhollan42_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-18",8),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

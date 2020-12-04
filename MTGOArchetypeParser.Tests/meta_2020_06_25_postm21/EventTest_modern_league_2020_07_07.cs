@@ -11,15 +11,15 @@ using System.Text;
 /*
 #01 FreshKale: Izzet Prowess (UR)
 #02 Jedermann: Snoop Goblins (BR)
-#03 busso9494: Izzet Restore Balance (URG)
+#03 busso9494: Izzet Restore Balance (UR)
 #04 Tarmofir3: Golgari Midrange (BG)
 #05 JMoney8771: Infect (UG)
 #06 White_Fish: Grixis Shadow (UBR)
-#07 AZN7: Amulet Titan (WURG)
+#07 AZN7: Amulet Titan (URG)
 #08 twilightSSparkle: Neobrand (WUG)
 #09 Parrit: Hardened Scales (BG, Lurrus)
 #10 Termahgerf: Uroza (WUG, Yorion)
-#11 Ennuixd: UBRG Shadow (UBRG)
+#11 Ennuixd: Sultai Shadow (UBG)
 #12 Ayzkub_: UBRG Control (UBRG)
 #13 ArchaeusDota: Green Eldrazi Tron (G)
 #14 MrJayngles: Red Prison (R)
@@ -64,7 +64,7 @@ using System.Text;
 #53 osk4: Niv To Light (WUBRG, Yorion)
 #54 BanjoCaveman: Polymorph (RG)
 #55 kumuhl00: Elementals (WUBRG)
-#56 TBagTom: UBRG Control (UBRG)
+#56 TBagTom: Sultai Control (UBG)
 #57 RealJoy: Jund Shadow (BRG)
 #58 albert62: Jund Midrange (BRG)
 #59 Joao_Andrade: Mono Red Prowess (R, Jegantha)
@@ -109,12 +109,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck03_busso9494_IzzetRestoreBalance_URG()
+        public void Deck03_busso9494_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-07-07",2),
                 new PostM21(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -161,12 +161,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_AZN7_AmuletTitan_WURG()
+        public void Deck07_AZN7_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-league-2020-07-07",6),
                 new PostM21(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -213,12 +213,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck11_Ennuixd_UBRGShadow_UBRG()
+        public void Deck11_Ennuixd_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-07-07",10),
                 new PostM21(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -798,12 +798,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck56_TBagTom_UBRGControl_UBRG()
+        public void Deck56_TBagTom_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-07-07",55),
                 new PostM21(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericControl),
                 null,
                 null

@@ -22,7 +22,7 @@ using System.Text;
 #11 yutya: Bant Control (WUG, Yorion)
 #12 Metcalf23: Boros Taxes (WR, Lurrus)
 #13 Busterbrown52: Elementals (WUBRG)
-#14 Planet-Blade: UBRG Shadow (UBRG)
+#14 Planet-Blade: Sultai Shadow (UBG)
 #15 TheRealBlueMTG: Mono Red Prowess (R)
 #16 WeareVenom: Bant Control (WUG)
 #17 Volollo: Humans (WUBRG)
@@ -31,7 +31,7 @@ using System.Text;
 #20 ContraEgo: Thopter Urza (UBR)
 #21 DemianDesposito10: Boros Prowess (WR, Jegantha)
 #22 buralee: Bant Midrange (WUG)
-#23 cnofafva: Amulet Titan (UBRG)
+#23 cnofafva: Amulet Titan (UG)
 #24 kanister: Snoop Goblins (BR)
 #25 thepensword: Izzet Control (UR)
 #26 paucr5: Heliod Devoted (WUG)
@@ -50,8 +50,8 @@ using System.Text;
 #39 mariogomes097: Grixis Shadow (UBR)
 #40 RodolfoSFD0: Titan Shift (RG)
 #41 marcofabrizi: UBRG Control (UBRG)
-#42 m_stanzione: Izzet Restore Balance (URG)
-#43 nielsen333: Primeval Titan (BRG)
+#42 m_stanzione: Izzet Restore Balance (UR)
+#43 nielsen333: Primeval Titan (BG)
 #44 number1pwnr: U Tron (U)
 #45 meanfannypack: Devoted (WG, Lurrus)
 #46 Deulotar: Golgari Midrange (BG)
@@ -237,12 +237,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck14_PlanetBlade_UBRGShadow_UBRG()
+        public void Deck14_PlanetBlade_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-06-30",13),
                 new PostM21(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -354,12 +354,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck23_cnofafva_AmuletTitan_UBRG()
+        public void Deck23_cnofafva_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-06-30",22),
                 new PostM21(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -601,12 +601,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck42_mstanzione_IzzetRestoreBalance_URG()
+        public void Deck42_mstanzione_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-06-30",41),
                 new PostM21(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -614,12 +614,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck43_nielsen333_PrimevalTitan_BRG()
+        public void Deck43_nielsen333_PrimevalTitan_BG()
         {
             Test(
                 GetDeck("modern-league-2020-06-30",42),
                 new PostM21(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.BG,
                 typeof(PrimevalTitan),
                 null,
                 null

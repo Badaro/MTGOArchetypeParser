@@ -20,7 +20,7 @@ using System.Text;
 #09 DarthMalak: Smallpox (WB)
 #10 komattaman: Gruul Midrange (RG)
 #11 siomomi: E Tron (C)
-#12 _alice1986_: Rakdos Prowess (BR, Lurrus)
+#12 _alice1986_: Mardu Prowess (WBR, Lurrus)
 #13 Delthar: Infect (UG)
 #14 JV_7777: E Tron (C)
 #15 MATTHEWFOULKES: Izzet Prowess (UR)
@@ -174,12 +174,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_alice1986_RakdosProwess_BR_Lurrus()
+        public void Deck12_alice1986_MarduProwess_WBR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-22",11),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BR,
+                ArchetypeColor.WBR,
                 typeof(GenericProwess),
                 null,
                 ArchetypeCompanion.Lurrus

@@ -22,7 +22,7 @@ using System.Text;
 #11 hermanomlg: Bant Midrange (WUG)
 #12 Strubb: Ad Nauseam (WUB)
 #13 MHayashi: Obosh Aggro (R, Obosh)
-#14 asmitchler: UBRG Shadow (UBRG)
+#14 asmitchler: Sultai Shadow (UBG)
 #15 heyakita: Snow Saheeli (WURG, Yorion)
 #16 yatoyatoya: Mono White Taxes (W)
 #17 Dudleythedog: Mono Red Prowess (R)
@@ -38,7 +38,7 @@ using System.Text;
 #27 IzzetSignetIsTheBest: Reclaimer Titan (WRG)
 #28 Metcalf23: Mono White Taxes (W)
 #29 N3to: Gifts Storm (UR)
-#30 Leviathan102: KGC Amulet Titan (WURG)
+#30 Leviathan102: KGC Amulet Titan (UG)
 #31 __BMJ__: Kinnan Legends (WURG, Jegantha)
 #32 Borjillamtg10: Rakdos Midrange (BR)
 #33 Yozis: Mill (UB, Lurrus)
@@ -79,7 +79,7 @@ using System.Text;
 #68 XxdhampirxX: Goryo Reanimator (UBR)
 #69 HouseOfManaMTG: Heliod Combo (WG)
 #70 BrandedGrisel: Titan Shift (RG)
-#71 ContraEgo: Thopter Urza (UBR)
+#71 ContraEgo: Thopter Urza (WUBR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_asmitchler_UBRGShadow_UBRG()
+        public void Deck14_asmitchler_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-10-13",13),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -464,12 +464,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck30_Leviathan102_KGCAmuletTitan_WURG()
+        public void Deck30_Leviathan102_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-10-13",29),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -997,12 +997,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck71_ContraEgo_ThopterUrza_UBR()
+        public void Deck71_ContraEgo_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-league-2020-10-13",70),
                 new PostZendikarRising(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null

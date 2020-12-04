@@ -12,7 +12,7 @@ using System.Text;
 #01 __matsugan: Ad Nauseam (WUB)
 #02 m-boy: Merfolk (UG)
 #03 Violent_Outburst: Scapeshift (URG)
-#04 kbzx: Dredge (WBRG)
+#04 kbzx: Dredge (BRG)
 #05 Mikhathara1994: Izzet Prowess (UR)
 #06 moyashi0904: Temur Control (URG)
 #07 felider: E Tron (C)
@@ -63,12 +63,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_kbzx_Dredge_WBRG()
+        public void Deck04_kbzx_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-16",3),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

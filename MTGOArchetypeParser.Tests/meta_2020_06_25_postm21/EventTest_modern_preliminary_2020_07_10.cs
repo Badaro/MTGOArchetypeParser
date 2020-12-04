@@ -11,10 +11,10 @@ using System.Text;
 /*
 #01 Gigy: Gruul Midrange (RG)
 #02 sff_mtg: KGC Tron (G)
-#03 J000111: Dredge (WBRG)
+#03 J000111: Dredge (BRG)
 #04 WanderingOnes: KGC Tron (G)
 #05 Janh: Scapeshift (URG, Yorion)
-#06 HouseOfManaMTG: Amulet Titan (WUBRG)
+#06 HouseOfManaMTG: Amulet Titan (UG)
 #07 katoriarch123: Bant Control (WUG)
 #08 Engelsdorfer: Grixis Shadow (UBR)
 #09 zumekun19850204: Sultai Control (UBG)
@@ -51,12 +51,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck03_J000111_Dredge_WBRG()
+        public void Deck03_J000111_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",2),
                 new PostM21(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -90,12 +90,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck06_HouseOfManaMTG_AmuletTitan_WUBRG()
+        public void Deck06_HouseOfManaMTG_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",5),
                 new PostM21(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

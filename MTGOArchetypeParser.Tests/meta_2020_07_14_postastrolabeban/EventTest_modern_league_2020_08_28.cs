@@ -28,7 +28,7 @@ using System.Text;
 #17 junghans: Heliod Combo (WG)
 #18 brainstorm39: Jeskai Control (WUR, Yorion)
 #19 Leyline_of_the_Cat: Bant Spirits (WUG)
-#20 SeeFour: Lantern (UBRG)
+#20 SeeFour: Lantern (BRG)
 #21 jaximus5: Primeval Titan (URG)
 #22 Ikashy: Dredge (BRG)
 #23 Mistakenn: Living End (BRG)
@@ -42,15 +42,15 @@ using System.Text;
 #31 MlckyB: Bogles (WG)
 #32 wowqqqa: KGC Tron (G)
 #33 sydneydude: Boros Prowess (WR, Lurrus)
-#34 PuntThenWhine: KGC Amulet Titan (WUBRG)
+#34 PuntThenWhine: KGC Amulet Titan (G)
 #35 Frozon: Hardened Scales (G)
-#36 603Leb: Valakut Field (URG)
+#36 603Leb: Valakut Field (UG)
 #37 Kumpanen: Grixis Shadow (UBR)
 #38 Diotima: Mono White Taxes (W)
 #39 lewisyo: Ad Nauseam (WUB)
 #40 GHash77: Neobrand (UG)
 #41 Antoine57437: Abzan Company (WBG)
-#42 GrilledCheese: Reclaimer Titan (WRG)
+#42 GrilledCheese: Reclaimer Titan (WG)
 #43 abijhavs: Mono Red Prowess (R)
 #44 Parrit: Mono White Taxes (W)
 #45 mechrataal: Jund Shadow (BRG)
@@ -314,12 +314,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_SeeFour_Lantern_UBRG()
+        public void Deck20_SeeFour_Lantern_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-28",19),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.BRG,
                 typeof(Lantern),
                 null,
                 null
@@ -496,12 +496,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck34_PuntThenWhine_KGCAmuletTitan_WUBRG()
+        public void Deck34_PuntThenWhine_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-league-2020-08-28",33),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -522,12 +522,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck36_603Leb_ValakutField_URG()
+        public void Deck36_603Leb_ValakutField_UG()
         {
             Test(
                 GetDeck("modern-league-2020-08-28",35),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(ValakutField),
                 null,
                 null
@@ -600,12 +600,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck42_GrilledCheese_ReclaimerTitan_WRG()
+        public void Deck42_GrilledCheese_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-league-2020-08-28",41),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null

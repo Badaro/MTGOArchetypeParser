@@ -17,8 +17,8 @@ using System.Text;
 #06 Thrall90: Jund Midrange (BRG)
 #07 dm95: Azorius Control (WU)
 #08 djbmppwns: Gruul Midrange (RG)
-#09 Moniz0801: Amulet Titan (WURG)
-#10 MasterA: Snoop Goblins (BRG)
+#09 Moniz0801: Amulet Titan (URG)
+#10 MasterA: Snoop Goblins (BR)
 #11 Trisky: Jund Shadow (BRG)
 #12 mariogomes097: Grixis Shadow (UBR)
 #13 indianpancake: Gruul Midrange (RG)
@@ -29,7 +29,7 @@ using System.Text;
 #18 wambocombo2020: Burn (WR)
 #19 FranPi: Gifts Storm (UR)
 #20 Danny_Bambino: Jund Midrange (BRG)
-#21 Mercenario: Dredge (UBRG)
+#21 Mercenario: Dredge (BRG)
 #22 toondoslav: Dredge (BRG)
 #23 Curtisaxel: Bant Spirits (WUG)
 #24 CNewman: Snoop Goblins (BR)
@@ -152,12 +152,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck09_Moniz0801_AmuletTitan_WURG()
+        public void Deck09_Moniz0801_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",8),
                 new PostM21(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -165,12 +165,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck10_MasterA_SnoopGoblins_BRG()
+        public void Deck10_MasterA_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",9),
                 new PostM21(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.BR,
                 typeof(Goblins),
                 typeof(SnoopGoblins),
                 null
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck21_Mercenario_Dredge_UBRG()
+        public void Deck21_Mercenario_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",20),
                 new PostM21(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

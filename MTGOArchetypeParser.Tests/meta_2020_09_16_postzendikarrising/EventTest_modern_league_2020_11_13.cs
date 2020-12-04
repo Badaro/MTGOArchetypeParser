@@ -20,7 +20,7 @@ using System.Text;
 #09 sydneydude: Mono Red Prowess (R, Jegantha)
 #10 Evaros: Omnath Saheeli (WURG, Yorion)
 #11 eXavie: Azorius Taxes (WU, Yorion)
-#12 Ely_Silva: Burn (WRG)
+#12 Ely_Silva: Burn (WR)
 #13 victorroatt: Elves (G)
 #14 Darkiundsa: Bant Control (WUG, Yorion)
 #15 Violent_Outburst: Polymorph (RG)
@@ -31,10 +31,10 @@ using System.Text;
 #20 MadMaxErnst: Jund Midrange (BRG, Lurrus)
 #21 lineopen: Selective Oracle (WU)
 #22 Darshik: Naban Wizards (UR)
-#23 apriolo1: Amulet Titan (WURG)
+#23 apriolo1: Amulet Titan (WRG)
 #24 Chichichi: Izzet Prowess (UR)
 #25 Borjillamtg10: Rakdos Midrange (BR)
-#26 seasonofmists: Abzan Company (WBRG)
+#26 seasonofmists: Abzan Company (WBG)
 #27 yuurari_yuko: E Tron (C)
 #28 Sanitoeter: Jund Midrange (BRG)
 #29 dsissowin: Mono Red Prowess (R)
@@ -47,7 +47,7 @@ using System.Text;
 #36 MiketheKnight512: Jund Midrange (BRG)
 #37 CrusherBotBG: Hammer Time (W, Lurrus)
 #38 fifteenstepper: Infect (UG)
-#39 Lukas261997: Amulet Titan (URG)
+#39 Lukas261997: Amulet Titan (RG)
 #40 azax: KGC Tron (G)
 #41 antonio00: WURG Control (WURG)
 #42 matiaskm: Devoted (WG, Lurrus)
@@ -55,7 +55,7 @@ using System.Text;
 #44 Gigy: Gruul Midrange (RG)
 #45 saidin.raken: Scapeshift (URG)
 #46 hugofreitas1: Gifts Storm (UR)
-#47 rubenelvas: Oops All Spells (WUBRG)
+#47 rubenelvas: Oops All Spells (WUBG)
 #48 RagingTiltMonster: Izzet Phoenix (UR)
 */
 
@@ -207,12 +207,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_ElySilva_Burn_WRG()
+        public void Deck12_ElySilva_Burn_WR()
         {
             Test(
                 GetDeck("modern-league-2020-11-13",11),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WR,
                 typeof(Burn),
                 null,
                 null
@@ -350,12 +350,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck23_apriolo1_AmuletTitan_WURG()
+        public void Deck23_apriolo1_AmuletTitan_WRG()
         {
             Test(
                 GetDeck("modern-league-2020-11-13",22),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WRG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -389,12 +389,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck26_seasonofmists_AbzanCompany_WBRG()
+        public void Deck26_seasonofmists_AbzanCompany_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-11-13",25),
                 new PostZendikarRising(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.WBG,
                 typeof(AbzanCompany),
                 null,
                 null
@@ -558,12 +558,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck39_Lukas261997_AmuletTitan_URG()
+        public void Deck39_Lukas261997_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-league-2020-11-13",38),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -662,12 +662,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck47_rubenelvas_OopsAllSpells_WUBRG()
+        public void Deck47_rubenelvas_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-league-2020-11-13",46),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null

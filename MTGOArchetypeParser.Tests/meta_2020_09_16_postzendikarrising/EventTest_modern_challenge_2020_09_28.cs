@@ -12,7 +12,7 @@ using System.Text;
 #01 TuggaNaxos: Shadow Prowess (BR, Lurrus)
 #02 alexmw14: Jund Shadow (BRG)
 #03 DaniMRebel: Spirits (WU)
-#04 HouseOfManaMTG: Amulet Titan (UBRG)
+#04 HouseOfManaMTG: Amulet Titan (UG)
 #05 coert: Heliod Combo (WG)
 #06 HamburgerJung: Golos Tron (G, Jegantha)
 #07 Chefen: Belcher (RG)
@@ -25,7 +25,7 @@ using System.Text;
 #14 audio336: Shadow Prowess (BRG, Lurrus)
 #15 Mateusf34: E Tron (C)
 #16 Jenara19: UBRG Control (UBRG)
-#17 Lord_of_Puntlantis: Izzet Restore Balance (URG)
+#17 Lord_of_Puntlantis: Izzet Restore Balance (UR)
 #18 Jositoshekel: Burn (WR, Lurrus)
 #19 Polikasoll: Izzet Prowess (UR)
 #20 GideonRavensword: Dredge (BRG)
@@ -37,7 +37,7 @@ using System.Text;
 #26 PhantasmalBear: Scapeshift (URG)
 #27 MissTrigger: Bogles (WG)
 #28 HotBread: Shadow Prowess (BR, Lurrus)
-#29 ziofrancone: Elementals (WR)
+#29 ziofrancone: Elementals (WUBRG)
 #30 Oscar_Franco: Grixis Shadow (UBR)
 #31 _Batutinha_: WURG Control (WURG)
 #32 Bayesta_93: Shadow Prowess (BR, Lurrus)
@@ -87,12 +87,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_HouseOfManaMTG_AmuletTitan_UBRG()
+        public void Deck04_HouseOfManaMTG_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-28",3),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck17_LordofPuntlantis_IzzetRestoreBalance_URG()
+        public void Deck17_LordofPuntlantis_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-28",16),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -412,12 +412,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck29_ziofrancone_Elementals_WR()
+        public void Deck29_ziofrancone_Elementals_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-28",28),
                 new PostZendikarRising(),
-                ArchetypeColor.WR,
+                ArchetypeColor.WUBRG,
                 typeof(Elementals),
                 null,
                 null

@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Eaglov: Amulet Titan (UBRG)
+#01 Eaglov: Amulet Titan (RG)
 #02 xfile: Heliod Combo (WG)
 #03 Vansguy: UBRG Control (UBRG)
 #04 Ivc: Azorius Control (WU)
 #05 Poyo_del_Mal: Belcher (URG)
-#06 barczek: Oops All Spells (WUBRG)
+#06 barczek: Oops All Spells (WUBG)
 #07 _Shatun_: Shadow Prowess (BR, Lurrus)
 #08 ZYURYO: Devoted (WG, Lurrus)
-#09 gyyby297: Oops All Spells (WUBRG)
+#09 gyyby297: Oops All Spells (WUBG)
 #10 _Falcon_: Izzet Prowess (UR)
 */
 
@@ -26,12 +26,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_11_18 : EventTest
     {
         [Test]
-        public void Deck01_Eaglov_AmuletTitan_UBRG()
+        public void Deck01_Eaglov_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-18",0),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -91,12 +91,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_barczek_OopsAllSpells_WUBRG()
+        public void Deck06_barczek_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-18",5),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -130,12 +130,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_gyyby297_OopsAllSpells_WUBRG()
+        public void Deck09_gyyby297_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-18",8),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null

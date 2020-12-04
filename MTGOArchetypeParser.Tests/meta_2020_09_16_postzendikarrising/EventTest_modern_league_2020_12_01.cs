@@ -22,19 +22,19 @@ using System.Text;
 #11 MadMaxErnst: UBRG Control (UBRG)
 #12 Usama96: Temur Control (URG)
 #13 DukeVitro: Sultai Shadow (UBG)
-#14 ContraEgo: Thopter Urza (UBR)
+#14 ContraEgo: Thopter Urza (WUBR)
 #15 ColdPier: Hardened Scales (G)
 #16 Chichichi: Obosh Aggro (R, Obosh)
 #17 Hybrid7: Izzet Prowess (UR)
-#18 Moniz0801: Reclaimer Titan (WURG)
+#18 Moniz0801: Reclaimer Titan (WG)
 #19 mariogomes097: Hammer Time (W, Lurrus)
-#20 AnneLivleysD3ath: Amulet Titan (WUBRG)
-#21 murilobds: Burn (WRG)
+#20 AnneLivleysD3ath: Amulet Titan (G)
+#21 murilobds: Burn (WR)
 #22 Takizawa: Yawgmoth (BG)
 #23 Reynad: Hammer Time (WR, Lurrus)
 #24 Alvas: Sultai Control (UBG)
 #25 Lock_WI: Mono White Taxes (W)
-#26 toondoslav: Oops All Spells (WUBRG)
+#26 toondoslav: Oops All Spells (WUBG)
 #27 Trailovsky: Temur Midrange (URG)
 #28 tcgshin: Titan Shift (RG)
 #29 CReactor: Shadow Prowess (BR, Lurrus)
@@ -61,10 +61,10 @@ using System.Text;
 #50 Gigy: Gruul Midrange (RG)
 #51 npizzolato: Jeskai Control (WUR)
 #52 Ivan1227: Azorius Control (WU)
-#53 TERROl2: Izzet Restore Balance (URG)
+#53 TERROl2: Izzet Restore Balance (UR)
 #54 DemianDesposito10: Burn (WR, Lurrus)
 #55 Smdster: Heliod Combo (WR)
-#56 Mateusf34: E Tron (B)
+#56 Mateusf34: E Tron (C)
 #57 tortillathehun: Rakdos Midrange (BR)
 #58 Reflax: Scapeshift (URG)
 #59 Vertyx_: Rakdos Midrange (BR)
@@ -248,12 +248,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_ContraEgo_ThopterUrza_UBR()
+        public void Deck14_ContraEgo_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-league-2020-12-01",13),
                 new PostZendikarRising(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null
@@ -300,12 +300,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck18_Moniz0801_ReclaimerTitan_WURG()
+        public void Deck18_Moniz0801_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-league-2020-12-01",17),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -326,12 +326,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_AnneLivleysD3ath_AmuletTitan_WUBRG()
+        public void Deck20_AnneLivleysD3ath_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-league-2020-12-01",19),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -339,12 +339,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck21_murilobds_Burn_WRG()
+        public void Deck21_murilobds_Burn_WR()
         {
             Test(
                 GetDeck("modern-league-2020-12-01",20),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WR,
                 typeof(Burn),
                 null,
                 null
@@ -404,12 +404,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck26_toondoslav_OopsAllSpells_WUBRG()
+        public void Deck26_toondoslav_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-league-2020-12-01",25),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -755,12 +755,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck53_TERROl2_IzzetRestoreBalance_URG()
+        public void Deck53_TERROl2_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-12-01",52),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -794,12 +794,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck56_Mateusf34_ETron_B()
+        public void Deck56_Mateusf34_ETron_C()
         {
             Test(
                 GetDeck("modern-league-2020-12-01",55),
                 new PostZendikarRising(),
-                ArchetypeColor.B,
+                ArchetypeColor.C,
                 typeof(ETron),
                 null,
                 null

@@ -9,6 +9,10 @@ namespace MTGOArchetypeParser.Reports.App
 {
     public static class Loader
     {
+        static Dictionary<string, ArchetypeColor> _lands = MTGOArchetypeParser.Cards.Modern.Loader.GetLands();
+        static Dictionary<string, ArchetypeColor> _nonlands = MTGOArchetypeParser.Cards.Modern.Loader.GetNonLands();
+        static Archetype[] _archetypes = MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes();
+
         public static DataRecord[] GetRecords(string cacheFolder, DateTime startDate, bool includeLeagues)
         {
             Func<string, bool> excludeLeaguesFilter = n => n.Contains("Modern") && !n.Contains("League");
@@ -30,7 +34,7 @@ namespace MTGOArchetypeParser.Reports.App
 
                 for (int i = 0; i < tournament.Decks.Length; i++)
                 {
-                    var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes());
+                    var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), _archetypes, _lands, _nonlands);
 
                     string colorID = detectionResult.Color.ToString();
                     string companionID = detectionResult.Companion == null ? "" : detectionResult.Companion.Value.ToString();

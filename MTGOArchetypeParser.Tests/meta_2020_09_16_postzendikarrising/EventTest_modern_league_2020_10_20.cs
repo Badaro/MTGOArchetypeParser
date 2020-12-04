@@ -41,9 +41,9 @@ using System.Text;
 #30 CavalloGoloso: Azorius Control (WU)
 #31 FedeG: Heliod Combo (WG)
 #32 axk2: Neobrand (UG)
-#33 Antoine57437: WURG Blink (WURG)
+#33 Antoine57437: Bant Blink (WUG)
 #34 Selfeisek: Living End (BRG)
-#35 hugofreitas1: Izzet Restore Balance (URG)
+#35 hugofreitas1: Izzet Restore Balance (UR)
 #36 klien7: Oops All Spells (WUBRG)
 #37 Salva1994: Merfolk (WU, Lurrus)
 #38 TheDogFish: Merfolk (UG)
@@ -51,7 +51,7 @@ using System.Text;
 #40 esseelle: Boros Land Destruction (WR)
 #41 MadMaxErnst: Zombie Shadow (BR, Lurrus)
 #42 katoriarch123: Bant Control (WUG)
-#43 karavek: Amulet Titan (WUBRG)
+#43 karavek: Amulet Titan (RG)
 #44 CyricCanela: Gruul Midrange (RG)
 #45 4pC-AlteC: Elves (G)
 #46 aspiringspike: Azorius Control (WU)
@@ -64,13 +64,13 @@ using System.Text;
 #53 N3to: Gifts Storm (UR)
 #54 Alakhai: Shadow Prowess (BR, Lurrus)
 #55 Pilototo: Jund Shadow (BRG)
-#56 bant_is_love: Reclaimer Titan (WURG)
+#56 bant_is_love: Reclaimer Titan (WUG)
 #57 HNmagician: Mill (UB)
 #58 kensportsfan: Mono Red Prowess (R)
 #59 bomberboss: Orzhov Midrange (WB)
 #60 TheKG: Omnath Saheeli (WURG, Jegantha)
-#61 Antoine57437: Abzan Company (WBRG)
-#62 StreexIT: Spirits (WUBRG)
+#61 Antoine57437: Abzan Company (WBG)
+#62 StreexIT: Spirits (WURG)
 #63 qbturtle15: Jund Midrange (BRG)
 #64 SaborDeSoledad: Boros Land Destruction (WR, Zirda)
 #65 Sam_Lewin: Boros Land Destruction (WBR)
@@ -501,12 +501,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck33_Antoine57437_WURGBlink_WURG()
+        public void Deck33_Antoine57437_BantBlink_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-10-20",32),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUG,
                 typeof(GenericBlink),
                 null,
                 null
@@ -527,12 +527,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck35_hugofreitas1_IzzetRestoreBalance_URG()
+        public void Deck35_hugofreitas1_IzzetRestoreBalance_UR()
         {
             Test(
                 GetDeck("modern-league-2020-10-20",34),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UR,
                 typeof(IzzetFreeSpells),
                 typeof(IzzetRestoreBalance),
                 null
@@ -631,12 +631,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck43_karavek_AmuletTitan_WUBRG()
+        public void Deck43_karavek_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-league-2020-10-20",42),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -800,12 +800,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck56_bantislove_ReclaimerTitan_WURG()
+        public void Deck56_bantislove_ReclaimerTitan_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-10-20",55),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -865,12 +865,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck61_Antoine57437_AbzanCompany_WBRG()
+        public void Deck61_Antoine57437_AbzanCompany_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-10-20",60),
                 new PostZendikarRising(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.WBG,
                 typeof(AbzanCompany),
                 null,
                 null
@@ -878,12 +878,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck62_StreexIT_Spirits_WUBRG()
+        public void Deck62_StreexIT_Spirits_WURG()
         {
             Test(
                 GetDeck("modern-league-2020-10-20",61),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WURG,
                 typeof(Spirits),
                 null,
                 null

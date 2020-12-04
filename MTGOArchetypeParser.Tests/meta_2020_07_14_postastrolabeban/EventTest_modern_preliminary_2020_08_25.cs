@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Lavaridge: Temur Control (URG)
 #02 SunofNothing: Dimir Shadow (UB)
-#03 A22en: Snoop Goblins (BRG)
+#03 A22en: Snoop Goblins (BR)
 #04 kanister: Bant Control (WUG)
 #05 Danker: Azorius Control (WU)
 #06 SebastianStueckl: Boros Prowess (WR, Lurrus)
@@ -22,7 +22,7 @@ using System.Text;
 #11 nykolas0507: Mono Red Prowess (R)
 #12 ejcos531: Jund Midrange (BRG)
 #13 Maccaciock: Azorius Control (WU)
-#14 Shade_Scorpion: KGC Amulet Titan (UBRG)
+#14 Shade_Scorpion: KGC Amulet Titan (UG)
 #15 Tsubasa_Cat: Burn (WR)
 #16 Nekonii: Golgari Elves (BG)
 #17 BasedCloy: Mill (UB)
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_A22en_SnoopGoblins_BRG()
+        public void Deck03_A22en_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-25",2),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.BR,
                 typeof(Goblins),
                 typeof(SnoopGoblins),
                 null
@@ -204,12 +204,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_ShadeScorpion_KGCAmuletTitan_UBRG()
+        public void Deck14_ShadeScorpion_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-25",13),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

@@ -22,7 +22,7 @@ using System.Text;
 #11 no_lyfe: Mono Red Prowess (R)
 #12 Shorak123: Sultai Control (UBG)
 #13 Chefen: Snoop Goblins (BR)
-#14 echecetmat35: Titan Shift (URG)
+#14 echecetmat35: Titan Shift (UG)
 #15 bntrusty14: Devoted (WG, Lurrus)
 #16 Gigy: Gruul Midrange (RG)
 #17 Redgy819: E Tron (C)
@@ -34,7 +34,7 @@ using System.Text;
 #23 MrRaeb: Sultai Control (UBG)
 #24 kthanakit26: Burn (WR)
 #25 crazybaloth: Mono White Taxes (W)
-#26 MasterA: Snoop Goblins (BRG)
+#26 MasterA: Snoop Goblins (BR)
 #27 Vonducky: Boros Prowess (WR)
 #28 azatoyellow: Mono Red Prowess (R, Jegantha)
 #29 bobjackson: KGC Tron (G)
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_echecetmat35_TitanShift_URG()
+        public void Deck14_echecetmat35_TitanShift_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-19",13),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(TitanShift),
                 null
@@ -373,12 +373,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck26_MasterA_SnoopGoblins_BRG()
+        public void Deck26_MasterA_SnoopGoblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-19",25),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.BR,
                 typeof(Goblins),
                 typeof(SnoopGoblins),
                 null

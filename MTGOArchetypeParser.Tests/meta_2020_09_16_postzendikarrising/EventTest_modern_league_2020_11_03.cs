@@ -25,7 +25,7 @@ using System.Text;
 #14 GideonRavensword: Heliod Devoted (WG)
 #15 Costola91: Humans (WUBRG)
 #16 wynn1006: Izzet Phoenix (UR)
-#17 MagicalHack99: KGC Amulet Titan (WUBRG)
+#17 MagicalHack99: KGC Amulet Titan (G)
 #18 IgorBarbosa: Serum Powder Eldrazi (R)
 #19 misterfister: Polymorph (WURG)
 #20 N3to: Gifts Storm (UR)
@@ -41,7 +41,7 @@ using System.Text;
 #30 sicsmoo: WURG Control (WURG)
 #31 Voltzwagon: Gruul Midrange (RG)
 #32 LordOfDarkness25: Bogles (WG)
-#33 Antoine57437: Abzan Company (WBRG)
+#33 Antoine57437: Abzan Company (WBG)
 #34 Caleb_Yetman: Omnath Saheeli (WURG, Jegantha)
 #35 SpiderSpace: Snoop Goblins (BR)
 #36 Megalov: Titan Stompy (BRG, Gyruda)
@@ -55,13 +55,13 @@ using System.Text;
 #44 thahoppa: Jund Shadow (BRG, Lurrus)
 #45 POC: Infect (BG, Lurrus)
 #46 osmanozguney: Mill (UB, Lurrus)
-#47 shoktroopa: U Tron (UB)
+#47 shoktroopa: U Tron (U)
 #48 Nikachu: Vampires (B)
 #49 Selfeisek: Living End (BRG)
 #50 serum_visions: Jund Midrange (BRG)
 #51 Ibaitor: Golgari Midrange (BG)
 #52 Erik157751: Crabvine (UBG)
-#53 geodarno: Dredge (UBRG)
+#53 geodarno: Dredge (BRG)
 #54 Hamuda: Hardened Scales (G)
 #55 keyan926: Tribal Zoo (WUBRG, Lurrus)
 #56 Kaizer_Kahn: Obosh Aggro (R, Obosh)
@@ -291,12 +291,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck17_MagicalHack99_KGCAmuletTitan_WUBRG()
+        public void Deck17_MagicalHack99_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-league-2020-11-03",16),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -499,12 +499,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck33_Antoine57437_AbzanCompany_WBRG()
+        public void Deck33_Antoine57437_AbzanCompany_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-11-03",32),
                 new PostZendikarRising(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.WBG,
                 typeof(AbzanCompany),
                 null,
                 null
@@ -681,12 +681,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck47_shoktroopa_UTron_UB()
+        public void Deck47_shoktroopa_UTron_U()
         {
             Test(
                 GetDeck("modern-league-2020-11-03",46),
                 new PostZendikarRising(),
-                ArchetypeColor.UB,
+                ArchetypeColor.U,
                 typeof(UTron),
                 null,
                 null
@@ -759,12 +759,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck53_geodarno_Dredge_UBRG()
+        public void Deck53_geodarno_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-11-03",52),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

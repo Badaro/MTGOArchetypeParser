@@ -25,11 +25,11 @@ using System.Text;
 #14 Ryan100495: Dredge (BRG)
 #15 Lord_Beerus: Burn (WR, Lurrus)
 #16 _Batutinha_: Bant Control (WUG)
-#17 ScreenwriterNY: WUBG Control (WUBG, Yorion)
+#17 ScreenwriterNY: Sultai Control (UBG, Yorion)
 #18 Erik157751: E Tron (C)
 #19 sff_mtg: KGC Tron (G)
 #20 Scacco Malto: Mono Red Prowess (R)
-#21 mosskami: KGC Amulet Titan (WUBRG)
+#21 mosskami: KGC Amulet Titan (G)
 #22 indianpancake: Devoted (WG)
 #23 Koso: E Tron (C)
 #24 WeareVenom: Bant Control (WUG)
@@ -39,7 +39,7 @@ using System.Text;
 #28 Wartico1: Devoted (WG, Lurrus)
 #29 Nightblue: Burn (WR)
 #30 ilsecco14: Neobrand (UG)
-#31 Moniz0801: KGC Amulet Titan (WUBRG)
+#31 Moniz0801: KGC Amulet Titan (G)
 #32 Oscar_Franco: E Tron (C)
 */
 
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck17_ScreenwriterNY_WUBGControl_WUBG_Yorion()
+        public void Deck17_ScreenwriterNY_SultaiControl_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",16),
                 new PostCompanionChange(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.UBG,
                 typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck21_mosskami_KGCAmuletTitan_WUBRG()
+        public void Deck21_mosskami_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",20),
                 new PostCompanionChange(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -438,12 +438,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck31_Moniz0801_KGCAmuletTitan_WUBRG()
+        public void Deck31_Moniz0801_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",30),
                 new PostCompanionChange(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

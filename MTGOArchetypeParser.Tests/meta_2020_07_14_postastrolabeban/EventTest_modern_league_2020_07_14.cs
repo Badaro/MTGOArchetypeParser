@@ -20,9 +20,9 @@ using System.Text;
 #09 Novaphantom: KGC Tron (G)
 #10 cftsoc3: Mono Red Prowess (R)
 #11 JewishLeprechaun: Hardened Scales (G)
-#12 Aeolus1295: Amulet Titan (WUBRG)
+#12 Aeolus1295: Amulet Titan (UG)
 #13 JtoJ: UBRG Control (UBRG)
-#14 katobu: Merfolk (UB)
+#14 katobu: Merfolk (U)
 #15 hugofreitas1: Gifts Storm (UR)
 #16 Azuregun: E Tron (C)
 #17 osmanozguney: Rakdos Midrange (BR)
@@ -37,7 +37,7 @@ using System.Text;
 #26 PlaneswalkerYami: Jeskai Prowess (WUR, Lurrus)
 #27 Metcalf23: Boros Taxes (WR, Lurrus)
 #28 toya: Rakdos Midrange (BR, Lurrus)
-#29 Skrown: Dredge (WBRG)
+#29 Skrown: Dredge (BRG)
 #30 Urzza100: Bant Control (WUG, Yorion)
 #31 Borjillamtg10: Snoop Goblins (BR)
 #32 Juaspas: Scapeshift (URG, Yorion)
@@ -46,7 +46,7 @@ using System.Text;
 #35 Polikasoll: Incinerator Burn (R)
 #36 mashmalovsky: Ad Nauseam (WUB)
 #37 TheNobodys: Thopter Urza (WUB)
-#38 ScreenwriterNY: WUBG Control (WUBG, Yorion)
+#38 ScreenwriterNY: Sultai Control (UBG, Yorion)
 #39 MastaHorus: Izzet Living End (UR)
 #40 tarmociccio89: Izzet Phoenix (UR)
 #41 Fabrice_K: Bant Control (WUG, Yorion)
@@ -216,12 +216,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_Aeolus1295_AmuletTitan_WUBRG()
+        public void Deck12_Aeolus1295_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",11),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -242,12 +242,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_katobu_Merfolk_UB()
+        public void Deck14_katobu_Merfolk_U()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",13),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UB,
+                ArchetypeColor.U,
                 typeof(Merfolk),
                 null,
                 null
@@ -437,12 +437,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck29_Skrown_Dredge_WBRG()
+        public void Deck29_Skrown_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",28),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -554,12 +554,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck38_ScreenwriterNY_WUBGControl_WUBG_Yorion()
+        public void Deck38_ScreenwriterNY_SultaiControl_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-07-14",37),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.UBG,
                 typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion

@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 Lavaridge: Temur Control (URG)
-#02 Magicofplayer1: Dredge (WBRG)
+#02 Magicofplayer1: Dredge (BRG)
 #03 _Falcon_: Izzet Prowess (UR)
 #04 E_Kaminuma: E Tron (C)
 #05 ScreenwriterNY: Azorius Taxes (WU)
@@ -49,12 +49,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_Magicofplayer1_Dredge_WBRG()
+        public void Deck02_Magicofplayer1_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",1),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

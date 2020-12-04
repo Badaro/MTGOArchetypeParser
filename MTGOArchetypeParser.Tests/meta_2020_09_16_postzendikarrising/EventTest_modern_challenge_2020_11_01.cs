@@ -13,7 +13,7 @@ using System.Text;
 #02 pbarrrgh: Sultai Control (UBG)
 #03 bamzing: WURG Control (WURG)
 #04 maxbv: Mono White Taxes (W)
-#05 AlpInco: Oops All Spells (WUBRG)
+#05 AlpInco: Oops All Spells (WUBG)
 #06 FedeG: Heliod Combo (WG)
 #07 Vagabond87: Selective Oracle (WU)
 #08 yamakiller: Gruul Midrange (RG)
@@ -23,13 +23,13 @@ using System.Text;
 #12 tuckbear: Sultai Midrange (UBG)
 #13 SebastianStueckl: KGC Tron (G)
 #14 futureshok: Abzan Midrange (WBG)
-#15 Moniz0801: Amulet Titan (UBRG)
+#15 Moniz0801: Amulet Titan (G)
 #16 D00mwake: Reclaimer Titan (WRG)
 #17 122pablo: Jeskai Ascendancy (WURG)
 #18 Martin_Dominguez: Heliod Devoted (WG)
 #19 cntrlfreak: Grixis Shadow (UBR)
 #20 Wizard_2002: KGC Tron (G)
-#21 Biednarccio: Amulet Titan (UBRG)
+#21 Biednarccio: Amulet Titan (UG)
 #22 TSPJendrek: Izzet Control (UR)
 #23 Tweedel: Humans (WUBRG)
 #24 MastaHorus: Izzet Living End (UR)
@@ -100,12 +100,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_AlpInco_OopsAllSpells_WUBRG()
+        public void Deck05_AlpInco_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-01",4),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -230,12 +230,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_Moniz0801_AmuletTitan_UBRG()
+        public void Deck15_Moniz0801_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-01",14),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck21_Biednarccio_AmuletTitan_UBRG()
+        public void Deck21_Biednarccio_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-01",20),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

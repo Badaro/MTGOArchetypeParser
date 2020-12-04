@@ -16,7 +16,7 @@ using System.Text;
 #05 Usama96: WURG Control (WURG)
 #06 Jositoshekel: Bogles (WUG, Lurrus)
 #07 andrw1232: WURG Control (WURG)
-#08 HouseOfManaMTG: Amulet Titan (UBRG)
+#08 HouseOfManaMTG: Amulet Titan (UG)
 #09 Nammersquats: Devoted (WG, Lurrus)
 #10 MindOfAKid: UBRG Midrange (UBRG)
 #11 McWinSauce: WURG Control (WURG)
@@ -127,12 +127,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_HouseOfManaMTG_AmuletTitan_UBRG()
+        public void Deck08_HouseOfManaMTG_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-25",7),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

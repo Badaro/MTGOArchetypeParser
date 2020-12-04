@@ -11,6 +11,10 @@ namespace MTGOArchetypeParser.Tests
 {
     public class ConditionTests
     {
+        static Dictionary<string, ArchetypeColor> _lands = MTGOArchetypeParser.Cards.Modern.Loader.GetLands();
+        static Dictionary<string, ArchetypeColor> _nonlands = MTGOArchetypeParser.Cards.Modern.Loader.GetNonLands();
+        static Archetype[] _archetypes = MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes();
+
         [Test]
         public void InMainboard()
         {
@@ -138,17 +142,17 @@ namespace MTGOArchetypeParser.Tests
         {
             DetectionFailure(ArchetypeConditionType.ColorIsExactly,
                ArchetypeColor.WU,
-               new string[] { "Plains" },
+               new string[] { "Serra Angel", "Plains" },
                new string[] { });
 
             DetectionSuccess(ArchetypeConditionType.ColorIsExactly,
                ArchetypeColor.WU,
-               new string[] { "Plains", "Island" },
+               new string[] { "Serra Angel", "Plains", "Tempest Djinn", "Island" },
                new string[] { });
 
             DetectionFailure(ArchetypeConditionType.ColorIsExactly,
                ArchetypeColor.WU,
-               new string[] { "Swamp" },
+               new string[] { "Dark Confidant", "Swamp" },
                new string[] { });
         }
 
@@ -173,12 +177,14 @@ namespace MTGOArchetypeParser.Tests
             };
 
             var result = ArchetypeAnalyzer.Detect(
-                testMainboard.Select(c => new Card() { Count = 1, Name = c }).ToArray(),
-                testSideboard.Select(c => new Card() { Count = 1, Name = c }).ToArray(),
+                testMainboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
+                testSideboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
                 new ArchetypeSpecific[]
                 {
                      archetype
-                });
+                },
+                _lands,
+                _nonlands);
 
             result.Matches.Should().HaveCount(1);
             result.Matches.First().Archetype.Should().Be(archetype);
@@ -206,12 +212,14 @@ namespace MTGOArchetypeParser.Tests
             };
 
             var result = ArchetypeAnalyzer.Detect(
-                testMainboard.Select(c => new Card() { Count = 1, Name = c }).ToArray(),
-                testSideboard.Select(c => new Card() { Count = 1, Name = c }).ToArray(),
+                testMainboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
+                testSideboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
                 new ArchetypeSpecific[]
                 {
                      archetype
-                });
+                },
+                _lands,
+                _nonlands);
 
             result.Matches.Should().HaveCount(0);
         }

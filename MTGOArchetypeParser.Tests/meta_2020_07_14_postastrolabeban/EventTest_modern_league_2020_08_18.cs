@@ -20,7 +20,7 @@ using System.Text;
 #09 kensportsfan: Mono Red Prowess (R)
 #10 sakuragi21722749: Heliod Combo (WG)
 #11 shoiwao: Heliod Devoted (WBG)
-#12 Azerate218: UBRG Shadow (UBRG)
+#12 Azerate218: Sultai Shadow (UBG)
 #13 SvenSveeterSven: Izzet Control (UR)
 #14 Albyz: Niv To Light (WUBRG)
 #15 Carton: Esper Shadow (WUB)
@@ -35,7 +35,7 @@ using System.Text;
 #24 __Ghost__: Burn (WRG)
 #25 Tedpanic: Azorius Control (WU)
 #26 Irra0770: Jund Midrange (BRG)
-#27 Mulldrifter: Dredge (WBRG)
+#27 Mulldrifter: Dredge (BRG)
 #28 Copilot11: Izzet Control (UR)
 #29 hanrahandh: Devoted Elves (WG)
 #30 SickWorld: Burn (WR)
@@ -68,12 +68,12 @@ using System.Text;
 #57 kogamo: Primeval Titan (URG)
 #58 Taragon: Devoted (WG, Lurrus)
 #59 marcos_rocha: Infect (UG)
-#60 tuhoajatane: Reclaimer Titan (WRG)
+#60 tuhoajatane: Reclaimer Titan (WG)
 #61 Alzik: Rakdos Prowess (BR, Lurrus)
 #62 MartinezDP: Niv To Light (WUBRG, Yorion)
 #63 scipios: Crabvine (UBG)
 #64 SunnyOsRego: Rakdos Midrange (BR)
-#65 musasabi: KGC Amulet Titan (UBRG)
+#65 musasabi: KGC Amulet Titan (UG)
 #66 Widok: Ad Nauseam (WUB)
 #67 MHayashi: Mono Red Prowess (R, Jegantha)
 #68 Purple_Rain: Scapeshift (URG)
@@ -232,12 +232,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_Azerate218_UBRGShadow_UBRG()
+        public void Deck12_Azerate218_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-08-18",11),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -427,12 +427,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck27_Mulldrifter_Dredge_WBRG()
+        public void Deck27_Mulldrifter_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-08-18",26),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -856,12 +856,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck60_tuhoajatane_ReclaimerTitan_WRG()
+        public void Deck60_tuhoajatane_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-league-2020-08-18",59),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -921,12 +921,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck65_musasabi_KGCAmuletTitan_UBRG()
+        public void Deck65_musasabi_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-08-18",64),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

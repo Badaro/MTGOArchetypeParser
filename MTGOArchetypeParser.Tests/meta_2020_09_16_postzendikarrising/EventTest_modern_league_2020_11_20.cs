@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 Wirmaleff: Mill (UB)
-#02 Ely_Silva: Burn (WRG)
+#02 Ely_Silva: Burn (WR)
 #03 6argamel: Mono White Taxes (W, Yorion)
 #04 GideonRavensword: Dredge (BRG)
 #05 Diotima: U Tron (U)
@@ -23,7 +23,7 @@ using System.Text;
 #12 TuralyonMap: Spirits (WU)
 #13 toondoslav: Infect (UG)
 #14 StreexIT: Neobrand (UG)
-#15 ContraEgo: Thopter Urza (UBR)
+#15 ContraEgo: Thopter Urza (WUBR)
 #16 TheWonderLord: Humans (WUBRG)
 #17 Karstinen: Mono White Taxes (W)
 #18 Foxantes: E Tron (C)
@@ -43,15 +43,15 @@ using System.Text;
 #32 TheWonderLord: Elves (G)
 #33 TheWonderLord: Snoop Goblins (BR)
 #34 Diatomic: Izzet Control (UR)
-#35 Javipv: Reclaimer Titan (WURG)
+#35 Javipv: Reclaimer Titan (WUG)
 #36 pbarrrgh: WURG Control (WURG)
 #37 HNSDMPF: Hardened Scales (G)
-#38 ZYX_Jerry: Oops All Spells (WUBRG)
+#38 ZYX_Jerry: Oops All Spells (WUBG)
 #39 Tabaqui1987: Jund Shadow (BRG)
 #40 SpiderSpace: Mono White Taxes (W, Yorion)
 #41 LinXiao: Bant Midrange (WUG)
 #42 rojanosa: Faeries (UB)
-#43 Leviathan102: Amulet Titan (URG)
+#43 Leviathan102: Amulet Titan (RG)
 #44 603Leb: Selenya Taxes (WG, Yorion)
 #45 bhood16: Jund Midrange (BRG)
 #46 Borjillamtg10: Rakdos Midrange (BR)
@@ -76,12 +76,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_ElySilva_Burn_WRG()
+        public void Deck02_ElySilva_Burn_WR()
         {
             Test(
                 GetDeck("modern-league-2020-11-20",1),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WR,
                 typeof(Burn),
                 null,
                 null
@@ -245,12 +245,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_ContraEgo_ThopterUrza_UBR()
+        public void Deck15_ContraEgo_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-league-2020-11-20",14),
                 new PostZendikarRising(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null
@@ -505,12 +505,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck35_Javipv_ReclaimerTitan_WURG()
+        public void Deck35_Javipv_ReclaimerTitan_WUG()
         {
             Test(
                 GetDeck("modern-league-2020-11-20",34),
                 new PostZendikarRising(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -544,12 +544,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck38_ZYXJerry_OopsAllSpells_WUBRG()
+        public void Deck38_ZYXJerry_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-league-2020-11-20",37),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -609,12 +609,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck43_Leviathan102_AmuletTitan_URG()
+        public void Deck43_Leviathan102_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-league-2020-11-20",42),
                 new PostZendikarRising(),
-                ArchetypeColor.URG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

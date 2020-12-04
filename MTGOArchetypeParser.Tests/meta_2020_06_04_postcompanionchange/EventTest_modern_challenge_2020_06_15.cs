@@ -27,9 +27,9 @@ using System.Text;
 #16 ZYURYO: WUBG Control (WUBG)
 #17 Xwhale: Bant Control (WUG)
 #18 JB2002: Bant Blink (WUG, Yorion)
-#19 swff: WUBG Control (WUBG)
+#19 swff: Sultai Control (UBG)
 #20 Granham: Jund Midrange (BRG)
-#21 MadMaxErnst: Uroza (URG)
+#21 MadMaxErnst: Uroza (UG)
 #22 bobthedog: Sultai Control (UBG)
 #23 gyyby297: Thopter Urza (UB)
 #24 coert: G Tron (G)
@@ -282,12 +282,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck19_swff_WUBGControl_WUBG()
+        public void Deck19_swff_SultaiControl_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-15",18),
                 new PostCompanionChange(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.UBG,
                 typeof(GenericControl),
                 null,
                 null
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck21_MadMaxErnst_Uroza_URG()
+        public void Deck21_MadMaxErnst_Uroza_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-15",20),
                 new PostCompanionChange(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(Uroza),
                 null,
                 null

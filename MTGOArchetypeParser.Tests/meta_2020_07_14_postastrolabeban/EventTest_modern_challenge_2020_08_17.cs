@@ -17,7 +17,7 @@ using System.Text;
 #06 Snusnumrick: E Tron (C)
 #07 Trellon: U Tron (U)
 #08 CHILLEDADED: Burn (WR)
-#09 Predicted: Yawgmoth (WBG)
+#09 Predicted: Yawgmoth (BG)
 #10 TennTyou: Niv To Light (WUBRG)
 #11 Cy_4nhur: Snoop Goblins (BR)
 #12 buddha715: Burn (WR, Lurrus)
@@ -27,7 +27,7 @@ using System.Text;
 #16 jvidarte: Burn (WR, Lurrus)
 #17 fried-liver-attack: E Tron (C)
 #18 Gigy: Gruul Midrange (RG)
-#19 musasabi: KGC Amulet Titan (UBRG)
+#19 musasabi: KGC Amulet Titan (UG)
 #20 _Logic_: Jeskai Breach (WURG)
 #21 __matsugan: Neobrand (UG)
 #22 PhantasmalBear: Azorius Midrange (WU)
@@ -39,7 +39,7 @@ using System.Text;
 #28 Xemnon1: Rakdos Prowess (BR, Lurrus)
 #29 Filyoni: Devoted (WG, Lurrus)
 #30 asnook: Jund Midrange (BRG)
-#31 bigjc00: Amulet Titan (URG)
+#31 bigjc00: Amulet Titan (RG)
 #32 MCScards: Rakdos Prowess (BR, Lurrus)
 */
 
@@ -152,12 +152,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_Predicted_Yawgmoth_WBG()
+        public void Deck09_Predicted_Yawgmoth_BG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",8),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBG,
+                ArchetypeColor.BG,
                 typeof(Yawgmoth),
                 null,
                 null
@@ -282,12 +282,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck19_musasabi_KGCAmuletTitan_UBRG()
+        public void Deck19_musasabi_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",18),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -438,12 +438,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck31_bigjc00_AmuletTitan_URG()
+        public void Deck31_bigjc00_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",30),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

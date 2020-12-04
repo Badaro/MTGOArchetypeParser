@@ -25,30 +25,30 @@ using System.Text;
 #14 chaba_lol: Hammer Time (W)
 #15 musasabi: Orzhov Midrange (WB)
 #16 GanYanCHN: Belcher (RG)
-#17 Iplantz: Devoted (WUG)
-#18 camr0n_1: Amulet Titan (UBRG)
+#17 Iplantz: Devoted (WG)
+#18 camr0n_1: Amulet Titan (RG)
 #19 TheTunnelingCat: E Tron (C)
 #20 Bobthebuilder24: Heliod Sisters (W)
 #21 balltap: Jeskai Breach (WURG, Jegantha)
 #22 SknerusMcKwacz: Oops All Spells (WUBRG)
 #23 audio336: Shadow Prowess (BRG, Lurrus)
-#24 Czechito: Elementals (WR)
+#24 Czechito: Elementals (WUBRG)
 #25 ST0NEHE4RT: Obosh Aggro (R, Obosh)
 #26 LordOfDarkness25: Bogles (WG)
 #27 _LSN_: Burn (WR)
-#28 MagicalHack99: KGC Amulet Titan (WUBRG)
+#28 MagicalHack99: KGC Amulet Titan (G)
 #29 BSK_hercules: WURG Control (WURG)
 #30 zbishop: Selenya Taxes (WG)
 #31 Munich_Casual: Spirits (WU)
 #32 haubidtran: Temur Control (URG)
 #33 Ptery: Jeskai Control (WUR)
-#34 Bugsy69: Thopter Urza (WUR)
+#34 Bugsy69: Thopter Urza (WUBR)
 #35 kensportsfan: Mono Red Prowess (R)
 #36 ImmanuelKantrolGod: Jeskai Control (WUR)
 #37 Karolmo: Mill (UB)
-#38 foobaj: UBRG Shadow (UBRG)
+#38 foobaj: Sultai Shadow (UBG)
 #39 Laplasjan: Devoted (WG, Lurrus)
-#40 Antoine57437: Abzan Company (WBRG)
+#40 Antoine57437: Abzan Company (WBG)
 #41 hermanomlg: Bant Midrange (WUG)
 #42 joetru: Jund Midrange (BRG)
 #43 cws: Gifts Storm (UR)
@@ -61,7 +61,7 @@ using System.Text;
 #50 lovealienzzz: Azorius Control (WU, Yorion)
 #51 _Makaveli: Azorius Control (WU)
 #52 SvenSveeterSven: Izzet Control (UR)
-#53 Athanbak: Merfolk (UB)
+#53 Athanbak: Merfolk (U)
 #54 MruLoNGx: KGC Tron (G)
 #55 MagicDevil666: U Tron (U)
 #56 HLG42: Mill (UB, Lurrus)
@@ -284,12 +284,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck17_Iplantz_Devoted_WUG()
+        public void Deck17_Iplantz_Devoted_WG()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",16),
                 new PostZendikarRising(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WG,
                 typeof(Devoted),
                 null,
                 null
@@ -297,12 +297,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck18_camr0n1_AmuletTitan_UBRG()
+        public void Deck18_camr0n1_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",17),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -375,12 +375,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck24_Czechito_Elementals_WR()
+        public void Deck24_Czechito_Elementals_WUBRG()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",23),
                 new PostZendikarRising(),
-                ArchetypeColor.WR,
+                ArchetypeColor.WUBRG,
                 typeof(Elementals),
                 null,
                 null
@@ -427,12 +427,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck28_MagicalHack99_KGCAmuletTitan_WUBRG()
+        public void Deck28_MagicalHack99_KGCAmuletTitan_G()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",27),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.G,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null
@@ -505,12 +505,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck34_Bugsy69_ThopterUrza_WUR()
+        public void Deck34_Bugsy69_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",33),
                 new PostZendikarRising(),
-                ArchetypeColor.WUR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null
@@ -557,12 +557,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck38_foobaj_UBRGShadow_UBRG()
+        public void Deck38_foobaj_SultaiShadow_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",37),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UBG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -583,12 +583,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck40_Antoine57437_AbzanCompany_WBRG()
+        public void Deck40_Antoine57437_AbzanCompany_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",39),
                 new PostZendikarRising(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.WBG,
                 typeof(AbzanCompany),
                 null,
                 null
@@ -752,12 +752,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck53_Athanbak_Merfolk_UB()
+        public void Deck53_Athanbak_Merfolk_U()
         {
             Test(
                 GetDeck("modern-league-2020-09-25",52),
                 new PostZendikarRising(),
-                ArchetypeColor.UB,
+                ArchetypeColor.U,
                 typeof(Merfolk),
                 null,
                 null

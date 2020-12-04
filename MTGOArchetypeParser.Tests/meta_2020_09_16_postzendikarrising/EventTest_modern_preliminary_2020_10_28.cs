@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 Paeng_Paeng: Gifts Storm (UR)
-#02 HouseOfManaMTG: Amulet Titan (UBRG)
+#02 HouseOfManaMTG: Amulet Titan (RG)
 #03 Zar0s: WURG Control (WURG)
 #04 Laplasjan: Devoted (WG, Lurrus)
 #05 otakkun: KGC Tron (G)
@@ -37,12 +37,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_HouseOfManaMTG_AmuletTitan_UBRG()
+        public void Deck02_HouseOfManaMTG_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-28",1),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

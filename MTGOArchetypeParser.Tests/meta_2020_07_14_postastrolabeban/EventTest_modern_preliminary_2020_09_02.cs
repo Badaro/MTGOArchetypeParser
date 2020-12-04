@@ -13,7 +13,7 @@ using System.Text;
 #02 Simarisu: Izzet Prowess (UR)
 #03 BERNASTORRES: Bogles (WG, Lurrus)
 #04 ImmanuelKantrolGod: Bant Control (WUG)
-#05 Somefellow: Amulet Titan (URG)
+#05 Somefellow: Amulet Titan (RG)
 #06 Nickburch13: Mardu Prowess (WBR, Lurrus)
 #07 fling5133: Sultai Control (UBG)
 #08 JustBurn420: Slivers (WUBRG)
@@ -22,8 +22,8 @@ using System.Text;
 #11 MissTrigger: Merfolk (WU, Lurrus)
 #12 Hyeri0418: Golgari Midrange (BG)
 #13 TheBlazingKFC_mtg: Neobrand (UG)
-#14 katuo079595: Reclaimer Titan (WRG)
-#15 Lillia: KGC Amulet Titan (WURG)
+#14 katuo079595: Reclaimer Titan (WG)
+#15 Lillia: KGC Amulet Titan (UG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -83,12 +83,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_Somefellow_AmuletTitan_URG()
+        public void Deck05_Somefellow_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-02",4),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -200,12 +200,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_katuo079595_ReclaimerTitan_WRG()
+        public void Deck14_katuo079595_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-02",13),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -213,12 +213,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_Lillia_KGCAmuletTitan_WURG()
+        public void Deck15_Lillia_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-02",14),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

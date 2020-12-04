@@ -14,7 +14,7 @@ using System.Text;
 #03 rinazina: KGC Tron (G)
 #04 Violent_Outburst: Scapeshift (URG)
 #05 JakeHelms: Dimir Control (UB)
-#06 Iburakema: Grixis Control (UBR)
+#06 Iburakema: Izzet Control (UR)
 #07 mhskou: Obosh Aggro (R, Obosh)
 #08 bigkahuna512: Mill (WUB)
 */
@@ -89,12 +89,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_Iburakema_GrixisControl_UBR()
+        public void Deck06_Iburakema_IzzetControl_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-20",5),
                 new PostZendikarRising(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.UR,
                 typeof(GenericControl),
                 null,
                 null

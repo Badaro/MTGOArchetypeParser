@@ -31,13 +31,13 @@ using System.Text;
 #20 Gigy: Gruul Midrange (RG)
 #21 Luzur: Sultai Control (UBG)
 #22 spellvine: Izzet Prowess (UR)
-#23 HouseOfManaMTG: Reclaimer Titan (WRG)
+#23 HouseOfManaMTG: Reclaimer Titan (WG)
 #24 Yanti: Jund Midrange (BRG)
 #25 Storytime: Kinnan Devoted (WUG)
 #26 Xuxa: Dredge (BRG)
 #27 NorrathDecay: Burn (WR)
 #28 ConnorM426: Temur Control (URG)
-#29 musasabi: KGC Amulet Titan (UBRG)
+#29 musasabi: KGC Amulet Titan (UG)
 #30 NHA37: E Tron (C)
 #31 BSK_hercules: Temur Control (URG)
 #32 kthanakit26: Burn (WR)
@@ -334,12 +334,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck23_HouseOfManaMTG_ReclaimerTitan_WRG()
+        public void Deck23_HouseOfManaMTG_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",22),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -412,12 +412,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck29_musasabi_KGCAmuletTitan_UBRG()
+        public void Deck29_musasabi_KGCAmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",28),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(KGCAmuletTitan),
                 null

@@ -15,14 +15,14 @@ using System.Text;
 #04 pandanaconda: Hardened Scales (BG, Lurrus)
 #05 iuriper: Obosh Aggro (R, Obosh)
 #06 yeaux: Heliod Combo (W)
-#07 Moniz0801: Amulet Titan (WUBRG)
+#07 Moniz0801: Amulet Titan (UG)
 #08 Chrhey: Izzet Prowess (UR)
 #09 Reflax: Azorius Control (WU)
 #10 SpikeYou: UBRG Control (UBRG)
 #11 CobaltOak: Orzhov Midrange (WB)
 #12 MruLoNGx: Jund Midrange (BRG)
 #13 PietroSas: Devoted (WG, Lurrus)
-#14 Piccio36: Primeval Titan (BRG)
+#14 Piccio36: Primeval Titan (BG)
 #15 haubidtran: Kinnan Legends (WURG, Yorion)
 #16 TheTunnelingCat: E Tron (C)
 #17 lucajak: Izzet Control (UR)
@@ -53,7 +53,7 @@ using System.Text;
 #42 SvenSveeterSven: Izzet Control (UR)
 #43 Ryan_39: Scapeshift (WURG)
 #44 DemianDesposito10: Boros Prowess (WR, Lurrus)
-#45 Antoine57437: Abzan Company (WBRG)
+#45 Antoine57437: Abzan Company (WBG)
 #46 krusader666: Titan Shift (RG)
 #47 TuggaNaxos: Izzet Control (UR)
 #48 hugofreitas1: Gifts Storm (UR)
@@ -161,12 +161,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_Moniz0801_AmuletTitan_WUBRG()
+        public void Deck07_Moniz0801_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-10-27",6),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -252,12 +252,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_Piccio36_PrimevalTitan_BRG()
+        public void Deck14_Piccio36_PrimevalTitan_BG()
         {
             Test(
                 GetDeck("modern-league-2020-10-27",13),
                 new PostZendikarRising(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.BG,
                 typeof(PrimevalTitan),
                 null,
                 null
@@ -655,12 +655,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck45_Antoine57437_AbzanCompany_WBRG()
+        public void Deck45_Antoine57437_AbzanCompany_WBG()
         {
             Test(
                 GetDeck("modern-league-2020-10-27",44),
                 new PostZendikarRising(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.WBG,
                 typeof(AbzanCompany),
                 null,
                 null

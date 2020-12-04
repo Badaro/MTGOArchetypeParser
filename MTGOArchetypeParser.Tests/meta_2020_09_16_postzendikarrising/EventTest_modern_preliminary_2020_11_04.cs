@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Gerschi: Oops All Spells (WUBRG)
+#01 Gerschi: Oops All Spells (WUBG)
 #02 Metaponto: Bant Spirits (WUG)
 #03 Mulldrifter: Shadow Prowess (WBR, Lurrus)
 #04 Tiemuuu: Izzet Control (UR)
@@ -30,12 +30,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_11_04 : EventTest
     {
         [Test]
-        public void Deck01_Gerschi_OopsAllSpells_WUBRG()
+        public void Deck01_Gerschi_OopsAllSpells_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-04",0),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.WUBG,
                 typeof(OopsAllSpells),
                 null,
                 null

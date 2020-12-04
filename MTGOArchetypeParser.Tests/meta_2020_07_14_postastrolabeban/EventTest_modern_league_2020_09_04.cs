@@ -16,7 +16,7 @@ using System.Text;
 #05 Wooday: Infect (UG)
 #06 Fulgence: Naya Midrange (WRG)
 #07 Dlihchtarw: Rakdos Midrange (BR)
-#08 liftwhenready: Dredge (BRG)
+#08 liftwhenready: Dredge (RG)
 #09 Kuhb: Heliod Combo (WG)
 #10 saidin.raken: Scapeshift (URG)
 #11 WingedHussar: Neobrand (UG)
@@ -39,15 +39,15 @@ using System.Text;
 #28 Planet-Blade: Grixis Shadow (UBR)
 #29 ColoradoRalphy: Humans (WUBRG)
 #30 TheBigMoke: Sultai Control (UBG)
-#31 TheOneCoff: Valakut Field (URG)
+#31 TheOneCoff: Valakut Field (UG)
 #32 nietzreznor: Obosh Aggro (R, Obosh)
-#33 Bangood: Thopter Urza (UBR)
+#33 Bangood: Thopter Urza (WUBR)
 #34 pumpkinwavy: Reclaimer Titan (WRG)
 #35 603Leb: Golgari Elves (BG)
 #36 MTGBullent: Heliod Combo (WG)
 #37 rojanosa: Bushwhacker Zoo (WRG)
-#38 Frejat: Reclaimer Titan (WRG)
-#39 Daryl_Ayers: Amulet Titan (UBRG)
+#38 Frejat: Reclaimer Titan (WG)
+#39 Daryl_Ayers: Amulet Titan (RG)
 #40 chancery: Polymorph (RG)
 #41 sicsmoo: Valakut Field (BRG)
 #42 Chub_Toad_: Uroza (WUG)
@@ -160,12 +160,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_liftwhenready_Dredge_BRG()
+        public void Deck08_liftwhenready_Dredge_RG()
         {
             Test(
                 GetDeck("modern-league-2020-09-04",7),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.RG,
                 typeof(Dredge),
                 null,
                 null
@@ -459,12 +459,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck31_TheOneCoff_ValakutField_URG()
+        public void Deck31_TheOneCoff_ValakutField_UG()
         {
             Test(
                 GetDeck("modern-league-2020-09-04",30),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(ValakutField),
                 null,
                 null
@@ -485,12 +485,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck33_Bangood_ThopterUrza_UBR()
+        public void Deck33_Bangood_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-league-2020-09-04",32),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterUrza),
                 null,
                 null
@@ -550,12 +550,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck38_Frejat_ReclaimerTitan_WRG()
+        public void Deck38_Frejat_ReclaimerTitan_WG()
         {
             Test(
                 GetDeck("modern-league-2020-09-04",37),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -563,12 +563,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck39_DarylAyers_AmuletTitan_UBRG()
+        public void Deck39_DarylAyers_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-league-2020-09-04",38),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

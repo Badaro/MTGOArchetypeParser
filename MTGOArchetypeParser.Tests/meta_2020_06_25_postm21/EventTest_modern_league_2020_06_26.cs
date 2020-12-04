@@ -22,10 +22,10 @@ using System.Text;
 #11 magicjpg: Bant Blink (WUG, Yorion)
 #12 Psychophobic: Gruul Midrange (RG)
 #13 Borjillamtg10: Ad Nauseam (WUB)
-#14 603Leb: Amulet Titan (WUBRG)
+#14 603Leb: Amulet Titan (UG)
 #15 Mad-Ramon: Temur Control (URG, Yorion)
 #16 Mordeka1ser: Niv To Light (WUBRG, Yorion)
-#17 Zebrah: Amulet Titan (WUBRG, Yorion)
+#17 Zebrah: Amulet Titan (UG, Yorion)
 #18 Shorak123: Sultai Control (UBG)
 #19 Beicodegeia: Gifts Storm (UR)
 #20 FantasticMrFox: Bogles (WG, Lurrus)
@@ -37,7 +37,7 @@ using System.Text;
 #26 Justodeangelo: Temur Control (URG)
 #27 SightWinner: Hollow One (BR)
 #28 Pirika: Mardu Pyromancer (WBR)
-#29 Xorn9: Goblins (WUBRG)
+#29 Xorn9: Goblins (BRG)
 #30 vengevine29: Hardened Scales (BG, Lurrus)
 #31 SebastianStueckl: Snoop Goblins (BR)
 #32 Trellon: U Tron (U)
@@ -221,12 +221,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck14_603Leb_AmuletTitan_WUBRG()
+        public void Deck14_603Leb_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",13),
                 new PostM21(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -260,12 +260,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck17_Zebrah_AmuletTitan_WUBRG_Yorion()
+        public void Deck17_Zebrah_AmuletTitan_UG_Yorion()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",16),
                 new PostM21(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 ArchetypeCompanion.Yorion
@@ -416,12 +416,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck29_Xorn9_Goblins_WUBRG()
+        public void Deck29_Xorn9_Goblins_BRG()
         {
             Test(
                 GetDeck("modern-league-2020-06-26",28),
                 new PostM21(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.BRG,
                 typeof(Goblins),
                 null,
                 null

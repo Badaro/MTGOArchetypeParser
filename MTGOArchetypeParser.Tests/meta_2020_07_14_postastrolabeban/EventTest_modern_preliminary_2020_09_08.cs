@@ -13,16 +13,16 @@ using System.Text;
 #02 azax: Grixis Shadow (UBR)
 #03 JacobofAmber: Ad Nauseam (WUB)
 #04 qbturtle15: Gruul Midrange (RG)
-#05 bigjc00: Amulet Titan (URG)
+#05 bigjc00: Amulet Titan (RG)
 #06 The_nayr: Obosh Aggro (R, Obosh)
 #07 DeepFryer: Rakdos Prowess (BR, Lurrus)
-#08 Bedell: Amulet Titan (UBRG)
+#08 Bedell: Amulet Titan (RG)
 #09 bozo2112: Reclaimer Titan (WRG)
 #10 Xwhale: Reclaimer Titan (WRG)
 #11 raven0904: G Tron (G)
 #12 wilson5434: Hardened Scales (G)
 #13 TheMelkMan: Golos Tron (G)
-#14 crackerpack: Dredge (WBRG)
+#14 crackerpack: Dredge (BRG)
 #15 Thrall90: Rakdos Prowess (BR, Lurrus)
 #16 PTarts2win: KGC Tron (G)
 #17 andrw1232: Rakdos Prowess (BR, Lurrus)
@@ -87,12 +87,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_bigjc00_AmuletTitan_URG()
+        public void Deck05_bigjc00_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-08",4),
                 new PostAstrolabeBan(),
-                ArchetypeColor.URG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_Bedell_AmuletTitan_UBRG()
+        public void Deck08_Bedell_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-08",7),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -204,12 +204,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_crackerpack_Dredge_WBRG()
+        public void Deck14_crackerpack_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-08",13),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null

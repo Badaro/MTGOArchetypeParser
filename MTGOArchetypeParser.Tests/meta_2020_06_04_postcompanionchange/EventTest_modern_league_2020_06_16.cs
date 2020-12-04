@@ -29,18 +29,18 @@ using System.Text;
 #18 Praxifi: Winota (WRG)
 #19 miki665: Humans (WUBRG)
 #20 Nideon: Orzhov Taxes (WB)
-#21 tucker_de: Amulet Titan (WUBRG)
+#21 tucker_de: Amulet Titan (UG)
 #22 Wuhsa: Niv To Light (WUBRG)
-#23 iuriper: Merfolk (UB)
+#23 iuriper: Merfolk (U)
 #24 DemianDesposito10: Mono Red Prowess (R)
 #25 Kurusu: Kiki Chord (WBRG, Yorion)
 #26 shine0905: Titan Stompy (BRG, Gyruda)
 #27 w_aru: Merfolk (WU, Lurrus)
 #28 Game_Night: Winota (WRG)
-#29 Gabriel0288: Primeval Titan (URG)
+#29 Gabriel0288: Primeval Titan (UG)
 #30 Kaipa: Burn (WR, Lurrus)
 #31 Fat_Chocobo: Goblins (BRG)
-#32 crexalbo: Twiddle Storm (URG)
+#32 crexalbo: Twiddle Storm (UG)
 #33 pbarrrgh: Temur Control (URG, Yorion)
 #34 cesar189350: Jeskai Control (WUR)
 #35 Miqa: E Tron (C)
@@ -64,7 +64,7 @@ using System.Text;
 #53 maple049: Hardened Scales (WG, Lurrus)
 #54 drRobotGranata: Titan Shift (RG)
 #55 MHayashi: Mono Red Prowess (R, Jegantha)
-#56 erose199423: Thopter Urza (WUR)
+#56 erose199423: Thopter Urza (WU)
 #57 daifuku: Temur Midrange (URG)
 #58 abijhavs: Mono Red Prowess (R)
 #59 MlckyB: Bogles (WG)
@@ -335,12 +335,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck21_tuckerde_AmuletTitan_WUBRG()
+        public void Deck21_tuckerde_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-06-16",20),
                 new PostCompanionChange(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -361,12 +361,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck23_iuriper_Merfolk_UB()
+        public void Deck23_iuriper_Merfolk_U()
         {
             Test(
                 GetDeck("modern-league-2020-06-16",22),
                 new PostCompanionChange(),
-                ArchetypeColor.UB,
+                ArchetypeColor.U,
                 typeof(Merfolk),
                 null,
                 null
@@ -439,12 +439,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck29_Gabriel0288_PrimevalTitan_URG()
+        public void Deck29_Gabriel0288_PrimevalTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-06-16",28),
                 new PostCompanionChange(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 null,
                 null
@@ -478,12 +478,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck32_crexalbo_TwiddleStorm_URG()
+        public void Deck32_crexalbo_TwiddleStorm_UG()
         {
             Test(
                 GetDeck("modern-league-2020-06-16",31),
                 new PostCompanionChange(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UG,
                 typeof(TwiddleStorm),
                 null,
                 null
@@ -790,12 +790,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck56_erose199423_ThopterUrza_WUR()
+        public void Deck56_erose199423_ThopterUrza_WU()
         {
             Test(
                 GetDeck("modern-league-2020-06-16",55),
                 new PostCompanionChange(),
-                ArchetypeColor.WUR,
+                ArchetypeColor.WU,
                 typeof(ThopterUrza),
                 null,
                 null

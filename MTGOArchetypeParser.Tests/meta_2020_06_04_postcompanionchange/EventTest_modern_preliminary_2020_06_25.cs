@@ -12,7 +12,7 @@ using System.Text;
 #01 Icteridae: Heliod Devoted (WUG)
 #02 rastaf: KGC Tron (G)
 #03 FrankEG_MTG: Humans (WUBRG)
-#04 fpawlusz: Amulet Titan (WUBRG)
+#04 fpawlusz: Amulet Titan (UG)
 #05 Laplasjan: Devoted (WG, Lurrus)
 #06 BSK_hercules: Gruul Midrange (RG)
 #07 mariogomes097: Grixis Shadow (UBR)
@@ -71,12 +71,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck04_fpawlusz_AmuletTitan_WUBRG()
+        public void Deck04_fpawlusz_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-25",3),
                 new PostCompanionChange(),
-                ArchetypeColor.WUBRG,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
