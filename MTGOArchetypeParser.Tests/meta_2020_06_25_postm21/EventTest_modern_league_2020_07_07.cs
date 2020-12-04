@@ -42,7 +42,7 @@ using System.Text;
 #31 MegaMollt: Gifts Storm (UR)
 #32 TheWonderLord: Golgari Midrange (BG)
 #33 Boin: Snoop Goblins (BR)
-#34 ArchaeusDota: E Tron (BG)
+#34 ArchaeusDota: E Tron (G)
 #35 ToniCalzoni: Ad Nauseam (WUB)
 #36 andresambiaze: Dredge (BRG)
 #37 Janh: Scapeshift (URG, Yorion)
@@ -512,12 +512,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck34_ArchaeusDota_ETron_BG()
+        public void Deck34_ArchaeusDota_ETron_G()
         {
             Test(
                 GetDeck("modern-league-2020-07-07",33),
                 new PostM21(),
-                ArchetypeColor.BG,
+                ArchetypeColor.G,
                 typeof(ETron),
                 null,
                 null

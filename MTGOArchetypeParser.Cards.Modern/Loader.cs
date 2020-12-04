@@ -6621,11 +6621,6 @@ namespace MTGOArchetypeParser.Cards.Modern
             result.Add("Ink-Treader Nephilim",ArchetypeColor.WURG);
             result.Add("Killer Instinct",ArchetypeColor.RG);
             result.Add("Leap of Flame",ArchetypeColor.UR);
-            result.Add("Leyline of Lifeforce",ArchetypeColor.G);
-            result.Add("Leyline of Lightning",ArchetypeColor.R);
-            result.Add("Leyline of Singularity",ArchetypeColor.U);
-            result.Add("Leyline of the Meek",ArchetypeColor.W);
-            result.Add("Leyline of the Void",ArchetypeColor.B);
             result.Add("Living Inferno",ArchetypeColor.R);
             result.Add("Mimeofacture",ArchetypeColor.U);
             result.Add("Necromancer's Magemark",ArchetypeColor.B);
@@ -8312,10 +8307,6 @@ namespace MTGOArchetypeParser.Cards.Modern
             result.Add("Hunters' Feast",ArchetypeColor.G);
             result.Add("Incite",ArchetypeColor.R);
             result.Add("Jace's Erasure",ArchetypeColor.U);
-            result.Add("Leyline of Anticipation",ArchetypeColor.U);
-            result.Add("Leyline of Punishment",ArchetypeColor.R);
-            result.Add("Leyline of Sanctity",ArchetypeColor.W);
-            result.Add("Leyline of Vitality",ArchetypeColor.G);
             result.Add("Liliana's Caress",ArchetypeColor.B);
             result.Add("Manic Vandal",ArchetypeColor.R);
             result.Add("Maritime Guard",ArchetypeColor.U);
@@ -8841,8 +8832,6 @@ namespace MTGOArchetypeParser.Cards.Modern
             result.Add("Lavakin Brawler",ArchetypeColor.R);
             result.Add("Leafkin Druid",ArchetypeColor.G);
             result.Add("Legion's End",ArchetypeColor.B);
-            result.Add("Leyline of Abundance",ArchetypeColor.G);
-            result.Add("Leyline of Combustion",ArchetypeColor.R);
             result.Add("Lightning Stormkin",ArchetypeColor.UR);
             result.Add("Loxodon Lifechanter",ArchetypeColor.W);
             result.Add("Marauding Raptor",ArchetypeColor.R);

@@ -37,7 +37,7 @@ namespace MTGOArchetypeParser.Cards.Modern.Updater.App
                 return;
             }
 
-            if (Directory.Exists(_mtgJsonFolder)) Directory.Delete(_mtgJsonFolder);
+            if (Directory.Exists(_mtgJsonFolder)) Directory.Delete(_mtgJsonFolder, true);
 
             if (!Directory.Exists(_mtgJsonFolder) || Directory.GetFiles(_mtgJsonFolder, "*.json").Length == 0)
             {
@@ -66,6 +66,7 @@ namespace MTGOArchetypeParser.Cards.Modern.Updater.App
                     else cardName = card.name;
 
                     if (addedCards.Contains(cardName)) continue;
+                    if (cardName.StartsWith("Leyline of")) continue;
 
                     bool isModernCard = false;
                     foreach (var legality in card.legalities)
@@ -100,7 +101,7 @@ namespace MTGOArchetypeParser.Cards.Modern.Updater.App
 
                     if (_forcedFiveColorLands.Any(c => c == cardName)) fixedColor = "WUBRG";
 
-                    if (String.IsNullOrEmpty(fixedColor)) 
+                    if (String.IsNullOrEmpty(fixedColor))
                         continue;
 
                     string dataRow = $"            result.Add(\"{cardName}\",ArchetypeColor.{fixedColor});";
