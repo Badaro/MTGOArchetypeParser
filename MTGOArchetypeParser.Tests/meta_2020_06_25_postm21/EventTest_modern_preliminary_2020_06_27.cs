@@ -135,8 +135,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-preliminary-2020-06-27",8),
                 new PostM21(),
                 ArchetypeColor.RG,
+                typeof(Zoo),
                 typeof(BushwhackerZoo),
-                null,
                 null
             );
         }

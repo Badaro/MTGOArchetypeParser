@@ -276,8 +276,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-league-2020-06-16",15),
                 new PostCompanionChange(),
                 ArchetypeColor.RG,
+                typeof(Zoo),
                 typeof(BushwhackerZoo),
-                null,
                 null
             );
         }
@@ -640,8 +640,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-league-2020-06-16",43),
                 new PostCompanionChange(),
                 ArchetypeColor.WRG,
+                typeof(Zoo),
                 typeof(BushwhackerZoo),
-                null,
                 null
             );
         }

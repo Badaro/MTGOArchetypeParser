@@ -120,8 +120,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-league-2020-09-29",3),
                 new PostZendikarRising(),
                 ArchetypeColor.WRG,
+                typeof(Zoo),
                 typeof(BushwhackerZoo),
-                null,
                 null
             );
         }
