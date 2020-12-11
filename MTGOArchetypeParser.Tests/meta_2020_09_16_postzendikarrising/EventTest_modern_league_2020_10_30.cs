@@ -57,7 +57,7 @@ using System.Text;
 #46 rubenelvas: Ad Nauseam (WUB)
 #47 Kaziku: Oops All Spells (WUBG)
 #48 Eyedea90: Izzet Restore Balance (UR)
-#49 amane0201: Valakut Field (UBG)
+#49 amane0201: Amulet Titan (UBG)
 #50 603Leb: Omnath Saheeli (WURG, Jegantha)
 #51 Qoiet: Rakdos Midrange (BR)
 #52 OnDutyMedic: Snoop Goblins (BR)
@@ -695,14 +695,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck49_amane0201_ValakutField_UBG()
+        public void Deck49_amane0201_AmuletTitan_UBG()
         {
             Test(
                 GetDeck("modern-league-2020-10-30",48),
                 new PostZendikarRising(),
                 ArchetypeColor.UBG,
-                typeof(ValakutField),
-                null,
+                typeof(PrimevalTitan),
+                typeof(AmuletTitan),
                 null
             );
         }

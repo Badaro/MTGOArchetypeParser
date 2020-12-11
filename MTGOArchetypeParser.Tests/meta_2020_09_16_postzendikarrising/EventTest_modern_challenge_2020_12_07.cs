@@ -24,7 +24,7 @@ using System.Text;
 #13 Do0mSwitch: WURG Control (WURG)
 #14 nsroller: Heliod Combo (WG)
 #15 TSPJendrek: Sultai Control (UBG)
-#16 yumad3988: Simic Control (UG)
+#16 yumad3988: Primeval Titan (UG)
 #17 SvenSveeterSven: Mardu Midrange (WBR)
 #18 ACG88: Gifts Storm (UR)
 #19 toondoslav: Obosh Aggro (R, Obosh)
@@ -243,13 +243,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_yumad3988_SimicControl_UG()
+        public void Deck16_yumad3988_PrimevalTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-07",15),
                 new PostZendikarRising(),
                 ArchetypeColor.UG,
-                typeof(GenericControl),
+                typeof(PrimevalTitan),
                 null,
                 null
             );

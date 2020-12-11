@@ -39,7 +39,7 @@ using System.Text;
 #28 Planet-Blade: Grixis Shadow (UBR)
 #29 ColoradoRalphy: Humans (WUBRG)
 #30 TheBigMoke: Sultai Control (UBG)
-#31 TheOneCoff: Valakut Field (UG)
+#31 TheOneCoff: Primeval Titan (UG)
 #32 nietzreznor: Obosh Aggro (R, Obosh)
 #33 Bangood: Thopter Urza (WUBR)
 #34 pumpkinwavy: Reclaimer Titan (WRG)
@@ -459,13 +459,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck31_TheOneCoff_ValakutField_UG()
+        public void Deck31_TheOneCoff_PrimevalTitan_UG()
         {
             Test(
                 GetDeck("modern-league-2020-09-04",30),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UG,
-                typeof(ValakutField),
+                typeof(PrimevalTitan),
                 null,
                 null
             );
