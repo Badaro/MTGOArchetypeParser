@@ -14,7 +14,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Naban, Dean of Iteration" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Sea Gate Stormcaller" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Snapcaster Mage" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Barrin, Tolarian Archmage" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Venser, Shaper Savant" } }
             };
         }
     }
