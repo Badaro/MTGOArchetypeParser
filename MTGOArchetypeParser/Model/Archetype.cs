@@ -87,6 +87,8 @@ namespace MTGOArchetypeParser.Model
                     return $"Jund";
                 case ArchetypeColor.WUBR: // Not-G
                     return $"WUBR";
+                case ArchetypeColor.WBRG: // Not-U
+                    return $"WBRG";
                 case ArchetypeColor.WUBG: // Not-R
                     return $"WUBG";
                 case ArchetypeColor.WURG: // Not-B

@@ -28,7 +28,7 @@ using System.Text;
 #17 visitor636: Azorius Control (WU)
 #18 bcs8995: Selenya Midrange (WG)
 #19 MrRaeb: UBRG Control (UBRG)
-#20 MadMaxErnst: Jund Midrange (BRG, Lurrus)
+#20 MadMaxErnst: Jund Shadow (BRG, Lurrus)
 #21 lineopen: Selective Oracle (WU)
 #22 Darshik: Naban Wizards (UR)
 #23 apriolo1: Amulet Titan (WRG)
@@ -311,13 +311,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_MadMaxErnst_JundMidrange_BRG_Lurrus()
+        public void Deck20_MadMaxErnst_JundShadow_BRG_Lurrus()
         {
             Test(
                 GetDeck("modern-league-2020-11-13",19),
                 new PostZendikarRising(),
                 ArchetypeColor.BRG,
-                typeof(GenericMidrange),
+                typeof(GenericShadow),
                 null,
                 ArchetypeCompanion.Lurrus
             );

@@ -22,7 +22,7 @@ using System.Text;
 #11 SoulStrong: Reclaimer Titan (WRG)
 #12 JustBurn420: Burn (RG)
 #13 BSK_hercules: Sultai Control (UBG)
-#14 MadMaxErnst: Jund Midrange (BRG, Lurrus)
+#14 MadMaxErnst: Jund Shadow (BRG, Lurrus)
 #15 _Shatun_: Gruul Midrange (RG)
 */
 
@@ -200,13 +200,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_MadMaxErnst_JundMidrange_BRG_Lurrus()
+        public void Deck14_MadMaxErnst_JundShadow_BRG_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-14",13),
                 new PostZendikarRising(),
                 ArchetypeColor.BRG,
-                typeof(GenericMidrange),
+                typeof(GenericShadow),
                 null,
                 ArchetypeCompanion.Lurrus
             );

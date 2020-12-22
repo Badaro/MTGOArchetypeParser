@@ -16,12 +16,14 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 "Tarmogoyf",
                 "Gurmag Angler",
                 "Thoughtseize",
+                "Inquisition of Kozilek",
                 "Temur Battle Rage",
                 "Street Wraith",
                 "Dismember",
                 "Mutagenic Growth",
                 "Traverse the Ulvenwald",
-                "Stubborn Denial"
+                "Stubborn Denial",
+                "Scourge of the Skyclaves"
             };
             RequiredCards = new string[]
             {
