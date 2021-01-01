@@ -27,7 +27,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 "Liliana of the Veil",
                 "Stoneforge Mystic",
                 "Brazen Borrower",
-                "Spell Queller"
+                "Spell Queller",
+                "Karn, the Great Creator"
             };
         }
     }

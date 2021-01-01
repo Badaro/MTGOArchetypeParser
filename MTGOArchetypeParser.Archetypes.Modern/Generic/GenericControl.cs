@@ -27,7 +27,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 "Jace, the Mind Sculptor",
                 "Ral, Izzet Viceroy",
                 "Snapcaster Mage",
-                "Shark Typhoon"
+                "Shark Typhoon",
+                "Jace, Vryn's Prodigy"
             };
         }
     }
