@@ -54,7 +54,7 @@ using System.Text;
 #43 kentaro_hokori: WURG Control (WURG)
 #44 zumekun19850204: Izzet Control (UR)
 #45 Skrug092: Heliod Combo (WG)
-#46 billsive: Kinnan Legends (URG)
+#46 billsive: Grinding Breach (URG)
 #47 AlphaBlade: Amulet Titan (G)
 #48 jupiterbrando: Jeskai Control (WUR)
 #49 MagicDevil666: U Tron (UR)
@@ -657,13 +657,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck46_billsive_KinnanLegends_URG()
+        public void Deck46_billsive_GrindingBreach_URG()
         {
             Test(
                 GetDeck("modern-league-2020-12-29",45),
                 new PostZendikarRising(),
                 ArchetypeColor.URG,
-                typeof(KinnanLegends),
+                typeof(GrindingBreach),
                 null,
                 null
             );
