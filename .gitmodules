@@ -1,3 +1,6 @@
 [submodule "MTGODecklistCache"]
 	path = MTGODecklistCache
 	url = https://github.com/Badaro/MTGODecklistCache.git
+[submodule "ManaTradersDecklistCache"]
+	path = ManaTradersDecklistCache
+	url = https://github.com/Badaro/ManaTradersDecklistCache.git

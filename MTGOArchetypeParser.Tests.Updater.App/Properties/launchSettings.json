@@ -2,7 +2,7 @@
   "profiles": {
     "MTGOArchetypeParser.Tests.SampleData.App": {
       "commandName": "Project",
-      "commandLineArgs": "\"$(SolutionDir)MTGODecklistCache\\Tournaments\" \"$(SolutionDir)MTGOArchetypeParser.Tests\""
+      "commandLineArgs": "\"$(SolutionDir)MTGOArchetypeParser.Tests\" \"$(SolutionDir)MTGODecklistCache\\Tournaments\" \"$(SolutionDir)ManaTradersDecklistCache\\Tournaments\" "
     }
   }
 }

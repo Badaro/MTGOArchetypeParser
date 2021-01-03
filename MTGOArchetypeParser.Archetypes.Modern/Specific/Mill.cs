@@ -12,8 +12,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Hedron Crab" ,"Ruin Crab", "Glimpse the Unthinkable", "Maddening Cacophony" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Archive Trap" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Visions of Beyond" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Archive Trap", "Mesmeric Orb" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Visions of Beyond","Into the Story" } }
             };
         }
     }

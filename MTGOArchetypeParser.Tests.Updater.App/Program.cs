@@ -22,18 +22,18 @@ namespace MTGOArchetypeParser.Tests.Updater
             {
                 if (args.Length < 2)
                 {
-                    Console.WriteLine("Usage MTGOArchetypeParser.Tests.Updater CACHE_FOLDER TEST_FOLDER");
+                    Console.WriteLine("Usage MTGOArchetypeParser.Tests.Updater TEST_FOLDER CACHE_FOLDER_1 [CACHE_FOLDER_2] [CACHE_FOLDER_3]");
                     return;
                 }
-                string cacheFolder = args[0];
-                string testFolder = args[1];
+                string testFolder = args[0];
+                string[] cacheFolders = args.Skip(1).ToArray();
 
                 bool allowUpdate = false;
                 if (args.Any(a => a == "allowupdate")) allowUpdate = true;
 
                 ArchetypeMeta[] metas = Metas.Modern.Loader.GetMetas();
 
-                Tournament[] tournaments = TournamentLoader.GetTournamentsByDate(cacheFolder, metas.First().StartDate.AddDays(1), n => n.Contains("Modern"));
+                Tournament[] tournaments = cacheFolders.SelectMany(c => TournamentLoader.GetTournamentsByDate(c, metas.First().StartDate.AddDays(1), n => n.Contains("Modern"))).ToArray();
 
                 foreach (Tournament tournament in tournaments)
                 {

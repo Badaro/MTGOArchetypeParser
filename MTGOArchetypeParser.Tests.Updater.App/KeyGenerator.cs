@@ -15,7 +15,7 @@ namespace MTGOArchetypeParser.Tests.Updater
             string metaID = $"meta_{meta.StartDate.ToString("yyyy_MM_dd")}_{metaName.ToLower()}";
 
             // Destination for sample data
-            string leagueID = Path.GetFileName(tournament.Information.Uri.ToString()).Replace("-", "_");
+            string leagueID = Path.GetFileNameWithoutExtension(tournament.File).Replace("-","_");
 
             return new TournamentKeys()
             {

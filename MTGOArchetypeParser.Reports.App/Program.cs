@@ -19,10 +19,10 @@ namespace MTGOArchetypeParser.Reports.App
             {
                 if (args.Length == 0)
                 {
-                    Console.WriteLine("Usage MTGOArchetypeParser.Reports.App.exe CACHE_FOLDER");
+                    Console.WriteLine("Usage MTGOArchetypeParser.Reports.App.exe CACHE_FOLDER_1 [CACHE_FOLDER_2] [CACHE_FOLDER_3]");
                     return;
                 }
-                string cacheFolder = args[0];
+                string[] cacheFolders = args.Where(a => a.ToLowerInvariant()!= "allmetas" && a.ToLowerInvariant()!= "includeleagues").ToArray();
 
                 if (Directory.Exists(_outputFolder)) Directory.Delete(_outputFolder, true);
                 Directory.CreateDirectory(_outputFolder);
@@ -34,7 +34,7 @@ namespace MTGOArchetypeParser.Reports.App
                     MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().First().StartDate :
                     MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().Last(m => m.StartDate < DateTime.UtcNow).StartDate;
 
-                DataRecord[] records = Loader.GetRecords(cacheFolder, startDate.AddDays(1), includeLeagues);
+                DataRecord[] records = cacheFolders.SelectMany(c => Loader.GetRecords(c, startDate.AddDays(1), includeLeagues)).ToArray();
 
                 string date = $"{records.Max(t => t.Date).ToString("yyyy_MM_dd")}";
                 GenerateDump(records, $"mtgo_data_{date}");

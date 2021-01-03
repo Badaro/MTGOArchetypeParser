@@ -14,7 +14,11 @@ namespace MTGOArchetypeParser.Tests
 {
     public class EventTest
     {
-        string cacheFolder = new DirectoryInfo(@"..\..\..\..\MTGODecklistCache\Tournaments").FullName;
+        string[] cacheFolders = new string[]
+        {
+            new DirectoryInfo(@"..\..\..\..\MTGODecklistCache\Tournaments").FullName,
+            new DirectoryInfo(@"..\..\..\..\ManaTradersDecklistCache\Tournaments").FullName,
+        };
         static Dictionary<string, Tournament> tournamentCache = new Dictionary<string, Tournament>();
         static Dictionary<string, ArchetypeColor> _lands = MTGOArchetypeParser.Cards.Modern.Loader.GetLands();
         static Dictionary<string, ArchetypeColor> _nonlands = MTGOArchetypeParser.Cards.Modern.Loader.GetNonLands();
@@ -24,8 +28,18 @@ namespace MTGOArchetypeParser.Tests
         {
             if (!tournamentCache.ContainsKey(tournamentName))
             {
-                tournamentCache.Add(tournamentName, TournamentLoader.GetTournamentByName(cacheFolder, tournamentName));
+                foreach (string cacheFolder in cacheFolders)
+                {
+                    try
+                    {
+                        tournamentCache.Add(tournamentName, TournamentLoader.GetTournamentByName(cacheFolder, tournamentName));
+                    }
+                    catch
+                    {
+                    }
+                }
             }
+            if (!tournamentCache.ContainsKey(tournamentName)) throw new Exception($"Could not locate tournament {tournamentName}");
             return tournamentCache[tournamentName].Decks[deckIndex];
         }
 
