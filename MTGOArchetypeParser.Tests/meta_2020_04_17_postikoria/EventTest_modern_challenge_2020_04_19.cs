@@ -93,7 +93,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-challenge-2020-04-19",3),
                 new PostIkoria(),
                 ArchetypeColor.WURG,
-                typeof(KikiChord),
+                typeof(GenericBlink),
                 null,
                 ArchetypeCompanion.Yorion
             );
