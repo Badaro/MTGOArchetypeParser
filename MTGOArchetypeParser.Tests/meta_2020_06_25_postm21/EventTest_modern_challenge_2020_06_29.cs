@@ -15,7 +15,7 @@ using System.Text;
 #04 kbr3: Scapeshift (URG)
 #05 Lavaridge: Sultai Control (UBG)
 #06 OYU: Infect (UG)
-#07 RogerSteady: Grixis Delver (UBR)
+#07 RogerSteady: Delver (UBR)
 #08 E-GirlUWU: Amulet Titan (URG)
 #09 v3sp_tv: Elementals (WUBRG)
 #10 distanthamster: Snoop Goblins (BR)
@@ -126,14 +126,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_RogerSteady_GrixisDelver_UBR()
+        public void Deck07_RogerSteady_Delver_UBR()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-29",6),
                 new PostM21(),
                 ArchetypeColor.UBR,
                 typeof(Delver),
-                typeof(GrixisDelver),
+                null,
                 null
             );
         }
@@ -393,7 +393,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(GTron),
-                typeof(KGCTron),
+                null,
                 null
             );
         }

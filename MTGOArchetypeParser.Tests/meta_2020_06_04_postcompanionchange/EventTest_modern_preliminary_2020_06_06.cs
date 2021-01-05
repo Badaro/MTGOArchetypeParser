@@ -169,7 +169,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 new PostCompanionChange(),
                 ArchetypeColor.G,
                 typeof(GTron),
-                typeof(KGCTron),
+                null,
                 null
             );
         }
@@ -234,7 +234,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 new PostCompanionChange(),
                 ArchetypeColor.G,
                 typeof(GTron),
-                typeof(GolosTron),
+                null,
                 ArchetypeCompanion.Jegantha
             );
         }

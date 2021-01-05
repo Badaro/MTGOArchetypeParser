@@ -21,7 +21,6 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             Variants = new ArchetypeVariant[]
             {
                 new AmuletTitan(),
-                new KGCAmuletTitan(),
                 new TitanShift(),
                 new ReclaimerTitan()
             };
@@ -36,20 +35,6 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Amulet of Vigor" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Simic Growth Chamber", "Selesnya Sanctuary" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Karn, the Great Creator" } }
-            };
-        }
-    }
-
-    public class KGCAmuletTitan : ArchetypeVariant
-    {
-        public KGCAmuletTitan()
-        {
-            Conditions = new ArchetypeCondition[]
-            {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Amulet of Vigor" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Simic Growth Chamber", "Selesnya Sanctuary" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Karn, the Great Creator" } }
             };
         }
     }

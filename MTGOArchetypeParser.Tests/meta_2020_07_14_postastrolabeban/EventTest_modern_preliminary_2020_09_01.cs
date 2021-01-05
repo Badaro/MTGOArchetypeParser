@@ -93,7 +93,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(GTron),
-                typeof(KGCTron),
+                null,
                 null
             );
         }
@@ -132,7 +132,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 new PostAstrolabeBan(),
                 ArchetypeColor.UG,
                 typeof(PrimevalTitan),
-                typeof(KGCAmuletTitan),
+                typeof(AmuletTitan),
                 null
             );
         }

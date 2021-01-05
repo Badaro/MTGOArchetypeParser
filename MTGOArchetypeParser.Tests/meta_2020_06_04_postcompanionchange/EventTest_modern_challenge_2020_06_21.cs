@@ -419,7 +419,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
                 typeof(Spirits),
-                typeof(BantSpirits),
+                null,
                 null
             );
         }

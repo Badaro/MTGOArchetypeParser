@@ -105,7 +105,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 new PostZendikarRising(),
                 ArchetypeColor.WUG,
                 typeof(Spirits),
-                typeof(BantSpirits),
+                null,
                 null
             );
         }
@@ -209,7 +209,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(GTron),
-                typeof(KGCTron),
+                null,
                 null
             );
         }

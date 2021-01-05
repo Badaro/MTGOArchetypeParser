@@ -52,7 +52,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 new PostCompanionChange(),
                 ArchetypeColor.G,
                 typeof(GTron),
-                typeof(KGCTron),
+                null,
                 null
             );
         }
@@ -129,7 +129,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-25",7),
                 new PostCompanionChange(),
                 ArchetypeColor.UB,
-                typeof(NarsetsUndoing),
+                typeof(GenericControl),
                 null,
                 null
             );

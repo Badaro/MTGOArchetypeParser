@@ -198,7 +198,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 new PostCompanionChange(),
                 ArchetypeColor.UR,
                 typeof(TakingTurns),
-                typeof(FiresTurns),
+                null,
                 null
             );
         }

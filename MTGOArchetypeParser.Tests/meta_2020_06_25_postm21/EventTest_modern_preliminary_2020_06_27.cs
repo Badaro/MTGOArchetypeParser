@@ -32,7 +32,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 new PostM21(),
                 ArchetypeColor.UG,
                 typeof(PrimevalTitan),
-                typeof(KGCAmuletTitan),
+                typeof(AmuletTitan),
                 null
             );
         }
@@ -45,7 +45,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(GTron),
-                typeof(KGCTron),
+                null,
                 null
             );
         }
@@ -71,7 +71,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(GTron),
-                typeof(KGCTron),
+                null,
                 null
             );
         }
@@ -135,8 +135,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-preliminary-2020-06-27",8),
                 new PostM21(),
                 ArchetypeColor.RG,
-                typeof(Zoo),
                 typeof(BushwhackerZoo),
+                null,
                 null
             );
         }

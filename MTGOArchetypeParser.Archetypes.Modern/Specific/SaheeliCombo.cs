@@ -18,33 +18,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             };
             Variants = new ArchetypeVariant[]
             {
-                new SaheeliToLight(),
-                new SnowSaheeli(),
                 new OmnathSaheeli()
-            };
-        }
-    }
-
-    public class SaheeliToLight : ArchetypeVariant
-    {
-        public SaheeliToLight()
-        {
-            Conditions = new ArchetypeCondition[]
-            {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Oath of Nissa" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Bring to Light" } }
-            };
-        }
-    }
-
-    public class SnowSaheeli : ArchetypeVariant
-    {
-        public SnowSaheeli()
-        {
-            Conditions = new ArchetypeCondition[]
-            {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Ice-Fang Coatl" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Omnath, Locus of Creation" } }
             };
         }
     }

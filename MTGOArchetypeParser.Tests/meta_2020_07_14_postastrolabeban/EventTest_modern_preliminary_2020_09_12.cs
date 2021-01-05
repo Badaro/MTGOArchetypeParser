@@ -84,7 +84,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 new PostAstrolabeBan(),
                 ArchetypeColor.RG,
                 typeof(PrimevalTitan),
-                typeof(KGCAmuletTitan),
+                typeof(AmuletTitan),
                 null
             );
         }

@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 new PostZendikarRising(),
                 ArchetypeColor.URG,
                 typeof(PrimevalTitan),
-                typeof(KGCAmuletTitan),
+                typeof(AmuletTitan),
                 null
             );
         }

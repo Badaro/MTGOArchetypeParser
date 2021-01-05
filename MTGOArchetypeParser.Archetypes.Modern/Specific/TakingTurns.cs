@@ -14,21 +14,6 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Time Warp", "Temporal Mastery", "Savor the Moment", "Exhaustion", "Walk the Aeons",  } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Cryptic Command" , "Remand"} },
             };
-            Variants = new ArchetypeVariant[]
-            {
-                new FiresTurns()
-            };
-        }
-    }
-
-    public class FiresTurns : ArchetypeVariant
-    {
-        public FiresTurns()
-        {
-            Conditions = new ArchetypeCondition[]
-            {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Fires of Invention" } }
-            };
         }
     }
 }

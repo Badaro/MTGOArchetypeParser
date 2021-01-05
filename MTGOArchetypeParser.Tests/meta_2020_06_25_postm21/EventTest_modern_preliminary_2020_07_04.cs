@@ -124,7 +124,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(GTron),
-                typeof(KGCTron),
+                null,
                 null
             );
         }
@@ -149,8 +149,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-preliminary-2020-07-04",9),
                 new PostM21(),
                 ArchetypeColor.RG,
-                typeof(Zoo),
                 typeof(BushwhackerZoo),
+                null,
                 null
             );
         }

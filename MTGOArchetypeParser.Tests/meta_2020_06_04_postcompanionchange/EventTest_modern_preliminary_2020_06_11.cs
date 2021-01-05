@@ -37,7 +37,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 new PostCompanionChange(),
                 ArchetypeColor.G,
                 typeof(PrimevalTitan),
-                typeof(KGCAmuletTitan),
+                typeof(AmuletTitan),
                 null
             );
         }

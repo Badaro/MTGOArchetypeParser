@@ -16,22 +16,6 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Spell Queller" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Mausoleum Wanderer" } }
             };
-            Variants = new ArchetypeVariant[]
-            {
-                new BantSpirits()
-            };
-        }
-    }
-
-    public class BantSpirits : ArchetypeVariant
-    {
-        public BantSpirits()
-        {
-            Conditions = new ArchetypeCondition[]
-            {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Collected Company" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Noble Hierarch" } }
-            };
         }
     }
 }

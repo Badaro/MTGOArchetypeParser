@@ -223,7 +223,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-09-20",13),
                 new PostZendikarRising(),
                 ArchetypeColor.WBG,
-                typeof(AbzanCompany),
+                typeof(GenericTaxes),
                 null,
                 null
             );
