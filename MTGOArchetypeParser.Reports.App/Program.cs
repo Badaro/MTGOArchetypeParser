@@ -28,13 +28,12 @@ namespace MTGOArchetypeParser.Reports.App
                 Directory.CreateDirectory(_outputFolder);
 
                 bool allMetas = args.Any(a => a.ToLower() == "allmetas");
-                bool includeLeagues = args.Any(a => a.ToLower() == "includeleagues");
 
                 DateTime startDate = allMetas ?
                     MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().First().StartDate :
                     MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().Last(m => m.StartDate < DateTime.UtcNow).StartDate;
 
-                DataRecord[] records = cacheFolders.SelectMany(c => Loader.GetRecords(c, startDate.AddDays(1), includeLeagues)).ToArray();
+                DataRecord[] records = cacheFolders.SelectMany(c => Loader.GetRecords(c, startDate.AddDays(1))).ToArray();
 
                 string date = $"{records.Max(t => t.Date).ToString("yyyy_MM_dd")}";
                 GenerateDump(records, $"mtgo_data_{date}");

@@ -33,7 +33,7 @@ namespace MTGOArchetypeParser.Tests.Updater
 
                 ArchetypeMeta[] metas = Metas.Modern.Loader.GetMetas();
 
-                Tournament[] tournaments = cacheFolders.SelectMany(c => TournamentLoader.GetTournamentsByDate(c, metas.First().StartDate.AddDays(1), n => n.Contains("Modern"))).ToArray();
+                Tournament[] tournaments = cacheFolders.SelectMany(c => TournamentLoader.GetTournamentsByDate(c, metas.First().StartDate.AddDays(1), n => n.Contains("Modern") && !n.Contains("League"))).ToArray();
 
                 foreach (Tournament tournament in tournaments)
                 {

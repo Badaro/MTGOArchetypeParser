@@ -13,13 +13,9 @@ namespace MTGOArchetypeParser.Reports.App
         static Dictionary<string, ArchetypeColor> _nonlands = MTGOArchetypeParser.Cards.Modern.Loader.GetNonLands();
         static Archetype[] _archetypes = MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes();
 
-        public static DataRecord[] GetRecords(string cacheFolder, DateTime startDate, bool includeLeagues)
+        public static DataRecord[] GetRecords(string cacheFolder, DateTime startDate)
         {
-            Func<string, bool> excludeLeaguesFilter = n => n.Contains("Modern") && !n.Contains("League");
-            Func<string, bool> includeLeaguesFilter = n => n.Contains("Modern");
-            Func<string, bool> filter = includeLeagues ? includeLeaguesFilter : excludeLeaguesFilter;
-
-            Tournament[] tournaments = TournamentLoader.GetTournamentsByDate(cacheFolder, startDate, filter).ToArray();
+            Tournament[] tournaments = TournamentLoader.GetTournamentsByDate(cacheFolder, startDate, n => n.Contains("Modern") && !n.Contains("League")).ToArray();
 
             List<DataRecord> records = new List<DataRecord>();
 

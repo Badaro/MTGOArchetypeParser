@@ -211,7 +211,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 new PostM21(),
                 ArchetypeColor.BG,
                 typeof(Elves),
-                typeof(GolgariElves),
+                null,
                 null
             );
         }

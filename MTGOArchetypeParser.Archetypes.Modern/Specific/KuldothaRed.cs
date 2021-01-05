@@ -7,7 +7,7 @@ namespace MTGOArchetypeParser.Archetypes.Modern
 {
     public class KuldothaRed : ArchetypeSpecific
     {
-        public KuldothaRed() 
+        public KuldothaRed()
         {
             Conditions = new ArchetypeCondition[]
             {

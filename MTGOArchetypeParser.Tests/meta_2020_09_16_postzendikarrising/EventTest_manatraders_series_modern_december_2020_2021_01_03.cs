@@ -140,7 +140,7 @@ using System.Text;
 #129 jenara19: KGC Tron (G)
 #130 claydawson: Izzet Prowess (UR)
 #131 indianpancake: Sultai Control (UBG)
-#132 Broccoliasaurus : Rakdos Midrange (BR)
+#132 Broccoliasaurus: Rakdos Midrange (BR)
 #133 bolov0: Mardu Midrange (WBR)
 #134 HenryAmbrogius: Gifts Storm (UR)
 #135 Draconic1: Reclaimer Titan (WG)
