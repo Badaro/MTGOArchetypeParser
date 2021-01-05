@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 MissTrigger: Merfolk (WU, Lurrus)
 #02 kthanakit26: Burn (WR)
-#03 StrawberryPi: Incinerator Burn (WR)
+#03 StrawberryPi: Burn (WR)
 #04 yuseimax: Soulflayer (BRG)
 #05 Kurusu: Kiki Chord (WRG, Yorion)
 #06 Laplasjan: Devoted (WG, Lurrus)
@@ -74,7 +74,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_StrawberryPi_IncineratorBurn_WR()
+        public void Deck03_StrawberryPi_Burn_WR()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-10",2),

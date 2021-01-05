@@ -296,7 +296,7 @@ using System.Text;
 #285 ArchaeusDota: Uroza (WUBRG)
 #286 Drockafeller: WURG Control (WURG)
 #287 Tw33Ty: Shadow Prowess (BR, Lurrus)
-#288 ziofrancone: Ascendancy Breach (WURG, Jegantha)
+#288 ziofrancone: Ascendancy Combo (WURG, Jegantha)
 #289 Noix11: Humans (WUBRG)
 #290 TheJigIsAlwaysUp: Heliod Combo (WG)
 #291 Mateusf34: Eldrazi Tron (C)
@@ -318,7 +318,7 @@ using System.Text;
 #307 cypriankrzysztof: Heliod Combo (WG)
 #308 abisbocci: Grixis Shadow (UBR)
 #309 Manakin: Hardened Scales (RG)
-#310 Nilsfit: Ascendancy Breach (WUR, Jegantha)
+#310 Nilsfit: Ascendancy Combo (WUR, Jegantha)
 #311 NGFC_Mark: Oops All Spells (WUBG)
 #312 ecobaronen: Titan Shift (RG)
 */
@@ -4059,7 +4059,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck288_ziofrancone_AscendancyBreach_WURG_Jegantha()
+        public void Deck288_ziofrancone_AscendancyCombo_WURG_Jegantha()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",287),
@@ -4345,7 +4345,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck310_Nilsfit_AscendancyBreach_WUR_Jegantha()
+        public void Deck310_Nilsfit_AscendancyCombo_WUR_Jegantha()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",309),

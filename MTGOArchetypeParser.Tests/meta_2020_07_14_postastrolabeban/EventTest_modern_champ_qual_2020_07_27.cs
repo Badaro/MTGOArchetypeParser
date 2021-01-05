@@ -29,7 +29,7 @@ using System.Text;
 #18 TheJigIsAlwaysup: Gruul Midrange (RG)
 #19 123Pwned: Izzet Prowess (UR)
 #20 Voltzwagon: Gruul Midrange (RG)
-#21 ponchonater55: Incinerator Burn (WR)
+#21 ponchonater55: Burn (WR)
 #22 staples87: Eldrazi Tron (C)
 #23 Mad-Ramon: Temur Control (URG)
 #24 wambocombo2020: Mardu Prowess (WBR, Lurrus)
@@ -308,7 +308,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck21_ponchonater55_IncineratorBurn_WR()
+        public void Deck21_ponchonater55_Burn_WR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",20),

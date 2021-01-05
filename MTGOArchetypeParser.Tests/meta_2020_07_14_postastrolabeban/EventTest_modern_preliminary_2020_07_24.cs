@@ -20,7 +20,7 @@ using System.Text;
 #09 Cherryxman: Scapeshift (URG)
 #10 Lukas261997: Azorius Control (WU)
 #11 JustBurn420: Slivers (WUBRG)
-#12 Healer: Incinerator Burn (R)
+#12 Healer: Burn (R)
 #13 Toastxp: Sultai Shadow (UBG)
 #14 Hyeri0418: Dredge (BRG)
 #15 sff_mtg: Green Tron (G)
@@ -177,7 +177,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_Healer_IncineratorBurn_R()
+        public void Deck12_Healer_Burn_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",11),

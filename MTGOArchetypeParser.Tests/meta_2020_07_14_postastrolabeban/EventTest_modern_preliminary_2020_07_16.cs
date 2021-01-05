@@ -13,7 +13,7 @@ using System.Text;
 #02 no_lyfe: Mono Red Prowess (R)
 #03 GR_DONKIN: Ad Nauseam (WUB)
 #04 Theo_Jung: Jund Midrange (BRG)
-#05 rastaf: Incinerator Burn (R)
+#05 rastaf: Burn (R)
 #06 Gigy: Gruul Midrange (RG)
 #07 Icteridae: Eldrazi Tron (C)
 #08 wambocombo2020: Gruul Midrange (RG)
@@ -22,7 +22,7 @@ using System.Text;
 #11 MATTHEWFOULKES: Goblins (BR)
 #12 1plus1equals3: Devoted (WG, Lurrus)
 #13 MlckyB: Bogles (WG)
-#14 Shazzam: Incinerator Burn (WR)
+#14 Shazzam: Burn (WR)
 #15 Finalnub: Neobrand (UG)
 #16 pokerswizard: Green Tron (G)
 #17 dsnavely13: Gifts Storm (UR)
@@ -95,7 +95,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_rastaf_IncineratorBurn_R()
+        public void Deck05_rastaf_Burn_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-16",4),
@@ -212,7 +212,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_Shazzam_IncineratorBurn_WR()
+        public void Deck14_Shazzam_Burn_WR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-16",13),

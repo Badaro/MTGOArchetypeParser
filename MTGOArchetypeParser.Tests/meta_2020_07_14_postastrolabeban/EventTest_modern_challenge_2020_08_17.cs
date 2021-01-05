@@ -28,7 +28,7 @@ using System.Text;
 #17 fried-liver-attack: Eldrazi Tron (C)
 #18 Gigy: Gruul Midrange (RG)
 #19 musasabi: Amulet Titan (UG)
-#20 _Logic_: Ascendancy Breach (WURG)
+#20 _Logic_: Ascendancy Combo (WURG)
 #21 __matsugan: Neobrand (UG)
 #22 PhantasmalBear: Azorius Midrange (WU)
 #23 drVendigo: Gruul Midrange (RG)
@@ -295,7 +295,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_Logic_AscendancyBreach_WURG()
+        public void Deck20_Logic_AscendancyCombo_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",19),

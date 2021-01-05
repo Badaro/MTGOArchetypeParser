@@ -24,7 +24,7 @@ using System.Text;
 #13 misterfister: Polymorph (WURG)
 #14 JV_7777: WURG Control (WURG)
 #15 Biednarccio: Hammer Time (W, Lurrus)
-#16 Xenowan: Ascendancy Breach (WUR, Jegantha)
+#16 Xenowan: Ascendancy Combo (WUR, Jegantha)
 #17 Lord_of_Puntlantis: Izzet Control (UR)
 #18 conormc530: Sultai Control (UBG)
 #19 CrusherBotBG: Hammer Time (W, Lurrus)
@@ -230,7 +230,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_Xenowan_AscendancyBreach_WUR_Jegantha()
+        public void Deck16_Xenowan_AscendancyCombo_WUR_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",15),

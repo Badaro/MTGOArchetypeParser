@@ -30,7 +30,7 @@ using System.Text;
 #19 oracle888: Shadow Prowess (BR, Lurrus)
 #20 PietroSas: Devoted (WG, Lurrus)
 #21 Larry11: Izzet Prowess (UR)
-#22 SpiderSpace: Inverter (UB)
+#22 SpiderSpace: Inverter Combo (UB)
 #23 mario7389: Burn (WR)
 #24 SweetIto: Heliod Combo (WG)
 #25 MastaHorus: Electro End (UR)
@@ -321,7 +321,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck22_SpiderSpace_Inverter_UB()
+        public void Deck22_SpiderSpace_InverterCombo_UB()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-25",21),

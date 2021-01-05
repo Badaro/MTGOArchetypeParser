@@ -24,7 +24,7 @@ using System.Text;
 #13 Fabrice_K: Eldrazi Tron (C)
 #14 kefka27: Eldrazi Tron (C)
 #15 albert62: Jund Midrange (BRG)
-#16 MissTrigger: Incinerator Burn (R)
+#16 MissTrigger: Burn (R)
 #17 jvidarte: Burn (WR)
 #18 nahuel10: Bant Control (WUG)
 #19 Tiemuuu: Izzet Control (UR)
@@ -243,7 +243,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck16_MissTrigger_IncineratorBurn_R()
+        public void Deck16_MissTrigger_Burn_R()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-12",15),

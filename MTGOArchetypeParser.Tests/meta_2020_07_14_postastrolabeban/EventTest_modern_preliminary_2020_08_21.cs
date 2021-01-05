@@ -14,7 +14,7 @@ using System.Text;
 #03 juzam_gin: Dredge (BRG)
 #04 Toastxp: Azorius Control (WU)
 #05 Gigglesworth: Bant Midrange (WUG)
-#06 Jositoshekel: Incinerator Burn (WR)
+#06 Jositoshekel: Burn (WR)
 #07 Theo_Jung: Rakdos Prowess (BR, Lurrus)
 #08 MTG-Maestro: Gruul Midrange (RG)
 #09 trader08111: Mardu Prowess (WBR, Lurrus)
@@ -100,7 +100,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_Jositoshekel_IncineratorBurn_WR()
+        public void Deck06_Jositoshekel_Burn_WR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-21",5),

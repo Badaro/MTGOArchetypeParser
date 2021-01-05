@@ -18,7 +18,7 @@ using System.Text;
 #07 TheSouthDakota: Dredge (BRG)
 #08 Lord_Beerus: Burn (WR)
 #09 NorrathDecay: Burn (WR)
-#10 Xenowan: Inverter (UB)
+#10 Xenowan: Inverter Combo (UB)
 #11 signblindman: Gruul Midrange (RG)
 #12 Walka: Bant Control (WUG)
 #13 Diatomic: Sultai Control (UBG)
@@ -165,7 +165,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck10_Xenowan_Inverter_UB()
+        public void Deck10_Xenowan_InverterCombo_UB()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-15",9),

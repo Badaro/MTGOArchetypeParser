@@ -12,7 +12,7 @@ using System.Text;
 #01 Lavaridge: Sultai Control (UBG)
 #02 sfitz: Thopter Urza (UBR)
 #03 Larry11: Gruul Midrange (RG)
-#04 Polikasoll: Incinerator Burn (R)
+#04 Polikasoll: Burn (R)
 #05 ZYURYO: Jund Midrange (BRG)
 #06 Lord_Beerus: Burn (WR)
 #07 sff_mtg: Green Tron (G)
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck04_Polikasoll_IncineratorBurn_R()
+        public void Deck04_Polikasoll_Burn_R()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",3),

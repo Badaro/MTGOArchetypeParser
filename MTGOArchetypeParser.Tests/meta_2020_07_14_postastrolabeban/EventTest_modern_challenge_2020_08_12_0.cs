@@ -25,7 +25,7 @@ using System.Text;
 #14 RCMerriam: Sultai Shadow (UBG)
 #15 Oscar_Franco: Jund Midrange (BRG)
 #16 sultai4lyfe: Dimir Control (UB)
-#17 MissTrigger: Incinerator Burn (R)
+#17 MissTrigger: Burn (R)
 #18 patheus_84: Ad Nauseam (WUB)
 #19 JV_7777: Eldrazi Tron (C)
 #20 CanadianNinja: Niv To Light (WUBRG, Yorion)
@@ -256,7 +256,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_MissTrigger_IncineratorBurn_R()
+        public void Deck17_MissTrigger_Burn_R()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-12-0",16),
