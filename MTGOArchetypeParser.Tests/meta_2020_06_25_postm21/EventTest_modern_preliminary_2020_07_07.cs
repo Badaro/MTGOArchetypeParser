@@ -85,7 +85,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-preliminary-2020-07-07",4),
                 new PostM21(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
@@ -112,7 +112,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 new PostM21(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
-                typeof(SnoopGoblins),
+                null,
                 null
             );
         }
@@ -137,7 +137,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-preliminary-2020-07-07",8),
                 new PostM21(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );

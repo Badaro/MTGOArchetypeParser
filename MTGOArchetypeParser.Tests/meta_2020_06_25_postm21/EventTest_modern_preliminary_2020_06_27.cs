@@ -44,7 +44,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-preliminary-2020-06-27",1),
                 new PostM21(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -70,7 +70,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-preliminary-2020-06-27",3),
                 new PostM21(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );

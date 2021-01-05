@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class GreenStompy : ArchetypeSpecific
+    public class Stompy : ArchetypeSpecific
     {
-        public GreenStompy()
+        public Stompy()
         {
             Conditions = new ArchetypeCondition[]
             {

@@ -77,7 +77,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-07-17",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -90,7 +90,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-07-17",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
@@ -156,7 +156,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 new PostAstrolabeBan(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
-                typeof(SnoopGoblins),
+                null,
                 null
             );
         }
@@ -194,7 +194,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-07-17",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -273,7 +273,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 new PostAstrolabeBan(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
-                typeof(SnoopGoblins),
+                null,
                 null
             );
         }
@@ -312,7 +312,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 new PostAstrolabeBan(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
-                typeof(SnoopGoblins),
+                null,
                 null
             );
         }
@@ -389,7 +389,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-07-17",26),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );

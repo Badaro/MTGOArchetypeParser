@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class BorosLandDestruction : ArchetypeSpecific
+    public class LandDestruction : ArchetypeSpecific
     {
-        public BorosLandDestruction()
+        public LandDestruction()
         {
             Conditions = new ArchetypeCondition[]
             {

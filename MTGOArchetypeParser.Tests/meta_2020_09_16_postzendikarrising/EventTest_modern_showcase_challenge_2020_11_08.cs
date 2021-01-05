@@ -301,8 +301,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-showcase-challenge-2020-11-08",19),
                 new PostZendikarRising(),
                 ArchetypeColor.UR,
-                typeof(IzzetFreeSpells),
-                typeof(IzzetRestoreBalance),
+                typeof(FreeSpells),
+                typeof(ElectroBalance),
                 null
             );
         }

@@ -40,7 +40,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-11-05",0),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -53,7 +53,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-11-05",1),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
@@ -92,7 +92,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-11-05",4),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -183,8 +183,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-11-05",11),
                 new PostZendikarRising(),
                 ArchetypeColor.UR,
-                typeof(IzzetFreeSpells),
-                typeof(IzzetRestoreBalance),
+                typeof(FreeSpells),
+                typeof(ElectroBalance),
                 null
             );
         }
@@ -209,7 +209,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-11-05",13),
                 new PostZendikarRising(),
                 ArchetypeColor.WR,
-                typeof(BorosLandDestruction),
+                typeof(LandDestruction),
                 null,
                 null
             );

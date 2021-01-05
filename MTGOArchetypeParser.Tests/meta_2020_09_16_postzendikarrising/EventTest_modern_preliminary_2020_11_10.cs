@@ -166,8 +166,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-11-10",10),
                 new PostZendikarRising(),
                 ArchetypeColor.UR,
-                typeof(IzzetFreeSpells),
-                typeof(IzzetLivingEnd),
+                typeof(FreeSpells),
+                typeof(ElectroEnd),
                 null
             );
         }

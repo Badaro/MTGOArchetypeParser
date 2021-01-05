@@ -249,7 +249,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-30",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.U,
-                typeof(UTron),
+                typeof(BlueTron),
                 null,
                 null
             );
@@ -301,7 +301,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-30",19),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -314,8 +314,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-30",20),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(IzzetFreeSpells),
-                typeof(IzzetRestoreBalance),
+                typeof(FreeSpells),
+                typeof(ElectroBalance),
                 null
             );
         }
@@ -340,7 +340,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-30",22),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );

@@ -35,7 +35,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-18",0),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-18",1),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
@@ -139,7 +139,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-18",8),
                 new PostCompanionChange(),
                 ArchetypeColor.WG,
-                typeof(SelesnyaEldrazi),
+                typeof(StoneforgeEldrazi),
                 null,
                 ArchetypeCompanion.Jegantha
             );

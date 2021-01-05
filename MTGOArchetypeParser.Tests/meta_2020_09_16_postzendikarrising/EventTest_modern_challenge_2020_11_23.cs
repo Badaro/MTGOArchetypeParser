@@ -184,8 +184,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-23",10),
                 new PostZendikarRising(),
                 ArchetypeColor.UR,
-                typeof(IzzetFreeSpells),
-                typeof(IzzetLivingEnd),
+                typeof(FreeSpells),
+                typeof(ElectroEnd),
                 null
             );
         }
@@ -197,7 +197,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-23",11),
                 new PostZendikarRising(),
                 ArchetypeColor.UR,
-                typeof(UTron),
+                typeof(BlueTron),
                 null,
                 null
             );
@@ -210,7 +210,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-23",12),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
@@ -301,7 +301,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-23",19),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );

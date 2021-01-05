@@ -133,7 +133,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 new PostAstrolabeBan(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
-                typeof(SnoopGoblins),
+                null,
                 null
             );
         }

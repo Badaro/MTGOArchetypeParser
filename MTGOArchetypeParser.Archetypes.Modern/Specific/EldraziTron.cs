@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class ETron : ArchetypeSpecific
+    public class EldraziTron : ArchetypeSpecific
     {
-        public ETron()
+        public EldraziTron()
         {
             Conditions = new ArchetypeCondition[]
             {

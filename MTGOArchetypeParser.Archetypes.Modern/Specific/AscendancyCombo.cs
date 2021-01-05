@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class JeskaiAscendancy : ArchetypeSpecific
+    public class AscendancyCombo : ArchetypeSpecific
     {
-        public JeskaiAscendancy()
+        public AscendancyCombo()
         {
             Conditions = new ArchetypeCondition[]
             {
@@ -16,14 +16,14 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             };
             Variants = new ArchetypeVariant[]
             {
-                new JeskaiBreach()
+                new AscendancyBreach()
             };
         }
     }
 
-    public class JeskaiBreach : ArchetypeVariant
+    public class AscendancyBreach : ArchetypeVariant
     {
-        public JeskaiBreach()
+        public AscendancyBreach()
         {
             Conditions = new ArchetypeCondition[]
             {

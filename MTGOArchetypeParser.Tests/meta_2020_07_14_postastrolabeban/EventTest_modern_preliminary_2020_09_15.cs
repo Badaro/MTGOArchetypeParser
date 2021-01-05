@@ -114,7 +114,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-09-15",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -140,7 +140,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-09-15",8),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WURG,
-                typeof(JeskaiAscendancy),
+                typeof(AscendancyCombo),
                 null,
                 ArchetypeCompanion.Jegantha
             );
@@ -205,7 +205,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-09-15",13),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );

@@ -347,7 +347,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",1),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -438,8 +438,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",8),
                 new PostZendikarRising(),
                 ArchetypeColor.UR,
-                typeof(IzzetFreeSpells),
-                typeof(IzzetRestoreBalance),
+                typeof(FreeSpells),
+                typeof(ElectroBalance),
                 null
             );
         }
@@ -464,8 +464,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",10),
                 new PostZendikarRising(),
                 ArchetypeColor.UR,
-                typeof(IzzetFreeSpells),
-                typeof(IzzetRestoreBalance),
+                typeof(FreeSpells),
+                typeof(ElectroBalance),
                 null
             );
         }
@@ -607,7 +607,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",21),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -933,7 +933,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
-                typeof(SnoopGoblins),
+                null,
                 null
             );
         }
@@ -1387,7 +1387,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",81),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
@@ -1569,7 +1569,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",95),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -1738,7 +1738,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",108),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -1842,7 +1842,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",116),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
@@ -1998,7 +1998,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",128),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -2180,7 +2180,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",142),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
@@ -2414,7 +2414,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",160),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -2648,7 +2648,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",178),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -2869,7 +2869,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",195),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -2909,7 +2909,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
-                typeof(SnoopGoblins),
+                null,
                 null
             );
         }
@@ -3103,7 +3103,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",213),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -3181,7 +3181,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",219),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
@@ -3299,7 +3299,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
-                typeof(SnoopGoblins),
+                null,
                 null
             );
         }
@@ -3311,7 +3311,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",229),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 ArchetypeCompanion.Jegantha
             );
@@ -3494,7 +3494,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
-                typeof(SnoopGoblins),
+                null,
                 null
             );
         }
@@ -3519,7 +3519,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",245),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
@@ -3922,8 +3922,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",276),
                 new PostZendikarRising(),
                 ArchetypeColor.UR,
-                typeof(IzzetFreeSpells),
-                typeof(IzzetLivingEnd),
+                typeof(FreeSpells),
+                typeof(ElectroEnd),
                 null
             );
         }
@@ -4065,8 +4065,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",287),
                 new PostZendikarRising(),
                 ArchetypeColor.WURG,
-                typeof(JeskaiAscendancy),
-                typeof(JeskaiBreach),
+                typeof(AscendancyCombo),
+                typeof(AscendancyBreach),
                 ArchetypeCompanion.Jegantha
             );
         }
@@ -4104,7 +4104,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",290),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
@@ -4182,7 +4182,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",296),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -4351,8 +4351,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",309),
                 new PostZendikarRising(),
                 ArchetypeColor.WUR,
-                typeof(JeskaiAscendancy),
-                typeof(JeskaiBreach),
+                typeof(AscendancyCombo),
+                typeof(AscendancyBreach),
                 ArchetypeCompanion.Jegantha
             );
         }

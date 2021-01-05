@@ -62,7 +62,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-12-31",2),
                 new PostZendikarRising(),
                 ArchetypeColor.WURG,
-                typeof(JeskaiAscendancy),
+                typeof(AscendancyCombo),
                 null,
                 null
             );
@@ -101,7 +101,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-12-31",5),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );

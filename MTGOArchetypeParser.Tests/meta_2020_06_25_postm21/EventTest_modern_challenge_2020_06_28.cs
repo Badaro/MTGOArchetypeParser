@@ -55,7 +55,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 new PostM21(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
-                typeof(SnoopGoblins),
+                null,
                 null
             );
         }
@@ -67,7 +67,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-06-28",1),
                 new PostM21(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
@@ -106,7 +106,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-06-28",4),
                 new PostM21(),
                 ArchetypeColor.U,
-                typeof(UTron),
+                typeof(BlueTron),
                 null,
                 null
             );
@@ -172,7 +172,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 new PostM21(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
-                typeof(SnoopGoblins),
+                null,
                 null
             );
         }
@@ -236,7 +236,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-06-28",14),
                 new PostM21(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -354,7 +354,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 new PostM21(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
-                typeof(SnoopGoblins),
+                null,
                 null
             );
         }
@@ -457,7 +457,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-06-28",31),
                 new PostM21(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );

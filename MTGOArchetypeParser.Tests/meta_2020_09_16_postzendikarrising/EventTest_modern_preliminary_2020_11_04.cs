@@ -101,7 +101,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-11-04",5),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -166,7 +166,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-11-04",10),
                 new PostZendikarRising(),
                 ArchetypeColor.WR,
-                typeof(BorosLandDestruction),
+                typeof(LandDestruction),
                 null,
                 null
             );

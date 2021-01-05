@@ -163,7 +163,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-10-31",10),
                 new PostZendikarRising(),
                 ArchetypeColor.WR,
-                typeof(BorosLandDestruction),
+                typeof(LandDestruction),
                 null,
                 null
             );

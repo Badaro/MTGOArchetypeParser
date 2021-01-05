@@ -119,7 +119,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-09-14",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.W,
-                typeof(WhiteDevotion),
+                typeof(NykthosDevotion),
                 null,
                 null
             );
@@ -314,7 +314,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-09-14",20),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );

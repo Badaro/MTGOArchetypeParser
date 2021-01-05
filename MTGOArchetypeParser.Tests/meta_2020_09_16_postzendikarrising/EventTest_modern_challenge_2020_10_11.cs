@@ -132,7 +132,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-10-11",6),
                 new PostZendikarRising(),
                 ArchetypeColor.U,
-                typeof(UTron),
+                typeof(BlueTron),
                 null,
                 null
             );
@@ -249,7 +249,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-10-11",15),
                 new PostZendikarRising(),
                 ArchetypeColor.WR,
-                typeof(BorosLandDestruction),
+                typeof(LandDestruction),
                 null,
                 null
             );

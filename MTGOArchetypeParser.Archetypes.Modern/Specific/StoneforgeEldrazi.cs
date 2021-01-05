@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class SelesnyaEldrazi : ArchetypeSpecific
+    public class StoneforgeEldrazi : ArchetypeSpecific
     {
-        public SelesnyaEldrazi()
+        public StoneforgeEldrazi()
         {
             Conditions = new ArchetypeCondition[]
             {

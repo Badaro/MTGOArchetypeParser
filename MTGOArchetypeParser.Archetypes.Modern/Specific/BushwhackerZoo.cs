@@ -13,7 +13,6 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Goblin Guide" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Atarka's Command" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Goblin Bushwhacker", "Reckless Bushwhacker", "Burning-Tree Emissary", "Wild Nacatl" , "Pelt Collector" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.TwoOrMoreInMainboard, Cards = new string[] { "Goblin Bushwhacker", "Reckless Bushwhacker", "Burning-Tree Emissary" } },
             };
         }

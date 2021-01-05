@@ -197,7 +197,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-09-27",11),
                 new PostZendikarRising(),
                 ArchetypeColor.WURG,
-                typeof(JeskaiAscendancy),
+                typeof(AscendancyCombo),
                 null,
                 ArchetypeCompanion.Jegantha
             );

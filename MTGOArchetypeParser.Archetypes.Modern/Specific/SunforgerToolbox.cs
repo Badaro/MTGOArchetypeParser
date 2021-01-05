@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class BorosSunforger : ArchetypeSpecific
+    public class SunforgerToolbox : ArchetypeSpecific
     {
-        public BorosSunforger()
+        public SunforgerToolbox()
         {
             Conditions = new ArchetypeCondition[]
             {

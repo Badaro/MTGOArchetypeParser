@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class WhiteDevotion : ArchetypeSpecific
+    public class NykthosDevotion : ArchetypeSpecific
     {
-        public WhiteDevotion()
+        public NykthosDevotion()
         {
             Conditions = new ArchetypeCondition[]
             {

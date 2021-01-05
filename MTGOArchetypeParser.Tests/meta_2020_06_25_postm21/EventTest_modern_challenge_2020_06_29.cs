@@ -172,7 +172,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 new PostM21(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
-                typeof(SnoopGoblins),
+                null,
                 null
             );
         }
@@ -392,7 +392,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-06-29",26),
                 new PostM21(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -432,7 +432,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 new PostM21(),
                 ArchetypeColor.BR,
                 typeof(Goblins),
-                typeof(SnoopGoblins),
+                null,
                 null
             );
         }
@@ -444,7 +444,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-06-29",30),
                 new PostM21(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 ArchetypeCompanion.Jegantha
             );

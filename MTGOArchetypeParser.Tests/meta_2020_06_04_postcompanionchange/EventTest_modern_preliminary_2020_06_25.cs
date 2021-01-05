@@ -39,7 +39,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 new PostCompanionChange(),
                 ArchetypeColor.WUG,
                 typeof(Devoted),
-                typeof(HeliodDevoted),
+                null,
                 null
             );
         }
@@ -51,7 +51,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-25",1),
                 new PostCompanionChange(),
                 ArchetypeColor.G,
-                typeof(GTron),
+                typeof(GreenTron),
                 null,
                 null
             );
@@ -168,7 +168,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-25",10),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
@@ -233,7 +233,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-25",15),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );

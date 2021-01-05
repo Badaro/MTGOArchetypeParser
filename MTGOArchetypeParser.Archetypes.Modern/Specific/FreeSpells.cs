@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class IzzetFreeSpells : ArchetypeSpecific
+    public class FreeSpells : ArchetypeSpecific
     {
-        public IzzetFreeSpells()
+        public FreeSpells()
         {
             Conditions = new ArchetypeCondition[]
             {
@@ -17,15 +17,15 @@ namespace MTGOArchetypeParser.Archetypes.Modern
             };
             Variants = new ArchetypeVariant[]
             {
-                new IzzetRestoreBalance(),
-                new IzzetLivingEnd(),
+                new ElectroBalance(),
+                new ElectroEnd(),
             };
         }
     }
 
-    public class IzzetRestoreBalance : ArchetypeVariant
+    public class ElectroBalance : ArchetypeVariant
     {
-        public IzzetRestoreBalance()
+        public ElectroBalance()
         {
             Conditions = new ArchetypeCondition[]
             {
@@ -35,9 +35,9 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         }
     }
 
-    public class IzzetLivingEnd : ArchetypeVariant
+    public class ElectroEnd : ArchetypeVariant
     {
-        public IzzetLivingEnd()
+        public ElectroEnd()
         {
             Conditions = new ArchetypeCondition[]
             {

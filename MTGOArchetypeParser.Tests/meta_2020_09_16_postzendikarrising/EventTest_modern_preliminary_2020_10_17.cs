@@ -194,7 +194,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-10-17",12),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(ETron),
+                typeof(EldraziTron),
                 null,
                 null
             );
