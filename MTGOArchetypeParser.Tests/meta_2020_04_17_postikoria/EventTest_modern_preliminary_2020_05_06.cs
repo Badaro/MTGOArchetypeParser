@@ -121,7 +121,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 new PostIkoria(),
                 ArchetypeColor.RG,
                 typeof(PrimevalTitan),
-                typeof(ReclaimerTitan),
+                null,
                 null
             );
         }

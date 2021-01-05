@@ -279,7 +279,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-preliminary-2020-05-02",18),
                 new PostIkoria(),
                 ArchetypeColor.UBR,
-                typeof(GenericProwess),
+                typeof(TwiddleStorm),
                 null,
                 ArchetypeCompanion.Lurrus
             );

@@ -223,7 +223,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-challenge-2020-05-10",13),
                 new PostIkoria(),
                 ArchetypeColor.UB,
-                typeof(GenericControl),
+                typeof(ThopterCombo),
                 null,
                 ArchetypeCompanion.Lurrus
             );

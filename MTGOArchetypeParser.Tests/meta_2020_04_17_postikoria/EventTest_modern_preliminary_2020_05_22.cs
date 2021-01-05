@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-preliminary-2020-05-22",4),
                 new PostIkoria(),
                 ArchetypeColor.WG,
-                typeof(GenericMidrange),
+                typeof(ZirdaCombo),
                 null,
                 ArchetypeCompanion.Zirda
             );

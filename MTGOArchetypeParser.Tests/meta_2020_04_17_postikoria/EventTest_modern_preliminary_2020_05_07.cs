@@ -98,7 +98,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-preliminary-2020-05-07",4),
                 new PostIkoria(),
                 ArchetypeColor.WUG,
-                typeof(GenericBlink),
+                typeof(Uroza),
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -189,7 +189,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-preliminary-2020-05-07",11),
                 new PostIkoria(),
                 ArchetypeColor.UBR,
-                typeof(GenericProwess),
+                typeof(ThopterCombo),
                 null,
                 ArchetypeCompanion.Lurrus
             );
