@@ -132,8 +132,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-07-13",6),
                 new PostM21(),
                 ArchetypeColor.G,
-                typeof(GreenTron),
-                null,
+                typeof(Tron),
+typeof(GreenTron),
                 null
             );
         }
@@ -184,8 +184,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-07-13",10),
                 new PostM21(),
                 ArchetypeColor.C,
-                typeof(EldraziTron),
-                null,
+                typeof(Tron),
+typeof(EldraziTron),
                 null
             );
         }
@@ -249,8 +249,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-07-13",15),
                 new PostM21(),
                 ArchetypeColor.C,
-                typeof(EldraziTron),
-                null,
+                typeof(Tron),
+typeof(EldraziTron),
                 null
             );
         }
@@ -405,8 +405,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-07-13",27),
                 new PostM21(),
                 ArchetypeColor.C,
-                typeof(EldraziTron),
-                null,
+                typeof(Tron),
+typeof(EldraziTron),
                 null
             );
         }
@@ -418,8 +418,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-07-13",28),
                 new PostM21(),
                 ArchetypeColor.G,
-                typeof(GreenTron),
-                null,
+                typeof(Tron),
+typeof(GreenTron),
                 null
             );
         }

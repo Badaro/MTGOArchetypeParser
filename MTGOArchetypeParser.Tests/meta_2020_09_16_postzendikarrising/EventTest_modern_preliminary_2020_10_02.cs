@@ -165,8 +165,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-10-02",9),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
-                typeof(EldraziTron),
-                null,
+                typeof(Tron),
+typeof(EldraziTron),
                 null
             );
         }
@@ -256,8 +256,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-10-02",16),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
-                typeof(EldraziTron),
-                null,
+                typeof(Tron),
+typeof(EldraziTron),
                 null
             );
         }

@@ -208,8 +208,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-12-02",13),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
-                typeof(GreenTron),
-                null,
+                typeof(Tron),
+typeof(GreenTron),
                 null
             );
         }

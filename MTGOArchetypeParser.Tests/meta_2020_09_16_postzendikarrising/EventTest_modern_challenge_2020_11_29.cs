@@ -80,8 +80,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-29",2),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
-                typeof(EldraziTron),
-                null,
+                typeof(Tron),
+typeof(EldraziTron),
                 null
             );
         }

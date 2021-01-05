@@ -47,8 +47,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-08-07",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
-                typeof(EldraziTron),
-                null,
+                typeof(Tron),
+typeof(EldraziTron),
                 null
             );
         }

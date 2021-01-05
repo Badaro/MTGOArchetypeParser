@@ -168,8 +168,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-06",10),
                 new PostCompanionChange(),
                 ArchetypeColor.G,
-                typeof(GreenTron),
-                null,
+                typeof(Tron),
+typeof(GreenTron),
                 null
             );
         }
@@ -233,8 +233,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-06",15),
                 new PostCompanionChange(),
                 ArchetypeColor.G,
-                typeof(GreenTron),
-                null,
+                typeof(Tron),
+typeof(GreenTron),
                 ArchetypeCompanion.Jegantha
             );
         }

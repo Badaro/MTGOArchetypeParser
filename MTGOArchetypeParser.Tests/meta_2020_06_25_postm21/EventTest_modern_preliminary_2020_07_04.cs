@@ -84,8 +84,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-preliminary-2020-07-04",4),
                 new PostM21(),
                 ArchetypeColor.U,
-                typeof(BlueTron),
-                null,
+                typeof(Tron),
+typeof(BlueTron),
                 null
             );
         }
@@ -123,8 +123,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-preliminary-2020-07-04",7),
                 new PostM21(),
                 ArchetypeColor.G,
-                typeof(GreenTron),
-                null,
+                typeof(Tron),
+typeof(GreenTron),
                 null
             );
         }

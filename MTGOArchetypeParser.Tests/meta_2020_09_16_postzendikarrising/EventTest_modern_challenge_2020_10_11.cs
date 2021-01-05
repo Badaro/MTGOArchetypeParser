@@ -132,8 +132,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-10-11",6),
                 new PostZendikarRising(),
                 ArchetypeColor.U,
-                typeof(BlueTron),
-                null,
+                typeof(Tron),
+typeof(BlueTron),
                 null
             );
         }

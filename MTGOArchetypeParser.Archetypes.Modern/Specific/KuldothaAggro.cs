@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class KuldothaRed : ArchetypeSpecific
+    public class KuldothaAggro : ArchetypeSpecific
     {
-        public KuldothaRed()
+        public KuldothaAggro()
         {
             Conditions = new ArchetypeCondition[]
             {
