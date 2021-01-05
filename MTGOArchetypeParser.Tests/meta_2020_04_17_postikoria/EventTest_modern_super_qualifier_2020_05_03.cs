@@ -25,7 +25,7 @@ using System.Text;
 #14 Gaffiere1903: Ad Nauseam (WUB)
 #15 Parrit: Hardened Scales (BG, Lurrus)
 #16 patheus_84: Ad Nauseam (WUB)
-#17 theBMeister: Bant Midrange (WUG, Zirda)
+#17 theBMeister: Zirda Combo (WUG, Zirda)
 #18 fistfullofmetal: Green Tron (RG, Jegantha)
 #19 Scabs: Hardened Scales (BG, Lurrus)
 #20 haubidtran: Kinnan Legends (WUG, Yorion)
@@ -35,7 +35,7 @@ using System.Text;
 #24 hugo87: Gifts Storm (UR)
 #25 ArturRizzotti: Uroza (URG, Yorion)
 #26 TrollingSaruman: Devoted (WG, Lurrus)
-#27 FakeShaver: Unknown (BRG)
+#27 FakeShaver: Living End (BRG)
 #28 in5ano: Uroza (URG, Yorion)
 #29 Heibing: WURG Control (WURG, Yorion)
 #30 ecobaronen: WURG Control (WURG, Yorion)
@@ -256,7 +256,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck17_theBMeister_BantMidrange_WUG_Zirda()
+        public void Deck17_theBMeister_ZirdaCombo_WUG_Zirda()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-03",16),
@@ -386,7 +386,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck27_FakeShaver_Unknown_BRG()
+        public void Deck27_FakeShaver_LivingEnd_BRG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-03",26),

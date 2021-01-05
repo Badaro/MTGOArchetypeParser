@@ -1102,7 +1102,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 new PostZendikarRising(),
                 ArchetypeColor.WU,
                 typeof(ThopterCombo),
-typeof(ThopterUrza),
+                typeof(ThopterUrza),
                 null
             );
         }
@@ -3832,7 +3832,7 @@ typeof(ThopterUrza),
                 new PostZendikarRising(),
                 ArchetypeColor.UBR,
                 typeof(ThopterCombo),
-typeof(ThopterUrza),
+                typeof(ThopterUrza),
                 null
             );
         }
@@ -3962,7 +3962,7 @@ typeof(ThopterUrza),
                 new PostZendikarRising(),
                 ArchetypeColor.WUB,
                 typeof(ThopterCombo),
-typeof(ThopterUrza),
+                typeof(ThopterUrza),
                 null
             );
         }

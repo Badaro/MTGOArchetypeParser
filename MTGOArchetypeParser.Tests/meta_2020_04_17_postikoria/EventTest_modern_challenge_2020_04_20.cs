@@ -37,7 +37,7 @@ using System.Text;
 #26 Second_Sunrise: Neobrand (UG)
 #27 MaxMagicer: Humans (WUBRG)
 #28 minaki: Humans (WUBRG)
-#29 bobthedog: Kiki Chord (WURG, Yorion)
+#29 bobthedog: WURG Blink (WURG, Yorion)
 #30 WeareVenom: Bant Control (WUG)
 #31 Tonynine: Gruul Midrange (RG)
 #32 Naisirc: Jund Midrange (BRG, Lurrus)
@@ -412,7 +412,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck29_bobthedog_KikiChord_WURG_Yorion()
+        public void Deck29_bobthedog_WURGBlink_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-20",28),

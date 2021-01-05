@@ -22,7 +22,7 @@ using System.Text;
 #11 Do0mSwitch: Azorius Control (WU)
 #12 MikeEgan: Delver (UBR, Lurrus)
 #13 Sharkcaster_Mage: Primeval Titan (UG)
-#14 Lucabireskusku: Dimir Control (UB, Lurrus)
+#14 Lucabireskusku: Thopter Combo (UB, Lurrus)
 #15 AlecInTheInk: Titan Shift (RG)
 #16 TSPJendrek: Dimir Control (UB, Lurrus)
 #17 Chefen: Gruul Midrange (RG, Obosh)
@@ -31,7 +31,7 @@ using System.Text;
 #20 Amigobriell: WURG Control (WURG, Yorion)
 #21 2jjm: Burn (WR, Lurrus)
 #22 gilliganisla: Green Tron (G)
-#23 DoctorofTime: WURG Control (WURG)
+#23 DoctorofTime: Living End (WURG)
 #24 Naisirc: Hardened Scales (BG, Lurrus)
 #25 fingers1991: Boros Prowess (WR, Lurrus)
 #26 Darkiundsa: WUBG Control (WUBG, Yorion)
@@ -217,7 +217,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck14_Lucabireskusku_DimirControl_UB_Lurrus()
+        public void Deck14_Lucabireskusku_ThopterCombo_UB_Lurrus()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-10",13),
@@ -334,7 +334,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck23_DoctorofTime_WURGControl_WURG()
+        public void Deck23_DoctorofTime_LivingEnd_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-10",22),

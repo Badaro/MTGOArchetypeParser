@@ -23,7 +23,7 @@ using System.Text;
 #12 sydneydude: Boros Prowess (WR, Lurrus)
 #13 gabrialfo: Burn (WR, Lurrus)
 #14 Doomed_Necromancer: Goblins (BRG)
-#15 Rinko: Unknown (BRG)
+#15 Rinko: Goryo Reanimator (BRG)
 #16 MiamiKidz: Heliod Combo (WG, Zirda)
 #17 NosonosaN: Uroza (URG, Yorion)
 #18 Albimtg: Golgari Midrange (BG, Lurrus)
@@ -226,7 +226,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck15_Rinko_Unknown_BRG()
+        public void Deck15_Rinko_GoryoReanimator_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-29",14),

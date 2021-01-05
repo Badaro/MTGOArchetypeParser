@@ -19,7 +19,7 @@ using System.Text;
 #08 alemilan19: Scapeshift (WURG, Yorion)
 #09 litianshuo670: Electro Balance (UR)
 #10 _INF_: Gifts Storm (UR, Jegantha)
-#11 ACG88: Primeval Titan (BRG, Gyruda)
+#11 ACG88: Gyruda Reanimator (BRG, Gyruda)
 #12 oskiyaa: Devoted (WG, Lurrus)
 #13 matyo804: Bogles (WG, Lurrus)
 #14 nikumaster: Eldrazi Tron (C)
@@ -162,7 +162,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck11_ACG88_PrimevalTitan_BRG_Gyruda()
+        public void Deck11_ACG88_GyrudaReanimator_BRG_Gyruda()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-27",10),

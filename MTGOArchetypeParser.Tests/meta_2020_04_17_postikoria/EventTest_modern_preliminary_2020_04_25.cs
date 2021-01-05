@@ -26,7 +26,7 @@ using System.Text;
 #15 fradev1988: Bant Control (WUG)
 #16 harukispecial: Jeskai Control (WUR)
 #17 Treno: Devoted (WG, Lurrus)
-#18 Heibing: WURG Control (WURG)
+#18 Heibing: Living End (WURG)
 #19 felider: Burn (WR, Lurrus)
 #20 patrick50: Burn (WR, Lurrus)
 #21 Punkah: Humans (WUBRG, Jegantha)
@@ -258,7 +258,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck18_Heibing_WURGControl_WURG()
+        public void Deck18_Heibing_LivingEnd_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-25",17),

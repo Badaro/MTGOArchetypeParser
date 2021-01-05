@@ -34,7 +34,7 @@ using System.Text;
 #23 Bishark: Merfolk (WU, Lurrus)
 #24 Milkk: Boros Prowess (WR, Lurrus)
 #25 Aphiladon: Bant Control (WUG)
-#26 aooaaooa: Primeval Titan (WUG, Gyruda)
+#26 aooaaooa: Gyruda Reanimator (WUG, Gyruda)
 #27 Heir_of_Elendil15: Boros Prowess (WR, Lurrus)
 #28 Mcleskey: Burn (WR)
 #29 robb93: Golgari Midrange (BG, Lurrus)
@@ -373,7 +373,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck26_aooaaooa_PrimevalTitan_WUG_Gyruda()
+        public void Deck26_aooaaooa_GyrudaReanimator_WUG_Gyruda()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-26",25),

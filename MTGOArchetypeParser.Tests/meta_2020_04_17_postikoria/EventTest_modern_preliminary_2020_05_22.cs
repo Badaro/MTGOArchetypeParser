@@ -13,7 +13,7 @@ using System.Text;
 #02 DreamsOfAshiok: Eldrazi Tron (C)
 #03 Gigy: Gruul Midrange (RG, Obosh)
 #04 Ouranos139: Amulet Titan (URG)
-#05 theBMeister: Selenya Midrange (WG, Zirda)
+#05 theBMeister: Zirda Combo (WG, Zirda)
 #06 eresopacaso: Burn (WR, Lurrus)
 #07 2radMTG: Orzhov Midrange (WB, Zirda)
 #08 kefka27: Gruul Midrange (RG, Obosh)
@@ -81,7 +81,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck05_theBMeister_SelenyaMidrange_WG_Zirda()
+        public void Deck05_theBMeister_ZirdaCombo_WG_Zirda()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-22",4),

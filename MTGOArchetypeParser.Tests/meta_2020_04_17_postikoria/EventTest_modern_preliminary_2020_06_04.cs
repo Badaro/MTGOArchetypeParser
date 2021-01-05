@@ -195,7 +195,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 new PostIkoria(),
                 ArchetypeColor.UBR,
                 typeof(ThopterCombo),
-typeof(ThopterUrza),
+                typeof(ThopterUrza),
                 null
             );
         }

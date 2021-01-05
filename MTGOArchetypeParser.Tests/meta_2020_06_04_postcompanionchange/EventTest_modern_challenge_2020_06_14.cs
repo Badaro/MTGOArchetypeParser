@@ -276,7 +276,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 new PostCompanionChange(),
                 ArchetypeColor.UBR,
                 typeof(ThopterCombo),
-typeof(ThopterUrza),
+                typeof(ThopterUrza),
                 null
             );
         }
@@ -380,7 +380,7 @@ typeof(ThopterUrza),
                 new PostCompanionChange(),
                 ArchetypeColor.UBR,
                 typeof(ThopterCombo),
-typeof(ThopterUrza),
+                typeof(ThopterUrza),
                 null
             );
         }

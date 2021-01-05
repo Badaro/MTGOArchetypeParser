@@ -30,7 +30,7 @@ using System.Text;
 #19 Hoey07: Jund Prowess (BRG, Lurrus)
 #20 JOXEMI333: Green Tron (G, Jegantha)
 #21 GrandDrou: Rakdos Prowess (BR, Lurrus)
-#22 Hemsley: Primeval Titan (BRG, Gyruda)
+#22 Hemsley: Gyruda Reanimator (BRG, Gyruda)
 #23 ArchaeusDota: Green Tron (G, Jegantha)
 #24 Karolmo: Jund Midrange (BRG, Lurrus)
 #25 Samcaster-Mage: Eldrazi Tron (C)
@@ -321,7 +321,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck22_Hemsley_PrimevalTitan_BRG_Gyruda()
+        public void Deck22_Hemsley_GyrudaReanimator_BRG_Gyruda()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-24",21),

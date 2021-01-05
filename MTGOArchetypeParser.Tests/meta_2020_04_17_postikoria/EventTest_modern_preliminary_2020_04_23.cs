@@ -29,18 +29,18 @@ using System.Text;
 #18 joker10289: Jeskai Control (WUR, Lurrus)
 #19 pizzaslinger: Golgari Midrange (BG, Lurrus)
 #20 CookieKid00: Jund Midrange (BRG, Lurrus)
-#21 qbturtle15: Heliod Combo (WG, Zirda)
+#21 qbturtle15: Selenya Midrange (WG, Zirda)
 #22 Hemsley: Hardened Scales (G, Lurrus)
 #23 Magicofplayer1: Dredge (BRG)
-#24 SrTortinha: Unknown (BRG)
+#24 SrTortinha: Living End (BRG)
 #25 SunofNothing: Burn (WR, Lurrus)
 #26 ilsecco14: Burn (WR, Lurrus)
 #27 Moctzal: Burn (WR)
 #28 hugo87: Gifts Storm (UR)
 #29 Mistakenn: Amulet Titan (UG)
-#30 MinT_: Ad Nauseam,Inverter Combo (WUB)
+#30 MinT_: Inverter Combo (WUB)
 #31 Naisirc: Hardened Scales (BG, Lurrus)
-#32 DrDub: Unknown (R)
+#32 DrDub: Eight Whack (R)
 #33 cometa183: Neobrand (UG)
 #34 Lord_Beerus: Burn (WR, Lurrus)
 */
@@ -310,7 +310,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck21_qbturtle15_HeliodCombo_WG_Zirda()
+        public void Deck21_qbturtle15_SelenyaMidrange_WG_Zirda()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-23",20),
@@ -349,7 +349,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck24_SrTortinha_Unknown_BRG()
+        public void Deck24_SrTortinha_LivingEnd_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-23",23),
@@ -427,7 +427,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck30_MinT_Unknown_WUB()
+        public void Deck30_MinT_InverterCombo_WUB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-23",29),
@@ -453,7 +453,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck32_DrDub_Unknown_R()
+        public void Deck32_DrDub_EightWhack_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-23",31),

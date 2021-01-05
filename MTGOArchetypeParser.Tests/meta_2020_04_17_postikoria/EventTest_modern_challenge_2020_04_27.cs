@@ -25,7 +25,7 @@ using System.Text;
 #14 patheus_84: Ad Nauseam (WUB)
 #15 nsroller: Jund Midrange (BRG, Lurrus)
 #16 joker10289: Bant Control (WUG)
-#17 matyo804: Primeval Titan (WUG, Gyruda)
+#17 matyo804: Gyruda Reanimator (WUG, Gyruda)
 #18 Bayesta_93: Burn (WR, Lurrus)
 #19 triosk: Hardened Scales (BG, Lurrus)
 #20 Redgy819: Ad Nauseam (WUB)
@@ -256,7 +256,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck17_matyo804_PrimevalTitan_WUG_Gyruda()
+        public void Deck17_matyo804_GyrudaReanimator_WUG_Gyruda()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-27",16),

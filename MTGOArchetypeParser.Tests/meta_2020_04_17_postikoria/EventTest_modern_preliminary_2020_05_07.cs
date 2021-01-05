@@ -13,14 +13,14 @@ using System.Text;
 #02 KelMasterP: Gruul Midrange (RG, Obosh)
 #03 Nammersquats: Humans (WUBRG)
 #04 patrick50: Devoted (WG, Lurrus)
-#05 Toastxp: Bant Blink (WUG, Yorion)
+#05 Toastxp: Uroza (WUG, Yorion)
 #06 karatedom: Devoted (WG, Lurrus)
 #07 Xwhale: Primeval Titan (UG)
 #08 3minem: Jund Midrange (BRG, Lurrus)
 #09 twinlesstwin: Temur Control (URG)
 #10 TerminalJustice: Devoted (WG, Lurrus)
 #11 evan_ralston: Bant Control (WUG, Yorion)
-#12 HarlanMTG: Grixis Prowess (UBR, Lurrus)
+#12 HarlanMTG: Thopter Combo (UBR, Lurrus)
 #13 Bishark: Merfolk (WU, Lurrus)
 #14 maximusdee: Golgari Midrange (BG, Lurrus)
 #15 Berserker_BOB: Amulet Titan (URG)
@@ -92,7 +92,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck05_Toastxp_BantBlink_WUG_Yorion()
+        public void Deck05_Toastxp_Uroza_WUG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-07",4),
@@ -183,7 +183,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck12_HarlanMTG_GrixisProwess_UBR_Lurrus()
+        public void Deck12_HarlanMTG_ThopterCombo_UBR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-07",11),

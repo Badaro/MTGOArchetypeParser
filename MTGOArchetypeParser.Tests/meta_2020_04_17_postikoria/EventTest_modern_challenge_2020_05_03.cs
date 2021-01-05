@@ -29,7 +29,7 @@ using System.Text;
 #18 abisbocci: Jund Midrange (BRG, Lurrus)
 #19 HeyNongMan: Rakdos Prowess (BR, Lurrus)
 #20 Yamada: Devoted (WG, Lurrus)
-#21 yneves: Kiki Chord (WUG, Yorion)
+#21 yneves: Bant Blink (WUG, Yorion)
 #22 LORiWWA: Bant Control (WUG, Yorion)
 #23 2jjm: Burn (WR, Lurrus)
 #24 MaxMagicer: Burn (WR, Lurrus)
@@ -308,7 +308,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck21_yneves_KikiChord_WUG_Yorion()
+        public void Deck21_yneves_BantBlink_WUG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-03",20),

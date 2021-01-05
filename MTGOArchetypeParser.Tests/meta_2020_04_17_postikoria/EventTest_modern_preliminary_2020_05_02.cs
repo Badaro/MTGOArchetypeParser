@@ -27,7 +27,7 @@ using System.Text;
 #16 GGbizz: Ad Nauseam (WUB)
 #17 TSPJendrek: Dimir Control (UB, Lurrus)
 #18 Capriccioso: Green Tron (G, Jegantha)
-#19 Alakai: Grixis Prowess (UBR, Lurrus)
+#19 Alakai: Twiddle Storm (UBR, Lurrus)
 #20 bomberboss: Humans (WUBRG)
 #21 EmErgy: Gruul Midrange (RG, Obosh)
 #22 JoseCabezas: Uroza (URG, Yorion)
@@ -273,7 +273,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck19_Alakai_GrixisProwess_UBR_Lurrus()
+        public void Deck19_Alakai_TwiddleStorm_UBR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-02",18),

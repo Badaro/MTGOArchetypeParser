@@ -38,7 +38,7 @@ using System.Text;
 #27 NorrathDecay: Green Tron (G)
 #28 mitchieee: Orzhov Taxes (WB, Lurrus)
 #29 Biednarccio: Amulet Titan (RG)
-#30 Louisbach: Abzan Midrange (WBG, Zirda)
+#30 Louisbach: Zirda Combo (WBG, Zirda)
 #31 Naisirc: Mono White Taxes (W)
 #32 XxShuicunexX: Burn (WR, Lurrus)
 */
@@ -425,7 +425,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck30_Louisbach_AbzanMidrange_WBG_Zirda()
+        public void Deck30_Louisbach_ZirdaCombo_WBG_Zirda()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-04",29),

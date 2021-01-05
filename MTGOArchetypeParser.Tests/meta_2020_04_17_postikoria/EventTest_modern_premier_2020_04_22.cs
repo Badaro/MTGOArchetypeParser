@@ -23,7 +23,7 @@ using System.Text;
 #12 Edel: Golgari Midrange (BG, Lurrus)
 #13 Traft: Jeskai Control (WUR, Lurrus)
 #14 jessy_samek: Burn (WR, Lurrus)
-#15 TSPJendrek: Dimir Control (UB, Lurrus)
+#15 TSPJendrek: Delver (UB, Lurrus)
 #16 mikeleee: Humans (WUBRG, Jegantha)
 */
 
@@ -214,7 +214,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck15_TSPJendrek_DimirControl_UB_Lurrus()
+        public void Deck15_TSPJendrek_Delver_UB_Lurrus()
         {
             Test(
                 GetDeck("modern-premier-2020-04-22",14),

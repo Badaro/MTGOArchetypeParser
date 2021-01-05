@@ -12,7 +12,7 @@ using System.Text;
 #01 twinlesstwin: Delver (UBR, Lurrus)
 #02 Sodeq: Dredge (BRG)
 #03 Fatcaster_Mage: Bant Control (WUG)
-#04 bobthedog: Kiki Chord (WURG, Yorion)
+#04 bobthedog: WURG Blink (WURG, Yorion)
 #05 cftsoc3: Bant Blink (WUG)
 #06 J4V13R: Golgari Midrange (BG, Lurrus)
 #07 retiredcapivara: Dredge (BRG)
@@ -28,7 +28,7 @@ using System.Text;
 #17 Predict: Bant Control (WUG)
 #18 Danny_Bambino: UBRG Shadow (UBRG, Lurrus)
 #19 DauntedPanda: Gruul Midrange (RG)
-#20 beestjes: WURG Midrange (WURG)
+#20 beestjes: Domain Zoo (WURG)
 #21 toondoslav: Niv To Light (WUBRG)
 #22 lucasensei2: Electro Balance (UR)
 #23 Heir_of_Elendil15: Delver (UBR, Lurrus)
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck04_bobthedog_KikiChord_WURG_Yorion()
+        public void Deck04_bobthedog_WURGBlink_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-19",3),
@@ -295,7 +295,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck20_beestjes_WURGMidrange_WURG()
+        public void Deck20_beestjes_DomainZoo_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-19",19),

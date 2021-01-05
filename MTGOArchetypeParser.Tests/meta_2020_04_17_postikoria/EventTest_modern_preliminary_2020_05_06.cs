@@ -15,7 +15,7 @@ using System.Text;
 #04 NJGB1: Grixis Shadow (UBR, Lurrus)
 #05 TSPJendrek: Dimir Control (UB, Lurrus)
 #06 oskiyaa: Amulet Titan (UG)
-#07 tia05: Reclaimer Titan (RG)
+#07 tia05: Primeval Titan (RG)
 #08 Oneyerob: Devoted (WG, Lurrus)
 #09 albert62: Jund Midrange (BRG, Lurrus)
 #10 paucr5: Devoted (WG, Lurrus)
@@ -114,7 +114,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck07_tia05_ReclaimerTitan_RG()
+        public void Deck07_tia05_PrimevalTitan_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-06",6),

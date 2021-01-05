@@ -23,7 +23,7 @@ using System.Text;
 #12 eduardo_ossorio: Hardened Scales (BG, Lurrus)
 #13 Biednarccio: Amulet Titan (UG)
 #14 bigmasticore: Grixis Shadow (UBR)
-#15 TSPJendrek: Dimir Control (UB, Lurrus)
+#15 TSPJendrek: Delver (UB, Lurrus)
 #16 Dafne17: Devoted (WG, Lurrus)
 #17 Montre82: Burn (WR, Lurrus)
 #18 Parrit: Hardened Scales (BG, Lurrus)
@@ -220,7 +220,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck15_TSPJendrek_DimirControl_UB_Lurrus()
+        public void Deck15_TSPJendrek_Delver_UB_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-22",14),

@@ -16,7 +16,7 @@ using System.Text;
 #05 Toastxp: Mardu Prowess (WBR, Lurrus)
 #06 ImmanuelKantrolGod: Azorius Control (WU, Kaheera)
 #07 otakkun: Eldrazi Tron (C)
-#08 aooaaooa: Primeval Titan (WBRG, Gyruda)
+#08 aooaaooa: Gyruda Reanimator (WBRG, Gyruda)
 #09 Dafne17: Gruul Midrange (RG, Obosh)
 #10 Venom1: Jund Midrange (BRG, Lurrus)
 #11 Doni_Dominaria: Gruul Midrange (RG, Obosh)
@@ -128,7 +128,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck08_aooaaooa_PrimevalTitan_WBRG_Gyruda()
+        public void Deck08_aooaaooa_GyrudaReanimator_WBRG_Gyruda()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-13",7),

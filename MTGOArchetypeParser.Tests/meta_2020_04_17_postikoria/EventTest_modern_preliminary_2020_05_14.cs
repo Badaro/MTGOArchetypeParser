@@ -23,7 +23,7 @@ using System.Text;
 #12 pizzaslinger: Gruul Midrange (RG, Obosh)
 #13 LLegend: Electro Balance (UR)
 #14 kefka27: Eldrazi Tron (C)
-#15 KeeperX: Naya Midrange (WRG, Zirda)
+#15 KeeperX: Zirda Combo (WRG, Zirda)
 #16 MLupa: Bant Control (WUG, Yorion)
 #17 HarlanMTG: Azorius Control (WU, Kaheera)
 #18 patrick50: Sultai Control (UBG)
@@ -220,7 +220,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck15_KeeperX_NayaMidrange_WRG_Zirda()
+        public void Deck15_KeeperX_ZirdaCombo_WRG_Zirda()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-14",14),
