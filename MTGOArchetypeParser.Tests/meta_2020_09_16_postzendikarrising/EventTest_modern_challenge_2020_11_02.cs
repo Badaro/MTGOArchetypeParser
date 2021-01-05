@@ -14,7 +14,7 @@ using System.Text;
 #03 HouseOfManaMTG: Amulet Titan (RG)
 #04 Mogged: Mono Red Prowess (R)
 #05 _Batutinha_: Shadow Prowess (BR, Lurrus)
-#06 shoktroopa: U Tron (U)
+#06 shoktroopa: Blue Tron (U)
 #07 Chefen: Gruul Midrange (RG)
 #08 maxbv: Mono White Taxes (W)
 #09 Blitzlion27: Mill (UB)
@@ -36,7 +36,7 @@ using System.Text;
 #25 tibalt_of_red_sub: Mill (UB, Lurrus)
 #26 Vansguy: WURG Control (WURG, Yorion)
 #27 nahuel10: Izzet Prowess (UR)
-#28 Samcaster-Mage: E Tron (C)
+#28 Samcaster-Mage: Eldrazi Tron (C)
 #29 __BMJ__: Reclaimer Titan (WRG)
 #30 Do0mSwitch: WURG Control (WURG)
 #31 Coly2: Gruul Midrange (RG)
@@ -113,14 +113,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_shoktroopa_UTron_U()
+        public void Deck06_shoktroopa_BlueTron_U()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-02",5),
                 new PostZendikarRising(),
                 ArchetypeColor.U,
                 typeof(Tron),
-typeof(BlueTron),
+                typeof(BlueTron),
                 null
             );
         }
@@ -399,14 +399,14 @@ typeof(BlueTron),
         }
 
         [Test]
-        public void Deck28_SamcasterMage_ETron_C()
+        public void Deck28_SamcasterMage_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-02",27),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

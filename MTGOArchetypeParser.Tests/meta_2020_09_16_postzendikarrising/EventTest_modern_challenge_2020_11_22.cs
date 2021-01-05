@@ -23,7 +23,7 @@ using System.Text;
 #12 Ekeross: Shadow Prowess (BR, Lurrus)
 #13 Laplasjan: Amulet Titan (RG)
 #14 tibalt_of_red_sub: Mill (UB, Lurrus)
-#15 ArchaeusDota: E Tron (C)
+#15 ArchaeusDota: Eldrazi Tron (C)
 #16 Dylan_Fay: Bant Control (WUG)
 #17 LewisCBR: Scapeshift (URG)
 #18 Tarrasque1: Mono White Taxes (W)
@@ -230,14 +230,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_ArchaeusDota_ETron_C()
+        public void Deck15_ArchaeusDota_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-22",14),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

@@ -18,7 +18,7 @@ using System.Text;
 #07 PvtEnormous: Bant Control (WUG)
 #08 coert: Burn (WR)
 #09 karatedom: Rakdos Prowess (BR, Lurrus)
-#10 McleanYSUTF: Snoop Goblins (BR)
+#10 McleanYSUTF: Goblins (BR)
 #11 NHA37: Ad Nauseam (WUB)
 #12 juzam_gin: Dredge (BRG)
 #13 Slatorade: Bogles (WG, Lurrus)
@@ -152,7 +152,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_McleanYSUTF_SnoopGoblins_BR()
+        public void Deck10_McleanYSUTF_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-27",9),

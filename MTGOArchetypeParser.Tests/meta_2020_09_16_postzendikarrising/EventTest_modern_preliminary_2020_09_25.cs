@@ -20,12 +20,12 @@ using System.Text;
 #09 Nammersquats: Devoted (WG, Lurrus)
 #10 MindOfAKid: UBRG Midrange (UBRG)
 #11 McWinSauce: WURG Control (WURG)
-#12 Sanchez5272: E Tron (C)
+#12 Sanchez5272: Eldrazi Tron (C)
 #13 KelMasterP: Shadow Prowess (BR, Lurrus)
 #14 medvedev: Mono White Taxes (W)
 #15 pokerswizard: Gruul Midrange (RG)
 #16 _Shatun_: Gruul Midrange (RG)
-#17 Snusnumrick: E Tron (C)
+#17 Snusnumrick: Eldrazi Tron (C)
 #18 wambocombo2020: Humans (WUBRG)
 #19 nedyahiske: Shadow Prowess (BR, Lurrus)
 #20 ConnorM426: Oops All Spells (WUBRG)
@@ -179,14 +179,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_Sanchez5272_ETron_C()
+        public void Deck12_Sanchez5272_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-25",11),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -244,14 +244,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck17_Snusnumrick_ETron_C()
+        public void Deck17_Snusnumrick_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-25",16),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

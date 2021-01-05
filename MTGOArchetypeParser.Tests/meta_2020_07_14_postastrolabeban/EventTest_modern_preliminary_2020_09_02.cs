@@ -23,7 +23,7 @@ using System.Text;
 #12 Hyeri0418: Golgari Midrange (BG)
 #13 TheBlazingKFC_mtg: Neobrand (UG)
 #14 katuo079595: Reclaimer Titan (WG)
-#15 Lillia: KGC Amulet Titan (UG)
+#15 Lillia: Amulet Titan (UG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -213,7 +213,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_Lillia_KGCAmuletTitan_UG()
+        public void Deck15_Lillia_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-02",14),

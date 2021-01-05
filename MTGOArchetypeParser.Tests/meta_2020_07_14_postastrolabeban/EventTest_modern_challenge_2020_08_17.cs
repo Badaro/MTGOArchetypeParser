@@ -14,27 +14,27 @@ using System.Text;
 #03 TSPJendrek: Sultai Control (UBG)
 #04 TwistedWombat: Temur Control (URG)
 #05 Fluorspar: Humans (WUBRG)
-#06 Snusnumrick: E Tron (C)
-#07 Trellon: U Tron (U)
+#06 Snusnumrick: Eldrazi Tron (C)
+#07 Trellon: Blue Tron (U)
 #08 CHILLEDADED: Burn (WR)
 #09 Predicted: Yawgmoth (BG)
 #10 TennTyou: Niv To Light (WUBRG)
-#11 Cy_4nhur: Snoop Goblins (BR)
+#11 Cy_4nhur: Goblins (BR)
 #12 buddha715: Burn (WR, Lurrus)
 #13 staffmat1992: Gruul Midrange (RG)
 #14 Costola91: Grixis Shadow (UBR)
 #15 nahuel10: Gruul Midrange (RG)
 #16 jvidarte: Burn (WR, Lurrus)
-#17 fried-liver-attack: E Tron (C)
+#17 fried-liver-attack: Eldrazi Tron (C)
 #18 Gigy: Gruul Midrange (RG)
-#19 musasabi: KGC Amulet Titan (UG)
-#20 _Logic_: Jeskai Breach (WURG)
+#19 musasabi: Amulet Titan (UG)
+#20 _Logic_: Ascendancy Breach (WURG)
 #21 __matsugan: Neobrand (UG)
 #22 PhantasmalBear: Azorius Midrange (WU)
 #23 drVendigo: Gruul Midrange (RG)
 #24 junghans: Heliod Combo (WG)
 #25 kaikalbuquerque: Bogles (WG)
-#26 Bullz0Eye: KGC Tron (G)
+#26 Bullz0Eye: Green Tron (G)
 #27 calheiros: Burn (WR)
 #28 Xemnon1: Rakdos Prowess (BR, Lurrus)
 #29 Filyoni: Devoted (WG, Lurrus)
@@ -113,27 +113,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_Snusnumrick_ETron_C()
+        public void Deck06_Snusnumrick_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck07_Trellon_UTron_U()
+        public void Deck07_Trellon_BlueTron_U()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.U,
                 typeof(Tron),
-typeof(BlueTron),
+                typeof(BlueTron),
                 null
             );
         }
@@ -178,7 +178,7 @@ typeof(BlueTron),
         }
 
         [Test]
-        public void Deck11_Cy4nhur_SnoopGoblins_BR()
+        public void Deck11_Cy4nhur_Goblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",10),
@@ -256,14 +256,14 @@ typeof(BlueTron),
         }
 
         [Test]
-        public void Deck17_friedliverattack_ETron_C()
+        public void Deck17_friedliverattack_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",16),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -282,7 +282,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck19_musasabi_KGCAmuletTitan_UG()
+        public void Deck19_musasabi_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",18),
@@ -295,7 +295,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck20_Logic_JeskaiBreach_WURG()
+        public void Deck20_Logic_AscendancyBreach_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",19),
@@ -373,14 +373,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck26_Bullz0Eye_KGCTron_G()
+        public void Deck26_Bullz0Eye_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",25),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

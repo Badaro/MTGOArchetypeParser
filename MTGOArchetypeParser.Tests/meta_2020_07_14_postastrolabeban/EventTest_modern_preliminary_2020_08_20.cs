@@ -19,13 +19,13 @@ using System.Text;
 #08 Xuxa: Dredge (BRG)
 #09 qbturtle15: Gruul Midrange (RG)
 #10 tuckbear: Jund Midrange (BRG)
-#11 hodortimebaby: KGC Tron (G)
+#11 hodortimebaby: Green Tron (G)
 #12 ConnorM426: Rakdos Prowess (BR, Lurrus)
 #13 CHILLEDADED: Burn (WR)
 #14 PeanutBrittle: Mono Red Prowess (R, Jegantha)
 #15 ht991122: Temur Control (URG)
 #16 Xwhale: Bant Control (WUG)
-#17 A22en: Snoop Goblins (BR)
+#17 A22en: Goblins (BR)
 #18 MrZarukai: Gruul Midrange (RG)
 #19 bmac668: Izzet Prowess (UR)
 #20 JUJUBEAN__2004: Devoted (WG, Lurrus)
@@ -167,14 +167,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_hodortimebaby_KGCTron_G()
+        public void Deck11_hodortimebaby_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",10),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -245,7 +245,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck17_A22en_SnoopGoblins_BR()
+        public void Deck17_A22en_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-20",16),

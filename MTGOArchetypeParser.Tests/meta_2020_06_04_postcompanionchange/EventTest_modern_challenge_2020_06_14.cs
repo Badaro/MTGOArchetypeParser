@@ -17,19 +17,19 @@ using System.Text;
 #06 MadMaxErnst: Uroza (UG)
 #07 tendercloud: Hardened Scales (BG, Lurrus)
 #08 TSPJendrek: UBRG Control (UBRG)
-#09 TheTunnelingCat: E Tron (C)
+#09 TheTunnelingCat: Eldrazi Tron (C)
 #10 GoblinK1ng: Goblins (BRG)
 #11 bcs8995: Bant Control (WUG, Yorion)
-#12 SchulzCubed: Fires Turns (UR)
+#12 SchulzCubed: Taking Turns (UR)
 #13 Lord_Beerus: Burn (WR, Lurrus)
 #14 lovealienzzz: Temur Control (URG)
-#15 sakuragi21722749: E Tron (C)
-#16 staples87: E Tron (C)
+#15 sakuragi21722749: Eldrazi Tron (C)
+#16 staples87: Eldrazi Tron (C)
 #17 AndyAWKWARD: Scapeshift (URG)
 #18 Sonso JF: Thopter Urza (UBR)
 #19 ConnorM426: Sultai Control (UBG, Yorion)
 #20 headshotcatcher: Gruul Midrange (RG)
-#21 Chris_Concarnage: E Tron (C)
+#21 Chris_Concarnage: Eldrazi Tron (C)
 #22 GedionRavenor: Bant Control (WUG)
 #23 Nyph: Amulet Titan (UG)
 #24 eminemberry: Burn (WR)
@@ -152,14 +152,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck09_TheTunnelingCat_ETron_C()
+        public void Deck09_TheTunnelingCat_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",8),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -191,7 +191,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck12_SchulzCubed_FiresTurns_UR()
+        public void Deck12_SchulzCubed_TakingTurns_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",11),
@@ -230,27 +230,27 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck15_sakuragi21722749_ETron_C()
+        public void Deck15_sakuragi21722749_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",14),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck16_staples87_ETron_C()
+        public void Deck16_staples87_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",15),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -308,14 +308,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck21_ChrisConcarnage_ETron_C()
+        public void Deck21_ChrisConcarnage_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",20),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

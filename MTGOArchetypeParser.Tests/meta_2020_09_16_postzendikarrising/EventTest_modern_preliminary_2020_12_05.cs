@@ -13,18 +13,18 @@ using System.Text;
 #02 TSPJendrek: Sultai Control (UBG)
 #03 WhiteOleander: Shadow Prowess (BR, Lurrus)
 #04 NorrathDecay: Burn (WR)
-#05 Mateusf34: E Tron (C)
+#05 Mateusf34: Eldrazi Tron (C)
 #06 fwdr3: Shadow Prowess (BR, Lurrus)
 #07 Poyo_del_Mal: Heliod Combo (WG)
-#08 tkcheungab: KGC Tron (G)
+#08 tkcheungab: Green Tron (G)
 #09 chengyiw: Sultai Control (UBG)
 #10 WhiTe TsaR: Obosh Aggro (R, Obosh)
-#11 selbstdenker: KGC Amulet Titan (G)
+#11 selbstdenker: Amulet Titan (G)
 #12 musasabi: Heliod Combo (WG)
 #13 misterfister: Polymorph (WURG)
 #14 JV_7777: WURG Control (WURG)
 #15 Biednarccio: Hammer Time (W, Lurrus)
-#16 Xenowan: Jeskai Breach (WUR, Jegantha)
+#16 Xenowan: Ascendancy Breach (WUR, Jegantha)
 #17 Lord_of_Puntlantis: Izzet Control (UR)
 #18 conormc530: Sultai Control (UBG)
 #19 CrusherBotBG: Hammer Time (W, Lurrus)
@@ -87,14 +87,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_Mateusf34_ETron_C()
+        public void Deck05_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",4),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -126,14 +126,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck08_tkcheungab_KGCTron_G()
+        public void Deck08_tkcheungab_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",7),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -165,7 +165,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck11_selbstdenker_KGCAmuletTitan_G()
+        public void Deck11_selbstdenker_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",10),
@@ -230,7 +230,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck16_Xenowan_JeskaiBreach_WUR_Jegantha()
+        public void Deck16_Xenowan_AscendancyBreach_WUR_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",15),

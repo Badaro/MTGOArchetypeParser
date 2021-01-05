@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 A22en: Sultai Control (UBG)
-#02 122pablo: Jeskai Ascendancy (WURG, Jegantha)
+#02 122pablo: Ascendancy Combo (WURG, Jegantha)
 #03 _Stream: Izzet Prowess (UR)
 #04 indianpancake: Sultai Control (UBG)
 #05 aManatease: Shadow Prowess (WBR, Lurrus)
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_122pablo_JeskaiAscendancy_WURG_Jegantha()
+        public void Deck02_122pablo_AscendancyCombo_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-06",1),

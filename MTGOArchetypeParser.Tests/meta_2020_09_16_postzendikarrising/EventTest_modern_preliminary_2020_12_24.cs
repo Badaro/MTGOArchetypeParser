@@ -16,10 +16,10 @@ using System.Text;
 #05 bomberboss: Rakdos Midrange (BR)
 #06 bolov0: Rakdos Midrange (BR)
 #07 Xwhale: Reclaimer Titan (WRG)
-#08 pokerswizard: KGC Tron (G)
+#08 pokerswizard: Green Tron (G)
 #09 bmac668: Izzet Prowess (UR)
 #10 Mistakenn: Amulet Titan (RG)
-#11 MastaHorus: Izzet Living End (UR)
+#11 MastaHorus: Electro End (UR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -118,14 +118,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_pokerswizard_KGCTron_G()
+        public void Deck08_pokerswizard_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-24",7),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -157,7 +157,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck11_MastaHorus_IzzetLivingEnd_UR()
+        public void Deck11_MastaHorus_ElectroEnd_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-24",10),

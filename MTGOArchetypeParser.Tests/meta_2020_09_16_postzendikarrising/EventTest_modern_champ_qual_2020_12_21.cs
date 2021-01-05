@@ -19,7 +19,7 @@ using System.Text;
 #08 Comebackkid: Shadow Prowess (BR, Lurrus)
 #09 TwitchAwP: Ad Nauseam (WUB)
 #10 Snapcaster-Bolt: Simic Control (UG)
-#11 HummingBard: U Tron (U)
+#11 HummingBard: Blue Tron (U)
 #12 SknerusMcKwacz: WURG Control (WURG)
 #13 thedoc96: Shadow Prowess (BR, Lurrus)
 #14 Lavaridge: Temur Control (URG)
@@ -33,7 +33,7 @@ using System.Text;
 #22 McWinSauce: WURG Control (WURG)
 #23 ACG88: Naya Midrange (WRG)
 #24 Kenzaburo: Shadow Prowess (BR, Lurrus)
-#25 NorrathDecay: KGC Tron (G)
+#25 NorrathDecay: Green Tron (G)
 #26 MrRaeb: UBRG Control (UBRG)
 #27 _gabrielfehr_: Izzet Control (UR)
 #28 alemilan19: WURG Control (WURG)
@@ -178,14 +178,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_HummingBard_UTron_U()
+        public void Deck11_HummingBard_BlueTron_U()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-12-21",10),
                 new PostZendikarRising(),
                 ArchetypeColor.U,
                 typeof(Tron),
-typeof(BlueTron),
+                typeof(BlueTron),
                 null
             );
         }
@@ -360,14 +360,14 @@ typeof(BlueTron),
         }
 
         [Test]
-        public void Deck25_NorrathDecay_KGCTron_G()
+        public void Deck25_NorrathDecay_GreenTron_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-12-21",24),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

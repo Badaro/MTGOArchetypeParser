@@ -13,17 +13,17 @@ using System.Text;
 #02 Gerschi: Mardu Prowess (WBR, Lurrus)
 #03 liuyuchen: Jund Midrange (BRG)
 #04 Thrall90: Rakdos Prowess (BR, Lurrus)
-#05 Beenew: KGC Tron (G)
+#05 Beenew: Green Tron (G)
 #06 McWinSauce: Bant Control (WUG)
 #07 kaikalbuquerque: Gruul Midrange (RG)
-#08 Lukas261997: KGC Amulet Titan (UG)
+#08 Lukas261997: Amulet Titan (UG)
 #09 1yo2yo: Bant Control (WUG)
 #10 paucr5: Bant Control (WUG)
 #11 ht991122: Temur Control (URG)
 #12 FriskiFraska: Golgari Midrange (BG)
 #13 chengyiw: Rakdos Prowess (BR, Lurrus)
 #14 larkblue: Izzet Prowess (UR)
-#15 Nekonii: Golgari Elves (BG)
+#15 Nekonii: Elves (BG)
 #16 Tw33Ty: Bogles (WG, Lurrus)
 #17 PRGJJAR: Dredge (BRG)
 #18 Yanti: Humans (WUBRG)
@@ -86,14 +86,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_Beenew_KGCTron_G()
+        public void Deck05_Beenew_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-01",4),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -125,7 +125,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck08_Lukas261997_KGCAmuletTitan_UG()
+        public void Deck08_Lukas261997_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-01",7),
@@ -216,7 +216,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck15_Nekonii_GolgariElves_BG()
+        public void Deck15_Nekonii_Elves_BG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-01",14),

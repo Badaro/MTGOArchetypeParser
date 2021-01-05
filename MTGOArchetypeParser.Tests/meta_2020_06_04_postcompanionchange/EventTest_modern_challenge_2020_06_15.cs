@@ -23,7 +23,7 @@ using System.Text;
 #12 Walka: Bant Control (WUG)
 #13 Diatomic: Sultai Control (UBG)
 #14 litianshuo670: Orzhov Taxes (WB)
-#15 SkiLwrAp: E Tron (C)
+#15 SkiLwrAp: Eldrazi Tron (C)
 #16 ZYURYO: WUBG Control (WUBG)
 #17 Xwhale: Bant Control (WUG)
 #18 JB2002: Bant Blink (WUG, Yorion)
@@ -32,12 +32,12 @@ using System.Text;
 #21 MadMaxErnst: Uroza (UG)
 #22 bobthedog: Sultai Control (UBG)
 #23 gyyby297: Thopter Urza (UB)
-#24 coert: G Tron (G)
+#24 coert: Green Tron (G)
 #25 Magicofplayer1: Esper Control (WUB)
 #26 sff_mtg: Gruul Midrange (RG)
 #27 musasabi: Humans (WUBRG)
 #28 _Batutinha_: Bant Control (WUG)
-#29 Damgar: E Tron (C)
+#29 Damgar: Eldrazi Tron (C)
 #30 j_money10: Bant Control (WUG)
 #31 ilsecco14: Gruul Midrange (RG)
 #32 Mallik7D: Gifts Storm (UR)
@@ -230,14 +230,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck15_SkiLwrAp_ETron_C()
+        public void Deck15_SkiLwrAp_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-15",14),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -347,14 +347,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck24_coert_GTron_G()
+        public void Deck24_coert_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-15",23),
                 new PostCompanionChange(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -412,14 +412,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck29_Damgar_ETron_C()
+        public void Deck29_Damgar_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-15",28),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

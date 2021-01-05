@@ -17,7 +17,7 @@ using System.Text;
 #06 Lucabireskusku: Jeskai Control (WUR)
 #07 Mcleskey: Bogles (WG, Lurrus)
 #08 pokerswizard: Shadow Prowess (WBR, Lurrus)
-#09 Lordzedane: Izzet Restore Balance (UR)
+#09 Lordzedane: Electro Balance (UR)
 #10 RagingTiltMonster: Devoted (WG, Lurrus)
 */
 
@@ -130,7 +130,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_Lordzedane_IzzetRestoreBalance_UR()
+        public void Deck09_Lordzedane_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-19",8),

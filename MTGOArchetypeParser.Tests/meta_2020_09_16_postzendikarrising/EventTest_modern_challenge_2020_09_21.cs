@@ -24,14 +24,14 @@ using System.Text;
 #13 kthanakit26: Boros Prowess (WR, Lurrus)
 #14 Delthar: Infect (UG)
 #15 Fatcaster_Mage: Sultai Control (UBG)
-#16 Artem_Kuhtin: White Devotion (W)
+#16 Artem_Kuhtin: Nykthos Devotion (W)
 #17 NorrathDecay: Burn (WR)
-#18 Mateusf34: E Tron (C)
+#18 Mateusf34: Eldrazi Tron (C)
 #19 WeareVenom: WURG Control (WURG)
 #20 WhiTe TsaR: Humans (WUBRG)
 #21 RAINkratos: Humans (WUBRG)
 #22 Nikachu: Merfolk (UG)
-#23 Granham: KGC Tron (G)
+#23 Granham: Green Tron (G)
 #24 SebastianStueckl: Belcher (WRG)
 #25 AstralPlane: Rakdos Prowess (BR, Lurrus)
 #26 Selami: Ad Nauseam (WUB)
@@ -243,7 +243,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_ArtemKuhtin_WhiteDevotion_W()
+        public void Deck16_ArtemKuhtin_NykthosDevotion_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-21",15),
@@ -269,14 +269,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck18_Mateusf34_ETron_C()
+        public void Deck18_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-21",17),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -334,14 +334,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck23_Granham_KGCTron_G()
+        public void Deck23_Granham_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-21",22),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

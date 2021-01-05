@@ -9,10 +9,10 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Kofurea: KGC Amulet Titan (UG)
-#02 otakkun: KGC Tron (G)
+#01 Kofurea: Amulet Titan (UG)
+#02 otakkun: Green Tron (G)
 #03 gyyby297: Thopter Urza (UB)
-#04 siomomi: KGC Tron (G)
+#04 siomomi: Green Tron (G)
 #05 _INF_: Gifts Storm (UR)
 #06 Wolfie98: Temur Control (URG)
 #07 JV_7777: Humans (WUBRG)
@@ -25,7 +25,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_preliminary_2020_06_27 : EventTest
     {
         [Test]
-        public void Deck01_Kofurea_KGCAmuletTitan_UG()
+        public void Deck01_Kofurea_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-27",0),
@@ -38,14 +38,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck02_otakkun_KGCTron_G()
+        public void Deck02_otakkun_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-27",1),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -64,14 +64,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck04_siomomi_KGCTron_G()
+        public void Deck04_siomomi_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-27",3),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

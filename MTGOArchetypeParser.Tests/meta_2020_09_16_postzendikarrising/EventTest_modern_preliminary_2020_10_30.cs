@@ -23,7 +23,7 @@ using System.Text;
 #12 karatedom: Mill (UB, Lurrus)
 #13 ExclusiveB: Oops All Spells (WUBRG)
 #14 Gerardo94: WURG Control (WURG)
-#15 ArchaeusDota: Selesnya Eldrazi (WG)
+#15 ArchaeusDota: Stoneforge Eldrazi (WG)
 #16 Rav104: Oops All Spells (WUBG)
 #17 TwistedWombat: Omnath Saheeli (WURG, Jegantha)
 #18 AlpInco: Burn (WR)
@@ -221,7 +221,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_ArchaeusDota_SelesnyaEldrazi_WG()
+        public void Deck15_ArchaeusDota_StoneforgeEldrazi_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-30",14),

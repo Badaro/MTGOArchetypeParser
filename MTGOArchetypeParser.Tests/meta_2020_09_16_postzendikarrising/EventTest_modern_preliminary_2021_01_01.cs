@@ -13,7 +13,7 @@ using System.Text;
 #02 nsroller: Heliod Combo (WG)
 #03 bozokaboy: Oops All Spells (WUBG)
 #04 Jfuiilo: Izzet Prowess (UR)
-#05 otakkun: Red Prison (R)
+#05 otakkun: Pyro Prison (R)
 #06 yashimoro: Temur Control (URG)
 */
 
@@ -74,7 +74,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_otakkun_RedPrison_R()
+        public void Deck05_otakkun_PyroPrison_R()
         {
             Test(
                 GetDeck("modern-preliminary-2021-01-01",4),

@@ -11,14 +11,14 @@ using System.Text;
 /*
 #01 aooaaooa: Lantern (WUBRG)
 #02 NightKnight131: Devoted (WG, Lurrus)
-#03 MadCowChicken: Selesnya Eldrazi (WG, Jegantha)
+#03 MadCowChicken: Stoneforge Eldrazi (WG, Jegantha)
 #04 Frank_Bonaparte: Gruul Midrange (RG)
 #05 Papelucho10: Infect (UG)
 #06 Mcleskey: Burn (WR)
 #07 Boland: Dredge (BRG)
 #08 ghostx02: Gruul Midrange (RG)
 #09 FrancusAurelius: Naya Midrange (WRG)
-#10 otakkun: KGC Tron (G)
+#10 otakkun: Green Tron (G)
 #11 _Logic_: Rakdos Shadow (BR)
 #12 2radMTG: Bogles (WG, Lurrus)
 #13 lovealienzzz: Temur Control (URG)
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck03_MadCowChicken_SelesnyaEldrazi_WG_Jegantha()
+        public void Deck03_MadCowChicken_StoneforgeEldrazi_WG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-20",2),
@@ -152,14 +152,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck10_otakkun_KGCTron_G()
+        public void Deck10_otakkun_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-20",9),
                 new PostCompanionChange(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

@@ -19,7 +19,7 @@ using System.Text;
 #08 Zar0s: WURG Control (WURG)
 #09 Kaies: Shadow Prowess (BRG, Lurrus)
 #10 Rulleboren: Belcher (WRG)
-#11 Antoine57437: Abzan Company (WBG)
+#11 Antoine57437: Abzan Taxes (WBG)
 #12 yamakiller: Obosh Aggro (R, Obosh)
 #13 BradPitKeeper: WURG Control (WURG)
 #14 im2g00t4ubarn: WURG Control (WURG)
@@ -28,7 +28,7 @@ using System.Text;
 #17 didoguidotti1: WURG Control (WURG)
 #18 bamzing: WURG Control (WURG)
 #19 AlpInco: Oops All Spells (WUBG)
-#20 SpiderSpace: Izzet Restore Balance (UR)
+#20 SpiderSpace: Electro Balance (UR)
 #21 cntrlfreak: Sultai Shadow (UBG)
 #22 apriolo1: Amulet Titan (WRG)
 #23 trader08111: Gruul Midrange (RG)
@@ -178,7 +178,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_Antoine57437_AbzanCompany_WBG()
+        public void Deck11_Antoine57437_AbzanTaxes_WBG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-11-08",10),
@@ -295,7 +295,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_SpiderSpace_IzzetRestoreBalance_UR()
+        public void Deck20_SpiderSpace_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-11-08",19),

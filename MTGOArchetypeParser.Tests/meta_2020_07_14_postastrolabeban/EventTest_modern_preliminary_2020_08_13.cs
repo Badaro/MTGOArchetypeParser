@@ -16,14 +16,14 @@ using System.Text;
 #05 McWinSauce: Bant Control (WUG)
 #06 karatedom: Infect (UG)
 #07 Costola91: Sultai Shadow (UBG)
-#08 sicsmoo: G Tron (G)
+#08 sicsmoo: Green Tron (G)
 #09 Nammersquats: Izzet Prowess (UR)
 #10 staffmat1992: Gruul Midrange (RG)
 #11 pootisgodsamongus: Crabvine (UBG)
 #12 Ryan100495: Dredge (BRG)
 #13 komattaman: Gruul Midrange (RG)
 #14 ConnorM426: Simic Control (UG)
-#15 1plus1equals3: KGC Tron (G)
+#15 1plus1equals3: Green Tron (G)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -122,14 +122,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_sicsmoo_GTron_G()
+        public void Deck08_sicsmoo_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-13",7),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -213,14 +213,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck15_1plus1equals3_KGCTron_G()
+        public void Deck15_1plus1equals3_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-13",14),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

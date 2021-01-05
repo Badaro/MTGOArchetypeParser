@@ -11,18 +11,18 @@ using System.Text;
 /*
 #01 barczek: Belcher (URG)
 #02 Nextep: Sultai Control (UBG)
-#03 MastaHorus: Izzet Living End (UR)
+#03 MastaHorus: Electro End (UR)
 #04 Kazuga: Heliod Combo (WG)
 #05 Artem_Kuhtin: Reclaimer Titan (WRG)
 #06 albert62: WURG Control (WURG)
-#07 yamakiller: KGC Tron (G)
+#07 yamakiller: Green Tron (G)
 #08 swiftwarkite2: Hammer Time (W, Lurrus)
 #09 ChironTheMage: UBRG Control (UBRG)
 #10 Poyo_del_Mal: Heliod Combo (WG)
 #11 _Shatun_: Obosh Aggro (R, Obosh)
 #12 sandydogmtg: Humans (WUBRG)
 #13 Martin_Dominguez: Heliod Combo (WG)
-#14 Antarctica: E Tron (C)
+#14 Antarctica: Eldrazi Tron (C)
 #15 Violent_Outburst: Scapeshift (UBRG)
 #16 Chefen: Belcher (URG)
 */
@@ -58,7 +58,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_MastaHorus_IzzetLivingEnd_UR()
+        public void Deck03_MastaHorus_ElectroEnd_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-27",2),
@@ -110,14 +110,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_yamakiller_KGCTron_G()
+        public void Deck07_yamakiller_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-27",6),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -201,14 +201,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck14_Antarctica_ETron_C()
+        public void Deck14_Antarctica_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-27",13),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

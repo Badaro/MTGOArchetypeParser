@@ -11,12 +11,12 @@ using System.Text;
 /*
 #01 Violent_Outburst: Temur Control (URG, Yorion)
 #02 gazmon48: Gruul Midrange (RG)
-#03 LORiWWA: E Tron (C)
+#03 LORiWWA: Eldrazi Tron (C)
 #04 __matsugan: Neobrand (UG)
 #05 PRGJJAR: Dredge (BRG)
 #06 fradev1988: Bant Control (WUG)
 #07 Cherryxman: Uroza (WUG, Yorion)
-#08 sff_mtg: KGC Tron (G)
+#08 sff_mtg: Green Tron (G)
 #09 _Shatun_: Titan Shift (RG)
 */
 
@@ -51,14 +51,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck03_LORiWWA_ETron_C()
+        public void Deck03_LORiWWA_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",2),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -116,14 +116,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck08_sffmtg_KGCTron_G()
+        public void Deck08_sffmtg_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",7),
                 new PostCompanionChange(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

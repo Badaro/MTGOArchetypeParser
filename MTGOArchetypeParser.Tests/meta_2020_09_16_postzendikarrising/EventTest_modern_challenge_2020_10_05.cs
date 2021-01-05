@@ -14,7 +14,7 @@ using System.Text;
 #03 Do0mSwitch: WURG Control (WURG)
 #04 unicornparadise: Spirits (WU)
 #05 cityofcards: Shadow Prowess (WBR, Lurrus)
-#06 tkcheungab: KGC Tron (G)
+#06 tkcheungab: Green Tron (G)
 #07 AstralPlane: Shadow Prowess (BR, Lurrus)
 #08 drVendigo: Jund Midrange (BRG)
 #09 Zar0s: Shadow Prowess (WBR, Lurrus)
@@ -113,14 +113,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_tkcheungab_KGCTron_G()
+        public void Deck06_tkcheungab_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-05",5),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

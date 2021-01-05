@@ -12,29 +12,29 @@ using System.Text;
 #01 ZYURYO: Jund Midrange (BRG)
 #02 Darkiundsa: Bant Control (WUG, Yorion)
 #03 TSPJendrek: Sultai Control (UBG)
-#04 LORiWWA: E Tron (C)
+#04 LORiWWA: Eldrazi Tron (C)
 #05 A22en: Azorius Control (WU)
 #06 Busterbrown52: Elementals (WUBRG)
 #07 Shorak123: Sultai Control (UBG)
 #08 1yo2yo: Thopter Urza (UBR)
-#09 TheTunnelingCat: E Tron (C)
+#09 TheTunnelingCat: Eldrazi Tron (C)
 #10 Zxrogue: Sultai Shadow (UBG)
 #11 bobthedog: Sultai Control (UBG)
 #12 PvtEnormous: Sultai Control (UBG)
 #13 TerminalJustice: Gifts Storm (UR)
 #14 katoriarch123: Bant Control (WUG)
-#15 hdyer: E Tron (C)
-#16 yamakiller: E Tron (C)
-#17 renatoaraujo: E Tron (C)
+#15 hdyer: Eldrazi Tron (C)
+#16 yamakiller: Eldrazi Tron (C)
+#17 renatoaraujo: Eldrazi Tron (C)
 #18 HouseOfManaMTG: Amulet Titan (UG)
 #19 indianpancake: Devoted (WG, Lurrus)
 #20 Sodeq: Ad Nauseam (WUB)
 #21 ManuelJacob: Bant Control (WUG)
 #22 pbarrrgh: Temur Control (URG)
-#23 MasterA: Snoop Goblins (BR)
+#23 MasterA: Goblins (BR)
 #24 Graciasportanto: Dredge (WRG)
 #25 Lord_Beerus: Burn (WR)
-#26 Mzfroste: Snoop Goblins (BR)
+#26 Mzfroste: Goblins (BR)
 #27 Kuhb: Grinding Breach (WUR)
 #28 D00mwake: Izzet Prowess (UR)
 #29 tuhoajatane: Temur Control (URG)
@@ -87,14 +87,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck04_LORiWWA_ETron_C()
+        public void Deck04_LORiWWA_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-05",3),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -152,14 +152,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck09_TheTunnelingCat_ETron_C()
+        public void Deck09_TheTunnelingCat_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-05",8),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -230,40 +230,40 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck15_hdyer_ETron_C()
+        public void Deck15_hdyer_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-05",14),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck16_yamakiller_ETron_C()
+        public void Deck16_yamakiller_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-05",15),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck17_renatoaraujo_ETron_C()
+        public void Deck17_renatoaraujo_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-05",16),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -334,7 +334,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck23_MasterA_SnoopGoblins_BR()
+        public void Deck23_MasterA_Goblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-05",22),
@@ -373,7 +373,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck26_Mzfroste_SnoopGoblins_BR()
+        public void Deck26_Mzfroste_Goblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-05",25),

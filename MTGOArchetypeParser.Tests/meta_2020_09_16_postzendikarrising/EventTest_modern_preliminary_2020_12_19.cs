@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Violent_Outburst: Temur Control (URG)
 #02 triosk: Shadow Prowess (BR, Lurrus)
-#03 Rosencrantz_920: KGC Amulet Titan (G)
+#03 Rosencrantz_920: Amulet Titan (G)
 #04 ziofrancone: Shadow Prowess (BRG, Lurrus)
 #05 CharlesWang: Hardened Scales (G)
 #06 Gerardo94: WURG Control (WURG)
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_Rosencrantz920_KGCAmuletTitan_G()
+        public void Deck03_Rosencrantz920_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-19",2),

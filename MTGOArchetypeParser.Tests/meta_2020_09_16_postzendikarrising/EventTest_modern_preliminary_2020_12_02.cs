@@ -14,7 +14,7 @@ using System.Text;
 #03 katuo079595: Shadow Prowess (BR, Lurrus)
 #04 Laplasjan: Hammer Time (WG, Lurrus)
 #05 medvedev: Obosh Aggro (R, Obosh)
-#06 Sommertroll: Bant Spirits (WUG)
+#06 Sommertroll: Spirits (WUG)
 #07 unicornparadise: Obosh Aggro (R, Obosh)
 #08 Sodeq: Hammer Time (W, Lurrus)
 #09 alemilan19: Heliod Combo (WG)
@@ -22,7 +22,7 @@ using System.Text;
 #11 moyashi0904: WURG Control (WURG)
 #12 ZYURYO: UBRG Control (UBRG)
 #13 Beenew: Obosh Aggro (R, Obosh)
-#14 ACG88: KGC Tron (G)
+#14 ACG88: Green Tron (G)
 #15 DDMeelow: WURG Control (WURG)
 #16 Lord_of_Puntlantis: Izzet Control (UR)
 #17 MissTrigger: Heliod Combo (WR)
@@ -98,7 +98,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_Sommertroll_BantSpirits_WUG()
+        public void Deck06_Sommertroll_Spirits_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-02",5),
@@ -202,14 +202,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_ACG88_KGCTron_G()
+        public void Deck14_ACG88_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-02",13),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

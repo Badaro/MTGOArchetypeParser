@@ -13,11 +13,11 @@ using System.Text;
 #02 Toastxp: Sultai Control (UBG)
 #03 pbarrrgh: Temur Control (URG)
 #04 qbturtle15: Gruul Midrange (RG, Obosh)
-#05 Samcaster-Mage: E Tron (C)
+#05 Samcaster-Mage: Eldrazi Tron (C)
 #06 Daniel_Garcia: Orzhov Shadow (WB)
-#07 RpAngriff: Snoop Goblins (BR)
+#07 RpAngriff: Goblins (BR)
 #08 Binolino: Amulet Titan (URG)
-#09 WadeB: E Tron (C)
+#09 WadeB: Eldrazi Tron (C)
 #10 McWinSauce: Bant Control (WUG)
 #11 GideonRavensword: Ad Nauseam (WUB)
 */
@@ -79,14 +79,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck05_SamcasterMage_ETron_C()
+        public void Deck05_SamcasterMage_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-07",4),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -105,7 +105,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck07_RpAngriff_SnoopGoblins_BR()
+        public void Deck07_RpAngriff_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-07",6),
@@ -131,14 +131,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck09_WadeB_ETron_C()
+        public void Deck09_WadeB_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-07",8),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

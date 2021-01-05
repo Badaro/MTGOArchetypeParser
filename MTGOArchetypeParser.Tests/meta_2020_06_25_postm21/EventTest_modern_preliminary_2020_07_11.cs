@@ -12,12 +12,12 @@ using System.Text;
 #01 Shorak123: Sultai Control (UBG)
 #02 Kazuga: Sultai Control (UBG)
 #03 yuurari_yuko: Bant Control (WUG, Yorion)
-#04 sff_mtg: KGC Tron (G)
+#04 sff_mtg: Green Tron (G)
 #05 mariogomes097: Grixis Shadow (UBR)
 #06 ZYURYO: WUBG Control (WUBG)
 #07 gyyby297: Thopter Urza (WU)
 #08 NickPuiKia: Izzet Prowess (UR)
-#09 medvedev: E Tron (C)
+#09 medvedev: Eldrazi Tron (C)
 #10 Antarctica: Gruul Midrange (RG)
 */
 
@@ -65,14 +65,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck04_sffmtg_KGCTron_G()
+        public void Deck04_sffmtg_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-11",3),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -130,14 +130,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck09_medvedev_ETron_C()
+        public void Deck09_medvedev_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-11",8),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

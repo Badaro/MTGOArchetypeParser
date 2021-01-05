@@ -10,17 +10,17 @@ using System.Text;
 
 /*
 #01 Graciasportanto: Jund Midrange (BRG)
-#02 Icteridae: E Tron (C)
+#02 Icteridae: Eldrazi Tron (C)
 #03 PRGJJAR: Dredge (BRG)
 #04 wordy333: Merfolk (UG)
 #05 samslam: Burn (WR)
 #06 andrw1232: Dredge (WRG)
-#07 Samcaster-Mage: E Tron (C)
+#07 Samcaster-Mage: Eldrazi Tron (C)
 #08 starfall: Merfolk (UG)
 #09 Mcleskey: Gruul Midrange (RG)
 #10 WareHouseGames: Ad Nauseam (WUB)
 #11 Toastxp: Bant Control (WUG)
-#12 nedyahiske: E Tron (C)
+#12 nedyahiske: Eldrazi Tron (C)
 #13 atm8162: Titan Shift (RG)
 */
 
@@ -42,14 +42,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck02_Icteridae_ETron_C()
+        public void Deck02_Icteridae_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-09",1),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -107,14 +107,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck07_SamcasterMage_ETron_C()
+        public void Deck07_SamcasterMage_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-09",6),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -172,14 +172,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck12_nedyahiske_ETron_C()
+        public void Deck12_nedyahiske_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-09",11),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

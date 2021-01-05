@@ -20,25 +20,25 @@ using System.Text;
 #09 TSPJendrek: Sultai Control (UBG)
 #10 NuBlkAu: Grixis Shadow (UBR)
 #11 Mzfroste: Amulet Titan (RG)
-#12 MIkepick7: E Tron (C)
+#12 MIkepick7: Eldrazi Tron (C)
 #13 pootisgodsamongus: Gruul Midrange (RG)
 #14 genmatsu: Uroza (UBG)
 #15 SebastianStueckl: Obosh Aggro (R, Obosh)
 #16 Sodeq: Ad Nauseam (WUB)
 #17 tribalmaster: Humans (WUR)
-#18 calheiros: KGC Amulet Titan (G)
+#18 calheiros: Amulet Titan (G)
 #19 DaniMRebel: Spirits (WU)
 #20 Tsubasa_Cat: Izzet Prowess (UR)
 #21 eggybenny: Grixis Shadow (UBR)
-#22 Saviall: KGC Tron (G)
+#22 Saviall: Green Tron (G)
 #23 bcs8995: Obosh Aggro (R, Obosh)
 #24 Fluorspar: Humans (WUBRG)
 #25 nahuel10: Izzet Prowess (UR)
-#26 iggkrajc: KGC Tron (G)
+#26 iggkrajc: Green Tron (G)
 #27 t1griselbrand: Neobrand (UG)
 #28 Patapon20: Dredge (BRG)
-#29 Trellon: U Tron (U)
-#30 ice_nine_: Boros Land Destruction (WR)
+#29 Trellon: Blue Tron (U)
+#30 ice_nine_: Land Destruction (WR)
 #31 BigPanda_559: Burn (WR)
 #32 Predicted: Yawgmoth (BG)
 */
@@ -191,14 +191,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_MIkepick7_ETron_C()
+        public void Deck12_MIkepick7_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -269,7 +269,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck18_calheiros_KGCAmuletTitan_G()
+        public void Deck18_calheiros_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",17),
@@ -321,14 +321,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck22_Saviall_KGCTron_G()
+        public void Deck22_Saviall_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",21),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -373,14 +373,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck26_iggkrajc_KGCTron_G()
+        public void Deck26_iggkrajc_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",25),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -412,20 +412,20 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck29_Trellon_UTron_U()
+        public void Deck29_Trellon_BlueTron_U()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",28),
                 new PostAstrolabeBan(),
                 ArchetypeColor.U,
                 typeof(Tron),
-typeof(BlueTron),
+                typeof(BlueTron),
                 null
             );
         }
 
         [Test]
-        public void Deck30_icenine_BorosLandDestruction_WR()
+        public void Deck30_icenine_LandDestruction_WR()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",29),

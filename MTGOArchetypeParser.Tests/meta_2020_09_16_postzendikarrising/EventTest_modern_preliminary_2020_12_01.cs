@@ -10,8 +10,8 @@ using System.Text;
 
 /*
 #01 Do0mSwitch: WURG Control (WURG)
-#02 eresopacaso: KGC Tron (G)
-#03 ArchaeusDota: KGC Tron (G)
+#02 eresopacaso: Green Tron (G)
+#03 ArchaeusDota: Green Tron (G)
 #04 _Shatun_: Obosh Aggro (R, Obosh)
 #05 Lukas261997: Jund Midrange (BRG)
 #06 xfile: Shadow Prowess (BR, Lurrus)
@@ -43,27 +43,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_eresopacaso_KGCTron_G()
+        public void Deck02_eresopacaso_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-01",1),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
 
         [Test]
-        public void Deck03_ArchaeusDota_KGCTron_G()
+        public void Deck03_ArchaeusDota_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-01",2),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

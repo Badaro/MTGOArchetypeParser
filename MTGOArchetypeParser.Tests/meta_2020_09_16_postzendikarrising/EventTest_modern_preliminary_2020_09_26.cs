@@ -14,7 +14,7 @@ using System.Text;
 #03 Zar0s: Jund Midrange (BRG)
 #04 trunks132: Shadow Prowess (BR, Lurrus)
 #05 koudai_iwatou: Tokens (WB, Lurrus)
-#06 otakkun: E Tron (C)
+#06 otakkun: Eldrazi Tron (C)
 #07 SIMONEFIERRO: Burn (WR, Lurrus)
 #08 mansak: Jund Midrange (BRG)
 #09 _Shatun_: Gruul Midrange (RG)
@@ -90,14 +90,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_otakkun_ETron_C()
+        public void Deck06_otakkun_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-26",5),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

@@ -17,29 +17,29 @@ using System.Text;
 #06 maxxattack: Ad Nauseam (WUB)
 #07 Hyeri0418: Crabvine (UBG)
 #08 AstralPlane: Mono Red Prowess (R, Jegantha)
-#09 fling5133: KGC Tron (G)
+#09 fling5133: Green Tron (G)
 #10 MaxMagicer: Scapeshift (URG, Yorion)
 #11 cws: Gifts Storm (UR)
-#12 PTarts2win: KGC Tron (G)
+#12 PTarts2win: Green Tron (G)
 #13 HotBread: Izzet Prowess (UR)
 #14 frozenian: Izzet Prowess (UR)
 #15 klien7: Burn (WR)
 #16 TwistedWombat: Rakdos Prowess (BR, Lurrus)
-#17 calheiros: KGC Amulet Titan (G)
-#18 zecriah: KGC Tron (G)
+#17 calheiros: Amulet Titan (G)
+#18 zecriah: Green Tron (G)
 #19 1yo2yo: Bant Control (WUG)
 #20 scipios: Crabvine (UBG)
 #21 tylerjjobrien: Niv To Light (WUBRG, Yorion)
 #22 DamonXWind: Izzet Prowess (UR)
 #23 Gigy: Naya Midrange (WRG)
-#24 NobodyKnowsImADog: KGC Tron (G)
+#24 NobodyKnowsImADog: Green Tron (G)
 #25 azax: Grixis Shadow (UBR)
 #26 _Stream: Izzet Prowess (UR)
-#27 KIMCHIMAN: Snoop Goblins (BR)
-#28 WareHouseGames: KGC Tron (G)
+#27 KIMCHIMAN: Goblins (BR)
+#28 WareHouseGames: Green Tron (G)
 #29 aspiringspike: Sultai Control (UBG)
 #30 Toastxp: Reclaimer Titan (WRG)
-#31 mot88: Thalia Stompy (WR)
+#31 mot88: Boros Taxes (WR)
 #32 SebastianStueckl: Bogles (WG, Lurrus)
 */
 
@@ -152,14 +152,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_fling5133_KGCTron_G()
+        public void Deck09_fling5133_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",8),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -191,14 +191,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck12_PTarts2win_KGCTron_G()
+        public void Deck12_PTarts2win_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -256,7 +256,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck17_calheiros_KGCAmuletTitan_G()
+        public void Deck17_calheiros_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",16),
@@ -269,14 +269,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck18_zecriah_KGCTron_G()
+        public void Deck18_zecriah_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",17),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -347,14 +347,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck24_NobodyKnowsImADog_KGCTron_G()
+        public void Deck24_NobodyKnowsImADog_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",23),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -386,7 +386,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck27_KIMCHIMAN_SnoopGoblins_BR()
+        public void Deck27_KIMCHIMAN_Goblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",26),
@@ -399,14 +399,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck28_WareHouseGames_KGCTron_G()
+        public void Deck28_WareHouseGames_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",27),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -438,7 +438,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck31_mot88_ThaliaStompy_WR()
+        public void Deck31_mot88_BorosTaxes_WR()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",30),

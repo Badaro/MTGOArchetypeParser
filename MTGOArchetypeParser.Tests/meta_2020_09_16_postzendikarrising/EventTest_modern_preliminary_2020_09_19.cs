@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 Phill_Hellmuth: Devoted (WG, Lurrus)
-#02 stonepeanut: KGC Tron (G)
+#02 stonepeanut: Green Tron (G)
 #03 andrw1232: WURG Control (WURG)
 #04 Hennaruji1: Humans (WUBRG)
 #05 Xwhale: Humans (WUBRG)
@@ -19,7 +19,7 @@ using System.Text;
 #08 RearrangedAS: Spirits (WU)
 #09 Hoey07: Humans (WUBRG)
 #10 Smdster: Temur Control (URG)
-#11 Joey_Wheeler: E Tron (C)
+#11 Joey_Wheeler: Eldrazi Tron (C)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -40,14 +40,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_stonepeanut_KGCTron_G()
+        public void Deck02_stonepeanut_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-19",1),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -157,14 +157,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck11_JoeyWheeler_ETron_C()
+        public void Deck11_JoeyWheeler_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-19",10),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

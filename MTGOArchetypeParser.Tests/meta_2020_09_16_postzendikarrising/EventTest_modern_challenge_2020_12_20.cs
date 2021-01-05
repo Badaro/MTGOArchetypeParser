@@ -14,8 +14,8 @@ using System.Text;
 #03 IzzetSignetIsTheBest: Reclaimer Titan (WG)
 #04 Laplasjan: Hammer Time (WB, Lurrus)
 #05 bolov0: Rakdos Midrange (BR)
-#06 MastaHorus: Izzet Living End (UR)
-#07 Samcaster-Mage: E Tron (C)
+#06 MastaHorus: Electro End (UR)
+#07 Samcaster-Mage: Eldrazi Tron (C)
 #08 The_nayr: Obosh Aggro (R, Obosh)
 #09 ShowTime_: Burn (WR)
 #10 Xwhale: Reclaimer Titan (WG)
@@ -27,7 +27,7 @@ using System.Text;
 #16 MrSeri: Hardened Scales (G)
 #17 bladede: Jund Midrange (BRG)
 #18 nazart: Heliod Combo (WG)
-#19 thekingofnone: KGC Tron (G, Jegantha)
+#19 thekingofnone: Green Tron (G, Jegantha)
 #20 elquinielas: Burn (WBR)
 #21 mark_68: Sultai Control (UBG, Yorion)
 #22 fabee1: Boros Taxes (WR)
@@ -37,7 +37,7 @@ using System.Text;
 #26 eggybenny: Heliod Combo (WG)
 #27 mlex: Dredge (BRG)
 #28 KO_Mak: Oops All Spells (UBG)
-#29 ice_nine_: Boros Land Destruction (WR)
+#29 ice_nine_: Land Destruction (WR)
 #30 daibloXSC: Erayo Prison (WUB)
 #31 aspiringspike: Jeskai Control (WUR)
 #32 pokerswizard: Shadow Prowess (BR, Lurrus)
@@ -113,7 +113,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_MastaHorus_IzzetLivingEnd_UR()
+        public void Deck06_MastaHorus_ElectroEnd_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-20",5),
@@ -126,14 +126,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_SamcasterMage_ETron_C()
+        public void Deck07_SamcasterMage_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-20",6),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -282,14 +282,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck19_thekingofnone_KGCTron_G_Jegantha()
+        public void Deck19_thekingofnone_GreenTron_G_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-20",18),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 ArchetypeCompanion.Jegantha
             );
         }
@@ -412,7 +412,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck29_icenine_BorosLandDestruction_WR()
+        public void Deck29_icenine_LandDestruction_WR()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-20",28),

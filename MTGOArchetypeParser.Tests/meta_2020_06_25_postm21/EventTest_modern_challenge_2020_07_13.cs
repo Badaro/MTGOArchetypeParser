@@ -15,16 +15,16 @@ using System.Text;
 #04 Polikasoll: Incinerator Burn (R)
 #05 ZYURYO: Jund Midrange (BRG)
 #06 Lord_Beerus: Burn (WR)
-#07 sff_mtg: KGC Tron (G)
+#07 sff_mtg: Green Tron (G)
 #08 Gigy: Gruul Midrange (RG)
 #09 kiko: Boros Taxes (WR)
 #10 TennTyou: Niv To Light (WUBRG)
-#11 Smosh: E Tron (C)
+#11 Smosh: Eldrazi Tron (C)
 #12 WeareVenom: Bant Control (WUG)
-#13 Nekonii: Golgari Elves (BG)
+#13 Nekonii: Elves (BG)
 #14 Mogged: Mono Red Prowess (R)
 #15 PizzaTurtle: Bogles (WG, Lurrus)
-#16 unicornparadise: E Tron (C)
+#16 unicornparadise: Eldrazi Tron (C)
 #17 Fabrice_K: Sultai Control (UBG, Yorion)
 #18 MrRaeb: Uroza (UBG, Yorion)
 #19 tuckbear: Burn (WR)
@@ -36,8 +36,8 @@ using System.Text;
 #25 destinction: Jund Midrange (BRG)
 #26 JUJUBEAN__2004: Bant Control (WUG)
 #27 Tiemuuu: Izzet Control (UR)
-#28 Venom1: E Tron (C)
-#29 otakkun: KGC Tron (G)
+#28 Venom1: Eldrazi Tron (C)
+#29 otakkun: Green Tron (G)
 #30 Jack_Kashtan: Gifts Storm (UR)
 #31 Skrown: Dredge (BRG)
 #32 Erik157751: Jund Midrange (BRG)
@@ -126,14 +126,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_sffmtg_KGCTron_G()
+        public void Deck07_sffmtg_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",6),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -178,14 +178,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck11_Smosh_ETron_C()
+        public void Deck11_Smosh_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",10),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -204,7 +204,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck13_Nekonii_GolgariElves_BG()
+        public void Deck13_Nekonii_Elves_BG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",12),
@@ -243,14 +243,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck16_unicornparadise_ETron_C()
+        public void Deck16_unicornparadise_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",15),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -399,27 +399,27 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck28_Venom1_ETron_C()
+        public void Deck28_Venom1_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",27),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck29_otakkun_KGCTron_G()
+        public void Deck29_otakkun_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-13",28),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

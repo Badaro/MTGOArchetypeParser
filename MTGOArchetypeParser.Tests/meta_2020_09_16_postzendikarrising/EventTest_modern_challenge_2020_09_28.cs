@@ -14,7 +14,7 @@ using System.Text;
 #03 DaniMRebel: Spirits (WU)
 #04 HouseOfManaMTG: Amulet Titan (UG)
 #05 coert: Heliod Combo (WG)
-#06 HamburgerJung: Golos Tron (G, Jegantha)
+#06 HamburgerJung: Green Tron (G, Jegantha)
 #07 Chefen: Belcher (RG)
 #08 ilsecco14: Neobrand (UG)
 #09 N3to: Gifts Storm (UR)
@@ -23,9 +23,9 @@ using System.Text;
 #12 ZYURYO: WURG Control (WURG)
 #13 Manuel_Danninger: Mardu Midrange (WBR)
 #14 audio336: Shadow Prowess (BRG, Lurrus)
-#15 Mateusf34: E Tron (C)
+#15 Mateusf34: Eldrazi Tron (C)
 #16 Jenara19: UBRG Control (UBRG)
-#17 Lord_of_Puntlantis: Izzet Restore Balance (UR)
+#17 Lord_of_Puntlantis: Electro Balance (UR)
 #18 Jositoshekel: Burn (WR, Lurrus)
 #19 Polikasoll: Izzet Prowess (UR)
 #20 GideonRavensword: Dredge (BRG)
@@ -113,14 +113,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_HamburgerJung_GolosTron_G_Jegantha()
+        public void Deck06_HamburgerJung_GreenTron_G_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-28",5),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 ArchetypeCompanion.Jegantha
             );
         }
@@ -230,14 +230,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck15_Mateusf34_ETron_C()
+        public void Deck15_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-28",14),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -256,7 +256,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck17_LordofPuntlantis_IzzetRestoreBalance_UR()
+        public void Deck17_LordofPuntlantis_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-28",16),

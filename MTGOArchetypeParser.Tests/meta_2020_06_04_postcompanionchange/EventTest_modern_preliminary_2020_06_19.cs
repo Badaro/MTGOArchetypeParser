@@ -12,7 +12,7 @@ using System.Text;
 #01 _Shatun_: Gruul Midrange (RG)
 #02 MrJACEone: Crabvine (UBG)
 #03 qbturtle15: Gruul Midrange (RG, Obosh)
-#04 staples87: E Tron (C)
+#04 staples87: Eldrazi Tron (C)
 #05 PeanutBrittle: Thopter Urza (UBR)
 #06 billsive: Bant Control (WUG, Yorion)
 #07 no_lyfe: Mono Red Prowess (R)
@@ -72,14 +72,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck04_staples87_ETron_C()
+        public void Deck04_staples87_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-19",3),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

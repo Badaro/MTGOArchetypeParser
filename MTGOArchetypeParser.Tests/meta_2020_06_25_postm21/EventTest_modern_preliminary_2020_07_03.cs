@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Thrall90: Jund Midrange (BRG)
 #02 _titoWii_96: WURG Control (WURG, Yorion)
-#03 Boin: E Tron (C)
+#03 Boin: Eldrazi Tron (C)
 #04 jdez: Orzhov Shadow (WB)
 #05 triosk: Hardened Scales (G)
 #06 Laplasjan: Devoted (WG, Lurrus)
@@ -50,14 +50,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck03_Boin_ETron_C()
+        public void Deck03_Boin_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-03",2),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 BSK_hercules: Sultai Control (UBG)
 #02 Mulldrifter: Shadow Prowess (WBR, Lurrus)
-#03 Lord_of_Puntlantis: Izzet Restore Balance (UR)
+#03 Lord_of_Puntlantis: Electro Balance (UR)
 #04 kthanakit26: Shadow Prowess (BR, Lurrus)
 #05 katoriarch123: WURG Control (WURG)
 #06 Artem_Kuhtin: Reclaimer Titan (WRG)
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_LordofPuntlantis_IzzetRestoreBalance_UR()
+        public void Deck03_LordofPuntlantis_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-11",2),

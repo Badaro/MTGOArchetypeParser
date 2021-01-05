@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 BERNASTORRES: KGC Tron (G)
+#01 BERNASTORRES: Green Tron (G)
 #02 kiko: Azorius Taxes (WU, Yorion)
 #03 medvedev: Dimir Control (UB)
 #04 Scabs: Heliod Combo (WR)
@@ -21,14 +21,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_12_26 : EventTest
     {
         [Test]
-        public void Deck01_BERNASTORRES_KGCTron_G()
+        public void Deck01_BERNASTORRES_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-26",0),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

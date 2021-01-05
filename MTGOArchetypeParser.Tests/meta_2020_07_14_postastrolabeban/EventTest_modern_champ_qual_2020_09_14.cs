@@ -13,28 +13,28 @@ using System.Text;
 #02 billsive: Temur Control (URG)
 #03 Ivc: Azorius Control (WU)
 #04 Sharkcaster_Mage: Reclaimer Titan (WRG)
-#05 3HaLeX1: E Tron (C)
+#05 3HaLeX1: Eldrazi Tron (C)
 #06 Gerschi: Sultai Control (UBG)
 #07 Daking3603: Reclaimer Titan (WRG)
 #08 Violent_Outburst: Scapeshift (URG)
 #09 Venom1: Ad Nauseam (WUB)
 #10 Zar0s: Reclaimer Titan (WG)
-#11 otakkun: KGC Tron (G)
+#11 otakkun: Green Tron (G)
 #12 Janh: Sultai Control (UBG)
 #13 johnsmith3373: Izzet Prowess (UR)
 #14 Patxi: Rakdos Prowess (BR, Lurrus)
 #15 gove1931: Bant Control (WUG)
 #16 CavalloGoloso: Azorius Control (WU)
-#17 HamburgerJung: Golos Tron (G, Jegantha)
+#17 HamburgerJung: Green Tron (G, Jegantha)
 #18 HotBread: Izzet Prowess (UR)
 #19 AJOCHUM: Temur Control (URG)
 #20 oskiyaa: Obosh Aggro (R, Obosh)
-#21 Colossum: KGC Tron (G)
+#21 Colossum: Green Tron (G)
 #22 patheus_84: Ad Nauseam (WUB)
 #23 canepis16: Rakdos Prowess (BR, Lurrus)
 #24 ShowTime_: Burn (WR, Lurrus)
 #25 junghans: Devoted (WG)
-#26 Mateusf34: E Tron (C)
+#26 Mateusf34: Eldrazi Tron (C)
 #27 Kuhb: Devoted (WG, Lurrus)
 #28 MoxSquirrel: Rakdos Prowess (BR, Lurrus)
 #29 aspiringspike: Azorius Control (WU)
@@ -100,14 +100,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_3HaLeX1_ETron_C()
+        public void Deck05_3HaLeX1_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-09-14",4),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -178,14 +178,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck11_otakkun_KGCTron_G()
+        public void Deck11_otakkun_GreenTron_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-09-14",10),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -256,14 +256,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck17_HamburgerJung_GolosTron_G_Jegantha()
+        public void Deck17_HamburgerJung_GreenTron_G_Jegantha()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-09-14",16),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 ArchetypeCompanion.Jegantha
             );
         }
@@ -308,14 +308,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck21_Colossum_KGCTron_G()
+        public void Deck21_Colossum_GreenTron_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-09-14",20),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -373,14 +373,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck26_Mateusf34_ETron_C()
+        public void Deck26_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-09-14",25),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

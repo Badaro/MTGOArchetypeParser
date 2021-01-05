@@ -12,7 +12,7 @@ using System.Text;
 #01 Kiwairay: Oops All Spells (WUBRG)
 #02 stayrospet: Omnath Saheeli (WURG, Jegantha)
 #03 HouseOfManaMTG: Amulet Titan (RG)
-#04 tkcheungab: KGC Tron (G)
+#04 tkcheungab: Green Tron (G)
 #05 Moniz0801: Reclaimer Titan (WRG)
 #06 iL_Tedesco: Abzan Midrange (WBG)
 #07 yoshiwata: Mono White Taxes (W)
@@ -65,14 +65,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_tkcheungab_KGCTron_G()
+        public void Deck04_tkcheungab_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-21",3),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

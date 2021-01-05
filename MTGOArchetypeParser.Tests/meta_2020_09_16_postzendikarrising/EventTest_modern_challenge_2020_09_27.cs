@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 musasabi: Orzhov Midrange (WB)
 #02 __matsugan: Oops All Spells (WUBG)
-#03 Bedell: KGC Amulet Titan (URG)
+#03 Bedell: Amulet Titan (URG)
 #04 Bullwinkkle6705: UBRG Control (UBRG)
 #05 GodOfSlaughter: Niv To Light (WUBRG, Yorion)
 #06 rob85tx: Izzet Prowess (UR)
@@ -20,7 +20,7 @@ using System.Text;
 #09 Morenothings: Humans (WUBRG)
 #10 ZYURYO: WURG Control (WURG)
 #11 qbturtle15: Mono White Taxes (W)
-#12 122pablo: Jeskai Ascendancy (WURG, Jegantha)
+#12 122pablo: Ascendancy Combo (WURG, Jegantha)
 #13 SoulStrong: Shadow Prowess (BR, Lurrus)
 #14 Sodeq: Ad Nauseam (WUB)
 #15 Antarctica: Mardu Prowess (WBR, Lurrus)
@@ -74,7 +74,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_Bedell_KGCAmuletTitan_URG()
+        public void Deck03_Bedell_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-27",2),
@@ -191,7 +191,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_122pablo_JeskaiAscendancy_WURG_Jegantha()
+        public void Deck12_122pablo_AscendancyCombo_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-27",11),

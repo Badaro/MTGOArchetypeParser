@@ -11,11 +11,11 @@ using System.Text;
 /*
 #01 mindcandy: Temur Control (URG)
 #02 eXavie: Rakdos Prowess (BR, Lurrus)
-#03 Snusnumrick: E Tron (C)
+#03 Snusnumrick: Eldrazi Tron (C)
 #04 __matsugan: Neobrand (UG)
 #05 cntrlfreak: Sultai Shadow (UBG)
 #06 tibalt_of_red_sub: Mill (UB, Lurrus)
-#07 cnofafva: KGC Amulet Titan (UG)
+#07 cnofafva: Amulet Titan (UG)
 #08 Toastxp: Rakdos Prowess (BR, Lurrus)
 #09 cws: Gifts Storm (UR)
 #10 TSPJendrek: Sultai Control (UBG)
@@ -24,7 +24,7 @@ using System.Text;
 #13 shub89: Izzet Prowess (UR)
 #14 Rhianne: Dredge (BRG)
 #15 2jjm: Izzet Prowess (UR)
-#16 discoverN: KGC Tron (G)
+#16 discoverN: Green Tron (G)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -58,14 +58,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_Snusnumrick_ETron_C()
+        public void Deck03_Snusnumrick_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-11",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -110,7 +110,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck07_cnofafva_KGCAmuletTitan_UG()
+        public void Deck07_cnofafva_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-11",6),
@@ -227,14 +227,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck16_discoverN_KGCTron_G()
+        public void Deck16_discoverN_GreenTron_G()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-11",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

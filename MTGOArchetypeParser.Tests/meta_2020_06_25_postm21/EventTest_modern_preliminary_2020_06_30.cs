@@ -11,17 +11,17 @@ using System.Text;
 /*
 #01 pbarrrgh: Temur Control (URG)
 #02 npercario: Bant Control (WUG)
-#03 staples87: E Tron (C)
+#03 staples87: Eldrazi Tron (C)
 #04 Laplasjan: Devoted (WG, Lurrus)
 #05 ecobaronen: Bant Control (WUG)
 #06 Larry11: Gruul Midrange (RG)
 #07 billsive: Sultai Control (UBG)
-#08 EdB: Snoop Goblins (BR)
+#08 EdB: Goblins (BR)
 #09 Voidpaw: Jund Midrange (BRG)
-#10 RicardoMSLan: E Tron (C)
-#11 Niallghas: Snoop Goblins (BR)
+#10 RicardoMSLan: Eldrazi Tron (C)
+#11 Niallghas: Goblins (BR)
 #12 Boland: Dredge (BRG)
-#13 Haunter_Hunter: Snoop Goblins (BR)
+#13 Haunter_Hunter: Goblins (BR)
 #14 mariogomes097: Grixis Shadow (UBR)
 #15 FEARnLOATHing: Izzet Prowess (UR)
 */
@@ -57,14 +57,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck03_staples87_ETron_C()
+        public void Deck03_staples87_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",2),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -122,7 +122,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck08_EdB_SnoopGoblins_BR()
+        public void Deck08_EdB_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",7),
@@ -148,20 +148,20 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck10_RicardoMSLan_ETron_C()
+        public void Deck10_RicardoMSLan_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",9),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck11_Niallghas_SnoopGoblins_BR()
+        public void Deck11_Niallghas_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",10),
@@ -187,7 +187,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck13_HaunterHunter_SnoopGoblins_BR()
+        public void Deck13_HaunterHunter_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",12),

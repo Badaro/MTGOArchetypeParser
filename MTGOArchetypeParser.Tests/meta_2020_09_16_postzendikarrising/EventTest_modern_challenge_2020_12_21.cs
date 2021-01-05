@@ -40,7 +40,7 @@ using System.Text;
 #29 Laplasjan: Hammer Time (WB, Lurrus)
 #30 Binolino: Reclaimer Titan (WG)
 #31 UmekawaneikU: Rakdos Midrange (BR)
-#32 Mateusf34: E Tron (C)
+#32 Mateusf34: Eldrazi Tron (C)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -451,14 +451,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck32_Mateusf34_ETron_C()
+        public void Deck32_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-21",31),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

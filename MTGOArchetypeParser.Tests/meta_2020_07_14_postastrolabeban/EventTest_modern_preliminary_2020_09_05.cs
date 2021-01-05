@@ -15,11 +15,11 @@ using System.Text;
 #04 Toastxp: Reclaimer Titan (WRG, Yorion)
 #05 JustBurn420: Slivers (WUBRG)
 #06 Beltan3: Ad Nauseam (WUB)
-#07 Trid0n: KGC Amulet Titan (UG)
+#07 Trid0n: Amulet Titan (UG)
 #08 niftylegos: Burn (WR)
 #09 IntegralHDK: Boros Prowess (WR, Lurrus)
 #10 Do0mSwitch: Bant Control (WUG)
-#11 SebastianStueckl: KGC Amulet Titan (UG)
+#11 SebastianStueckl: Amulet Titan (UG)
 #12 ilsecco14: Neobrand (UG)
 #13 Zar0s: Amulet Titan (URG)
 */
@@ -107,7 +107,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_Trid0n_KGCAmuletTitan_UG()
+        public void Deck07_Trid0n_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-05",6),
@@ -159,7 +159,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_SebastianStueckl_KGCAmuletTitan_UG()
+        public void Deck11_SebastianStueckl_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-05",10),

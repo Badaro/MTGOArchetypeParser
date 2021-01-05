@@ -12,15 +12,15 @@ using System.Text;
 #01 Rooney56: Azorius Control (WU)
 #02 CavalloGoloso: Izzet Control (UR)
 #03 Costola91: Grixis Shadow (UBR)
-#04 BasedCloy: E Tron (C)
+#04 BasedCloy: Eldrazi Tron (C)
 #05 Wuhsa: Niv To Light (WUBRG, Yorion)
 #06 lilianaofthevess: Izzet Prowess (UR)
-#07 CReactor: KGC Tron (G)
+#07 CReactor: Green Tron (G)
 #08 Imaeda: Izzet Prowess (UR)
 #09 Hampuse1: Dice Factory Tron (C)
 #10 BSK_hercules: Temur Control (URG)
-#11 Zar0s: KGC Amulet Titan (G)
-#12 otakkun: KGC Tron (G)
+#11 Zar0s: Amulet Titan (G)
+#12 otakkun: Green Tron (G)
 #13 ht991122: Temur Control (URG)
 #14 kbzx: Izzet Prowess (UR)
 #15 komattaman: Gruul Midrange (RG)
@@ -70,14 +70,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_BasedCloy_ETron_C()
+        public void Deck04_BasedCloy_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -109,14 +109,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck07_CReactor_KGCTron_G()
+        public void Deck07_CReactor_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -142,7 +142,7 @@ typeof(GreenTron),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(DiceFactoryTron),
+                typeof(DiceFactoryTron),
                 null
             );
         }
@@ -161,7 +161,7 @@ typeof(DiceFactoryTron),
         }
 
         [Test]
-        public void Deck11_Zar0s_KGCAmuletTitan_G()
+        public void Deck11_Zar0s_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",10),
@@ -174,14 +174,14 @@ typeof(DiceFactoryTron),
         }
 
         [Test]
-        public void Deck12_otakkun_KGCTron_G()
+        public void Deck12_otakkun_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-15",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

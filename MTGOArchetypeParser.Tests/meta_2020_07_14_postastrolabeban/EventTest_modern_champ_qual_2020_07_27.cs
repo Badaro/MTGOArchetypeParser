@@ -12,31 +12,31 @@ using System.Text;
 #01 Lavaridge: Temur Control (URG)
 #02 NuBlkAu: Izzet Prowess (UR)
 #03 _LSN_: Burn (WR)
-#04 A22en: Snoop Goblins (BR)
-#05 ArchaeusDota: KGC Tron (G)
+#04 A22en: Goblins (BR)
+#05 ArchaeusDota: Green Tron (G)
 #06 JUJUBEAN__2004: Scapeshift (URG)
-#07 Maratiam: E Tron (C)
+#07 Maratiam: Eldrazi Tron (C)
 #08 AstralPlane: Izzet Prowess (UR)
 #09 mechrataal: Azorius Control (WU)
 #10 SpiderSpace: Mono White Taxes (W)
 #11 Lukas261997: Azorius Control (WU)
 #12 Thrall90: Jund Midrange (BRG)
-#13 Mateusf34: E Tron (C)
+#13 Mateusf34: Eldrazi Tron (C)
 #14 Bullz0Eye: Dredge (BRG)
 #15 andrw1232: Rakdos Prowess (BR, Lurrus)
-#16 chasedaddydizzle: G Tron (G)
-#17 Beenew: KGC Tron (G)
+#16 chasedaddydizzle: Green Tron (G)
+#17 Beenew: Green Tron (G)
 #18 TheJigIsAlwaysup: Gruul Midrange (RG)
 #19 123Pwned: Izzet Prowess (UR)
 #20 Voltzwagon: Gruul Midrange (RG)
 #21 ponchonater55: Incinerator Burn (WR)
-#22 staples87: E Tron (C)
+#22 staples87: Eldrazi Tron (C)
 #23 Mad-Ramon: Temur Control (URG)
 #24 wambocombo2020: Mardu Prowess (WBR, Lurrus)
 #25 timewalkinonsunshine: Taking Turns (URG)
 #26 Alzik: Gruul Midrange (RG)
 #27 ATXroy: Izzet Prowess (UR)
-#28 HannoLee: KGC Tron (G)
+#28 HannoLee: Green Tron (G)
 #29 eclipse4343: Azorius Control (WU)
 #30 aqualog: Izzet Prowess (UR)
 #31 juzam_gin: Dredge (BRG)
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_A22en_SnoopGoblins_BR()
+        public void Deck04_A22en_Goblins_BR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",3),
@@ -100,14 +100,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_ArchaeusDota_KGCTron_G()
+        public void Deck05_ArchaeusDota_GreenTron_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",4),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -126,14 +126,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck07_Maratiam_ETron_C()
+        public void Deck07_Maratiam_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -204,14 +204,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck13_Mateusf34_ETron_C()
+        public void Deck13_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",12),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -243,27 +243,27 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck16_chasedaddydizzle_GTron_G()
+        public void Deck16_chasedaddydizzle_GreenTron_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
 
         [Test]
-        public void Deck17_Beenew_KGCTron_G()
+        public void Deck17_Beenew_GreenTron_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",16),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -321,14 +321,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck22_staples87_ETron_C()
+        public void Deck22_staples87_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",21),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -399,14 +399,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck28_HannoLee_KGCTron_G()
+        public void Deck28_HannoLee_GreenTron_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",27),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

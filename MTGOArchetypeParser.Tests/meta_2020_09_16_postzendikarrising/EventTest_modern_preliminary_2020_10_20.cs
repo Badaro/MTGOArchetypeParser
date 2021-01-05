@@ -13,7 +13,7 @@ using System.Text;
 #02 Kiwairay: Oops All Spells (WUBRG)
 #03 McWinSauce: WURG Control (WURG)
 #04 TwistedWombat: Omnath Saheeli (WURG, Jegantha)
-#05 Sanchez5272: E Tron (C)
+#05 Sanchez5272: Eldrazi Tron (C)
 #06 ArchivalRain: Gifts Storm (UR)
 #07 Biednarccio: Mono White Taxes (W)
 #08 _Shatun_: Obosh Aggro (R, Obosh)
@@ -81,14 +81,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_Sanchez5272_ETron_C()
+        public void Deck05_Sanchez5272_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-20",4),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

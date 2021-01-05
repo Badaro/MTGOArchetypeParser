@@ -16,7 +16,7 @@ using System.Text;
 #05 SourceOdin: Reclaimer Titan (WRG)
 #06 asnook: Rakdos Prowess (BR, Lurrus)
 #07 RAINkratos: Hammer Time (W)
-#08 skinnyvin: G Tron (G)
+#08 skinnyvin: Green Tron (G)
 #09 Trid0n: Humans (WUBRG)
 #10 moyashi0904: Sultai Control (UBG)
 #11 BERNASTORRES: Bogles (WG, Lurrus)
@@ -118,14 +118,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_skinnyvin_GTron_G()
+        public void Deck08_skinnyvin_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-09",7),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

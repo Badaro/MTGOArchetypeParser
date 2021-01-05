@@ -15,14 +15,14 @@ using System.Text;
 #04 _Ingles_: Ad Nauseam (WUB)
 #05 killersuv: Temur Control (URG)
 #06 fatkiddestroyers: Bant Midrange (WUG)
-#07 stonepeanut: KGC Tron (G)
+#07 stonepeanut: Green Tron (G)
 #08 Kazuga: Obosh Aggro (R, Obosh)
-#09 122pablo: Jeskai Ascendancy (WURG, Jegantha)
+#09 122pablo: Ascendancy Combo (WURG, Jegantha)
 #10 Usama96: Jund Midrange (BRG)
 #11 gove1931: Bant Control (WUG)
 #12 Zar0s: Humans (WUBRG)
 #13 hcook725: Mardu Shadow (WBR)
-#14 RicardoMSLan: E Tron (C)
+#14 RicardoMSLan: Eldrazi Tron (C)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -108,14 +108,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_stonepeanut_KGCTron_G()
+        public void Deck07_stonepeanut_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-15",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -134,7 +134,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck09_122pablo_JeskaiAscendancy_WURG_Jegantha()
+        public void Deck09_122pablo_AscendancyCombo_WURG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-15",8),
@@ -199,14 +199,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck14_RicardoMSLan_ETron_C()
+        public void Deck14_RicardoMSLan_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-15",13),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

@@ -11,10 +11,10 @@ using System.Text;
 /*
 #01 ImmanuelKantrolGod: Bant Control (WUG)
 #02 McWinSauce: Bant Control (WUG)
-#03 otakkun: KGC Tron (G)
+#03 otakkun: Green Tron (G)
 #04 aManatease: Izzet Prowess (UR)
 #05 CrusherBotBG: Hammer Time (W)
-#06 kingsmudge: E Tron (C)
+#06 kingsmudge: Eldrazi Tron (C)
 #07 JakeHelms: Rakdos Prowess (BR, Lurrus)
 #08 __matsugan: Dredge (BRG)
 #09 kanister: Bant Control (WUG)
@@ -52,14 +52,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_otakkun_KGCTron_G()
+        public void Deck03_otakkun_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-22",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -91,14 +91,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck06_kingsmudge_ETron_C()
+        public void Deck06_kingsmudge_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-22",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

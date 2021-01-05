@@ -18,7 +18,7 @@ using System.Text;
 #07 mmapson125: Heliod Combo (WG)
 #08 fwdr3: Shadow Prowess (BR, Lurrus)
 #09 albert62: WURG Control (WURG)
-#10 Damgar: KGC Tron (G)
+#10 Damgar: Green Tron (G)
 #11 toondoslav: Dredge (BRG)
 #12 musasabi: Shadow Prowess (BR, Lurrus)
 #13 Loco78: Jund Midrange (BRG)
@@ -148,14 +148,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_Damgar_KGCTron_G()
+        public void Deck10_Damgar_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-25",9),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

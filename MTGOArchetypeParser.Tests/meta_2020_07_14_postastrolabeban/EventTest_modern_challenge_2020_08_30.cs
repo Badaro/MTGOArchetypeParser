@@ -17,21 +17,21 @@ using System.Text;
 #06 SpiderSpace: Humans (WUBRG)
 #07 qbturtle15: Gruul Midrange (RG)
 #08 Jack_Kashtan: Ad Nauseam (WUB)
-#09 FreedMania: KGC Amulet Titan (UG)
+#09 FreedMania: Amulet Titan (UG)
 #10 BigPanda_559: Burn (WR)
 #11 SpicyLeche: Jund Shadow (BRG, Lurrus)
 #12 exoticherman: Mardu Prowess (WBR, Lurrus)
 #13 trader08111: Izzet Prowess (UR)
 #14 Fluorspar: Humans (WUBRG)
 #15 crazybaloth: Humans (WUBRG)
-#16 Trellon: U Tron (U)
+#16 Trellon: Blue Tron (U)
 #17 blastoids: Bant Control (WUG)
 #18 PvtEnormous: Bant Control (WUG)
 #19 Day_man: Temur Control (URG)
-#20 Midguy: KGC Tron (G)
-#21 Lord_of_Puntlantis: Izzet Restore Balance (UR)
+#20 Midguy: Green Tron (G)
+#21 Lord_of_Puntlantis: Electro Balance (UR)
 #22 FloorFlower: Gruul Midrange (RG)
-#23 raven0904: G Tron (G)
+#23 raven0904: Green Tron (G)
 #24 Corrado: Rakdos Prowess (BR, Lurrus)
 #25 FestiFan: Temur Control (URG)
 #26 scipios: Crabvine (UBG)
@@ -152,7 +152,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_FreedMania_KGCAmuletTitan_UG()
+        public void Deck09_FreedMania_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",8),
@@ -243,14 +243,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck16_Trellon_UTron_U()
+        public void Deck16_Trellon_BlueTron_U()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.U,
                 typeof(Tron),
-typeof(BlueTron),
+                typeof(BlueTron),
                 null
             );
         }
@@ -295,20 +295,20 @@ typeof(BlueTron),
         }
 
         [Test]
-        public void Deck20_Midguy_KGCTron_G()
+        public void Deck20_Midguy_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",19),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
 
         [Test]
-        public void Deck21_LordofPuntlantis_IzzetRestoreBalance_UR()
+        public void Deck21_LordofPuntlantis_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",20),
@@ -334,14 +334,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck23_raven0904_GTron_G()
+        public void Deck23_raven0904_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",22),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

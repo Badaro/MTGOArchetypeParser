@@ -10,14 +10,14 @@ using System.Text;
 
 /*
 #01 Janh: Scapeshift (URG, Yorion)
-#02 medvedev: E Tron (C)
-#03 otakkun: KGC Tron (G)
-#04 fistfullofmetal: E Tron (C)
-#05 sff_mtg: KGC Tron (G)
+#02 medvedev: Eldrazi Tron (C)
+#03 otakkun: Green Tron (G)
+#04 fistfullofmetal: Eldrazi Tron (C)
+#05 sff_mtg: Green Tron (G)
 #06 PRGJJAR: Dredge (BRG)
 #07 ZYURYO: Bant Control (WUG)
 #08 spellvine: Izzet Prowess (UR)
-#09 WanderingOnes: KGC Tron (G)
+#09 WanderingOnes: Green Tron (G)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
@@ -38,53 +38,53 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck02_medvedev_ETron_C()
+        public void Deck02_medvedev_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-08",1),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck03_otakkun_KGCTron_G()
+        public void Deck03_otakkun_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-08",2),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
 
         [Test]
-        public void Deck04_fistfullofmetal_ETron_C()
+        public void Deck04_fistfullofmetal_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-08",3),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck05_sffmtg_KGCTron_G()
+        public void Deck05_sffmtg_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-08",4),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -129,14 +129,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck09_WanderingOnes_KGCTron_G()
+        public void Deck09_WanderingOnes_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-08",8),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

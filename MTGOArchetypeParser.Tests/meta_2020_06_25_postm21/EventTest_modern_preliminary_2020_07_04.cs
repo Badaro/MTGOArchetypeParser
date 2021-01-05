@@ -13,11 +13,11 @@ using System.Text;
 #02 ZYURYO: Bant Control (WUG)
 #03 ManuelJacob: Sultai Control (UBG)
 #04 _INF_: Gifts Storm (UR)
-#05 bnlunt: U Tron (U)
+#05 bnlunt: Blue Tron (U)
 #06 nielsen333: Primeval Titan (BG)
 #07 Laessoe: Gruul Midrange (RG)
-#08 siomomi: KGC Tron (G)
-#09 triosk: Snoop Goblins (BR)
+#08 siomomi: Green Tron (G)
+#09 triosk: Goblins (BR)
 #10 cjucjujp: Bushwhacker Zoo (RG)
 */
 
@@ -78,14 +78,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck05_bnlunt_UTron_U()
+        public void Deck05_bnlunt_BlueTron_U()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-04",4),
                 new PostM21(),
                 ArchetypeColor.U,
                 typeof(Tron),
-typeof(BlueTron),
+                typeof(BlueTron),
                 null
             );
         }
@@ -117,20 +117,20 @@ typeof(BlueTron),
         }
 
         [Test]
-        public void Deck08_siomomi_KGCTron_G()
+        public void Deck08_siomomi_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-04",7),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
 
         [Test]
-        public void Deck09_triosk_SnoopGoblins_BR()
+        public void Deck09_triosk_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-04",8),

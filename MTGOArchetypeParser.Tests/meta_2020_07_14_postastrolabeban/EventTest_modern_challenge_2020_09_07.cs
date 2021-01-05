@@ -23,12 +23,12 @@ using System.Text;
 #12 Rav104: Izzet Prowess (UR)
 #13 Yanti: Gruul Midrange (RG)
 #14 faisal: Jund Midrange (BRG)
-#15 Nekonii: Golgari Elves (BG)
+#15 Nekonii: Elves (BG)
 #16 Delthar: Mill (UB)
 #17 Nikachu: Merfolk (UG)
 #18 Erik157751: Dredge (BRG)
 #19 medvedev: Amulet Titan (RG)
-#20 calheiros: KGC Amulet Titan (G)
+#20 calheiros: Amulet Titan (G)
 #21 Filyoni: Dredge (BRG)
 #22 McWinSauce: Bant Control (WUG)
 #23 Baku_91: Rakdos Prowess (BR, Lurrus)
@@ -39,7 +39,7 @@ using System.Text;
 #28 toondoslav: Infect (WUG)
 #29 ShishaMisha: Jund Midrange (BRG)
 #30 hcook725: Uroza (WUG)
-#31 tuckbear: Red Prison (R)
+#31 tuckbear: Pyro Prison (R)
 #32 joetru: Jund Midrange (BRG)
 */
 
@@ -230,7 +230,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_Nekonii_GolgariElves_BG()
+        public void Deck15_Nekonii_Elves_BG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-07",14),
@@ -295,7 +295,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_calheiros_KGCAmuletTitan_G()
+        public void Deck20_calheiros_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-07",19),
@@ -438,7 +438,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck31_tuckbear_RedPrison_R()
+        public void Deck31_tuckbear_PyroPrison_R()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-07",30),

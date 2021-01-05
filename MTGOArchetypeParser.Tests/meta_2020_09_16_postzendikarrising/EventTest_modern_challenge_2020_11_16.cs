@@ -15,7 +15,7 @@ using System.Text;
 #04 Tiemuuu: Izzet Control (UR)
 #05 kanister: Dimir Control (UB)
 #06 AstralPlane: Izzet Prowess (UR)
-#07 fradev1988: Izzet Restore Balance (UR)
+#07 fradev1988: Electro Balance (UR)
 #08 SoulStrong: Reclaimer Titan (WRG)
 #09 nahuel10: Izzet Prowess (UR)
 #10 UmekawaneikU: Shadow Prowess (BRG, Lurrus)
@@ -28,10 +28,10 @@ using System.Text;
 #17 _Falcon_: Shadow Prowess (BR, Lurrus)
 #18 patheus_84: Ad Nauseam (WUB)
 #19 Antus94: Shadow Prowess (BRG, Lurrus)
-#20 TBxGreenguy: Bant Spirits (WUG)
+#20 TBxGreenguy: Spirits (WUG)
 #21 SebastianStueckl: Gruul Midrange (RG)
 #22 Jenara19: WURG Control (WURG)
-#23 Pomeelo98: E Tron (C)
+#23 Pomeelo98: Eldrazi Tron (C)
 #24 Delthar: Mill (UB)
 #25 maicmaic: Shadow Prowess (BR, Lurrus)
 #26 Better_than_Average: Obosh Aggro (R, Obosh)
@@ -126,7 +126,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_fradev1988_IzzetRestoreBalance_UR()
+        public void Deck07_fradev1988_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-16",6),
@@ -295,7 +295,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_TBxGreenguy_BantSpirits_WUG()
+        public void Deck20_TBxGreenguy_Spirits_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-16",19),
@@ -334,14 +334,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck23_Pomeelo98_ETron_C()
+        public void Deck23_Pomeelo98_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-16",22),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

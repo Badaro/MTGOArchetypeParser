@@ -9,20 +9,20 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Wizard_2002: KGC Tron (G)
-#02 Ravul: E Tron (C)
+#01 Wizard_2002: Green Tron (G)
+#02 Ravul: Eldrazi Tron (C)
 #03 Mcleskey: Izzet Prowess (UR)
 #04 Phill_Hellmuth: Shadow Prowess (WBR, Lurrus)
-#05 pokerswizard: KGC Tron (G)
+#05 pokerswizard: Green Tron (G)
 #06 xfile: Mono White Taxes (W)
 #07 QuaCk QuaCk: Scapeshift (URG)
 #08 DrDree: Gruul Midrange (RG)
 #09 Alrawn: Shadow Prowess (BR, Lurrus)
 #10 _Stream: Jund Prowess (BRG, Lurrus)
 #11 bgv1989: Ad Nauseam (WUB)
-#12 SpiderSpace: Izzet Restore Balance (UR)
+#12 SpiderSpace: Electro Balance (UR)
 #13 tzio: Orzhov Midrange (WB)
-#14 ice_nine_: Boros Land Destruction (WR)
+#14 ice_nine_: Land Destruction (WR)
 #15 mmapson125: WURG Control (WURG)
 #16 Ramp: Reclaimer Titan (WG)
 #17 Matteso: Gifts Storm (UR)
@@ -34,27 +34,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_11_05 : EventTest
     {
         [Test]
-        public void Deck01_Wizard2002_KGCTron_G()
+        public void Deck01_Wizard2002_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-05",0),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
 
         [Test]
-        public void Deck02_Ravul_ETron_C()
+        public void Deck02_Ravul_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-05",1),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -86,14 +86,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck05_pokerswizard_KGCTron_G()
+        public void Deck05_pokerswizard_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-05",4),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -177,7 +177,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck12_SpiderSpace_IzzetRestoreBalance_UR()
+        public void Deck12_SpiderSpace_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-05",11),
@@ -203,7 +203,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck14_icenine_BorosLandDestruction_WR()
+        public void Deck14_icenine_LandDestruction_WR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-05",13),

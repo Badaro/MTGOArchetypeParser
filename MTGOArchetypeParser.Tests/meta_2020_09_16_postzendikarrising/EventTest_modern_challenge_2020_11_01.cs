@@ -19,27 +19,27 @@ using System.Text;
 #08 yamakiller: Gruul Midrange (RG)
 #09 Bayesta_93: Shadow Prowess (BR, Lurrus)
 #10 Ryan100495: Dredge (BRG)
-#11 silvanelf7: KGC Tron (G)
+#11 silvanelf7: Green Tron (G)
 #12 tuckbear: Sultai Midrange (UBG)
-#13 SebastianStueckl: KGC Tron (G)
+#13 SebastianStueckl: Green Tron (G)
 #14 futureshok: Abzan Midrange (WBG)
 #15 Moniz0801: Amulet Titan (G)
 #16 D00mwake: Reclaimer Titan (WRG)
-#17 122pablo: Jeskai Ascendancy (WURG)
-#18 Martin_Dominguez: Heliod Devoted (WG)
+#17 122pablo: Ascendancy Combo (WURG)
+#18 Martin_Dominguez: Devoted (WG)
 #19 cntrlfreak: Grixis Shadow (UBR)
-#20 Wizard_2002: KGC Tron (G)
+#20 Wizard_2002: Green Tron (G)
 #21 Biednarccio: Amulet Titan (UG)
 #22 TSPJendrek: Izzet Control (UR)
 #23 Tweedel: Humans (WUBRG)
-#24 MastaHorus: Izzet Living End (UR)
+#24 MastaHorus: Electro End (UR)
 #25 mtbWolf: Jund Midrange (BRG)
 #26 BiTXBoi: Selenya Taxes (WG)
 #27 wambocombo2020: Shadow Prowess (BR, Lurrus)
 #28 Capiplaf95: Golgari Midrange (BG)
 #29 gyyby297: Oops All Spells (WUBRG)
 #30 GedionRavenor: WURG Control (WURG)
-#31 Samcaster-Mage: E Tron (C)
+#31 Samcaster-Mage: Eldrazi Tron (C)
 #32 Mazzu93: Jund Midrange (BRG, Lurrus)
 */
 
@@ -178,14 +178,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_silvanelf7_KGCTron_G()
+        public void Deck11_silvanelf7_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-01",10),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -204,14 +204,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck13_SebastianStueckl_KGCTron_G()
+        public void Deck13_SebastianStueckl_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-01",12),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -256,7 +256,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck17_122pablo_JeskaiAscendancy_WURG()
+        public void Deck17_122pablo_AscendancyCombo_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-01",16),
@@ -269,7 +269,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck18_MartinDominguez_HeliodDevoted_WG()
+        public void Deck18_MartinDominguez_Devoted_WG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-01",17),
@@ -295,14 +295,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck20_Wizard2002_KGCTron_G()
+        public void Deck20_Wizard2002_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-01",19),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -347,7 +347,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck24_MastaHorus_IzzetLivingEnd_UR()
+        public void Deck24_MastaHorus_ElectroEnd_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-01",23),
@@ -438,14 +438,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck31_SamcasterMage_ETron_C()
+        public void Deck31_SamcasterMage_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-01",30),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

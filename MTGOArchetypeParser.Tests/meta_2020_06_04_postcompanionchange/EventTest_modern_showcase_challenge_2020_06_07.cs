@@ -18,23 +18,23 @@ using System.Text;
 #07 MatheusPonciano: Dredge (BRG)
 #08 cftsoc3: Bant Blink (WUG, Yorion)
 #09 PietroSas: Devoted (WG, Lurrus)
-#10 TheTunnelingCat: E Tron (C)
-#11 Sonso JF: Heliod Devoted (WBG)
-#12 Moniz0801: KGC Amulet Titan (G)
+#10 TheTunnelingCat: Eldrazi Tron (C)
+#11 Sonso JF: Devoted (WBG)
+#12 Moniz0801: Amulet Titan (G)
 #13 SpiderSpace: Hardened Scales (G)
 #14 patrick50: Devoted (WG, Lurrus)
 #15 rn17: Thopter Urza (UB)
-#16 Trellon: U Tron (U)
+#16 Trellon: Blue Tron (U)
 #17 _Batutinha_: Bant Control (WUG)
 #18 TSPJendrek: WUBG Control (WUBG)
 #19 solace: Gruul Midrange (RG)
 #20 Zebrah: Amulet Titan (UG)
-#21 DavidDPanda: E Tron (C)
+#21 DavidDPanda: Eldrazi Tron (C)
 #22 FreedMania: Amulet Titan (UG)
 #23 BaronOfBacon: Humans (WUBRG)
 #24 GiovaniMF: Burn (WR)
-#25 Icteridae: Heliod Devoted (WUG)
-#26 bobjackson: KGC Tron (G, Jegantha)
+#25 Icteridae: Devoted (WUG)
+#26 bobjackson: Green Tron (G, Jegantha)
 #27 Ennuixd: Amulet Titan (WUG)
 #28 pbarrrgh: Sultai Control (UBG)
 #29 Shorak123: Sultai Control (UBG)
@@ -165,20 +165,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck10_TheTunnelingCat_ETron_C()
+        public void Deck10_TheTunnelingCat_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",9),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck11_SonsoJF_HeliodDevoted_WBG()
+        public void Deck11_SonsoJF_Devoted_WBG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",10),
@@ -191,7 +191,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck12_Moniz0801_KGCAmuletTitan_G()
+        public void Deck12_Moniz0801_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",11),
@@ -243,14 +243,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck16_Trellon_UTron_U()
+        public void Deck16_Trellon_BlueTron_U()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",15),
                 new PostCompanionChange(),
                 ArchetypeColor.U,
                 typeof(Tron),
-typeof(BlueTron),
+                typeof(BlueTron),
                 null
             );
         }
@@ -308,14 +308,14 @@ typeof(BlueTron),
         }
 
         [Test]
-        public void Deck21_DavidDPanda_ETron_C()
+        public void Deck21_DavidDPanda_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",20),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -360,7 +360,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck25_Icteridae_HeliodDevoted_WUG()
+        public void Deck25_Icteridae_Devoted_WUG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",24),
@@ -373,14 +373,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck26_bobjackson_KGCTron_G_Jegantha()
+        public void Deck26_bobjackson_GreenTron_G_Jegantha()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",25),
                 new PostCompanionChange(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 ArchetypeCompanion.Jegantha
             );
         }

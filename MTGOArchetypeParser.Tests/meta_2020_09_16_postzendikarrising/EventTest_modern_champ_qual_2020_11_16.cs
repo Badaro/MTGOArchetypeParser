@@ -23,7 +23,7 @@ using System.Text;
 #12 Poyo_del_Mal: Belcher (URG)
 #13 ColdPier: Thopter Urza (WUBR)
 #14 azax: Reclaimer Titan (WG)
-#15 Damgar: KGC Tron (G)
+#15 Damgar: Green Tron (G)
 #16 jvidarte: Burn (WR, Lurrus)
 #17 katuo079595: Shadow Prowess (BR, Lurrus)
 #18 FreedMania: Amulet Titan (RG)
@@ -32,7 +32,7 @@ using System.Text;
 #21 billsive: Sultai Control (UBG)
 #22 Violent_Outburst: Scapeshift (URG)
 #23 Moniz0801: Amulet Titan (G)
-#24 Mateusf34: E Tron (C)
+#24 Mateusf34: Eldrazi Tron (C)
 #25 yamakiller: Obosh Aggro (R, Obosh)
 #26 BReal2: Shadow Prowess (BR, Lurrus)
 #27 nazart: Heliod Combo (WG)
@@ -230,14 +230,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_Damgar_KGCTron_G()
+        public void Deck15_Damgar_GreenTron_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-11-16",14),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -347,14 +347,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck24_Mateusf34_ETron_C()
+        public void Deck24_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-11-16",23),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

@@ -18,14 +18,14 @@ using System.Text;
 #07 Graciasportanto: WURG Control (WURG)
 #08 Traft: WURG Control (WURG)
 #09 nedyahiske: Sultai Control (UBG)
-#10 Samcaster-Mage: E Tron (C)
+#10 Samcaster-Mage: Eldrazi Tron (C)
 #11 _IlNano_: Shadow Prowess (BR, Lurrus)
 #12 Nammersquats: Humans (WUBRG)
 #13 Mcleskey: Izzet Prowess (UR)
 #14 joetru: Niv To Light (WUBRG)
 #15 yamakiller: Shadow Prowess (BR, Lurrus)
 #16 dani_chad: Jund Midrange (BRG)
-#17 DreamsOfAshiok: E Tron (C)
+#17 DreamsOfAshiok: Eldrazi Tron (C)
 #18 benjamin13: Bushwhacker Zoo (WRG)
 #19 nathanb1992: Orzhov Midrange (WB)
 #20 ilsecco14: Shadow Prowess (BR, Lurrus)
@@ -159,14 +159,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_SamcasterMage_ETron_C()
+        public void Deck10_SamcasterMage_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-02",9),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -250,14 +250,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck17_DreamsOfAshiok_ETron_C()
+        public void Deck17_DreamsOfAshiok_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-02",16),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

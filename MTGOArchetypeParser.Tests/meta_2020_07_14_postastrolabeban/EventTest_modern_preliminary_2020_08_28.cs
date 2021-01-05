@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Gerschi: Mardu Prowess (WBR, Lurrus)
 #02 __matsugan: Ad Nauseam (WUB)
-#03 BERNASTORRES: KGC Tron (G)
+#03 BERNASTORRES: Green Tron (G)
 #04 trader08111: Jund Midrange (BRG)
 #05 Capriccioso: Reclaimer Titan (WRG)
 #06 Milled_: Dredge (BRG)
@@ -25,7 +25,7 @@ using System.Text;
 #14 Xwhale: Rakdos Prowess (BR, Lurrus)
 #15 andrw1232: Rakdos Prowess (BR, Lurrus)
 #16 BananOlaf: Obosh Aggro (R, Obosh)
-#17 Snusnumrick: E Tron (C)
+#17 Snusnumrick: Eldrazi Tron (C)
 #18 hodortimebaby: Golgari Midrange (BG)
 */
 
@@ -60,14 +60,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_BERNASTORRES_KGCTron_G()
+        public void Deck03_BERNASTORRES_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-28",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -242,14 +242,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck17_Snusnumrick_ETron_C()
+        public void Deck17_Snusnumrick_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-28",16),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

@@ -12,8 +12,8 @@ using System.Text;
 #01 JacobofAmber: Enduring Ideal (W)
 #02 PvtEnormous: Bant Control (WUG)
 #03 fistfullofmetal: Gruul Midrange (RG)
-#04 Ravul: KGC Tron (G)
-#05 andycsoto: E Tron (C)
+#04 Ravul: Green Tron (G)
+#05 andycsoto: Eldrazi Tron (C)
 #06 qbturtle15: Gruul Midrange (RG)
 #07 ilsecco14: Sultai Control (UBG)
 #08 JONABSF: Mono Red Prowess (R)
@@ -67,27 +67,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_Ravul_KGCTron_G()
+        public void Deck04_Ravul_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-11",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
 
         [Test]
-        public void Deck05_andycsoto_ETron_C()
+        public void Deck05_andycsoto_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-11",4),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

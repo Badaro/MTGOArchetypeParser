@@ -13,7 +13,7 @@ using System.Text;
 #02 albert62: WURG Control (WURG)
 #03 Gerardo94: WURG Control (WURG)
 #04 PanJ: Grixis Shadow (UBR)
-#05 kanister: Izzet Living End (UR)
+#05 kanister: Electro End (UR)
 #06 Elninyo: Ad Nauseam (WUB)
 #07 ArchaeusDota: Uroza (URG)
 */
@@ -75,7 +75,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_kanister_IzzetLivingEnd_UR()
+        public void Deck05_kanister_ElectroEnd_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-30",4),

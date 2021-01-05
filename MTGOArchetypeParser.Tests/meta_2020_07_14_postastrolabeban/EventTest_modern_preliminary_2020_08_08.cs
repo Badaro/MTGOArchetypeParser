@@ -14,21 +14,21 @@ using System.Text;
 #03 Gigglesworth: Bant Midrange (WUG)
 #04 VampireGodric: Infect (UG)
 #05 ImAFireHydrant: Ad Nauseam (WUB)
-#06 DreamsOfAshiok: E Tron (C)
-#07 AlabasterWolfie: Snoop Goblins (BR)
+#06 DreamsOfAshiok: Eldrazi Tron (C)
+#07 AlabasterWolfie: Goblins (BR)
 #08 ScreenwriterNY: Azorius Taxes (WU)
 #09 BERNASTORRES: Izzet Prowess (UR)
 #10 Moniz0801: Amulet Titan (WG)
 #11 ZYX_Jerry: Ad Nauseam (WUB)
 #12 komattaman: Gruul Midrange (RG)
-#13 Snusnumrick: E Tron (C)
-#14 bobthedog: White Devotion (W)
+#13 Snusnumrick: Eldrazi Tron (C)
+#14 bobthedog: Nykthos Devotion (W)
 #15 buddha715: Ad Nauseam (WUB)
-#16 aManatease: E Tron (C)
-#17 IntegralHDK: Snoop Goblins (BRG)
+#16 aManatease: Eldrazi Tron (C)
+#17 IntegralHDK: Goblins (BRG)
 #18 Delthar: Infect (BG)
 #19 SebastianStueckl: Simic Control (UG)
-#20 Lord_of_Puntlantis: Izzet Restore Balance (UR)
+#20 Lord_of_Puntlantis: Electro Balance (UR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -101,20 +101,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_DreamsOfAshiok_ETron_C()
+        public void Deck06_DreamsOfAshiok_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-08",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck07_AlabasterWolfie_SnoopGoblins_BR()
+        public void Deck07_AlabasterWolfie_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-08",6),
@@ -192,20 +192,20 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck13_Snusnumrick_ETron_C()
+        public void Deck13_Snusnumrick_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-08",12),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck14_bobthedog_WhiteDevotion_W()
+        public void Deck14_bobthedog_NykthosDevotion_W()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-08",13),
@@ -231,20 +231,20 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck16_aManatease_ETron_C()
+        public void Deck16_aManatease_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-08",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck17_IntegralHDK_SnoopGoblins_BRG()
+        public void Deck17_IntegralHDK_Goblins_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-08",16),
@@ -283,7 +283,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck20_LordofPuntlantis_IzzetRestoreBalance_UR()
+        public void Deck20_LordofPuntlantis_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-08",19),

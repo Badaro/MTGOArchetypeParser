@@ -9,14 +9,14 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Bullz0Eye: E Tron (C)
+#01 Bullz0Eye: Eldrazi Tron (C)
 #02 PTarts2win: Gruul Midrange (RG)
 #03 tuhoajatane: Temur Control (URG)
 #04 matiaskm: Devoted (WG, Lurrus)
 #05 ZYURYO: Bant Control (WUG)
 #06 Sodeq: Ad Nauseam (WUB)
 #07 Lavaridge: Sultai Control (UBG)
-#08 Ouranos139: Snoop Goblins (BR)
+#08 Ouranos139: Goblins (BR)
 #09 Skrown: Dredge (BRG)
 #10 iL_Tedesco: Jund Shadow (BRG)
 #11 Diatomic: Bant Control (WUG)
@@ -30,9 +30,9 @@ using System.Text;
 #19 ArchaeusDota: Bant Control (WUG, Yorion)
 #20 Jenara19: Jund Midrange (BRG)
 #21 bobthedog: Sultai Control (UBG)
-#22 DreamsOfAshiok: E Tron (C)
+#22 DreamsOfAshiok: Eldrazi Tron (C)
 #23 JB2002: Bant Control (WUG)
-#24 renatoaraujo: E Tron (C)
+#24 renatoaraujo: Eldrazi Tron (C)
 #25 Blitzlion27: Mill (UB)
 #26 PvtEnormous: Bant Control (WUG)
 #27 HouseOfManaMTG: Amulet Titan (UG)
@@ -40,7 +40,7 @@ using System.Text;
 #29 Laplasjan: Devoted (WG, Lurrus)
 #30 Venom1: Sultai Control (UBG)
 #31 Phil_Ivey: WURG Control (WURG, Yorion)
-#32 SknerusMcKwacz: Snoop Goblins (BR)
+#32 SknerusMcKwacz: Goblins (BR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
@@ -48,14 +48,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_challenge_2020_07_06 : EventTest
     {
         [Test]
-        public void Deck01_Bullz0Eye_ETron_C()
+        public void Deck01_Bullz0Eye_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-06",0),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -139,7 +139,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck08_Ouranos139_SnoopGoblins_BR()
+        public void Deck08_Ouranos139_Goblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-06",7),
@@ -321,14 +321,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck22_DreamsOfAshiok_ETron_C()
+        public void Deck22_DreamsOfAshiok_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-06",21),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -347,14 +347,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck24_renatoaraujo_ETron_C()
+        public void Deck24_renatoaraujo_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-06",23),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -451,7 +451,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck32_SknerusMcKwacz_SnoopGoblins_BR()
+        public void Deck32_SknerusMcKwacz_Goblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-06",31),

@@ -35,7 +35,7 @@ using System.Text;
 #24 darius89: Ad Nauseam (WUB)
 #25 qbturtle15: Azorius Control (WU)
 #26 bigjc00: Amulet Titan (RG)
-#27 kiwgil01: Izzet Restore Balance (UR)
+#27 kiwgil01: Electro Balance (UR)
 #28 Binolino: Reclaimer Titan (WRG)
 #29 patheus_84: Ad Nauseam (WUB)
 #30 HouseOfManaMTG: Amulet Titan (RG)
@@ -386,7 +386,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck27_kiwgil01_IzzetRestoreBalance_UR()
+        public void Deck27_kiwgil01_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-15",26),

@@ -27,7 +27,7 @@ using System.Text;
 #16 nazart: Heliod Combo (WG)
 #17 SweetIto: Shadow Prowess (BR, Lurrus)
 #18 Gigy: Gruul Midrange (RG)
-#19 MastaHorus: Izzet Living End (UR)
+#19 MastaHorus: Electro End (UR)
 #20 Sodeq: Dredge (BRG)
 #21 Filyoni: Heliod Combo (WG)
 #22 Gernardi: Izzet Control (UR)
@@ -282,7 +282,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck19_MastaHorus_IzzetLivingEnd_UR()
+        public void Deck19_MastaHorus_ElectroEnd_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-14",18),

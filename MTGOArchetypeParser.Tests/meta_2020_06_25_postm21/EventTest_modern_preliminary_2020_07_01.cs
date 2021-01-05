@@ -11,11 +11,11 @@ using System.Text;
 /*
 #01 Paeng_Paeng: Merfolk (U)
 #02 JV_7777: Dredge (BRG)
-#03 Whitecell: E Tron (C)
+#03 Whitecell: Eldrazi Tron (C)
 #04 nathanb1992: Infect (UG)
 #05 _INF_: Gifts Storm (UR)
-#06 bladede: E Tron (C)
-#07 otakkun: KGC Tron (G)
+#06 bladede: Eldrazi Tron (C)
+#07 otakkun: Green Tron (G)
 #08 Aluren85: Dredge (BRG)
 #09 MlckyB: Bogles (WG)
 #10 Eaglov: Titan Shift (RG)
@@ -53,14 +53,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck03_Whitecell_ETron_C()
+        public void Deck03_Whitecell_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-01",2),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -92,27 +92,27 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck06_bladede_ETron_C()
+        public void Deck06_bladede_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-01",5),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck07_otakkun_KGCTron_G()
+        public void Deck07_otakkun_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-01",6),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

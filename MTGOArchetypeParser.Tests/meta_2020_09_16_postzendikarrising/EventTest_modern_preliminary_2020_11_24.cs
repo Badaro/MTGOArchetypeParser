@@ -17,16 +17,16 @@ using System.Text;
 #06 Valorj: Heliod Combo (WG)
 #07 WhiTe TsaR: Reclaimer Titan (WRG)
 #08 oskiyaa: Humans (WUBRG)
-#09 Damgar: KGC Tron (G)
+#09 Damgar: Green Tron (G)
 #10 Capriccioso: WURG Control (WURG)
-#11 MastaHorus: Izzet Living End (UR)
+#11 MastaHorus: Electro End (UR)
 #12 Phill_Hellmuth: Dice Factory Tron (C)
-#13 ColdPier: E Tron (C)
+#13 ColdPier: Eldrazi Tron (C)
 #14 VacatedDrake: Azorius Control (WU)
 #15 GrandDrou: Reclaimer Titan (WRG)
 #16 kanister: WURG Control (WURG)
 #17 Arcatera: Shadow Prowess (BRG, Lurrus)
-#18 ACG88: KGC Tron (G)
+#18 ACG88: Green Tron (G)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -138,14 +138,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_Damgar_KGCTron_G()
+        public void Deck09_Damgar_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-24",8),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -164,7 +164,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck11_MastaHorus_IzzetLivingEnd_UR()
+        public void Deck11_MastaHorus_ElectroEnd_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-24",10),
@@ -184,20 +184,20 @@ typeof(GreenTron),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(DiceFactoryTron),
+                typeof(DiceFactoryTron),
                 null
             );
         }
 
         [Test]
-        public void Deck13_ColdPier_ETron_C()
+        public void Deck13_ColdPier_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-24",12),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -255,14 +255,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck18_ACG88_KGCTron_G()
+        public void Deck18_ACG88_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-24",17),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

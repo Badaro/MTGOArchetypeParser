@@ -10,11 +10,11 @@ using System.Text;
 
 /*
 #01 ACG88: Gruul Midrange (RG)
-#02 tkcheungab: KGC Tron (G)
+#02 tkcheungab: Green Tron (G)
 #03 3HaLeX1: WURG Control (WURG)
 #04 Sodeq: Belcher (URG)
 #05 Dish: Obosh Aggro (R, Obosh)
-#06 Littlemastercz: KGC Tron (G)
+#06 Littlemastercz: Green Tron (G)
 #07 andrewsingleton80: Heliod Combo (WG)
 #08 Ouranos139: Heliod Combo (WG)
 #09 Eaglov: Amulet Titan (G)
@@ -41,14 +41,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_tkcheungab_KGCTron_G()
+        public void Deck02_tkcheungab_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-04",1),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -93,14 +93,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck06_Littlemastercz_KGCTron_G()
+        public void Deck06_Littlemastercz_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-04",5),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

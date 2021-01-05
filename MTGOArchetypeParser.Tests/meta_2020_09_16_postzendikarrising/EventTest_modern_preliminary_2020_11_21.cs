@@ -12,11 +12,11 @@ using System.Text;
 #01 Gung: UBRG Control (UBRG)
 #02 mashmalovsky: Ad Nauseam (WUB)
 #03 Tiemuuu: Izzet Control (UR)
-#04 gyyby297: Izzet Restore Balance (UR)
+#04 gyyby297: Electro Balance (UR)
 #05 VitBuk: Izzet Prowess (UR)
 #06 UmekawaneikU: Shadow Prowess (BRG, Lurrus)
 #07 Lavaridge: Dimir Control (UB)
-#08 medvedev: KGC Tron (G)
+#08 medvedev: Green Tron (G)
 #09 xfile: Heliod Combo (WG)
 */
 
@@ -64,7 +64,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_gyyby297_IzzetRestoreBalance_UR()
+        public void Deck04_gyyby297_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-21",3),
@@ -116,14 +116,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_medvedev_KGCTron_G()
+        public void Deck08_medvedev_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-21",7),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

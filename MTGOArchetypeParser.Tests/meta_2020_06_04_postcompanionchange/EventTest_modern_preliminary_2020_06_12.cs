@@ -16,9 +16,9 @@ using System.Text;
 #05 ecobaronen: Gruul Midrange (RG)
 #06 madechai: Mono Red Prowess (R)
 #07 brunocaleb: Gruul Midrange (RG)
-#08 TheTunnelingCat: E Tron (C)
+#08 TheTunnelingCat: Eldrazi Tron (C)
 #09 PRGJJAR: Dredge (BRG)
-#10 staples87: E Tron (C)
+#10 staples87: Eldrazi Tron (C)
 #11 benjamin13: Titan Shift (RG)
 #12 Sonic_Smasher: Bant Control (WUG)
 #13 il_matagatto: Burn (WR)
@@ -125,14 +125,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck08_TheTunnelingCat_ETron_C()
+        public void Deck08_TheTunnelingCat_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-12",7),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -151,14 +151,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck10_staples87_ETron_C()
+        public void Deck10_staples87_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-12",9),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

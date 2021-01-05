@@ -14,13 +14,13 @@ using System.Text;
 #03 RearrangedAS: Spirits (WU)
 #04 Phill_Hellmuth: Gruul Midrange (RG)
 #05 TebbeBear: Ad Nauseam (WUB)
-#06 mathguy31415: KGC Tron (G)
+#06 mathguy31415: Green Tron (G)
 #07 Chuckles1248: Ad Nauseam (WUB)
 #08 slow_brz: Mardu Shadow (WBR)
 #09 SKK: Belcher (RG)
 #10 D00mwake: Mill (UB, Lurrus)
 #11 oshea: Humans (WUBRG)
-#12 bmwracer0: KGC Tron (G)
+#12 bmwracer0: Green Tron (G)
 #13 Alucart: Jund Midrange (BRG)
 #14 SebastianStueckl: Gruul Midrange (RG)
 #15 Xwhale: Humans (WUBRG)
@@ -40,7 +40,7 @@ using System.Text;
 #29 Strox: Jund Midrange (BRG)
 #30 Databyss: Mill (UB)
 #31 Patxi: Humans (WUBRG)
-#32 ScorpionDeathDrop: E Tron (C)
+#32 ScorpionDeathDrop: Eldrazi Tron (C)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -113,14 +113,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_mathguy31415_KGCTron_G()
+        public void Deck06_mathguy31415_GreenTron_G()
         {
             Test(
                 GetDeck("modern-champs-2020-09-21",5),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -191,14 +191,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck12_bmwracer0_KGCTron_G()
+        public void Deck12_bmwracer0_GreenTron_G()
         {
             Test(
                 GetDeck("modern-champs-2020-09-21",11),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -451,14 +451,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck32_ScorpionDeathDrop_ETron_C()
+        public void Deck32_ScorpionDeathDrop_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-champs-2020-09-21",31),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

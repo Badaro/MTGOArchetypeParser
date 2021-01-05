@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Darkiundsa: Humans (WUBRG)
 #02 stayrospet: Omnath Saheeli (WURG, Jegantha)
-#03 Nekonii: Golgari Elves (BG)
+#03 Nekonii: Elves (BG)
 #04 azax: Reclaimer Titan (WG)
 #05 Jositoshekel: Heliod Combo (WG)
 #06 JustJack: Humans (WUBRG)
@@ -28,7 +28,7 @@ using System.Text;
 #17 Gods_Shadow: Grixis Control (UBR, Lurrus)
 #18 DaniMRebel: Spirits (WU)
 #19 Malpyrocky: Shadow Prowess (BR, Lurrus)
-#20 KoKonuts: G Tron (G, Jegantha)
+#20 KoKonuts: Green Tron (G, Jegantha)
 #21 Jenara19: Omnath Saheeli (WURG, Jegantha)
 #22 mechint: WURG Control (WURG)
 #23 Blitzlion27: Mill (WU)
@@ -74,7 +74,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_Nekonii_GolgariElves_BG()
+        public void Deck03_Nekonii_Elves_BG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-19",2),
@@ -295,14 +295,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_KoKonuts_GTron_G_Jegantha()
+        public void Deck20_KoKonuts_GreenTron_G_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-19",19),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 ArchetypeCompanion.Jegantha
             );
         }

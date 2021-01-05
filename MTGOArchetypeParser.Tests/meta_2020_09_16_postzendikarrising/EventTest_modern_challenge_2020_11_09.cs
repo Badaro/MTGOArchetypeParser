@@ -9,16 +9,16 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Samcaster-Mage: E Tron (C)
+#01 Samcaster-Mage: Eldrazi Tron (C)
 #02 Tiemuuu: Izzet Control (UR)
 #03 CordoTwin: Shadow Prowess (BR, Lurrus)
 #04 Jenara19: Amulet Titan (RG)
 #05 Mordeka1ser: Niv To Light (WUBRG, Yorion)
 #06 paucr5: Devoted (WG, Lurrus)
-#07 Moniz0801: KGC Amulet Titan (G)
+#07 Moniz0801: Amulet Titan (G)
 #08 Kurusu: Kiki Chord (WRG, Yorion)
 #09 Laplasjan: Devoted (WG, Lurrus)
-#10 Mateusf34: E Tron (C)
+#10 Mateusf34: Eldrazi Tron (C)
 #11 DenebLyrae: Heliod Combo (WG)
 #12 Sodeq: Oops All Spells (WUBG)
 #13 Nytrox: Heliod Combo (WG)
@@ -48,14 +48,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_challenge_2020_11_09 : EventTest
     {
         [Test]
-        public void Deck01_SamcasterMage_ETron_C()
+        public void Deck01_SamcasterMage_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-09",0),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -126,7 +126,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck07_Moniz0801_KGCAmuletTitan_G()
+        public void Deck07_Moniz0801_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-09",6),
@@ -165,14 +165,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck10_Mateusf34_ETron_C()
+        public void Deck10_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-09",9),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

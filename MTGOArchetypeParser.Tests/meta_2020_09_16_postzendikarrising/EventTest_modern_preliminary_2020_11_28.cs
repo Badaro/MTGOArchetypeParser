@@ -14,12 +14,12 @@ using System.Text;
 #03 Wizard_2002: Burn (WRG)
 #04 eclipse4343: Azorius Control (WU)
 #05 coLDuster: Reclaimer Titan (WRG)
-#06 ice_nine_: Boros Land Destruction (WR)
-#07 Blade400: E Tron (C)
+#06 ice_nine_: Land Destruction (WR)
+#07 Blade400: Eldrazi Tron (C)
 #08 JUJUBEAN__2004: Heliod Combo (WG)
 #09 Zar0s: WURG Control (WURG)
 #10 KarnageKardsENT: WURG Control (WURG)
-#11 Lordzedane: KGC Tron (G)
+#11 Lordzedane: Green Tron (G)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -92,7 +92,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_icenine_BorosLandDestruction_WR()
+        public void Deck06_icenine_LandDestruction_WR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-28",5),
@@ -105,14 +105,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_Blade400_ETron_C()
+        public void Deck07_Blade400_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-28",6),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -157,14 +157,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck11_Lordzedane_KGCTron_G()
+        public void Deck11_Lordzedane_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-28",10),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

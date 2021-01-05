@@ -9,21 +9,21 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 SebastianStueckl: Snoop Goblins (BR)
-#02 Mateusf34: E Tron (C)
+#01 SebastianStueckl: Goblins (BR)
+#02 Mateusf34: Eldrazi Tron (C)
 #03 Sodeq: Dredge (BRG)
 #04 FestiFan: Bant Control (WUG)
-#05 shoktroopa: U Tron (U)
+#05 shoktroopa: Blue Tron (U)
 #06 Thrall90: Jund Midrange (BRG)
 #07 dm95: Azorius Control (WU)
 #08 djbmppwns: Gruul Midrange (RG)
 #09 Moniz0801: Amulet Titan (URG)
-#10 MasterA: Snoop Goblins (BR)
+#10 MasterA: Goblins (BR)
 #11 Trisky: Jund Shadow (BRG)
 #12 mariogomes097: Grixis Shadow (UBR)
 #13 indianpancake: Gruul Midrange (RG)
 #14 NorrathDecay: Burn (WR)
-#15 Sanchez5272: KGC Tron (G)
+#15 Sanchez5272: Green Tron (G)
 #16 Diatomic: Bant Control (WUG)
 #17 qbturtle15: Gruul Midrange (RG, Obosh)
 #18 wambocombo2020: Burn (WR)
@@ -31,8 +31,8 @@ using System.Text;
 #20 Danny_Bambino: Jund Midrange (BRG)
 #21 Mercenario: Dredge (BRG)
 #22 toondoslav: Dredge (BRG)
-#23 Curtisaxel: Bant Spirits (WUG)
-#24 CNewman: Snoop Goblins (BR)
+#23 Curtisaxel: Spirits (WUG)
+#24 CNewman: Goblins (BR)
 #25 no_lyfe: Mono Red Prowess (R)
 #26 fingers1991: Burn (WR, Lurrus)
 #27 sheastrausman: Temur Control (URG)
@@ -40,7 +40,7 @@ using System.Text;
 #29 jessy_samek: Rakdos Prowess (BR, Lurrus)
 #30 yamakiller: Gruul Midrange (RG, Obosh)
 #31 ivan229: Gruul Midrange (RG)
-#32 DreamsOfAshiok: E Tron (C)
+#32 DreamsOfAshiok: Eldrazi Tron (C)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_challenge_2020_06_28 : EventTest
     {
         [Test]
-        public void Deck01_SebastianStueckl_SnoopGoblins_BR()
+        public void Deck01_SebastianStueckl_Goblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",0),
@@ -61,14 +61,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck02_Mateusf34_ETron_C()
+        public void Deck02_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",1),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -100,14 +100,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck05_shoktroopa_UTron_U()
+        public void Deck05_shoktroopa_BlueTron_U()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",4),
                 new PostM21(),
                 ArchetypeColor.U,
                 typeof(Tron),
-typeof(BlueTron),
+                typeof(BlueTron),
                 null
             );
         }
@@ -165,7 +165,7 @@ typeof(BlueTron),
         }
 
         [Test]
-        public void Deck10_MasterA_SnoopGoblins_BR()
+        public void Deck10_MasterA_Goblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",9),
@@ -230,14 +230,14 @@ typeof(BlueTron),
         }
 
         [Test]
-        public void Deck15_Sanchez5272_KGCTron_G()
+        public void Deck15_Sanchez5272_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",14),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -334,7 +334,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck23_Curtisaxel_BantSpirits_WUG()
+        public void Deck23_Curtisaxel_Spirits_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",22),
@@ -347,7 +347,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck24_CNewman_SnoopGoblins_BR()
+        public void Deck24_CNewman_Goblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",23),
@@ -451,14 +451,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck32_DreamsOfAshiok_ETron_C()
+        public void Deck32_DreamsOfAshiok_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",31),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

@@ -14,7 +14,7 @@ using System.Text;
 #03 darthjacen: Dredge (BRG)
 #04 qbturtle15: Mono White Taxes (W)
 #05 JUJUBEAN__2004: Heliod Combo (WG)
-#06 LORiWWA: E Tron (C)
+#06 LORiWWA: Eldrazi Tron (C)
 #07 ht991122: Shadow Prowess (BR, Lurrus)
 #08 cws: Gifts Storm (UR)
 #09 bolov0: Ad Nauseam (WUB)
@@ -94,14 +94,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_LORiWWA_ETron_C()
+        public void Deck06_LORiWWA_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-10",5),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

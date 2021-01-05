@@ -9,10 +9,10 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 kaktusowysmok: Snoop Goblins (BR)
+#01 kaktusowysmok: Goblins (BR)
 #02 Gerardo94: WURG Control (WURG)
 #03 thedoc96: Shadow Prowess (BR, Lurrus)
-#04 Redgy819: KGC Tron (G)
+#04 Redgy819: Green Tron (G)
 #05 Ryan_39: Shadow Prowess (BR, Lurrus)
 #06 Condescend: WURG Control (WURG)
 #07 lsmguys: Shadow Prowess (BR, Lurrus)
@@ -30,11 +30,11 @@ using System.Text;
 #19 Kaizer_Kahn: Obosh Aggro (R, Obosh)
 #20 katoriarch123: WURG Control (WURG)
 #21 FreedMania: Amulet Titan (G)
-#22 gottelicious: KGC Tron (G)
+#22 gottelicious: Green Tron (G)
 #23 BReal2: Shadow Prowess (BR, Lurrus)
 #24 hugofreitas1: Gifts Storm (UR)
 #25 VA1VE: Ad Nauseam (WUB)
-#26 Curtisaxel: U Tron (UR)
+#26 Curtisaxel: Blue Tron (UR)
 #27 SeitaSan: Gruul Midrange (RG)
 #28 bolov0: Obosh Aggro (R, Obosh)
 #29 Tarrasque1: Mono White Taxes (W)
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_champ_qual_2020_12_05 : EventTest
     {
         [Test]
-        public void Deck01_kaktusowysmok_SnoopGoblins_BR()
+        public void Deck01_kaktusowysmok_Goblins_BR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-12-05",0),
@@ -87,14 +87,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_Redgy819_KGCTron_G()
+        public void Deck04_Redgy819_GreenTron_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-12-05",3),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -321,14 +321,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck22_gottelicious_KGCTron_G()
+        public void Deck22_gottelicious_GreenTron_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-12-05",21),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -373,14 +373,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck26_Curtisaxel_UTron_UR()
+        public void Deck26_Curtisaxel_BlueTron_UR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-12-05",25),
                 new PostZendikarRising(),
                 ArchetypeColor.UR,
                 typeof(Tron),
-typeof(BlueTron),
+                typeof(BlueTron),
                 null
             );
         }

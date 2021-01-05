@@ -11,31 +11,31 @@ using System.Text;
 /*
 #01 wambocombo2020: Gruul Midrange (RG)
 #02 karatedom: Mardu Prowess (WBR, Lurrus)
-#03 _goblinlackey: KGC Tron (G)
-#04 staples87: E Tron (C)
+#03 _goblinlackey: Green Tron (G)
+#04 staples87: Eldrazi Tron (C)
 #05 _Batutinha_: Izzet Prowess (UR)
 #06 billsive: Azorius Control (WU)
-#07 SwordHunter: Snow Saheeli (WURG)
+#07 SwordHunter: Saheeli Combo (WURG)
 #08 l337erhosen: Elementals (WUBRG)
-#09 mac121711: Snoop Goblins (BR)
+#09 mac121711: Goblins (BR)
 #10 Gerschi: Grixis Shadow (UBR)
 #11 unicornparadise: Azorius Control (WU)
-#12 EskimoJoe: KGC Tron (G)
+#12 EskimoJoe: Green Tron (G)
 #13 BnR: Grixis Shadow (UBR)
 #14 mariogomes097: Grixis Shadow (UBR)
 #15 MZBlazer: Jund Midrange (BRG)
 #16 Phill_Hellmuth: Jund Midrange (BRG)
 #17 cariollins: Izzet Prowess (UR)
-#18 Daking3603: Snoop Goblins (BR)
+#18 Daking3603: Goblins (BR)
 #19 PeanutBrittle: Izzet Prowess (UR)
 #20 Edel: Jund Midrange (BRG)
-#21 sandydogmtg: Snoop Goblins (BR)
+#21 sandydogmtg: Goblins (BR)
 #22 Ennuixd: Gifts Storm (UR)
 #23 Nammersquats: Infect (UG)
 #24 SebastianStueckl: Sultai Control (UBG)
 #25 Searzist: Mono Red Prowess (R)
 #26 qbturtle15: Azorius Control (WU)
-#27 GombleWhop: E Tron (C)
+#27 GombleWhop: Eldrazi Tron (C)
 #28 _LSN_: Burn (WR)
 #29 MrRaeb: Sultai Control (UBG)
 */
@@ -71,27 +71,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_goblinlackey_KGCTron_G()
+        public void Deck03_goblinlackey_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-17",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
 
         [Test]
-        public void Deck04_staples87_ETron_C()
+        public void Deck04_staples87_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-17",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -123,7 +123,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck07_SwordHunter_SnowSaheeli_WURG()
+        public void Deck07_SwordHunter_SaheeliCombo_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-17",6),
@@ -149,7 +149,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck09_mac121711_SnoopGoblins_BR()
+        public void Deck09_mac121711_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-17",8),
@@ -188,14 +188,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck12_EskimoJoe_KGCTron_G()
+        public void Deck12_EskimoJoe_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-17",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -266,7 +266,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck18_Daking3603_SnoopGoblins_BR()
+        public void Deck18_Daking3603_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-17",17),
@@ -305,7 +305,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck21_sandydogmtg_SnoopGoblins_BR()
+        public void Deck21_sandydogmtg_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-17",20),
@@ -383,14 +383,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck27_GombleWhop_ETron_C()
+        public void Deck27_GombleWhop_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-17",26),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

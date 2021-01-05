@@ -12,7 +12,7 @@ using System.Text;
 #01 Tweedel: Obosh Aggro (R, Obosh)
 #02 Rulleboren: Mill (UB, Lurrus)
 #03 daibloXSC: Erayo Prison (WUB)
-#04 LordAbyss: E Tron (C)
+#04 LordAbyss: Eldrazi Tron (C)
 #05 RespectTheCat: Rakdos Midrange (BR)
 #06 Tiemuuu: Izzet Control (UR)
 #07 rodeo: Oops All Spells (WUBG)
@@ -22,7 +22,7 @@ using System.Text;
 #11 _Batutinha_: Reclaimer Titan (WRG)
 #12 Nytrox: Heliod Combo (WG)
 #13 mariogomes097: Hammer Time (W, Lurrus)
-#14 WhiteOleander: KGC Tron (G)
+#14 WhiteOleander: Green Tron (G)
 #15 billster47: Hammer Time (W, Lurrus)
 #16 Binolino: Reclaimer Titan (WRG)
 #17 patheus_84: Ad Nauseam (WUB)
@@ -30,9 +30,9 @@ using System.Text;
 #19 Javipv: Reclaimer Titan (WRG)
 #20 pokerswizard: Shadow Prowess (BR, Lurrus)
 #21 Raptor_Nachos: Burn (WR)
-#22 ACG88: KGC Tron (G)
+#22 ACG88: Green Tron (G)
 #23 Metcalf23: Mono White Taxes (W)
-#24 killersuv: KGC Tron (G)
+#24 killersuv: Green Tron (G)
 #25 Amplumnox: Hammer Time (W, Lurrus)
 #26 nahuel10: Izzet Prowess (UR)
 #27 Poyo_del_Mal: Heliod Combo (WG)
@@ -87,14 +87,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_LordAbyss_ETron_C()
+        public void Deck04_LordAbyss_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-30",3),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -217,14 +217,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck14_WhiteOleander_KGCTron_G()
+        public void Deck14_WhiteOleander_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-30",13),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -321,14 +321,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck22_ACG88_KGCTron_G()
+        public void Deck22_ACG88_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-30",21),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -347,14 +347,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck24_killersuv_KGCTron_G()
+        public void Deck24_killersuv_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-30",23),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

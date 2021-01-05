@@ -15,7 +15,7 @@ using System.Text;
 #04 johnsmith3373: Humans (WUBRG)
 #05 MiamiKidz: Izzet Prowess (UR)
 #06 Shorak123: Sultai Control (UBG)
-#07 siomomi: E Tron (C)
+#07 siomomi: Eldrazi Tron (C)
 #08 GoonLord: Gruul Midrange (RG)
 #09 ZYURYO: Azorius Control (WU)
 */
@@ -103,14 +103,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_siomomi_ETron_C()
+        public void Deck07_siomomi_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-15",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

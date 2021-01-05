@@ -25,7 +25,7 @@ using System.Text;
 #14 DrDree: Humans (WUBRG)
 #15 albert62: WURG Control (WURG)
 #16 xstaytrue1102: Jund Midrange (BRG)
-#17 Irra0770: KGC Tron (G)
+#17 Irra0770: Green Tron (G)
 #18 TheKG: Omnath Saheeli (WURG, Jegantha)
 #19 oracle888: Shadow Prowess (BR, Lurrus)
 #20 PietroSas: Devoted (WG, Lurrus)
@@ -33,7 +33,7 @@ using System.Text;
 #22 SpiderSpace: Inverter (UB)
 #23 mario7389: Burn (WR)
 #24 SweetIto: Heliod Combo (WG)
-#25 MastaHorus: Izzet Living End (UR)
+#25 MastaHorus: Electro End (UR)
 #26 slow_brz: Infect (BG)
 #27 Gobern: Sultai Control (UBG)
 #28 rofelos: WURG Control (WURG)
@@ -256,14 +256,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck17_Irra0770_KGCTron_G()
+        public void Deck17_Irra0770_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-25",16),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -360,7 +360,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck25_MastaHorus_IzzetLivingEnd_UR()
+        public void Deck25_MastaHorus_ElectroEnd_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-25",24),

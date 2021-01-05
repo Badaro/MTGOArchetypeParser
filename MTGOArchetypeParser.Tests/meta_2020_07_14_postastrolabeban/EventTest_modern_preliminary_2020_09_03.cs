@@ -16,7 +16,7 @@ using System.Text;
 #05 yumad3988: Enduring Ideal (W)
 #06 Nammersquats: Boros Prowess (WR, Lurrus)
 #07 PvtEnormous: Bant Control (WUG)
-#08 A22en: Snoop Goblins (BR)
+#08 A22en: Goblins (BR)
 #09 Xwhale: Reclaimer Titan (WRG)
 #10 darklingseven: Thopter Urza (UB)
 #11 coert: Burn (WR)
@@ -126,7 +126,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_A22en_SnoopGoblins_BR()
+        public void Deck08_A22en_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-03",7),

@@ -18,9 +18,9 @@ using System.Text;
 #07 Wyern: Belcher (RG)
 #08 Vansguy: WURG Control (WURG)
 #09 Jack_Kashtan: Ad Nauseam (WUB)
-#10 Mateusf34: E Tron (C)
+#10 Mateusf34: Eldrazi Tron (C)
 #11 axk2: Neobrand (UG)
-#12 Ajani89: KGC Amulet Titan (RG)
+#12 Ajani89: Amulet Titan (RG)
 #13 JustJack: Humans (WUBRG)
 #14 drVendigo: Jund Midrange (BRG)
 #15 excel0679: Obosh Aggro (R, Obosh)
@@ -32,15 +32,15 @@ using System.Text;
 #21 Tiemuuu: Izzet Control (UR)
 #22 Karnesis93: Amulet Titan (UG)
 #23 hawnkable: Gifts Storm (UR)
-#24 NorrathDecay: E Tron (C)
-#25 staffmat1992: Bant Spirits (WUG)
+#24 NorrathDecay: Eldrazi Tron (C)
+#25 staffmat1992: Spirits (WUG)
 #26 ZYURYO: WURG Control (WURG)
 #27 SebastianStueckl: Mono White Taxes (W)
 #28 Rinko: Enduring Ideal (WR)
 #29 josetorr87: Reclaimer Titan (WRG)
 #30 Delthar: Infect (BG)
 #31 Selami: Ad Nauseam (WUB)
-#32 LORiWWA: E Tron (C)
+#32 LORiWWA: Eldrazi Tron (C)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -165,14 +165,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_Mateusf34_ETron_C()
+        public void Deck10_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-12",9),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -191,7 +191,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck12_Ajani89_KGCAmuletTitan_RG()
+        public void Deck12_Ajani89_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-12",11),
@@ -347,20 +347,20 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck24_NorrathDecay_ETron_C()
+        public void Deck24_NorrathDecay_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-12",23),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck25_staffmat1992_BantSpirits_WUG()
+        public void Deck25_staffmat1992_Spirits_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-12",24),
@@ -451,14 +451,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck32_LORiWWA_ETron_C()
+        public void Deck32_LORiWWA_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-12",31),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

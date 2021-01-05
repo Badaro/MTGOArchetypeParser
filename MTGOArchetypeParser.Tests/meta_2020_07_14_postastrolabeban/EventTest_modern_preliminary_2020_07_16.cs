@@ -9,22 +9,22 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 DreamsOfAshiok: E Tron (C)
+#01 DreamsOfAshiok: Eldrazi Tron (C)
 #02 no_lyfe: Mono Red Prowess (R)
 #03 GR_DONKIN: Ad Nauseam (WUB)
 #04 Theo_Jung: Jund Midrange (BRG)
 #05 rastaf: Incinerator Burn (R)
 #06 Gigy: Gruul Midrange (RG)
-#07 Icteridae: E Tron (C)
+#07 Icteridae: Eldrazi Tron (C)
 #08 wambocombo2020: Gruul Midrange (RG)
 #09 ThekingFor1000years: Infect (WUG)
 #10 BnR: Grixis Shadow (UBR)
-#11 MATTHEWFOULKES: Snoop Goblins (BR)
+#11 MATTHEWFOULKES: Goblins (BR)
 #12 1plus1equals3: Devoted (WG, Lurrus)
 #13 MlckyB: Bogles (WG)
 #14 Shazzam: Incinerator Burn (WR)
 #15 Finalnub: Neobrand (UG)
-#16 pokerswizard: KGC Tron (G)
+#16 pokerswizard: Green Tron (G)
 #17 dsnavely13: Gifts Storm (UR)
 #18 NHA37: Jeskai Prowess (WUR, Lurrus)
 #19 BananOlaf: Gruul Midrange (RG)
@@ -43,14 +43,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_07_16 : EventTest
     {
         [Test]
-        public void Deck01_DreamsOfAshiok_ETron_C()
+        public void Deck01_DreamsOfAshiok_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-16",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -121,14 +121,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck07_Icteridae_ETron_C()
+        public void Deck07_Icteridae_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-16",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -173,7 +173,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck11_MATTHEWFOULKES_SnoopGoblins_BR()
+        public void Deck11_MATTHEWFOULKES_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-16",10),
@@ -238,14 +238,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck16_pokerswizard_KGCTron_G()
+        public void Deck16_pokerswizard_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-16",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

@@ -12,9 +12,9 @@ using System.Text;
 #01 mac121711: Jeskai Control (WUR)
 #02 AstralPlane: Izzet Prowess (UR)
 #03 chengyiw: Dredge (BRG)
-#04 JV_7777: E Tron (C)
+#04 JV_7777: Eldrazi Tron (C)
 #05 SakeIzumo: Izzet Prowess (UR)
-#06 TheLousyZoot: Snoop Goblins (WBR)
+#06 TheLousyZoot: Goblins (WBR)
 #07 tyaburi: Mono Red Prowess (R)
 #08 Zonast: Ad Nauseam (WUB)
 #09 nekonekoneko: Dredge (BRG)
@@ -72,14 +72,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_JV7777_ETron_C()
+        public void Deck04_JV7777_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -98,7 +98,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck06_TheLousyZoot_SnoopGoblins_WBR()
+        public void Deck06_TheLousyZoot_Goblins_WBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",5),

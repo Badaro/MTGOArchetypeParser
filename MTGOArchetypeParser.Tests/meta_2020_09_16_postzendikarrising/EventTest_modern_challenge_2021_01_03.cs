@@ -17,7 +17,7 @@ using System.Text;
 #06 ColdPier: Reclaimer Titan (WG)
 #07 gazmon48: Izzet Prowess (UR)
 #08 Ozymandias17: Rakdos Midrange (BR)
-#09 Zar0s: Izzet Living End (UR)
+#09 Zar0s: Electro End (UR)
 #10 smoran02: Mill (UBG)
 #11 Sodeq: Belcher (URG)
 #12 mtgpirate: Izzet Prowess (UR)
@@ -26,7 +26,7 @@ using System.Text;
 #15 penips: Mono White Taxes (W)
 #16 Binolino: Reclaimer Titan (WRG)
 #17 billsive: Bant Control (WUG)
-#18 HamburgerJung: Golos Tron (G, Jegantha)
+#18 HamburgerJung: Green Tron (G, Jegantha)
 #19 MarcoBelacca95: Sultai Control (UBG)
 #20 ZYURYO: WURG Control (WURG)
 #21 qbturtle15: Mono White Taxes (W)
@@ -152,7 +152,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_Zar0s_IzzetLivingEnd_UR()
+        public void Deck09_Zar0s_ElectroEnd_UR()
         {
             Test(
                 GetDeck("modern-challenge-2021-01-03",8),
@@ -269,14 +269,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck18_HamburgerJung_GolosTron_G_Jegantha()
+        public void Deck18_HamburgerJung_GreenTron_G_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2021-01-03",17),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 ArchetypeCompanion.Jegantha
             );
         }

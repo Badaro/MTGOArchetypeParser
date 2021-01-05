@@ -14,7 +14,7 @@ using System.Text;
 #03 Nammersquats: Infect (UG)
 #04 reswax: WURG Control (WURG)
 #05 Xwhale: Reclaimer Titan (WRG)
-#06 rameison: KGC Tron (G)
+#06 rameison: Green Tron (G)
 #07 Bordas99: Dredge (BRG)
 #08 PTarts2win: WURG Control (WURG)
 #09 lordavery: Bant Midrange (WUG)
@@ -95,14 +95,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_rameison_KGCTron_G()
+        public void Deck06_rameison_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-23",5),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

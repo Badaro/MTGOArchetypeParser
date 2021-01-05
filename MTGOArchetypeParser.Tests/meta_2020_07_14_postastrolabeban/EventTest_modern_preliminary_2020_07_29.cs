@@ -12,9 +12,9 @@ using System.Text;
 #01 Lavaridge: Temur Control (URG)
 #02 Magicofplayer1: Dredge (BRG)
 #03 _Falcon_: Izzet Prowess (UR)
-#04 E_Kaminuma: E Tron (C)
+#04 E_Kaminuma: Eldrazi Tron (C)
 #05 ScreenwriterNY: Azorius Taxes (WU)
-#06 ArchaeusDota: KGC Tron (G)
+#06 ArchaeusDota: Green Tron (G)
 #07 Zar0s: Scapeshift (URG)
 #08 komattaman: Gruul Midrange (RG)
 #09 Lukas261997: Azorius Control (WU)
@@ -22,10 +22,10 @@ using System.Text;
 #11 johnsmith3373: Izzet Prowess (UR)
 #12 CrusherBotBG: Hammer Time (W)
 #13 ktmr-39: Sultai Control (UBG)
-#14 siomomi: E Tron (C)
+#14 siomomi: Eldrazi Tron (C)
 #15 Wuhsa: Niv To Light (WUBRG)
 #16 _Shatun_: Mono Red Prowess (R)
-#17 Littlemastercz: Gruul Eldrazi (RG)
+#17 Littlemastercz: Obligator Eldrazi (RG)
 #18 Goteo: Dredge (BRG)
 #19 duofanel: Jund Midrange (BRG)
 #20 nk0913: Izzet Prowess (UR)
@@ -75,14 +75,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_EKaminuma_ETron_C()
+        public void Deck04_EKaminuma_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -101,14 +101,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck06_ArchaeusDota_KGCTron_G()
+        public void Deck06_ArchaeusDota_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -205,14 +205,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck14_siomomi_ETron_C()
+        public void Deck14_siomomi_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",13),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -244,7 +244,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck17_Littlemastercz_GruulEldrazi_RG()
+        public void Deck17_Littlemastercz_ObligatorEldrazi_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",16),

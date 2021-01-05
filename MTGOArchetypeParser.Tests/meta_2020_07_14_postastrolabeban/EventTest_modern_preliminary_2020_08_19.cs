@@ -15,12 +15,12 @@ using System.Text;
 #04 trader08111: Mardu Prowess (WBR, Lurrus)
 #05 aManatease: Izzet Prowess (UR)
 #06 Lavaridge: Temur Control (URG)
-#07 JV_7777: E Tron (C)
+#07 JV_7777: Eldrazi Tron (C)
 #08 ZYX_Jerry: Burn (WR, Lurrus)
 #09 ImmanuelKantrolGod: Bant Control (WUG)
 #10 McWinSauce: Bant Control (WUG)
 #11 Zar0s: Reclaimer Titan (WG)
-#12 otakkun: KGC Tron (G)
+#12 otakkun: Green Tron (G)
 #13 kbzx: Izzet Prowess (UR)
 */
 
@@ -107,14 +107,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_JV7777_ETron_C()
+        public void Deck07_JV7777_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-19",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -172,14 +172,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck12_otakkun_KGCTron_G()
+        public void Deck12_otakkun_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-19",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

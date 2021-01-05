@@ -14,7 +14,7 @@ using System.Text;
 #03 pootisgodsamongus: Obosh Aggro (R, Obosh)
 #04 Nikachu: Merfolk (UG)
 #05 Skrown: Grixis Shadow (UBR)
-#06 Artem_Kuhtin: White Devotion (W)
+#06 Artem_Kuhtin: Nykthos Devotion (W)
 #07 musasabi: Reclaimer Titan (WG)
 #08 Laplasjan: Devoted (WG, Lurrus)
 #09 RoadmanEvans: Izzet Prowess (UR)
@@ -29,7 +29,7 @@ using System.Text;
 #18 Raptor_Nachos: Burn (WR, Lurrus)
 #19 bennybo: Ad Nauseam (WUB)
 #20 Fluorspar: Humans (WUBRG)
-#21 raven0904: G Tron (G)
+#21 raven0904: Green Tron (G)
 #22 WingedHussar: Neobrand (UG)
 #23 pandanaconda: Hardened Scales (G)
 #24 Oderus Urungus: Bogles (WG, Lurrus)
@@ -113,7 +113,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_ArtemKuhtin_WhiteDevotion_W()
+        public void Deck06_ArtemKuhtin_NykthosDevotion_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-14",5),
@@ -308,14 +308,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck21_raven0904_GTron_G()
+        public void Deck21_raven0904_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-14",20),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

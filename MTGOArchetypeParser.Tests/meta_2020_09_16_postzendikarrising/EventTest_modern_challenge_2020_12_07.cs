@@ -14,7 +14,7 @@ using System.Text;
 #03 katoriarch123: WURG Control (WURG)
 #04 hugeomanyte: Shadow Prowess (BR, Lurrus)
 #05 FerMTG: Rakdos Midrange (BR)
-#06 Mateusf34: E Tron (C)
+#06 Mateusf34: Eldrazi Tron (C)
 #07 EmErgy: Mill (UB, Lurrus)
 #08 Blitzlion27: Mill (UB, Lurrus)
 #09 ho-oh: Oops All Spells (WUBG)
@@ -30,15 +30,15 @@ using System.Text;
 #19 toondoslav: Obosh Aggro (R, Obosh)
 #20 __BMJ__: WURG Control (WURG)
 #21 Ryan100495: Dredge (BRG)
-#22 _Caverna_: Snoop Goblins (BR)
+#22 _Caverna_: Goblins (BR)
 #23 DEADPOOLx97: Shadow Prowess (BR, Lurrus)
 #24 naddyeffintabs: Shadow Prowess (BR, Lurrus)
 #25 Radziolot: Mono White Taxes (W)
-#26 _Falcon_: Snoop Goblins (BR)
+#26 _Falcon_: Goblins (BR)
 #27 RelativeWind: Ad Nauseam (WUB)
 #28 ZYURYO: UBRG Control (UBRG)
 #29 Nikachu: Merfolk (UG)
-#30 MastaHorus: Izzet Living End (UR)
+#30 MastaHorus: Electro End (UR)
 #31 Ryan_39: Sultai Control (UBG)
 #32 Gigy: Gruul Midrange (RG)
 */
@@ -113,14 +113,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_Mateusf34_ETron_C()
+        public void Deck06_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-07",5),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -321,7 +321,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck22_Caverna_SnoopGoblins_BR()
+        public void Deck22_Caverna_Goblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-07",21),
@@ -373,7 +373,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck26_Falcon_SnoopGoblins_BR()
+        public void Deck26_Falcon_Goblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-07",25),
@@ -425,7 +425,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck30_MastaHorus_IzzetLivingEnd_UR()
+        public void Deck30_MastaHorus_ElectroEnd_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-07",29),

@@ -19,7 +19,7 @@ using System.Text;
 #08 Kazuga: Reclaimer Titan (WRG)
 #09 fj_rodman: Amulet Titan (URG)
 #10 MiguelCaster: Mono White Taxes (W)
-#11 Wizard_2002: KGC Tron (G)
+#11 Wizard_2002: Green Tron (G)
 #12 Usama96: Jund Prowess (BRG, Lurrus)
 #13 _Falcon_: Izzet Prowess (UR)
 #14 __BMJ__: Shadow Prowess (WBR, Lurrus)
@@ -162,14 +162,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_Wizard2002_KGCTron_G()
+        public void Deck11_Wizard2002_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-07",10),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

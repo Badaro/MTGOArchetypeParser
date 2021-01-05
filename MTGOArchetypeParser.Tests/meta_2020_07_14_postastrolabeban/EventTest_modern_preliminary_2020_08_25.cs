@@ -11,22 +11,22 @@ using System.Text;
 /*
 #01 Lavaridge: Temur Control (URG)
 #02 SunofNothing: Dimir Shadow (UB)
-#03 A22en: Snoop Goblins (BR)
+#03 A22en: Goblins (BR)
 #04 kanister: Bant Control (WUG)
 #05 Danker: Azorius Control (WU)
 #06 SebastianStueckl: Boros Prowess (WR, Lurrus)
 #07 Jack_Kashtan: Ad Nauseam (WUB)
 #08 ZYURYO: Gruul Midrange (RG)
 #09 Mikhathara1994: Izzet Prowess (UR)
-#10 GodOfSlaughter: KGC Tron (G)
+#10 GodOfSlaughter: Green Tron (G)
 #11 nykolas0507: Mono Red Prowess (R)
 #12 ejcos531: Jund Midrange (BRG)
 #13 Maccaciock: Azorius Control (WU)
-#14 Shade_Scorpion: KGC Amulet Titan (UG)
+#14 Shade_Scorpion: Amulet Titan (UG)
 #15 Tsubasa_Cat: Burn (WR)
-#16 Nekonii: Golgari Elves (BG)
+#16 Nekonii: Elves (BG)
 #17 BasedCloy: Mill (UB)
-#18 Tarrasque1: Golgari Elves (BG)
+#18 Tarrasque1: Elves (BG)
 #19 Artem_Kuhtin: Devoted (WG, Lurrus)
 */
 
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_A22en_SnoopGoblins_BR()
+        public void Deck03_A22en_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-25",2),
@@ -152,14 +152,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_GodOfSlaughter_KGCTron_G()
+        public void Deck10_GodOfSlaughter_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-25",9),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -204,7 +204,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck14_ShadeScorpion_KGCAmuletTitan_UG()
+        public void Deck14_ShadeScorpion_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-25",13),
@@ -230,7 +230,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck16_Nekonii_GolgariElves_BG()
+        public void Deck16_Nekonii_Elves_BG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-25",15),
@@ -256,7 +256,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck18_Tarrasque1_GolgariElves_BG()
+        public void Deck18_Tarrasque1_Elves_BG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-25",17),

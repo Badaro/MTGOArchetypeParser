@@ -9,21 +9,21 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 TheTunnelingCat: E Tron (C)
+#01 TheTunnelingCat: Eldrazi Tron (C)
 #02 HeyPharaoh: Azorius Control (WU)
 #03 iuriper: Bant Control (WUG)
 #04 __BMJ__: Sultai Shadow (UBG)
 #05 rastaf: Izzet Prowess (UR)
-#06 AnneLivleysD3ath: KGC Amulet Titan (UG)
+#06 AnneLivleysD3ath: Amulet Titan (UG)
 #07 LalauWBA: Gruul Prowess (RG, Jegantha)
 #08 Lavaridge: Temur Control (URG)
 #09 kogamo: Sultai Control (UBG)
 #10 dani_chad: Jund Midrange (BRG)
 #11 MinCash: Ad Nauseam (WUB)
-#12 BERNASTORRES: Snoop Goblins (BR)
+#12 BERNASTORRES: Goblins (BR)
 #13 Ryan_39: Gruul Midrange (RG)
-#14 jmeyer2030: Izzet Restore Balance (UR)
-#15 3HaLeX1: E Tron (C)
+#14 jmeyer2030: Electro Balance (UR)
+#15 3HaLeX1: Eldrazi Tron (C)
 #16 LeoFa: Scapeshift (URG)
 #17 musasabi: Jund Midrange (BRG)
 #18 ack_s: Gruul Midrange (RG)
@@ -32,14 +32,14 @@ using System.Text;
 #21 quinniac: Gruul Midrange (RG)
 #22 _Tia93_: Izzet Prowess (UR)
 #23 alnash: Grixis Shadow (UBR)
-#24 HannoLee: KGC Tron (G)
+#24 HannoLee: Green Tron (G)
 #25 dormitian: Humans (WUBRG)
 #26 Magicofplayer1: Dredge (BRG)
 #27 _Batutinha_: Izzet Prowess (UR)
 #28 Naisirc: Hardened Scales (G)
 #29 Marxelo: Tokens (W)
 #30 Patxi: Azorius Control (WU)
-#31 Leviathan102: KGC Amulet Titan (UG)
+#31 Leviathan102: Amulet Titan (UG)
 #32 Boland: Grixis Shadow (UBR)
 */
 
@@ -48,14 +48,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_champ_qual_2020_07_20 : EventTest
     {
         [Test]
-        public void Deck01_TheTunnelingCat_ETron_C()
+        public void Deck01_TheTunnelingCat_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -113,7 +113,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck06_AnneLivleysD3ath_KGCAmuletTitan_UG()
+        public void Deck06_AnneLivleysD3ath_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",5),
@@ -191,7 +191,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck12_BERNASTORRES_SnoopGoblins_BR()
+        public void Deck12_BERNASTORRES_Goblins_BR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",11),
@@ -217,7 +217,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck14_jmeyer2030_IzzetRestoreBalance_UR()
+        public void Deck14_jmeyer2030_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",13),
@@ -230,14 +230,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck15_3HaLeX1_ETron_C()
+        public void Deck15_3HaLeX1_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",14),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -347,14 +347,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck24_HannoLee_KGCTron_G()
+        public void Deck24_HannoLee_GreenTron_G()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",23),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -438,7 +438,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck31_Leviathan102_KGCAmuletTitan_UG()
+        public void Deck31_Leviathan102_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",30),

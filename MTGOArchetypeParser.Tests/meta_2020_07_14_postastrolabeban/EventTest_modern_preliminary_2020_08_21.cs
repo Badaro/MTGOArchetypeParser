@@ -19,7 +19,7 @@ using System.Text;
 #08 MTG-Maestro: Gruul Midrange (RG)
 #09 trader08111: Mardu Prowess (WBR, Lurrus)
 #10 PeanutBrittle: Mono Red Prowess (R, Jegantha)
-#11 CHILLEDADED: KGC Tron (G)
+#11 CHILLEDADED: Green Tron (G)
 #12 TombSimon: Titan Shift (RG)
 #13 ImmanuelKantrolGod: Bant Control (WUG)
 #14 qbturtle15: Gruul Midrange (RG)
@@ -165,14 +165,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_CHILLEDADED_KGCTron_G()
+        public void Deck11_CHILLEDADED_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-21",10),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

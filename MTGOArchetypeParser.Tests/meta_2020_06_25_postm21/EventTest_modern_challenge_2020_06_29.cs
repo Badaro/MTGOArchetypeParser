@@ -18,14 +18,14 @@ using System.Text;
 #07 RogerSteady: Delver (UBR)
 #08 E-GirlUWU: Amulet Titan (URG)
 #09 v3sp_tv: Elementals (WUBRG)
-#10 distanthamster: Snoop Goblins (BR)
+#10 distanthamster: Goblins (BR)
 #11 mariogomes097: Grixis Shadow (UBR)
 #12 Mr_Sheep: Gruul Midrange (RG)
 #13 WuYuHsien: Bant Control (WUG)
 #14 Voltzwagon: Gruul Midrange (RG)
 #15 McWinSauce: Bant Control (WUG)
 #16 Janh: Sultai Control (UBG)
-#17 stainerson: Golgari Elves (BG)
+#17 stainerson: Elves (BG)
 #18 ncowden: Sultai Control (UBG)
 #19 2radMTG: Temur Control (URG)
 #20 indianpancake: Gruul Midrange (RG)
@@ -35,11 +35,11 @@ using System.Text;
 #24 FranPi: Gifts Storm (UR)
 #25 D00mwake: Amulet Titan (URG)
 #26 unicornparadise: Infect (WUG)
-#27 bladede: KGC Tron (G)
+#27 bladede: Green Tron (G)
 #28 medvedev: Sultai Control (UBG)
 #29 _Shatun_: Gruul Midrange (RG)
-#30 sora1248: Snoop Goblins (BR)
-#31 ArchaeusDota: G Tron (G, Jegantha)
+#30 sora1248: Goblins (BR)
+#31 ArchaeusDota: Green Tron (G, Jegantha)
 #32 SkiLwrAp: Sultai Control (UBG)
 */
 
@@ -165,7 +165,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck10_distanthamster_SnoopGoblins_BR()
+        public void Deck10_distanthamster_Goblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-29",9),
@@ -256,7 +256,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck17_stainerson_GolgariElves_BG()
+        public void Deck17_stainerson_Elves_BG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-29",16),
@@ -386,14 +386,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck27_bladede_KGCTron_G()
+        public void Deck27_bladede_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-29",26),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -425,7 +425,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck30_sora1248_SnoopGoblins_BR()
+        public void Deck30_sora1248_Goblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-29",29),
@@ -438,14 +438,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck31_ArchaeusDota_GTron_G_Jegantha()
+        public void Deck31_ArchaeusDota_GreenTron_G_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-29",30),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 ArchetypeCompanion.Jegantha
             );
         }

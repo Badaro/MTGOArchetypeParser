@@ -21,7 +21,7 @@ using System.Text;
 #10 JUJUBEAN__2004: UBRG Control (UBRG)
 #11 rodeo: Burn (WR)
 #12 waffl3haos: Mono White Taxes (W)
-#13 yPrincipe: E Tron (R)
+#13 yPrincipe: Eldrazi Tron (R)
 #14 Lordzedane: Humans (WUBRG)
 #15 2radMTG: Humans (WUBRG)
 #16 hauterho: Obosh Aggro (R, Obosh)
@@ -188,14 +188,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_yPrincipe_ETron_R()
+        public void Deck13_yPrincipe_EldraziTron_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-17",12),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

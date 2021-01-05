@@ -10,9 +10,9 @@ using System.Text;
 
 /*
 #01 Gigy: Gruul Midrange (RG)
-#02 sff_mtg: KGC Tron (G)
+#02 sff_mtg: Green Tron (G)
 #03 J000111: Dredge (BRG)
-#04 WanderingOnes: KGC Tron (G)
+#04 WanderingOnes: Green Tron (G)
 #05 Janh: Scapeshift (URG, Yorion)
 #06 HouseOfManaMTG: Amulet Titan (UG)
 #07 katoriarch123: Bant Control (WUG)
@@ -38,14 +38,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck02_sffmtg_KGCTron_G()
+        public void Deck02_sffmtg_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",1),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -64,14 +64,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck04_WanderingOnes_KGCTron_G()
+        public void Deck04_WanderingOnes_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",3),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

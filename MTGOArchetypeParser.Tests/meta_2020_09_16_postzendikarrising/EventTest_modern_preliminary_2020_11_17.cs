@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 hodortimebaby: Oops All Spells (WUBG)
-#02 ACG88: KGC Tron (G)
+#02 ACG88: Green Tron (G)
 #03 benchsummer: Shadow Prowess (BRG, Lurrus)
 #04 kanister: Sultai Control (UBG)
 #05 Naisirc: Gruul Midrange (RG)
@@ -20,7 +20,7 @@ using System.Text;
 #09 cicciogire: WURG Control (WURG)
 #10 MZBlazer: Shadow Prowess (BRG, Lurrus)
 #11 toondoslav: Infect (UG)
-#12 ArchaeusDota: E Tron (C)
+#12 ArchaeusDota: Eldrazi Tron (C)
 #13 ShowTime_: Jund Midrange (BRG)
 #14 Wolfie98: Infect (BG)
 #15 albert62: WURG Control (WURG)
@@ -44,14 +44,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_ACG88_KGCTron_G()
+        public void Deck02_ACG88_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-17",1),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -174,14 +174,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck12_ArchaeusDota_ETron_C()
+        public void Deck12_ArchaeusDota_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-17",11),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

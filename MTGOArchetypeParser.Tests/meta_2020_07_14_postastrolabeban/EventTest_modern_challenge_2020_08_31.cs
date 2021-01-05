@@ -13,14 +13,14 @@ using System.Text;
 #02 Fayrawks: Sultai Control (UBG)
 #03 HotBread: Izzet Prowess (UR)
 #04 billsive: Bant Control (WUG)
-#05 BERNASTORRES: KGC Tron (G)
+#05 BERNASTORRES: Green Tron (G)
 #06 vixyp: Bant Midrange (WUG)
 #07 Oscar_Franco: Jund Midrange (BRG)
 #08 cftsoc3: Bant Blink (WUG)
 #09 nahuel10: Bant Control (WUG)
 #10 trader08111: Jund Midrange (BRG)
 #11 Asoen: Rakdos Midrange (BR)
-#12 Bullz0Eye: E Tron (C)
+#12 Bullz0Eye: Eldrazi Tron (C)
 #13 drVendigo: Gruul Midrange (RG)
 #14 doughhater: Valakut Field (UG)
 #15 evange_: Rakdos Prowess (BR, Lurrus)
@@ -28,13 +28,13 @@ using System.Text;
 #17 Turn1Vial: Slivers (WUBRG)
 #18 cws: Gifts Storm (UR)
 #19 SourceOdin: Reclaimer Titan (WRG)
-#20 Zxion631: Boros Sunforger (WBR)
+#20 Zxion631: Sunforger Toolbox (WBR)
 #21 albert62: Jund Midrange (BRG)
 #22 Vallejo97: Izzet Prowess (UR)
 #23 CReactor: Rakdos Prowess (BR, Lurrus)
 #24 runn3runn3r: Obosh Aggro (R, Obosh)
 #25 AstralPlane: Izzet Prowess (UR)
-#26 Tatsumaki_: KGC Tron (G)
+#26 Tatsumaki_: Green Tron (G)
 #27 Kurusu: Kiki Chord (WRG, Yorion)
 #28 Filyoni: Dredge (BRG)
 #29 DaniMRebel: Humans (WUBRG)
@@ -100,14 +100,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_BERNASTORRES_KGCTron_G()
+        public void Deck05_BERNASTORRES_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-31",4),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -191,14 +191,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck12_Bullz0Eye_ETron_C()
+        public void Deck12_Bullz0Eye_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-31",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -295,7 +295,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck20_Zxion631_BorosSunforger_WBR()
+        public void Deck20_Zxion631_SunforgerToolbox_WBR()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-31",19),
@@ -373,14 +373,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck26_Tatsumaki_KGCTron_G()
+        public void Deck26_Tatsumaki_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-31",25),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

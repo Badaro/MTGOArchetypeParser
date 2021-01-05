@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 karn_90: Rakdos Prowess (BR, Lurrus)
 #02 ZYX_Jerry: Boros Prowess (WR, Lurrus)
-#03 fradelrock: KGC Tron (G)
+#03 fradelrock: Green Tron (G)
 #04 kthanakit26: Izzet Prowess (UR)
 #05 Toastxp: Obosh Aggro (R, Obosh)
 #06 cftsoc3: Bant Blink (WUG)
@@ -53,14 +53,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_fradelrock_KGCTron_G()
+        public void Deck03_fradelrock_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-29",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 MindOfAKid: Burn (WR, Lurrus)
 #02 Trisky: Gruul Midrange (RG)
-#03 staples87: E Tron (C)
+#03 staples87: Eldrazi Tron (C)
 #04 Misplacedginger: Bant Control (WUG)
 #05 samslam: Burn (WR)
 #06 yamakiller: Neobrand (UG)
@@ -51,14 +51,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck03_staples87_ETron_C()
+        public void Deck03_staples87_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-26",2),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

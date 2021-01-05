@@ -13,16 +13,16 @@ using System.Text;
 #02 Rhianne: Dredge (BRG)
 #03 tylerjjobrien: Niv To Light (WUBRG, Yorion)
 #04 Zar0s: Scapeshift (URG)
-#05 RodeoJones: Snow Saheeli (WUG)
+#05 RodeoJones: Saheeli Combo (WUG)
 #06 Thrall90: Jund Midrange (BRG)
-#07 Redgy819: E Tron (C)
+#07 Redgy819: Eldrazi Tron (C)
 #08 katuo079595: Scapeshift (URG)
-#09 ArchaeusDota: KGC Tron (G)
+#09 ArchaeusDota: Green Tron (G)
 #10 mylast: Izzet Prowess (UR)
 #11 rastaf: Izzet Prowess (UR)
 #12 Znapcaster: Bant Control (WUG)
 #13 spellvine: Izzet Prowess (UR)
-#14 Xwhale: Snoop Goblins (BR)
+#14 Xwhale: Goblins (BR)
 #15 Wizard_2002: Humans (WUBRG)
 #16 komattaman: Gruul Midrange (RG)
 #17 McWinSauce: Temur Control (URG)
@@ -89,7 +89,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_RodeoJones_SnowSaheeli_WUG()
+        public void Deck05_RodeoJones_SaheeliCombo_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-28",4),
@@ -115,14 +115,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_Redgy819_ETron_C()
+        public void Deck07_Redgy819_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-28",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -141,14 +141,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck09_ArchaeusDota_KGCTron_G()
+        public void Deck09_ArchaeusDota_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-28",8),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -206,7 +206,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck14_Xwhale_SnoopGoblins_BR()
+        public void Deck14_Xwhale_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-28",13),

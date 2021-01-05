@@ -25,21 +25,21 @@ using System.Text;
 #14 NorrathDecay: Burn (WR)
 #15 iwanteatebi: Izzet Prowess (UR)
 #16 dani_chad: Jund Midrange (BRG)
-#17 jschloss: KGC Tron (G)
+#17 jschloss: Green Tron (G)
 #18 Mcleskey: Burn (WR)
 #19 NAP_DARKMAGE_MJM: Izzet Prowess (UR)
 #20 Metcalf23: Orzhov Taxes (WB)
 #21 MadMaxErnst: Sultai Control (UBG)
 #22 banskk: Izzet Prowess (UR)
-#23 DreamsOfAshiok: E Tron (C)
-#24 Mateusf34: E Tron (C)
+#23 DreamsOfAshiok: Eldrazi Tron (C)
+#24 Mateusf34: Eldrazi Tron (C)
 #25 aqualog: Boros Prowess (WR, Lurrus)
 #26 TuggaNaxos: Crabvine (UBG)
 #27 Danielstallone: Burn (WR)
-#28 Novaphantom: E Tron (C)
+#28 Novaphantom: Eldrazi Tron (C)
 #29 GoblinK1ng: Goblins (BRG)
 #30 Capitano_CL: Dredge (BRG)
-#31 AlabasterWolfie: Snoop Goblins (BR)
+#31 AlabasterWolfie: Goblins (BR)
 #32 Kuhb: Izzet Prowess (UR)
 */
 
@@ -256,14 +256,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_jschloss_KGCTron_G()
+        public void Deck17_jschloss_GreenTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-08-09",16),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -334,27 +334,27 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck23_DreamsOfAshiok_ETron_C()
+        public void Deck23_DreamsOfAshiok_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-08-09",22),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck24_Mateusf34_ETron_C()
+        public void Deck24_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-08-09",23),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -399,14 +399,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck28_Novaphantom_ETron_C()
+        public void Deck28_Novaphantom_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-08-09",27),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -438,7 +438,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck31_AlabasterWolfie_SnoopGoblins_BR()
+        public void Deck31_AlabasterWolfie_Goblins_BR()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-08-09",30),

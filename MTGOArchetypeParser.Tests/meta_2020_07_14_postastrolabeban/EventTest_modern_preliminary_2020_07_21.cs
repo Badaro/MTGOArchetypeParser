@@ -12,17 +12,17 @@ using System.Text;
 #01 J000111: Dredge (BRG)
 #02 aarongulevich: Izzet Prowess (UR)
 #03 ManavonRX: Azorius Control (WU)
-#04 Icteridae: E Tron (C)
+#04 Icteridae: Eldrazi Tron (C)
 #05 yamakiller: Scapeshift (URG)
-#06 SubwayEatFlesh: E Tron (C)
-#07 alemilan19: E Tron (C)
-#08 ReturnToDust: E Tron (C)
-#09 Xwhale: E Tron (C)
+#06 SubwayEatFlesh: Eldrazi Tron (C)
+#07 alemilan19: Eldrazi Tron (C)
+#08 ReturnToDust: Eldrazi Tron (C)
+#09 Xwhale: Eldrazi Tron (C)
 #10 karatedom: Rakdos Prowess (BR, Lurrus)
 #11 chupon2: Jund Midrange (BRG)
 #12 Wizard_2002: Humans (WUBRG)
-#13 Snusnumrick: E Tron (C)
-#14 RicardoMSLan: G Tron (G)
+#13 Snusnumrick: Eldrazi Tron (C)
+#14 RicardoMSLan: Green Tron (G)
 #15 Phill_Hellmuth: Dredge (BRG)
 #16 eclipse4343: Azorius Control (WU)
 #17 hcook725: Mardu Prowess (WBR, Lurrus)
@@ -73,14 +73,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_Icteridae_ETron_C()
+        public void Deck04_Icteridae_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",3),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -99,53 +99,53 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck06_SubwayEatFlesh_ETron_C()
+        public void Deck06_SubwayEatFlesh_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck07_alemilan19_ETron_C()
+        public void Deck07_alemilan19_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck08_ReturnToDust_ETron_C()
+        public void Deck08_ReturnToDust_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",7),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck09_Xwhale_ETron_C()
+        public void Deck09_Xwhale_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",8),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -190,27 +190,27 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck13_Snusnumrick_ETron_C()
+        public void Deck13_Snusnumrick_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",12),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck14_RicardoMSLan_GTron_G()
+        public void Deck14_RicardoMSLan_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",13),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

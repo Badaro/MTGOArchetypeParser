@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Tweedel: Obosh Aggro (R, Obosh)
 #02 Xwhale: Reclaimer Titan (WG)
-#03 otakkun: E Tron (C)
+#03 otakkun: Eldrazi Tron (C)
 #04 HNSDMPF: Hardened Scales (G)
 #05 JUJUBEAN__2004: Heliod Combo (WG)
 #06 eclipse4343: Azorius Control (WU)
@@ -28,7 +28,7 @@ using System.Text;
 #17 Gifted: Shadow Prowess (BRG, Lurrus)
 #18 Nikachu: Merfolk (UG)
 #19 PieGonti: Heliod Combo (WG)
-#20 silencsong: Izzet Restore Balance (UR)
+#20 silencsong: Electro Balance (UR)
 #21 Binolino: Reclaimer Titan (WRG)
 #22 Jositoshekel: Heliod Combo (WG)
 #23 Aerostar: Merfolk (UG)
@@ -74,14 +74,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_otakkun_ETron_C()
+        public void Deck03_otakkun_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-29",2),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -295,7 +295,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck20_silencsong_IzzetRestoreBalance_UR()
+        public void Deck20_silencsong_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-29",19),

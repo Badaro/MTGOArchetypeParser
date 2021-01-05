@@ -23,15 +23,15 @@ using System.Text;
 #12 didoguidotti1: Temur Control (URG)
 #13 Vashezzo: Temur Control (URG)
 #14 MicAncona: Gruul Midrange (RG)
-#15 Granham: KGC Tron (G)
-#16 siomomi: E Tron (C)
+#15 Granham: Green Tron (G)
+#16 siomomi: Eldrazi Tron (C)
 #17 Lord_Beerus: Gruul Midrange (RG)
 #18 Gerschi: Mardu Prowess (WBR, Lurrus)
 #19 Oscar_Franco: Jund Midrange (BRG)
 #20 ht991122: Izzet Prowess (UR)
 #21 CrusherBotBG: Hammer Time (W)
 #22 SebastianStueckl: Gruul Midrange (RG)
-#23 Venom1: E Tron (C)
+#23 Venom1: Eldrazi Tron (C)
 #24 alexthegreat38: Izzet Prowess (UR)
 #25 Mcleskey: Burn (WR)
 #26 BERNASTORRES: Izzet Prowess (UR)
@@ -40,7 +40,7 @@ using System.Text;
 #29 Bullz0Eye: Bant Control (WUG)
 #30 Filyoni: Devoted (WG, Lurrus)
 #31 ejcos531: Azorius Control (WU)
-#32 NuclearRabbit: KGC Tron (G)
+#32 NuclearRabbit: Green Tron (G)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -230,27 +230,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_Granham_KGCTron_G()
+        public void Deck15_Granham_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-10",14),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
 
         [Test]
-        public void Deck16_siomomi_ETron_C()
+        public void Deck16_siomomi_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-10",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -334,14 +334,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck23_Venom1_ETron_C()
+        public void Deck23_Venom1_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-10",22),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -451,14 +451,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck32_NuclearRabbit_KGCTron_G()
+        public void Deck32_NuclearRabbit_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-10",31),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

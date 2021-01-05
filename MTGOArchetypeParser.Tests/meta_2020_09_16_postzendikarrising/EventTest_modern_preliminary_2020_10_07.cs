@@ -10,12 +10,12 @@ using System.Text;
 
 /*
 #01 otakkun: WURG Control (WURG)
-#02 Sam_Lewin: Boros Land Destruction (WR)
-#03 tkcheungab: KGC Tron (G)
+#02 Sam_Lewin: Land Destruction (WR)
+#03 tkcheungab: Green Tron (G)
 #04 coert: Heliod Combo (WG)
 #05 AstralPlane: Shadow Prowess (BR, Lurrus)
 #06 stayrospet: Shadow Prowess (BR, Lurrus)
-#07 Artem_Kuhtin: White Devotion (W)
+#07 Artem_Kuhtin: Nykthos Devotion (W)
 #08 im2g00t4ubarn: WURG Control (WURG)
 #09 sokos13: Humans (WUBRG)
 #10 JakeHelms: Shadow Prowess (WBR, Lurrus)
@@ -40,7 +40,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_SamLewin_BorosLandDestruction_WR()
+        public void Deck02_SamLewin_LandDestruction_WR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-07",1),
@@ -53,14 +53,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_tkcheungab_KGCTron_G()
+        public void Deck03_tkcheungab_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-07",2),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -105,7 +105,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck07_ArtemKuhtin_WhiteDevotion_W()
+        public void Deck07_ArtemKuhtin_NykthosDevotion_W()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-07",6),

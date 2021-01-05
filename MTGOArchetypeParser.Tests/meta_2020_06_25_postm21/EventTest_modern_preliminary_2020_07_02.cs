@@ -13,11 +13,11 @@ using System.Text;
 #02 Toastxp: Sultai Control (UBG)
 #03 fingers1991: Bant Control (WUG)
 #04 Theo_Jung: Sultai Control (UBG)
-#05 Samcaster-Mage: E Tron (C)
-#06 Icteridae: E Tron (C)
+#05 Samcaster-Mage: Eldrazi Tron (C)
+#06 Icteridae: Eldrazi Tron (C)
 #07 TubbyBatman: Izzet Prowess (UR)
 #08 no_lyfe: Mono Red Prowess (R)
-#09 karatedom: Snoop Goblins (BR)
+#09 karatedom: Goblins (BR)
 #10 Mr_Sheep: Burn (WR)
 #11 Motown123: Merfolk (U)
 */
@@ -79,27 +79,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck05_SamcasterMage_ETron_C()
+        public void Deck05_SamcasterMage_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-02",4),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck06_Icteridae_ETron_C()
+        public void Deck06_Icteridae_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-02",5),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -131,7 +131,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck09_karatedom_SnoopGoblins_BR()
+        public void Deck09_karatedom_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-02",8),

@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 gazmon48: KGC Tron (G)
+#01 gazmon48: Green Tron (G)
 #02 Do0mSwitch: Bant Control (WUG)
 #03 aplapp: Rakdos Prowess (BR, Lurrus)
 #04 Pennywisse: Grixis Shadow (UBR)
@@ -18,7 +18,7 @@ using System.Text;
 #07 Rav104: Rakdos Prowess (BR, Lurrus)
 #08 edward40hands: Golgari Midrange (BG)
 #09 sinforlife54: Mono White Taxes (W)
-#10 otakkun: KGC Tron (G)
+#10 otakkun: Green Tron (G)
 #11 uaedoliB: Humans (WUBRG)
 #12 nick4567: Temur Control (URG)
 #13 Laplasjan: Devoted (WG, Lurrus)
@@ -33,12 +33,12 @@ using System.Text;
 #22 spellvine: Izzet Prowess (UR)
 #23 HouseOfManaMTG: Reclaimer Titan (WG)
 #24 Yanti: Jund Midrange (BRG)
-#25 Storytime: Kinnan Devoted (WUG)
+#25 Storytime: Devoted (WUG)
 #26 Xuxa: Dredge (BRG)
 #27 NorrathDecay: Burn (WR)
 #28 ConnorM426: Temur Control (URG)
-#29 musasabi: KGC Amulet Titan (UG)
-#30 NHA37: E Tron (C)
+#29 musasabi: Amulet Titan (UG)
+#30 NHA37: Eldrazi Tron (C)
 #31 BSK_hercules: Temur Control (URG)
 #32 kthanakit26: Burn (WR)
 */
@@ -48,14 +48,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_challenge_2020_08_16 : EventTest
     {
         [Test]
-        public void Deck01_gazmon48_KGCTron_G()
+        public void Deck01_gazmon48_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -165,14 +165,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck10_otakkun_KGCTron_G()
+        public void Deck10_otakkun_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",9),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -360,7 +360,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck25_Storytime_KinnanDevoted_WUG()
+        public void Deck25_Storytime_Devoted_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",24),
@@ -412,7 +412,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck29_musasabi_KGCAmuletTitan_UG()
+        public void Deck29_musasabi_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",28),
@@ -425,14 +425,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck30_NHA37_ETron_C()
+        public void Deck30_NHA37_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",29),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

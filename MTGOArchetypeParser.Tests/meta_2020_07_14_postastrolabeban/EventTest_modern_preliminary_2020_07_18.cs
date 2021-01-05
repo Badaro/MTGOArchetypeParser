@@ -23,8 +23,8 @@ using System.Text;
 #12 bbq42069dude: Humans (WUBRG)
 #13 DylansHyper: Dredge (BRG)
 #14 BoltTheBirds: Gifts Storm (UR)
-#15 gazmon48: E Tron (C)
-#16 hodortimebaby: KGC Tron (G)
+#15 gazmon48: Eldrazi Tron (C)
+#16 hodortimebaby: Green Tron (G)
 #17 Night_Owl_61: Jund Midrange (BRG)
 */
 
@@ -215,27 +215,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_gazmon48_ETron_C()
+        public void Deck15_gazmon48_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-18",14),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck16_hodortimebaby_KGCTron_G()
+        public void Deck16_hodortimebaby_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-18",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

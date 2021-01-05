@@ -13,7 +13,7 @@ using System.Text;
 #02 kthanakit26: Burn (WR)
 #03 SebastianStueckl: Gruul Midrange (RG)
 #04 azatoyellow: Gruul Prowess (RG, Jegantha)
-#05 Niedzwiedz: Snoop Goblins (BR)
+#05 Niedzwiedz: Goblins (BR)
 #06 gyyby297: Thopter Urza (WU)
 #07 tia05: Titan Shift (RG)
 #08 Ganksyou: Azorius Control (WU)
@@ -23,9 +23,9 @@ using System.Text;
 #12 Healer: Incinerator Burn (R)
 #13 Toastxp: Sultai Shadow (UBG)
 #14 Hyeri0418: Dredge (BRG)
-#15 sff_mtg: KGC Tron (G)
-#16 siomomi: E Tron (C)
-#17 otakkun: KGC Tron (G)
+#15 sff_mtg: Green Tron (G)
+#16 siomomi: Eldrazi Tron (C)
+#17 otakkun: Green Tron (G)
 #18 _INF_: Gifts Storm (UR)
 */
 
@@ -86,7 +86,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_Niedzwiedz_SnoopGoblins_BR()
+        public void Deck05_Niedzwiedz_Goblins_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",4),
@@ -216,40 +216,40 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_sffmtg_KGCTron_G()
+        public void Deck15_sffmtg_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",14),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
 
         [Test]
-        public void Deck16_siomomi_ETron_C()
+        public void Deck16_siomomi_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck17_otakkun_KGCTron_G()
+        public void Deck17_otakkun_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-24",16),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

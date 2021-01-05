@@ -11,10 +11,10 @@ using System.Text;
 /*
 #01 kmacy90: Mill (UB)
 #02 twinlesstwin: Mardu Midrange (WBR)
-#03 Slatorade: Jeskai Ascendancy (WURG)
+#03 Slatorade: Ascendancy Combo (WURG)
 #04 GGoggles: Dice Factory Tron (C)
 #05 qbturtle15: Gruul Midrange (RG)
-#06 Samcaster-Mage: E Tron (C)
+#06 Samcaster-Mage: Eldrazi Tron (C)
 #07 SoulStrong: Rakdos Midrange (BR)
 #08 magic_viking: Bant Blink (WUG)
 #09 Smdster: Heliod Combo (WR)
@@ -56,7 +56,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_Slatorade_JeskaiAscendancy_WURG()
+        public void Deck03_Slatorade_AscendancyCombo_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-31",2),
@@ -76,7 +76,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(DiceFactoryTron),
+                typeof(DiceFactoryTron),
                 null
             );
         }
@@ -95,14 +95,14 @@ typeof(DiceFactoryTron),
         }
 
         [Test]
-        public void Deck06_SamcasterMage_ETron_C()
+        public void Deck06_SamcasterMage_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-31",5),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

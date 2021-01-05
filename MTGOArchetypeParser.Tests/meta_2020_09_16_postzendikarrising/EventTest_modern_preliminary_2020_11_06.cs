@@ -19,12 +19,12 @@ using System.Text;
 #08 Gerardo94: WURG Control (WURG)
 #09 yamakiller: Obosh Aggro (R, Obosh)
 #10 _IlNano_: Shadow Prowess (BRG, Lurrus)
-#11 pokerswizard: KGC Tron (G)
+#11 pokerswizard: Green Tron (G)
 #12 Ramp: Reclaimer Titan (WG)
 #13 Jaberwocki: Jund Midrange (BRG)
 #14 McWinSauce: WURG Control (WURG)
 #15 Ikashy: Oops All Spells (WUBG)
-#16 SpiderSpace: Izzet Restore Balance (UR)
+#16 SpiderSpace: Electro Balance (UR)
 #17 QuaCk QuaCk: Scapeshift (URG)
 #18 _Falcon_: Izzet Prowess (UR)
 #19 __BMJ__: Shadow Prowess (BR, Lurrus)
@@ -167,14 +167,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_pokerswizard_KGCTron_G()
+        public void Deck11_pokerswizard_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-06",10),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -232,7 +232,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck16_SpiderSpace_IzzetRestoreBalance_UR()
+        public void Deck16_SpiderSpace_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-06",15),

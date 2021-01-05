@@ -14,7 +14,7 @@ using System.Text;
 #03 liuyuchen: Jund Midrange (BRG)
 #04 ImmanuelKantrolGod: Bant Control (WUG)
 #05 BERNASTORRES: Bogles (WG, Lurrus)
-#06 Trid0n: KGC Amulet Titan (UG)
+#06 Trid0n: Amulet Titan (UG)
 #07 Somefellow: Amulet Titan (RG)
 #08 Cherryxman: Naya Midrange (WRG)
 */
@@ -89,7 +89,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_Trid0n_KGCAmuletTitan_UG()
+        public void Deck06_Trid0n_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-04",5),

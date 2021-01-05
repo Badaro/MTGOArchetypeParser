@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 JRDC14: Sultai Midrange (UBG)
-#02 Snusnumrick: E Tron (C)
+#02 Snusnumrick: Eldrazi Tron (C)
 #03 iwanteatebi: Izzet Prowess (UR)
 #04 komattaman: Gruul Midrange (RG)
 #05 Delthar: Infect (BG)
@@ -41,14 +41,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_Snusnumrick_ETron_C()
+        public void Deck02_Snusnumrick_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-07",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

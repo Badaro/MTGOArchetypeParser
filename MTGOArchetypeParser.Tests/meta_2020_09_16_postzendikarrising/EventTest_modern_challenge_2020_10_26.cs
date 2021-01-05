@@ -11,14 +11,14 @@ using System.Text;
 /*
 #01 PietroSas: Devoted (WG, Lurrus)
 #02 RespectTheCat: Azorius Taxes (WU, Yorion)
-#03 fradev1988: Izzet Restore Balance (UR)
+#03 fradev1988: Electro Balance (UR)
 #04 coomback: Mill (UB)
 #05 TSPJendrek: Izzet Control (UR)
 #06 FeeltheRush: Bant Midrange (WUG)
 #07 DenebLyrae: Heliod Combo (WG)
 #08 musasabi: Reclaimer Titan (WG)
 #09 _Shatun_: Mono Red Prowess (R)
-#10 mw_94gA: Bant Spirits (WUG)
+#10 mw_94gA: Spirits (WUG)
 #11 joetru: Niv To Light (WUBRG, Jegantha)
 #12 HouseOfManaMTG: Amulet Titan (RG)
 #13 patheus_84: Ad Nauseam (WUB)
@@ -74,7 +74,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_fradev1988_IzzetRestoreBalance_UR()
+        public void Deck03_fradev1988_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",2),
@@ -165,7 +165,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_mw94gA_BantSpirits_WUG()
+        public void Deck10_mw94gA_Spirits_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",9),

@@ -12,8 +12,8 @@ using System.Text;
 #01 TSPJendrek: Dimir Control (UB)
 #02 CrusherBotBG: Hammer Time (W, Lurrus)
 #03 darius89: Ad Nauseam (WUB)
-#04 Xwhale: E Tron (C)
-#05 Redgy819: KGC Tron (G)
+#04 Xwhale: Eldrazi Tron (C)
+#05 Redgy819: Green Tron (G)
 #06 _Falcon_: Shadow Prowess (BR, Lurrus)
 #07 TombSimon: Heliod Combo (WG)
 #08 ArchaeusDota: Bant Control (WUG, Yorion)
@@ -81,27 +81,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_Xwhale_ETron_C()
+        public void Deck04_Xwhale_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-13",3),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck05_Redgy819_KGCTron_G()
+        public void Deck05_Redgy819_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-13",4),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

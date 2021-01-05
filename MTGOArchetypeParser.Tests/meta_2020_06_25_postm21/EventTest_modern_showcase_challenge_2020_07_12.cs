@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 musasabi: KGC Amulet Titan (UG)
+#01 musasabi: Amulet Titan (UG)
 #02 jmeyer2030: Scapeshift (URG, Yorion)
 #03 DaniMRebel: Selenya Taxes (WG)
 #04 Thrall90: Jund Midrange (BRG)
@@ -19,26 +19,26 @@ using System.Text;
 #08 BSK_hercules: Izzet Prowess (UR)
 #09 kbr3: Hardened Scales (G)
 #10 Shamwowfella: Sultai Control (UBG)
-#11 siomomi: E Tron (C)
+#11 siomomi: Eldrazi Tron (C)
 #12 nahuel10: Sultai Control (UBG)
 #13 mariogomes097: Grixis Shadow (UBR)
-#14 EnlargedToShowTexture: Snoop Goblins (BR)
+#14 EnlargedToShowTexture: Goblins (BR)
 #15 Justodeangelo: Bant Control (WUG)
 #16 karn_90: Temur Control (URG)
 #17 zachattack23: Bant Control (WUG)
-#18 ArchaeusDota: KGC Tron (G)
+#18 ArchaeusDota: Green Tron (G)
 #19 MCScards: Jund Midrange (BRG)
 #20 MrSeri: Hardened Scales (G)
 #21 qbturtle15: Jund Midrange (BRG)
 #22 hugofreitas1: Gifts Storm (UR)
 #23 cws: Gifts Storm (UR)
-#24 otakkun: KGC Tron (G)
-#25 FreedMania: KGC Amulet Titan (UG)
+#24 otakkun: Green Tron (G)
+#25 FreedMania: Amulet Titan (UG)
 #26 yamakiller: Dredge (BRG)
 #27 Juaspas: Gruul Midrange (RG)
-#28 Fenrir18: Snoop Goblins (BR)
-#29 LORiWWA: E Tron (C)
-#30 Mateusf34: E Tron (C)
+#28 Fenrir18: Goblins (BR)
+#29 LORiWWA: Eldrazi Tron (C)
+#30 Mateusf34: Eldrazi Tron (C)
 #31 N3to: Gifts Storm (UR)
 #32 xakx47x: Devoted (WG, Lurrus)
 */
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_showcase_challenge_2020_07_12 : EventTest
     {
         [Test]
-        public void Deck01_musasabi_KGCAmuletTitan_UG()
+        public void Deck01_musasabi_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",0),
@@ -178,14 +178,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck11_siomomi_ETron_C()
+        public void Deck11_siomomi_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",10),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -217,7 +217,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck14_EnlargedToShowTexture_SnoopGoblins_BR()
+        public void Deck14_EnlargedToShowTexture_Goblins_BR()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",13),
@@ -269,14 +269,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck18_ArchaeusDota_KGCTron_G()
+        public void Deck18_ArchaeusDota_GreenTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",17),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -347,20 +347,20 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck24_otakkun_KGCTron_G()
+        public void Deck24_otakkun_GreenTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",23),
                 new PostM21(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
 
         [Test]
-        public void Deck25_FreedMania_KGCAmuletTitan_UG()
+        public void Deck25_FreedMania_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",24),
@@ -399,7 +399,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck28_Fenrir18_SnoopGoblins_BR()
+        public void Deck28_Fenrir18_Goblins_BR()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",27),
@@ -412,27 +412,27 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck29_LORiWWA_ETron_C()
+        public void Deck29_LORiWWA_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",28),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck30_Mateusf34_ETron_C()
+        public void Deck30_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",29),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

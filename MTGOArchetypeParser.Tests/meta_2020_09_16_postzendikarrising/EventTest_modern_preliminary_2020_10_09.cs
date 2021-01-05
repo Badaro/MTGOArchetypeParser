@@ -14,7 +14,7 @@ using System.Text;
 #03 Jaberwocki: Jund Midrange (BRG)
 #04 lordavery: Bant Midrange (WUG)
 #05 Mcleskey: Obosh Aggro (R, Obosh)
-#06 TheMelkMan: E Tron (C)
+#06 TheMelkMan: Eldrazi Tron (C)
 #07 Bohnz: WURG Control (WURG)
 #08 Rav104: Oops All Spells (WUBRG)
 #09 timewalkinonsunshine: Taking Turns (URG)
@@ -99,14 +99,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_TheMelkMan_ETron_C()
+        public void Deck06_TheMelkMan_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-09",5),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

@@ -16,8 +16,8 @@ using System.Text;
 #05 WingedHussar: Neobrand (UG)
 #06 bubbsei: Devoted (WG, Lurrus)
 #07 LickNsticK: Jund Midrange (BRG)
-#08 RicardoMSLan: E Tron (C)
-#09 PizzaRolls: E Tron (C)
+#08 RicardoMSLan: Eldrazi Tron (C)
+#09 PizzaRolls: Eldrazi Tron (C)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
@@ -116,27 +116,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck08_RicardoMSLan_ETron_C()
+        public void Deck08_RicardoMSLan_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-14",7),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck09_PizzaRolls_ETron_C()
+        public void Deck09_PizzaRolls_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-14",8),
                 new PostM21(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

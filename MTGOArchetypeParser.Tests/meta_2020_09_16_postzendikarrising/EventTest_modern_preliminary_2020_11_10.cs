@@ -17,9 +17,9 @@ using System.Text;
 #06 Bedell: Mill (UB, Lurrus)
 #07 mmapson125: Heliod Combo (WG)
 #08 Gerardo94: WURG Control (WURG)
-#09 Splogy: Red Prison (R)
+#09 Splogy: Pyro Prison (R)
 #10 SanPop: Oops All Spells (WUBG)
-#11 MastaHorus: Izzet Living End (UR)
+#11 MastaHorus: Electro End (UR)
 #12 Lukas261997: Shadow Prowess (UBR, Lurrus)
 #13 braingoat: Shadow Prowess (BRG, Lurrus)
 #14 Redgy819: Oops All Spells (WUBG)
@@ -134,7 +134,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_Splogy_RedPrison_R()
+        public void Deck09_Splogy_PyroPrison_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-10",8),
@@ -160,7 +160,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_MastaHorus_IzzetLivingEnd_UR()
+        public void Deck11_MastaHorus_ElectroEnd_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-10",10),

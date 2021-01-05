@@ -9,9 +9,9 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 ArchaeusDota: KGC Tron (G)
+#01 ArchaeusDota: Green Tron (G)
 #02 CrusherBotBG: Hammer Time (W)
-#03 DreamsOfAshiok: E Tron (C)
+#03 DreamsOfAshiok: Eldrazi Tron (C)
 #04 brandon__logan: Gruul Midrange (RG)
 #05 tpc2000: Gifts Storm (UR)
 #06 Ganksyou: Azorius Control (WU)
@@ -25,14 +25,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_showcase_last_chance_2020_08_12 : EventTest
     {
         [Test]
-        public void Deck01_ArchaeusDota_KGCTron_G()
+        public void Deck01_ArchaeusDota_GreenTron_G()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-12",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -51,14 +51,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck03_DreamsOfAshiok_ETron_C()
+        public void Deck03_DreamsOfAshiok_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-12",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

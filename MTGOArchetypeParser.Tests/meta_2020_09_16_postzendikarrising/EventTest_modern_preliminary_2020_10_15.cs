@@ -23,7 +23,7 @@ using System.Text;
 #12 Mcleskey: Burn (WR)
 #13 GideonRavensword: Dredge (BRG)
 #14 Icteridae: Gruul Midrange (RG)
-#15 Sam_Lewin: Boros Land Destruction (WBR)
+#15 Sam_Lewin: Land Destruction (WBR)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -213,7 +213,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_SamLewin_BorosLandDestruction_WBR()
+        public void Deck15_SamLewin_LandDestruction_WBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-15",14),

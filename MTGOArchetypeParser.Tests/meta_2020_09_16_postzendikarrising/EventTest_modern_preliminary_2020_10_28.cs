@@ -13,7 +13,7 @@ using System.Text;
 #02 HouseOfManaMTG: Amulet Titan (RG)
 #03 Zar0s: WURG Control (WURG)
 #04 Laplasjan: Devoted (WG, Lurrus)
-#05 otakkun: KGC Tron (G)
+#05 otakkun: Green Tron (G)
 #06 JakeHelms: WURG Control (WURG)
 #07 Violent_Outburst: UBRG Control (UBRG)
 #08 crazyklicker: Heliod Combo (WG)
@@ -76,14 +76,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_otakkun_KGCTron_G()
+        public void Deck05_otakkun_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-28",4),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

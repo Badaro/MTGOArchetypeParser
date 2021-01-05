@@ -13,7 +13,7 @@ using System.Text;
 #02 PTarts2win: Obosh Aggro (R, Obosh)
 #03 Bedell: Sultai Control (UBG)
 #04 exoticherman: Shadow Prowess (BRG, Lurrus)
-#05 tkcheungab: KGC Tron (G)
+#05 tkcheungab: Green Tron (G)
 #06 Rav104: Obosh Aggro (R, Obosh)
 #07 joker10289: Obosh Aggro (R, Obosh)
 #08 FerMTG: Jund Midrange (BRG)
@@ -94,14 +94,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_tkcheungab_KGCTron_G()
+        public void Deck05_tkcheungab_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-03",4),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

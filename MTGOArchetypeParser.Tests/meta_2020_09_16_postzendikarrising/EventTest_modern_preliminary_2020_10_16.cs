@@ -14,7 +14,7 @@ using System.Text;
 #03 yamakiller: Obosh Aggro (R, Obosh)
 #04 McWinSauce: WURG Control (WURG)
 #05 cicciogire: WURG Control (WURG)
-#06 TheMelkMan: KGC Tron (G)
+#06 TheMelkMan: Green Tron (G)
 #07 karatedom: Infect (UG)
 #08 lordavery: Bant Midrange (WUG)
 #09 MIkepick7: Dredge (BRG)
@@ -23,7 +23,7 @@ using System.Text;
 #12 andrw1232: WURG Control (WURG)
 #13 benchsummer: UBRG Shadow (UBRG)
 #14 Gobern: Niv To Light (WUBRG, Yorion)
-#15 MartinezDP: Snow Saheeli (WURG, Yorion)
+#15 MartinezDP: Saheeli Combo (WURG, Yorion)
 #16 sandydogmtg: Shadow Prowess (WBR, Lurrus)
 */
 
@@ -97,14 +97,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_TheMelkMan_KGCTron_G()
+        public void Deck06_TheMelkMan_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-16",5),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -214,7 +214,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck15_MartinezDP_SnowSaheeli_WURG_Yorion()
+        public void Deck15_MartinezDP_SaheeliCombo_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-16",14),

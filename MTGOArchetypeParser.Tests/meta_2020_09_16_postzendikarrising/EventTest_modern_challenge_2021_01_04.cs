@@ -37,8 +37,8 @@ using System.Text;
 #26 Ibaitor: Taking Turns (UR)
 #27 TSPJendrek: Bant Control (WUG)
 #28 EmErgy: Bant Midrange (WUG)
-#29 Nastier: KGC Tron (G, Jegantha)
-#30 Rosencrantz_920: KGC Amulet Titan (G)
+#29 Nastier: Green Tron (G, Jegantha)
+#30 Rosencrantz_920: Amulet Titan (G)
 #31 MaxMagicer: Omnath Saheeli (WURG, Jegantha)
 #32 ichi-roku: Ad Nauseam (WUB)
 */
@@ -412,20 +412,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck29_Nastier_KGCTron_G_Jegantha()
+        public void Deck29_Nastier_GreenTron_G_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2021-01-04",28),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 ArchetypeCompanion.Jegantha
             );
         }
 
         [Test]
-        public void Deck30_Rosencrantz920_KGCAmuletTitan_G()
+        public void Deck30_Rosencrantz920_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2021-01-04",29),

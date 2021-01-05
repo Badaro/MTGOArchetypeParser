@@ -19,12 +19,12 @@ using System.Text;
 #08 Bedell: Amulet Titan (RG)
 #09 bozo2112: Reclaimer Titan (WRG)
 #10 Xwhale: Reclaimer Titan (WRG)
-#11 raven0904: G Tron (G)
+#11 raven0904: Green Tron (G)
 #12 wilson5434: Hardened Scales (G)
-#13 TheMelkMan: Golos Tron (G)
+#13 TheMelkMan: Green Tron (G)
 #14 crackerpack: Dredge (BRG)
 #15 Thrall90: Rakdos Prowess (BR, Lurrus)
-#16 PTarts2win: KGC Tron (G)
+#16 PTarts2win: Green Tron (G)
 #17 andrw1232: Rakdos Prowess (BR, Lurrus)
 #18 fingers1991: Boros Prowess (WR, Lurrus)
 #19 McWinSauce: Bant Control (WUG)
@@ -165,14 +165,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_raven0904_GTron_G()
+        public void Deck11_raven0904_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-08",10),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -191,14 +191,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck13_TheMelkMan_GolosTron_G()
+        public void Deck13_TheMelkMan_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-08",12),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -230,14 +230,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck16_PTarts2win_KGCTron_G()
+        public void Deck16_PTarts2win_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-08",15),
                 new PostAstrolabeBan(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

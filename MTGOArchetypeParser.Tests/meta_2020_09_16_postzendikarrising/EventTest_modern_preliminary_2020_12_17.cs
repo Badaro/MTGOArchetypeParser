@@ -18,7 +18,7 @@ using System.Text;
 #07 Nammersquats: Infect (UG)
 #08 MZBlazer: Heliod Combo (WG)
 #09 Leviathan102: Reclaimer Titan (WRG)
-#10 Redgy819: KGC Tron (G)
+#10 Redgy819: Green Tron (G)
 #11 ATGerwaz: Mill (UBG, Lurrus)
 #12 MaLiam: Rakdos Midrange (BR)
 */
@@ -145,14 +145,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_Redgy819_KGCTron_G()
+        public void Deck10_Redgy819_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-17",9),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

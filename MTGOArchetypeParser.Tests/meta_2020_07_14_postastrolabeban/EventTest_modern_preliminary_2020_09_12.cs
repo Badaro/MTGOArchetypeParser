@@ -13,7 +13,7 @@ using System.Text;
 #02 Violent_Outburst: Scapeshift (URG)
 #03 mogis67: Sultai Control (UBG)
 #04 Gerschi: Mardu Prowess (WBR, Lurrus)
-#05 Samlg01: KGC Amulet Titan (RG)
+#05 Samlg01: Amulet Titan (RG)
 #06 _Stream: Izzet Prowess (UR)
 #07 IntegralHDK: Jund Midrange (BRG)
 #08 aarongulevich: Izzet Prowess (UR)
@@ -77,7 +77,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_Samlg01_KGCAmuletTitan_RG()
+        public void Deck05_Samlg01_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-12",4),

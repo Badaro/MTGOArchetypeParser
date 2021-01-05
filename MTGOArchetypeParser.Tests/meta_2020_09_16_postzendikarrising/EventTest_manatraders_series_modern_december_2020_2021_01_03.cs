@@ -10,18 +10,18 @@ using System.Text;
 
 /*
 #01 Phill_Hellmuth: WURG Control (WURG)
-#02 HannoLee: KGC Tron (G)
+#02 HannoLee: Green Tron (G)
 #03 _IlNano_: Shadow Prowess (BR, Lurrus)
 #04 Gerardo94: WURG Control (WURG)
 #05 coert: Heliod Combo (WG)
 #06 VilaCelta: Ad Nauseam (WUB)
 #07 GobFTW: Temur Control (URG)
 #08 Harry13: Sultai Control (UBG)
-#09 Lord_of_puntlantis: Izzet Restore Balance (UR)
+#09 Lord_of_puntlantis: Electro Balance (UR)
 #10 Theo_Jung: Heliod Combo (WG)
-#11 LLegend: Izzet Restore Balance (UR)
+#11 LLegend: Electro Balance (UR)
 #12 mlgb92: Bant Midrange (WUG)
-#13 wzybang: KGC Amulet Titan (G)
+#13 wzybang: Amulet Titan (G)
 #14 HypnoticaL: Shadow Prowess (BR, Lurrus)
 #15 Bordas99: Dredge (BRG)
 #16 nbdf: Dredge (BRG)
@@ -30,7 +30,7 @@ using System.Text;
 #19 graciasportanto: Sultai Control (UBG)
 #20 wordy333: Izzet Prowess (UR)
 #21 Olivetti: WURG Control (WURG)
-#22 carloswylde: KGC Tron (G)
+#22 carloswylde: Green Tron (G)
 #23 NHA37: Heliod Combo (WR)
 #24 noesmitipo: Belcher (URG)
 #25 Conor_man11: Hammer Time (WB, Lurrus)
@@ -46,16 +46,16 @@ using System.Text;
 #35 __palem__: Burn (WR)
 #36 Foxantes: Oops All Spells (WUBG)
 #37 twinlesstwin: Mardu Midrange (WBR)
-#38 FreedMania: KGC Amulet Titan (G)
+#38 FreedMania: Amulet Titan (G)
 #39 SKK: Reclaimer Titan (WRG)
 #40 Callad0: Heliod Combo (WG)
 #41 Mogged: Obosh Aggro (R, Obosh)
 #42 evange_: Izzet Prowess (UR)
 #43 sonso jf: Heliod Combo (WG)
 #44 BaronOfBacon: Shadow Prowess (BR, Lurrus)
-#45 fluffywolf2: Red Prison (R)
+#45 fluffywolf2: Pyro Prison (R)
 #46 SknerusMcKwacz: WURG Control (WURG)
-#47 kaktusowysmok: Snoop Goblins (BR)
+#47 kaktusowysmok: Goblins (BR)
 #48 ReanimatorFiend: WURG Control (WURG)
 #49 DmZB: Gifts Storm (UR)
 #50 tbrantl99: Ad Nauseam (WUB)
@@ -79,9 +79,9 @@ using System.Text;
 #68 do0mswitch: WURG Control (WURG)
 #69 tarrasque1: Mono White Taxes (W)
 #70 musasabi: Mardu Midrange (WBR)
-#71 Sciakimika: KGC Amulet Titan (G)
+#71 Sciakimika: Amulet Titan (G)
 #72 dynamisskill: Heliod Combo (WG)
-#73 GrilledCheese: KGC Amulet Titan (G)
+#73 GrilledCheese: Amulet Titan (G)
 #74 TheWillHallExp: Mardu Midrange (WBR)
 #75 NAKISHIMA: Oops All Spells (WUBG)
 #76 ThreeThreeElk: Reclaimer Titan (WG)
@@ -90,7 +90,7 @@ using System.Text;
 #79 MadMaxErnst: WURG Control (WURG)
 #80 TheEnduringIdealist: Belcher (WRG)
 #81 solaec0501: Primeval Titan (UG)
-#82 FromTheCrypt: E Tron (C)
+#82 FromTheCrypt: Eldrazi Tron (C)
 #83 badluckbandit: Heliod Combo (WG)
 #84 the302storm: Bant Control (WUG)
 #85 INickStrad: WURG Control (WURG)
@@ -104,7 +104,7 @@ using System.Text;
 #93 adriaferrer: Sultai Control (UBG)
 #94 _Shatun_: Rakdos Midrange (BR)
 #95 On-The-Play: Rakdos Midrange (BR)
-#96 SimoCr: KGC Tron (G)
+#96 SimoCr: Green Tron (G)
 #97 La_Parkita: Izzet Prowess (UR)
 #98 GlimpseOfRandomness: Sultai Control (UBG)
 #99 Bodybag: Shadow Prowess (BR, Lurrus)
@@ -117,7 +117,7 @@ using System.Text;
 #106 _LSN_: Burn (WR, Lurrus)
 #107 DaniMRebel: Spirits (WU)
 #108 MaxCapone: Oops All Spells (WUBG)
-#109 ReinardBR: KGC Tron (G)
+#109 ReinardBR: Green Tron (G)
 #110 MissTrigger: Izzet Prowess (UR)
 #111 bucknasty691989: Rakdos Midrange (BR)
 #112 mac121711: WURG Control (WURG)
@@ -125,7 +125,7 @@ using System.Text;
 #114 cptobvious343: Izzet Control (UR)
 #115 MandrillMan: Heliod Combo (WG)
 #116 Jositoshekel: Heliod Combo (WG)
-#117 paucr5: E Tron (C)
+#117 paucr5: Eldrazi Tron (C)
 #118 Child_oftheSand: Mono White Taxes (W)
 #119 DavidLeChiffre: Humans (WUBRG)
 #120 Ne-rik-is: Mono White Taxes (W)
@@ -137,7 +137,7 @@ using System.Text;
 #126 Elfkid: Dredge (BRG)
 #127 spiderspace: Belcher (URG)
 #128 xf13rc3byerly: Shadow Prowess (BR, Lurrus)
-#129 jenara19: KGC Tron (G)
+#129 jenara19: Green Tron (G)
 #130 claydawson: Izzet Prowess (UR)
 #131 indianpancake: Sultai Control (UBG)
 #132 Broccoliasaurus: Rakdos Midrange (BR)
@@ -151,7 +151,7 @@ using System.Text;
 #140 kolbej: WURG Control (WURG)
 #141 bozokaboy: Oops All Spells (WUBG)
 #142 mikepick7: Burn (WR)
-#143 LucasG1ggs: E Tron (C)
+#143 LucasG1ggs: Eldrazi Tron (C)
 #144 diem4x: Sultai Control (UBG)
 #145 meanfannypack: Heliod Combo (WG)
 #146 _Batutinha_: Reclaimer Titan (WRG)
@@ -169,9 +169,9 @@ using System.Text;
 #158 magic_viking: Bant Blink (WUG)
 #159 Firewalker89: Grixis Shadow (UBR)
 #160 Sprouts: Hammer Time (WR)
-#161 Sods: KGC Tron (G)
+#161 Sods: Green Tron (G)
 #162 Gigy: Shadow Prowess (BR, Lurrus)
-#163 HouseOfManaMTG: KGC Amulet Titan (G)
+#163 HouseOfManaMTG: Amulet Titan (G)
 #164 TwistedWombat: Izzet Prowess (UR)
 #165 albertosd: WBRG Shadow (WBRG)
 #166 Aluren85: Scapeshift (WURG)
@@ -187,27 +187,27 @@ using System.Text;
 #176 Krikles: Obosh Aggro (R, Obosh)
 #177 NJGB1: UBRG Shadow (UBRG)
 #178 guispiller: Gifts Storm (UR)
-#179 ACG88: KGC Tron (G)
+#179 ACG88: Green Tron (G)
 #180 NightKnight131: Heliod Combo (WG)
 #181 DcNo: Humans (WUBRG)
 #182 TeamGreed: Dredge (BRG)
 #183 JUJUBEAN__2004: Heliod Combo (WG)
-#184 Aeolus1295: KGC Amulet Titan (G)
+#184 Aeolus1295: Amulet Titan (G)
 #185 ShowTime_: Rakdos Midrange (BR)
 #186 MrRaeb: WURG Control (WURG)
 #187 Joshicallsmefabo: Shadow Prowess (BR, Lurrus)
 #188 Shadowz2005: Mardu Midrange (WBR)
 #189 kingfroik: Shadow Prowess (BR, Lurrus)
 #190 sam555101: Izzet Prowess (UR)
-#191 _Takeno_: Red Prison (R)
+#191 _Takeno_: Pyro Prison (R)
 #192 easymoneymarksman: Shadow Prowess (BR, Lurrus)
 #193 sharkcaster_mage: Humans (WUBRG)
 #194 Koso: Shadow Prowess (BR, Lurrus)
 #195 Capipf95: Burn (WR, Lurrus)
-#196 nothingnamed: KGC Tron (G)
+#196 nothingnamed: Green Tron (G)
 #197 Cabz: Burn (WR)
 #198 MartinezDP: Omnath Saheeli (WURG, Yorion)
-#199 Frankdog: Snoop Goblins (BR)
+#199 Frankdog: Goblins (BR)
 #200 WhiteFaces: Hammer Time (W, Lurrus)
 #201 LuisMj: WURG Control (WURG)
 #202 Denmark_Dan: Azorius Control (WU)
@@ -215,20 +215,20 @@ using System.Text;
 #204 NathanLipetz: Rakdos Midrange (BR)
 #205 magma728: Ad Nauseam (WUB)
 #206 bamzing: WURG Control (WURG)
-#207 Rosencrantz_920: KGC Amulet Titan (G)
+#207 Rosencrantz_920: Amulet Titan (G)
 #208 blavantasian: Ad Nauseam (WUB)
 #209 tylerjjobrien: Rakdos Midrange (BR)
 #210 Fink64: Infect (BG)
 #211 TwitchAwP: Ad Nauseam (WUB)
 #212 Pietrone10: Infect (UG)
 #213 albert62: WURG Control (WURG)
-#214 Geme: KGC Tron (G)
+#214 Geme: Green Tron (G)
 #215 Stompy45: Mardu Midrange (WBR)
 #216 ballestin93: WURG Control (WURG)
 #217 MagicMichiel: Shadow Prowess (BR, Lurrus)
 #218 Kauri: Hardened Scales (RG)
 #219 Kyro4: Shadow Prowess (BR, Lurrus)
-#220 kronos23: E Tron (C)
+#220 kronos23: Eldrazi Tron (C)
 #221 lsmguys: WURG Control (WURG)
 #222 Kenzaburo: WURG Control (WURG)
 #223 ninomtg: Shadow Prowess (BR, Lurrus)
@@ -237,8 +237,8 @@ using System.Text;
 #226 AlabasterWolfie: Shadow Prowess (UBRG, Lurrus)
 #227 Ruizthebeast: Devoted (WG, Lurrus)
 #228 remf: Spirits (WU)
-#229 Iceman76: Snoop Goblins (BR)
-#230 APandaWithOneLeg: KGC Tron (G, Jegantha)
+#229 Iceman76: Goblins (BR)
+#230 APandaWithOneLeg: Green Tron (G, Jegantha)
 #231 Kirkinator: Obosh Aggro (R, Obosh)
 #232 Camero: Belcher (URG)
 #233 ncowden: WURG Control (WURG)
@@ -252,9 +252,9 @@ using System.Text;
 #241 adamwasmo: Oops All Spells (UBRG)
 #242 Laplasjan: Hammer Time (WB, Lurrus)
 #243 Marinex: Dredge (BRG)
-#244 Wede97: Snoop Goblins (BR)
+#244 Wede97: Goblins (BR)
 #245 antus94: Shadow Prowess (BRG, Lurrus)
-#246 KBTMTG: E Tron (C)
+#246 KBTMTG: Eldrazi Tron (C)
 #247 zecarlonxo: Obosh Aggro (R, Obosh)
 #248 SacmenFeg: Burn (WR)
 #249 Halobender: Izzet Prowess (UR)
@@ -285,7 +285,7 @@ using System.Text;
 #274 weishengzhishabi: Sultai Control (UBG)
 #275 pokerswizard: Spirits (WU)
 #276 toondoslav: Infect (UG)
-#277 miqa: Izzet Living End (UR)
+#277 miqa: Electro End (UR)
 #278 dhawk50: Burn (WR)
 #279 crazeejakee07: WURG Control (WURG)
 #280 1yo2yo: Thopter Urza (WUB)
@@ -296,29 +296,29 @@ using System.Text;
 #285 ArchaeusDota: Uroza (WUBRG)
 #286 Drockafeller: WURG Control (WURG)
 #287 Tw33Ty: Shadow Prowess (BR, Lurrus)
-#288 ziofrancone: Jeskai Breach (WURG, Jegantha)
+#288 ziofrancone: Ascendancy Breach (WURG, Jegantha)
 #289 Noix11: Humans (WUBRG)
 #290 TheJigIsAlwaysUp: Heliod Combo (WG)
-#291 Mateusf34: E Tron (C)
+#291 Mateusf34: Eldrazi Tron (C)
 #292 FingersMLD: Mono White Taxes (W)
 #293 tzirkel: Heliod Combo (WG)
 #294 __BMJ__: Rakdos Prowess (BR, Lurrus)
 #295 cftsoc3: Bant Blink (WUG)
 #296 MickeyPlaysMagic: Rakdos Midrange (BR)
-#297 SakingMTG: KGC Tron (G)
-#298 fpawlusz: KGC Amulet Titan (G)
+#297 SakingMTG: Green Tron (G)
+#298 fpawlusz: Amulet Titan (G)
 #299 joker10289: Reclaimer Titan (WG)
 #300 whitefangshinobi: Izzet Prowess (UR)
 #301 jay44bab: Shadow Prowess (BR, Lurrus)
 #302 Dafne17: Mono Red Prowess (R)
 #303 MdvWin: Hammer Time (W, Lurrus)
 #304 mrichi: WURG Control (WURG)
-#305 kevilynn: Bant Spirits (WUG)
+#305 kevilynn: Spirits (WUG)
 #306 Sherwinator: Mill (UB, Lurrus)
 #307 cypriankrzysztof: Heliod Combo (WG)
 #308 abisbocci: Grixis Shadow (UBR)
 #309 Manakin: Hardened Scales (RG)
-#310 Nilsfit: Jeskai Breach (WUR, Jegantha)
+#310 Nilsfit: Ascendancy Breach (WUR, Jegantha)
 #311 NGFC_Mark: Oops All Spells (WUBG)
 #312 ecobaronen: Titan Shift (RG)
 */
@@ -341,14 +341,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_HannoLee_KGCTron_G()
+        public void Deck02_HannoLee_GreenTron_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",1),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -432,7 +432,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck09_Lordofpuntlantis_IzzetRestoreBalance_UR()
+        public void Deck09_Lordofpuntlantis_ElectroBalance_UR()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",8),
@@ -458,7 +458,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck11_LLegend_IzzetRestoreBalance_UR()
+        public void Deck11_LLegend_ElectroBalance_UR()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",10),
@@ -484,7 +484,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck13_wzybang_KGCAmuletTitan_G()
+        public void Deck13_wzybang_AmuletTitan_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",12),
@@ -601,14 +601,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck22_carloswylde_KGCTron_G()
+        public void Deck22_carloswylde_GreenTron_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",21),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -809,7 +809,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck38_FreedMania_KGCAmuletTitan_G()
+        public void Deck38_FreedMania_AmuletTitan_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",37),
@@ -900,7 +900,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck45_fluffywolf2_RedPrison_R()
+        public void Deck45_fluffywolf2_PyroPrison_R()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",44),
@@ -926,7 +926,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck47_kaktusowysmok_SnoopGoblins_BR()
+        public void Deck47_kaktusowysmok_Goblins_BR()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",46),
@@ -1238,7 +1238,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck71_Sciakimika_KGCAmuletTitan_G()
+        public void Deck71_Sciakimika_AmuletTitan_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",70),
@@ -1264,7 +1264,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck73_GrilledCheese_KGCAmuletTitan_G()
+        public void Deck73_GrilledCheese_AmuletTitan_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",72),
@@ -1381,14 +1381,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck82_FromTheCrypt_ETron_C()
+        public void Deck82_FromTheCrypt_EldraziTron_C()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",81),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -1563,14 +1563,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck96_SimoCr_KGCTron_G()
+        public void Deck96_SimoCr_GreenTron_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",95),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -1732,14 +1732,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck109_ReinardBR_KGCTron_G()
+        public void Deck109_ReinardBR_GreenTron_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",108),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -1836,14 +1836,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck117_paucr5_ETron_C()
+        public void Deck117_paucr5_EldraziTron_C()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",116),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -1992,14 +1992,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck129_jenara19_KGCTron_G()
+        public void Deck129_jenara19_GreenTron_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",128),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -2174,14 +2174,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck143_LucasG1ggs_ETron_C()
+        public void Deck143_LucasG1ggs_EldraziTron_C()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",142),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -2408,14 +2408,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck161_Sods_KGCTron_G()
+        public void Deck161_Sods_GreenTron_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",160),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -2434,7 +2434,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck163_HouseOfManaMTG_KGCAmuletTitan_G()
+        public void Deck163_HouseOfManaMTG_AmuletTitan_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",162),
@@ -2642,14 +2642,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck179_ACG88_KGCTron_G()
+        public void Deck179_ACG88_GreenTron_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",178),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -2707,7 +2707,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck184_Aeolus1295_KGCAmuletTitan_G()
+        public void Deck184_Aeolus1295_AmuletTitan_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",183),
@@ -2798,7 +2798,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck191_Takeno_RedPrison_R()
+        public void Deck191_Takeno_PyroPrison_R()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",190),
@@ -2863,14 +2863,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck196_nothingnamed_KGCTron_G()
+        public void Deck196_nothingnamed_GreenTron_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",195),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -2902,7 +2902,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck199_Frankdog_SnoopGoblins_BR()
+        public void Deck199_Frankdog_Goblins_BR()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",198),
@@ -3006,7 +3006,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck207_Rosencrantz920_KGCAmuletTitan_G()
+        public void Deck207_Rosencrantz920_AmuletTitan_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",206),
@@ -3097,14 +3097,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck214_Geme_KGCTron_G()
+        public void Deck214_Geme_GreenTron_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",213),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -3175,14 +3175,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck220_kronos23_ETron_C()
+        public void Deck220_kronos23_EldraziTron_C()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",219),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -3292,7 +3292,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck229_Iceman76_SnoopGoblins_BR()
+        public void Deck229_Iceman76_Goblins_BR()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",228),
@@ -3305,14 +3305,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck230_APandaWithOneLeg_KGCTron_G_Jegantha()
+        public void Deck230_APandaWithOneLeg_GreenTron_G_Jegantha()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",229),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 ArchetypeCompanion.Jegantha
             );
         }
@@ -3487,7 +3487,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck244_Wede97_SnoopGoblins_BR()
+        public void Deck244_Wede97_Goblins_BR()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",243),
@@ -3513,14 +3513,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck246_KBTMTG_ETron_C()
+        public void Deck246_KBTMTG_EldraziTron_C()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",245),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -3916,7 +3916,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck277_miqa_IzzetLivingEnd_UR()
+        public void Deck277_miqa_ElectroEnd_UR()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",276),
@@ -4059,7 +4059,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck288_ziofrancone_JeskaiBreach_WURG_Jegantha()
+        public void Deck288_ziofrancone_AscendancyBreach_WURG_Jegantha()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",287),
@@ -4098,14 +4098,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck291_Mateusf34_ETron_C()
+        public void Deck291_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",290),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -4176,20 +4176,20 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck297_SakingMTG_KGCTron_G()
+        public void Deck297_SakingMTG_GreenTron_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",296),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
 
         [Test]
-        public void Deck298_fpawlusz_KGCAmuletTitan_G()
+        public void Deck298_fpawlusz_AmuletTitan_G()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",297),
@@ -4280,7 +4280,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck305_kevilynn_BantSpirits_WUG()
+        public void Deck305_kevilynn_Spirits_WUG()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",304),
@@ -4345,7 +4345,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck310_Nilsfit_JeskaiBreach_WUR_Jegantha()
+        public void Deck310_Nilsfit_AscendancyBreach_WUR_Jegantha()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",309),

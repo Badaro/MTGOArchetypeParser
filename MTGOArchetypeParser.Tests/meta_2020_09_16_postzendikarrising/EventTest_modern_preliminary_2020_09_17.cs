@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 ThekingFor1000years: Infect (UG)
 #02 Bullwinkkle6705: Temur Control (URG)
-#03 CHILLEDADED: KGC Tron (G)
+#03 CHILLEDADED: Green Tron (G)
 #04 andrw1232: Temur Control (URG)
 #05 PTarts2win: Gruul Midrange (RG)
 #06 pokerswizard: Humans (WUBRG)
@@ -20,7 +20,7 @@ using System.Text;
 #09 leclairandy: Temur Control (URG)
 #10 Waumpus: Heliod Combo (WUG)
 #11 jsteed: Gruul Midrange (RG)
-#12 Lord_of_Puntlantis: Izzet Restore Balance (UR)
+#12 Lord_of_Puntlantis: Electro Balance (UR)
 #13 Mcleskey: Humans (WUBRG)
 #14 MZBlazer: Grixis Shadow (UBR)
 #15 Icteridae: Mono White Taxes (W)
@@ -58,14 +58,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_CHILLEDADED_KGCTron_G()
+        public void Deck03_CHILLEDADED_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-17",2),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -175,7 +175,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck12_LordofPuntlantis_IzzetRestoreBalance_UR()
+        public void Deck12_LordofPuntlantis_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-17",11),

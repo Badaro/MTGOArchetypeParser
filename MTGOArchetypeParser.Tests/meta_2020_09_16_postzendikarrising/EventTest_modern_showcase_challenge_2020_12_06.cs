@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 Xwhale: Reclaimer Titan (WRG)
-#02 tkcheungab: KGC Tron (G)
+#02 tkcheungab: Green Tron (G)
 #03 cws: Gifts Storm (UR)
 #04 JUJUBEAN__2004: Heliod Combo (WG)
 #05 Smdster: Heliod Combo (WR)
@@ -26,17 +26,17 @@ using System.Text;
 #15 mashmalovsky: Ad Nauseam (WUB)
 #16 mariogomes097: Shadow Prowess (UBR, Lurrus)
 #17 gravy98: Ad Nauseam (WUB)
-#18 Bullwinkkle6705: Snoop Goblins (BR)
+#18 Bullwinkkle6705: Goblins (BR)
 #19 _Shatun_: Obosh Aggro (R, Obosh)
 #20 Misplacedginger: WURG Control (WURG)
 #21 MagicalHack99: Sultai Control (UBG)
 #22 mmapson125: Heliod Combo (WG)
 #23 Tweedel: Obosh Aggro (R, Obosh)
-#24 Saviall: KGC Tron (G)
+#24 Saviall: Green Tron (G)
 #25 ConnorM426: Reclaimer Titan (WRG)
 #26 bresett123: WURG Control (WURG)
 #27 PeanutBrittle: WURG Control (WURG)
-#28 NobodyKnowsImADog: KGC Tron (G)
+#28 NobodyKnowsImADog: Green Tron (G)
 #29 nickrelativity: Oops All Spells (WUBG)
 #30 coert: Heliod Combo (WG)
 #31 tzio: Orzhov Midrange (WB)
@@ -61,14 +61,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_tkcheungab_KGCTron_G()
+        public void Deck02_tkcheungab_GreenTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-12-06",1),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -269,7 +269,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck18_Bullwinkkle6705_SnoopGoblins_BR()
+        public void Deck18_Bullwinkkle6705_Goblins_BR()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-12-06",17),
@@ -347,14 +347,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck24_Saviall_KGCTron_G()
+        public void Deck24_Saviall_GreenTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-12-06",23),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -399,14 +399,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck28_NobodyKnowsImADog_KGCTron_G()
+        public void Deck28_NobodyKnowsImADog_GreenTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-12-06",27),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

@@ -10,16 +10,16 @@ using System.Text;
 
 /*
 #01 Gerschi: Oops All Spells (WUBG)
-#02 Metaponto: Bant Spirits (WUG)
+#02 Metaponto: Spirits (WUG)
 #03 Mulldrifter: Shadow Prowess (WBR, Lurrus)
 #04 Tiemuuu: Izzet Control (UR)
 #05 BERNASTORRES: WURG Control (WURG)
-#06 Damgar: KGC Tron (G)
+#06 Damgar: Green Tron (G)
 #07 grinderA: Devoted (WG, Lurrus)
 #08 Paeng_Paeng: Gifts Storm (UR)
 #09 Wyern: Belcher (RG)
 #10 MiamiKidz: Reclaimer Titan (WRG)
-#11 Sam_Lewin: Boros Land Destruction (WR)
+#11 Sam_Lewin: Land Destruction (WR)
 #12 Lukas261997: Grixis Shadow (UBR)
 #13 2k4mmorton: Mono Red Prowess (R)
 #14 CavalloGoloso: Izzet Control (UR)
@@ -43,7 +43,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_Metaponto_BantSpirits_WUG()
+        public void Deck02_Metaponto_Spirits_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-04",1),
@@ -95,14 +95,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_Damgar_KGCTron_G()
+        public void Deck06_Damgar_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-04",5),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -160,7 +160,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck11_SamLewin_BorosLandDestruction_WR()
+        public void Deck11_SamLewin_LandDestruction_WR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-04",10),

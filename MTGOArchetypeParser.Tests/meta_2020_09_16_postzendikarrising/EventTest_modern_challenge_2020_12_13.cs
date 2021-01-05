@@ -11,18 +11,18 @@ using System.Text;
 /*
 #01 Lucabireskusku: WURG Control (WURG)
 #02 Tarrasque1: Mono White Taxes (W)
-#03 sleightofhand94: KGC Amulet Titan (G)
+#03 sleightofhand94: Amulet Titan (G)
 #04 NuBlkAu: Temur Control (URG)
 #05 Sodeq: Dredge (BRG)
 #06 mariogomes097: Devoted (WG, Lurrus)
-#07 Curtisaxel: U Tron (UR)
+#07 Curtisaxel: Blue Tron (UR)
 #08 eclipse4343: Azorius Control (WU)
 #09 Chris_Concarnage: Obosh Aggro (R, Obosh)
 #10 Condescend: WURG Control (WURG)
 #11 azax: Reclaimer Titan (WRG)
 #12 ATGerwaz: Mill (UB, Lurrus)
 #13 Xwhale: Reclaimer Titan (WRG)
-#14 Lord_of_Puntlantis: Izzet Restore Balance (UR)
+#14 Lord_of_Puntlantis: Electro Balance (UR)
 #15 KlashBack: Izzet Control (UR)
 #16 DaniMRebel: Shadow Prowess (BR, Lurrus)
 #17 pbarrrgh: Sultai Control (UBG)
@@ -33,11 +33,11 @@ using System.Text;
 #22 N3to: Gifts Storm (UR)
 #23 apriolo1: Heliod Combo (WG)
 #24 joker10289: Jeskai Control (WUR)
-#25 NorrathDecay: KGC Tron (G)
+#25 NorrathDecay: Green Tron (G)
 #26 kanister: Bant Blink (WUG)
 #27 CrusherBotBG: Hammer Time (W, Lurrus)
 #28 __BMJ__: Shadow Prowess (BR, Lurrus)
-#29 kevilynn: Bant Spirits (WUG)
+#29 kevilynn: Spirits (WUG)
 #30 Ryan100495: Dredge (BRG)
 #31 oskiyaa: Shadow Prowess (BR, Lurrus)
 #32 t_k_h_r: Ad Nauseam (WUB)
@@ -74,7 +74,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_sleightofhand94_KGCAmuletTitan_G()
+        public void Deck03_sleightofhand94_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-13",2),
@@ -126,14 +126,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_Curtisaxel_UTron_UR()
+        public void Deck07_Curtisaxel_BlueTron_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-13",6),
                 new PostZendikarRising(),
                 ArchetypeColor.UR,
                 typeof(Tron),
-typeof(BlueTron),
+                typeof(BlueTron),
                 null
             );
         }
@@ -217,7 +217,7 @@ typeof(BlueTron),
         }
 
         [Test]
-        public void Deck14_LordofPuntlantis_IzzetRestoreBalance_UR()
+        public void Deck14_LordofPuntlantis_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-13",13),
@@ -360,14 +360,14 @@ typeof(BlueTron),
         }
 
         [Test]
-        public void Deck25_NorrathDecay_KGCTron_G()
+        public void Deck25_NorrathDecay_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-13",24),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -412,7 +412,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck29_kevilynn_BantSpirits_WUG()
+        public void Deck29_kevilynn_Spirits_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-13",28),

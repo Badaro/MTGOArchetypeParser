@@ -27,7 +27,7 @@ using System.Text;
 #16 kanister: Humans (WUBRG)
 #17 SpicyLeche: Mono White Taxes (W)
 #18 Joao_Andrade: Belcher (WURG)
-#19 fuma-mtgcampinas: E Tron (C)
+#19 fuma-mtgcampinas: Eldrazi Tron (C)
 #20 Nammersquats: Humans (WUBRG)
 #21 cntrlfreak: Grixis Shadow (UBR)
 #22 pootisgodsamongus: Obosh Aggro (R, Obosh)
@@ -282,14 +282,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck19_fumamtgcampinas_ETron_C()
+        public void Deck19_fumamtgcampinas_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-10-04",18),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

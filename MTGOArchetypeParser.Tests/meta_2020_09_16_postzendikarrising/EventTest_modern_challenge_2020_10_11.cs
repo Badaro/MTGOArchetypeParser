@@ -15,8 +15,8 @@ using System.Text;
 #04 fried-liver-attack: Burn (WR)
 #05 jacobricher: Humans (WUBRG)
 #06 TSPJendrek: Sultai Control (UBG)
-#07 Curtisaxel: U Tron (U)
-#08 Munich_Casual: Bant Spirits (WUG)
+#07 Curtisaxel: Blue Tron (U)
+#08 Munich_Casual: Spirits (WUG)
 #09 Jositoshekel: Heliod Combo (WG)
 #10 NHA37: Heliod Combo (W)
 #11 yamakiller: Reclaimer Titan (WRG)
@@ -24,7 +24,7 @@ using System.Text;
 #13 Parrit: Mono White Taxes (W)
 #14 Edel: Rakdos Midrange (BR)
 #15 Mlgb92: Orzhov Midrange (WB)
-#16 ice_nine_: Boros Land Destruction (WR)
+#16 ice_nine_: Land Destruction (WR)
 #17 Rav104: Izzet Prowess (UR)
 #18 fingers1991: Shadow Prowess (BR, Lurrus)
 #19 MiguelCaster: Mono White Taxes (W)
@@ -38,7 +38,7 @@ using System.Text;
 #27 Andreas_Mueller: Dredge (BRG)
 #28 Elnitzo: Mill (UB, Lurrus)
 #29 MHayashi: Obosh Aggro (R, Obosh)
-#30 staffmat1992: Bant Spirits (WUG)
+#30 staffmat1992: Spirits (WUG)
 #31 Johnny_Hobbs: WURG Control (WURG)
 #32 thephatz: Mono White Taxes (W)
 */
@@ -126,20 +126,20 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_Curtisaxel_UTron_U()
+        public void Deck07_Curtisaxel_BlueTron_U()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-11",6),
                 new PostZendikarRising(),
                 ArchetypeColor.U,
                 typeof(Tron),
-typeof(BlueTron),
+                typeof(BlueTron),
                 null
             );
         }
 
         [Test]
-        public void Deck08_MunichCasual_BantSpirits_WUG()
+        public void Deck08_MunichCasual_Spirits_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-11",7),
@@ -243,7 +243,7 @@ typeof(BlueTron),
         }
 
         [Test]
-        public void Deck16_icenine_BorosLandDestruction_WR()
+        public void Deck16_icenine_LandDestruction_WR()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-11",15),
@@ -425,7 +425,7 @@ typeof(BlueTron),
         }
 
         [Test]
-        public void Deck30_staffmat1992_BantSpirits_WUG()
+        public void Deck30_staffmat1992_Spirits_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-11",29),

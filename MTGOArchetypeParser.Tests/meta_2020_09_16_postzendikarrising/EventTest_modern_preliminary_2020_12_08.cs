@@ -10,11 +10,11 @@ using System.Text;
 
 /*
 #01 achillies27: Gifts Storm (UR)
-#02 PuntThenWhine: KGC Amulet Titan (G)
-#03 gazmon48: KGC Tron (G)
+#02 PuntThenWhine: Amulet Titan (G)
+#03 gazmon48: Green Tron (G)
 #04 Leviathan102: Reclaimer Titan (WRG)
 #05 yamakiller: Mill (UB, Lurrus)
-#06 ArchaeusDota: KGC Tron (G)
+#06 ArchaeusDota: Green Tron (G)
 #07 Samlg01: Amulet Titan (G)
 #08 lordavery: Bant Midrange (WUG)
 #09 The_nayr: Obosh Aggro (R, Obosh)
@@ -43,7 +43,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_PuntThenWhine_KGCAmuletTitan_G()
+        public void Deck02_PuntThenWhine_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-08",1),
@@ -56,14 +56,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_gazmon48_KGCTron_G()
+        public void Deck03_gazmon48_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-08",2),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -95,14 +95,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck06_ArchaeusDota_KGCTron_G()
+        public void Deck06_ArchaeusDota_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-08",5),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

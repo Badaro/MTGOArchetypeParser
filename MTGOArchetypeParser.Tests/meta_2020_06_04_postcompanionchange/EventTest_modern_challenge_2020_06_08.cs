@@ -18,7 +18,7 @@ using System.Text;
 #07 SvenSvenSven: Izzet Control (UR)
 #08 signblindman: Gruul Midrange (RG)
 #09 hugo87: Gifts Storm (UR)
-#10 Tw33Ty: E Tron (C)
+#10 Tw33Ty: Eldrazi Tron (C)
 #11 Cherryxman: Bant Control (WUG)
 #12 Trid0n: Humans (WUBRG)
 #13 Laplasjan: Devoted (WG, Lurrus)
@@ -26,21 +26,21 @@ using System.Text;
 #15 Lord_Beerus: Burn (WR, Lurrus)
 #16 _Batutinha_: Bant Control (WUG)
 #17 ScreenwriterNY: Sultai Control (UBG, Yorion)
-#18 Erik157751: E Tron (C)
-#19 sff_mtg: KGC Tron (G)
+#18 Erik157751: Eldrazi Tron (C)
+#19 sff_mtg: Green Tron (G)
 #20 Scacco Malto: Mono Red Prowess (R)
-#21 mosskami: KGC Amulet Titan (G)
+#21 mosskami: Amulet Titan (G)
 #22 indianpancake: Devoted (WG)
-#23 Koso: E Tron (C)
+#23 Koso: Eldrazi Tron (C)
 #24 WeareVenom: Bant Control (WUG)
-#25 robb93: E Tron (C)
+#25 robb93: Eldrazi Tron (C)
 #26 leclairandy: Bant Control (WUG)
 #27 Math_God: Gifts Storm (UR)
 #28 Wartico1: Devoted (WG, Lurrus)
 #29 Nightblue: Burn (WR)
 #30 ilsecco14: Neobrand (UG)
-#31 Moniz0801: KGC Amulet Titan (G)
-#32 Oscar_Franco: E Tron (C)
+#31 Moniz0801: Amulet Titan (G)
+#32 Oscar_Franco: Eldrazi Tron (C)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
@@ -165,14 +165,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck10_Tw33Ty_ETron_C()
+        public void Deck10_Tw33Ty_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",9),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -269,27 +269,27 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck18_Erik157751_ETron_C()
+        public void Deck18_Erik157751_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",17),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck19_sffmtg_KGCTron_G()
+        public void Deck19_sffmtg_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",18),
                 new PostCompanionChange(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -308,7 +308,7 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck21_mosskami_KGCAmuletTitan_G()
+        public void Deck21_mosskami_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",20),
@@ -334,14 +334,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck23_Koso_ETron_C()
+        public void Deck23_Koso_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",22),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -360,14 +360,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck25_robb93_ETron_C()
+        public void Deck25_robb93_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",24),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -438,7 +438,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck31_Moniz0801_KGCAmuletTitan_G()
+        public void Deck31_Moniz0801_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",30),
@@ -451,14 +451,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck32_OscarFranco_ETron_C()
+        public void Deck32_OscarFranco_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",31),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

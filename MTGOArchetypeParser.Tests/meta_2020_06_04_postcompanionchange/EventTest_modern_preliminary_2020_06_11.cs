@@ -9,13 +9,13 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Mistakenn: KGC Amulet Titan (G)
+#01 Mistakenn: Amulet Titan (G)
 #02 Lord_Beerus: Burn (WR)
 #03 il_matagatto: Burn (WR)
 #04 _Shatun_: Gruul Midrange (RG)
 #05 Sonic_Smasher: Bant Control (WUG)
 #06 Lirek154: Azorius Control (WU)
-#07 DreamsOfAshiok: E Tron (C)
+#07 DreamsOfAshiok: Eldrazi Tron (C)
 #08 Charlesjacenorman: Burn (WR, Lurrus)
 #09 flatnose: Merfolk (UG)
 #10 Theo_Jung: Uroza (UG)
@@ -30,7 +30,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
     public class EventTest_modern_preliminary_2020_06_11 : EventTest
     {
         [Test]
-        public void Deck01_Mistakenn_KGCAmuletTitan_G()
+        public void Deck01_Mistakenn_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-11",0),
@@ -108,14 +108,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck07_DreamsOfAshiok_ETron_C()
+        public void Deck07_DreamsOfAshiok_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-11",6),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

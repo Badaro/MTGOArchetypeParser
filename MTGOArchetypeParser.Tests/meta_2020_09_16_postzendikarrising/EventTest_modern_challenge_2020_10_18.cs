@@ -21,13 +21,13 @@ using System.Text;
 #10 seasonofmists: Abzan Taxes (WBG)
 #11 HouseOfManaMTG: Amulet Titan (RG)
 #12 DarkestMage: Mono White Taxes (W)
-#13 last7stand: KGC Tron (G)
+#13 last7stand: Green Tron (G)
 #14 PTarts2win: WURG Control (WURG)
 #15 Gobern: Omnath Saheeli (WURG, Jegantha)
 #16 AstralPlane: Omnath Saheeli (WURG, Jegantha)
 #17 DaniMRebel: Spirits (WU)
 #18 Xwhale: Reclaimer Titan (WRG)
-#19 MIkepick7: E Tron (C)
+#19 MIkepick7: Eldrazi Tron (C)
 #20 Humpaa: Heliod Combo (WG)
 #21 POOBMASTER: Shadow Prowess (BR, Lurrus)
 #22 daibloXSC: Izzet Control (UR)
@@ -204,14 +204,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_last7stand_KGCTron_G()
+        public void Deck13_last7stand_GreenTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",12),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -282,14 +282,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck19_MIkepick7_ETron_C()
+        public void Deck19_MIkepick7_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",18),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

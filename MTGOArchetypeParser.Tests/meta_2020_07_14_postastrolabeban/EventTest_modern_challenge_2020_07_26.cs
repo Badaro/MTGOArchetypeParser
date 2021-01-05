@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Mateusf34: E Tron (C)
+#01 Mateusf34: Eldrazi Tron (C)
 #02 Shazzam: Bant Control (WUG)
 #03 Shorak123: Sultai Control (UBG)
 #04 mariogomes097: Grixis Shadow (UBR)
@@ -19,15 +19,15 @@ using System.Text;
 #08 Magicofplayer1: Dredge (BRG)
 #09 CarlSwaggin: Gruul Midrange (RG)
 #10 Numena_Lowallyn: Scapeshift (URG)
-#11 Lord_of_Puntlantis: Izzet Restore Balance (UR)
+#11 Lord_of_Puntlantis: Electro Balance (UR)
 #12 Kuhb: Gifts Storm (UR)
 #13 Edel: Jund Midrange (BRG)
 #14 lsv: Azorius Control (WU)
 #15 andrw1232: Rakdos Prowess (BR, Lurrus)
 #16 TombSimon: Crabvine (UBG)
 #17 exoticherman: Rakdos Prowess (BR, Lurrus)
-#18 belanna999: E Tron (C)
-#19 Jokersrwild: Snoop Goblins (BR)
+#18 belanna999: Eldrazi Tron (C)
+#19 Jokersrwild: Goblins (BR)
 #20 crazybaloth: Humans (WUBRG)
 #21 MaxMagicer: Humans (WUBRG)
 #22 Janh: Saheeli Combo (WUR)
@@ -48,14 +48,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_challenge_2020_07_26 : EventTest
     {
         [Test]
-        public void Deck01_Mateusf34_ETron_C()
+        public void Deck01_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -178,7 +178,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck11_LordofPuntlantis_IzzetRestoreBalance_UR()
+        public void Deck11_LordofPuntlantis_ElectroBalance_UR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",10),
@@ -269,20 +269,20 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck18_belanna999_ETron_C()
+        public void Deck18_belanna999_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",17),
                 new PostAstrolabeBan(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck19_Jokersrwild_SnoopGoblins_BR()
+        public void Deck19_Jokersrwild_Goblins_BR()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",18),

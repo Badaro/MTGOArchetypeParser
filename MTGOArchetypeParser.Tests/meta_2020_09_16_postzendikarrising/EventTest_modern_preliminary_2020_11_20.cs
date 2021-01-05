@@ -9,9 +9,9 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Blade400: E Tron (C)
+#01 Blade400: Eldrazi Tron (C)
 #02 xfile: Heliod Combo (WG)
-#03 rinazina: KGC Tron (G)
+#03 rinazina: Green Tron (G)
 #04 Violent_Outburst: Scapeshift (URG)
 #05 JakeHelms: Dimir Control (UB)
 #06 Iburakema: Izzet Control (UR)
@@ -24,14 +24,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_11_20 : EventTest
     {
         [Test]
-        public void Deck01_Blade400_ETron_C()
+        public void Deck01_Blade400_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-20",0),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -50,14 +50,14 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck03_rinazina_KGCTron_G()
+        public void Deck03_rinazina_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-20",2),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

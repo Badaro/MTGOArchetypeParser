@@ -16,7 +16,7 @@ using System.Text;
 #05 Mcleskey: Shadow Prowess (BR, Lurrus)
 #06 SoulStrong: Bant Blink (WUG)
 #07 Jaberwocki: Rogues (UB, Lurrus)
-#08 HB360: KGC Tron (G)
+#08 HB360: Green Tron (G)
 #09 CaptainFarbosa: Ad Nauseam (WUB)
 #10 pokerswizard: Obosh Aggro (R, Obosh)
 #11 karatedom: Heliod Combo (WG)
@@ -122,14 +122,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_HB360_KGCTron_G()
+        public void Deck08_HB360_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-26",7),
                 new PostZendikarRising(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }

@@ -22,7 +22,7 @@ using System.Text;
 #11 wambocombo2020: Hammer Time (WB, Lurrus)
 #12 Chris_Concarnage: Obosh Aggro (R, Obosh)
 #13 penips: Mono White Taxes (W)
-#14 Zar0s: KGC Amulet Titan (G)
+#14 Zar0s: Amulet Titan (G)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -199,7 +199,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_Zar0s_KGCAmuletTitan_G()
+        public void Deck14_Zar0s_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-29",13),

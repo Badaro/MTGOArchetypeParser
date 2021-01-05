@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Rosencrantz_920: KGC Amulet Titan (G)
+#01 Rosencrantz_920: Amulet Titan (G)
 #02 Patxi: Dimir Control (UB)
 #03 DDMeelow: WURG Control (WURG)
 #04 _Shatun_: Rakdos Midrange (BR)
@@ -23,7 +23,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_12_23 : EventTest
     {
         [Test]
-        public void Deck01_Rosencrantz920_KGCAmuletTitan_G()
+        public void Deck01_Rosencrantz920_AmuletTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-23",0),

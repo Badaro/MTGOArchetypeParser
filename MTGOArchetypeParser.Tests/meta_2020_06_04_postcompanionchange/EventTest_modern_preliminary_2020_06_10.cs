@@ -16,10 +16,10 @@ using System.Text;
 #05 Janh: Temur Control (URG)
 #06 _INF_: Gifts Storm (UR)
 #07 alemilan19: Bant Control (WUG)
-#08 Fabrice_K: Ninja Faeries (UB)
+#08 Fabrice_K: Ninjas (UB)
 #09 DylanGregory: Humans (WUBRG)
 #10 Mcleskey: Burn (WR)
-#11 DavidDPanda: E Tron (C)
+#11 DavidDPanda: Eldrazi Tron (C)
 #12 ZYURYO: WUBG Control (WUBG)
 */
 
@@ -119,7 +119,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck08_FabriceK_NinjaFaeries_UB()
+        public void Deck08_FabriceK_Ninjas_UB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-10",7),
@@ -158,14 +158,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck11_DavidDPanda_ETron_C()
+        public void Deck11_DavidDPanda_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-10",10),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

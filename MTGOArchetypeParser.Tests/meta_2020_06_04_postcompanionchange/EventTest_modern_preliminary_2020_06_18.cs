@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Icteridae: E Tron (C)
-#02 DreamsOfAshiok: E Tron (C)
+#01 Icteridae: Eldrazi Tron (C)
+#02 DreamsOfAshiok: Eldrazi Tron (C)
 #03 yamakiller: Humans (WUBRG)
 #04 Hiru: Rakdos Midrange (BR)
 #05 PTarts2win: Dredge (BRG)
 #06 flatnose: Merfolk (UG)
 #07 ilsecco14: Mono Red Prowess (R)
 #08 wambocombo2020: Uroza (UBG, Yorion)
-#09 MadCowChicken: Selesnya Eldrazi (WG, Jegantha)
+#09 MadCowChicken: Stoneforge Eldrazi (WG, Jegantha)
 #10 Stompy45: Gruul Midrange (RG)
 #11 _LSN_: Burn (WR)
 #12 Traft: Ad Nauseam (WUB)
@@ -29,27 +29,27 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
     public class EventTest_modern_preliminary_2020_06_18 : EventTest
     {
         [Test]
-        public void Deck01_Icteridae_ETron_C()
+        public void Deck01_Icteridae_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-18",0),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
 
         [Test]
-        public void Deck02_DreamsOfAshiok_ETron_C()
+        public void Deck02_DreamsOfAshiok_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-18",1),
                 new PostCompanionChange(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }
@@ -133,7 +133,7 @@ typeof(EldraziTron),
         }
 
         [Test]
-        public void Deck09_MadCowChicken_SelesnyaEldrazi_WG_Jegantha()
+        public void Deck09_MadCowChicken_StoneforgeEldrazi_WG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-18",8),

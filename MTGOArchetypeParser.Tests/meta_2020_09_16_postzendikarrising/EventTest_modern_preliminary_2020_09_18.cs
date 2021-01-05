@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 ilsecco14: Gruul Midrange (RG)
 #02 Mcleskey: Bogles (WG)
-#03 TheMelkMan: E Tron (C)
+#03 TheMelkMan: Eldrazi Tron (C)
 #04 Gernardi: Grixis Shadow (UBR)
 #05 dani_chad: Jund Midrange (BRG)
 #06 GodOfSlaughter: Gruul Midrange (RG)
@@ -55,14 +55,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_TheMelkMan_ETron_C()
+        public void Deck03_TheMelkMan_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-18",2),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

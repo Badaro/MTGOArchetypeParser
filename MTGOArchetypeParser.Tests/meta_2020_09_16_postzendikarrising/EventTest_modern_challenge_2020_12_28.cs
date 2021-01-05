@@ -24,7 +24,7 @@ using System.Text;
 #13 JaZzA97fc: Heliod Combo (WG)
 #14 heyakita: Omnath Saheeli (WURG, Yorion)
 #15 pedrogush: Hammer Time (WB, Lurrus)
-#16 Mateusf34: E Tron (C)
+#16 Mateusf34: Eldrazi Tron (C)
 #17 Rinko: Enduring Ideal (WR)
 #18 Lukas261997: Shadow Prowess (BR, Lurrus)
 #19 N3to: Gifts Storm (UR)
@@ -243,14 +243,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_Mateusf34_ETron_C()
+        public void Deck16_Mateusf34_EldraziTron_C()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-28",15),
                 new PostZendikarRising(),
                 ArchetypeColor.C,
                 typeof(Tron),
-typeof(EldraziTron),
+                typeof(EldraziTron),
                 null
             );
         }

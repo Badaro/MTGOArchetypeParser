@@ -19,12 +19,12 @@ using System.Text;
 #08 kanister: Humans (WUBRG)
 #09 audio336: Dredge (BRG)
 #10 12Days: Jund Midrange (BRG, Obosh)
-#11 sff_mtg: KGC Tron (G)
+#11 sff_mtg: Green Tron (G)
 #12 elad3127: Gruul Midrange (RG)
 #13 Doomed_Necromancer: Abzan Midrange (WBG)
 #14 nielsen333: Jeskai Control (WUR)
 #15 matyo804: Humans (WUBRG)
-#16 ktmr-39: Golos Tron (G, Jegantha)
+#16 ktmr-39: Green Tron (G, Jegantha)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
@@ -162,14 +162,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck11_sffmtg_KGCTron_G()
+        public void Deck11_sffmtg_GreenTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-06",10),
                 new PostCompanionChange(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 null
             );
         }
@@ -227,14 +227,14 @@ typeof(GreenTron),
         }
 
         [Test]
-        public void Deck16_ktmr39_GolosTron_G_Jegantha()
+        public void Deck16_ktmr39_GreenTron_G_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-06",15),
                 new PostCompanionChange(),
                 ArchetypeColor.G,
                 typeof(Tron),
-typeof(GreenTron),
+                typeof(GreenTron),
                 ArchetypeCompanion.Jegantha
             );
         }
