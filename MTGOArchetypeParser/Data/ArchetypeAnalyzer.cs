@@ -22,7 +22,7 @@ namespace MTGOArchetypeParser.Data
             {"Zirda, the Dawnwaker", ArchetypeCompanion.Zirda }
         };
 
-        public static ArchetypeResult Detect(Card[] mainboardCards, Card[] sideboardCards, Archetype[] archetypeData, Dictionary<string, ArchetypeColor> landColors, Dictionary<string, ArchetypeColor> cardColors)
+        public static ArchetypeResult Detect(Card[] mainboardCards, Card[] sideboardCards, Archetype[] archetypeData, Dictionary<string, ArchetypeColor> landColors, Dictionary<string, ArchetypeColor> cardColors, double minSimiliarity = 0.1)
         {
             ArchetypeSpecific[] specificArchetypes = archetypeData.Where(a => a is ArchetypeSpecific && !(a is ArchetypeVariant)).Select(a => a as ArchetypeSpecific).ToArray();
             ArchetypeGeneric[] genericArchetypes = archetypeData.Where(a => a is ArchetypeGeneric).Select(a => a as ArchetypeGeneric).ToArray();
@@ -43,18 +43,18 @@ namespace MTGOArchetypeParser.Data
                             if (Test(mainboardCards, sideboardCards, color, variant))
                             {
                                 isVariant = true;
-                                results.Add(new ArchetypeMatch() { Archetype = archetype, Variant = variant });
+                                results.Add(new ArchetypeMatch() { Archetype = archetype, Variant = variant, Similarity = 1 });
                             }
                         }
                     }
-                    if (!isVariant) results.Add(new ArchetypeMatch() { Archetype = archetype, Variant = null, });
+                    if (!isVariant) results.Add(new ArchetypeMatch() { Archetype = archetype, Variant = null, Similarity = 1 });
                 }
             }
 
             if (results.Count == 0)
             {
-                Archetype genericArchetype = GetBestGenericArchetype(mainboardCards, sideboardCards, color, genericArchetypes);
-                if (genericArchetype != null) results.Add(new ArchetypeMatch() { Archetype = genericArchetype, Variant = null, });
+                ArchetypeMatch genericArchetype = GetBestGenericArchetype(mainboardCards, sideboardCards, color, genericArchetypes);
+                if (genericArchetype != null && genericArchetype.Similarity > minSimiliarity) results.Add(genericArchetype);
             }
 
             return new ArchetypeResult() { Matches = results.ToArray(), Color = color, Companion = companion };
@@ -156,7 +156,7 @@ namespace MTGOArchetypeParser.Data
             return true;
         }
 
-        private static Archetype GetBestGenericArchetype(Card[] mainboardCards, Card[] sideboardCards, ArchetypeColor color, ArchetypeGeneric[] genericArchetypes)
+        private static ArchetypeMatch GetBestGenericArchetype(Card[] mainboardCards, Card[] sideboardCards, ArchetypeColor color, ArchetypeGeneric[] genericArchetypes)
         {
             Dictionary<ArchetypeGeneric, int> weights = new Dictionary<ArchetypeGeneric, int>();
 
@@ -191,7 +191,8 @@ namespace MTGOArchetypeParser.Data
             else
             {
                 int max = weights.Max(k => k.Value);
-                return weights.Where(k => k.Value == max).ToArray().OrderBy(k => k.Key.CommonCards.Length).First().Key;
+                KeyValuePair<ArchetypeGeneric, int> bestMatch = weights.Where(k => k.Value == max).ToArray().OrderBy(k => k.Key.CommonCards.Length).First();
+                return new ArchetypeMatch() { Archetype = bestMatch.Key, Variant = null, Similarity = ((double)max) / ((double)(mainboardCards.Length + sideboardCards.Length)) };
             }
         }
     }

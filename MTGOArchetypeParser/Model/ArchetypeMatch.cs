@@ -8,5 +8,6 @@ namespace MTGOArchetypeParser.Model
     {
         public Archetype Archetype { get; set; }
         public Archetype Variant { get; set; }
+        public double Similarity { get; set; }
     }
 }
