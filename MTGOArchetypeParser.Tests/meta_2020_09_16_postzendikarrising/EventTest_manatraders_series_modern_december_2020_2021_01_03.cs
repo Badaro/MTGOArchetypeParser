@@ -906,7 +906,7 @@ typeof(GreenTron),
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",44),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(RedPrison),
+                typeof(PyroPrison),
                 null,
                 null
             );
@@ -2804,7 +2804,7 @@ typeof(GreenTron),
                 GetDeck("manatraders-series-modern-december-2020-2021-01-03",190),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(RedPrison),
+                typeof(PyroPrison),
                 null,
                 null
             );

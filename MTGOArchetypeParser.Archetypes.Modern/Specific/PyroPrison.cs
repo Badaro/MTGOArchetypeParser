@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class RedPrison : ArchetypeSpecific
+    public class PyroPrison : ArchetypeSpecific
     {
-        public RedPrison()
+        public PyroPrison()
         {
             Conditions = new ArchetypeCondition[]
             {

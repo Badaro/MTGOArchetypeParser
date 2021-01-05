@@ -444,7 +444,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-09-07",30),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(RedPrison),
+                typeof(PyroPrison),
                 null,
                 null
             );

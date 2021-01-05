@@ -140,7 +140,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-11-10",8),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
-                typeof(RedPrison),
+                typeof(PyroPrison),
                 null,
                 null
             );

@@ -54,7 +54,7 @@ typeof(EldraziTron),
                 GetDeck("modern-preliminary-2020-08-18",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.R,
-                typeof(RedPrison),
+                typeof(PyroPrison),
                 null,
                 null
             );
