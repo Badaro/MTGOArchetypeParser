@@ -105,8 +105,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-07-24",5),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WU,
-                typeof(ThopterUrza),
-                null,
+                typeof(ThopterCombo),
+typeof(ThopterUrza),
                 null
             );
         }

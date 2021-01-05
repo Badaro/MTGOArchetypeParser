@@ -67,8 +67,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-07-13",1),
                 new PostM21(),
                 ArchetypeColor.UBR,
-                typeof(ThopterUrza),
-                null,
+                typeof(ThopterCombo),
+typeof(ThopterUrza),
                 null
             );
         }

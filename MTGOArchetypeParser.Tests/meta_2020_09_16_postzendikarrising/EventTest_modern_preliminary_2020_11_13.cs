@@ -178,8 +178,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-11-13",10),
                 new PostZendikarRising(),
                 ArchetypeColor.WUBR,
-                typeof(ThopterUrza),
-                null,
+                typeof(ThopterCombo),
+typeof(ThopterUrza),
                 null
             );
         }

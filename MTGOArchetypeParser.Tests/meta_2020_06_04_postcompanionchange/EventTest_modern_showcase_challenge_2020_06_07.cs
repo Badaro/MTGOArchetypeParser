@@ -236,8 +236,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-showcase-challenge-2020-06-07",14),
                 new PostCompanionChange(),
                 ArchetypeColor.UB,
-                typeof(ThopterUrza),
-                null,
+                typeof(ThopterCombo),
+typeof(ThopterUrza),
                 null
             );
         }

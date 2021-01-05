@@ -444,8 +444,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-12-28",30),
                 new PostZendikarRising(),
                 ArchetypeColor.WUB,
-                typeof(ThopterUrza),
-                null,
+                typeof(ThopterCombo),
+typeof(ThopterUrza),
                 null
             );
         }

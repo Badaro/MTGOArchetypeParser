@@ -41,8 +41,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-20",0),
                 new PostCompanionChange(),
                 ArchetypeColor.WUBRG,
+                typeof(ThopterCombo),
                 typeof(Lantern),
-                null,
                 null
             );
         }
