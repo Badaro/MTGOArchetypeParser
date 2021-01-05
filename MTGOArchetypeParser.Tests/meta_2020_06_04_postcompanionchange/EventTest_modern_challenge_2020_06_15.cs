@@ -171,7 +171,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-challenge-2020-06-15",9),
                 new PostCompanionChange(),
                 ArchetypeColor.UB,
-                typeof(Inverter),
+                typeof(InverterCombo),
                 null,
                 null
             );

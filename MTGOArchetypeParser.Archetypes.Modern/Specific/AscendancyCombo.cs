@@ -14,21 +14,6 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Jeskai Ascendancy" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Fatestitcher" } }
             };
-            Variants = new ArchetypeVariant[]
-            {
-                new AscendancyBreach()
-            };
-        }
-    }
-
-    public class AscendancyBreach : ArchetypeVariant
-    {
-        public AscendancyBreach()
-        {
-            Conditions = new ArchetypeCondition[]
-            {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Underworld Breach" } },
-            };
         }
     }
 }

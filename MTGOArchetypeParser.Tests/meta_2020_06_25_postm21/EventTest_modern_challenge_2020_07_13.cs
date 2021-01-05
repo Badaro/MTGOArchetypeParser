@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 new PostM21(),
                 ArchetypeColor.R,
                 typeof(Burn),
-                typeof(IncineratorBurn),
+                null,
                 null
             );
         }

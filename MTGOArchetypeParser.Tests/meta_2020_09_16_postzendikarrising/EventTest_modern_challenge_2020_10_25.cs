@@ -327,7 +327,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-10-25",21),
                 new PostZendikarRising(),
                 ArchetypeColor.UB,
-                typeof(Inverter),
+                typeof(InverterCombo),
                 null,
                 null
             );
