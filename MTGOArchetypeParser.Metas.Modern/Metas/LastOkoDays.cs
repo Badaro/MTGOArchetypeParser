@@ -9,7 +9,7 @@ namespace MTGOArchetypeParser.Metas.Modern
     {
         public LastOkoDays()
         {
-            this.StartDate = new DateTime(2019, 12, 03, 00, 00, 00, DateTimeKind.Utc);
+            this.StartDate = new DateTime(2019, 12, 13, 00, 00, 00, DateTimeKind.Utc);
         }
     }
 }
