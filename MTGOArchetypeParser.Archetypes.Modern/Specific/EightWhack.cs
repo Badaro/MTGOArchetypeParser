@@ -11,8 +11,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Foundry Street Denizen" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Goblin Bushwhacker" } },
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Reckless Bushwhacker" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Goblin Grenade" } },
             };
         }

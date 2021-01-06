@@ -43,7 +43,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Scapeshift" } }
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Scapeshift" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.DoesNotContain, Cards = new string[] { "Elvish Reclaimer" } }
             };
         }
     }
