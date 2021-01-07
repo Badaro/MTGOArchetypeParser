@@ -52,7 +52,7 @@ namespace MTGOArchetypeParser.Model
                 case ArchetypeColor.WR:   // Boros
                     return $"Boros";
                 case ArchetypeColor.WG:   // Selesnya
-                    return $"Selenya";
+                    return $"Selesnya";
                 case ArchetypeColor.UB:   // Dimir
                     return $"Dimir";
                 case ArchetypeColor.UR:   // Izzet
