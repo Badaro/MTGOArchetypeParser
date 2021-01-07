@@ -13,7 +13,7 @@ using System.Text;
 #02 joaoclaudioms: Hammer Time (WB, Lurrus)
 #03 richardgirges: Jund Midrange (BRG)
 #04 ginaep: Eldrazi Tron (C)
-#05 Bohnz87: WBRG Shadow (WBRG)
+#05 Bohnz87: Jund Shadow (BRG)
 #06 ElYallo: Heliod Combo (WG)
 #07 naddyeffintabs: Hammer Time (WB, Lurrus)
 #08 Rooney56: Shadow Prowess (BR, Lurrus)
@@ -77,12 +77,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_Bohnz87_WBRGShadow_WBRG()
+        public void Deck05_Bohnz87_JundShadow_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2021-01-07",4),
                 new PostZendikarRising(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(GenericShadow),
                 null,
                 null
