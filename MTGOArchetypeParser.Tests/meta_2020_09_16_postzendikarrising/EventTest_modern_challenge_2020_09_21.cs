@@ -249,7 +249,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-09-21",15),
                 new PostZendikarRising(),
                 ArchetypeColor.W,
-                typeof(NykthosDevotion),
+                typeof(WhiteDevotion),
                 null,
                 null
             );

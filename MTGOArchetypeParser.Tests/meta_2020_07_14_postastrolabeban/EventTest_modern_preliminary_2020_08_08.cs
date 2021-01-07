@@ -211,7 +211,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-08-08",13),
                 new PostAstrolabeBan(),
                 ArchetypeColor.W,
-                typeof(NykthosDevotion),
+                typeof(WhiteDevotion),
                 null,
                 null
             );
