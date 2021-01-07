@@ -139,7 +139,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-18",8),
                 new PostCompanionChange(),
                 ArchetypeColor.WG,
-                typeof(StoneforgeEldrazi),
+                typeof(GreenEldrazi),
                 null,
                 ArchetypeCompanion.Jegantha
             );
