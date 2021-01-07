@@ -194,7 +194,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-03-25",11),
                 new PostOuatBan(),
                 ArchetypeColor.WUG,
-                typeof(GenericTaxes),
+                typeof(GreenEldrazi),
                 null,
                 null
             );

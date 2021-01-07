@@ -201,7 +201,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-preliminary-2020-02-11",12),
                 new PostTherosBeyondDeath(),
                 ArchetypeColor.RG,
-                typeof(ObligatorEldrazi),
+                typeof(GreenEldrazi),
                 null,
                 null
             );

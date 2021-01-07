@@ -82,7 +82,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-preliminary-2019-12-20",4),
                 new LastOkoDays(),
                 ArchetypeColor.UG,
-                typeof(GenericTaxes),
+                typeof(GreenEldrazi),
                 null,
                 null
             );
@@ -95,7 +95,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-preliminary-2019-12-20",5),
                 new LastOkoDays(),
                 ArchetypeColor.RG,
-                typeof(ObligatorEldrazi),
+                typeof(GreenEldrazi),
                 null,
                 null
             );

@@ -108,7 +108,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-preliminary-2019-12-27",6),
                 new LastOkoDays(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(UrzaOko),
                 null,
                 null
             );

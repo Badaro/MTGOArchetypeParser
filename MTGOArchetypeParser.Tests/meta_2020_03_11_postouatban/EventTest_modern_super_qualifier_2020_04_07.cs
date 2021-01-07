@@ -249,7 +249,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-super-qualifier-2020-04-07",15),
                 new PostOuatBan(),
                 ArchetypeColor.RG,
-                typeof(ObligatorEldrazi),
+                typeof(GreenEldrazi),
                 null,
                 null
             );
