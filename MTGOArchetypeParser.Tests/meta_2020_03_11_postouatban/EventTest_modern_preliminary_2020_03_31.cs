@@ -693,7 +693,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-03-31",47),
                 new PostOuatBan(),
                 ArchetypeColor.W,
-                typeof(NykthosDevotion),
+                typeof(WhiteDevotion),
                 null,
                 null
             );
