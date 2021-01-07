@@ -77,12 +77,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_Bohnz87_WBRGShadow_WBRG()
+        public void Deck05_Bohnz87_WBRGShadow_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2021-01-07",4),
                 new PostZendikarRising(),
-                ArchetypeColor.WBRG,
+                ArchetypeColor.BRG,
                 typeof(GenericShadow),
                 null,
                 null

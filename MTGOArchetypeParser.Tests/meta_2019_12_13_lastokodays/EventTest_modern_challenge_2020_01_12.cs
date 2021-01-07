@@ -223,7 +223,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-challenge-2020-01-12",13),
                 new LastOkoDays(),
                 ArchetypeColor.U,
-                typeof(GenericProwess),
+                typeof(ParadoxicalUrza),
                 null,
                 null
             );

@@ -155,7 +155,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-preliminary-2020-01-03",9),
                 new LastOkoDays(),
                 ArchetypeColor.G,
-                typeof(GenericTaxes),
+                typeof(PrimevalTitan),
                 null,
                 null
             );
