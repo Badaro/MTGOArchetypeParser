@@ -49,7 +49,11 @@ namespace MTGOArchetypeParser.Reports.App
                     }
 
                     string points = "-";
-                    if (tournament.Standings != null) points = tournament.Standings.FirstOrDefault(s => s.Player == tournament.Decks[i].Player).Points.ToString();
+                    if (tournament.Standings != null)
+                    {
+                        var standing = tournament.Standings.FirstOrDefault(s => s.Player == tournament.Decks[i].Player);
+                        if (standing != null) points = standing.Points.ToString();
+                    }
 
                     records.Add(new DataRecord()
                     {
