@@ -37,21 +37,13 @@ namespace MTGOArchetypeParser.Reports.App
 
                 string date = $"{records.Max(t => t.Date).ToString("yyyy_MM_dd")}";
                 GenerateDump(records, $"mtgo_data_{date}");
-                GenerateTrend(records, $"mtgo_trend_{date}");
 
                 foreach (string meta in records.Select(r => r.Meta).Distinct())
                 {
                     GenerateMeta(records.Where(r => r.Meta == meta), r => r.Archetype, $"mtgo_meta_archetype_{meta.ToLower()}_full_{date}", _minPercentage);
-                    GenerateMeta(records.Where(r => r.Meta == meta), r => r.Archetype, $"mtgo_meta_all_archetype_{meta.ToLower()}_full_{date}", 0);
-                    GenerateColors(records.Where(r => r.Meta == meta), $"mtgo_meta_colors_{meta.ToLower()}_full_{date}");
-                    GenerateCards(records.Where(r => r.Meta == meta), $"mtgo_meta_cards_{meta.ToLower()}_full_{date}");
-
                     foreach (int week in records.Where(r => r.Meta == meta).Select(r => r.Week).Distinct())
                     {
                         GenerateMeta(records.Where(r => r.Meta == meta && r.Week == week), r => r.Archetype, $"mtgo_meta_archetype_{meta.ToLower()}_week{week.ToString("D2")}_{date}", _minPercentage);
-                        GenerateMeta(records.Where(r => r.Meta == meta && r.Week == week), r => r.Archetype, $"mtgo_meta_all_archetype_{meta.ToLower()}_week{week.ToString("D2")}_{date}", 0);
-                        GenerateColors(records.Where(r => r.Meta == meta && r.Week == week), $"mtgo_meta_colors_{meta.ToLower()}_week{week.ToString("D2")}_{date}");
-                        GenerateCards(records.Where(r => r.Meta == meta && r.Week == week), $"mtgo_meta_cards_{meta.ToLower()}_week{week.ToString("D2")}_{date}");
                     }
                 }
 
@@ -83,62 +75,6 @@ namespace MTGOArchetypeParser.Reports.App
             foreach (var record in records)
             {
                 csvData.AppendLine($"{record.Tournament},{record.Meta},{record.Week},{record.Date.ToString("yyyy-MM-dd")},{record.Result},{record.Points},{record.Player},{record.AnchorUri},{record.Archetype},{record.Color},{record.Companion}");
-            }
-
-            File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
-        }
-
-        private static void GenerateTrend(IEnumerable<DataRecord> records, string reportName)
-        {
-            int maxWeeks = records.Max(r => r.Week);
-
-            int[] totalPerWeek = new int[maxWeeks];
-            Dictionary<string, int[]> consolidatedResults = new Dictionary<string, int[]>();
-            foreach (var record in records)
-            {
-                totalPerWeek[record.Week - 1]++;
-                if (!consolidatedResults.ContainsKey(record.Archetype)) consolidatedResults.Add(record.Archetype, new int[maxWeeks]);
-                consolidatedResults[record.Archetype][record.Week - 1]++;
-            }
-
-            string header = "ARCHETYPE";
-            for (int i = 0; i < maxWeeks; i++) header += $",WEEK {i + 1}";
-            for (int i = 1; i < maxWeeks; i++) header += $",TREND WEEK {i + 1}";
-
-            StringBuilder csvData = new StringBuilder();
-            csvData.AppendLine(header);
-
-            foreach (var archetype in consolidatedResults)
-            {
-                string line = $"{archetype.Key}";
-
-                for (int i = 0; i < maxWeeks; i++)
-                {
-                    if (archetype.Value[i] > 0)
-                    {
-                        double percentage = 100d * ((double)archetype.Value[i]) / ((double)totalPerWeek[i]);
-                        line += $",{percentage.ToString("F1", CultureInfo.InvariantCulture)}%";
-                    }
-                    else
-                    {
-                        line += ",";
-                    }
-                }
-
-                for (int i = 1; i < maxWeeks; i++)
-                {
-                    double percentageLast = 100d * ((double)archetype.Value[i - 1]) / ((double)totalPerWeek[i - 1]);
-                    double percentageCurrent = 100d * ((double)archetype.Value[i]) / ((double)totalPerWeek[i]);
-                    double diff = (percentageCurrent - percentageLast);
-
-                    if (diff > 5) line += $",↑↑";
-                    else if (diff > 2) line += $",↑";
-                    else if (diff < -5) line += $",↓↓";
-                    else if (diff < -2) line += $",↓";
-                    else line += $",-";
-                }
-
-                csvData.AppendLine(line);
             }
 
             File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
@@ -178,90 +114,6 @@ namespace MTGOArchetypeParser.Reports.App
                 csvData.AppendLine($"{othersKey},{consolidatedTotals[othersKey]},{Math.Round((100.0 * consolidatedTotals[othersKey]) / totals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)}%");
             }
             csvData.AppendLine($"Total,{consolidatedTotals.Sum(c => c.Value)},100%");
-
-            File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
-        }
-
-        private static void GenerateColors(IEnumerable<DataRecord> records, string reportName)
-        {
-            Dictionary<string, int> totals = new Dictionary<string, int>();
-            totals.Add("W", 0);
-            totals.Add("U", 0);
-            totals.Add("B", 0);
-            totals.Add("R", 0);
-            totals.Add("G", 0);
-
-            foreach (var record in records)
-            {
-                foreach (var color in totals.Keys.ToArray())
-                {
-                    if (record.Color.ToString().Contains(color)) totals[color]++;
-                }
-            }
-
-            StringBuilder csvData = new StringBuilder();
-            csvData.AppendLine($"COLOR,COUNT,PERCENT");
-
-            foreach (var total in totals)
-            {
-                csvData.AppendLine($"{total.Key},{total.Value},{Math.Round((100.0 * total.Value) / records.Count(), 1).ToString("F1", CultureInfo.InvariantCulture)}%");
-            }
-
-            File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
-        }
-
-        private static void GenerateCards(IEnumerable<DataRecord> records, string reportName)
-        {
-            Dictionary<string, int> count = new Dictionary<string, int>();
-            Dictionary<string, int> decks = new Dictionary<string, int>();
-            Dictionary<string, int> mainboardCount = new Dictionary<string, int>();
-            Dictionary<string, int> sideboardCount = new Dictionary<string, int>();
-            Dictionary<string, int> mainboardDecks = new Dictionary<string, int>();
-            Dictionary<string, int> sideboardDecks = new Dictionary<string, int>();
-
-            foreach (var record in records)
-            {
-                foreach (var card in record.Deck.Mainboard.Concat(record.Deck.Sideboard))
-                {
-                    if (!mainboardCount.ContainsKey(card.Card))
-                    {
-                        count.Add(card.Card, 0);
-                        decks.Add(card.Card, 0);
-                        mainboardCount.Add(card.Card, 0);
-                        sideboardCount.Add(card.Card, 0);
-                        mainboardDecks.Add(card.Card, 0);
-                        sideboardDecks.Add(card.Card, 0);
-                    }
-                }
-            }
-
-            foreach (var record in records)
-            {
-                foreach (var card in record.Deck.Mainboard)
-                {
-                    count[card.Card] += card.Count;
-                    mainboardCount[card.Card] += card.Count;
-                    mainboardDecks[card.Card] += 1;
-                }
-                foreach (DeckItem card in record.Deck.Sideboard)
-                {
-                    count[card.Card] += card.Count;
-                    sideboardCount[card.Card] += card.Count;
-                    sideboardDecks[card.Card] += 1;
-                }
-                foreach (var card in record.Deck.Mainboard.Concat(record.Deck.Sideboard).Select(c => c.Card).Distinct())
-                {
-                    decks[card] += 1;
-                }
-            }
-
-            StringBuilder csvData = new StringBuilder();
-            csvData.AppendLine($"NAME,COUNT,DECKS,MAINBOARD_COUNT,MAINBOARD_DECKS,SIDEBOARD_COUNT,SIDEBOARD_DECKS");
-
-            foreach (var card in decks.Keys.OrderByDescending(k => count[k]))
-            {
-                csvData.AppendLine($"{card.Replace(",", "")},{count[card]},{decks[card]},{mainboardCount[card]},{mainboardDecks[card]},{sideboardCount[card]},{sideboardDecks[card]}");
-            }
 
             File.WriteAllText($"{_outputFolder}\\{reportName}.csv", csvData.ToString());
         }
