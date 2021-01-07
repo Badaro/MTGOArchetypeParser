@@ -151,7 +151,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-preliminary-2020-01-01",9),
                 new LastOkoDays(),
                 ArchetypeColor.WUBG,
-                typeof(GenericProwess),
+                typeof(KethisCombo),
                 null,
                 null
             );

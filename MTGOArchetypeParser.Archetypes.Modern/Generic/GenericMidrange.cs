@@ -28,7 +28,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 "Stoneforge Mystic",
                 "Brazen Borrower",
                 "Spell Queller",
-                "Karn, the Great Creator"
+                "Karn, the Great Creator",
+                "Geist of Saint Traft"
             };
         }
     }

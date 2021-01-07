@@ -359,7 +359,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-preliminary-2020-03-07",24),
                 new PostTherosBeyondDeath(),
                 ArchetypeColor.G,
-                typeof(GenericMidrange),
+                typeof(GreenDevotion),
                 null,
                 null
             );

@@ -106,7 +106,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-challenge-2019-12-22",4),
                 new LastOkoDays(),
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                typeof(GenericMidrange),
                 null,
                 null
             );
