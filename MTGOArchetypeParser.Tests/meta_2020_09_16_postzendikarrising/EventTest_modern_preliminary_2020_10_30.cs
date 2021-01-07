@@ -227,7 +227,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-10-30",14),
                 new PostZendikarRising(),
                 ArchetypeColor.WG,
-                typeof(StoneforgeEldrazi),
+                typeof(GreenEldrazi),
                 null,
                 null
             );

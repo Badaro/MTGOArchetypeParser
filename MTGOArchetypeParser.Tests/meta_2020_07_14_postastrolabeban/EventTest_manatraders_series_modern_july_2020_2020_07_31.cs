@@ -2493,7 +2493,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",172),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WG,
-                typeof(GenericTaxes),
+                typeof(GreenEldrazi),
                 null,
                 null
             );
@@ -2714,7 +2714,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",189),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BG,
-                typeof(GenericMidrange),
+                typeof(GreenEldrazi),
                 null,
                 ArchetypeCompanion.Jegantha
             );
