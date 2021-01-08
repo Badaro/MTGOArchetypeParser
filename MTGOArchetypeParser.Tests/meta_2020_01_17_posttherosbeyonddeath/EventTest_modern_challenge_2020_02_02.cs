@@ -54,7 +54,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-challenge-2020-02-02",0),
                 new PostTherosBeyondDeath(),
                 ArchetypeColor.WBG,
-                typeof(GenericTaxes),
+                typeof(Badzan),
                 null,
                 null
             );

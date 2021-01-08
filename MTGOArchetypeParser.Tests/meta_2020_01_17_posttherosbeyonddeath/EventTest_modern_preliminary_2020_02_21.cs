@@ -181,7 +181,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-preliminary-2020-02-21",10),
                 new PostTherosBeyondDeath(),
                 ArchetypeColor.WUR,
-                typeof(GenericProwess),
+                typeof(PyroAscension),
                 null,
                 null
             );

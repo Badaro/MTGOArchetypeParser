@@ -314,7 +314,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-challenge-2020-06-21",20),
                 new PostCompanionChange(),
                 ArchetypeColor.WUR,
-                typeof(ThingAscension),
+                typeof(PyroAscension),
                 null,
                 ArchetypeCompanion.Lurrus
             );

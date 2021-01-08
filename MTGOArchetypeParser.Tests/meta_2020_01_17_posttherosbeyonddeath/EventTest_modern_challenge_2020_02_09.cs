@@ -405,7 +405,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-challenge-2020-02-09",27),
                 new PostTherosBeyondDeath(),
                 ArchetypeColor.RG,
-                typeof(GenericMidrange),
+                typeof(AssaultLoam),
                 null,
                 null
             );
