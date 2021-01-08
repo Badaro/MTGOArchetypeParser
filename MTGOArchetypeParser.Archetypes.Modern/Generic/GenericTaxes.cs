@@ -17,12 +17,15 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 "Thalia, Guardian of Thraben",
                 "Aether Vial",
                 "Leonin Arbiter",
-                "Charming Prince",
                 "Flickerwisp",
                 "Eldrazi Displacer",
                 "Thought-Knot Seer",
                 "Serra Avenger",
                 "Wasteland Strangler"
+            };
+            RequiredCards = new string[]
+            {
+                "Thalia, Guardian of Thraben",
             };
         }
     }

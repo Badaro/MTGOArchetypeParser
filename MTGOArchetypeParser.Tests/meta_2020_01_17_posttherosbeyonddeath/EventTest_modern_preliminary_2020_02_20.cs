@@ -283,7 +283,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-preliminary-2020-02-20",18),
                 new PostTherosBeyondDeath(),
                 ArchetypeColor.WUB,
-                typeof(GenericTaxes),
+                typeof(GenericBlink),
                 null,
                 null
             );

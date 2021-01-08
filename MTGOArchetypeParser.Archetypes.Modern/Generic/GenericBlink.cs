@@ -26,7 +26,8 @@ namespace MTGOArchetypeParser.Archetypes.Modern
                 "Spreading Seas",
                 "Deputy of Detention",
                 "Restoration Angel",
-                "Vedalken Plotter"
+                "Vedalken Plotter",
+                "Charming Prince"
             };
         }
     }
