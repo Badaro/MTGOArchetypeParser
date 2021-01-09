@@ -340,7 +340,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-super-qualifier-2020-03-31",22),
                 new PostOuatBan(),
                 ArchetypeColor.UG,
-                typeof(GenericMidrange),
+                typeof(Superfriends),
                 null,
                 null
             );

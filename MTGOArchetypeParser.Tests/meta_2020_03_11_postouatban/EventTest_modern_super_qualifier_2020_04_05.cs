@@ -223,7 +223,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-super-qualifier-2020-04-05",13),
                 new PostOuatBan(),
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                typeof(Uroza),
                 null,
                 null
             );

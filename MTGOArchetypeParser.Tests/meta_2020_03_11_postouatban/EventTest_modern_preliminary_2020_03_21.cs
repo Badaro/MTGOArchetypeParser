@@ -397,7 +397,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-03-21",25),
                 new PostOuatBan(),
                 ArchetypeColor.BR,
-                typeof(GenericMidrange),
+                typeof(HollowOne),
                 null,
                 null
             );
@@ -540,7 +540,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-03-21",36),
                 new PostOuatBan(),
                 ArchetypeColor.B,
-                typeof(GenericMidrange),
+                typeof(EightRack),
                 null,
                 null
             );
@@ -683,7 +683,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-03-21",47),
                 new PostOuatBan(),
                 ArchetypeColor.UR,
-                typeof(GenericProwess),
+                typeof(Phoenix),
                 null,
                 null
             );

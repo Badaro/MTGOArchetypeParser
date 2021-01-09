@@ -524,7 +524,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-03-28",35),
                 new PostOuatBan(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Uroza),
                 null,
                 null
             );

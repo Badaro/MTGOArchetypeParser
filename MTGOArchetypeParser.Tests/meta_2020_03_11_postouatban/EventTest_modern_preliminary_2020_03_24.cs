@@ -610,7 +610,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-03-24",39),
                 new PostOuatBan(),
                 ArchetypeColor.UG,
-                typeof(GenericMidrange),
+                typeof(Superfriends),
                 null,
                 null
             );
@@ -844,7 +844,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-03-24",57),
                 new PostOuatBan(),
                 ArchetypeColor.UB,
-                typeof(GenericControl),
+                typeof(LivingEnd),
                 null,
                 null
             );

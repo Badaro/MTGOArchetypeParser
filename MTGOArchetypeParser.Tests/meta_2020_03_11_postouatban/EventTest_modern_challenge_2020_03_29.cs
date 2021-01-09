@@ -444,7 +444,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-challenge-2020-03-29",30),
                 new PostOuatBan(),
                 ArchetypeColor.WUG,
-                typeof(GenericMidrange),
+                typeof(Knightfall),
                 null,
                 null
             );
