@@ -26,7 +26,7 @@ using System.Text;
 #15 stonepeanut: Green Tron (G)
 #16 SouthernSliver: Slivers (WUBRG)
 #17 MiguelCaster: Mono White Taxes (W)
-#18 PermissionMTG: Burn (WRG)
+#18 PermissionMTG: Zoo (WRG)
 #19 SunofNothing: Uroza (UG)
 #20 SemoMTGBros: Bant Control (WUG)
 #21 levunga21: Bant Control (WUG)
@@ -269,7 +269,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck18_PermissionMTG_Burn_WRG()
+        public void Deck18_PermissionMTG_Zoo_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-22",17),

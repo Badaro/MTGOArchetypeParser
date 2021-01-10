@@ -36,7 +36,7 @@ using System.Text;
 #25 s063: Sultai Control (UBG)
 #26 Poderosisimo: Crabvine (UBG)
 #27 Delve3: Izzet Control (UR)
-#28 Lanteror: Gruul Midrange (RG)
+#28 Lanteror: Assault Loam (RG)
 #29 Sodeq: Dredge (BRG)
 #30 fradev1988: Electro Balance (UR)
 #31 TheRiedl: Uroza (URG)
@@ -399,7 +399,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck28_Lanteror_GruulMidrange_RG()
+        public void Deck28_Lanteror_AssaultLoam_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-09",27),

@@ -33,7 +33,7 @@ using System.Text;
 #22 TheTunnelingCat: Eldrazi Tron (C)
 #23 xfile: Gruul Prowess (RG)
 #24 .//Automaton: Green Tron (G)
-#25 AndyGrey: Mono Green Midrange (G)
+#25 AndyGrey: Green Devotion (G)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
@@ -353,7 +353,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck25_AndyGrey_MonoGreenMidrange_G()
+        public void Deck25_AndyGrey_GreenDevotion_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-07",24),

@@ -17,7 +17,7 @@ using System.Text;
 #06 flatnose: Merfolk (UG)
 #07 ilsecco14: Mono Red Prowess (R)
 #08 wambocombo2020: Uroza (UBG, Yorion)
-#09 MadCowChicken: Stoneforge Eldrazi (WG, Jegantha)
+#09 MadCowChicken: Green Eldrazi (WG, Jegantha)
 #10 Stompy45: Gruul Midrange (RG)
 #11 _LSN_: Burn (WR)
 #12 Traft: Ad Nauseam (WUB)
@@ -133,7 +133,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck09_MadCowChicken_StoneforgeEldrazi_WG_Jegantha()
+        public void Deck09_MadCowChicken_GreenEldrazi_WG_Jegantha()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-18",8),

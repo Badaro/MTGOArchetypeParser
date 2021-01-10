@@ -38,7 +38,7 @@ using System.Text;
 #27 sleightofhand94: Mono White Taxes (W)
 #28 Gigy: Gruul Midrange (RG)
 #29 DaniMRebel: Mono White Taxes (W)
-#30 random_deck: Selenya Midrange (WG)
+#30 random_deck: Selesnya Midrange (WG)
 #31 sokos13: Infect (UG)
 #32 ZYURYO: WURG Control (WURG)
 */
@@ -425,7 +425,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck30_randomdeck_SelenyaMidrange_WG()
+        public void Deck30_randomdeck_SelesnyaMidrange_WG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-09",29),

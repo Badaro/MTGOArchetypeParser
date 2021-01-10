@@ -181,7 +181,7 @@ using System.Text;
 #170 wolfmedic: Gruul Midrange (RG)
 #171 desertdrive: Boros Prowess (WR)
 #172 StanLee: Scapeshift (UBRG, Lurrus)
-#173 Leonardo1080: Selenya Taxes (WG)
+#173 Leonardo1080: Green Eldrazi (WG)
 #174 TheKingFor1000years: Infect (UG)
 #175 salvite: Eldrazi Tron (C)
 #176 Gabriel0288: Titan Shift (RG)
@@ -198,7 +198,7 @@ using System.Text;
 #187 Dfeanor: Titan Shift (RG)
 #188 simpleliquid: Gruul Midrange (RG)
 #189 lucadaky: Gifts Storm (UR)
-#190 MadCowChicken: Golgari Midrange (BG, Jegantha)
+#190 MadCowChicken: Green Eldrazi (BG, Jegantha)
 #191 MatiCheto: Green Tron (G, Jegantha)
 #192 Oscarzr22: Eldrazi Tron (C)
 #193 HouseOfManaMTG: Amulet Titan (UG)
@@ -2487,7 +2487,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck173_Leonardo1080_SelenyaTaxes_WG()
+        public void Deck173_Leonardo1080_GreenEldrazi_WG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",172),
@@ -2708,7 +2708,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck190_MadCowChicken_GolgariMidrange_BG_Jegantha()
+        public void Deck190_MadCowChicken_GreenEldrazi_BG_Jegantha()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",189),

@@ -13,8 +13,8 @@ using System.Text;
 #02 TombSimon: Titan Shift (RG)
 #03 Pintogeddon2: Humans (WUBRG)
 #04 Mulldrifter: Eldrazi Tron (C)
-#05 MattiJohansson: Simic Taxes (UG)
-#06 JapaneseFisherman: Obligator Eldrazi (RG)
+#05 MattiJohansson: Green Eldrazi (UG)
+#06 JapaneseFisherman: Green Eldrazi (RG)
 #07 PRGJJAR: Dredge (BRG)
 #08 Phill_Hellmuth: Humans (WUBRG)
 */
@@ -76,7 +76,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck05_MattiJohansson_SimicTaxes_UG()
+        public void Deck05_MattiJohansson_GreenEldrazi_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-20",4),
@@ -89,7 +89,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck06_JapaneseFisherman_ObligatorEldrazi_RG()
+        public void Deck06_JapaneseFisherman_GreenEldrazi_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-20",5),

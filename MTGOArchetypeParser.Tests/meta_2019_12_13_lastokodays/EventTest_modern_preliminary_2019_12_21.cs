@@ -22,8 +22,8 @@ using System.Text;
 #11 azax: Sultai Shadow (UBG)
 #12 kanister: Amulet Titan (UG)
 #13 Wolvenjoe1984: Thopter Urza (UBG)
-#14 raynesobad: Simic Control (UG)
-#15 zachattack23: Simic Control (UG)
+#14 raynesobad: Urza Oko (UG)
+#15 zachattack23: Urza Oko (UG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
@@ -200,7 +200,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck14_raynesobad_SimicControl_UG()
+        public void Deck14_raynesobad_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-21",13),
@@ -213,7 +213,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck15_zachattack23_SimicControl_UG()
+        public void Deck15_zachattack23_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-21",14),

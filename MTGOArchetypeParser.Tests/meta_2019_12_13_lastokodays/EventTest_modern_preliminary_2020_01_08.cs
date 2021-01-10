@@ -9,8 +9,8 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Graciasportanto: Simic Control (UG)
-#02 mell0n: Simic Prowess (UG)
+#01 Graciasportanto: Urza Oko (UG)
+#02 mell0n: Urza Oko (UG)
 #03 fistfullofmetal: Green Tron (RG)
 #04 ecobaronen: Bant Midrange (WUG)
 #05 Coly2: Mono Red Prowess (R)
@@ -27,7 +27,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
     public class EventTest_modern_preliminary_2020_01_08 : EventTest
     {
         [Test]
-        public void Deck01_Graciasportanto_SimicControl_UG()
+        public void Deck01_Graciasportanto_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-08",0),
@@ -40,7 +40,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_mell0n_SimicProwess_UG()
+        public void Deck02_mell0n_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-08",1),

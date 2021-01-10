@@ -24,7 +24,7 @@ using System.Text;
 #13 kthanakit26: Boros Prowess (WR, Lurrus)
 #14 Delthar: Infect (UG)
 #15 Fatcaster_Mage: Sultai Control (UBG)
-#16 Artem_Kuhtin: Nykthos Devotion (W)
+#16 Artem_Kuhtin: White Devotion (W)
 #17 NorrathDecay: Burn (WR)
 #18 Mateusf34: Eldrazi Tron (C)
 #19 WeareVenom: WURG Control (WURG)
@@ -243,7 +243,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_ArtemKuhtin_NykthosDevotion_W()
+        public void Deck16_ArtemKuhtin_WhiteDevotion_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-21",15),

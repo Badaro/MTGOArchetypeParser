@@ -16,7 +16,7 @@ using System.Text;
 #05 nahuel10: Burn (WR)
 #06 Nammersquats: Humans (WUBRG)
 #07 yamakiller: Eldrazi Tron (C)
-#08 SourceOdin: Simic Prowess (UG)
+#08 SourceOdin: Urza Oko (UG)
 #09 thugnificent32: Amulet Titan (UG)
 #10 quinniac: Burn (WRG)
 #11 rileydk: Amulet Titan (UG)
@@ -124,7 +124,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck08_SourceOdin_SimicProwess_UG()
+        public void Deck08_SourceOdin_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-16",7),

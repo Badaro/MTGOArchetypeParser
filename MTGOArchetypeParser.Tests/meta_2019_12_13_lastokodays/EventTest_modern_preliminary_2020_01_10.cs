@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Toastxp: Temur Prowess (URG)
+#01 Toastxp: Urza Oko (URG)
 #02 122pablo: Ascendancy Combo (WURG)
 #03 Zacherry124: Bant Midrange (WUG)
 #04 _Shatun_: Mono Red Prowess (R)
@@ -18,10 +18,10 @@ using System.Text;
 #07 uwata: Ad Nauseam (WUB)
 #08 qbturtle15: Jund Midrange (BRG)
 #09 Ivan_Catanduva_Br: Bant Midrange (WUG)
-#10 karatedom: Simic Prowess (UG)
+#10 karatedom: Urza Oko (UG)
 #11 Butakov: Eldrazi Tron (C)
 #12 armstrong36: Sun And Moon (WR)
-#13 Nammersquats: Simic Control (UG)
+#13 Nammersquats: Urza Oko (UG)
 #14 Albimtg: Sultai Shadow (UBG)
 #15 Moyashi01: Grixis Shadow (UBR)
 #16 TombSimon: Mono Red Prowess (R)
@@ -37,7 +37,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
     public class EventTest_modern_preliminary_2020_01_10 : EventTest
     {
         [Test]
-        public void Deck01_Toastxp_TemurProwess_URG()
+        public void Deck01_Toastxp_UrzaOko_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-10",0),
@@ -154,7 +154,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck10_karatedom_SimicProwess_UG()
+        public void Deck10_karatedom_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-10",9),
@@ -193,7 +193,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck13_Nammersquats_SimicControl_UG()
+        public void Deck13_Nammersquats_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-10",12),

@@ -21,7 +21,7 @@ using System.Text;
 #10 vini_torres: Gifts Storm (UR)
 #11 vinnyrussian123: Primeval Titan (UG)
 #12 fistfullofmetal: Green Tron (G)
-#13 ANBKI: Obligator Eldrazi (RG)
+#13 ANBKI: Green Eldrazi (RG)
 #14 _Phoenix_: Thopter Urza (UB)
 #15 SoulStrong: Bant Control (WUG)
 #16 i_b_TRUE: Jund Midrange (BRG)
@@ -195,7 +195,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck13_ANBKI_ObligatorEldrazi_RG()
+        public void Deck13_ANBKI_GreenEldrazi_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-11",12),

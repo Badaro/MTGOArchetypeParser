@@ -48,7 +48,7 @@ using System.Text;
 #37 ComradeCoheed: Uroza (URG)
 #38 pulpo87: Jund Midrange (BRG)
 #39 FreeBobby315: Mono Red Prowess (R)
-#40 UsaZ: Simic Midrange (UG)
+#40 UsaZ: Superfriends (UG)
 #41 xfile: Uroza (UG)
 #42 sicsmoo: Green Tron (G)
 #43 LSMD: Green Tron (G)
@@ -66,7 +66,7 @@ using System.Text;
 #55 instantQ: Burn (WR)
 #56 NMT_Sco94: Electro End (UR)
 #57 Moniz0801: Amulet Titan (G)
-#58 Katla: Dimir Control (UB)
+#58 Katla: Living End (UB)
 #59 DayOfClutch: Burn (WR)
 #60 forenmagra: Saheeli Combo (WUBRG)
 #61 Blahh800: Devoted (WG)
@@ -604,7 +604,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck40_UsaZ_SimicMidrange_UG()
+        public void Deck40_UsaZ_Superfriends_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-24",39),
@@ -838,7 +838,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck58_Katla_DimirControl_UB()
+        public void Deck58_Katla_LivingEnd_UB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-24",57),

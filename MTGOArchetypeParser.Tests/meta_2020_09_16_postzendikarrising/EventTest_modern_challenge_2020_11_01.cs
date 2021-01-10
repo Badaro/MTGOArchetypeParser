@@ -34,7 +34,7 @@ using System.Text;
 #23 Tweedel: Humans (WUBRG)
 #24 MastaHorus: Electro End (UR)
 #25 mtbWolf: Jund Midrange (BRG)
-#26 BiTXBoi: Selenya Taxes (WG)
+#26 BiTXBoi: Selesnya Taxes (WG)
 #27 wambocombo2020: Shadow Prowess (BR, Lurrus)
 #28 Capiplaf95: Golgari Midrange (BG)
 #29 gyyby297: Oops All Spells (WUBRG)
@@ -373,7 +373,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck26_BiTXBoi_SelenyaTaxes_WG()
+        public void Deck26_BiTXBoi_SelesnyaTaxes_WG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-01",25),

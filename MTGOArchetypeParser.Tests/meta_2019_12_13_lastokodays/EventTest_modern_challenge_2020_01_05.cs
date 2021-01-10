@@ -14,25 +14,25 @@ using System.Text;
 #03 exoticherman: Infect (UG)
 #04 austinflakesss: Primeval Titan (UG)
 #05 lan2_13: Niv To Light (WUBRG)
-#06 llawtonss: Simic Control (UG)
+#06 llawtonss: Urza Oko (UG)
 #07 rksgsn: Burn (R)
 #08 Samcaster-Mage: Eldrazi Tron (C)
 #09 CraigMack378: Green Tron (G)
 #10 failbotover9000: Jund Midrange (BRG)
 #11 xfile: Eldrazi Tron (G)
-#12 JHF: Simic Control (UG)
+#12 JHF: Urza Oko (UG)
 #13 mindcandy: Eldrazi Tron (C)
 #14 GodOfSlaughter: Bant Midrange (WUG)
-#15 VTCLA: Simic Control (UG)
+#15 VTCLA: Urza Oko (UG)
 #16 yPrincipe: Eldrazi Tron (C)
 #17 SoulStrong: Sultai Shadow (UBG)
 #18 NuBlkAu: Sultai Shadow (UBG)
-#19 Andreas_Mueller: Simic Control (UG)
+#19 Andreas_Mueller: Urza Oko (UG)
 #20 JustBurn420: Slivers (WUBRG)
-#21 bradyoo: Simic Control (UG)
+#21 bradyoo: Urza Oko (UG)
 #22 cityofcards: Azorius Control (WU)
 #23 Kazuga: Primeval Titan (WG)
-#24 ZackyChan: Temur Prowess (URG)
+#24 ZackyChan: Urza Oko (URG)
 #25 RicardoMSLan: Eldrazi Tron (C)
 #26 Szelma: Eldrazi Tron (C)
 #27 fradev1988: Electro Balance (UR)
@@ -113,7 +113,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck06_llawtonss_SimicControl_UG()
+        public void Deck06_llawtonss_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-05",5),
@@ -191,7 +191,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck12_JHF_SimicControl_UG()
+        public void Deck12_JHF_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-05",11),
@@ -230,7 +230,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck15_VTCLA_SimicControl_UG()
+        public void Deck15_VTCLA_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-05",14),
@@ -282,7 +282,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck19_AndreasMueller_SimicControl_UG()
+        public void Deck19_AndreasMueller_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-05",18),
@@ -308,7 +308,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck21_bradyoo_SimicControl_UG()
+        public void Deck21_bradyoo_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-05",20),
@@ -347,7 +347,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck24_ZackyChan_TemurProwess_URG()
+        public void Deck24_ZackyChan_UrzaOko_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-05",23),

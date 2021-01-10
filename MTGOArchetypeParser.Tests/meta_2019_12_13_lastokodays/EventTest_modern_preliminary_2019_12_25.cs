@@ -10,14 +10,14 @@ using System.Text;
 
 /*
 #01 SoulStrong: Sultai Shadow (UBG)
-#02 __BMJ__: Sultai Control (UBG)
-#03 Cherryxman: Simic Control (UG)
+#02 __BMJ__: Urza Oko (UBG)
+#03 Cherryxman: Urza Oko (UG)
 #04 Phill_Hellmuth: Primeval Titan (UG)
 #05 Mulldrifter: Eldrazi Tron (C)
-#06 Volollo: Simic Control (UG)
+#06 Volollo: Urza Oko (UG)
 #07 heqingbai2019: Titan Shift (RG)
 #08 FakiVll: Jund Midrange (BRG)
-#09 manunitedfanz15: Simic Control (UG)
+#09 manunitedfanz15: Urza Oko (UG)
 #10 kasa: Amulet Titan (UG)
 #11 PRGJJAR: Dredge (BRG)
 #12 lSoLlAKirA: Thopter Urza (WUBRG)
@@ -45,7 +45,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_BMJ_SultaiControl_UBG()
+        public void Deck02_BMJ_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",1),
@@ -58,7 +58,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck03_Cherryxman_SimicControl_UG()
+        public void Deck03_Cherryxman_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",2),
@@ -97,7 +97,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck06_Volollo_SimicControl_UG()
+        public void Deck06_Volollo_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",5),
@@ -136,7 +136,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck09_manunitedfanz15_SimicControl_UG()
+        public void Deck09_manunitedfanz15_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",8),

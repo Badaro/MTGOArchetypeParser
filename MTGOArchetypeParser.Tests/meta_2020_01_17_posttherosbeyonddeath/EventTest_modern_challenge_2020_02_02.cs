@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Antoine57437: Abzan Taxes (WBG)
+#01 Antoine57437: Badzan (WBG)
 #02 elvin7: Uroza (UG)
 #03 katoriarch123: Thopter Urza (UBR)
 #04 SebastianStueckl: Humans (WUBRG)
@@ -21,7 +21,7 @@ using System.Text;
 #10 cloudthresher77: Eldrazi Tron (C)
 #11 Dark_Samurai: Free Spells (UR)
 #12 rileydk: Amulet Titan (G)
-#13 Irkus: Obligator Eldrazi (RG)
+#13 Irkus: Green Eldrazi (RG)
 #14 yanmaster: Hardened Scales (WG)
 #15 Parrit: Orzhov Taxes (WB)
 #16 McWinSauce: Bant Control (WUG)
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
     public class EventTest_modern_challenge_2020_02_02 : EventTest
     {
         [Test]
-        public void Deck01_Antoine57437_AbzanTaxes_WBG()
+        public void Deck01_Antoine57437_Badzan_WBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-02",0),
@@ -204,7 +204,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck13_Irkus_ObligatorEldrazi_RG()
+        public void Deck13_Irkus_GreenEldrazi_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-02",12),

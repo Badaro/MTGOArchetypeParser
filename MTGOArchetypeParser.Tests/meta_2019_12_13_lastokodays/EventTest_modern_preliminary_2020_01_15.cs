@@ -12,8 +12,8 @@ using System.Text;
 #01 McWinSauce: Bant Control (WUG)
 #02 Deathnote1999: Eldrazi Tron (C)
 #03 Kazuga: Mono Red Prowess (R)
-#04 jessy_samek: WURG Prowess (WURG)
-#05 UBERMIKEYB: Temur Prowess (URG)
+#04 jessy_samek: Urza Oko (WURG)
+#05 UBERMIKEYB: Urza Oko (URG)
 #06 Gobo2009: Green Tron (G)
 #07 Bohnz: Bant Control (WUG)
 #08 Erik157751: Crabvine (UBG)
@@ -65,7 +65,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck04_jessysamek_WURGProwess_WURG()
+        public void Deck04_jessysamek_UrzaOko_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-15",3),
@@ -78,7 +78,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck05_UBERMIKEYB_TemurProwess_URG()
+        public void Deck05_UBERMIKEYB_UrzaOko_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-15",4),

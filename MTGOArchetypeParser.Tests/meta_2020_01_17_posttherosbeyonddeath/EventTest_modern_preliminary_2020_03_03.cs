@@ -47,7 +47,7 @@ using System.Text;
 #36 Xwhale: Eldrazi Tron (C)
 #37 Icteridae: Devoted (WUG)
 #38 TheTunnelingCat: Eldrazi Tron (C)
-#39 DjangoRealitySculptr: Golgari Midrange (BG)
+#39 DjangoRealitySculptr: Evershrike Combo (BG)
 #40 azax: Neobrand (UG)
 #41 pokerswizard: Eldrazi Tron (C)
 #42 Bucknasty691989: Burn (WR)
@@ -552,7 +552,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck39_DjangoRealitySculptr_GolgariMidrange_BG()
+        public void Deck39_DjangoRealitySculptr_EvershrikeCombo_BG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-03",38),

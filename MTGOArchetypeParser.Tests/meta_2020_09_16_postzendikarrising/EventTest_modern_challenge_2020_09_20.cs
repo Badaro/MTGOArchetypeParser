@@ -22,7 +22,7 @@ using System.Text;
 #11 Delpoctrol: Dredge (BRG)
 #12 Rebus8: Humans (WUBRG)
 #13 Gerschi: Shadow Prowess (BR, Lurrus)
-#14 Antoine57437: Abzan Taxes (WBG)
+#14 Antoine57437: Badzan (WBG)
 #15 An_Actual_Potato: Temur Control (URG)
 #16 wambocombo2020: Humans (WUBRG)
 #17 Magister_1993: Azorius Control (WU)
@@ -217,7 +217,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_Antoine57437_AbzanTaxes_WBG()
+        public void Deck14_Antoine57437_Badzan_WBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-20",13),

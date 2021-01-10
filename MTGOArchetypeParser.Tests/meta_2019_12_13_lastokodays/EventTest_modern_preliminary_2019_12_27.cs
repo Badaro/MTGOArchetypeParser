@@ -11,11 +11,11 @@ using System.Text;
 /*
 #01 Phill_Hellmuth: Primeval Titan (UG)
 #02 WorstNewbEver: Yawgmoth (BG)
-#03 bobthedog: WUBG Prowess (WUBG)
+#03 bobthedog: Kethis Combo (WUBG)
 #04 SoulStrong: Sultai Shadow (UBG)
 #05 Tycko_D: Mono Red Prowess (R)
 #06 Joey_Wheeler: Eldrazi Tron (C)
-#07 __BMJ__: Sultai Control (UBG)
+#07 __BMJ__: Urza Oko (UBG)
 #08 Astrandberg: Grixis Shadow (UBR)
 */
 
@@ -50,7 +50,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck03_bobthedog_WUBGProwess_WUBG()
+        public void Deck03_bobthedog_KethisCombo_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-27",2),
@@ -102,7 +102,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck07_BMJ_SultaiControl_UBG()
+        public void Deck07_BMJ_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-27",6),

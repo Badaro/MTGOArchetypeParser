@@ -56,7 +56,7 @@ using System.Text;
 #45 in5ano: Thopter Urza (WUR)
 #46 __BMJ__: Gruul Midrange (RG)
 #47 Baufos: Uroza (UG)
-#48 BReal2: Rakdos Midrange (BR)
+#48 BReal2: Hollow One (BR)
 #49 PivoUlivo: Burn (WR)
 #50 J000111: Dredge (BRG)
 #51 Mistakenn: Amulet Titan (UG)
@@ -685,7 +685,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck48_BReal2_RakdosMidrange_BR()
+        public void Deck48_BReal2_HollowOne_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-09",47),

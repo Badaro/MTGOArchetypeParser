@@ -29,7 +29,7 @@ using System.Text;
 #18 joker10289: Jeskai Control (WUR, Lurrus)
 #19 pizzaslinger: Golgari Midrange (BG, Lurrus)
 #20 CookieKid00: Jund Midrange (BRG, Lurrus)
-#21 qbturtle15: Selenya Midrange (WG, Zirda)
+#21 qbturtle15: Selesnya Midrange (WG, Zirda)
 #22 Hemsley: Hardened Scales (G, Lurrus)
 #23 Magicofplayer1: Dredge (BRG)
 #24 SrTortinha: Living End (BRG)
@@ -310,7 +310,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck21_qbturtle15_SelenyaMidrange_WG_Zirda()
+        public void Deck21_qbturtle15_SelesnyaMidrange_WG_Zirda()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-23",20),

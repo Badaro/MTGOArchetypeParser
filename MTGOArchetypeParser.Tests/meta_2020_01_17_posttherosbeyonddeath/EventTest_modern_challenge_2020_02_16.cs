@@ -26,7 +26,7 @@ using System.Text;
 #15 Bayris: Jund Midrange (BRG)
 #16 HannoLee: Uroza (UG)
 #17 madechai: Thopter Urza (UB)
-#18 LordoftheLobsters: Simic Control (UG)
+#18 LordoftheLobsters: Uroza (UG)
 #19 AlabasterWolfie: Grinding Breach (UBR)
 #20 Jenara19: Amulet Titan (UG)
 #21 Xeroo: Mardu Shadow (WBR)
@@ -269,7 +269,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck18_LordoftheLobsters_SimicControl_UG()
+        public void Deck18_LordoftheLobsters_Uroza_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-16",17),

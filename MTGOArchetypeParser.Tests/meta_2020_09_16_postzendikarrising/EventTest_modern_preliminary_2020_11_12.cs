@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 SpiderSpace: Selenya Taxes (WG, Yorion)
+#01 SpiderSpace: Selesnya Taxes (WG, Yorion)
 #02 joker10289: Sultai Control (UBG)
 #03 10thDegree: Dredge (BRG)
 #04 Phill_Hellmuth: Heliod Combo (WG)
@@ -31,7 +31,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_11_12 : EventTest
     {
         [Test]
-        public void Deck01_SpiderSpace_SelenyaTaxes_WG_Yorion()
+        public void Deck01_SpiderSpace_SelesnyaTaxes_WG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-12",0),

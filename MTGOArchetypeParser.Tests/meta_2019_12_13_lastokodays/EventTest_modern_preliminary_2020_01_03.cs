@@ -14,16 +14,16 @@ using System.Text;
 #03 Vidandric: Dredge (BRG)
 #04 MaLiam: Sultai Shadow (UBG)
 #05 Dazai: Bant Midrange (WUG)
-#06 SoulStrong: Simic Control (UG)
+#06 SoulStrong: Urza Oko (UG)
 #07 Nammersquats: Bant Midrange (WUG)
 #08 OptionParalysis: Humans (WUBRG)
 #09 _Batutinha_: Primeval Titan (UG)
-#10 xfile: Mono Green Taxes (G)
-#11 Toastxp: Simic Control (UG)
+#10 xfile: Primeval Titan (G)
+#11 Toastxp: Urza Oko (UG)
 #12 Gobo2009: Orzhov Midrange (WB)
 #13 JustBurn420: Slivers (WUBRG)
 #14 BigHuman: Burn (WR)
-#15 pegajusus: Simic Control (UG)
+#15 pegajusus: Urza Oko (UG)
 #16 Pistone11: Gifts Storm (UR)
 */
 
@@ -97,7 +97,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck06_SoulStrong_SimicControl_UG()
+        public void Deck06_SoulStrong_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-03",5),
@@ -149,7 +149,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck10_xfile_MonoGreenTaxes_G()
+        public void Deck10_xfile_PrimevalTitan_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-03",9),
@@ -162,7 +162,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck11_Toastxp_SimicControl_UG()
+        public void Deck11_Toastxp_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-03",10),
@@ -214,7 +214,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck15_pegajusus_SimicControl_UG()
+        public void Deck15_pegajusus_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-03",14),

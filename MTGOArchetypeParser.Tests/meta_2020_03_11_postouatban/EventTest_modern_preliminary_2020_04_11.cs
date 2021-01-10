@@ -18,7 +18,7 @@ using System.Text;
 #07 cftsoc3: Simic Control (UG)
 #08 exoticherman: Infect (UG)
 #09 Gigy: Gruul Midrange (RG)
-#10 twinlesstwin: UBRG Midrange (UBRG)
+#10 twinlesstwin: Scapeshift (UBRG)
 #11 Insidious: Burn (WR)
 #12 RealJoy: Amulet Titan (UG)
 #13 t_k_h_r: Uroza (UG)
@@ -193,7 +193,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck10_twinlesstwin_UBRGMidrange_UBRG()
+        public void Deck10_twinlesstwin_Scapeshift_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-11",9),

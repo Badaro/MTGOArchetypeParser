@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 xfile: Eldrazi Tron (G)
-#02 MentalMisstep: Simic Control (UG)
+#02 MentalMisstep: Urza Oko (UG)
 #03 fried-liver-attack: Eldrazi Tron (C)
 #04 122pablo: Ascendancy Combo (WURG)
 #05 penips: Orzhov Taxes (WB)
@@ -23,10 +23,10 @@ using System.Text;
 #12 Oderus Urungus: Burn (R)
 #13 tangrams: Primeval Titan (UG)
 #14 Theo_Jung: Eldrazi Tron (C)
-#15 TheYostWithTheMost: Simic Control (UG)
+#15 TheYostWithTheMost: Urza Oko (UG)
 #16 qbturtle15: Gruul Midrange (RG)
 #17 fistfullofmetal: Green Tron (G)
-#18 SourceOdin: Simic Control (UG)
+#18 SourceOdin: Urza Oko (UG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
@@ -47,7 +47,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_MentalMisstep_SimicControl_UG()
+        public void Deck02_MentalMisstep_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-04",1),
@@ -216,7 +216,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck15_TheYostWithTheMost_SimicControl_UG()
+        public void Deck15_TheYostWithTheMost_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-04",14),
@@ -255,7 +255,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck18_SourceOdin_SimicControl_UG()
+        public void Deck18_SourceOdin_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-04",17),

@@ -13,7 +13,7 @@ using System.Text;
 #02 THE_NARD: Mono Red Prowess (R)
 #03 Folero: Infect (UG)
 #04 scubypandatv: Devoted (WG)
-#05 Joey_Wheeler: Simic Midrange (UG)
+#05 Joey_Wheeler: Green Eldrazi (UG)
 #06 Finespoo: Infect (UG)
 #07 McWinSauce: Bant Control (WUG)
 #08 Mulldrifter: Eldrazi Tron (C)
@@ -92,7 +92,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck05_JoeyWheeler_SimicMidrange_UG()
+        public void Deck05_JoeyWheeler_GreenEldrazi_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-17",4),

@@ -23,7 +23,7 @@ using System.Text;
 #12 Duggie12: Mono Red Prowess (R)
 #13 tagosaku: Burn (WR)
 #14 Sam_Lewin: Skelementals (BR)
-#15 2radMTG: Mono Green Midrange (G)
+#15 2radMTG: Green Devotion (G)
 #16 Toastxp: Thopter Urza (UB)
 */
 
@@ -214,7 +214,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck15_2radMTG_MonoGreenMidrange_G()
+        public void Deck15_2radMTG_GreenDevotion_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-19",14),

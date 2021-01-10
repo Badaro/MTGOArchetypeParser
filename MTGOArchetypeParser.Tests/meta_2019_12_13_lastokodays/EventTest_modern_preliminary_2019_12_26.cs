@@ -19,11 +19,11 @@ using System.Text;
 #08 JPA93: Living End (BRG)
 #09 skippy21: Jund Midrange (BRG)
 #10 kefka27: Eldrazi Tron (C)
-#11 albertoSD: Simic Control (UG)
+#11 albertoSD: Urza Oko (UG)
 #12 Volcano666: Sultai Shadow (UBG)
-#13 VTCLA: Simic Control (UG)
+#13 VTCLA: Urza Oko (UG)
 #14 last7stand: Humans (WUBRG)
-#15 JMM: Simic Prowess (UG)
+#15 JMM: Urza Oko (UG)
 #16 shadow_PT: Bant Control (WUG)
 */
 
@@ -162,7 +162,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck11_albertoSD_SimicControl_UG()
+        public void Deck11_albertoSD_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-26",10),
@@ -188,7 +188,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck13_VTCLA_SimicControl_UG()
+        public void Deck13_VTCLA_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-26",12),
@@ -214,7 +214,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck15_JMM_SimicProwess_UG()
+        public void Deck15_JMM_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-26",14),

@@ -12,7 +12,7 @@ using System.Text;
 #01 baiburqueno: Eldrazi Tron (G)
 #02 brog: Devoted (WUG)
 #03 B1gDan: Bant Midrange (WUG)
-#04 SourceOdin: Simic Control (UG)
+#04 SourceOdin: Urza Oko (UG)
 #05 Ivan_Catanduva_Br: Spirits (WUG)
 #06 bolov0: Primeval Titan (UG)
 #07 KeeperX: Naya Midrange (WRG)
@@ -22,14 +22,14 @@ using System.Text;
 #11 Xuxa: Dredge (BRG)
 #12 SKK: Amulet Titan (UG)
 #13 Broniak: Titan Shift (RG)
-#14 zachattack23: Sultai Control (UBG)
-#15 MTG-Maestro: Simic Control (UG)
+#14 zachattack23: Urza Oko (UBG)
+#15 MTG-Maestro: Urza Oko (UG)
 #16 FedeSamba: Titan Shift (RG)
 #17 tomvon9: Green Tron (G)
 #18 twinlesstwin: Yawgmoth (BG)
 #19 McWinSauce: Bant Control (WUG)
 #20 UrBffTricks: WUBG Control (WUBG)
-#21 sebastianpozzo: Simic Taxes (UG)
+#21 sebastianpozzo: Green Eldrazi (UG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
@@ -76,7 +76,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck04_SourceOdin_SimicControl_UG()
+        public void Deck04_SourceOdin_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-24",3),
@@ -206,7 +206,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck14_zachattack23_SultaiControl_UBG()
+        public void Deck14_zachattack23_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-24",13),
@@ -219,7 +219,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck15_MTGMaestro_SimicControl_UG()
+        public void Deck15_MTGMaestro_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-24",14),
@@ -297,7 +297,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck21_sebastianpozzo_SimicTaxes_UG()
+        public void Deck21_sebastianpozzo_GreenEldrazi_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-24",20),

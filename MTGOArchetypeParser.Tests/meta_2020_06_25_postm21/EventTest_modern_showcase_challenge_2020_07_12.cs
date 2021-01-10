@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 musasabi: Amulet Titan (UG)
 #02 jmeyer2030: Scapeshift (URG, Yorion)
-#03 DaniMRebel: Selenya Taxes (WG)
+#03 DaniMRebel: Selesnya Taxes (WG)
 #04 Thrall90: Jund Midrange (BRG)
 #05 SunofNothing: Bant Control (WUG)
 #06 MrRaeb: Uroza (UBG, Yorion)
@@ -74,7 +74,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck03_DaniMRebel_SelenyaTaxes_WG()
+        public void Deck03_DaniMRebel_SelesnyaTaxes_WG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",2),

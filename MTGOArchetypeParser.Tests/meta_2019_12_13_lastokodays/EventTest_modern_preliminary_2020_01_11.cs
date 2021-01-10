@@ -11,18 +11,18 @@ using System.Text;
 /*
 #01 Shadowz2005: Mono Red Prowess (R)
 #02 Icteridae: Eldrazi Tron (G)
-#03 Zacherry124: Temur Prowess (URG)
+#03 Zacherry124: Urza Oko (URG)
 #04 NuBlkAu: Eldrazi Tron (C)
 #05 Sideshowsc: Scapeshift (WURG)
 #06 yamakiller: Eldrazi Tron (C)
-#07 SourceOdin: Simic Control (UG)
-#08 Oderus Urungus: Sultai Prowess (UBG)
+#07 SourceOdin: Urza Oko (UG)
+#08 Oderus Urungus: Urza Oko (UBG)
 #09 gyyby297: Thopter Urza (UG)
 #10 dillyg10: Bant Midrange (WUG)
-#11 SoulStrong: Simic Control (UG)
-#12 TaylorSpain: Simic Control (UG)
+#11 SoulStrong: Urza Oko (UG)
+#12 TaylorSpain: Urza Oko (UG)
 #13 __matsugan: Neobrand (UG)
-#14 Kev_1414: Sultai Control (UBG)
+#14 Kev_1414: Urza Oko (UBG)
 #15 Manofbone: Gifts Storm (UR)
 */
 
@@ -57,7 +57,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck03_Zacherry124_TemurProwess_URG()
+        public void Deck03_Zacherry124_UrzaOko_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",2),
@@ -109,7 +109,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck07_SourceOdin_SimicControl_UG()
+        public void Deck07_SourceOdin_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",6),
@@ -122,7 +122,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck08_OderusUrungus_SultaiProwess_UBG()
+        public void Deck08_OderusUrungus_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",7),
@@ -161,7 +161,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck11_SoulStrong_SimicControl_UG()
+        public void Deck11_SoulStrong_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",10),
@@ -174,7 +174,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck12_TaylorSpain_SimicControl_UG()
+        public void Deck12_TaylorSpain_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",11),
@@ -200,7 +200,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck14_Kev1414_SultaiControl_UBG()
+        public void Deck14_Kev1414_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",13),

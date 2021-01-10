@@ -14,7 +14,7 @@ using System.Text;
 #03 McWinSauce: Bant Control (WUG)
 #04 JSG-MTG: Eldrazi Tron (C)
 #05 Tiemuuu: Izzet Control (UR)
-#06 kanister: Simic Control (UG)
+#06 kanister: Urza Oko (UG)
 #07 mmapson125: Amulet Titan (UG)
 #08 lynnchalice: Izzet Control (UR)
 #09 Wyern: Humans (WUBRG)
@@ -93,7 +93,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck06_kanister_SimicControl_UG()
+        public void Deck06_kanister_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-18",5),

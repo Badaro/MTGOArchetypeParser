@@ -39,7 +39,7 @@ using System.Text;
 #28 AbelMolto: Burn (WRG)
 #29 Parrit: Mono White Taxes (W)
 #30 Maox: Dredge (BRG)
-#31 Jsnyder207: Bant Midrange (WUG)
+#31 Jsnyder207: Knightfall (WUG)
 #32 FlyersIHC: Infect (UG)
 */
 
@@ -438,7 +438,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck31_Jsnyder207_BantMidrange_WUG()
+        public void Deck31_Jsnyder207_Knightfall_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",30),

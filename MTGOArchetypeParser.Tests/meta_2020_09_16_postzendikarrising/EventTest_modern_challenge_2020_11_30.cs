@@ -39,7 +39,7 @@ using System.Text;
 #28 mala_grinja: Shadow Prowess (BRG, Lurrus)
 #29 MaxCapone: Oops All Spells (WUBG)
 #30 Better_than_Average: Obosh Aggro (R, Obosh)
-#31 random_deck: Selenya Midrange (WG)
+#31 random_deck: Selesnya Midrange (WG)
 #32 musasabi: WURG Control (WURG)
 */
 
@@ -438,7 +438,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck31_randomdeck_SelenyaMidrange_WG()
+        public void Deck31_randomdeck_SelesnyaMidrange_WG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-30",30),

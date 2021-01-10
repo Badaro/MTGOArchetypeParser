@@ -11,12 +11,12 @@ using System.Text;
 /*
 #01 Coly2: Mono Red Prowess (R)
 #02 zman2340: Thopter Urza (UG)
-#03 FunkiMunki: Temur Prowess (URG)
+#03 FunkiMunki: Urza Oko (URG)
 #04 JustBurn420: Slivers (WUBRG)
 #05 Oderus Urungus: Mono Red Prowess (R)
 #06 xfile: Eldrazi Tron (G)
 #07 McWinSauce: Bant Control (WUG)
-#08 pepeisra: Simic Control (UG)
+#08 pepeisra: Urza Oko (UG)
 #09 Butakov: Eldrazi Tron (C)
 #10 Giaws: Grixis Shadow (UBR)
 #11 _Shatun_: Bogles (WG)
@@ -25,8 +25,8 @@ using System.Text;
 #14 Folero: Infect (UG)
 #15 ACG88: Titan Shift (RG)
 #16 aaronsolon: Gifts Storm (UR)
-#17 SourceOdin: Simic Control (UG)
-#18 Morenothings: Simic Control (UG)
+#17 SourceOdin: Urza Oko (UG)
+#18 Morenothings: Urza Oko (UG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
@@ -60,7 +60,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck03_FunkiMunki_TemurProwess_URG()
+        public void Deck03_FunkiMunki_UrzaOko_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-09",2),
@@ -125,7 +125,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck08_pepeisra_SimicControl_UG()
+        public void Deck08_pepeisra_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-09",7),
@@ -242,7 +242,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck17_SourceOdin_SimicControl_UG()
+        public void Deck17_SourceOdin_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-09",16),
@@ -255,7 +255,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck18_Morenothings_SimicControl_UG()
+        public void Deck18_Morenothings_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-09",17),

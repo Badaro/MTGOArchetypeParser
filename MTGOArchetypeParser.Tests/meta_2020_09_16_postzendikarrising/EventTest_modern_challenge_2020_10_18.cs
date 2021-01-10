@@ -18,7 +18,7 @@ using System.Text;
 #07 cicciogire: WURG Control (WURG)
 #08 exoticherman: Jund Shadow (BRG)
 #09 stayrospet: Shadow Prowess (BR, Lurrus)
-#10 seasonofmists: Abzan Taxes (WBG)
+#10 seasonofmists: Abzan Blink (WBG)
 #11 HouseOfManaMTG: Amulet Titan (RG)
 #12 DarkestMage: Mono White Taxes (W)
 #13 last7stand: Green Tron (G)
@@ -165,7 +165,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_seasonofmists_AbzanTaxes_WBG()
+        public void Deck10_seasonofmists_AbzanBlink_WBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",9),

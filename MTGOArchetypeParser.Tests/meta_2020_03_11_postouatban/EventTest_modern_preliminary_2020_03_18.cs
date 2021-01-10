@@ -27,7 +27,7 @@ using System.Text;
 #16 UmekawaneikU: Jund Midrange (BRG)
 #17 kefka27: Dredge (BRG)
 #18 Drakanar: Merfolk (UG)
-#19 _Antoniou_: Obligator Eldrazi (RG)
+#19 _Antoniou_: Green Eldrazi (RG)
 #20 ACG88: Green Tron (G)
 #21 Playmobil: Bant Control (WUG)
 #22 NosonosaN: Bant Control (WUG)
@@ -282,7 +282,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck19_Antoniou_ObligatorEldrazi_RG()
+        public void Deck19_Antoniou_GreenEldrazi_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-18",18),

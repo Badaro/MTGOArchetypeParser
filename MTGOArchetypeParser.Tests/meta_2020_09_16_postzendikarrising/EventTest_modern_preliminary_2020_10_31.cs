@@ -18,7 +18,7 @@ using System.Text;
 #07 Bunnykept: Heliod Combo (WG)
 #08 eclipse4343: Azorius Control (WU)
 #09 Leviathan102: Amulet Titan (RG)
-#10 random_deck: Selenya Midrange (WG)
+#10 random_deck: Selesnya Midrange (WG)
 #11 ice_nine_: Land Destruction (WR)
 */
 
@@ -144,7 +144,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_randomdeck_SelenyaMidrange_WG()
+        public void Deck10_randomdeck_SelesnyaMidrange_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-31",9),

@@ -16,9 +16,9 @@ using System.Text;
 #05 ianisrad: Infect (UG)
 #06 SENPAI_Peter: Bushwhacker Zoo (WRG)
 #07 dgreen16: Burn (WRG)
-#08 qbturtle15: Naya Midrange (WRG)
+#08 qbturtle15: Zoo (WRG)
 #09 Whitecell: Infect (UG)
-#10 SpiderSpace: Selenya Taxes (WG)
+#10 SpiderSpace: Selesnya Taxes (WG)
 #11 Kazuga: Green Tron (G)
 #12 Trisky: Humans (WUBRG)
 #13 603Leb: Green Tron (G)
@@ -155,7 +155,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck08_qbturtle15_NayaMidrange_WRG()
+        public void Deck08_qbturtle15_Zoo_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-07",7),
@@ -181,7 +181,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck10_SpiderSpace_SelenyaTaxes_WG()
+        public void Deck10_SpiderSpace_SelesnyaTaxes_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-07",9),

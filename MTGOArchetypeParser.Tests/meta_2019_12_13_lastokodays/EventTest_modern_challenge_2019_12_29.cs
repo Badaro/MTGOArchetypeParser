@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 Bullz0Eye: Eldrazi Tron (C)
-#02 Zar0s: Simic Control (UG)
+#02 Zar0s: Urza Oko (UG)
 #03 SoulStrong: Sultai Shadow (UBG)
 #04 btail08: Green Tron (G)
 #05 gyyby297: Thopter Urza (UG)
@@ -24,8 +24,8 @@ using System.Text;
 #13 ssnelson: Sultai Shadow (UBG)
 #14 iDaveW: Infect (UG)
 #15 Ramp: Gifts Storm (UR)
-#16 katoriarch123: Sultai Control (UBG)
-#17 Dborges7: Simic Control (UG)
+#16 katoriarch123: Urza Oko (UBG)
+#17 Dborges7: Urza Oko (UG)
 #18 LillHalonen: Bogles (WG)
 #19 ACG88: Affinity (C)
 #20 LyaApocalypse: Green Tron (G)
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_Zar0s_SimicControl_UG()
+        public void Deck02_Zar0s_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-29",1),
@@ -243,7 +243,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck16_katoriarch123_SultaiControl_UBG()
+        public void Deck16_katoriarch123_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-29",15),
@@ -256,7 +256,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck17_Dborges7_SimicControl_UG()
+        public void Deck17_Dborges7_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-29",16),

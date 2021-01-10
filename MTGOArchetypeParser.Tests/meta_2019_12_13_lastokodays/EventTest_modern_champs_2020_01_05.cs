@@ -9,25 +9,25 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 pepeteam: Simic Control (UG)
-#02 Toastxp: Simic Prowess (UG)
+#01 pepeteam: Urza Oko (UG)
+#02 Toastxp: Urza Oko (UG)
 #03 fradelrock: Eldrazi Tron (C)
-#04 jessy_samek: WURG Prowess (WURG)
-#05 MentalMisstep: Simic Control (UG)
+#04 jessy_samek: Urza Oko (WURG)
+#05 MentalMisstep: Urza Oko (UG)
 #06 i_b_TRUE: Titan Shift (RG)
 #07 Do0mSwitch: Bant Control (WUG)
 #08 Icteridae: Devoted (WUG)
 #09 Yaggdryzzill: Eldrazi Tron (C)
 #10 JPA93: Infect (UG)
 #11 didoguidotti1: Sultai Shadow (UBG)
-#12 Volollo: Simic Control (UG)
+#12 Volollo: Urza Oko (UG)
 #13 Ihavethefire: Naya Midrange (WRG)
 #14 McWinSauce: Bant Control (WUG)
 #15 bershekprc10: Eldrazi Tron (C)
-#16 mechint: Simic Control (UG)
+#16 mechint: Urza Oko (UG)
 #17 sandydogmtg: Burn (R)
-#18 Nilsfit: Simic Control (UG)
-#19 bobthedog: Simic Control (UG)
+#18 Nilsfit: Urza Oko (UG)
+#19 bobthedog: Urza Oko (UG)
 #20 Valident: Azorius Control (WU)
 #21 2radMTG: Bogles (WG)
 #22 kangurello: Gifts Storm (UR)
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
     public class EventTest_modern_champs_2020_01_05 : EventTest
     {
         [Test]
-        public void Deck01_pepeteam_SimicControl_UG()
+        public void Deck01_pepeteam_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-champs-2020-01-05",0),
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_Toastxp_SimicProwess_UG()
+        public void Deck02_Toastxp_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-champs-2020-01-05",1),
@@ -87,7 +87,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck04_jessysamek_WURGProwess_WURG()
+        public void Deck04_jessysamek_UrzaOko_WURG()
         {
             Test(
                 GetDeck("modern-champs-2020-01-05",3),
@@ -100,7 +100,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck05_MentalMisstep_SimicControl_UG()
+        public void Deck05_MentalMisstep_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-champs-2020-01-05",4),
@@ -191,7 +191,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck12_Volollo_SimicControl_UG()
+        public void Deck12_Volollo_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-champs-2020-01-05",11),
@@ -243,7 +243,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck16_mechint_SimicControl_UG()
+        public void Deck16_mechint_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-champs-2020-01-05",15),
@@ -269,7 +269,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck18_Nilsfit_SimicControl_UG()
+        public void Deck18_Nilsfit_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-champs-2020-01-05",17),
@@ -282,7 +282,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck19_bobthedog_SimicControl_UG()
+        public void Deck19_bobthedog_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-champs-2020-01-05",18),

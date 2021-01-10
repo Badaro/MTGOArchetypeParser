@@ -29,7 +29,7 @@ using System.Text;
 #18 MrRaeb: Uroza (UBG, Yorion)
 #19 Erik157751: Eldrazi Tron (C)
 #20 bladede: Eldrazi Tron (C)
-#21 Zeekery: Thing Ascension (WUR, Lurrus)
+#21 Zeekery: Pyro Ascension (WUR, Lurrus)
 #22 antonio13901390: Eldrazi Tron (C)
 #23 katoriarch123: Bant Control (WUG)
 #24 Anicet0: Eldrazi Tron (C)
@@ -308,7 +308,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck21_Zeekery_ThingAscension_WUR_Lurrus()
+        public void Deck21_Zeekery_PyroAscension_WUR_Lurrus()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",20),

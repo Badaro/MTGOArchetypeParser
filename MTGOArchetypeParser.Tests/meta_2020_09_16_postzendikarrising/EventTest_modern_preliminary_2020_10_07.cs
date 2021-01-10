@@ -15,7 +15,7 @@ using System.Text;
 #04 coert: Heliod Combo (WG)
 #05 AstralPlane: Shadow Prowess (BR, Lurrus)
 #06 stayrospet: Shadow Prowess (BR, Lurrus)
-#07 Artem_Kuhtin: Nykthos Devotion (W)
+#07 Artem_Kuhtin: White Devotion (W)
 #08 im2g00t4ubarn: WURG Control (WURG)
 #09 sokos13: Humans (WUBRG)
 #10 JakeHelms: Shadow Prowess (WBR, Lurrus)
@@ -105,7 +105,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_ArtemKuhtin_NykthosDevotion_W()
+        public void Deck07_ArtemKuhtin_WhiteDevotion_W()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-07",6),

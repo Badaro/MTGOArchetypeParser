@@ -29,7 +29,7 @@ using System.Text;
 #18 Laplasjan: Gruul Midrange (RG)
 #19 12Days: Gruul Midrange (RG)
 #20 Darthkid: Niv To Light (WUBRG)
-#21 Blueliner: Mono Green Midrange (G)
+#21 Blueliner: Green Control (G)
 #22 Turn5: Izzet Control (UR)
 #23 __matsugan: Neobrand (UG)
 #24 ACG88: Niv To Light (WUBRG)
@@ -310,7 +310,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck21_Blueliner_MonoGreenMidrange_G()
+        public void Deck21_Blueliner_GreenControl_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-08",20),

@@ -12,13 +12,13 @@ using System.Text;
 #01 McWinSauce: Bant Control (WUG)
 #02 iDaveW: Infect (UG)
 #03 TrueHero: Affinity (C)
-#04 yamakiller: Mono Green Midrange (G)
+#04 yamakiller: Green Devotion (G)
 #05 Xwhale: Eldrazi Tron (C)
 #06 KelMasterP: Thopter Urza (U)
-#07 SoulStrong: Simic Control (UG)
+#07 SoulStrong: Urza Oko (UG)
 #08 Iplantz: Devoted (WUG)
 #09 shadow_PT: Burn (R)
-#10 SourceOdin: Simic Control (UG)
+#10 SourceOdin: Urza Oko (UG)
 #11 tangrams: Primeval Titan (UG)
 #12 ERUERUFU: Burn (R)
 #13 BernardoDG: Eldrazi Tron (C)
@@ -28,10 +28,10 @@ using System.Text;
 #17 HolyShamgar: Primeval Titan (UG)
 #18 Bullz0Eye: Primeval Titan (UG)
 #19 Mulldrifter: Eldrazi Tron (C)
-#20 Zacherry124: Simic Control (UG)
+#20 Zacherry124: Urza Oko (UG)
 #21 willpulliam: Amulet Titan (UG)
 #22 GGoggles: Eldrazi Tron (C)
-#23 Icteridae: Temur Prowess (URG)
+#23 Icteridae: Urza Oko (URG)
 #24 Nammersquats: Bant Midrange (WUG)
 #25 Sodeq: Dredge (BRG)
 #26 phyrexianphenom3: Infect (UG)
@@ -86,7 +86,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck04_yamakiller_MonoGreenMidrange_G()
+        public void Deck04_yamakiller_GreenDevotion_G()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-31",3),
@@ -125,7 +125,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck07_SoulStrong_SimicControl_UG()
+        public void Deck07_SoulStrong_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-31",6),
@@ -164,7 +164,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck10_SourceOdin_SimicControl_UG()
+        public void Deck10_SourceOdin_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-31",9),
@@ -294,7 +294,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck20_Zacherry124_SimicControl_UG()
+        public void Deck20_Zacherry124_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-31",19),
@@ -333,7 +333,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck23_Icteridae_TemurProwess_URG()
+        public void Deck23_Icteridae_UrzaOko_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-31",22),

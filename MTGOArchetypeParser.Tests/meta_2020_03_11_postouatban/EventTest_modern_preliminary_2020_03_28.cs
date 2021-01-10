@@ -44,7 +44,7 @@ using System.Text;
 #33 rickmendi: Mono Red Prowess (R)
 #34 taylor91: Neobrand (UG)
 #35 Insidious: Mono Red Prowess (R)
-#36 TheRealRickJames: Sultai Control (UBG)
+#36 TheRealRickJames: Uroza (UBG)
 #37 DeepFrdKirby: Slivers (WUBRG)
 #38 Theo_Jung: Uroza (UG)
 #39 nietzreznor: Primeval Titan (BG)
@@ -518,7 +518,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck36_TheRealRickJames_SultaiControl_UBG()
+        public void Deck36_TheRealRickJames_Uroza_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-28",35),

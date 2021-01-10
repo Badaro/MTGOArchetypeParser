@@ -19,7 +19,7 @@ using System.Text;
 #08 Gobern: Bant Control (WUG)
 #09 toondoslav: Primeval Titan (BG)
 #10 _Shatun_: Mono Red Prowess (R)
-#11 Folero: Jeskai Prowess (WUR)
+#11 Folero: Pyro Ascension (WUR)
 #12 ComradeKahla: Bant Control (WUG)
 #13 Fnoop: Green Tron (G)
 #14 yamakiller: Ad Nauseam (WUB)
@@ -175,7 +175,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck11_Folero_JeskaiProwess_WUR()
+        public void Deck11_Folero_PyroAscension_WUR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-21",10),

@@ -24,7 +24,7 @@ using System.Text;
 #13 wrenn_and_sixnine: Humans (WUBRG)
 #14 Brener: Thopter Urza (WUB)
 #15 Maccaciock: Bant Control (WUG)
-#16 SoIMBA_Airwave: Obligator Eldrazi (RG)
+#16 SoIMBA_Airwave: Green Eldrazi (RG)
 #17 Vasoi2323: Bant Control (WUG)
 #18 Coly2: Gruul Midrange (RG)
 #19 MartinezDP: Uroza (UG)
@@ -243,7 +243,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck16_SoIMBAAirwave_ObligatorEldrazi_RG()
+        public void Deck16_SoIMBAAirwave_GreenEldrazi_RG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-07",15),

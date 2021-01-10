@@ -42,7 +42,7 @@ using System.Text;
 #31 MastaHorus: Rakdos Midrange (BR)
 #32 Toastxp: Uroza (UG)
 #33 Itchyone: Gruul Midrange (RG)
-#34 qbturtle15: Naya Midrange (WRG)
+#34 qbturtle15: Zoo (WRG)
 #35 bernardocssa: Bant Control (WUG)
 #36 Snapcaster-Bolt: Amulet Titan (URG)
 #37 AvocadoToast: Primeval Titan (BG)
@@ -498,7 +498,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck34_qbturtle15_NayaMidrange_WRG()
+        public void Deck34_qbturtle15_Zoo_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",33),

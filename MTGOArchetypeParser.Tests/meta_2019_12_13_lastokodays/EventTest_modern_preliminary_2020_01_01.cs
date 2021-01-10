@@ -11,14 +11,14 @@ using System.Text;
 /*
 #01 Physicaltuna: Grixis Shadow (UBR)
 #02 Tyerube1618: Green Tron (G)
-#03 kanister: Simic Control (UG)
-#04 Toastxp: Simic Control (UG)
+#03 kanister: Urza Oko (UG)
+#04 Toastxp: Urza Oko (UG)
 #05 __matsugan: Neobrand (UG)
-#06 indomie: Simic Control (UG)
+#06 indomie: Urza Oko (UG)
 #07 hourai_tokido: Grixis Shadow (UBR)
 #08 r453r: Sultai Midrange (UBG)
-#09 SoulStrong: Simic Control (UG)
-#10 PieGonti: WUBG Prowess (WUBG)
+#09 SoulStrong: Urza Oko (UG)
+#10 PieGonti: Kethis Combo (WUBG)
 #11 Phill_Hellmuth: Primeval Titan (UG)
 #12 122pablo: Ascendancy Combo (WURG)
 */
@@ -54,7 +54,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck03_kanister_SimicControl_UG()
+        public void Deck03_kanister_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-01",2),
@@ -67,7 +67,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck04_Toastxp_SimicControl_UG()
+        public void Deck04_Toastxp_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-01",3),
@@ -93,7 +93,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck06_indomie_SimicControl_UG()
+        public void Deck06_indomie_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-01",5),
@@ -132,7 +132,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck09_SoulStrong_SimicControl_UG()
+        public void Deck09_SoulStrong_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-01",8),
@@ -145,7 +145,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck10_PieGonti_WUBGProwess_WUBG()
+        public void Deck10_PieGonti_KethisCombo_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-01",9),

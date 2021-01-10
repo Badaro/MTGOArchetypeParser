@@ -27,7 +27,7 @@ using System.Text;
 #16 tanisong1221: Orzhov Midrange (WB)
 #17 Tiemuuu: Izzet Control (UR)
 #18 Sodeq: Dredge (BRG)
-#19 kiko: Esper Taxes (WUB)
+#19 kiko: Esper Blink (WUB)
 #20 SoulStrong: Thopter Urza (UB)
 #21 VampireGodric: Mono Red Prowess (R)
 #22 mitchrules25: Eight Whack (R)
@@ -277,7 +277,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck19_kiko_EsperTaxes_WUB()
+        public void Deck19_kiko_EsperBlink_WUB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-20",18),

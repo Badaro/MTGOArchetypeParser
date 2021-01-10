@@ -18,7 +18,7 @@ using System.Text;
 #07 shoktroopa: Blue Tron (U)
 #08 Brener: Infect (UG)
 #09 qbturtle15: Jund Midrange (BRG)
-#10 Nematic: Simic Control (UG)
+#10 Nematic: Urza Oko (UG)
 #11 CaviAck: Eldrazi Tron (G)
 #12 McWinSauce: Bant Control (WUG)
 #13 UpNorthNorway: Sultai Shadow (UBG)
@@ -33,9 +33,9 @@ using System.Text;
 #22 Griselpuff: Eldrazi Tron (C)
 #23 Sungjin: Bant Control (WUG)
 #24 lurtzer: Devoted (WUG)
-#25 Ivan_Catanduva_Br: Sultai Control (UBG)
+#25 Ivan_Catanduva_Br: Urza Oko (UBG)
 #26 nahuel10: Burn (WR)
-#27 Falkoneye: Sultai Prowess (UBG)
+#27 Falkoneye: Urza Oko (UBG)
 #28 updraftelemental: UBRG Shadow (UBRG)
 #29 SourceOdin: Thopter Urza (WU)
 #30 azatoyellow: Temur Control (URG)
@@ -165,7 +165,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck10_Nematic_SimicControl_UG()
+        public void Deck10_Nematic_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-16",9),
@@ -360,7 +360,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck25_IvanCatanduvaBr_SultaiControl_UBG()
+        public void Deck25_IvanCatanduvaBr_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-16",24),
@@ -386,7 +386,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck27_Falkoneye_SultaiProwess_UBG()
+        public void Deck27_Falkoneye_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-16",26),

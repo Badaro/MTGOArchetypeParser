@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 angelsjeffrey: Mono Red Prowess (R)
-#02 BigHuman: Mono Green Midrange (G)
+#02 BigHuman: Green Devotion (G)
 #03 mindcandy: Green Tron (G)
 #04 xfile: Dredge (BRG)
 #05 McWinSauce: Bant Midrange (WUG)
@@ -39,7 +39,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_BigHuman_MonoGreenMidrange_G()
+        public void Deck02_BigHuman_GreenDevotion_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-17",1),

@@ -9,20 +9,20 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 VTCLA: Simic Control (UG)
+#01 VTCLA: Urza Oko (UG)
 #02 bolov0: Primeval Titan (UG)
 #03 sandydogmtg: Burn (R)
 #04 Brunister: Eldrazi Tron (C)
 #05 GodlikeNg: Mono Red Prowess (R)
-#06 SourceOdin: Simic Control (UG)
+#06 SourceOdin: Urza Oko (UG)
 #07 Broniak: Titan Shift (RG)
-#08 Bayesta_93: Simic Control (UG)
+#08 Bayesta_93: Urza Oko (UG)
 #09 im2g00t4ubarn: Primeval Titan (UG)
 #10 u_mad_bro: Bant Control (WUG)
-#11 xXLogosXx: Mono Green Midrange (G)
+#11 xXLogosXx: Green Devotion (G)
 #12 rage_hs: Eldrazi Tron (C)
 #13 chaba_lol: Crabvine (UBG)
-#14 Elias: Simic Control (UG)
+#14 Elias: Urza Oko (UG)
 #15 ThomasH: Green Tron (G)
 #16 _goblinlackey: Primeval Titan (UG)
 #17 Ajani89: Amulet Titan (RG)
@@ -35,8 +35,8 @@ using System.Text;
 #24 KO_Mak: Tunnel Moon (RG)
 #25 CharlesBukowski: Amulet Titan (WUG)
 #26 AKA_SHIN: Eldrazi Tron (C)
-#27 pepeisra: Simic Control (UG)
-#28 Graciasportanto: Simic Control (UG)
+#27 pepeisra: Urza Oko (UG)
+#28 Graciasportanto: Urza Oko (UG)
 #29 Griselpuff: Eldrazi Tron (G)
 #30 tagosaku: Burn (WR)
 #31 _IlNano_: Humans (WUBRG)
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
     public class EventTest_modern_mocs_2019_12_29 : EventTest
     {
         [Test]
-        public void Deck01_VTCLA_SimicControl_UG()
+        public void Deck01_VTCLA_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-mocs-2019-12-29",0),
@@ -113,7 +113,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck06_SourceOdin_SimicControl_UG()
+        public void Deck06_SourceOdin_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-mocs-2019-12-29",5),
@@ -139,7 +139,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck08_Bayesta93_SimicControl_UG()
+        public void Deck08_Bayesta93_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-mocs-2019-12-29",7),
@@ -178,7 +178,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck11_xXLogosXx_MonoGreenMidrange_G()
+        public void Deck11_xXLogosXx_GreenDevotion_G()
         {
             Test(
                 GetDeck("modern-mocs-2019-12-29",10),
@@ -217,7 +217,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck14_Elias_SimicControl_UG()
+        public void Deck14_Elias_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-mocs-2019-12-29",13),
@@ -386,7 +386,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck27_pepeisra_SimicControl_UG()
+        public void Deck27_pepeisra_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-mocs-2019-12-29",26),
@@ -399,7 +399,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck28_Graciasportanto_SimicControl_UG()
+        public void Deck28_Graciasportanto_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-mocs-2019-12-29",27),

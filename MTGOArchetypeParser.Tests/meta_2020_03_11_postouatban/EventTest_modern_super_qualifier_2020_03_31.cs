@@ -31,7 +31,7 @@ using System.Text;
 #20 Jenara19: Primeval Titan (BG)
 #21 NoobPT: Uroza (UG)
 #22 Jositoshekel: Bushwhacker Zoo (WRG)
-#23 aspiringspike: Simic Midrange (UG)
+#23 aspiringspike: Superfriends (UG)
 #24 SunofNothing: Uroza (UG)
 #25 pbarrrgh: Temur Control (URG)
 #26 CitrusD: Yawgmoth (BG)
@@ -334,7 +334,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck23_aspiringspike_SimicMidrange_UG()
+        public void Deck23_aspiringspike_Superfriends_UG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-03-31",22),

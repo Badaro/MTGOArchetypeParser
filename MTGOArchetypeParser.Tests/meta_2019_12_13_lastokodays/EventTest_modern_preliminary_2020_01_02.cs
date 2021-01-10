@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 kanister: Simic Control (UG)
+#01 kanister: Urza Oko (UG)
 #02 harukispecial: Jeskai Control (WUR)
 #03 rarehunter13: Bant Midrange (WUG)
 #04 shadow_PT: Burn (R)
-#05 MentalMisstep: Simic Control (UG)
+#05 MentalMisstep: Urza Oko (UG)
 #06 Numena_Lowallyn: Eldrazi Tron (C)
 #07 McWinSauce: Bant Control (WUG)
 #08 helvetti: Primeval Titan (WG)
-#09 FREEROLLIN: Sultai Prowess (UBG)
+#09 FREEROLLIN: Urza Oko (UBG)
 #10 Boland: Grixis Shadow (UBR)
 #11 rdoe14: Jund Midrange (BRG)
 #12 iDaveW: Infect (UG)
@@ -27,7 +27,7 @@ using System.Text;
 #16 ZYURYO: WURG Control (WURG)
 #17 JustBurn420: Slivers (WUBRG)
 #18 nano_indentertion: Mill (UBG)
-#19 SoulStrong: Simic Control (UG)
+#19 SoulStrong: Urza Oko (UG)
 #20 darkpoetbill: Sultai Shadow (UBG)
 #21 Albimtg: Sultai Shadow (UBG)
 #22 lwdgg: Primeval Titan (UG)
@@ -38,7 +38,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
     public class EventTest_modern_preliminary_2020_01_02 : EventTest
     {
         [Test]
-        public void Deck01_kanister_SimicControl_UG()
+        public void Deck01_kanister_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-02",0),
@@ -90,7 +90,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck05_MentalMisstep_SimicControl_UG()
+        public void Deck05_MentalMisstep_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-02",4),
@@ -142,7 +142,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck09_FREEROLLIN_SultaiProwess_UBG()
+        public void Deck09_FREEROLLIN_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-02",8),
@@ -272,7 +272,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck19_SoulStrong_SimicControl_UG()
+        public void Deck19_SoulStrong_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-02",18),

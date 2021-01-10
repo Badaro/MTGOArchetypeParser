@@ -9,19 +9,19 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Toastxp: Simic Control (UG)
+#01 Toastxp: Urza Oko (UG)
 #02 Brener: Bant Midrange (WUG)
 #03 Nisus: Crabvine (UBG)
 #04 McWinSauce: Bant Control (WUG)
-#05 MLupa: Bant Control (WUG)
+#05 MLupa: Bant Midrange (WUG)
 #06 _IlNano_: Humans (WUBRG)
 #07 LSMD: Grixis Shadow (UBR)
 #08 LORiWWA: Amulet Titan (UG)
-#09 VTCLA: Simic Control (UG)
+#09 VTCLA: Urza Oko (UG)
 #10 Numena_Lowallyn: Eldrazi Tron (C)
 #11 AlphaFrog: Eldrazi Tron (C)
 #12 Danker: Bant Control (WUG)
-#13 Prescienced: Simic Midrange (UG)
+#13 Prescienced: Green Eldrazi (UG)
 #14 thestudygroup: Mono White Taxes (W)
 #15 SoulStrong: Sultai Shadow (UBG)
 #16 kiko: Esper Taxes (WUB)
@@ -48,7 +48,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
     public class EventTest_modern_challenge_2019_12_22 : EventTest
     {
         [Test]
-        public void Deck01_Toastxp_SimicControl_UG()
+        public void Deck01_Toastxp_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-22",0),
@@ -100,7 +100,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck05_MLupa_BantControl_WUG()
+        public void Deck05_MLupa_BantMidrange_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-22",4),
@@ -152,7 +152,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck09_VTCLA_SimicControl_UG()
+        public void Deck09_VTCLA_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-22",8),
@@ -204,7 +204,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck13_Prescienced_SimicMidrange_UG()
+        public void Deck13_Prescienced_GreenEldrazi_UG()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-22",12),

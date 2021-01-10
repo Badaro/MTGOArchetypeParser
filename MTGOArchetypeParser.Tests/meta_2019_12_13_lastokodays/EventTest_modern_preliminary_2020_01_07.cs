@@ -10,16 +10,16 @@ using System.Text;
 
 /*
 #01 l337erhosen: Bogles (WG)
-#02 SoulStrong: Simic Control (UG)
+#02 SoulStrong: Urza Oko (UG)
 #03 Beekeeper: Humans (WUBRG)
-#04 azax: Sultai Prowess (UBG)
+#04 azax: Urza Oko (UBG)
 #05 MLupa: Devoted (WUG)
 #06 McWinSauce: Bant Control (WUG)
 #07 n00bcheesepwner: Amulet Titan (UG)
 #08 benchsummer: Sultai Shadow (UBG)
 #09 fried-liver-attack: Eldrazi Tron (C)
 #10 sandydogmtg: Burn (R)
-#11 bradyoo: Simic Control (UG)
+#11 bradyoo: Urza Oko (UG)
 #12 vini_torres: Gifts Storm (UR)
 #13 frozenian: Crabvine (UBG)
 #14 YawgmothPT: Humans (WUBRG)
@@ -27,9 +27,9 @@ using System.Text;
 #16 xame3: Burn (WR)
 #17 SlyDaniel7787: Eldrazi Tron (G)
 #18 dillyg10: Bant Midrange (WUG)
-#19 THEsneakyhomunculous: Sultai Prowess (UBG)
+#19 THEsneakyhomunculous: Urza Oko (UBG)
 #20 karatedom: Primeval Titan (UG)
-#21 Nope5390: Sultai Prowess (UBG)
+#21 Nope5390: Urza Oko (UBG)
 #22 ERUERUFU: Bushwhacker Zoo (WRG)
 */
 
@@ -51,7 +51,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_SoulStrong_SimicControl_UG()
+        public void Deck02_SoulStrong_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-07",1),
@@ -77,7 +77,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck04_azax_SultaiProwess_UBG()
+        public void Deck04_azax_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-07",3),
@@ -168,7 +168,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck11_bradyoo_SimicControl_UG()
+        public void Deck11_bradyoo_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-07",10),
@@ -272,7 +272,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck19_THEsneakyhomunculous_SultaiProwess_UBG()
+        public void Deck19_THEsneakyhomunculous_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-07",18),
@@ -298,7 +298,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck21_Nope5390_SultaiProwess_UBG()
+        public void Deck21_Nope5390_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-07",20),

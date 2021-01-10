@@ -25,7 +25,7 @@ using System.Text;
 #14 siomomi: Eldrazi Tron (C)
 #15 Wuhsa: Niv To Light (WUBRG)
 #16 _Shatun_: Mono Red Prowess (R)
-#17 Littlemastercz: Obligator Eldrazi (RG)
+#17 Littlemastercz: Green Eldrazi (RG)
 #18 Goteo: Dredge (BRG)
 #19 duofanel: Jund Midrange (BRG)
 #20 nk0913: Izzet Prowess (UR)
@@ -244,7 +244,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_Littlemastercz_ObligatorEldrazi_RG()
+        public void Deck17_Littlemastercz_GreenEldrazi_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-29",16),

@@ -38,7 +38,7 @@ using System.Text;
 #27 GanYanCHN: Belcher (RG)
 #28 mrichi: Heliod Combo (WG)
 #29 CitrusD: Yawgmoth (BG)
-#30 zbishop: Selenya Taxes (WG)
+#30 zbishop: Selesnya Taxes (WG)
 #31 Oderus Urungus: Niv To Light (WUBRG)
 #32 Wyern: Belcher (RG)
 #33 TwistedWombat: Humans (WUBRG)
@@ -98,7 +98,7 @@ using System.Text;
 #87 papajerrett13: Rakdos Prowess (BR, Lurrus)
 #88 Ashanti: Gifts Storm (UR)
 #89 Galrion89: Belcher (RG)
-#90 max09: Selenya Taxes (WG)
+#90 max09: Selesnya Taxes (WG)
 #91 thinenagooyen: Titan Shift (RG)
 #92 Callad0: Primeval Titan (UG)
 #93 BlogBoy: Smallpox (WB)
@@ -616,7 +616,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck30_zbishop_SelenyaTaxes_WG()
+        public void Deck30_zbishop_SelesnyaTaxes_WG()
         {
             Test(
                 GetDeck("manatraders-series-modern-september-2020-2020-09-30",29),
@@ -1396,7 +1396,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck90_max09_SelenyaTaxes_WG()
+        public void Deck90_max09_SelesnyaTaxes_WG()
         {
             Test(
                 GetDeck("manatraders-series-modern-september-2020-2020-09-30",89),

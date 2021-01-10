@@ -14,7 +14,7 @@ using System.Text;
 #03 AronGomu: Heliod Combo (WBG)
 #04 bntrusty14: Humans (WUBRG)
 #05 yamakiller: Eldrazi Tron (C)
-#06 Irkus: Obligator Eldrazi (RG)
+#06 Irkus: Green Eldrazi (RG)
 #07 Meltiin: Reclaimer Titan (WURG)
 #08 Jadacant: Ad Nauseam (WUB)
 #09 genkytoro: Jund Midrange (BRG)
@@ -113,7 +113,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck06_Irkus_ObligatorEldrazi_RG()
+        public void Deck06_Irkus_GreenEldrazi_RG()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-19",5),

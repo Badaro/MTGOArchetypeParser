@@ -22,7 +22,7 @@ using System.Text;
 #11 ZYX_Jerry: Ad Nauseam (WUB)
 #12 komattaman: Gruul Midrange (RG)
 #13 Snusnumrick: Eldrazi Tron (C)
-#14 bobthedog: Nykthos Devotion (W)
+#14 bobthedog: White Devotion (W)
 #15 buddha715: Ad Nauseam (WUB)
 #16 aManatease: Eldrazi Tron (C)
 #17 IntegralHDK: Goblins (BRG)
@@ -205,7 +205,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_bobthedog_NykthosDevotion_W()
+        public void Deck14_bobthedog_WhiteDevotion_W()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-08",13),

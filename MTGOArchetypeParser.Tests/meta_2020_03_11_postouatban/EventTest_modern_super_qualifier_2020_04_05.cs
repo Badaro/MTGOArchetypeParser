@@ -22,7 +22,7 @@ using System.Text;
 #11 TrollingSaruman: Gruul Midrange (RG)
 #12 LiturgijskaKnjiga: Infect (UG)
 #13 JV_7777: Dredge (BRG)
-#14 Jenara19: Bant Control (WUG)
+#14 Jenara19: Uroza (WUG)
 #15 TrueHero: Temur Midrange (URG)
 #16 __BMJ__: Gruul Midrange (RG)
 #17 mansak: Jund Midrange (BRG)
@@ -217,7 +217,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck14_Jenara19_BantControl_WUG()
+        public void Deck14_Jenara19_Uroza_WUG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-05",13),

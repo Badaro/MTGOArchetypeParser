@@ -19,7 +19,7 @@ using System.Text;
 #08 Zar0s: WURG Control (WURG)
 #09 Kaies: Shadow Prowess (BRG, Lurrus)
 #10 Rulleboren: Belcher (WRG)
-#11 Antoine57437: Abzan Taxes (WBG)
+#11 Antoine57437: Badzan (WBG)
 #12 yamakiller: Obosh Aggro (R, Obosh)
 #13 BradPitKeeper: WURG Control (WURG)
 #14 im2g00t4ubarn: WURG Control (WURG)
@@ -178,7 +178,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_Antoine57437_AbzanTaxes_WBG()
+        public void Deck11_Antoine57437_Badzan_WBG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-11-08",10),

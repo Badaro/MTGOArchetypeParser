@@ -56,7 +56,7 @@ using System.Text;
 #45 ApesOfWrath: Burn (R)
 #46 Sprouts: Jund Midrange (BRG)
 #47 krxn: Jund Midrange (BRG)
-#48 excrement: Nykthos Devotion (W)
+#48 excrement: Heliod Sisters (W)
 #49 bit_error: Burn (WR)
 #50 _Shatun_: Burn (WR)
 #51 Parole: Humans (WUBRG)
@@ -687,7 +687,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck48_excrement_NykthosDevotion_W()
+        public void Deck48_excrement_HeliodSisters_W()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-31",47),

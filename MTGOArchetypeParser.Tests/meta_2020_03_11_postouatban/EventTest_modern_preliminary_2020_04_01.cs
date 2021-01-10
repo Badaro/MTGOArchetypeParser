@@ -41,7 +41,7 @@ using System.Text;
 #30 AbelMolto: Burn (WRG)
 #31 selbstdenker: Primeval Titan (BG)
 #32 rn17: Thopter Urza (UB)
-#33 SoIMBA_Airwave: Obligator Eldrazi (RG)
+#33 SoIMBA_Airwave: Green Eldrazi (RG)
 #34 TSPJendrek: Esper Control (WUB)
 #35 Melon9: Gruul Midrange (RG)
 #36 Smurfyyy: Jund Shadow (BRG)
@@ -468,7 +468,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck33_SoIMBAAirwave_ObligatorEldrazi_RG()
+        public void Deck33_SoIMBAAirwave_GreenEldrazi_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-01",32),

@@ -20,7 +20,7 @@ using System.Text;
 #09 Erik157751: Dredge (BRG)
 #10 manoah: Jund Midrange (BRG)
 #11 Darthkid: Gruul Midrange (RG)
-#12 Heibing: Bant Taxes (WUG)
+#12 Heibing: Green Eldrazi (WUG)
 #13 Laplasjan: Eldrazi Tron (C)
 #14 Albimtg: Jund Shadow (BRG)
 #15 ArchaeusDota: Eldrazi Tron (C)
@@ -188,7 +188,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck12_Heibing_BantTaxes_WUG()
+        public void Deck12_Heibing_GreenEldrazi_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-25",11),

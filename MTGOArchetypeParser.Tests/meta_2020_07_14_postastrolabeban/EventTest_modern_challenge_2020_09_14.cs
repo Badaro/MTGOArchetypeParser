@@ -14,7 +14,7 @@ using System.Text;
 #03 pootisgodsamongus: Obosh Aggro (R, Obosh)
 #04 Nikachu: Merfolk (UG)
 #05 Skrown: Grixis Shadow (UBR)
-#06 Artem_Kuhtin: Nykthos Devotion (W)
+#06 Artem_Kuhtin: White Devotion (W)
 #07 musasabi: Reclaimer Titan (WG)
 #08 Laplasjan: Devoted (WG, Lurrus)
 #09 RoadmanEvans: Izzet Prowess (UR)
@@ -113,7 +113,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_ArtemKuhtin_NykthosDevotion_W()
+        public void Deck06_ArtemKuhtin_WhiteDevotion_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-14",5),

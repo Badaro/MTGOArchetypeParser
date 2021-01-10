@@ -10,8 +10,8 @@ using System.Text;
 
 /*
 #01 Sodeq: Dredge (BRG)
-#02 SourceOdin: Simic Prowess (UG)
-#03 Gul_Dukat: Temur Prowess (URG)
+#02 SourceOdin: Urza Oko (UG)
+#03 Gul_Dukat: Urza Oko (URG)
 #04 cityofcards: Eldrazi Tron (C)
 #05 PuntThenWhine: Amulet Titan (RG)
 #06 jschloss: Golgari Midrange (BG)
@@ -22,7 +22,7 @@ using System.Text;
 #11 Zacharee: Devoted (WUG)
 #12 McWinSauce: Bant Control (WUG)
 #13 exoticherman: Infect (UG)
-#14 mrounds1216: Mono Blue Prowess (U)
+#14 mrounds1216: Paradoxical Urza (U)
 #15 Runeskjold: Electro Balance (UR)
 #16 Zxrogue: Niv To Light (WUBRG)
 #17 BorosCharm: Burn (WR)
@@ -31,7 +31,7 @@ using System.Text;
 #20 bladede: Green Tron (G)
 #21 PRGJJAR: Dredge (BRG)
 #22 nahuel10: Burn (WR)
-#23 Ivan_Catanduva_Br: Temur Prowess (URG)
+#23 Ivan_Catanduva_Br: Urza Oko (URG)
 #24 dillyg10: Bant Midrange (WUG)
 #25 FromTheCrypt: Green Tron (G)
 #26 Twibs: Eldrazi Tron (C)
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_SourceOdin_SimicProwess_UG()
+        public void Deck02_SourceOdin_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-12",1),
@@ -74,7 +74,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck03_GulDukat_TemurProwess_URG()
+        public void Deck03_GulDukat_UrzaOko_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-12",2),
@@ -217,7 +217,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck14_mrounds1216_MonoBlueProwess_U()
+        public void Deck14_mrounds1216_ParadoxicalUrza_U()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-12",13),
@@ -334,7 +334,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck23_IvanCatanduvaBr_TemurProwess_URG()
+        public void Deck23_IvanCatanduvaBr_UrzaOko_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-12",22),

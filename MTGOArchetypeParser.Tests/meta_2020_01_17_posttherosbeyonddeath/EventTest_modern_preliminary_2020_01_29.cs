@@ -18,7 +18,7 @@ using System.Text;
 #07 z00t: Primeval Titan (UG)
 #08 Cherryxman: Bushwhacker Zoo (WRG)
 #09 misonikomi: Amulet Titan (G)
-#10 antonio00: Mono Green Midrange (G)
+#10 antonio00: Green Devotion (G)
 #11 Blitzlion27: Primeval Titan (UG)
 #12 tritty: Yawgmoth (BG)
 #13 lSoLlAKirA: Thopter Urza (UB)
@@ -148,7 +148,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck10_antonio00_MonoGreenMidrange_G()
+        public void Deck10_antonio00_GreenDevotion_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-29",9),

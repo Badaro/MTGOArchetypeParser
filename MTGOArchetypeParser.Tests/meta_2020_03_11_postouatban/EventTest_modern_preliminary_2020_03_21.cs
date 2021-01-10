@@ -34,7 +34,7 @@ using System.Text;
 #23 VampireGodric: Green Tron (G)
 #24 RogerSteady: Grixis Midrange (UBR)
 #25 saluman: Ad Nauseam (WUB)
-#26 bubblebathing: Rakdos Midrange (BR)
+#26 bubblebathing: Hollow One (BR)
 #27 Mobog: Jund Midrange (BRG)
 #28 Lord_of_Puntlantis: Ad Nauseam (WUB)
 #29 andrehicks: Dredge (BRG)
@@ -45,7 +45,7 @@ using System.Text;
 #34 Sprouts: Jund Midrange (BRG)
 #35 ltldude123: Grinding Breach (WUR)
 #36 futiboladex: Bant Control (WUG)
-#37 dstathis: Mono Black Midrange (B)
+#37 dstathis: Eight Rack (B)
 #38 _Tim: Grinding Breach (WUR)
 #39 Icteridae: Devoted (WUG)
 #40 Nammersquats: Titan Shift (RG)
@@ -56,7 +56,7 @@ using System.Text;
 #45 Shadowz2005: Jund Shadow (BRG)
 #46 bamzing: Eldrazi Tron (C)
 #47 _INF_: Jund Midrange (BRG)
-#48 Draconic1: Izzet Prowess (UR)
+#48 Draconic1: Phoenix (UR)
 #49 WingedHussar: Neobrand (UG)
 #50 luxcel: Humans (WUBRG)
 */
@@ -391,7 +391,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck26_bubblebathing_RakdosMidrange_BR()
+        public void Deck26_bubblebathing_HollowOne_BR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-21",25),
@@ -534,7 +534,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck37_dstathis_MonoBlackMidrange_B()
+        public void Deck37_dstathis_EightRack_B()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-21",36),
@@ -677,7 +677,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck48_Draconic1_IzzetProwess_UR()
+        public void Deck48_Draconic1_Phoenix_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-21",47),

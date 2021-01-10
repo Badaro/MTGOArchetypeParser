@@ -12,12 +12,12 @@ using System.Text;
 #01 McWinSauce: Saheeli Combo (WURG)
 #02 yamakiller: Eldrazi Tron (C)
 #03 exoticherman: Infect (UG)
-#04 SourceOdin: Simic Control (UG)
+#04 SourceOdin: Urza Oko (UG)
 #05 SoulStrong: Sultai Shadow (UBG)
 #06 nahuel10: Burn (WR)
 #07 GutsMTG: Primeval Titan (UG)
 #08 Gallatin: Green Tron (G)
-#09 abethemage: Simic Control (UG)
+#09 abethemage: Urza Oko (UG)
 #10 JustBurn420: Burn (WR)
 #11 Finalnub: Eldrazi Tron (G)
 #12 d_peliser: Grixis Shadow (UBR)
@@ -70,7 +70,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck04_SourceOdin_SimicControl_UG()
+        public void Deck04_SourceOdin_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-28",3),
@@ -135,7 +135,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck09_abethemage_SimicControl_UG()
+        public void Deck09_abethemage_UrzaOko_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-28",8),
