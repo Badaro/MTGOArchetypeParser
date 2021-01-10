@@ -275,7 +275,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-challenge-2020-03-22",17),
                 new PostOuatBan(),
                 ArchetypeColor.WRG,
-                typeof(Burn),
+                typeof(Zoo),
                 null,
                 null
             );
