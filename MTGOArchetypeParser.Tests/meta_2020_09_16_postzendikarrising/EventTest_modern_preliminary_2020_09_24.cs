@@ -17,7 +17,7 @@ using System.Text;
 #06 Bedell: Shadow Prowess (BR, Lurrus)
 #07 pokerswizard: Gruul Midrange (RG)
 #08 SpikeYou: Sultai Control (UBG)
-#09 swana422: Spirits (WU)
+#09 swana422: Spirits (WUG)
 #10 Fatcaster_Mage: Temur Control (URG)
 #11 MZBlazer: Shadow Prowess (BR, Lurrus)
 #12 qbturtle15: Mono White Taxes (W)
@@ -132,12 +132,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_swana422_Spirits_WU()
+        public void Deck09_swana422_Spirits_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-24",8),
                 new PostZendikarRising(),
-                ArchetypeColor.WU,
+                ArchetypeColor.WUG,
                 typeof(Spirits),
                 null,
                 null

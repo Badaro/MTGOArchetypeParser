@@ -18,7 +18,7 @@ using System.Text;
 #07 Rhianne: Dredge (BRG)
 #08 Brener: Golgari Midrange (BG, Lurrus)
 #09 sokos13: UBRG Control (UBRG, Lurrus)
-#10 MadMaxErnst: Temur Control (URG, Lurrus)
+#10 MadMaxErnst: UBRG Control (UBRG, Lurrus)
 #11 SourceOdin: Uroza (URG, Yorion)
 #12 signblindman: Gruul Midrange (RG, Obosh)
 #13 Golgarburr: Jund Midrange (BRG, Lurrus)
@@ -165,12 +165,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck10_MadMaxErnst_TemurControl_URG_Lurrus()
+        public void Deck10_MadMaxErnst_UBRGControl_UBRG_Lurrus()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-26",9),
                 new PostIkoria(),
-                ArchetypeColor.URG,
+                ArchetypeColor.UBRG,
                 typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Lurrus

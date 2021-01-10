@@ -33,13 +33,13 @@ using System.Text;
 #22 antonio13901390: Eldrazi Tron (C)
 #23 katoriarch123: Bant Control (WUG)
 #24 Anicet0: Eldrazi Tron (C)
-#25 MadMaxErnst: Uroza (UG)
+#25 MadMaxErnst: Uroza (URG)
 #26 Jenara19: Sultai Control (UBG)
 #27 Larry11: Gruul Midrange (RG)
 #28 ubercrisis: Sultai Control (UBG)
 #29 remf: Spirits (WUG)
 #30 kalibak: Burn (WR)
-#31 NewHJ: Burn (WR)
+#31 NewHJ: Burn (WRG)
 #32 Manacymbal: Kinnan Legends (URG, Yorion)
 */
 
@@ -360,12 +360,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck25_MadMaxErnst_Uroza_UG()
+        public void Deck25_MadMaxErnst_Uroza_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",24),
                 new PostCompanionChange(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -438,12 +438,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck31_NewHJ_Burn_WR()
+        public void Deck31_NewHJ_Burn_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-21",30),
                 new PostCompanionChange(),
-                ArchetypeColor.WR,
+                ArchetypeColor.WRG,
                 typeof(Burn),
                 null,
                 null

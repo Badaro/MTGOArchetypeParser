@@ -16,7 +16,7 @@ using System.Text;
 #05 JUJUBEAN__2004: Heliod Combo (WG)
 #06 eclipse4343: Azorius Control (WU)
 #07 Selami: Ad Nauseam (WUB)
-#08 AlpInco: Oops All Spells (WUBG)
+#08 AlpInco: Oops All Spells (WUBRG)
 #09 Oderus Urungus: Obosh Aggro (R, Obosh)
 #10 Amplumnox: Hammer Time (W, Lurrus)
 #11 Piproberts: Shadow Prowess (BRG, Lurrus)
@@ -28,7 +28,7 @@ using System.Text;
 #17 Gifted: Shadow Prowess (BRG, Lurrus)
 #18 Nikachu: Merfolk (UG)
 #19 PieGonti: Heliod Combo (WG)
-#20 silencsong: Electro Balance (UR)
+#20 silencsong: Electro Balance (URG)
 #21 Binolino: Reclaimer Titan (WRG)
 #22 Jositoshekel: Heliod Combo (WG)
 #23 Aerostar: Merfolk (UG)
@@ -139,12 +139,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_AlpInco_OopsAllSpells_WUBG()
+        public void Deck08_AlpInco_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-29",7),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -295,12 +295,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_silencsong_ElectroBalance_UR()
+        public void Deck20_silencsong_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-29",19),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

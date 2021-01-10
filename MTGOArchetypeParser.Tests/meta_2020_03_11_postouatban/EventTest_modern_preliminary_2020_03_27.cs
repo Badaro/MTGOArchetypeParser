@@ -15,7 +15,7 @@ using System.Text;
 #04 __matsugan: Neobrand (UG)
 #05 turnipturnip: Grixis Shadow (UBR)
 #06 Bomboleriot: Dredge (BRG)
-#07 Mistakenn: Amulet Titan (G)
+#07 Mistakenn: Amulet Titan (UG)
 #08 TennTyou: Niv To Light (WUBRG)
 #09 ArchaeusDota: Eldrazi Tron (C)
 #10 bant_is_love: Niv To Light (WUBRG)
@@ -114,12 +114,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck07_Mistakenn_AmuletTitan_G()
+        public void Deck07_Mistakenn_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-27",6),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

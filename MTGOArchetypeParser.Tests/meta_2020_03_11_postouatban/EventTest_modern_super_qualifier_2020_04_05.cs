@@ -10,18 +10,18 @@ using System.Text;
 
 /*
 #01 MATTOMARINAIO: Burn (WR)
-#02 AnneLivleysD3ath: Amulet Titan (G)
-#03 Ziojimbo: Amulet Titan (G)
+#02 AnneLivleysD3ath: Amulet Titan (UG)
+#03 Ziojimbo: Amulet Titan (UG)
 #04 Roald: Green Tron (G)
 #05 Diem4x: Bant Control (WUG)
 #06 MdvWin: Burn (WR)
-#07 SIN: Uroza (UG)
+#07 SIN: Uroza (URG)
 #08 Brener: Jund Midrange (BRG)
 #09 signblindman: Gruul Midrange (RG)
 #10 Alrawn: Green Tron (G)
 #11 TrollingSaruman: Gruul Midrange (RG)
 #12 LiturgijskaKnjiga: Infect (UG)
-#13 JV_7777: Dredge (BRG)
+#13 JV_7777: Dredge (UBRG)
 #14 Jenara19: Uroza (WUG)
 #15 TrueHero: Temur Midrange (URG)
 #16 __BMJ__: Gruul Midrange (RG)
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck02_AnneLivleysD3ath_AmuletTitan_G()
+        public void Deck02_AnneLivleysD3ath_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-05",1),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck03_Ziojimbo_AmuletTitan_G()
+        public void Deck03_Ziojimbo_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-05",2),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck07_SIN_Uroza_UG()
+        public void Deck07_SIN_Uroza_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-05",6),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -204,12 +204,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck13_JV7777_Dredge_BRG()
+        public void Deck13_JV7777_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-05",12),
                 new PostOuatBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null

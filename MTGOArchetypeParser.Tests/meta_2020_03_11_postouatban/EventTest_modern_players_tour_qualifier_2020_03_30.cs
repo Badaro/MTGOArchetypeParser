@@ -22,12 +22,12 @@ using System.Text;
 #11 AlabasterWolfie: Grinding Breach (UBR)
 #12 TradewindRider: Bant Control (WUG)
 #13 ecobaronen: Bant Control (WUG)
-#14 achillies27: Gifts Storm (UR)
+#14 achillies27: Gifts Storm (URG)
 #15 TheTunnelingCat: Eldrazi Tron (C)
 #16 Sungjin: Scapeshift (WURG)
 #17 MayoDominaria: Bushwhacker Zoo (WRG)
 #18 BaronOfBacon: Mono Red Prowess (R)
-#19 Graciasportanto: Uroza (UG)
+#19 Graciasportanto: Uroza (URG)
 #20 twinlesstwin: Simic Control (UG)
 #21 Do0mSwitch: Bant Control (WUG)
 #22 bstee: Dredge (BRG)
@@ -36,9 +36,9 @@ using System.Text;
 #25 Gerardo94: Bant Control (WUG)
 #26 medvedev: Humans (WUBRG)
 #27 J000111: Dredge (BRG)
-#28 FalseMufn: Amulet Titan (G)
+#28 FalseMufn: Amulet Titan (UG)
 #29 PRGJJAR: Dredge (BRG)
-#30 SCJ: Uroza (UG)
+#30 SCJ: Uroza (URG)
 #31 Tarmofir3: Jund Midrange (BRG)
 #32 jvidarte: Mono Red Prowess (R)
 */
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck14_achillies27_GiftsStorm_UR()
+        public void Deck14_achillies27_GiftsStorm_URG()
         {
             Test(
                 GetDeck("modern-players-tour-qualifier-2020-03-30",13),
                 new PostOuatBan(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(GiftsStorm),
                 null,
                 null
@@ -282,12 +282,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck19_Graciasportanto_Uroza_UG()
+        public void Deck19_Graciasportanto_Uroza_URG()
         {
             Test(
                 GetDeck("modern-players-tour-qualifier-2020-03-30",18),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -399,12 +399,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck28_FalseMufn_AmuletTitan_G()
+        public void Deck28_FalseMufn_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-players-tour-qualifier-2020-03-30",27),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -425,12 +425,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck30_SCJ_Uroza_UG()
+        public void Deck30_SCJ_Uroza_URG()
         {
             Test(
                 GetDeck("modern-players-tour-qualifier-2020-03-30",29),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null

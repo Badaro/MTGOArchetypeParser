@@ -11,14 +11,14 @@ using System.Text;
 /*
 #01 xfile: Golgari Midrange (BG)
 #02 2radMTG: Infect (UG)
-#03 coert: Devoted (WG)
-#04 swff: Bant Control (WUG)
+#03 coert: Devoted (WBG)
+#04 swff: WURG Control (WURG)
 #05 lSoLlAKirA: Thopter Urza (UB)
 #06 Kazuga: Jund Midrange (BRG)
 #07 Phill_Hellmuth: Primeval Titan (UG)
-#08 SoulStrong: Bant Control (WUG)
+#08 SoulStrong: WURG Control (WURG)
 #09 SlyDaniel7787: Ad Nauseam (WUB)
-#10 McWinSauce: Bant Control (WUG)
+#10 McWinSauce: WURG Control (WURG)
 #11 MentalMisstep: Yawgmoth (BG)
 #12 stollis: Crabvine (UBG)
 #13 fistfullofmetal: Green Tron (G)
@@ -55,12 +55,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck03_coert_Devoted_WG()
+        public void Deck03_coert_Devoted_WBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-05",2),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WBG,
                 typeof(Devoted),
                 null,
                 null
@@ -68,12 +68,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck04_swff_BantControl_WUG()
+        public void Deck04_swff_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-05",3),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -120,12 +120,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck08_SoulStrong_BantControl_WUG()
+        public void Deck08_SoulStrong_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-05",7),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -146,12 +146,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck10_McWinSauce_BantControl_WUG()
+        public void Deck10_McWinSauce_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-05",9),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null

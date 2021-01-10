@@ -13,7 +13,7 @@ using System.Text;
 #02 Simarisu: Izzet Prowess (UR)
 #03 BERNASTORRES: Bogles (WG, Lurrus)
 #04 ImmanuelKantrolGod: Bant Control (WUG)
-#05 Somefellow: Amulet Titan (RG)
+#05 Somefellow: Amulet Titan (URG)
 #06 Nickburch13: Mardu Prowess (WBR, Lurrus)
 #07 fling5133: Sultai Control (UBG)
 #08 JustBurn420: Slivers (WUBRG)
@@ -83,12 +83,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_Somefellow_AmuletTitan_RG()
+        public void Deck05_Somefellow_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-02",4),
                 new PostAstrolabeBan(),
-                ArchetypeColor.RG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

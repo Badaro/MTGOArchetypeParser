@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 FranPi: Gifts Storm (UR)
-#02 Chefen: Eldrazi Tron (C)
+#02 Chefen: Eldrazi Tron (G)
 #03 phol: Uroza (UG)
 #04 AronGomu: Amulet Titan (UG)
 #05 TheTunnelingCat: Eldrazi Tron (C)
@@ -27,9 +27,9 @@ using System.Text;
 #16 salty12ZA: Dredge (BRG)
 #17 Scooter8968: Sultai Control (UBG)
 #18 crazybaloth: Devoted (WG)
-#19 Slaydftw: Eldrazi Tron (C)
+#19 Slaydftw: Eldrazi Tron (G)
 #20 yPrincipe: Amulet Titan (UG)
-#21 Bruno_Mineiro: Sultai Shadow (UBG)
+#21 Bruno_Mineiro: UBRG Shadow (UBRG)
 #22 jhk_: Jund Midrange (BRG)
 #23 kmacy90: Burn (WR)
 #24 tako110: Jund Midrange (BRG)
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck02_Chefen_EldraziTron_C()
+        public void Deck02_Chefen_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-09",1),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -282,12 +282,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck19_Slaydftw_EldraziTron_C()
+        public void Deck19_Slaydftw_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-09",18),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck21_BrunoMineiro_SultaiShadow_UBG()
+        public void Deck21_BrunoMineiro_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-09",20),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

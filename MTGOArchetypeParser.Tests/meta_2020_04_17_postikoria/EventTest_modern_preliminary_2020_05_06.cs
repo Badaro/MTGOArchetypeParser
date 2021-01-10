@@ -14,7 +14,7 @@ using System.Text;
 #03 audio336: Boros Prowess (WR, Lurrus)
 #04 NJGB1: Grixis Shadow (UBR, Lurrus)
 #05 TSPJendrek: Dimir Control (UB, Lurrus)
-#06 oskiyaa: Amulet Titan (UG)
+#06 oskiyaa: Amulet Titan (URG)
 #07 tia05: Primeval Titan (RG)
 #08 Oneyerob: Devoted (WG, Lurrus)
 #09 albert62: Jund Midrange (BRG, Lurrus)
@@ -25,7 +25,7 @@ using System.Text;
 #14 Naisirc: Mono White Taxes (W)
 #15 Logarythme: WURG Control (WURG, Yorion)
 #16 selbstdenker: Amulet Titan (G)
-#17 matyo804: Amulet Titan (UG)
+#17 matyo804: Amulet Titan (URG)
 #18 DreamsOfAshiok: Eldrazi Tron (C)
 #19 Subi: Infect (WUG, Lurrus)
 #20 12Days: Gruul Midrange (RG, Obosh)
@@ -101,12 +101,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck06_oskiyaa_AmuletTitan_UG()
+        public void Deck06_oskiyaa_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-06",5),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -244,12 +244,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck17_matyo804_AmuletTitan_UG()
+        public void Deck17_matyo804_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-06",16),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

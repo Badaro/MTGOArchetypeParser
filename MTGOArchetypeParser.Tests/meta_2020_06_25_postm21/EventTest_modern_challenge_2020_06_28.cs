@@ -18,7 +18,7 @@ using System.Text;
 #07 dm95: Azorius Control (WU)
 #08 djbmppwns: Gruul Midrange (RG)
 #09 Moniz0801: Amulet Titan (URG)
-#10 MasterA: Goblins (BR)
+#10 MasterA: Goblins (BRG)
 #11 Trisky: Jund Shadow (BRG)
 #12 mariogomes097: Grixis Shadow (UBR)
 #13 indianpancake: Gruul Midrange (RG)
@@ -29,7 +29,7 @@ using System.Text;
 #18 wambocombo2020: Burn (WR)
 #19 FranPi: Gifts Storm (UR)
 #20 Danny_Bambino: Jund Midrange (BRG)
-#21 Mercenario: Dredge (BRG)
+#21 Mercenario: Dredge (UBRG)
 #22 toondoslav: Dredge (BRG)
 #23 Curtisaxel: Spirits (WUG)
 #24 CNewman: Goblins (BR)
@@ -165,12 +165,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck10_MasterA_Goblins_BR()
+        public void Deck10_MasterA_Goblins_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",9),
                 new PostM21(),
-                ArchetypeColor.BR,
+                ArchetypeColor.BRG,
                 typeof(Goblins),
                 null,
                 null
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck21_Mercenario_Dredge_BRG()
+        public void Deck21_Mercenario_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",20),
                 new PostM21(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null

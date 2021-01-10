@@ -17,7 +17,7 @@ using System.Text;
 #06 Olivetti: Rakdos Prowess (BR, Lurrus)
 #07 trunks132: Rakdos Prowess (BR, Lurrus)
 #08 alemilan19: Scapeshift (WURG, Yorion)
-#09 litianshuo670: Electro Balance (UR)
+#09 litianshuo670: Electro Balance (URG)
 #10 _INF_: Gifts Storm (UR, Jegantha)
 #11 ACG88: Gyruda Reanimator (BRG, Gyruda)
 #12 oskiyaa: Devoted (WG, Lurrus)
@@ -136,12 +136,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck09_litianshuo670_ElectroBalance_UR()
+        public void Deck09_litianshuo670_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-27",8),
                 new PostIkoria(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

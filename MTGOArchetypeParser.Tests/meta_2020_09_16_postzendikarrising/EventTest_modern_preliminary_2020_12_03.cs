@@ -23,7 +23,7 @@ using System.Text;
 #12 MZBlazer: Heliod Combo (WG)
 #13 Gerardo94: WURG Control (WURG)
 #14 McWinSauce: WURG Control (WURG)
-#15 MdvWin: Burn (WR)
+#15 MdvWin: Burn (WRG)
 #16 rodeo: Oops All Spells (WUBRG)
 #17 alemilan19: Heliod Combo (WG)
 #18 Zar0s: Sultai Control (UBG)
@@ -224,12 +224,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_MdvWin_Burn_WR()
+        public void Deck15_MdvWin_Burn_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-03",14),
                 new PostZendikarRising(),
-                ArchetypeColor.WR,
+                ArchetypeColor.WRG,
                 typeof(Burn),
                 null,
                 null

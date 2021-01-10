@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Cherryxman: Eldrazi Tron (C)
+#01 Cherryxman: Eldrazi Tron (G)
 #02 cronman87: Mono Red Prowess (R)
 #03 Kazuga: Dredge (BRG)
 #04 Bayesta_93: Grixis Shadow (UBR)
@@ -34,12 +34,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
     public class EventTest_modern_preliminary_2020_01_23 : EventTest
     {
         [Test]
-        public void Deck01_Cherryxman_EldraziTron_C()
+        public void Deck01_Cherryxman_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-23",0),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null

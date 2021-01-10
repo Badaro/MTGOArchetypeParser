@@ -15,13 +15,13 @@ using System.Text;
 #04 GedionRavenor: Azorius Control (WU)
 #05 llawtonss: Amulet Titan (G)
 #06 AlabasterWolfie: Grinding Breach (UBR)
-#07 Brunister: Eldrazi Tron (C)
+#07 Brunister: Eldrazi Tron (G)
 #08 Zonast: Jund Shadow (BRG)
 #09 Cherlon: Burn (WR)
 #10 MatheusPonciano: Dredge (BRG)
 #11 yamakiller: Ad Nauseam (WUB)
 #12 D00mwake: Gruul Midrange (RG)
-#13 Xwhale: Eldrazi Tron (C)
+#13 Xwhale: Eldrazi Tron (G)
 #14 Zar0s: Amulet Titan (UG)
 #15 stonepeanut: Green Tron (G)
 #16 bradyoo: Green Tron (G)
@@ -47,7 +47,7 @@ using System.Text;
 #36 Boland: Grixis Shadow (UBR)
 #37 cityofcards: Rakdos Midrange (BR)
 #38 Samwise_GeeGee: Azorius Control (WU)
-#39 Bitflipher: Sultai Shadow (UBG)
+#39 Bitflipher: UBRG Shadow (UBRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
@@ -133,12 +133,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck07_Brunister_EldraziTron_C()
+        public void Deck07_Brunister_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-18",6),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -211,12 +211,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck13_Xwhale_EldraziTron_C()
+        public void Deck13_Xwhale_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-18",12),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -549,12 +549,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck39_Bitflipher_SultaiShadow_UBG()
+        public void Deck39_Bitflipher_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-18",38),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

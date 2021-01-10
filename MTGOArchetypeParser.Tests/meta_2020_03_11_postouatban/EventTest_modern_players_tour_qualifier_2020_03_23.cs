@@ -9,22 +9,22 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Mistakenn: Amulet Titan (G)
-#02 tangrams: Uroza (UG)
-#03 msskinbolic: Dredge (BRG)
+#01 Mistakenn: Amulet Titan (UG)
+#02 tangrams: Uroza (URG)
+#03 msskinbolic: Dredge (UBRG)
 #04 __BMJ__: Titan Shift (RG)
 #05 MentalMisstep: WUBG Control (WUBG)
 #06 alithinar: Jund Midrange (BRG)
 #07 Bayesta_93: Green Tron (G)
-#08 Linsanity96: Uroza (UG)
+#08 Linsanity96: Uroza (URG)
 #09 mikeleee: Humans (WUBRG)
 #10 cws: Gifts Storm (URG)
 #11 Dia83: Amulet Titan (G)
 #12 BlueLips: Bant Control (WUG)
-#13 DFrank: Uroza (UG)
+#13 DFrank: Uroza (URG)
 #14 ScreenwriterNY: Bushwhacker Zoo (WRG)
 #15 qbturtle15: Gruul Midrange (RG)
-#16 603Leb: Amulet Titan (G)
+#16 603Leb: Amulet Titan (UG)
 #17 Rav104: Primeval Titan (UG)
 #18 bigjc00: Eldrazi Tron (C)
 #19 mdvayu2: Saheeli Combo (WURG)
@@ -48,12 +48,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
     public class EventTest_modern_players_tour_qualifier_2020_03_23 : EventTest
     {
         [Test]
-        public void Deck01_Mistakenn_AmuletTitan_G()
+        public void Deck01_Mistakenn_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-players-tour-qualifier-2020-03-23",0),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck02_tangrams_Uroza_UG()
+        public void Deck02_tangrams_Uroza_URG()
         {
             Test(
                 GetDeck("modern-players-tour-qualifier-2020-03-23",1),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck03_msskinbolic_Dredge_BRG()
+        public void Deck03_msskinbolic_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-players-tour-qualifier-2020-03-23",2),
                 new PostOuatBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -139,12 +139,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck08_Linsanity96_Uroza_UG()
+        public void Deck08_Linsanity96_Uroza_URG()
         {
             Test(
                 GetDeck("modern-players-tour-qualifier-2020-03-23",7),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -204,12 +204,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck13_DFrank_Uroza_UG()
+        public void Deck13_DFrank_Uroza_URG()
         {
             Test(
                 GetDeck("modern-players-tour-qualifier-2020-03-23",12),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -243,12 +243,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck16_603Leb_AmuletTitan_G()
+        public void Deck16_603Leb_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-players-tour-qualifier-2020-03-23",15),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

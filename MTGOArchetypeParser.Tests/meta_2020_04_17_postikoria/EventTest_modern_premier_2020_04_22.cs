@@ -11,9 +11,9 @@ using System.Text;
 /*
 #01 GR_DONKIN: Ad Nauseam (WUB)
 #02 Xwhale: Burn (WR, Lurrus)
-#03 ander_lizarrakoa: Uroza (UG)
+#03 ander_lizarrakoa: Uroza (URG)
 #04 TwistedWombat: Niv To Light (WUBRG, Jegantha)
-#05 Darkiundsa: Jund Shadow (BRG, Lurrus)
+#05 Darkiundsa: WBRG Shadow (WBRG, Lurrus)
 #06 VampireGodric: Bant Control (WUG)
 #07 Acekiller: Burn (WR, Lurrus)
 #08 WhiTe TsaR: UBRG Control (UBRG, Lurrus)
@@ -58,12 +58,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck03_anderlizarrakoa_Uroza_UG()
+        public void Deck03_anderlizarrakoa_Uroza_URG()
         {
             Test(
                 GetDeck("modern-premier-2020-04-22",2),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -84,12 +84,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck05_Darkiundsa_JundShadow_BRG_Lurrus()
+        public void Deck05_Darkiundsa_WBRGShadow_WBRG_Lurrus()
         {
             Test(
                 GetDeck("modern-premier-2020-04-22",4),
                 new PostIkoria(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(GenericShadow),
                 null,
                 ArchetypeCompanion.Lurrus

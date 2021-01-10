@@ -26,9 +26,9 @@ using System.Text;
 #15 aManatease: Izzet Prowess (UR)
 #16 MrSeri: Hardened Scales (G)
 #17 bladede: Jund Midrange (BRG)
-#18 nazart: Heliod Combo (WG)
+#18 nazart: Heliod Combo (WRG)
 #19 thekingofnone: Green Tron (G, Jegantha)
-#20 elquinielas: Burn (WBR)
+#20 elquinielas: Burn (WBRG)
 #21 mark_68: Sultai Control (UBG, Yorion)
 #22 fabee1: Boros Taxes (WR)
 #23 Kuhb: Hammer Time (WB, Lurrus)
@@ -269,12 +269,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck18_nazart_HeliodCombo_WG()
+        public void Deck18_nazart_HeliodCombo_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-20",17),
                 new PostZendikarRising(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WRG,
                 typeof(HeliodCombo),
                 null,
                 null
@@ -295,12 +295,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_elquinielas_Burn_WBR()
+        public void Deck20_elquinielas_Burn_WBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-20",19),
                 new PostZendikarRising(),
-                ArchetypeColor.WBR,
+                ArchetypeColor.WBRG,
                 typeof(Burn),
                 null,
                 null

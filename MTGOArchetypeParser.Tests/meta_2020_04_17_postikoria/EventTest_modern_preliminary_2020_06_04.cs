@@ -12,7 +12,7 @@ using System.Text;
 #01 Gigy: Gruul Midrange (RG)
 #02 maximusdee: Gifts Storm (UR)
 #03 leclairandy: Bant Control (WUG)
-#04 SunofNothing: Uroza (UG)
+#04 SunofNothing: Uroza (URG)
 #05 Toastxp: Uroza (URG, Yorion)
 #06 jessy_samek: Infect (UG)
 #07 hugo87: Gifts Storm (UR)
@@ -36,7 +36,7 @@ using System.Text;
 #25 Lord_of_Puntlantis: Inverter Combo (UB)
 #26 cftsoc3: Bant Blink (WUG, Yorion)
 #27 _LSN_: Burn (WR)
-#28 nathansteuer: Uroza (UG)
+#28 nathansteuer: Uroza (URG)
 #29 pokerswizard: Eldrazi Tron (C)
 */
 
@@ -84,12 +84,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck04_SunofNothing_Uroza_UG()
+        public void Deck04_SunofNothing_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-04",3),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -396,12 +396,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck28_nathansteuer_Uroza_UG()
+        public void Deck28_nathansteuer_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-04",27),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null

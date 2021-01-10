@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 NHA37: Heliod Combo (W)
-#02 FreakNightmare: Oops All Spells (WUBG)
+#02 FreakNightmare: Oops All Spells (WUBRG)
 #03 The_nayr: Mono Red Prowess (R, Jegantha)
 #04 TwistedWombat: Omnath Saheeli (WURG, Jegantha)
 #05 Sodeq: Dredge (BRG)
@@ -30,7 +30,7 @@ using System.Text;
 #19 MIkepick7: Eldrazi Tron (C)
 #20 Humpaa: Heliod Combo (WG)
 #21 POOBMASTER: Shadow Prowess (BR, Lurrus)
-#22 daibloXSC: Izzet Control (UR)
+#22 daibloXSC: Jeskai Control (WUR)
 #23 NuBlkAu: Rakdos Shadow (BR)
 #24 pbarrrgh: Sultai Control (UBG)
 #25 eclipse4343: Azorius Control (WU)
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_FreakNightmare_OopsAllSpells_WUBG()
+        public void Deck02_FreakNightmare_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",1),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -321,12 +321,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck22_daibloXSC_IzzetControl_UR()
+        public void Deck22_daibloXSC_JeskaiControl_WUR()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",21),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.WUR,
                 typeof(GenericControl),
                 null,
                 null

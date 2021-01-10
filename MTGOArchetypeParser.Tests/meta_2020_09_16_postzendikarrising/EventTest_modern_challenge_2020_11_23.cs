@@ -30,7 +30,7 @@ using System.Text;
 #19 nazart: Heliod Combo (WRG)
 #20 ACG88: Green Tron (G)
 #21 musasabi: Shadow Prowess (BR, Lurrus)
-#22 Filyoni: Heliod Combo (WG)
+#22 Filyoni: Heliod Combo (WRG)
 #23 MrRaeb: UBRG Control (UBRG)
 #24 FriskiFraska: Reclaimer Titan (WRG)
 #25 _Batutinha_: Reclaimer Titan (WUG)
@@ -321,12 +321,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck22_Filyoni_HeliodCombo_WG()
+        public void Deck22_Filyoni_HeliodCombo_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-23",21),
                 new PostZendikarRising(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WRG,
                 typeof(HeliodCombo),
                 null,
                 null

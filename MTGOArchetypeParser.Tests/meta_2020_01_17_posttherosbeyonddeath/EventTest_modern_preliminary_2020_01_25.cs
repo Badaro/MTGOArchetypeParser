@@ -13,15 +13,15 @@ using System.Text;
 #02 egadd2894: Amulet Titan (UG)
 #03 rohuty: Infect (UG)
 #04 Lord_Beerus: Azorius Control (WU)
-#05 Sonic_Smasher: Uroza (UG)
-#06 Tutuzinho: Bant Control (WUG)
+#05 Sonic_Smasher: Uroza (UBG)
+#06 Tutuzinho: WURG Control (WURG)
 #07 tangrams: Primeval Titan (UG)
-#08 Bugsy69: Dredge (BRG)
+#08 Bugsy69: Dredge (UBRG)
 #09 brunocaffaro: Eldrazi Tron (C)
 #10 Blitzlion27: Primeval Titan (UG)
-#11 Tyerube1618: Dice Factory Tron (C)
-#12 ImAFireHydrant: Dice Factory Tron (C)
-#13 maybenextime: Bant Control (WUG)
+#11 Tyerube1618: Dice Factory Tron (G)
+#12 ImAFireHydrant: Dice Factory Tron (G)
+#13 maybenextime: WURG Control (WURG)
 #14 swff: Bant Control (WUG)
 #15 brettploussard: Mono Red Prowess (R)
 #16 quinniac: Mono Red Prowess (R)
@@ -93,12 +93,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck05_SonicSmasher_Uroza_UG()
+        public void Deck05_SonicSmasher_Uroza_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-25",4),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(Uroza),
                 null,
                 null
@@ -106,12 +106,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck06_Tutuzinho_BantControl_WUG()
+        public void Deck06_Tutuzinho_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-25",5),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -132,12 +132,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck08_Bugsy69_Dredge_BRG()
+        public void Deck08_Bugsy69_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-25",7),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -171,12 +171,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck11_Tyerube1618_DiceFactoryTron_C()
+        public void Deck11_Tyerube1618_DiceFactoryTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-25",10),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(DiceFactoryTron),
                 null
@@ -184,12 +184,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck12_ImAFireHydrant_DiceFactoryTron_C()
+        public void Deck12_ImAFireHydrant_DiceFactoryTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-25",11),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(DiceFactoryTron),
                 null
@@ -197,12 +197,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck13_maybenextime_BantControl_WUG()
+        public void Deck13_maybenextime_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-25",12),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null

@@ -19,7 +19,7 @@ using System.Text;
 #08 v3sp_tv: Elementals (WUBRG)
 #09 kthanakit26: Izzet Prowess (UR)
 #10 ACG88: Bant Midrange (WUG)
-#11 Kazuga: Dredge (BRG)
+#11 Kazuga: Dredge (WBRG)
 #12 SebastianStueckl: Gruul Midrange (RG)
 */
 
@@ -158,12 +158,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_Kazuga_Dredge_BRG()
+        public void Deck11_Kazuga_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-12",10),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null

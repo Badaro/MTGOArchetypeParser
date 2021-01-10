@@ -16,15 +16,15 @@ using System.Text;
 #05 ZYURYO: Bant Control (WUG)
 #06 Asmodean1990: Jund Midrange (BRG)
 #07 PRGJJAR: Dredge (BRG)
-#08 CReactor: Eldrazi Tron (C)
+#08 CReactor: Eldrazi Tron (G)
 #09 NightKnight131: Devoted (WBG)
 #10 _IlNano_: Merfolk (UG)
 #11 MATTHEWFOULKES: Jund Shadow (BRG)
 #12 Fnoop: Inverter Combo (WUB)
 #13 offline: Thopter Urza (UB)
 #14 WuYuHsien: Bant Control (WUG)
-#15 ChillingLauge: Dredge (BRG)
-#16 Just_Roll: Eldrazi Tron (C)
+#15 ChillingLauge: Dredge (WUBRG)
+#16 Just_Roll: Eldrazi Tron (G)
 #17 _Shatun_: Mono Red Prowess (R)
 #18 Saviall: Green Tron (G)
 #19 MissTrigger: Neobrand (UG)
@@ -127,12 +127,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck08_CReactor_EldraziTron_C()
+        public void Deck08_CReactor_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-26",7),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -218,12 +218,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck15_ChillingLauge_Dredge_BRG()
+        public void Deck15_ChillingLauge_Dredge_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-26",14),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WUBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -231,12 +231,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck16_JustRoll_EldraziTron_C()
+        public void Deck16_JustRoll_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-26",15),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null

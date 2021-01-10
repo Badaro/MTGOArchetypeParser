@@ -13,9 +13,9 @@ using System.Text;
 #02 Genxim: Ad Nauseam (WUB)
 #03 KelMasterP: Gruul Midrange (RG)
 #04 phol: Amulet Titan (UG)
-#05 bigjc00: Amulet Titan (G)
+#05 bigjc00: Amulet Titan (UG)
 #06 offline: Amulet Titan (UG)
-#07 Bullwinkkle6705: Sultai Shadow (UBG)
+#07 Bullwinkkle6705: UBRG Shadow (UBRG)
 #08 Darkwonyx: Amulet Titan (UG)
 #09 Tiemuuu: Izzet Control (UR)
 #10 cloudthresher77: Eldrazi Tron (C)
@@ -24,8 +24,8 @@ using System.Text;
 #13 bntrusty14: Mardu Midrange (WBR)
 #14 angelsjeffrey: Mono Red Prowess (R)
 #15 Bayris: Jund Midrange (BRG)
-#16 HannoLee: Uroza (UG)
-#17 madechai: Thopter Urza (UB)
+#16 HannoLee: Uroza (URG)
+#17 madechai: Thopter Urza (UBG)
 #18 LordoftheLobsters: Uroza (UG)
 #19 AlabasterWolfie: Grinding Breach (UBR)
 #20 Jenara19: Amulet Titan (UG)
@@ -33,10 +33,10 @@ using System.Text;
 #22 Magic4everStoreShop6: Mono Red Prowess (R)
 #23 __matsugan: Neobrand (UG)
 #24 Twibs: Green Tron (G)
-#25 Chefen: Eldrazi Tron (C)
+#25 Chefen: Eldrazi Tron (G)
 #26 Fugate: Neobrand (UG)
 #27 cavedan: Niv To Light (WUBRG)
-#28 Chris_Concarnage: Eldrazi Tron (C)
+#28 Chris_Concarnage: Eldrazi Tron (G)
 #29 instantdeath929: Amulet Titan (UG)
 #30 shadow_PT: Neobrand (UG)
 #31 lsv: Thopter Urza (UB)
@@ -100,12 +100,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck05_bigjc00_AmuletTitan_G()
+        public void Deck05_bigjc00_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-16",4),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck07_Bullwinkkle6705_SultaiShadow_UBG()
+        public void Deck07_Bullwinkkle6705_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-16",6),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -243,12 +243,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck16_HannoLee_Uroza_UG()
+        public void Deck16_HannoLee_Uroza_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-16",15),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck17_madechai_ThopterUrza_UB()
+        public void Deck17_madechai_ThopterUrza_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-16",16),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UB,
+                ArchetypeColor.UBG,
                 typeof(ThopterCombo),
                 typeof(ThopterUrza),
                 null
@@ -360,12 +360,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck25_Chefen_EldraziTron_C()
+        public void Deck25_Chefen_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-16",24),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -399,12 +399,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck28_ChrisConcarnage_EldraziTron_C()
+        public void Deck28_ChrisConcarnage_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-16",27),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null

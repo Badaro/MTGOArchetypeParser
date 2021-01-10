@@ -12,9 +12,9 @@ using System.Text;
 #01 Phill_Hellmuth: Primeval Titan (UG)
 #02 WorstNewbEver: Yawgmoth (BG)
 #03 bobthedog: Kethis Combo (WUBG)
-#04 SoulStrong: Sultai Shadow (UBG)
+#04 SoulStrong: UBRG Shadow (UBRG)
 #05 Tycko_D: Mono Red Prowess (R)
-#06 Joey_Wheeler: Eldrazi Tron (C)
+#06 Joey_Wheeler: Eldrazi Tron (G)
 #07 __BMJ__: Urza Oko (UBG)
 #08 Astrandberg: Grixis Shadow (UBR)
 */
@@ -63,12 +63,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck04_SoulStrong_SultaiShadow_UBG()
+        public void Deck04_SoulStrong_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-27",3),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -89,12 +89,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck06_JoeyWheeler_EldraziTron_C()
+        public void Deck06_JoeyWheeler_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-27",5),
                 new LastOkoDays(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null

@@ -11,10 +11,10 @@ using System.Text;
 /*
 #01 Toastxp: Amulet Titan (UG)
 #02 Nammersquats: Titan Shift (RG)
-#03 billsive: Dice Factory Tron (C)
+#03 billsive: Dice Factory Tron (G)
 #04 SoulStrong: Yawgmoth (BG)
 #05 xfile: Mono Red Prowess (R)
-#06 karatedom: Devoted (WG)
+#06 karatedom: Devoted (WBG)
 #07 SourceOdin: Titan Shift (BG)
 #08 g0ldmanzachs: Thopter Urza (UBR)
 #09 sten626: Dredge (BRG)
@@ -23,7 +23,7 @@ using System.Text;
 #12 Erik157751: Crabvine (UBG)
 #13 i_b_TRUE: Titan Shift (RG)
 #14 fooswashere: Jund Midrange (BRG)
-#15 rileydk: Amulet Titan (G)
+#15 rileydk: Amulet Titan (UG)
 #16 Xwhale: Gruul Midrange (RG)
 #17 TheTunnelingCat: Eldrazi Tron (C)
 #18 zMagic4ever: Mono Red Prowess (R)
@@ -60,12 +60,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck03_billsive_DiceFactoryTron_C()
+        public void Deck03_billsive_DiceFactoryTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-18",2),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(DiceFactoryTron),
                 null
@@ -99,12 +99,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck06_karatedom_Devoted_WG()
+        public void Deck06_karatedom_Devoted_WBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-18",5),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WBG,
                 typeof(Devoted),
                 null,
                 null
@@ -216,12 +216,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck15_rileydk_AmuletTitan_G()
+        public void Deck15_rileydk_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-18",14),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

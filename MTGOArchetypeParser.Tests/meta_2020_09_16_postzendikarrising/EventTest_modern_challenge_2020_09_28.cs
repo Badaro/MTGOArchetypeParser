@@ -25,7 +25,7 @@ using System.Text;
 #14 audio336: Shadow Prowess (BRG, Lurrus)
 #15 Mateusf34: Eldrazi Tron (C)
 #16 Jenara19: UBRG Control (UBRG)
-#17 Lord_of_Puntlantis: Electro Balance (UR)
+#17 Lord_of_Puntlantis: Electro Balance (URG)
 #18 Jositoshekel: Burn (WR, Lurrus)
 #19 Polikasoll: Izzet Prowess (UR)
 #20 GideonRavensword: Dredge (BRG)
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck17_LordofPuntlantis_ElectroBalance_UR()
+        public void Deck17_LordofPuntlantis_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-28",16),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

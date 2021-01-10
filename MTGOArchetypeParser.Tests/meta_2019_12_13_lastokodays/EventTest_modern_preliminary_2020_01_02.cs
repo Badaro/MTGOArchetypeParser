@@ -13,8 +13,8 @@ using System.Text;
 #02 harukispecial: Jeskai Control (WUR)
 #03 rarehunter13: Bant Midrange (WUG)
 #04 shadow_PT: Burn (R)
-#05 MentalMisstep: Urza Oko (UG)
-#06 Numena_Lowallyn: Eldrazi Tron (C)
+#05 MentalMisstep: Urza Oko (UBG)
+#06 Numena_Lowallyn: Eldrazi Tron (G)
 #07 McWinSauce: Bant Control (WUG)
 #08 helvetti: Primeval Titan (WG)
 #09 FREEROLLIN: Urza Oko (UBG)
@@ -27,9 +27,9 @@ using System.Text;
 #16 ZYURYO: WURG Control (WURG)
 #17 JustBurn420: Slivers (WUBRG)
 #18 nano_indentertion: Mill (UBG)
-#19 SoulStrong: Urza Oko (UG)
-#20 darkpoetbill: Sultai Shadow (UBG)
-#21 Albimtg: Sultai Shadow (UBG)
+#19 SoulStrong: Urza Oko (UBG)
+#20 darkpoetbill: UBRG Shadow (UBRG)
+#21 Albimtg: UBRG Shadow (UBRG)
 #22 lwdgg: Primeval Titan (UG)
 */
 
@@ -90,12 +90,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck05_MentalMisstep_UrzaOko_UG()
+        public void Deck05_MentalMisstep_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-02",4),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -103,12 +103,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck06_NumenaLowallyn_EldraziTron_C()
+        public void Deck06_NumenaLowallyn_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-02",5),
                 new LastOkoDays(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -272,12 +272,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck19_SoulStrong_UrzaOko_UG()
+        public void Deck19_SoulStrong_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-02",18),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -285,12 +285,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck20_darkpoetbill_SultaiShadow_UBG()
+        public void Deck20_darkpoetbill_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-02",19),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -298,12 +298,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck21_Albimtg_SultaiShadow_UBG()
+        public void Deck21_Albimtg_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-02",20),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

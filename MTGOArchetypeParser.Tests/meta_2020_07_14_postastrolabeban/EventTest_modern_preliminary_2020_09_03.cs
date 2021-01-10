@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 bigjc00: Amulet Titan (RG)
+#01 bigjc00: Amulet Titan (URG)
 #02 bmac668: Burn (WR)
 #03 nick4567: Sultai Control (UBG)
 #04 fingers1991: Boros Prowess (WR, Lurrus)
@@ -35,12 +35,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_09_03 : EventTest
     {
         [Test]
-        public void Deck01_bigjc00_AmuletTitan_RG()
+        public void Deck01_bigjc00_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-03",0),
                 new PostAstrolabeBan(),
-                ArchetypeColor.RG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

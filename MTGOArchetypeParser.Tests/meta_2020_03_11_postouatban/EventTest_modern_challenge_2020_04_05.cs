@@ -16,20 +16,20 @@ using System.Text;
 #05 sparr0t: Humans (WUBRG)
 #06 Capin_ahab: Thopter Urza (WUR)
 #07 Laplasjan: Gruul Midrange (RG)
-#08 Patxi: Uroza (UG)
+#08 Patxi: Uroza (URG)
 #09 lucadaky: Gruul Midrange (RG)
 #10 _goblinlackey: Bushwhacker Zoo (WRG)
 #11 HappySandwich: Gruul Midrange (RG)
 #12 FestiFan: Bant Control (WUG)
-#13 Manacymbal: Sultai Control (UBG)
+#13 Manacymbal: UBRG Control (UBRG)
 #14 Misplacedginger: Bant Control (WUG)
 #15 TradewindRider: Bant Control (WUG)
-#16 Kuhb: Grinding Breach (WUR)
+#16 Kuhb: Grinding Breach (WURG)
 #17 Sodeq: Dredge (BRG)
 #18 PhantasmalBear: Scapeshift (URG)
 #19 Bucknasty691989: Living End (BRG)
 #20 Davede: UBRG Shadow (UBRG)
-#21 SunofNothing: Uroza (UG)
+#21 SunofNothing: Uroza (URG)
 #22 Fnoop: Infect (UG)
 #23 Montre82: Humans (WUBRG)
 #24 EddDeedoo: Orzhov Midrange (WB)
@@ -139,12 +139,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck08_Patxi_Uroza_UG()
+        public void Deck08_Patxi_Uroza_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-05",7),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -204,12 +204,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck13_Manacymbal_SultaiControl_UBG()
+        public void Deck13_Manacymbal_UBRGControl_UBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-05",12),
                 new PostOuatBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericControl),
                 null,
                 null
@@ -243,12 +243,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck16_Kuhb_GrindingBreach_WUR()
+        public void Deck16_Kuhb_GrindingBreach_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-05",15),
                 new PostOuatBan(),
-                ArchetypeColor.WUR,
+                ArchetypeColor.WURG,
                 typeof(GrindingBreach),
                 null,
                 null
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck21_SunofNothing_Uroza_UG()
+        public void Deck21_SunofNothing_Uroza_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-05",20),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null

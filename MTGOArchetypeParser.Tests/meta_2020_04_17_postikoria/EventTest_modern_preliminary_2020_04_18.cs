@@ -9,16 +9,16 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Atticuslol: Amulet Titan (RG)
+#01 Atticuslol: Amulet Titan (URG)
 #02 AshawXL: Burn (WR)
 #03 _Antoniou_: Orzhov Shadow (WB)
 #04 sydneydude: Naya Midrange (WRG)
 #05 audio336: Bant Control (WUG)
 #06 JustBurn420: Slivers (WUBRG)
 #07 joetru: Niv To Light (WUBRG, Jegantha)
-#08 dejoyjoe: Uroza (UG)
-#09 Aluren85: Dredge (BRG)
-#10 Capitano_CL: Dredge (BRG)
+#08 dejoyjoe: Uroza (URG)
+#09 Aluren85: Dredge (UBRG)
+#10 Capitano_CL: Dredge (UBRG)
 #11 AlerionONE: Niv To Light (WUBRG)
 #12 PRGJJAR: Dredge (BRG)
 #13 coert: Burn (WR)
@@ -38,12 +38,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
     public class EventTest_modern_preliminary_2020_04_18 : EventTest
     {
         [Test]
-        public void Deck01_Atticuslol_AmuletTitan_RG()
+        public void Deck01_Atticuslol_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-18",0),
                 new PostIkoria(),
-                ArchetypeColor.RG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -129,12 +129,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck08_dejoyjoe_Uroza_UG()
+        public void Deck08_dejoyjoe_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-18",7),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -142,12 +142,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck09_Aluren85_Dredge_BRG()
+        public void Deck09_Aluren85_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-18",8),
                 new PostIkoria(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -155,12 +155,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck10_CapitanoCL_Dredge_BRG()
+        public void Deck10_CapitanoCL_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-18",9),
                 new PostIkoria(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null

@@ -20,7 +20,7 @@ using System.Text;
 #09 HouseOfManaMTG: Amulet Titan (G)
 #10 tagosaku: Burn (WR)
 #11 coert: Heliod Combo (WG)
-#12 medvedev: Mono White Taxes (W)
+#12 medvedev: Selesnya Taxes (WG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -171,12 +171,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_medvedev_MonoWhiteTaxes_W()
+        public void Deck12_medvedev_SelesnyaTaxes_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-23",11),
                 new PostZendikarRising(),
-                ArchetypeColor.W,
+                ArchetypeColor.WG,
                 typeof(GenericTaxes),
                 null,
                 null

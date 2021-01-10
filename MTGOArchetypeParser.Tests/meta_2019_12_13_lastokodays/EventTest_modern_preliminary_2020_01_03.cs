@@ -12,18 +12,18 @@ using System.Text;
 #01 McWinSauce: Bant Control (WUG)
 #02 Sodeq: Dredge (BRG)
 #03 Vidandric: Dredge (BRG)
-#04 MaLiam: Sultai Shadow (UBG)
+#04 MaLiam: UBRG Shadow (UBRG)
 #05 Dazai: Bant Midrange (WUG)
 #06 SoulStrong: Urza Oko (UG)
 #07 Nammersquats: Bant Midrange (WUG)
 #08 OptionParalysis: Humans (WUBRG)
 #09 _Batutinha_: Primeval Titan (UG)
 #10 xfile: Primeval Titan (G)
-#11 Toastxp: Urza Oko (UG)
+#11 Toastxp: Urza Oko (WUG)
 #12 Gobo2009: Orzhov Midrange (WB)
 #13 JustBurn420: Slivers (WUBRG)
 #14 BigHuman: Burn (WR)
-#15 pegajusus: Urza Oko (UG)
+#15 pegajusus: Urza Oko (WUG)
 #16 Pistone11: Gifts Storm (UR)
 */
 
@@ -71,12 +71,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck04_MaLiam_SultaiShadow_UBG()
+        public void Deck04_MaLiam_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-03",3),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -162,12 +162,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck11_Toastxp_UrzaOko_UG()
+        public void Deck11_Toastxp_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-03",10),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -214,12 +214,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck15_pegajusus_UrzaOko_UG()
+        public void Deck15_pegajusus_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-03",14),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null

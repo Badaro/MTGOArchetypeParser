@@ -16,10 +16,10 @@ using System.Text;
 #05 SebastianStueckl: Dredge (BRG)
 #06 hoveydw: Jund Shadow (BRG)
 #07 gazmon48: Gruul Midrange (RG)
-#08 Magicofplayer1: Dredge (BRG)
+#08 Magicofplayer1: Dredge (WBRG)
 #09 CarlSwaggin: Gruul Midrange (RG)
 #10 Numena_Lowallyn: Scapeshift (URG)
-#11 Lord_of_Puntlantis: Electro Balance (UR)
+#11 Lord_of_Puntlantis: Electro Balance (URG)
 #12 Kuhb: Gifts Storm (UR)
 #13 Edel: Jund Midrange (BRG)
 #14 lsv: Azorius Control (WU)
@@ -38,7 +38,7 @@ using System.Text;
 #27 bbq42069dude: Izzet Prowess (UR)
 #28 CrusherBotBG: Hammer Time (W)
 #29 Jok87: Izzet Control (UR)
-#30 toondoslav: Dredge (BRG)
+#30 toondoslav: Dredge (WBRG)
 #31 indianpancake: Azorius Control (WU)
 #32 sultai4lyfe: Dimir Control (UB)
 */
@@ -139,12 +139,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_Magicofplayer1_Dredge_BRG()
+        public void Deck08_Magicofplayer1_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",7),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -178,12 +178,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_LordofPuntlantis_ElectroBalance_UR()
+        public void Deck11_LordofPuntlantis_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",10),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null
@@ -425,12 +425,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_toondoslav_Dredge_BRG()
+        public void Deck30_toondoslav_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",29),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null

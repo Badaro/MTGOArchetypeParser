@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 Vidandric: Dredge (BRG)
-#02 yamakiller: Eldrazi Tron (C)
+#02 yamakiller: Eldrazi Tron (G)
 #03 JustBurn420: Slivers (WUBRG)
 #04 stonepeanut: Crabvine (UBG)
 #05 rusty_gates: Jund Midrange (BRG)
@@ -42,12 +42,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_yamakiller_EldraziTron_C()
+        public void Deck02_yamakiller_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-14",1),
                 new LastOkoDays(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null

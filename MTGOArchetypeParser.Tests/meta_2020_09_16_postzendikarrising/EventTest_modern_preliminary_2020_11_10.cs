@@ -18,11 +18,11 @@ using System.Text;
 #07 mmapson125: Heliod Combo (WG)
 #08 Gerardo94: WURG Control (WURG)
 #09 Splogy: Pyro Prison (R)
-#10 SanPop: Oops All Spells (WUBG)
+#10 SanPop: Oops All Spells (WUBRG)
 #11 MastaHorus: Electro End (UR)
 #12 Lukas261997: Shadow Prowess (UBR, Lurrus)
 #13 braingoat: Shadow Prowess (BRG, Lurrus)
-#14 Redgy819: Oops All Spells (WUBG)
+#14 Redgy819: Oops All Spells (WUBRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -147,12 +147,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_SanPop_OopsAllSpells_WUBG()
+        public void Deck10_SanPop_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-10",9),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -199,12 +199,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_Redgy819_OopsAllSpells_WUBG()
+        public void Deck14_Redgy819_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-10",13),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

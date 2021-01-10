@@ -14,15 +14,15 @@ using System.Text;
 #03 sandydogmtg: Burn (R)
 #04 Brunister: Eldrazi Tron (C)
 #05 GodlikeNg: Mono Red Prowess (R)
-#06 SourceOdin: Urza Oko (UG)
+#06 SourceOdin: Urza Oko (WUG)
 #07 Broniak: Titan Shift (RG)
 #08 Bayesta_93: Urza Oko (UG)
 #09 im2g00t4ubarn: Primeval Titan (UG)
 #10 u_mad_bro: Bant Control (WUG)
-#11 xXLogosXx: Green Devotion (G)
-#12 rage_hs: Eldrazi Tron (C)
+#11 xXLogosXx: Green Devotion (RG)
+#12 rage_hs: Eldrazi Tron (R)
 #13 chaba_lol: Crabvine (UBG)
-#14 Elias: Urza Oko (UG)
+#14 Elias: Urza Oko (UBG)
 #15 ThomasH: Green Tron (G)
 #16 _goblinlackey: Primeval Titan (UG)
 #17 Ajani89: Amulet Titan (RG)
@@ -36,7 +36,7 @@ using System.Text;
 #25 CharlesBukowski: Amulet Titan (WUG)
 #26 AKA_SHIN: Eldrazi Tron (C)
 #27 pepeisra: Urza Oko (UG)
-#28 Graciasportanto: Urza Oko (UG)
+#28 Graciasportanto: Urza Oko (UBG)
 #29 Griselpuff: Eldrazi Tron (G)
 #30 tagosaku: Burn (WR)
 #31 _IlNano_: Humans (WUBRG)
@@ -113,12 +113,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck06_SourceOdin_UrzaOko_UG()
+        public void Deck06_SourceOdin_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-mocs-2019-12-29",5),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -178,12 +178,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck11_xXLogosXx_GreenDevotion_G()
+        public void Deck11_xXLogosXx_GreenDevotion_RG()
         {
             Test(
                 GetDeck("modern-mocs-2019-12-29",10),
                 new LastOkoDays(),
-                ArchetypeColor.G,
+                ArchetypeColor.RG,
                 typeof(GreenDevotion),
                 null,
                 null
@@ -191,12 +191,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck12_ragehs_EldraziTron_C()
+        public void Deck12_ragehs_EldraziTron_R()
         {
             Test(
                 GetDeck("modern-mocs-2019-12-29",11),
                 new LastOkoDays(),
-                ArchetypeColor.C,
+                ArchetypeColor.R,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck14_Elias_UrzaOko_UG()
+        public void Deck14_Elias_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-mocs-2019-12-29",13),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -399,12 +399,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck28_Graciasportanto_UrzaOko_UG()
+        public void Deck28_Graciasportanto_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-mocs-2019-12-29",27),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(UrzaOko),
                 null,
                 null

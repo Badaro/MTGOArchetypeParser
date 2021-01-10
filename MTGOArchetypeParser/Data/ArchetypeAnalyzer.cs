@@ -106,11 +106,11 @@ namespace MTGOArchetypeParser.Data
             }
 
             string finalColor = String.Empty;
-            if (colorsInLands['W'] > 1 && colorsInNonLands['W'] > 1) finalColor += "W";
-            if (colorsInLands['U'] > 1 && colorsInNonLands['U'] > 1) finalColor += "U";
-            if (colorsInLands['B'] > 1 && colorsInNonLands['B'] > 1) finalColor += "B";
-            if (colorsInLands['R'] > 1 && colorsInNonLands['R'] > 1) finalColor += "R";
-            if (colorsInLands['G'] > 1 && colorsInNonLands['G'] > 1) finalColor += "G";
+            if (colorsInLands['W'] > 0 && colorsInNonLands['W'] > 0) finalColor += "W";
+            if (colorsInLands['U'] > 0 && colorsInNonLands['U'] > 0) finalColor += "U";
+            if (colorsInLands['B'] > 0 && colorsInNonLands['B'] > 0) finalColor += "B";
+            if (colorsInLands['R'] > 0 && colorsInNonLands['R'] > 0) finalColor += "R";
+            if (colorsInLands['G'] > 0 && colorsInNonLands['G'] > 0) finalColor += "G";
 
             return finalColor.Length > 0 ? (ArchetypeColor)Enum.Parse(typeof(ArchetypeColor), finalColor) : ArchetypeColor.C; ;
         }

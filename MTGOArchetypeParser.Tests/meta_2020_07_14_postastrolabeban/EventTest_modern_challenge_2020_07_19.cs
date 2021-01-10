@@ -34,7 +34,7 @@ using System.Text;
 #23 MrRaeb: Sultai Control (UBG)
 #24 kthanakit26: Burn (WR)
 #25 crazybaloth: Mono White Taxes (W)
-#26 MasterA: Goblins (BR)
+#26 MasterA: Goblins (BRG)
 #27 Vonducky: Boros Prowess (WR)
 #28 azatoyellow: Mono Red Prowess (R, Jegantha)
 #29 bobjackson: Green Tron (G)
@@ -373,12 +373,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck26_MasterA_Goblins_BR()
+        public void Deck26_MasterA_Goblins_BRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-19",25),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BR,
+                ArchetypeColor.BRG,
                 typeof(Goblins),
                 null,
                 null

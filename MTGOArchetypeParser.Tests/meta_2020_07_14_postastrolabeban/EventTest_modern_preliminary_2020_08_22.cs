@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 ImmanuelKantrolGod: Bant Control (WUG)
-#02 McWinSauce: Bant Control (WUG)
+#02 McWinSauce: WURG Control (WURG)
 #03 otakkun: Green Tron (G)
 #04 aManatease: Izzet Prowess (UR)
 #05 CrusherBotBG: Hammer Time (W)
@@ -39,12 +39,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_McWinSauce_BantControl_WUG()
+        public void Deck02_McWinSauce_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-22",1),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null

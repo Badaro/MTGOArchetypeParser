@@ -31,7 +31,7 @@ using System.Text;
 #20 haubidtran: Kinnan Legends (WUG, Yorion)
 #21 GGbizz: Ad Nauseam (WUB)
 #22 signblindman: Gruul Midrange (RG, Obosh)
-#23 AnneLivleysD3ath: Amulet Titan (G)
+#23 AnneLivleysD3ath: Amulet Titan (UG)
 #24 hugo87: Gifts Storm (UR)
 #25 ArturRizzotti: Uroza (URG, Yorion)
 #26 TrollingSaruman: Devoted (WG, Lurrus)
@@ -334,12 +334,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck23_AnneLivleysD3ath_AmuletTitan_G()
+        public void Deck23_AnneLivleysD3ath_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-03",22),
                 new PostIkoria(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

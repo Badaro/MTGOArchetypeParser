@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Cherryxman: Dice Factory Tron (C)
+#01 Cherryxman: Dice Factory Tron (G)
 #02 GYBA: Jund Midrange (BRG)
 #03 ProTourFreddie: Mono Red Prowess (R)
 #04 cftsoc3: Bant Blink (WUG)
 #05 fradev1988: Electro Balance (UR)
-#06 Lucabireskusku: Uroza (UG)
+#06 Lucabireskusku: Uroza (URG)
 #07 Searzist: Mono Red Prowess (R)
 #08 Strondons: Titan Shift (RG)
-#09 McWinSauce: Bant Control (WUG)
+#09 McWinSauce: WURG Control (WURG)
 #10 MATTHEWFOULKES: Mono Red Prowess (R)
 #11 helvetti: Izzet Control (UR)
 #12 Lilguy1991: Grixis Shadow (UBR)
@@ -28,12 +28,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
     public class EventTest_modern_preliminary_2020_01_30 : EventTest
     {
         [Test]
-        public void Deck01_Cherryxman_DiceFactoryTron_C()
+        public void Deck01_Cherryxman_DiceFactoryTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-30",0),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(DiceFactoryTron),
                 null
@@ -93,12 +93,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck06_Lucabireskusku_Uroza_UG()
+        public void Deck06_Lucabireskusku_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-30",5),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -132,12 +132,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck09_McWinSauce_BantControl_WUG()
+        public void Deck09_McWinSauce_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-30",8),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null

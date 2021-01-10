@@ -26,9 +26,9 @@ using System.Text;
 #15 Nekonii: Elves (BG)
 #16 Delthar: Mill (UB)
 #17 Nikachu: Merfolk (UG)
-#18 Erik157751: Dredge (BRG)
+#18 Erik157751: Dredge (UBRG)
 #19 medvedev: Amulet Titan (RG)
-#20 calheiros: Amulet Titan (G)
+#20 calheiros: Amulet Titan (UG)
 #21 Filyoni: Dredge (BRG)
 #22 McWinSauce: Bant Control (WUG)
 #23 Baku_91: Rakdos Prowess (BR, Lurrus)
@@ -269,12 +269,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck18_Erik157751_Dredge_BRG()
+        public void Deck18_Erik157751_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-07",17),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -295,12 +295,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_calheiros_AmuletTitan_G()
+        public void Deck20_calheiros_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-07",19),
                 new PostAstrolabeBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

@@ -12,14 +12,14 @@ using System.Text;
 #01 RNGspecialist: Niv To Light (WUBRG)
 #02 ThePainTrain9: Humans (WUBRG)
 #03 raisans: Thopter Urza (WUR)
-#04 RicardoMSLan: Green Tron (G)
-#05 DDMeelow: Uroza (UG)
+#04 RicardoMSLan: Green Tron (WG)
+#05 DDMeelow: Uroza (URG)
 #06 _kg: Gruul Midrange (RG)
-#07 MadMaxErnst: Uroza (UG)
+#07 MadMaxErnst: Uroza (URG)
 #08 ChillingLauge: Dredge (BRG)
 #09 _IlNano_: Humans (WUBRG)
 #10 3HaLeX1: Bogles (WG)
-#11 Capitano_CL: Dredge (BRG)
+#11 Capitano_CL: Dredge (UBRG)
 #12 muckymuck_dc5: Mono White Taxes (W)
 #13 wrenn_and_sixnine: Humans (WUBRG)
 #14 Brener: Thopter Urza (WUB)
@@ -27,7 +27,7 @@ using System.Text;
 #16 SoIMBA_Airwave: Green Eldrazi (RG)
 #17 Vasoi2323: Bant Control (WUG)
 #18 Coly2: Gruul Midrange (RG)
-#19 MartinezDP: Uroza (UG)
+#19 MartinezDP: Uroza (URG)
 #20 Aira-: Bant Control (WUG)
 #21 exoticherman: Infect (UG)
 #22 fgfonseca182: Heliod Combo (WG)
@@ -87,12 +87,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck04_RicardoMSLan_GreenTron_G()
+        public void Deck04_RicardoMSLan_GreenTron_WG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-07",3),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.WG,
                 typeof(Tron),
                 typeof(GreenTron),
                 null
@@ -100,12 +100,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck05_DDMeelow_Uroza_UG()
+        public void Deck05_DDMeelow_Uroza_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-07",4),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck07_MadMaxErnst_Uroza_UG()
+        public void Deck07_MadMaxErnst_Uroza_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-07",6),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -178,12 +178,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck11_CapitanoCL_Dredge_BRG()
+        public void Deck11_CapitanoCL_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-07",10),
                 new PostOuatBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -282,12 +282,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck19_MartinezDP_Uroza_UG()
+        public void Deck19_MartinezDP_Uroza_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-07",18),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null

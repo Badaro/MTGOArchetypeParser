@@ -26,7 +26,7 @@ using System.Text;
 #15 Curryvore: Jeskai Blink (WUR, Yorion)
 #16 predje: Gruul Midrange (RG)
 #17 SIMONEFIERRO: Burn (WR)
-#18 mac121711: Dredge (BRG)
+#18 mac121711: Dredge (WBRG)
 #19 MagicDevil666: Blue Tron (U)
 */
 
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck18_mac121711_Dredge_BRG()
+        public void Deck18_mac121711_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-18",17),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null

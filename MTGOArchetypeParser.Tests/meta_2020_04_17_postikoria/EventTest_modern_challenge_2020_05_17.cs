@@ -23,9 +23,9 @@ using System.Text;
 #12 MaxMagicer: Scapeshift (URG, Yorion)
 #13 LSMD: Boros Prowess (WR, Lurrus)
 #14 ecobaronen: Gruul Midrange (RG, Obosh)
-#15 pbarrrgh: Azorius Control (WU, Yorion)
+#15 pbarrrgh: Jeskai Control (WUR, Yorion)
 #16 joetru: Niv To Light (WUBRG, Jegantha)
-#17 Numena_Lowallyn: Scapeshift (URG, Yorion)
+#17 Numena_Lowallyn: Scapeshift (WUBRG, Yorion)
 #18 XxquestionablyawesomexX: Bogles (WG, Lurrus)
 #19 1yo2yo: Jund Midrange (BRG, Lurrus)
 #20 coert: Burn (WR, Lurrus)
@@ -39,8 +39,8 @@ using System.Text;
 #28 CharLy: Jund Midrange (BRG, Lurrus)
 #29 Sanchez5272: Green Tron (G)
 #30 VampireGodric: Sultai Control (UBG)
-#31 CordoTwin: Jund Shadow (BRG, Lurrus)
-#32 Biednarccio: Amulet Titan (UG)
+#31 CordoTwin: UBRG Shadow (UBRG, Lurrus)
+#32 Biednarccio: Amulet Titan (URG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
@@ -230,12 +230,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck15_pbarrrgh_AzoriusControl_WU_Yorion()
+        public void Deck15_pbarrrgh_JeskaiControl_WUR_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-17",14),
                 new PostIkoria(),
-                ArchetypeColor.WU,
+                ArchetypeColor.WUR,
                 typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck17_NumenaLowallyn_Scapeshift_URG_Yorion()
+        public void Deck17_NumenaLowallyn_Scapeshift_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-17",16),
                 new PostIkoria(),
-                ArchetypeColor.URG,
+                ArchetypeColor.WUBRG,
                 typeof(Scapeshift),
                 null,
                 ArchetypeCompanion.Yorion
@@ -438,12 +438,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck31_CordoTwin_JundShadow_BRG_Lurrus()
+        public void Deck31_CordoTwin_UBRGShadow_UBRG_Lurrus()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-17",30),
                 new PostIkoria(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 ArchetypeCompanion.Lurrus
@@ -451,12 +451,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck32_Biednarccio_AmuletTitan_UG()
+        public void Deck32_Biednarccio_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-17",31),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 hodortimebaby: Oops All Spells (WUBG)
+#01 hodortimebaby: Oops All Spells (WUBRG)
 #02 ACG88: Green Tron (G)
 #03 benchsummer: Shadow Prowess (BRG, Lurrus)
 #04 kanister: Sultai Control (UBG)
@@ -31,12 +31,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_11_17 : EventTest
     {
         [Test]
-        public void Deck01_hodortimebaby_OopsAllSpells_WUBG()
+        public void Deck01_hodortimebaby_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-17",0),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

@@ -13,14 +13,14 @@ using System.Text;
 #02 FestiFan: Uroza (URG, Yorion)
 #03 blackcat1922: Burn (WR, Lurrus)
 #04 sokos13: UBRG Control (UBRG, Lurrus)
-#05 LORiWWA: Amulet Titan (UG)
+#05 LORiWWA: Amulet Titan (URG)
 #06 Wisnia: Amulet Titan (URG)
 #07 Chefen: Gruul Midrange (RG, Obosh)
 #08 ZoeR: Burn (WR, Lurrus)
 #09 xfile: Bant Control (WUG, Yorion)
 #10 Neravius: Niv To Light (WUBRG, Jegantha)
 #11 Sodeq: Amulet Titan (URG)
-#12 SpiderSpace: Grinding Breach (URG, Lurrus)
+#12 SpiderSpace: Grinding Breach (WURG, Lurrus)
 #13 falcon160: Jund Midrange (BRG, Lurrus)
 #14 TSPJendrek: Dimir Control (UB, Lurrus)
 #15 lovealienzzz: Delver (UBR, Lurrus)
@@ -100,12 +100,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck05_LORiWWA_AmuletTitan_UG()
+        public void Deck05_LORiWWA_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-26",4),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -191,12 +191,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck12_SpiderSpace_GrindingBreach_URG_Lurrus()
+        public void Deck12_SpiderSpace_GrindingBreach_WURG_Lurrus()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-26",11),
                 new PostIkoria(),
-                ArchetypeColor.URG,
+                ArchetypeColor.WURG,
                 typeof(GrindingBreach),
                 null,
                 ArchetypeCompanion.Lurrus

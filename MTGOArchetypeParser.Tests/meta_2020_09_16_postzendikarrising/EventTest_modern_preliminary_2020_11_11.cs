@@ -14,14 +14,14 @@ using System.Text;
 #03 kiko: Azorius Taxes (WU, Yorion)
 #04 tzio: Orzhov Midrange (WB)
 #05 GrandDrou: Shadow Prowess (WBR, Lurrus)
-#06 Jack_Kashtan: Izzet Control (UR)
+#06 Jack_Kashtan: Jeskai Control (WUR)
 #07 TuralyonMap: Spirits (WU)
 #08 Violent_Outburst: WURG Control (WURG)
 #09 otakkun: WURG Control (WURG)
-#10 gyyby297: Oops All Spells (WUBG)
+#10 gyyby297: Oops All Spells (WUBRG)
 #11 Lucabireskusku: Izzet Control (UR)
-#12 AlpInco: Oops All Spells (WUBG)
-#13 SanPop: Oops All Spells (WUBG)
+#12 AlpInco: Oops All Spells (WUBRG)
+#13 SanPop: Oops All Spells (WUBRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -94,12 +94,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_JackKashtan_IzzetControl_UR()
+        public void Deck06_JackKashtan_JeskaiControl_WUR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-11",5),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.WUR,
                 typeof(GenericControl),
                 null,
                 null
@@ -146,12 +146,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_gyyby297_OopsAllSpells_WUBG()
+        public void Deck10_gyyby297_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-11",9),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -172,12 +172,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_AlpInco_OopsAllSpells_WUBG()
+        public void Deck12_AlpInco_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-11",11),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -185,12 +185,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_SanPop_OopsAllSpells_WUBG()
+        public void Deck13_SanPop_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-11",12),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

@@ -15,7 +15,7 @@ using System.Text;
 #04 medvedev: Mono Red Prowess (R)
 #05 infernflo: Bant Blink (WUG)
 #06 TSPJendrek: Azorius Control (WU)
-#07 Madvilla1ny: Sultai Shadow (UBG)
+#07 Madvilla1ny: UBRG Shadow (UBRG)
 #08 C_E.L: Heliod Combo (WBG)
 #09 lSoLlAKirA: Thopter Urza (UB)
 #10 _Shatun_: Mono Red Prowess (R)
@@ -23,7 +23,7 @@ using System.Text;
 #12 Duggie12: Mono Red Prowess (R)
 #13 tagosaku: Burn (WR)
 #14 Sam_Lewin: Skelementals (BR)
-#15 2radMTG: Green Devotion (G)
+#15 2radMTG: Green Devotion (RG)
 #16 Toastxp: Thopter Urza (UB)
 */
 
@@ -110,12 +110,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck07_Madvilla1ny_SultaiShadow_UBG()
+        public void Deck07_Madvilla1ny_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-19",6),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -214,12 +214,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck15_2radMTG_GreenDevotion_G()
+        public void Deck15_2radMTG_GreenDevotion_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-19",14),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.G,
+                ArchetypeColor.RG,
                 typeof(GreenDevotion),
                 null,
                 null

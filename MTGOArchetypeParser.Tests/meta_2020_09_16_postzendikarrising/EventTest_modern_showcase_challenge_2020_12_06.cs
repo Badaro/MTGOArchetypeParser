@@ -37,7 +37,7 @@ using System.Text;
 #26 bresett123: WURG Control (WURG)
 #27 PeanutBrittle: WURG Control (WURG)
 #28 NobodyKnowsImADog: Green Tron (G)
-#29 nickrelativity: Oops All Spells (WUBG)
+#29 nickrelativity: Oops All Spells (WUBRG)
 #30 coert: Heliod Combo (WG)
 #31 tzio: Orzhov Midrange (WB)
 #32 RespectTheCat: Rakdos Midrange (BR)
@@ -412,12 +412,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck29_nickrelativity_OopsAllSpells_WUBG()
+        public void Deck29_nickrelativity_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-12-06",28),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

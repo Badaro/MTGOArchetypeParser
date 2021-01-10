@@ -15,7 +15,7 @@ using System.Text;
 #04 ImmanuelKantrolGod: Bant Control (WUG)
 #05 BERNASTORRES: Bogles (WG, Lurrus)
 #06 Trid0n: Amulet Titan (UG)
-#07 Somefellow: Amulet Titan (RG)
+#07 Somefellow: Amulet Titan (URG)
 #08 Cherryxman: Naya Midrange (WRG)
 */
 
@@ -102,12 +102,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_Somefellow_AmuletTitan_RG()
+        public void Deck07_Somefellow_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-04",6),
                 new PostAstrolabeBan(),
-                ArchetypeColor.RG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

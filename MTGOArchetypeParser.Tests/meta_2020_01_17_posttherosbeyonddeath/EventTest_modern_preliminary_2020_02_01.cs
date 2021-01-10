@@ -14,7 +14,7 @@ using System.Text;
 #03 thepensword: Izzet Control (UR)
 #04 Mark_Confidant: Devoted (WBG)
 #05 penips: Orzhov Taxes (WB)
-#06 Swarm_OF_Mats: Bant Control (WUG)
+#06 Swarm_OF_Mats: WURG Control (WURG)
 #07 Wolvenjoe1984: Thopter Urza (UB)
 #08 quinniac: Ad Nauseam (WUB)
 #09 dasalmon: Jund Midrange (BRG)
@@ -22,9 +22,9 @@ using System.Text;
 #11 xakx47x: Heliod Combo (WBG)
 #12 Nammersquats: Mono Red Prowess (R)
 #13 brueck4: Izzet Control (UR)
-#14 MiamiKidz: Amulet Titan (G)
-#15 ItC-Dahoonya: Bant Control (WUG)
-#16 Sonic_Smasher: Uroza (UG)
+#14 MiamiKidz: Amulet Titan (UG)
+#15 ItC-Dahoonya: WURG Control (WURG)
+#16 Sonic_Smasher: Uroza (UBG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
@@ -97,12 +97,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck06_SwarmOFMats_BantControl_WUG()
+        public void Deck06_SwarmOFMats_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-01",5),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -201,12 +201,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck14_MiamiKidz_AmuletTitan_G()
+        public void Deck14_MiamiKidz_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-01",13),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -214,12 +214,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck15_ItCDahoonya_BantControl_WUG()
+        public void Deck15_ItCDahoonya_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-01",14),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -227,12 +227,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck16_SonicSmasher_Uroza_UG()
+        public void Deck16_SonicSmasher_Uroza_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-01",15),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(Uroza),
                 null,
                 null

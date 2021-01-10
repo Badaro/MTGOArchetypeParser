@@ -12,7 +12,7 @@ using System.Text;
 #01 rastaf: Gruul Midrange (RG)
 #02 hugofreitas1: Gifts Storm (UR)
 #03 Gernardi: Gruul Midrange (RG)
-#04 SunofNothing: Uroza (UG)
+#04 SunofNothing: Uroza (URG)
 #05 ianisrad: Infect (UG)
 #06 SENPAI_Peter: Bushwhacker Zoo (WRG)
 #07 dgreen16: Burn (WRG)
@@ -31,8 +31,8 @@ using System.Text;
 #20 Lord_Beerus: Burn (WR)
 #21 grinderA: Gruul Midrange (RG)
 #22 PhReSHTinGZ: Golgari Midrange (BG)
-#23 SixScry: Amulet Titan (G)
-#24 2Clo: Amulet Titan (G)
+#23 SixScry: Amulet Titan (UG)
+#24 2Clo: Amulet Titan (UG)
 #25 cool95: Elementals (WUBRG)
 #26 BReal2: Mardu Shadow (WBR)
 #27 herrelljp: Mono Red Prowess (R)
@@ -45,7 +45,7 @@ using System.Text;
 #34 instantdeath929: Amulet Titan (G)
 #35 KILLERNARWHAL: Bant Control (WUG)
 #36 over_9000: Titan Shift (RG)
-#37 red_lymphocyte: Infect (UG)
+#37 red_lymphocyte: Infect (WUG)
 #38 yamakiller: Gruul Midrange (RG)
 #39 Icteridae: Mono Red Prowess (R)
 #40 nahuel10: Burn (WR)
@@ -55,7 +55,7 @@ using System.Text;
 #44 TerminalJustice: Humans (WUBRG)
 #45 mccloudbro: Mono Red Prowess (R)
 #46 bwheezy: Jeskai Control (WUR)
-#47 Funnyman31399: Sultai Shadow (UBG)
+#47 Funnyman31399: UBRG Shadow (UBRG)
 #48 Bigmac1022: Jund Midrange (BRG)
 */
 
@@ -103,12 +103,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck04_SunofNothing_Uroza_UG()
+        public void Deck04_SunofNothing_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-07",3),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -350,12 +350,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck23_SixScry_AmuletTitan_G()
+        public void Deck23_SixScry_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-07",22),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -363,12 +363,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck24_2Clo_AmuletTitan_G()
+        public void Deck24_2Clo_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-07",23),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -532,12 +532,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck37_redlymphocyte_Infect_UG()
+        public void Deck37_redlymphocyte_Infect_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-07",36),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(Infect),
                 null,
                 null
@@ -662,12 +662,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck47_Funnyman31399_SultaiShadow_UBG()
+        public void Deck47_Funnyman31399_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-07",46),
                 new PostOuatBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

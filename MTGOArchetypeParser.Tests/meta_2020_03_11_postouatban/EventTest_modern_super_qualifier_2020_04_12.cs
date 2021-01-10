@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 coert: Burn (WR)
 #02 Do0mSwitch: Bant Control (WUG)
-#03 Toastxp: Uroza (UG)
+#03 Toastxp: Uroza (URG)
 #04 ack_s: Gruul Midrange (RG)
 #05 JV_7777: Dredge (BRG)
 #06 David1987: Niv To Light (WUBRG)
@@ -33,12 +33,12 @@ using System.Text;
 #22 Ivc: Bant Control (WUG)
 #23 Asoen: Rakdos Midrange (BR)
 #24 SickWorld: Burn (WR)
-#25 yxcvbnm: Uroza (UG)
-#26 ArchaeusDota: Eldrazi Tron (C)
+#25 yxcvbnm: Uroza (URG)
+#26 ArchaeusDota: Eldrazi Tron (R)
 #27 larkblue: Ad Nauseam (WUB)
 #28 eminemberry: Burn (WR)
 #29 Sodeq: Dredge (BRG)
-#30 Aluren85: Dredge (BRG)
+#30 Aluren85: Dredge (UBRG)
 #31 gottelicious: Green Tron (G)
 #32 ACG88: Humans (WUBRG)
 */
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck03_Toastxp_Uroza_UG()
+        public void Deck03_Toastxp_Uroza_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-12",2),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -360,12 +360,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck25_yxcvbnm_Uroza_UG()
+        public void Deck25_yxcvbnm_Uroza_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-12",24),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -373,12 +373,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck26_ArchaeusDota_EldraziTron_C()
+        public void Deck26_ArchaeusDota_EldraziTron_R()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-12",25),
                 new PostOuatBan(),
-                ArchetypeColor.C,
+                ArchetypeColor.R,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -425,12 +425,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck30_Aluren85_Dredge_BRG()
+        public void Deck30_Aluren85_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-12",29),
                 new PostOuatBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null

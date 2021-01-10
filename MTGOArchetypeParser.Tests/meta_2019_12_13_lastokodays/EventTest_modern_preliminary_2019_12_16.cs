@@ -16,15 +16,15 @@ using System.Text;
 #05 nahuel10: Burn (WR)
 #06 Nammersquats: Humans (WUBRG)
 #07 yamakiller: Eldrazi Tron (C)
-#08 SourceOdin: Urza Oko (UG)
+#08 SourceOdin: Urza Oko (WUG)
 #09 thugnificent32: Amulet Titan (UG)
 #10 quinniac: Burn (WRG)
 #11 rileydk: Amulet Titan (UG)
 #12 Theo_Jung: Eldrazi Tron (C)
-#13 koko_lopez: Sultai Shadow (UBG)
-#14 MLupa: Gifts Storm (UR)
-#15 SoulStrong: Sultai Shadow (UBG)
-#16 azax: Sultai Shadow (UBG)
+#13 koko_lopez: UBRG Shadow (UBRG)
+#14 MLupa: Gifts Storm (URG)
+#15 SoulStrong: UBRG Shadow (UBRG)
+#16 azax: UBRG Shadow (UBRG)
 #17 Xwhale: Eldrazi Tron (C)
 */
 
@@ -124,12 +124,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck08_SourceOdin_UrzaOko_UG()
+        public void Deck08_SourceOdin_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-16",7),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -189,12 +189,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck13_kokolopez_SultaiShadow_UBG()
+        public void Deck13_kokolopez_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-16",12),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -202,12 +202,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck14_MLupa_GiftsStorm_UR()
+        public void Deck14_MLupa_GiftsStorm_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-16",13),
                 new LastOkoDays(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(GiftsStorm),
                 null,
                 null
@@ -215,12 +215,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck15_SoulStrong_SultaiShadow_UBG()
+        public void Deck15_SoulStrong_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-16",14),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -228,12 +228,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck16_azax_SultaiShadow_UBG()
+        public void Deck16_azax_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-16",15),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

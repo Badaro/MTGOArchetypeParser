@@ -12,7 +12,7 @@ using System.Text;
 #01 Gung: UBRG Control (UBRG)
 #02 mashmalovsky: Ad Nauseam (WUB)
 #03 Tiemuuu: Izzet Control (UR)
-#04 gyyby297: Electro Balance (UR)
+#04 gyyby297: Electro Balance (URG)
 #05 VitBuk: Izzet Prowess (UR)
 #06 UmekawaneikU: Shadow Prowess (BRG, Lurrus)
 #07 Lavaridge: Dimir Control (UB)
@@ -64,12 +64,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_gyyby297_ElectroBalance_UR()
+        public void Deck04_gyyby297_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-21",3),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

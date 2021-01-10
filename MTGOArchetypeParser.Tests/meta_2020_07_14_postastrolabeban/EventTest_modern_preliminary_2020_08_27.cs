@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 edward40hands: Golgari Midrange (BG)
-#02 bigjc00: Amulet Titan (RG)
+#02 bigjc00: Amulet Titan (URG)
 #03 qbturtle15: Gruul Midrange (RG)
 #04 Secretaznman: Gruul Midrange (RG)
 #05 McWinSauce: Bant Control (WUG)
@@ -20,7 +20,7 @@ using System.Text;
 #09 karatedom: Rakdos Prowess (BR, Lurrus)
 #10 McleanYSUTF: Goblins (BR)
 #11 NHA37: Ad Nauseam (WUB)
-#12 juzam_gin: Dredge (BRG)
+#12 juzam_gin: Dredge (WBRG)
 #13 Slatorade: Bogles (WG, Lurrus)
 #14 SpikeYou: Jund Shadow (BRG)
 #15 Nammersquats: Obosh Aggro (R, Obosh)
@@ -48,12 +48,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_bigjc00_AmuletTitan_RG()
+        public void Deck02_bigjc00_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-27",1),
                 new PostAstrolabeBan(),
-                ArchetypeColor.RG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -178,12 +178,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_juzamgin_Dredge_BRG()
+        public void Deck12_juzamgin_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-27",11),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null

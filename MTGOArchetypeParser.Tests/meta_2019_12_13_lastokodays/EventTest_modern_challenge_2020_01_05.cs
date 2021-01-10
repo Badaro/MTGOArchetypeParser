@@ -16,7 +16,7 @@ using System.Text;
 #05 lan2_13: Niv To Light (WUBRG)
 #06 llawtonss: Urza Oko (UG)
 #07 rksgsn: Burn (R)
-#08 Samcaster-Mage: Eldrazi Tron (C)
+#08 Samcaster-Mage: Eldrazi Tron (G)
 #09 CraigMack378: Green Tron (G)
 #10 failbotover9000: Jund Midrange (BRG)
 #11 xfile: Eldrazi Tron (G)
@@ -25,8 +25,8 @@ using System.Text;
 #14 GodOfSlaughter: Bant Midrange (WUG)
 #15 VTCLA: Urza Oko (UG)
 #16 yPrincipe: Eldrazi Tron (C)
-#17 SoulStrong: Sultai Shadow (UBG)
-#18 NuBlkAu: Sultai Shadow (UBG)
+#17 SoulStrong: UBRG Shadow (UBRG)
+#18 NuBlkAu: UBRG Shadow (UBRG)
 #19 Andreas_Mueller: Urza Oko (UG)
 #20 JustBurn420: Slivers (WUBRG)
 #21 bradyoo: Urza Oko (UG)
@@ -139,12 +139,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck08_SamcasterMage_EldraziTron_C()
+        public void Deck08_SamcasterMage_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-05",7),
                 new LastOkoDays(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck17_SoulStrong_SultaiShadow_UBG()
+        public void Deck17_SoulStrong_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-05",16),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -269,12 +269,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck18_NuBlkAu_SultaiShadow_UBG()
+        public void Deck18_NuBlkAu_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-05",17),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

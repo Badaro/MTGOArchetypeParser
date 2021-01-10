@@ -28,7 +28,7 @@ using System.Text;
 #17 IntegralHDK: Goblins (BRG)
 #18 Delthar: Infect (BG)
 #19 SebastianStueckl: Simic Control (UG)
-#20 Lord_of_Puntlantis: Electro Balance (UR)
+#20 Lord_of_Puntlantis: Electro Balance (URG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -283,12 +283,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_LordofPuntlantis_ElectroBalance_UR()
+        public void Deck20_LordofPuntlantis_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-08",19),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

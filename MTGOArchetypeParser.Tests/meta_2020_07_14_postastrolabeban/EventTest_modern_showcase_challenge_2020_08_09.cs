@@ -38,7 +38,7 @@ using System.Text;
 #27 Danielstallone: Burn (WR)
 #28 Novaphantom: Eldrazi Tron (C)
 #29 GoblinK1ng: Goblins (BRG)
-#30 Capitano_CL: Dredge (BRG)
+#30 Capitano_CL: Dredge (WBRG)
 #31 AlabasterWolfie: Goblins (BR)
 #32 Kuhb: Izzet Prowess (UR)
 */
@@ -425,12 +425,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_CapitanoCL_Dredge_BRG()
+        public void Deck30_CapitanoCL_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-08-09",29),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null

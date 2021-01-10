@@ -16,7 +16,7 @@ using System.Text;
 #05 TennTyou: Niv To Light (WUBRG, Jegantha)
 #06 GideonRavensword: Bogles (WUG, Lurrus)
 #07 TSPJendrek: Azorius Control (WU, Yorion)
-#08 Toastxp: Rakdos Prowess (BR, Lurrus)
+#08 Toastxp: Mardu Prowess (WBR, Lurrus)
 #09 joker10289: Mardu Prowess (WBR, Lurrus)
 #10 zecarlonxo: Hardened Scales (BG, Lurrus)
 #11 Laplasjan: Devoted (WG, Lurrus)
@@ -118,12 +118,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck08_Toastxp_RakdosProwess_BR_Lurrus()
+        public void Deck08_Toastxp_MarduProwess_WBR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-23",7),
                 new PostIkoria(),
-                ArchetypeColor.BR,
+                ArchetypeColor.WBR,
                 typeof(GenericProwess),
                 null,
                 ArchetypeCompanion.Lurrus

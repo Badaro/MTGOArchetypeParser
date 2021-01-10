@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Sodeq: Dredge (BRG)
+#01 Sodeq: Dredge (WBRG)
 #02 musasabi: Smallpox (WB)
 #03 Nikachu: Merfolk (UG)
 #04 grinderA: Amulet Titan (UG)
@@ -18,7 +18,7 @@ using System.Text;
 #07 rileydk: Amulet Titan (UG)
 #08 offline: Thopter Urza (UB)
 #09 elvin7: Mono Red Prowess (R)
-#10 GGoggles: Eldrazi Tron (C)
+#10 GGoggles: Eldrazi Tron (G)
 #11 WeareVenom: Azorius Control (WU)
 #12 Stackz: Primeval Titan (WG)
 #13 Shadowz2005: UBRG Shadow (UBRG)
@@ -32,7 +32,7 @@ using System.Text;
 #21 fling5133: Sultai Control (UBG)
 #22 Blitzlion27: Mill (UB)
 #23 katuo079595: Mono Red Prowess (R)
-#24 Samcaster-Mage: Eldrazi Tron (C)
+#24 Samcaster-Mage: Eldrazi Tron (G)
 #25 VTCLA: Jund Shadow (BRG)
 #26 palk52: Burn (WR)
 #27 zecarlonxo: Mono Red Prowess (R)
@@ -48,12 +48,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
     public class EventTest_modern_challenge_2020_02_23 : EventTest
     {
         [Test]
-        public void Deck01_Sodeq_Dredge_BRG()
+        public void Deck01_Sodeq_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-23",0),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -165,12 +165,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck10_GGoggles_EldraziTron_C()
+        public void Deck10_GGoggles_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-23",9),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -347,12 +347,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck24_SamcasterMage_EldraziTron_C()
+        public void Deck24_SamcasterMage_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-23",23),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null

@@ -13,14 +13,14 @@ using System.Text;
 #02 Ravul: Eldrazi Tron (C)
 #03 Mcleskey: Izzet Prowess (UR)
 #04 Phill_Hellmuth: Shadow Prowess (WBR, Lurrus)
-#05 pokerswizard: Green Tron (G)
+#05 pokerswizard: Green Tron (RG)
 #06 xfile: Mono White Taxes (W)
 #07 QuaCk QuaCk: Scapeshift (URG)
 #08 DrDree: Gruul Midrange (RG)
 #09 Alrawn: Shadow Prowess (BR, Lurrus)
 #10 _Stream: Jund Prowess (BRG, Lurrus)
 #11 bgv1989: Ad Nauseam (WUB)
-#12 SpiderSpace: Electro Balance (UR)
+#12 SpiderSpace: Electro Balance (URG)
 #13 tzio: Orzhov Midrange (WB)
 #14 ice_nine_: Land Destruction (WR)
 #15 mmapson125: WURG Control (WURG)
@@ -86,12 +86,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_pokerswizard_GreenTron_G()
+        public void Deck05_pokerswizard_GreenTron_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-05",4),
                 new PostZendikarRising(),
-                ArchetypeColor.G,
+                ArchetypeColor.RG,
                 typeof(Tron),
                 typeof(GreenTron),
                 null
@@ -177,12 +177,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_SpiderSpace_ElectroBalance_UR()
+        public void Deck12_SpiderSpace_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-05",11),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

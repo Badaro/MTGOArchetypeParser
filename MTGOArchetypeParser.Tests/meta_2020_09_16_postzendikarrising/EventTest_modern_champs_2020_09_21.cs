@@ -24,7 +24,7 @@ using System.Text;
 #13 Alucart: Jund Midrange (BRG)
 #14 SebastianStueckl: Gruul Midrange (RG)
 #15 Xwhale: Humans (WUBRG)
-#16 ThekingFor1000years: Infect (UG)
+#16 ThekingFor1000years: Infect (WUG)
 #17 Kricha13: WURG Control (WURG)
 #18 Oderus Urungus: Humans (WUBRG)
 #19 ghostx02: Gruul Midrange (RG)
@@ -243,12 +243,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_ThekingFor1000years_Infect_UG()
+        public void Deck16_ThekingFor1000years_Infect_WUG()
         {
             Test(
                 GetDeck("modern-champs-2020-09-21",15),
                 new PostZendikarRising(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(Infect),
                 null,
                 null

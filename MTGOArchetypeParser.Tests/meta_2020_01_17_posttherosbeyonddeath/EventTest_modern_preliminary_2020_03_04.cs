@@ -10,28 +10,28 @@ using System.Text;
 
 /*
 #01 kanister: Amulet Titan (G)
-#02 Wurst_: Bant Control (WUG)
-#03 C_E.L: Eldrazi Tron (C)
+#02 Wurst_: WURG Control (WURG)
+#03 C_E.L: Eldrazi Tron (G)
 #04 Dazai: Azorius Control (WU)
-#05 Kagami_Mashiro_: Eldrazi Tron (C)
+#05 Kagami_Mashiro_: Eldrazi Tron (G)
 #06 Patxi: Primeval Titan (BG)
 #07 myst_teachings: Thopter Urza (UB)
 #08 Tyerube1618: Gifts Storm (UR)
-#09 lighdar: Eldrazi Tron (C)
+#09 lighdar: Eldrazi Tron (G)
 #10 Saviall: Green Tron (G)
 #11 Tiemuuu: Izzet Control (UR)
 #12 jessy_samek: Amulet Titan (UG)
 #13 Chipsoss: Golgari Midrange (BG)
-#14 felider: Eldrazi Tron (C)
+#14 felider: Eldrazi Tron (G)
 #15 gardrd: Mono Red Prowess (R)
-#16 Weiden: Eldrazi Tron (C)
+#16 Weiden: Eldrazi Tron (G)
 #17 Sam_Lewin: Skelementals (BR)
 #18 fistfullofmetal: Green Tron (G)
-#19 misonikomi: Devoted (WG)
+#19 misonikomi: Devoted (WRG)
 #20 harukispecial: Jeskai Control (WUR)
 #21 __matsugan: Neobrand (UG)
 #22 katoriarch123: Thopter Urza (UBG)
-#23 siomomi: Eldrazi Tron (C)
+#23 siomomi: Eldrazi Tron (G)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
@@ -52,12 +52,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck02_Wurst_BantControl_WUG()
+        public void Deck02_Wurst_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-04",1),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -65,12 +65,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck03_CEL_EldraziTron_C()
+        public void Deck03_CEL_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-04",2),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -91,12 +91,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck05_KagamiMashiro_EldraziTron_C()
+        public void Deck05_KagamiMashiro_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-04",4),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -143,12 +143,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck09_lighdar_EldraziTron_C()
+        public void Deck09_lighdar_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-04",8),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -208,12 +208,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck14_felider_EldraziTron_C()
+        public void Deck14_felider_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-04",13),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -234,12 +234,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck16_Weiden_EldraziTron_C()
+        public void Deck16_Weiden_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-04",15),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -273,12 +273,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck19_misonikomi_Devoted_WG()
+        public void Deck19_misonikomi_Devoted_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-04",18),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WRG,
                 typeof(Devoted),
                 null,
                 null
@@ -325,12 +325,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck23_siomomi_EldraziTron_C()
+        public void Deck23_siomomi_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-04",22),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null

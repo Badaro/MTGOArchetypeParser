@@ -9,8 +9,8 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 madechai: Thopter Urza (UB)
-#02 damatoexp: Gifts Storm (UR)
+#01 madechai: Thopter Urza (UBG)
+#02 damatoexp: Gifts Storm (URG)
 #03 axk2: Neobrand (UG)
 #04 abombdiggity: Primeval Titan (UG)
 #05 Xwhale: Neobrand (UG)
@@ -18,16 +18,16 @@ using System.Text;
 #07 Icteridae: Heliod Combo (WBG)
 #08 Searzist: Mono Red Prowess (R)
 #09 uwata: Gifts Storm (UR)
-#10 clockzombie: Bant Control (WUG)
-#11 joker10289: Bant Control (WUG)
+#10 clockzombie: WURG Control (WURG)
+#11 joker10289: WURG Control (WURG)
 #12 SourceOdin: Amulet Titan (G)
 #13 Nammersquats: Mono Red Prowess (R)
 #14 thugnificent32: Amulet Titan (UG)
 #15 CReactor: Dredge (BRG)
 #16 stonepeanut: Green Tron (G)
 #17 Uvenwraith: Amulet Titan (UG)
-#18 irakias: Gifts Storm (UR)
-#19 sps: Bant Control (WUG)
+#18 irakias: Gifts Storm (URG)
+#19 sps: WURG Control (WURG)
 #20 qbturtle15: Azorius Control (WU)
 #21 Lord_Beerus: Azorius Control (WU)
 #22 wisnudel: Primeval Titan (UG)
@@ -39,12 +39,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
     public class EventTest_modern_preliminary_2020_01_28 : EventTest
     {
         [Test]
-        public void Deck01_madechai_ThopterUrza_UB()
+        public void Deck01_madechai_ThopterUrza_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-28",0),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UB,
+                ArchetypeColor.UBG,
                 typeof(ThopterCombo),
                 typeof(ThopterUrza),
                 null
@@ -52,12 +52,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck02_damatoexp_GiftsStorm_UR()
+        public void Deck02_damatoexp_GiftsStorm_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-28",1),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(GiftsStorm),
                 null,
                 null
@@ -156,12 +156,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck10_clockzombie_BantControl_WUG()
+        public void Deck10_clockzombie_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-28",9),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -169,12 +169,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck11_joker10289_BantControl_WUG()
+        public void Deck11_joker10289_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-28",10),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -260,12 +260,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck18_irakias_GiftsStorm_UR()
+        public void Deck18_irakias_GiftsStorm_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-28",17),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(GiftsStorm),
                 null,
                 null
@@ -273,12 +273,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck19_sps_BantControl_WUG()
+        public void Deck19_sps_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-28",18),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null

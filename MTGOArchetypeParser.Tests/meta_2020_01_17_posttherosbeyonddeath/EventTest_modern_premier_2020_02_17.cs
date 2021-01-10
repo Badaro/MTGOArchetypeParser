@@ -14,15 +14,15 @@ using System.Text;
 #03 EduFonseca: Eldrazi Tron (C)
 #04 in5ano: Thopter Urza (UB)
 #05 angelsjeffrey: Mono Red Prowess (R)
-#06 al8ert.dk: Eldrazi Tron (C)
+#06 al8ert.dk: Eldrazi Tron (G)
 #07 ivanguille: Azorius Control (WU)
 #08 medvedev: Mono Red Prowess (R)
 #09 CharLy: Azorius Control (WU)
 #10 albert62: Jund Midrange (BRG)
-#11 LordEgg: Eldrazi Tron (C)
+#11 LordEgg: Eldrazi Tron (G)
 #12 SoulStrong: Bant Control (WUG)
 #13 cha21: Azorius Control (WU)
-#14 didoguidotti1: Sultai Shadow (UBG)
+#14 didoguidotti1: UBRG Shadow (UBRG)
 #15 jessy_samek: Jund Midrange (BRG)
 #16 qbturtle15: Azorius Control (WU)
 */
@@ -97,12 +97,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck06_al8ertdk_EldraziTron_C()
+        public void Deck06_al8ertdk_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-premier-2020-02-17",5),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -162,12 +162,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck11_LordEgg_EldraziTron_C()
+        public void Deck11_LordEgg_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-premier-2020-02-17",10),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -201,12 +201,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck14_didoguidotti1_SultaiShadow_UBG()
+        public void Deck14_didoguidotti1_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-premier-2020-02-17",13),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

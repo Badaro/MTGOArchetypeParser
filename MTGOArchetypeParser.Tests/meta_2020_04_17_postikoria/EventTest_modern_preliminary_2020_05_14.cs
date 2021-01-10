@@ -21,7 +21,7 @@ using System.Text;
 #10 Bishark: Merfolk (WU, Lurrus)
 #11 AvocadoToast: Jund Midrange (BRG, Lurrus)
 #12 pizzaslinger: Gruul Midrange (RG, Obosh)
-#13 LLegend: Electro Balance (UR)
+#13 LLegend: Electro Balance (URG)
 #14 kefka27: Eldrazi Tron (C)
 #15 KeeperX: Zirda Combo (WRG, Zirda)
 #16 MLupa: Bant Control (WUG, Yorion)
@@ -194,12 +194,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck13_LLegend_ElectroBalance_UR()
+        public void Deck13_LLegend_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-14",12),
                 new PostIkoria(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

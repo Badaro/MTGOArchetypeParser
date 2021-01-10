@@ -28,13 +28,13 @@ using System.Text;
 #17 medvedev: Shadow Prowess (BR, Lurrus)
 #18 Janh: Sultai Control (UBG)
 #19 Danker: Humans (WUBRG)
-#20 Gionax: Mono White Taxes (W)
+#20 Gionax: Selesnya Taxes (WG)
 #21 CaptainFarbosa: Humans (WUBRG)
 #22 NHA37: Shadow Prowess (BR, Lurrus)
 #23 Malakxy: Shadow Prowess (BR, Lurrus)
 #24 billsive: WURG Control (WURG)
 #25 _Batutinha_: Bant Control (WUG)
-#26 Lord_of_puntlantis: Electro Balance (UR)
+#26 Lord_of_puntlantis: Electro Balance (URG)
 #27 GanYanCHN: Belcher (RG)
 #28 mrichi: Heliod Combo (WG)
 #29 CitrusD: Yawgmoth (BG)
@@ -188,7 +188,7 @@ using System.Text;
 #177 diem4x: Shadow Prowess (BR, Lurrus)
 #178 tojo85: Gruul Midrange (RG)
 #179 GYBA: Oops All Spells (WUBRG)
-#180 WhiTe TsaR: Oops All Spells (BRG)
+#180 WhiTe TsaR: Oops All Spells (WUBRG)
 #181 Varo: Obosh Aggro (R, Obosh)
 #182 lancaster2124: Gruul Midrange (RG)
 #183 pootisgodsamongus: Obosh Aggro (R, Obosh)
@@ -486,12 +486,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_Gionax_MonoWhiteTaxes_W()
+        public void Deck20_Gionax_SelesnyaTaxes_WG()
         {
             Test(
                 GetDeck("manatraders-series-modern-september-2020-2020-09-30",19),
                 new PostZendikarRising(),
-                ArchetypeColor.W,
+                ArchetypeColor.WG,
                 typeof(GenericTaxes),
                 null,
                 null
@@ -564,12 +564,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck26_Lordofpuntlantis_ElectroBalance_UR()
+        public void Deck26_Lordofpuntlantis_ElectroBalance_URG()
         {
             Test(
                 GetDeck("manatraders-series-modern-september-2020-2020-09-30",25),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null
@@ -2566,12 +2566,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck180_WhiTeTsaR_OopsAllSpells_BRG()
+        public void Deck180_WhiTeTsaR_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-september-2020-2020-09-30",179),
                 new PostZendikarRising(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

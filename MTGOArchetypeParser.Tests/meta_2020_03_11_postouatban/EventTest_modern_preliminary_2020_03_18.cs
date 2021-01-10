@@ -17,15 +17,15 @@ using System.Text;
 #06 coert: Green Tron (G)
 #07 Granham: Green Tron (G)
 #08 Heibing: Eldrazi Tron (C)
-#09 im2g00t4ubarn: Uroza (UG)
-#10 Jenara19: Uroza (UG)
-#11 MATTOMARINAIO: Uroza (UG)
+#09 im2g00t4ubarn: Uroza (URG)
+#10 Jenara19: Uroza (URG)
+#11 MATTOMARINAIO: Uroza (URG)
 #12 MATTHEWFOULKES: Grinding Breach (WUBR)
 #13 Predicted: Yawgmoth (BG)
 #14 Mou: Jund Midrange (BRG)
 #15 RNGspecialist: Saheeli Combo (WUR)
 #16 UmekawaneikU: Jund Midrange (BRG)
-#17 kefka27: Dredge (BRG)
+#17 kefka27: Dredge (UBRG)
 #18 Drakanar: Merfolk (UG)
 #19 _Antoniou_: Green Eldrazi (RG)
 #20 ACG88: Green Tron (G)
@@ -152,12 +152,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck09_im2g00t4ubarn_Uroza_UG()
+        public void Deck09_im2g00t4ubarn_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-18",8),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -165,12 +165,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck10_Jenara19_Uroza_UG()
+        public void Deck10_Jenara19_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-18",9),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -178,12 +178,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck11_MATTOMARINAIO_Uroza_UG()
+        public void Deck11_MATTOMARINAIO_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-18",10),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck17_kefka27_Dredge_BRG()
+        public void Deck17_kefka27_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-18",16),
                 new PostOuatBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null

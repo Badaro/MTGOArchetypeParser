@@ -24,7 +24,7 @@ using System.Text;
 #13 Diem4x: Sultai Control (UBG)
 #14 GodOfSlaughter: Shadow Prowess (BR, Lurrus)
 #15 kanister: Primeval Titan (UG)
-#16 nazart: Heliod Combo (WG)
+#16 nazart: Heliod Combo (WRG)
 #17 SweetIto: Shadow Prowess (BR, Lurrus)
 #18 Gigy: Gruul Midrange (RG)
 #19 MastaHorus: Electro End (UR)
@@ -38,7 +38,7 @@ using System.Text;
 #27 Rulleboren: Reclaimer Titan (WRG)
 #28 ATGerwaz: Mill (UB, Lurrus)
 #29 ACG88: Naya Midrange (WRG)
-#30 Binolino: Reclaimer Titan (WG)
+#30 Binolino: Reclaimer Titan (WBG)
 #31 TSPJendrek: Azorius Control (WU)
 #32 DaniMRebel: Shadow Prowess (BR, Lurrus)
 */
@@ -243,12 +243,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_nazart_HeliodCombo_WG()
+        public void Deck16_nazart_HeliodCombo_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-14",15),
                 new PostZendikarRising(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WRG,
                 typeof(HeliodCombo),
                 null,
                 null
@@ -425,12 +425,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck30_Binolino_ReclaimerTitan_WG()
+        public void Deck30_Binolino_ReclaimerTitan_WBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-14",29),
                 new PostZendikarRising(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WBG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null

@@ -11,9 +11,9 @@ using System.Text;
 /*
 #01 PietroSas: Devoted (WG, Lurrus)
 #02 RespectTheCat: Azorius Taxes (WU, Yorion)
-#03 fradev1988: Electro Balance (UR)
+#03 fradev1988: Electro Balance (URG)
 #04 coomback: Mill (UB)
-#05 TSPJendrek: Izzet Control (UR)
+#05 TSPJendrek: Jeskai Control (WUR)
 #06 FeeltheRush: Bant Midrange (WUG)
 #07 DenebLyrae: Heliod Combo (WG)
 #08 musasabi: Reclaimer Titan (WG)
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_fradev1988_ElectroBalance_UR()
+        public void Deck03_fradev1988_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",2),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null
@@ -100,12 +100,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_TSPJendrek_IzzetControl_UR()
+        public void Deck05_TSPJendrek_JeskaiControl_WUR()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",4),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.WUR,
                 typeof(GenericControl),
                 null,
                 null

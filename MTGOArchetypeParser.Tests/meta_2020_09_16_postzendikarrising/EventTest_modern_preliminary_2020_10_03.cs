@@ -15,7 +15,7 @@ using System.Text;
 #04 _Falcon_: Izzet Prowess (UR)
 #05 AlexanderRosdahl: Sultai Control (UBG)
 #06 Sodeq: Ad Nauseam (WUB)
-#07 Tyerube1618: Gifts Storm (UR)
+#07 Tyerube1618: Gifts Storm (URG)
 #08 timewalkinonsunshine: Taking Turns (URG)
 #09 ZYURYO: WURG Control (WURG)
 #10 audio336: Shadow Prowess (BR, Lurrus)
@@ -24,7 +24,7 @@ using System.Text;
 #13 kiko: Mono White Taxes (W)
 #14 NosonosaN: WURG Control (WURG)
 #15 CavalloGoloso: Izzet Control (UR)
-#16 Gerschi: Oops All Spells (WUBG)
+#16 Gerschi: Oops All Spells (WUBRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -110,12 +110,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_Tyerube1618_GiftsStorm_UR()
+        public void Deck07_Tyerube1618_GiftsStorm_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-03",6),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(GiftsStorm),
                 null,
                 null
@@ -227,12 +227,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_Gerschi_OopsAllSpells_WUBG()
+        public void Deck16_Gerschi_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-03",15),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

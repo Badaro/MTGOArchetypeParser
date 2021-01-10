@@ -33,7 +33,7 @@ using System.Text;
 #22 oskiyaa: Devoted (WG, Lurrus)
 #23 SunofNothing: Jund Shadow (BRG, Lurrus)
 #24 Gul_Dukat: Golgari Midrange (BG, Lurrus)
-#25 mephidro: Neobrand (UG)
+#25 mephidro: Neobrand (WUG)
 #26 jvidarte: Burn (WR, Lurrus)
 #27 DFrank: Rakdos Prowess (BR, Lurrus)
 #28 Mateusf34: Eldrazi Tron (C)
@@ -360,12 +360,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck25_mephidro_Neobrand_UG()
+        public void Deck25_mephidro_Neobrand_WUG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-06-02",24),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(Neobrand),
                 null,
                 null

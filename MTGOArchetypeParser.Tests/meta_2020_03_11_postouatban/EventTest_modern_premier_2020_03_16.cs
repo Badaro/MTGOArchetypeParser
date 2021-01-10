@@ -9,14 +9,14 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 haubidtran: Uroza (UG)
-#02 Mercenario: Dredge (BRG)
+#01 haubidtran: Uroza (URG)
+#02 Mercenario: Dredge (UBRG)
 #03 JSG-MTG: Eldrazi Tron (C)
 #04 fistfullofmetal: Green Tron (G)
 #05 Rooney56: Jund Midrange (BRG)
 #06 SuperCow12653: Humans (WUBRG)
 #07 Mateusf34: Eldrazi Tron (C)
-#08 MatheusPonciano: Dredge (BRG)
+#08 MatheusPonciano: Dredge (UBRG)
 #09 Do0mSwitch: Bant Control (WUG)
 #10 ander_lizarrakoa: Delver (UR)
 #11 ballestin93: Rakdos Midrange (BR)
@@ -32,12 +32,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
     public class EventTest_modern_premier_2020_03_16 : EventTest
     {
         [Test]
-        public void Deck01_haubidtran_Uroza_UG()
+        public void Deck01_haubidtran_Uroza_URG()
         {
             Test(
                 GetDeck("modern-premier-2020-03-16",0),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -45,12 +45,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck02_Mercenario_Dredge_BRG()
+        public void Deck02_Mercenario_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-premier-2020-03-16",1),
                 new PostOuatBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -123,12 +123,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck08_MatheusPonciano_Dredge_BRG()
+        public void Deck08_MatheusPonciano_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-premier-2020-03-16",7),
                 new PostOuatBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null

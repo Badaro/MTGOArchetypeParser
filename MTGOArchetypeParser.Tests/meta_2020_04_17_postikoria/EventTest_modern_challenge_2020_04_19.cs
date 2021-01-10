@@ -28,7 +28,7 @@ using System.Text;
 #17 Predict: Bant Control (WUG)
 #18 Danny_Bambino: UBRG Shadow (UBRG, Lurrus)
 #19 DauntedPanda: Gruul Midrange (RG)
-#20 beestjes: Domain Zoo (WURG)
+#20 beestjes: Domain Zoo (WUBRG)
 #21 toondoslav: Niv To Light (WUBRG)
 #22 lucasensei2: Electro Balance (UR)
 #23 Heir_of_Elendil15: Delver (UBR, Lurrus)
@@ -40,7 +40,7 @@ using System.Text;
 #29 svessesvv: Eldrazi Tron (C)
 #30 ContraEgo: Goblins (BRG)
 #31 AvocadoToast: Jund Shadow (BRG, Lurrus)
-#32 Moniz0801: Amulet Titan (G)
+#32 Moniz0801: Amulet Titan (UG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
@@ -295,12 +295,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck20_beestjes_DomainZoo_WURG()
+        public void Deck20_beestjes_DomainZoo_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-19",19),
                 new PostIkoria(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUBRG,
                 typeof(DomainZoo),
                 null,
                 null
@@ -451,12 +451,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck32_Moniz0801_AmuletTitan_G()
+        public void Deck32_Moniz0801_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-19",31),
                 new PostIkoria(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

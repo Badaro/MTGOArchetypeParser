@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 _EvaNs: Scapeshift (URG, Yorion)
+#01 _EvaNs: Scapeshift (WUBRG, Yorion)
 #02 Capitano_CL: Rakdos Prowess (BR, Lurrus)
 #03 joker10289: WUBG Control (WUBG, Yorion)
 #04 in5ano: Scapeshift (URG, Yorion)
@@ -34,12 +34,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
     public class EventTest_modern_preliminary_2020_05_26 : EventTest
     {
         [Test]
-        public void Deck01_EvaNs_Scapeshift_URG_Yorion()
+        public void Deck01_EvaNs_Scapeshift_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-26",0),
                 new PostIkoria(),
-                ArchetypeColor.URG,
+                ArchetypeColor.WUBRG,
                 typeof(Scapeshift),
                 null,
                 ArchetypeCompanion.Yorion

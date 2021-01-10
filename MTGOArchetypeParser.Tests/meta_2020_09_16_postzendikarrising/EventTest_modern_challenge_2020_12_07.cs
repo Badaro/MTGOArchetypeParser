@@ -10,14 +10,14 @@ using System.Text;
 
 /*
 #01 Sodeq: Dredge (BRG)
-#02 AnneLivleysD3ath: Amulet Titan (G)
+#02 AnneLivleysD3ath: Amulet Titan (UG)
 #03 katoriarch123: WURG Control (WURG)
 #04 hugeomanyte: Shadow Prowess (BR, Lurrus)
 #05 FerMTG: Rakdos Midrange (BR)
 #06 Mateusf34: Eldrazi Tron (C)
 #07 EmErgy: Mill (UB, Lurrus)
 #08 Blitzlion27: Mill (UB, Lurrus)
-#09 ho-oh: Oops All Spells (WUBG)
+#09 ho-oh: Oops All Spells (WUBRG)
 #10 CrusherBotBG: Hammer Time (W, Lurrus)
 #11 Naisirc: Obosh Aggro (R, Obosh)
 #12 g3r2: Gifts Storm (UR)
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_AnneLivleysD3ath_AmuletTitan_G()
+        public void Deck02_AnneLivleysD3ath_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-07",1),
                 new PostZendikarRising(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -152,12 +152,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_hooh_OopsAllSpells_WUBG()
+        public void Deck09_hooh_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-07",8),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

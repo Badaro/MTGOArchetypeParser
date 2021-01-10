@@ -16,7 +16,7 @@ using System.Text;
 #05 xfile: Golgari Midrange (BG, Lurrus)
 #06 yamakiller: Ad Nauseam (WUB)
 #07 Wartico1: Mardu Prowess (WBR, Lurrus)
-#08 Lord_of_Puntlantis: Electro Balance (UR)
+#08 Lord_of_Puntlantis: Electro Balance (URG)
 #09 grahams: Green Tron (G)
 #10 AvocadoToast: Jund Prowess (BRG, Lurrus)
 #11 ilton: Niv To Light (WUBRG, Jegantha)
@@ -123,12 +123,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck08_LordofPuntlantis_ElectroBalance_UR()
+        public void Deck08_LordofPuntlantis_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-21",7),
                 new PostIkoria(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

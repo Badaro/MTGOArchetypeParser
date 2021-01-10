@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 romanmy: Sultai Shadow (UBG)
-#02 Cherryxman: Eldrazi Tron (C)
+#01 romanmy: UBRG Shadow (UBRG)
+#02 Cherryxman: Eldrazi Tron (G)
 #03 MATTHEWFOULKES: Grinding Breach (WUR)
 #04 selbstdenker: Amulet Titan (G)
 #05 pbarrrgh: Temur Control (URG)
 #06 jessy_samek: Amulet Titan (UG)
 #07 Weiden: Infect (UG)
 #08 Tiemuuu: Izzet Control (UR)
-#09 patrick50: Sultai Shadow (UBG)
+#09 patrick50: UBRG Shadow (UBRG)
 #10 Kitchen_Finks: Esper Control (WUB)
 #11 fistfullofmetal: Green Tron (G)
 #12 imr107: Bant Control (WUG)
@@ -33,12 +33,12 @@ using System.Text;
 #22 _Batutinha_: Thopter Urza (UB)
 #23 katuo079595: Rakdos Midrange (BR)
 #24 bernardocssa: Humans (WUBRG)
-#25 jstealths17: Sultai Shadow (UBG)
-#26 Darkiundsa: Eldrazi Tron (C)
+#25 jstealths17: UBRG Shadow (UBRG)
+#26 Darkiundsa: Eldrazi Tron (G)
 #27 SakeIzumo: Mono Red Prowess (R)
 #28 sneaky robot: Bogles (WG)
 #29 joker10289: Bant Control (WUG)
-#30 meanfannypack: Devoted (WG)
+#30 meanfannypack: Devoted (WRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
@@ -46,12 +46,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
     public class EventTest_modern_preliminary_2020_03_05 : EventTest
     {
         [Test]
-        public void Deck01_romanmy_SultaiShadow_UBG()
+        public void Deck01_romanmy_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-05",0),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -59,12 +59,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck02_Cherryxman_EldraziTron_C()
+        public void Deck02_Cherryxman_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-05",1),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -150,12 +150,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck09_patrick50_SultaiShadow_UBG()
+        public void Deck09_patrick50_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-05",8),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -358,12 +358,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck25_jstealths17_SultaiShadow_UBG()
+        public void Deck25_jstealths17_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-05",24),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -371,12 +371,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck26_Darkiundsa_EldraziTron_C()
+        public void Deck26_Darkiundsa_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-05",25),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -423,12 +423,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck30_meanfannypack_Devoted_WG()
+        public void Deck30_meanfannypack_Devoted_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-05",29),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WRG,
                 typeof(Devoted),
                 null,
                 null

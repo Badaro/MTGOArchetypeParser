@@ -15,16 +15,16 @@ using System.Text;
 #04 Do0mSwitch: Bant Control (WUG)
 #05 stayrospet: Bant Control (WUG)
 #06 SakeIzumo: Mono Red Prowess (R)
-#07 didoguidotti1: Sultai Shadow (UBG)
+#07 didoguidotti1: UBRG Shadow (UBRG)
 #08 Ivan_Catanduva_Br: Gruul Midrange (RG)
 #09 Veveil: Temur Control (URG)
-#10 AndyAWKWARD: Bant Control (WUG)
+#10 AndyAWKWARD: WURG Control (WURG)
 #11 al8ert.dk: Jund Midrange (BRG)
 #12 Tw33Ty: Primeval Titan (BG)
-#13 yamakiller: Eldrazi Tron (C)
+#13 yamakiller: Eldrazi Tron (G)
 #14 TSPJendrek: Bant Control (WUG)
 #15 Lucabireskusku: Thopter Urza (UB)
-#16 Mercenario: Dredge (BRG)
+#16 Mercenario: Dredge (UBRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
@@ -110,12 +110,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck07_didoguidotti1_SultaiShadow_UBG()
+        public void Deck07_didoguidotti1_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-premier-2020-03-09",6),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -149,12 +149,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck10_AndyAWKWARD_BantControl_WUG()
+        public void Deck10_AndyAWKWARD_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-premier-2020-03-09",9),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -188,12 +188,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck13_yamakiller_EldraziTron_C()
+        public void Deck13_yamakiller_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-premier-2020-03-09",12),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -227,12 +227,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck16_Mercenario_Dredge_BRG()
+        public void Deck16_Mercenario_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-premier-2020-03-09",15),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null

@@ -12,7 +12,7 @@ using System.Text;
 #01 TheTunnelingCat: Eldrazi Tron (C)
 #02 HeyPharaoh: Azorius Control (WU)
 #03 iuriper: Bant Control (WUG)
-#04 __BMJ__: Sultai Shadow (UBG)
+#04 __BMJ__: UBRG Shadow (UBRG)
 #05 rastaf: Izzet Prowess (UR)
 #06 AnneLivleysD3ath: Amulet Titan (UG)
 #07 LalauWBA: Gruul Prowess (RG, Jegantha)
@@ -22,7 +22,7 @@ using System.Text;
 #11 MinCash: Ad Nauseam (WUB)
 #12 BERNASTORRES: Goblins (BR)
 #13 Ryan_39: Gruul Midrange (RG)
-#14 jmeyer2030: Electro Balance (UR)
+#14 jmeyer2030: Electro Balance (URG)
 #15 3HaLeX1: Eldrazi Tron (C)
 #16 LeoFa: Scapeshift (URG)
 #17 musasabi: Jund Midrange (BRG)
@@ -34,7 +34,7 @@ using System.Text;
 #23 alnash: Grixis Shadow (UBR)
 #24 HannoLee: Green Tron (G)
 #25 dormitian: Humans (WUBRG)
-#26 Magicofplayer1: Dredge (BRG)
+#26 Magicofplayer1: Dredge (WBRG)
 #27 _Batutinha_: Izzet Prowess (UR)
 #28 Naisirc: Hardened Scales (G)
 #29 Marxelo: Tokens (W)
@@ -87,12 +87,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_BMJ_SultaiShadow_UBG()
+        public void Deck04_BMJ_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",3),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_jmeyer2030_ElectroBalance_UR()
+        public void Deck14_jmeyer2030_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",13),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null
@@ -373,12 +373,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck26_Magicofplayer1_Dredge_BRG()
+        public void Deck26_Magicofplayer1_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",25),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null

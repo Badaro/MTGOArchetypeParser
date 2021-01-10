@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 McWinSauce: Bant Control (WUG)
-#02 Deathnote1999: Eldrazi Tron (C)
+#02 Deathnote1999: Eldrazi Tron (G)
 #03 Kazuga: Mono Red Prowess (R)
 #04 jessy_samek: Urza Oko (WURG)
 #05 UBERMIKEYB: Urza Oko (URG)
@@ -39,12 +39,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_Deathnote1999_EldraziTron_C()
+        public void Deck02_Deathnote1999_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-15",1),
                 new LastOkoDays(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null

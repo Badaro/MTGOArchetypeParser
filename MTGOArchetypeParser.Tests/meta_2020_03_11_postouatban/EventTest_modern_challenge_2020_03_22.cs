@@ -15,7 +15,7 @@ using System.Text;
 #04 SCJ: Jund Midrange (BRG)
 #05 _IlNano_: Humans (WUBRG)
 #06 remf: Gruul Midrange (RG)
-#07 Jenara19: Uroza (UG)
+#07 Jenara19: Uroza (URG)
 #08 tia05: Primeval Titan (RG)
 #09 5ives: Dredge (BRG)
 #10 DrPP: Mono Red Prowess (R)
@@ -27,20 +27,20 @@ using System.Text;
 #16 SouthernSliver: Slivers (WUBRG)
 #17 MiguelCaster: Mono White Taxes (W)
 #18 PermissionMTG: Zoo (WRG)
-#19 SunofNothing: Uroza (UG)
-#20 SemoMTGBros: Bant Control (WUG)
+#19 SunofNothing: Uroza (URG)
+#20 SemoMTGBros: WURG Control (WURG)
 #21 levunga21: Bant Control (WUG)
 #22 TSPJendrek: WUBG Control (WUBG)
 #23 Parrit: Orzhov Taxes (WB)
 #24 AlexD41: Mono Red Prowess (R)
 #25 HarlanMTG: Bant Control (WUG)
 #26 yxcvbnm: Bant Control (WUG)
-#27 MastaHorus: Electro End (UR)
+#27 MastaHorus: Electro End (URG)
 #28 Gerschi: Thopter Urza (WUR)
 #29 pepeteam: Amulet Titan (UG)
 #30 Curufinwe: Jund Midrange (BRG)
 #31 SlyDaniel7787: Eldrazi Tron (C)
-#32 Graciasportanto: Uroza (UG)
+#32 Graciasportanto: Uroza (URG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck07_Jenara19_Uroza_UG()
+        public void Deck07_Jenara19_Uroza_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-22",6),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -282,12 +282,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck19_SunofNothing_Uroza_UG()
+        public void Deck19_SunofNothing_Uroza_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-22",18),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -295,12 +295,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck20_SemoMTGBros_BantControl_WUG()
+        public void Deck20_SemoMTGBros_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-22",19),
                 new PostOuatBan(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -386,12 +386,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck27_MastaHorus_ElectroEnd_UR()
+        public void Deck27_MastaHorus_ElectroEnd_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-22",26),
                 new PostOuatBan(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroEnd),
                 null
@@ -451,12 +451,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck32_Graciasportanto_Uroza_UG()
+        public void Deck32_Graciasportanto_Uroza_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-22",31),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null

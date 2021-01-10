@@ -18,22 +18,22 @@ using System.Text;
 #07 2radMTG: Infect (UG)
 #08 GedionRavenor: Azorius Control (WU)
 #09 Pollu: Bant Control (WUG)
-#10 sheastrausman: Eldrazi Tron (C)
+#10 sheastrausman: Eldrazi Tron (G)
 #11 Sideshowsc: Scapeshift (WURG)
 #12 Parrotlet: Grinding Breach (WUBR)
 #13 BladeofIce: Grinding Breach (WUR)
-#14 Jazza: Eldrazi Tron (C)
-#15 Toastxp: Uroza (UG)
+#14 Jazza: Eldrazi Tron (G)
+#15 Toastxp: Uroza (URG)
 #16 _LSN_: Burn (WR)
 #17 sickospence: Thopter Urza (UB)
 #18 SrTortinha: Domain Zoo (WURG)
-#19 PTarts2win: Eldrazi Tron (C)
+#19 PTarts2win: Eldrazi Tron (G)
 #20 __matsugan: Neobrand (UG)
 #21 t_k_h_r: Thopter Urza (UB)
 #22 TheTunnelingCat: Eldrazi Tron (C)
 #23 xfile: Gruul Prowess (RG)
 #24 .//Automaton: Green Tron (G)
-#25 AndyGrey: Green Devotion (G)
+#25 AndyGrey: Green Devotion (RG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
@@ -158,12 +158,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck10_sheastrausman_EldraziTron_C()
+        public void Deck10_sheastrausman_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-07",9),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -210,12 +210,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck14_Jazza_EldraziTron_C()
+        public void Deck14_Jazza_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-07",13),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -223,12 +223,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck15_Toastxp_Uroza_UG()
+        public void Deck15_Toastxp_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-07",14),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -275,12 +275,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck19_PTarts2win_EldraziTron_C()
+        public void Deck19_PTarts2win_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-07",18),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -353,12 +353,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck25_AndyGrey_GreenDevotion_G()
+        public void Deck25_AndyGrey_GreenDevotion_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-07",24),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.G,
+                ArchetypeColor.RG,
                 typeof(GreenDevotion),
                 null,
                 null

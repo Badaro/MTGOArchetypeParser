@@ -17,7 +17,7 @@ using System.Text;
 #06 __matsugan: Neobrand (UG)
 #07 sakuragi21722749: Eldrazi Tron (C)
 #08 MrRaeb: Gruul Midrange (RG)
-#09 Predicted: Yawgmoth (BG)
+#09 Predicted: Yawgmoth (WBG)
 #10 gazmon48: Green Tron (G)
 #11 Mateusf34: Eldrazi Tron (C)
 #12 Maox: Izzet Prowess (UR)
@@ -31,7 +31,7 @@ using System.Text;
 #20 harukispecial: Sultai Control (UBG)
 #21 _Falcon_: Izzet Prowess (UR)
 #22 Gabriele2020: Humans (WUBRG)
-#23 Ryan100495: Dredge (BRG)
+#23 Ryan100495: Dredge (WBRG)
 #24 kthanakit26: Izzet Prowess (UR)
 #25 thekingofnone: Scapeshift (URG)
 #26 belanna999: Eldrazi Tron (C)
@@ -152,12 +152,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_Predicted_Yawgmoth_BG()
+        public void Deck09_Predicted_Yawgmoth_WBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-12",8),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BG,
+                ArchetypeColor.WBG,
                 typeof(Yawgmoth),
                 null,
                 null
@@ -334,12 +334,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck23_Ryan100495_Dredge_BRG()
+        public void Deck23_Ryan100495_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-12",22),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null

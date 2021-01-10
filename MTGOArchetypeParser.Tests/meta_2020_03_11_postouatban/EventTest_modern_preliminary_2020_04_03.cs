@@ -13,11 +13,11 @@ using System.Text;
 #02 Bomboleriot: Dredge (BRG)
 #03 envizz: Gruul Midrange (RG)
 #04 ForThoseWhoHaveHeart: Bant Control (WUG)
-#05 ArchaeusDota: Eldrazi Tron (C)
+#05 ArchaeusDota: Eldrazi Tron (R)
 #06 penips: Orzhov Taxes (WB)
 #07 wumbowizard: Azorius Control (WU)
 #08 signblindman: Gruul Midrange (RG)
-#09 Sorph: Uroza (UG)
+#09 Sorph: Uroza (URG)
 #10 baconator5000: Mono Red Prowess (R)
 #11 rinazina: Green Tron (G)
 #12 BSK_hercules: Gruul Midrange (RG)
@@ -87,12 +87,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck05_ArchaeusDota_EldraziTron_C()
+        public void Deck05_ArchaeusDota_EldraziTron_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-03",4),
                 new PostOuatBan(),
-                ArchetypeColor.C,
+                ArchetypeColor.R,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -139,12 +139,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck09_Sorph_Uroza_UG()
+        public void Deck09_Sorph_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-03",8),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null

@@ -18,7 +18,7 @@ using System.Text;
 #07 Sharkcaster_Mage: Gifts Storm (URG)
 #08 sacca93: Uroza (UG)
 #09 Treno: Mono Red Prowess (R)
-#10 WhiteFaces: Bant Control (WUG)
+#10 WhiteFaces: WURG Control (WURG)
 #11 joker10289: Mono Red Prowess (R)
 #12 qbturtle15: Azorius Control (WU)
 #13 coert: Burn (R)
@@ -151,12 +151,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck10_WhiteFaces_BantControl_WUG()
+        public void Deck10_WhiteFaces_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",9),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null

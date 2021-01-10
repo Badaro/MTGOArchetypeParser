@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Boucha: Belcher (URG)
 #02 kanister: Primeval Titan (UG)
-#03 DenebLyrae: Heliod Combo (WG)
+#03 DenebLyrae: Heliod Combo (WRG)
 #04 Tiemuuu: Izzet Control (UR)
 #05 ElYallo: Heliod Combo (WG)
 #06 Benkill: Spirits (WU)
@@ -24,7 +24,7 @@ using System.Text;
 #13 buddha715: Burn (WR, Lurrus)
 #14 KO_Mak: Oops All Spells (UBG)
 #15 _Batutinha_: Shadow Prowess (BRG, Lurrus)
-#16 Predicted: Yawgmoth (BG)
+#16 Predicted: Yawgmoth (WBG)
 #17 AndyBurden: Obosh Aggro (R, Obosh)
 #18 Kr0k39: Amulet Titan (G)
 #19 Edel: Rakdos Midrange (BR)
@@ -38,7 +38,7 @@ using System.Text;
 #27 Hamuda: Hammer Time (WB, Lurrus)
 #28 ZYX_Jerry: Belcher (URG)
 #29 Laplasjan: Hammer Time (WB, Lurrus)
-#30 Binolino: Reclaimer Titan (WG)
+#30 Binolino: Reclaimer Titan (WBG)
 #31 UmekawaneikU: Rakdos Midrange (BR)
 #32 Mateusf34: Eldrazi Tron (C)
 */
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_DenebLyrae_HeliodCombo_WG()
+        public void Deck03_DenebLyrae_HeliodCombo_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-21",2),
                 new PostZendikarRising(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WRG,
                 typeof(HeliodCombo),
                 null,
                 null
@@ -243,12 +243,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_Predicted_Yawgmoth_BG()
+        public void Deck16_Predicted_Yawgmoth_WBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-21",15),
                 new PostZendikarRising(),
-                ArchetypeColor.BG,
+                ArchetypeColor.WBG,
                 typeof(Yawgmoth),
                 null,
                 null
@@ -425,12 +425,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck30_Binolino_ReclaimerTitan_WG()
+        public void Deck30_Binolino_ReclaimerTitan_WBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-21",29),
                 new PostZendikarRising(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WBG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null

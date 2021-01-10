@@ -16,10 +16,10 @@ using System.Text;
 #05 quinniac: Devoted (WG, Lurrus)
 #06 ManavonRX: Amulet Titan (UG)
 #07 Capitano_CL: Neobrand (UG)
-#08 Finalnub: Neobrand (UG)
+#08 Finalnub: Neobrand (UBG)
 #09 AlfredoTorres: Hardened Scales (WG, Lurrus)
 #10 TerminalJustice: Humans (WUBRG)
-#11 McWinSauce: Bant Control (WUG, Yorion)
+#11 McWinSauce: WURG Control (WURG, Yorion)
 #12 Papelucho10: Infect (UG)
 #13 triosk: Uroza (URG, Yorion)
 #14 in5ano: Uroza (URG, Yorion)
@@ -129,12 +129,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck08_Finalnub_Neobrand_UG()
+        public void Deck08_Finalnub_Neobrand_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-30",7),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(Neobrand),
                 null,
                 null
@@ -168,12 +168,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck11_McWinSauce_BantControl_WUG_Yorion()
+        public void Deck11_McWinSauce_WURGControl_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-30",10),
                 new PostIkoria(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion

@@ -39,7 +39,7 @@ using System.Text;
 #28 HannoLee: Green Tron (G)
 #29 eclipse4343: Azorius Control (WU)
 #30 aqualog: Izzet Prowess (UR)
-#31 juzam_gin: Dredge (BRG)
+#31 juzam_gin: Dredge (WBRG)
 #32 no_lyfe: Mono Red Prowess (R)
 */
 
@@ -438,12 +438,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck31_juzamgin_Dredge_BRG()
+        public void Deck31_juzamgin_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",30),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null

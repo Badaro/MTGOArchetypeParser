@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 SlyDaniel7787: Eldrazi Tron (G)
-#02 WuYuHsien: Bant Control (WUG)
+#02 WuYuHsien: WURG Control (WURG)
 #03 Violent_Outburst: Amulet Titan (UG)
 #04 tagosaku: Burn (WR)
 #05 Janh: Saheeli Combo (WUR)
@@ -42,12 +42,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck02_WuYuHsien_BantControl_WUG()
+        public void Deck02_WuYuHsien_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12",1),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null

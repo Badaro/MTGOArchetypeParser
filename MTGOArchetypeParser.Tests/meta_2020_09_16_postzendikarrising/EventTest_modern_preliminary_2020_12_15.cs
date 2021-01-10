@@ -13,7 +13,7 @@ using System.Text;
 #02 Blitzlion27: Mill (UB, Lurrus)
 #03 k1113r0b0t: Izzet Prowess (UR)
 #04 UnderwaterBimbo: Delver (UR)
-#05 Predicted: Yawgmoth (BG)
+#05 Predicted: Yawgmoth (WBG)
 #06 BSK_hercules: Temur Control (URG)
 #07 kanister: Primeval Titan (UG)
 #08 Do0mSwitch: WURG Control (WURG)
@@ -78,12 +78,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_Predicted_Yawgmoth_BG()
+        public void Deck05_Predicted_Yawgmoth_WBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-15",4),
                 new PostZendikarRising(),
-                ArchetypeColor.BG,
+                ArchetypeColor.WBG,
                 typeof(Yawgmoth),
                 null,
                 null

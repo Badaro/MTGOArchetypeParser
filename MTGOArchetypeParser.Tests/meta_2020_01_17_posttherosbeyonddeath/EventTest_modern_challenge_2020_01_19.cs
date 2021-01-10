@@ -13,7 +13,7 @@ using System.Text;
 #02 ZYURYO: Azorius Control (WU)
 #03 AronGomu: Heliod Combo (WBG)
 #04 bntrusty14: Humans (WUBRG)
-#05 yamakiller: Eldrazi Tron (C)
+#05 yamakiller: Eldrazi Tron (G)
 #06 Irkus: Green Eldrazi (RG)
 #07 Meltiin: Reclaimer Titan (WURG)
 #08 Jadacant: Ad Nauseam (WUB)
@@ -100,12 +100,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck05_yamakiller_EldraziTron_C()
+        public void Deck05_yamakiller_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-19",4),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null

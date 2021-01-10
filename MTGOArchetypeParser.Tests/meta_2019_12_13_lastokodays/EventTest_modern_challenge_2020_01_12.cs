@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 Sodeq: Dredge (BRG)
-#02 SourceOdin: Urza Oko (UG)
+#02 SourceOdin: Urza Oko (URG)
 #03 Gul_Dukat: Urza Oko (URG)
 #04 cityofcards: Eldrazi Tron (C)
 #05 PuntThenWhine: Amulet Titan (RG)
@@ -22,7 +22,7 @@ using System.Text;
 #11 Zacharee: Devoted (WUG)
 #12 McWinSauce: Bant Control (WUG)
 #13 exoticherman: Infect (UG)
-#14 mrounds1216: Paradoxical Urza (U)
+#14 mrounds1216: Paradoxical Urza (WUB)
 #15 Runeskjold: Electro Balance (UR)
 #16 Zxrogue: Niv To Light (WUBRG)
 #17 BorosCharm: Burn (WR)
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_SourceOdin_UrzaOko_UG()
+        public void Deck02_SourceOdin_UrzaOko_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-12",1),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck14_mrounds1216_ParadoxicalUrza_U()
+        public void Deck14_mrounds1216_ParadoxicalUrza_WUB()
         {
             Test(
                 GetDeck("modern-challenge-2020-01-12",13),
                 new LastOkoDays(),
-                ArchetypeColor.U,
+                ArchetypeColor.WUB,
                 typeof(ParadoxicalUrza),
                 null,
                 null

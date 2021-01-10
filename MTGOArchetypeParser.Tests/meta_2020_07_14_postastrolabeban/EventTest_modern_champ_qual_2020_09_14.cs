@@ -33,7 +33,7 @@ using System.Text;
 #22 patheus_84: Ad Nauseam (WUB)
 #23 canepis16: Rakdos Prowess (BR, Lurrus)
 #24 ShowTime_: Burn (WR, Lurrus)
-#25 junghans: Devoted (WG)
+#25 junghans: Devoted (WRG)
 #26 Mateusf34: Eldrazi Tron (C)
 #27 Kuhb: Devoted (WG, Lurrus)
 #28 MoxSquirrel: Rakdos Prowess (BR, Lurrus)
@@ -360,12 +360,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck25_junghans_Devoted_WG()
+        public void Deck25_junghans_Devoted_WRG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-09-14",24),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WRG,
                 typeof(Devoted),
                 null,
                 null

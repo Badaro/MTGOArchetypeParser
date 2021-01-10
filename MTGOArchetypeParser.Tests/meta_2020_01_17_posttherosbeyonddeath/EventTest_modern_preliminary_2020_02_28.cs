@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Violent_Outburst: Sultai Shadow (UBG)
+#01 Violent_Outburst: UBRG Shadow (UBRG)
 #02 Kitchen_Finks: Thopter Urza (UB)
 #03 Accelerator_GTR: Jund Midrange (BRG)
 #04 Juzam-Djinn84: Gifts Storm (UR)
@@ -32,12 +32,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
     public class EventTest_modern_preliminary_2020_02_28 : EventTest
     {
         [Test]
-        public void Deck01_ViolentOutburst_SultaiShadow_UBG()
+        public void Deck01_ViolentOutburst_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-28",0),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

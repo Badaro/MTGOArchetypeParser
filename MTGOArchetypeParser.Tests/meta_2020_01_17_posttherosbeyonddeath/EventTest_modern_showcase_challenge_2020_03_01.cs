@@ -10,34 +10,34 @@ using System.Text;
 
 /*
 #01 AvocadoToast: Primeval Titan (BG)
-#02 Just_Roll: Eldrazi Tron (C)
-#03 PuntThenWhine: Amulet Titan (G)
-#04 al8ert.dk: Eldrazi Tron (C)
+#02 Just_Roll: Eldrazi Tron (G)
+#03 PuntThenWhine: Amulet Titan (UG)
+#04 al8ert.dk: Eldrazi Tron (G)
 #05 ___Frashe___: Crabvine (UBG)
 #06 Nikito18: Bant Control (WUG)
-#07 Graciasportanto: Eldrazi Tron (C)
+#07 Graciasportanto: Eldrazi Tron (G)
 #08 Kazuga: Jund Midrange (BRG)
-#09 Violent_Outburst: Sultai Shadow (UBG)
-#10 kefka27: Eldrazi Tron (C)
-#11 zMagic4ever: Eldrazi Tron (C)
+#09 Violent_Outburst: UBRG Shadow (UBRG)
+#10 kefka27: Eldrazi Tron (G)
+#11 zMagic4ever: Eldrazi Tron (G)
 #12 Mateusf34: Eldrazi Tron (C)
 #13 ApesOfWrath: Burn (WR)
-#14 Chefen: Eldrazi Tron (C)
+#14 Chefen: Eldrazi Tron (G)
 #15 GHash77: Jund Shadow (BRG)
-#16 KelMasterP: Eldrazi Tron (C)
-#17 C4N7O: Uroza (UG)
-#18 ChillingLauge: Eldrazi Tron (C)
+#16 KelMasterP: Eldrazi Tron (G)
+#17 C4N7O: Uroza (URG)
+#18 ChillingLauge: Eldrazi Tron (G)
 #19 thepensword: Izzet Control (UR)
 #20 Daryl_Ayers: Amulet Titan (UG)
 #21 stainerson: Gruul Midrange (RG)
 #22 Beicodegeia: Gifts Storm (UR)
-#23 darthnius: Crabvine (UBG)
+#23 darthnius: Crabvine (UBRG)
 #24 SickWorld: Mono Red Prowess (R)
 #25 nsg1989: Eldrazi Tron (C)
 #26 WuYuHsien: Bant Control (WUG)
 #27 rileydk: Amulet Titan (UG)
 #28 Nammersquats: Mono Red Prowess (R)
-#29 didoguidotti1: Sultai Shadow (UBG)
+#29 didoguidotti1: UBRG Shadow (UBRG)
 #30 FranPi: Gifts Storm (UR)
 #31 THEsneakyhomunculous: Uroza (UG)
 #32 Salty_Steve: Green Tron (G)
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck02_JustRoll_EldraziTron_C()
+        public void Deck02_JustRoll_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-03-01",1),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck03_PuntThenWhine_AmuletTitan_G()
+        public void Deck03_PuntThenWhine_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-03-01",2),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -87,12 +87,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck04_al8ertdk_EldraziTron_C()
+        public void Deck04_al8ertdk_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-03-01",3),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck07_Graciasportanto_EldraziTron_C()
+        public void Deck07_Graciasportanto_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-03-01",6),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -152,12 +152,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck09_ViolentOutburst_SultaiShadow_UBG()
+        public void Deck09_ViolentOutburst_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-03-01",8),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -165,12 +165,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck10_kefka27_EldraziTron_C()
+        public void Deck10_kefka27_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-03-01",9),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -178,12 +178,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck11_zMagic4ever_EldraziTron_C()
+        public void Deck11_zMagic4ever_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-03-01",10),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck14_Chefen_EldraziTron_C()
+        public void Deck14_Chefen_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-03-01",13),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -243,12 +243,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck16_KelMasterP_EldraziTron_C()
+        public void Deck16_KelMasterP_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-03-01",15),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck17_C4N7O_Uroza_UG()
+        public void Deck17_C4N7O_Uroza_URG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-03-01",16),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -269,12 +269,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck18_ChillingLauge_EldraziTron_C()
+        public void Deck18_ChillingLauge_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-03-01",17),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -334,12 +334,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck23_darthnius_Crabvine_UBG()
+        public void Deck23_darthnius_Crabvine_UBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-03-01",22),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(Crabvine),
                 null,
                 null
@@ -412,12 +412,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck29_didoguidotti1_SultaiShadow_UBG()
+        public void Deck29_didoguidotti1_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-03-01",28),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

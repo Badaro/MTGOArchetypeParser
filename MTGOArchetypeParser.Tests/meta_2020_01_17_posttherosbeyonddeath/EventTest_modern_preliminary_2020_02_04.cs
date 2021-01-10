@@ -12,22 +12,22 @@ using System.Text;
 #01 PRGJJAR: Dredge (BRG)
 #02 yamakiller: Neobrand (UG)
 #03 idutra: Gruul Midrange (RG)
-#04 McWinSauce: Bant Control (WUG)
+#04 McWinSauce: WURG Control (WURG)
 #05 stonepeanut: Green Tron (G)
 #06 eXavie: Eldrazi Tron (C)
 #07 MLupa: Izzet Control (UR)
 #08 sandydogmtg: Burn (R)
 #09 Ak4suk1: Neobrand (UG)
 #10 im2g00t4ubarn: Thopter Urza (UB)
-#11 SoulStrong: Bant Control (WUG)
-#12 Bugsy69: Dredge (BRG)
+#11 SoulStrong: WURG Control (WURG)
+#12 Bugsy69: Dredge (UBRG)
 #13 stayrospet: Mono Red Prowess (R)
 #14 Rukzah: Amulet Titan (UG)
 #15 vini_torres: Gifts Storm (UR)
-#16 stollis: Crabvine (UBG)
-#17 Xwhale: Eldrazi Tron (C)
+#16 stollis: Crabvine (UBRG)
+#17 Xwhale: Eldrazi Tron (G)
 #18 MartinezDP: Saheeli Combo (WURG)
-#19 coert: Devoted (WG)
+#19 coert: Devoted (WBG)
 #20 thugnificent32: Amulet Titan (UG)
 #21 Nikito18: Izzet Control (UR)
 */
@@ -76,12 +76,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck04_McWinSauce_BantControl_WUG()
+        public void Deck04_McWinSauce_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-04",3),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -167,12 +167,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck11_SoulStrong_BantControl_WUG()
+        public void Deck11_SoulStrong_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-04",10),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -180,12 +180,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck12_Bugsy69_Dredge_BRG()
+        public void Deck12_Bugsy69_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-04",11),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -232,12 +232,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck16_stollis_Crabvine_UBG()
+        public void Deck16_stollis_Crabvine_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-04",15),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(Crabvine),
                 null,
                 null
@@ -245,12 +245,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck17_Xwhale_EldraziTron_C()
+        public void Deck17_Xwhale_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-04",16),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -271,12 +271,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck19_coert_Devoted_WG()
+        public void Deck19_coert_Devoted_WBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-04",18),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WBG,
                 typeof(Devoted),
                 null,
                 null

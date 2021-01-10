@@ -15,7 +15,7 @@ using System.Text;
 #04 uaedoliB: Humans (WUBRG)
 #05 Heir_of_Elendil15: Azorius Control (WU)
 #06 Trieste: Bant Control (WUG)
-#07 DuHeng: Sultai Shadow (UBG)
+#07 DuHeng: UBRG Shadow (UBRG)
 #08 GoonLord: Bant Control (WUG)
 #09 bamzing: Eldrazi Tron (C)
 #10 E_Kaminuma: Devoted (WG)
@@ -26,7 +26,7 @@ using System.Text;
 #15 NightShadowJ: Thopter Urza (UBR)
 #16 hikid: Amulet Titan (UG)
 #17 Hfang1: Infect (UG)
-#18 cool95: Dredge (BRG)
+#18 cool95: Dredge (WBRG)
 #19 contrap: Infect (UG)
 #20 BReal2: Rakdos Midrange (BR)
 #21 nathansteuer: Eldrazi Tron (C)
@@ -46,7 +46,7 @@ using System.Text;
 #35 Usama96: Jund Midrange (BRG)
 #36 dillyg10: Thopter Urza (UB)
 #37 _Carter_: Grixis Shadow (UBR)
-#38 RNGspecialist: Bant Control (WUG)
+#38 RNGspecialist: WURG Control (WURG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
@@ -132,12 +132,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck07_DuHeng_SultaiShadow_UBG()
+        public void Deck07_DuHeng_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-14",6),
                 new PostOuatBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -275,12 +275,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck18_cool95_Dredge_BRG()
+        public void Deck18_cool95_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-14",17),
                 new PostOuatBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -535,12 +535,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck38_RNGspecialist_BantControl_WUG()
+        public void Deck38_RNGspecialist_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-14",37),
                 new PostOuatBan(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null

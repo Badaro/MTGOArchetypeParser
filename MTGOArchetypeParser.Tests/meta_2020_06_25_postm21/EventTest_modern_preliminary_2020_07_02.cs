@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Ouranos139: Amulet Titan (UG)
+#01 Ouranos139: Amulet Titan (URG)
 #02 Toastxp: Sultai Control (UBG)
 #03 fingers1991: Bant Control (WUG)
 #04 Theo_Jung: Sultai Control (UBG)
@@ -27,12 +27,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_preliminary_2020_07_02 : EventTest
     {
         [Test]
-        public void Deck01_Ouranos139_AmuletTitan_UG()
+        public void Deck01_Ouranos139_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-02",0),
                 new PostM21(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

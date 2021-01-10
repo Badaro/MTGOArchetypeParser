@@ -18,10 +18,10 @@ using System.Text;
 #07 shoktroopa: Blue Tron (U)
 #08 Brener: Infect (UG)
 #09 qbturtle15: Jund Midrange (BRG)
-#10 Nematic: Urza Oko (UG)
+#10 Nematic: Urza Oko (UBG)
 #11 CaviAck: Eldrazi Tron (G)
 #12 McWinSauce: Bant Control (WUG)
-#13 UpNorthNorway: Sultai Shadow (UBG)
+#13 UpNorthNorway: UBRG Shadow (UBRG)
 #14 yamakiller: Eldrazi Tron (C)
 #15 Mulldrifter: Eldrazi Tron (C)
 #16 shadow_PT: Eldrazi Tron (C)
@@ -37,7 +37,7 @@ using System.Text;
 #26 nahuel10: Burn (WR)
 #27 Falkoneye: Urza Oko (UBG)
 #28 updraftelemental: UBRG Shadow (UBRG)
-#29 SourceOdin: Thopter Urza (WU)
+#29 SourceOdin: Thopter Urza (WURG)
 #30 azatoyellow: Temur Control (URG)
 #31 kazna: Bant Control (WUG)
 #32 OPMegaProEloKoks: Crabvine (UBG)
@@ -165,12 +165,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck10_Nematic_UrzaOko_UG()
+        public void Deck10_Nematic_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-16",9),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -204,12 +204,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck13_UpNorthNorway_SultaiShadow_UBG()
+        public void Deck13_UpNorthNorway_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-16",12),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -412,12 +412,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck29_SourceOdin_ThopterUrza_WU()
+        public void Deck29_SourceOdin_ThopterUrza_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-16",28),
                 new LastOkoDays(),
-                ArchetypeColor.WU,
+                ArchetypeColor.WURG,
                 typeof(ThopterCombo),
                 typeof(ThopterUrza),
                 null

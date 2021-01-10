@@ -13,7 +13,7 @@ using System.Text;
 #02 pbarrrgh: Sultai Control (UBG)
 #03 bamzing: WURG Control (WURG)
 #04 maxbv: Mono White Taxes (W)
-#05 AlpInco: Oops All Spells (WUBG)
+#05 AlpInco: Oops All Spells (WUBRG)
 #06 FedeG: Heliod Combo (WG)
 #07 Vagabond87: Selective Oracle (WU)
 #08 yamakiller: Gruul Midrange (RG)
@@ -30,7 +30,7 @@ using System.Text;
 #19 cntrlfreak: Grixis Shadow (UBR)
 #20 Wizard_2002: Green Tron (G)
 #21 Biednarccio: Amulet Titan (UG)
-#22 TSPJendrek: Izzet Control (UR)
+#22 TSPJendrek: Jeskai Control (WUR)
 #23 Tweedel: Humans (WUBRG)
 #24 MastaHorus: Electro End (UR)
 #25 mtbWolf: Jund Midrange (BRG)
@@ -100,12 +100,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_AlpInco_OopsAllSpells_WUBG()
+        public void Deck05_AlpInco_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-01",4),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -321,12 +321,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck22_TSPJendrek_IzzetControl_UR()
+        public void Deck22_TSPJendrek_JeskaiControl_WUR()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-01",21),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.WUR,
                 typeof(GenericControl),
                 null,
                 null

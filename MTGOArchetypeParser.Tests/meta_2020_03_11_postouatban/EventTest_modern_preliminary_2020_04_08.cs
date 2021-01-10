@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 in5ano: Thopter Urza (WUR)
 #02 mark_68: Mono Red Prowess (R)
-#03 HCHAK: Uroza (UG)
+#03 HCHAK: Uroza (URG)
 #04 Rinko: Goryo Reanimator (BRG)
 #05 Dafne17: Gruul Midrange (RG)
 #06 Violent_Outburst: Polymorph (WUR)
@@ -19,7 +19,7 @@ using System.Text;
 #08 _Antoniou_: Niv To Light (WUBRG)
 #09 envizz: Jund Midrange (BRG)
 #10 a_p_s: Gruul Midrange (RG)
-#11 Toastxp: Uroza (UG)
+#11 Toastxp: Uroza (URG)
 #12 JustBurn420: Slivers (WUBRG)
 #13 winterlong: Dredge (BRG)
 #14 coert: Burn (WR)
@@ -33,8 +33,8 @@ using System.Text;
 #22 Turn5: Izzet Control (UR)
 #23 __matsugan: Neobrand (UG)
 #24 ACG88: Niv To Light (WUBRG)
-#25 jessy_samek: Uroza (UG)
-#26 hikid: Amulet Titan (G)
+#25 jessy_samek: Uroza (URG)
+#26 hikid: Amulet Titan (UG)
 #27 grinderA: Gruul Midrange (RG)
 #28 IsKeiP529: Green Tron (G)
 #29 2n0r1ax: Inverter Combo (WUB)
@@ -76,12 +76,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck03_HCHAK_Uroza_UG()
+        public void Deck03_HCHAK_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-08",2),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -180,12 +180,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck11_Toastxp_Uroza_UG()
+        public void Deck11_Toastxp_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-08",10),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -362,12 +362,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck25_jessysamek_Uroza_UG()
+        public void Deck25_jessysamek_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-08",24),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -375,12 +375,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck26_hikid_AmuletTitan_G()
+        public void Deck26_hikid_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-08",25),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

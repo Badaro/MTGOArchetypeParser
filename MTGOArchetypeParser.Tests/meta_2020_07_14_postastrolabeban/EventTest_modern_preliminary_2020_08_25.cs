@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Lavaridge: Temur Control (URG)
 #02 SunofNothing: Dimir Shadow (UB)
-#03 A22en: Goblins (BR)
+#03 A22en: Goblins (BRG)
 #04 kanister: Bant Control (WUG)
 #05 Danker: Azorius Control (WU)
 #06 SebastianStueckl: Boros Prowess (WR, Lurrus)
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_A22en_Goblins_BR()
+        public void Deck03_A22en_Goblins_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-25",2),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BR,
+                ArchetypeColor.BRG,
                 typeof(Goblins),
                 null,
                 null

@@ -16,14 +16,14 @@ using System.Text;
 #05 MLupa: Devoted (WUG)
 #06 McWinSauce: Bant Control (WUG)
 #07 n00bcheesepwner: Amulet Titan (UG)
-#08 benchsummer: Sultai Shadow (UBG)
-#09 fried-liver-attack: Eldrazi Tron (C)
+#08 benchsummer: UBRG Shadow (UBRG)
+#09 fried-liver-attack: Eldrazi Tron (G)
 #10 sandydogmtg: Burn (R)
 #11 bradyoo: Urza Oko (UG)
 #12 vini_torres: Gifts Storm (UR)
-#13 frozenian: Crabvine (UBG)
+#13 frozenian: Crabvine (UBRG)
 #14 YawgmothPT: Humans (WUBRG)
-#15 Kricha13: Thopter Urza (WUR)
+#15 Kricha13: Thopter Urza (WUBR)
 #16 xame3: Burn (WR)
 #17 SlyDaniel7787: Eldrazi Tron (G)
 #18 dillyg10: Bant Midrange (WUG)
@@ -129,12 +129,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck08_benchsummer_SultaiShadow_UBG()
+        public void Deck08_benchsummer_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-07",7),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -142,12 +142,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck09_friedliverattack_EldraziTron_C()
+        public void Deck09_friedliverattack_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-07",8),
                 new LastOkoDays(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -194,12 +194,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck13_frozenian_Crabvine_UBG()
+        public void Deck13_frozenian_Crabvine_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-07",12),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(Crabvine),
                 null,
                 null
@@ -220,12 +220,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck15_Kricha13_ThopterUrza_WUR()
+        public void Deck15_Kricha13_ThopterUrza_WUBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-07",14),
                 new LastOkoDays(),
-                ArchetypeColor.WUR,
+                ArchetypeColor.WUBR,
                 typeof(ThopterCombo),
                 typeof(ThopterUrza),
                 null

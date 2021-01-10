@@ -15,12 +15,12 @@ using System.Text;
 #04 exoticherman: Rakdos Prowess (BR, Lurrus)
 #05 McWinSauce: Bant Control (WUG)
 #06 karatedom: Infect (UG)
-#07 Costola91: Sultai Shadow (UBG)
+#07 Costola91: UBRG Shadow (UBRG)
 #08 sicsmoo: Green Tron (G)
 #09 Nammersquats: Izzet Prowess (UR)
 #10 staffmat1992: Gruul Midrange (RG)
 #11 pootisgodsamongus: Crabvine (UBG)
-#12 Ryan100495: Dredge (BRG)
+#12 Ryan100495: Dredge (WBRG)
 #13 komattaman: Gruul Midrange (RG)
 #14 ConnorM426: Simic Control (UG)
 #15 1plus1equals3: Green Tron (G)
@@ -109,12 +109,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_Costola91_SultaiShadow_UBG()
+        public void Deck07_Costola91_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-13",6),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -174,12 +174,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_Ryan100495_Dredge_BRG()
+        public void Deck12_Ryan100495_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-13",11),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null

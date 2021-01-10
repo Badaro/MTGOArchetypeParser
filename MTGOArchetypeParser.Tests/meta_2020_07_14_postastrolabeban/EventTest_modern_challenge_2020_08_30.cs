@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 hcook725: Uroza (WUG)
 #02 DreamsOfAshiok: Rakdos Prowess (BR, Lurrus)
-#03 bigjc00: Amulet Titan (RG)
+#03 bigjc00: Amulet Titan (URG)
 #04 _goblinlackey: Mardu Prowess (WBR, Lurrus)
 #05 yamakiller: Obosh Aggro (R, Obosh)
 #06 SpiderSpace: Humans (WUBRG)
@@ -29,7 +29,7 @@ using System.Text;
 #18 PvtEnormous: Bant Control (WUG)
 #19 Day_man: Temur Control (URG)
 #20 Midguy: Green Tron (G)
-#21 Lord_of_Puntlantis: Electro Balance (UR)
+#21 Lord_of_Puntlantis: Electro Balance (URG)
 #22 FloorFlower: Gruul Midrange (RG)
 #23 raven0904: Green Tron (G)
 #24 Corrado: Rakdos Prowess (BR, Lurrus)
@@ -38,7 +38,7 @@ using System.Text;
 #27 cws: Gifts Storm (UR)
 #28 hoveydw: Jund Shadow (BRG)
 #29 benchsummer: UBRG Shadow (UBRG)
-#30 HouseOfManaMTG: Dredge (BRG)
+#30 HouseOfManaMTG: Dredge (WBRG)
 #31 patheus_84: Ad Nauseam (WUB)
 #32 ReturnToDust: Reclaimer Titan (WG)
 */
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_bigjc00_AmuletTitan_RG()
+        public void Deck03_bigjc00_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",2),
                 new PostAstrolabeBan(),
-                ArchetypeColor.RG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck21_LordofPuntlantis_ElectroBalance_UR()
+        public void Deck21_LordofPuntlantis_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",20),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null
@@ -425,12 +425,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_HouseOfManaMTG_Dredge_BRG()
+        public void Deck30_HouseOfManaMTG_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-30",29),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null

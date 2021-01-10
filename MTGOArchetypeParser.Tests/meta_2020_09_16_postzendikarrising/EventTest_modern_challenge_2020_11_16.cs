@@ -15,7 +15,7 @@ using System.Text;
 #04 Tiemuuu: Izzet Control (UR)
 #05 kanister: Dimir Control (UB)
 #06 AstralPlane: Izzet Prowess (UR)
-#07 fradev1988: Electro Balance (UR)
+#07 fradev1988: Electro Balance (URG)
 #08 SoulStrong: Reclaimer Titan (WRG)
 #09 nahuel10: Izzet Prowess (UR)
 #10 UmekawaneikU: Shadow Prowess (BRG, Lurrus)
@@ -35,10 +35,10 @@ using System.Text;
 #24 Delthar: Mill (UB)
 #25 maicmaic: Shadow Prowess (BR, Lurrus)
 #26 Better_than_Average: Obosh Aggro (R, Obosh)
-#27 Nytrox: Heliod Combo (WG)
+#27 Nytrox: Heliod Combo (WRG)
 #28 sleightofhand94: Mono White Taxes (W)
 #29 ht991122: WURG Control (WURG)
-#30 Kiwairay: Oops All Spells (WUBG)
+#30 Kiwairay: Oops All Spells (WUBRG)
 #31 IPsychonaut: Jund Shadow (BRG, Lurrus)
 #32 Tweedel: Izzet Control (UR)
 */
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_fradev1988_ElectroBalance_UR()
+        public void Deck07_fradev1988_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-16",6),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null
@@ -386,12 +386,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck27_Nytrox_HeliodCombo_WG()
+        public void Deck27_Nytrox_HeliodCombo_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-16",26),
                 new PostZendikarRising(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WRG,
                 typeof(HeliodCombo),
                 null,
                 null
@@ -425,12 +425,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck30_Kiwairay_OopsAllSpells_WUBG()
+        public void Deck30_Kiwairay_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-16",29),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

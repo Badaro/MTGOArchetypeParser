@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 pepeteam: Amulet Titan (UG)
+#01 pepeteam: Amulet Titan (URG)
 #02 Shorak123: Sultai Control (UBG)
 #03 Laplasjan: Devoted (WG, Lurrus)
 #04 Edel: Abzan Midrange (WBG, Lurrus)
@@ -29,8 +29,8 @@ using System.Text;
 #18 abisbocci: Jund Midrange (BRG, Lurrus)
 #19 HeyNongMan: Rakdos Prowess (BR, Lurrus)
 #20 Yamada: Devoted (WG, Lurrus)
-#21 yneves: Bant Blink (WUG, Yorion)
-#22 LORiWWA: Bant Control (WUG, Yorion)
+#21 yneves: WURG Blink (WURG, Yorion)
+#22 LORiWWA: WURG Control (WURG, Yorion)
 #23 2jjm: Burn (WR, Lurrus)
 #24 MaxMagicer: Burn (WR, Lurrus)
 #25 mechint: Uroza (URG, Yorion)
@@ -48,12 +48,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
     public class EventTest_modern_challenge_2020_05_03 : EventTest
     {
         [Test]
-        public void Deck01_pepeteam_AmuletTitan_UG()
+        public void Deck01_pepeteam_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-03",0),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck21_yneves_BantBlink_WUG_Yorion()
+        public void Deck21_yneves_WURGBlink_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-03",20),
                 new PostIkoria(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericBlink),
                 null,
                 ArchetypeCompanion.Yorion
@@ -321,12 +321,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck22_LORiWWA_BantControl_WUG_Yorion()
+        public void Deck22_LORiWWA_WURGControl_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-03",21),
                 new PostIkoria(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion

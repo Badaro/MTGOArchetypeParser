@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 fradev1988: Electro Balance (UR)
+#01 fradev1988: Electro Balance (URG)
 #02 DreamsOfAshiok: Eldrazi Tron (C)
 #03 Gigy: Gruul Midrange (RG, Obosh)
 #04 Ouranos139: Amulet Titan (URG)
@@ -19,7 +19,7 @@ using System.Text;
 #08 kefka27: Gruul Midrange (RG, Obosh)
 #09 GrandDrou: Rakdos Prowess (BR, Lurrus)
 #10 J000111: Dredge (BRG)
-#11 TheNutLo: Rakdos Prowess (BR, Lurrus)
+#11 TheNutLo: Mardu Prowess (WBR, Lurrus)
 #12 Venom1: Jund Midrange (BRG, Lurrus)
 #13 PlaneswalkerYami: Jund Midrange (BRG, Lurrus)
 */
@@ -29,12 +29,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
     public class EventTest_modern_preliminary_2020_05_22 : EventTest
     {
         [Test]
-        public void Deck01_fradev1988_ElectroBalance_UR()
+        public void Deck01_fradev1988_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-22",0),
                 new PostIkoria(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null
@@ -159,12 +159,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck11_TheNutLo_RakdosProwess_BR_Lurrus()
+        public void Deck11_TheNutLo_MarduProwess_WBR_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-22",10),
                 new PostIkoria(),
-                ArchetypeColor.BR,
+                ArchetypeColor.WBR,
                 typeof(GenericProwess),
                 null,
                 ArchetypeCompanion.Lurrus

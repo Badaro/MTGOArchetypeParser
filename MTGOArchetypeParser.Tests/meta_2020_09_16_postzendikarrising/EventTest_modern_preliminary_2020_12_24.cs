@@ -13,7 +13,7 @@ using System.Text;
 #02 nathansteuer: Rakdos Midrange (BR)
 #03 Shadowz2005: Izzet Prowess (UR)
 #04 sandydogmtg: Infect (UG)
-#05 bomberboss: Rakdos Midrange (BR)
+#05 bomberboss: Mardu Midrange (WBR)
 #06 bolov0: Rakdos Midrange (BR)
 #07 Xwhale: Reclaimer Titan (WRG)
 #08 pokerswizard: Green Tron (G)
@@ -79,12 +79,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_bomberboss_RakdosMidrange_BR()
+        public void Deck05_bomberboss_MarduMidrange_WBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-24",4),
                 new PostZendikarRising(),
-                ArchetypeColor.BR,
+                ArchetypeColor.WBR,
                 typeof(GenericMidrange),
                 null,
                 null

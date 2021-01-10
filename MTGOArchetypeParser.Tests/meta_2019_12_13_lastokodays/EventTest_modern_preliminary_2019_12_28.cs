@@ -12,12 +12,12 @@ using System.Text;
 #01 McWinSauce: Saheeli Combo (WURG)
 #02 yamakiller: Eldrazi Tron (C)
 #03 exoticherman: Infect (UG)
-#04 SourceOdin: Urza Oko (UG)
-#05 SoulStrong: Sultai Shadow (UBG)
+#04 SourceOdin: Urza Oko (WUG)
+#05 SoulStrong: UBRG Shadow (UBRG)
 #06 nahuel10: Burn (WR)
 #07 GutsMTG: Primeval Titan (UG)
 #08 Gallatin: Green Tron (G)
-#09 abethemage: Urza Oko (UG)
+#09 abethemage: Urza Oko (UBG)
 #10 JustBurn420: Burn (WR)
 #11 Finalnub: Eldrazi Tron (G)
 #12 d_peliser: Grixis Shadow (UBR)
@@ -70,12 +70,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck04_SourceOdin_UrzaOko_UG()
+        public void Deck04_SourceOdin_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-28",3),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -83,12 +83,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck05_SoulStrong_SultaiShadow_UBG()
+        public void Deck05_SoulStrong_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-28",4),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -135,12 +135,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck09_abethemage_UrzaOko_UG()
+        public void Deck09_abethemage_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-28",8),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(UrzaOko),
                 null,
                 null

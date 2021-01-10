@@ -15,14 +15,14 @@ using System.Text;
 #04 TopherMarsh: Uroza (URG, Yorion)
 #05 GiovaniMF: Boros Prowess (WR, Lurrus)
 #06 ilidioTheBrabo157SL: Burn (WR, Lurrus)
-#07 haubidtran: Uroza (UG, Yorion)
+#07 haubidtran: Uroza (URG, Yorion)
 #08 pmc22337: Sultai Control (UBG)
 #09 AJOCHUM: Mardu Prowess (WBR, Lurrus)
 #10 Chrislampa: Gruul Midrange (RG, Obosh)
 #11 Boin: Jund Midrange (BRG, Lurrus)
 #12 Searzist: Jund Midrange (BRG, Lurrus)
 #13 nahuel10: WURG Control (WURG, Yorion)
-#14 Ouranos139: Amulet Titan (UG)
+#14 Ouranos139: Amulet Titan (URG)
 #15 Habby: Gruul Midrange (RG, Obosh)
 #16 Karnesis93: Amulet Titan (UG)
 #17 sydneydude: Boros Prowess (WR, Lurrus)
@@ -38,7 +38,7 @@ using System.Text;
 #27 Gamestore_Linz: Boros Prowess (WR, Lurrus)
 #28 NewHJ: Jund Midrange (BRG, Lurrus)
 #29 Traft: Jund Midrange (BRG, Lurrus)
-#30 a_p_s: Amulet Titan (UG)
+#30 a_p_s: Amulet Titan (URG)
 #31 Patxi: Bant Control (WUG, Yorion)
 #32 FallenKonflicz: Gruul Midrange (RG, Obosh)
 */
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck07_haubidtran_Uroza_UG_Yorion()
+        public void Deck07_haubidtran_Uroza_URG_Yorion()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-10",6),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 ArchetypeCompanion.Yorion
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck14_Ouranos139_AmuletTitan_UG()
+        public void Deck14_Ouranos139_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-10",13),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -425,12 +425,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck30_aps_AmuletTitan_UG()
+        public void Deck30_aps_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-10",29),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

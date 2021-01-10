@@ -18,7 +18,7 @@ using System.Text;
 #07 Mikebrav: Humans (WUBRG, Yorion)
 #08 Misplacedginger: Scapeshift (WURG, Yorion)
 #09 yamakiller: Green Tron (G, Jegantha)
-#10 Lord_of_Puntlantis: Electro Balance (UR)
+#10 Lord_of_Puntlantis: Electro Balance (URG)
 #11 PietroSas: Devoted (WG, Lurrus)
 #12 sandydogmtg: Boros Prowess (WR, Lurrus)
 #13 Capitano_CL: Rakdos Prowess (BR, Lurrus)
@@ -148,12 +148,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck10_LordofPuntlantis_ElectroBalance_UR()
+        public void Deck10_LordofPuntlantis_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-28",9),
                 new PostIkoria(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

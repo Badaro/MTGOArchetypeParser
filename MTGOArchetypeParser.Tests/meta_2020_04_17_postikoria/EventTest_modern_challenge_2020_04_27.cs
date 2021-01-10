@@ -20,8 +20,8 @@ using System.Text;
 #09 al8ert.dk: Gruul Midrange (RG, Obosh)
 #10 ack_s: Primeval Titan (BG)
 #11 meanfannypack: Orzhov Taxes (WB, Lurrus)
-#12 SebastianStueckl: Bant Control (WUG, Yorion)
-#13 Stabilo: Amulet Titan (G)
+#12 SebastianStueckl: WURG Control (WURG, Yorion)
+#13 Stabilo: Amulet Titan (UG)
 #14 patheus_84: Ad Nauseam (WUB)
 #15 nsroller: Jund Midrange (BRG, Lurrus)
 #16 joker10289: Bant Control (WUG)
@@ -191,12 +191,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck12_SebastianStueckl_BantControl_WUG_Yorion()
+        public void Deck12_SebastianStueckl_WURGControl_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-27",11),
                 new PostIkoria(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion
@@ -204,12 +204,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck13_Stabilo_AmuletTitan_G()
+        public void Deck13_Stabilo_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-27",12),
                 new PostIkoria(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

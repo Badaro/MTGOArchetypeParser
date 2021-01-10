@@ -24,7 +24,7 @@ using System.Text;
 #13 ExclusiveB: Oops All Spells (WUBRG)
 #14 Gerardo94: WURG Control (WURG)
 #15 ArchaeusDota: Green Eldrazi (WG)
-#16 Rav104: Oops All Spells (WUBG)
+#16 Rav104: Oops All Spells (WUBRG)
 #17 TwistedWombat: Omnath Saheeli (WURG, Jegantha)
 #18 AlpInco: Burn (WR)
 #19 Capitano_CL: Reclaimer Titan (WG)
@@ -234,12 +234,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_Rav104_OopsAllSpells_WUBG()
+        public void Deck16_Rav104_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-30",15),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

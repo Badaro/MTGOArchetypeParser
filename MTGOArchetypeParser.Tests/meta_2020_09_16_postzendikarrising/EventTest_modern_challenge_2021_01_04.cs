@@ -19,7 +19,7 @@ using System.Text;
 #08 Lord_Beerus: Burn (WR)
 #09 slamanscott1228: Bant Midrange (WUG)
 #10 r64v3a: Reclaimer Titan (WUG)
-#11 Arrias: Heliod Combo (WG)
+#11 Arrias: Heliod Combo (WRG)
 #12 ajifly: Devoted (WG, Lurrus)
 #13 joker10289: Sultai Control (UBG)
 #14 PieGonti: Belcher (BRG)
@@ -178,12 +178,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_Arrias_HeliodCombo_WG()
+        public void Deck11_Arrias_HeliodCombo_WRG()
         {
             Test(
                 GetDeck("modern-challenge-2021-01-04",10),
                 new PostZendikarRising(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WRG,
                 typeof(HeliodCombo),
                 null,
                 null

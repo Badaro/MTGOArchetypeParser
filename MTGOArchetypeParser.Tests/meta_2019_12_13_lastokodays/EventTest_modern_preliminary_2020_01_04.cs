@@ -10,8 +10,8 @@ using System.Text;
 
 /*
 #01 xfile: Eldrazi Tron (G)
-#02 MentalMisstep: Urza Oko (UG)
-#03 fried-liver-attack: Eldrazi Tron (C)
+#02 MentalMisstep: Urza Oko (WUG)
+#03 fried-liver-attack: Eldrazi Tron (G)
 #04 122pablo: Ascendancy Combo (WURG)
 #05 penips: Orzhov Taxes (WB)
 #06 Wolvenjoe1984: Thopter Urza (UBG)
@@ -23,10 +23,10 @@ using System.Text;
 #12 Oderus Urungus: Burn (R)
 #13 tangrams: Primeval Titan (UG)
 #14 Theo_Jung: Eldrazi Tron (C)
-#15 TheYostWithTheMost: Urza Oko (UG)
+#15 TheYostWithTheMost: Urza Oko (WUG)
 #16 qbturtle15: Gruul Midrange (RG)
 #17 fistfullofmetal: Green Tron (G)
-#18 SourceOdin: Urza Oko (UG)
+#18 SourceOdin: Urza Oko (WUG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
@@ -47,12 +47,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_MentalMisstep_UrzaOko_UG()
+        public void Deck02_MentalMisstep_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-04",1),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -60,12 +60,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck03_friedliverattack_EldraziTron_C()
+        public void Deck03_friedliverattack_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-04",2),
                 new LastOkoDays(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -216,12 +216,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck15_TheYostWithTheMost_UrzaOko_UG()
+        public void Deck15_TheYostWithTheMost_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-04",14),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -255,12 +255,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck18_SourceOdin_UrzaOko_UG()
+        public void Deck18_SourceOdin_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-04",17),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null

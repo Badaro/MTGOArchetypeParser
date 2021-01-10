@@ -17,7 +17,7 @@ using System.Text;
 #06 ecobaronen: Bant Control (WUG)
 #07 Misterkle: Ad Nauseam (WUB)
 #08 joker10289: Gruul Midrange (RG)
-#09 Erik157751: Dredge (BRG)
+#09 Erik157751: Dredge (UBRG)
 #10 manoah: Jund Midrange (BRG)
 #11 Darthkid: Gruul Midrange (RG)
 #12 Heibing: Green Eldrazi (WUG)
@@ -25,7 +25,7 @@ using System.Text;
 #14 Albimtg: Jund Shadow (BRG)
 #15 ArchaeusDota: Eldrazi Tron (C)
 #16 Sonic_Smasher: Bant Control (WUG)
-#17 TaviGhindea: Burn (WR)
+#17 TaviGhindea: Burn (WBR)
 #18 PRGJJAR: Dredge (BRG)
 #19 lukystrike: Burn (WR)
 #20 toondoslav: Mono Red Prowess (R)
@@ -34,7 +34,7 @@ using System.Text;
 #23 Braiden: Eldrazi Tron (C)
 #24 envizz: Mono Red Prowess (R)
 #25 Bayesta_93: Green Tron (G)
-#26 alemilan19: Dredge (BRG)
+#26 alemilan19: Dredge (UBRG)
 #27 AlerionONE: Humans (WUBRG)
 #28 ACG88: Green Tron (G)
 #29 lighdar: Humans (WUBRG)
@@ -149,12 +149,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck09_Erik157751_Dredge_BRG()
+        public void Deck09_Erik157751_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-25",8),
                 new PostOuatBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -253,12 +253,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck17_TaviGhindea_Burn_WR()
+        public void Deck17_TaviGhindea_Burn_WBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-25",16),
                 new PostOuatBan(),
-                ArchetypeColor.WR,
+                ArchetypeColor.WBR,
                 typeof(Burn),
                 null,
                 null
@@ -370,12 +370,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck26_alemilan19_Dredge_BRG()
+        public void Deck26_alemilan19_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-25",25),
                 new PostOuatBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null

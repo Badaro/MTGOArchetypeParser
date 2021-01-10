@@ -23,7 +23,7 @@ using System.Text;
 #12 1plus1equals3: Devoted (WG, Lurrus)
 #13 MlckyB: Bogles (WG)
 #14 Shazzam: Burn (WR)
-#15 Finalnub: Neobrand (UG)
+#15 Finalnub: Neobrand (WUG)
 #16 pokerswizard: Green Tron (G)
 #17 dsnavely13: Gifts Storm (UR)
 #18 NHA37: Jeskai Prowess (WUR, Lurrus)
@@ -225,12 +225,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck15_Finalnub_Neobrand_UG()
+        public void Deck15_Finalnub_Neobrand_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-16",14),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(Neobrand),
                 null,
                 null

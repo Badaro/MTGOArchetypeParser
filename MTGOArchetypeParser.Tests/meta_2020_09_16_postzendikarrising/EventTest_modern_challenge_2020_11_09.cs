@@ -20,14 +20,14 @@ using System.Text;
 #09 Laplasjan: Devoted (WG, Lurrus)
 #10 Mateusf34: Eldrazi Tron (C)
 #11 DenebLyrae: Heliod Combo (WG)
-#12 Sodeq: Oops All Spells (WUBG)
+#12 Sodeq: Oops All Spells (WUBRG)
 #13 Nytrox: Heliod Combo (WG)
 #14 Mlgb92: Izzet Prowess (UR)
 #15 _Batutinha_: Reclaimer Titan (WRG)
 #16 mmapson125: Heliod Combo (WG)
 #17 oosunq: Omnath Saheeli (WURG, Jegantha)
 #18 GodOfSlaughter: WURG Control (WURG)
-#19 Better_than_Average: Oops All Spells (WUBG)
+#19 Better_than_Average: Oops All Spells (WUBRG)
 #20 Mogged: Mono Red Prowess (R)
 #21 tibalt_of_red_sub: Mill (UB, Lurrus)
 #22 PRGJJAR: Dredge (BRG)
@@ -191,12 +191,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_Sodeq_OopsAllSpells_WUBG()
+        public void Deck12_Sodeq_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-09",11),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -282,12 +282,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck19_BetterthanAverage_OopsAllSpells_WUBG()
+        public void Deck19_BetterthanAverage_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-09",18),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

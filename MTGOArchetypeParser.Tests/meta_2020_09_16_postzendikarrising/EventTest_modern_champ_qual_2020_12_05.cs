@@ -20,16 +20,16 @@ using System.Text;
 #09 Patxi: Gruul Midrange (RG)
 #10 SoulStrong: Bant Blink (WUG)
 #11 HardcoreHenry: Shadow Prowess (BR, Lurrus)
-#12 Chichichi: Amulet Titan (G)
+#12 Chichichi: Amulet Titan (UG)
 #13 qbturtle15: Mono White Taxes (W)
 #14 PeanutBrittle: WURG Control (WURG)
-#15 KO_Mak: Oops All Spells (UBG)
+#15 KO_Mak: Oops All Spells (UBRG)
 #16 joetru: Niv To Light (WUBRG, Yorion)
 #17 mashmalovsky: Ad Nauseam (WUB)
 #18 SpiderSpace: Hammer Time (WG, Lurrus)
 #19 Kaizer_Kahn: Obosh Aggro (R, Obosh)
 #20 katoriarch123: WURG Control (WURG)
-#21 FreedMania: Amulet Titan (G)
+#21 FreedMania: Amulet Titan (UG)
 #22 gottelicious: Green Tron (G)
 #23 BReal2: Shadow Prowess (BR, Lurrus)
 #24 hugofreitas1: Gifts Storm (UR)
@@ -191,12 +191,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_Chichichi_AmuletTitan_G()
+        public void Deck12_Chichichi_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-12-05",11),
                 new PostZendikarRising(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -230,12 +230,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_KOMak_OopsAllSpells_UBG()
+        public void Deck15_KOMak_OopsAllSpells_UBRG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-12-05",14),
                 new PostZendikarRising(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck21_FreedMania_AmuletTitan_G()
+        public void Deck21_FreedMania_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-12-05",20),
                 new PostZendikarRising(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

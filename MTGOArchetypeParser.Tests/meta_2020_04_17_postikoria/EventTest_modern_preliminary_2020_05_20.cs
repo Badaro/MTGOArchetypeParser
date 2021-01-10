@@ -17,7 +17,7 @@ using System.Text;
 #06 meanfannypack: Devoted (WG, Lurrus)
 #07 alemilan19: Golgari Midrange (BG, Lurrus)
 #08 kanister: Rakdos Prowess (BR, Lurrus)
-#09 Chipsoss: Sultai Shadow (UBG, Lurrus)
+#09 Chipsoss: UBRG Shadow (UBRG, Lurrus)
 #10 Larry11: Gruul Midrange (RG, Obosh)
 #11 DDMeelow: Uroza (URG, Yorion)
 #12 Fabrice_K: Eldrazi Tron (C)
@@ -133,12 +133,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck09_Chipsoss_SultaiShadow_UBG_Lurrus()
+        public void Deck09_Chipsoss_UBRGShadow_UBRG_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-20",8),
                 new PostIkoria(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 ArchetypeCompanion.Lurrus

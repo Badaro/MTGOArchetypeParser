@@ -31,12 +31,12 @@ using System.Text;
 #20 Jaime555d: Eldrazi Tron (C)
 #21 Dafne17: Jund Midrange (BRG, Lurrus)
 #22 Navas: Azorius Control (WU, Kaheera)
-#23 fradev1988: Electro Balance (UR)
+#23 fradev1988: Electro Balance (URG)
 #24 Metal_Buddha: Abzan Midrange (WBG, Yorion)
 #25 sff_mtg: Green Tron (G, Jegantha)
 #26 mindcandy: Bant Control (WUG, Yorion)
 #27 XxquestionablyawesomexX: Bogles (WG, Lurrus)
-#28 mephidro: Neobrand (UG)
+#28 mephidro: Neobrand (UBG)
 #29 Bayesta_93: Boros Prowess (WR, Lurrus)
 #30 ScreenwriterNY: Ad Nauseam (WUB)
 #31 otakkun: Eldrazi Tron (C)
@@ -334,12 +334,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck23_fradev1988_ElectroBalance_UR()
+        public void Deck23_fradev1988_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-24",22),
                 new PostIkoria(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null
@@ -399,12 +399,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck28_mephidro_Neobrand_UG()
+        public void Deck28_mephidro_Neobrand_UBG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-24",27),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(Neobrand),
                 null,
                 null

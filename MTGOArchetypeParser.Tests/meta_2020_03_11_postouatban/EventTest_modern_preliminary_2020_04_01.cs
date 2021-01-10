@@ -18,7 +18,7 @@ using System.Text;
 #07 Manny-: Jund Shadow (BRG)
 #08 joker10289: Gruul Midrange (RG)
 #09 _IlNano_: Humans (WUBRG)
-#10 kanister: Uroza (UG)
+#10 kanister: Uroza (URG)
 #11 topdeckbolt: Burn (BR)
 #12 KanyMTG: Gifts Storm (UR)
 #13 PRGJJAR: Dredge (BRG)
@@ -28,7 +28,7 @@ using System.Text;
 #17 mell0n: Primeval Titan (BG)
 #18 josetorr87: Gruul Midrange (RG)
 #19 Dafne17: Uroza (URG)
-#20 ArchaeusDota: Eldrazi Tron (C)
+#20 ArchaeusDota: Eldrazi Tron (R)
 #21 Michai: Green Tron (G)
 #22 ZYURYO: Jund Midrange (BRG)
 #23 J000111: Dredge (BRG)
@@ -40,7 +40,7 @@ using System.Text;
 #29 Tonynine: Gruul Midrange (RG)
 #30 AbelMolto: Burn (WRG)
 #31 selbstdenker: Primeval Titan (BG)
-#32 rn17: Thopter Urza (UB)
+#32 rn17: Thopter Urza (UBR)
 #33 SoIMBA_Airwave: Green Eldrazi (RG)
 #34 TSPJendrek: Esper Control (WUB)
 #35 Melon9: Gruul Midrange (RG)
@@ -169,12 +169,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck10_kanister_Uroza_UG()
+        public void Deck10_kanister_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-01",9),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -299,12 +299,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck20_ArchaeusDota_EldraziTron_C()
+        public void Deck20_ArchaeusDota_EldraziTron_R()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-01",19),
                 new PostOuatBan(),
-                ArchetypeColor.C,
+                ArchetypeColor.R,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -455,12 +455,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck32_rn17_ThopterUrza_UB()
+        public void Deck32_rn17_ThopterUrza_UBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-01",31),
                 new PostOuatBan(),
-                ArchetypeColor.UB,
+                ArchetypeColor.UBR,
                 typeof(ThopterCombo),
                 typeof(ThopterUrza),
                 null

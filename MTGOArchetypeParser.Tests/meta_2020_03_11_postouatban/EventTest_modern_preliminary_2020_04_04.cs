@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 rn17: Thopter Urza (UB)
+#01 rn17: Thopter Urza (UBR)
 #02 _Batutinha_: Bant Control (WUG)
 #03 GiestOfIWin: Primeval Titan (UG)
 #04 HarlanMTG: Azorius Control (WU)
@@ -19,7 +19,7 @@ using System.Text;
 #08 quinniac: Burn (WR)
 #09 Fluorspar: Humans (WUBRG)
 #10 Laurentt: Crabvine (UBG)
-#11 hikid: Amulet Titan (G)
+#11 hikid: Amulet Titan (UG)
 #12 _Tim: Grinding Breach (WUBR)
 #13 zMunkeyXz: Mill (UBG)
 #14 Appoggiatura: Bogles (WG)
@@ -37,13 +37,13 @@ using System.Text;
 #26 wordy333: Boros Taxes (WR)
 #27 MTG-Maestro: Naya Midrange (WRG)
 #28 signblindman: Gruul Midrange (RG)
-#29 negusen: Elves (BG)
+#29 negusen: Elves (WBRG)
 #30 Tarmofir3: Jund Midrange (BRG)
 #31 StormlightReaper: Gruul Midrange (RG)
 #32 l337erhosen: Elementals (WUBRG)
 #33 bobjackson: Burn (WR)
 #34 Artyom76: Gifts Storm (UR)
-#35 Bugsy69: Uroza (UG)
+#35 Bugsy69: Uroza (URG)
 #36 untiltedmtg: Gruul Midrange (RG)
 #37 NAP_DARKMAGE_MJM: Humans (WUBRG)
 #38 eclipse4343: Azorius Control (WU)
@@ -58,12 +58,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
     public class EventTest_modern_preliminary_2020_04_04 : EventTest
     {
         [Test]
-        public void Deck01_rn17_ThopterUrza_UB()
+        public void Deck01_rn17_ThopterUrza_UBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-04",0),
                 new PostOuatBan(),
-                ArchetypeColor.UB,
+                ArchetypeColor.UBR,
                 typeof(ThopterCombo),
                 typeof(ThopterUrza),
                 null
@@ -188,12 +188,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck11_hikid_AmuletTitan_G()
+        public void Deck11_hikid_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-04",10),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -422,12 +422,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck29_negusen_Elves_BG()
+        public void Deck29_negusen_Elves_WBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-04",28),
                 new PostOuatBan(),
-                ArchetypeColor.BG,
+                ArchetypeColor.WBRG,
                 typeof(Elves),
                 null,
                 null
@@ -500,12 +500,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck35_Bugsy69_Uroza_UG()
+        public void Deck35_Bugsy69_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-04",34),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null

@@ -38,7 +38,7 @@ using System.Text;
 #27 Vallejo97: Gruul Midrange (RG)
 #28 ejcos531: Izzet Prowess (UR)
 #29 Wtnof: Gruul Midrange (RG)
-#30 ThekingFor1000years: Infect (UG)
+#30 ThekingFor1000years: Infect (WUG)
 #31 _LSN_: Burn (WR, Lurrus)
 #32 WeareVenom: Bant Control (WUG)
 */
@@ -425,12 +425,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_ThekingFor1000years_Infect_UG()
+        public void Deck30_ThekingFor1000years_Infect_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-14",29),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(Infect),
                 null,
                 null

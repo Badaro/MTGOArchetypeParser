@@ -15,7 +15,7 @@ using System.Text;
 #04 azax: Grixis Shadow (UBR)
 #05 yume-mana: Bant Midrange (WUG)
 #06 mRichi: Gruul Midrange (RG)
-#07 CitrusD: Yawgmoth (BG)
+#07 CitrusD: Yawgmoth (WBG)
 #08 mariogomes097: Grixis Shadow (UBR)
 #09 TSPJendrek: Sultai Control (UBG)
 #10 NuBlkAu: Grixis Shadow (UBR)
@@ -40,7 +40,7 @@ using System.Text;
 #29 Trellon: Blue Tron (U)
 #30 ice_nine_: Land Destruction (WR)
 #31 BigPanda_559: Burn (WR)
-#32 Predicted: Yawgmoth (BG)
+#32 Predicted: Yawgmoth (WBG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_CitrusD_Yawgmoth_BG()
+        public void Deck07_CitrusD_Yawgmoth_WBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",6),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BG,
+                ArchetypeColor.WBG,
                 typeof(Yawgmoth),
                 null,
                 null
@@ -451,12 +451,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck32_Predicted_Yawgmoth_BG()
+        public void Deck32_Predicted_Yawgmoth_WBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-13",31),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BG,
+                ArchetypeColor.WBG,
                 typeof(Yawgmoth),
                 null,
                 null

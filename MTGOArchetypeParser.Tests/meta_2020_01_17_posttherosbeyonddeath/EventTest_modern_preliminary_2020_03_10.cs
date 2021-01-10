@@ -17,7 +17,7 @@ using System.Text;
 #06 lwdgg: Thopter Urza (UB)
 #07 Theo_Jung: Bant Control (WUG)
 #08 PRGJJAR: Dredge (BRG)
-#09 Gitaxian11: Thopter Urza (UG)
+#09 Gitaxian11: Thopter Urza (UBG)
 #10 bobthedog: Uroza (UG)
 #11 romanmy: Thopter Urza (UBR)
 #12 drew3141: Amulet Titan (UG)
@@ -29,10 +29,10 @@ using System.Text;
 #18 MentalMisstep: Bant Control (WUG)
 #19 WingedHussar: Neobrand (UG)
 #20 SrTortinha: Bant Control (WUG)
-#21 Toastxp: Uroza (UG)
+#21 Toastxp: Uroza (URG)
 #22 xfile: Sultai Midrange (UBG)
 #23 rileydk: Amulet Titan (UG)
-#24 t1griselbrand: Neobrand (UG)
+#24 t1griselbrand: Neobrand (WUG)
 #25 TheTunnelingCat: Eldrazi Tron (C)
 #26 D00mwake: Humans (WUBRG)
 #27 AbelMolto: Burn (WRG)
@@ -159,12 +159,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck09_Gitaxian11_ThopterUrza_UG()
+        public void Deck09_Gitaxian11_ThopterUrza_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-10",8),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(ThopterCombo),
                 typeof(ThopterUrza),
                 null
@@ -315,12 +315,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck21_Toastxp_Uroza_UG()
+        public void Deck21_Toastxp_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-10",20),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -354,12 +354,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck24_t1griselbrand_Neobrand_UG()
+        public void Deck24_t1griselbrand_Neobrand_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-10",23),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(Neobrand),
                 null,
                 null

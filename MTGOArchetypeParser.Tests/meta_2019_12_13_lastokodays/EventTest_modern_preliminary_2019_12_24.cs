@@ -12,7 +12,7 @@ using System.Text;
 #01 baiburqueno: Eldrazi Tron (G)
 #02 brog: Devoted (WUG)
 #03 B1gDan: Bant Midrange (WUG)
-#04 SourceOdin: Urza Oko (UG)
+#04 SourceOdin: Urza Oko (WUG)
 #05 Ivan_Catanduva_Br: Spirits (WUG)
 #06 bolov0: Primeval Titan (UG)
 #07 KeeperX: Naya Midrange (WRG)
@@ -25,7 +25,7 @@ using System.Text;
 #14 zachattack23: Urza Oko (UBG)
 #15 MTG-Maestro: Urza Oko (UG)
 #16 FedeSamba: Titan Shift (RG)
-#17 tomvon9: Green Tron (G)
+#17 tomvon9: Green Tron (WG)
 #18 twinlesstwin: Yawgmoth (BG)
 #19 McWinSauce: Bant Control (WUG)
 #20 UrBffTricks: WUBG Control (WUBG)
@@ -76,12 +76,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck04_SourceOdin_UrzaOko_UG()
+        public void Deck04_SourceOdin_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-24",3),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -245,12 +245,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck17_tomvon9_GreenTron_G()
+        public void Deck17_tomvon9_GreenTron_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-24",16),
                 new LastOkoDays(),
-                ArchetypeColor.G,
+                ArchetypeColor.WG,
                 typeof(Tron),
                 typeof(GreenTron),
                 null

@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 romanmy: Thopter Urza (WUB)
-#02 SunofNothing: Uroza (UG)
+#02 SunofNothing: Uroza (URG)
 #03 sicsmoo: Eldrazi Tron (C)
 #04 _goblinlackey: Dredge (BRG)
 #05 Marxelo: Humans (WUBRG)
@@ -42,12 +42,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck02_SunofNothing_Uroza_UG()
+        public void Deck02_SunofNothing_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-2",1),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null

@@ -25,7 +25,7 @@ using System.Text;
 #14 frozenian: Izzet Prowess (UR)
 #15 klien7: Burn (WR)
 #16 TwistedWombat: Rakdos Prowess (BR, Lurrus)
-#17 calheiros: Amulet Titan (G)
+#17 calheiros: Amulet Titan (UG)
 #18 zecriah: Green Tron (G)
 #19 1yo2yo: Bant Control (WUG)
 #20 scipios: Crabvine (UBG)
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_calheiros_AmuletTitan_G()
+        public void Deck17_calheiros_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",16),
                 new PostAstrolabeBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

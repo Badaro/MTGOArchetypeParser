@@ -11,19 +11,19 @@ using System.Text;
 /*
 #01 Do0mSwitch: Bant Control (WUG)
 #02 hugofreitas1: Gifts Storm (UR)
-#03 nathansteuer: Uroza (UG)
+#03 nathansteuer: Uroza (URG)
 #04 McWinSauce: Bant Control (WUG)
-#05 Finalnub: Neobrand (UG)
+#05 Finalnub: Neobrand (WUG)
 #06 SebastianStueckl: Gruul Midrange (RG)
-#07 MatheusPonciano: Dredge (BRG)
+#07 MatheusPonciano: Dredge (UBRG)
 #08 cftsoc3: Bant Blink (WUG, Yorion)
 #09 PietroSas: Devoted (WG, Lurrus)
 #10 TheTunnelingCat: Eldrazi Tron (C)
 #11 Sonso JF: Devoted (WBG)
-#12 Moniz0801: Amulet Titan (G)
+#12 Moniz0801: Amulet Titan (UG)
 #13 SpiderSpace: Hardened Scales (G)
 #14 patrick50: Devoted (WG, Lurrus)
-#15 rn17: Thopter Urza (UB)
+#15 rn17: Thopter Urza (UBR)
 #16 Trellon: Blue Tron (U)
 #17 _Batutinha_: Bant Control (WUG)
 #18 TSPJendrek: WUBG Control (WUBG)
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck03_nathansteuer_Uroza_UG()
+        public void Deck03_nathansteuer_Uroza_URG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",2),
                 new PostCompanionChange(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -100,12 +100,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck05_Finalnub_Neobrand_UG()
+        public void Deck05_Finalnub_Neobrand_WUG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",4),
                 new PostCompanionChange(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(Neobrand),
                 null,
                 null
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck07_MatheusPonciano_Dredge_BRG()
+        public void Deck07_MatheusPonciano_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",6),
                 new PostCompanionChange(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -191,12 +191,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck12_Moniz0801_AmuletTitan_G()
+        public void Deck12_Moniz0801_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",11),
                 new PostCompanionChange(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -230,12 +230,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck15_rn17_ThopterUrza_UB()
+        public void Deck15_rn17_ThopterUrza_UBR()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",14),
                 new PostCompanionChange(),
-                ArchetypeColor.UB,
+                ArchetypeColor.UBR,
                 typeof(ThopterCombo),
                 typeof(ThopterUrza),
                 null

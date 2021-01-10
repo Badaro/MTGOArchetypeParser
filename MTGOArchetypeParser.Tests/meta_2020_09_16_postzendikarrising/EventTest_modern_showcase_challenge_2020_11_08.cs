@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Sodeq: Oops All Spells (WUBG)
+#01 Sodeq: Oops All Spells (WUBRG)
 #02 Mcleskey: Izzet Prowess (UR)
 #03 PieGonti: Heliod Combo (WG)
 #04 pokerswizard: Shadow Prowess (WBR, Lurrus)
@@ -19,7 +19,7 @@ using System.Text;
 #08 Zar0s: WURG Control (WURG)
 #09 Kaies: Shadow Prowess (BRG, Lurrus)
 #10 Rulleboren: Belcher (WRG)
-#11 Antoine57437: Badzan (WBG)
+#11 Antoine57437: Badzan (WBRG)
 #12 yamakiller: Obosh Aggro (R, Obosh)
 #13 BradPitKeeper: WURG Control (WURG)
 #14 im2g00t4ubarn: WURG Control (WURG)
@@ -27,9 +27,9 @@ using System.Text;
 #16 McWinSauce: WURG Control (WURG)
 #17 didoguidotti1: WURG Control (WURG)
 #18 bamzing: WURG Control (WURG)
-#19 AlpInco: Oops All Spells (WUBG)
-#20 SpiderSpace: Electro Balance (UR)
-#21 cntrlfreak: Sultai Shadow (UBG)
+#19 AlpInco: Oops All Spells (WUBRG)
+#20 SpiderSpace: Electro Balance (URG)
+#21 cntrlfreak: UBRG Shadow (UBRG)
 #22 apriolo1: Amulet Titan (WRG)
 #23 trader08111: Gruul Midrange (RG)
 #24 hugofreitas1: Gifts Storm (UR)
@@ -48,12 +48,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_showcase_challenge_2020_11_08 : EventTest
     {
         [Test]
-        public void Deck01_Sodeq_OopsAllSpells_WUBG()
+        public void Deck01_Sodeq_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-11-08",0),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -178,12 +178,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_Antoine57437_Badzan_WBG()
+        public void Deck11_Antoine57437_Badzan_WBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-11-08",10),
                 new PostZendikarRising(),
-                ArchetypeColor.WBG,
+                ArchetypeColor.WBRG,
                 typeof(Badzan),
                 null,
                 null
@@ -282,12 +282,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck19_AlpInco_OopsAllSpells_WUBG()
+        public void Deck19_AlpInco_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-11-08",18),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -295,12 +295,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_SpiderSpace_ElectroBalance_UR()
+        public void Deck20_SpiderSpace_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-11-08",19),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck21_cntrlfreak_SultaiShadow_UBG()
+        public void Deck21_cntrlfreak_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-11-08",20),
                 new PostZendikarRising(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

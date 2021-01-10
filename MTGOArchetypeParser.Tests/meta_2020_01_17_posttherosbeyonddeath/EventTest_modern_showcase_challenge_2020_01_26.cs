@@ -9,12 +9,12 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 PuntThenWhine: Amulet Titan (G)
+#01 PuntThenWhine: Amulet Titan (UG)
 #02 musasabi: Jund Midrange (BRG)
-#03 McWinSauce: Bant Control (WUG)
+#03 McWinSauce: WURG Control (WURG)
 #04 Naisirc: Neobrand (UG)
 #05 toondoslav: Primeval Titan (UG)
-#06 Cherryxman: Eldrazi Tron (C)
+#06 Cherryxman: Eldrazi Tron (G)
 #07 qbturtle15: Azorius Control (WU)
 #08 MATTHEWFOULKES: Mono Red Prowess (R)
 #09 bolov0: Titan Shift (RG)
@@ -23,16 +23,16 @@ using System.Text;
 #12 SebastianStueckl: Dredge (BRG)
 #13 mell0n: Primeval Titan (UG)
 #14 _Batutinha_: Mono Red Prowess (R)
-#15 didoguidotti1: Sultai Shadow (UBG)
+#15 didoguidotti1: UBRG Shadow (UBRG)
 #16 _Shatun_: Mono Red Prowess (R)
-#17 palk52: Sultai Shadow (UBG)
+#17 palk52: UBRG Shadow (UBRG)
 #18 Folero: Dredge (BRG)
 #19 mechrataal: Azorius Control (WU)
 #20 maxxattack: Infect (UG)
 #21 karn_90: Grixis Shadow (UBR)
 #22 Graciasportanto: Amulet Titan (UG)
 #23 v3sp_tv: Elementals (WUBRG)
-#24 Violent_Outburst: Sultai Shadow (UBG)
+#24 Violent_Outburst: UBRG Shadow (UBRG)
 #25 NightShadowJ: Jund Midrange (BRG)
 #26 SourceOdin: Primeval Titan (UG)
 #27 kanister: Amulet Titan (G)
@@ -48,12 +48,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
     public class EventTest_modern_showcase_challenge_2020_01_26 : EventTest
     {
         [Test]
-        public void Deck01_PuntThenWhine_AmuletTitan_G()
+        public void Deck01_PuntThenWhine_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-01-26",0),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck03_McWinSauce_BantControl_WUG()
+        public void Deck03_McWinSauce_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-01-26",2),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -113,12 +113,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck06_Cherryxman_EldraziTron_C()
+        public void Deck06_Cherryxman_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-01-26",5),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -230,12 +230,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck15_didoguidotti1_SultaiShadow_UBG()
+        public void Deck15_didoguidotti1_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-01-26",14),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck17_palk52_SultaiShadow_UBG()
+        public void Deck17_palk52_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-01-26",16),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -347,12 +347,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck24_ViolentOutburst_SultaiShadow_UBG()
+        public void Deck24_ViolentOutburst_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-01-26",23),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

@@ -10,15 +10,15 @@ using System.Text;
 
 /*
 #01 instantdeath929: Amulet Titan (G)
-#02 twinlesstwin: Uroza (UG)
+#02 twinlesstwin: Uroza (URG)
 #03 Mordeka1ser: Niv To Light (WUBRG)
-#04 sydneydude: Uroza (UG)
+#04 sydneydude: Uroza (URG)
 #05 bigjc00: Eldrazi Tron (C)
 #06 yamakiller: Titan Shift (RG)
-#07 Parrotlet: Amulet Titan (G)
+#07 Parrotlet: Amulet Titan (UG)
 #08 Rav104: Primeval Titan (UG)
 #09 PRGJJAR: Dredge (BRG)
-#10 Sungjin: Scapeshift (WUG)
+#10 Sungjin: Scapeshift (WURG)
 #11 phol: Bant Control (WUG)
 #12 BlindNavigator: Green Tron (G)
 #13 ThePainTrain9: Eldrazi Tron (C)
@@ -79,12 +79,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck02_twinlesstwin_Uroza_UG()
+        public void Deck02_twinlesstwin_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-21",1),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -105,12 +105,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck04_sydneydude_Uroza_UG()
+        public void Deck04_sydneydude_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-21",3),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -144,12 +144,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck07_Parrotlet_AmuletTitan_G()
+        public void Deck07_Parrotlet_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-21",6),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -183,12 +183,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck10_Sungjin_Scapeshift_WUG()
+        public void Deck10_Sungjin_Scapeshift_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-21",9),
                 new PostOuatBan(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(Scapeshift),
                 null,
                 null

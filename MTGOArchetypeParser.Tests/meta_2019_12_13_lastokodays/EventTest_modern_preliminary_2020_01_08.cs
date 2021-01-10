@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Graciasportanto: Urza Oko (UG)
+#01 Graciasportanto: Urza Oko (UBG)
 #02 mell0n: Urza Oko (UG)
 #03 fistfullofmetal: Green Tron (RG)
 #04 ecobaronen: Bant Midrange (WUG)
@@ -27,12 +27,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
     public class EventTest_modern_preliminary_2020_01_08 : EventTest
     {
         [Test]
-        public void Deck01_Graciasportanto_UrzaOko_UG()
+        public void Deck01_Graciasportanto_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-08",0),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(UrzaOko),
                 null,
                 null

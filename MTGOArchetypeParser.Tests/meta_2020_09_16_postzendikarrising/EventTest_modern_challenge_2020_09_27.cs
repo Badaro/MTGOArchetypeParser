@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 musasabi: Orzhov Midrange (WB)
-#02 __matsugan: Oops All Spells (WUBG)
+#02 __matsugan: Oops All Spells (WUBRG)
 #03 Bedell: Amulet Titan (URG)
 #04 Bullwinkkle6705: UBRG Control (UBRG)
 #05 GodOfSlaughter: Niv To Light (WUBRG, Yorion)
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_matsugan_OopsAllSpells_WUBG()
+        public void Deck02_matsugan_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-27",1),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

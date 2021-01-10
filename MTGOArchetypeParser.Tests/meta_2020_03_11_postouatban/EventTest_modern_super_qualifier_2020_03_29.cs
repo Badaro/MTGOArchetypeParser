@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Sharkcaster_Mage: Primeval Titan (BG)
 #02 NorrathDecay: Burn (WR)
-#03 Theo_Jung: Uroza (UG)
+#03 Theo_Jung: Uroza (URG)
 #04 TheAdonis: Dredge (BRG)
 #05 Trieste: Mardu Shadow (WBR)
 #06 MdvWin: Burn (WR)
@@ -30,11 +30,11 @@ using System.Text;
 #19 otakkun: Eldrazi Tron (C)
 #20 Malakxy: Bushwhacker Zoo (WRG)
 #21 Misplacedginger: Bant Control (WUG)
-#22 Mercenario: Dredge (BRG)
+#22 Mercenario: Dredge (UBRG)
 #23 Gods_Shadow: Mono White Taxes (W)
 #24 Squidbilly: Primeval Titan (UG)
 #25 Mistakenn: Amulet Titan (G)
-#26 iceiceice: Amulet Titan (G)
+#26 iceiceice: Amulet Titan (UG)
 #27 StormlightReaper: Eldrazi Tron (C)
 #28 bogarden3: Humans (WUBRG)
 #29 CReactor: Jund Midrange (BRG)
@@ -74,12 +74,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck03_TheoJung_Uroza_UG()
+        public void Deck03_TheoJung_Uroza_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-03-29",2),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -321,12 +321,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck22_Mercenario_Dredge_BRG()
+        public void Deck22_Mercenario_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-03-29",21),
                 new PostOuatBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -373,12 +373,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck26_iceiceice_AmuletTitan_G()
+        public void Deck26_iceiceice_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-03-29",25),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

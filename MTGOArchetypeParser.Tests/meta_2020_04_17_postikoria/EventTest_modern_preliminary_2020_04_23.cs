@@ -41,7 +41,7 @@ using System.Text;
 #30 MinT_: Inverter Combo (WUB)
 #31 Naisirc: Hardened Scales (BG, Lurrus)
 #32 DrDub: Eight Whack (R)
-#33 cometa183: Neobrand (UG)
+#33 cometa183: Neobrand (URG)
 #34 Lord_Beerus: Burn (WR, Lurrus)
 */
 
@@ -466,12 +466,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck33_cometa183_Neobrand_UG()
+        public void Deck33_cometa183_Neobrand_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-23",32),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Neobrand),
                 null,
                 null

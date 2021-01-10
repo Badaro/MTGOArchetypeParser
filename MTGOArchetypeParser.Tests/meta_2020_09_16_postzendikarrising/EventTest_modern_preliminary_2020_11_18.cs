@@ -14,10 +14,10 @@ using System.Text;
 #03 Vansguy: UBRG Control (UBRG)
 #04 Ivc: Azorius Control (WU)
 #05 Poyo_del_Mal: Belcher (URG)
-#06 barczek: Oops All Spells (WUBG)
+#06 barczek: Oops All Spells (WUBRG)
 #07 _Shatun_: Shadow Prowess (BR, Lurrus)
 #08 ZYURYO: Devoted (WG, Lurrus)
-#09 gyyby297: Oops All Spells (WUBG)
+#09 gyyby297: Oops All Spells (WUBRG)
 #10 _Falcon_: Izzet Prowess (UR)
 */
 
@@ -91,12 +91,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_barczek_OopsAllSpells_WUBG()
+        public void Deck06_barczek_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-18",5),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -130,12 +130,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_gyyby297_OopsAllSpells_WUBG()
+        public void Deck09_gyyby297_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-18",8),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

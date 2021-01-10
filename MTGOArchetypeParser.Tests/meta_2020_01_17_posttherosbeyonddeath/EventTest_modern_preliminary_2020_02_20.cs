@@ -11,13 +11,13 @@ using System.Text;
 /*
 #01 C_E.L: Heliod Combo (WBG)
 #02 quinniac: Burn (WR)
-#03 CReactor: Eldrazi Tron (C)
+#03 CReactor: Eldrazi Tron (G)
 #04 katuo079595: Mono Red Prowess (R)
 #05 TombSimon: Crabvine (UBG)
-#06 Mercenario: Dredge (BRG)
-#07 Heibing: Infect (UG)
+#06 Mercenario: Dredge (UBRG)
+#07 Heibing: Infect (WUG)
 #08 __matsugan: Neobrand (UG)
-#09 otakkun: Eldrazi Tron (C)
+#09 otakkun: Eldrazi Tron (G)
 #10 Sam_Lewin: Skelementals (BR)
 #11 Tanzo90: Temur Midrange (URG)
 #12 SYMO991: Jund Midrange (BRG)
@@ -26,7 +26,7 @@ using System.Text;
 #15 AllOfMe: Amulet Titan (UG)
 #16 tanisong1221: Orzhov Midrange (WB)
 #17 Tiemuuu: Izzet Control (UR)
-#18 Sodeq: Dredge (BRG)
+#18 Sodeq: Dredge (WBRG)
 #19 kiko: Esper Blink (WUB)
 #20 SoulStrong: Thopter Urza (UB)
 #21 VampireGodric: Mono Red Prowess (R)
@@ -69,12 +69,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck03_CReactor_EldraziTron_C()
+        public void Deck03_CReactor_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-20",2),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -108,12 +108,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck06_Mercenario_Dredge_BRG()
+        public void Deck06_Mercenario_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-20",5),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -121,12 +121,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck07_Heibing_Infect_UG()
+        public void Deck07_Heibing_Infect_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-20",6),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(Infect),
                 null,
                 null
@@ -147,12 +147,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck09_otakkun_EldraziTron_C()
+        public void Deck09_otakkun_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-20",8),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -264,12 +264,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck18_Sodeq_Dredge_BRG()
+        public void Deck18_Sodeq_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-20",17),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null

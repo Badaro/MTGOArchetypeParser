@@ -9,10 +9,10 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 SunofNothing: Uroza (UG)
+#01 SunofNothing: Uroza (URG)
 #02 ConnorM426: Bant Control (WUG)
 #03 ScreenwriterNY: Bushwhacker Zoo (WRG)
-#04 _Phoenix_: Amulet Titan (G)
+#04 _Phoenix_: Amulet Titan (UG)
 #05 dionykos: Bant Control (WUG)
 #06 starfall: Humans (WUBRG)
 #07 retiredcapivara: Titan Shift (RG)
@@ -28,18 +28,18 @@ using System.Text;
 #17 ReturnToDust: Eldrazi Tron (C)
 #18 kthanakit26: Burn (WR)
 #19 D00mwake: Humans (WUBRG)
-#20 Samwise_GeeGee: Scapeshift (WUG)
+#20 Samwise_GeeGee: Scapeshift (WURG)
 #21 billsive: Temur Control (URG)
 #22 APAKane: Green Tron (G)
 #23 instantdeath929: Amulet Titan (G)
 #24 _LSN_: Burn (WR)
-#25 sydneydude: Uroza (UG)
+#25 sydneydude: Uroza (URG)
 #26 AstralPlane: Mono Red Prowess (R)
 #27 Laplasjan: Eldrazi Tron (C)
 #28 PTarts2win: Green Tron (G)
 #29 snapcaster____mage: Eldrazi Tron (C)
 #30 nahuel10: Burn (WR)
-#31 TSPJendrek: Sultai Control (UBG)
+#31 TSPJendrek: WUBG Control (WUBG)
 #32 NoWa1: WURG Control (WURG)
 #33 Darkiundsa: Bant Control (WUG)
 #34 Sprouts: Jund Midrange (BRG)
@@ -48,11 +48,11 @@ using System.Text;
 #37 ComradeCoheed: Uroza (URG)
 #38 pulpo87: Jund Midrange (BRG)
 #39 FreeBobby315: Mono Red Prowess (R)
-#40 UsaZ: Superfriends (UG)
-#41 xfile: Uroza (UG)
+#40 UsaZ: Superfriends (WUBRG)
+#41 xfile: Uroza (URG)
 #42 sicsmoo: Green Tron (G)
 #43 LSMD: Green Tron (G)
-#44 swiftwarkite2: Amulet Titan (G)
+#44 swiftwarkite2: Amulet Titan (UG)
 #45 ThePainTrain9: Humans (WUBRG)
 #46 max_9: Izzet Control (UR)
 #47 Tarrasque1: Elementals (WUBRG)
@@ -62,7 +62,7 @@ using System.Text;
 #51 1yo2yo: Bant Control (WUG)
 #52 frylokk757: Gruul Midrange (RG)
 #53 brothernova: Eldrazi Tron (C)
-#54 rn17: Thopter Urza (UB)
+#54 rn17: Thopter Urza (UBR)
 #55 instantQ: Burn (WR)
 #56 NMT_Sco94: Electro End (UR)
 #57 Moniz0801: Amulet Titan (G)
@@ -77,7 +77,7 @@ using System.Text;
 #66 tutajec: Humans (WUBRG)
 #67 Sir_NhaKa: Green Tron (G)
 #68 FestiFan: Saheeli Combo (WURG)
-#69 hcook725: Uroza (UG)
+#69 hcook725: Uroza (URG)
 #70 fatkiddestroyers: Bant Midrange (WUG)
 #71 Do0mSwitch: Bant Control (WUG)
 #72 bit_error: Burn (WR)
@@ -86,7 +86,7 @@ using System.Text;
 #75 markdizon: Jund Midrange (BRG)
 #76 exoticherman: Jund Midrange (BRG)
 #77 Misplacedginger: Bant Control (WUG)
-#78 Graciasportanto: Uroza (UG)
+#78 Graciasportanto: Uroza (URG)
 #79 HarlanMTG: Bant Control (WUG)
 #80 SourceOdin: Primeval Titan (UG)
 #81 limp22: Mono Red Prowess (R)
@@ -97,12 +97,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
     public class EventTest_modern_preliminary_2020_03_24 : EventTest
     {
         [Test]
-        public void Deck01_SunofNothing_Uroza_UG()
+        public void Deck01_SunofNothing_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-24",0),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -136,12 +136,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck04_Phoenix_AmuletTitan_G()
+        public void Deck04_Phoenix_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-24",3),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -344,12 +344,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck20_SamwiseGeeGee_Scapeshift_WUG()
+        public void Deck20_SamwiseGeeGee_Scapeshift_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-24",19),
                 new PostOuatBan(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(Scapeshift),
                 null,
                 null
@@ -409,12 +409,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck25_sydneydude_Uroza_UG()
+        public void Deck25_sydneydude_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-24",24),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -487,12 +487,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck31_TSPJendrek_SultaiControl_UBG()
+        public void Deck31_TSPJendrek_WUBGControl_WUBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-24",30),
                 new PostOuatBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.WUBG,
                 typeof(GenericControl),
                 null,
                 null
@@ -604,12 +604,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck40_UsaZ_Superfriends_UG()
+        public void Deck40_UsaZ_Superfriends_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-24",39),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUBRG,
                 typeof(Superfriends),
                 null,
                 null
@@ -617,12 +617,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck41_xfile_Uroza_UG()
+        public void Deck41_xfile_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-24",40),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -656,12 +656,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck44_swiftwarkite2_AmuletTitan_G()
+        public void Deck44_swiftwarkite2_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-24",43),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -786,12 +786,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck54_rn17_ThopterUrza_UB()
+        public void Deck54_rn17_ThopterUrza_UBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-24",53),
                 new PostOuatBan(),
-                ArchetypeColor.UB,
+                ArchetypeColor.UBR,
                 typeof(ThopterCombo),
                 typeof(ThopterUrza),
                 null
@@ -981,12 +981,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck69_hcook725_Uroza_UG()
+        public void Deck69_hcook725_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-24",68),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -1098,12 +1098,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck78_Graciasportanto_Uroza_UG()
+        public void Deck78_Graciasportanto_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-24",77),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null

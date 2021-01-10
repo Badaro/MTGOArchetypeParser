@@ -19,7 +19,7 @@ using System.Text;
 #08 Harry13: Sultai Control (UBG)
 #09 Lord_of_puntlantis: Electro Balance (UR)
 #10 Theo_Jung: Heliod Combo (WG)
-#11 LLegend: Electro Balance (UR)
+#11 LLegend: Electro Balance (URG)
 #12 mlgb92: Bant Midrange (WUG)
 #13 wzybang: Amulet Titan (G)
 #14 HypnoticaL: Shadow Prowess (BR, Lurrus)
@@ -44,7 +44,7 @@ using System.Text;
 #33 Pintogeddon2: Belcher (URG)
 #34 Xwhale: Reclaimer Titan (WG)
 #35 __palem__: Burn (WR)
-#36 Foxantes: Oops All Spells (WUBG)
+#36 Foxantes: Oops All Spells (WUBRG)
 #37 twinlesstwin: Mardu Midrange (WBR)
 #38 FreedMania: Amulet Titan (G)
 #39 SKK: Reclaimer Titan (WRG)
@@ -82,12 +82,12 @@ using System.Text;
 #71 dynamisskill: Heliod Combo (WG)
 #72 GrilledCheese: Amulet Titan (G)
 #73 TheWillHallExp: Mardu Midrange (WBR)
-#74 NAKISHIMA: Oops All Spells (WUBG)
+#74 NAKISHIMA: Oops All Spells (WUBRG)
 #75 ThreeThreeElk: Reclaimer Titan (WG)
 #76 ShutoShotokan: Humans (WUBRG)
 #77 Vad3r: Niv To Light (WUBRG, Yorion)
 #78 MadMaxErnst: WURG Control (WURG)
-#79 TheEnduringIdealist: Belcher (WRG)
+#79 TheEnduringIdealist: Belcher (WURG)
 #80 solaec0501: Primeval Titan (UG)
 #81 FromTheCrypt: Eldrazi Tron (C)
 #82 badluckbandit: Heliod Combo (WG)
@@ -134,16 +134,16 @@ using System.Text;
 #123 Elfkid: Dredge (BRG)
 #124 spiderspace: Belcher (URG)
 #125 xf13rc3byerly: Shadow Prowess (BR, Lurrus)
-#126 jenara19: Green Tron (G)
+#126 jenara19: Green Tron (RG)
 #127 claydawson: Izzet Prowess (UR)
 #128 indianpancake: Sultai Control (UBG)
-#129 Broccoliasaurus: Rakdos Midrange (BR)
+#129 Broccoliasaurus: Mardu Midrange (WBR)
 #130 bolov0: Mardu Midrange (WBR)
 #131 HenryAmbrogius: Gifts Storm (UR)
 #132 Draconic1: Reclaimer Titan (WG)
 #133 Bloodlights: Dimir Control (UB)
 #134 bigb3n: WURG Control (WURG)
-#135 christopdeck: Burn (WR, Lurrus)
+#135 christopdeck: Burn (WRG, Lurrus)
 #136 aedrew: Humans (WUBRG)
 #137 kolbej: WURG Control (WURG)
 #138 bozokaboy: Oops All Spells (WUBG)
@@ -173,7 +173,7 @@ using System.Text;
 #162 Aluren85: Scapeshift (WURG)
 #163 marcofabrizi: Shadow Prowess (BR, Lurrus)
 #164 ander_lizarrakoa: Dimir Control (UB)
-#165 matyo804: Reclaimer Titan (WG)
+#165 matyo804: Reclaimer Titan (WRG)
 #166 teske: Azorius Control (WU)
 #167 Tykos: Hammer Time (WB, Lurrus)
 #168 schnda: WURG Control (WURG)
@@ -241,7 +241,7 @@ using System.Text;
 #230 yumad3988: Primeval Titan (UG)
 #231 Hexdrinker9: Naya Midrange (WRG)
 #232 therf: Jeskai Control (WUR)
-#233 adamwasmo: Oops All Spells (UBRG)
+#233 adamwasmo: Oops All Spells (WUBRG)
 #234 Laplasjan: Hammer Time (WB, Lurrus)
 #235 Marinex: Dredge (BRG)
 #236 antus94: Shadow Prowess (BRG, Lurrus)
@@ -291,8 +291,8 @@ using System.Text;
 #280 tzirkel: Heliod Combo (WG)
 #281 __BMJ__: Rakdos Prowess (BR, Lurrus)
 #282 cftsoc3: Bant Blink (WUG)
-#283 MickeyPlaysMagic: Rakdos Midrange (BR)
-#284 SakingMTG: Green Tron (G)
+#283 MickeyPlaysMagic: Mardu Midrange (WBR)
+#284 SakingMTG: Green Tron (RG)
 #285 fpawlusz: Amulet Titan (G)
 #286 joker10289: Reclaimer Titan (WG)
 #287 whitefangshinobi: Izzet Prowess (UR)
@@ -304,7 +304,7 @@ using System.Text;
 #293 Sherwinator: Mill (UB, Lurrus)
 #294 abisbocci: Grixis Shadow (UBR)
 #295 Manakin: Hardened Scales (RG)
-#296 Nilsfit: Ascendancy Combo (WUR, Jegantha)
+#296 Nilsfit: Ascendancy Combo (WURG, Jegantha)
 #297 NGFC_Mark: Oops All Spells (WUBG)
 #298 ecobaronen: Titan Shift (RG)
 */
@@ -444,12 +444,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_LLegend_ElectroBalance_UR()
+        public void Deck11_LLegend_ElectroBalance_URG()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2020-12-31",10),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null
@@ -769,12 +769,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck36_Foxantes_OopsAllSpells_WUBG()
+        public void Deck36_Foxantes_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2020-12-31",35),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -1263,12 +1263,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck74_NAKISHIMA_OopsAllSpells_WUBG()
+        public void Deck74_NAKISHIMA_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2020-12-31",73),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -1328,12 +1328,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck79_TheEnduringIdealist_Belcher_WRG()
+        public void Deck79_TheEnduringIdealist_Belcher_WURG()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2020-12-31",78),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WURG,
                 typeof(Belcher),
                 null,
                 null
@@ -1939,12 +1939,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck126_jenara19_GreenTron_G()
+        public void Deck126_jenara19_GreenTron_RG()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2020-12-31",125),
                 new PostZendikarRising(),
-                ArchetypeColor.G,
+                ArchetypeColor.RG,
                 typeof(Tron),
                 typeof(GreenTron),
                 null
@@ -1978,12 +1978,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck129_Broccoliasaurus_RakdosMidrange_BR()
+        public void Deck129_Broccoliasaurus_MarduMidrange_WBR()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2020-12-31",128),
                 new PostZendikarRising(),
-                ArchetypeColor.BR,
+                ArchetypeColor.WBR,
                 typeof(GenericMidrange),
                 null,
                 null
@@ -2056,12 +2056,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck135_christopdeck_Burn_WR_Lurrus()
+        public void Deck135_christopdeck_Burn_WRG_Lurrus()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2020-12-31",134),
                 new PostZendikarRising(),
-                ArchetypeColor.WR,
+                ArchetypeColor.WRG,
                 typeof(Burn),
                 null,
                 ArchetypeCompanion.Lurrus
@@ -2446,12 +2446,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck165_matyo804_ReclaimerTitan_WG()
+        public void Deck165_matyo804_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2020-12-31",164),
                 new PostZendikarRising(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WRG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -3330,12 +3330,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck233_adamwasmo_OopsAllSpells_UBRG()
+        public void Deck233_adamwasmo_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2020-12-31",232),
                 new PostZendikarRising(),
-                ArchetypeColor.UBRG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -3980,12 +3980,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck283_MickeyPlaysMagic_RakdosMidrange_BR()
+        public void Deck283_MickeyPlaysMagic_MarduMidrange_WBR()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2020-12-31",282),
                 new PostZendikarRising(),
-                ArchetypeColor.BR,
+                ArchetypeColor.WBR,
                 typeof(GenericMidrange),
                 null,
                 null
@@ -3993,12 +3993,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck284_SakingMTG_GreenTron_G()
+        public void Deck284_SakingMTG_GreenTron_RG()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2020-12-31",283),
                 new PostZendikarRising(),
-                ArchetypeColor.G,
+                ArchetypeColor.RG,
                 typeof(Tron),
                 typeof(GreenTron),
                 null
@@ -4149,12 +4149,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck296_Nilsfit_AscendancyCombo_WUR_Jegantha()
+        public void Deck296_Nilsfit_AscendancyCombo_WURG_Jegantha()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2020-12-31",295),
                 new PostZendikarRising(),
-                ArchetypeColor.WUR,
+                ArchetypeColor.WURG,
                 typeof(AscendancyCombo),
                 null,
                 ArchetypeCompanion.Jegantha

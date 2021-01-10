@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 JoshicallsmeFabo: Humans (WUBRG)
-#02 PuntThenWhine: Amulet Titan (G)
+#02 PuntThenWhine: Amulet Titan (UG)
 #03 helvetti: Dredge (BRG)
 #04 Jositoshekel: Burn (WR)
 #05 Matti: Dredge (BRG)
@@ -20,7 +20,7 @@ using System.Text;
 #09 Masumaro: Temur Midrange (URG)
 #10 Mlgb92: Jund Midrange (BRG)
 #11 sff_mtg: Green Tron (G)
-#12 MATTOMARINAIO: Uroza (UG)
+#12 MATTOMARINAIO: Uroza (URG)
 #13 SIKOSLOVAKE: Mono Red Prowess (R)
 #14 oskiyaa: Humans (WUBRG)
 #15 Hampuse1: Eldrazi Tron (C)
@@ -34,13 +34,13 @@ using System.Text;
 #23 Team5c: Thopter Urza (UB)
 #24 SakeIzumo: Mono Red Prowess (R)
 #25 ArchaeusDota: Eldrazi Tron (C)
-#26 brainstorm39: Jeskai Control (WUR)
+#26 brainstorm39: WURG Control (WURG)
 #27 genmatsu: Infect (UG)
 #28 WhiTe TsaR: Bant Control (WUG)
-#29 MesklateBrother: Amulet Titan (G)
+#29 MesklateBrother: Amulet Titan (UG)
 #30 idutra: Gruul Midrange (RG)
 #31 TFTIjhub: Eldrazi Tron (C)
-#32 selbstdenker: Amulet Titan (G)
+#32 selbstdenker: Amulet Titan (UG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck02_PuntThenWhine_AmuletTitan_G()
+        public void Deck02_PuntThenWhine_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-03-22",1),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -191,12 +191,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck12_MATTOMARINAIO_Uroza_UG()
+        public void Deck12_MATTOMARINAIO_Uroza_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-03-22",11),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -373,12 +373,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck26_brainstorm39_JeskaiControl_WUR()
+        public void Deck26_brainstorm39_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-03-22",25),
                 new PostOuatBan(),
-                ArchetypeColor.WUR,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -412,12 +412,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck29_MesklateBrother_AmuletTitan_G()
+        public void Deck29_MesklateBrother_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-03-22",28),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -451,12 +451,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck32_selbstdenker_AmuletTitan_G()
+        public void Deck32_selbstdenker_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-03-22",31),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

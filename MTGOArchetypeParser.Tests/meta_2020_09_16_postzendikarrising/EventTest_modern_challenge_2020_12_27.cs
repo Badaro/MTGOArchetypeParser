@@ -29,7 +29,7 @@ using System.Text;
 #18 mark_68: Obosh Aggro (R, Obosh)
 #19 La_Biscia: Heliod Combo (WR)
 #20 ShowTime_: Rakdos Midrange (BR)
-#21 AlpInco: Oops All Spells (WUBG)
+#21 AlpInco: Oops All Spells (WUBRG)
 #22 kmacy90: Mill (UB)
 #23 themightylinguine: Shadow Prowess (BR, Lurrus)
 #24 NightKnight131: Heliod Combo (WG)
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck21_AlpInco_OopsAllSpells_WUBG()
+        public void Deck21_AlpInco_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-27",20),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

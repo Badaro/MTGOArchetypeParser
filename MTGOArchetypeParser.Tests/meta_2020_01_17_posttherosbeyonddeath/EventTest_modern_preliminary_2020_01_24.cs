@@ -16,7 +16,7 @@ using System.Text;
 #05 BReal2: Mardu Midrange (WBR)
 #06 Waumpus: Bant Midrange (WUG)
 #07 SourceOdin: Primeval Titan (UG)
-#08 yamakiller: Eldrazi Tron (C)
+#08 yamakiller: Eldrazi Tron (G)
 #09 PRGJJAR: Dredge (BRG)
 #10 Nammersquats: Mono Red Prowess (R)
 */
@@ -117,12 +117,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck08_yamakiller_EldraziTron_C()
+        public void Deck08_yamakiller_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-24",7),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null

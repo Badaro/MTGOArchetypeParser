@@ -10,14 +10,14 @@ using System.Text;
 
 /*
 #01 d00mwake: Mardu Prowess (WBR, Lurrus)
-#02 nbdf: Dredge (BRG)
+#02 nbdf: Dredge (WBRG)
 #03 GanYanCHN: Izzet Prowess (UR)
 #04 Bedell: Amulet Titan (UG)
 #05 Losilla: Scapeshift (URG)
 #06 djbmppwns: Gruul Prowess (RG, Jegantha)
 #07 JKnecht: UBRG Shadow (UBRG)
 #08 Daniel_Garcia: Gruul Prowess (RG, Jegantha)
-#09 ConnorM426: Dredge (BRG)
+#09 ConnorM426: Dredge (WBRG)
 #10 LLegend: Gruul Midrange (RG)
 #11 Caleb_Yetman: Humans (WUBRG)
 #12 Skuttlespike: Izzet Prowess (UR)
@@ -37,7 +37,7 @@ using System.Text;
 #26 VerMahilen: Orzhov Taxes (WB)
 #27 GodOfSlaughter: Jund Midrange (BRG)
 #28 Aluren85: Eldrazi Tron (C)
-#29 __BMJ__: Sultai Shadow (UBG)
+#29 __BMJ__: UBRG Shadow (UBRG)
 #30 Praxifi: Gruul Midrange (RG)
 #31 Tw33Ty: Humans (WUBRG)
 #32 katoriarch123: Bant Control (WUG)
@@ -59,7 +59,7 @@ using System.Text;
 #48 DreamsOfAshiok: Eldrazi Tron (C)
 #49 ScuttoZ: Gruul Midrange (RG)
 #50 oosunq: Jund Midrange (BRG)
-#51 alicoco: Ad Nauseam (WUB)
+#51 alicoco: Ad Nauseam (WUBR)
 #52 Nilsfit: Sultai Control (UBG)
 #53 crazeejakee07: Azorius Control (WU)
 #54 w1vern: Scapeshift (URG)
@@ -74,22 +74,22 @@ using System.Text;
 #63 untiltedmtg: Gruul Midrange (RG)
 #64 SweetIto: Gruul Midrange (RG)
 #65 MadMaxErnst: Sultai Control (UBG)
-#66 BSK_hercules: Dredge (BRG)
+#66 BSK_hercules: Dredge (WBRG)
 #67 goodplayer95: Niv To Light (WUBRG)
 #68 _Shatun_: Gruul Midrange (RG)
 #69 Curtisaxel: Gruul Midrange (RG)
 #70 TatemusPrime: Burn (WR)
-#71 matheusponciano: Dredge (BRG)
+#71 matheusponciano: Dredge (UBRG)
 #72 mac121711: Jeskai Control (WUR)
 #73 Thattaman: Jund Midrange (BRG)
 #74 Irra0770: Jund Midrange (BRG)
 #75 Iceman76: Amulet Titan (UG)
-#76 penach010: Devoted (WG, Yorion)
+#76 penach010: Devoted (WRG, Yorion)
 #77 Conor_man11: Burn (WR)
 #78 Mingueretxo: Eldrazi Tron (C)
 #79 BrunoPardini: Jund Midrange (BRG)
 #80 halfie44: Jund Midrange (BRG)
-#81 Crocodile_MTG: Sultai Shadow (UBG)
+#81 Crocodile_MTG: UBRG Shadow (UBRG)
 #82 polinasgiuleppe: Izzet Prowess (UR)
 #83 Joao_Andrade: Jund Midrange (BRG)
 #84 Jitko: Eldrazi Tron (C)
@@ -107,7 +107,7 @@ using System.Text;
 #96 SknerusMcKwacz: Scapeshift (URG)
 #97 Kauri: Hardened Scales (G)
 #98 Janh: Saheeli Combo (WUR)
-#99 olea: Dredge (BRG)
+#99 olea: Dredge (WBRG)
 #100 iron_maiden_2: Eldrazi Tron (C)
 #101 toastxp: Rakdos Prowess (BR, Lurrus)
 #102 Darkiundsa: Green Tron (G)
@@ -136,20 +136,20 @@ using System.Text;
 #125 genxim: Ad Nauseam (WUB)
 #126 aspiringspike: Sultai Control (UBG)
 #127 PascalMaynard: Scapeshift (URG)
-#128 faisal: Dredge (WRG)
+#128 faisal: Dredge (WBRG)
 #129 slatorade: Bogles (WG)
 #130 holyshamgar: Jeskai Control (WUR)
 #131 pepeteam: Amulet Titan (UG)
 #132 i-am-bad-at-mtg: Jund Midrange (BRG)
 #133 RnB: Titan Shift (RG)
-#134 ph_crescens: Amulet Titan (RG)
+#134 ph_crescens: Amulet Titan (URG)
 #135 crazyklicker: Devoted (WG, Lurrus)
 #136 Patapon20: Eldrazi Tron (C)
 #137 zacharee: Devoted (WG, Lurrus)
 #138 turnthemsideways: Eldrazi Tron (C)
 #139 tuhoajatane: Bant Control (WUG)
 #140 GiovaniMF: Jund Shadow (BRG)
-#141 BaronOfBacon: Sultai Shadow (UBG)
+#141 BaronOfBacon: UBRG Shadow (UBRG)
 #142 chris_concarnage: Eldrazi Tron (C)
 #143 ACG88: Titan Shift (RG)
 #144 takemini: Azorius Control (WU)
@@ -166,7 +166,7 @@ using System.Text;
 #155 AluminumMonster: Sultai Control (UBG)
 #156 CordoTwin: Grixis Shadow (UBR)
 #157 CRYPTIC_C4SSIE: Scapeshift (URG)
-#158 RealJoy: Sultai Shadow (UBG)
+#158 RealJoy: UBRG Shadow (UBRG)
 #159 berckovitz: Eldrazi Tron (C)
 #160 Legend_cay: Ad Nauseam (WUB)
 #161 Blazed-Ugin: Amulet Titan (UG)
@@ -208,7 +208,7 @@ using System.Text;
 #197 WeareVenom: Azorius Control (WU)
 #198 TwitchAwP: Gruul Midrange (RG)
 #199 mark_68: Scapeshift (WURG)
-#200 CaptainFarbosa: Sultai Shadow (UBG)
+#200 CaptainFarbosa: UBRG Shadow (UBRG)
 #201 nick4567: Jund Midrange (BRG)
 #202 cookiekid00: Goblins (BR)
 #203 Theo_Jung: Scapeshift (URG)
@@ -216,7 +216,7 @@ using System.Text;
 #205 andycsoto: Eldrazi Tron (C)
 #206 foretweezy1: Goblins (BR)
 #207 ArchaeusDota: Green Tron (G)
-#208 fradev1988: Electro Balance (UR)
+#208 fradev1988: Electro Balance (URG)
 #209 vlaprohor: Eldrazi Tron (C)
 #210 PieGonti: Jund Shadow (BRG, Lurrus)
 #211 grahams: Crabvine (UBG)
@@ -264,12 +264,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_nbdf_Dredge_BRG()
+        public void Deck02_nbdf_Dredge_WBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",1),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -355,12 +355,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_ConnorM426_Dredge_BRG()
+        public void Deck09_ConnorM426_Dredge_WBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",8),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -615,12 +615,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck29_BMJ_SultaiShadow_UBG()
+        public void Deck29_BMJ_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",28),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -901,12 +901,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck51_alicoco_AdNauseam_WUB()
+        public void Deck51_alicoco_AdNauseam_WUBR()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",50),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WUB,
+                ArchetypeColor.WUBR,
                 typeof(AdNauseam),
                 null,
                 null
@@ -1096,12 +1096,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck66_BSKhercules_Dredge_BRG()
+        public void Deck66_BSKhercules_Dredge_WBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",65),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -1161,12 +1161,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck71_matheusponciano_Dredge_BRG()
+        public void Deck71_matheusponciano_Dredge_UBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",70),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -1226,12 +1226,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck76_penach010_Devoted_WG_Yorion()
+        public void Deck76_penach010_Devoted_WRG_Yorion()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",75),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WRG,
                 typeof(Devoted),
                 null,
                 ArchetypeCompanion.Yorion
@@ -1291,12 +1291,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck81_CrocodileMTG_SultaiShadow_UBG()
+        public void Deck81_CrocodileMTG_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",80),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -1525,12 +1525,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck99_olea_Dredge_BRG()
+        public void Deck99_olea_Dredge_WBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",98),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -1902,12 +1902,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck128_faisal_Dredge_WRG()
+        public void Deck128_faisal_Dredge_WBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",127),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -1980,12 +1980,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck134_phcrescens_AmuletTitan_RG()
+        public void Deck134_phcrescens_AmuletTitan_URG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",133),
                 new PostAstrolabeBan(),
-                ArchetypeColor.RG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -2071,12 +2071,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck141_BaronOfBacon_SultaiShadow_UBG()
+        public void Deck141_BaronOfBacon_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",140),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -2292,12 +2292,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck158_RealJoy_SultaiShadow_UBG()
+        public void Deck158_RealJoy_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",157),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -2838,12 +2838,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck200_CaptainFarbosa_SultaiShadow_UBG()
+        public void Deck200_CaptainFarbosa_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",199),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -2942,12 +2942,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck208_fradev1988_ElectroBalance_UR()
+        public void Deck208_fradev1988_ElectroBalance_URG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",207),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

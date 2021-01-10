@@ -12,7 +12,7 @@ using System.Text;
 #01 Darkiundsa: Humans (WUBRG)
 #02 stayrospet: Omnath Saheeli (WURG, Jegantha)
 #03 Nekonii: Elves (BG)
-#04 azax: Reclaimer Titan (WG)
+#04 azax: Reclaimer Titan (WUG)
 #05 Jositoshekel: Heliod Combo (WG)
 #06 JustJack: Humans (WUBRG)
 #07 Mcleskey: Humans (WUBRG)
@@ -38,7 +38,7 @@ using System.Text;
 #27 AstralPlane: Omnath Saheeli (WURG, Jegantha)
 #28 asics112: Humans (WUBRG)
 #29 TheSouthDakota: Dredge (BRG)
-#30 daibloXSC: Izzet Control (UR)
+#30 daibloXSC: Jeskai Control (WUR)
 #31 StrawberryMilkShake1: Izzet Control (UR)
 #32 aManatease: Shadow Prowess (WBR, Lurrus)
 */
@@ -87,12 +87,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_azax_ReclaimerTitan_WG()
+        public void Deck04_azax_ReclaimerTitan_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-19",3),
                 new PostZendikarRising(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WUG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -425,12 +425,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck30_daibloXSC_IzzetControl_UR()
+        public void Deck30_daibloXSC_JeskaiControl_WUR()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-19",29),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.WUR,
                 typeof(GenericControl),
                 null,
                 null

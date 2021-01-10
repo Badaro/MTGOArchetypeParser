@@ -31,12 +31,12 @@ using System.Text;
 #20 hugo87: Gifts Storm (UR)
 #21 Naisirc: Orzhov Taxes (WB)
 #22 12Days: Gruul Midrange (RG)
-#23 Skite: Uroza (UG)
+#23 Skite: Uroza (URG)
 #24 sandydogmtg: Burn (WR, Lurrus)
 #25 Chrislampa: Devoted (WG, Lurrus)
 #26 Trid0n: Humans (WUBRG)
 #27 Ivc: Bant Control (WUG)
-#28 Bayesta_93: Simic Control (UG)
+#28 Bayesta_93: Temur Control (URG)
 #29 quinniac: Burn (WR, Lurrus)
 #30 Team5c: Humans (WUBRG)
 #31 Sonso JF: Heliod Combo (WUG)
@@ -334,12 +334,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck23_Skite_Uroza_UG()
+        public void Deck23_Skite_Uroza_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-19",22),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -399,12 +399,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck28_Bayesta93_SimicControl_UG()
+        public void Deck28_Bayesta93_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-19",27),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(GenericControl),
                 null,
                 null

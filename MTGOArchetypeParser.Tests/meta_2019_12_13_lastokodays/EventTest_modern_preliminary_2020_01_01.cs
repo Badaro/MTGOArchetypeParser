@@ -12,12 +12,12 @@ using System.Text;
 #01 Physicaltuna: Grixis Shadow (UBR)
 #02 Tyerube1618: Green Tron (G)
 #03 kanister: Urza Oko (UG)
-#04 Toastxp: Urza Oko (UG)
+#04 Toastxp: Urza Oko (WUG)
 #05 __matsugan: Neobrand (UG)
 #06 indomie: Urza Oko (UG)
 #07 hourai_tokido: Grixis Shadow (UBR)
 #08 r453r: Sultai Midrange (UBG)
-#09 SoulStrong: Urza Oko (UG)
+#09 SoulStrong: Urza Oko (UBG)
 #10 PieGonti: Kethis Combo (WUBG)
 #11 Phill_Hellmuth: Primeval Titan (UG)
 #12 122pablo: Ascendancy Combo (WURG)
@@ -67,12 +67,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck04_Toastxp_UrzaOko_UG()
+        public void Deck04_Toastxp_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-01",3),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -132,12 +132,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck09_SoulStrong_UrzaOko_UG()
+        public void Deck09_SoulStrong_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-01",8),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(UrzaOko),
                 null,
                 null

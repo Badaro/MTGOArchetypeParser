@@ -21,7 +21,7 @@ using System.Text;
 #10 pokerswizard: Obosh Aggro (R, Obosh)
 #11 karatedom: Heliod Combo (WG)
 #12 Theo_Jung: Reclaimer Titan (WG)
-#13 azax: Reclaimer Titan (WG)
+#13 azax: Reclaimer Titan (WBG)
 #14 bolov0: Reclaimer Titan (WRG)
 #15 MZBlazer: Shadow Prowess (BR, Lurrus)
 */
@@ -187,12 +187,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck13_azax_ReclaimerTitan_WG()
+        public void Deck13_azax_ReclaimerTitan_WBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-26",12),
                 new PostZendikarRising(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WBG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null

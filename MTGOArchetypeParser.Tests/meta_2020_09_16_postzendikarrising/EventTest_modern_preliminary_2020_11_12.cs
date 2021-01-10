@@ -14,7 +14,7 @@ using System.Text;
 #03 10thDegree: Dredge (BRG)
 #04 Phill_Hellmuth: Heliod Combo (WG)
 #05 gazmon48: Izzet Prowess (UR)
-#06 sandydogmtg: Oops All Spells (WUBG)
+#06 sandydogmtg: Oops All Spells (WUBRG)
 #07 leclairandy: Heliod Combo (WG)
 #08 bgv1989: Ad Nauseam (WUB)
 #09 yamakiller: Shadow Prowess (WBR, Lurrus)
@@ -96,12 +96,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_sandydogmtg_OopsAllSpells_WUBG()
+        public void Deck06_sandydogmtg_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-12",5),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

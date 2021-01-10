@@ -13,7 +13,7 @@ using System.Text;
 #02 sinforlife54: Mono White Taxes (W)
 #03 danielmos: Bant Control (WUG)
 #04 MiguelCaster: Mono White Taxes (W)
-#05 PuntThenWhine: Amulet Titan (G)
+#05 PuntThenWhine: Amulet Titan (UG)
 #06 _goblinlackey: Green Tron (G)
 #07 SunofNothing: Uroza (UG)
 #08 Laplasjan: Eldrazi Tron (C)
@@ -21,8 +21,8 @@ using System.Text;
 #10 Ma7x: Niv To Light (WUBRG)
 #11 Tiemuuu: Izzet Control (UR)
 #12 Leyline_Of_The_Boys: Bant Control (WUG)
-#13 TrollingSaruman: Dredge (BRG)
-#14 haubidtran: Uroza (UG)
+#13 TrollingSaruman: Dredge (WBRG)
+#14 haubidtran: Uroza (URG)
 #15 _Phoenix_: Humans (WUBRG)
 #16 caronte1991: Azorius Control (WU)
 #17 oniiman: Mono Red Prowess (R)
@@ -100,12 +100,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck05_PuntThenWhine_AmuletTitan_G()
+        public void Deck05_PuntThenWhine_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-15",4),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -204,12 +204,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck13_TrollingSaruman_Dredge_BRG()
+        public void Deck13_TrollingSaruman_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-15",12),
                 new PostOuatBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck14_haubidtran_Uroza_UG()
+        public void Deck14_haubidtran_Uroza_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-15",13),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null

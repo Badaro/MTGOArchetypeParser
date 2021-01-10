@@ -14,7 +14,7 @@ using System.Text;
 #03 Mcleskey: Burn (WR)
 #04 Laplasjan: Devoted (WG, Lurrus)
 #05 indianpancake: Gruul Midrange (RG)
-#06 MadMaxErnst: Uroza (UG)
+#06 MadMaxErnst: Uroza (URG)
 #07 tendercloud: Hardened Scales (BG, Lurrus)
 #08 TSPJendrek: UBRG Control (UBRG)
 #09 TheTunnelingCat: Eldrazi Tron (C)
@@ -37,9 +37,9 @@ using System.Text;
 #26 ContraEgo: Thopter Urza (UBR)
 #27 SebastianStueckl: Gruul Midrange (RG)
 #28 PeanutBrittle: Gifts Storm (UR)
-#29 Kuhb: Grinding Breach (WUR)
+#29 Kuhb: Grinding Breach (WURG)
 #30 Math_God: Gifts Storm (UR)
-#31 SunofNothing: Uroza (UG)
+#31 SunofNothing: Uroza (URG)
 #32 exoticherman: Infect (UG)
 */
 
@@ -113,12 +113,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck06_MadMaxErnst_Uroza_UG()
+        public void Deck06_MadMaxErnst_Uroza_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",5),
                 new PostCompanionChange(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -412,12 +412,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck29_Kuhb_GrindingBreach_WUR()
+        public void Deck29_Kuhb_GrindingBreach_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",28),
                 new PostCompanionChange(),
-                ArchetypeColor.WUR,
+                ArchetypeColor.WURG,
                 typeof(GrindingBreach),
                 null,
                 null
@@ -438,12 +438,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck31_SunofNothing_Uroza_UG()
+        public void Deck31_SunofNothing_Uroza_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",30),
                 new PostCompanionChange(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null

@@ -19,12 +19,12 @@ using System.Text;
 #08 Gerardo94: WURG Control (WURG)
 #09 yamakiller: Obosh Aggro (R, Obosh)
 #10 _IlNano_: Shadow Prowess (BRG, Lurrus)
-#11 pokerswizard: Green Tron (G)
+#11 pokerswizard: Green Tron (RG)
 #12 Ramp: Reclaimer Titan (WG)
 #13 Jaberwocki: Jund Midrange (BRG)
 #14 McWinSauce: WURG Control (WURG)
-#15 Ikashy: Oops All Spells (WUBG)
-#16 SpiderSpace: Electro Balance (UR)
+#15 Ikashy: Oops All Spells (WUBRG)
+#16 SpiderSpace: Electro Balance (URG)
 #17 QuaCk QuaCk: Scapeshift (URG)
 #18 _Falcon_: Izzet Prowess (UR)
 #19 __BMJ__: Shadow Prowess (BR, Lurrus)
@@ -167,12 +167,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck11_pokerswizard_GreenTron_G()
+        public void Deck11_pokerswizard_GreenTron_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-06",10),
                 new PostZendikarRising(),
-                ArchetypeColor.G,
+                ArchetypeColor.RG,
                 typeof(Tron),
                 typeof(GreenTron),
                 null
@@ -219,12 +219,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_Ikashy_OopsAllSpells_WUBG()
+        public void Deck15_Ikashy_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-06",14),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -232,12 +232,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_SpiderSpace_ElectroBalance_UR()
+        public void Deck16_SpiderSpace_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-06",15),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

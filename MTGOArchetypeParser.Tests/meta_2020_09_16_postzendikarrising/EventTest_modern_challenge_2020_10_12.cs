@@ -27,7 +27,7 @@ using System.Text;
 #16 nedyahiske: WURG Control (WURG)
 #17 Rav104: Shadow Prowess (BR, Lurrus)
 #18 WeareVenom: WURG Control (WURG)
-#19 Kurusu: Kiki Chord (WRG, Yorion)
+#19 Kurusu: Kiki Chord (WURG, Yorion)
 #20 FriskiFraska: Mono White Taxes (W)
 #21 Tiemuuu: Izzet Control (UR)
 #22 Karnesis93: Amulet Titan (UG)
@@ -282,12 +282,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck19_Kurusu_KikiChord_WRG_Yorion()
+        public void Deck19_Kurusu_KikiChord_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-12",18),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WURG,
                 typeof(KikiChord),
                 null,
                 ArchetypeCompanion.Yorion

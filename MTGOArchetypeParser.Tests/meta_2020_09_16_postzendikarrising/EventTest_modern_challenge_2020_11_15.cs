@@ -28,14 +28,14 @@ using System.Text;
 #17 JustBurn420: Slivers (WUBRG)
 #18 Chefen: Heliod Combo (WG)
 #19 Caleb_Yetman: Omnath Saheeli (WURG, Jegantha)
-#20 Capitano_CL: Oops All Spells (WUBG)
+#20 Capitano_CL: Oops All Spells (WUBRG)
 #21 Jinete: WURG Control (WURG)
 #22 Gobern: Niv To Light (WUBRG, Yorion)
 #23 coert: Heliod Combo (WG, Yorion)
 #24 darius89: Ad Nauseam (WUB)
 #25 qbturtle15: Azorius Control (WU)
 #26 bigjc00: Amulet Titan (RG)
-#27 kiwgil01: Electro Balance (UR)
+#27 kiwgil01: Electro Balance (URG)
 #28 Binolino: Reclaimer Titan (WRG)
 #29 patheus_84: Ad Nauseam (WUB)
 #30 HouseOfManaMTG: Amulet Titan (RG)
@@ -295,12 +295,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck20_CapitanoCL_OopsAllSpells_WUBG()
+        public void Deck20_CapitanoCL_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-15",19),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
@@ -386,12 +386,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck27_kiwgil01_ElectroBalance_UR()
+        public void Deck27_kiwgil01_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-15",26),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

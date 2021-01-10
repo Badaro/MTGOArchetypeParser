@@ -17,7 +17,7 @@ using System.Text;
 #06 Snusnumrick: Eldrazi Tron (C)
 #07 Trellon: Blue Tron (U)
 #08 CHILLEDADED: Burn (WR)
-#09 Predicted: Yawgmoth (BG)
+#09 Predicted: Yawgmoth (WBG)
 #10 TennTyou: Niv To Light (WUBRG)
 #11 Cy_4nhur: Goblins (BR)
 #12 buddha715: Burn (WR, Lurrus)
@@ -39,7 +39,7 @@ using System.Text;
 #28 Xemnon1: Rakdos Prowess (BR, Lurrus)
 #29 Filyoni: Devoted (WG, Lurrus)
 #30 asnook: Jund Midrange (BRG)
-#31 bigjc00: Amulet Titan (RG)
+#31 bigjc00: Amulet Titan (URG)
 #32 MCScards: Rakdos Prowess (BR, Lurrus)
 */
 
@@ -152,12 +152,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_Predicted_Yawgmoth_BG()
+        public void Deck09_Predicted_Yawgmoth_WBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",8),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BG,
+                ArchetypeColor.WBG,
                 typeof(Yawgmoth),
                 null,
                 null
@@ -438,12 +438,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck31_bigjc00_AmuletTitan_RG()
+        public void Deck31_bigjc00_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-17",30),
                 new PostAstrolabeBan(),
-                ArchetypeColor.RG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

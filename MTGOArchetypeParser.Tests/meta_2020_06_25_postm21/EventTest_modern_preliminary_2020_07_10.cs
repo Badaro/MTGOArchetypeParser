@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Gigy: Gruul Midrange (RG)
 #02 sff_mtg: Green Tron (G)
-#03 J000111: Dredge (BRG)
+#03 J000111: Dredge (WBRG)
 #04 WanderingOnes: Green Tron (G)
 #05 Janh: Scapeshift (URG, Yorion)
 #06 HouseOfManaMTG: Amulet Titan (UG)
@@ -51,12 +51,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck03_J000111_Dredge_BRG()
+        public void Deck03_J000111_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",2),
                 new PostM21(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null

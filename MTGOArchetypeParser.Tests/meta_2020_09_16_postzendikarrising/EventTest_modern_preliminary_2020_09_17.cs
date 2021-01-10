@@ -20,7 +20,7 @@ using System.Text;
 #09 leclairandy: Temur Control (URG)
 #10 Waumpus: Heliod Combo (WUG)
 #11 jsteed: Gruul Midrange (RG)
-#12 Lord_of_Puntlantis: Electro Balance (UR)
+#12 Lord_of_Puntlantis: Electro Balance (URG)
 #13 Mcleskey: Humans (WUBRG)
 #14 MZBlazer: Grixis Shadow (UBR)
 #15 Icteridae: Mono White Taxes (W)
@@ -175,12 +175,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_LordofPuntlantis_ElectroBalance_UR()
+        public void Deck12_LordofPuntlantis_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-17",11),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

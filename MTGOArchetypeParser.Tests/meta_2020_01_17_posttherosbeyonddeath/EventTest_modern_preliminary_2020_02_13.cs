@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 therock988: Thopter Urza (UB)
+#01 therock988: Thopter Urza (UBR)
 #02 idutra: Gruul Midrange (RG)
 #03 SoulStrong: Bant Control (WUG)
 #04 joker10289: Azorius Control (WU)
@@ -25,7 +25,7 @@ using System.Text;
 #14 PTarts2win: Dredge (BRG)
 #15 AlabasterWolfie: Grinding Breach (UBR)
 #16 Bayesta_93: Grixis Shadow (UBR)
-#17 helvetti: Thopter Urza (UB)
+#17 helvetti: Thopter Urza (UBR)
 #18 Tiemuuu: Izzet Control (UR)
 */
 
@@ -34,12 +34,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
     public class EventTest_modern_preliminary_2020_02_13 : EventTest
     {
         [Test]
-        public void Deck01_therock988_ThopterUrza_UB()
+        public void Deck01_therock988_ThopterUrza_UBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-13",0),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UB,
+                ArchetypeColor.UBR,
                 typeof(ThopterCombo),
                 typeof(ThopterUrza),
                 null
@@ -242,12 +242,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck17_helvetti_ThopterUrza_UB()
+        public void Deck17_helvetti_ThopterUrza_UBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-13",16),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UB,
+                ArchetypeColor.UBR,
                 typeof(ThopterCombo),
                 typeof(ThopterUrza),
                 null

@@ -11,13 +11,13 @@ using System.Text;
 /*
 #01 azax: Reclaimer Titan (WG)
 #02 zajad: Dredge (BRG)
-#03 benchsummer: Shadow Prowess (BRG, Lurrus)
+#03 benchsummer: Shadow Prowess (UBRG, Lurrus)
 #04 Gerardo94: WURG Control (WURG)
 #05 PTarts2win: Obosh Aggro (R, Obosh)
 #06 Lucabireskusku: Jeskai Control (WUR)
 #07 Mcleskey: Bogles (WG, Lurrus)
 #08 pokerswizard: Shadow Prowess (WBR, Lurrus)
-#09 Lordzedane: Electro Balance (UR)
+#09 Lordzedane: Electro Balance (URG)
 #10 RagingTiltMonster: Devoted (WG, Lurrus)
 */
 
@@ -52,12 +52,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_benchsummer_ShadowProwess_BRG_Lurrus()
+        public void Deck03_benchsummer_ShadowProwess_UBRG_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-19",2),
                 new PostZendikarRising(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(ShadowProwess),
                 null,
                 ArchetypeCompanion.Lurrus
@@ -130,12 +130,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_Lordzedane_ElectroBalance_UR()
+        public void Deck09_Lordzedane_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-19",8),
                 new PostZendikarRising(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

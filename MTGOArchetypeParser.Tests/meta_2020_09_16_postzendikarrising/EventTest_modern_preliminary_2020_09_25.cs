@@ -22,7 +22,7 @@ using System.Text;
 #11 McWinSauce: WURG Control (WURG)
 #12 Sanchez5272: Eldrazi Tron (C)
 #13 KelMasterP: Shadow Prowess (BR, Lurrus)
-#14 medvedev: Mono White Taxes (W)
+#14 medvedev: Selesnya Taxes (WG)
 #15 pokerswizard: Gruul Midrange (RG)
 #16 _Shatun_: Gruul Midrange (RG)
 #17 Snusnumrick: Eldrazi Tron (C)
@@ -205,12 +205,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_medvedev_MonoWhiteTaxes_W()
+        public void Deck14_medvedev_SelesnyaTaxes_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-25",13),
                 new PostZendikarRising(),
-                ArchetypeColor.W,
+                ArchetypeColor.WG,
                 typeof(GenericTaxes),
                 null,
                 null

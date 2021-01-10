@@ -10,14 +10,14 @@ using System.Text;
 
 /*
 #01 Ganksyou: Azorius Control (WU)
-#02 Rhianne: Dredge (BRG)
+#02 Rhianne: Dredge (WBRG)
 #03 tylerjjobrien: Niv To Light (WUBRG, Yorion)
 #04 Zar0s: Scapeshift (URG)
-#05 RodeoJones: Saheeli Combo (WUG)
+#05 RodeoJones: Saheeli Combo (WURG)
 #06 Thrall90: Jund Midrange (BRG)
 #07 Redgy819: Eldrazi Tron (C)
 #08 katuo079595: Scapeshift (URG)
-#09 ArchaeusDota: Green Tron (G)
+#09 ArchaeusDota: Green Tron (WG)
 #10 mylast: Izzet Prowess (UR)
 #11 rastaf: Izzet Prowess (UR)
 #12 Znapcaster: Bant Control (WUG)
@@ -50,12 +50,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck02_Rhianne_Dredge_BRG()
+        public void Deck02_Rhianne_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-28",1),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -89,12 +89,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_RodeoJones_SaheeliCombo_WUG()
+        public void Deck05_RodeoJones_SaheeliCombo_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-28",4),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(SaheeliCombo),
                 null,
                 null
@@ -141,12 +141,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_ArchaeusDota_GreenTron_G()
+        public void Deck09_ArchaeusDota_GreenTron_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-28",8),
                 new PostAstrolabeBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.WG,
                 typeof(Tron),
                 typeof(GreenTron),
                 null

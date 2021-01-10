@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Fnoop: Neobrand (UG)
+#01 Fnoop: Neobrand (UBG)
 #02 joker10289: Burn (WR, Lurrus)
 #03 Jositoshekel: Bogles (WG, Lurrus)
 #04 felider: Burn (WR, Lurrus)
@@ -38,12 +38,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
     public class EventTest_modern_preliminary_2020_04_22 : EventTest
     {
         [Test]
-        public void Deck01_Fnoop_Neobrand_UG()
+        public void Deck01_Fnoop_Neobrand_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-22",0),
                 new PostIkoria(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(Neobrand),
                 null,
                 null

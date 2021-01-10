@@ -13,7 +13,7 @@ using System.Text;
 #02 karatedom: Boros Prowess (WR, Lurrus)
 #03 Beenew: Mardu Prowess (WBR, Lurrus)
 #04 _Batutinha_: Jund Midrange (BRG, Lurrus)
-#05 Lord_of_Puntlantis: Electro Balance (UR)
+#05 Lord_of_Puntlantis: Electro Balance (URG)
 #06 gottelicious: Gruul Midrange (RG, Obosh)
 #07 ThePurpleMage: Devoted (WBG, Yorion)
 #08 Bayesta_93: Boros Prowess (WR, Lurrus)
@@ -100,12 +100,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck05_LordofPuntlantis_ElectroBalance_UR()
+        public void Deck05_LordofPuntlantis_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-17",4),
                 new PostIkoria(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

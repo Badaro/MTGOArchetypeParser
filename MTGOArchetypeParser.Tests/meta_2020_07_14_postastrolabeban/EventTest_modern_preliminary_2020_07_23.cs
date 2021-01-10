@@ -11,13 +11,13 @@ using System.Text;
 /*
 #01 eclipse4343: Azorius Control (WU)
 #02 fling5133: Jund Midrange (BRG)
-#03 eggybenny: Neobrand (UG)
+#03 eggybenny: Neobrand (UBG)
 #04 RNGspecialist: Scapeshift (URG)
 #05 gazmon48: Eldrazi Tron (C)
 #06 alemilan19: Scapeshift (URG)
 #07 sandydogmtg: Izzet Prowess (UR)
 #08 Ouranos139: Amulet Titan (UG)
-#09 yashimoro: Esper Shadow (WUB)
+#09 yashimoro: WUBR Shadow (WUBR)
 #10 DreamsOfAshiok: Eldrazi Tron (C)
 #11 Icteridae: Eldrazi Tron (C)
 #12 _INF_: Gifts Storm (UR)
@@ -26,7 +26,7 @@ using System.Text;
 #15 RogerSteady: Grixis Control (UBR)
 #16 Xwhale: Eldrazi Tron (C)
 #17 Toastxp: Mardu Prowess (WBR, Lurrus)
-#18 juzam_gin: Dredge (BRG)
+#18 juzam_gin: Dredge (WBRG)
 #19 grahams: Crabvine (UBRG)
 #20 Lexmart: Bant Control (WUG)
 #21 Graciasportanto: Green Tron (G)
@@ -65,12 +65,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_eggybenny_Neobrand_UG()
+        public void Deck03_eggybenny_Neobrand_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",2),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(Neobrand),
                 null,
                 null
@@ -143,12 +143,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_yashimoro_EsperShadow_WUB()
+        public void Deck09_yashimoro_WUBRShadow_WUBR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",8),
                 new PostAstrolabeBan(),
-                ArchetypeColor.WUB,
+                ArchetypeColor.WUBR,
                 typeof(GenericShadow),
                 null,
                 null
@@ -260,12 +260,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck18_juzamgin_Dredge_BRG()
+        public void Deck18_juzamgin_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",17),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null

@@ -11,19 +11,19 @@ using System.Text;
 /*
 #01 Mulldrifter: Eldrazi Tron (C)
 #02 McWinSauce: Bant Control (WUG)
-#03 Player44: Affinity (C)
+#03 Player44: Affinity (R)
 #04 Digbirt: Living End (BRG)
-#05 Violent_Outburst: Dredge (RG)
-#06 Albimtg: Sultai Shadow (UBG)
+#05 Violent_Outburst: Dredge (BRG)
+#06 Albimtg: UBRG Shadow (UBRG)
 #07 JustBurn420: Burn (UR)
 #08 JPA93: Living End (BRG)
 #09 skippy21: Jund Midrange (BRG)
 #10 kefka27: Eldrazi Tron (C)
 #11 albertoSD: Urza Oko (UG)
-#12 Volcano666: Sultai Shadow (UBG)
+#12 Volcano666: UBRG Shadow (UBRG)
 #13 VTCLA: Urza Oko (UG)
 #14 last7stand: Humans (WUBRG)
-#15 JMM: Urza Oko (UG)
+#15 JMM: Urza Oko (UBRG)
 #16 shadow_PT: Bant Control (WUG)
 */
 
@@ -58,12 +58,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck03_Player44_Affinity_C()
+        public void Deck03_Player44_Affinity_R()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-26",2),
                 new LastOkoDays(),
-                ArchetypeColor.C,
+                ArchetypeColor.R,
                 typeof(Affinity),
                 null,
                 null
@@ -84,12 +84,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck05_ViolentOutburst_Dredge_RG()
+        public void Deck05_ViolentOutburst_Dredge_BRG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-26",4),
                 new LastOkoDays(),
-                ArchetypeColor.RG,
+                ArchetypeColor.BRG,
                 typeof(Dredge),
                 null,
                 null
@@ -97,12 +97,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck06_Albimtg_SultaiShadow_UBG()
+        public void Deck06_Albimtg_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-26",5),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -175,12 +175,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck12_Volcano666_SultaiShadow_UBG()
+        public void Deck12_Volcano666_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-26",11),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -214,12 +214,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck15_JMM_UrzaOko_UG()
+        public void Deck15_JMM_UrzaOko_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-26",14),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBRG,
                 typeof(UrzaOko),
                 null,
                 null

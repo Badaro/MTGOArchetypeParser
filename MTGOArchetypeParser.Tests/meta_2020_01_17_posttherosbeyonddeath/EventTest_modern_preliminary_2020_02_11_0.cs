@@ -12,13 +12,13 @@ using System.Text;
 #01 PRGJJAR: Dredge (BRG)
 #02 FrancusAurelius: Gruul Midrange (RG)
 #03 MrPolite: Amulet Titan (UG)
-#04 GGoggles: Eldrazi Tron (C)
+#04 GGoggles: Eldrazi Tron (G)
 #05 Xwhale: Primeval Titan (WG)
 #06 Accelerator_GTR: Jund Midrange (BRG)
 #07 sandydogmtg: Burn (R)
 #08 AvocadoToast: Primeval Titan (WG)
 #09 Tyerube1618: Gifts Storm (UR)
-#10 Piglet: Bant Control (WUG)
+#10 Piglet: WURG Control (WURG)
 #11 quinniac: Grixis Shadow (UBR)
 #12 markdm: Thopter Urza (UBR)
 #13 _goblinlackey: Green Tron (G)
@@ -68,12 +68,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck04_GGoggles_EldraziTron_C()
+        public void Deck04_GGoggles_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-11-0",3),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -146,12 +146,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck10_Piglet_BantControl_WUG()
+        public void Deck10_Piglet_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-11-0",9),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null

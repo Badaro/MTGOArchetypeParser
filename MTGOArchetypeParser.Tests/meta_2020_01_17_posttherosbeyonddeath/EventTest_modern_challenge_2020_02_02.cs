@@ -20,19 +20,19 @@ using System.Text;
 #09 Tiemuuu: Izzet Control (UR)
 #10 cloudthresher77: Eldrazi Tron (C)
 #11 Dark_Samurai: Free Spells (UR)
-#12 rileydk: Amulet Titan (G)
+#12 rileydk: Amulet Titan (UG)
 #13 Irkus: Green Eldrazi (RG)
 #14 yanmaster: Hardened Scales (WG)
 #15 Parrit: Orzhov Taxes (WB)
-#16 McWinSauce: Bant Control (WUG)
-#17 PuntThenWhine: Amulet Titan (G)
+#16 McWinSauce: WURG Control (WURG)
+#17 PuntThenWhine: Amulet Titan (UG)
 #18 ecobaronen: Jund Midrange (BRG)
 #19 2legit2quit: Gruul Midrange (RG)
 #20 NuBlkAu: Mardu Shadow (WBR)
-#21 yamakiller: Eldrazi Tron (C)
+#21 yamakiller: Eldrazi Tron (G)
 #22 Xtermanator: Mono Red Prowess (R)
 #23 joker10289: Heliod Combo (WBG)
-#24 Azerate218: Sultai Shadow (UBG)
+#24 Azerate218: UBRG Shadow (UBRG)
 #25 echecetmat35: Primeval Titan (UG)
 #26 Azngangbuzta: Dredge (BRG)
 #27 scarl19: Primeval Titan (UG)
@@ -191,12 +191,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck12_rileydk_AmuletTitan_G()
+        public void Deck12_rileydk_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-02",11),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -243,12 +243,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck16_McWinSauce_BantControl_WUG()
+        public void Deck16_McWinSauce_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-02",15),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck17_PuntThenWhine_AmuletTitan_G()
+        public void Deck17_PuntThenWhine_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-02",16),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck21_yamakiller_EldraziTron_C()
+        public void Deck21_yamakiller_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-02",20),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -347,12 +347,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck24_Azerate218_SultaiShadow_UBG()
+        public void Deck24_Azerate218_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-02",23),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

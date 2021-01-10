@@ -16,7 +16,7 @@ using System.Text;
 #05 maximusdee: Shadow Prowess (BRG, Lurrus)
 #06 McWinSauce: WURG Control (WURG)
 #07 trader08111: Gruul Midrange (RG)
-#08 benchsummer: Jund Shadow (BRG)
+#08 benchsummer: UBRG Shadow (UBRG)
 #09 Butakov: WURG Control (WURG)
 #10 HouseOfManaMTG: Amulet Titan (G)
 #11 bobthedog: Bant Blink (WUG)
@@ -139,12 +139,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_benchsummer_JundShadow_BRG()
+        public void Deck08_benchsummer_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-21",7),
                 new PostZendikarRising(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

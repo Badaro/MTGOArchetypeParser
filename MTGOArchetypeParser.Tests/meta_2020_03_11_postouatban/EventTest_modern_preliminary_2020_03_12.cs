@@ -18,10 +18,10 @@ using System.Text;
 #07 Theflotist: Bant Control (WUG)
 #08 Cherryxman: Eldrazi Tron (C)
 #09 Veronkierto: Dredge (BRG)
-#10 TBagTom: Sultai Control (UBG)
+#10 TBagTom: UBRG Control (UBRG)
 #11 D00mwake: Green Tron (G)
 #12 uaedoliB: Humans (WUBRG)
-#13 negusen: Elves (BG)
+#13 negusen: Elves (WBRG)
 #14 bolov0: Humans (WUBRG)
 #15 Danny_Bambino: Grinding Breach (WUBR)
 #16 BReal2: Rakdos Midrange (BR)
@@ -43,7 +43,7 @@ using System.Text;
 #32 Antillectual: Azorius Control (WU)
 #33 _Carter_: Grixis Shadow (UBR)
 #34 pepeisra: Uroza (UG)
-#35 Mou: Bant Control (WUG)
+#35 Mou: WURG Control (WURG)
 #36 kiethverin: Mono Red Prowess (R)
 */
 
@@ -169,12 +169,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck10_TBagTom_SultaiControl_UBG()
+        public void Deck10_TBagTom_UBRGControl_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-12",9),
                 new PostOuatBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericControl),
                 null,
                 null
@@ -208,12 +208,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck13_negusen_Elves_BG()
+        public void Deck13_negusen_Elves_WBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-12",12),
                 new PostOuatBan(),
-                ArchetypeColor.BG,
+                ArchetypeColor.WBRG,
                 typeof(Elves),
                 null,
                 null
@@ -494,12 +494,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck35_Mou_BantControl_WUG()
+        public void Deck35_Mou_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-12",34),
                 new PostOuatBan(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null

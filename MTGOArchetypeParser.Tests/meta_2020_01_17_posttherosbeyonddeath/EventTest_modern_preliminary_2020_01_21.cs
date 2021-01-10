@@ -18,7 +18,7 @@ using System.Text;
 #07 Boland: Grixis Shadow (UBR)
 #08 NightShadowJ: Uroza (URG)
 #09 bolov0: Titan Shift (RG)
-#10 yamakiller: Eldrazi Tron (C)
+#10 yamakiller: Eldrazi Tron (G)
 #11 trammell: Mono Red Prowess (R)
 #12 D00mwake: Primeval Titan (UG)
 #13 mitchrules25: Burn (WR)
@@ -28,7 +28,7 @@ using System.Text;
 #17 sandydogmtg: Burn (R)
 #18 Sideshowsc: Scapeshift (WURG)
 #19 Cynjii: UBRG Shadow (UBRG)
-#20 603Leb: Amulet Titan (UG)
+#20 603Leb: Amulet Titan (URG)
 #21 Atticuslol: Titan Shift (RG)
 #22 Jiraiax: Grixis Shadow (UBR)
 #23 exoticherman: Infect (UG)
@@ -161,12 +161,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck10_yamakiller_EldraziTron_C()
+        public void Deck10_yamakiller_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-21",9),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -291,12 +291,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck20_603Leb_AmuletTitan_UG()
+        public void Deck20_603Leb_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-21",19),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

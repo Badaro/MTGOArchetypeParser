@@ -10,23 +10,23 @@ using System.Text;
 
 /*
 #01 Coly2: Mono Red Prowess (R)
-#02 zman2340: Thopter Urza (UG)
+#02 zman2340: Thopter Urza (UBG)
 #03 FunkiMunki: Urza Oko (URG)
 #04 JustBurn420: Slivers (WUBRG)
 #05 Oderus Urungus: Mono Red Prowess (R)
 #06 xfile: Eldrazi Tron (G)
 #07 McWinSauce: Bant Control (WUG)
-#08 pepeisra: Urza Oko (UG)
+#08 pepeisra: Urza Oko (URG)
 #09 Butakov: Eldrazi Tron (C)
 #10 Giaws: Grixis Shadow (UBR)
 #11 _Shatun_: Bogles (WG)
 #12 limp22: Bant Midrange (WUG)
-#13 CADYstrophic: Cheeri 0s (WUG)
+#13 CADYstrophic: Cheeri 0s (WUBRG)
 #14 Folero: Infect (UG)
 #15 ACG88: Titan Shift (RG)
 #16 aaronsolon: Gifts Storm (UR)
-#17 SourceOdin: Urza Oko (UG)
-#18 Morenothings: Urza Oko (UG)
+#17 SourceOdin: Urza Oko (WUG)
+#18 Morenothings: Urza Oko (WUG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
@@ -47,12 +47,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_zman2340_ThopterUrza_UG()
+        public void Deck02_zman2340_ThopterUrza_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-09",1),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(ThopterCombo),
                 typeof(ThopterUrza),
                 null
@@ -125,12 +125,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck08_pepeisra_UrzaOko_UG()
+        public void Deck08_pepeisra_UrzaOko_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-09",7),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -190,12 +190,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck13_CADYstrophic_Cheeri0s_WUG()
+        public void Deck13_CADYstrophic_Cheeri0s_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-09",12),
                 new LastOkoDays(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WUBRG,
                 typeof(Cheeri0s),
                 null,
                 null
@@ -242,12 +242,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck17_SourceOdin_UrzaOko_UG()
+        public void Deck17_SourceOdin_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-09",16),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -255,12 +255,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck18_Morenothings_UrzaOko_UG()
+        public void Deck18_Morenothings_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-09",17),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null

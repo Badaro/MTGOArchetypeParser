@@ -13,7 +13,7 @@ using System.Text;
 #02 eXavie: Rakdos Prowess (BR, Lurrus)
 #03 Snusnumrick: Eldrazi Tron (C)
 #04 __matsugan: Neobrand (UG)
-#05 cntrlfreak: Sultai Shadow (UBG)
+#05 cntrlfreak: UBRG Shadow (UBRG)
 #06 tibalt_of_red_sub: Mill (UB, Lurrus)
 #07 cnofafva: Amulet Titan (UG)
 #08 Toastxp: Rakdos Prowess (BR, Lurrus)
@@ -84,12 +84,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_cntrlfreak_SultaiShadow_UBG()
+        public void Deck05_cntrlfreak_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-11",4),
                 new PostAstrolabeBan(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

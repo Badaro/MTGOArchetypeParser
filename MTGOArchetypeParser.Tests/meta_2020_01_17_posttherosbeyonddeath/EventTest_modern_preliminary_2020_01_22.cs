@@ -23,7 +23,7 @@ using System.Text;
 #12 joker10289: Azorius Control (WU)
 #13 SoulStrong: Amulet Titan (UG)
 #14 JustBurn420: Slivers (WUBRG)
-#15 Bugsy69: Dredge (BRG)
+#15 Bugsy69: Dredge (UBRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
@@ -213,12 +213,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck15_Bugsy69_Dredge_BRG()
+        public void Deck15_Bugsy69_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-22",14),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null

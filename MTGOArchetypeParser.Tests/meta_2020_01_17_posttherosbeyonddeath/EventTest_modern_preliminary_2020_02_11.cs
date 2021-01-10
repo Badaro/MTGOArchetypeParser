@@ -27,7 +27,7 @@ using System.Text;
 #16 i_b_TRUE: Jund Midrange (BRG)
 #17 CaptainFarbosa: Thopter Urza (UB)
 #18 Ak4suk1: Neobrand (UG)
-#19 brueck4: Uroza (UG)
+#19 brueck4: Uroza (URG)
 #20 wordy333: Green Tron (G)
 #21 Magic4everStoreShop6: Gruul Midrange (RG)
 #22 Searzist: Mono Red Prowess (R)
@@ -273,12 +273,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck19_brueck4_Uroza_UG()
+        public void Deck19_brueck4_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-11",18),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null

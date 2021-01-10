@@ -13,7 +13,7 @@ using System.Text;
 #02 Coly2: Gruul Midrange (RG, Obosh)
 #03 Magicofplayer1: Jeskai Control (WUR, Yorion)
 #04 DreamsOfAshiok: Eldrazi Tron (C)
-#05 kanister: Scapeshift (URG, Yorion)
+#05 kanister: Scapeshift (WUBRG, Yorion)
 #06 Lavaridge: UBRG Control (UBRG, Lurrus)
 #07 Laplasjan: Devoted (WG, Lurrus)
 #08 ArchaeusDota: Green Tron (G, Jegantha)
@@ -78,12 +78,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck05_kanister_Scapeshift_URG_Yorion()
+        public void Deck05_kanister_Scapeshift_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-30",4),
                 new PostIkoria(),
-                ArchetypeColor.URG,
+                ArchetypeColor.WUBRG,
                 typeof(Scapeshift),
                 null,
                 ArchetypeCompanion.Yorion

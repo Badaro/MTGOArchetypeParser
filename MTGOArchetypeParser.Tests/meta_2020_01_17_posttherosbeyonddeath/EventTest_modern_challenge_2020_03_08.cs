@@ -21,16 +21,16 @@ using System.Text;
 #10 scipios: Crabvine (UBG)
 #11 qbturtle15: Azorius Control (WU)
 #12 Zar0s: Grinding Breach (WUBR)
-#13 jon_cli: Sultai Shadow (UBG)
+#13 jon_cli: UBRG Shadow (UBRG)
 #14 LORiWWA: Eldrazi Tron (G)
 #15 twinlesstwin: Azorius Control (WU)
 #16 SickWorld: Infect (UG)
 #17 tangrams: Uroza (UG)
 #18 benchsummer: UBRG Shadow (UBRG)
 #19 Entman: Gruul Midrange (RG)
-#20 Diem4x: Uroza (UG)
+#20 Diem4x: Uroza (URG)
 #21 NinoMtg: Thopter Urza (UBR)
-#22 offline: Amulet Titan (G)
+#22 offline: Amulet Titan (UG)
 #23 magical_me32: Dredge (BRG)
 #24 MiguelCaster: Temur Control (URG)
 #25 ecobaronen: Bant Control (WUG)
@@ -204,12 +204,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck13_joncli_SultaiShadow_UBG()
+        public void Deck13_joncli_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-08",12),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -295,12 +295,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck20_Diem4x_Uroza_UG()
+        public void Deck20_Diem4x_Uroza_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-08",19),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -321,12 +321,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck22_offline_AmuletTitan_G()
+        public void Deck22_offline_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-08",21),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

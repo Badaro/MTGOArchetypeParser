@@ -11,8 +11,8 @@ using System.Text;
 /*
 #01 Lord_Beerus: Burn (WR)
 #02 SourEggnog: Jund Midrange (BRG)
-#03 SunofNothing: Uroza (UG)
-#04 MEG: Dredge (BRG)
+#03 SunofNothing: Uroza (URG)
+#04 MEG: Dredge (UBRG)
 #05 katoriarch123: Bant Control (WUG)
 #06 esatheking: Boros Prowess (WR)
 #07 GGoggles: Humans (WUBRG)
@@ -22,7 +22,7 @@ using System.Text;
 #11 joaoclaudioms: Gruul Midrange (RG)
 #12 penips: Orzhov Taxes (WB)
 #13 Xwhale: Eldrazi Tron (C)
-#14 Capitano_CL: Dredge (BRG)
+#14 Capitano_CL: Dredge (UBRG)
 #15 DreamsOfAshiok: Eldrazi Tron (C)
 #16 StoreShop216: Simic Control (UG)
 #17 SrTortinha: Gruul Midrange (RG)
@@ -40,14 +40,14 @@ using System.Text;
 #29 HappySandwich: Gruul Midrange (RG)
 #30 rastaf: Gruul Midrange (RG)
 #31 MastaHorus: Rakdos Midrange (BR)
-#32 Toastxp: Uroza (UG)
+#32 Toastxp: Uroza (URG)
 #33 Itchyone: Gruul Midrange (RG)
 #34 qbturtle15: Zoo (WRG)
 #35 bernardocssa: Bant Control (WUG)
 #36 Snapcaster-Bolt: Amulet Titan (URG)
 #37 AvocadoToast: Primeval Titan (BG)
 #38 yamakiller: Dredge (BRG)
-#39 supermariobro2005: Green Tron (G)
+#39 supermariobro2005: Green Tron (WG)
 #40 dough_shack: Primeval Titan (UBG)
 #41 FlamboyasaurusSex: Dredge (BRG)
 #42 ForThoseWhoHaveHeart: Bant Control (WUG)
@@ -59,8 +59,8 @@ using System.Text;
 #48 Cuthbertthecat: Bant Control (WUG)
 #49 Sonso JF: Dredge (BRG)
 #50 quinniac: Burn (WR)
-#51 bigjc00: Amulet Titan (G)
-#52 Bounds: Bant Control (WUG)
+#51 bigjc00: Amulet Titan (UG)
+#52 Bounds: WURG Control (WURG)
 #53 flatnose: Merfolk (UG)
 */
 
@@ -95,12 +95,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck03_SunofNothing_Uroza_UG()
+        public void Deck03_SunofNothing_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",2),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -108,12 +108,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck04_MEG_Dredge_BRG()
+        public void Deck04_MEG_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",3),
                 new PostOuatBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -238,12 +238,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck14_CapitanoCL_Dredge_BRG()
+        public void Deck14_CapitanoCL_Dredge_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",13),
                 new PostOuatBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(Dredge),
                 null,
                 null
@@ -472,12 +472,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck32_Toastxp_Uroza_UG()
+        public void Deck32_Toastxp_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",31),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -563,12 +563,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck39_supermariobro2005_GreenTron_G()
+        public void Deck39_supermariobro2005_GreenTron_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",38),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.WG,
                 typeof(Tron),
                 typeof(GreenTron),
                 null
@@ -719,12 +719,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck51_bigjc00_AmuletTitan_G()
+        public void Deck51_bigjc00_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",50),
                 new PostOuatBan(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -732,12 +732,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck52_Bounds_BantControl_WUG()
+        public void Deck52_Bounds_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",51),
                 new PostOuatBan(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null

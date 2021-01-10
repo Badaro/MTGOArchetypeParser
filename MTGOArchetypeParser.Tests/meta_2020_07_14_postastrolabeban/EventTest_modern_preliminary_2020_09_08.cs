@@ -13,7 +13,7 @@ using System.Text;
 #02 azax: Grixis Shadow (UBR)
 #03 JacobofAmber: Ad Nauseam (WUB)
 #04 qbturtle15: Gruul Midrange (RG)
-#05 bigjc00: Amulet Titan (RG)
+#05 bigjc00: Amulet Titan (URG)
 #06 The_nayr: Obosh Aggro (R, Obosh)
 #07 DeepFryer: Rakdos Prowess (BR, Lurrus)
 #08 Bedell: Amulet Titan (RG)
@@ -22,7 +22,7 @@ using System.Text;
 #11 raven0904: Green Tron (G)
 #12 wilson5434: Hardened Scales (G)
 #13 TheMelkMan: Green Tron (G)
-#14 crackerpack: Dredge (BRG)
+#14 crackerpack: Dredge (WBRG)
 #15 Thrall90: Rakdos Prowess (BR, Lurrus)
 #16 PTarts2win: Green Tron (G)
 #17 andrw1232: Rakdos Prowess (BR, Lurrus)
@@ -87,12 +87,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck05_bigjc00_AmuletTitan_RG()
+        public void Deck05_bigjc00_AmuletTitan_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-08",4),
                 new PostAstrolabeBan(),
-                ArchetypeColor.RG,
+                ArchetypeColor.URG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -204,12 +204,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_crackerpack_Dredge_BRG()
+        public void Deck14_crackerpack_Dredge_WBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-08",13),
                 new PostAstrolabeBan(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.WBRG,
                 typeof(Dredge),
                 null,
                 null

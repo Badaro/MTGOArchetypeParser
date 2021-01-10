@@ -15,7 +15,7 @@ using System.Text;
 #04 Violent_Outburst: Temur Control (URG)
 #05 Stabilo: Infect (UG)
 #06 Gerardo94: Bant Control (WUG)
-#07 Toastxp: Uroza (UG)
+#07 Toastxp: Uroza (URG)
 #08 katoken: Mardu Shadow (WBR)
 #09 kasa: Amulet Titan (UG)
 */
@@ -103,12 +103,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck07_Toastxp_Uroza_UG()
+        public void Deck07_Toastxp_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-1",6),
                 new PostOuatBan(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null

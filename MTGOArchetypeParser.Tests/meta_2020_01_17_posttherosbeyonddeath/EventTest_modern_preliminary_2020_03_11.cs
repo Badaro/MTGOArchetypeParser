@@ -21,7 +21,7 @@ using System.Text;
 #10 ZYURYO: Bant Control (WUG)
 #11 NorrathDecay: Green Tron (G)
 #12 triosk: Jund Midrange (BRG)
-#13 HannoLee: Uroza (UG)
+#13 HannoLee: Uroza (URG)
 #14 Lavaridge: Bant Control (WUG)
 #15 Cherryxman: Eldrazi Tron (C)
 #16 Mou: Eldrazi Tron (G)
@@ -193,12 +193,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck13_HannoLee_Uroza_UG()
+        public void Deck13_HannoLee_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-11",12),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null

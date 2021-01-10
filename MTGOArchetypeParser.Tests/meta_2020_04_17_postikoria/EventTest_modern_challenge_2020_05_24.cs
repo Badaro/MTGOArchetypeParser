@@ -20,10 +20,10 @@ using System.Text;
 #09 sendoh007: Gruul Midrange (RG, Obosh)
 #10 Parrit: Hardened Scales (BG, Lurrus)
 #11 matiaskm: Devoted (WG, Lurrus)
-#12 fistfullofmetal: Green Tron (G, Jegantha)
+#12 fistfullofmetal: Green Tron (RG, Jegantha)
 #13 PRGJJAR: Dredge (BRG)
 #14 tia05: Titan Shift (RG)
-#15 Karnesis93: Amulet Titan (G)
+#15 Karnesis93: Amulet Titan (UG)
 #16 xfile: Green Tron (G, Jegantha)
 #17 Traft: Scapeshift (URG, Yorion)
 #18 Tripalosky: Bogles (WG, Lurrus)
@@ -31,7 +31,7 @@ using System.Text;
 #20 JOXEMI333: Green Tron (G, Jegantha)
 #21 GrandDrou: Rakdos Prowess (BR, Lurrus)
 #22 Hemsley: Gyruda Reanimator (BRG, Gyruda)
-#23 ArchaeusDota: Green Tron (G, Jegantha)
+#23 ArchaeusDota: Green Tron (RG, Jegantha)
 #24 Karolmo: Jund Midrange (BRG, Lurrus)
 #25 Samcaster-Mage: Eldrazi Tron (C)
 #26 Thrall90: Jund Midrange (BRG, Lurrus)
@@ -191,12 +191,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck12_fistfullofmetal_GreenTron_G_Jegantha()
+        public void Deck12_fistfullofmetal_GreenTron_RG_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-24",11),
                 new PostIkoria(),
-                ArchetypeColor.G,
+                ArchetypeColor.RG,
                 typeof(Tron),
                 typeof(GreenTron),
                 ArchetypeCompanion.Jegantha
@@ -230,12 +230,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck15_Karnesis93_AmuletTitan_G()
+        public void Deck15_Karnesis93_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-24",14),
                 new PostIkoria(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -334,12 +334,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck23_ArchaeusDota_GreenTron_G_Jegantha()
+        public void Deck23_ArchaeusDota_GreenTron_RG_Jegantha()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-24",22),
                 new PostIkoria(),
-                ArchetypeColor.G,
+                ArchetypeColor.RG,
                 typeof(Tron),
                 typeof(GreenTron),
                 ArchetypeCompanion.Jegantha

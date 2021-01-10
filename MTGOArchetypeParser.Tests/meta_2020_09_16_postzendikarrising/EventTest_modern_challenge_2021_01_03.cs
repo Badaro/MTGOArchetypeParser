@@ -24,7 +24,7 @@ using System.Text;
 #13 SourceOdin: Grinding Breach (URG)
 #14 nazart: Heliod Combo (WG)
 #15 penips: Mono White Taxes (W)
-#16 Binolino: Reclaimer Titan (WRG)
+#16 Binolino: Reclaimer Titan (WBRG)
 #17 billsive: Bant Control (WUG)
 #18 HamburgerJung: Green Tron (G, Jegantha)
 #19 MarcoBelacca95: Sultai Control (UBG)
@@ -243,12 +243,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_Binolino_ReclaimerTitan_WRG()
+        public void Deck16_Binolino_ReclaimerTitan_WBRG()
         {
             Test(
                 GetDeck("modern-challenge-2021-01-03",15),
                 new PostZendikarRising(),
-                ArchetypeColor.WRG,
+                ArchetypeColor.WBRG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null

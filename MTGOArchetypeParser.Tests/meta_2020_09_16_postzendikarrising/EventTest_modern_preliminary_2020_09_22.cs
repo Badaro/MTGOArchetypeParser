@@ -11,9 +11,9 @@ using System.Text;
 /*
 #01 Zar0s: Gruul Midrange (RG)
 #02 McWinSauce: WURG Control (WURG)
-#03 SgtMcMuffins: Reclaimer Titan (WG)
-#04 Redgy819: Sultai Shadow (UBG)
-#05 benchsummer: Jund Shadow (BRG)
+#03 SgtMcMuffins: Reclaimer Titan (WRG)
+#04 Redgy819: UBRG Shadow (UBRG)
+#05 benchsummer: UBRG Shadow (UBRG)
 #06 Humpaa: Shadow Prowess (BR, Lurrus)
 #07 solaec0501: Humans (WUBRG)
 #08 TheSouthDakota: Dredge (BRG)
@@ -58,12 +58,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_SgtMcMuffins_ReclaimerTitan_WG()
+        public void Deck03_SgtMcMuffins_ReclaimerTitan_WRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-22",2),
                 new PostZendikarRising(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WRG,
                 typeof(PrimevalTitan),
                 typeof(ReclaimerTitan),
                 null
@@ -71,12 +71,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_Redgy819_SultaiShadow_UBG()
+        public void Deck04_Redgy819_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-22",3),
                 new PostZendikarRising(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -84,12 +84,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_benchsummer_JundShadow_BRG()
+        public void Deck05_benchsummer_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-22",4),
                 new PostZendikarRising(),
-                ArchetypeColor.BRG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

@@ -14,10 +14,10 @@ using System.Text;
 #03 Gerschi: WURG Control (WURG)
 #04 UmekawaneikU: Shadow Prowess (BRG, Lurrus)
 #05 Eaglov: Amulet Titan (UG)
-#06 Lukas261997: Amulet Titan (G)
+#06 Lukas261997: Amulet Titan (RG)
 #07 ZYURYO: WURG Control (WURG)
 #08 Matteso: Gifts Storm (UR)
-#09 MaxCapone: Oops All Spells (WUBG)
+#09 MaxCapone: Oops All Spells (WUBRG)
 #10 GrandDrou: Shadow Prowess (WBR, Lurrus)
 #11 SoulStrong: Reclaimer Titan (WRG)
 #12 JustBurn420: Burn (RG)
@@ -96,12 +96,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_Lukas261997_AmuletTitan_G()
+        public void Deck06_Lukas261997_AmuletTitan_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-14",5),
                 new PostZendikarRising(),
-                ArchetypeColor.G,
+                ArchetypeColor.RG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null
@@ -135,12 +135,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_MaxCapone_OopsAllSpells_WUBG()
+        public void Deck09_MaxCapone_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-14",8),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null

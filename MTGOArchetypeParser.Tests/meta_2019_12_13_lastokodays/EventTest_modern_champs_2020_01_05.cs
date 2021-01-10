@@ -10,17 +10,17 @@ using System.Text;
 
 /*
 #01 pepeteam: Urza Oko (UG)
-#02 Toastxp: Urza Oko (UG)
+#02 Toastxp: Urza Oko (UBG)
 #03 fradelrock: Eldrazi Tron (C)
 #04 jessy_samek: Urza Oko (WURG)
-#05 MentalMisstep: Urza Oko (UG)
+#05 MentalMisstep: Urza Oko (WUG)
 #06 i_b_TRUE: Titan Shift (RG)
 #07 Do0mSwitch: Bant Control (WUG)
 #08 Icteridae: Devoted (WUG)
 #09 Yaggdryzzill: Eldrazi Tron (C)
 #10 JPA93: Infect (UG)
-#11 didoguidotti1: Sultai Shadow (UBG)
-#12 Volollo: Urza Oko (UG)
+#11 didoguidotti1: UBRG Shadow (UBRG)
+#12 Volollo: Urza Oko (UBG)
 #13 Ihavethefire: Naya Midrange (WRG)
 #14 McWinSauce: Bant Control (WUG)
 #15 bershekprc10: Eldrazi Tron (C)
@@ -61,12 +61,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_Toastxp_UrzaOko_UG()
+        public void Deck02_Toastxp_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-champs-2020-01-05",1),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -100,12 +100,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck05_MentalMisstep_UrzaOko_UG()
+        public void Deck05_MentalMisstep_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-champs-2020-01-05",4),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -178,12 +178,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck11_didoguidotti1_SultaiShadow_UBG()
+        public void Deck11_didoguidotti1_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-champs-2020-01-05",10),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null
@@ -191,12 +191,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck12_Volollo_UrzaOko_UG()
+        public void Deck12_Volollo_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-champs-2020-01-05",11),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(UrzaOko),
                 null,
                 null

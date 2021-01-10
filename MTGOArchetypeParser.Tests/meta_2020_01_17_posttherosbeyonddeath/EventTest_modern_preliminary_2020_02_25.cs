@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 McWinSauce: Bant Control (WUG)
+#01 McWinSauce: WURG Control (WURG)
 #02 WingedHussar: Neobrand (UG)
 #03 Mzfroste: Amulet Titan (UG)
 #04 Papelucho10: Infect (UG)
 #05 coert: Devoted (WBG)
 #06 FalseMufn: Amulet Titan (UG)
-#07 yamakiller: Eldrazi Tron (C)
+#07 yamakiller: Eldrazi Tron (G)
 #08 hcook725: Thopter Urza (UB)
-#09 Finalnub: Eldrazi Tron (C)
+#09 Finalnub: Eldrazi Tron (G)
 #10 thepensword: Izzet Control (UR)
 #11 Lord_Beerus: Burn (WR)
 #12 i_b_TRUE: Jund Midrange (BRG)
@@ -26,7 +26,7 @@ using System.Text;
 #15 _LSN_: Burn (WR)
 #16 MichaelScott: Jund Shadow (BRG)
 #17 maxxattack: Infect (UG)
-#18 damatoexp: Gifts Storm (UR)
+#18 damatoexp: Gifts Storm (URG)
 #19 mac121711: Sultai Control (UBG)
 #20 qbturtle15: Azorius Control (WU)
 #21 Scooter8968: Jund Midrange (BRG)
@@ -50,12 +50,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
     public class EventTest_modern_preliminary_2020_02_25 : EventTest
     {
         [Test]
-        public void Deck01_McWinSauce_BantControl_WUG()
+        public void Deck01_McWinSauce_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-25",0),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -128,12 +128,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck07_yamakiller_EldraziTron_C()
+        public void Deck07_yamakiller_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-25",6),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -154,12 +154,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck09_Finalnub_EldraziTron_C()
+        public void Deck09_Finalnub_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-25",8),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -271,12 +271,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck18_damatoexp_GiftsStorm_UR()
+        public void Deck18_damatoexp_GiftsStorm_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-25",17),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(GiftsStorm),
                 null,
                 null

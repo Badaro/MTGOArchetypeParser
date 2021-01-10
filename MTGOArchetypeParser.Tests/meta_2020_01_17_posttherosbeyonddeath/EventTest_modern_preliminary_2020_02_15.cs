@@ -17,7 +17,7 @@ using System.Text;
 #06 ZYURYO: Azorius Control (WU)
 #07 _goblinlackey: Green Tron (G)
 #08 tia05: Primeval Titan (RG)
-#09 3HDgamers: Eldrazi Tron (C)
+#09 3HDgamers: Eldrazi Tron (G)
 #10 crazy_c_403: Orzhov Taxes (WB)
 #11 SourceOdin: Amulet Titan (UG)
 #12 sandydogmtg: Burn (R)
@@ -26,7 +26,7 @@ using System.Text;
 #15 Finalnub: Neobrand (UG)
 #16 GutsMTG: Taking Turns (UR)
 #17 Punkah: Humans (WUBRG)
-#18 JustBurn420: Burn (R)
+#18 JustBurn420: Burn (WBRG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
@@ -138,12 +138,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck09_3HDgamers_EldraziTron_C()
+        public void Deck09_3HDgamers_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-15",8),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -255,12 +255,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck18_JustBurn420_Burn_R()
+        public void Deck18_JustBurn420_Burn_WBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-15",17),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.R,
+                ArchetypeColor.WBRG,
                 typeof(Burn),
                 null,
                 null

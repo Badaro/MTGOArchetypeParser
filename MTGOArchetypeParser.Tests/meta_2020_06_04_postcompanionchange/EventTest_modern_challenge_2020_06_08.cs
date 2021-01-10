@@ -25,7 +25,7 @@ using System.Text;
 #14 Ryan100495: Dredge (BRG)
 #15 Lord_Beerus: Burn (WR, Lurrus)
 #16 _Batutinha_: Bant Control (WUG)
-#17 ScreenwriterNY: Sultai Control (UBG, Yorion)
+#17 ScreenwriterNY: WUBG Control (WUBG, Yorion)
 #18 Erik157751: Eldrazi Tron (C)
 #19 sff_mtg: Green Tron (G)
 #20 Scacco Malto: Mono Red Prowess (R)
@@ -39,7 +39,7 @@ using System.Text;
 #28 Wartico1: Devoted (WG, Lurrus)
 #29 Nightblue: Burn (WR)
 #30 ilsecco14: Neobrand (UG)
-#31 Moniz0801: Amulet Titan (G)
+#31 Moniz0801: Amulet Titan (UG)
 #32 Oscar_Franco: Eldrazi Tron (C)
 */
 
@@ -256,12 +256,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck17_ScreenwriterNY_SultaiControl_UBG_Yorion()
+        public void Deck17_ScreenwriterNY_WUBGControl_WUBG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",16),
                 new PostCompanionChange(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.WUBG,
                 typeof(GenericControl),
                 null,
                 ArchetypeCompanion.Yorion
@@ -438,12 +438,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck31_Moniz0801_AmuletTitan_G()
+        public void Deck31_Moniz0801_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-08",30),
                 new PostCompanionChange(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

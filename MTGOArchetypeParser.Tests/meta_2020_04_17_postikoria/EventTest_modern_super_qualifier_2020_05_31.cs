@@ -24,7 +24,7 @@ using System.Text;
 #13 eminemberry: Burn (WR, Lurrus)
 #14 Dafne17: Gruul Midrange (RG, Obosh)
 #15 _LSN_: Burn (WR, Lurrus)
-#16 Cherryxman: Scapeshift (URG, Yorion)
+#16 Cherryxman: Scapeshift (WUBRG, Yorion)
 #17 Wtnof: Gruul Midrange (RG, Obosh)
 #18 Papelucho10: Infect (UG)
 #19 Lcario: Eldrazi Tron (C)
@@ -36,7 +36,7 @@ using System.Text;
 #25 PRGJJAR: Dredge (BRG)
 #26 idutra: Gruul Midrange (RG, Obosh)
 #27 kaikalbuquerque: Bogles (WUG, Lurrus)
-#28 selbstdenker: Scapeshift (WURG, Yorion)
+#28 selbstdenker: Scapeshift (WUBRG, Yorion)
 #29 Bullwinkkle6705: Scapeshift (URG, Yorion)
 #30 bozo2112: Bogles (WG, Lurrus)
 #31 Navas: Azorius Control (WU, Kaheera)
@@ -243,12 +243,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck16_Cherryxman_Scapeshift_URG_Yorion()
+        public void Deck16_Cherryxman_Scapeshift_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-31",15),
                 new PostIkoria(),
-                ArchetypeColor.URG,
+                ArchetypeColor.WUBRG,
                 typeof(Scapeshift),
                 null,
                 ArchetypeCompanion.Yorion
@@ -399,12 +399,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck28_selbstdenker_Scapeshift_WURG_Yorion()
+        public void Deck28_selbstdenker_Scapeshift_WUBRG_Yorion()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-31",27),
                 new PostIkoria(),
-                ArchetypeColor.WURG,
+                ArchetypeColor.WUBRG,
                 typeof(Scapeshift),
                 null,
                 ArchetypeCompanion.Yorion

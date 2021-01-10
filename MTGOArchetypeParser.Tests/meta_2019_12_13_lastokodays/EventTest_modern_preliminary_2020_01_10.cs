@@ -14,15 +14,15 @@ using System.Text;
 #03 Zacherry124: Bant Midrange (WUG)
 #04 _Shatun_: Mono Red Prowess (R)
 #05 fradev1988: Electro Balance (UR)
-#06 yamakiller: Eldrazi Tron (C)
+#06 yamakiller: Eldrazi Tron (G)
 #07 uwata: Ad Nauseam (WUB)
 #08 qbturtle15: Jund Midrange (BRG)
 #09 Ivan_Catanduva_Br: Bant Midrange (WUG)
-#10 karatedom: Urza Oko (UG)
+#10 karatedom: Urza Oko (UBG)
 #11 Butakov: Eldrazi Tron (C)
 #12 armstrong36: Sun And Moon (WR)
 #13 Nammersquats: Urza Oko (UG)
-#14 Albimtg: Sultai Shadow (UBG)
+#14 Albimtg: UBRG Shadow (UBRG)
 #15 Moyashi01: Grixis Shadow (UBR)
 #16 TombSimon: Mono Red Prowess (R)
 #17 tangrams: Eldrazi Tron (G)
@@ -102,12 +102,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck06_yamakiller_EldraziTron_C()
+        public void Deck06_yamakiller_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-10",5),
                 new LastOkoDays(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -154,12 +154,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck10_karatedom_UrzaOko_UG()
+        public void Deck10_karatedom_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-10",9),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -206,12 +206,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck14_Albimtg_SultaiShadow_UBG()
+        public void Deck14_Albimtg_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-10",13),
                 new LastOkoDays(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

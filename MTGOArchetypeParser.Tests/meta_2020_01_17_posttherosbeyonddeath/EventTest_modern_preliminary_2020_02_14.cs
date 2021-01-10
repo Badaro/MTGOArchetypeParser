@@ -14,9 +14,9 @@ using System.Text;
 #03 cftsoc3: Bant Blink (WUG)
 #04 ThePurpleMage: Devoted (WBG)
 #05 Dafne17: Gruul Midrange (RG)
-#06 HannoLee: Uroza (UG)
+#06 HannoLee: Uroza (URG)
 #07 Metal_Buddha: Jund Midrange (BRG)
-#08 Chipsoss: Sultai Shadow (UBG)
+#08 Chipsoss: UBRG Shadow (UBRG)
 #09 2radMTG: Infect (UG)
 #10 Toastxp: Amulet Titan (UG)
 */
@@ -91,12 +91,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck06_HannoLee_Uroza_UG()
+        public void Deck06_HannoLee_Uroza_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-14",5),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UG,
+                ArchetypeColor.URG,
                 typeof(Uroza),
                 null,
                 null
@@ -117,12 +117,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck08_Chipsoss_SultaiShadow_UBG()
+        public void Deck08_Chipsoss_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-14",7),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.UBG,
+                ArchetypeColor.UBRG,
                 typeof(GenericShadow),
                 null,
                 null

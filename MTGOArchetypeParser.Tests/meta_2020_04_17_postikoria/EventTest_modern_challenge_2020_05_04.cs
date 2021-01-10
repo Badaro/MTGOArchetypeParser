@@ -29,7 +29,7 @@ using System.Text;
 #18 triosk: Jund Midrange (BRG, Lurrus)
 #19 bcs8995: Grixis Shadow (UBR, Lurrus)
 #20 ImmanuelKantrolGod: Bant Control (WUG)
-#21 ziofrancone: Amulet Titan (G)
+#21 ziofrancone: Amulet Titan (UG)
 #22 a_p_s: Burn (WR, Lurrus)
 #23 Shorak123: Sultai Control (UBG)
 #24 ZYURYO: WURG Control (WURG, Yorion)
@@ -308,12 +308,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck21_ziofrancone_AmuletTitan_G()
+        public void Deck21_ziofrancone_AmuletTitan_UG()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-04",20),
                 new PostIkoria(),
-                ArchetypeColor.G,
+                ArchetypeColor.UG,
                 typeof(PrimevalTitan),
                 typeof(AmuletTitan),
                 null

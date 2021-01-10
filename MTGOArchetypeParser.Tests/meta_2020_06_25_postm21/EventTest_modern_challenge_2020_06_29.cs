@@ -23,7 +23,7 @@ using System.Text;
 #12 Mr_Sheep: Gruul Midrange (RG)
 #13 WuYuHsien: Bant Control (WUG)
 #14 Voltzwagon: Gruul Midrange (RG)
-#15 McWinSauce: Bant Control (WUG)
+#15 McWinSauce: WUBG Control (WUBG)
 #16 Janh: Sultai Control (UBG)
 #17 stainerson: Elves (BG)
 #18 ncowden: Sultai Control (UBG)
@@ -230,12 +230,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck15_McWinSauce_BantControl_WUG()
+        public void Deck15_McWinSauce_WUBGControl_WUBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-29",14),
                 new PostM21(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WUBG,
                 typeof(GenericControl),
                 null,
                 null

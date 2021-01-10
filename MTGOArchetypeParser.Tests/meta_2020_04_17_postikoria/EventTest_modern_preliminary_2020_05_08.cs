@@ -14,7 +14,7 @@ using System.Text;
 #03 MarcoBelacca95: Burn (WR, Lurrus)
 #04 HarlanMTG: Grixis Control (UBR, Lurrus)
 #05 SnapKeepGaming: Green Tron (G)
-#06 Toastxp: Uroza (URG, Yorion)
+#06 Toastxp: Uroza (WURG, Yorion)
 #07 TennTyou: Niv To Light (WUBRG)
 #08 Albimtg: Dimir Control (UB, Lurrus)
 #09 Niedzwiedz: Boros Prowess (WR, Lurrus)
@@ -93,12 +93,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck06_Toastxp_Uroza_URG_Yorion()
+        public void Deck06_Toastxp_Uroza_WURG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-08",5),
                 new PostIkoria(),
-                ArchetypeColor.URG,
+                ArchetypeColor.WURG,
                 typeof(Uroza),
                 null,
                 ArchetypeCompanion.Yorion

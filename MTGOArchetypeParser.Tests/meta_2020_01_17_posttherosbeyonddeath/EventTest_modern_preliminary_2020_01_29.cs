@@ -9,8 +9,8 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 McWinSauce: Bant Control (WUG)
-#02 kefka27: Eldrazi Tron (C)
+#01 McWinSauce: WURG Control (WURG)
+#02 kefka27: Eldrazi Tron (G)
 #03 Searzist: Mono Red Prowess (R)
 #04 jack_anid: Humans (WUBRG)
 #05 Accelerator_GTR: Jund Midrange (BRG)
@@ -18,11 +18,11 @@ using System.Text;
 #07 z00t: Primeval Titan (UG)
 #08 Cherryxman: Bushwhacker Zoo (WRG)
 #09 misonikomi: Amulet Titan (G)
-#10 antonio00: Green Devotion (G)
+#10 antonio00: Green Devotion (RG)
 #11 Blitzlion27: Primeval Titan (UG)
 #12 tritty: Yawgmoth (BG)
 #13 lSoLlAKirA: Thopter Urza (UB)
-#14 swff: Bant Control (WUG)
+#14 swff: WURG Control (WURG)
 #15 MrJACEone: Primeval Titan (RG)
 */
 
@@ -31,12 +31,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
     public class EventTest_modern_preliminary_2020_01_29 : EventTest
     {
         [Test]
-        public void Deck01_McWinSauce_BantControl_WUG()
+        public void Deck01_McWinSauce_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-29",0),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null
@@ -44,12 +44,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck02_kefka27_EldraziTron_C()
+        public void Deck02_kefka27_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-29",1),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -148,12 +148,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck10_antonio00_GreenDevotion_G()
+        public void Deck10_antonio00_GreenDevotion_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-29",9),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.G,
+                ArchetypeColor.RG,
                 typeof(GreenDevotion),
                 null,
                 null
@@ -200,12 +200,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck14_swff_BantControl_WUG()
+        public void Deck14_swff_WURGControl_WURG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-29",13),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.WUG,
+                ArchetypeColor.WURG,
                 typeof(GenericControl),
                 null,
                 null

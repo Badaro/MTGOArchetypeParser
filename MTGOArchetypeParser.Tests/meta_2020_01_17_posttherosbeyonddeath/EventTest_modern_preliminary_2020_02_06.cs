@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 Xuxa: Dredge (BRG)
-#02 xfile: Dice Factory Tron (C)
+#02 xfile: Dice Factory Tron (G)
 #03 SebastianStueckl: Dredge (BRG)
 #04 Cherryxman: Delver (UR)
 #05 DontBanMeAgain: Jund Midrange (BRG)
@@ -21,7 +21,7 @@ using System.Text;
 #10 Gernardi: Grixis Shadow (UBR)
 #11 JustBurn420: Slivers (WUBRG)
 #12 ACG88: Crabvine (UBG)
-#13 RpAngriff: Green Devotion (G)
+#13 RpAngriff: Green Devotion (RG)
 #14 Atticuslol: Amulet Titan (UG)
 #15 jabritton: Neobrand (UG)
 #16 FrancusAurelius: Gruul Midrange (RG)
@@ -45,12 +45,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck02_xfile_DiceFactoryTron_C()
+        public void Deck02_xfile_DiceFactoryTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-06",1),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(DiceFactoryTron),
                 null
@@ -188,12 +188,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck13_RpAngriff_GreenDevotion_G()
+        public void Deck13_RpAngriff_GreenDevotion_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-06",12),
                 new PostTherosBeyondDeath(),
-                ArchetypeColor.G,
+                ArchetypeColor.RG,
                 typeof(GreenDevotion),
                 null,
                 null

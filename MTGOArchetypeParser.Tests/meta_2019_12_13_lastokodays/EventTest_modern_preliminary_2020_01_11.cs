@@ -14,13 +14,13 @@ using System.Text;
 #03 Zacherry124: Urza Oko (URG)
 #04 NuBlkAu: Eldrazi Tron (C)
 #05 Sideshowsc: Scapeshift (WURG)
-#06 yamakiller: Eldrazi Tron (C)
-#07 SourceOdin: Urza Oko (UG)
+#06 yamakiller: Eldrazi Tron (G)
+#07 SourceOdin: Urza Oko (WUG)
 #08 Oderus Urungus: Urza Oko (UBG)
-#09 gyyby297: Thopter Urza (UG)
+#09 gyyby297: Thopter Urza (UBG)
 #10 dillyg10: Bant Midrange (WUG)
-#11 SoulStrong: Urza Oko (UG)
-#12 TaylorSpain: Urza Oko (UG)
+#11 SoulStrong: Urza Oko (UBG)
+#12 TaylorSpain: Urza Oko (WUG)
 #13 __matsugan: Neobrand (UG)
 #14 Kev_1414: Urza Oko (UBG)
 #15 Manofbone: Gifts Storm (UR)
@@ -96,12 +96,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck06_yamakiller_EldraziTron_C()
+        public void Deck06_yamakiller_EldraziTron_G()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",5),
                 new LastOkoDays(),
-                ArchetypeColor.C,
+                ArchetypeColor.G,
                 typeof(Tron),
                 typeof(EldraziTron),
                 null
@@ -109,12 +109,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck07_SourceOdin_UrzaOko_UG()
+        public void Deck07_SourceOdin_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",6),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -135,12 +135,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck09_gyyby297_ThopterUrza_UG()
+        public void Deck09_gyyby297_ThopterUrza_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",8),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(ThopterCombo),
                 typeof(ThopterUrza),
                 null
@@ -161,12 +161,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck11_SoulStrong_UrzaOko_UG()
+        public void Deck11_SoulStrong_UrzaOko_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",10),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.UBG,
                 typeof(UrzaOko),
                 null,
                 null
@@ -174,12 +174,12 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck12_TaylorSpain_UrzaOko_UG()
+        public void Deck12_TaylorSpain_UrzaOko_WUG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",11),
                 new LastOkoDays(),
-                ArchetypeColor.UG,
+                ArchetypeColor.WUG,
                 typeof(UrzaOko),
                 null,
                 null

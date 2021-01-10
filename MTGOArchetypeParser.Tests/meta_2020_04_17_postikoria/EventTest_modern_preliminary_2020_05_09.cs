@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Wartico1: Devoted (WG, Lurrus)
+#01 Wartico1: Devoted (WUG, Lurrus)
 #02 Parrit: Hardened Scales (BG, Lurrus)
 #03 DDMeelow: Uroza (URG, Yorion)
 #04 Heibing: Primeval Titan (UG)
@@ -23,7 +23,7 @@ using System.Text;
 #12 spellvine: Jund Prowess (BRG, Lurrus)
 #13 Airvent: Hardened Scales (BG, Lurrus)
 #14 oskiyaa: Boros Prowess (WR, Lurrus)
-#15 lucasensei2: Electro Balance (UR)
+#15 lucasensei2: Electro Balance (URG)
 #16 signblindman: Devoted (WG, Lurrus)
 #17 eresopacaso: Burn (WR, Lurrus)
 #18 Asmodean1990: Jund Midrange (BRG, Lurrus)
@@ -35,12 +35,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
     public class EventTest_modern_preliminary_2020_05_09 : EventTest
     {
         [Test]
-        public void Deck01_Wartico1_Devoted_WG_Lurrus()
+        public void Deck01_Wartico1_Devoted_WUG_Lurrus()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-09",0),
                 new PostIkoria(),
-                ArchetypeColor.WG,
+                ArchetypeColor.WUG,
                 typeof(Devoted),
                 null,
                 ArchetypeCompanion.Lurrus
@@ -217,12 +217,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck15_lucasensei2_ElectroBalance_UR()
+        public void Deck15_lucasensei2_ElectroBalance_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-09",14),
                 new PostIkoria(),
-                ArchetypeColor.UR,
+                ArchetypeColor.URG,
                 typeof(FreeSpells),
                 typeof(ElectroBalance),
                 null

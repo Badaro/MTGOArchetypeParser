@@ -15,7 +15,7 @@ using System.Text;
 #04 Kazuga: Heliod Combo (WG)
 #05 CordoTwin: Shadow Prowess (BR, Lurrus)
 #06 Nikachu: Merfolk (UG)
-#07 Kr0k39: Oops All Spells (WUBG)
+#07 Kr0k39: Oops All Spells (WUBRG)
 #08 DcNo: Humans (WUBRG)
 #09 Baku_91: Elementals (WUBRG, Kaheera)
 #10 McWinSauce: WURG Control (WURG)
@@ -126,12 +126,12 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_Kr0k39_OopsAllSpells_WUBG()
+        public void Deck07_Kr0k39_OopsAllSpells_WUBRG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-22",6),
                 new PostZendikarRising(),
-                ArchetypeColor.WUBG,
+                ArchetypeColor.WUBRG,
                 typeof(OopsAllSpells),
                 null,
                 null
