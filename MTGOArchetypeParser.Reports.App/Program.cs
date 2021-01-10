@@ -33,7 +33,7 @@ namespace MTGOArchetypeParser.Reports.App
                     MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().First().StartDate :
                     MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().Last(m => m.StartDate < DateTime.UtcNow).StartDate;
 
-                DataRecord[] records = cacheFolders.SelectMany(c => Loader.GetRecords(c, startDate.AddDays(1))).ToArray();
+                DataRecord[] records = cacheFolders.SelectMany(c => Loader.GetRecords(c, startDate.AddDays(1))).OrderBy(c => c.Date).ToArray();
 
                 string date = $"{records.Max(t => t.Date).ToString("yyyy_MM_dd")}";
                 GenerateDump(records, $"mtgo_data_{date}");
