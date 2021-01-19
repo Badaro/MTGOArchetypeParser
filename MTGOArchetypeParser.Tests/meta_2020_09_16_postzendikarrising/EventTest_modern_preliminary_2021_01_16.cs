@@ -133,7 +133,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_buyiedward_IzzetProwess_UR()
+        public void Deck09_buyiedward_NivmagusCombo_UR()
         {
             Test(
                 GetDeck("modern-preliminary-2021-01-16",8),

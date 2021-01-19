@@ -240,7 +240,7 @@ using System.Text;
 #229 ScreenwriterNY: Ad Nauseam (WUB)
 #230 danielmos: Azorius Control (WU)
 #231 Znurvel: Infect (WUG)
-#232 doughhater: Boros Taxes (WR)
+#232 doughhater: Thalia Stompy (WR)
 #233 iuriper: Bant Control (WUG)
 #234 goteo: Gruul Prowess (RG, Jegantha)
 #235 beestjes: Gruul Midrange (RG)
@@ -3254,7 +3254,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck232_doughhater_BorosTaxes_WR()
+        public void Deck232_doughhater_ThaliaStompy_WR()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",231),

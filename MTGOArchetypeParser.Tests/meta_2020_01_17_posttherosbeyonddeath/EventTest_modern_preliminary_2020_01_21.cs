@@ -32,7 +32,7 @@ using System.Text;
 #21 Atticuslol: Titan Shift (RG)
 #22 Jiraiax: Grixis Shadow (UBR)
 #23 exoticherman: Infect (UG)
-#24 SpiderSpace: Boros Taxes (WR)
+#24 SpiderSpace: Thalia Stompy (WR)
 #25 bntrusty14: Humans (WUBRG)
 #26 SoulStrong: Amulet Titan (UG)
 #27 mavzero87: Eldrazi Tron (C)
@@ -343,7 +343,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck24_SpiderSpace_BorosTaxes_WR()
+        public void Deck24_SpiderSpace_ThaliaStompy_WR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-21",23),

@@ -39,7 +39,7 @@ using System.Text;
 #28 WareHouseGames: Green Tron (G)
 #29 aspiringspike: Sultai Control (UBG)
 #30 Toastxp: Reclaimer Titan (WRG)
-#31 mot88: Boros Taxes (WR)
+#31 mot88: Thalia Stompy (WR)
 #32 SebastianStueckl: Bogles (WG, Lurrus)
 */
 
@@ -438,7 +438,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck31_mot88_BorosTaxes_WR()
+        public void Deck31_mot88_ThaliaStompy_WR()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-06",30),
