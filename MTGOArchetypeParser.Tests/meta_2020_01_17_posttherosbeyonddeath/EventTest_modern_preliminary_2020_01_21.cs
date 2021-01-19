@@ -349,7 +349,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-preliminary-2020-01-21",23),
                 new PostTherosBeyondDeath(),
                 ArchetypeColor.WR,
-                typeof(GenericTaxes),
+                typeof(ThaliaStompy),
                 null,
                 null
             );

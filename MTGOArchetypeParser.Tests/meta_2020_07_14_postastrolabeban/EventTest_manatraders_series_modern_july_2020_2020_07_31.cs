@@ -3260,7 +3260,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",231),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WR,
-                typeof(GenericTaxes),
+                typeof(ThaliaStompy),
                 null,
                 null
             );
