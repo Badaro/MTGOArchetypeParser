@@ -184,7 +184,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-champs-2020-01-05",10),
                 new LastOkoDays(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -379,7 +379,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-champs-2020-01-05",25),
                 new LastOkoDays(),
                 ArchetypeColor.UBR,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );

@@ -106,8 +106,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-15",4),
                 new PostZendikarRising(),
                 ArchetypeColor.BRG,
+                typeof(Shadow),
                 typeof(ShadowProwess),
-                null,
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -132,7 +132,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-15",6),
                 new PostZendikarRising(),
                 ArchetypeColor.UBR,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -171,8 +171,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-15",9),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
+                typeof(Shadow),
                 typeof(ShadowProwess),
-                null,
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -184,8 +184,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-15",10),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
+                typeof(Shadow),
                 typeof(ShadowProwess),
-                null,
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -236,8 +236,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-15",14),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
+                typeof(Shadow),
                 typeof(ShadowProwess),
-                null,
                 ArchetypeCompanion.Lurrus
             );
         }

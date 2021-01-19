@@ -236,7 +236,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-showcase-challenge-2020-01-26",14),
                 new PostTherosBeyondDeath(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -262,7 +262,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-showcase-challenge-2020-01-26",16),
                 new PostTherosBeyondDeath(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -314,7 +314,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-showcase-challenge-2020-01-26",20),
                 new PostTherosBeyondDeath(),
                 ArchetypeColor.UBR,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -353,7 +353,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-showcase-challenge-2020-01-26",23),
                 new PostTherosBeyondDeath(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );

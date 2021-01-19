@@ -93,8 +93,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-champ-qual-2020-11-16",3),
                 new PostZendikarRising(),
                 ArchetypeColor.WBR,
+                typeof(Shadow),
                 typeof(ShadowProwess),
-                null,
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -132,8 +132,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-champ-qual-2020-11-16",6),
                 new PostZendikarRising(),
                 ArchetypeColor.WBR,
+                typeof(Shadow),
                 typeof(ShadowProwess),
-                null,
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -262,8 +262,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-champ-qual-2020-11-16",16),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
+                typeof(Shadow),
                 typeof(ShadowProwess),
-                null,
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -379,8 +379,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-champ-qual-2020-11-16",25),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
+                typeof(Shadow),
                 typeof(ShadowProwess),
-                null,
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -444,7 +444,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-champ-qual-2020-11-16",30),
                 new PostZendikarRising(),
                 ArchetypeColor.BRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -457,8 +457,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-champ-qual-2020-11-16",31),
                 new PostZendikarRising(),
                 ArchetypeColor.BRG,
+                typeof(Shadow),
                 typeof(ShadowProwess),
-                null,
                 ArchetypeCompanion.Lurrus
             );
         }

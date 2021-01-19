@@ -80,7 +80,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-challenge-2019-12-29",2),
                 new LastOkoDays(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -210,7 +210,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-challenge-2019-12-29",12),
                 new LastOkoDays(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -353,7 +353,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-challenge-2019-12-29",23),
                 new LastOkoDays(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -431,7 +431,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-challenge-2019-12-29",29),
                 new LastOkoDays(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );

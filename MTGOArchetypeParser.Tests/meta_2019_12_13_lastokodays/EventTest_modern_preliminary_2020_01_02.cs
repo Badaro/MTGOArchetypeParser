@@ -161,7 +161,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-preliminary-2020-01-02",9),
                 new LastOkoDays(),
                 ArchetypeColor.UBR,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -291,7 +291,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-preliminary-2020-01-02",19),
                 new LastOkoDays(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -304,7 +304,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-preliminary-2020-01-02",20),
                 new LastOkoDays(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );

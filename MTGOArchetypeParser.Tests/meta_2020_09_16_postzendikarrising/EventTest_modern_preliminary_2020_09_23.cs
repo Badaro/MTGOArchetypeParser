@@ -60,8 +60,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-09-23",2),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
+                typeof(Shadow),
                 typeof(ShadowProwess),
-                null,
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -99,8 +99,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-09-23",5),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
+                typeof(Shadow),
                 typeof(ShadowProwess),
-                null,
                 ArchetypeCompanion.Lurrus
             );
         }

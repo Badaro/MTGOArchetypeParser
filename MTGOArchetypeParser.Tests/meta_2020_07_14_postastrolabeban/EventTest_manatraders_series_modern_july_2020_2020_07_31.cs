@@ -335,7 +335,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -621,7 +621,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",28),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -1297,7 +1297,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",80),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -1414,7 +1414,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",89),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBR,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -1661,7 +1661,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",108),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBR,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -2064,7 +2064,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",139),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -2077,7 +2077,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",140),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -2272,7 +2272,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",155),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBR,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -2298,7 +2298,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",157),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -2376,7 +2376,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",163),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBR,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -2844,7 +2844,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",199),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -2974,7 +2974,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",209),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -3013,7 +3013,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",212),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBR,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -3208,7 +3208,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",227),
                 new PostAstrolabeBan(),
                 ArchetypeColor.BRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 ArchetypeCompanion.Lurrus
             );

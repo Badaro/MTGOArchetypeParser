@@ -80,8 +80,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-super-qualifier-2021-01-19",2),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
+                typeof(Shadow),
                 typeof(ShadowProwess),
-                null,
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -314,8 +314,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-super-qualifier-2021-01-19",20),
                 new PostZendikarRising(),
                 ArchetypeColor.WBR,
+                typeof(Shadow),
                 typeof(ShadowProwess),
-                null,
                 ArchetypeCompanion.Lurrus
             );
         }

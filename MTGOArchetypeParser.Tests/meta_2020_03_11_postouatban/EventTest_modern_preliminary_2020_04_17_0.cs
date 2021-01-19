@@ -296,7 +296,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-04-17-0",17),
                 new PostOuatBan(),
                 ArchetypeColor.WB,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
@@ -348,7 +348,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-04-17-0",21),
                 new PostOuatBan(),
                 ArchetypeColor.UBR,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );

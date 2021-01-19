@@ -158,7 +158,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-challenge-2020-05-11",8),
                 new PostIkoria(),
                 ArchetypeColor.BRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 ArchetypeCompanion.Lurrus
             );

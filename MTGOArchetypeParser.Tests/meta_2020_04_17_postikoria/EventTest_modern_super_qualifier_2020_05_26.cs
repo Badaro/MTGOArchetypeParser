@@ -145,7 +145,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-super-qualifier-2020-05-26",7),
                 new PostIkoria(),
                 ArchetypeColor.BRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 ArchetypeCompanion.Lurrus
             );

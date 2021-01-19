@@ -5,13 +5,29 @@ using System.Text;
 
 namespace MTGOArchetypeParser.Archetypes.Modern
 {
-    public class ShadowProwess : ArchetypeSpecific
+    public class Shadow : ArchetypeSpecific
+    {
+        public Shadow()
+        {
+            IncludeColorInName = true;
+            Conditions = new ArchetypeCondition[]
+            {
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Death's Shadow" } },
+                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Thoughtseize" } },
+            };
+            Variants = new ArchetypeVariant[]
+            {
+                new ShadowProwess()
+            };
+        }
+    }
+
+    public class ShadowProwess : ArchetypeVariant
     {
         public ShadowProwess()
         {
             Conditions = new ArchetypeCondition[]
             {
-                new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Death's Shadow" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Scourge of the Skyclaves" } },
                 new ArchetypeCondition() { Type = ArchetypeConditionType.OneOrMoreInMainboard, Cards = new string[] { "Soul-Scar Mage", "Monastery Swiftspear" } },
             };

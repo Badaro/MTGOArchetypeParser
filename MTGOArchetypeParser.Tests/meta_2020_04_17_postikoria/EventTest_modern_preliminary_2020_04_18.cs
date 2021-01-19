@@ -70,7 +70,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-preliminary-2020-04-18",2),
                 new PostIkoria(),
                 ArchetypeColor.WB,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );

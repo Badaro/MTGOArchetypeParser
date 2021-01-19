@@ -67,7 +67,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-super-qualifier-2020-06-02",1),
                 new PostIkoria(),
                 ArchetypeColor.BRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -106,7 +106,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-super-qualifier-2020-06-02",4),
                 new PostIkoria(),
                 ArchetypeColor.BRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -171,7 +171,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-super-qualifier-2020-06-02",9),
                 new PostIkoria(),
                 ArchetypeColor.BRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -236,7 +236,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-super-qualifier-2020-06-02",14),
                 new PostIkoria(),
                 ArchetypeColor.BRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -301,7 +301,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-super-qualifier-2020-06-02",19),
                 new PostIkoria(),
                 ArchetypeColor.BRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -340,7 +340,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-super-qualifier-2020-06-02",22),
                 new PostIkoria(),
                 ArchetypeColor.BRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 ArchetypeCompanion.Lurrus
             );

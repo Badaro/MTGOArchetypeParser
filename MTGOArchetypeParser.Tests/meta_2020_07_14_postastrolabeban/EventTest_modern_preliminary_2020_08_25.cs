@@ -54,7 +54,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-08-25",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UB,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );

@@ -122,7 +122,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-04-17-1",7),
                 new PostOuatBan(),
                 ArchetypeColor.WBR,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );

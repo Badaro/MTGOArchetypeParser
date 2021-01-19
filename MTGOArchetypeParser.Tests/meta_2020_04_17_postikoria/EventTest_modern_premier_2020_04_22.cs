@@ -90,7 +90,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-premier-2020-04-22",4),
                 new PostIkoria(),
                 ArchetypeColor.WBRG,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 ArchetypeCompanion.Lurrus
             );

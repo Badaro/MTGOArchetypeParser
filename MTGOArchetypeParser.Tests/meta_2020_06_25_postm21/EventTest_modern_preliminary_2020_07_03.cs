@@ -69,7 +69,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-preliminary-2020-07-03",3),
                 new PostM21(),
                 ArchetypeColor.WB,
-                typeof(GenericShadow),
+                typeof(Shadow),
                 null,
                 null
             );
