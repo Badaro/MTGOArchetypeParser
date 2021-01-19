@@ -18,7 +18,7 @@ using System.Text;
 #07 andrw1232: WURG Control (WURG)
 #08 HouseOfManaMTG: Amulet Titan (UG)
 #09 Nammersquats: Devoted (WG, Lurrus)
-#10 MindOfAKid: UBRG Midrange (UBRG)
+#10 MindOfAKid: UBRG Shadow (UBRG)
 #11 McWinSauce: WURG Control (WURG)
 #12 Sanchez5272: Eldrazi Tron (C)
 #13 KelMasterP: Shadow Prowess (BR, Lurrus)
@@ -153,7 +153,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_MindOfAKid_UBRGMidrange_UBRG()
+        public void Deck10_MindOfAKid_UBRGShadow_UBRG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-25",9),
