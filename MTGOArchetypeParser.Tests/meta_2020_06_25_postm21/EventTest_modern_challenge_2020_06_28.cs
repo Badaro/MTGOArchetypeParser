@@ -223,8 +223,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-06-28",13),
                 new PostM21(),
                 ArchetypeColor.WR,
+                typeof(RedAggro),
                 typeof(Burn),
-                null,
                 null
             );
         }
@@ -275,8 +275,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-06-28",17),
                 new PostM21(),
                 ArchetypeColor.WR,
+                typeof(RedAggro),
                 typeof(Burn),
-                null,
                 null
             );
         }
@@ -366,8 +366,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-06-28",24),
                 new PostM21(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
-                null,
+                typeof(RedAggro),
+                typeof(Prowess),
                 null
             );
         }
@@ -379,8 +379,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-06-28",25),
                 new PostM21(),
                 ArchetypeColor.WR,
+                typeof(RedAggro),
                 typeof(Burn),
-                null,
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -418,8 +418,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-challenge-2020-06-28",28),
                 new PostM21(),
                 ArchetypeColor.BR,
-                typeof(GenericProwess),
-                null,
+                typeof(RedAggro),
+                typeof(Prowess),
                 ArchetypeCompanion.Lurrus
             );
         }

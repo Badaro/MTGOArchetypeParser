@@ -33,8 +33,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-11-28",0),
                 new PostZendikarRising(),
                 ArchetypeColor.BR,
+                typeof(RedAggro),
                 typeof(OboshAggro),
-                null,
                 ArchetypeCompanion.Obosh
             );
         }
@@ -59,8 +59,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-11-28",2),
                 new PostZendikarRising(),
                 ArchetypeColor.WRG,
+                typeof(RedAggro),
                 typeof(Burn),
-                null,
                 null
             );
         }

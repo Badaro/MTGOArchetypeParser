@@ -62,8 +62,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-11-10",2),
                 new PostZendikarRising(),
                 ArchetypeColor.WRG,
-                typeof(GenericProwess),
-                null,
+                typeof(RedAggro),
+                typeof(Prowess),
                 ArchetypeCompanion.Lurrus
             );
         }

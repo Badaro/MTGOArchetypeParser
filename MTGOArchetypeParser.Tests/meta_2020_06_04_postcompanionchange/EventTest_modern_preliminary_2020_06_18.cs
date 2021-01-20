@@ -113,8 +113,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-18",6),
                 new PostCompanionChange(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
-                null,
+                typeof(RedAggro),
+                typeof(Prowess),
                 null
             );
         }
@@ -165,8 +165,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
                 GetDeck("modern-preliminary-2020-06-18",10),
                 new PostCompanionChange(),
                 ArchetypeColor.WR,
+                typeof(RedAggro),
                 typeof(Burn),
-                null,
                 null
             );
         }

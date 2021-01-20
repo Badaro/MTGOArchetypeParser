@@ -219,8 +219,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-preliminary-2020-06-30",14),
                 new PostM21(),
                 ArchetypeColor.UR,
-                typeof(GenericProwess),
-                null,
+                typeof(RedAggro),
+                typeof(Prowess),
                 null
             );
         }

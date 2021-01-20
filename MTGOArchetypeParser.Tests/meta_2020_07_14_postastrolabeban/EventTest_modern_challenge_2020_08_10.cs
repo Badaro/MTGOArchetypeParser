@@ -67,8 +67,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-10",1),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WR,
+                typeof(RedAggro),
                 typeof(Burn),
-                null,
                 null
             );
         }
@@ -80,8 +80,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-10",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WR,
+                typeof(RedAggro),
                 typeof(Burn),
-                null,
                 null
             );
         }
@@ -171,8 +171,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-10",9),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(GenericProwess),
-                null,
+                typeof(RedAggro),
+                typeof(Prowess),
                 null
             );
         }
@@ -184,8 +184,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-10",10),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(GenericProwess),
-                null,
+                typeof(RedAggro),
+                typeof(Prowess),
                 null
             );
         }
@@ -275,8 +275,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-10",17),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WBR,
-                typeof(GenericProwess),
-                null,
+                typeof(RedAggro),
+                typeof(Prowess),
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -301,8 +301,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-10",19),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(GenericProwess),
-                null,
+                typeof(RedAggro),
+                typeof(Prowess),
                 null
             );
         }
@@ -353,8 +353,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-10",23),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(GenericProwess),
-                null,
+                typeof(RedAggro),
+                typeof(Prowess),
                 null
             );
         }
@@ -366,8 +366,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-10",24),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WR,
+                typeof(RedAggro),
                 typeof(Burn),
-                null,
                 null
             );
         }
@@ -379,8 +379,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-08-10",25),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UR,
-                typeof(GenericProwess),
-                null,
+                typeof(RedAggro),
+                typeof(Prowess),
                 null
             );
         }

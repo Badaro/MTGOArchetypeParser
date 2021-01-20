@@ -171,8 +171,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-23",9),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
+                typeof(RedAggro),
                 typeof(OboshAggro),
-                null,
                 ArchetypeCompanion.Obosh
             );
         }
@@ -392,8 +392,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-23",26),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
+                typeof(RedAggro),
                 typeof(OboshAggro),
-                null,
                 ArchetypeCompanion.Obosh
             );
         }

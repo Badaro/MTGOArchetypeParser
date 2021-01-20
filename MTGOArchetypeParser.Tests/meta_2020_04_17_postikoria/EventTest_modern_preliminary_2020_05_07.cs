@@ -306,8 +306,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-preliminary-2020-05-07",20),
                 new PostIkoria(),
                 ArchetypeColor.WR,
-                typeof(GenericProwess),
-                null,
+                typeof(RedAggro),
+                typeof(Prowess),
                 ArchetypeCompanion.Lurrus
             );
         }

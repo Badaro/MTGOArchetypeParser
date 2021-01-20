@@ -340,8 +340,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-22",22),
                 new PostZendikarRising(),
                 ArchetypeColor.R,
+                typeof(RedAggro),
                 typeof(OboshAggro),
-                null,
                 ArchetypeCompanion.Obosh
             );
         }

@@ -353,8 +353,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-players-tour-qualifier-2020-03-23",23),
                 new PostOuatBan(),
                 ArchetypeColor.WR,
+                typeof(RedAggro),
                 typeof(Burn),
-                null,
                 null
             );
         }
@@ -418,8 +418,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-players-tour-qualifier-2020-03-23",28),
                 new PostOuatBan(),
                 ArchetypeColor.R,
-                typeof(GenericProwess),
-                null,
+                typeof(RedAggro),
+                typeof(Prowess),
                 null
             );
         }

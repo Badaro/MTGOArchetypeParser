@@ -139,8 +139,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-09-18",8),
                 new PostZendikarRising(),
                 ArchetypeColor.WRG,
+                typeof(RedAggro),
                 typeof(Burn),
-                null,
                 null
             );
         }

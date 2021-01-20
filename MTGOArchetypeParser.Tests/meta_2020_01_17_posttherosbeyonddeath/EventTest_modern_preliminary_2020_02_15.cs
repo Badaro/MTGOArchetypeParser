@@ -183,8 +183,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-preliminary-2020-02-15",11),
                 new PostTherosBeyondDeath(),
                 ArchetypeColor.R,
+                typeof(RedAggro),
                 typeof(Burn),
-                null,
                 null
             );
         }
@@ -261,8 +261,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-preliminary-2020-02-15",17),
                 new PostTherosBeyondDeath(),
                 ArchetypeColor.WBRG,
+                typeof(RedAggro),
                 typeof(Burn),
-                null,
                 null
             );
         }
