@@ -26,7 +26,7 @@ using System.Text;
 #15 brettploussard: Mono Red Prowess (R)
 #16 quinniac: Mono Red Prowess (R)
 #17 achillies27: Gifts Storm (URG)
-#18 LalauWBA: Gruul Prowess (RG)
+#18 LalauWBA: Burn (RG)
 #19 Jadacant: Primeval Titan (UG)
 #20 _Bolawarrior_: Azorius Control (WU)
 #21 Oderus Urungus: Green Tron (G)
@@ -262,7 +262,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck18_LalauWBA_GruulProwess_RG()
+        public void Deck18_LalauWBA_Burn_RG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-25",17),
