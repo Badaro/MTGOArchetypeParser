@@ -12,7 +12,7 @@ namespace MTGOArchetypeParser.Tests
 {
     public class ConditionTests
     {
-        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.FromJson.Loader.GetFormat(new DirectoryInfo(@"..\..\..\..\MTGOArchetypeParserData\Formats").FullName, "Modern");
+        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.FromJson.Loader.GetFormat(new DirectoryInfo(@"..\..\..\..\MTGOFormatData\Formats").FullName, "Modern");
 
         [Test]
         public void InMainboard()

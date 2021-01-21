@@ -20,7 +20,7 @@ namespace MTGOArchetypeParser.Tests
             new DirectoryInfo(@"..\..\..\..\ManaTradersDecklistCache\Tournaments").FullName,
         };
         static Dictionary<string, Tournament> tournamentCache = new Dictionary<string, Tournament>();
-        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.FromJson.Loader.GetFormat(new DirectoryInfo(@"..\..\..\..\MTGOArchetypeParserData\Formats").FullName, "Modern");
+        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.FromJson.Loader.GetFormat(new DirectoryInfo(@"..\..\..\..\MTGOFormatData\Formats").FullName, "Modern");
 
         protected Deck GetDeck(string tournamentName, int deckIndex)
         {
