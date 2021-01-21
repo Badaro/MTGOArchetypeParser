@@ -145,9 +145,6 @@ namespace MTGOArchetypeParser.Data
                     case ArchetypeConditionType.DoesNotContainSideboard:
                         if (sideboardCards.Any(c => c.Name == condition.Cards[0])) return false;
                         break;
-                    case ArchetypeConditionType.ColorIsExactly:
-                        if (condition.Color != color) return false;
-                        break;
                     default:
                         throw new NotImplementedException();
                 }

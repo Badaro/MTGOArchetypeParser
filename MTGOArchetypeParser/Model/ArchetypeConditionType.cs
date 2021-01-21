@@ -14,6 +14,5 @@ namespace MTGOArchetypeParser.Model
         DoesNotContain,
         DoesNotContainMainboard,
         DoesNotContainSideboard,
-        ColorIsExactly
     }
 }

@@ -137,25 +137,6 @@ namespace MTGOArchetypeParser.Tests
                new string[] { "Card 1", "Card 3" });
         }
 
-        [Test]
-        public void ColorIsExactly()
-        {
-            DetectionFailure(ArchetypeConditionType.ColorIsExactly,
-               ArchetypeColor.WU,
-               new string[] { "Serra Angel", "Plains" },
-               new string[] { });
-
-            DetectionSuccess(ArchetypeConditionType.ColorIsExactly,
-               ArchetypeColor.WU,
-               new string[] { "Serra Angel", "Plains", "Tempest Djinn", "Island" },
-               new string[] { });
-
-            DetectionFailure(ArchetypeConditionType.ColorIsExactly,
-               ArchetypeColor.WU,
-               new string[] { "Dark Confidant", "Swamp" },
-               new string[] { });
-        }
-
         private void DetectionSuccess(ArchetypeConditionType condition, string[] archetypeCards, string[] testMainboard, string[] testSideboard)
         {
             DetectionSuccess(condition, archetypeCards, default(ArchetypeColor), testMainboard, testSideboard);
