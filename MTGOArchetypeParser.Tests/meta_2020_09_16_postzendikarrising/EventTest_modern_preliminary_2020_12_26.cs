@@ -25,10 +25,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-26",0),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(GreenTron),
+                "Tron",
+                "GreenTron",
                 null
             );
         }
@@ -38,9 +38,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-26",1),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.WU,
-                typeof(GenericTaxes),
+                "GenericTaxes",
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -51,9 +51,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-26",2),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.UB,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -64,9 +64,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-26",3),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.WR,
-                typeof(HeliodCombo),
+                "HeliodCombo",
                 null,
                 null
             );
@@ -77,9 +77,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-26",4),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.URG,
-                typeof(Reclamation),
+                "Reclamation",
                 null,
                 null
             );

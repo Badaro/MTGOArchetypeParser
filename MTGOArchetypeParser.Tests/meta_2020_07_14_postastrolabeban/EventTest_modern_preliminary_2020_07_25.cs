@@ -37,9 +37,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",0),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.WUR,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -50,10 +50,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",1),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.UR,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 null
             );
         }
@@ -63,9 +63,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",2),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.WBRG,
-                typeof(Dredge),
+                "Dredge",
                 null,
                 null
             );
@@ -76,10 +76,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",3),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -89,10 +89,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",4),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.UR,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 null
             );
         }
@@ -102,9 +102,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",5),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.WBR,
-                typeof(Goblins),
+                "Goblins",
                 null,
                 null
             );
@@ -115,10 +115,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",6),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.R,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 null
             );
         }
@@ -128,9 +128,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",7),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.WUB,
-                typeof(AdNauseam),
+                "AdNauseam",
                 null,
                 null
             );
@@ -141,9 +141,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",8),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.WBRG,
-                typeof(Dredge),
+                "Dredge",
                 null,
                 null
             );
@@ -154,9 +154,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",9),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.BRG,
-                typeof(Shadow),
+                "Shadow",
                 null,
                 null
             );
@@ -167,10 +167,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",10),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.RG,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 ArchetypeCompanion.Jegantha
             );
         }
@@ -180,9 +180,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",11),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.WU,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -193,9 +193,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",12),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -206,9 +206,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",13),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -219,10 +219,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",14),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.WR,
-                typeof(RedAggro),
-                typeof(Burn),
+                "RedAggro",
+                "Burn",
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -232,9 +232,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",15),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.UR,
-                typeof(GiftsStorm),
+                "GiftsStorm",
                 null,
                 null
             );
@@ -245,9 +245,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-25",16),
-                new PostAstrolabeBan(),
+                "PostAstrolabeBan",
                 ArchetypeColor.BRG,
-                typeof(Shadow),
+                "Shadow",
                 null,
                 ArchetypeCompanion.Lurrus
             );

@@ -39,10 +39,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",0),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.R,
-                typeof(RedAggro),
-                typeof(OboshAggro),
+                "RedAggro",
+                "OboshAggro",
                 ArchetypeCompanion.Obosh
             );
         }
@@ -52,9 +52,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",1),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -65,10 +65,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",2),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.BR,
-                typeof(Shadow),
-                typeof(ShadowProwess),
+                "Shadow",
+                "ShadowProwess",
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -78,10 +78,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",3),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.WR,
-                typeof(RedAggro),
-                typeof(Burn),
+                "RedAggro",
+                "Burn",
                 null
             );
         }
@@ -91,10 +91,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",4),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -104,10 +104,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",5),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.BR,
-                typeof(Shadow),
-                typeof(ShadowProwess),
+                "Shadow",
+                "ShadowProwess",
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -117,9 +117,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",6),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.WG,
-                typeof(HeliodCombo),
+                "HeliodCombo",
                 null,
                 null
             );
@@ -130,10 +130,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",7),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(GreenTron),
+                "Tron",
+                "GreenTron",
                 null
             );
         }
@@ -143,9 +143,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",8),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -156,10 +156,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",9),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.R,
-                typeof(RedAggro),
-                typeof(OboshAggro),
+                "RedAggro",
+                "OboshAggro",
                 ArchetypeCompanion.Obosh
             );
         }
@@ -169,10 +169,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",10),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.G,
-                typeof(PrimevalTitan),
-                typeof(AmuletTitan),
+                "PrimevalTitan",
+                "AmuletTitan",
                 null
             );
         }
@@ -182,9 +182,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",11),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.WG,
-                typeof(HeliodCombo),
+                "HeliodCombo",
                 null,
                 null
             );
@@ -195,9 +195,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",12),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.WURG,
-                typeof(Polymorph),
+                "Polymorph",
                 null,
                 null
             );
@@ -208,9 +208,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",13),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.WURG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -221,9 +221,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",14),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.W,
-                typeof(HammerTime),
+                "HammerTime",
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -234,9 +234,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",15),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.WUR,
-                typeof(AscendancyCombo),
+                "AscendancyCombo",
                 null,
                 ArchetypeCompanion.Jegantha
             );
@@ -247,9 +247,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",16),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.UR,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -260,9 +260,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",17),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.UBG,
-                typeof(Reclamation),
+                "Reclamation",
                 null,
                 null
             );
@@ -273,9 +273,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",18),
-                new PostZendikarRising(),
+                "PostZendikarRising",
                 ArchetypeColor.W,
-                typeof(HammerTime),
+                "HammerTime",
                 null,
                 ArchetypeCompanion.Lurrus
             );

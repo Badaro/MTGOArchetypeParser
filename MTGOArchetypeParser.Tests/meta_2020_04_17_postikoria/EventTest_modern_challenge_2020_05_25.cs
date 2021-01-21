@@ -52,10 +52,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",0),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.BR,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -65,10 +65,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",1),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -78,10 +78,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",2),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.BR,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -91,10 +91,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",3),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.BR,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -104,10 +104,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",4),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.WR,
-                typeof(RedAggro),
-                typeof(Burn),
+                "RedAggro",
+                "Burn",
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -117,10 +117,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",5),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.BR,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -130,9 +130,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",6),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.WG,
-                typeof(Devoted),
+                "Devoted",
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -143,9 +143,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",7),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.BRG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -156,10 +156,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",8),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -169,9 +169,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",9),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.BRG,
-                typeof(Dredge),
+                "Dredge",
                 null,
                 null
             );
@@ -182,9 +182,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",10),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.BRG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -195,10 +195,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",11),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(GreenTron),
+                "Tron",
+                "GreenTron",
                 ArchetypeCompanion.Jegantha
             );
         }
@@ -208,9 +208,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",12),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.WG,
-                typeof(Bogles),
+                "Bogles",
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -221,9 +221,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",13),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.URG,
-                typeof(Scapeshift),
+                "Scapeshift",
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -234,10 +234,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",14),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.BR,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -247,9 +247,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",15),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.UB,
-                typeof(Mill),
+                "Mill",
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -260,9 +260,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",16),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.UBG,
-                typeof(Reclamation),
+                "Reclamation",
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -273,9 +273,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",17),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.WURG,
-                typeof(Scapeshift),
+                "Scapeshift",
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -286,10 +286,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",18),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.UG,
-                typeof(PrimevalTitan),
-                typeof(AmuletTitan),
+                "PrimevalTitan",
+                "AmuletTitan",
                 null
             );
         }
@@ -299,10 +299,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",19),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.WR,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -312,10 +312,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",20),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.WR,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -325,9 +325,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",21),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.WUBRG,
-                typeof(Humans),
+                "Humans",
                 null,
                 ArchetypeCompanion.Jegantha
             );
@@ -338,9 +338,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",22),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -351,9 +351,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",23),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.UBG,
-                typeof(Uroza),
+                "Uroza",
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -364,10 +364,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",24),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.WR,
-                typeof(RedAggro),
-                typeof(Burn),
+                "RedAggro",
+                "Burn",
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -377,10 +377,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",25),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.BR,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -390,9 +390,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",26),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.BRG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -403,9 +403,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",27),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.WG,
-                typeof(Bogles),
+                "Bogles",
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -416,9 +416,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",28),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.UBR,
-                typeof(Shadow),
+                "Shadow",
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -429,10 +429,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",29),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.WBR,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 ArchetypeCompanion.Lurrus
             );
         }
@@ -442,9 +442,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",30),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.WG,
-                typeof(Devoted),
+                "Devoted",
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -455,10 +455,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",31),
-                new PostIkoria(),
+                "PostIkoria",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(GreenTron),
+                "Tron",
+                "GreenTron",
                 null
             );
         }

@@ -38,10 +38,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",0),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.R,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 null
             );
         }
@@ -51,9 +51,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",1),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.WBG,
-                typeof(Devoted),
+                "Devoted",
                 null,
                 null
             );
@@ -64,10 +64,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",2),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.R,
-                typeof(RedAggro),
-                typeof(Burn),
+                "RedAggro",
+                "Burn",
                 null
             );
         }
@@ -77,9 +77,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",3),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.BRG,
-                typeof(GoryoReanimator),
+                "GoryoReanimator",
                 null,
                 null
             );
@@ -90,9 +90,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",4),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.BRG,
-                typeof(Dredge),
+                "Dredge",
                 null,
                 null
             );
@@ -103,10 +103,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",5),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.UB,
-                typeof(ThopterCombo),
-                typeof(ThopterUrza),
+                "ThopterCombo",
+                "ThopterUrza",
                 null
             );
         }
@@ -116,9 +116,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",6),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.URG,
-                typeof(GiftsStorm),
+                "GiftsStorm",
                 null,
                 null
             );
@@ -129,9 +129,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",7),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.UG,
-                typeof(Uroza),
+                "Uroza",
                 null,
                 null
             );
@@ -142,10 +142,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",8),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.R,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 null
             );
         }
@@ -155,9 +155,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",9),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.WURG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -168,10 +168,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",10),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.R,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 null
             );
         }
@@ -181,9 +181,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",11),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.WU,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -194,10 +194,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",12),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.R,
-                typeof(RedAggro),
-                typeof(Burn),
+                "RedAggro",
+                "Burn",
                 null
             );
         }
@@ -207,9 +207,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",13),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.UR,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -220,9 +220,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",14),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.WBG,
-                typeof(HeliodCombo),
+                "HeliodCombo",
                 null,
                 null
             );
@@ -233,9 +233,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",15),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.WUR,
-                typeof(Polymorph),
+                "Polymorph",
                 null,
                 null
             );
@@ -246,10 +246,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",16),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -259,9 +259,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-12-2",17),
-                new PostTherosBeyondDeath(),
+                "PostTherosBeyondDeath",
                 ArchetypeColor.BRG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );

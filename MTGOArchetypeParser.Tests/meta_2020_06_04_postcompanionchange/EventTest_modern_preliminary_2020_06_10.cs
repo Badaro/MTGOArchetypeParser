@@ -32,9 +32,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-10",0),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.RG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -45,9 +45,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-10",1),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -58,9 +58,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-10",2),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.RG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -71,9 +71,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-10",3),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUBG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -84,9 +84,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-10",4),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -97,9 +97,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-10",5),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.UR,
-                typeof(GiftsStorm),
+                "GiftsStorm",
                 null,
                 null
             );
@@ -110,9 +110,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-10",6),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -123,9 +123,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-10",7),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.UB,
-                typeof(Ninjas),
+                "Ninjas",
                 null,
                 null
             );
@@ -136,9 +136,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-10",8),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUBRG,
-                typeof(Humans),
+                "Humans",
                 null,
                 null
             );
@@ -149,10 +149,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-10",9),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WR,
-                typeof(RedAggro),
-                typeof(Burn),
+                "RedAggro",
+                "Burn",
                 null
             );
         }
@@ -162,10 +162,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-10",10),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -175,9 +175,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-10",11),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUBG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );

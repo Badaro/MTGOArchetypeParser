@@ -52,9 +52,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",0),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.URG,
-                typeof(Uroza),
+                "Uroza",
                 null,
                 null
             );
@@ -65,10 +65,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",1),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WR,
-                typeof(RedAggro),
-                typeof(Burn),
+                "RedAggro",
+                "Burn",
                 null
             );
         }
@@ -78,9 +78,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",2),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WURG,
-                typeof(AscendancyCombo),
+                "AscendancyCombo",
                 null,
                 null
             );
@@ -91,9 +91,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",3),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -104,9 +104,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",4),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.BRG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -117,9 +117,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",5),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUBRG,
-                typeof(Humans),
+                "Humans",
                 null,
                 null
             );
@@ -130,10 +130,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",6),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.R,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 null
             );
         }
@@ -143,9 +143,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",7),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.RG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -156,9 +156,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",8),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.BRG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -169,9 +169,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",9),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WRG,
-                typeof(BushwhackerZoo),
+                "BushwhackerZoo",
                 null,
                 null
             );
@@ -182,9 +182,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",10),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.BRG,
-                typeof(Dredge),
+                "Dredge",
                 null,
                 null
             );
@@ -195,9 +195,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",11),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -208,10 +208,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",12),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WR,
-                typeof(RedAggro),
-                typeof(Burn),
+                "RedAggro",
+                "Burn",
                 null
             );
         }
@@ -221,9 +221,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",13),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -234,9 +234,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",14),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.RG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -247,10 +247,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",15),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -260,10 +260,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",16),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.UG,
-                typeof(PrimevalTitan),
-                typeof(AmuletTitan),
+                "PrimevalTitan",
+                "AmuletTitan",
                 null
             );
         }
@@ -273,10 +273,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",17),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -286,9 +286,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",18),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.BRG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -299,9 +299,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",19),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.URG,
-                typeof(Uroza),
+                "Uroza",
                 null,
                 null
             );
@@ -312,10 +312,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",20),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.RG,
-                typeof(PrimevalTitan),
-                typeof(TitanShift),
+                "PrimevalTitan",
+                "TitanShift",
                 null
             );
         }
@@ -325,9 +325,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",21),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUBRG,
-                typeof(NivToLight),
+                "NivToLight",
                 null,
                 null
             );
@@ -338,9 +338,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",22),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -351,10 +351,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",23),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(GreenTron),
+                "Tron",
+                "GreenTron",
                 null
             );
         }
@@ -364,9 +364,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",24),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -377,10 +377,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",25),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -390,9 +390,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",26),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUBRG,
-                typeof(Humans),
+                "Humans",
                 null,
                 null
             );
@@ -403,10 +403,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",27),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WRG,
-                typeof(RedAggro),
-                typeof(Burn),
+                "RedAggro",
+                "Burn",
                 null
             );
         }
@@ -416,9 +416,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",28),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.W,
-                typeof(GenericTaxes),
+                "GenericTaxes",
                 null,
                 null
             );
@@ -429,9 +429,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",29),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.BRG,
-                typeof(Dredge),
+                "Dredge",
                 null,
                 null
             );
@@ -442,9 +442,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",30),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUG,
-                typeof(Knightfall),
+                "Knightfall",
                 null,
                 null
             );
@@ -455,9 +455,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",31),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.UG,
-                typeof(Infect),
+                "Infect",
                 null,
                 null
             );

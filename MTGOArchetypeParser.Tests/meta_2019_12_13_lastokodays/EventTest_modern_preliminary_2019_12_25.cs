@@ -36,9 +36,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",0),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.UBRG,
-                typeof(Shadow),
+                "Shadow",
                 null,
                 null
             );
@@ -49,9 +49,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",1),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.UBG,
-                typeof(UrzaOko),
+                "UrzaOko",
                 null,
                 null
             );
@@ -62,9 +62,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",2),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.WUG,
-                typeof(UrzaOko),
+                "UrzaOko",
                 null,
                 null
             );
@@ -75,9 +75,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",3),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.UG,
-                typeof(PrimevalTitan),
+                "PrimevalTitan",
                 null,
                 null
             );
@@ -88,10 +88,10 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",4),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -101,9 +101,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",5),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.UBG,
-                typeof(UrzaOko),
+                "UrzaOko",
                 null,
                 null
             );
@@ -114,10 +114,10 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",6),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.RG,
-                typeof(PrimevalTitan),
-                typeof(TitanShift),
+                "PrimevalTitan",
+                "TitanShift",
                 null
             );
         }
@@ -127,9 +127,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",7),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.BRG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -140,9 +140,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",8),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.WUG,
-                typeof(UrzaOko),
+                "UrzaOko",
                 null,
                 null
             );
@@ -153,10 +153,10 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",9),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.UG,
-                typeof(PrimevalTitan),
-                typeof(AmuletTitan),
+                "PrimevalTitan",
+                "AmuletTitan",
                 null
             );
         }
@@ -166,9 +166,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",10),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.BRG,
-                typeof(Dredge),
+                "Dredge",
                 null,
                 null
             );
@@ -179,10 +179,10 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",11),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.WUBRG,
-                typeof(ThopterCombo),
-                typeof(ThopterUrza),
+                "ThopterCombo",
+                "ThopterUrza",
                 null
             );
         }
@@ -192,9 +192,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",12),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.BRG,
-                typeof(Dredge),
+                "Dredge",
                 null,
                 null
             );
@@ -205,9 +205,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",13),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -218,9 +218,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",14),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.UG,
-                typeof(Merfolk),
+                "Merfolk",
                 null,
                 null
             );
@@ -231,9 +231,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2019-12-25",15),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );

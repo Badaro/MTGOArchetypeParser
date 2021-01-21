@@ -35,10 +35,10 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",0),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.R,
-                typeof(RedAggro),
-                typeof(Prowess),
+                "RedAggro",
+                "Prowess",
                 null
             );
         }
@@ -48,10 +48,10 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",1),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -61,9 +61,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",2),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.URG,
-                typeof(UrzaOko),
+                "UrzaOko",
                 null,
                 null
             );
@@ -74,10 +74,10 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",3),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -87,9 +87,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",4),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.WURG,
-                typeof(Scapeshift),
+                "Scapeshift",
                 null,
                 null
             );
@@ -100,10 +100,10 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",5),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -113,9 +113,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",6),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.WUG,
-                typeof(UrzaOko),
+                "UrzaOko",
                 null,
                 null
             );
@@ -126,9 +126,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",7),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.UBG,
-                typeof(UrzaOko),
+                "UrzaOko",
                 null,
                 null
             );
@@ -139,10 +139,10 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",8),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.UBG,
-                typeof(ThopterCombo),
-                typeof(ThopterUrza),
+                "ThopterCombo",
+                "ThopterUrza",
                 null
             );
         }
@@ -152,9 +152,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",9),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.WUG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -165,9 +165,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",10),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.UBG,
-                typeof(UrzaOko),
+                "UrzaOko",
                 null,
                 null
             );
@@ -178,9 +178,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",11),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.WUG,
-                typeof(UrzaOko),
+                "UrzaOko",
                 null,
                 null
             );
@@ -191,9 +191,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",12),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.UG,
-                typeof(Neobrand),
+                "Neobrand",
                 null,
                 null
             );
@@ -204,9 +204,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",13),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.UBG,
-                typeof(UrzaOko),
+                "UrzaOko",
                 null,
                 null
             );
@@ -217,9 +217,9 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-11",14),
-                new LastOkoDays(),
+                "LastOkoDays",
                 ArchetypeColor.UR,
-                typeof(GiftsStorm),
+                "GiftsStorm",
                 null,
                 null
             );

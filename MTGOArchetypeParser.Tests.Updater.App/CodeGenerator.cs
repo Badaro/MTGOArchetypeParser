@@ -62,15 +62,15 @@ namespace MTGOArchetypeParser.Tests.Updater
         {
             var testContents = _testTemplate
                     .Replace("FILE_WITHOUT_EXTENSION", $"\"{Path.GetFileNameWithoutExtension(tournamentKeys.File)}\"")
-                    .Replace("META_NAME", tournamentKeys.MetaName)
+                    .Replace("META_NAME", $"\"{tournamentKeys.MetaName}\"")
                     .Replace("META_ID", tournamentKeys.MetaID)
                     .Replace("EVENT_ID", tournamentKeys.EventID)
                     .Replace("DECK_ID", deckKeys.DeckID)
                     .Replace("DECK_INDEX", deckKeys.DeckIndex.ToString())
                     .Replace("COLOR_ID", deckKeys.ColorID)
                     .Replace("COMPANION_ID", deckKeys.CompanionID.Length > 0 ? $"ArchetypeCompanion.{deckKeys.CompanionID}" : "null")
-                    .Replace("ARCHETYPE_ID", deckKeys.ArchetypeID.Length > 0 ? $"typeof({deckKeys.ArchetypeID})" : "null")
-                    .Replace("VARIANT_ID", deckKeys.VariantID.Length > 0 ? $"typeof({deckKeys.VariantID})" : "null");
+                    .Replace("ARCHETYPE_ID", deckKeys.ArchetypeID.Length > 0 ? $"\"{deckKeys.ArchetypeID}\"" : "null")
+                    .Replace("VARIANT_ID", deckKeys.VariantID.Length > 0 ? $"\"{deckKeys.VariantID}\"" : "null");
 
             return testContents + Environment.NewLine + Environment.NewLine;
         }
@@ -98,7 +98,7 @@ namespace MTGOArchetypeParser.Tests.Updater
         {
             Test(
                 GetDeck(FILE_WITHOUT_EXTENSION,DECK_INDEX),
-                new META_NAME(),
+                META_NAME,
                 ArchetypeColor.COLOR_ID,
                 ARCHETYPE_ID,
                 VARIANT_ID,

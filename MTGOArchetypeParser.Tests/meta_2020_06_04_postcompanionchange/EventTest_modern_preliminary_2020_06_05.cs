@@ -29,9 +29,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",0),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.URG,
-                typeof(Reclamation),
+                "Reclamation",
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -42,9 +42,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",1),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.RG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -55,10 +55,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",2),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -68,9 +68,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",3),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.UG,
-                typeof(Neobrand),
+                "Neobrand",
                 null,
                 null
             );
@@ -81,9 +81,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",4),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.BRG,
-                typeof(Dredge),
+                "Dredge",
                 null,
                 null
             );
@@ -94,9 +94,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",5),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -107,9 +107,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",6),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUG,
-                typeof(Uroza),
+                "Uroza",
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -120,10 +120,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",7),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(GreenTron),
+                "Tron",
+                "GreenTron",
                 null
             );
         }
@@ -133,10 +133,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",8),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.RG,
-                typeof(PrimevalTitan),
-                typeof(TitanShift),
+                "PrimevalTitan",
+                "TitanShift",
                 null
             );
         }

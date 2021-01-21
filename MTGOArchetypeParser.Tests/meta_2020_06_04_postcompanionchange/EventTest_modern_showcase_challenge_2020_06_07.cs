@@ -52,9 +52,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",0),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -65,9 +65,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",1),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.UR,
-                typeof(GiftsStorm),
+                "GiftsStorm",
                 null,
                 null
             );
@@ -78,9 +78,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",2),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.URG,
-                typeof(Uroza),
+                "Uroza",
                 null,
                 null
             );
@@ -91,9 +91,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",3),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -104,9 +104,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",4),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUG,
-                typeof(Neobrand),
+                "Neobrand",
                 null,
                 null
             );
@@ -117,9 +117,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",5),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.RG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -130,9 +130,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",6),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.UBRG,
-                typeof(Dredge),
+                "Dredge",
                 null,
                 null
             );
@@ -143,9 +143,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",7),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUG,
-                typeof(GenericBlink),
+                "GenericBlink",
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -156,9 +156,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",8),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WG,
-                typeof(Devoted),
+                "Devoted",
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -169,10 +169,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",9),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -182,9 +182,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",10),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WBG,
-                typeof(Devoted),
+                "Devoted",
                 null,
                 null
             );
@@ -195,10 +195,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",11),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.UG,
-                typeof(PrimevalTitan),
-                typeof(AmuletTitan),
+                "PrimevalTitan",
+                "AmuletTitan",
                 null
             );
         }
@@ -208,9 +208,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",12),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.G,
-                typeof(HardenedScales),
+                "HardenedScales",
                 null,
                 null
             );
@@ -221,9 +221,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",13),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WG,
-                typeof(Devoted),
+                "Devoted",
                 null,
                 ArchetypeCompanion.Lurrus
             );
@@ -234,10 +234,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",14),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.UBR,
-                typeof(ThopterCombo),
-                typeof(ThopterUrza),
+                "ThopterCombo",
+                "ThopterUrza",
                 null
             );
         }
@@ -247,10 +247,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",15),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.U,
-                typeof(Tron),
-                typeof(BlueTron),
+                "Tron",
+                "BlueTron",
                 null
             );
         }
@@ -260,9 +260,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",16),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -273,9 +273,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",17),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUBG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -286,9 +286,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",18),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.RG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -299,10 +299,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",19),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.UG,
-                typeof(PrimevalTitan),
-                typeof(AmuletTitan),
+                "PrimevalTitan",
+                "AmuletTitan",
                 null
             );
         }
@@ -312,10 +312,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",20),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -325,10 +325,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",21),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.UG,
-                typeof(PrimevalTitan),
-                typeof(AmuletTitan),
+                "PrimevalTitan",
+                "AmuletTitan",
                 null
             );
         }
@@ -338,9 +338,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",22),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUBRG,
-                typeof(Humans),
+                "Humans",
                 null,
                 null
             );
@@ -351,10 +351,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",23),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WR,
-                typeof(RedAggro),
-                typeof(Burn),
+                "RedAggro",
+                "Burn",
                 null
             );
         }
@@ -364,9 +364,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",24),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUG,
-                typeof(Devoted),
+                "Devoted",
                 null,
                 null
             );
@@ -377,10 +377,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",25),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(GreenTron),
+                "Tron",
+                "GreenTron",
                 ArchetypeCompanion.Jegantha
             );
         }
@@ -390,10 +390,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",26),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUG,
-                typeof(PrimevalTitan),
-                typeof(AmuletTitan),
+                "PrimevalTitan",
+                "AmuletTitan",
                 null
             );
         }
@@ -403,9 +403,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",27),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.UBG,
-                typeof(Reclamation),
+                "Reclamation",
                 null,
                 null
             );
@@ -416,9 +416,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",28),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.UBG,
-                typeof(Reclamation),
+                "Reclamation",
                 null,
                 null
             );
@@ -429,9 +429,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",29),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.UG,
-                typeof(Infect),
+                "Infect",
                 null,
                 null
             );
@@ -442,9 +442,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",30),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -455,9 +455,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-06-07",31),
-                new PostCompanionChange(),
+                "PostCompanionChange",
                 ArchetypeColor.WRG,
-                typeof(Winota),
+                "Winota",
                 null,
                 null
             );

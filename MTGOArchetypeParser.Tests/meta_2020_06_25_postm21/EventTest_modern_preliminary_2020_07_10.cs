@@ -29,9 +29,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",0),
-                new PostM21(),
+                "PostM21",
                 ArchetypeColor.RG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -42,10 +42,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",1),
-                new PostM21(),
+                "PostM21",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(GreenTron),
+                "Tron",
+                "GreenTron",
                 null
             );
         }
@@ -55,9 +55,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",2),
-                new PostM21(),
+                "PostM21",
                 ArchetypeColor.WBRG,
-                typeof(Dredge),
+                "Dredge",
                 null,
                 null
             );
@@ -68,10 +68,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",3),
-                new PostM21(),
+                "PostM21",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(GreenTron),
+                "Tron",
+                "GreenTron",
                 null
             );
         }
@@ -81,9 +81,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",4),
-                new PostM21(),
+                "PostM21",
                 ArchetypeColor.URG,
-                typeof(Scapeshift),
+                "Scapeshift",
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -94,10 +94,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",5),
-                new PostM21(),
+                "PostM21",
                 ArchetypeColor.UG,
-                typeof(PrimevalTitan),
-                typeof(AmuletTitan),
+                "PrimevalTitan",
+                "AmuletTitan",
                 null
             );
         }
@@ -107,9 +107,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",6),
-                new PostM21(),
+                "PostM21",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -120,9 +120,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",7),
-                new PostM21(),
+                "PostM21",
                 ArchetypeColor.UBR,
-                typeof(Shadow),
+                "Shadow",
                 null,
                 null
             );
@@ -133,9 +133,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-10",8),
-                new PostM21(),
+                "PostM21",
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );

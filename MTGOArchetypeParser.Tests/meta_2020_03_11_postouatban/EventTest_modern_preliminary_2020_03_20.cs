@@ -44,10 +44,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",0),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(GreenTron),
+                "Tron",
+                "GreenTron",
                 null
             );
         }
@@ -57,9 +57,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",1),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.BRG,
-                typeof(Dredge),
+                "Dredge",
                 null,
                 null
             );
@@ -70,9 +70,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",2),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.BRG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -83,10 +83,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",3),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(GreenTron),
+                "Tron",
+                "GreenTron",
                 null
             );
         }
@@ -96,9 +96,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",4),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WRG,
-                typeof(BushwhackerZoo),
+                "BushwhackerZoo",
                 null,
                 null
             );
@@ -109,9 +109,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",5),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -122,10 +122,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",6),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.URG,
-                typeof(PrimevalTitan),
-                typeof(AmuletTitan),
+                "PrimevalTitan",
+                "AmuletTitan",
                 null
             );
         }
@@ -135,9 +135,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",7),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -148,9 +148,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",8),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WG,
-                typeof(Bogles),
+                "Bogles",
                 null,
                 null
             );
@@ -161,9 +161,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",9),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.URG,
-                typeof(Uroza),
+                "Uroza",
                 null,
                 null
             );
@@ -174,9 +174,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",10),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUR,
-                typeof(GrindingBreach),
+                "GrindingBreach",
                 null,
                 null
             );
@@ -187,9 +187,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",11),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUBRG,
-                typeof(NivToLight),
+                "NivToLight",
                 null,
                 null
             );
@@ -200,9 +200,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",12),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                "GenericControl",
                 null,
                 null
             );
@@ -213,10 +213,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",13),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.G,
-                typeof(Tron),
-                typeof(GreenTron),
+                "Tron",
+                "GreenTron",
                 null
             );
         }
@@ -226,9 +226,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",14),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.WUG,
-                typeof(GenericBlink),
+                "GenericBlink",
                 null,
                 null
             );
@@ -239,9 +239,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",15),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.URG,
-                typeof(Uroza),
+                "Uroza",
                 null,
                 null
             );
@@ -252,10 +252,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",16),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -265,10 +265,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",17),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.UG,
-                typeof(PrimevalTitan),
-                typeof(AmuletTitan),
+                "PrimevalTitan",
+                "AmuletTitan",
                 null
             );
         }
@@ -278,10 +278,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",18),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -291,10 +291,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",19),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }
@@ -304,9 +304,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",20),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.BRG,
-                typeof(GenericMidrange),
+                "GenericMidrange",
                 null,
                 null
             );
@@ -317,9 +317,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",21),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.URG,
-                typeof(Uroza),
+                "Uroza",
                 null,
                 null
             );
@@ -330,9 +330,9 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",22),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.URG,
-                typeof(Uroza),
+                "Uroza",
                 null,
                 null
             );
@@ -343,10 +343,10 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-20",23),
-                new PostOuatBan(),
+                "PostOuatBan",
                 ArchetypeColor.C,
-                typeof(Tron),
-                typeof(EldraziTron),
+                "Tron",
+                "EldraziTron",
                 null
             );
         }

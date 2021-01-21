@@ -41,7 +41,7 @@ namespace MTGOArchetypeParser.Tests
             return tournamentCache[tournamentName].Decks[deckIndex];
         }
 
-        protected void Test(Deck deck, ArchetypeMeta meta, ArchetypeColor expectedColor, Type expectedArchetype, Type expectedVariant = null, ArchetypeCompanion? expectedCompanion = null)
+        protected void Test(Deck deck, string meta, ArchetypeColor expectedColor, string expectedArchetype, string expectedVariant = null, ArchetypeCompanion? expectedCompanion = null)
         {
             var result = ArchetypeAnalyzer.Detect(deck.Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), deck.Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), _modern);
 
@@ -49,10 +49,10 @@ namespace MTGOArchetypeParser.Tests
 
             result.Color.Should().Be(expectedColor);
 
-            if (expectedArchetype != null) result.Matches.First().Archetype.Should().BeOfType(expectedArchetype);
+            if (expectedArchetype != null) result.Matches.First().Archetype.GetType().Name.Should().Be(expectedArchetype);
             else throw new Exception($"Archetype not specified, detection returned {result.Matches.First().Archetype.GetType().Name}");
 
-            if (expectedVariant != null) result.Matches.First().Variant.Should().BeOfType(expectedVariant);
+            if (expectedVariant != null) result.Matches.First().Variant.GetType().Name.Should().Be(expectedVariant);
             else result.Matches.First().Variant.Should().BeNull();
 
             if (expectedCompanion != null) result.Companion.Should().Be(expectedCompanion.Value);
