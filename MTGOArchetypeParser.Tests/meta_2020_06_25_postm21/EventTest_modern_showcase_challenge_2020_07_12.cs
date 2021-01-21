@@ -20,7 +20,7 @@ using System.Text;
 #09 kbr3: Hardened Scales (G)
 #10 Shamwowfella: Sultai Control (UBG)
 #11 siomomi: Eldrazi Tron (C)
-#12 nahuel10: Sultai Control (UBG)
+#12 nahuel10: Sultai Reclamation (UBG)
 #13 mariogomes097: Grixis Shadow (UBR)
 #14 EnlargedToShowTexture: Goblins (BR)
 #15 Justodeangelo: Bant Control (WUG)
@@ -191,13 +191,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck12_nahuel10_SultaiControl_UBG()
+        public void Deck12_nahuel10_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-07-12",11),
                 new PostM21(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

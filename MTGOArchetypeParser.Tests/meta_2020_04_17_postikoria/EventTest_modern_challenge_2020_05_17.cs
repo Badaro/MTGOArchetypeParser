@@ -38,7 +38,7 @@ using System.Text;
 #27 twinlesstwin: Golgari Midrange (BG, Lurrus)
 #28 CharLy: Jund Midrange (BRG, Lurrus)
 #29 Sanchez5272: Green Tron (G)
-#30 VampireGodric: Sultai Control (UBG)
+#30 VampireGodric: Sultai Reclamation (UBG)
 #31 CordoTwin: UBRG Shadow (UBRG, Lurrus)
 #32 Biednarccio: Amulet Titan (URG)
 */
@@ -425,13 +425,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck30_VampireGodric_SultaiControl_UBG()
+        public void Deck30_VampireGodric_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-17",29),
                 new PostIkoria(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

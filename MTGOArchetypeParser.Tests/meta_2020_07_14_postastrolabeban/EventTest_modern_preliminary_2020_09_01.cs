@@ -19,7 +19,7 @@ using System.Text;
 #08 Lukas261997: Amulet Titan (UG)
 #09 1yo2yo: Bant Control (WUG)
 #10 paucr5: Bant Control (WUG)
-#11 ht991122: Temur Control (URG)
+#11 ht991122: Temur Reclamation (URG)
 #12 FriskiFraska: Golgari Midrange (BG)
 #13 chengyiw: Rakdos Prowess (BR, Lurrus)
 #14 larkblue: Izzet Prowess (UR)
@@ -164,13 +164,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck11_ht991122_TemurControl_URG()
+        public void Deck11_ht991122_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-01",10),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

@@ -25,7 +25,7 @@ using System.Text;
 #14 Xwhale: Goblins (BR)
 #15 Wizard_2002: Humans (WUBRG)
 #16 komattaman: Gruul Midrange (RG)
-#17 McWinSauce: Temur Control (URG)
+#17 McWinSauce: Temur Reclamation (URG)
 #18 jhollan42: Bant Control (WUG)
 #19 SakeIzumo: Izzet Prowess (UR)
 #20 tanisong1221: Azorius Control (WU)
@@ -245,13 +245,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck17_McWinSauce_TemurControl_URG()
+        public void Deck17_McWinSauce_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-28",16),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

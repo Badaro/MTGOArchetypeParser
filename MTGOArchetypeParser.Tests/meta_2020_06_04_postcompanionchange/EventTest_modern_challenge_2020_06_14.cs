@@ -27,7 +27,7 @@ using System.Text;
 #16 staples87: Eldrazi Tron (C)
 #17 AndyAWKWARD: Scapeshift (URG)
 #18 Sonso JF: Thopter Urza (UBR)
-#19 ConnorM426: Sultai Control (UBG, Yorion)
+#19 ConnorM426: Sultai Reclamation (UBG, Yorion)
 #20 headshotcatcher: Gruul Midrange (RG)
 #21 Chris_Concarnage: Eldrazi Tron (C)
 #22 GedionRavenor: Bant Control (WUG)
@@ -282,13 +282,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck19_ConnorM426_SultaiControl_UBG_Yorion()
+        public void Deck19_ConnorM426_SultaiReclamation_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-14",18),
                 new PostCompanionChange(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 ArchetypeCompanion.Yorion
             );

@@ -10,12 +10,12 @@ using System.Text;
 
 /*
 #01 Lukas261997: WURG Control (WURG)
-#02 Lavaridge: Temur Control (URG)
+#02 Lavaridge: Temur Reclamation (URG)
 #03 __BMJ__: Shadow Prowess (BR, Lurrus)
 #04 albert62: WURG Control (WURG)
 #05 naddyeffintabs: Rakdos Midrange (BR)
 #06 exoticherman: Rakdos Prowess (BR, Lurrus)
-#07 alemilan19: Sultai Control (UBG)
+#07 alemilan19: Sultai Reclamation (UBG)
 #08 Capriccioso: Amulet Titan (G)
 */
 
@@ -37,13 +37,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_Lavaridge_TemurControl_URG()
+        public void Deck02_Lavaridge_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2021-01-12",1),
                 new PostZendikarRising(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
@@ -102,13 +102,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_alemilan19_SultaiControl_UBG()
+        public void Deck07_alemilan19_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2021-01-12",6),
                 new PostZendikarRising(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

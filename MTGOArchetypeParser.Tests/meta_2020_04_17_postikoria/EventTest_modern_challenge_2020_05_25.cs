@@ -25,7 +25,7 @@ using System.Text;
 #14 OxyWithMoxy: Scapeshift (URG, Yorion)
 #15 MadMaxErnst: Rakdos Prowess (BR, Lurrus)
 #16 sondrak: Mill (UB, Lurrus)
-#17 AutumnLily: Sultai Control (UBG, Yorion)
+#17 AutumnLily: Sultai Reclamation (UBG, Yorion)
 #18 AndyAWKWARD: Scapeshift (WURG, Yorion)
 #19 mtgandbagels: Amulet Titan (UG)
 #20 _Stream: Boros Prowess (WR, Lurrus)
@@ -256,13 +256,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck17_AutumnLily_SultaiControl_UBG_Yorion()
+        public void Deck17_AutumnLily_SultaiReclamation_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-25",16),
                 new PostIkoria(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 ArchetypeCompanion.Yorion
             );

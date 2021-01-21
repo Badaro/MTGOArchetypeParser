@@ -25,7 +25,7 @@ using System.Text;
 #14 CNewman: Scapeshift (URG, Yorion)
 #15 gilliganisla: Eldrazi Tron (C)
 #16 AliraSirin: Bogles (WG)
-#17 AutumnLily: Sultai Control (UBG, Yorion)
+#17 AutumnLily: Sultai Reclamation (UBG, Yorion)
 #18 meanfannypack: Devoted (WG, Lurrus)
 #19 Traft: Jund Midrange (BRG, Lurrus)
 #20 UnsungZero: Golgari Midrange (BG, Lurrus)
@@ -256,13 +256,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck17_AutumnLily_SultaiControl_UBG_Yorion()
+        public void Deck17_AutumnLily_SultaiReclamation_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-18",16),
                 new PostIkoria(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 ArchetypeCompanion.Yorion
             );

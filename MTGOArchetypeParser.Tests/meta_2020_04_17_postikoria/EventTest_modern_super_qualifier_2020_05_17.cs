@@ -28,7 +28,7 @@ using System.Text;
 #17 ack_s: Hammer Time (WR, Lurrus)
 #18 Manuel_Danninger: Jund Midrange (BRG, Lurrus)
 #19 DreamsOfAshiok: Eldrazi Tron (C)
-#20 VampireGodric: Sultai Control (UBG)
+#20 VampireGodric: Sultai Reclamation (UBG)
 #21 Laplasjan: Devoted (WG, Lurrus)
 #22 PTarts2win: Green Tron (G, Jegantha)
 #23 TennTyou: Niv To Light (WUBRG, Jegantha)
@@ -295,13 +295,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck20_VampireGodric_SultaiControl_UBG()
+        public void Deck20_VampireGodric_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-17",19),
                 new PostIkoria(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

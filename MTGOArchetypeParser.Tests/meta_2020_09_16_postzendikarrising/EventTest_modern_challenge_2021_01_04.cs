@@ -23,7 +23,7 @@ using System.Text;
 #12 ajifly: Devoted (WG, Lurrus)
 #13 joker10289: Sultai Control (UBG)
 #14 PieGonti: Belcher (BRG)
-#15 pokerswizard: Temur Control (URG)
+#15 pokerswizard: Temur Reclamation (URG)
 #16 penips: Mono White Taxes (W)
 #17 CrusherBotBG: Hammer Time (W, Lurrus)
 #18 Sommertroll: Humans (WUBRG)
@@ -230,13 +230,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_pokerswizard_TemurControl_URG()
+        public void Deck15_pokerswizard_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-challenge-2021-01-04",14),
                 new PostZendikarRising(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

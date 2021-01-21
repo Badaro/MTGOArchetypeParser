@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Lavaridge: Temur Control (URG)
+#01 Lavaridge: Temur Reclamation (URG)
 #02 NuBlkAu: Izzet Prowess (UR)
 #03 _LSN_: Burn (WR)
 #04 A22en: Goblins (BR)
@@ -31,7 +31,7 @@ using System.Text;
 #20 Voltzwagon: Gruul Midrange (RG)
 #21 ponchonater55: Burn (WR)
 #22 staples87: Eldrazi Tron (C)
-#23 Mad-Ramon: Temur Control (URG)
+#23 Mad-Ramon: Temur Reclamation (URG)
 #24 wambocombo2020: Mardu Prowess (WBR, Lurrus)
 #25 timewalkinonsunshine: Taking Turns (URG)
 #26 Alzik: Gruul Midrange (RG)
@@ -48,13 +48,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_champ_qual_2020_07_27 : EventTest
     {
         [Test]
-        public void Deck01_Lavaridge_TemurControl_URG()
+        public void Deck01_Lavaridge_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
@@ -334,13 +334,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck23_MadRamon_TemurControl_URG()
+        public void Deck23_MadRamon_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",22),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

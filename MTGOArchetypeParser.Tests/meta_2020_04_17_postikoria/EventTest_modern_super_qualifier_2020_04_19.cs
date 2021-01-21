@@ -36,7 +36,7 @@ using System.Text;
 #25 Chrislampa: Devoted (WG, Lurrus)
 #26 Trid0n: Humans (WUBRG)
 #27 Ivc: Bant Control (WUG)
-#28 Bayesta_93: Temur Control (URG)
+#28 Bayesta_93: Temur Reclamation (URG)
 #29 quinniac: Burn (WR, Lurrus)
 #30 Team5c: Humans (WUBRG)
 #31 Sonso JF: Heliod Combo (WUG)
@@ -399,13 +399,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck28_Bayesta93_TemurControl_URG()
+        public void Deck28_Bayesta93_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-19",27),
                 new PostIkoria(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

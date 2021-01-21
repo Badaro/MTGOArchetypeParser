@@ -15,7 +15,7 @@ using System.Text;
 #04 LORiWWA: Eldrazi Tron (C)
 #05 A22en: Azorius Control (WU)
 #06 Busterbrown52: Elementals (WUBRG)
-#07 Shorak123: Sultai Control (UBG)
+#07 Shorak123: Sultai Reclamation (UBG)
 #08 1yo2yo: Thopter Urza (UBR)
 #09 TheTunnelingCat: Eldrazi Tron (C)
 #10 Zxrogue: UBRG Shadow (UBRG)
@@ -126,13 +126,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_Shorak123_SultaiControl_UBG()
+        public void Deck07_Shorak123_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-05",6),
                 new PostM21(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

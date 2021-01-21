@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Violent_Outburst: Temur Control (URG, Yorion)
+#01 Violent_Outburst: Temur Reclamation (URG, Yorion)
 #02 gazmon48: Gruul Midrange (RG)
 #03 LORiWWA: Eldrazi Tron (C)
 #04 __matsugan: Neobrand (UG)
@@ -25,13 +25,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
     public class EventTest_modern_preliminary_2020_06_05 : EventTest
     {
         [Test]
-        public void Deck01_ViolentOutburst_TemurControl_URG_Yorion()
+        public void Deck01_ViolentOutburst_TemurReclamation_URG_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-05",0),
                 new PostCompanionChange(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 ArchetypeCompanion.Yorion
             );

@@ -26,8 +26,8 @@ using System.Text;
 #15 KeeperX: Zirda Combo (WRG, Zirda)
 #16 MLupa: Bant Control (WUG, Yorion)
 #17 HarlanMTG: Azorius Control (WU, Kaheera)
-#18 patrick50: Sultai Control (UBG)
-#19 pmc22337: Sultai Control (UBG)
+#18 patrick50: Sultai Reclamation (UBG)
+#19 pmc22337: Sultai Reclamation (UBG)
 #20 yamakiller: Boros Prowess (WR, Lurrus)
 #21 K-sol: Humans (WUBRG, Jegantha)
 #22 bgv1989: Green Tron (G)
@@ -259,26 +259,26 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck18_patrick50_SultaiControl_UBG()
+        public void Deck18_patrick50_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-14",17),
                 new PostIkoria(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck19_pmc22337_SultaiControl_UBG()
+        public void Deck19_pmc22337_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-14",18),
                 new PostIkoria(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

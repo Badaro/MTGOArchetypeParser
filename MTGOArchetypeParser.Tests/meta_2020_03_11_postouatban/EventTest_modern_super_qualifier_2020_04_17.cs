@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Parrit: Mono White Taxes (W)
 #02 __matsugan: Neobrand (UG)
-#03 SoulStrong: Simic Control (UG)
+#03 SoulStrong: Simic Reclamation (UG)
 #04 heterotic: Gruul Prowess (RG)
 #05 VampireGodric: Bant Control (WUG)
 #06 signblindman: Gruul Midrange (RG)
@@ -19,7 +19,7 @@ using System.Text;
 #08 Mistakenn: Amulet Titan (UG)
 #09 Yanti: Humans (WUBRG)
 #10 Scacco Malto: Mono Red Prowess (R)
-#11 Caleb_Yetman: Simic Control (UG)
+#11 Caleb_Yetman: Simic Reclamation (UG)
 #12 roter_Erzengel: Infect (UG)
 #13 cftsoc3: Bant Blink (WUG)
 #14 PredatorStyle: Gruul Midrange (RG)
@@ -74,13 +74,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck03_SoulStrong_SimicControl_UG()
+        public void Deck03_SoulStrong_SimicReclamation_UG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-17",2),
                 new PostOuatBan(),
                 ArchetypeColor.UG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
@@ -178,13 +178,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck11_CalebYetman_SimicControl_UG()
+        public void Deck11_CalebYetman_SimicReclamation_UG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-17",10),
                 new PostOuatBan(),
                 ArchetypeColor.UG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

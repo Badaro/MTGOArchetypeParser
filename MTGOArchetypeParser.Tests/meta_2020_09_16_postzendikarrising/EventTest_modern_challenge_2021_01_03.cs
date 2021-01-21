@@ -25,7 +25,7 @@ using System.Text;
 #14 nazart: Heliod Combo (WG)
 #15 penips: Mono White Taxes (W)
 #16 Binolino: Reclaimer Titan (WBRG)
-#17 billsive: Bant Control (WUG)
+#17 billsive: Bant Reclamation (WUG)
 #18 HamburgerJung: Green Tron (G, Jegantha)
 #19 MarcoBelacca95: Sultai Control (UBG)
 #20 ZYURYO: WURG Control (WURG)
@@ -256,13 +256,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck17_billsive_BantControl_WUG()
+        public void Deck17_billsive_BantReclamation_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2021-01-03",16),
                 new PostZendikarRising(),
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

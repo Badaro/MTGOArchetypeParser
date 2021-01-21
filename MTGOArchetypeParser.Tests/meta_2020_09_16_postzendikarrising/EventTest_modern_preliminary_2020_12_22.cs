@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 pbarrrgh: Sultai Control (UBG)
+#01 pbarrrgh: Sultai Reclamation (UBG)
 #02 Tiemuuu: Izzet Control (UR)
 #03 ACG88: Burn (WR)
 #04 joncos: Hammer Time (WB, Lurrus)
@@ -27,13 +27,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
     public class EventTest_modern_preliminary_2020_12_22 : EventTest
     {
         [Test]
-        public void Deck01_pbarrrgh_SultaiControl_UBG()
+        public void Deck01_pbarrrgh_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-22",0),
                 new PostZendikarRising(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

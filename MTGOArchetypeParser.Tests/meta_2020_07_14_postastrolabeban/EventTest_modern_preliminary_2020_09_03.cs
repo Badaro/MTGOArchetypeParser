@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 bigjc00: Amulet Titan (URG)
 #02 bmac668: Burn (WR)
-#03 nick4567: Sultai Control (UBG)
+#03 nick4567: Sultai Reclamation (UBG)
 #04 fingers1991: Boros Prowess (WR, Lurrus)
 #05 yumad3988: Enduring Ideal (W)
 #06 Nammersquats: Boros Prowess (WR, Lurrus)
@@ -22,12 +22,12 @@ using System.Text;
 #11 coert: Burn (WR)
 #12 SIMONEFIERRO: Burn (WR)
 #13 BERNASTORRES: Bogles (WG, Lurrus)
-#14 1yo2yo: Sultai Control (UBG)
+#14 1yo2yo: Sultai Reclamation (UBG)
 #15 Gigy: Naya Midrange (WRG)
 #16 Toastxp: Uroza (URG)
 #17 kthanakit26: Izzet Prowess (UR)
 #18 yamakiller: Obosh Aggro (R, Obosh)
-#19 SpikeYou: Sultai Control (UBG)
+#19 SpikeYou: Sultai Reclamation (UBG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
@@ -61,13 +61,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_nick4567_SultaiControl_UBG()
+        public void Deck03_nick4567_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-03",2),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
@@ -204,13 +204,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_1yo2yo_SultaiControl_UBG()
+        public void Deck14_1yo2yo_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-03",13),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
@@ -269,13 +269,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck19_SpikeYou_SultaiControl_UBG()
+        public void Deck19_SpikeYou_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-03",18),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

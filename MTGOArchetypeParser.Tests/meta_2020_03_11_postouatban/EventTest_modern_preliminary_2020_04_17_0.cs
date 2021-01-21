@@ -24,16 +24,16 @@ using System.Text;
 #13 Xwhale: Eldrazi Tron (C)
 #14 Capitano_CL: Dredge (UBRG)
 #15 DreamsOfAshiok: Eldrazi Tron (C)
-#16 StoreShop216: Simic Control (UG)
+#16 StoreShop216: Simic Reclamation (UG)
 #17 SrTortinha: Gruul Midrange (RG)
 #18 _Antoniou_: Orzhov Shadow (WB)
 #19 snapcaster____mage: Gruul Midrange (RG)
-#20 Caleb_Yetman: Simic Control (UG)
+#20 Caleb_Yetman: Simic Reclamation (UG)
 #21 twinlesstwin: Humans (WUBRG)
 #22 Dragonjonz: Grixis Shadow (UBR)
 #23 TradewindRider: Bant Control (WUG)
 #24 Icteridae: Devoted (WUG)
-#25 pbarrrgh: Simic Control (UG)
+#25 pbarrrgh: Simic Reclamation (UG)
 #26 fgfonseca182: Gruul Midrange (RG)
 #27 kthanakit26: Burn (WR)
 #28 Ma7x: Niv To Light (WUBRG)
@@ -264,13 +264,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck16_StoreShop216_SimicControl_UG()
+        public void Deck16_StoreShop216_SimicReclamation_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",15),
                 new PostOuatBan(),
                 ArchetypeColor.UG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
@@ -316,13 +316,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck20_CalebYetman_SimicControl_UG()
+        public void Deck20_CalebYetman_SimicReclamation_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",19),
                 new PostOuatBan(),
                 ArchetypeColor.UG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
@@ -381,13 +381,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck25_pbarrrgh_SimicControl_UG()
+        public void Deck25_pbarrrgh_SimicReclamation_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",24),
                 new PostOuatBan(),
                 ArchetypeColor.UG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

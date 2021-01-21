@@ -17,7 +17,7 @@ using System.Text;
 #06 Shadowz2005: WURG Control (WURG)
 #07 TSPJendrek: Bant Control (WUG)
 #08 gazmon48: Izzet Prowess (UR)
-#09 Mussie99: Sultai Control (UBG)
+#09 Mussie99: Sultai Reclamation (UBG)
 #10 joaoclaudioms: Hammer Time (WB, Lurrus)
 #11 obeylord: Oops All Spells (WUBG)
 #12 JUJUBEAN__2004: Izzet Prowess (UR)
@@ -152,13 +152,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck09_Mussie99_SultaiControl_UBG()
+        public void Deck09_Mussie99_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2021-01-10",8),
                 new PostZendikarRising(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

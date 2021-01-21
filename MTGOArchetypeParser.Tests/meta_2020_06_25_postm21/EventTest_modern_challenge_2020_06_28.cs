@@ -35,7 +35,7 @@ using System.Text;
 #24 CNewman: Goblins (BR)
 #25 no_lyfe: Mono Red Prowess (R)
 #26 fingers1991: Burn (WR, Lurrus)
-#27 sheastrausman: Temur Control (URG)
+#27 sheastrausman: Temur Reclamation (URG)
 #28 kbr3: Scapeshift (URG)
 #29 jessy_samek: Rakdos Prowess (BR, Lurrus)
 #30 yamakiller: Gruul Midrange (RG, Obosh)
@@ -386,13 +386,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck27_sheastrausman_TemurControl_URG()
+        public void Deck27_sheastrausman_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-28",26),
                 new PostM21(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

@@ -15,7 +15,7 @@ using System.Text;
 #04 CanadianBac0nz: Heliod Combo (WR)
 #05 Violent_Outburst: Scapeshift (WURG)
 #06 edward40hands: Golgari Midrange (BG)
-#07 FestiFan: Sultai Control (UBG)
+#07 FestiFan: Sultai Reclamation (UBG)
 #08 cicciogire: WURG Control (WURG)
 #09 Talisker: Jund Midrange (BRG)
 #10 O_danielakos: Izzet Prowess (UR)
@@ -126,13 +126,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_FestiFan_SultaiControl_UBG()
+        public void Deck07_FestiFan_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2021-01-19",6),
                 new PostZendikarRising(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

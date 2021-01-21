@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Lavaridge: Temur Control (URG)
+#01 Lavaridge: Temur Reclamation (URG)
 #02 romanmy: Mardu Prowess (WBR, Lurrus)
 #03 Selfeisek: Burn (WR, Lurrus)
 #04 SparTaNxX: Ad Nauseam (WUB)
@@ -48,13 +48,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_showcase_challenge_2020_08_09 : EventTest
     {
         [Test]
-        public void Deck01_Lavaridge_TemurControl_URG()
+        public void Deck01_Lavaridge_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-08-09",0),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

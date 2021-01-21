@@ -35,7 +35,7 @@ using System.Text;
 #24 SweetIto: Heliod Combo (WG)
 #25 MastaHorus: Electro End (UR)
 #26 slow_brz: Infect (BG)
-#27 Gobern: Sultai Control (UBG)
+#27 Gobern: Sultai Reclamation (UBG)
 #28 rofelos: WURG Control (WURG)
 #29 AstralPlane: Omnath Saheeli (WURG, Jegantha)
 #30 QuaCk QuaCk: Humans (WUBRG)
@@ -386,13 +386,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck27_Gobern_SultaiControl_UBG()
+        public void Deck27_Gobern_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-25",26),
                 new PostZendikarRising(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

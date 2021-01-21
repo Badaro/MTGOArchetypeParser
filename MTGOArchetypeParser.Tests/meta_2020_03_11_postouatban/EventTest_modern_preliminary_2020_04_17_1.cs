@@ -12,7 +12,7 @@ using System.Text;
 #01 triosk: Infect (UG)
 #02 Dazai: Temur Control (URG)
 #03 MlckyB: Bogles (WG)
-#04 Violent_Outburst: Temur Control (URG)
+#04 Violent_Outburst: Temur Reclamation (URG)
 #05 Stabilo: Infect (UG)
 #06 Gerardo94: Bant Control (WUG)
 #07 Toastxp: Uroza (URG)
@@ -64,13 +64,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck04_ViolentOutburst_TemurControl_URG()
+        public void Deck04_ViolentOutburst_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-1",3),
                 new PostOuatBan(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

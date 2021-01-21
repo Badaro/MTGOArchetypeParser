@@ -26,8 +26,8 @@ using System.Text;
 #15 McWinSauce: WUBG Control (WUBG)
 #16 Janh: Sultai Control (UBG)
 #17 stainerson: Elves (BG)
-#18 ncowden: Sultai Control (UBG)
-#19 2radMTG: Temur Control (URG)
+#18 ncowden: Sultai Reclamation (UBG)
+#19 2radMTG: Temur Reclamation (URG)
 #20 indianpancake: Gruul Midrange (RG)
 #21 TwistedWombat: Amulet Titan (URG)
 #22 Blitzlion27: Mill (UB)
@@ -40,7 +40,7 @@ using System.Text;
 #29 _Shatun_: Gruul Midrange (RG)
 #30 sora1248: Goblins (BR)
 #31 ArchaeusDota: Green Tron (G, Jegantha)
-#32 SkiLwrAp: Sultai Control (UBG)
+#32 SkiLwrAp: Sultai Reclamation (UBG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
@@ -269,26 +269,26 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck18_ncowden_SultaiControl_UBG()
+        public void Deck18_ncowden_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-29",17),
                 new PostM21(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck19_2radMTG_TemurControl_URG()
+        public void Deck19_2radMTG_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-29",18),
                 new PostM21(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
@@ -451,13 +451,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck32_SkiLwrAp_SultaiControl_UBG()
+        public void Deck32_SkiLwrAp_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-29",31),
                 new PostM21(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

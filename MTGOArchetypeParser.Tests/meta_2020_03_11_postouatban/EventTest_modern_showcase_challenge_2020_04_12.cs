@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Graciasportanto: Uroza (URG)
 #02 PhReSHTinGZ: Amulet Titan (UG)
-#03 pbarrrgh: Simic Control (UG)
+#03 pbarrrgh: Simic Reclamation (UG)
 #04 Trellon: Blue Tron (U)
 #05 Magicofplayer1: Dredge (BRG)
 #06 Whitecell: Neobrand (UG)
@@ -28,7 +28,7 @@ using System.Text;
 #17 Lord_Beerus: Burn (WR)
 #18 katoriarch123: Bant Control (WUG)
 #19 122pablo: Ascendancy Combo (WURG)
-#20 Shorak123: Temur Control (URG)
+#20 Shorak123: Temur Reclamation (URG)
 #21 pizzaslinger: Gruul Midrange (RG)
 #22 Butakov: Jund Midrange (BRG)
 #23 Bayesta_93: Gruul Midrange (RG)
@@ -74,13 +74,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck03_pbarrrgh_SimicControl_UG()
+        public void Deck03_pbarrrgh_SimicReclamation_UG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-04-12",2),
                 new PostOuatBan(),
                 ArchetypeColor.UG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
@@ -295,13 +295,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck20_Shorak123_TemurControl_URG()
+        public void Deck20_Shorak123_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-04-12",19),
                 new PostOuatBan(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

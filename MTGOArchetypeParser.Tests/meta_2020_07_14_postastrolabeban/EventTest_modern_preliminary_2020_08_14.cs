@@ -15,7 +15,7 @@ using System.Text;
 #04 Do0mSwitch: Bant Control (WUG)
 #05 sff_mtg: Green Tron (G)
 #06 Boin: Goblins (BR)
-#07 ht991122: Sultai Control (UBG)
+#07 ht991122: Sultai Reclamation (UBG)
 #08 Je3vEs: Eldrazi Tron (C)
 #09 tribalmaster: Izzet Prowess (UR)
 #10 Niedzwiedz: Goblins (BR)
@@ -106,13 +106,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_ht991122_SultaiControl_UBG()
+        public void Deck07_ht991122_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-14",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

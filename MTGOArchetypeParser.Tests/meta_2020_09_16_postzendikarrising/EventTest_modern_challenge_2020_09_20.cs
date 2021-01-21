@@ -40,7 +40,7 @@ using System.Text;
 #29 iaky91: Bogles (WG)
 #30 eXavie: Temur Control (URG)
 #31 Jokersrwild: Golgari Midrange (BG)
-#32 TheBigMoke: Sultai Control (UBG)
+#32 TheBigMoke: Sultai Reclamation (UBG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -451,13 +451,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck32_TheBigMoke_SultaiControl_UBG()
+        public void Deck32_TheBigMoke_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-20",31),
                 new PostZendikarRising(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

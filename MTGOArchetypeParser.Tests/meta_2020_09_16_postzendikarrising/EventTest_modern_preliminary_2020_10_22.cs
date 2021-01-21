@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Samlg01: Amulet Titan (RG)
 #02 HardcoreHenry: Abzan Midrange (WBG)
-#03 Gobern: Sultai Control (UBG)
+#03 Gobern: Sultai Reclamation (UBG)
 #04 _LSN_: Burn (WR)
 #05 PRGJJAR: Dredge (BRG)
 #06 SKK: Shadow Prowess (BR, Lurrus)
@@ -58,13 +58,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck03_Gobern_SultaiControl_UBG()
+        public void Deck03_Gobern_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-22",2),
                 new PostZendikarRising(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

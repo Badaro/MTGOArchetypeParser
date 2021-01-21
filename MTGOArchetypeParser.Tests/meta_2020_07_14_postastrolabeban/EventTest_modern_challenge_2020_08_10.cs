@@ -20,8 +20,8 @@ using System.Text;
 #09 Asmodean1990: Jund Midrange (BRG)
 #10 Mogged: Izzet Prowess (UR)
 #11 Auron12: Izzet Prowess (UR)
-#12 didoguidotti1: Temur Control (URG)
-#13 Vashezzo: Temur Control (URG)
+#12 didoguidotti1: Temur Reclamation (URG)
+#13 Vashezzo: Temur Reclamation (URG)
 #14 MicAncona: Gruul Midrange (RG)
 #15 Granham: Green Tron (G)
 #16 siomomi: Eldrazi Tron (C)
@@ -191,26 +191,26 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_didoguidotti1_TemurControl_URG()
+        public void Deck12_didoguidotti1_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-10",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck13_Vashezzo_TemurControl_URG()
+        public void Deck13_Vashezzo_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-10",12),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

@@ -32,7 +32,7 @@ using System.Text;
 #21 Edel: Jund Midrange (BRG)
 #22 benjamin13: Gruul Midrange (RG)
 #23 karatedom: Mardu Prowess (WBR, Lurrus)
-#24 Ambaro15: Sultai Control (UBG)
+#24 Ambaro15: Sultai Reclamation (UBG)
 #25 PeanutBrittle: Izzet Prowess (UR)
 #26 qbturtle15: Gruul Midrange (RG, Obosh)
 #27 Sungjin: Scapeshift (WURG)
@@ -342,13 +342,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck24_Ambaro15_SultaiControl_UBG()
+        public void Deck24_Ambaro15_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-16",23),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );

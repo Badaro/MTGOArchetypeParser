@@ -15,12 +15,12 @@ using System.Text;
 #04 Edel: Jund Midrange (BRG)
 #05 Traft: Ad Nauseam (WUB)
 #06 Danker: Azorius Control (WU)
-#07 nahuel10: Bant Control (WUG)
+#07 nahuel10: Bant Reclamation (WUG)
 #08 pokerswizard: Jund Midrange (BRG)
-#09 kanister: Temur Control (URG)
+#09 kanister: Temur Reclamation (URG)
 #10 skuttlespike: Gruul Midrange (RG)
 #11 no_lyfe: Mono Red Prowess (R)
-#12 Shorak123: Sultai Control (UBG)
+#12 Shorak123: Sultai Reclamation (UBG)
 #13 Chefen: Goblins (BR)
 #14 echecetmat35: Titan Shift (UG)
 #15 bntrusty14: Devoted (WG, Lurrus)
@@ -126,13 +126,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck07_nahuel10_BantControl_WUG()
+        public void Deck07_nahuel10_BantReclamation_WUG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-19",6),
                 new PostAstrolabeBan(),
                 ArchetypeColor.WUG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
@@ -152,13 +152,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_kanister_TemurControl_URG()
+        public void Deck09_kanister_TemurReclamation_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-19",8),
                 new PostAstrolabeBan(),
                 ArchetypeColor.URG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
@@ -191,13 +191,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_Shorak123_SultaiControl_UBG()
+        public void Deck12_Shorak123_SultaiReclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-19",11),
                 new PostAstrolabeBan(),
                 ArchetypeColor.UBG,
-                typeof(GenericControl),
+                typeof(Reclamation),
                 null,
                 null
             );
