@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MTGOArchetypeParser.Migrator.App": {
+      "commandName": "Project",
+      "commandLineArgs": "\"$(SolutionDir)..\\MTGOArchetypeParserData\\Formats\\Modern\" "
+    }
+  }
+}

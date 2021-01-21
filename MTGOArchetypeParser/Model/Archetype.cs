@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -8,6 +9,10 @@ namespace MTGOArchetypeParser.Model
 {
     public abstract class Archetype
     {
+        [JsonProperty(Order = -2)]
+        public string Name { get { return this.ToString(); } }
+
+        [JsonProperty(Order = -1)]
         protected bool IncludeColorInName { get; set; }
 
         public string GetName(ArchetypeColor color)
@@ -105,7 +110,9 @@ namespace MTGOArchetypeParser.Model
 
     public class ArchetypeSpecific : Archetype
     {
+        [JsonProperty(Order = 0)]
         public ArchetypeCondition[] Conditions { get; set; }
+        [JsonProperty(Order = 1)]
         public ArchetypeVariant[] Variants { get; set; }
     }
 
@@ -115,7 +122,9 @@ namespace MTGOArchetypeParser.Model
 
     public class ArchetypeGeneric : Archetype
     {
+        [JsonProperty(Order = 0)]
         public string[] CommonCards { get; set; }
+        [JsonProperty(Order = 1)]
         public string[] RequiredCards { get; set; }
     }
 
