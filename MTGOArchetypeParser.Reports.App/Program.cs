@@ -32,11 +32,7 @@ namespace MTGOArchetypeParser.Reports.App
                 if (Directory.Exists(_outputFolder)) Directory.Delete(_outputFolder, true);
                 Directory.CreateDirectory(_outputFolder);
 
-                bool allMetas = true;
-
-                DateTime startDate = allMetas ?
-                    modernFormat.Metas.First().StartDate :
-                    modernFormat.Metas.Last(m => m.StartDate < DateTime.UtcNow).StartDate;
+                DateTime startDate = modernFormat.Metas.First().StartDate;
 
                 DataRecord[] records = cacheFolders.SelectMany(c => Loader.GetRecords(c, modernFormat, startDate.AddDays(1))).OrderBy(c => c.Date).ToArray();
 
