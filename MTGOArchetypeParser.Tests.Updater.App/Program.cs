@@ -25,9 +25,6 @@ namespace MTGOArchetypeParser.Tests.Updater
                 string formatDataFolder = args[1];
                 string[] cacheFolders = args.Skip(2).ToArray();
 
-                bool allowUpdate = false;
-                if (args.Any(a => a == "allowupdate")) allowUpdate = true;
-
                 ArchetypeFormat modernFormat = Formats.FromJson.Loader.GetFormat(formatDataFolder, "Modern");
 
                 ArchetypeMeta[] metas = modernFormat.Metas;
@@ -46,15 +43,8 @@ namespace MTGOArchetypeParser.Tests.Updater
 
                     if (File.Exists(tournamentTestFile))
                     {
-                        if (!allowUpdate)
-                        {
-                            Console.WriteLine("Tournament already exists and allowupdate was not specified, skipping");
-                            continue;
-                        }
-                        else
-                        {
-                            if (File.Exists(tournamentTestFile)) File.Delete(tournamentTestFile);
-                        }
+                        Console.WriteLine("Tournament already exists, skipping");
+                        continue;
                     }
 
                     StringBuilder tournamentTestData = new StringBuilder();

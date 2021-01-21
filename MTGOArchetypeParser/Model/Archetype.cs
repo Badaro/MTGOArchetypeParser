@@ -11,7 +11,7 @@ namespace MTGOArchetypeParser.Model
     {
         public string Name { get; set; }
 
-        protected bool IncludeColorInName { get; set; }
+        public bool IncludeColorInName { get; set; }
 
         public string GetName(ArchetypeColor color)
         {
