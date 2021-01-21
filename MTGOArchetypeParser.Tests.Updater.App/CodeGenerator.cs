@@ -12,9 +12,7 @@ namespace MTGOArchetypeParser.Tests.Updater
 {
     public static class CodeGenerator
     {
-        static Dictionary<string, ArchetypeColor> _lands = MTGOArchetypeParser.Cards.Modern.Loader.GetLands();
-        static Dictionary<string, ArchetypeColor> _nonlands = MTGOArchetypeParser.Cards.Modern.Loader.GetNonLands();
-        static Archetype[] _archetypes = MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes();
+        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.Modern.Loader.GetFormat();
 
         public static string GenerateSummary(Tournament tournament)
         {
@@ -22,7 +20,7 @@ namespace MTGOArchetypeParser.Tests.Updater
 
             for (int i = 0; i < tournament.Decks.Length; i++)
             {
-                var result = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), _archetypes, _lands, _nonlands);
+                var result = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), _modern);
 
                 int position = i + 1;
                 string player = tournament.Decks[i].Player;

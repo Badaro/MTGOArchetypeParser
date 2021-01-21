@@ -22,8 +22,12 @@ namespace MTGOArchetypeParser.Data
             {"Zirda, the Dawnwaker", ArchetypeCompanion.Zirda }
         };
 
-        public static ArchetypeResult Detect(Card[] mainboardCards, Card[] sideboardCards, Archetype[] archetypeData, Dictionary<string, ArchetypeColor> landColors, Dictionary<string, ArchetypeColor> cardColors, double minSimiliarity = 0.1)
+        public static ArchetypeResult Detect(Card[] mainboardCards, Card[] sideboardCards, ArchetypeFormat format, double minSimiliarity = 0.1)
         {
+            Archetype[] archetypeData = format.Archetypes;
+            Dictionary<string, ArchetypeColor> landColors = format.Lands;
+            Dictionary<string, ArchetypeColor> cardColors = format.NonLands;
+
             ArchetypeSpecific[] specificArchetypes = archetypeData.Where(a => a is ArchetypeSpecific && !(a is ArchetypeVariant)).Select(a => a as ArchetypeSpecific).ToArray();
             ArchetypeGeneric[] genericArchetypes = archetypeData.Where(a => a is ArchetypeGeneric).Select(a => a as ArchetypeGeneric).ToArray();
 

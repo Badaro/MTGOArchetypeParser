@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace MTGOArchetypeParser.Cards.Modern
 {
-    public class Loader
+    public class Cards
     {
         public static Dictionary<string, ArchetypeColor> GetLands()
         {

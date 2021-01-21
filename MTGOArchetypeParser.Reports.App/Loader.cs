@@ -9,10 +9,7 @@ namespace MTGOArchetypeParser.Reports.App
 {
     public static class Loader
     {
-        static Dictionary<string, ArchetypeColor> _lands = MTGOArchetypeParser.Cards.Modern.Loader.GetLands();
-        static Dictionary<string, ArchetypeColor> _nonlands = MTGOArchetypeParser.Cards.Modern.Loader.GetNonLands();
-        static Archetype[] _archetypes = MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes();
-
+        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.Modern.Loader.GetFormat();
         public static DataRecord[] GetRecords(string cacheFolder, DateTime startDate)
         {
             Tournament[] tournaments = TournamentLoader.GetTournamentsByDate(cacheFolder, startDate, n => n.Contains("Modern") && !n.Contains("League")).ToArray();
@@ -21,7 +18,7 @@ namespace MTGOArchetypeParser.Reports.App
 
             foreach (var tournament in tournaments)
             {
-                ArchetypeMeta meta = Metas.Modern.Loader.GetMetas().Last(m => m.StartDate <= tournament.Decks.First().Date);
+                ArchetypeMeta meta = _modern.Metas.Last(m => m.StartDate <= tournament.Decks.First().Date);
                 DateTime metaWeekReferenceDate = GetMetaWeekReferenceDate(meta.StartDate);
 
                 string metaID = meta.GetType().Name;
@@ -30,7 +27,7 @@ namespace MTGOArchetypeParser.Reports.App
 
                 for (int i = 0; i < tournament.Decks.Length; i++)
                 {
-                    var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), _archetypes, _lands, _nonlands);
+                    var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), _modern);
 
                     string colorID = detectionResult.Color.ToString();
                     string companionID = detectionResult.Companion == null ? "" : detectionResult.Companion.Value.ToString();

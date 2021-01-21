@@ -20,9 +20,7 @@ namespace MTGOArchetypeParser.Tests
             new DirectoryInfo(@"..\..\..\..\ManaTradersDecklistCache\Tournaments").FullName,
         };
         static Dictionary<string, Tournament> tournamentCache = new Dictionary<string, Tournament>();
-        static Dictionary<string, ArchetypeColor> _lands = MTGOArchetypeParser.Cards.Modern.Loader.GetLands();
-        static Dictionary<string, ArchetypeColor> _nonlands = MTGOArchetypeParser.Cards.Modern.Loader.GetNonLands();
-        static Archetype[] _archetypes = MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes();
+        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.Modern.Loader.GetFormat();
 
         protected Deck GetDeck(string tournamentName, int deckIndex)
         {
@@ -45,7 +43,7 @@ namespace MTGOArchetypeParser.Tests
 
         protected void Test(Deck deck, ArchetypeMeta meta, ArchetypeColor expectedColor, Type expectedArchetype, Type expectedVariant = null, ArchetypeCompanion? expectedCompanion = null)
         {
-            var result = ArchetypeAnalyzer.Detect(deck.Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), deck.Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), _archetypes, _lands, _nonlands);
+            var result = ArchetypeAnalyzer.Detect(deck.Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), deck.Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), _modern);
 
             result.Matches.Should().HaveCount(1);
 

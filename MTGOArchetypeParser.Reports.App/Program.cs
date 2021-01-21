@@ -1,4 +1,5 @@
 ﻿using MTGOArchetypeParser.Data.Model;
+using MTGOArchetypeParser.Model;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -12,6 +13,7 @@ namespace MTGOArchetypeParser.Reports.App
     {
         static string _outputFolder = "reports";
         static double _minPercentage = 0.02;
+        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.Modern.Loader.GetFormat();
 
         static void Main(string[] args)
         {
@@ -30,8 +32,8 @@ namespace MTGOArchetypeParser.Reports.App
                 bool allMetas = args.Any(a => a.ToLower() == "allmetas");
 
                 DateTime startDate = allMetas ?
-                    MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().First().StartDate :
-                    MTGOArchetypeParser.Metas.Modern.Loader.GetMetas().Last(m => m.StartDate < DateTime.UtcNow).StartDate;
+                    _modern.Metas.First().StartDate :
+                    _modern.Metas.Last(m => m.StartDate < DateTime.UtcNow).StartDate;
 
                 DataRecord[] records = cacheFolders.SelectMany(c => Loader.GetRecords(c, startDate.AddDays(1))).OrderBy(c => c.Date).ToArray();
 

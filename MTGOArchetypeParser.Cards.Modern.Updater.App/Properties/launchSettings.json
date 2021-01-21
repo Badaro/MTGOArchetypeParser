@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "MTGOArchetypeParser.Cards.Modern.Updater.App": {
-      "commandName": "Project",
-      "commandLineArgs": "\"$(SolutionDir)MTGOArchetypeParser.Cards.Modern\""
-    }
-  }
-}

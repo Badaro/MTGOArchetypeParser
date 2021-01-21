@@ -11,9 +11,7 @@ namespace MTGOArchetypeParser.Tests
 {
     public class ConditionTests
     {
-        static Dictionary<string, ArchetypeColor> _lands = MTGOArchetypeParser.Cards.Modern.Loader.GetLands();
-        static Dictionary<string, ArchetypeColor> _nonlands = MTGOArchetypeParser.Cards.Modern.Loader.GetNonLands();
-        static Archetype[] _archetypes = MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes();
+        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.Modern.Loader.GetFormat();
 
         [Test]
         public void InMainboard()
@@ -160,12 +158,15 @@ namespace MTGOArchetypeParser.Tests
             var result = ArchetypeAnalyzer.Detect(
                 testMainboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
                 testSideboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
-                new ArchetypeSpecific[]
+                new ArchetypeFormat
                 {
-                     archetype
-                },
-                _lands,
-                _nonlands);
+                    Archetypes = new Archetype[]
+                    {
+                         archetype
+                    },
+                    Lands = _modern.Lands,
+                    NonLands = _modern.NonLands
+                });
 
             result.Matches.Should().HaveCount(1);
             result.Matches.First().Archetype.Should().Be(archetype);
@@ -195,12 +196,15 @@ namespace MTGOArchetypeParser.Tests
             var result = ArchetypeAnalyzer.Detect(
                 testMainboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
                 testSideboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
-                new ArchetypeSpecific[]
+                new ArchetypeFormat
                 {
-                     archetype
-                },
-                _lands,
-                _nonlands);
+                    Archetypes = new Archetype[]
+                    {
+                         archetype
+                    },
+                    Lands = _modern.Lands,
+                    NonLands = _modern.NonLands
+                });
 
             result.Matches.Should().HaveCount(0);
         }

@@ -14,10 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MTGOArchetypeParser.Archetypes.Modern\MTGOArchetypeParser.Archetypes.Modern.csproj" />
-    <ProjectReference Include="..\MTGOArchetypeParser.Cards.Modern\MTGOArchetypeParser.Cards.Modern.csproj" />
     <ProjectReference Include="..\MTGOArchetypeParser.Data\MTGOArchetypeParser.Data.csproj" />
-    <ProjectReference Include="..\MTGOArchetypeParser.Metas.Modern\MTGOArchetypeParser.Metas.Modern.csproj" />
+    <ProjectReference Include="..\MTGOArchetypeParser.Formats.Modern\MTGOArchetypeParser.Formats.Modern.csproj" />
     <ProjectReference Include="..\MTGOArchetypeParser\MTGOArchetypeParser.csproj" />
   </ItemGroup>
 

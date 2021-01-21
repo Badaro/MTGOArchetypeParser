@@ -12,9 +12,7 @@ namespace MTGOArchetypeParser.Tests.Updater
 {
     class Program
     {
-        static Dictionary<string, ArchetypeColor> _lands = MTGOArchetypeParser.Cards.Modern.Loader.GetLands();
-        static Dictionary<string, ArchetypeColor> _nonlands = MTGOArchetypeParser.Cards.Modern.Loader.GetNonLands();
-        static Archetype[] _archetypes = MTGOArchetypeParser.Archetypes.Modern.Loader.GetArchetypes();
+        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.Modern.Loader.GetFormat();
 
         static void Main(string[] args)
         {
@@ -31,7 +29,7 @@ namespace MTGOArchetypeParser.Tests.Updater
                 bool allowUpdate = false;
                 if (args.Any(a => a == "allowupdate")) allowUpdate = true;
 
-                ArchetypeMeta[] metas = Metas.Modern.Loader.GetMetas();
+                ArchetypeMeta[] metas = _modern.Metas;
 
                 Tournament[] tournaments = cacheFolders.SelectMany(c => TournamentLoader.GetTournamentsByDate(c, metas.First().StartDate.AddDays(1), n => n.Contains("Modern") && !n.Contains("League"))).ToArray();
 
@@ -62,7 +60,7 @@ namespace MTGOArchetypeParser.Tests.Updater
 
                     for (int i = 0; i < tournament.Decks.Length; i++)
                     {
-                        var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), _archetypes, _lands, _nonlands);
+                        var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), _modern);
                         DeckKeys deckKeys = KeyGenerator.GenerateDeckKeys(i, tournament.Decks[i], detectionResult);
 
                         string tournamentDeckTestContents = CodeGenerator.GenerateTest(tournamentKeys, deckKeys);
