@@ -22,7 +22,7 @@ namespace MTGOArchetypeParser.Reports.App
                     Console.WriteLine("Usage MTGOArchetypeParser.Reports.App.exe CACHE_FOLDER_1 [CACHE_FOLDER_2] [CACHE_FOLDER_3]");
                     return;
                 }
-                string[] cacheFolders = args.Where(a => a.ToLowerInvariant()!= "allmetas" && a.ToLowerInvariant()!= "includeleagues").ToArray();
+                string[] cacheFolders = args.Where(a => a.ToLowerInvariant()!= "allmetas").ToArray();
 
                 if (Directory.Exists(_outputFolder)) Directory.Delete(_outputFolder, true);
                 Directory.CreateDirectory(_outputFolder);
@@ -45,20 +45,6 @@ namespace MTGOArchetypeParser.Reports.App
                     {
                         GenerateMeta(records.Where(r => r.Meta == meta && r.Week == week), r => r.Archetype, $"mtgo_meta_archetype_{meta.ToLower()}_week{week.ToString("D2")}_{date}", _minPercentage);
                     }
-                }
-
-                Dictionary<int, int> totals = new Dictionary<int, int>();
-                Dictionary<int, int> reds = new Dictionary<int, int>();
-                foreach (var record in records)
-                {
-                    if (!totals.ContainsKey(record.Week)) totals.Add(record.Week, 0);
-                    if (!reds.ContainsKey(record.Week)) reds.Add(record.Week, 0);
-
-                    if (record.Deck.Mainboard.Any(c => c.Card == "Monastery Swiftspear"))
-                    {
-                        reds[record.Week]++;
-                    }
-                    totals[record.Week]++;
                 }
             }
             catch (Exception ex)
