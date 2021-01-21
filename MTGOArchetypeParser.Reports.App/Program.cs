@@ -13,29 +13,32 @@ namespace MTGOArchetypeParser.Reports.App
     {
         static string _outputFolder = "reports";
         static double _minPercentage = 0.02;
-        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.Modern.Loader.GetFormat();
 
         static void Main(string[] args)
         {
             try
             {
-                if (args.Length == 0)
+                if (args.Length < 2)
                 {
-                    Console.WriteLine("Usage MTGOArchetypeParser.Reports.App.exe CACHE_FOLDER_1 [CACHE_FOLDER_2] [CACHE_FOLDER_3]");
+                    Console.WriteLine("Usage MTGOArchetypeParser.Reports.App.exe FORMAT_DATA_FOLDER CACHE_FOLDER_1 [CACHE_FOLDER_2] [CACHE_FOLDER_3]");
                     return;
                 }
-                string[] cacheFolders = args.Where(a => a.ToLowerInvariant()!= "allmetas").ToArray();
+
+                string formatDataFolders = args[0];
+                string[] cacheFolders = args.Skip(1).ToArray();
+
+                ArchetypeFormat modernFormat = MTGOArchetypeParser.Formats.FromJson.Loader.GetFormat(formatDataFolders, "Modern");
 
                 if (Directory.Exists(_outputFolder)) Directory.Delete(_outputFolder, true);
                 Directory.CreateDirectory(_outputFolder);
 
-                bool allMetas = args.Any(a => a.ToLower() == "allmetas");
+                bool allMetas = true;
 
                 DateTime startDate = allMetas ?
-                    _modern.Metas.First().StartDate :
-                    _modern.Metas.Last(m => m.StartDate < DateTime.UtcNow).StartDate;
+                    modernFormat.Metas.First().StartDate :
+                    modernFormat.Metas.Last(m => m.StartDate < DateTime.UtcNow).StartDate;
 
-                DataRecord[] records = cacheFolders.SelectMany(c => Loader.GetRecords(c, startDate.AddDays(1))).OrderBy(c => c.Date).ToArray();
+                DataRecord[] records = cacheFolders.SelectMany(c => Loader.GetRecords(c, modernFormat, startDate.AddDays(1))).OrderBy(c => c.Date).ToArray();
 
                 string date = $"{records.Max(t => t.Date).ToString("yyyy_MM_dd")}";
                 GenerateDump(records, $"mtgo_data_{date}");

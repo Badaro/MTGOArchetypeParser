@@ -12,24 +12,25 @@ namespace MTGOArchetypeParser.Tests.Updater
 {
     class Program
     {
-        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.Modern.Loader.GetFormat();
-
         static void Main(string[] args)
         {
             try
             {
-                if (args.Length < 2)
+                if (args.Length < 3)
                 {
-                    Console.WriteLine("Usage MTGOArchetypeParser.Tests.Updater TEST_FOLDER CACHE_FOLDER_1 [CACHE_FOLDER_2] [CACHE_FOLDER_3]");
+                    Console.WriteLine("Usage MTGOArchetypeParser.Tests.Updater TEST_FOLDER FORMAT_DATA_FOLDER CACHE_FOLDER_1 [CACHE_FOLDER_2] [CACHE_FOLDER_3]");
                     return;
                 }
                 string testFolder = args[0];
-                string[] cacheFolders = args.Skip(1).ToArray();
+                string formatDataFolder = args[1];
+                string[] cacheFolders = args.Skip(2).ToArray();
 
                 bool allowUpdate = false;
                 if (args.Any(a => a == "allowupdate")) allowUpdate = true;
 
-                ArchetypeMeta[] metas = _modern.Metas;
+                ArchetypeFormat modernFormat = Formats.FromJson.Loader.GetFormat(formatDataFolder, "Modern");
+
+                ArchetypeMeta[] metas = modernFormat.Metas;
 
                 Tournament[] tournaments = cacheFolders.SelectMany(c => TournamentLoader.GetTournamentsByDate(c, metas.First().StartDate.AddDays(1), n => n.Contains("Modern") && !n.Contains("League"))).ToArray();
 
@@ -60,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.Updater
 
                     for (int i = 0; i < tournament.Decks.Length; i++)
                     {
-                        var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), _modern);
+                        var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), modernFormat);
                         DeckKeys deckKeys = KeyGenerator.GenerateDeckKeys(i, tournament.Decks[i], detectionResult);
 
                         string tournamentDeckTestContents = CodeGenerator.GenerateTest(tournamentKeys, deckKeys);
@@ -68,7 +69,7 @@ namespace MTGOArchetypeParser.Tests.Updater
                     }
 
                     // Generating test class
-                    string testFileContents = CodeGenerator.GenerateClasss(tournamentKeys, tournamentTestData.ToString(), CodeGenerator.GenerateSummary(tournament));
+                    string testFileContents = CodeGenerator.GenerateClasss(tournamentKeys, tournamentTestData.ToString(), CodeGenerator.GenerateSummary(tournament, modernFormat));
                     FileWriter.Write(tournamentTestFile, testFileContents);
                 }
             }

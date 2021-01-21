@@ -11,7 +11,7 @@ namespace MTGOArchetypeParser.Tests.Updater
     {
         public static TournamentKeys GenerateTournamentKeys(ArchetypeMeta meta, Tournament tournament)
         {
-            string metaName = meta.GetType().Name;
+            string metaName = meta.Name;
             string metaID = $"meta_{meta.StartDate.ToString("yyyy_MM_dd")}_{metaName.ToLower()}";
 
             // Destination for sample data
@@ -38,11 +38,11 @@ namespace MTGOArchetypeParser.Tests.Updater
             if (detectionResult.Matches.Length == 1)
             {
                 var detected = detectionResult.Matches.First();
-                archetypeID = detected.Archetype.GetType().Name;
+                archetypeID = detected.Archetype.Name;
                 archetypeName = detected.Archetype.GetName(detectionResult.Color);
                 if (detected.Variant != null)
                 {
-                    variantID = detected.Variant.GetType().Name;
+                    variantID = detected.Variant.Name;
                     archetypeName = detected.Variant.GetName(detectionResult.Color);
                 }
             }

@@ -9,13 +9,13 @@ namespace MTGOArchetypeParser.Model
 {
     public abstract class Archetype
     {
-        public string Name { get { return this.ToString(); } }
+        public string Name { get; set; }
 
         protected bool IncludeColorInName { get; set; }
 
         public string GetName(ArchetypeColor color)
         {
-            string name = this.GetType().Name.Replace("Generic", "");
+            string name = this.Name.Replace("Generic", "");
 
             if (IncludeColorInName)
             {
@@ -31,7 +31,7 @@ namespace MTGOArchetypeParser.Model
 
         public override string ToString()
         {
-            return this.GetType().Name;
+            return this.Name;
         }
 
         private string GetColorName(ArchetypeColor color)

@@ -9,8 +9,7 @@ namespace MTGOArchetypeParser.Reports.App
 {
     public static class Loader
     {
-        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.Modern.Loader.GetFormat();
-        public static DataRecord[] GetRecords(string cacheFolder, DateTime startDate)
+        public static DataRecord[] GetRecords(string cacheFolder, ArchetypeFormat format, DateTime startDate)
         {
             Tournament[] tournaments = TournamentLoader.GetTournamentsByDate(cacheFolder, startDate, n => n.Contains("Modern") && !n.Contains("League")).ToArray();
 
@@ -18,16 +17,16 @@ namespace MTGOArchetypeParser.Reports.App
 
             foreach (var tournament in tournaments)
             {
-                ArchetypeMeta meta = _modern.Metas.Last(m => m.StartDate <= tournament.Decks.First().Date);
+                ArchetypeMeta meta = format.Metas.Last(m => m.StartDate <= tournament.Decks.First().Date);
                 DateTime metaWeekReferenceDate = GetMetaWeekReferenceDate(meta.StartDate);
 
-                string metaID = meta.GetType().Name;
+                string metaID = meta.Name;
 
                 int weekID = ((int)Math.Floor((tournament.Decks.First().Date.Value - metaWeekReferenceDate).Days / 7.0)) + 1;
 
                 for (int i = 0; i < tournament.Decks.Length; i++)
                 {
-                    var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), _modern);
+                    var detectionResult = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), format);
 
                     string colorID = detectionResult.Color.ToString();
                     string companionID = detectionResult.Companion == null ? "" : detectionResult.Companion.Value.ToString();

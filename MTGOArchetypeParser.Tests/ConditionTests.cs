@@ -4,6 +4,7 @@ using MTGOArchetypeParser.Model;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -11,7 +12,7 @@ namespace MTGOArchetypeParser.Tests
 {
     public class ConditionTests
     {
-        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.Modern.Loader.GetFormat();
+        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.FromJson.Loader.GetFormat(new DirectoryInfo(@"..\..\..\..\MTGOArchetypeParserData\Formats").FullName, "Modern");
 
         [Test]
         public void InMainboard()

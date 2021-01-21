@@ -12,15 +12,13 @@ namespace MTGOArchetypeParser.Tests.Updater
 {
     public static class CodeGenerator
     {
-        static ArchetypeFormat _modern = MTGOArchetypeParser.Formats.Modern.Loader.GetFormat();
-
-        public static string GenerateSummary(Tournament tournament)
+        public static string GenerateSummary(Tournament tournament, ArchetypeFormat modernFormat)
         {
             StringBuilder summary = new StringBuilder();
 
             for (int i = 0; i < tournament.Decks.Length; i++)
             {
-                var result = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), _modern);
+                var result = ArchetypeAnalyzer.Detect(tournament.Decks[i].Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), tournament.Decks[i].Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), modernFormat);
 
                 int position = i + 1;
                 string player = tournament.Decks[i].Player;
