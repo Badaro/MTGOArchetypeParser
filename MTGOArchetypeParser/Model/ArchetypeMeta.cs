@@ -6,6 +6,7 @@ namespace MTGOArchetypeParser.Model
 {
     public class ArchetypeMeta
     {
+        public string Name { get; set; }
         public DateTime StartDate { get; set; }
     }
 }

@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGOArchetypeParser.Data", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGOArchetypeParser.Formats.Modern", "MTGOArchetypeParser.Formats.Modern\MTGOArchetypeParser.Formats.Modern.csproj", "{3D400F84-946D-4341-9316-F2ADCA2C5221}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGOArchetypeParser.Migrator.App", "MTGOArchetypeParser.Migrator.App\MTGOArchetypeParser.Migrator.App.csproj", "{620781CD-62EC-4765-B59F-24CA85BA1930}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGOArchetypeParser.Formats.FromJson", "MTGOArchetypeParser.Formats.FromJson\MTGOArchetypeParser.Formats.FromJson.csproj", "{3725D26E-81DB-440D-82D2-C168915B4183}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{3D400F84-946D-4341-9316-F2ADCA2C5221}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D400F84-946D-4341-9316-F2ADCA2C5221}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D400F84-946D-4341-9316-F2ADCA2C5221}.Release|Any CPU.Build.0 = Release|Any CPU
-		{620781CD-62EC-4765-B59F-24CA85BA1930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{620781CD-62EC-4765-B59F-24CA85BA1930}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{620781CD-62EC-4765-B59F-24CA85BA1930}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{620781CD-62EC-4765-B59F-24CA85BA1930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3725D26E-81DB-440D-82D2-C168915B4183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3725D26E-81DB-440D-82D2-C168915B4183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3725D26E-81DB-440D-82D2-C168915B4183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3725D26E-81DB-440D-82D2-C168915B4183}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

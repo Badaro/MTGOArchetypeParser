@@ -151,7 +151,7 @@ namespace MTGOArchetypeParser.Tests
             {
                 Conditions = new ArchetypeCondition[]
                 {
-                    new ArchetypeCondition() { Type= condition, Cards = archetypeCards, Color = archetypeColor }
+                    new ArchetypeCondition() { Type= condition, Cards = archetypeCards }
                 }
             };
 
@@ -189,7 +189,7 @@ namespace MTGOArchetypeParser.Tests
             {
                 Conditions = new ArchetypeCondition[]
                 {
-                    new ArchetypeCondition() { Type= condition, Cards = archetypeCards, Color = archetypeColor }
+                    new ArchetypeCondition() { Type= condition, Cards = archetypeCards }
                 }
             };
 
