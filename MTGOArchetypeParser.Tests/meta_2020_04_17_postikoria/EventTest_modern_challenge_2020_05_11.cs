@@ -19,7 +19,7 @@ using System.Text;
 #08 KIMCHIMAN: Boros Prowess (WR, Lurrus)
 #09 Never_DidntHaveIt: Jund Shadow (BRG, Lurrus)
 #10 audio336: Boros Prowess (WR, Lurrus)
-#11 Gobern: Sultai Reclamation (UBG)
+#11 Gobern: Reclamation (UBG)
 #12 12Days: Gruul Midrange (RG, Obosh)
 #13 zarbo: Jund Midrange (BRG, Lurrus)
 #14 SebastianStueckl: Green Tron (RG, Jegantha)
@@ -178,7 +178,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck11_Gobern_SultaiReclamation_UBG()
+        public void Deck11_Gobern_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-11",10),

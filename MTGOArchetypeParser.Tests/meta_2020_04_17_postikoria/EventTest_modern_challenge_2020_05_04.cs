@@ -31,7 +31,7 @@ using System.Text;
 #20 ImmanuelKantrolGod: Bant Control (WUG)
 #21 ziofrancone: Amulet Titan (UG)
 #22 a_p_s: Burn (WR, Lurrus)
-#23 Shorak123: Sultai Reclamation (UBG)
+#23 Shorak123: Reclamation (UBG)
 #24 ZYURYO: WURG Control (WURG, Yorion)
 #25 MrZarukai: Gruul Midrange (RG, Obosh)
 #26 azatoyellow: Izzet Control (UR, Lutri)
@@ -334,7 +334,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck23_Shorak123_SultaiReclamation_UBG()
+        public void Deck23_Shorak123_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-04",22),

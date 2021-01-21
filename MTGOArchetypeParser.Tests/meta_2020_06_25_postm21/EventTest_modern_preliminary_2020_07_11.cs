@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Shorak123: Sultai Reclamation (UBG)
+#01 Shorak123: Reclamation (UBG)
 #02 Kazuga: Sultai Control (UBG)
 #03 yuurari_yuko: Bant Control (WUG, Yorion)
 #04 sff_mtg: Green Tron (G)
@@ -26,7 +26,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
     public class EventTest_modern_preliminary_2020_07_11 : EventTest
     {
         [Test]
-        public void Deck01_Shorak123_SultaiReclamation_UBG()
+        public void Deck01_Shorak123_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-11",0),

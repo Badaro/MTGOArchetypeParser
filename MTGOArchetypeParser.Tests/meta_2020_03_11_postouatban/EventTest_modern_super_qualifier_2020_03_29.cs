@@ -20,7 +20,7 @@ using System.Text;
 #09 jled: UBRG Shadow (UBRG)
 #10 katoriarch123: Bant Control (WUG)
 #11 scipios: Dredge (BRG)
-#12 Namkrew___Lacsap: Simic Reclamation (UG)
+#12 Namkrew___Lacsap: Reclamation (UG)
 #13 yPrincipe: Eldrazi Tron (C)
 #14 musasabi: Jund Midrange (BRG)
 #15 Darkiundsa: Bant Control (WUG)
@@ -191,7 +191,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck12_NamkrewLacsap_SimicReclamation_UG()
+        public void Deck12_NamkrewLacsap_Reclamation_UG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-03-29",11),

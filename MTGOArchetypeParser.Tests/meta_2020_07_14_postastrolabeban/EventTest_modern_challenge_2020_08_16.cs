@@ -20,7 +20,7 @@ using System.Text;
 #09 sinforlife54: Mono White Taxes (W)
 #10 otakkun: Green Tron (G)
 #11 uaedoliB: Humans (WUBRG)
-#12 nick4567: Temur Reclamation (URG)
+#12 nick4567: Reclamation (URG)
 #13 Laplasjan: Devoted (WG, Lurrus)
 #14 Sodeq: Ad Nauseam (WUB)
 #15 asnook: Jund Midrange (BRG)
@@ -36,10 +36,10 @@ using System.Text;
 #25 Storytime: Devoted (WUG)
 #26 Xuxa: Dredge (BRG)
 #27 NorrathDecay: Burn (WR)
-#28 ConnorM426: Temur Reclamation (URG)
+#28 ConnorM426: Reclamation (URG)
 #29 musasabi: Amulet Titan (UG)
 #30 NHA37: Eldrazi Tron (C)
-#31 BSK_hercules: Temur Reclamation (URG)
+#31 BSK_hercules: Reclamation (URG)
 #32 kthanakit26: Burn (WR)
 */
 
@@ -191,7 +191,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck12_nick4567_TemurReclamation_URG()
+        public void Deck12_nick4567_Reclamation_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",11),
@@ -399,7 +399,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck28_ConnorM426_TemurReclamation_URG()
+        public void Deck28_ConnorM426_Reclamation_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",27),
@@ -438,7 +438,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck31_BSKhercules_TemurReclamation_URG()
+        public void Deck31_BSKhercules_Reclamation_URG()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",30),

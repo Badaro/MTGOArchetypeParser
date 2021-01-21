@@ -13,7 +13,7 @@ using System.Text;
 #02 kiko: Azorius Taxes (WU, Yorion)
 #03 medvedev: Dimir Control (UB)
 #04 Scabs: Heliod Combo (WR)
-#05 Lavaridge: Temur Reclamation (URG)
+#05 Lavaridge: Reclamation (URG)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -73,7 +73,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_Lavaridge_TemurReclamation_URG()
+        public void Deck05_Lavaridge_Reclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-26",4),

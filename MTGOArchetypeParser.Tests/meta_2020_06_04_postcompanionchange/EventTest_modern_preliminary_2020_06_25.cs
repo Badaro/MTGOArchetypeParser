@@ -21,7 +21,7 @@ using System.Text;
 #10 MZBlazer: Sultai Control (UBG)
 #11 DreamsOfAshiok: Eldrazi Tron (C)
 #12 Mcleskey: Burn (WR)
-#13 killersuv: Sultai Reclamation (UBG)
+#13 killersuv: Reclamation (UBG)
 #14 Papelucho10: Infect (UG)
 #15 tkphi: Burn (WR)
 #16 eggybenny: Eldrazi Tron (C)
@@ -188,7 +188,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck13_killersuv_SultaiReclamation_UBG()
+        public void Deck13_killersuv_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-25",12),

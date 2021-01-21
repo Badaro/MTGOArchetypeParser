@@ -11,13 +11,13 @@ using System.Text;
 /*
 #01 Kazuga: Bant Control (WUG)
 #02 _Batutinha_: Bant Control (WUG)
-#03 Violent_Outburst: Temur Reclamation (URG)
+#03 Violent_Outburst: Reclamation (URG)
 #04 felider: Gruul Midrange (RG)
 #05 selbstdenker: Amulet Titan (UG)
 #06 Fnoop: Neobrand (UG)
 #07 Savok: Blue Tron (U)
 #08 coert: Burn (WR)
-#09 fradev1988: Simic Reclamation (UG)
+#09 fradev1988: Reclamation (UG)
 #10 David1987: Niv To Light (WUBRG)
 #11 hwagner43: Ad Nauseam (WUB)
 #12 DreamsOfAshiok: Eldrazi Tron (C)
@@ -60,7 +60,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck03_ViolentOutburst_TemurReclamation_URG()
+        public void Deck03_ViolentOutburst_Reclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17",2),
@@ -138,7 +138,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck09_fradev1988_SimicReclamation_UG()
+        public void Deck09_fradev1988_Reclamation_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17",8),

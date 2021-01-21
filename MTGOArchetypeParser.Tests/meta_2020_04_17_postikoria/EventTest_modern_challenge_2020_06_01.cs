@@ -15,7 +15,7 @@ using System.Text;
 #04 Traft: Ad Nauseam (WUB)
 #05 Diem4x: Jund Midrange (BRG, Lurrus)
 #06 mashmalovsky: Hammer Time (WR, Lurrus)
-#07 AutumnLily: Sultai Reclamation (UBG, Yorion)
+#07 AutumnLily: Reclamation (UBG, Yorion)
 #08 Metcalf23: Boros Taxes (WR, Lurrus)
 #09 Toastxp: Jund Shadow (BRG, Lurrus)
 #10 MATTHEWFOULKES: Jund Prowess (BRG, Lurrus)
@@ -126,7 +126,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck07_AutumnLily_SultaiReclamation_UBG_Yorion()
+        public void Deck07_AutumnLily_Reclamation_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-01",6),

@@ -16,7 +16,7 @@ using System.Text;
 #05 pokerswizard: Boros Prowess (WR, Lurrus)
 #06 aspiringspike: Azorius Control (WU, Kaheera)
 #07 Wizard_Of_Jack: Jund Midrange (BRG, Lurrus)
-#08 CaptainFarbosa: Sultai Reclamation (UBG)
+#08 CaptainFarbosa: Reclamation (UBG)
 #09 Karolmo: Titan Shift (RG)
 #10 Doni_Dominaria: Gruul Midrange (RG, Obosh)
 #11 Do0mSwitch: Azorius Control (WU)
@@ -139,7 +139,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck08_CaptainFarbosa_SultaiReclamation_UBG()
+        public void Deck08_CaptainFarbosa_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-10",7),

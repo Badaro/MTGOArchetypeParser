@@ -36,7 +36,7 @@ using System.Text;
 #25 Alan07: Oops All Spells (WUBG)
 #26 hodortimebaby: WURG Control (WURG)
 #27 HummingBard: Izzet Control (UR)
-#28 1yo2yo: Sultai Reclamation (UBG)
+#28 1yo2yo: Reclamation (UBG)
 #29 BaronOfBacon: Shadow Prowess (BR, Lurrus)
 #30 SuperCow12653: Heliod Combo (WG)
 #31 Xwhale: Reclaimer Titan (WRG)
@@ -399,7 +399,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck28_1yo2yo_SultaiReclamation_UBG()
+        public void Deck28_1yo2yo_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2021-01-17",27),

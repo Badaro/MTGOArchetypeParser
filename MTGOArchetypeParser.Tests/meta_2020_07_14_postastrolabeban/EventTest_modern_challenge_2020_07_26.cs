@@ -11,7 +11,7 @@ using System.Text;
 /*
 #01 Mateusf34: Eldrazi Tron (C)
 #02 Shazzam: Bant Control (WUG)
-#03 Shorak123: Sultai Reclamation (UBG)
+#03 Shorak123: Reclamation (UBG)
 #04 mariogomes097: Grixis Shadow (UBR)
 #05 SebastianStueckl: Dredge (BRG)
 #06 hoveydw: Jund Shadow (BRG)
@@ -74,7 +74,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_Shorak123_SultaiReclamation_UBG()
+        public void Deck03_Shorak123_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",2),

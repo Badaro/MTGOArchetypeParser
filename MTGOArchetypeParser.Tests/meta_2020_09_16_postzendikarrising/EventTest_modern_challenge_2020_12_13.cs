@@ -25,7 +25,7 @@ using System.Text;
 #14 Lord_of_Puntlantis: Electro Balance (UR)
 #15 KlashBack: Izzet Control (UR)
 #16 DaniMRebel: Shadow Prowess (BR, Lurrus)
-#17 pbarrrgh: Sultai Reclamation (UBG)
+#17 pbarrrgh: Reclamation (UBG)
 #18 Tweedel: Obosh Aggro (R, Obosh)
 #19 Vivitrix: Dredge (BRG)
 #20 SoulStrong: Rogues (UB, Lurrus)
@@ -256,7 +256,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck17_pbarrrgh_SultaiReclamation_UBG()
+        public void Deck17_pbarrrgh_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-13",16),

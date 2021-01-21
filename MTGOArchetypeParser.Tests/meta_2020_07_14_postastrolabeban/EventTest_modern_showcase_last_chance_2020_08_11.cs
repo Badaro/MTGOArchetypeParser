@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 mindcandy: Temur Reclamation (URG)
+#01 mindcandy: Reclamation (URG)
 #02 eXavie: Rakdos Prowess (BR, Lurrus)
 #03 Snusnumrick: Eldrazi Tron (C)
 #04 __matsugan: Neobrand (UG)
@@ -32,7 +32,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_showcase_last_chance_2020_08_11 : EventTest
     {
         [Test]
-        public void Deck01_mindcandy_TemurReclamation_URG()
+        public void Deck01_mindcandy_Reclamation_URG()
         {
             Test(
                 GetDeck("modern-showcase-last-chance-2020-08-11",0),

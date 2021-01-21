@@ -18,7 +18,7 @@ using System.Text;
 #07 RAINkratos: Hammer Time (W)
 #08 skinnyvin: Green Tron (G)
 #09 Trid0n: Humans (WUBRG)
-#10 moyashi0904: Sultai Reclamation (UBG)
+#10 moyashi0904: Reclamation (UBG)
 #11 BERNASTORRES: Bogles (WG, Lurrus)
 */
 
@@ -144,7 +144,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck10_moyashi0904_SultaiReclamation_UBG()
+        public void Deck10_moyashi0904_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-09",9),

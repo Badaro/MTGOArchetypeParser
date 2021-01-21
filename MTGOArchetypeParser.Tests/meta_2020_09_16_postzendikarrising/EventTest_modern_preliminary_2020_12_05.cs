@@ -26,7 +26,7 @@ using System.Text;
 #15 Biednarccio: Hammer Time (W, Lurrus)
 #16 Xenowan: Ascendancy Combo (WUR, Jegantha)
 #17 Lord_of_Puntlantis: Izzet Control (UR)
-#18 conormc530: Sultai Reclamation (UBG)
+#18 conormc530: Reclamation (UBG)
 #19 CrusherBotBG: Hammer Time (W, Lurrus)
 */
 
@@ -256,7 +256,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck18_conormc530_SultaiReclamation_UBG()
+        public void Deck18_conormc530_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-12-05",17),

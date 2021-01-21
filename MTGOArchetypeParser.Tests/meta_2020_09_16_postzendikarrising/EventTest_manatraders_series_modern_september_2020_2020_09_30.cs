@@ -123,7 +123,7 @@ using System.Text;
 #112 facematt: Domain Zoo (WUBRG, Jegantha)
 #113 ThatAsianGuy8: Gruul Midrange (RG)
 #114 ACG88: Reclaimer Titan (WRG)
-#115 Koptek: Temur Reclamation (URG)
+#115 Koptek: Reclamation (URG)
 #116 Stompy45: Obosh Aggro (R, Obosh)
 #117 salvite: Temur Control (URG)
 #118 ary31415: Orzhov Taxes (WB)
@@ -132,7 +132,7 @@ using System.Text;
 #121 ShutoShotokan: Humans (WUBRG)
 #122 deftjad: Spirits (WU)
 #123 PieGonti: Humans (WUBRG)
-#124 DylansHyper: Sultai Reclamation (UBG)
+#124 DylansHyper: Reclamation (UBG)
 #125 PeanutBrittle: Humans (WUBRG)
 #126 Deburca: Jeskai Control (WUR)
 #127 Nilsfit: Sultai Control (UBG)
@@ -203,7 +203,7 @@ using System.Text;
 #192 rigorage: Gruul Midrange (RG)
 #193 Searzist: Mill (UB, Lurrus)
 #194 hplovely: Titan Shift (RG)
-#195 jkirchnerortiz: Sultai Reclamation (UBG)
+#195 jkirchnerortiz: Reclamation (UBG)
 #196 didoguidotti1: WURG Control (WURG)
 #197 ziofrancone: Izzet Prowess (UR)
 #198 mgoat: Grixis Shadow (UBR)
@@ -1721,7 +1721,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck115_Koptek_TemurReclamation_URG()
+        public void Deck115_Koptek_Reclamation_URG()
         {
             Test(
                 GetDeck("manatraders-series-modern-september-2020-2020-09-30",114),
@@ -1838,7 +1838,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck124_DylansHyper_SultaiReclamation_UBG()
+        public void Deck124_DylansHyper_Reclamation_UBG()
         {
             Test(
                 GetDeck("manatraders-series-modern-september-2020-2020-09-30",123),
@@ -2761,7 +2761,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck195_jkirchnerortiz_SultaiReclamation_UBG()
+        public void Deck195_jkirchnerortiz_Reclamation_UBG()
         {
             Test(
                 GetDeck("manatraders-series-modern-september-2020-2020-09-30",194),

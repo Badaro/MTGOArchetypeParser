@@ -15,7 +15,7 @@ using System.Text;
 #04 BReal2: Mardu Midrange (WBR)
 #05 Misplacedginger: Bant Control (WUG)
 #06 Toastxp: Uroza (URG)
-#07 cftsoc3: Simic Reclamation (UG)
+#07 cftsoc3: Reclamation (UG)
 #08 exoticherman: Infect (UG)
 #09 Gigy: Gruul Midrange (RG)
 #10 twinlesstwin: Scapeshift (UBRG)
@@ -154,7 +154,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck07_cftsoc3_SimicReclamation_UG()
+        public void Deck07_cftsoc3_Reclamation_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-11",6),

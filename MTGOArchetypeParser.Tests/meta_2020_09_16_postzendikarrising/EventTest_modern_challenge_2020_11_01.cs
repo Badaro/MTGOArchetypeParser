@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 6argamel: Mono White Taxes (W)
-#02 pbarrrgh: Sultai Reclamation (UBG)
+#02 pbarrrgh: Reclamation (UBG)
 #03 bamzing: WURG Control (WURG)
 #04 maxbv: Mono White Taxes (W)
 #05 AlpInco: Oops All Spells (WUBRG)
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_pbarrrgh_SultaiReclamation_UBG()
+        public void Deck02_pbarrrgh_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-01",1),

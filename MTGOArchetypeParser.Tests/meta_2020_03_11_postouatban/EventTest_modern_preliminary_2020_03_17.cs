@@ -68,7 +68,7 @@ using System.Text;
 #57 Kaidosan: Green Tron (G)
 #58 Mateusf34: Eldrazi Tron (C)
 #59 katoriarch123: Bant Control (WUG)
-#60 Maldreck: Sultai Reclamation (UBG)
+#60 Maldreck: Reclamation (UBG)
 #61 snapcaster____mage: Eldrazi Tron (C)
 #62 max_9: Green Tron (G)
 #63 i_b_TRUE: Jund Midrange (BRG)
@@ -860,7 +860,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck60_Maldreck_SultaiReclamation_UBG()
+        public void Deck60_Maldreck_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-17",59),

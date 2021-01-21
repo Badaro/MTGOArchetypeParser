@@ -24,16 +24,16 @@ using System.Text;
 #13 Xwhale: Eldrazi Tron (C)
 #14 Capitano_CL: Dredge (UBRG)
 #15 DreamsOfAshiok: Eldrazi Tron (C)
-#16 StoreShop216: Simic Reclamation (UG)
+#16 StoreShop216: Reclamation (UG)
 #17 SrTortinha: Gruul Midrange (RG)
 #18 _Antoniou_: Orzhov Shadow (WB)
 #19 snapcaster____mage: Gruul Midrange (RG)
-#20 Caleb_Yetman: Simic Reclamation (UG)
+#20 Caleb_Yetman: Reclamation (UG)
 #21 twinlesstwin: Humans (WUBRG)
 #22 Dragonjonz: Grixis Shadow (UBR)
 #23 TradewindRider: Bant Control (WUG)
 #24 Icteridae: Devoted (WUG)
-#25 pbarrrgh: Simic Reclamation (UG)
+#25 pbarrrgh: Reclamation (UG)
 #26 fgfonseca182: Gruul Midrange (RG)
 #27 kthanakit26: Burn (WR)
 #28 Ma7x: Niv To Light (WUBRG)
@@ -264,7 +264,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck16_StoreShop216_SimicReclamation_UG()
+        public void Deck16_StoreShop216_Reclamation_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",15),
@@ -316,7 +316,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck20_CalebYetman_SimicReclamation_UG()
+        public void Deck20_CalebYetman_Reclamation_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",19),
@@ -381,7 +381,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck25_pbarrrgh_SimicReclamation_UG()
+        public void Deck25_pbarrrgh_Reclamation_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",24),

@@ -16,7 +16,7 @@ using System.Text;
 #05 SKK: Belcher (RG)
 #06 Bedell: Shadow Prowess (BR, Lurrus)
 #07 pokerswizard: Gruul Midrange (RG)
-#08 SpikeYou: Sultai Reclamation (UBG)
+#08 SpikeYou: Reclamation (UBG)
 #09 swana422: Spirits (WUG)
 #10 Fatcaster_Mage: Temur Control (URG)
 #11 MZBlazer: Shadow Prowess (BR, Lurrus)
@@ -119,7 +119,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_SpikeYou_SultaiReclamation_UBG()
+        public void Deck08_SpikeYou_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-24",7),

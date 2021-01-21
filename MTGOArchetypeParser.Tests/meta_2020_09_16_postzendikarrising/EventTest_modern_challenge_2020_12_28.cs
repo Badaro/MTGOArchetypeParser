@@ -35,7 +35,7 @@ using System.Text;
 #24 MaxCapone: Oops All Spells (WUBG)
 #25 nazart: Heliod Combo (WG)
 #26 fabee1: Izzet Prowess (UR)
-#27 SoulStrong: Sultai Reclamation (UBG)
+#27 SoulStrong: Reclamation (UBG)
 #28 Pintogeddon2: Belcher (URG)
 #29 patheus_84: Belcher (URG)
 #30 MarioBBrega: Shadow Prowess (BRG, Lurrus)
@@ -386,7 +386,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck27_SoulStrong_SultaiReclamation_UBG()
+        public void Deck27_SoulStrong_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-28",26),

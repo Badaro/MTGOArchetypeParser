@@ -13,7 +13,7 @@ using System.Text;
 #02 taruto1212: WURG Control (WURG)
 #03 Rooney56: Shadow Prowess (BR, Lurrus)
 #04 Gigy: Temur Midrange (URG)
-#05 BSK_hercules: Temur Reclamation (URG)
+#05 BSK_hercules: Reclamation (URG)
 #06 Tixis: Omnath Saheeli (WURG, Yorion)
 */
 
@@ -74,7 +74,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck05_BSKhercules_TemurReclamation_URG()
+        public void Deck05_BSKhercules_Reclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2021-01-08",4),

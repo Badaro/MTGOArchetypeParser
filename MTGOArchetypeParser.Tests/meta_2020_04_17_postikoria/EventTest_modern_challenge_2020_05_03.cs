@@ -10,7 +10,7 @@ using System.Text;
 
 /*
 #01 pepeteam: Amulet Titan (URG)
-#02 Shorak123: Sultai Reclamation (UBG)
+#02 Shorak123: Reclamation (UBG)
 #03 Laplasjan: Devoted (WG, Lurrus)
 #04 Edel: Abzan Midrange (WBG, Lurrus)
 #05 Callad0: Primeval Titan (UG)
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck02_Shorak123_SultaiReclamation_UBG()
+        public void Deck02_Shorak123_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-03",1),

@@ -14,7 +14,7 @@ using System.Text;
 #03 Rooney56: Bant Control (WUG)
 #04 trader08111: Mardu Prowess (WBR, Lurrus)
 #05 aManatease: Izzet Prowess (UR)
-#06 Lavaridge: Temur Reclamation (URG)
+#06 Lavaridge: Reclamation (URG)
 #07 JV_7777: Eldrazi Tron (C)
 #08 ZYX_Jerry: Burn (WR, Lurrus)
 #09 ImmanuelKantrolGod: Bant Control (WUG)
@@ -94,7 +94,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck06_Lavaridge_TemurReclamation_URG()
+        public void Deck06_Lavaridge_Reclamation_URG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-19",5),

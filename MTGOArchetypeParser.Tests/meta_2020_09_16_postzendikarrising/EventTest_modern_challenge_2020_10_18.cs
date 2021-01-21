@@ -32,7 +32,7 @@ using System.Text;
 #21 POOBMASTER: Shadow Prowess (BR, Lurrus)
 #22 daibloXSC: Jeskai Control (WUR)
 #23 NuBlkAu: Rakdos Shadow (BR)
-#24 pbarrrgh: Sultai Reclamation (UBG)
+#24 pbarrrgh: Reclamation (UBG)
 #25 eclipse4343: Azorius Control (WU)
 #26 Moniz0801: Amulet Titan (RG)
 #27 yamakiller: Obosh Aggro (R, Obosh)
@@ -347,7 +347,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck24_pbarrrgh_SultaiReclamation_UBG()
+        public void Deck24_pbarrrgh_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",23),

@@ -15,7 +15,7 @@ using System.Text;
 #04 Gerardo94: WURG Control (WURG)
 #05 coert: Heliod Combo (WG)
 #06 VilaCelta: Ad Nauseam (WUB)
-#07 GobFTW: Temur Reclamation (URG)
+#07 GobFTW: Reclamation (URG)
 #08 Harry13: Sultai Control (UBG)
 #09 Lord_of_puntlantis: Electro Balance (UR)
 #10 Theo_Jung: Heliod Combo (WG)
@@ -392,7 +392,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck07_GobFTW_TemurReclamation_URG()
+        public void Deck07_GobFTW_Reclamation_URG()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2020-12-31",6),

@@ -28,7 +28,7 @@ using System.Text;
 #17 MayoDominaria: Bushwhacker Zoo (WRG)
 #18 BaronOfBacon: Mono Red Prowess (R)
 #19 Graciasportanto: Uroza (URG)
-#20 twinlesstwin: Simic Reclamation (UG)
+#20 twinlesstwin: Reclamation (UG)
 #21 Do0mSwitch: Bant Control (WUG)
 #22 bstee: Dredge (BRG)
 #23 NAP_DARKMAGE_MJM: Humans (WUBRG)
@@ -295,7 +295,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck20_twinlesstwin_SimicReclamation_UG()
+        public void Deck20_twinlesstwin_Reclamation_UG()
         {
             Test(
                 GetDeck("modern-players-tour-qualifier-2020-03-30",19),

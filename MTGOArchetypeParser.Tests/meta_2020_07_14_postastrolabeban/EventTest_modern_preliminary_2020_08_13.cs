@@ -22,7 +22,7 @@ using System.Text;
 #11 pootisgodsamongus: Crabvine (UBG)
 #12 Ryan100495: Dredge (WBRG)
 #13 komattaman: Gruul Midrange (RG)
-#14 ConnorM426: Simic Reclamation (UG)
+#14 ConnorM426: Reclamation (UG)
 #15 1plus1equals3: Green Tron (G)
 */
 
@@ -200,7 +200,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck14_ConnorM426_SimicReclamation_UG()
+        public void Deck14_ConnorM426_Reclamation_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-13",13),

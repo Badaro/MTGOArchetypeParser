@@ -18,11 +18,11 @@ using System.Text;
 #07 TwistedWombat: WURG Control (WURG)
 #08 Comebackkid: Shadow Prowess (BR, Lurrus)
 #09 TwitchAwP: Ad Nauseam (WUB)
-#10 Snapcaster-Bolt: Simic Reclamation (UG)
+#10 Snapcaster-Bolt: Reclamation (UG)
 #11 HummingBard: Blue Tron (U)
 #12 SknerusMcKwacz: WURG Control (WURG)
 #13 thedoc96: Shadow Prowess (BR, Lurrus)
-#14 Lavaridge: Temur Reclamation (URG)
+#14 Lavaridge: Reclamation (URG)
 #15 Gifted: Jund Shadow (BRG, Lurrus)
 #16 hugofreitas1: Gifts Storm (UR)
 #17 SourceOdin: Reclaimer Titan (WG)
@@ -165,7 +165,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_SnapcasterBolt_SimicReclamation_UG()
+        public void Deck10_SnapcasterBolt_Reclamation_UG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-12-21",9),
@@ -217,7 +217,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_Lavaridge_TemurReclamation_URG()
+        public void Deck14_Lavaridge_Reclamation_URG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-12-21",13),

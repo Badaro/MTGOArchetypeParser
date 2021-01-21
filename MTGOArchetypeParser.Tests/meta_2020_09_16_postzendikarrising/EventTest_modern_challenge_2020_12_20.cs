@@ -29,7 +29,7 @@ using System.Text;
 #18 nazart: Heliod Combo (WRG)
 #19 thekingofnone: Green Tron (G, Jegantha)
 #20 elquinielas: Burn (WBRG)
-#21 mark_68: Sultai Reclamation (UBG, Yorion)
+#21 mark_68: Reclamation (UBG, Yorion)
 #22 fabee1: Boros Taxes (WR)
 #23 Kuhb: Hammer Time (WB, Lurrus)
 #24 FerMTG: Heliod Combo (WG)
@@ -308,7 +308,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck21_mark68_SultaiReclamation_UBG_Yorion()
+        public void Deck21_mark68_Reclamation_UBG_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-20",20),

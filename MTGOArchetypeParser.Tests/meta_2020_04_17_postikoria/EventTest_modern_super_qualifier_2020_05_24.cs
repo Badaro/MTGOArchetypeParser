@@ -23,7 +23,7 @@ using System.Text;
 #12 Parrit: Hardened Scales (BG, Lurrus)
 #13 Fabrice_K: Eldrazi Tron (C)
 #14 Wartico1: Mardu Prowess (WBR, Lurrus)
-#15 Vasoi2323: Sultai Reclamation (UBG)
+#15 Vasoi2323: Reclamation (UBG)
 #16 gottelicious: Azorius Control (WU, Kaheera)
 #17 Larry11: Gruul Midrange (RG, Obosh)
 #18 ack_s: Hammer Time (WR, Lurrus)
@@ -230,7 +230,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck15_Vasoi2323_SultaiReclamation_UBG()
+        public void Deck15_Vasoi2323_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-24",14),

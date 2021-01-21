@@ -24,7 +24,7 @@ using System.Text;
 #13 Bedell: Reclaimer Titan (WRG)
 #14 joetru: Niv To Light (WUBRG)
 #15 weishengzhishabi: Sultai Control (UBG)
-#16 Gobern: UBRG Reclamation (UBRG)
+#16 Gobern: Reclamation (UBRG)
 #17 Kaizer_Kahn: Obosh Aggro (R, Obosh)
 #18 HouseOfManaMTG: Amulet Titan (RG)
 #19 sendoh007: Gruul Midrange (RG)
@@ -243,7 +243,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck16_Gobern_UBRGReclamation_UBRG()
+        public void Deck16_Gobern_Reclamation_UBRG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-11-02",15),

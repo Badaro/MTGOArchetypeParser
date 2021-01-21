@@ -38,7 +38,7 @@ using System.Text;
 #27 Kuhb: Devoted (WG, Lurrus)
 #28 MoxSquirrel: Rakdos Prowess (BR, Lurrus)
 #29 aspiringspike: Azorius Control (WU)
-#30 ht991122: Temur Reclamation (URG)
+#30 ht991122: Reclamation (URG)
 #31 Kurusu: Kiki Chord (WRG, Yorion)
 #32 SakeIzumo: Izzet Prowess (UR)
 */
@@ -425,7 +425,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck30_ht991122_TemurReclamation_URG()
+        public void Deck30_ht991122_Reclamation_URG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-09-14",29),

@@ -15,7 +15,7 @@ using System.Text;
 #04 Laplasjan: Devoted (WG, Lurrus)
 #05 ecobaronen: Bant Control (WUG)
 #06 Larry11: Gruul Midrange (RG)
-#07 billsive: Sultai Reclamation (UBG)
+#07 billsive: Reclamation (UBG)
 #08 EdB: Goblins (BR)
 #09 Voidpaw: Jund Midrange (BRG)
 #10 RicardoMSLan: Eldrazi Tron (C)
@@ -109,7 +109,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck07_billsive_SultaiReclamation_UBG()
+        public void Deck07_billsive_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-30",6),

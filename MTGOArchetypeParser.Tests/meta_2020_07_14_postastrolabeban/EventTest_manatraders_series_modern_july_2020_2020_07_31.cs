@@ -21,7 +21,7 @@ using System.Text;
 #10 LLegend: Gruul Midrange (RG)
 #11 Caleb_Yetman: Humans (WUBRG)
 #12 Skuttlespike: Izzet Prowess (UR)
-#13 patxi: Temur Reclamation (URG)
+#13 patxi: Reclamation (URG)
 #14 RNGspecialist: Scapeshift (URG)
 #15 CNewman: Gruul Midrange (RG)
 #16 Themightylinguine: Green Tron (G)
@@ -60,7 +60,7 @@ using System.Text;
 #49 ScuttoZ: Gruul Midrange (RG)
 #50 oosunq: Jund Midrange (BRG)
 #51 alicoco: Ad Nauseam (WUBR)
-#52 Nilsfit: Sultai Reclamation (UBG)
+#52 Nilsfit: Reclamation (UBG)
 #53 crazeejakee07: Azorius Control (WU)
 #54 w1vern: Scapeshift (URG)
 #55 antonio00: Gruul Midrange (RG)
@@ -95,7 +95,7 @@ using System.Text;
 #84 Jitko: Eldrazi Tron (C)
 #85 msskinbolic: Izzet Prowess (UR)
 #86 r0cknati0n: Sultai Control (UBG)
-#87 _Batutinha_: UBRG Reclamation (UBRG)
+#87 _Batutinha_: Reclamation (UBRG)
 #88 Murager: Gruul Midrange (RG)
 #89 mdvayu2: Saheeli Combo (WUR)
 #90 EQUITES: Grixis Shadow (UBR)
@@ -122,7 +122,7 @@ using System.Text;
 #111 mistakenn: Amulet Titan (URG)
 #112 kotka: Bogles (WG)
 #113 ello_baron: Humans (WUBRG)
-#114 RandomOctopus: Temur Reclamation (URG)
+#114 RandomOctopus: Reclamation (URG)
 #115 Phill_Hellmuth: Jund Midrange (BRG)
 #116 SouthernSliver: Slivers (WUBRG)
 #117 Joshicallsmefabo: Humans (WUBRG)
@@ -163,7 +163,7 @@ using System.Text;
 #152 diem4x: Sultai Control (UBG)
 #153 thegodmikedevo: Eldrazi Tron (C)
 #154 BERNASTORRES: Jund Midrange (BRG)
-#155 AluminumMonster: Sultai Reclamation (UBG)
+#155 AluminumMonster: Reclamation (UBG)
 #156 CordoTwin: Grixis Shadow (UBR)
 #157 CRYPTIC_C4SSIE: Scapeshift (URG)
 #158 RealJoy: UBRG Shadow (UBRG)
@@ -234,7 +234,7 @@ using System.Text;
 #223 mlgb92: Goblins (BR)
 #224 qmcgarry45: Burn (WR)
 #225 Gobern: Amulet Titan (UG)
-#226 AnarchistAbe: Sultai Reclamation (UBG)
+#226 AnarchistAbe: Reclamation (UBG)
 #227 tsHunter: Sultai Control (UBG)
 #228 e_hawk77: Jund Shadow (BRG, Lurrus)
 #229 ScreenwriterNY: Ad Nauseam (WUB)
@@ -407,7 +407,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_patxi_TemurReclamation_URG()
+        public void Deck13_patxi_Reclamation_URG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",12),
@@ -914,7 +914,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck52_Nilsfit_SultaiReclamation_UBG()
+        public void Deck52_Nilsfit_Reclamation_UBG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",51),
@@ -1369,7 +1369,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck87_Batutinha_UBRGReclamation_UBRG()
+        public void Deck87_Batutinha_Reclamation_UBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",86),
@@ -1720,7 +1720,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck114_RandomOctopus_TemurReclamation_URG()
+        public void Deck114_RandomOctopus_Reclamation_URG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",113),
@@ -2253,7 +2253,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck155_AluminumMonster_SultaiReclamation_UBG()
+        public void Deck155_AluminumMonster_Reclamation_UBG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",154),
@@ -3176,7 +3176,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck226_AnarchistAbe_SultaiReclamation_UBG()
+        public void Deck226_AnarchistAbe_Reclamation_UBG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",225),

@@ -9,7 +9,6 @@ namespace MTGOArchetypeParser.Archetypes.Modern
     {
         public Reclamation()
         {
-            IncludeColorInName = true;
             Conditions = new ArchetypeCondition[]
             {
                 new ArchetypeCondition() { Type = ArchetypeConditionType.InMainboard, Cards = new string[] { "Wilderness Reclamation" } },

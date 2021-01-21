@@ -16,7 +16,7 @@ using System.Text;
 #05 GiovaniMF: Boros Prowess (WR, Lurrus)
 #06 ilidioTheBrabo157SL: Burn (WR, Lurrus)
 #07 haubidtran: Uroza (URG, Yorion)
-#08 pmc22337: Sultai Reclamation (UBG)
+#08 pmc22337: Reclamation (UBG)
 #09 AJOCHUM: Mardu Prowess (WBR, Lurrus)
 #10 Chrislampa: Gruul Midrange (RG, Obosh)
 #11 Boin: Jund Midrange (BRG, Lurrus)
@@ -139,7 +139,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck08_pmc22337_SultaiReclamation_UBG()
+        public void Deck08_pmc22337_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-10",7),

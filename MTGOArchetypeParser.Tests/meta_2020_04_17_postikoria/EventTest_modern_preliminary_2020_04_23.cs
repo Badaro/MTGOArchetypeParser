@@ -20,7 +20,7 @@ using System.Text;
 #09 MdvWin: Boros Prowess (WR, Lurrus)
 #10 s_murph729: Burn (WR, Lurrus)
 #11 AvocadoToast: Jund Midrange (BRG, Lurrus)
-#12 Store_Shop5: Simic Reclamation (UG)
+#12 Store_Shop5: Reclamation (UG)
 #13 maxxattack: Infect (UG)
 #14 cicciogire: Jund Midrange (BRG, Lurrus)
 #15 snapcaster____mage: Primeval Titan (BG)
@@ -193,7 +193,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck12_StoreShop5_SimicReclamation_UG()
+        public void Deck12_StoreShop5_Reclamation_UG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-23",11),

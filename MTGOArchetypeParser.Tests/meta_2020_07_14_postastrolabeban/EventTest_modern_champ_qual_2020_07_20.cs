@@ -16,8 +16,8 @@ using System.Text;
 #05 rastaf: Izzet Prowess (UR)
 #06 AnneLivleysD3ath: Amulet Titan (UG)
 #07 LalauWBA: Gruul Prowess (RG, Jegantha)
-#08 Lavaridge: Temur Reclamation (URG)
-#09 kogamo: Sultai Reclamation (UBG)
+#08 Lavaridge: Reclamation (URG)
+#09 kogamo: Reclamation (UBG)
 #10 dani_chad: Jund Midrange (BRG)
 #11 MinCash: Ad Nauseam (WUB)
 #12 BERNASTORRES: Goblins (BR)
@@ -139,7 +139,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck08_Lavaridge_TemurReclamation_URG()
+        public void Deck08_Lavaridge_Reclamation_URG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",7),
@@ -152,7 +152,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_kogamo_SultaiReclamation_UBG()
+        public void Deck09_kogamo_Reclamation_UBG()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-20",8),
