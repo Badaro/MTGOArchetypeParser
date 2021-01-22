@@ -21,8 +21,10 @@ namespace MTGOArchetypeParser.App
                 var settings = ExecutionSettings.FromJsonFile(_settingsFile);
                 settings.ApplyOverrides(args);
                 settings.Validate();
+                settings.Print();
 
-                Console.WriteLine("Loading format data");
+                Console.WriteLine("Starting detection engine:");
+                Console.WriteLine("* Loading format data");
                 ArchetypeFormat format = Formats.FromJson.Loader.GetFormat(settings.FormatDataFolder, settings.Format);
 
                 ArchetypeFormat referenceFormat = null;
@@ -31,7 +33,7 @@ namespace MTGOArchetypeParser.App
                     referenceFormat = Formats.FromJson.Loader.GetFormat(settings.FormatDataFolder, settings.ReferenceFormat);
                 }
 
-                Console.WriteLine("Loading tournaments");
+                Console.WriteLine("* Loading tournaments");
                 Tournament[] tournaments = settings.TournamentFolder.SelectMany(c => TournamentLoader.GetTournamentsByDate(c, format.Metas.First().StartDate.AddDays(1))).ToArray();
 
                 foreach (string filter in settings.Filter)

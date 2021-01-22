@@ -26,7 +26,7 @@ namespace MTGOArchetypeParser.App
                     Console.WriteLine("Comparison results: ");
                     foreach (var record in records)
                     {
-                        Console.WriteLine($"{record.TournamentFile}->{record.Player} changed from {record.ReferenceArchetype.Archetype} to {record.Archetype.Archetype}");
+                        Console.WriteLine($"* {record.TournamentFile} -> {record.Player} changed from {record.ReferenceArchetype.Archetype} to {record.Archetype.Archetype}");
                     }
                 }
                 else
@@ -34,7 +34,7 @@ namespace MTGOArchetypeParser.App
                     Console.WriteLine("Detection results: ");
                     foreach (var record in records)
                     {
-                        Console.WriteLine($"{record.TournamentFile}->{record.Player}->{record.Archetype.Archetype}");
+                        Console.WriteLine($"* {record.TournamentFile} -> {record.Player} -> {record.Archetype.Archetype}");
                     }
                 }
             }

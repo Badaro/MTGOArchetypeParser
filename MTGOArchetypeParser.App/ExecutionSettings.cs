@@ -100,6 +100,23 @@ namespace MTGOArchetypeParser.App
                 if (!Int32.TryParse(this.MetaWeek, out int parsed)) throw new ValidationException("Meta week must be 'current' or a number");
             }
         }
+
+        public void Print()
+        {
+            Console.WriteLine("Settings in use for this execution:");
+
+            if (this.Output != ExecutionOutput.NotSpecified) Console.WriteLine($"* {nameof(this.Output)}: {this.Output.ToString()}");
+            if (this.Action != ExecutionAction.NotSpecified) Console.WriteLine($"* {nameof(this.Action)}: {this.Action.ToString()}");
+            if (!String.IsNullOrEmpty(this.Format)) Console.WriteLine($"* {nameof(this.Format)}: {this.Format.ToString()}");
+            if (!String.IsNullOrEmpty(this.ReferenceFormat)) Console.WriteLine($"* {nameof(this.ReferenceFormat)}: {this.ReferenceFormat.ToString()}");
+            if (!String.IsNullOrEmpty(this.Meta)) Console.WriteLine($"* {nameof(this.Meta)}: {this.Meta.ToString()}");
+            if (!String.IsNullOrEmpty(this.MetaWeek)) Console.WriteLine($"* {nameof(this.MetaWeek)}: {this.MetaWeek.ToString()}");
+            if (this.Filter != null && this.Filter.Length > 0) this.Filter.ToList().ForEach(f => Console.WriteLine($"* {nameof(this.Filter)}: {f}"));
+            if (this.Exclude != null && this.Exclude.Length > 0) this.Exclude.ToList().ForEach(e => Console.WriteLine($"* {nameof(this.Exclude)}: {e}"));
+            Console.WriteLine($"* {nameof(this.MetaBreakdown)}: {this.MetaBreakdown.ToString()}");
+            if (this.TournamentFolder != null && this.TournamentFolder.Length > 0) this.TournamentFolder.ToList().ForEach(f => Console.WriteLine($"* {nameof(this.TournamentFolder)}: {f}"));
+            if (!String.IsNullOrEmpty(this.FormatDataFolder)) Console.WriteLine($"* {nameof(this.FormatDataFolder)}: {this.FormatDataFolder.ToString()}");
+        }
     }
 
     public enum ExecutionOutput
