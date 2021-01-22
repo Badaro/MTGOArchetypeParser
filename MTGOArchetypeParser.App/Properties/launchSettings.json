@@ -2,7 +2,7 @@
   "profiles": {
     "MTGOArchetypeParser.App": {
       "commandName": "Project",
-      "commandLineArgs": "console detect filter=modern-preliminary-2021-01-21"
+      "commandLineArgs": "console detect meta=PostZendikarRising metabreakdown=true"
     }
   }
 }

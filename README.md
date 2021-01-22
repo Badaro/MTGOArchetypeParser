@@ -72,6 +72,10 @@ There's a few ways to filter which events will included in the detection.
 * ```filter=text``` lets you filter to only include events that contain a certain text in the name or URL
 * ```exclude=text```lets you filter to exclude events that contain a certain text in the name or URL
 
+## meta breakdown
+
+* ```breakdown=true``` will include a short meta breakdown summary at the end of the console output
+
 ## settings.json file
 
 There's a ```settings.json``` file that you can use to set default settings so you don't have to type them all the time.

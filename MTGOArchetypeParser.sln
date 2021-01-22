@@ -15,7 +15,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGOArchetypeParser.Data", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGOArchetypeParser.Formats.FromJson", "MTGOArchetypeParser.Formats.FromJson\MTGOArchetypeParser.Formats.FromJson.csproj", "{3725D26E-81DB-440D-82D2-C168915B4183}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGOArchetypeParser.App", "MTGOArchetypeParser.App\MTGOArchetypeParser.App.csproj", "{D7D55B97-D6A8-4787-9B94-92D9CAC1E137}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGOArchetypeParser.App", "MTGOArchetypeParser.App\MTGOArchetypeParser.App.csproj", "{D7D55B97-D6A8-4787-9B94-92D9CAC1E137}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2C710BA2-DBBE-454C-AC64-39A4D468AF1D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6,6 +6,6 @@ namespace MTGOArchetypeParser.App
 {
     public interface IOutput
     {
-        void Write(Record[] records, bool isCompare);
+        void Write(Record[] records, ExecutionAction action);
     }
 }

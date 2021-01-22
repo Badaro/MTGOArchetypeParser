@@ -16,6 +16,7 @@ namespace MTGOArchetypeParser.App
         public string Meta { get; set; }
         public string[] Filter { get; set; }
         public string[] Exclude { get; set; }
+        public bool MetaBreakdown { get; set; }
         public string[] TournamentFolder { get; set; }
         public string FormatDataFolder { get; set; }
 
@@ -43,6 +44,7 @@ namespace MTGOArchetypeParser.App
             string metaArgument = GetArgument(args, nameof(Meta)).FirstOrDefault();
             string[] filterArgument = GetArgument(args, nameof(Filter));
             string[] excludeArgument = GetArgument(args, nameof(Exclude));
+            string breakdownArgument = GetArgument(args, nameof(MetaBreakdown)).FirstOrDefault();
             string[] cacheFoldersArgument = GetArgument(args, nameof(TournamentFolder));
             string dataFolderArgument = GetArgument(args, nameof(FormatDataFolder)).FirstOrDefault();
 
@@ -51,6 +53,7 @@ namespace MTGOArchetypeParser.App
             if (metaArgument != null) this.Meta = metaArgument;
             if (filterArgument.Length > 0) this.Filter = filterArgument;
             if (excludeArgument.Length > 0) this.Exclude = excludeArgument;
+            if (breakdownArgument != null) this.MetaBreakdown = (breakdownArgument.ToLowerInvariant() == "true");
             if (cacheFoldersArgument.Length > 0) this.TournamentFolder = cacheFoldersArgument;
             if (dataFolderArgument != null) this.FormatDataFolder = dataFolderArgument;
 
@@ -66,7 +69,7 @@ namespace MTGOArchetypeParser.App
         string[] GetArgument(string[] args, string settingName)
         {
             List<string> result = new List<string>();
-            foreach (var setting in args.Where(a => a.ToLower().StartsWith(settingName.ToLower())).ToArray())
+            foreach (var setting in args.Where(a => a.ToLower().StartsWith($"{settingName.ToLower()}=")).ToArray())
             {
                 string[] segments = setting.Split("=");
                 if (segments.Length == 2) result.Add(segments[1]);
@@ -91,14 +94,14 @@ namespace MTGOArchetypeParser.App
         }
     }
 
-    enum ExecutionOutput
+    public enum ExecutionOutput
     {
         NotSpecified,
         Console,
         Csv
     }
 
-    enum ExecutionAction
+    public enum ExecutionAction
     {
         NotSpecified,
         Detect,
@@ -106,7 +109,7 @@ namespace MTGOArchetypeParser.App
     }
 
     public class ValidationException : Exception
-    { 
+    {
         public ValidationException(string message) : base(message)
         {
         }

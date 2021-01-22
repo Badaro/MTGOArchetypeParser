@@ -6,11 +6,11 @@ namespace MTGOArchetypeParser.App
 {
     public class ConsoleOutput : IOutput
     {
-        public void Write(Record[] records, bool isCompare)
+        public void Write(Record[] records, ExecutionAction action)
         {
             if (records.Length == 0)
             {
-                if (isCompare)
+                if (action == ExecutionAction.Compare)
                 {
                     Console.WriteLine("No changes detected");
                 }
@@ -21,7 +21,7 @@ namespace MTGOArchetypeParser.App
             }
             else
             {
-                if (isCompare)
+                if (action == ExecutionAction.Compare)
                 {
                     Console.WriteLine("Comparison results: ");
                     foreach (var record in records)

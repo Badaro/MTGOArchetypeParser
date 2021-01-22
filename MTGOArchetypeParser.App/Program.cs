@@ -4,6 +4,7 @@ using MTGOArchetypeParser.Model;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -57,18 +58,55 @@ namespace MTGOArchetypeParser.App
 
                 if (settings.Output == ExecutionOutput.Console)
                 {
-                    new ConsoleOutput().Write(records, settings.Action == ExecutionAction.Compare);
+                    new ConsoleOutput().Write(records, settings.Action);
                 }
                 else
                 {
                     Console.WriteLine("Saving data to CSV file");
-                    new CsvOutput().Write(records, settings.Action == ExecutionAction.Compare);
+                    new CsvOutput().Write(records, settings.Action);
                 }
+
+                if (settings.MetaBreakdown) PrintBreakdown(records);
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
                 if (ex is ValidationException) Console.WriteLine(_usage);
+            }
+        }
+
+        static void PrintBreakdown(Record[] records)
+        {
+            double minPercentage = 0.02;
+            string othersKey = "Others";
+
+            Dictionary<string, int> totals = new Dictionary<string, int>();
+            foreach (var record in records)
+            {
+                string key = record.Archetype.Archetype;
+                if (!totals.ContainsKey(key)) totals.Add(key, 0);
+                totals[key]++;
+            }
+
+            // Consolidates "other" data
+            double minCount = (minPercentage * records.Count());
+            Dictionary<string, int> consolidatedTotals = new Dictionary<string, int>();
+            consolidatedTotals.Add(othersKey, 0);
+            foreach (var total in totals)
+            {
+                if (total.Value > minCount) consolidatedTotals.Add(total.Key, total.Value);
+                else consolidatedTotals[othersKey] += total.Value;
+            }
+
+            Console.WriteLine("Meta Breakdown:");
+
+            foreach (var total in consolidatedTotals.Where(t => t.Key != othersKey).OrderByDescending(t => t.Value))
+            {
+                Console.WriteLine($"* {total.Key} ({Math.Round((100.0 * total.Value) / consolidatedTotals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)})% ");
+            }
+            if (consolidatedTotals[othersKey] > 0)
+            {
+                Console.WriteLine($"* {othersKey} ({Math.Round((100.0 * consolidatedTotals[othersKey]) / consolidatedTotals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)})% ");
             }
         }
 
@@ -92,6 +130,7 @@ Settings (can also be specified using settings.json):
 * meta: Only generate data for events that belong to this meta
 * filter: Only generate data for events that match this string, can be specified more than once
 * exclude: Only generate data for events that do NOT match this string, can be specified more than once
+* metabreakdown: If set to true will include a meta breakdown summary at the end of the console output
 * tournamentfolder: Specifies the location of folders with the tournament data, can be specified more than once
 * formatdatafolder: Specifies the location of the folders with the format data";
     }
