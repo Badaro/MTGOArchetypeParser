@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "MTGOArchetypeParser.Reports.App": {
-      "commandName": "Project",
-      "commandLineArgs": "\"$(SolutionDir)MTGOFormatData\\Formats\" \"$(SolutionDir)MTGODecklistCache\\Tournaments\" \"$(SolutionDir)ManaTradersDecklistCache\\Tournaments\" "
-    }
-  }
-}
