@@ -1,4 +1,3 @@
-
 # MTGOArchetypeParser
 
 Rules-based engine to detect archetypes from MTGO decklists.
@@ -37,9 +36,9 @@ modern-preliminary-2021-01-21->aplapp->Heliod Combo
 ```
 If you got that, congratulations! You can now start playing with the archetypes.
 
-**Currently, the detection only works for the Modern format.**
+**Currently, the detection only works for the Modern format.** 
 
-If you're interested in helping adding archetype definitions for other formats, please check the "Contributing to archetype definitions" section at the end of this readme.
+This is simply because currently there's only archetype rules for the Modern format. If you're interested in creating archetype definitions for other formats, please check the "Creating new archetype definitions" section at the end of this readme.
 
 ## Output options
 
@@ -90,15 +89,15 @@ Let's say you're only looking at Modern events, and you're ignoring Leagues sinc
 
 Be careful that settings in this file are only used if you don't specify the same settings in the command line. If you have the file above and use ```filter=preliminary``` in the command line the filter for Modern events above will *not* be applied. Either specify both using the JSON file, or both using the command line. 
 
-## Contributing to archetype definitions
+## Creating new archetype definitions
 
-If you're interested in adding more formats to this tool, or helping improve the quality of the archetype definitions, please check the readme in the page below, which explains how the data structure works:
+If you're interested in adding more formats to this tool, or to improve the quality of the archetype definitions, please check the readme in the page below, which explains how the data structure works:
 
 https://github.com/Badaro/MTGOFormatData
 
 ## Working with a new format
 
-If you want to contribute with a format not present in the repository above, start by creating the minimum required files and folders, then go on writing the archetype definitions. 
+If you want to add a new format not present in the repository above, start by creating the minimum required files and folders, then go on writing the archetype definitions. 
 
 This is a job that requires some patience - I recommend doing this event by event. Start with the most recent challenge or preliminary, write the rules for the #1 player, check if the detection is correct, then do it for the #2 player, and keep going. Once you're done, get the previous event and do the same thing.
 
@@ -106,7 +105,7 @@ The more archetypes you add, the easier it gets.
 
 ## Improving an existing format
 
-If you want to improve a format already in the repository above, I recommend you make a copy of the entire folder before making any changes.
+If you want to improve a format already in the repository, I recommend you make a copy of the entire folder before making any changes.
 
 Say you want to try your hand at improving the Modern definitions. Before starting, make a copy of the ```Modern``` folder and call it ```Modern-Old```, then start making your changes.
 

@@ -47,7 +47,7 @@ namespace MTGOArchetypeParser.App
 
                 if (!String.IsNullOrEmpty(settings.Meta))
                 {
-                    records = records.Where(r => r.Meta.Contains(settings.Meta, StringComparison.InvariantCultureIgnoreCase));
+                    records = records.Where(r => r.Meta.Contains(settings.Meta, StringComparison.InvariantCultureIgnoreCase)).ToArray();
                 }
 
                 if (settings.Action == ExecutionAction.Compare)
