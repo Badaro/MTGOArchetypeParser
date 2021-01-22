@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MTGOArchetypeParser.App": {
+      "commandName": "Project",
+      "commandLineArgs": "csv detect filter=modern-preliminary-2021-01-21 referenceformat=Modern-Old"
+    }
+  }
+}

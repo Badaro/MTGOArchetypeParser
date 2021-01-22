@@ -1,0 +1,16 @@
+{
+  "Format": "Modern",
+  "ReferenceFormat": "",
+  "Meta": "",
+  "Filter": [
+    "Modern"
+  ],
+  "Exclude": [
+    "League"
+  ],
+  "TournamentFolder": [
+    "C:\\Users\\Filipe\\source\\repos\\MTGOArchetypeParser\\MTGODecklistCache\\Tournaments",
+    "C:\\Users\\Filipe\\source\\repos\\MTGOArchetypeParser\\ManaTradersDecklistCache\\Tournaments"
+  ],
+  "FormatDataFolder": "C:\\Users\\Filipe\\source\\repos\\MTGOArchetypeParser\\MTGOFormatData\\Formats"
+}

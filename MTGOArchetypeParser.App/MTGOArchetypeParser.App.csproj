@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MTGOArchetypeParser.Data\MTGOArchetypeParser.Data.csproj" />
+    <ProjectReference Include="..\MTGOArchetypeParser.Formats.FromJson\MTGOArchetypeParser.Formats.FromJson.csproj" />
+    <ProjectReference Include="..\MTGOArchetypeParser\MTGOArchetypeParser.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties settings_1json__JsonSchema="https://github.com/go-vela/types/releases/latest/download/schema.json" /></VisualStudio></ProjectExtensions>
+
+</Project>
