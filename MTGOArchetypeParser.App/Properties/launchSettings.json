@@ -2,7 +2,7 @@
   "profiles": {
     "MTGOArchetypeParser.App": {
       "commandName": "Project",
-      "commandLineArgs": "console detect meta=PostZendikarRising metabreakdown=true"
+      "commandLineArgs": "console detect meta=current metaweek=current metabreakdown=true "
     }
   }
 }

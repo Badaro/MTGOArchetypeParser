@@ -22,7 +22,6 @@ namespace MTGOArchetypeParser.App
                 settings.ApplyOverrides(args);
                 settings.Validate();
 
-                // Loading format daa
                 Console.WriteLine("Loading format data");
                 ArchetypeFormat format = Formats.FromJson.Loader.GetFormat(settings.FormatDataFolder, settings.Format);
 
@@ -48,7 +47,19 @@ namespace MTGOArchetypeParser.App
 
                 if (!String.IsNullOrEmpty(settings.Meta))
                 {
-                    records = records.Where(r => r.Meta.Contains(settings.Meta, StringComparison.InvariantCultureIgnoreCase)).ToArray();
+                    string metaFilter = settings.Meta;
+                    if (metaFilter.ToLowerInvariant() == "current") metaFilter = format.Metas.Last().Name;
+                    records = records.Where(r => r.Meta.Contains(metaFilter, StringComparison.InvariantCultureIgnoreCase)).ToArray();
+
+                    if (!String.IsNullOrEmpty(settings.MetaWeek))
+                    {
+                        int metaWeekFilter;
+                        if (settings.MetaWeek.ToLowerInvariant() == "current") metaWeekFilter = records.Max(r => r.Week);
+                        else metaWeekFilter = Int32.Parse(settings.MetaWeek);
+
+                        records = records.Where(r => r.Week == metaWeekFilter).ToArray();
+                    }
+
                 }
 
                 if (settings.Action == ExecutionAction.Compare)
@@ -128,6 +139,7 @@ Settings (can also be specified using settings.json):
 * format: Format data to be used for detection
 * referenceformat: Format data to be used for comparison
 * meta: Only generate data for events that belong to this meta
+* metaweek: Only generate data for events that belong to this meta week
 * filter: Only generate data for events that match this string, can be specified more than once
 * exclude: Only generate data for events that do NOT match this string, can be specified more than once
 * metabreakdown: If set to true will include a meta breakdown summary at the end of the console output

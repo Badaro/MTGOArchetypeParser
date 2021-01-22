@@ -14,6 +14,7 @@ namespace MTGOArchetypeParser.App
         public string Format { get; set; }
         public string ReferenceFormat { get; set; }
         public string Meta { get; set; }
+        public string MetaWeek { get; set; }
         public string[] Filter { get; set; }
         public string[] Exclude { get; set; }
         public bool MetaBreakdown { get; set; }
@@ -42,6 +43,7 @@ namespace MTGOArchetypeParser.App
             string formatArgument = GetArgument(args, nameof(Format)).FirstOrDefault();
             string referenceFormatArgument = GetArgument(args, nameof(ReferenceFormat)).FirstOrDefault();
             string metaArgument = GetArgument(args, nameof(Meta)).FirstOrDefault();
+            string metaWeekArgument = GetArgument(args, nameof(MetaWeek)).FirstOrDefault();
             string[] filterArgument = GetArgument(args, nameof(Filter));
             string[] excludeArgument = GetArgument(args, nameof(Exclude));
             string breakdownArgument = GetArgument(args, nameof(MetaBreakdown)).FirstOrDefault();
@@ -51,6 +53,7 @@ namespace MTGOArchetypeParser.App
             if (formatArgument != null) this.Format = formatArgument;
             if (referenceFormatArgument != null) this.ReferenceFormat = referenceFormatArgument;
             if (metaArgument != null) this.Meta = metaArgument;
+            if (metaWeekArgument != null) this.MetaWeek = metaWeekArgument;
             if (filterArgument.Length > 0) this.Filter = filterArgument;
             if (excludeArgument.Length > 0) this.Exclude = excludeArgument;
             if (breakdownArgument != null) this.MetaBreakdown = (breakdownArgument.ToLowerInvariant() == "true");
@@ -90,6 +93,11 @@ namespace MTGOArchetypeParser.App
             foreach (string tournamentFolder in this.TournamentFolder)
             {
                 if (!Directory.Exists(tournamentFolder)) throw new ValidationException("Tournament folder does not exist");
+            }
+
+            if (!String.IsNullOrEmpty(this.MetaWeek) && this.MetaWeek.ToLower() != "current")
+            {
+                if (!Int32.TryParse(this.MetaWeek, out int parsed)) throw new ValidationException("Meta week must be 'current' or a number");
             }
         }
     }
