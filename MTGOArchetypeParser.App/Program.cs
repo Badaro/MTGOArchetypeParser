@@ -26,7 +26,7 @@ namespace MTGOArchetypeParser.App
                 ArchetypeFormat format = Formats.FromJson.Loader.GetFormat(settings.FormatDataFolder, settings.Format);
 
                 ArchetypeFormat referenceFormat = null;
-                if (settings.ReferenceFormat != null)
+                if (!String.IsNullOrEmpty(settings.ReferenceFormat))
                 {
                     referenceFormat = Formats.FromJson.Loader.GetFormat(settings.FormatDataFolder, settings.ReferenceFormat);
                 }
@@ -44,6 +44,12 @@ namespace MTGOArchetypeParser.App
                 }
 
                 Record[] records = RecordLoader.GetRecords(tournaments, format, referenceFormat);
+
+                if (!String.IsNullOrEmpty(settings.Meta))
+                {
+                    records = records.Where(r => r.Meta.Contains(settings.Meta, StringComparison.InvariantCultureIgnoreCase);
+                }
+
                 if (settings.Action == ExecutionAction.Compare)
                 {
                     records = records.Where(r => !r.Archetype.Equals(r.ReferenceArchetype)).ToArray();
