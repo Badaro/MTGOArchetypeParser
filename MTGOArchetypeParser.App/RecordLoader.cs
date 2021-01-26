@@ -64,18 +64,9 @@ namespace MTGOArchetypeParser.App
             string colorID = detectionResult.Color.ToString();
             string companionID = detectionResult.Companion == null ? "" : detectionResult.Companion.Value.ToString();
             string archetypeID = "Unknown";
-            string variantID = String.Empty;
 
-            if (detectionResult.Matches.Length == 1)
-            {
-                var detected = detectionResult.Matches.First();
-
-                archetypeID = detected.Archetype.GetName(detectionResult.Color);
-                if (detected.Variant != null)
-                {
-                    archetypeID = detected.Variant.GetName(detectionResult.Color);
-                }
-            }
+            if (detectionResult.Matches.Length == 1) archetypeID = GetArchetype(detectionResult.Matches.First(), detectionResult.Color);
+            if (detectionResult.Matches.Length > 1) archetypeID = $"Conflict({String.Join(",", detectionResult.Matches.Select(m => GetArchetype(m, detectionResult.Color)))})";
 
             return new RecordArchetype()
             {
@@ -83,6 +74,16 @@ namespace MTGOArchetypeParser.App
                 Companion = companionID,
                 Color = colorID,
             };
+        }
+
+        private static string GetArchetype(ArchetypeMatch match, ArchetypeColor color)
+        {
+            string result = match.Archetype.GetName(color);
+            if (match.Variant != null)
+            {
+                result = match.Variant.GetName(color);
+            }
+            return result;
         }
 
         // Note: I'm considering the meta weeks as starting on monday
