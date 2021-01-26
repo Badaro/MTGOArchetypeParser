@@ -32,7 +32,7 @@ using System.Text;
 #23 Montre82: Humans (WUBRG)
 #24 EddDeedoo: Orzhov Midrange (WB)
 #25 jonasensio: Boros Prowess (WR)
-#26 Parrit: Orzhov Taxes (WB)
+#26 Parrit: Orzhov Eldrazi Taxes (WB)
 #27 oniiman: Mono Red Prowess (R)
 #28 ecobaronen: Infect (UG)
 #29 willpulliam: Niv To Light (WUBRG)
@@ -371,14 +371,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck26_Parrit_OrzhovTaxes_WB()
+        public void Deck26_Parrit_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-05",25),
                 "PostOuatBan",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

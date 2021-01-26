@@ -19,7 +19,7 @@ using System.Text;
 #10 Icteridae: Devoted (WUG)
 #11 alemilan19: Scapeshift (WURG, Yorion)
 #12 Xwhale: Scapeshift (URG, Yorion)
-#13 ParanoidAndroid700: Orzhov Taxes (WB)
+#13 ParanoidAndroid700: Orzhov Eldrazi Taxes (WB)
 #14 TerminalJustice: Green Tron (G)
 #15 uaedoliB: Humans (WUBRG)
 #16 Eaglov: Primeval Titan (BG)
@@ -186,14 +186,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck13_ParanoidAndroid700_OrzhovTaxes_WB()
+        public void Deck13_ParanoidAndroid700_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-06-02",12),
                 "PostIkoria",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

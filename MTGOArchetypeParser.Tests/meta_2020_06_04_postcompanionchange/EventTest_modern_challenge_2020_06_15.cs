@@ -20,7 +20,7 @@ using System.Text;
 #11 signblindman: Gruul Midrange (RG)
 #12 Walka: Bant Control (WUG)
 #13 Diatomic: Sultai Control (UBG)
-#14 litianshuo670: Orzhov Taxes (WB)
+#14 litianshuo670: Orzhov Eldrazi Taxes (WB)
 #15 SkiLwrAp: Eldrazi Tron (C)
 #16 ZYURYO: WUBG Control (WUBG)
 #17 Xwhale: Bant Control (WUG)
@@ -215,14 +215,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_04_postcompanionchange
         }
 
         [Test]
-        public void Deck14_litianshuo670_OrzhovTaxes_WB()
+        public void Deck14_litianshuo670_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-challenge-2020-06-15",13),
                 "PostCompanionChange",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

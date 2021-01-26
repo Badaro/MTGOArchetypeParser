@@ -21,7 +21,7 @@ using System.Text;
 #12 rileydk: Amulet Titan (UG)
 #13 Irkus: Green Eldrazi (RG)
 #14 yanmaster: Hardened Scales (WG)
-#15 Parrit: Orzhov Taxes (WB)
+#15 Parrit: Orzhov Eldrazi Taxes (WB)
 #16 McWinSauce: WURG Control (WURG)
 #17 PuntThenWhine: Amulet Titan (UG)
 #18 ecobaronen: Jund Midrange (BRG)
@@ -228,14 +228,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck15_Parrit_OrzhovTaxes_WB()
+        public void Deck15_Parrit_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-challenge-2020-02-02",14),
                 "PostTherosBeyondDeath",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

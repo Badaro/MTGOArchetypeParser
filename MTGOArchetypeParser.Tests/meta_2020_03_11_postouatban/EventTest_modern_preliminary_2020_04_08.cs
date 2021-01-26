@@ -40,7 +40,7 @@ using System.Text;
 #31 Oscar_Franco: Ad Nauseam (WUB)
 #32 Rudokant: Temur Control (URG)
 #33 Ravnika_on_fire: Dredge (BRG)
-#34 penips: Mono White Taxes (W)
+#34 penips: Mono White Eldrazi Taxes (W)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
@@ -477,14 +477,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck34_penips_MonoWhiteTaxes_W()
+        public void Deck34_penips_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-08",33),
                 "PostOuatBan",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

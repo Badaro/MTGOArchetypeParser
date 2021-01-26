@@ -37,7 +37,7 @@ using System.Text;
 #28 mitchieee: Orzhov Taxes (WB, Lurrus)
 #29 Biednarccio: Amulet Titan (RG)
 #30 Louisbach: Zirda Combo (WBG, Zirda)
-#31 Naisirc: Mono White Taxes (W)
+#31 Naisirc: Mono White Eldrazi Taxes (W)
 #32 XxShuicunexX: Burn (WR, Lurrus)
 */
 
@@ -436,14 +436,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck31_Naisirc_MonoWhiteTaxes_W()
+        public void Deck31_Naisirc_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-04",30),
                 "PostIkoria",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

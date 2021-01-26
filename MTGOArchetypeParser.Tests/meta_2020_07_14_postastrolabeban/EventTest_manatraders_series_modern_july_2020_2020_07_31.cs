@@ -179,7 +179,7 @@ using System.Text;
 #170 wolfmedic: Gruul Midrange (RG)
 #171 desertdrive: Boros Prowess (WR)
 #172 StanLee: Scapeshift (UBRG, Lurrus)
-#173 Leonardo1080: Selesnya Taxes (WG)
+#173 Leonardo1080: Selesnya Eldrazi Taxes (WG)
 #174 TheKingFor1000years: Infect (UG)
 #175 salvite: Eldrazi Tron (C)
 #176 Gabriel0288: Titan Shift (RG)
@@ -2485,14 +2485,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck173_Leonardo1080_SelesnyaTaxes_WG()
+        public void Deck173_Leonardo1080_SelesnyaEldraziTaxes_WG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",172),
                 "PostAstrolabeBan",
                 ArchetypeColor.WG,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

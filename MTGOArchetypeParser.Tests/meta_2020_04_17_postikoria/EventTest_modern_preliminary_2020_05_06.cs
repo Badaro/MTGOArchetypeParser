@@ -20,7 +20,7 @@ using System.Text;
 #11 eresopacaso: Burn (WR, Lurrus)
 #12 otakkun: Jund Midrange (BRG, Lurrus)
 #13 Jenara19: Humans (WUBRG, Jegantha)
-#14 Naisirc: Mono White Taxes (W)
+#14 Naisirc: Mono White Eldrazi Taxes (W)
 #15 Logarythme: WURG Control (WURG, Yorion)
 #16 selbstdenker: Amulet Titan (G)
 #17 matyo804: Amulet Titan (URG)
@@ -203,14 +203,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck14_Naisirc_MonoWhiteTaxes_W()
+        public void Deck14_Naisirc_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-06",13),
                 "PostIkoria",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

@@ -16,7 +16,7 @@ using System.Text;
 #07 _goblinlackey: Green Tron (G)
 #08 tia05: Primeval Titan (RG)
 #09 3HDgamers: Eldrazi Tron (G)
-#10 crazy_c_403: Orzhov Taxes (WB)
+#10 crazy_c_403: Orzhov Eldrazi Taxes (WB)
 #11 SourceOdin: Amulet Titan (UG)
 #12 sandydogmtg: Burn (R)
 #13 PRGJJAR: Dredge (BRG)
@@ -149,14 +149,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck10_crazyc403_OrzhovTaxes_WB()
+        public void Deck10_crazyc403_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-15",9),
                 "PostTherosBeyondDeath",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

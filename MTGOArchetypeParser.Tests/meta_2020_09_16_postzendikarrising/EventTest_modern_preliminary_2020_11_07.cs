@@ -16,7 +16,7 @@ using System.Text;
 #07 JustBurn420: Slivers (WUBRG)
 #08 Kazuga: Reclaimer Titan (WRG)
 #09 fj_rodman: Amulet Titan (URG)
-#10 MiguelCaster: Mono White Taxes (W)
+#10 MiguelCaster: Mono White Eldrazi Taxes (W)
 #11 Wizard_2002: Green Tron (G)
 #12 Usama96: Jund Prowess (BRG, Lurrus)
 #13 _Falcon_: Izzet Prowess (UR)
@@ -147,14 +147,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck10_MiguelCaster_MonoWhiteTaxes_W()
+        public void Deck10_MiguelCaster_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-07",9),
                 "PostZendikarRising",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

@@ -13,7 +13,7 @@ using System.Text;
 #04 jorgefpcardoso: Mardu Midrange (WBR)
 #05 Wuby123: Burn (WR)
 #06 SoIMBA_Airwave: Green Eldrazi (RG)
-#07 penips: Mono White Taxes (W)
+#07 penips: Mono White Eldrazi Taxes (W)
 #08 Ivc: Bant Control (WUG)
 #09 dwnb: Ad Nauseam (WUB)
 #10 David1987: Niv To Light (WUBRG)
@@ -115,14 +115,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck07_penips_MonoWhiteTaxes_W()
+        public void Deck07_penips_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-10",6),
                 "PostOuatBan",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

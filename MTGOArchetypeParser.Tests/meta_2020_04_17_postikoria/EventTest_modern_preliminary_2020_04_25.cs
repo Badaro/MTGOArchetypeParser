@@ -19,7 +19,7 @@ using System.Text;
 #10 PietroSas: Burn (WR, Lurrus)
 #11 cicciogire: Jund Midrange (BRG, Lurrus)
 #12 Damgar: Green Tron (G)
-#13 penips: Orzhov Taxes (WB)
+#13 penips: Orzhov Eldrazi Taxes (WB)
 #14 matyo804: Devoted (WUG)
 #15 fradev1988: Bant Control (WUG)
 #16 harukispecial: Jeskai Control (WUR)
@@ -191,14 +191,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck13_penips_OrzhovTaxes_WB()
+        public void Deck13_penips_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-25",12),
                 "PostIkoria",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

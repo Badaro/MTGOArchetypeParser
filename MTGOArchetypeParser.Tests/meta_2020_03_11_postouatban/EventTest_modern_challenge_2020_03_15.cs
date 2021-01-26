@@ -8,9 +8,9 @@ using System.Text;
 
 /*
 #01 Edel: Jund Midrange (BRG)
-#02 sinforlife54: Mono White Taxes (W)
+#02 sinforlife54: Mono White Eldrazi Taxes (W)
 #03 danielmos: Bant Control (WUG)
-#04 MiguelCaster: Mono White Taxes (W)
+#04 MiguelCaster: Mono White Eldrazi Taxes (W)
 #05 PuntThenWhine: Amulet Titan (UG)
 #06 _goblinlackey: Green Tron (G)
 #07 SunofNothing: Uroza (UG)
@@ -59,14 +59,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck02_sinforlife54_MonoWhiteTaxes_W()
+        public void Deck02_sinforlife54_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-15",1),
                 "PostOuatBan",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }
@@ -85,14 +85,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck04_MiguelCaster_MonoWhiteTaxes_W()
+        public void Deck04_MiguelCaster_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-15",3),
                 "PostOuatBan",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

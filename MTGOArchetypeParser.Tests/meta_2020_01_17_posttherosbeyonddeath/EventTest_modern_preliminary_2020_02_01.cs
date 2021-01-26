@@ -11,7 +11,7 @@ using System.Text;
 #02 Accelerator_GTR: Jund Midrange (BRG)
 #03 thepensword: Izzet Control (UR)
 #04 Mark_Confidant: Devoted (WBG)
-#05 penips: Orzhov Taxes (WB)
+#05 penips: Orzhov Eldrazi Taxes (WB)
 #06 Swarm_OF_Mats: WURG Control (WURG)
 #07 Wolvenjoe1984: Thopter Urza (UB)
 #08 quinniac: Ad Nauseam (WUB)
@@ -82,14 +82,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck05_penips_OrzhovTaxes_WB()
+        public void Deck05_penips_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-01",4),
                 "PostTherosBeyondDeath",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

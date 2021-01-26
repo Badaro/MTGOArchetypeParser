@@ -25,7 +25,7 @@ using System.Text;
 #16 ice_nine_: Land Destruction (WR)
 #17 Rav104: Izzet Prowess (UR)
 #18 fingers1991: Shadow Prowess (BR, Lurrus)
-#19 MiguelCaster: Mono White Taxes (W)
+#19 MiguelCaster: Mono White Eldrazi Taxes (W)
 #20 shir kahn: Jeskai Control (WUR)
 #21 ChironTheMage: WURG Control (WURG)
 #22 GideonRavensword: Dredge (BRG)
@@ -38,7 +38,7 @@ using System.Text;
 #29 MHayashi: Obosh Aggro (R, Obosh)
 #30 staffmat1992: Spirits (WUG)
 #31 Johnny_Hobbs: WURG Control (WURG)
-#32 thephatz: Mono White Taxes (W)
+#32 thephatz: Mono White Eldrazi Taxes (W)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -280,14 +280,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck19_MiguelCaster_MonoWhiteTaxes_W()
+        public void Deck19_MiguelCaster_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-11",18),
                 "PostZendikarRising",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }
@@ -449,14 +449,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck32_thephatz_MonoWhiteTaxes_W()
+        public void Deck32_thephatz_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-11",31),
                 "PostZendikarRising",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

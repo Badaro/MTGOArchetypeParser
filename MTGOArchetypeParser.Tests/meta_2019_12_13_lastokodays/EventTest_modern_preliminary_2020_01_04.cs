@@ -11,7 +11,7 @@ using System.Text;
 #02 MentalMisstep: Urza Oko (WUG)
 #03 fried-liver-attack: Eldrazi Tron (G)
 #04 122pablo: Ascendancy Combo (WURG)
-#05 penips: Orzhov Taxes (WB)
+#05 penips: Orzhov Eldrazi Taxes (WB)
 #06 Wolvenjoe1984: Thopter Urza (UBG)
 #07 Volcano666: Crabvine (UBG)
 #08 Coly2: Mono Red Prowess (R)
@@ -84,14 +84,14 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck05_penips_OrzhovTaxes_WB()
+        public void Deck05_penips_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-04",4),
                 "LastOkoDays",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

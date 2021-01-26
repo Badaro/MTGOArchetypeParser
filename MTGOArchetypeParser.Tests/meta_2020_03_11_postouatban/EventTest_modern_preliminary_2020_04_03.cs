@@ -12,7 +12,7 @@ using System.Text;
 #03 envizz: Gruul Midrange (RG)
 #04 ForThoseWhoHaveHeart: Bant Control (WUG)
 #05 ArchaeusDota: Eldrazi Tron (R)
-#06 penips: Orzhov Taxes (WB)
+#06 penips: Orzhov Eldrazi Taxes (WB)
 #07 wumbowizard: Azorius Control (WU)
 #08 signblindman: Gruul Midrange (RG)
 #09 Sorph: Uroza (URG)
@@ -98,14 +98,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck06_penips_OrzhovTaxes_WB()
+        public void Deck06_penips_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-03",5),
                 "PostOuatBan",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

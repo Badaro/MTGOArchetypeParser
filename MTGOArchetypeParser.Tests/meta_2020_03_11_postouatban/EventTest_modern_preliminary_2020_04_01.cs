@@ -9,7 +9,7 @@ using System.Text;
 /*
 #01 Tw33Ty: Bushwhacker Zoo (WRG)
 #02 baconator5000: Mono Red Prowess (R)
-#03 penips: Orzhov Taxes (WB)
+#03 penips: Orzhov Eldrazi Taxes (WB)
 #04 Albimtg: Jund Shadow (BRG)
 #05 in5ano: Thopter Urza (WUR)
 #06 coert: Bushwhacker Zoo (WRG)
@@ -76,14 +76,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck03_penips_OrzhovTaxes_WB()
+        public void Deck03_penips_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-01",2),
                 "PostOuatBan",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

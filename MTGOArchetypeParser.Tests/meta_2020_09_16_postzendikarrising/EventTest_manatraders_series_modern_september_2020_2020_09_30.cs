@@ -124,7 +124,7 @@ using System.Text;
 #115 Koptek: Reclamation (URG)
 #116 Stompy45: Obosh Aggro (R, Obosh)
 #117 salvite: Temur Control (URG)
-#118 ary31415: Orzhov Taxes (WB)
+#118 ary31415: Orzhov Eldrazi Taxes (WB)
 #119 MTGteamDecay: Humans (WUBRG)
 #120 SourceOdin: Reclaimer Titan (WRG)
 #121 ShutoShotokan: Humans (WUBRG)
@@ -1758,14 +1758,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck118_ary31415_OrzhovTaxes_WB()
+        public void Deck118_ary31415_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("manatraders-series-modern-september-2020-2020-09-30",117),
                 "PostZendikarRising",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

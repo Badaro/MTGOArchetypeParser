@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 Parrit: Mono White Taxes (W)
+#01 Parrit: Mono White Eldrazi Taxes (W)
 #02 __matsugan: Neobrand (UG)
 #03 SoulStrong: Reclamation (UG)
 #04 heterotic: Gruul Prowess (RG)
@@ -46,14 +46,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
     public class EventTest_modern_super_qualifier_2020_04_17 : EventTest
     {
         [Test]
-        public void Deck01_Parrit_MonoWhiteTaxes_W()
+        public void Deck01_Parrit_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-17",0),
                 "PostOuatBan",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

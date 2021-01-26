@@ -26,7 +26,7 @@ using System.Text;
 #17 jschloss: Green Tron (G)
 #18 Mcleskey: Burn (WR)
 #19 NAP_DARKMAGE_MJM: Izzet Prowess (UR)
-#20 Metcalf23: Orzhov Taxes (WB)
+#20 Metcalf23: Orzhov Eldrazi Taxes (WB)
 #21 MadMaxErnst: Sultai Control (UBG)
 #22 banskk: Izzet Prowess (UR)
 #23 DreamsOfAshiok: Eldrazi Tron (C)
@@ -293,14 +293,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck20_Metcalf23_OrzhovTaxes_WB()
+        public void Deck20_Metcalf23_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-08-09",19),
                 "PostAstrolabeBan",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

@@ -23,7 +23,7 @@ using System.Text;
 #14 maear: Ad Nauseam (WUB)
 #15 Ouranos139: Amulet Titan (UG)
 #16 natedognpeking: Naya Midrange (WRG)
-#17 penips: Mono White Taxes (W)
+#17 penips: Mono White Eldrazi Taxes (W)
 #18 signblindman: Gruul Midrange (RG)
 #19 SvenSveeterSven: Mardu Midrange (WBR)
 #20 zMagic4ever: Gruul Midrange (RG)
@@ -282,14 +282,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck17_penips_MonoWhiteTaxes_W()
+        public void Deck17_penips_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-11",16),
                 "PostOuatBan",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

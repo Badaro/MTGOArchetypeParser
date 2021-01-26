@@ -38,7 +38,7 @@ using System.Text;
 #29 Mcleskey: Burn (WR)
 #30 Skrown: Shadow Prowess (BR, Lurrus)
 #31 gottelicious: Kinnan Legends (WUG)
-#32 fabee1: Mono White Taxes (W, Yorion)
+#32 fabee1: Mono White Eldrazi Taxes (W, Yorion)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -449,14 +449,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck32_fabee1_MonoWhiteTaxes_W_Yorion()
+        public void Deck32_fabee1_MonoWhiteEldraziTaxes_W_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2021-01-10",31),
                 "PostZendikarRising",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 ArchetypeCompanion.Yorion
             );
         }

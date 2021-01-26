@@ -16,7 +16,7 @@ using System.Text;
 #07 SourceOdin: Titan Shift (BG)
 #08 g0ldmanzachs: Thopter Urza (UBR)
 #09 sten626: Dredge (BRG)
-#10 penips: Orzhov Taxes (WB)
+#10 penips: Orzhov Eldrazi Taxes (WB)
 #11 NightShadowJ: Thopter Urza (UBR)
 #12 Erik157751: Crabvine (UBG)
 #13 i_b_TRUE: Titan Shift (RG)
@@ -149,14 +149,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck10_penips_OrzhovTaxes_WB()
+        public void Deck10_penips_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-01-18",9),
                 "PostTherosBeyondDeath",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

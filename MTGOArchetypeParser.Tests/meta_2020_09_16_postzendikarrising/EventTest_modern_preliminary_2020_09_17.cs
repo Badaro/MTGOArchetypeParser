@@ -21,7 +21,7 @@ using System.Text;
 #12 Lord_of_Puntlantis: Electro Balance (URG)
 #13 Mcleskey: Humans (WUBRG)
 #14 MZBlazer: Grixis Shadow (UBR)
-#15 Icteridae: Mono White Taxes (W)
+#15 Icteridae: Mono White Eldrazi Taxes (W)
 #16 _IlNano_: Humans (WUBRG)
 */
 
@@ -212,14 +212,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck15_Icteridae_MonoWhiteTaxes_W()
+        public void Deck15_Icteridae_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-17",14),
                 "PostZendikarRising",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

@@ -18,7 +18,7 @@ using System.Text;
 #09 RNGspecialist: Bant Control (WUG)
 #10 EdB: Amulet Titan (G)
 #11 joaoclaudioms: Gruul Midrange (RG)
-#12 penips: Orzhov Taxes (WB)
+#12 penips: Orzhov Eldrazi Taxes (WB)
 #13 Xwhale: Eldrazi Tron (C)
 #14 Capitano_CL: Dredge (UBRG)
 #15 DreamsOfAshiok: Eldrazi Tron (C)
@@ -210,14 +210,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck12_penips_OrzhovTaxes_WB()
+        public void Deck12_penips_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-17-0",11),
                 "PostOuatBan",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

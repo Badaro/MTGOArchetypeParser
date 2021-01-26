@@ -10,7 +10,7 @@ using System.Text;
 #01 coliobeware: Jund Midrange (BRG, Lurrus)
 #02 Erik157751: Crabvine (UBG)
 #03 Ma7x: Niv To Light (WUBRG, Jegantha)
-#04 MiguelCaster: Orzhov Taxes (WB)
+#04 MiguelCaster: Orzhov Eldrazi Taxes (WB)
 #05 guiyote: Izzet Prowess (UR)
 #06 Exoline: WURG Control (WURG)
 #07 fingers1991: WURG Control (WURG)
@@ -85,14 +85,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_MiguelCaster_OrzhovTaxes_WB()
+        public void Deck04_MiguelCaster_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-25",3),
                 "PostZendikarRising",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

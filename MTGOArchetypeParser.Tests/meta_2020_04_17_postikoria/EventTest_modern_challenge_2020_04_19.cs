@@ -16,7 +16,7 @@ using System.Text;
 #07 retiredcapivara: Dredge (BRG)
 #08 Marvellion: Jund Midrange (BRG)
 #09 jessy_samek: Burn (WR, Lurrus)
-#10 Parrit: Orzhov Taxes (WB)
+#10 Parrit: Orzhov Eldrazi Taxes (WB)
 #11 Misplacedginger: Bant Control (WUG)
 #12 CordoTwin: Mardu Shadow (WBR)
 #13 GoblinK1ng: Goblins (BRG)
@@ -163,14 +163,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck10_Parrit_OrzhovTaxes_WB()
+        public void Deck10_Parrit_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-challenge-2020-04-19",9),
                 "PostIkoria",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

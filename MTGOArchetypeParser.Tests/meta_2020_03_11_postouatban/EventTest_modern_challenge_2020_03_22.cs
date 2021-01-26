@@ -23,13 +23,13 @@ using System.Text;
 #14 ilsecco14: Burn (WR)
 #15 stonepeanut: Green Tron (G)
 #16 SouthernSliver: Slivers (WUBRG)
-#17 MiguelCaster: Mono White Taxes (W)
+#17 MiguelCaster: Mono White Eldrazi Taxes (W)
 #18 PermissionMTG: Zoo (WRG)
 #19 SunofNothing: Uroza (URG)
 #20 SemoMTGBros: WURG Control (WURG)
 #21 levunga21: Bant Control (WUG)
 #22 TSPJendrek: WUBG Control (WUBG)
-#23 Parrit: Orzhov Taxes (WB)
+#23 Parrit: Orzhov Eldrazi Taxes (WB)
 #24 AlexD41: Mono Red Prowess (R)
 #25 HarlanMTG: Bant Control (WUG)
 #26 yxcvbnm: Bant Control (WUG)
@@ -254,14 +254,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck17_MiguelCaster_MonoWhiteTaxes_W()
+        public void Deck17_MiguelCaster_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-22",16),
                 "PostOuatBan",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }
@@ -332,14 +332,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck23_Parrit_OrzhovTaxes_WB()
+        public void Deck23_Parrit_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-22",22),
                 "PostOuatBan",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

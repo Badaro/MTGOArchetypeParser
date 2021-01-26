@@ -21,7 +21,7 @@ using System.Text;
 #12 PRGJJAR: Dredge (BRG)
 #13 coert: Burn (WR)
 #14 signblindman: Naya Midrange (WRG)
-#15 Parrit: Orzhov Taxes (WB)
+#15 Parrit: Orzhov Eldrazi Taxes (WB)
 #16 Mistakenn: Amulet Titan (UG)
 #17 LORiWWA: Eldrazi Tron (C)
 #18 Dafne17: Naya Midrange (WRG)
@@ -218,14 +218,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck15_Parrit_OrzhovTaxes_WB()
+        public void Deck15_Parrit_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-18",14),
                 "PostIkoria",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

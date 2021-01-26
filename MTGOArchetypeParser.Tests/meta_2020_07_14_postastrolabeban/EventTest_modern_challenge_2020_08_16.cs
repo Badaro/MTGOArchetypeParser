@@ -15,7 +15,7 @@ using System.Text;
 #06 flatnose: Merfolk (UG)
 #07 Rav104: Rakdos Prowess (BR, Lurrus)
 #08 edward40hands: Golgari Midrange (BG)
-#09 sinforlife54: Mono White Taxes (W)
+#09 sinforlife54: Mono White Eldrazi Taxes (W)
 #10 otakkun: Green Tron (G)
 #11 uaedoliB: Humans (WUBRG)
 #12 nick4567: Reclamation (URG)
@@ -150,14 +150,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck09_sinforlife54_MonoWhiteTaxes_W()
+        public void Deck09_sinforlife54_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-08-16",8),
                 "PostAstrolabeBan",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

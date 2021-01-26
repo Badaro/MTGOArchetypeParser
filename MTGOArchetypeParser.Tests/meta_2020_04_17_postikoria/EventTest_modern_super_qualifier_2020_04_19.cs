@@ -27,7 +27,7 @@ using System.Text;
 #18 fradev1988: Bant Control (WUG)
 #19 J000111: Dredge (BRG)
 #20 hugo87: Gifts Storm (UR)
-#21 Naisirc: Orzhov Taxes (WB)
+#21 Naisirc: Orzhov Eldrazi Taxes (WB)
 #22 12Days: Gruul Midrange (RG)
 #23 Skite: Uroza (URG)
 #24 sandydogmtg: Burn (WR, Lurrus)
@@ -306,14 +306,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck21_Naisirc_OrzhovTaxes_WB()
+        public void Deck21_Naisirc_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-04-19",20),
                 "PostIkoria",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

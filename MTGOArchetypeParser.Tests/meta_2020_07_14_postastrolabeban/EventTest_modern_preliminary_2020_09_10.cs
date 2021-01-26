@@ -19,7 +19,7 @@ using System.Text;
 #10 _Stream: Izzet Prowess (UR)
 #11 _LSN_: Burn (WR, Lurrus)
 #12 qbturtle15: Gruul Midrange (RG)
-#13 penips: Orzhov Taxes (WB)
+#13 penips: Orzhov Eldrazi Taxes (WB)
 #14 Kricha13: Boros Prowess (WR, Lurrus)
 */
 
@@ -184,14 +184,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck13_penips_OrzhovTaxes_WB()
+        public void Deck13_penips_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-preliminary-2020-09-10",12),
                 "PostAstrolabeBan",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

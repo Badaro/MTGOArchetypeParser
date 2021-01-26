@@ -35,7 +35,7 @@ using System.Text;
 #26 staples87: Eldrazi Tron (C)
 #27 MiniCrow: Humans (WUBRG)
 #28 AbelMolto: Burn (WRG)
-#29 Parrit: Mono White Taxes (W)
+#29 Parrit: Mono White Eldrazi Taxes (W)
 #30 Maox: Dredge (BRG)
 #31 Jsnyder207: Knightfall (WUG)
 #32 FlyersIHC: Infect (UG)
@@ -410,14 +410,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck29_Parrit_MonoWhiteTaxes_W()
+        public void Deck29_Parrit_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-03-29",28),
                 "PostOuatBan",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

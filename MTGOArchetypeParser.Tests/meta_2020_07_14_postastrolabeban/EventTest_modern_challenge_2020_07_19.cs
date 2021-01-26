@@ -31,7 +31,7 @@ using System.Text;
 #22 MZBlazer: Izzet Prowess (UR)
 #23 MrRaeb: Sultai Control (UBG)
 #24 kthanakit26: Burn (WR)
-#25 crazybaloth: Mono White Taxes (W)
+#25 crazybaloth: Mono White Eldrazi Taxes (W)
 #26 MasterA: Goblins (BRG)
 #27 Vonducky: Boros Prowess (WR)
 #28 azatoyellow: Mono Red Prowess (R, Jegantha)
@@ -358,14 +358,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck25_crazybaloth_MonoWhiteTaxes_W()
+        public void Deck25_crazybaloth_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-19",24),
                 "PostAstrolabeBan",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

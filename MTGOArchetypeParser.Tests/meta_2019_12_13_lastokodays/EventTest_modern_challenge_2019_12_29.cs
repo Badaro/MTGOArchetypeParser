@@ -17,7 +17,7 @@ using System.Text;
 #08 Irra0770: Jund Midrange (BRG)
 #09 Laplasjan: Eldrazi Tron (C)
 #10 JOXEMI333: Green Tron (G)
-#11 V_Olkhovikov: Orzhov Taxes (WB)
+#11 V_Olkhovikov: Orzhov Eldrazi Taxes (WB)
 #12 phyrexianphenom3: Infect (UG)
 #13 ssnelson: UBRG Shadow (UBRG)
 #14 iDaveW: Infect (UG)
@@ -176,14 +176,14 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck11_VOlkhovikov_OrzhovTaxes_WB()
+        public void Deck11_VOlkhovikov_OrzhovEldraziTaxes_WB()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-29",10),
                 "LastOkoDays",
                 ArchetypeColor.WB,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }

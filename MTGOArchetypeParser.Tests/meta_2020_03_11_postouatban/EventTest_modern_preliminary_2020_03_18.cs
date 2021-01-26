@@ -31,9 +31,9 @@ using System.Text;
 #22 NosonosaN: Bant Control (WUG)
 #23 fradev1988: Electro Balance (UR)
 #24 Treno: Green Tron (G)
-#25 Olivetti: Mono White Taxes (W)
+#25 Olivetti: Mono White Eldrazi Taxes (W)
 #26 Genxim: Green Tron (G)
-#27 medvedev: Mono White Taxes (W)
+#27 medvedev: Mono White Eldrazi Taxes (W)
 #28 instantQ: Burn (WR)
 #29 Dazai: Bant Control (WUG)
 #30 Rooney56: Jund Midrange (BRG)
@@ -358,14 +358,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck25_Olivetti_MonoWhiteTaxes_W()
+        public void Deck25_Olivetti_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-18",24),
                 "PostOuatBan",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }
@@ -384,14 +384,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck27_medvedev_MonoWhiteTaxes_W()
+        public void Deck27_medvedev_MonoWhiteEldraziTaxes_W()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-18",26),
                 "PostOuatBan",
                 ArchetypeColor.W,
                 "Taxes",
-                null,
+                "EldraziTaxes",
                 null
             );
         }
