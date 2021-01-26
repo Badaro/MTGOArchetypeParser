@@ -61,6 +61,34 @@ namespace MTGOArchetypeParser.Tests
         }
 
         [Test]
+        public void OneOrMoreInSideboard()
+        {
+            DetectionSuccess(ArchetypeConditionType.OneOrMoreInSideboard,
+                new string[] { "Card 1", "Card 2" },
+                new string[] { },
+                new string[] { "Card 1", "Card 3" });
+
+            DetectionSuccess(ArchetypeConditionType.OneOrMoreInSideboard,
+                new string[] { "Card 1", "Card 2" },
+                new string[] { },
+                new string[] { "Card 2", "Card 3" });
+        }
+
+        [Test]
+        public void OneOrMoreInMainOrSideboard()
+        {
+            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainOrSideboard,
+                new string[] { "Card 1", "Card 2" },
+                new string[] { "Card 1", "Card 3" },
+                new string[] { });
+
+            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainOrSideboard,
+                new string[] { "Card 1", "Card 2" },
+                new string[] { },
+                new string[] { "Card 2", "Card 3" });
+        }
+
+        [Test]
         public void TwoOrMoreInMainboard()
         {
             DetectionFailure(ArchetypeConditionType.TwoOrMoreInMainboard,
@@ -77,6 +105,49 @@ namespace MTGOArchetypeParser.Tests
                new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
                new string[] { "Card 2", "Card 3" },
                new string[] { });
+        }
+
+        [Test]
+        public void TwoOrMoreInSideboard()
+        {
+            DetectionFailure(ArchetypeConditionType.TwoOrMoreInSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { },
+               new string[] { "Card 1", "Card 5" });
+
+            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { },
+               new string[] { "Card 1", "Card 3" });
+
+            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { },
+               new string[] { "Card 2", "Card 3" });
+        }
+
+        [Test]
+        public void TwoOrMoreInMainOrSideboard()
+        {
+            DetectionFailure(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { "Card 1" },
+               new string[] { "Card 5" });
+
+            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { "Card 1", "Card 3" },
+               new string[] { });
+
+            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { },
+               new string[] { "Card 2", "Card 3" });
+
+            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
+               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+               new string[] { "Card 1", },
+               new string[] { "Card 4" });
         }
 
         [Test]
