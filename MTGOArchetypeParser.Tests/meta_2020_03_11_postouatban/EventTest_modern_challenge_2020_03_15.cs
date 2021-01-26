@@ -65,7 +65,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-challenge-2020-03-15",1),
                 "PostOuatBan",
                 ArchetypeColor.W,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );
@@ -91,7 +91,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-challenge-2020-03-15",3),
                 "PostOuatBan",
                 ArchetypeColor.W,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );

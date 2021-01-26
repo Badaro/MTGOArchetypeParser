@@ -32,7 +32,7 @@ using System.Text;
 #23 Cherryxman: Scapeshift (URG)
 #24 albert62: Jund Midrange (BRG)
 #25 Bodybag: Humans (WUBRG)
-#26 VerMahilen: Orzhov Taxes (WB)
+#26 VerMahilen: Thalia Stompy (WB)
 #27 GodOfSlaughter: Jund Midrange (BRG)
 #28 Aluren85: Eldrazi Tron (C)
 #29 __BMJ__: UBRG Shadow (UBRG)
@@ -179,7 +179,7 @@ using System.Text;
 #170 wolfmedic: Gruul Midrange (RG)
 #171 desertdrive: Boros Prowess (WR)
 #172 StanLee: Scapeshift (UBRG, Lurrus)
-#173 Leonardo1080: Green Eldrazi (WG)
+#173 Leonardo1080: Selesnya Taxes (WG)
 #174 TheKingFor1000years: Infect (UG)
 #175 salvite: Eldrazi Tron (C)
 #176 Gabriel0288: Titan Shift (RG)
@@ -574,14 +574,14 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck26_VerMahilen_OrzhovTaxes_WB()
+        public void Deck26_VerMahilen_ThaliaStompy_WB()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",25),
                 "PostAstrolabeBan",
                 ArchetypeColor.WB,
-                "GenericTaxes",
-                null,
+                "Taxes",
+                "ThaliaStompy",
                 null
             );
         }
@@ -2485,13 +2485,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck173_Leonardo1080_GreenEldrazi_WG()
+        public void Deck173_Leonardo1080_SelesnyaTaxes_WG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",172),
                 "PostAstrolabeBan",
                 ArchetypeColor.WG,
-                "GreenEldrazi",
+                "Taxes",
                 null,
                 null
             );
@@ -3258,8 +3258,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",231),
                 "PostAstrolabeBan",
                 ArchetypeColor.WR,
+                "Taxes",
                 "ThaliaStompy",
-                null,
                 null
             );
         }

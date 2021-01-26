@@ -273,7 +273,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-champ-qual-2020-12-21",17),
                 "PostZendikarRising",
                 ArchetypeColor.W,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 ArchetypeCompanion.Yorion
             );

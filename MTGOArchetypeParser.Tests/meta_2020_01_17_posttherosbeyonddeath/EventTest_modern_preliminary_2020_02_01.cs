@@ -88,7 +88,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-preliminary-2020-02-01",4),
                 "PostTherosBeyondDeath",
                 ArchetypeColor.WB,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );

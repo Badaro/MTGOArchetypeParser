@@ -25,7 +25,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-preliminary-2020-12-18",0),
                 "PostZendikarRising",
                 ArchetypeColor.W,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );

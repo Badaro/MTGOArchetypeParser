@@ -182,7 +182,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-challenge-2019-12-29",10),
                 "LastOkoDays",
                 ArchetypeColor.WB,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );

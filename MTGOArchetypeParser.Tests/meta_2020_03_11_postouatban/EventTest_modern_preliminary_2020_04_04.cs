@@ -32,7 +32,7 @@ using System.Text;
 #23 AvocadoToast: Burn (WR)
 #24 603Leb: Green Tron (G)
 #25 jvidarte: Mono Red Prowess (R)
-#26 wordy333: Boros Taxes (WR)
+#26 wordy333: Boros Blink (WR)
 #27 MTG-Maestro: Naya Midrange (WRG)
 #28 signblindman: Gruul Midrange (RG)
 #29 negusen: Elves (WBRG)
@@ -381,13 +381,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck26_wordy333_BorosTaxes_WR()
+        public void Deck26_wordy333_BorosBlink_WR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-04",25),
                 "PostOuatBan",
                 ArchetypeColor.WR,
-                "GenericTaxes",
+                "GenericBlink",
                 null,
                 null
             );

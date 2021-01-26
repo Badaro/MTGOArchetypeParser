@@ -78,7 +78,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-23",2),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -377,7 +377,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-23",25),
                 "PostZendikarRising",
                 ArchetypeColor.W,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );
@@ -416,7 +416,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-11-23",28),
                 "PostZendikarRising",
                 ArchetypeColor.W,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );

@@ -90,7 +90,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-preliminary-2020-01-04",4),
                 "LastOkoDays",
                 ArchetypeColor.WB,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );

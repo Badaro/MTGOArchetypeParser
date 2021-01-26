@@ -591,7 +591,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-03-17",38),
                 "PostOuatBan",
                 ArchetypeColor.W,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );
@@ -695,7 +695,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-03-17",46),
                 "PostOuatBan",
                 ArchetypeColor.W,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );
@@ -1072,7 +1072,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-03-17",75),
                 "PostOuatBan",
                 ArchetypeColor.WU,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );

@@ -92,7 +92,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-preliminary-2020-07-29",4),
                 "PostAstrolabeBan",
                 ArchetypeColor.WU,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );

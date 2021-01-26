@@ -189,7 +189,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck12_BigB3N_TemurContrl_URG()
+        public void Deck12_BigB3N_TemurControl_URG()
         {
             Test(
                 GetDeck("modern-challenge-2021-01-25",11),
@@ -208,7 +208,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2021-01-25",12),
                 "PostZendikarRising",
                 ArchetypeColor.W,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );

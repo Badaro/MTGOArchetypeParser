@@ -483,7 +483,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
                 GetDeck("modern-preliminary-2020-04-08",33),
                 "PostOuatBan",
                 ArchetypeColor.W,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );

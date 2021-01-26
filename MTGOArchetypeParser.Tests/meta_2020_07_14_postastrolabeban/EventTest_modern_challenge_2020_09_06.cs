@@ -442,8 +442,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
                 GetDeck("modern-challenge-2020-09-06",30),
                 "PostAstrolabeBan",
                 ArchetypeColor.WR,
+                "Taxes",
                 "ThaliaStompy",
-                null,
                 null
             );
         }

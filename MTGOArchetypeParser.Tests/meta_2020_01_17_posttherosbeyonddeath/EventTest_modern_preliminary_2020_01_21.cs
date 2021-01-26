@@ -347,8 +347,8 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
                 GetDeck("modern-preliminary-2020-01-21",23),
                 "PostTherosBeyondDeath",
                 ArchetypeColor.WR,
+                "Taxes",
                 "ThaliaStompy",
-                null,
                 null
             );
         }

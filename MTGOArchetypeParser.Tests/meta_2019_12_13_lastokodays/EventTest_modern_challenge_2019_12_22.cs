@@ -22,7 +22,7 @@ using System.Text;
 #13 Prescienced: Green Eldrazi (UG)
 #14 thestudygroup: Mono White Taxes (W)
 #15 SoulStrong: UBRG Shadow (UBRG)
-#16 kiko: Esper Taxes (WUB)
+#16 kiko: Esper Blink (WUB)
 #17 MentalMisstep: Thopter Urza (WUBG)
 #18 Laplasjan: Eldrazi Tron (C)
 #19 zebhillard: Titan Shift (RG)
@@ -221,7 +221,7 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
                 GetDeck("modern-challenge-2019-12-22",13),
                 "LastOkoDays",
                 ArchetypeColor.W,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );
@@ -241,13 +241,13 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck16_kiko_EsperTaxes_WUB()
+        public void Deck16_kiko_EsperBlink_WUB()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-22",15),
                 "LastOkoDays",
                 ArchetypeColor.WUB,
-                "GenericTaxes",
+                "GenericBlink",
                 null,
                 null
             );

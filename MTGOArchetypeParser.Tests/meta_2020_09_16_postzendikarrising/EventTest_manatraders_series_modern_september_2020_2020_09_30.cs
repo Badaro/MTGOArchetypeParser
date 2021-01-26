@@ -490,7 +490,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-september-2020-2020-09-30",19),
                 "PostZendikarRising",
                 ArchetypeColor.WG,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );
@@ -620,7 +620,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-september-2020-2020-09-30",29),
                 "PostZendikarRising",
                 ArchetypeColor.WG,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );
@@ -1270,7 +1270,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-september-2020-2020-09-30",79),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );
@@ -1400,7 +1400,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-september-2020-2020-09-30",89),
                 "PostZendikarRising",
                 ArchetypeColor.WG,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );
@@ -1764,7 +1764,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("manatraders-series-modern-september-2020-2020-09-30",117),
                 "PostZendikarRising",
                 ArchetypeColor.WB,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );

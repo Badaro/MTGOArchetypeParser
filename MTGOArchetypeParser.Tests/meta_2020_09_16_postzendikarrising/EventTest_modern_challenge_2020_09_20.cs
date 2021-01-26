@@ -30,7 +30,7 @@ using System.Text;
 #21 Bullwinkkle6705: WURG Control (WURG)
 #22 Trid0n: Bogles (WG)
 #23 SebastianStueckl: Sultai Control (UBG)
-#24 kiko: Jeskai Taxes (WUR)
+#24 kiko: Jeskai Midrange (WUR)
 #25 quinniac: Mono Red Prowess (R)
 #26 pokerswizard: Mill (UB, Lurrus)
 #27 Xwhale: Humans (WUBRG)
@@ -91,7 +91,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
                 GetDeck("modern-challenge-2020-09-20",3),
                 "PostZendikarRising",
                 ArchetypeColor.W,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );
@@ -345,13 +345,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck24_kiko_JeskaiTaxes_WUR()
+        public void Deck24_kiko_JeskaiMidrange_WUR()
         {
             Test(
                 GetDeck("modern-challenge-2020-09-20",23),
                 "PostZendikarRising",
                 ArchetypeColor.WUR,
-                "GenericTaxes",
+                "GenericMidrange",
                 null,
                 null
             );

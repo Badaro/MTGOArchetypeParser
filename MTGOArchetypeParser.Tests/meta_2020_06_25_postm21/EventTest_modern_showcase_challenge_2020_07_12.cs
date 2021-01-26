@@ -78,7 +78,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
                 GetDeck("modern-showcase-challenge-2020-07-12",2),
                 "PostM21",
                 ArchetypeColor.WG,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );

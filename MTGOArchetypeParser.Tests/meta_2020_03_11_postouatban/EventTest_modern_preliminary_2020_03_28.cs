@@ -24,7 +24,7 @@ using System.Text;
 #15 n00bcheesepwner: Amulet Titan (UG)
 #16 AlabasterWolfie: Grinding Breach (UBR)
 #17 RealJoy: Humans (WUBRG)
-#18 kponceMTG: Boros Taxes (WR)
+#18 kponceMTG: Boros Midrange (WR)
 #19 RandomOctopus: Grixis Shadow (UBR)
 #20 Bugsy69: Uroza (URG)
 #21 _Batutinha_: Primeval Titan (WUG)
@@ -282,13 +282,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck18_kponceMTG_BorosTaxes_WR()
+        public void Deck18_kponceMTG_BorosMidrange_WR()
         {
             Test(
                 GetDeck("modern-preliminary-2020-03-28",17),
                 "PostOuatBan",
                 ArchetypeColor.WR,
-                "GenericTaxes",
+                "GenericMidrange",
                 null,
                 null
             );

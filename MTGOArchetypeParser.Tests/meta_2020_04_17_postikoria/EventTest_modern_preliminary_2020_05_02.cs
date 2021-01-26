@@ -121,7 +121,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-preliminary-2020-05-02",6),
                 "PostIkoria",
                 ArchetypeColor.W,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 null
             );

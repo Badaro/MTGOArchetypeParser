@@ -143,7 +143,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
                 GetDeck("modern-challenge-2020-06-01",7),
                 "PostIkoria",
                 ArchetypeColor.WR,
-                "GenericTaxes",
+                "Taxes",
                 null,
                 ArchetypeCompanion.Lurrus
             );

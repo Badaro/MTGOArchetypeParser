@@ -18,7 +18,7 @@ using System.Text;
 #09 NightKnight131: Devoted (WBG)
 #10 _LSN_: Burn (WR)
 #11 A22en: Devoted (WG)
-#12 Ramp: Green Eldrazi (WG)
+#12 Ramp: Selesnya Taxes (WG)
 #13 ElevatahPartay: Uroza (UG)
 #14 flankattack27: Esper Midrange (WUB)
 #15 markdm: Gruul Midrange (RG)
@@ -188,13 +188,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck12_Ramp_GreenEldrazi_WG()
+        public void Deck12_Ramp_SelesnyaTaxes_WG()
         {
             Test(
                 GetDeck("modern-preliminary-2020-02-29",11),
                 "PostTherosBeyondDeath",
                 ArchetypeColor.WG,
-                "GreenEldrazi",
+                "Taxes",
                 null,
                 null
             );
