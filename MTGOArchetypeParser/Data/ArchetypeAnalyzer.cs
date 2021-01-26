@@ -184,17 +184,6 @@ namespace MTGOArchetypeParser.Data
                         weights[genericArchetype] += card.Count;
                     }
                 }
-
-                if (genericArchetype.RequiredCards != null && genericArchetype.RequiredCards.Length > 0)
-                {
-                    foreach (var requiredCard in genericArchetype.RequiredCards)
-                    {
-                        if (!mainboardCards.Concat(sideboardCards).Distinct().Any(c => c.Name == requiredCard))
-                        {
-                            weights[genericArchetype] = -1;
-                        }
-                    }
-                }
             }
 
             if (weights.All(k => k.Value == 0))
