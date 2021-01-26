@@ -16,7 +16,7 @@ using System.Text;
 #07 Larry11: Devoted (WG, Lurrus)
 #08 Kenzaburo: Abzan Midrange (WBG, Lurrus)
 #09 shellington5385: Boros Prowess (WR, Lurrus)
-#10 C_E.L: 5 C Midrange (WUBRG, Umori)
+#10 C_E.L: 5 Color Midrange (WUBRG, Umori)
 #11 Butakov: Humans (WUBRG, Jegantha)
 #12 coert: Burn (WR, Lurrus)
 #13 CitrusD: Hammer Time (WR, Lurrus)
@@ -163,7 +163,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck10_CEL_5CMidrange_WUBRG_Umori()
+        public void Deck10_CEL_5ColorMidrange_WUBRG_Umori()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-04",9),

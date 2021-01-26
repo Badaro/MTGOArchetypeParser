@@ -191,7 +191,7 @@ using System.Text;
 #182 Denmark_Dan: Titan Shift (RG)
 #183 Ebnus: Gruul Midrange (RG)
 #184 Wtnof: Gruul Midrange (RG)
-#185 DLCabelo: 5 C Control (WUBRG)
+#185 DLCabelo: 5 Color Control (WUBRG)
 #186 matiaskm: Devoted (WG, Lurrus)
 #187 Dfeanor: Titan Shift (RG)
 #188 simpleliquid: Gruul Midrange (RG)
@@ -2641,7 +2641,7 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck185_DLCabelo_5CControl_WUBRG()
+        public void Deck185_DLCabelo_5ColorControl_WUBRG()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",184),

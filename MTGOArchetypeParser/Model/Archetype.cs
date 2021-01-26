@@ -99,7 +99,7 @@ namespace MTGOArchetypeParser.Model
                 case ArchetypeColor.UBRG: // Not-W
                     return $"UBRG";
                 case ArchetypeColor.WUBRG:
-                    return $"5C";
+                    return $"5Color";
                 default:
                     return "";
             }
