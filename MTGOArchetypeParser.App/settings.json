@@ -10,5 +10,5 @@
     "MTGODecklistCache\\Tournaments",
     "ManaTradersDecklistCache\\Tournaments"
   ],
-  "FormatDataFolder": "MTGOArchetypeParser\\MTGOFormatData\\Formats"
+  "FormatDataFolder": "MTGOFormatData\\Formats"
 }
