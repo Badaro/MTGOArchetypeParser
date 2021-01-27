@@ -50,7 +50,7 @@ namespace MTGOArchetypeParser.App
                 if (!String.IsNullOrEmpty(settings.Meta))
                 {
                     string metaFilter = settings.Meta;
-                    if (metaFilter.ToLowerInvariant() == "current") metaFilter = format.Metas.Last().Name;
+                    if (metaFilter.ToLowerInvariant() == "current") metaFilter = format.Metas.Where(m => m.StartDate < DateTime.UtcNow).Last().Name;
                     records = records.Where(r => r.Meta.Contains(metaFilter, StringComparison.InvariantCultureIgnoreCase)).ToArray();
 
                     if (!String.IsNullOrEmpty(settings.MetaWeek))
@@ -61,22 +61,28 @@ namespace MTGOArchetypeParser.App
 
                         records = records.Where(r => r.Week == metaWeekFilter).ToArray();
                     }
-
                 }
 
-                if (settings.Action == ExecutionAction.Compare)
+                if (records.Length == 0)
                 {
-                    records = records.Where(r => !r.Archetype.Equals(r.ReferenceArchetype)).ToArray();
-                }
-
-                if (settings.Output == ExecutionOutput.Console)
-                {
-                    new ConsoleOutput().Write(records, settings.Action);
+                    Console.WriteLine("No records found with the current filters");
                 }
                 else
                 {
-                    Console.WriteLine("Saving data to CSV file");
-                    new CsvOutput().Write(records, settings.Action);
+                    if (settings.Action == ExecutionAction.Compare)
+                    {
+                        records = records.Where(r => !r.Archetype.Equals(r.ReferenceArchetype)).ToArray();
+                    }
+
+                    if (settings.Output == ExecutionOutput.Console)
+                    {
+                        new ConsoleOutput().Write(records, settings.Action);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Saving data to CSV file");
+                        new CsvOutput().Write(records, settings.Action);
+                    }
                 }
 
                 if (settings.MetaBreakdown) PrintBreakdown(records);

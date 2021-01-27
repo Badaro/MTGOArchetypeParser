@@ -3,10 +3,8 @@
   "ReferenceFormat": "",
   "Meta": "",
   "Filter": [
-    "Modern"
   ],
   "Exclude": [
-    "League"
   ],
   "TournamentFolder": [
     "C:\\Users\\Filipe\\source\\repos\\MTGOArchetypeParser\\MTGODecklistCache\\Tournaments",
