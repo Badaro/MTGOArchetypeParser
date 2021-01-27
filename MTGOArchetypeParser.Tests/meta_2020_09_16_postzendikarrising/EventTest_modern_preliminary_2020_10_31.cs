@@ -14,7 +14,7 @@ using System.Text;
 #05 exoticherman: Jund Shadow (BRG)
 #06 polishdynamit3: Shadow Prowess (WBR, Lurrus)
 #07 Bunnykept: Heliod Combo (WG)
-#08 eclipse4343: Azorius Control (WU)
+#08 eclipse4343: Miracles (WU)
 #09 Leviathan102: Amulet Titan (RG)
 #10 random_deck: Selesnya Midrange (WG)
 #11 ice_nine_: Land Destruction (WR)
@@ -116,13 +116,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_eclipse4343_AzoriusControl_WU()
+        public void Deck08_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-31",7),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

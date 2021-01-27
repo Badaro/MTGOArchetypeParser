@@ -25,7 +25,7 @@ using System.Text;
 #16 Kurusu: Kiki Chord (WRG, Yorion)
 #17 pedrogush: Obosh Aggro (R, Obosh)
 #18 NorrathDecay: Burn (WR)
-#19 takuto8240: Azorius Control (WU)
+#19 takuto8240: Miracles (WU)
 #20 Chipsoss: Shadow Prowess (BRG, Lurrus)
 #21 yPrincipe: Reclaimer Titan (WRG)
 #22 Rinko: Enduring Ideal (WR)
@@ -280,13 +280,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck19_takuto8240_AzoriusControl_WU()
+        public void Deck19_takuto8240_Miracles_WU()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-02",18),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

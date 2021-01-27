@@ -31,7 +31,7 @@ using System.Text;
 #22 PTarts2win: Green Tron (G, Jegantha)
 #23 TennTyou: Niv To Light (WUBRG, Jegantha)
 #24 TscheggschDePoegg: Amulet Titan (URG)
-#25 SoulStrong: Azorius Control (WU, Kaheera)
+#25 SoulStrong: Miracles (WU, Kaheera)
 #26 Icteridae: Devoted (WUG)
 #27 CitrusD: Hammer Time (WR, Lurrus)
 #28 MikeSoles: Mardu Prowess (WBR, Lurrus)
@@ -358,13 +358,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck25_SoulStrong_AzoriusControl_WU_Kaheera()
+        public void Deck25_SoulStrong_Miracles_WU_Kaheera()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-17",24),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 ArchetypeCompanion.Kaheera
             );

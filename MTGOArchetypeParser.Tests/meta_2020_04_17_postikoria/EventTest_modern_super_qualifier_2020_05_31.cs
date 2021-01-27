@@ -37,7 +37,7 @@ using System.Text;
 #28 selbstdenker: Scapeshift (WUBRG, Yorion)
 #29 Bullwinkkle6705: Scapeshift (URG, Yorion)
 #30 bozo2112: Bogles (WG, Lurrus)
-#31 Navas: Azorius Control (WU, Kaheera)
+#31 Navas: Miracles (WU, Kaheera)
 #32 yuurari_yuko: Bogles (WUG, Lurrus)
 */
 
@@ -436,13 +436,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck31_Navas_AzoriusControl_WU_Kaheera()
+        public void Deck31_Navas_Miracles_WU_Kaheera()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-31",30),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 ArchetypeCompanion.Kaheera
             );

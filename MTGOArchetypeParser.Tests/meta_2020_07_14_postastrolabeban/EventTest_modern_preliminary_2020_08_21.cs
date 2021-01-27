@@ -10,7 +10,7 @@ using System.Text;
 #01 Volollo: Rakdos Prowess (BR, Lurrus)
 #02 RRozanski: Gruul Midrange (RG)
 #03 juzam_gin: Dredge (WBRG)
-#04 Toastxp: Azorius Control (WU)
+#04 Toastxp: Miracles (WU)
 #05 Gigglesworth: Bant Midrange (WUG)
 #06 Jositoshekel: Burn (WR)
 #07 Theo_Jung: Rakdos Prowess (BR, Lurrus)
@@ -72,13 +72,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck04_Toastxp_AzoriusControl_WU()
+        public void Deck04_Toastxp_Miracles_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-08-21",3),
                 "PostAstrolabeBan",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

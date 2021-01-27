@@ -14,7 +14,7 @@ using System.Text;
 #05 KnightOfSuri: Infect (UG)
 #06 CrusherBotBG: Hammer Time (W, Lurrus)
 #07 abethemage: Thopter Urza (WUB)
-#08 eclipse4343: Azorius Control (WU)
+#08 eclipse4343: Miracles (WU)
 #09 Math_God: Grixis Shadow (UBR, Lurrus)
 #10 ConnorM426: Reclaimer Titan (WG)
 #11 Ryan100495: Dredge (BRG)
@@ -137,13 +137,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_eclipse4343_AzoriusControl_WU()
+        public void Deck08_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-27",7),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

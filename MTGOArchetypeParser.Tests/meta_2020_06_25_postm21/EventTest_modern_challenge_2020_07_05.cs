@@ -11,7 +11,7 @@ using System.Text;
 #02 Darkiundsa: Bant Control (WUG, Yorion)
 #03 TSPJendrek: Sultai Control (UBG)
 #04 LORiWWA: Eldrazi Tron (C)
-#05 A22en: Azorius Control (WU)
+#05 A22en: Miracles (WU)
 #06 Busterbrown52: Elementals (WUBRG)
 #07 Shorak123: Reclamation (UBG)
 #08 1yo2yo: Thopter Urza (UBR)
@@ -98,13 +98,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_06_25_postm21
         }
 
         [Test]
-        public void Deck05_A22en_AzoriusControl_WU()
+        public void Deck05_A22en_Miracles_WU()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-05",4),
                 "PostM21",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

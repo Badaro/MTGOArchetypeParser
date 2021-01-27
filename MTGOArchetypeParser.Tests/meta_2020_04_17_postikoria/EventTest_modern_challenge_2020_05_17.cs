@@ -21,7 +21,7 @@ using System.Text;
 #12 MaxMagicer: Scapeshift (URG, Yorion)
 #13 LSMD: Boros Prowess (WR, Lurrus)
 #14 ecobaronen: Gruul Midrange (RG, Obosh)
-#15 pbarrrgh: Jeskai Control (WUR, Yorion)
+#15 pbarrrgh: Miracles (WUR, Yorion)
 #16 joetru: Niv To Light (WUBRG, Jegantha)
 #17 Numena_Lowallyn: Scapeshift (WUBRG, Yorion)
 #18 XxquestionablyawesomexX: Bogles (WG, Lurrus)
@@ -32,7 +32,7 @@ using System.Text;
 #23 FestiFan: Saheeli Combo (WURG, Yorion)
 #24 Desiver: Amulet Titan (URG)
 #25 Souze6: Jund Midrange (BRG, Lurrus)
-#26 TSPJendrek: Azorius Control (WU, Yorion)
+#26 TSPJendrek: Miracles (WU, Yorion)
 #27 twinlesstwin: Golgari Midrange (BG, Lurrus)
 #28 CharLy: Jund Midrange (BRG, Lurrus)
 #29 Sanchez5272: Green Tron (G)
@@ -228,13 +228,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck15_pbarrrgh_JeskaiControl_WUR_Yorion()
+        public void Deck15_pbarrrgh_Miracles_WUR_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-17",14),
                 "PostIkoria",
                 ArchetypeColor.WUR,
-                "GenericControl",
+                "Miracles",
                 null,
                 ArchetypeCompanion.Yorion
             );
@@ -371,13 +371,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck26_TSPJendrek_AzoriusControl_WU_Yorion()
+        public void Deck26_TSPJendrek_Miracles_WU_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-17",25),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 ArchetypeCompanion.Yorion
             );

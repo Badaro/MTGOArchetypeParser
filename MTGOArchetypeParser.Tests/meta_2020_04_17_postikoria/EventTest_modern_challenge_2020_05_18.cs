@@ -17,7 +17,7 @@ using System.Text;
 #08 joetru: Niv To Light (WUBRG, Jegantha)
 #09 SIN: Jund Midrange (BRG, Lurrus)
 #10 Toastxp: Mardu Prowess (WBR, Lurrus)
-#11 MGGX: Azorius Control (WU, Kaheera)
+#11 MGGX: Miracles (WU, Kaheera)
 #12 patheus_84: Ad Nauseam (WUB)
 #13 2jjm: Burn (WR, Lurrus)
 #14 CNewman: Scapeshift (URG, Yorion)
@@ -28,7 +28,7 @@ using System.Text;
 #19 Traft: Jund Midrange (BRG, Lurrus)
 #20 UnsungZero: Golgari Midrange (BG, Lurrus)
 #21 Pintogeddon2: Burn (WR, Lurrus)
-#22 TSPJendrek: Azorius Control (WU, Yorion)
+#22 TSPJendrek: Miracles (WU, Yorion)
 #23 Blade400: Eldrazi Tron (C)
 #24 bmac668: Burn (WR, Lurrus)
 #25 Mordeka1ser: Niv To Light (WUBRG, Yorion)
@@ -176,13 +176,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck11_MGGX_AzoriusControl_WU_Kaheera()
+        public void Deck11_MGGX_Miracles_WU_Kaheera()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-18",10),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 ArchetypeCompanion.Kaheera
             );
@@ -319,13 +319,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck22_TSPJendrek_AzoriusControl_WU_Yorion()
+        public void Deck22_TSPJendrek_Miracles_WU_Yorion()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-18",21),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 ArchetypeCompanion.Yorion
             );

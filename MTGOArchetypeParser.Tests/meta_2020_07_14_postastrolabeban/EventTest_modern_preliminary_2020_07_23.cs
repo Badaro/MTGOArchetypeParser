@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 
 /*
-#01 eclipse4343: Azorius Control (WU)
+#01 eclipse4343: Miracles (WU)
 #02 fling5133: Jund Midrange (BRG)
 #03 eggybenny: Neobrand (UBG)
 #04 RNGspecialist: Scapeshift (URG)
@@ -37,13 +37,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
     public class EventTest_modern_preliminary_2020_07_23 : EventTest
     {
         [Test]
-        public void Deck01_eclipse4343_AzoriusControl_WU()
+        public void Deck01_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-23",0),
                 "PostAstrolabeBan",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

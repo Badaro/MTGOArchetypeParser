@@ -8,7 +8,7 @@ using System.Text;
 
 /*
 #01 Soondubu: Heliod Combo (WG)
-#02 eclipse4343: Azorius Control (WU)
+#02 eclipse4343: Miracles (WU)
 #03 Smdster: WURG Control (WURG)
 #04 hauterho: Obosh Aggro (R, Obosh)
 #05 ZYURYO: Sultai Control (UBG)
@@ -36,13 +36,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck02_eclipse4343_AzoriusControl_WU()
+        public void Deck02_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-24",1),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

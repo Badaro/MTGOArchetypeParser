@@ -25,7 +25,7 @@ using System.Text;
 #16 _Shatun_: Mono Red Prowess (R)
 #17 palk52: UBRG Shadow (UBRG)
 #18 Folero: Dredge (BRG)
-#19 mechrataal: Azorius Control (WU)
+#19 mechrataal: Miracles (WU)
 #20 maxxattack: Infect (UG)
 #21 karn_90: Grixis Shadow (UBR)
 #22 Graciasportanto: Amulet Titan (UG)
@@ -280,13 +280,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_01_17_posttherosbeyonddeath
         }
 
         [Test]
-        public void Deck19_mechrataal_AzoriusControl_WU()
+        public void Deck19_mechrataal_Miracles_WU()
         {
             Test(
                 GetDeck("modern-showcase-challenge-2020-01-26",18),
                 "PostTherosBeyondDeath",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

@@ -29,7 +29,7 @@ using System.Text;
 #20 zMagic4ever: Gruul Midrange (RG)
 #21 PhReSHTinGZ: Amulet Titan (UG)
 #22 HappySandwich: Gruul Midrange (RG)
-#23 eclipse4343: Azorius Control (WU)
+#23 eclipse4343: Miracles (WU)
 #24 Hyeri0418: Dredge (BRG)
 #25 qcsando: Heliod Combo (WBG)
 #26 Janh: Saheeli Combo (WUR)
@@ -360,13 +360,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck23_eclipse4343_AzoriusControl_WU()
+        public void Deck23_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-11",22),
                 "PostOuatBan",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

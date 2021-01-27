@@ -37,7 +37,7 @@ using System.Text;
 #28 TscheggschDePoegg: Dredge (BRG)
 #29 Ikashy: Belcher (URG)
 #30 medvedev: Spirits (WU)
-#31 eclipse4343: Azorius Control (WU)
+#31 eclipse4343: Miracles (WU)
 #32 Binolino: Amulet Titan (G)
 */
 
@@ -436,13 +436,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck31_eclipse4343_AzoriusControl_WU()
+        public void Deck31_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-super-qualifier-2021-01-24",30),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

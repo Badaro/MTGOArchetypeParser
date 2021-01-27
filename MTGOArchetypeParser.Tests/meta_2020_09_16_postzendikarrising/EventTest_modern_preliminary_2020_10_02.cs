@@ -12,7 +12,7 @@ using System.Text;
 #03 Rav104: Oops All Spells (WUBRG)
 #04 im2g00t4ubarn: WURG Control (WURG)
 #05 Humpaa: Orzhov Midrange (WB)
-#06 eclipse4343: Azorius Control (WU)
+#06 eclipse4343: Miracles (WU)
 #07 Graciasportanto: WURG Control (WURG)
 #08 Traft: WURG Control (WURG)
 #09 nedyahiske: Sultai Control (UBG)
@@ -105,13 +105,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_eclipse4343_AzoriusControl_WU()
+        public void Deck06_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-10-02",5),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

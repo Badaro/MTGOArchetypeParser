@@ -10,7 +10,7 @@ using System.Text;
 #01 Ivc: Azorius Control (WU)
 #02 RadioactiveTortoise: Gifts Storm (UR, Jegantha)
 #03 otakkun: Eldrazi Tron (C)
-#04 TSPJendrek: Azorius Control (WU, Yorion)
+#04 TSPJendrek: Miracles (WU, Yorion)
 #05 UrbanPope: Boros Prowess (WR, Lurrus)
 #06 Yamada: Devoted (WG, Lurrus)
 #07 ilsecco14: Neobrand (UG)
@@ -70,13 +70,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck04_TSPJendrek_AzoriusControl_WU_Yorion()
+        public void Deck04_TSPJendrek_Miracles_WU_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-16",3),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 ArchetypeCompanion.Yorion
             );

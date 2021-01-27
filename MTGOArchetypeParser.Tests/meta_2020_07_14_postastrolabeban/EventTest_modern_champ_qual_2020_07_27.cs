@@ -35,7 +35,7 @@ using System.Text;
 #26 Alzik: Gruul Midrange (RG)
 #27 ATXroy: Izzet Prowess (UR)
 #28 HannoLee: Green Tron (G)
-#29 eclipse4343: Azorius Control (WU)
+#29 eclipse4343: Miracles (WU)
 #30 aqualog: Izzet Prowess (UR)
 #31 juzam_gin: Dredge (WBRG)
 #32 no_lyfe: Mono Red Prowess (R)
@@ -410,13 +410,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck29_eclipse4343_AzoriusControl_WU()
+        public void Deck29_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-07-27",28),
                 "PostAstrolabeBan",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

@@ -22,7 +22,7 @@ using System.Text;
 #13 Snusnumrick: Eldrazi Tron (C)
 #14 RicardoMSLan: Green Tron (G)
 #15 Phill_Hellmuth: Dredge (WBRG)
-#16 eclipse4343: Azorius Control (WU)
+#16 eclipse4343: Miracles (WU)
 #17 hcook725: Mardu Prowess (WBR, Lurrus)
 #18 Thrall90: Jund Midrange (BRG)
 */
@@ -227,13 +227,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck16_eclipse4343_AzoriusControl_WU()
+        public void Deck16_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-07-21",15),
                 "PostAstrolabeBan",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

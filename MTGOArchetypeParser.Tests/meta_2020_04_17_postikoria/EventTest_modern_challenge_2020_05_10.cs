@@ -12,12 +12,12 @@ using System.Text;
 #03 yamakiller: Boros Prowess (WR, Lurrus)
 #04 NinoMtg: Delver (UBR, Lurrus)
 #05 pokerswizard: Boros Prowess (WR, Lurrus)
-#06 aspiringspike: Azorius Control (WU, Kaheera)
+#06 aspiringspike: Miracles (WU, Kaheera)
 #07 Wizard_Of_Jack: Jund Midrange (BRG, Lurrus)
 #08 CaptainFarbosa: Reclamation (UBG)
 #09 Karolmo: Titan Shift (RG)
 #10 Doni_Dominaria: Gruul Midrange (RG, Obosh)
-#11 Do0mSwitch: Azorius Control (WU)
+#11 Do0mSwitch: Miracles (WU)
 #12 MikeEgan: Delver (UBR, Lurrus)
 #13 Sharkcaster_Mage: Primeval Titan (UG)
 #14 Lucabireskusku: Thopter Combo (UB, Lurrus)
@@ -111,13 +111,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck06_aspiringspike_AzoriusControl_WU_Kaheera()
+        public void Deck06_aspiringspike_Miracles_WU_Kaheera()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-10",5),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 ArchetypeCompanion.Kaheera
             );
@@ -176,13 +176,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck11_Do0mSwitch_AzoriusControl_WU()
+        public void Deck11_Do0mSwitch_Miracles_WU()
         {
             Test(
                 GetDeck("modern-challenge-2020-05-10",10),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

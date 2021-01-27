@@ -31,7 +31,7 @@ using System.Text;
 #22 Gobern: Niv To Light (WUBRG, Yorion)
 #23 coert: Heliod Combo (WG, Yorion)
 #24 darius89: Ad Nauseam (WUB)
-#25 qbturtle15: Azorius Control (WU)
+#25 qbturtle15: Miracles (WU)
 #26 bigjc00: Amulet Titan (RG)
 #27 kiwgil01: Electro Balance (URG)
 #28 Binolino: Reclaimer Titan (WRG)
@@ -358,13 +358,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck25_qbturtle15_AzoriusControl_WU()
+        public void Deck25_qbturtle15_Miracles_WU()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-15",24),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

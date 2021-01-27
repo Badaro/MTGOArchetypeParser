@@ -22,13 +22,13 @@ using System.Text;
 #13 Fabrice_K: Eldrazi Tron (C)
 #14 Wartico1: Mardu Prowess (WBR, Lurrus)
 #15 Vasoi2323: Reclamation (UBG)
-#16 gottelicious: Azorius Control (WU, Kaheera)
+#16 gottelicious: Miracles (WU, Kaheera)
 #17 Larry11: Gruul Midrange (RG, Obosh)
 #18 ack_s: Hammer Time (WR, Lurrus)
 #19 MadMaxErnst: Rakdos Prowess (BR, Lurrus)
 #20 Jaime555d: Eldrazi Tron (C)
 #21 Dafne17: Jund Midrange (BRG, Lurrus)
-#22 Navas: Azorius Control (WU, Kaheera)
+#22 Navas: Miracles (WU, Kaheera)
 #23 fradev1988: Electro Balance (URG)
 #24 Metal_Buddha: Abzan Midrange (WBG, Yorion)
 #25 sff_mtg: Green Tron (G, Jegantha)
@@ -241,13 +241,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck16_gottelicious_AzoriusControl_WU_Kaheera()
+        public void Deck16_gottelicious_Miracles_WU_Kaheera()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-24",15),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 ArchetypeCompanion.Kaheera
             );
@@ -319,13 +319,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck22_Navas_AzoriusControl_WU_Kaheera()
+        public void Deck22_Navas_Miracles_WU_Kaheera()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-24",21),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 ArchetypeCompanion.Kaheera
             );

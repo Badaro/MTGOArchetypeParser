@@ -44,7 +44,7 @@ using System.Text;
 #35 Bugsy69: Uroza (URG)
 #36 untiltedmtg: Gruul Midrange (RG)
 #37 NAP_DARKMAGE_MJM: Humans (WUBRG)
-#38 eclipse4343: Azorius Control (WU)
+#38 eclipse4343: Miracles (WU)
 #39 Bullwinkkle6705: Green Tron (G)
 #40 GrilledCheese: Smallpox (BRG)
 #41 Icteridae: Dice Factory Tron (C)
@@ -537,13 +537,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_03_11_postouatban
         }
 
         [Test]
-        public void Deck38_eclipse4343_AzoriusControl_WU()
+        public void Deck38_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-04-04",37),
                 "PostOuatBan",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

@@ -9,7 +9,7 @@ using System.Text;
 /*
 #01 ArchaeusDota: Green Tron (G, Jegantha)
 #02 Patxi: Rakdos Prowess (BR, Lurrus)
-#03 WhiTe TsaR: Azorius Control (WU, Kaheera)
+#03 WhiTe TsaR: Miracles (WU, Kaheera)
 #04 Toastxp: Jund Prowess (BRG, Lurrus)
 #05 PredatorStyle: Bogles (WUG, Lurrus)
 #06 Smok1ngBUDS: Rakdos Prowess (BR, Lurrus)
@@ -72,13 +72,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck03_WhiTeTsaR_AzoriusControl_WU_Kaheera()
+        public void Deck03_WhiTeTsaR_Miracles_WU_Kaheera()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-26",2),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 ArchetypeCompanion.Kaheera
             );

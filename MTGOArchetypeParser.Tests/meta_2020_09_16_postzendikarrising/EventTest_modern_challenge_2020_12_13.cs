@@ -14,7 +14,7 @@ using System.Text;
 #05 Sodeq: Dredge (BRG)
 #06 mariogomes097: Devoted (WG, Lurrus)
 #07 Curtisaxel: Blue Tron (UR)
-#08 eclipse4343: Azorius Control (WU)
+#08 eclipse4343: Miracles (WU)
 #09 Chris_Concarnage: Obosh Aggro (R, Obosh)
 #10 Condescend: WURG Control (WURG)
 #11 azax: Reclaimer Titan (WRG)
@@ -137,13 +137,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck08_eclipse4343_AzoriusControl_WU()
+        public void Deck08_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-challenge-2020-12-13",7),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

@@ -10,7 +10,7 @@ using System.Text;
 #01 hauterho: Obosh Aggro (BR, Obosh)
 #02 _Batutinha_: WURG Control (WURG)
 #03 Wizard_2002: Burn (WRG)
-#04 eclipse4343: Azorius Control (WU)
+#04 eclipse4343: Miracles (WU)
 #05 coLDuster: Reclaimer Titan (WRG)
 #06 ice_nine_: Land Destruction (WR)
 #07 Blade400: Eldrazi Tron (C)
@@ -64,13 +64,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck04_eclipse4343_AzoriusControl_WU()
+        public void Deck04_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-28",3),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

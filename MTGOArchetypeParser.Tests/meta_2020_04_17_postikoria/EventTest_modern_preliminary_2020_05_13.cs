@@ -12,7 +12,7 @@ using System.Text;
 #03 kefka27: Boros Prowess (WR, Lurrus)
 #04 spellvine: Boros Prowess (WR, Lurrus)
 #05 Toastxp: Mardu Prowess (WBR, Lurrus)
-#06 ImmanuelKantrolGod: Azorius Control (WU, Kaheera)
+#06 ImmanuelKantrolGod: Miracles (WU, Kaheera)
 #07 otakkun: Eldrazi Tron (C)
 #08 aooaaooa: Gyruda Reanimator (WUBRG, Gyruda)
 #09 Dafne17: Gruul Midrange (RG, Obosh)
@@ -22,7 +22,7 @@ using System.Text;
 #13 Butakov: Bogles (WG, Lurrus)
 #14 signblindman: Jund Midrange (BRG, Obosh)
 #15 CamKelly13: Green Tron (G, Jegantha)
-#16 TSPJendrek: Azorius Control (WU)
+#16 TSPJendrek: Miracles (WU)
 #17 Dai1412: Bogles (WG, Lurrus)
 #18 eresopacaso: Burn (WR, Lurrus)
 #19 kanister: WURG Control (WURG, Yorion)
@@ -100,13 +100,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck06_ImmanuelKantrolGod_AzoriusControl_WU_Kaheera()
+        public void Deck06_ImmanuelKantrolGod_Miracles_WU_Kaheera()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-13",5),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 ArchetypeCompanion.Kaheera
             );
@@ -230,13 +230,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck16_TSPJendrek_AzoriusControl_WU()
+        public void Deck16_TSPJendrek_Miracles_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-13",15),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

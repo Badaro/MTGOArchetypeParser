@@ -8,7 +8,7 @@ using System.Text;
 
 /*
 #01 mansak: Jund Midrange (BRG, Lurrus)
-#02 Ivc: Azorius Control (WU)
+#02 Ivc: Miracles (WU)
 #03 Golgarburr: Jund Midrange (BRG, Lurrus)
 #04 yuurari_yuko: Amulet Titan (URG)
 #05 TennTyou: Niv To Light (WUBRG)
@@ -59,13 +59,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck02_Ivc_AzoriusControl_WU()
+        public void Deck02_Ivc_Miracles_WU()
         {
             Test(
                 GetDeck("modern-super-qualifier-2020-05-03",1),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

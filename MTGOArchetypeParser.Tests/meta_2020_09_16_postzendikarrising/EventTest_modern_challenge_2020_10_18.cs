@@ -31,7 +31,7 @@ using System.Text;
 #22 daibloXSC: Jeskai Control (WUR)
 #23 NuBlkAu: Rakdos Shadow (BR)
 #24 pbarrrgh: Reclamation (UBG)
-#25 eclipse4343: Azorius Control (WU)
+#25 eclipse4343: Miracles (WU)
 #26 Moniz0801: Amulet Titan (RG)
 #27 yamakiller: Obosh Aggro (R, Obosh)
 #28 Metcalf23: Mono White Taxes (W)
@@ -358,13 +358,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck25_eclipse4343_AzoriusControl_WU()
+        public void Deck25_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-18",24),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

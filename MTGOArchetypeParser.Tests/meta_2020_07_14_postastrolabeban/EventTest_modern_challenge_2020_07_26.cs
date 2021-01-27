@@ -30,7 +30,7 @@ using System.Text;
 #21 MaxMagicer: Humans (WUBRG)
 #22 Janh: Saheeli Combo (WUR)
 #23 Moniz0801: Amulet Titan (WUG)
-#24 chococookie: Azorius Control (WU)
+#24 chococookie: Miracles (WU)
 #25 Oscar_Franco: Jund Midrange (BRG)
 #26 TheAfterman: Humans (WUBRG)
 #27 bbq42069dude: Izzet Prowess (UR)
@@ -345,13 +345,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck24_chococookie_AzoriusControl_WU()
+        public void Deck24_chococookie_Miracles_WU()
         {
             Test(
                 GetDeck("modern-challenge-2020-07-26",23),
                 "PostAstrolabeBan",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

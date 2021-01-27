@@ -202,7 +202,7 @@ using System.Text;
 #193 Frankdog: Goblins (BR)
 #194 WhiteFaces: Hammer Time (W, Lurrus)
 #195 LuisMj: WURG Control (WURG)
-#196 Denmark_Dan: Azorius Control (WU)
+#196 Denmark_Dan: Miracles (WU)
 #197 Bomberboss: Mardu Midrange (WBR)
 #198 NathanLipetz: Rakdos Midrange (BR)
 #199 magma728: Ad Nauseam (WUB)
@@ -2847,13 +2847,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck196_DenmarkDan_AzoriusControl_WU()
+        public void Deck196_DenmarkDan_Miracles_WU()
         {
             Test(
                 GetDeck("manatraders-series-modern-december-2020-2020-12-31",195),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

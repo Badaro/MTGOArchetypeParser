@@ -20,7 +20,7 @@ using System.Text;
 #11 MastaHorus: Electro End (UR)
 #12 Phill_Hellmuth: Dice Factory Tron (C)
 #13 ColdPier: Eldrazi Tron (C)
-#14 VacatedDrake: Azorius Control (WU)
+#14 VacatedDrake: Miracles (WU)
 #15 GrandDrou: Reclaimer Titan (WRG)
 #16 kanister: WURG Control (WURG)
 #17 Arcatera: Shadow Prowess (BRG, Lurrus)
@@ -201,13 +201,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck14_VacatedDrake_AzoriusControl_WU()
+        public void Deck14_VacatedDrake_Miracles_WU()
         {
             Test(
                 GetDeck("modern-preliminary-2020-11-24",13),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

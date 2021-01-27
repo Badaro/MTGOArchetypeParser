@@ -9,7 +9,7 @@ using System.Text;
 /*
 #01 bomberboss: Humans (WUBRG)
 #02 billsive: Temur Control (URG)
-#03 Ivc: Azorius Control (WU)
+#03 Ivc: Miracles (WU)
 #04 Sharkcaster_Mage: Reclaimer Titan (WRG)
 #05 3HaLeX1: Eldrazi Tron (C)
 #06 Gerschi: Sultai Control (UBG)
@@ -72,13 +72,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck03_Ivc_AzoriusControl_WU()
+        public void Deck03_Ivc_Miracles_WU()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-09-14",2),
                 "PostAstrolabeBan",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

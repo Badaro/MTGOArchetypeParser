@@ -13,7 +13,7 @@ using System.Text;
 #04 otakkun: Eldrazi Tron (C)
 #05 TennTyou: Niv To Light (WUBRG, Jegantha)
 #06 GideonRavensword: Bogles (WUG, Lurrus)
-#07 TSPJendrek: Azorius Control (WU, Yorion)
+#07 TSPJendrek: Miracles (WU, Yorion)
 #08 Toastxp: Mardu Prowess (WBR, Lurrus)
 #09 joker10289: Mardu Prowess (WBR, Lurrus)
 #10 zecarlonxo: Hardened Scales (BG, Lurrus)
@@ -103,13 +103,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck07_TSPJendrek_AzoriusControl_WU_Yorion()
+        public void Deck07_TSPJendrek_Miracles_WU_Yorion()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-23",6),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 ArchetypeCompanion.Yorion
             );

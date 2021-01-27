@@ -8,7 +8,7 @@ using System.Text;
 
 /*
 #01 stainerson: Titan Shift (RG)
-#02 pbarrrgh: Azorius Control (WU)
+#02 pbarrrgh: Miracles (WU)
 #03 Kuhb: Thopter Urza (UBG)
 #04 Cherryxman: Eldrazi Tron (C)
 #05 benchsummer: UBRG Shadow (UBRG)
@@ -59,13 +59,13 @@ namespace MTGOArchetypeParser.Tests.meta_2019_12_13_lastokodays
         }
 
         [Test]
-        public void Deck02_pbarrrgh_AzoriusControl_WU()
+        public void Deck02_pbarrrgh_Miracles_WU()
         {
             Test(
                 GetDeck("modern-challenge-2019-12-16",1),
                 "LastOkoDays",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

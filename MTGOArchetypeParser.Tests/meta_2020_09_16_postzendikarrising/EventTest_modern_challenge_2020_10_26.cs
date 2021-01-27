@@ -37,8 +37,8 @@ using System.Text;
 #28 drVendigo: Humans (WUBRG)
 #29 Lukas261997: Sultai Control (UBG)
 #30 Tweedel: Humans (WUBRG)
-#31 Ivc: Azorius Control (WU)
-#32 Supercazzola: Azorius Control (WU)
+#31 Ivc: Miracles (WU)
+#32 Supercazzola: Miracles (WU)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -436,26 +436,26 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck31_Ivc_AzoriusControl_WU()
+        public void Deck31_Ivc_Miracles_WU()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",30),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );
         }
 
         [Test]
-        public void Deck32_Supercazzola_AzoriusControl_WU()
+        public void Deck32_Supercazzola_Miracles_WU()
         {
             Test(
                 GetDeck("modern-challenge-2020-10-26",31),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

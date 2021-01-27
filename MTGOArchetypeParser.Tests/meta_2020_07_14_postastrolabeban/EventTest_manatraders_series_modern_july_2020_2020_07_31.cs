@@ -150,7 +150,7 @@ using System.Text;
 #141 BaronOfBacon: UBRG Shadow (UBRG)
 #142 chris_concarnage: Eldrazi Tron (C)
 #143 ACG88: Titan Shift (RG)
-#144 takemini: Azorius Control (WU)
+#144 takemini: Miracles (WU)
 #145 FromTheCrypt: Eldrazi Tron (C)
 #146 mikeyoffbeat: Hardened Scales (G)
 #147 MaxMagicer: Goblins (BR)
@@ -2108,13 +2108,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_07_14_postastrolabeban
         }
 
         [Test]
-        public void Deck144_takemini_AzoriusControl_WU()
+        public void Deck144_takemini_Miracles_WU()
         {
             Test(
                 GetDeck("manatraders-series-modern-july-2020-2020-07-31",143),
                 "PostAstrolabeBan",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

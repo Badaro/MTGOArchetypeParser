@@ -38,7 +38,7 @@ using System.Text;
 #29 Veronkierto: Dredge (BRG)
 #30 Ma7x: Shadow Prowess (BRG, Lurrus)
 #31 Egze249: Ad Nauseam (WUB)
-#32 eclipse4343: Azorius Control (WU)
+#32 eclipse4343: Miracles (WU)
 */
 
 namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
@@ -449,13 +449,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck32_eclipse4343_AzoriusControl_WU()
+        public void Deck32_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-champ-qual-2020-12-21",31),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );

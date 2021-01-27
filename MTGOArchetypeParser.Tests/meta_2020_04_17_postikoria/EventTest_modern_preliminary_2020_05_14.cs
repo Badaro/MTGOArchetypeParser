@@ -23,7 +23,7 @@ using System.Text;
 #14 kefka27: Eldrazi Tron (C)
 #15 KeeperX: Zirda Combo (WRG, Zirda)
 #16 MLupa: Bant Control (WUG, Yorion)
-#17 HarlanMTG: Azorius Control (WU, Kaheera)
+#17 HarlanMTG: Miracles (WU, Kaheera)
 #18 patrick50: Reclamation (UBG)
 #19 pmc22337: Reclamation (UBG)
 #20 yamakiller: Boros Prowess (WR, Lurrus)
@@ -244,13 +244,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_04_17_postikoria
         }
 
         [Test]
-        public void Deck17_HarlanMTG_AzoriusControl_WU_Kaheera()
+        public void Deck17_HarlanMTG_Miracles_WU_Kaheera()
         {
             Test(
                 GetDeck("modern-preliminary-2020-05-14",16),
                 "PostIkoria",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 ArchetypeCompanion.Kaheera
             );

@@ -12,7 +12,7 @@ using System.Text;
 #03 otakkun: Eldrazi Tron (C)
 #04 HNSDMPF: Hardened Scales (G)
 #05 JUJUBEAN__2004: Heliod Combo (WG)
-#06 eclipse4343: Azorius Control (WU)
+#06 eclipse4343: Miracles (WU)
 #07 Selami: Ad Nauseam (WUB)
 #08 AlpInco: Oops All Spells (WUBRG)
 #09 Oderus Urungus: Obosh Aggro (R, Obosh)
@@ -111,13 +111,13 @@ namespace MTGOArchetypeParser.Tests.meta_2020_09_16_postzendikarrising
         }
 
         [Test]
-        public void Deck06_eclipse4343_AzoriusControl_WU()
+        public void Deck06_eclipse4343_Miracles_WU()
         {
             Test(
                 GetDeck("modern-challenge-2020-11-29",5),
                 "PostZendikarRising",
                 ArchetypeColor.WU,
-                "GenericControl",
+                "Miracles",
                 null,
                 null
             );
