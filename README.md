@@ -6,8 +6,7 @@ Rules-based engine to detect archetypes from MTGO decklists.
 
 * Install .Net Core Runtime (https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * Download the latest release of MTGOArchetypeParser
-* Download (or clone) the MTGO tournaments: https://github.com/Badaro/MTGODecklistCache
-* Download (or clone) the ManaTraders tournaments: https://github.com/Badaro/ManaTradersDecklistCache
+* Download (or clone) the tournament results: https://github.com/Badaro/MTGODecklistCache
 * Download (or clone) the archetype definitions: https://github.com/Badaro/MTGOFormatData
 
 Extract the ZIP from MTGOArchetypeParser, and put the MTGO tournaments, ManaTraders tournaments, and archetype definitions in the same folder. You should end up with a structure like this:
