@@ -14,7 +14,6 @@ Extract the ZIP from MTGOArchetypeParser, and put the MTGO tournaments, ManaTrad
 ```
 MTGOArchetypeParser
 MTGOArchetypeParser/MTGODecklistCache
-MTGOArchetypeParser/ManaTradersDecklistCache
 MTGOArchetypeParser/MTGOFormatData
 ```
 Once you did that, open a console prompt on the MTGOArchetypeParser and run this:

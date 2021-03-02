@@ -2,7 +2,7 @@
   "profiles": {
     "MTGOArchetypeParser.App": {
       "commandName": "Project",
-      "commandLineArgs": "console detect format=Modern filter=Modern exclude=League meta=current metaweek=current tournamentfolder=$(SolutionDir)ManaTradersDecklistCache\\Tournaments tournamentfolder=$(SolutionDir)MTGODecklistCache\\Tournaments formatdatafolder=$(SolutionDir)MTGOFormatData\\Formats"
+      "commandLineArgs": "console detect format=Modern filter=Modern exclude=League meta=current metaweek=current formatdatafolder=$(SolutionDir)MTGOFormatData\\Formats tournamentfolder=$(SolutionDir)MTGODecklistCache\\Tournaments\\magic.wizards.com tournamentfolder=$(SolutionDir)MTGODecklistCache\\Tournaments\\manatraders.com tournamentfolder=$(SolutionDir)MTGODecklistCache\\Tournaments\\nerdragegaming.com"
     }
   }
 }
