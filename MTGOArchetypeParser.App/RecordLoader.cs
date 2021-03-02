@@ -10,7 +10,7 @@ namespace MTGOArchetypeParser.App
 {
     public static class RecordLoader
     {
-        public static Record[] GetRecords(Tournament[] tournaments, ArchetypeFormat format, ArchetypeFormat referenceFormat)
+        public static Record[] GetRecords(Tournament[] tournaments, ArchetypeFormat format, ArchetypeFormat referenceFormat, bool includeDecklists)
         {
             List<Record> records = new List<Record>();
 
@@ -49,7 +49,9 @@ namespace MTGOArchetypeParser.App
                         Player = tournament.Decks[i].Player,
                         AnchorUri = tournament.Decks[i].AnchorUri,
                         Archetype = archetype,
-                        ReferenceArchetype = referenceArchetype
+                        ReferenceArchetype = referenceArchetype,
+                        Mainboard = includeDecklists ? tournament.Decks[i].Mainboard : null,
+                        Sideboard = includeDecklists ? tournament.Decks[i].Sideboard : null
                     });
                 }
             }

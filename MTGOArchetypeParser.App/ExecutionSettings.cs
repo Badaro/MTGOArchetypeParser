@@ -18,6 +18,7 @@ namespace MTGOArchetypeParser.App
         public string[] Filter { get; set; }
         public string[] Exclude { get; set; }
         public bool MetaBreakdown { get; set; }
+        public bool IncludeDecklists { get; set; }
         public string[] TournamentFolder { get; set; }
         public string FormatDataFolder { get; set; }
 
@@ -47,6 +48,7 @@ namespace MTGOArchetypeParser.App
             string[] filterArgument = GetArgument(args, nameof(Filter));
             string[] excludeArgument = GetArgument(args, nameof(Exclude));
             string breakdownArgument = GetArgument(args, nameof(MetaBreakdown)).FirstOrDefault();
+            string decklistsArgument = GetArgument(args, nameof(IncludeDecklists)).FirstOrDefault();
             string[] cacheFoldersArgument = GetArgument(args, nameof(TournamentFolder));
             string dataFolderArgument = GetArgument(args, nameof(FormatDataFolder)).FirstOrDefault();
 
@@ -57,6 +59,7 @@ namespace MTGOArchetypeParser.App
             if (filterArgument.Length > 0) this.Filter = filterArgument;
             if (excludeArgument.Length > 0) this.Exclude = excludeArgument;
             if (breakdownArgument != null) this.MetaBreakdown = (breakdownArgument.ToLowerInvariant() == "true");
+            if (decklistsArgument != null) this.IncludeDecklists = (decklistsArgument.ToLowerInvariant() == "true");
             if (cacheFoldersArgument.Length > 0) this.TournamentFolder = cacheFoldersArgument;
             if (dataFolderArgument != null) this.FormatDataFolder = dataFolderArgument;
 
@@ -114,6 +117,7 @@ namespace MTGOArchetypeParser.App
             if (this.Filter != null && this.Filter.Length > 0) this.Filter.ToList().ForEach(f => Console.WriteLine($"* {nameof(this.Filter)}: {f}"));
             if (this.Exclude != null && this.Exclude.Length > 0) this.Exclude.ToList().ForEach(e => Console.WriteLine($"* {nameof(this.Exclude)}: {e}"));
             Console.WriteLine($"* {nameof(this.MetaBreakdown)}: {this.MetaBreakdown.ToString()}");
+            Console.WriteLine($"* {nameof(this.IncludeDecklists)}: {this.IncludeDecklists.ToString()}");
             if (this.TournamentFolder != null && this.TournamentFolder.Length > 0) this.TournamentFolder.ToList().ForEach(f => Console.WriteLine($"* {nameof(this.TournamentFolder)}: {f}"));
             if (!String.IsNullOrEmpty(this.FormatDataFolder)) Console.WriteLine($"* {nameof(this.FormatDataFolder)}: {this.FormatDataFolder.ToString()}");
         }
@@ -123,7 +127,8 @@ namespace MTGOArchetypeParser.App
     {
         NotSpecified,
         Console,
-        Csv
+        Csv,
+        Json
     }
 
     public enum ExecutionAction

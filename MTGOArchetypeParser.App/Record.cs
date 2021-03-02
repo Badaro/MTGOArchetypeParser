@@ -16,5 +16,7 @@ namespace MTGOArchetypeParser.App
         public Uri AnchorUri { get; set; }
         public RecordArchetype Archetype { get; set; }
         public RecordArchetype ReferenceArchetype { get; set; }
+        public DeckItem[] Mainboard { get; set; }
+        public DeckItem[] Sideboard { get; set; }
     }
 }

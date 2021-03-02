@@ -45,7 +45,7 @@ namespace MTGOArchetypeParser.App
                     tournaments = tournaments.Where(t => !t.Information.Name.Contains(exclude, StringComparison.InvariantCultureIgnoreCase) && !t.Information.Uri.ToString().Contains(exclude, StringComparison.InvariantCultureIgnoreCase)).ToArray();
                 }
 
-                Record[] records = RecordLoader.GetRecords(tournaments, format, referenceFormat);
+                Record[] records = RecordLoader.GetRecords(tournaments, format, referenceFormat, settings.IncludeDecklists);
 
                 if (!String.IsNullOrEmpty(settings.Meta))
                 {
@@ -80,8 +80,16 @@ namespace MTGOArchetypeParser.App
                     }
                     else
                     {
-                        Console.WriteLine("Saving data to CSV file");
-                        new CsvOutput().Write(records, settings.Action);
+                        if(settings.Output== ExecutionOutput.Csv)
+                        {
+                            Console.WriteLine("Saving data to CSV file");
+                            new CsvOutput().Write(records, settings.Action);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Saving data to JSON file");
+                            new JsonOutput().Write(records, settings.Action);
+                        }
                     }
                 }
 
@@ -139,6 +147,7 @@ MTGOArchetypeParser.App console compare filter=modern-preliminary-2021-01-21 ref
 Outputs:
 * console: Prints the results in-line
 * csv: Generates a csv file with the results
+* json: Generates a jsonfile with the results
 
 Actions:
 * detect: Detects archetypes
@@ -152,6 +161,7 @@ Settings (can also be specified using settings.json):
 * filter: Only generate data for events that match this string, can be specified more than once
 * exclude: Only generate data for events that do NOT match this string, can be specified more than once
 * metabreakdown: If set to true will include a meta breakdown summary at the end of the console output
+* includedecklists: If set to true will include the decklists in the output, only supported when using json
 * tournamentfolder: Specifies the location of folders with the tournament data, can be specified more than once
 * formatdatafolder: Specifies the location of the folders with the format data";
     }
