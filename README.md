@@ -9,7 +9,7 @@ Rules-based engine to detect archetypes from MTGO decklists.
 * Download (or clone) the tournament results: https://github.com/Badaro/MTGODecklistCache
 * Download (or clone) the archetype definitions: https://github.com/Badaro/MTGOFormatData
 
-Extract the ZIP from MTGOArchetypeParser, and put the MTGO tournaments, ManaTraders tournaments, and archetype definitions in the same folder. You should end up with a structure like this:
+Extract the ZIP from MTGOArchetypeParser, and put the tournaments and archetype definitions in the same folder. You should end up with a structure like this:
 
 ```
 MTGOArchetypeParser
