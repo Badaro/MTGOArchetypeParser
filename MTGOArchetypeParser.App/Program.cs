@@ -74,23 +74,24 @@ namespace MTGOArchetypeParser.App
                         records = records.Where(r => !r.Archetype.Equals(r.ReferenceArchetype)).ToArray();
                     }
 
-                    if (settings.Output == ExecutionOutput.Console)
+                    IOutput output;
+
+                    switch(settings.Output)
                     {
-                        new ConsoleOutput().Write(records, settings.Action);
-                    }
-                    else
-                    {
-                        if(settings.Output== ExecutionOutput.Csv)
-                        {
+                        case ExecutionOutput.Csv:
                             Console.WriteLine("Saving data to CSV file");
-                            new CsvOutput().Write(records, settings.Action);
-                        }
-                        else
-                        {
+                            output = new CsvOutput();
+                            break;
+                        case ExecutionOutput.Json:
                             Console.WriteLine("Saving data to JSON file");
-                            new JsonOutput().Write(records, settings.Action);
-                        }
+                            output = new JsonOutput();
+                            break;
+                        case ExecutionOutput.Console:
+                        default:
+                            output = new ConsoleOutput();
+                            break;
                     }
+                    output.Write(records, settings.Action, settings.OutputFile);
                 }
 
                 if (settings.MetaBreakdown) PrintBreakdown(records);
@@ -163,6 +164,7 @@ Settings (can also be specified using settings.json):
 * metabreakdown: If set to true will include a meta breakdown summary at the end of the console output
 * includedecklists: If set to true will include the decklists in the output, only supported when using json
 * tournamentfolder: Specifies the location of folders with the tournament data, can be specified more than once
-* formatdatafolder: Specifies the location of the folders with the format data";
+* formatdatafolder: Specifies the location of the folders with the format data
+* outputfile: Specifies the name of the file to be saved when using csv ou json output";
     }
 }

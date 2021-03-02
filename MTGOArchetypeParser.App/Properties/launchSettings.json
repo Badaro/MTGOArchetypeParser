@@ -2,7 +2,7 @@
   "profiles": {
     "MTGOArchetypeParser.App": {
       "commandName": "Project",
-      "commandLineArgs": "json detect includedecklists=true format=Modern filter=Modern exclude=League meta=current metaweek=current formatdatafolder=$(SolutionDir)MTGOFormatData\\Formats tournamentfolder=$(SolutionDir)MTGODecklistCache\\Tournaments\\magic.wizards.com tournamentfolder=$(SolutionDir)MTGODecklistCache\\Tournaments\\manatraders.com tournamentfolder=$(SolutionDir)MTGODecklistCache\\Tournaments\\nerdragegaming.com"
+      "commandLineArgs": "console detect includedecklists=true format=Modern filter=Modern exclude=League meta=current metaweek=current formatdatafolder=$(SolutionDir)MTGOFormatData\\Formats tournamentfolder=$(SolutionDir)MTGODecklistCache\\Tournaments\\magic.wizards.com tournamentfolder=$(SolutionDir)MTGODecklistCache\\Tournaments\\manatraders.com tournamentfolder=$(SolutionDir)MTGODecklistCache\\Tournaments\\nerdragegaming.com"
     }
   }
 }

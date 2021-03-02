@@ -21,6 +21,7 @@ namespace MTGOArchetypeParser.App
         public bool IncludeDecklists { get; set; }
         public string[] TournamentFolder { get; set; }
         public string FormatDataFolder { get; set; }
+        public string OutputFile { get; set; }
 
         public static ExecutionSettings FromJsonFile(string jsonFile)
         {
@@ -51,6 +52,7 @@ namespace MTGOArchetypeParser.App
             string decklistsArgument = GetArgument(args, nameof(IncludeDecklists)).FirstOrDefault();
             string[] cacheFoldersArgument = GetArgument(args, nameof(TournamentFolder));
             string dataFolderArgument = GetArgument(args, nameof(FormatDataFolder)).FirstOrDefault();
+            string outputFileArgument = GetArgument(args, nameof(OutputFile)).FirstOrDefault();
 
             if (formatArgument != null) this.Format = formatArgument;
             if (referenceFormatArgument != null) this.ReferenceFormat = referenceFormatArgument;
@@ -62,6 +64,7 @@ namespace MTGOArchetypeParser.App
             if (decklistsArgument != null) this.IncludeDecklists = (decklistsArgument.ToLowerInvariant() == "true");
             if (cacheFoldersArgument.Length > 0) this.TournamentFolder = cacheFoldersArgument;
             if (dataFolderArgument != null) this.FormatDataFolder = dataFolderArgument;
+            if (outputFileArgument != null) this.OutputFile = outputFileArgument;
 
             ExecutionAction actionArgument = ExecutionAction.NotSpecified;
             if (args.Length > 1) Enum.TryParse<ExecutionAction>(args[1], true, out actionArgument);
@@ -120,6 +123,7 @@ namespace MTGOArchetypeParser.App
             Console.WriteLine($"* {nameof(this.IncludeDecklists)}: {this.IncludeDecklists.ToString()}");
             if (this.TournamentFolder != null && this.TournamentFolder.Length > 0) this.TournamentFolder.ToList().ForEach(f => Console.WriteLine($"* {nameof(this.TournamentFolder)}: {f}"));
             if (!String.IsNullOrEmpty(this.FormatDataFolder)) Console.WriteLine($"* {nameof(this.FormatDataFolder)}: {this.FormatDataFolder.ToString()}");
+            if (!String.IsNullOrEmpty(this.OutputFile)) Console.WriteLine($"* {nameof(this.OutputFile)}: {this.OutputFile.ToString()}");
         }
     }
 

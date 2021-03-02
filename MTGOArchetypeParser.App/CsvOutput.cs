@@ -8,7 +8,7 @@ namespace MTGOArchetypeParser.App
 {
     public class CsvOutput : IOutput
     {
-        public void Write(Record[] records, ExecutionAction action)
+        public void Write(Record[] records, ExecutionAction action, string outputFile)
         {
             StringBuilder csvData = new StringBuilder();
 
@@ -16,7 +16,7 @@ namespace MTGOArchetypeParser.App
             foreach (var record in records) csvData.AppendLine(GetLine(record, action == ExecutionAction.Compare));
 
             string date = $"{records.Max(t => t.Date).ToString("yyyy_MM_dd")}";
-            string outputFile = $"mtgo_data_{date}.csv";
+            if (String.IsNullOrEmpty(outputFile)) outputFile = $"mtgo_data_{date}.csv";
 
             if (File.Exists(outputFile)) File.Delete(outputFile);
             File.WriteAllText(outputFile, csvData.ToString());

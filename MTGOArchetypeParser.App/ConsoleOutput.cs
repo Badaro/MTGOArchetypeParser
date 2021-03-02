@@ -6,7 +6,7 @@ namespace MTGOArchetypeParser.App
 {
     public class ConsoleOutput : IOutput
     {
-        public void Write(Record[] records, ExecutionAction action)
+        public void Write(Record[] records, ExecutionAction action, string outputFile)
         {
             if (records.Length == 0)
             {
