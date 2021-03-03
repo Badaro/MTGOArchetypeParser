@@ -6,24 +6,31 @@ using System.Linq;
 using System.IO;
 using Newtonsoft.Json;
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace MTGOArchetypeParser.Data
 {
     public static class TournamentLoader
     {
-        public static Tournament GetTournamentByName(string cacheFolder, string eventName)
+        public static Tournament[] GetTournamentsByDate(string cacheFolder, DateTime startDate, Func<string, bool> filter = null)
         {
-            DateTime date = ExtractDateFromName(eventName);
+            string[] subFolders = Directory.GetDirectories(cacheFolder);
+            bool isSingleLevelStructure = subFolders.All(d => Regex.IsMatch(Path.GetFileName(d), "\\d\\d\\d\\d"));
 
-            string folder = Path.Combine(cacheFolder, date.Year.ToString(), date.Month.ToString("D2"), date.Day.ToString("D2"));
-            string file = Path.Combine(folder, $"{eventName}.json");
-            if (!Directory.Exists(folder)) throw new Exception("Event not found");
-            if (!File.Exists(file)) throw new Exception("Event not found");
-
-            return GetTournamentFromFile(file);
+            if (isSingleLevelStructure)
+            {
+                return GetTournamentsByDateInternal(cacheFolder, startDate, filter);
+            }
+            else
+            {
+                List<Tournament> tournaments = new List<Tournament>();
+                foreach (string subFolder in subFolders) tournaments.AddRange(GetTournamentsByDateInternal(subFolder, startDate, filter));
+                return tournaments.ToArray();
+            }
         }
 
-        public static Tournament[] GetTournamentsByDate(string cacheFolder, DateTime startDate, Func<string, bool> filter = null)
+
+        private static Tournament[] GetTournamentsByDateInternal(string cacheFolder, DateTime startDate, Func<string, bool> filter = null)
         {
             if (filter == null) filter = n => true;
 
@@ -48,7 +55,7 @@ namespace MTGOArchetypeParser.Data
             Tournament item = JsonConvert.DeserializeObject<Tournament>(File.ReadAllText(file));
             item.File = Path.GetFileName(file);
 
-            foreach(Deck deck in item.Decks)
+            foreach (Deck deck in item.Decks)
             {
                 if (deck.Date == null) deck.Date = item.Information.Date;
             }
