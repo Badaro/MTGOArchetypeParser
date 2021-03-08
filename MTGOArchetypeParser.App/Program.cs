@@ -45,7 +45,7 @@ namespace MTGOArchetypeParser.App
                     tournaments = tournaments.Where(t => !t.Information.Name.Contains(exclude, StringComparison.InvariantCultureIgnoreCase) && !t.Information.Uri.ToString().Contains(exclude, StringComparison.InvariantCultureIgnoreCase)).ToArray();
                 }
 
-                Record[] records = RecordLoader.GetRecords(tournaments, format, referenceFormat, settings.IncludeDecklists);
+                Record[] records = RecordLoader.GetRecords(tournaments, format, referenceFormat, settings.IncludeDecklists, settings.MaxDecksPerEvent);
 
                 if (!String.IsNullOrEmpty(settings.Meta))
                 {
@@ -163,6 +163,7 @@ Settings (can also be specified using settings.json):
 * exclude: Only generate data for events that do NOT match this string, can be specified more than once
 * metabreakdown: If set to true will include a meta breakdown summary at the end of the console output
 * includedecklists: If set to true will include the decklists in the output, only supported when using json
+* maxdecksperevent: Limits the number of decks per event
 * tournamentfolder: Specifies the location of folders with the tournament data, can be specified more than once
 * formatdatafolder: Specifies the location of the folders with the format data
 * outputfile: Specifies the name of the file to be saved when using csv ou json output";

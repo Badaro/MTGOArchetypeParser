@@ -10,7 +10,7 @@ namespace MTGOArchetypeParser.App
 {
     public static class RecordLoader
     {
-        public static Record[] GetRecords(Tournament[] tournaments, ArchetypeFormat format, ArchetypeFormat referenceFormat, bool includeDecklists)
+        public static Record[] GetRecords(Tournament[] tournaments, ArchetypeFormat format, ArchetypeFormat referenceFormat, bool includeDecklists, int maxDecksPerEvent)
         {
             List<Record> records = new List<Record>();
 
@@ -23,6 +23,7 @@ namespace MTGOArchetypeParser.App
 
                 int weekID = ((int)Math.Floor((tournament.Decks.First().Date.Value - metaWeekReferenceDate).Days / 7.0)) + 1;
 
+                List<Record> tournamentRecords = new List<Record>();
                 for (int i = 0; i < tournament.Decks.Length; i++)
                 {
                     RecordArchetype archetype = GetArchetype(tournament.Decks[i], format);
@@ -37,7 +38,7 @@ namespace MTGOArchetypeParser.App
                         if (standing != null) points = standing.Points.ToString();
                     }
 
-                    records.Add(new Record()
+                    tournamentRecords.Add(new Record()
                     {
                         TournamentFile = Path.GetFileNameWithoutExtension(tournament.File),
                         Tournament = tournament.Information.Name,
@@ -54,6 +55,9 @@ namespace MTGOArchetypeParser.App
                         Sideboard = includeDecklists ? tournament.Decks[i].Sideboard : null
                     });
                 }
+
+                if (maxDecksPerEvent > 0) tournamentRecords = tournamentRecords.Take(maxDecksPerEvent).ToList();
+                records.AddRange(tournamentRecords);
             }
 
             return records.OrderBy(r => r.Date).ToArray();

@@ -22,6 +22,7 @@ namespace MTGOArchetypeParser.App
         public string[] TournamentFolder { get; set; }
         public string FormatDataFolder { get; set; }
         public string OutputFile { get; set; }
+        public int MaxDecksPerEvent { get; set; }
 
         public static ExecutionSettings FromJsonFile(string jsonFile)
         {
@@ -53,6 +54,7 @@ namespace MTGOArchetypeParser.App
             string[] cacheFoldersArgument = GetArgument(args, nameof(TournamentFolder));
             string dataFolderArgument = GetArgument(args, nameof(FormatDataFolder)).FirstOrDefault();
             string outputFileArgument = GetArgument(args, nameof(OutputFile)).FirstOrDefault();
+            string maxDecksPerEventArgument = GetArgument(args, nameof(MaxDecksPerEvent)).FirstOrDefault();
 
             if (formatArgument != null) this.Format = formatArgument;
             if (referenceFormatArgument != null) this.ReferenceFormat = referenceFormatArgument;
@@ -65,6 +67,7 @@ namespace MTGOArchetypeParser.App
             if (cacheFoldersArgument.Length > 0) this.TournamentFolder = cacheFoldersArgument;
             if (dataFolderArgument != null) this.FormatDataFolder = dataFolderArgument;
             if (outputFileArgument != null) this.OutputFile = outputFileArgument;
+            if (maxDecksPerEventArgument != null && Int32.TryParse(maxDecksPerEventArgument, out int parsedMaxDecks)) this.MaxDecksPerEvent = parsedMaxDecks;
 
             ExecutionAction actionArgument = ExecutionAction.NotSpecified;
             if (args.Length > 1) Enum.TryParse<ExecutionAction>(args[1], true, out actionArgument);
@@ -121,6 +124,7 @@ namespace MTGOArchetypeParser.App
             if (this.Exclude != null && this.Exclude.Length > 0) this.Exclude.ToList().ForEach(e => Console.WriteLine($"* {nameof(this.Exclude)}: {e}"));
             Console.WriteLine($"* {nameof(this.MetaBreakdown)}: {this.MetaBreakdown.ToString()}");
             Console.WriteLine($"* {nameof(this.IncludeDecklists)}: {this.IncludeDecklists.ToString()}");
+            if (this.MaxDecksPerEvent > 0) Console.WriteLine($"* {nameof(this.MaxDecksPerEvent)}: {this.MaxDecksPerEvent.ToString()}");
             if (this.TournamentFolder != null && this.TournamentFolder.Length > 0) this.TournamentFolder.ToList().ForEach(f => Console.WriteLine($"* {nameof(this.TournamentFolder)}: {f}"));
             if (!String.IsNullOrEmpty(this.FormatDataFolder)) Console.WriteLine($"* {nameof(this.FormatDataFolder)}: {this.FormatDataFolder.ToString()}");
             if (!String.IsNullOrEmpty(this.OutputFile)) Console.WriteLine($"* {nameof(this.OutputFile)}: {this.OutputFile.ToString()}");
