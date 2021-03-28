@@ -34,7 +34,7 @@ namespace MTGOArchetypeParser.App
                     Console.WriteLine("Detection results: ");
                     foreach (var record in records)
                     {
-                        Console.WriteLine($"* {record.TournamentFile} -> {record.Player} -> {record.Archetype.Archetype}");
+                        Console.WriteLine($"* {record.TournamentFile} -> {record.Result} {record.Player} ({record.Archetype.Archetype})");
                     }
                 }
             }
