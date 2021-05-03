@@ -72,7 +72,7 @@ namespace MTGOArchetypeParser.Formats.FromJson
             List<ArchetypeMeta> metas = new List<ArchetypeMeta>();
             dynamic metasJson = JsonConvert.DeserializeObject(File.ReadAllText(metasFile));
 
-            foreach(var meta in metasJson.Metas)
+            foreach (var meta in metasJson.Metas)
             {
                 string name = meta.Name;
                 string date = meta.StartDate;
@@ -100,11 +100,15 @@ namespace MTGOArchetypeParser.Formats.FromJson
 
             foreach (var archetypeFile in Directory.GetFiles(archetypeFolder, "*.json"))
             {
-                archetypes.Add(JsonConvert.DeserializeObject<ArchetypeSpecific>(File.ReadAllText(archetypeFile)));
+                var archetype = JsonConvert.DeserializeObject<ArchetypeSpecific>(File.ReadAllText(archetypeFile));
+                if (archetype.Conditions == null || archetype.Conditions.Length == 0) throw new Exception($"Archetype file {Path.GetFileName(archetypeFile)} is invalid, no conditions declared");
+                archetypes.Add(archetype);
             }
             foreach (var archetypeFile in Directory.GetFiles(fallbackFolder, "*.json"))
             {
-                archetypes.Add(JsonConvert.DeserializeObject<ArchetypeGeneric>(File.ReadAllText(archetypeFile)));
+                var archetype = JsonConvert.DeserializeObject<ArchetypeGeneric>(File.ReadAllText(archetypeFile));
+                if (archetype.CommonCards == null || archetype.CommonCards.Length == 0) throw new Exception($"Fallback file {Path.GetFileName(archetypeFile)} in invalid, no common cards declared");
+                archetypes.Add(archetype);
             }
 
             return archetypes.ToArray();
