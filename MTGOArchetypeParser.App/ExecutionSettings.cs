@@ -17,6 +17,7 @@ namespace MTGOArchetypeParser.App
         public string MetaWeek { get; set; }
         public string[] Filter { get; set; }
         public string[] Exclude { get; set; }
+        public string Archetype { get; set; }
         public bool MetaBreakdown { get; set; }
         public bool IncludeDecklists { get; set; }
         public string[] TournamentFolder { get; set; }
@@ -49,6 +50,7 @@ namespace MTGOArchetypeParser.App
             string metaWeekArgument = GetArgument(args, nameof(MetaWeek)).FirstOrDefault();
             string[] filterArgument = GetArgument(args, nameof(Filter));
             string[] excludeArgument = GetArgument(args, nameof(Exclude));
+            string archetypeArgument = GetArgument(args, nameof(Archetype)).FirstOrDefault();
             string breakdownArgument = GetArgument(args, nameof(MetaBreakdown)).FirstOrDefault();
             string decklistsArgument = GetArgument(args, nameof(IncludeDecklists)).FirstOrDefault();
             string[] cacheFoldersArgument = GetArgument(args, nameof(TournamentFolder));
@@ -62,6 +64,7 @@ namespace MTGOArchetypeParser.App
             if (metaWeekArgument != null) this.MetaWeek = metaWeekArgument;
             if (filterArgument.Length > 0) this.Filter = filterArgument;
             if (excludeArgument.Length > 0) this.Exclude = excludeArgument;
+            if (archetypeArgument != null) this.Archetype = archetypeArgument;
             if (breakdownArgument != null) this.MetaBreakdown = (breakdownArgument.ToLowerInvariant() == "true");
             if (decklistsArgument != null) this.IncludeDecklists = (decklistsArgument.ToLowerInvariant() == "true");
             if (cacheFoldersArgument.Length > 0) this.TournamentFolder = cacheFoldersArgument;
@@ -122,6 +125,7 @@ namespace MTGOArchetypeParser.App
             if (!String.IsNullOrEmpty(this.MetaWeek)) Console.WriteLine($"* {nameof(this.MetaWeek)}: {this.MetaWeek.ToString()}");
             if (this.Filter != null && this.Filter.Length > 0) this.Filter.ToList().ForEach(f => Console.WriteLine($"* {nameof(this.Filter)}: {f}"));
             if (this.Exclude != null && this.Exclude.Length > 0) this.Exclude.ToList().ForEach(e => Console.WriteLine($"* {nameof(this.Exclude)}: {e}"));
+            if (!String.IsNullOrEmpty(this.Archetype)) Console.WriteLine($"* {nameof(this.Archetype)}: {this.Archetype.ToString()}");
             Console.WriteLine($"* {nameof(this.MetaBreakdown)}: {this.MetaBreakdown.ToString()}");
             Console.WriteLine($"* {nameof(this.IncludeDecklists)}: {this.IncludeDecklists.ToString()}");
             if (this.MaxDecksPerEvent > 0) Console.WriteLine($"* {nameof(this.MaxDecksPerEvent)}: {this.MaxDecksPerEvent.ToString()}");

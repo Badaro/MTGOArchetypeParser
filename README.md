@@ -75,6 +75,7 @@ There's a few ways to filter which events will included in the detection.
 * ```metaweek=weeknumber``` lets you filter to only include events in a specific meta week. You can also use ```metaweek=current``` to specify "most recent meta week". This parameter will be ignored if meta is not set.
 * ```filter=text``` lets you filter to only include events that contain a certain text in the name or URL
 * ```exclude=text```lets you filter to exclude events that contain a certain text in the name or URL
+* ```archetype=text```lets you filter to only list decks of a specific archetype
 
 ## meta breakdown
 

@@ -74,6 +74,11 @@ namespace MTGOArchetypeParser.App
                     }
                 }
 
+                if (!String.IsNullOrEmpty(settings.Archetype))
+                {
+                    records = records.Where(r => r.Archetype.Archetype.Contains(settings.Archetype, StringComparison.InvariantCultureIgnoreCase)).ToArray();
+                }
+
                 if (records.Length == 0)
                 {
                     Console.WriteLine("No records found with the current filters");
@@ -172,6 +177,7 @@ Settings (can also be specified using settings.json):
 * metaweek: Only generate data for events that belong to this meta week
 * filter: Only generate data for events that match this string, can be specified more than once
 * exclude: Only generate data for events that do NOT match this string, can be specified more than once
+* archetype: Only generate data for decks whose archetypes match this string
 * metabreakdown: If set to true will include a meta breakdown summary at the end of the console output
 * includedecklists: If set to true will include the decklists in the output, only supported when using json
 * maxdecksperevent: Limits the number of decks per event
