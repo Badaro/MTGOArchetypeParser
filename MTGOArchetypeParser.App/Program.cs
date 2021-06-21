@@ -34,7 +34,6 @@ namespace MTGOArchetypeParser.App
                 }
 
                 Console.WriteLine("* Loading meta information");
-
                 DateTime startDate = format.Metas.First().StartDate.AddDays(1);
                 string metaFilter = String.Empty;
                 if (!String.IsNullOrEmpty(settings.Meta))
