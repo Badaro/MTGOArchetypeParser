@@ -29,7 +29,6 @@ namespace MTGOArchetypeParser.Data
             }
         }
 
-
         private static Tournament[] GetTournamentsByDateInternal(string cacheFolder, DateTime startDate, Func<string, bool> filter = null)
         {
             if (filter == null) filter = n => true;
@@ -43,8 +42,11 @@ namespace MTGOArchetypeParser.Data
 
                 foreach (string file in Directory.GetFiles(folder, "*.json"))
                 {
-                    Tournament item = GetTournamentFromFile(file);
-                    if (filter(item.Information.Name)) result.Add(item);
+                    if (filter(Path.GetFileName(file)))
+                    {
+                        Tournament item = GetTournamentFromFile(file);
+                        result.Add(item);
+                    }
                 }
             }
 

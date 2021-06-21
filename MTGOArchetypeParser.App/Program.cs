@@ -45,16 +45,18 @@ namespace MTGOArchetypeParser.App
                 }
 
                 Console.WriteLine("* Loading tournaments");
-                Tournament[] tournaments = settings.TournamentFolder.SelectMany(c => TournamentLoader.GetTournamentsByDate(c, startDate)).ToArray();
-
-                foreach (string filter in settings.Filter)
+                Tournament[] tournaments = settings.TournamentFolder.SelectMany(c => TournamentLoader.GetTournamentsByDate(c, startDate, t =>
                 {
-                    tournaments = tournaments.Where(t => t.Information.Name.Contains(filter, StringComparison.InvariantCultureIgnoreCase) || t.Information.Uri.ToString().Contains(filter, StringComparison.InvariantCultureIgnoreCase)).ToArray();
-                }
-                foreach (string exclude in settings.Exclude)
-                {
-                    tournaments = tournaments.Where(t => !t.Information.Name.Contains(exclude, StringComparison.InvariantCultureIgnoreCase) && !t.Information.Uri.ToString().Contains(exclude, StringComparison.InvariantCultureIgnoreCase)).ToArray();
-                }
+                    foreach (string filter in settings.Filter)
+                    {
+                        if (!t.Contains(filter, StringComparison.InvariantCultureIgnoreCase)) return false;
+                    }
+                    foreach (string exclude in settings.Exclude)
+                    {
+                        if (t.Contains(exclude, StringComparison.InvariantCultureIgnoreCase)) return false;
+                    }
+                    return true;
+                })).ToArray();
 
                 Record[] records = RecordLoader.GetRecords(tournaments, format, referenceFormat, settings.IncludeDecklists, settings.MaxDecksPerEvent);
 
