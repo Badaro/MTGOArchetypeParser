@@ -33,8 +33,20 @@ namespace MTGOArchetypeParser.App
                     referenceFormat = Formats.FromJson.Loader.GetFormat(settings.FormatDataFolder, settings.ReferenceFormat);
                 }
 
+                Console.WriteLine("* Loading meta information");
+
+                DateTime startDate = format.Metas.First().StartDate.AddDays(1);
+                string metaFilter = String.Empty;
+                if (!String.IsNullOrEmpty(settings.Meta))
+                {
+                    if (settings.Meta.ToLowerInvariant() == "current") metaFilter = format.Metas.Where(m => m.StartDate.AddDays(1) < DateTime.UtcNow).Last().Name;
+
+                    var meta = format.Metas.FirstOrDefault(m => m.Name.Contains(metaFilter, StringComparison.InvariantCultureIgnoreCase));
+                    if (meta != null) startDate = meta.StartDate.AddDays(1);
+                }
+
                 Console.WriteLine("* Loading tournaments");
-                Tournament[] tournaments = settings.TournamentFolder.SelectMany(c => TournamentLoader.GetTournamentsByDate(c, format.Metas.First().StartDate.AddDays(1))).ToArray();
+                Tournament[] tournaments = settings.TournamentFolder.SelectMany(c => TournamentLoader.GetTournamentsByDate(c, startDate)).ToArray();
 
                 foreach (string filter in settings.Filter)
                 {
@@ -47,10 +59,8 @@ namespace MTGOArchetypeParser.App
 
                 Record[] records = RecordLoader.GetRecords(tournaments, format, referenceFormat, settings.IncludeDecklists, settings.MaxDecksPerEvent);
 
-                if (!String.IsNullOrEmpty(settings.Meta))
+                if (!String.IsNullOrEmpty(metaFilter))
                 {
-                    string metaFilter = settings.Meta;
-                    if (metaFilter.ToLowerInvariant() == "current") metaFilter = format.Metas.Where(m => m.StartDate.AddDays(1) < DateTime.UtcNow).Last().Name;
                     records = records.Where(r => r.Meta.Contains(metaFilter, StringComparison.InvariantCultureIgnoreCase)).ToArray();
 
                     if (!String.IsNullOrEmpty(settings.MetaWeek))
@@ -76,7 +86,7 @@ namespace MTGOArchetypeParser.App
 
                     IOutput output;
 
-                    switch(settings.Output)
+                    switch (settings.Output)
                     {
                         case ExecutionOutput.Csv:
                             Console.WriteLine("Saving data to CSV file");
