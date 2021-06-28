@@ -79,6 +79,17 @@ namespace MTGOArchetypeParser.App
                     records = records.Where(r => r.Archetype.Archetype.Contains(settings.Archetype, StringComparison.InvariantCultureIgnoreCase)).ToArray();
                 }
 
+                if(settings.Card!=null && settings.IncludeDecklists)
+                {
+                    foreach (string card in settings.Card)
+                    {
+                        records = records.Where(r => 
+                            r.Mainboard.Any(c => c.Card.Equals(card, StringComparison.InvariantCultureIgnoreCase)) || 
+                            r.Sideboard.Any(c => c.Card.Equals(card, StringComparison.InvariantCultureIgnoreCase))
+                        ).ToArray();
+                    }
+                }
+
                 if (records.Length == 0)
                 {
                     Console.WriteLine("No records found with the current filters");
@@ -178,6 +189,7 @@ Settings (can also be specified using settings.json):
 * filter: Only generate data for events that match this string, can be specified more than once
 * exclude: Only generate data for events that do NOT match this string, can be specified more than once
 * archetype: Only generate data for decks whose archetypes match this string
+* card: Only generate data for decks that contains this card, can be specified more than once, requires includedecklists=true
 * metabreakdown: If set to true will include a meta breakdown summary at the end of the console output
 * includedecklists: If set to true will include the decklists in the output, only supported when using json
 * maxdecksperevent: Limits the number of decks per event
