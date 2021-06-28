@@ -157,11 +157,25 @@ namespace MTGOArchetypeParser.App
 
             foreach (var total in consolidatedTotals.Where(t => t.Key != othersKey).OrderByDescending(t => t.Value))
             {
-                Console.WriteLine($"* {total.Key} ({Math.Round((100.0 * total.Value) / consolidatedTotals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)}%) ");
+                if(settings.MetaBreakdownShowCount)
+                {
+                    Console.WriteLine($"* {total.Key} ({total.Value})");
+                }
+                else
+                {
+                    Console.WriteLine($"* {total.Key} ({Math.Round((100.0 * total.Value) / consolidatedTotals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)}%)");
+                }
             }
             if (consolidatedTotals[othersKey] > 0)
             {
-                Console.WriteLine($"* {othersKey} ({Math.Round((100.0 * consolidatedTotals[othersKey]) / consolidatedTotals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)}%) ");
+                if(settings.MetaBreakdownShowCount)
+                {
+                    Console.WriteLine($"* {othersKey} ({consolidatedTotals[othersKey]})");
+                }
+                else
+                {
+                    Console.WriteLine($"* {othersKey} ({Math.Round((100.0 * consolidatedTotals[othersKey]) / consolidatedTotals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)}%)");
+                }
             }
             Console.WriteLine($"Total Decks: {consolidatedTotals.Sum(c => c.Value)}");
         }
@@ -191,6 +205,7 @@ Settings (can also be specified using settings.json):
 * archetype: Only generate data for decks whose archetypes match this string
 * card: Only generate data for decks that contains this card, can be specified more than once, requires includedecklists=true
 * metabreakdown: If set to true will include a meta breakdown summary at the end of the console output
+* metabreakdownusecount: If set to true will show the number of decks instead of the percent of decks in the meta breakdown
 * includedecklists: If set to true will include the decklists in the output, only supported when using json
 * maxdecksperevent: Limits the number of decks per event
 * minotherspercent: Sets the minimum percent to include an archetype in 'Others'
