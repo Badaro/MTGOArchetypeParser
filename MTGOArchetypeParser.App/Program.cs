@@ -79,12 +79,12 @@ namespace MTGOArchetypeParser.App
                     records = records.Where(r => r.Archetype.Archetype.Contains(settings.Archetype, StringComparison.InvariantCultureIgnoreCase)).ToArray();
                 }
 
-                if(settings.Card!=null && settings.IncludeDecklists)
+                if (settings.Card != null && settings.IncludeDecklists)
                 {
                     foreach (string card in settings.Card)
                     {
-                        records = records.Where(r => 
-                            r.Mainboard.Any(c => c.Card.Equals(card, StringComparison.InvariantCultureIgnoreCase)) || 
+                        records = records.Where(r =>
+                            r.Mainboard.Any(c => c.Card.Equals(card, StringComparison.InvariantCultureIgnoreCase)) ||
                             r.Sideboard.Any(c => c.Card.Equals(card, StringComparison.InvariantCultureIgnoreCase))
                         ).ToArray();
                     }
@@ -121,7 +121,7 @@ namespace MTGOArchetypeParser.App
                     output.Write(records, settings.Action, settings.OutputFile);
                 }
 
-                if (settings.MetaBreakdown) PrintBreakdown(records);
+                if (settings.MetaBreakdown) PrintBreakdown(records, settings);
             }
             catch (Exception ex)
             {
@@ -130,9 +130,9 @@ namespace MTGOArchetypeParser.App
             }
         }
 
-        static void PrintBreakdown(Record[] records)
+        static void PrintBreakdown(Record[] records, ExecutionSettings settings)
         {
-            double minPercentage = 0.02;
+            double minPercentage = settings.MinOthersPercent / 100;
             string othersKey = "Others";
 
             Dictionary<string, int> totals = new Dictionary<string, int>();
@@ -193,6 +193,7 @@ Settings (can also be specified using settings.json):
 * metabreakdown: If set to true will include a meta breakdown summary at the end of the console output
 * includedecklists: If set to true will include the decklists in the output, only supported when using json
 * maxdecksperevent: Limits the number of decks per event
+* minotherspercent: Sets the minimum percent to include an archetype in 'Others'
 * tournamentfolder: Specifies the location of folders with the tournament data, can be specified more than once
 * formatdatafolder: Specifies the location of the folders with the format data
 * outputfile: Specifies the name of the file to be saved when using csv ou json output";

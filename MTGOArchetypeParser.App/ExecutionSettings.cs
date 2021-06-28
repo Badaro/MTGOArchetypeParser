@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,8 @@ namespace MTGOArchetypeParser.App
 {
     class ExecutionSettings
     {
+        private readonly float DefaultMinOthersPercent = 2.0f;
+
         public ExecutionOutput Output { get; set; }
         public ExecutionAction Action { get; set; }
         public string Format { get; set; }
@@ -25,6 +28,7 @@ namespace MTGOArchetypeParser.App
         public string FormatDataFolder { get; set; }
         public string OutputFile { get; set; }
         public int MaxDecksPerEvent { get; set; }
+        public float MinOthersPercent { get; set; }
 
         public static ExecutionSettings FromJsonFile(string jsonFile)
         {
@@ -45,6 +49,8 @@ namespace MTGOArchetypeParser.App
 
         public void ApplyOverrides(string[] args)
         {
+            this.MinOthersPercent = DefaultMinOthersPercent;
+
             string formatArgument = GetArgument(args, nameof(Format)).FirstOrDefault();
             string referenceFormatArgument = GetArgument(args, nameof(ReferenceFormat)).FirstOrDefault();
             string metaArgument = GetArgument(args, nameof(Meta)).FirstOrDefault();
@@ -59,6 +65,7 @@ namespace MTGOArchetypeParser.App
             string dataFolderArgument = GetArgument(args, nameof(FormatDataFolder)).FirstOrDefault();
             string outputFileArgument = GetArgument(args, nameof(OutputFile)).FirstOrDefault();
             string maxDecksPerEventArgument = GetArgument(args, nameof(MaxDecksPerEvent)).FirstOrDefault();
+            string minOthersPercentArgument = GetArgument(args, nameof(MinOthersPercent)).FirstOrDefault();
 
             if (formatArgument != null) this.Format = formatArgument;
             if (referenceFormatArgument != null) this.ReferenceFormat = referenceFormatArgument;
@@ -74,6 +81,7 @@ namespace MTGOArchetypeParser.App
             if (dataFolderArgument != null) this.FormatDataFolder = dataFolderArgument;
             if (outputFileArgument != null) this.OutputFile = outputFileArgument;
             if (maxDecksPerEventArgument != null && Int32.TryParse(maxDecksPerEventArgument, out int parsedMaxDecks)) this.MaxDecksPerEvent = parsedMaxDecks;
+            if (minOthersPercentArgument != null && float.TryParse(minOthersPercentArgument, NumberStyles.Any, CultureInfo.InvariantCulture, out float parsedMinOthers)) this.MinOthersPercent = parsedMinOthers;
 
             ExecutionAction actionArgument = ExecutionAction.NotSpecified;
             if (args.Length > 1) Enum.TryParse<ExecutionAction>(args[1], true, out actionArgument);
@@ -133,6 +141,7 @@ namespace MTGOArchetypeParser.App
             Console.WriteLine($"* {nameof(this.MetaBreakdown)}: {this.MetaBreakdown.ToString()}");
             Console.WriteLine($"* {nameof(this.IncludeDecklists)}: {this.IncludeDecklists.ToString()}");
             if (this.MaxDecksPerEvent > 0) Console.WriteLine($"* {nameof(this.MaxDecksPerEvent)}: {this.MaxDecksPerEvent.ToString()}");
+            if (this.MinOthersPercent != DefaultMinOthersPercent) Console.WriteLine($"* {nameof(this.MinOthersPercent)}: {this.MinOthersPercent.ToString()}");
             if (this.TournamentFolder != null && this.TournamentFolder.Length > 0) this.TournamentFolder.ToList().ForEach(f => Console.WriteLine($"* {nameof(this.TournamentFolder)}: {f}"));
             if (!String.IsNullOrEmpty(this.FormatDataFolder)) Console.WriteLine($"* {nameof(this.FormatDataFolder)}: {this.FormatDataFolder.ToString()}");
             if (!String.IsNullOrEmpty(this.OutputFile)) Console.WriteLine($"* {nameof(this.OutputFile)}: {this.OutputFile.ToString()}");
