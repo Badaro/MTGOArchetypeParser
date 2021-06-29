@@ -22,6 +22,7 @@ namespace MTGOArchetypeParser.App
         public string[] Exclude { get; set; }
         public string Archetype { get; set; }
         public string[] Card { get; set; }
+        public string[] ExcludeCard { get; set; }
         public bool MetaBreakdown { get; set; }
         public bool MetaBreakdownShowCount { get; set; }
         public bool IncludeDecklists { get; set; }
@@ -60,6 +61,7 @@ namespace MTGOArchetypeParser.App
             string[] excludeArgument = GetArgument(args, nameof(Exclude));
             string archetypeArgument = GetArgument(args, nameof(Archetype)).FirstOrDefault();
             string[] cardArgument = GetArgument(args, nameof(Card));
+            string[] excludeCardArgument = GetArgument(args, nameof(ExcludeCard));
             string breakdownArgument = GetArgument(args, nameof(MetaBreakdown)).FirstOrDefault();
             string breakdownCountArgument = GetArgument(args, nameof(MetaBreakdownShowCount)).FirstOrDefault();
             string decklistsArgument = GetArgument(args, nameof(IncludeDecklists)).FirstOrDefault();
@@ -77,6 +79,7 @@ namespace MTGOArchetypeParser.App
             if (excludeArgument.Length > 0) this.Exclude = excludeArgument;
             if (archetypeArgument != null) this.Archetype = archetypeArgument;
             if (cardArgument.Length > 0) this.Card = cardArgument;
+            if (excludeArgument.Length > 0) this.ExcludeCard = excludeCardArgument;
             if (breakdownArgument != null) this.MetaBreakdown = (breakdownArgument.ToLowerInvariant() == "true");
             if (breakdownCountArgument != null) this.MetaBreakdownShowCount = (breakdownCountArgument.ToLowerInvariant() == "true");
             if (decklistsArgument != null) this.IncludeDecklists = (decklistsArgument.ToLowerInvariant() == "true");
@@ -141,6 +144,7 @@ namespace MTGOArchetypeParser.App
             if (this.Exclude != null && this.Exclude.Length > 0) this.Exclude.ToList().ForEach(e => Console.WriteLine($"* {nameof(this.Exclude)}: {e}"));
             if (!String.IsNullOrEmpty(this.Archetype)) Console.WriteLine($"* {nameof(this.Archetype)}: {this.Archetype.ToString()}");
             if (this.Card != null && this.Card.Length > 0) this.Card.ToList().ForEach(c => Console.WriteLine($"* {nameof(this.Card)}: {c}"));
+            if (this.ExcludeCard != null && this.ExcludeCard.Length > 0) this.ExcludeCard.ToList().ForEach(c => Console.WriteLine($"* {nameof(this.ExcludeCard)}: {c}"));
             Console.WriteLine($"* {nameof(this.MetaBreakdown)}: {this.MetaBreakdown.ToString()}");
             Console.WriteLine($"* {nameof(this.MetaBreakdownShowCount)}: {this.MetaBreakdownShowCount.ToString()}");
             Console.WriteLine($"* {nameof(this.IncludeDecklists)}: {this.IncludeDecklists.ToString()}");

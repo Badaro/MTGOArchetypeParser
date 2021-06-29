@@ -77,6 +77,7 @@ There's a few ways to filter which events will included in the detection.
 * ```exclude=text```lets you filter to exclude events that contain a certain text in the name or URL
 * ```archetype=text```lets you filter to only list decks of a specific archetype
 * ```card=text```: Lets you filter to only list decks that contains a specific card, requires includedecklists=true
+* ```excludecard=text```: Lets you filter to only list decks that do not contain a specific card, requires includedecklists=true
 
 ## meta breakdown
 

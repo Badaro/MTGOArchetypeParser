@@ -90,6 +90,17 @@ namespace MTGOArchetypeParser.App
                     }
                 }
 
+                if (settings.ExcludeCard != null && settings.IncludeDecklists)
+                {
+                    foreach (string card in settings.ExcludeCard)
+                    {
+                        records = records.Where(r =>
+                            !r.Mainboard.Any(c => c.Card.Equals(card, StringComparison.InvariantCultureIgnoreCase)) &&
+                            !r.Sideboard.Any(c => c.Card.Equals(card, StringComparison.InvariantCultureIgnoreCase))
+                        ).ToArray();
+                    }
+                }
+
                 if (records.Length == 0)
                 {
                     Console.WriteLine("No records found with the current filters");
@@ -157,7 +168,7 @@ namespace MTGOArchetypeParser.App
 
             foreach (var total in consolidatedTotals.Where(t => t.Key != othersKey).OrderByDescending(t => t.Value))
             {
-                if(settings.MetaBreakdownShowCount)
+                if (settings.MetaBreakdownShowCount)
                 {
                     Console.WriteLine($"* {total.Key} ({total.Value})");
                 }
@@ -168,7 +179,7 @@ namespace MTGOArchetypeParser.App
             }
             if (consolidatedTotals[othersKey] > 0)
             {
-                if(settings.MetaBreakdownShowCount)
+                if (settings.MetaBreakdownShowCount)
                 {
                     Console.WriteLine($"* {othersKey} ({consolidatedTotals[othersKey]})");
                 }
@@ -204,6 +215,7 @@ Settings (can also be specified using settings.json):
 * exclude: Only generate data for events that do NOT match this string, can be specified more than once
 * archetype: Only generate data for decks whose archetypes match this string
 * card: Only generate data for decks that contains this card, can be specified more than once, requires includedecklists=true
+* excludecard: Only generate data for decks that do not contain this card, can be specified more than once, requires includedecklists=true
 * metabreakdown: If set to true will include a meta breakdown summary at the end of the console output
 * metabreakdownusecount: If set to true will show the number of decks instead of the percent of decks in the meta breakdown
 * includedecklists: If set to true will include the decklists in the output, only supported when using json
