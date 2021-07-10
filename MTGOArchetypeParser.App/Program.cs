@@ -39,6 +39,7 @@ namespace MTGOArchetypeParser.App
                 if (!String.IsNullOrEmpty(settings.Meta))
                 {
                     if (settings.Meta.ToLowerInvariant() == "current") metaFilter = format.Metas.Where(m => m.StartDate.AddDays(1) < DateTime.UtcNow).Last().Name;
+                    else metaFilter = settings.Meta;
 
                     var meta = format.Metas.FirstOrDefault(m => m.Name.Contains(metaFilter, StringComparison.InvariantCultureIgnoreCase));
                     if (meta != null) startDate = meta.StartDate.AddDays(1);
