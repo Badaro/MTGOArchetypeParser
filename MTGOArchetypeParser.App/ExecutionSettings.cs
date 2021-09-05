@@ -96,6 +96,9 @@ namespace MTGOArchetypeParser.App
             ExecutionOutput outputArgument = ExecutionOutput.NotSpecified;
             if (args.Length > 0) Enum.TryParse<ExecutionOutput>(args[0], true, out outputArgument);
             if (outputArgument != ExecutionOutput.NotSpecified) this.Output = outputArgument;
+
+            // Required setting for these features to work
+            if ((this.Card != null && this.Card.Length > 0) || (this.ExcludeCard != null && this.ExcludeCard.Length > 0)) this.IncludeDecklists = true;
         }
 
         string[] GetArgument(string[] args, string settingName)
