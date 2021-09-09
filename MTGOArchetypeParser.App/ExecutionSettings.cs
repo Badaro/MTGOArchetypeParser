@@ -79,7 +79,7 @@ namespace MTGOArchetypeParser.App
             if (excludeArgument.Length > 0) this.Exclude = excludeArgument;
             if (archetypeArgument != null) this.Archetype = archetypeArgument;
             if (cardArgument.Length > 0) this.Card = cardArgument;
-            if (excludeArgument.Length > 0) this.ExcludeCard = excludeCardArgument;
+            if (excludeCardArgument.Length > 0) this.ExcludeCard = excludeCardArgument;
             if (breakdownArgument != null) this.MetaBreakdown = (breakdownArgument.ToLowerInvariant() == "true");
             if (breakdownCountArgument != null) this.MetaBreakdownShowCount = (breakdownCountArgument.ToLowerInvariant() == "true");
             if (decklistsArgument != null) this.IncludeDecklists = (decklistsArgument.ToLowerInvariant() == "true");
