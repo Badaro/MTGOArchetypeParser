@@ -218,7 +218,7 @@ Settings (can also be specified using settings.json):
 * card: Only generate data for decks that contains this card, can be specified more than once, requires includedecklists=true
 * excludecard: Only generate data for decks that do not contain this card, can be specified more than once, requires includedecklists=true
 * metabreakdown: If set to true will include a meta breakdown summary at the end of the console output
-* metabreakdownusecount: If set to true will show the number of decks instead of the percent of decks in the meta breakdown
+* metabreakdownshowcount: If set to true will show the number of decks instead of the percent of decks in the meta breakdown
 * includedecklists: If set to true will include the decklists in the output, only supported when using json
 * maxdecksperevent: Limits the number of decks per event
 * minotherspercent: Sets the minimum percent to include an archetype in 'Others'
