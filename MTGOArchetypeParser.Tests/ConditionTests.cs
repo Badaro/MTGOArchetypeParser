@@ -17,219 +17,265 @@ namespace MTGOArchetypeParser.Tests
         [Test]
         public void InMainboard()
         {
-            DetectionSuccess(ArchetypeConditionType.InMainboard,
-                new string[] { "Card 1" },
-                new string[] { "Card 1", "Card 2" },
-                new string[] { });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.InMainboard,
+                cards: new string[] { "Card 1" },
+                mainboard: new string[] { "Card 1", "Card 2" },
+                sideboard: new string[] { }
+            );
         }
 
         [Test]
         public void InSideboard()
         {
-            DetectionSuccess(ArchetypeConditionType.InSideboard,
-                new string[] { "Card 1" },
-                new string[] { },
-                new string[] { "Card 1", "Card 2" });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.InSideboard,
+                cards: new string[] { "Card 1" },
+                mainboard: new string[] { },
+                sideboard: new string[] { "Card 1", "Card 2" }
+            );
         }
 
         [Test]
         public void InMainOrSideboard()
         {
-            DetectionSuccess(ArchetypeConditionType.InMainOrSideboard,
-                new string[] { "Card 1" },
-                new string[] { "Card 1", "Card 2" },
-                new string[] { });
+            DetectionShouldSucceed(
+                ArchetypeConditionType.InMainOrSideboard,
+                cards: new string[] { "Card 1" },
+                mainboard: new string[] { "Card 1", "Card 2" },
+                sideboard: new string[] { }
+            );
 
-            DetectionSuccess(ArchetypeConditionType.InMainOrSideboard,
-                new string[] { "Card 1" },
-                new string[] { },
-                new string[] { "Card 1", "Card 2" });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.InMainOrSideboard,
+                cards: new string[] { "Card 1" },
+                mainboard: new string[] { },
+                sideboard: new string[] { "Card 1", "Card 2" }
+            );
         }
 
         [Test]
         public void OneOrMoreInMainboard()
         {
-            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainboard,
-                new string[] { "Card 1", "Card 2" },
-                new string[] { "Card 1", "Card 3" },
-                new string[] { });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.OneOrMoreInMainboard,
+                cards: new string[] { "Card 1", "Card 2" },
+                mainboard: new string[] { "Card 1", "Card 3" },
+                sideboard: new string[] { }
+            );
 
-            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainboard,
-                new string[] { "Card 1", "Card 2" },
-                new string[] { "Card 2", "Card 3" },
-                new string[] { });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.OneOrMoreInMainboard,
+                cards: new string[] { "Card 1", "Card 2" },
+                mainboard: new string[] { "Card 2", "Card 3" },
+                sideboard: new string[] { }
+            );
         }
 
         [Test]
         public void OneOrMoreInSideboard()
         {
-            DetectionSuccess(ArchetypeConditionType.OneOrMoreInSideboard,
-                new string[] { "Card 1", "Card 2" },
-                new string[] { },
-                new string[] { "Card 1", "Card 3" });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.OneOrMoreInSideboard,
+                cards: new string[] { "Card 1", "Card 2" },
+                mainboard: new string[] { },
+                sideboard: new string[] { "Card 1", "Card 3" }
+            );
 
-            DetectionSuccess(ArchetypeConditionType.OneOrMoreInSideboard,
-                new string[] { "Card 1", "Card 2" },
-                new string[] { },
-                new string[] { "Card 2", "Card 3" });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.OneOrMoreInSideboard,
+                cards: new string[] { "Card 1", "Card 2" },
+                mainboard: new string[] { },
+                sideboard: new string[] { "Card 2", "Card 3" }
+            );
         }
 
         [Test]
         public void OneOrMoreInMainOrSideboard()
         {
-            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainOrSideboard,
-                new string[] { "Card 1", "Card 2" },
-                new string[] { "Card 1", "Card 3" },
-                new string[] { });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.OneOrMoreInMainOrSideboard,
+                cards: new string[] { "Card 1", "Card 2" },
+                mainboard: new string[] { "Card 1", "Card 3" },
+                sideboard: new string[] { }
+            );
 
-            DetectionSuccess(ArchetypeConditionType.OneOrMoreInMainOrSideboard,
-                new string[] { "Card 1", "Card 2" },
-                new string[] { },
-                new string[] { "Card 2", "Card 3" });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.OneOrMoreInMainOrSideboard,
+                cards: new string[] { "Card 1", "Card 2" },
+                mainboard: new string[] { },
+                sideboard: new string[] { "Card 2", "Card 3" }
+            );
         }
 
         [Test]
         public void TwoOrMoreInMainboard()
         {
-            DetectionFailure(ArchetypeConditionType.TwoOrMoreInMainboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { "Card 1", "Card 5" },
-               new string[] { });
+            DetectionShouldFail(
+                condition: ArchetypeConditionType.TwoOrMoreInMainboard,
+                cards: new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+                mainboard: new string[] { "Card 1", "Card 5" },
+                sideboard: new string[] { }
+            );
 
-            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { "Card 1", "Card 3" },
-               new string[] { });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.TwoOrMoreInMainboard,
+                cards: new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+                mainboard: new string[] { "Card 1", "Card 3" },
+                sideboard: new string[] { }
+            );
 
-            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { "Card 2", "Card 3" },
-               new string[] { });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.TwoOrMoreInMainboard,
+                cards: new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+                mainboard: new string[] { "Card 2", "Card 3" },
+                sideboard: new string[] { }
+            );
         }
 
         [Test]
         public void TwoOrMoreInSideboard()
         {
-            DetectionFailure(ArchetypeConditionType.TwoOrMoreInSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { },
-               new string[] { "Card 1", "Card 5" });
+            DetectionShouldFail(
+                condition: ArchetypeConditionType.TwoOrMoreInSideboard,
+                cards: new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+                mainboard: new string[] { },
+                sideboard: new string[] { "Card 1", "Card 5" });
 
-            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { },
-               new string[] { "Card 1", "Card 3" });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.TwoOrMoreInSideboard,
+                cards: new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+                mainboard: new string[] { },
+                sideboard: new string[] { "Card 1", "Card 3" }
+            );
 
-            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { },
-               new string[] { "Card 2", "Card 3" });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.TwoOrMoreInSideboard,
+                cards: new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+                mainboard: new string[] { },
+                sideboard: new string[] { "Card 2", "Card 3" }
+            );
         }
 
         [Test]
         public void TwoOrMoreInMainOrSideboard()
         {
-            DetectionFailure(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { "Card 1" },
-               new string[] { "Card 5" });
+            DetectionShouldFail(
+                condition: ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
+                cards: new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+                mainboard: new string[] { "Card 1" },
+                sideboard: new string[] { "Card 5" });
 
-            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { "Card 1", "Card 3" },
-               new string[] { });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
+                cards: new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+                mainboard: new string[] { "Card 1", "Card 3" },
+                sideboard: new string[] { }
+            );
 
-            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { },
-               new string[] { "Card 2", "Card 3" });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
+                cards: new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+                mainboard: new string[] { },
+                sideboard: new string[] { "Card 2", "Card 3" }
+            );
 
-            DetectionSuccess(ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
-               new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
-               new string[] { "Card 1", },
-               new string[] { "Card 4" });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.TwoOrMoreInMainOrSideboard,
+                cards: new string[] { "Card 1", "Card 2", "Card 3", "Card 4" },
+                mainboard: new string[] { "Card 1", },
+                sideboard: new string[] { "Card 4" }
+            );
         }
 
         [Test]
         public void DoesNotContain()
         {
-            DetectionSuccess(ArchetypeConditionType.DoesNotContain,
-               new string[] { "Card 1" },
-               new string[] { "Card 2", "Card 3" },
-               new string[] { });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.DoesNotContain,
+                cards: new string[] { "Card 1" },
+                mainboard: new string[] { "Card 2", "Card 3" },
+                sideboard: new string[] { }
+            );
 
-            DetectionFailure(ArchetypeConditionType.DoesNotContain,
-               new string[] { "Card 1" },
-               new string[] { "Card 1", "Card 3" },
-               new string[] { });
+            DetectionShouldFail(
+                condition: ArchetypeConditionType.DoesNotContain,
+                cards: new string[] { "Card 1" },
+                mainboard: new string[] { "Card 1", "Card 3" },
+                sideboard: new string[] { }
+            );
 
-            DetectionFailure(ArchetypeConditionType.DoesNotContain,
-               new string[] { "Card 1" },
-               new string[] { },
-               new string[] { "Card 1", "Card 3" });
+            DetectionShouldFail(
+                condition: ArchetypeConditionType.DoesNotContain,
+                cards: new string[] { "Card 1" },
+                mainboard: new string[] { },
+                sideboard: new string[] { "Card 1", "Card 3" }
+            );
         }
 
         [Test]
         public void DoesNotContainMainboard()
         {
-            DetectionSuccess(ArchetypeConditionType.DoesNotContainMainboard,
-               new string[] { "Card 1" },
-               new string[] { "Card 2", "Card 3" },
-               new string[] { });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.DoesNotContainMainboard,
+                cards: new string[] { "Card 1" },
+                mainboard: new string[] { "Card 2", "Card 3" },
+                sideboard: new string[] { }
+            );
 
-            DetectionFailure(ArchetypeConditionType.DoesNotContainMainboard,
-               new string[] { "Card 1" },
-               new string[] { "Card 1", "Card 3" },
-               new string[] { });
+            DetectionShouldFail(
+                condition: ArchetypeConditionType.DoesNotContainMainboard,
+                cards: new string[] { "Card 1" },
+                mainboard: new string[] { "Card 1", "Card 3" },
+                sideboard: new string[] { }
+            );
 
-            DetectionSuccess(ArchetypeConditionType.DoesNotContainMainboard,
-               new string[] { "Card 1" },
-               new string[] { },
-               new string[] { "Card 1", "Card 3" });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.DoesNotContainMainboard,
+                cards: new string[] { "Card 1" },
+                mainboard: new string[] { },
+                sideboard: new string[] { "Card 1", "Card 3" }
+            );
         }
 
         [Test]
         public void DoesNotContainSideboard()
         {
-            DetectionSuccess(ArchetypeConditionType.DoesNotContainSideboard,
-               new string[] { "Card 1" },
-               new string[] { "Card 2", "Card 3" },
-               new string[] { });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.DoesNotContainSideboard,
+                cards: new string[] { "Card 1" },
+                mainboard: new string[] { "Card 2", "Card 3" },
+                sideboard: new string[] { }
+            );
 
-            DetectionSuccess(ArchetypeConditionType.DoesNotContainSideboard,
-               new string[] { "Card 1" },
-               new string[] { "Card 1", "Card 3" },
-               new string[] { });
+            DetectionShouldSucceed(
+                condition: ArchetypeConditionType.DoesNotContainSideboard,
+                cards: new string[] { "Card 1" },
+                mainboard: new string[] { "Card 1", "Card 3" },
+                sideboard: new string[] { }
+            );
 
-            DetectionFailure(ArchetypeConditionType.DoesNotContainSideboard,
-               new string[] { "Card 1" },
-               new string[] { },
-               new string[] { "Card 1", "Card 3" });
+            DetectionShouldFail(
+                condition: ArchetypeConditionType.DoesNotContainSideboard,
+                cards: new string[] { "Card 1" },
+                mainboard: new string[] { },
+                sideboard: new string[] { "Card 1", "Card 3" }
+            );
         }
 
-        private void DetectionSuccess(ArchetypeConditionType condition, string[] archetypeCards, string[] testMainboard, string[] testSideboard)
-        {
-            DetectionSuccess(condition, archetypeCards, default(ArchetypeColor), testMainboard, testSideboard);
-        }
-
-        private void DetectionSuccess(ArchetypeConditionType condition, ArchetypeColor archetypeColor, string[] testMainboard, string[] testSideboard)
-        {
-            DetectionSuccess(condition, new string[0], archetypeColor, testMainboard, testSideboard);
-        }
-
-        private void DetectionSuccess(ArchetypeConditionType condition, string[] archetypeCards, ArchetypeColor archetypeColor, string[] testMainboard, string[] testSideboard)
+        private void DetectionShouldSucceed(ArchetypeConditionType condition, string[] cards, string[] mainboard, string[] sideboard)
         {
             var archetype = new ArchetypeSpecific()
             {
                 Conditions = new ArchetypeCondition[]
                 {
-                    new ArchetypeCondition() { Type= condition, Cards = archetypeCards }
+                    new ArchetypeCondition() { Type= condition, Cards = cards }
                 }
             };
 
             var result = ArchetypeAnalyzer.Detect(
-                testMainboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
-                testSideboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
+                mainboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
+                sideboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
                 new ArchetypeFormat
                 {
                     Archetypes = new Archetype[]
@@ -245,29 +291,19 @@ namespace MTGOArchetypeParser.Tests
             result.Matches.First().Variant.Should().BeNull();
         }
 
-        private void DetectionFailure(ArchetypeConditionType condition, string[] archetypeCards, string[] testMainboard, string[] testSideboard)
-        {
-            DetectionFailure(condition, archetypeCards, default(ArchetypeColor), testMainboard, testSideboard);
-        }
-
-        private void DetectionFailure(ArchetypeConditionType condition, ArchetypeColor archetypeColor, string[] testMainboard, string[] testSideboard)
-        {
-            DetectionFailure(condition, new string[0], archetypeColor, testMainboard, testSideboard);
-        }
-
-        private void DetectionFailure(ArchetypeConditionType condition, string[] archetypeCards, ArchetypeColor archetypeColor, string[] testMainboard, string[] testSideboard)
+        private void DetectionShouldFail(ArchetypeConditionType condition, string[] cards, string[] mainboard, string[] sideboard)
         {
             var archetype = new ArchetypeSpecific()
             {
                 Conditions = new ArchetypeCondition[]
                 {
-                    new ArchetypeCondition() { Type= condition, Cards = archetypeCards }
+                    new ArchetypeCondition() { Type= condition, Cards = cards }
                 }
             };
 
             var result = ArchetypeAnalyzer.Detect(
-                testMainboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
-                testSideboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
+                mainboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
+                sideboard.Select(c => new Card() { Count = 4, Name = c }).ToArray(),
                 new ArchetypeFormat
                 {
                     Archetypes = new Archetype[]
