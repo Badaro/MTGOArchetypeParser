@@ -164,7 +164,8 @@ namespace MTGOArchetypeParser.App
         NotSpecified,
         Console,
         Csv,
-        Json
+        Json,
+        Reddit
     }
 
     public enum ExecutionAction

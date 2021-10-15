@@ -125,6 +125,9 @@ namespace MTGOArchetypeParser.App
                             Console.WriteLine("Saving data to JSON file");
                             output = new JsonOutput();
                             break;
+                        case ExecutionOutput.Reddit:
+                            output = new RedditOutput();
+                            break;
                         case ExecutionOutput.Console:
                         default:
                             output = new ConsoleOutput();
