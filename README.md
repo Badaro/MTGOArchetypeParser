@@ -47,8 +47,9 @@ The first argument of the tool is how to display the output. There's two options
 * console
 * csv
 * json
+* reddit
 
-The first one will display the results on the console, while the second one will generate a CSV file in the same folder as the application with the name ```mtgo_data_yyyy_mm_dd.csv```. The last one will output a JSON file with the name ```mtgo_data_yyyy_mm_dd.json```.
+The first one will display the results on the console, while the second one will generate a CSV file in the same folder as the application with the name ```mtgo_data_yyyy_mm_dd.csv```. The third one will output a JSON file with the name ```mtgo_data_yyyy_mm_dd.json```. Finally, reddit will output to the console appropriately formatted reddit markup including a link to the deckist.
 
 You can also specify the file name to be used with the ```outputfile``` parameter.
 
