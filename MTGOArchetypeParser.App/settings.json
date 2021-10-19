@@ -7,8 +7,7 @@
   "Exclude": [
   ],
   "TournamentFolder": [
-    "MTGODecklistCache\\Tournaments",
-    "ManaTradersDecklistCache\\Tournaments"
+    "MTGODecklistCache\\Tournaments"
   ],
   "FormatDataFolder": "MTGOFormatData\\Formats"
 }
