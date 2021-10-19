@@ -16,7 +16,9 @@ namespace MTGOArchetypeParser.App
 
             foreach (var tournament in tournaments)
             {
-                ArchetypeMeta meta = format.Metas.Last(m => m.StartDate <= tournament.Decks.First().Date);
+                ArchetypeMeta meta = format.Metas.LastOrDefault(m => m.StartDate <= tournament.Decks.First().Date);
+                if (meta == null) continue; // Tournament outside of the meta range, may happen due to them being posted late
+
                 DateTime metaWeekReferenceDate = GetMetaWeekReferenceDate(meta.StartDate);
 
                 string metaID = meta.Name;
