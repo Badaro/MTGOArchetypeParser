@@ -100,15 +100,29 @@ namespace MTGOArchetypeParser.Formats.FromJson
 
             foreach (var archetypeFile in Directory.GetFiles(archetypeFolder, "*.json"))
             {
-                var archetype = JsonConvert.DeserializeObject<ArchetypeSpecific>(File.ReadAllText(archetypeFile));
-                if (archetype.Conditions == null || archetype.Conditions.Length == 0) throw new Exception($"Archetype file {Path.GetFileName(archetypeFile)} is invalid, no conditions declared");
-                archetypes.Add(archetype);
+                try
+                {
+                    var archetype = JsonConvert.DeserializeObject<ArchetypeSpecific>(File.ReadAllText(archetypeFile));
+                    if (archetype.Conditions == null || archetype.Conditions.Length == 0) throw new Exception($"Archetype file {Path.GetFileName(archetypeFile)} is invalid, no conditions declared");
+                    archetypes.Add(archetype);
+                }
+                catch(Exception ex)
+                {
+                    throw new Exception($"Could not load archetype file {Path.GetFileName(archetypeFile)}: {ex.Message}");
+                }
             }
             foreach (var archetypeFile in Directory.GetFiles(fallbackFolder, "*.json"))
             {
-                var archetype = JsonConvert.DeserializeObject<ArchetypeGeneric>(File.ReadAllText(archetypeFile));
-                if (archetype.CommonCards == null || archetype.CommonCards.Length == 0) throw new Exception($"Fallback file {Path.GetFileName(archetypeFile)} in invalid, no common cards declared");
-                archetypes.Add(archetype);
+                try
+                {
+                    var archetype = JsonConvert.DeserializeObject<ArchetypeGeneric>(File.ReadAllText(archetypeFile));
+                    if (archetype.CommonCards == null || archetype.CommonCards.Length == 0) throw new Exception($"Fallback file {Path.GetFileName(archetypeFile)} in invalid, no common cards declared");
+                    archetypes.Add(archetype);
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception($"Could not load fallback file {Path.GetFileName(archetypeFile)}: {ex.Message}");
+                }
             }
 
             return archetypes.ToArray();

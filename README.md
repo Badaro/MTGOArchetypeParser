@@ -34,9 +34,9 @@ modern-preliminary-2021-01-21->aplapp->Heliod Combo
 ```
 If you got that, congratulations! You can now start playing with the archetypes.
 
-**With the files in this repository the detection only works for the Modern format.** 
+**Check the MTGOFormatData repository for information on which formats are currently supported for detection.**
 
-This is simply because currently there's only archetype rules for the Modern format. If you're interested in creating archetype definitions for other formats, please check the "Creating new archetype definitions" section at the end of this readme.
+If you're interested in creating archetype definitions for other formats, please check the "Creating new archetype definitions" section at the end of this readme.
 
 Github user [knightroro](https://github.com/knightroro/) has also rules for [Pioneer](https://github.com/knightroro/MTGOFormatDataPioneer). 
 
