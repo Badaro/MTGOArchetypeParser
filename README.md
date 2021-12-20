@@ -38,8 +38,6 @@ If you got that, congratulations! You can now start playing with the archetypes.
 
 If you're interested in creating archetype definitions for other formats, please check the "Creating new archetype definitions" section at the end of this readme.
 
-Github user [knightroro](https://github.com/knightroro/) has also rules for [Pioneer](https://github.com/knightroro/MTGOFormatDataPioneer). 
-
 ## Output options
 
 The first argument of the tool is how to display the output. There's two options at the moment:
