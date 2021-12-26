@@ -80,6 +80,11 @@ namespace MTGOArchetypeParser.App
                     records = records.Where(r => r.Archetype.Archetype.Contains(settings.Archetype, StringComparison.InvariantCultureIgnoreCase)).ToArray();
                 }
 
+                if (!String.IsNullOrEmpty(settings.Player))
+                {
+                    records = records.Where(r => r.Player.Contains(settings.Player, StringComparison.InvariantCultureIgnoreCase)).ToArray();
+                }
+
                 if (settings.Card != null && settings.IncludeDecklists)
                 {
                     foreach (string card in settings.Card)
