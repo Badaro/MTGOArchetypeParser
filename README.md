@@ -6,8 +6,8 @@ Rules-based engine to detect archetypes from MTGO decklists.
 
 * Install .Net Core Runtime (https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * Download the latest release of MTGOArchetypeParser: https://github.com/Badaro/MTGOArchetypeParser/releases
-* Download (or clone) the tournament results: https://github.com/Badaro/MTGODecklistCache
-* Download (or clone) the archetype definitions: https://github.com/Badaro/MTGOFormatData
+* Clone the tournament results: https://github.com/Badaro/MTGODecklistCache
+* Clone the archetype definitions: https://github.com/Badaro/MTGOFormatData
 
 Extract the ZIP from MTGOArchetypeParser, and put the tournaments and archetype definitions in the same folder. You should end up with a structure like this:
 
@@ -16,7 +16,7 @@ MTGOArchetypeParser
 MTGOArchetypeParser/MTGODecklistCache
 MTGOArchetypeParser/MTGOFormatData
 ```
-Once you did that, open a console prompt on the MTGOArchetypeParser and run this:
+Once you do that, open a console prompt on the MTGOArchetypeParser and run this:
 
 ```MTGOArchetypeParser.App console detect format=Modern filter=modern-preliminary-2021-01-21```
 
