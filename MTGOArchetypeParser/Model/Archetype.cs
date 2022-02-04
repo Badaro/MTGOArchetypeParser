@@ -25,6 +25,7 @@ namespace MTGOArchetypeParser.Model
 
             // Source: https://stackoverflow.com/questions/3216085/split-a-pascalcase-string-into-separate-words
             name = new Regex(@"(?<=[A-Z])(?=[A-Z][a-z])|(?<=[^A-Z])(?=[A-Z])|(?<=[A-Za-z])(?=[^A-Za-z])").Replace(name, " ");
+            name = new Regex("\\s+").Replace(name, " ");
 
             return name;
         }
