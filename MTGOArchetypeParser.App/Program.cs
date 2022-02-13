@@ -82,7 +82,12 @@ namespace MTGOArchetypeParser.App
 
                 if (!String.IsNullOrEmpty(settings.Player))
                 {
-                    records = records.Where(r => r.Player.Contains(settings.Player, StringComparison.InvariantCultureIgnoreCase)).ToArray();
+                    records = records.Where(r => r.Player.Equals(settings.Player, StringComparison.InvariantCultureIgnoreCase)).ToArray();
+                }
+
+                if (!String.IsNullOrEmpty(settings.Color))
+                {
+                    records = records.Where(r => r.Archetype.Color.Equals(settings.Color, StringComparison.InvariantCultureIgnoreCase)).ToArray();
                 }
 
                 if (settings.Card != null && settings.IncludeDecklists)
@@ -223,6 +228,8 @@ Settings (can also be specified using settings.json):
 * filter: Only generate data for events that match this string, can be specified more than once
 * exclude: Only generate data for events that do NOT match this string, can be specified more than once
 * archetype: Only generate data for decks whose archetypes match this string
+* player: Only generate data for decks whose player is exactly this string
+* color: Only generate data for decks whose color is exactly this string
 * card: Only generate data for decks that contains this card, can be specified more than once, requires includedecklists=true
 * excludecard: Only generate data for decks that do not contain this card, can be specified more than once, requires includedecklists=true
 * metabreakdown: If set to true will include a meta breakdown summary at the end of the console output

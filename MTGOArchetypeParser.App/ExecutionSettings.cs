@@ -24,6 +24,7 @@ namespace MTGOArchetypeParser.App
         public string Player { get; set; }
         public string[] Card { get; set; }
         public string[] ExcludeCard { get; set; }
+        public string Color { get; set; }
         public bool MetaBreakdown { get; set; }
         public bool MetaBreakdownShowCount { get; set; }
         public bool IncludeDecklists { get; set; }
@@ -63,6 +64,7 @@ namespace MTGOArchetypeParser.App
             string[] excludeArgument = GetArgument(args, nameof(Exclude));
             string archetypeArgument = GetArgument(args, nameof(Archetype)).FirstOrDefault();
             string playerArgument = GetArgument(args, nameof(Player)).FirstOrDefault();
+            string colorArgument = GetArgument(args, nameof(Color)).FirstOrDefault();
             string[] cardArgument = GetArgument(args, nameof(Card));
             string[] excludeCardArgument = GetArgument(args, nameof(ExcludeCard));
             string breakdownArgument = GetArgument(args, nameof(MetaBreakdown)).FirstOrDefault();
@@ -83,6 +85,7 @@ namespace MTGOArchetypeParser.App
             if (excludeArgument.Length > 0) this.Exclude = excludeArgument;
             if (archetypeArgument != null) this.Archetype = archetypeArgument;
             if (playerArgument != null) this.Player = playerArgument;
+            if (colorArgument!= null) this.Color = NormalizeColor(colorArgument);
             if (cardArgument.Length > 0) this.Card = cardArgument;
             if (excludeCardArgument.Length > 0) this.ExcludeCard = excludeCardArgument;
             if (breakdownArgument != null) this.MetaBreakdown = (breakdownArgument.ToLowerInvariant() == "true");
@@ -153,6 +156,7 @@ namespace MTGOArchetypeParser.App
             if (this.Exclude != null && this.Exclude.Length > 0) this.Exclude.ToList().ForEach(e => Console.WriteLine($"* {nameof(this.Exclude)}: {e}"));
             if (!String.IsNullOrEmpty(this.Archetype)) Console.WriteLine($"* {nameof(this.Archetype)}: {this.Archetype.ToString()}");
             if (!String.IsNullOrEmpty(this.Player)) Console.WriteLine($"* {nameof(this.Player)}: {this.Player.ToString()}");
+            if (!String.IsNullOrEmpty(this.Color)) Console.WriteLine($"* {nameof(this.Color)}: {this.Color.ToString()}");
             if (this.Card != null && this.Card.Length > 0) this.Card.ToList().ForEach(c => Console.WriteLine($"* {nameof(this.Card)}: {c}"));
             if (this.ExcludeCard != null && this.ExcludeCard.Length > 0) this.ExcludeCard.ToList().ForEach(c => Console.WriteLine($"* {nameof(this.ExcludeCard)}: {c}"));
             Console.WriteLine($"* {nameof(this.MetaBreakdown)}: {this.MetaBreakdown.ToString()}");
@@ -164,6 +168,17 @@ namespace MTGOArchetypeParser.App
             if (!String.IsNullOrEmpty(this.FormatDataFolder)) Console.WriteLine($"* {nameof(this.FormatDataFolder)}: {this.FormatDataFolder.ToString()}");
             if (!String.IsNullOrEmpty(this.OutputFile)) Console.WriteLine($"* {nameof(this.OutputFile)}: {this.OutputFile.ToString()}");
             Console.WriteLine($"* {nameof(this.ShowColors)}: {this.ShowColors.ToString()}");
+        }
+
+        public string NormalizeColor(string color)
+        {
+            string normalizedColor = "";
+            if (color.Contains("W", StringComparison.InvariantCultureIgnoreCase)) normalizedColor += "W";
+            if (color.Contains("U", StringComparison.InvariantCultureIgnoreCase)) normalizedColor += "U";
+            if (color.Contains("B", StringComparison.InvariantCultureIgnoreCase)) normalizedColor += "B";
+            if (color.Contains("R", StringComparison.InvariantCultureIgnoreCase)) normalizedColor += "R";
+            if (color.Contains("G", StringComparison.InvariantCultureIgnoreCase)) normalizedColor += "G";
+            return normalizedColor;
         }
     }
 
