@@ -6,9 +6,9 @@ namespace MTGOArchetypeParser.App
 {
     public class RedditOutput : IOutput
     {
-        public void Write(Record[] records, ExecutionAction action, string outputFile)
+        public void Write(Record[] records, ExecutionSettings settings)
         {
-            if (action != ExecutionAction.Detect) throw new Exception("Reddit output only supports detect mode");
+            if (settings.Action != ExecutionAction.Detect) throw new Exception("Reddit output only supports detect mode");
 
             if (records.Length == 0)
             {

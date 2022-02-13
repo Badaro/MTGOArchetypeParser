@@ -138,7 +138,7 @@ namespace MTGOArchetypeParser.App
                             output = new ConsoleOutput();
                             break;
                     }
-                    output.Write(records, settings.Action, settings.OutputFile);
+                    output.Write(records, settings);
                 }
 
                 if (settings.MetaBreakdown) PrintBreakdown(records, settings);
@@ -232,6 +232,7 @@ Settings (can also be specified using settings.json):
 * minotherspercent: Sets the minimum percent to include an archetype in 'Others'
 * tournamentfolder: Specifies the location of folders with the tournament data, can be specified more than once
 * formatdatafolder: Specifies the location of the folders with the format data
-* outputfile: Specifies the name of the file to be saved when using csv ou json output";
+* outputfile: Specifies the name of the file to be saved when using csv ou json output
+* showcolors: If set to true will include colors for each deck in the console output";
     }
 }

@@ -6,11 +6,11 @@ namespace MTGOArchetypeParser.App
 {
     public class ConsoleOutput : IOutput
     {
-        public void Write(Record[] records, ExecutionAction action, string outputFile)
+        public void Write(Record[] records, ExecutionSettings settings)
         {
             if (records.Length == 0)
             {
-                if (action == ExecutionAction.Compare)
+                if (settings.Action == ExecutionAction.Compare)
                 {
                     Console.WriteLine("No changes detected");
                 }
@@ -21,7 +21,7 @@ namespace MTGOArchetypeParser.App
             }
             else
             {
-                if (action == ExecutionAction.Compare)
+                if (settings.Action == ExecutionAction.Compare)
                 {
                     Console.WriteLine("Comparison results: ");
                     foreach (var record in records)
@@ -34,7 +34,14 @@ namespace MTGOArchetypeParser.App
                     Console.WriteLine("Detection results: ");
                     foreach (var record in records)
                     {
-                        Console.WriteLine($"* {record.TournamentFile} -> {record.Result} {record.Player} ({record.Archetype.Archetype})");
+                        if(settings.ShowColors)
+                        {
+                            Console.WriteLine($"* {record.TournamentFile} -> {record.Result} {record.Player} ({record.Archetype.Archetype}) ({record.Archetype.Color})");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"* {record.TournamentFile} -> {record.Result} {record.Player} ({record.Archetype.Archetype})");
+                        }
                     }
                 }
             }
