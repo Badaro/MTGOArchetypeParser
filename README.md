@@ -18,8 +18,11 @@ MTGOArchetypeParser/MTGOFormatData
 ```
 Once you do that, open a console prompt on the MTGOArchetypeParser and run this:
 
-Windows: ```MTGOArchetypeParser.App.exe console detect format=Modern filter=modern-preliminary-2021-01-21```
-Linux: ```dotnet MTGOArchetypeParser.App.dll console detect format=Modern filter=modern-preliminary-2021-01-21```
+Windows:
+```MTGOArchetypeParser.App.exe console detect format=Modern filter=modern-preliminary-2021-01-21```
+
+Linux: 
+```dotnet MTGOArchetypeParser.App.dll console detect format=Modern filter=modern-preliminary-2021-01-21```
 
 If you did things correctly you should see a message displaying the results of the detection for that Modern event:
 
