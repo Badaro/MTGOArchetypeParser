@@ -16,7 +16,7 @@ MTGOArchetypeParser
 MTGOArchetypeParser/MTGODecklistCache
 MTGOArchetypeParser/MTGOFormatData
 ```
-Once you do that, open a console prompt on the MTGOArchetypeParser and run this:
+Once you do that, open a console prompt on the MTGOArchetypeParser folder and run this:
 
 Windows:
 ```MTGOArchetypeParser.App.exe console detect format=Modern filter=modern-preliminary-2021-01-21```
