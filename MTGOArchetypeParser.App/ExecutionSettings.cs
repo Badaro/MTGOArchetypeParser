@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 
 namespace MTGOArchetypeParser.App
@@ -85,7 +86,7 @@ namespace MTGOArchetypeParser.App
             if (excludeArgument.Length > 0) this.Exclude = excludeArgument;
             if (archetypeArgument != null) this.Archetype = archetypeArgument;
             if (playerArgument != null) this.Player = playerArgument;
-            if (colorArgument!= null) this.Color = NormalizeColor(colorArgument);
+            if (colorArgument != null) this.Color = NormalizeColor(colorArgument);
             if (cardArgument.Length > 0) this.Card = cardArgument;
             if (excludeCardArgument.Length > 0) this.ExcludeCard = excludeCardArgument;
             if (breakdownArgument != null) this.MetaBreakdown = (breakdownArgument.ToLowerInvariant() == "true");
@@ -108,6 +109,10 @@ namespace MTGOArchetypeParser.App
 
             // Required setting for these features to work
             if ((this.Card != null && this.Card.Length > 0) || (this.ExcludeCard != null && this.ExcludeCard.Length > 0)) this.IncludeDecklists = true;
+
+            // Folder normalization
+            if (this.FormatDataFolder != null) this.FormatDataFolder = NormalizePath(this.FormatDataFolder);
+            if (this.TournamentFolder != null) this.TournamentFolder = this.TournamentFolder.Select(s => NormalizePath(s)).ToArray();
         }
 
         string[] GetArgument(string[] args, string settingName)
@@ -179,6 +184,18 @@ namespace MTGOArchetypeParser.App
             if (color.Contains("R", StringComparison.InvariantCultureIgnoreCase)) normalizedColor += "R";
             if (color.Contains("G", StringComparison.InvariantCultureIgnoreCase)) normalizedColor += "G";
             return normalizedColor;
+        }
+
+        public string NormalizePath(string path)
+        {
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                return path.Replace("/", "\\");
+            }
+            else
+            {
+                return path.Replace("\\", "/");
+            }
         }
     }
 
