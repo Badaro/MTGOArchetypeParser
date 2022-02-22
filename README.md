@@ -4,7 +4,7 @@ Rules-based engine to detect archetypes from MTGO decklists.
 
 ## Getting started
 
-* Install .Net Core Runtime (https://dotnet.microsoft.com/download/dotnet-core/3.1)
+* Install .Net Core Runtime: https://dotnet.microsoft.com/download/dotnet-core/3.1
 * Download the latest release of MTGOArchetypeParser: https://github.com/Badaro/MTGOArchetypeParser/releases
 * Clone the tournament results: https://github.com/Badaro/MTGODecklistCache
 * Clone the archetype definitions: https://github.com/Badaro/MTGOFormatData
