@@ -55,6 +55,14 @@ namespace MTGOArchetypeParser.App
 
         public void ApplyOverrides(string[] args)
         {
+            // Cleaning up of quotes in parameters, also allows : as an alternative for = for parameter splitting
+            args = args.Select(a =>
+            {
+                if (!a.Contains("=") && a.Contains(":")) a = ReplaceFirst(a, ":", "=");
+                if (a.StartsWith("\"")) a = a.TrimStart('"').TrimEnd('"');
+                return a;
+            }).ToArray();
+
             this.MinOthersPercent = DefaultMinOthersPercent;
 
             string formatArgument = GetArgument(args, nameof(Format)).FirstOrDefault();
@@ -196,6 +204,16 @@ namespace MTGOArchetypeParser.App
             {
                 return path.Replace("\\", "/");
             }
+        }
+
+        private string ReplaceFirst(string text, string search, string replace)
+        {
+            int pos = text.IndexOf(search);
+            if (pos < 0)
+            {
+                return text;
+            }
+            return text.Substring(0, pos) + replace + text.Substring(pos + search.Length);
         }
     }
 
