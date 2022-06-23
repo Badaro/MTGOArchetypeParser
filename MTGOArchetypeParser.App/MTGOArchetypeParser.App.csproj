@@ -6,10 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\MTGOArchetypeParser.Data\MTGOArchetypeParser.Data.csproj" />
     <ProjectReference Include="..\MTGOArchetypeParser.Formats.FromJson\MTGOArchetypeParser.Formats.FromJson.csproj" />
     <ProjectReference Include="..\MTGOArchetypeParser\MTGOArchetypeParser.csproj" />
