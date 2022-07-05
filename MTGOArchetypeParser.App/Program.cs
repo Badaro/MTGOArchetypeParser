@@ -147,6 +147,7 @@ namespace MTGOArchetypeParser.App
                 }
 
                 if (settings.MetaBreakdown) PrintBreakdown(records, settings);
+                if (settings.CardBreakdown) PrintCards(records, settings);
             }
             catch (Exception ex)
             {
@@ -178,7 +179,7 @@ namespace MTGOArchetypeParser.App
                 else consolidatedTotals[othersKey] += total.Value;
             }
 
-            Console.WriteLine("Meta Breakdown:");
+            Console.WriteLine("----- Meta Breakdown: -----");
 
             foreach (var total in consolidatedTotals.Where(t => t.Key != othersKey).OrderByDescending(t => t.Value))
             {
@@ -204,7 +205,30 @@ namespace MTGOArchetypeParser.App
             }
             Console.WriteLine($"Total Decks: {consolidatedTotals.Sum(c => c.Value)}");
         }
+        static void PrintCards(Record[] records, ExecutionSettings settings)
+        {
+            Console.WriteLine("----- Card Breakdown: -----");
 
+            Dictionary<string, int> cards = new Dictionary<string, int>();
+            foreach (var record in records)
+            {
+                foreach (var card in record.Mainboard)
+                {
+                    if (!cards.ContainsKey(card.Card)) cards.Add(card.Card, 0);
+                    cards[card.Card] += card.Count;
+                }
+                foreach (var card in record.Sideboard)
+                {
+                    if (!cards.ContainsKey(card.Card)) cards.Add(card.Card, 0);
+                    cards[card.Card] += card.Count;
+                }
+            }
+
+            foreach (var card in cards.OrderByDescending(c => c.Value))
+            {
+                Console.WriteLine($"* {card.Key} ({card.Value} {((card.Value == 1) ? "copy" : "copies")})");
+            }
+        }
         static string _usage = @"Usage: MTGOArchetypeParser.App [OUTPUT] [ACTION] [SETTINGS]
 
 Sample:
@@ -234,6 +258,7 @@ Settings (can also be specified using settings.json):
 * excludecard: Only generate data for decks that do not contain this card, can be specified more than once, requires includedecklists=true
 * metabreakdown: If set to true will include a meta breakdown summary at the end of the console output
 * metabreakdownshowcount: If set to true will show the number of decks instead of the percent of decks in the meta breakdown
+* cardbreakdown: If set to true will include a card breakdown summary at the end of the console output
 * includedecklists: If set to true will include the decklists in the output, only supported when using json
 * maxdecksperevent: Limits the number of decks per event
 * minotherspercent: Sets the minimum percent to include an archetype in 'Others'

@@ -28,6 +28,7 @@ namespace MTGOArchetypeParser.App
         public string Color { get; set; }
         public bool MetaBreakdown { get; set; }
         public bool MetaBreakdownShowCount { get; set; }
+        public bool CardBreakdown { get; set; }
         public bool IncludeDecklists { get; set; }
         public string[] TournamentFolder { get; set; }
         public string FormatDataFolder { get; set; }
@@ -78,6 +79,7 @@ namespace MTGOArchetypeParser.App
             string[] excludeCardArgument = GetArgument(args, nameof(ExcludeCard));
             string breakdownArgument = GetArgument(args, nameof(MetaBreakdown)).FirstOrDefault();
             string breakdownCountArgument = GetArgument(args, nameof(MetaBreakdownShowCount)).FirstOrDefault();
+            string cardBreakdownArgument = GetArgument(args, nameof(CardBreakdown)).FirstOrDefault();
             string decklistsArgument = GetArgument(args, nameof(IncludeDecklists)).FirstOrDefault();
             string[] cacheFoldersArgument = GetArgument(args, nameof(TournamentFolder));
             string dataFolderArgument = GetArgument(args, nameof(FormatDataFolder)).FirstOrDefault();
@@ -99,6 +101,7 @@ namespace MTGOArchetypeParser.App
             if (excludeCardArgument.Length > 0) this.ExcludeCard = excludeCardArgument;
             if (breakdownArgument != null) this.MetaBreakdown = (breakdownArgument.ToLowerInvariant() == "true");
             if (breakdownCountArgument != null) this.MetaBreakdownShowCount = (breakdownCountArgument.ToLowerInvariant() == "true");
+            if (cardBreakdownArgument != null) this.CardBreakdown = (cardBreakdownArgument.ToLowerInvariant() == "true");
             if (decklistsArgument != null) this.IncludeDecklists = (decklistsArgument.ToLowerInvariant() == "true");
             if (cacheFoldersArgument.Length > 0) this.TournamentFolder = cacheFoldersArgument;
             if (dataFolderArgument != null) this.FormatDataFolder = dataFolderArgument;
@@ -116,7 +119,7 @@ namespace MTGOArchetypeParser.App
             if (outputArgument != ExecutionOutput.NotSpecified) this.Output = outputArgument;
 
             // Required setting for these features to work
-            if ((this.Card != null && this.Card.Length > 0) || (this.ExcludeCard != null && this.ExcludeCard.Length > 0)) this.IncludeDecklists = true;
+            if ((this.Card != null && this.Card.Length > 0) || (this.ExcludeCard != null && this.ExcludeCard.Length > 0) || this.CardBreakdown) this.IncludeDecklists = true;
 
             // Folder normalization
             if (this.FormatDataFolder != null) this.FormatDataFolder = NormalizePath(this.FormatDataFolder);
@@ -174,6 +177,7 @@ namespace MTGOArchetypeParser.App
             if (this.ExcludeCard != null && this.ExcludeCard.Length > 0) this.ExcludeCard.ToList().ForEach(c => Console.WriteLine($"* {nameof(this.ExcludeCard)}: {c}"));
             Console.WriteLine($"* {nameof(this.MetaBreakdown)}: {this.MetaBreakdown.ToString()}");
             Console.WriteLine($"* {nameof(this.MetaBreakdownShowCount)}: {this.MetaBreakdownShowCount.ToString()}");
+            Console.WriteLine($"* {nameof(this.CardBreakdown)}: {this.CardBreakdown.ToString()}");
             Console.WriteLine($"* {nameof(this.IncludeDecklists)}: {this.IncludeDecklists.ToString()}");
             if (this.MaxDecksPerEvent > 0) Console.WriteLine($"* {nameof(this.MaxDecksPerEvent)}: {this.MaxDecksPerEvent.ToString()}");
             if (this.MinOthersPercent != DefaultMinOthersPercent) Console.WriteLine($"* {nameof(this.MinOthersPercent)}: {this.MinOthersPercent.ToString()}");
