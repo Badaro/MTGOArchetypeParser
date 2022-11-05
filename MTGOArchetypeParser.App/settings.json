@@ -2,6 +2,7 @@
   "Format": "",
   "ReferenceFormat": "",
   "Meta": "",
+  "ConflictSolvingMode": "PreferSimpler",
   "Filter": [
   ],
   "Exclude": [
