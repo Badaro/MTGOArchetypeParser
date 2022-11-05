@@ -35,6 +35,11 @@ namespace MTGOArchetypeParser.Model
             return this.Name;
         }
 
+        public virtual int GetComplexity()
+        {
+            return Int32.MaxValue;
+        }
+
         private string GetColorName(ArchetypeColor color)
         {
             switch (color)
@@ -111,6 +116,11 @@ namespace MTGOArchetypeParser.Model
     {
         public ArchetypeCondition[] Conditions { get; set; }
         public ArchetypeVariant[] Variants { get; set; }
+
+        public override int GetComplexity()
+        {
+            return this.Conditions.Length;
+        }
     }
 
     public class ArchetypeVariant : ArchetypeSpecific

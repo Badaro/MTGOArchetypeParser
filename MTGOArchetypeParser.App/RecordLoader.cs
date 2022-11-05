@@ -10,7 +10,7 @@ namespace MTGOArchetypeParser.App
 {
     public static class RecordLoader
     {
-        public static Record[] GetRecords(Tournament[] tournaments, ArchetypeFormat format, ArchetypeFormat referenceFormat, bool includeDecklists, int maxDecksPerEvent)
+        public static Record[] GetRecords(Tournament[] tournaments, ArchetypeFormat format, ArchetypeFormat referenceFormat, bool includeDecklists, int maxDecksPerEvent, ConflictSolvingMode conflictMode)
         {
             List<Record> records = new List<Record>();
 
@@ -28,10 +28,10 @@ namespace MTGOArchetypeParser.App
                 List<Record> tournamentRecords = new List<Record>();
                 for (int i = 0; i < tournament.Decks.Length; i++)
                 {
-                    RecordArchetype archetype = GetArchetype(tournament.Decks[i], format);
+                    RecordArchetype archetype = GetArchetype(tournament.Decks[i], format, conflictMode);
 
                     RecordArchetype referenceArchetype = null;
-                    if (referenceFormat != null) referenceArchetype = GetArchetype(tournament.Decks[i], referenceFormat);
+                    if (referenceFormat != null) referenceArchetype = GetArchetype(tournament.Decks[i], referenceFormat, conflictMode);
 
                     string points = "-";
                     if (tournament.Standings != null)
@@ -65,9 +65,9 @@ namespace MTGOArchetypeParser.App
             return records.OrderBy(r => r.Date).ToArray();
         }
 
-        private static RecordArchetype GetArchetype(Deck deck, ArchetypeFormat format)
+        private static RecordArchetype GetArchetype(Deck deck, ArchetypeFormat format, ConflictSolvingMode conflictMode)
         {
-            var detectionResult = ArchetypeAnalyzer.Detect(deck.Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), deck.Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), format);
+            var detectionResult = ArchetypeAnalyzer.Detect(deck.Mainboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), deck.Sideboard.Select(i => new Card() { Name = i.Card, Count = i.Count }).ToArray(), format, 0.1, conflictMode);
 
             string colorID = detectionResult.Color.ToString();
             string companionID = detectionResult.Companion == null ? "" : detectionResult.Companion.Value.ToString();

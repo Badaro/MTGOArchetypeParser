@@ -22,7 +22,7 @@ namespace MTGOArchetypeParser.Data
             {"Zirda, the Dawnwaker", ArchetypeCompanion.Zirda }
         };
 
-        public static ArchetypeResult Detect(Card[] mainboardCards, Card[] sideboardCards, ArchetypeFormat format, double minSimiliarity = 0.1)
+        public static ArchetypeResult Detect(Card[] mainboardCards, Card[] sideboardCards, ArchetypeFormat format, double minSimiliarity = 0.1, ConflictSolvingMode conflictSolvingMode = ConflictSolvingMode.None)
         {
             Archetype[] archetypeData = format.Archetypes;
             Dictionary<string, ArchetypeColor> landColors = format.Lands;
@@ -59,6 +59,13 @@ namespace MTGOArchetypeParser.Data
             {
                 ArchetypeMatch genericArchetype = GetBestGenericArchetype(mainboardCards, sideboardCards, color, genericArchetypes);
                 if (genericArchetype != null && genericArchetype.Similarity > minSimiliarity) results.Add(genericArchetype);
+            }
+            else
+            {
+                if(results.Count>1 && conflictSolvingMode == ConflictSolvingMode.PreferSimpler)
+                {
+                    results = results.OrderBy(r => r.Archetype.GetComplexity() + (r.Variant != null ? r.Variant.GetComplexity() : 0)).Take(1).ToList();
+                }
             }
 
             return new ArchetypeResult() { Matches = results.ToArray(), Color = color, Companion = companion };

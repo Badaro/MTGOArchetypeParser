@@ -59,7 +59,7 @@ namespace MTGOArchetypeParser.App
                     return true;
                 })).ToArray();
 
-                Record[] records = RecordLoader.GetRecords(tournaments, format, referenceFormat, settings.IncludeDecklists, settings.MaxDecksPerEvent);
+                Record[] records = RecordLoader.GetRecords(tournaments, format, referenceFormat, settings.IncludeDecklists, settings.MaxDecksPerEvent, settings.ConflictSolvingMode);
 
                 if (!String.IsNullOrEmpty(metaFilter))
                 {
@@ -265,6 +265,7 @@ Settings (can also be specified using settings.json):
 * tournamentfolder: Specifies the location of folders with the tournament data, can be specified more than once
 * formatdatafolder: Specifies the location of the folders with the format data
 * outputfile: Specifies the name of the file to be saved when using csv ou json output
-* showcolors: If set to true will include colors for each deck in the console output";
+* showcolors: If set to true will include colors for each deck in the console output
+* conflictsolvingmode: If set to prefersimpler will automatically solve conflicts by picking the simpler deck";
     }
 }

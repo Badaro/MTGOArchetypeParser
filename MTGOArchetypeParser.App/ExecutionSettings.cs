@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using MTGOArchetypeParser.Data;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -36,6 +37,8 @@ namespace MTGOArchetypeParser.App
         public int MaxDecksPerEvent { get; set; }
         public float MinOthersPercent { get; set; }
         public bool ShowColors { get; set; }
+        public ConflictSolvingMode ConflictSolvingMode { get; set; }
+
 
         public static ExecutionSettings FromJsonFile(string jsonFile)
         {
@@ -87,6 +90,7 @@ namespace MTGOArchetypeParser.App
             string maxDecksPerEventArgument = GetArgument(args, nameof(MaxDecksPerEvent)).FirstOrDefault();
             string minOthersPercentArgument = GetArgument(args, nameof(MinOthersPercent)).FirstOrDefault();
             string showColorsArgument = GetArgument(args, nameof(ShowColors)).FirstOrDefault();
+            string conflictArgument = GetArgument(args, nameof(ConflictSolvingMode)).FirstOrDefault();
 
             if (formatArgument != null) this.Format = formatArgument;
             if (referenceFormatArgument != null) this.ReferenceFormat = referenceFormatArgument;
@@ -117,6 +121,15 @@ namespace MTGOArchetypeParser.App
             ExecutionOutput outputArgument = ExecutionOutput.NotSpecified;
             if (args.Length > 0) Enum.TryParse<ExecutionOutput>(args[0], true, out outputArgument);
             if (outputArgument != ExecutionOutput.NotSpecified) this.Output = outputArgument;
+
+            ConflictSolvingMode conflictParsedArgument = ConflictSolvingMode.None;
+            if (conflictArgument != null)
+            {
+                if (Enum.TryParse<ConflictSolvingMode>(conflictArgument, true, out conflictParsedArgument))
+                {
+                    this.ConflictSolvingMode = conflictParsedArgument;
+                }
+            }
 
             // Required setting for these features to work
             if ((this.Card != null && this.Card.Length > 0) || (this.ExcludeCard != null && this.ExcludeCard.Length > 0) || this.CardBreakdown) this.IncludeDecklists = true;
@@ -185,6 +198,7 @@ namespace MTGOArchetypeParser.App
             if (!String.IsNullOrEmpty(this.FormatDataFolder)) Console.WriteLine($"* {nameof(this.FormatDataFolder)}: {this.FormatDataFolder.ToString()}");
             if (!String.IsNullOrEmpty(this.OutputFile)) Console.WriteLine($"* {nameof(this.OutputFile)}: {this.OutputFile.ToString()}");
             Console.WriteLine($"* {nameof(this.ShowColors)}: {this.ShowColors.ToString()}");
+            if (this.ConflictSolvingMode != ConflictSolvingMode.None) Console.WriteLine($"* {nameof(this.ConflictSolvingMode)}: {this.ConflictSolvingMode.ToString()}");
         }
 
         public string NormalizeColor(string color)
