@@ -62,7 +62,7 @@ namespace MTGOArchetypeParser.Data
             }
             else
             {
-                if(results.Count>1 && conflictSolvingMode == ConflictSolvingMode.PreferSimpler)
+                if (results.Count > 1 && conflictSolvingMode == ConflictSolvingMode.PreferSimpler)
                 {
                     results = results.OrderBy(r => r.Archetype.GetComplexity() + (r.Variant != null ? r.Variant.GetComplexity() : 0)).Take(1).ToList();
                 }
@@ -130,6 +130,8 @@ namespace MTGOArchetypeParser.Data
         {
             foreach (var condition in archetypeData.Conditions)
             {
+                if (condition.Cards == null || condition.Cards.Length == 0) continue; // Skips broken condition
+
                 switch (condition.Type)
                 {
                     case ArchetypeConditionType.InMainboard:
