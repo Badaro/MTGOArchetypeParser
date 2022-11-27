@@ -35,7 +35,7 @@ namespace MTGOArchetypeParser.Data
 
             List<Tournament> result = new List<Tournament>();
 
-            for (DateTime date = startDate; date < DateTime.UtcNow; date = date.AddDays(1))
+            for (DateTime date = startDate; date < DateTime.UtcNow.AddMonths(1); date = date.AddDays(1))
             {
                 string folder = Path.Combine(cacheFolder, date.Year.ToString(), date.Month.ToString("D2"), date.Day.ToString("D2"));
                 if (!Directory.Exists(folder)) continue;
@@ -45,6 +45,7 @@ namespace MTGOArchetypeParser.Data
                     if (filter(Path.GetFileName(file)))
                     {
                         Tournament item = GetTournamentFromFile(file);
+                        item.JsonFile = Path.GetFileName(file);
                         result.Add(item);
                     }
                 }

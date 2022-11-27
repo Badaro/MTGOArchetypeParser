@@ -15,10 +15,13 @@ namespace MTGOArchetypeParser.Data.Model
         public Deck[] Decks { get; set; }
         [JsonProperty("Standings")]
         public Standing[] Standings { get; set; }
+        [JsonProperty("Rounds")]
+        public Round[] Rounds{ get; set; }
+        public string JsonFile { get; set; }
 
         public override string ToString()
         {
-            return Path.GetFileNameWithoutExtension(Information.Uri.LocalPath);
+            return Path.GetFileNameWithoutExtension(this.JsonFile);
         }
     }
 }
