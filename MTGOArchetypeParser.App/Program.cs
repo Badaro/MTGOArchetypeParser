@@ -132,7 +132,7 @@ namespace MTGOArchetypeParser.App
                             output = new CsvOutput();
                             break;
                         case ExecutionOutput.Json:
-                            Console.WriteLine("Saving data to JSON file");
+                            Console.WriteLine("Saving data to JSON file (Streaming Mode)");
                             output = new JsonOutput();
                             break;
                         case ExecutionOutput.Reddit:
