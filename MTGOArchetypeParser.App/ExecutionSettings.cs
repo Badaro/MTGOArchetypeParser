@@ -38,6 +38,7 @@ namespace MTGOArchetypeParser.App
         public float MinOthersPercent { get; set; }
         public bool ShowColors { get; set; }
         public ConflictSolvingMode ConflictSolvingMode { get; set; }
+        public DateTime? StartDate { get; set; }
 
 
         public static ExecutionSettings FromJsonFile(string jsonFile)
@@ -91,6 +92,7 @@ namespace MTGOArchetypeParser.App
             string minOthersPercentArgument = GetArgument(args, nameof(MinOthersPercent)).FirstOrDefault();
             string showColorsArgument = GetArgument(args, nameof(ShowColors)).FirstOrDefault();
             string conflictArgument = GetArgument(args, nameof(ConflictSolvingMode)).FirstOrDefault();
+            string startDateArgument = GetArgument(args, nameof(StartDate)).FirstOrDefault();
 
             if (formatArgument != null) this.Format = formatArgument;
             if (referenceFormatArgument != null) this.ReferenceFormat = referenceFormatArgument;
@@ -113,6 +115,14 @@ namespace MTGOArchetypeParser.App
             if (maxDecksPerEventArgument != null && Int32.TryParse(maxDecksPerEventArgument, out int parsedMaxDecks)) this.MaxDecksPerEvent = parsedMaxDecks;
             if (minOthersPercentArgument != null && float.TryParse(minOthersPercentArgument, NumberStyles.Any, CultureInfo.InvariantCulture, out float parsedMinOthers)) this.MinOthersPercent = parsedMinOthers;
             if (showColorsArgument != null) this.ShowColors = (showColorsArgument.ToLowerInvariant() == "true");
+
+            if (startDateArgument != null)
+            {
+                if (DateTime.TryParseExact(startDateArgument, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal, out DateTime parsedStartDate))
+                {
+                    this.StartDate = parsedStartDate.ToUniversalTime();
+                }
+            }
 
             ExecutionAction actionArgument = ExecutionAction.NotSpecified;
             if (args.Length > 1) Enum.TryParse<ExecutionAction>(args[1], true, out actionArgument);
@@ -181,6 +191,7 @@ namespace MTGOArchetypeParser.App
             if (!String.IsNullOrEmpty(this.ReferenceFormat)) Console.WriteLine($"* {nameof(this.ReferenceFormat)}: {this.ReferenceFormat.ToString()}");
             if (!String.IsNullOrEmpty(this.Meta)) Console.WriteLine($"* {nameof(this.Meta)}: {this.Meta.ToString()}");
             if (!String.IsNullOrEmpty(this.MetaWeek)) Console.WriteLine($"* {nameof(this.MetaWeek)}: {this.MetaWeek.ToString()}");
+            if (this.StartDate != null) Console.WriteLine($"* {nameof(this.StartDate)}: {this.StartDate.Value.ToString("yyyy-MM-dd")}");
             if (this.Filter != null && this.Filter.Length > 0) this.Filter.ToList().ForEach(f => Console.WriteLine($"* {nameof(this.Filter)}: {f}"));
             if (this.Exclude != null && this.Exclude.Length > 0) this.Exclude.ToList().ForEach(e => Console.WriteLine($"* {nameof(this.Exclude)}: {e}"));
             if (!String.IsNullOrEmpty(this.Archetype)) Console.WriteLine($"* {nameof(this.Archetype)}: {this.Archetype.ToString()}");

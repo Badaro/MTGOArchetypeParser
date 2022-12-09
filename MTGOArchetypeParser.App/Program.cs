@@ -36,7 +36,7 @@ namespace MTGOArchetypeParser.App
                 Console.WriteLine("* Loading meta information");
                 DateTime startDate = format.Metas.First().StartDate.AddDays(1);
                 string metaFilter = String.Empty;
-                if (!String.IsNullOrEmpty(settings.Meta))
+                if (settings.StartDate==null && !String.IsNullOrEmpty(settings.Meta))
                 {
                     if (settings.Meta.ToLowerInvariant() == "current") metaFilter = format.Metas.Where(m => m.StartDate.AddDays(1) < DateTime.UtcNow).Last().Name;
                     else metaFilter = settings.Meta;
@@ -44,6 +44,8 @@ namespace MTGOArchetypeParser.App
                     var meta = format.Metas.FirstOrDefault(m => m.Name.Contains(metaFilter, StringComparison.InvariantCultureIgnoreCase));
                     if (meta != null) startDate = meta.StartDate.AddDays(1);
                 }
+
+                if (settings.StartDate != null) startDate = settings.StartDate.Value;
 
                 Console.WriteLine("* Loading tournaments");
                 Tournament[] tournaments = settings.TournamentFolder.SelectMany(c => TournamentLoader.GetTournamentsByDate(c, startDate, t =>
@@ -249,6 +251,7 @@ Settings (can also be specified using settings.json):
 * referenceformat: Format data to be used for comparison
 * meta: Only generate data for events that belong to this meta
 * metaweek: Only generate data for events that belong to this meta week
+* startdate: Only generate data for events on or after this date, must be in format yyyy-MM-dd
 * filter: Only generate data for events that match this string, can be specified more than once
 * exclude: Only generate data for events that do NOT match this string, can be specified more than once
 * archetype: Only generate data for decks whose archetypes match this string
