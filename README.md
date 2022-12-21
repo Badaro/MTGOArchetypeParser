@@ -28,15 +28,23 @@ If you did things correctly you should see a message displaying the results of t
 
 ```
 Detection results:
-modern-preliminary-2021-01-21->yamakiller->Burn
-modern-preliminary-2021-01-21->Simpleliquid->Azorius Midrange
-modern-preliminary-2021-01-21->cntrlfreak->Shadow Prowess
-modern-preliminary-2021-01-21->ElectricBob->Rakdos Midrange
-modern-preliminary-2021-01-21->cariollins->Shadow Prowess
-modern-preliminary-2021-01-21->HouseOfManaMTG->Amulet Titan
-modern-preliminary-2021-01-21->aplapp->Heliod Combo
+* modern-preliminary-2021-01-2112252742 -> 4-0 yamakiller (Burn)
+* modern-preliminary-2021-01-2112252742 -> 4-0 Simpleliquid (Spirits)
+* modern-preliminary-2021-01-2112252742 -> 3-1 cntrlfreak (Shadow Prowess)
+* modern-preliminary-2021-01-2112252742 -> 3-1 ElectricBob (Rakdos Midrange)
+* modern-preliminary-2021-01-2112252742 -> 3-1 cariollins (Shadow Prowess)
+* modern-preliminary-2021-01-2112252742 -> 3-1 HouseOfManaMTG (Amulet Titan)
+* modern-preliminary-2021-01-2112252742 -> 3-1 aplapp (Heliod Combo)
+* modern-preliminary-2021-01-2112252745 -> 4-0 kthanakit26 (Izzet Prowess)
+* modern-preliminary-2021-01-2112252745 -> 3-1 SourceOdin (Heliod Combo)
+* modern-preliminary-2021-01-2112252745 -> 2-1 Dean911 (Green Tron)
+* modern-preliminary-2021-01-2112252745 -> 3-1 Rosencrantz_920 (Amulet Titan)
+* modern-preliminary-2021-01-2112252745 -> 3-1 Rinko (Enduring Ideal)
+* modern-preliminary-2021-01-2112252745 -> 3-1 errorman (Gyruda Reanimator)
 ```
-If you got that, congratulations! You can now start playing with the archetypes.
+If you got that, congratulations! You can now start playing with the archetypes. 
+
+Remember to run a ```git pull``` on MTGODecklistCache and MTGOFormatData periodically to get updated data.
 
 **Check the MTGOFormatData repository for information on which formats are currently supported for detection.**
 
@@ -44,7 +52,7 @@ If you're interested in creating archetype definitions for other formats, please
 
 ## Output options
 
-The first argument of the tool is how to display the output. There's two options at the moment:
+The first argument of the tool is how to display the output. There's four options at the moment:
 
 * console
 * csv
@@ -70,9 +78,11 @@ You need to always specify the format you're using to evaluate those decklists. 
 
 If you're using the compare option, you also need to specify a second set of archetype definitions to use. The parameter for this is ```referenceformat=myotherformat``` parameter.
 
+Notice that ```format=myformat``` does *not* filters for events with that format, it only specifies which format to use for detection. So in most scenarios you'll be combining it with a filter parameter, like this: ```format=myformat filter=myformat```
+
 ## Filtering options
 
-There's a few ways to filter which events will included in the detection.
+There's a few ways to filter which events will included in the detection. Here's some of the most useful ones:
 
 * ```meta=mymeta``` lets you filter to only include events in a specific meta.  You can also use ```meta=current``` to specify "most recent meta"
 * ```metaweek=weeknumber``` lets you filter to only include events in a specific meta week. You can also use ```metaweek=current``` to specify "most recent meta week". This parameter will be ignored if meta is not set.
@@ -83,9 +93,11 @@ There's a few ways to filter which events will included in the detection.
 * ```card=text```: Lets you filter to only list decks that contains a specific card, requires includedecklists=true
 * ```excludecard=text```: Lets you filter to only list decks that do not contain a specific card, requires includedecklists=true
 
+You can run the tool without any parameters to see a more complete list.
+
 ## meta breakdown
 
-* ```breakdown=true``` will include a short meta breakdown summary at the end of the console output
+* ```metabreakdown=true``` will include a short meta breakdown summary at the end of the console output
 
 ## settings.json file
 
@@ -103,7 +115,6 @@ Let's say you're only looking at Modern events, and you're ignoring Leagues sinc
 ```
 
 Be careful that settings in this file are only used if you don't specify the same settings in the command line. If you have the file above and use ```filter=preliminary``` in the command line the filter for Modern events above will *not* be applied. Either specify both using the JSON file, or both using the command line. 
-
 ## Creating new archetype definitions
 
 If you're interested in adding more formats to this tool, or to improve the quality of the archetype definitions, please check the readme in the page below, which explains how the data structure works:
