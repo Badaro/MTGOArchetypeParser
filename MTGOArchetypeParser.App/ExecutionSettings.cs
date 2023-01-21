@@ -31,6 +31,7 @@ namespace MTGOArchetypeParser.App
         public bool MetaBreakdownShowCount { get; set; }
         public bool CardBreakdown { get; set; }
         public bool IncludeDecklists { get; set; }
+        public bool IncludeMatchups { get; set; }
         public string[] TournamentFolder { get; set; }
         public string FormatDataFolder { get; set; }
         public string OutputFile { get; set; }
@@ -39,7 +40,7 @@ namespace MTGOArchetypeParser.App
         public bool ShowColors { get; set; }
         public ConflictSolvingMode ConflictSolvingMode { get; set; }
         public DateTime? StartDate { get; set; }
-
+        public string MatchupsFor { get; set; }
 
         public static ExecutionSettings FromJsonFile(string jsonFile)
         {
@@ -85,6 +86,7 @@ namespace MTGOArchetypeParser.App
             string breakdownCountArgument = GetArgument(args, nameof(MetaBreakdownShowCount)).FirstOrDefault();
             string cardBreakdownArgument = GetArgument(args, nameof(CardBreakdown)).FirstOrDefault();
             string decklistsArgument = GetArgument(args, nameof(IncludeDecklists)).FirstOrDefault();
+            string matchupsArgument = GetArgument(args, nameof(IncludeDecklists)).FirstOrDefault();
             string[] cacheFoldersArgument = GetArgument(args, nameof(TournamentFolder));
             string dataFolderArgument = GetArgument(args, nameof(FormatDataFolder)).FirstOrDefault();
             string outputFileArgument = GetArgument(args, nameof(OutputFile)).FirstOrDefault();
@@ -93,6 +95,7 @@ namespace MTGOArchetypeParser.App
             string showColorsArgument = GetArgument(args, nameof(ShowColors)).FirstOrDefault();
             string conflictArgument = GetArgument(args, nameof(ConflictSolvingMode)).FirstOrDefault();
             string startDateArgument = GetArgument(args, nameof(StartDate)).FirstOrDefault();
+            string matchupsForArgument = GetArgument(args, nameof(MatchupsFor)).FirstOrDefault();
 
             if (formatArgument != null) this.Format = formatArgument;
             if (referenceFormatArgument != null) this.ReferenceFormat = referenceFormatArgument;
@@ -109,12 +112,14 @@ namespace MTGOArchetypeParser.App
             if (breakdownCountArgument != null) this.MetaBreakdownShowCount = (breakdownCountArgument.ToLowerInvariant() == "true");
             if (cardBreakdownArgument != null) this.CardBreakdown = (cardBreakdownArgument.ToLowerInvariant() == "true");
             if (decklistsArgument != null) this.IncludeDecklists = (decklistsArgument.ToLowerInvariant() == "true");
+            if (matchupsArgument != null) this.IncludeMatchups = (matchupsArgument.ToLowerInvariant() == "true");
             if (cacheFoldersArgument.Length > 0) this.TournamentFolder = cacheFoldersArgument;
             if (dataFolderArgument != null) this.FormatDataFolder = dataFolderArgument;
             if (outputFileArgument != null) this.OutputFile = outputFileArgument;
             if (maxDecksPerEventArgument != null && Int32.TryParse(maxDecksPerEventArgument, out int parsedMaxDecks)) this.MaxDecksPerEvent = parsedMaxDecks;
             if (minOthersPercentArgument != null && float.TryParse(minOthersPercentArgument, NumberStyles.Any, CultureInfo.InvariantCulture, out float parsedMinOthers)) this.MinOthersPercent = parsedMinOthers;
             if (showColorsArgument != null) this.ShowColors = (showColorsArgument.ToLowerInvariant() == "true");
+            if (matchupsForArgument != null) this.MatchupsFor = matchupsForArgument;
 
             if (startDateArgument != null)
             {
@@ -143,6 +148,7 @@ namespace MTGOArchetypeParser.App
 
             // Required setting for these features to work
             if ((this.Card != null && this.Card.Length > 0) || (this.ExcludeCard != null && this.ExcludeCard.Length > 0) || this.CardBreakdown) this.IncludeDecklists = true;
+            if (this.MatchupsFor != null) this.IncludeMatchups = true;
 
             // Folder normalization
             if (this.FormatDataFolder != null) this.FormatDataFolder = NormalizePath(this.FormatDataFolder);
@@ -203,6 +209,7 @@ namespace MTGOArchetypeParser.App
             Console.WriteLine($"* {nameof(this.MetaBreakdownShowCount)}: {this.MetaBreakdownShowCount.ToString()}");
             Console.WriteLine($"* {nameof(this.CardBreakdown)}: {this.CardBreakdown.ToString()}");
             Console.WriteLine($"* {nameof(this.IncludeDecklists)}: {this.IncludeDecklists.ToString()}");
+            Console.WriteLine($"* {nameof(this.IncludeMatchups)}: {this.IncludeMatchups.ToString()}");
             if (this.MaxDecksPerEvent > 0) Console.WriteLine($"* {nameof(this.MaxDecksPerEvent)}: {this.MaxDecksPerEvent.ToString()}");
             if (this.MinOthersPercent != DefaultMinOthersPercent) Console.WriteLine($"* {nameof(this.MinOthersPercent)}: {this.MinOthersPercent.ToString()}");
             if (this.TournamentFolder != null && this.TournamentFolder.Length > 0) this.TournamentFolder.ToList().ForEach(f => Console.WriteLine($"* {nameof(this.TournamentFolder)}: {f}"));
@@ -210,6 +217,7 @@ namespace MTGOArchetypeParser.App
             if (!String.IsNullOrEmpty(this.OutputFile)) Console.WriteLine($"* {nameof(this.OutputFile)}: {this.OutputFile.ToString()}");
             Console.WriteLine($"* {nameof(this.ShowColors)}: {this.ShowColors.ToString()}");
             if (this.ConflictSolvingMode != ConflictSolvingMode.None) Console.WriteLine($"* {nameof(this.ConflictSolvingMode)}: {this.ConflictSolvingMode.ToString()}");
+            if (!String.IsNullOrEmpty(this.MatchupsFor)) Console.WriteLine($"* {nameof(this.MatchupsFor)}: {this.MatchupsFor.ToString()}");
         }
 
         public string NormalizeColor(string color)

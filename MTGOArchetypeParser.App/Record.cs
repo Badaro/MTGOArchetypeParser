@@ -18,5 +18,6 @@ namespace MTGOArchetypeParser.App
         public RecordArchetype ReferenceArchetype { get; set; }
         public DeckItem[] Mainboard { get; set; }
         public DeckItem[] Sideboard { get; set; }
+        public RecordMatchup[] Matchups { get; set; }
     }
 }

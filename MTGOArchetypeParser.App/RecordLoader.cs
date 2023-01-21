@@ -10,7 +10,7 @@ namespace MTGOArchetypeParser.App
 {
     public static class RecordLoader
     {
-        public static Record[] GetRecords(Tournament[] tournaments, ArchetypeFormat format, ArchetypeFormat referenceFormat, bool includeDecklists, int maxDecksPerEvent, ConflictSolvingMode conflictMode)
+        public static Record[] GetRecords(Tournament[] tournaments, ArchetypeFormat format, ArchetypeFormat referenceFormat, bool includeDecklists, bool includeMatchups, int maxDecksPerEvent, ConflictSolvingMode conflictMode)
         {
             List<Record> records = new List<Record>();
 
@@ -54,9 +54,60 @@ namespace MTGOArchetypeParser.App
                         Archetype = archetype,
                         ReferenceArchetype = referenceArchetype,
                         Mainboard = includeDecklists ? tournament.Decks[i].Mainboard : null,
-                        Sideboard = includeDecklists ? tournament.Decks[i].Sideboard : null
+                        Sideboard = includeDecklists ? tournament.Decks[i].Sideboard : null,
+                        Matchups = null
                     });
                 }
+
+                if (includeMatchups && tournament.Rounds != null)
+                {
+                    foreach (var round in tournament.Rounds)
+                    {
+                        foreach (var match in round.Matches)
+                        {
+                            Record player1 = tournamentRecords.FirstOrDefault(r => r.Player == match.Player1);
+                            Record player2 = tournamentRecords.FirstOrDefault(r => r.Player == match.Player2);
+                            string[] result = match.Result.Split("-");
+
+                            if (player1 != null && player2 != null && result.Length == 3)
+                            {
+                                // Valid result
+                                int player1Wins = int.Parse(result[0]);
+                                int player2Wins = int.Parse(result[1]);
+                                int draws = int.Parse(result[2]);
+
+                                if (player1.Matchups == null) player1.Matchups = new RecordMatchup[0];
+                                if (player2.Matchups == null) player2.Matchups = new RecordMatchup[0];
+
+                                // TODO: This is kinda ugly and should be done with a list instead of converting between list and array
+                                var player1Matchups = player1.Matchups.ToList();
+                                var player2Matchups = player2.Matchups.ToList();
+
+                                player1Matchups.Add(new RecordMatchup()
+                                {
+                                    Opponent = player2.Player,
+                                    OpponentArchetype = player2.Archetype.Archetype,
+                                    Wins = player1Wins,
+                                    Losses = player2Wins,
+                                    Draws = draws
+                                });
+
+                                player2Matchups.Add(new RecordMatchup()
+                                {
+                                    Opponent = player1.Player,
+                                    OpponentArchetype = player1.Archetype.Archetype,
+                                    Wins = player2Wins,
+                                    Losses = player1Wins,
+                                    Draws = draws
+                                });
+
+                                player1.Matchups = player1Matchups.ToArray();
+                                player2.Matchups = player2Matchups.ToArray();
+                            }
+                        }
+                    }
+                }
+
 
                 if (maxDecksPerEvent > 0) tournamentRecords = tournamentRecords.Take(maxDecksPerEvent).ToList();
                 records.AddRange(tournamentRecords);

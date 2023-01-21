@@ -36,7 +36,7 @@ namespace MTGOArchetypeParser.App
                 Console.WriteLine("* Loading meta information");
                 DateTime startDate = format.Metas.First().StartDate.AddDays(1);
                 string metaFilter = String.Empty;
-                if (settings.StartDate==null && !String.IsNullOrEmpty(settings.Meta))
+                if (settings.StartDate == null && !String.IsNullOrEmpty(settings.Meta))
                 {
                     if (settings.Meta.ToLowerInvariant() == "current") metaFilter = format.Metas.Where(m => m.StartDate.AddDays(1) < DateTime.UtcNow).Last().Name;
                     else metaFilter = settings.Meta;
@@ -61,7 +61,7 @@ namespace MTGOArchetypeParser.App
                     return true;
                 })).ToArray();
 
-                Record[] records = RecordLoader.GetRecords(tournaments, format, referenceFormat, settings.IncludeDecklists, settings.MaxDecksPerEvent, settings.ConflictSolvingMode);
+                Record[] records = RecordLoader.GetRecords(tournaments, format, referenceFormat, settings.IncludeDecklists, settings.IncludeMatchups, settings.MaxDecksPerEvent, settings.ConflictSolvingMode);
 
                 if (!String.IsNullOrEmpty(metaFilter))
                 {
@@ -150,6 +150,7 @@ namespace MTGOArchetypeParser.App
 
                 if (settings.MetaBreakdown) PrintBreakdown(records, settings);
                 if (settings.CardBreakdown) PrintCards(records, settings);
+                if (settings.MatchupsFor != null) PrintMatchups(records, settings);
             }
             catch (Exception ex)
             {
@@ -207,6 +208,7 @@ namespace MTGOArchetypeParser.App
             }
             Console.WriteLine($"Total Decks: {consolidatedTotals.Sum(c => c.Value)}");
         }
+
         static void PrintCards(Record[] records, ExecutionSettings settings)
         {
             Console.WriteLine("----- Card Breakdown: -----");
@@ -231,6 +233,51 @@ namespace MTGOArchetypeParser.App
                 Console.WriteLine($"* {card.Key} ({card.Value} {((card.Value == 1) ? "copy" : "copies")})");
             }
         }
+
+        static void PrintMatchups(Record[] records, ExecutionSettings settings)
+        {
+            Dictionary<string, RecordMatchup> results = new Dictionary<string, RecordMatchup>();
+
+            var archetypeRecords = records.Where(r => r.Archetype.Archetype == settings.MatchupsFor).ToList();
+
+            foreach (var record in archetypeRecords)
+            {
+                if (record.Matchups != null)
+                {
+                    foreach (var matchup in record.Matchups)
+                    {
+                        if (matchup.OpponentArchetype == settings.MatchupsFor) continue; // Skip mirrors
+
+                        if (!results.ContainsKey(matchup.OpponentArchetype)) results.Add(matchup.OpponentArchetype, new RecordMatchup());
+
+                        if (matchup.Wins > matchup.Losses)
+                        {
+                            results[matchup.OpponentArchetype].Wins++;
+                        }
+                        else
+                        {
+                            if (matchup.Wins < matchup.Losses)
+                            {
+                                results[matchup.OpponentArchetype].Losses++;
+                            }
+                            else
+                            {
+                                results[matchup.OpponentArchetype].Draws++;
+                            }
+                        }
+                    }
+                }
+            }
+
+            Console.WriteLine($"----- Matchup Breakdown for {settings.MatchupsFor} ({archetypeRecords.Count()} players, {results.Sum(r => r.Value.Wins+r.Value.Losses+r.Value.Draws)} matches): -----");
+
+            foreach (var result in results.OrderByDescending(r => r.Value.Wins+r.Value.Losses+r.Value.Draws))
+            {
+                double winrate = ((double)100) * ((double)result.Value.Wins) / ((double)(result.Value.Wins + result.Value.Losses));
+                Console.WriteLine($"* vs {result.Key}: {result.Value.Wins}-{result.Value.Losses}-{result.Value.Draws} ({winrate.ToString("F1", CultureInfo.InvariantCulture)}% WR))");
+            }
+        }
+
         static string _usage = @"Usage: MTGOArchetypeParser.App [OUTPUT] [ACTION] [SETTINGS]
 
 Sample:
@@ -262,7 +309,9 @@ Settings (can also be specified using settings.json):
 * metabreakdown: If set to true will include a meta breakdown summary at the end of the console output
 * metabreakdownshowcount: If set to true will show the number of decks instead of the percent of decks in the meta breakdown
 * cardbreakdown: If set to true will include a card breakdown summary at the end of the console output
+* matchupsfor: If an archetype is specified in this parameter it will an matchup breakdown summary at the end of the console output
 * includedecklists: If set to true will include the decklists in the output, only supported when using json
+* includematchups: If set to true will include the matchups in the output, only supported when using json
 * maxdecksperevent: Limits the number of decks per event
 * minotherspercent: Sets the minimum percent to include an archetype in 'Others'
 * tournamentfolder: Specifies the location of folders with the tournament data, can be specified more than once
