@@ -86,7 +86,7 @@ namespace MTGOArchetypeParser.App
             string breakdownCountArgument = GetArgument(args, nameof(MetaBreakdownShowCount)).FirstOrDefault();
             string cardBreakdownArgument = GetArgument(args, nameof(CardBreakdown)).FirstOrDefault();
             string decklistsArgument = GetArgument(args, nameof(IncludeDecklists)).FirstOrDefault();
-            string matchupsArgument = GetArgument(args, nameof(IncludeDecklists)).FirstOrDefault();
+            string matchupsArgument = GetArgument(args, nameof(IncludeMatchups)).FirstOrDefault();
             string[] cacheFoldersArgument = GetArgument(args, nameof(TournamentFolder));
             string dataFolderArgument = GetArgument(args, nameof(FormatDataFolder)).FirstOrDefault();
             string outputFileArgument = GetArgument(args, nameof(OutputFile)).FirstOrDefault();
