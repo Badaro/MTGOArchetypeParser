@@ -151,6 +151,7 @@ namespace MTGOArchetypeParser.App
             if (this.MatchupsFor != null) this.IncludeMatchups = true;
 
             // Folder normalization
+            if (this.OutputFile != null) this.OutputFile = NormalizePath(this.OutputFile);
             if (this.FormatDataFolder != null) this.FormatDataFolder = NormalizePath(this.FormatDataFolder);
             if (this.TournamentFolder != null) this.TournamentFolder = this.TournamentFolder.Select(s => NormalizePath(s)).ToArray();
         }
