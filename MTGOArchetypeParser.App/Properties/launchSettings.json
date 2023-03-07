@@ -2,7 +2,7 @@
   "profiles": {
     "MTGOArchetypeParser.App": {
       "commandName": "Project",
-      "commandLineArgs": "console detect format=Modern filter=Modern exclude=League meta=current metaweek=current maxdecksperevent=32 metabreakdown=true cardbreakdown=true formatdatafolder=$(SolutionDir)MTGOFormatData\\Formats tournamentfolder=$(SolutionDir)MTGODecklistCache\\Tournaments"
+      "commandLineArgs": "console detect format=Modern filter=Modern exclude=League meta=current metaweek=current maxdecksperevent=32 metabreakdown=true cardbreakdown=true winratebreakdown=true formatdatafolder=$(SolutionDir)MTGOFormatData\\Formats tournamentfolder=$(SolutionDir)MTGODecklistCache\\Tournaments"
     }
   }
 }

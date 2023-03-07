@@ -149,6 +149,7 @@ namespace MTGOArchetypeParser.App
                 }
 
                 if (settings.MetaBreakdown) PrintBreakdown(records, settings);
+                if (settings.WinrateBreakdown) PrintWinrates(records, settings);
                 if (settings.CardBreakdown) PrintCards(records, settings);
                 if (settings.MatchupsFor != null) PrintMatchups(records, settings);
             }
@@ -207,6 +208,47 @@ namespace MTGOArchetypeParser.App
                 }
             }
             Console.WriteLine($"Total Decks: {consolidatedTotals.Sum(c => c.Value)}");
+        }
+
+        static void PrintWinrates(Record[] records, ExecutionSettings settings)
+        {
+            Dictionary<string, RecordMatchup> results = new Dictionary<string, RecordMatchup>();
+
+            foreach(var record in records)
+            {
+                if (record.Matchups == null) continue;
+
+                foreach (var matchup in record.Matchups)
+                {
+                    if (record.Archetype.Archetype == matchup.OpponentArchetype) continue; // Skip mirrors
+
+                    if (!results.ContainsKey(record.Archetype.Archetype)) results.Add(record.Archetype.Archetype, new RecordMatchup());
+
+                    if (matchup.Wins > matchup.Losses)
+                    {
+                        results[record.Archetype.Archetype].Wins++;
+                    }
+                    else
+                    {
+                        if (matchup.Wins < matchup.Losses)
+                        {
+                            results[record.Archetype.Archetype].Losses++;
+                        }
+                        else
+                        {
+                            results[record.Archetype.Archetype].Draws++;
+                        }
+                    }
+                }
+            }
+
+            Console.WriteLine($"----- Winrate Breakdown: -----");
+
+            foreach (var result in results.OrderByDescending(r => r.Value.Wins + r.Value.Losses + r.Value.Draws))
+            {
+                double winrate = ((double)100) * ((double)result.Value.Wins) / ((double)(result.Value.Wins + result.Value.Losses));
+                Console.WriteLine($"* {result.Key}: {result.Value.Wins}-{result.Value.Losses}-{result.Value.Draws} ({winrate.ToString("F1", CultureInfo.InvariantCulture)}% WR)");
+            }
         }
 
         static void PrintCards(Record[] records, ExecutionSettings settings)
