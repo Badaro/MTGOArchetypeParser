@@ -282,6 +282,10 @@ namespace MTGOArchetypeParser.App
 
             var archetypeRecords = records.Where(r => r.Archetype.Archetype == settings.MatchupsFor).ToList();
 
+            int totalWins = 0;
+            int totalLosses = 0;
+            int totalDraws = 0;
+
             foreach (var record in archetypeRecords)
             {
                 if (record.Matchups != null)
@@ -295,23 +299,27 @@ namespace MTGOArchetypeParser.App
                         if (matchup.Wins > matchup.Losses)
                         {
                             results[matchup.OpponentArchetype].Wins++;
+                            totalWins++;
                         }
                         else
                         {
                             if (matchup.Wins < matchup.Losses)
                             {
                                 results[matchup.OpponentArchetype].Losses++;
+                                totalLosses++;
                             }
                             else
                             {
                                 results[matchup.OpponentArchetype].Draws++;
+                                totalDraws++;
                             }
                         }
                     }
                 }
             }
 
-            Console.WriteLine($"----- Matchup Breakdown for {settings.MatchupsFor} ({archetypeRecords.Count()} players, {results.Sum(r => r.Value.Wins+r.Value.Losses+r.Value.Draws)} matches): -----");
+            double totalWinrate = ((double)100) * ((double)totalWins) / ((double)(totalWins + totalLosses));
+            Console.WriteLine($"----- Matchup Breakdown for {settings.MatchupsFor} ({archetypeRecords.Count()} players, {results.Sum(r => r.Value.Wins+r.Value.Losses+r.Value.Draws)} matches, {totalWinrate.ToString("F1", CultureInfo.InvariantCulture)}% WR): -----");
 
             foreach (var result in results.OrderByDescending(r => r.Value.Wins+r.Value.Losses+r.Value.Draws))
             {
