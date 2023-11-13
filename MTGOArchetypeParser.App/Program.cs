@@ -59,6 +59,13 @@ namespace MTGOArchetypeParser.App
                         if (t.Contains(exclude, StringComparison.InvariantCultureIgnoreCase)) return false;
                     }
                     return true;
+                }, t =>
+                {
+                    foreach (string folderFilter in settings.FolderFilter)
+                    {
+                        if (!t.Contains(folderFilter, StringComparison.InvariantCultureIgnoreCase)) return false;
+                    }
+                    return true;
                 })).ToArray();
 
                 Record[] records = RecordLoader.GetRecords(tournaments, format, referenceFormat, settings.IncludeDecklists, settings.IncludeMatchups, settings.MaxDecksPerEvent, settings.ConflictSolvingMode);
@@ -214,7 +221,7 @@ namespace MTGOArchetypeParser.App
         {
             Dictionary<string, RecordMatchup> results = new Dictionary<string, RecordMatchup>();
 
-            foreach(var record in records)
+            foreach (var record in records)
             {
                 if (record.Matchups == null) continue;
 
@@ -319,9 +326,9 @@ namespace MTGOArchetypeParser.App
             }
 
             double totalWinrate = ((double)100) * ((double)totalWins) / ((double)(totalWins + totalLosses));
-            Console.WriteLine($"----- Matchup Breakdown for {settings.MatchupsFor} ({archetypeRecords.Count()} players, {results.Sum(r => r.Value.Wins+r.Value.Losses+r.Value.Draws)} matches, {totalWinrate.ToString("F1", CultureInfo.InvariantCulture)}% WR): -----");
+            Console.WriteLine($"----- Matchup Breakdown for {settings.MatchupsFor} ({archetypeRecords.Count()} players, {results.Sum(r => r.Value.Wins + r.Value.Losses + r.Value.Draws)} matches, {totalWinrate.ToString("F1", CultureInfo.InvariantCulture)}% WR): -----");
 
-            foreach (var result in results.OrderByDescending(r => r.Value.Wins+r.Value.Losses+r.Value.Draws))
+            foreach (var result in results.OrderByDescending(r => r.Value.Wins + r.Value.Losses + r.Value.Draws))
             {
                 double winrate = ((double)100) * ((double)result.Value.Wins) / ((double)(result.Value.Wins + result.Value.Losses));
                 Console.WriteLine($"* vs {result.Key}: {result.Value.Wins}-{result.Value.Losses}-{result.Value.Draws} ({winrate.ToString("F1", CultureInfo.InvariantCulture)}% WR))");
@@ -350,6 +357,7 @@ Settings (can also be specified using settings.json):
 * metaweek: Only generate data for events that belong to this meta week
 * startdate: Only generate data for events on or after this date, must be in format yyyy-MM-dd
 * filter: Only generate data for events that match this string, can be specified more than once
+* folderfilter: Only generate data for events in folders that match this string, can be specified more than once
 * exclude: Only generate data for events that do NOT match this string, can be specified more than once
 * archetype: Only generate data for decks whose archetypes match this string
 * player: Only generate data for decks whose player is exactly this string

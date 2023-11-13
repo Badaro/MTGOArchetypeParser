@@ -21,6 +21,7 @@ namespace MTGOArchetypeParser.App
         public string Meta { get; set; }
         public string MetaWeek { get; set; }
         public string[] Filter { get; set; }
+        public string[] FolderFilter { get; set; }
         public string[] Exclude { get; set; }
         public string Archetype { get; set; }
         public string Player { get; set; }
@@ -77,6 +78,7 @@ namespace MTGOArchetypeParser.App
             string metaArgument = GetArgument(args, nameof(Meta)).FirstOrDefault();
             string metaWeekArgument = GetArgument(args, nameof(MetaWeek)).FirstOrDefault();
             string[] filterArgument = GetArgument(args, nameof(Filter));
+            string[] folderFilterArgument = GetArgument(args, nameof(FolderFilter));
             string[] excludeArgument = GetArgument(args, nameof(Exclude));
             string archetypeArgument = GetArgument(args, nameof(Archetype)).FirstOrDefault();
             string playerArgument = GetArgument(args, nameof(Player)).FirstOrDefault();
@@ -104,6 +106,7 @@ namespace MTGOArchetypeParser.App
             if (metaArgument != null) this.Meta = metaArgument;
             if (metaWeekArgument != null) this.MetaWeek = metaWeekArgument;
             if (filterArgument.Length > 0) this.Filter = filterArgument;
+            if (folderFilterArgument.Length > 0) this.FolderFilter = folderFilterArgument;
             if (excludeArgument.Length > 0) this.Exclude = excludeArgument;
             if (archetypeArgument != null) this.Archetype = archetypeArgument;
             if (playerArgument != null) this.Player = playerArgument;
@@ -203,6 +206,7 @@ namespace MTGOArchetypeParser.App
             if (!String.IsNullOrEmpty(this.MetaWeek)) Console.WriteLine($"* {nameof(this.MetaWeek)}: {this.MetaWeek.ToString()}");
             if (this.StartDate != null) Console.WriteLine($"* {nameof(this.StartDate)}: {this.StartDate.Value.ToString("yyyy-MM-dd")}");
             if (this.Filter != null && this.Filter.Length > 0) this.Filter.ToList().ForEach(f => Console.WriteLine($"* {nameof(this.Filter)}: {f}"));
+            if (this.FolderFilter != null && this.FolderFilter.Length > 0) this.FolderFilter.ToList().ForEach(f => Console.WriteLine($"* {nameof(this.FolderFilter)}: {f}"));
             if (this.Exclude != null && this.Exclude.Length > 0) this.Exclude.ToList().ForEach(e => Console.WriteLine($"* {nameof(this.Exclude)}: {e}"));
             if (!String.IsNullOrEmpty(this.Archetype)) Console.WriteLine($"* {nameof(this.Archetype)}: {this.Archetype.ToString()}");
             if (!String.IsNullOrEmpty(this.Player)) Console.WriteLine($"* {nameof(this.Player)}: {this.Player.ToString()}");

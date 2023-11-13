@@ -12,26 +12,27 @@ namespace MTGOArchetypeParser.Data
 {
     public static class TournamentLoader
     {
-        public static Tournament[] GetTournamentsByDate(string cacheFolder, DateTime startDate, Func<string, bool> filter = null)
+        public static Tournament[] GetTournamentsByDate(string cacheFolder, DateTime startDate, Func<string, bool> filter = null, Func<string, bool> folderFilter = null)
         {
             string[] subFolders = Directory.GetDirectories(cacheFolder);
             bool isSingleLevelStructure = subFolders.All(d => Regex.IsMatch(Path.GetFileName(d), "\\d\\d\\d\\d"));
 
             if (isSingleLevelStructure)
             {
-                return GetTournamentsByDateInternal(cacheFolder, startDate, filter);
+                return GetTournamentsByDateInternal(cacheFolder, startDate, filter, folderFilter);
             }
             else
             {
                 List<Tournament> tournaments = new List<Tournament>();
-                foreach (string subFolder in subFolders) tournaments.AddRange(GetTournamentsByDateInternal(subFolder, startDate, filter));
+                foreach (string subFolder in subFolders) tournaments.AddRange(GetTournamentsByDateInternal(subFolder, startDate, filter, folderFilter));
                 return tournaments.ToArray();
             }
         }
 
-        private static Tournament[] GetTournamentsByDateInternal(string cacheFolder, DateTime startDate, Func<string, bool> filter = null)
+        private static Tournament[] GetTournamentsByDateInternal(string cacheFolder, DateTime startDate, Func<string, bool> filter = null, Func<string, bool> folderFilter = null)
         {
             if (filter == null) filter = n => true;
+            if (folderFilter == null) folderFilter = n => true;
 
             List<Tournament> result = new List<Tournament>();
 
@@ -42,7 +43,7 @@ namespace MTGOArchetypeParser.Data
 
                 foreach (string file in Directory.GetFiles(folder, "*.json"))
                 {
-                    if (filter(Path.GetFileName(file)))
+                    if (filter(Path.GetFileName(file)) && folderFilter(Path.GetDirectoryName(file)))
                     {
                         Tournament item = GetTournamentFromFile(file);
                         item.JsonFile = Path.GetFileName(file);
