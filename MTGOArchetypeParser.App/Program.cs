@@ -50,20 +50,29 @@ namespace MTGOArchetypeParser.App
                 Console.WriteLine("* Loading tournaments");
                 Tournament[] tournaments = settings.TournamentFolder.SelectMany(c => TournamentLoader.GetTournamentsByDate(c, startDate, t =>
                 {
-                    foreach (string filter in settings.Filter)
+                    if(settings.Filter!=null)
                     {
-                        if (!t.Contains(filter, StringComparison.InvariantCultureIgnoreCase)) return false;
+                        foreach (string filter in settings.Filter)
+                        {
+                            if (!t.Contains(filter, StringComparison.InvariantCultureIgnoreCase)) return false;
+                        }
                     }
-                    foreach (string exclude in settings.Exclude)
+                    if(settings.Exclude!=null)
                     {
-                        if (t.Contains(exclude, StringComparison.InvariantCultureIgnoreCase)) return false;
+                        foreach (string exclude in settings.Exclude)
+                        {
+                            if (t.Contains(exclude, StringComparison.InvariantCultureIgnoreCase)) return false;
+                        }
                     }
                     return true;
                 }, t =>
                 {
-                    foreach (string folderFilter in settings.FolderFilter)
+                    if(settings.FolderFilter!=null)
                     {
-                        if (!t.Contains(folderFilter, StringComparison.InvariantCultureIgnoreCase)) return false;
+                        foreach (string folderFilter in settings.FolderFilter)
+                        {
+                            if (!t.Contains(folderFilter, StringComparison.InvariantCultureIgnoreCase)) return false;
+                        }
                     }
                     return true;
                 })).ToArray();
