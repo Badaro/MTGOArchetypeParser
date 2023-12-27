@@ -12,6 +12,9 @@ namespace MTGOArchetypeParser.App
         public DateTime Date { get; set; }
         public string Result { get; set; }
         public string Points { get; set; }
+        public string Wins { get; set; }
+        public string Losses { get; set; }
+        public string Draws { get; set; }
         public string Player { get; set; }
         public Uri AnchorUri { get; set; }
         public RecordArchetype Archetype { get; set; }

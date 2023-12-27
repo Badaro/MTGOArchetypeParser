@@ -14,10 +14,16 @@ namespace MTGOArchetypeParser.Data.Model
         public string Player { get; set; }
         [JsonProperty("Points")]
         public int Points { get; set; }
+        [JsonProperty("Wins")]
+        public int Wins { get; set; }
+        [JsonProperty("Losses")]
+        public int Losses { get; set; }
+        [JsonProperty("Draws")]
+        public int Draws { get; set; }
 
         public override string ToString()
         {
-            return $"#{Rank} {Player} {Points} points";
+            return $"#{Rank} {Player} {Points} points {Wins}-{Losses}-{Draws}";
         }
     }
 }

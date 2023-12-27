@@ -34,10 +34,19 @@ namespace MTGOArchetypeParser.App
                     if (referenceFormat != null) referenceArchetype = GetArchetype(tournament.Decks[i], referenceFormat, conflictMode);
 
                     string points = "-";
+                    string wins = "-";
+                    string losses = "-";
+                    string draws = "-";
                     if (tournament.Standings != null)
                     {
                         var standing = tournament.Standings.FirstOrDefault(s => s.Player == tournament.Decks[i].Player);
-                        if (standing != null) points = standing.Points.ToString();
+                        if (standing != null)
+                        {
+                            points = standing.Points.ToString();
+                            wins = standing.Wins.ToString();
+                            losses = standing.Losses.ToString();
+                            draws = standing.Draws.ToString();
+                        }
                     }
 
                     tournamentRecords.Add(new Record()
@@ -49,6 +58,9 @@ namespace MTGOArchetypeParser.App
                         Date = tournament.Decks.First().Date.Value,
                         Result = tournament.Decks[i].Result,
                         Points = points,
+                        Wins = wins,
+                        Losses = losses,
+                        Draws = draws,
                         Player = tournament.Decks[i].Player,
                         AnchorUri = tournament.Decks[i].AnchorUri,
                         Archetype = archetype,
