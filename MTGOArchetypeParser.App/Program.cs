@@ -234,28 +234,9 @@ namespace MTGOArchetypeParser.App
             {
                 if (record.Matchups == null) continue;
 
-                foreach (var matchup in record.Matchups)
-                {
-                    if (record.Archetype.Archetype == matchup.OpponentArchetype) continue; // Skip mirrors
-
-                    if (!results.ContainsKey(record.Archetype.Archetype)) results.Add(record.Archetype.Archetype, new RecordMatchup());
-
-                    if (matchup.Wins > matchup.Losses)
-                    {
-                        results[record.Archetype.Archetype].Wins++;
-                    }
-                    else
-                    {
-                        if (matchup.Wins < matchup.Losses)
-                        {
-                            results[record.Archetype.Archetype].Losses++;
-                        }
-                        else
-                        {
-                            results[record.Archetype.Archetype].Draws++;
-                        }
-                    }
-                }
+                if(record.Wins!="-") results[record.Archetype.Archetype].Wins += int.Parse(record.Wins);
+                if (record.Losses != "-") results[record.Archetype.Archetype].Losses += int.Parse(record.Losses);
+                if (record.Draws != "-") results[record.Archetype.Archetype].Draws += int.Parse(record.Draws);
             }
 
             Console.WriteLine($"----- Winrate Breakdown: -----");
