@@ -50,14 +50,14 @@ namespace MTGOArchetypeParser.App
                 Console.WriteLine("* Loading tournaments");
                 Tournament[] tournaments = settings.TournamentFolder.SelectMany(c => TournamentLoader.GetTournamentsByDate(c, startDate, t =>
                 {
-                    if(settings.Filter!=null)
+                    if (settings.Filter != null)
                     {
                         foreach (string filter in settings.Filter)
                         {
                             if (!t.Contains(filter, StringComparison.InvariantCultureIgnoreCase)) return false;
                         }
                     }
-                    if(settings.Exclude!=null)
+                    if (settings.Exclude != null)
                     {
                         foreach (string exclude in settings.Exclude)
                         {
@@ -67,7 +67,7 @@ namespace MTGOArchetypeParser.App
                     return true;
                 }, t =>
                 {
-                    if(settings.FolderFilter!=null)
+                    if (settings.FolderFilter != null)
                     {
                         foreach (string folderFilter in settings.FolderFilter)
                         {
@@ -232,9 +232,9 @@ namespace MTGOArchetypeParser.App
 
             foreach (var record in records)
             {
-                if (record.Matchups == null) continue;
+                if (!results.ContainsKey(record.Archetype.Archetype)) results.Add(record.Archetype.Archetype, new RecordMatchup());
 
-                if(record.Wins!="-") results[record.Archetype.Archetype].Wins += int.Parse(record.Wins);
+                if (record.Wins != "-") results[record.Archetype.Archetype].Wins += int.Parse(record.Wins);
                 if (record.Losses != "-") results[record.Archetype.Archetype].Losses += int.Parse(record.Losses);
                 if (record.Draws != "-") results[record.Archetype.Archetype].Draws += int.Parse(record.Draws);
             }
