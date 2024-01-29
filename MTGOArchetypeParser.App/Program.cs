@@ -315,8 +315,7 @@ namespace MTGOArchetypeParser.App
                 }
             }
 
-            double totalWinrate = ((double)100) * ((double)totalWins) / ((double)(totalWins + totalLosses));
-            Console.WriteLine($"----- Matchup Breakdown for {settings.MatchupsFor} ({archetypeRecords.Count()} players, {results.Sum(r => r.Value.Wins + r.Value.Losses + r.Value.Draws)} matches, {totalWinrate.ToString("F1", CultureInfo.InvariantCulture)}% WR): -----");
+            Console.WriteLine($"----- Matchup Breakdown for {settings.MatchupsFor} ({archetypeRecords.Count()} players, {results.Sum(r => r.Value.Wins + r.Value.Losses + r.Value.Draws)} matches): -----");
 
             foreach (var result in results.OrderByDescending(r => r.Value.Wins + r.Value.Losses + r.Value.Draws))
             {
