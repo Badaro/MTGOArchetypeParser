@@ -278,11 +278,6 @@ namespace MTGOArchetypeParser.App
             Dictionary<string, RecordMatchup> results = new Dictionary<string, RecordMatchup>();
 
             var archetypeRecords = records.Where(r => r.Archetype.Archetype == settings.MatchupsFor).ToList();
-
-            int totalWins = 0;
-            int totalLosses = 0;
-            int totalDraws = 0;
-
             foreach (var record in archetypeRecords)
             {
                 if (record.Matchups != null)
@@ -296,19 +291,16 @@ namespace MTGOArchetypeParser.App
                         if (matchup.Wins > matchup.Losses)
                         {
                             results[matchup.OpponentArchetype].Wins++;
-                            totalWins++;
                         }
                         else
                         {
                             if (matchup.Wins < matchup.Losses)
                             {
                                 results[matchup.OpponentArchetype].Losses++;
-                                totalLosses++;
                             }
                             else
                             {
                                 results[matchup.OpponentArchetype].Draws++;
-                                totalDraws++;
                             }
                         }
                     }
