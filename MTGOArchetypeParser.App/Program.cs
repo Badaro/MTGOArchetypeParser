@@ -141,29 +141,30 @@ namespace MTGOArchetypeParser.App
                         records = records.Where(r => !r.Archetype.Equals(r.ReferenceArchetype)).ToArray();
                     }
 
-                    IOutput output;
+                    IOutput[] output;
 
                     switch (settings.Output)
                     {
                         case ExecutionOutput.Csv:
-                            PrintRecords(records, settings, new IOutput[] { new CsvOutput(), new ConsoleOutput() });
+                            output = new IOutput[] { new CsvOutput(), new ConsoleOutput() };
                             break;
                         case ExecutionOutput.Json:
-                            PrintRecords(records, settings, new IOutput[] { new JsonOutput(), new ConsoleOutput() });
+                            output = new IOutput[] { new JsonOutput(), new ConsoleOutput() };
                             break;
                         case ExecutionOutput.Reddit:
-                            PrintRecords(records, settings, new IOutput[] { new RedditOutput(), new ConsoleOutput() });
+                            output = new IOutput[] { new RedditOutput(), new ConsoleOutput() };
                             break;
                         case ExecutionOutput.Console:
                         default:
-                            PrintRecords(records, settings, new IOutput[] { new ConsoleOutput() });
+                            output = new IOutput[] { new ConsoleOutput() };
                             break;
                     }
 
-                    if (settings.MetaBreakdown) PrintBreakdown(records, settings, new IOutput[] { new ConsoleOutput() });
-                    if (settings.WinrateBreakdown) PrintWinrates(records, settings, new IOutput[] { new ConsoleOutput() });
-                    if (settings.CardBreakdown) PrintCards(records, settings, new IOutput[] { new ConsoleOutput() });
-                    if (settings.MatchupsFor != null) PrintMatchups(records, settings, new IOutput[] { new ConsoleOutput() });
+                    PrintRecords(records, settings, output);
+                    if (settings.MetaBreakdown) PrintBreakdown(records, settings, output);
+                    if (settings.WinrateBreakdown) PrintWinrates(records, settings, output);
+                    if (settings.CardBreakdown) PrintCards(records, settings, output);
+                    if (settings.MatchupsFor != null) PrintMatchups(records, settings, output);
                 }
             }
             catch (Exception ex)

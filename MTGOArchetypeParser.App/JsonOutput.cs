@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using MTGOArchetypeParser.Model;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -12,8 +13,35 @@ namespace MTGOArchetypeParser.App
     {
         public void WriteRecords(Record[] records, ExecutionSettings settings)
         {
+            WriteJsonFile<Record[], Record>(records, settings);
+        }
+
+        public void WriteCards(Dictionary<string, int> cards, ExecutionSettings settings)
+        {
+            WriteJsonFile<Dictionary<string, int>, KeyValuePair<string, int>>(cards, settings, "cards");
+        }
+
+        public void WriteBreakdown(Dictionary<string, int> archetypes, ExecutionSettings settings)
+        {
+            WriteJsonFile<Dictionary<string, int>, KeyValuePair<string, int>>(archetypes, settings, "breakdown");
+        }
+
+        public void WriteWinrates(Dictionary<string, RecordMatchup> archetypes, ExecutionSettings settings)
+        {
+            WriteJsonFile<Dictionary<string, RecordMatchup>, KeyValuePair<string, RecordMatchup>>(archetypes, settings, "winrates");
+        }
+
+        public void WriteMatchups(Dictionary<string, RecordMatchup> archetypes, ExecutionSettings settings)
+        {
+            WriteJsonFile<Dictionary<string, RecordMatchup>, KeyValuePair<string, RecordMatchup>>(archetypes, settings, "matchupsfor");
+        }
+
+        private void WriteJsonFile<TList, TObject>(TList records, ExecutionSettings settings, string suffix = null)
+            where TList : IEnumerable<TObject>
+        {
             string outputFile = settings.OutputFile;
-            if(String.IsNullOrEmpty(outputFile)) outputFile = $"mtgo_data_{records.Max(t => t.Date).ToString("yyyy_MM_dd")}.json";
+            if (String.IsNullOrEmpty(outputFile)) outputFile = $"mtgo_data_{DateTime.Now.ToString("yyyy_MM_dd")}.json";
+            if (suffix != null) outputFile = $"{Path.GetFileNameWithoutExtension(outputFile)}_{suffix}.json";
 
             JsonSerializer serializer = new JsonSerializer();
 
@@ -37,31 +65,8 @@ namespace MTGOArchetypeParser.App
                     writer.WriteEndObject();
                 }
             }
+
         }
 
-        public void WriteCards(Dictionary<string, int> cards, ExecutionSettings settings)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void WriteBreakdown(Dictionary<string, int> archetypes, ExecutionSettings settings)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void WriteWinrates(Dictionary<string, RecordMatchup> archetypes, ExecutionSettings settings)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void WriteMatchups(Dictionary<string, RecordMatchup> archetypes, ExecutionSettings settings)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class JsonOutputRoot
-    {
-        public Record[] Data { get; set; }
     }
 }

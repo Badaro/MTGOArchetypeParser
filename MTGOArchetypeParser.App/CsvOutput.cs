@@ -36,23 +36,18 @@ namespace MTGOArchetypeParser.App
 
         public void WriteCards(Dictionary<string, int> cards, ExecutionSettings settings)
         {
-            throw new NotImplementedException();
         }
 
         public void WriteBreakdown(Dictionary<string, int> archetypes, ExecutionSettings settings)
         {
-            throw new NotImplementedException();
         }
 
         public void WriteWinrates(Dictionary<string, RecordMatchup> archetypes, ExecutionSettings settings)
         {
-            throw new NotImplementedException();
         }
 
         public void WriteMatchups(Dictionary<string, RecordMatchup> archetypes, ExecutionSettings settings)
         {
-            throw new NotImplementedException();
         }
-
     }
 }
