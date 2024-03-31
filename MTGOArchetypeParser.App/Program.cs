@@ -146,27 +146,24 @@ namespace MTGOArchetypeParser.App
                     switch (settings.Output)
                     {
                         case ExecutionOutput.Csv:
-                            Console.WriteLine("Saving data to CSV file");
-                            output = new CsvOutput();
+                            PrintRecords(records, settings, new IOutput[] { new CsvOutput(), new ConsoleOutput() });
                             break;
                         case ExecutionOutput.Json:
-                            Console.WriteLine("Saving data to JSON file (Streaming Mode)");
-                            output = new JsonOutput();
+                            PrintRecords(records, settings, new IOutput[] { new JsonOutput(), new ConsoleOutput() });
                             break;
                         case ExecutionOutput.Reddit:
-                            output = new RedditOutput();
+                            PrintRecords(records, settings, new IOutput[] { new RedditOutput(), new ConsoleOutput() });
                             break;
                         case ExecutionOutput.Console:
                         default:
-                            output = new ConsoleOutput();
+                            PrintRecords(records, settings, new IOutput[] { new ConsoleOutput() });
                             break;
                     }
 
-                    output.WriteRecords(records, settings);
-                    if (settings.MetaBreakdown) PrintBreakdown(records, settings, new ConsoleOutput());
-                    if (settings.WinrateBreakdown) PrintWinrates(records, settings, new ConsoleOutput());
-                    if (settings.CardBreakdown) PrintCards(records, settings, new ConsoleOutput());
-                    if (settings.MatchupsFor != null) PrintMatchups(records, settings, new ConsoleOutput());
+                    if (settings.MetaBreakdown) PrintBreakdown(records, settings, new IOutput[] { new ConsoleOutput() });
+                    if (settings.WinrateBreakdown) PrintWinrates(records, settings, new IOutput[] { new ConsoleOutput() });
+                    if (settings.CardBreakdown) PrintCards(records, settings, new IOutput[] { new ConsoleOutput() });
+                    if (settings.MatchupsFor != null) PrintMatchups(records, settings, new IOutput[] { new ConsoleOutput() });
                 }
             }
             catch (Exception ex)
@@ -176,7 +173,12 @@ namespace MTGOArchetypeParser.App
             }
         }
 
-        static void PrintBreakdown(Record[] records, ExecutionSettings settings, IOutput output)
+        static void PrintRecords(Record[] records, ExecutionSettings settings, IEnumerable<IOutput> outputs)
+        {
+            foreach (var output in outputs) output.WriteRecords(records, settings);
+        }
+
+        static void PrintBreakdown(Record[] records, ExecutionSettings settings, IEnumerable<IOutput> outputs)
         {
             double minPercentage = settings.MinOthersPercent / 100;
 
@@ -198,10 +200,10 @@ namespace MTGOArchetypeParser.App
                 else consolidatedTotals[settings.OthersKey] += total.Value;
             }
 
-            output.WriteBreakdown(consolidatedTotals, settings);
+            foreach (var output in outputs) output.WriteBreakdown(consolidatedTotals, settings);
         }
 
-        static void PrintWinrates(Record[] records, ExecutionSettings settings, IOutput output)
+        static void PrintWinrates(Record[] records, ExecutionSettings settings, IEnumerable<IOutput> outputs)
         {
             Dictionary<string, RecordMatchup> results = new Dictionary<string, RecordMatchup>();
 
@@ -214,10 +216,10 @@ namespace MTGOArchetypeParser.App
                 if (record.Draws != "-") results[record.Archetype.Archetype].Draws += int.Parse(record.Draws);
             }
 
-            output.WriteWinrates(results, settings);
+            foreach (var output in outputs) output.WriteWinrates(results, settings);
         }
 
-        static void PrintCards(Record[] records, ExecutionSettings settings, IOutput output)
+        static void PrintCards(Record[] records, ExecutionSettings settings, IEnumerable<IOutput> outputs)
         {
             Console.WriteLine("----- Card Breakdown: -----");
 
@@ -236,10 +238,10 @@ namespace MTGOArchetypeParser.App
                 }
             }
 
-            output.WriteCards(cards, settings);
+            foreach (var output in outputs) output.WriteCards(cards, settings);
         }
 
-        static void PrintMatchups(Record[] records, ExecutionSettings settings, IOutput output)
+        static void PrintMatchups(Record[] records, ExecutionSettings settings, IEnumerable<IOutput> outputs)
         {
             Dictionary<string, RecordMatchup> results = new Dictionary<string, RecordMatchup>();
 
@@ -273,7 +275,7 @@ namespace MTGOArchetypeParser.App
                 }
             }
 
-            output.WriteMatchups(results, settings);
+            foreach (var output in outputs) output.WriteMatchups(results, settings);
         }
 
         static string _usage = @"Usage: MTGOArchetypeParser.App [OUTPUT] [ACTION] [SETTINGS]
