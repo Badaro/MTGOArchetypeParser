@@ -13,6 +13,8 @@ namespace MTGOArchetypeParser.App
     public class ExecutionSettings
     {
         private readonly float DefaultMinOthersPercent = 2.0f;
+        internal readonly string OthersKey = "Others";
+
 
         public ExecutionOutput Output { get; set; }
         public ExecutionAction Action { get; set; }

@@ -161,13 +161,13 @@ namespace MTGOArchetypeParser.App
                             output = new ConsoleOutput();
                             break;
                     }
-                    output.WriteRecords(records, settings);
-                }
 
-                if (settings.MetaBreakdown) PrintBreakdown(records, settings);
-                if (settings.WinrateBreakdown) PrintWinrates(records, settings);
-                if (settings.CardBreakdown) PrintCards(records, settings);
-                if (settings.MatchupsFor != null) PrintMatchups(records, settings);
+                    output.WriteRecords(records, settings);
+                    if (settings.MetaBreakdown) PrintBreakdown(records, settings, new ConsoleOutput());
+                    if (settings.WinrateBreakdown) PrintWinrates(records, settings, new ConsoleOutput());
+                    if (settings.CardBreakdown) PrintCards(records, settings, new ConsoleOutput());
+                    if (settings.MatchupsFor != null) PrintMatchups(records, settings, new ConsoleOutput());
+                }
             }
             catch (Exception ex)
             {
@@ -176,10 +176,9 @@ namespace MTGOArchetypeParser.App
             }
         }
 
-        static void PrintBreakdown(Record[] records, ExecutionSettings settings)
+        static void PrintBreakdown(Record[] records, ExecutionSettings settings, IOutput output)
         {
             double minPercentage = settings.MinOthersPercent / 100;
-            string othersKey = "Others";
 
             Dictionary<string, int> totals = new Dictionary<string, int>();
             foreach (var record in records)
@@ -192,41 +191,17 @@ namespace MTGOArchetypeParser.App
             // Consolidates "other" data
             double minCount = (minPercentage * records.Count());
             Dictionary<string, int> consolidatedTotals = new Dictionary<string, int>();
-            consolidatedTotals.Add(othersKey, 0);
+            consolidatedTotals.Add(settings.OthersKey, 0);
             foreach (var total in totals)
             {
                 if (total.Value > minCount) consolidatedTotals.Add(total.Key, total.Value);
-                else consolidatedTotals[othersKey] += total.Value;
+                else consolidatedTotals[settings.OthersKey] += total.Value;
             }
 
-            Console.WriteLine("----- Meta Breakdown: -----");
-
-            foreach (var total in consolidatedTotals.Where(t => t.Key != othersKey).OrderByDescending(t => t.Value))
-            {
-                if (settings.MetaBreakdownShowCount)
-                {
-                    Console.WriteLine($"* {total.Key} ({total.Value})");
-                }
-                else
-                {
-                    Console.WriteLine($"* {total.Key} ({Math.Round((100.0 * total.Value) / consolidatedTotals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)}%)");
-                }
-            }
-            if (consolidatedTotals[othersKey] > 0)
-            {
-                if (settings.MetaBreakdownShowCount)
-                {
-                    Console.WriteLine($"* {othersKey} ({consolidatedTotals[othersKey]})");
-                }
-                else
-                {
-                    Console.WriteLine($"* {othersKey} ({Math.Round((100.0 * consolidatedTotals[othersKey]) / consolidatedTotals.Sum(c => c.Value), 1).ToString("F1", CultureInfo.InvariantCulture)}%)");
-                }
-            }
-            Console.WriteLine($"Total Decks: {consolidatedTotals.Sum(c => c.Value)}");
+            output.WriteBreakdown(consolidatedTotals, settings);
         }
 
-        static void PrintWinrates(Record[] records, ExecutionSettings settings)
+        static void PrintWinrates(Record[] records, ExecutionSettings settings, IOutput output)
         {
             Dictionary<string, RecordMatchup> results = new Dictionary<string, RecordMatchup>();
 
@@ -239,16 +214,10 @@ namespace MTGOArchetypeParser.App
                 if (record.Draws != "-") results[record.Archetype.Archetype].Draws += int.Parse(record.Draws);
             }
 
-            Console.WriteLine($"----- Winrate Breakdown: -----");
-
-            foreach (var result in results.OrderByDescending(r => r.Value.Wins + r.Value.Losses + r.Value.Draws))
-            {
-                double winrate = ((double)100) * ((double)result.Value.Wins) / ((double)(result.Value.Wins + result.Value.Losses));
-                Console.WriteLine($"* {result.Key}: {result.Value.Wins}-{result.Value.Losses}-{result.Value.Draws} ({winrate.ToString("F1", CultureInfo.InvariantCulture)}% WR)");
-            }
+            output.WriteWinrates(results, settings);
         }
 
-        static void PrintCards(Record[] records, ExecutionSettings settings)
+        static void PrintCards(Record[] records, ExecutionSettings settings, IOutput output)
         {
             Console.WriteLine("----- Card Breakdown: -----");
 
@@ -267,13 +236,10 @@ namespace MTGOArchetypeParser.App
                 }
             }
 
-            foreach (var card in cards.OrderByDescending(c => c.Value))
-            {
-                Console.WriteLine($"* {card.Key} ({card.Value} {((card.Value == 1) ? "copy" : "copies")})");
-            }
+            output.WriteCards(cards, settings);
         }
 
-        static void PrintMatchups(Record[] records, ExecutionSettings settings)
+        static void PrintMatchups(Record[] records, ExecutionSettings settings, IOutput output)
         {
             Dictionary<string, RecordMatchup> results = new Dictionary<string, RecordMatchup>();
 
@@ -307,13 +273,7 @@ namespace MTGOArchetypeParser.App
                 }
             }
 
-            Console.WriteLine($"----- Matchup Breakdown for {settings.MatchupsFor} ({archetypeRecords.Count()} players, {results.Sum(r => r.Value.Wins + r.Value.Losses + r.Value.Draws)} matches): -----");
-
-            foreach (var result in results.OrderByDescending(r => r.Value.Wins + r.Value.Losses + r.Value.Draws))
-            {
-                double winrate = ((double)100) * ((double)result.Value.Wins) / ((double)(result.Value.Wins + result.Value.Losses));
-                Console.WriteLine($"* vs {result.Key}: {result.Value.Wins}-{result.Value.Losses}-{result.Value.Draws} ({winrate.ToString("F1", CultureInfo.InvariantCulture)}% WR))");
-            }
+            output.WriteMatchups(results, settings);
         }
 
         static string _usage = @"Usage: MTGOArchetypeParser.App [OUTPUT] [ACTION] [SETTINGS]
