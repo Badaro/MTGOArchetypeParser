@@ -161,7 +161,7 @@ namespace MTGOArchetypeParser.App
                             output = new ConsoleOutput();
                             break;
                     }
-                    output.Write(records, settings);
+                    output.WriteRecords(records, settings);
                 }
 
                 if (settings.MetaBreakdown) PrintBreakdown(records, settings);

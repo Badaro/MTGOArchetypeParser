@@ -6,7 +6,7 @@ namespace MTGOArchetypeParser.App
 {
     public class RedditOutput : IOutput
     {
-        public void Write(Record[] records, ExecutionSettings settings)
+        public void WriteRecords(Record[] records, ExecutionSettings settings)
         {
             if (settings.Action != ExecutionAction.Detect) throw new Exception("Reddit output only supports detect mode");
 
@@ -33,5 +33,26 @@ namespace MTGOArchetypeParser.App
                 }
             }
         }
+
+        public void WriteCards(Dictionary<string, int> cards, ExecutionSettings settings)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void WriteBreakdown(Dictionary<string, int> archetypes, ExecutionSettings settings)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void WriteWinrates(Dictionary<string, RecordMatchup> archetypes, ExecutionSettings settings)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void WriteMatchups(Dictionary<string, RecordMatchup> archetypes, ExecutionSettings settings)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

@@ -8,7 +8,7 @@ namespace MTGOArchetypeParser.App
 {
     public class CsvOutput : IOutput
     {
-        public void Write(Record[] records, ExecutionSettings settings)
+        public void WriteRecords(Record[] records, ExecutionSettings settings)
         {
             StringBuilder csvData = new StringBuilder();
 
@@ -33,5 +33,26 @@ namespace MTGOArchetypeParser.App
             if (isCompare) return $"{record.Tournament},{record.Meta},{record.Week},{record.Date.ToString("yyyy-MM-dd")},{record.Result},{record.Points},{record.Player},{record.AnchorUri},{record.Archetype.Archetype},{record.Archetype.Color},{record.Archetype.Companion},{record.ReferenceArchetype.Archetype},{record.ReferenceArchetype.Color},{record.ReferenceArchetype.Companion}";
             else return $"{record.Tournament},{record.Meta},{record.Week},{record.Date.ToString("yyyy-MM-dd")},{record.Result},{record.Points},{record.Player},{record.AnchorUri},{record.Archetype.Archetype},{record.Archetype.Color},{record.Archetype.Companion}";
         }
+
+        public void WriteCards(Dictionary<string, int> cards, ExecutionSettings settings)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void WriteBreakdown(Dictionary<string, int> archetypes, ExecutionSettings settings)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void WriteWinrates(Dictionary<string, RecordMatchup> archetypes, ExecutionSettings settings)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void WriteMatchups(Dictionary<string, RecordMatchup> archetypes, ExecutionSettings settings)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

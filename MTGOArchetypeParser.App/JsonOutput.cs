@@ -10,7 +10,7 @@ namespace MTGOArchetypeParser.App
 {
     public class JsonOutput : IOutput
     {
-        public void Write(Record[] records, ExecutionSettings settings)
+        public void WriteRecords(Record[] records, ExecutionSettings settings)
         {
             string outputFile = settings.OutputFile;
             if(String.IsNullOrEmpty(outputFile)) outputFile = $"mtgo_data_{records.Max(t => t.Date).ToString("yyyy_MM_dd")}.json";
@@ -37,6 +37,26 @@ namespace MTGOArchetypeParser.App
                     writer.WriteEndObject();
                 }
             }
+        }
+
+        public void WriteCards(Dictionary<string, int> cards, ExecutionSettings settings)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void WriteBreakdown(Dictionary<string, int> archetypes, ExecutionSettings settings)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void WriteWinrates(Dictionary<string, RecordMatchup> archetypes, ExecutionSettings settings)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void WriteMatchups(Dictionary<string, RecordMatchup> archetypes, ExecutionSettings settings)
+        {
+            throw new NotImplementedException();
         }
     }
 
