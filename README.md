@@ -1,3 +1,6 @@
+> [!NOTE]
+> This project is no longer being actively maintained.
+
 # MTGOArchetypeParser
 
 Rules-based engine to detect archetypes from MTGO decklists.
